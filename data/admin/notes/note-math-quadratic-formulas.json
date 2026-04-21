@@ -1,0 +1,113 @@
+{
+  "id": "note-math-quadratic-formulas",
+  "title": "Quadratic Equations — Complete Formula Sheet",
+  "description": "All key formulas, methods and concepts for Quadratic Equations (Class 10 CBSE/ICSE).",
+  "type": "note",
+  "board": "CBSE",
+  "classSlug": "cbse-class-10",
+  "classNumber": 10,
+  "subject": "mathematics",
+  "chapter": "Quadratic Equations",
+  "isPublic": true,
+  "isPublished": true,
+  "tags": ["quadratic", "formula", "class10", "cbse", "mathematics", "algebra"],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2025-04-01T12:00:00.000Z",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Standard Form"
+    },
+    {
+      "type": "formula",
+      "text": "ax² + bx + c = 0  (where a ≠ 0)"
+    },
+    {
+      "type": "heading",
+      "text": "Quadratic Formula"
+    },
+    {
+      "type": "formula",
+      "text": "x = (-b ± √(b² - 4ac)) / 2a"
+    },
+    {
+      "type": "heading",
+      "text": "Discriminant (D)"
+    },
+    {
+      "type": "formula",
+      "text": "D = b² - 4ac"
+    },
+    {
+      "type": "list",
+      "items": [
+        "D > 0 → Two distinct real roots",
+        "D = 0 → Two equal real roots (repeated root)",
+        "D < 0 → No real roots (complex roots)"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Vieta's Formulas (Relationship between roots and coefficients)"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Sum of roots: α + β = -b/a",
+        "Product of roots: α × β = c/a"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Methods to Solve"
+    },
+    {
+      "type": "list",
+      "items": [
+        "1. Factorisation — split middle term",
+        "2. Completing the square",
+        "3. Quadratic formula",
+        "4. Graphical method"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Factorisation Method — Steps"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Step 1: Write in standard form ax² + bx + c = 0",
+        "Step 2: Find two numbers p, q such that p + q = b and p × q = ac",
+        "Step 3: Split bx as px + qx",
+        "Step 4: Factorise by grouping",
+        "Step 5: Set each factor = 0 and solve"
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Example: Solve x² - 5x + 6 = 0",
+      "steps": [
+        "Find p, q: p + q = -5, p × q = 6 → p = -2, q = -3",
+        "x² - 2x - 3x + 6 = 0",
+        "x(x - 2) - 3(x - 2) = 0",
+        "(x - 2)(x - 3) = 0",
+        "x = 2 or x = 3"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Important Points to Remember"
+    },
+    {
+      "type": "list",
+      "items": [
+        "A quadratic equation has at most 2 roots",
+        "If one root is rational, the other is also rational (for rational coefficients)",
+        "If one root is irrational (a + √b), the other is its conjugate (a - √b)",
+        "The graph of a quadratic is a parabola"
+      ]
+    }
+  ]
+}

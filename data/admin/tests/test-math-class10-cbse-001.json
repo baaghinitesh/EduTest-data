@@ -1,0 +1,179 @@
+{
+  "id": "test-math-class10-cbse-001",
+  "title": "Mathematics — Algebra & Quadratic Equations",
+  "description": "Chapter-wise test covering quadratic equations, polynomials and linear equations for Class 10 CBSE.",
+  "board": "CBSE",
+  "classSlug": "cbse-class-10",
+  "classNumber": 10,
+  "subject": "mathematics",
+  "chapter": "Quadratic Equations",
+  "topic": "Factorisation & Discriminant",
+  "testType": "chapter",
+  "duration": 45,
+  "totalMarks": 40,
+  "passingMarks": 40,
+  "totalQuestions": 10,
+  "isPublic": true,
+  "isPublished": true,
+  "tags": ["algebra", "quadratic", "class10", "cbse", "mathematics"],
+  "instructions": [
+    "All questions are compulsory.",
+    "Each MCQ carries 4 marks. No negative marking.",
+    "Read each question carefully before answering."
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2025-04-01T10:00:00.000Z",
+  "questions": [
+    {
+      "id": "q1",
+      "order": 1,
+      "question": "Which of the following is a quadratic equation?",
+      "type": "mcq",
+      "marks": 4,
+      "options": [
+        { "letter": "A", "text": "x³ + 2x + 1 = 0", "isCorrect": false, "index": 0 },
+        { "letter": "B", "text": "x² + 5x + 6 = 0", "isCorrect": true,  "index": 1 },
+        { "letter": "C", "text": "2x + 3 = 0",       "isCorrect": false, "index": 2 },
+        { "letter": "D", "text": "1/x + x = 2",      "isCorrect": false, "index": 3 }
+      ],
+      "explanation": "A quadratic equation has degree 2. x² + 5x + 6 = 0 is the only option with degree exactly 2.",
+      "hint": "Look for the highest power of x."
+    },
+    {
+      "id": "q2",
+      "order": 2,
+      "question": "The roots of the equation x² - 5x + 6 = 0 are:",
+      "type": "mcq",
+      "marks": 4,
+      "options": [
+        { "letter": "A", "text": "2 and 3",  "isCorrect": true,  "index": 0 },
+        { "letter": "B", "text": "-2 and -3","isCorrect": false, "index": 1 },
+        { "letter": "C", "text": "1 and 6",  "isCorrect": false, "index": 2 },
+        { "letter": "D", "text": "2 and -3", "isCorrect": false, "index": 3 }
+      ],
+      "explanation": "Factorising: x² - 5x + 6 = (x-2)(x-3) = 0, so x = 2 or x = 3.",
+      "hint": "Try to factorise the expression."
+    },
+    {
+      "id": "q3",
+      "order": 3,
+      "question": "The discriminant of ax² + bx + c = 0 is:",
+      "type": "mcq",
+      "marks": 4,
+      "options": [
+        { "letter": "A", "text": "b² - 4ac",  "isCorrect": true,  "index": 0 },
+        { "letter": "B", "text": "b² + 4ac",  "isCorrect": false, "index": 1 },
+        { "letter": "C", "text": "4ac - b²",  "isCorrect": false, "index": 2 },
+        { "letter": "D", "text": "√(b² - 4ac)","isCorrect": false,"index": 3 }
+      ],
+      "explanation": "The discriminant D = b² - 4ac determines the nature of roots.",
+      "hint": "It's part of the quadratic formula."
+    },
+    {
+      "id": "q4",
+      "order": 4,
+      "question": "If the discriminant of a quadratic equation is zero, the roots are:",
+      "type": "mcq",
+      "marks": 4,
+      "options": [
+        { "letter": "A", "text": "Real and distinct",  "isCorrect": false, "index": 0 },
+        { "letter": "B", "text": "Real and equal",     "isCorrect": true,  "index": 1 },
+        { "letter": "C", "text": "Imaginary",          "isCorrect": false, "index": 2 },
+        { "letter": "D", "text": "Rational and unequal","isCorrect": false,"index": 3 }
+      ],
+      "explanation": "When D = 0, the quadratic has exactly one real root (repeated root).",
+      "hint": "Think about what D = 0 means in the quadratic formula."
+    },
+    {
+      "id": "q5",
+      "order": 5,
+      "question": "Solve: 2x² - 7x + 3 = 0. The roots are:",
+      "type": "mcq",
+      "marks": 4,
+      "options": [
+        { "letter": "A", "text": "3 and 1/2",  "isCorrect": true,  "index": 0 },
+        { "letter": "B", "text": "-3 and -1/2","isCorrect": false, "index": 1 },
+        { "letter": "C", "text": "3 and -1/2", "isCorrect": false, "index": 2 },
+        { "letter": "D", "text": "1 and 3/2",  "isCorrect": false, "index": 3 }
+      ],
+      "explanation": "2x² - 7x + 3 = (2x - 1)(x - 3) = 0, so x = 1/2 or x = 3.",
+      "hint": "Try factorisation: find two numbers that multiply to 2×3=6 and add to -7."
+    },
+    {
+      "id": "q6",
+      "order": 6,
+      "question": "The sum of roots of ax² + bx + c = 0 is:",
+      "type": "mcq",
+      "marks": 4,
+      "options": [
+        { "letter": "A", "text": "c/a",  "isCorrect": false, "index": 0 },
+        { "letter": "B", "text": "-b/a", "isCorrect": true,  "index": 1 },
+        { "letter": "C", "text": "b/a",  "isCorrect": false, "index": 2 },
+        { "letter": "D", "text": "-c/a", "isCorrect": false, "index": 3 }
+      ],
+      "explanation": "By Vieta's formulas, sum of roots α + β = -b/a.",
+      "hint": "Use Vieta's formulas."
+    },
+    {
+      "id": "q7",
+      "order": 7,
+      "question": "Which method cannot be used to solve a quadratic equation?",
+      "type": "mcq",
+      "marks": 4,
+      "options": [
+        { "letter": "A", "text": "Factorisation",          "isCorrect": false, "index": 0 },
+        { "letter": "B", "text": "Completing the square",  "isCorrect": false, "index": 1 },
+        { "letter": "C", "text": "Quadratic formula",      "isCorrect": false, "index": 2 },
+        { "letter": "D", "text": "Logarithm method",       "isCorrect": true,  "index": 3 }
+      ],
+      "explanation": "Logarithm method is not a standard method for solving quadratic equations.",
+      "hint": "Think about the standard methods taught in class."
+    },
+    {
+      "id": "q8",
+      "order": 8,
+      "question": "The product of roots of 3x² - 5x + 2 = 0 is:",
+      "type": "mcq",
+      "marks": 4,
+      "options": [
+        { "letter": "A", "text": "5/3",  "isCorrect": false, "index": 0 },
+        { "letter": "B", "text": "-5/3", "isCorrect": false, "index": 1 },
+        { "letter": "C", "text": "2/3",  "isCorrect": true,  "index": 2 },
+        { "letter": "D", "text": "-2/3", "isCorrect": false, "index": 3 }
+      ],
+      "explanation": "Product of roots α × β = c/a = 2/3.",
+      "hint": "Use Vieta's formula for product of roots."
+    },
+    {
+      "id": "q9",
+      "order": 9,
+      "question": "For what value of k does kx² + 2x + 1 = 0 have equal roots?",
+      "type": "mcq",
+      "marks": 4,
+      "options": [
+        { "letter": "A", "text": "k = 1",  "isCorrect": true,  "index": 0 },
+        { "letter": "B", "text": "k = 2",  "isCorrect": false, "index": 1 },
+        { "letter": "C", "text": "k = -1", "isCorrect": false, "index": 2 },
+        { "letter": "D", "text": "k = 4",  "isCorrect": false, "index": 3 }
+      ],
+      "explanation": "For equal roots, D = 0. Here D = 4 - 4k = 0, so k = 1.",
+      "hint": "Set discriminant = 0 and solve for k."
+    },
+    {
+      "id": "q10",
+      "order": 10,
+      "question": "A train travels 360 km at a uniform speed. If the speed had been 5 km/h more, it would have taken 1 hour less. Find the speed of the train.",
+      "type": "mcq",
+      "marks": 4,
+      "options": [
+        { "letter": "A", "text": "40 km/h", "isCorrect": true,  "index": 0 },
+        { "letter": "B", "text": "45 km/h", "isCorrect": false, "index": 1 },
+        { "letter": "C", "text": "36 km/h", "isCorrect": false, "index": 2 },
+        { "letter": "D", "text": "30 km/h", "isCorrect": false, "index": 3 }
+      ],
+      "explanation": "Let speed = x. Then 360/x - 360/(x+5) = 1. Solving: x² + 5x - 1800 = 0, giving x = 40.",
+      "hint": "Form a quadratic equation using time = distance/speed."
+    }
+  ]
+}
