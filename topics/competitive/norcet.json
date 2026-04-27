@@ -1,0 +1,1378 @@
+{
+  "classSlug": "norcet",
+  "board": "Competitive",
+  "type": "competitive",
+  "examConfig": {
+    "fullLengthQuestions": 100,
+    "fullLengthMarks": 100,
+    "fullLengthDuration": 90,
+    "subjectWiseQuestions": 40,
+    "subjectWiseMarks": 40,
+    "subjectWiseDuration": 60,
+    "negativeMarking": false,
+    "correctMarkValue": 1,
+    "negativeMarkValue": 0,
+    "multiSubjectTestQuestions": 100,
+    "multiSubjectTestMarks": 100,
+    "multiSubjectTestDuration": 90
+  },
+  "testTypes": [
+    {
+      "type": "full-length",
+      "label": "Full Length Test",
+      "questions": 100,
+      "marks": 100,
+      "duration": 90
+    },
+    {
+      "type": "subject-wise",
+      "label": "Subject Wise Test",
+      "questions": 40,
+      "marks": 40,
+      "duration": 60
+    },
+    {
+      "type": "chapter-wise",
+      "label": "Chapter Wise Test",
+      "questions": 25,
+      "marks": 25,
+      "duration": 30
+    },
+    {
+      "type": "topic-wise",
+      "label": "Topic Wise Test",
+      "questions": 15,
+      "marks": 15,
+      "duration": 20
+    },
+    {
+      "type": "multi-subject",
+      "label": "Multi Subject Test",
+      "questions": 100,
+      "marks": 100,
+      "duration": 90
+    }
+  ],
+  "subjects": [
+    {
+      "slug": "norcet-msn",
+      "name": "Medical Surgical Nursing",
+      "icon": "🏥",
+      "color": "#ef4444",
+      "weightage": 20,
+      "chapters": [
+        {
+          "name": "Cardiovascular System",
+          "topics": [
+            "Anatomy of Heart",
+            "Cardiac Cycle",
+            "Heart Failure",
+            "Myocardial Infarction",
+            "Angina Pectoris",
+            "Hypertension",
+            "Cardiac Arrhythmias",
+            "Valvular Heart Disease",
+            "Cardiogenic Shock",
+            "Cardiac Catheterization",
+            "ECG Interpretation",
+            "Pacemakers",
+            "Cardiac Surgery Nursing",
+            "Peripheral Vascular Disease",
+            "Deep Vein Thrombosis"
+          ]
+        },
+        {
+          "name": "Respiratory System",
+          "topics": [
+            "Anatomy of Lungs",
+            "Pneumonia",
+            "Tuberculosis",
+            "COPD",
+            "Asthma",
+            "Pleural Effusion",
+            "Pneumothorax",
+            "Pulmonary Embolism",
+            "ARDS",
+            "Lung Cancer",
+            "Bronchiectasis",
+            "Respiratory Failure",
+            "Mechanical Ventilation",
+            "Tracheostomy Care",
+            "Chest Physiotherapy"
+          ]
+        },
+        {
+          "name": "Neurological System",
+          "topics": [
+            "Anatomy of Brain",
+            "Stroke CVA",
+            "Head Injury",
+            "Spinal Cord Injury",
+            "Epilepsy Seizures",
+            "Meningitis",
+            "Encephalitis",
+            "Parkinson Disease",
+            "Multiple Sclerosis",
+            "Guillain Barre Syndrome",
+            "Myasthenia Gravis",
+            "Brain Tumors",
+            "Increased ICP",
+            "Lumbar Puncture",
+            "Neurological Assessment"
+          ]
+        },
+        {
+          "name": "Gastrointestinal System",
+          "topics": [
+            "Peptic Ulcer Disease",
+            "Appendicitis",
+            "Intestinal Obstruction",
+            "Inflammatory Bowel Disease",
+            "Liver Cirrhosis",
+            "Hepatitis",
+            "Pancreatitis",
+            "Cholecystitis",
+            "Colorectal Cancer",
+            "Gastroesophageal Reflux",
+            "Malabsorption Syndrome",
+            "Peritonitis",
+            "Stoma Care",
+            "Nasogastric Tube",
+            "GI Bleeding"
+          ]
+        },
+        {
+          "name": "Renal System",
+          "topics": [
+            "Acute Kidney Injury",
+            "Chronic Kidney Disease",
+            "Nephrotic Syndrome",
+            "Nephritic Syndrome",
+            "Urinary Tract Infection",
+            "Renal Calculi",
+            "Glomerulonephritis",
+            "Dialysis Hemodialysis",
+            "Peritoneal Dialysis",
+            "Renal Transplant",
+            "Urinary Catheterization",
+            "Bladder Cancer",
+            "Prostate Disorders",
+            "Fluid and Electrolytes",
+            "Acid Base Balance"
+          ]
+        },
+        {
+          "name": "Endocrine System",
+          "topics": [
+            "Diabetes Mellitus Type 1",
+            "Diabetes Mellitus Type 2",
+            "Diabetic Ketoacidosis",
+            "Hyperosmolar State",
+            "Hypoglycemia",
+            "Thyroid Disorders Hypothyroidism",
+            "Hyperthyroidism Thyrotoxicosis",
+            "Cushing Syndrome",
+            "Addison Disease",
+            "Pheochromocytoma",
+            "Pituitary Disorders",
+            "Parathyroid Disorders",
+            "Insulin Administration",
+            "Oral Hypoglycemics",
+            "Endocrine Assessment"
+          ]
+        },
+        {
+          "name": "Musculoskeletal System",
+          "topics": [
+            "Fractures Types and Management",
+            "Osteoporosis",
+            "Rheumatoid Arthritis",
+            "Osteoarthritis",
+            "Gout",
+            "Osteomyelitis",
+            "Amputation Nursing",
+            "Traction Care",
+            "Cast Care",
+            "Joint Replacement",
+            "Compartment Syndrome",
+            "Sprain and Strain",
+            "Scoliosis",
+            "Muscular Dystrophy",
+            "Orthopedic Assessment"
+          ]
+        },
+        {
+          "name": "Integumentary System",
+          "topics": [
+            "Burns Classification",
+            "Burns Management",
+            "Wound Healing",
+            "Pressure Ulcers",
+            "Skin Infections",
+            "Psoriasis",
+            "Eczema Dermatitis",
+            "Skin Cancer",
+            "Wound Dressing",
+            "Debridement",
+            "Skin Grafting",
+            "Cellulitis",
+            "Herpes Zoster",
+            "Scabies Pediculosis",
+            "Dermatological Assessment"
+          ]
+        },
+        {
+          "name": "Hematological System",
+          "topics": [
+            "Anemia Types",
+            "Iron Deficiency Anemia",
+            "Sickle Cell Anemia",
+            "Thalassemia",
+            "Leukemia",
+            "Lymphoma",
+            "Multiple Myeloma",
+            "Hemophilia",
+            "Thrombocytopenia",
+            "DIC",
+            "Blood Transfusion",
+            "Bone Marrow Transplant",
+            "Anticoagulant Therapy",
+            "Blood Components",
+            "Hematological Assessment"
+          ]
+        },
+        {
+          "name": "Oncology Nursing",
+          "topics": [
+            "Cancer Pathophysiology",
+            "Cancer Staging",
+            "Chemotherapy Nursing",
+            "Radiation Therapy",
+            "Immunotherapy",
+            "Palliative Care",
+            "Cancer Pain Management",
+            "Neutropenia Management",
+            "Tumor Lysis Syndrome",
+            "Paraneoplastic Syndromes",
+            "Cancer Screening",
+            "Oncological Emergencies",
+            "Psychosocial Oncology",
+            "Cancer Rehabilitation",
+            "End of Life Care"
+          ]
+        },
+        {
+          "name": "Perioperative Nursing",
+          "topics": [
+            "Preoperative Assessment",
+            "Preoperative Preparation",
+            "Intraoperative Nursing",
+            "Postoperative Care",
+            "Anesthesia Types",
+            "Surgical Complications",
+            "Wound Care Post Surgery",
+            "Pain Management Post Op",
+            "Fluid Management Surgery",
+            "Positioning in Surgery",
+            "Surgical Instruments",
+            "Sterile Technique",
+            "Recovery Room Care",
+            "Day Surgery",
+            "Surgical Site Infection"
+          ]
+        },
+        {
+          "name": "Critical Care Nursing",
+          "topics": [
+            "ICU Environment",
+            "Hemodynamic Monitoring",
+            "Ventilator Management",
+            "Sepsis and Septic Shock",
+            "Multi Organ Failure",
+            "Shock Types",
+            "Cardiac Monitoring",
+            "Arterial Line Care",
+            "Central Venous Catheter",
+            "Pulmonary Artery Catheter",
+            "Sedation and Analgesia ICU",
+            "Nutrition in ICU",
+            "Infection Control ICU",
+            "Family Care ICU",
+            "ICU Scoring Systems"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcet-fon",
+      "name": "Fundamentals of Nursing",
+      "icon": "💉",
+      "color": "#f97316",
+      "weightage": 15,
+      "chapters": [
+        {
+          "name": "Nursing Process",
+          "topics": [
+            "Assessment Phase",
+            "Nursing Diagnosis",
+            "Planning Phase",
+            "Implementation Phase",
+            "Evaluation Phase",
+            "Critical Thinking in Nursing",
+            "Clinical Judgment",
+            "Nursing Care Plans",
+            "NANDA Diagnoses",
+            "Outcome Identification"
+          ]
+        },
+        {
+          "name": "Vital Signs",
+          "topics": [
+            "Temperature Measurement",
+            "Pulse Assessment",
+            "Respiratory Rate",
+            "Blood Pressure Measurement",
+            "Oxygen Saturation",
+            "Pain Assessment",
+            "Vital Signs Normal Values",
+            "Abnormal Vital Signs",
+            "Factors Affecting Vital Signs",
+            "Documentation of Vital Signs"
+          ]
+        },
+        {
+          "name": "Infection Control",
+          "topics": [
+            "Chain of Infection",
+            "Standard Precautions",
+            "Transmission Based Precautions",
+            "Hand Hygiene",
+            "PPE Usage",
+            "Sterilization Methods",
+            "Disinfection Methods",
+            "Aseptic Technique",
+            "Surgical Asepsis",
+            "Healthcare Associated Infections"
+          ]
+        },
+        {
+          "name": "Medication Administration",
+          "topics": [
+            "Rights of Medication Administration",
+            "Oral Medications",
+            "Parenteral Routes",
+            "Intravenous Medications",
+            "Subcutaneous Injections",
+            "Intramuscular Injections",
+            "Intradermal Injections",
+            "Topical Medications",
+            "Ophthalmic Medications",
+            "Medication Errors"
+          ]
+        },
+        {
+          "name": "Patient Safety",
+          "topics": [
+            "Fall Prevention",
+            "Restraint Use",
+            "Pressure Injury Prevention",
+            "Safe Patient Handling",
+            "Medication Safety",
+            "Surgical Safety Checklist",
+            "Patient Identification",
+            "Incident Reporting",
+            "Root Cause Analysis",
+            "Safety Culture"
+          ]
+        },
+        {
+          "name": "Basic Nursing Skills",
+          "topics": [
+            "Bed Making",
+            "Patient Positioning",
+            "Oral Hygiene",
+            "Bathing and Hygiene",
+            "Perineal Care",
+            "Back Care",
+            "Range of Motion Exercises",
+            "Ambulation Assistance",
+            "Transfer Techniques",
+            "Feeding Assistance"
+          ]
+        },
+        {
+          "name": "Documentation",
+          "topics": [
+            "Medical Records",
+            "Nursing Notes",
+            "SOAP Format",
+            "Charting by Exception",
+            "Electronic Health Records",
+            "Legal Aspects of Documentation",
+            "Incident Reports",
+            "Discharge Planning",
+            "Referral Documentation",
+            "Confidentiality HIPAA"
+          ]
+        },
+        {
+          "name": "Communication in Nursing",
+          "topics": [
+            "Therapeutic Communication",
+            "Verbal Communication",
+            "Non Verbal Communication",
+            "Active Listening",
+            "Barriers to Communication",
+            "SBAR Technique",
+            "Patient Education",
+            "Health Literacy",
+            "Cultural Communication",
+            "Communication with Elderly"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcet-obg",
+      "name": "OBG Nursing",
+      "icon": "👶",
+      "color": "#ec4899",
+      "weightage": 15,
+      "chapters": [
+        {
+          "name": "Antenatal Care",
+          "topics": [
+            "Physiological Changes in Pregnancy",
+            "Antenatal Visits Schedule",
+            "Antenatal Assessment",
+            "Minor Disorders of Pregnancy",
+            "Nutrition in Pregnancy",
+            "Antenatal Exercises",
+            "High Risk Pregnancy",
+            "Antepartum Hemorrhage",
+            "Placenta Previa",
+            "Abruptio Placentae"
+          ]
+        },
+        {
+          "name": "Normal Labour",
+          "topics": [
+            "Stages of Labour",
+            "Mechanism of Labour",
+            "Fetal Monitoring",
+            "Partograph",
+            "Pain Management in Labour",
+            "Episiotomy",
+            "Normal Delivery",
+            "Third Stage Management",
+            "Active Management of Third Stage",
+            "Immediate Newborn Care"
+          ]
+        },
+        {
+          "name": "Complications of Pregnancy",
+          "topics": [
+            "Hyperemesis Gravidarum",
+            "Gestational Diabetes",
+            "Preeclampsia",
+            "Eclampsia",
+            "HELLP Syndrome",
+            "Ectopic Pregnancy",
+            "Hydatidiform Mole",
+            "Polyhydramnios",
+            "Oligohydramnios",
+            "Intrauterine Growth Restriction"
+          ]
+        },
+        {
+          "name": "Postnatal Care",
+          "topics": [
+            "Physiological Changes Postpartum",
+            "Lochia Assessment",
+            "Uterine Involution",
+            "Breastfeeding Initiation",
+            "Breastfeeding Problems",
+            "Postpartum Hemorrhage",
+            "Postpartum Infections",
+            "Postpartum Depression",
+            "Newborn Assessment",
+            "Neonatal Care"
+          ]
+        },
+        {
+          "name": "Gynecological Conditions",
+          "topics": [
+            "Menstrual Disorders",
+            "Dysmenorrhea",
+            "Amenorrhea",
+            "Menorrhagia",
+            "PCOS",
+            "Endometriosis",
+            "Uterine Fibroids",
+            "Cervical Cancer",
+            "Ovarian Cancer",
+            "Uterine Cancer"
+          ]
+        },
+        {
+          "name": "Family Planning",
+          "topics": [
+            "Contraceptive Methods",
+            "Oral Contraceptive Pills",
+            "Intrauterine Devices",
+            "Barrier Methods",
+            "Emergency Contraception",
+            "Sterilization Methods",
+            "Natural Family Planning",
+            "Infertility",
+            "Assisted Reproductive Technology",
+            "Counseling in Family Planning"
+          ]
+        },
+        {
+          "name": "Newborn Care",
+          "topics": [
+            "Newborn Assessment APGAR",
+            "Newborn Reflexes",
+            "Neonatal Jaundice",
+            "Neonatal Infections",
+            "Preterm Newborn Care",
+            "Low Birth Weight",
+            "Neonatal Resuscitation",
+            "Breastfeeding Techniques",
+            "Immunization Schedule",
+            "Newborn Screening"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcet-pediatrics",
+      "name": "Pediatric Nursing",
+      "icon": "🧒",
+      "color": "#8b5cf6",
+      "weightage": 10,
+      "chapters": [
+        {
+          "name": "Growth and Development",
+          "topics": [
+            "Principles of Growth",
+            "Developmental Milestones",
+            "Infant Development 0-1 year",
+            "Toddler Development 1-3 years",
+            "Preschool Development 3-6 years",
+            "School Age Development 6-12 years",
+            "Adolescent Development",
+            "Developmental Assessment Tools",
+            "Play in Child Development",
+            "Immunization Schedule"
+          ]
+        },
+        {
+          "name": "Pediatric Diseases",
+          "topics": [
+            "Acute Respiratory Infections",
+            "Pneumonia in Children",
+            "Bronchiolitis",
+            "Croup",
+            "Diarrhea in Children",
+            "Dehydration Assessment",
+            "Malnutrition Kwashiorkor Marasmus",
+            "Measles",
+            "Chickenpox",
+            "Dengue in Children"
+          ]
+        },
+        {
+          "name": "Neonatal Disorders",
+          "topics": [
+            "Respiratory Distress Syndrome",
+            "Neonatal Sepsis",
+            "Neonatal Jaundice Hyperbilirubinemia",
+            "Hypoglycemia in Newborn",
+            "Birth Asphyxia",
+            "Meconium Aspiration",
+            "Congenital Heart Defects",
+            "Neural Tube Defects",
+            "Cleft Lip and Palate",
+            "Down Syndrome"
+          ]
+        },
+        {
+          "name": "Pediatric Nursing Procedures",
+          "topics": [
+            "Pediatric Vital Signs",
+            "Pediatric Drug Dosage Calculation",
+            "IV Access in Children",
+            "Nasogastric Tube Pediatric",
+            "Oxygen Therapy Children",
+            "Fever Management",
+            "Seizure Management Children",
+            "Fluid Therapy Children",
+            "Nutritional Assessment",
+            "Child Abuse Recognition"
+          ]
+        },
+        {
+          "name": "Pediatric Emergencies",
+          "topics": [
+            "Pediatric Basic Life Support",
+            "Choking in Children",
+            "Febrile Seizures",
+            "Anaphylaxis in Children",
+            "Diabetic Emergencies Children",
+            "Poisoning in Children",
+            "Burns in Children",
+            "Head Injury Children",
+            "Drowning",
+            "Pediatric Shock"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcet-chn",
+      "name": "Community Health Nursing",
+      "icon": "🏘️",
+      "color": "#10b981",
+      "weightage": 10,
+      "chapters": [
+        {
+          "name": "Epidemiology",
+          "topics": [
+            "Epidemiological Triad",
+            "Disease Transmission",
+            "Incidence and Prevalence",
+            "Epidemic Pandemic Endemic",
+            "Herd Immunity",
+            "Screening Tests Sensitivity Specificity",
+            "Epidemiological Studies",
+            "Surveillance Systems",
+            "Outbreak Investigation",
+            "Notifiable Diseases"
+          ]
+        },
+        {
+          "name": "National Health Programs",
+          "topics": [
+            "National Health Mission",
+            "Reproductive Child Health Program",
+            "Pulse Polio Program",
+            "Revised National TB Control Program",
+            "National AIDS Control Program",
+            "National Vector Borne Disease Control",
+            "National Mental Health Program",
+            "Integrated Child Development Services",
+            "Janani Suraksha Yojana",
+            "Ayushman Bharat"
+          ]
+        },
+        {
+          "name": "Primary Health Care",
+          "topics": [
+            "Alma Ata Declaration",
+            "Primary Health Centre",
+            "Sub Centre Functions",
+            "Community Health Centre",
+            "Health and Wellness Centres",
+            "ASHA Workers Role",
+            "ANM Functions",
+            "Health Team Approach",
+            "Referral System",
+            "Community Diagnosis"
+          ]
+        },
+        {
+          "name": "Environmental Health",
+          "topics": [
+            "Safe Water Supply",
+            "Water Purification Methods",
+            "Sanitation and Hygiene",
+            "Solid Waste Management",
+            "Air Pollution Health Effects",
+            "Occupational Health Hazards",
+            "Vector Control Methods",
+            "Food Safety",
+            "Housing and Health",
+            "Climate Change and Health"
+          ]
+        },
+        {
+          "name": "School Health",
+          "topics": [
+            "School Health Services",
+            "Health Appraisal of School Children",
+            "School Environment",
+            "Mid Day Meal Program",
+            "Health Education in Schools",
+            "Adolescent Health Programs",
+            "School Nurse Role",
+            "Immunization in Schools",
+            "Mental Health in Schools",
+            "Disability in Schools"
+          ]
+        },
+        {
+          "name": "Maternal and Child Health",
+          "topics": [
+            "MCH Services",
+            "Antenatal Care in Community",
+            "Safe Motherhood",
+            "Postnatal Care Community",
+            "Child Survival Strategies",
+            "IMNCI Approach",
+            "Nutrition Programs",
+            "Growth Monitoring",
+            "Vitamin A Supplementation",
+            "Iron Folic Acid Supplementation"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcet-psychiatry",
+      "name": "Psychiatric Nursing",
+      "icon": "🧠",
+      "color": "#6366f1",
+      "weightage": 10,
+      "chapters": [
+        {
+          "name": "Mental Health Concepts",
+          "topics": [
+            "Mental Health Definition",
+            "Mental Illness Stigma",
+            "Psychodynamic Theory Freud",
+            "Behavioral Theory",
+            "Cognitive Theory",
+            "Humanistic Theory",
+            "Maslow Hierarchy of Needs",
+            "Defense Mechanisms",
+            "Mental Status Examination",
+            "Psychiatric Assessment"
+          ]
+        },
+        {
+          "name": "Psychotic Disorders",
+          "topics": [
+            "Schizophrenia Types",
+            "Positive Symptoms Schizophrenia",
+            "Negative Symptoms Schizophrenia",
+            "Delusional Disorder",
+            "Brief Psychotic Disorder",
+            "Schizoaffective Disorder",
+            "Antipsychotic Medications",
+            "Extrapyramidal Side Effects",
+            "Clozapine Monitoring",
+            "Rehabilitation in Schizophrenia"
+          ]
+        },
+        {
+          "name": "Mood Disorders",
+          "topics": [
+            "Major Depressive Disorder",
+            "Bipolar Disorder Type 1",
+            "Bipolar Disorder Type 2",
+            "Dysthymia",
+            "Cyclothymia",
+            "Antidepressant Medications",
+            "Mood Stabilizers Lithium",
+            "ECT Electroconvulsive Therapy",
+            "Suicide Risk Assessment",
+            "Suicide Prevention"
+          ]
+        },
+        {
+          "name": "Anxiety Disorders",
+          "topics": [
+            "Generalized Anxiety Disorder",
+            "Panic Disorder",
+            "Phobias",
+            "OCD Obsessive Compulsive",
+            "PTSD Post Traumatic Stress",
+            "Social Anxiety Disorder",
+            "Anxiolytic Medications",
+            "Cognitive Behavioral Therapy",
+            "Relaxation Techniques",
+            "Exposure Therapy"
+          ]
+        },
+        {
+          "name": "Substance Use Disorders",
+          "topics": [
+            "Alcohol Use Disorder",
+            "Alcohol Withdrawal",
+            "Opioid Use Disorder",
+            "Opioid Withdrawal",
+            "Cannabis Use Disorder",
+            "Stimulant Use Disorder",
+            "Detoxification Process",
+            "Rehabilitation Programs",
+            "Motivational Interviewing",
+            "Relapse Prevention"
+          ]
+        },
+        {
+          "name": "Therapeutic Modalities",
+          "topics": [
+            "Individual Psychotherapy",
+            "Group Therapy",
+            "Family Therapy",
+            "Milieu Therapy",
+            "Behavior Modification",
+            "Play Therapy",
+            "Art Therapy",
+            "Occupational Therapy Psychiatry",
+            "Therapeutic Nurse Patient Relationship",
+            "De escalation Techniques"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcet-pharmacology",
+      "name": "Pharmacology",
+      "icon": "💊",
+      "color": "#f59e0b",
+      "weightage": 8,
+      "chapters": [
+        {
+          "name": "Pharmacokinetics",
+          "topics": [
+            "Drug Absorption",
+            "Drug Distribution",
+            "Drug Metabolism",
+            "Drug Excretion",
+            "Half Life of Drugs",
+            "Bioavailability",
+            "First Pass Effect",
+            "Volume of Distribution",
+            "Clearance",
+            "Drug Plasma Levels"
+          ]
+        },
+        {
+          "name": "Pharmacodynamics",
+          "topics": [
+            "Drug Receptor Interaction",
+            "Agonists and Antagonists",
+            "Dose Response Relationship",
+            "Therapeutic Index",
+            "Drug Tolerance",
+            "Drug Dependence",
+            "Drug Synergism",
+            "Drug Antagonism",
+            "Adverse Drug Reactions",
+            "Drug Toxicity"
+          ]
+        },
+        {
+          "name": "Cardiovascular Drugs",
+          "topics": [
+            "Antihypertensives ACE Inhibitors",
+            "Beta Blockers",
+            "Calcium Channel Blockers",
+            "Diuretics",
+            "Digoxin",
+            "Antiarrhythmics",
+            "Anticoagulants Heparin Warfarin",
+            "Thrombolytics",
+            "Statins",
+            "Antiplatelet Drugs"
+          ]
+        },
+        {
+          "name": "Antimicrobials",
+          "topics": [
+            "Penicillins",
+            "Cephalosporins",
+            "Aminoglycosides",
+            "Macrolides",
+            "Fluoroquinolones",
+            "Tetracyclines",
+            "Antifungals",
+            "Antivirals",
+            "Antitubercular Drugs",
+            "Antiparasitic Drugs"
+          ]
+        },
+        {
+          "name": "CNS Drugs",
+          "topics": [
+            "Analgesics Opioids",
+            "NSAIDs",
+            "Antiepileptics",
+            "Antipsychotics",
+            "Antidepressants",
+            "Anxiolytics Benzodiazepines",
+            "Sedatives Hypnotics",
+            "Anesthetics",
+            "Antiparkinson Drugs",
+            "Drugs for Alzheimer"
+          ]
+        },
+        {
+          "name": "Endocrine Drugs",
+          "topics": [
+            "Insulin Types",
+            "Oral Hypoglycemics Metformin",
+            "Thyroid Hormones",
+            "Antithyroid Drugs",
+            "Corticosteroids",
+            "Oral Contraceptives",
+            "Oxytocin",
+            "Tocolytics",
+            "Growth Hormone",
+            "Calcium Regulators"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcet-anatomy",
+      "name": "Anatomy and Physiology",
+      "icon": "🦴",
+      "color": "#84cc16",
+      "weightage": 8,
+      "chapters": [
+        {
+          "name": "Cell Biology",
+          "topics": [
+            "Cell Structure",
+            "Cell Organelles",
+            "Cell Membrane",
+            "Cell Division Mitosis",
+            "Cell Division Meiosis",
+            "DNA and RNA",
+            "Protein Synthesis",
+            "Cell Signaling",
+            "Apoptosis",
+            "Stem Cells"
+          ]
+        },
+        {
+          "name": "Cardiovascular Physiology",
+          "topics": [
+            "Heart Anatomy",
+            "Cardiac Cycle",
+            "Cardiac Output",
+            "Blood Pressure Regulation",
+            "Coronary Circulation",
+            "Cardiac Conduction System",
+            "ECG Waves",
+            "Starling Law",
+            "Baroreceptors",
+            "Blood Vessels Structure"
+          ]
+        },
+        {
+          "name": "Respiratory Physiology",
+          "topics": [
+            "Lung Anatomy",
+            "Mechanics of Breathing",
+            "Lung Volumes and Capacities",
+            "Gas Exchange",
+            "Oxygen Transport",
+            "Carbon Dioxide Transport",
+            "Respiratory Control",
+            "Ventilation Perfusion Ratio",
+            "Pulmonary Circulation",
+            "Surfactant"
+          ]
+        },
+        {
+          "name": "Renal Physiology",
+          "topics": [
+            "Nephron Structure",
+            "Glomerular Filtration",
+            "Tubular Reabsorption",
+            "Tubular Secretion",
+            "Urine Concentration",
+            "Renin Angiotensin System",
+            "ADH and Aldosterone",
+            "Acid Base Regulation Kidneys",
+            "Fluid Compartments",
+            "Electrolyte Balance"
+          ]
+        },
+        {
+          "name": "Nervous System",
+          "topics": [
+            "Neuron Structure",
+            "Action Potential",
+            "Synaptic Transmission",
+            "Autonomic Nervous System",
+            "Spinal Cord Anatomy",
+            "Brain Anatomy",
+            "Cranial Nerves",
+            "Reflexes",
+            "Blood Brain Barrier",
+            "Cerebrospinal Fluid"
+          ]
+        },
+        {
+          "name": "Endocrine Physiology",
+          "topics": [
+            "Hypothalamus Pituitary Axis",
+            "Thyroid Hormone Synthesis",
+            "Adrenal Cortex Hormones",
+            "Adrenal Medulla",
+            "Pancreatic Hormones",
+            "Parathyroid Hormone",
+            "Calcium Regulation",
+            "Reproductive Hormones",
+            "Feedback Mechanisms",
+            "Hormone Receptors"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcet-microbiology",
+      "name": "Microbiology",
+      "icon": "🦠",
+      "color": "#06b6d4",
+      "weightage": 5,
+      "chapters": [
+        {
+          "name": "Bacteriology",
+          "topics": [
+            "Bacterial Cell Structure",
+            "Gram Positive Bacteria",
+            "Gram Negative Bacteria",
+            "Bacterial Growth",
+            "Bacterial Spores",
+            "Staphylococcus",
+            "Streptococcus",
+            "E coli",
+            "Mycobacterium Tuberculosis",
+            "Clostridium"
+          ]
+        },
+        {
+          "name": "Virology",
+          "topics": [
+            "Virus Structure",
+            "DNA Viruses",
+            "RNA Viruses",
+            "HIV AIDS",
+            "Hepatitis Viruses",
+            "Influenza Virus",
+            "Herpes Viruses",
+            "Dengue Virus",
+            "COVID 19 SARS CoV 2",
+            "Viral Replication"
+          ]
+        },
+        {
+          "name": "Immunology",
+          "topics": [
+            "Innate Immunity",
+            "Adaptive Immunity",
+            "Antibodies Immunoglobulins",
+            "T Lymphocytes",
+            "B Lymphocytes",
+            "Complement System",
+            "Vaccines Types",
+            "Hypersensitivity Reactions",
+            "Autoimmune Diseases",
+            "Immunodeficiency"
+          ]
+        },
+        {
+          "name": "Infection Control Microbiology",
+          "topics": [
+            "Sterilization Methods",
+            "Disinfection Levels",
+            "Autoclave",
+            "Ethylene Oxide",
+            "Antiseptics",
+            "Antibiotic Resistance",
+            "MRSA",
+            "Hospital Acquired Infections",
+            "Biofilm",
+            "Prions"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcet-nutrition",
+      "name": "Nutrition",
+      "icon": "🥗",
+      "color": "#22c55e",
+      "weightage": 4,
+      "chapters": [
+        {
+          "name": "Basic Nutrition",
+          "topics": [
+            "Macronutrients Carbohydrates",
+            "Macronutrients Proteins",
+            "Macronutrients Fats",
+            "Micronutrients Vitamins",
+            "Micronutrients Minerals",
+            "Water and Hydration",
+            "Dietary Reference Intakes",
+            "Balanced Diet",
+            "Nutritional Assessment",
+            "BMI and Body Composition"
+          ]
+        },
+        {
+          "name": "Therapeutic Nutrition",
+          "topics": [
+            "Diabetic Diet",
+            "Renal Diet",
+            "Cardiac Diet",
+            "Hepatic Diet",
+            "High Protein Diet",
+            "Low Sodium Diet",
+            "Enteral Nutrition",
+            "Parenteral Nutrition TPN",
+            "Nutritional Support in ICU",
+            "Malnutrition Management"
+          ]
+        },
+        {
+          "name": "Vitamins and Minerals",
+          "topics": [
+            "Vitamin A Deficiency",
+            "Vitamin B Complex",
+            "Vitamin C Scurvy",
+            "Vitamin D Rickets",
+            "Vitamin K Coagulation",
+            "Iron Deficiency",
+            "Calcium and Bone Health",
+            "Iodine Deficiency",
+            "Zinc Deficiency",
+            "Folate and B12"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcet-management",
+      "name": "Nursing Management",
+      "icon": "📋",
+      "color": "#3b82f6",
+      "weightage": 5,
+      "chapters": [
+        {
+          "name": "Nursing Administration",
+          "topics": [
+            "Organizational Structure",
+            "Nursing Leadership Styles",
+            "Management Functions",
+            "Staffing and Scheduling",
+            "Delegation in Nursing",
+            "Supervision",
+            "Performance Appraisal",
+            "Quality Assurance",
+            "Accreditation NABH",
+            "Hospital Policies"
+          ]
+        },
+        {
+          "name": "Legal and Ethical Issues",
+          "topics": [
+            "Nursing Act India",
+            "Indian Nursing Council",
+            "State Nursing Council",
+            "Informed Consent",
+            "Patient Rights",
+            "Negligence and Malpractice",
+            "Confidentiality",
+            "Euthanasia Ethics",
+            "Organ Donation Ethics",
+            "Research Ethics"
+          ]
+        },
+        {
+          "name": "Disaster Nursing",
+          "topics": [
+            "Disaster Types",
+            "Triage Systems",
+            "Mass Casualty Incidents",
+            "Disaster Preparedness",
+            "Incident Command System",
+            "Evacuation Procedures",
+            "Decontamination",
+            "Psychological First Aid",
+            "Community Disaster Response",
+            "International Disaster Relief"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcet-research",
+      "name": "Nursing Research",
+      "icon": "🔍",
+      "color": "#a78bfa",
+      "weightage": 3,
+      "chapters": [
+        {
+          "name": "Research Basics",
+          "topics": [
+            "Research Process Steps",
+            "Quantitative Research",
+            "Qualitative Research",
+            "Mixed Methods Research",
+            "Research Problem Identification",
+            "Literature Review",
+            "Hypothesis Formulation",
+            "Research Variables",
+            "Conceptual Framework",
+            "Theoretical Framework"
+          ]
+        },
+        {
+          "name": "Research Methods",
+          "topics": [
+            "Experimental Design",
+            "Quasi Experimental Design",
+            "Descriptive Research",
+            "Correlational Research",
+            "Case Study",
+            "Ethnography",
+            "Grounded Theory",
+            "Phenomenology",
+            "Sampling Methods",
+            "Sample Size Determination"
+          ]
+        },
+        {
+          "name": "Statistics in Research",
+          "topics": [
+            "Descriptive Statistics",
+            "Inferential Statistics",
+            "Normal Distribution",
+            "t Test",
+            "Chi Square Test",
+            "ANOVA",
+            "Correlation Coefficient",
+            "Regression Analysis",
+            "p Value Significance",
+            "Confidence Intervals"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcet-gk",
+      "name": "General Knowledge",
+      "icon": "🌐",
+      "color": "#10b981",
+      "weightage": 3,
+      "chapters": [
+        {
+          "name": "Health Organizations",
+          "topics": [
+            "World Health Organization WHO",
+            "UNICEF",
+            "UNFPA",
+            "Red Cross Red Crescent",
+            "Indian Council of Medical Research",
+            "Ministry of Health India",
+            "National Health Policy",
+            "Sustainable Development Goals Health",
+            "Global Health Initiatives",
+            "Health Indicators"
+          ]
+        },
+        {
+          "name": "Current Affairs Health",
+          "topics": [
+            "Recent Health Policies India",
+            "New Medical Schemes",
+            "AIIMS Expansion",
+            "National Medical Commission",
+            "Nursing Reforms India",
+            "COVID 19 Lessons",
+            "Antimicrobial Resistance Global",
+            "Mental Health Awareness",
+            "Universal Health Coverage",
+            "Digital Health Initiatives"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcet-aptitude",
+      "name": "Aptitude and Reasoning",
+      "icon": "🔢",
+      "color": "#f59e0b",
+      "weightage": 2,
+      "chapters": [
+        {
+          "name": "Numerical Aptitude",
+          "topics": [
+            "Number System",
+            "Percentage",
+            "Ratio and Proportion",
+            "Simple Interest",
+            "Compound Interest",
+            "Time and Work",
+            "Time Speed Distance",
+            "Average",
+            "Data Interpretation",
+            "Simplification"
+          ]
+        },
+        {
+          "name": "Logical Reasoning",
+          "topics": [
+            "Series Completion",
+            "Analogy",
+            "Classification",
+            "Coding Decoding",
+            "Blood Relations",
+            "Direction Sense",
+            "Syllogism",
+            "Statement and Conclusion",
+            "Puzzles",
+            "Seating Arrangement"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "norcet-english",
+      "name": "English Language",
+      "icon": "📝",
+      "color": "#06b6d4",
+      "weightage": 2,
+      "chapters": [
+        {
+          "name": "Grammar",
+          "topics": [
+            "Tenses",
+            "Articles",
+            "Prepositions",
+            "Conjunctions",
+            "Subject Verb Agreement",
+            "Active Passive Voice",
+            "Direct Indirect Speech",
+            "Modals",
+            "Conditionals",
+            "Sentence Correction"
+          ]
+        },
+        {
+          "name": "Vocabulary and Comprehension",
+          "topics": [
+            "Synonyms Antonyms",
+            "One Word Substitution",
+            "Idioms and Phrases",
+            "Reading Comprehension",
+            "Fill in the Blanks",
+            "Spelling Errors",
+            "Medical Terminology English",
+            "Word Formation",
+            "Sentence Rearrangement",
+            "Cloze Test"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+name: Generate EduTest Content
+
+on:
+  schedule:
+    # Run 3 times daily (IST: 7:30 AM, 1:30 PM, 7:30 PM)
+    - cron: "0 2 * * *"   # 2:00 AM UTC = 7:30 AM IST
+    - cron: "0 8 * * *"   # 8:00 AM UTC = 1:30 PM IST
+    - cron: "0 14 * * *"  # 2:00 PM UTC = 7:30 PM IST
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Generation mode (leave empty for random)"
+        required: false
+        default: ""
+        type: choice
+        options:
+          - ""
+          - full_length_test
+          - subject_tests
+          - multi_subject
+          - notes
+          - formulas
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run content generator
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GENERATE_MODE: ${{ github.event.inputs.mode }}
+        run: |
+          cd scripts
+          python generate.py
+
+      - name: Commit and push generated content
+        run: |
+          git config --global user.name "EduTest Bot"
+          git config --global user.email "bot@edutest.app"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
+            git commit -m "auto: generate content [$TIMESTAMP]"
+            git push
+          fi
