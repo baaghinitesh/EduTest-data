@@ -1,6 +1,11 @@
 """
 content_builder.py — Builds test/note/formula JSON payloads using Gemini.
-All output is validated against the exact schema the EduTest website expects.
+
+Model usage:
+  gemini-2.5-flash → full-length tests (100Q), long notes (1000+ words)
+  gemini-2.5-pro   → formula sheets, short/topic tests (25-30Q), subject tests (40Q)
+
+All output validated against exact schema the EduTest website expects.
 """
 import os, json, uuid, re
 from datetime import datetime, timezone
@@ -44,32 +49,49 @@ def save_file(path, data):
 def cdn_url(path):
     return f"{CDN_BASE}/{path}"
 
+def make_tags(class_slug, subj_slug, chapter, topic):
+    """Generate clean, relevant tags."""
+    tags = set()
+    tags.add(class_slug)
+    tags.add(subj_slug)
+    # Add chapter words (skip short words)
+    for word in chapter.lower().split():
+        if len(word) > 3:
+            tags.add(word)
+    # Add topic words
+    for word in topic.lower().split():
+        if len(word) > 3:
+            tags.add(word.replace("'", ""))
+    return list(tags)[:8]
+
 # ── Question validator ────────────────────────────────────────────────────────
 
 def validate_question(q, idx, marks_per_q, negative_mark, negative_marking, subject_slug):
-    """Ensure question matches exact schema the website expects."""
-    qid = q.get("id") or f"q-{int(datetime.now().timestamp()*1000)}-{uuid.uuid4().hex[:5]}"
+    """Ensure question matches exact schema the EduTest website expects."""
+    qid = f"q-{int(datetime.now().timestamp()*1000)}-{uuid.uuid4().hex[:5]}"
     options = q.get("options", [])
-    # Ensure exactly 4 options with correct schema
+
+    # Build exactly 4 validated options
     validated_opts = []
     for i, opt in enumerate(options[:4]):
         letter = opt.get("letter") or chr(65 + i)
         validated_opts.append({
             "letter": letter,
-            "text": str(opt.get("text", f"Option {letter}")),
+            "text": str(opt.get("text", f"Option {letter}")).strip(),
             "isCorrect": bool(opt.get("isCorrect", False)),
             "index": i,
             "imageUrl": "",
-            "explanation": str(opt.get("explanation", ""))
+            "explanation": str(opt.get("explanation", "")).strip()
         })
-    # Pad to 4 if fewer
+    # Pad to 4 if fewer options returned
     while len(validated_opts) < 4:
         i = len(validated_opts)
         validated_opts.append({
             "letter": chr(65 + i), "text": f"Option {chr(65+i)}",
             "isCorrect": False, "index": i, "imageUrl": "", "explanation": ""
         })
-    # Ensure exactly one correct answer for MCQ
+
+    # Enforce exactly ONE correct answer for MCQ
     correct_count = sum(1 for o in validated_opts if o["isCorrect"])
     if correct_count == 0:
         validated_opts[0]["isCorrect"] = True
@@ -82,16 +104,20 @@ def validate_question(q, idx, marks_per_q, negative_mark, negative_marking, subj
     if difficulty not in ("easy", "medium", "hard"):
         difficulty = "medium"
 
+    question_text = str(q.get("question", "")).strip()
+    if not question_text:
+        question_text = f"Question {idx + 1}"
+
     return {
         "id": qid,
         "order": idx + 1,
-        "question": str(q.get("question", "")).strip(),
+        "question": question_text,
         "type": "mcq",
         "options": validated_opts,
         "answer": "",
         "alternateAnswers": [],
-        "explanation": str(q.get("explanation", "")),
-        "hint": str(q.get("hint", "")),
+        "explanation": str(q.get("explanation", "")).strip(),
+        "hint": str(q.get("hint", "")).strip(),
         "marks": marks_per_q,
         "negativeMark": negative_mark,
         "negativeMarking": negative_marking,
@@ -101,10 +127,53 @@ def validate_question(q, idx, marks_per_q, negative_mark, negative_marking, subj
         "hasError": False
     }
 
-# ── Full-length test builder ──────────────────────────────────────────────────
+# ── Shared question prompt template ──────────────────────────────────────────
+
+def _question_prompt(exam_name, subj_name, chapter, topic, q_count, context=""):
+    return f"""You are a senior {exam_name} exam question setter with 10+ years experience.
+Generate exactly {q_count} high-quality MCQ questions.
+
+Exam: {exam_name}
+Subject: {subj_name}
+Chapter: {chapter}
+Topic: {topic}
+{context}
+
+STRICT RULES:
+1. Every question must be directly about: {topic}
+2. Exactly 4 options per question (A, B, C, D)
+3. Exactly ONE option must have "isCorrect": true
+4. Every option must have a clear explanation (1-2 sentences) — why correct or why wrong
+5. Difficulty mix: first 30% easy, middle 50% medium, last 20% hard
+6. Questions must be clinically/factually accurate and exam-standard
+7. No repeated or similar questions
+8. No question numbering in the question text
+9. Return ONLY a valid JSON array — no markdown, no extra text, no explanation outside JSON
+
+Required JSON format for each question:
+{{
+  "question": "Complete question text ending with ?",
+  "difficulty": "easy",
+  "explanation": "The correct answer is X because...",
+  "hint": "Think about...",
+  "options": [
+    {{"letter": "A", "text": "Option text", "isCorrect": false, "explanation": "This is wrong because..."}},
+    {{"letter": "B", "text": "Option text", "isCorrect": true,  "explanation": "This is correct because..."}},
+    {{"letter": "C", "text": "Option text", "isCorrect": false, "explanation": "This is wrong because..."}},
+    {{"letter": "D", "text": "Option text", "isCorrect": false, "explanation": "This is wrong because..."}}
+  ]
+}}
+
+Generate exactly {q_count} questions as a JSON array:"""
+
+# ── Full-length test (FLASH model) ────────────────────────────────────────────
 
 def build_full_length_test(class_slug, exam_config, subjects_distribution, board):
-    """Generate 1 full-length test covering all subjects proportionally."""
+    """
+    Generate 1 full-length test covering all subjects proportionally.
+    Uses gemini-2.5-flash (large context, fast for bulk generation).
+    """
+    import random
     total_q = exam_config.get("fullLengthQuestions", 100)
     total_marks = exam_config.get("fullLengthMarks", 100)
     duration = exam_config.get("fullLengthDuration", 90)
@@ -112,10 +181,13 @@ def build_full_length_test(class_slug, exam_config, subjects_distribution, board
     correct_mark = exam_config.get("correctMarkValue", 1)
     negative_mark = exam_config.get("negativeMarkValue", 0)
     marks_per_q = correct_mark
-
     exam_name = class_slug.upper().replace("-", " ")
+
     uid = make_id()
-    title = f"{exam_name} Full Length Mock Test — {datetime.now().strftime('%B %Y')}"
+    month_year = datetime.now().strftime("%B %Y")
+    title = f"{exam_name} Full Length Mock Test — {month_year}"
+
+    print(f"\n  [Flash] Building full-length test: {total_q}Q / {total_marks} marks / {duration} min")
 
     all_questions = []
     q_idx = 0
@@ -126,73 +198,49 @@ def build_full_length_test(class_slug, exam_config, subjects_distribution, board
         q_count = subj_info["questionCount"]
         chapters = subj_info.get("chapters", [])
 
-        # Pick random chapters/topics for variety
-        import random
+        # Pick diverse chapter-topic pairs
         chapter_topics = []
         for ch in chapters:
             for t in ch.get("topics", []):
                 chapter_topics.append((ch["name"], t))
         random.shuffle(chapter_topics)
-
-        # Build prompt for this subject's questions
-        topics_sample = chapter_topics[:min(10, len(chapter_topics))]
+        topics_sample = chapter_topics[:min(8, len(chapter_topics))]
         topics_str = "; ".join([f"{ch}: {t}" for ch, t in topics_sample])
 
-        prompt = f"""You are an expert {exam_name} exam question setter.
-Generate exactly {q_count} high-quality MCQ questions for {exam_name} exam, subject: {subj_name}.
-Topics to cover (mix them): {topics_str}
+        prompt = _question_prompt(
+            exam_name, subj_name,
+            "Full Syllabus", subj_name,
+            q_count,
+            context=f"Cover these topics proportionally: {topics_str}"
+        )
 
-STRICT RULES:
-1. Each question must have exactly 4 options (A, B, C, D)
-2. Exactly ONE option must be isCorrect: true
-3. Each option must have a brief explanation (1-2 sentences) explaining why it is correct or incorrect
-4. Questions must be exam-standard difficulty (mix: 30% easy, 50% medium, 20% hard)
-5. No repeated questions
-6. Return ONLY a valid JSON array, no markdown, no extra text
+        print(f"    Generating {q_count}Q for {subj_name} [Flash]...")
+        raw_qs = gemini_client.generate_flash(prompt, expect_json=True, max_tokens=8192)
+        if not isinstance(raw_qs, list):
+            raw_qs = [raw_qs] if isinstance(raw_qs, dict) else []
 
-JSON format for each question:
-{{
-  "question": "Question text here?",
-  "difficulty": "easy|medium|hard",
-  "explanation": "Overall explanation of the correct answer",
-  "hint": "A helpful hint",
-  "options": [
-    {{"letter": "A", "text": "Option A text", "isCorrect": false, "explanation": "Why A is wrong"}},
-    {{"letter": "B", "text": "Option B text", "isCorrect": true, "explanation": "Why B is correct"}},
-    {{"letter": "C", "text": "Option C text", "isCorrect": false, "explanation": "Why C is wrong"}},
-    {{"letter": "D", "text": "Option D text", "isCorrect": false, "explanation": "Why D is wrong"}}
-  ]
-}}
-
-Generate exactly {q_count} questions now as a JSON array:"""
-
-        print(f"  [Builder] Generating {q_count} questions for {subj_name}...")
-        raw_questions = gemini_client.generate(prompt, expect_json=True)
-        if not isinstance(raw_questions, list):
-            raw_questions = [raw_questions] if isinstance(raw_questions, dict) else []
-
-        for q in raw_questions[:q_count]:
+        for q in raw_qs[:q_count]:
             validated = validate_question(q, q_idx, marks_per_q, negative_mark, negative_marking, subj_slug)
             all_questions.append(validated)
             q_idx += 1
 
-    # Trim or pad to exact count
     all_questions = all_questions[:total_q]
 
     instructions = [
-        f"This test contains {total_q} questions.",
+        f"This test contains {len(all_questions)} questions covering all {exam_name} subjects.",
         f"Each correct answer carries {correct_mark} mark(s).",
     ]
     if negative_marking:
         instructions.append(f"Each wrong answer carries -{negative_mark} mark(s) penalty.")
     else:
-        instructions.append("There is no negative marking.")
+        instructions.append("There is NO negative marking.")
     instructions.append("Do not leave the exam window during the test.")
+    instructions.append(f"Total duration: {duration} minutes.")
 
     payload = {
         "id": uid,
         "title": title,
-        "description": f"Full length mock test for {exam_name} covering all subjects. {total_q} questions, {total_marks} marks, {duration} minutes.",
+        "description": f"Full length mock test for {exam_name} covering all subjects. {len(all_questions)} questions, {total_marks} marks, {duration} minutes.",
         "board": board,
         "classSlug": class_slug,
         "classNumber": 0,
@@ -223,34 +271,24 @@ Generate exactly {q_count} questions now as a JSON array:"""
     save_file(path, payload)
 
     index_entry = {
-        "id": uid,
-        "type": "test",
-        "title": title,
+        "id": uid, "type": "test", "title": title,
         "description": payload["description"],
-        "subject": "",
-        "board": board,
-        "classSlug": class_slug,
-        "classNumber": 0,
-        "chapter": "Full Syllabus",
-        "testType": "full-length",
-        "totalQuestions": len(all_questions),
-        "duration": duration,
-        "totalMarks": total_marks,
-        "author": "EduTest Admin",
-        "authorId": "admin",
-        "isAdmin": True,
-        "tags": payload["tags"],
-        "cdnUrl": cdn_url(path),
-        "path": path,
+        "subject": "", "board": board, "classSlug": class_slug, "classNumber": 0,
+        "chapter": "Full Syllabus", "testType": "full-length",
+        "totalQuestions": len(all_questions), "duration": duration, "totalMarks": total_marks,
+        "author": "EduTest Admin", "authorId": "admin", "isAdmin": True,
+        "tags": payload["tags"], "cdnUrl": cdn_url(path), "path": path,
         "publishedAt": payload["publishedAt"]
     }
-
     return uid, path, index_entry
 
-# ── Subject-wise test builder ─────────────────────────────────────────────────
+# ── Subject/topic-wise test (PRO model) ───────────────────────────────────────
 
-def build_subject_test(topic_info, exam_config, test_number=1):
-    """Generate 1 subject/chapter/topic-wise test."""
+def build_subject_test(topic_info, exam_config):
+    """
+    Generate 1 subject/chapter/topic-wise test (25-30 questions).
+    Uses gemini-2.5-pro for precision and accuracy.
+    """
     class_slug = topic_info["classSlug"]
     board = topic_info["board"]
     subj_slug = topic_info["subjectSlug"]
@@ -258,93 +296,55 @@ def build_subject_test(topic_info, exam_config, test_number=1):
     chapter = topic_info["chapter"]
     topic = topic_info["topic"]
 
-    q_count = exam_config.get("subjectWiseQuestions", 40)
+    # Short tests: 25-30 questions (Pro handles this well)
+    q_count = 25
     marks_per_q = exam_config.get("correctMarkValue", 1)
     total_marks = q_count * marks_per_q
-    duration = exam_config.get("subjectWiseDuration", 60)
+    duration = 30
     negative_marking = exam_config.get("negativeMarking", False)
     negative_mark = exam_config.get("negativeMarkValue", 0)
     exam_name = class_slug.upper().replace("-", " ")
 
     uid = make_id()
-    title = f"{exam_name} — {subj_name} | {chapter} | {topic}"
+    title = f"{exam_name} — {subj_name} | {topic}"
 
-    prompt = f"""You are an expert {exam_name} exam question setter.
-Generate exactly {q_count} high-quality MCQ questions for {exam_name} exam.
-Subject: {subj_name}
-Chapter: {chapter}
-Topic: {topic}
-
-STRICT RULES:
-1. ALL questions must be specifically about: {topic} (within {chapter})
-2. Each question must have exactly 4 options (A, B, C, D)
-3. Exactly ONE option must be isCorrect: true
-4. Each option must have a brief explanation (1-2 sentences)
-5. Questions must progress from easy to hard (first 30% easy, middle 50% medium, last 20% hard)
-6. Questions must be clinically accurate and exam-standard
-7. No repeated questions
-8. Return ONLY a valid JSON array, no markdown, no extra text
-
-JSON format:
-{{
-  "question": "Question text?",
-  "difficulty": "easy|medium|hard",
-  "explanation": "Why the correct answer is correct",
-  "hint": "A helpful hint",
-  "options": [
-    {{"letter": "A", "text": "...", "isCorrect": false, "explanation": "Why wrong"}},
-    {{"letter": "B", "text": "...", "isCorrect": true, "explanation": "Why correct"}},
-    {{"letter": "C", "text": "...", "isCorrect": false, "explanation": "Why wrong"}},
-    {{"letter": "D", "text": "...", "isCorrect": false, "explanation": "Why wrong"}}
-  ]
-}}
-
-Generate exactly {q_count} questions now as a JSON array:"""
-
-    print(f"  [Builder] Generating subject test: {subj_name} / {chapter} / {topic}")
-    raw_questions = gemini_client.generate(prompt, expect_json=True)
-    if not isinstance(raw_questions, list):
-        raw_questions = [raw_questions] if isinstance(raw_questions, dict) else []
+    print(f"    Generating {q_count}Q topic test: {topic} [Pro]...")
+    prompt = _question_prompt(exam_name, subj_name, chapter, topic, q_count)
+    raw_qs = gemini_client.generate_pro(prompt, expect_json=True, max_tokens=4096)
+    if not isinstance(raw_qs, list):
+        raw_qs = [raw_qs] if isinstance(raw_qs, dict) else []
 
     questions = []
-    for i, q in enumerate(raw_questions[:q_count]):
+    for i, q in enumerate(raw_qs[:q_count]):
         validated = validate_question(q, i, marks_per_q, negative_mark, negative_marking, subj_slug)
         questions.append(validated)
 
     instructions = [
-        f"This test contains {len(questions)} questions on {topic}.",
-        f"Each correct answer carries {marks_per_q} mark(s).",
+        f"Topic-wise test on: {topic}",
+        f"{len(questions)} questions, {duration} minutes.",
+        f"Each correct answer: {marks_per_q} mark(s).",
     ]
     if negative_marking:
-        instructions.append(f"Each wrong answer carries -{negative_mark} mark(s) penalty.")
+        instructions.append(f"Negative marking: -{negative_mark} per wrong answer.")
 
     payload = {
         "id": uid,
         "title": title,
-        "description": f"Chapter-wise test on {topic} from {chapter} for {exam_name}. {len(questions)} questions.",
-        "board": board,
-        "classSlug": class_slug,
-        "classNumber": 0,
-        "subject": subj_slug,
-        "chapter": chapter,
-        "topic": topic,
+        "description": f"Topic-wise test on {topic} ({chapter}) for {exam_name}. {len(questions)} questions.",
+        "board": board, "classSlug": class_slug, "classNumber": 0,
+        "subject": subj_slug, "chapter": chapter, "topic": topic,
         "testType": "chapter",
         "duration": duration,
         "totalMarks": len(questions) * marks_per_q,
         "passingMarks": round(len(questions) * marks_per_q * 0.4),
         "totalQuestions": len(questions),
-        "isPublic": True,
-        "isPublished": True,
-        "showCorrectAnswers": True,
-        "randomizeQuestions": False,
-        "unlimitedAttempts": True,
-        "allowedAttempts": 0,
-        "tags": [class_slug, subj_slug, chapter.lower().replace(" ", "-"), topic.lower().replace(" ", "-")],
+        "isPublic": True, "isPublished": True,
+        "showCorrectAnswers": True, "randomizeQuestions": False,
+        "unlimitedAttempts": True, "allowedAttempts": 0,
+        "tags": make_tags(class_slug, subj_slug, chapter, topic),
         "instructions": instructions,
-        "createdBy": "admin",
-        "createdByName": "EduTest Admin",
-        "publishedAt": now_iso(),
-        "isAdmin": True,
+        "createdBy": "admin", "createdByName": "EduTest Admin",
+        "publishedAt": now_iso(), "isAdmin": True,
         "questions": questions
     }
 
@@ -352,34 +352,26 @@ Generate exactly {q_count} questions now as a JSON array:"""
     save_file(path, payload)
 
     index_entry = {
-        "id": uid,
-        "type": "test",
-        "title": title,
+        "id": uid, "type": "test", "title": title,
         "description": payload["description"],
-        "subject": subj_slug,
-        "board": board,
-        "classSlug": class_slug,
-        "classNumber": 0,
-        "chapter": chapter,
-        "testType": "chapter",
-        "totalQuestions": len(questions),
-        "duration": duration,
+        "subject": subj_slug, "board": board, "classSlug": class_slug, "classNumber": 0,
+        "chapter": chapter, "testType": "chapter",
+        "totalQuestions": len(questions), "duration": duration,
         "totalMarks": payload["totalMarks"],
-        "author": "EduTest Admin",
-        "authorId": "admin",
-        "isAdmin": True,
-        "tags": payload["tags"],
-        "cdnUrl": cdn_url(path),
-        "path": path,
+        "author": "EduTest Admin", "authorId": "admin", "isAdmin": True,
+        "tags": payload["tags"], "cdnUrl": cdn_url(path), "path": path,
         "publishedAt": payload["publishedAt"]
     }
-
     return uid, path, index_entry
 
-# ── Multi-subject test builder ────────────────────────────────────────────────
+# ── Multi-subject test (FLASH model) ─────────────────────────────────────────
 
 def build_multi_subject_test(topics_list, exam_config):
-    """Generate 1 multi-subject test from multiple topics."""
+    """
+    Generate 1 multi-subject mock test (100Q across multiple subjects).
+    Uses gemini-2.5-flash for bulk generation.
+    """
+    import random
     class_slug = topics_list[0]["classSlug"]
     board = topics_list[0]["board"]
     exam_name = class_slug.upper().replace("-", " ")
@@ -390,10 +382,12 @@ def build_multi_subject_test(topics_list, exam_config):
     negative_marking = exam_config.get("negativeMarking", False)
     negative_mark = exam_config.get("negativeMarkValue", 0)
 
-    q_per_topic = max(1, total_q // len(topics_list))
+    q_per_topic = max(5, total_q // len(topics_list))
     uid = make_id()
-    subjects_covered = list(set(t["subjectName"] for t in topics_list))
-    title = f"{exam_name} — Multi-Subject Test | {' + '.join(subjects_covered[:3])}"
+    subjects_covered = list(dict.fromkeys(t["subjectName"] for t in topics_list))
+    title = f"{exam_name} — Multi-Subject Mock | {' + '.join(subjects_covered[:3])}"
+
+    print(f"\n  [Flash] Building multi-subject test: {total_q}Q across {len(topics_list)} topics")
 
     all_questions = []
     q_idx = 0
@@ -404,23 +398,9 @@ def build_multi_subject_test(topics_list, exam_config):
         chapter = topic_info["chapter"]
         topic = topic_info["topic"]
 
-        prompt = f"""You are an expert {exam_name} exam question setter.
-Generate exactly {q_per_topic} high-quality MCQ questions.
-Subject: {subj_name}, Chapter: {chapter}, Topic: {topic}
-
-STRICT RULES:
-1. Exactly 4 options per question, exactly ONE isCorrect: true
-2. Each option must have a brief explanation
-3. Mix of easy/medium/hard difficulty
-4. Return ONLY a valid JSON array
-
-JSON format:
-[{{"question":"...","difficulty":"medium","explanation":"...","hint":"...","options":[{{"letter":"A","text":"...","isCorrect":false,"explanation":"..."}},{{"letter":"B","text":"...","isCorrect":true,"explanation":"..."}},{{"letter":"C","text":"...","isCorrect":false,"explanation":"..."}},{{"letter":"D","text":"...","isCorrect":false,"explanation":"..."}}]}}]
-
-Generate {q_per_topic} questions:"""
-
-        print(f"  [Builder] Multi-subject: {subj_name}/{topic} ({q_per_topic}q)")
-        raw_qs = gemini_client.generate(prompt, expect_json=True)
+        prompt = _question_prompt(exam_name, subj_name, chapter, topic, q_per_topic)
+        print(f"    Generating {q_per_topic}Q: {subj_name}/{topic} [Flash]...")
+        raw_qs = gemini_client.generate_flash(prompt, expect_json=True, max_tokens=4096)
         if not isinstance(raw_qs, list):
             raw_qs = [raw_qs] if isinstance(raw_qs, dict) else []
         for q in raw_qs[:q_per_topic]:
@@ -429,38 +409,30 @@ Generate {q_per_topic} questions:"""
             q_idx += 1
 
     all_questions = all_questions[:total_q]
-    instructions = [f"Multi-subject test covering: {', '.join(subjects_covered)}.",
-                    f"{len(all_questions)} questions, {duration} minutes."]
+    instructions = [
+        f"Multi-subject test covering: {', '.join(subjects_covered)}.",
+        f"{len(all_questions)} questions, {duration} minutes.",
+        f"Each correct answer: {marks_per_q} mark(s).",
+    ]
     if negative_marking:
         instructions.append(f"Negative marking: -{negative_mark} per wrong answer.")
 
     payload = {
-        "id": uid,
-        "title": title,
-        "description": f"Multi-subject {exam_name} test covering {', '.join(subjects_covered)}.",
-        "board": board,
-        "classSlug": class_slug,
-        "classNumber": 0,
-        "subject": "",
-        "chapter": "Multi-Subject",
-        "topic": "Mixed Topics",
+        "id": uid, "title": title,
+        "description": f"Multi-subject {exam_name} mock test covering {', '.join(subjects_covered)}.",
+        "board": board, "classSlug": class_slug, "classNumber": 0,
+        "subject": "", "chapter": "Multi-Subject", "topic": "Mixed Topics",
         "testType": "mock",
-        "duration": duration,
-        "totalMarks": total_marks,
+        "duration": duration, "totalMarks": total_marks,
         "passingMarks": round(total_marks * 0.4),
         "totalQuestions": len(all_questions),
-        "isPublic": True,
-        "isPublished": True,
-        "showCorrectAnswers": True,
-        "randomizeQuestions": True,
-        "unlimitedAttempts": True,
-        "allowedAttempts": 0,
-        "tags": [class_slug, "multi-subject", "mock-test"] + [t["subjectSlug"] for t in topics_list],
+        "isPublic": True, "isPublished": True,
+        "showCorrectAnswers": True, "randomizeQuestions": True,
+        "unlimitedAttempts": True, "allowedAttempts": 0,
+        "tags": [class_slug, "multi-subject", "mock-test"] + [t["subjectSlug"] for t in topics_list[:4]],
         "instructions": instructions,
-        "createdBy": "admin",
-        "createdByName": "EduTest Admin",
-        "publishedAt": now_iso(),
-        "isAdmin": True,
+        "createdBy": "admin", "createdByName": "EduTest Admin",
+        "publishedAt": now_iso(), "isAdmin": True,
         "questions": all_questions
     }
 
@@ -468,34 +440,24 @@ Generate {q_per_topic} questions:"""
     save_file(path, payload)
 
     index_entry = {
-        "id": uid,
-        "type": "test",
-        "title": title,
+        "id": uid, "type": "test", "title": title,
         "description": payload["description"],
-        "subject": "",
-        "board": board,
-        "classSlug": class_slug,
-        "classNumber": 0,
-        "chapter": "Multi-Subject",
-        "testType": "mock",
-        "totalQuestions": len(all_questions),
-        "duration": duration,
-        "totalMarks": total_marks,
-        "author": "EduTest Admin",
-        "authorId": "admin",
-        "isAdmin": True,
-        "tags": payload["tags"],
-        "cdnUrl": cdn_url(path),
-        "path": path,
+        "subject": "", "board": board, "classSlug": class_slug, "classNumber": 0,
+        "chapter": "Multi-Subject", "testType": "mock",
+        "totalQuestions": len(all_questions), "duration": duration, "totalMarks": total_marks,
+        "author": "EduTest Admin", "authorId": "admin", "isAdmin": True,
+        "tags": payload["tags"], "cdnUrl": cdn_url(path), "path": path,
         "publishedAt": payload["publishedAt"]
     }
-
     return uid, path, index_entry
 
-# ── Note builder ──────────────────────────────────────────────────────────────
+# ── Note builder (FLASH model — long content) ─────────────────────────────────
 
 def build_note(topic_info):
-    """Generate 1 high-quality study note."""
+    """
+    Generate 1 comprehensive study note (800-1200 words HTML).
+    Uses gemini-2.5-flash (1M token context, best for long content).
+    """
     class_slug = topic_info["classSlug"]
     board = topic_info["board"]
     subj_slug = topic_info["subjectSlug"]
@@ -507,62 +469,61 @@ def build_note(topic_info):
     uid = make_id()
     title = f"{subj_name} — {topic} | Complete Notes"
 
-    prompt = f"""You are an expert {exam_name} educator creating high-quality study notes.
-Create comprehensive study notes for:
+    prompt = f"""You are a senior {exam_name} educator and subject expert.
+Create comprehensive, exam-focused study notes for:
+
 Exam: {exam_name}
 Subject: {subj_name}
 Chapter: {chapter}
 Topic: {topic}
 
-The notes must be in HTML format (for direct rendering in a browser).
-Include:
-1. A clear heading (h2) for the topic
-2. Key definitions and concepts (use <strong> for important terms)
-3. Detailed explanations with examples
-4. Important points in bullet lists (<ul><li>)
-5. Any relevant formulas in <code> tags
-6. Memory tips or mnemonics if applicable
-7. Common exam questions/points to remember
-8. Clinical significance (if medical topic)
+The notes must be in clean HTML format for direct browser rendering.
+Structure (use all of these):
+1. <h2> for main topic heading
+2. <h3> for subsections
+3. <p> for explanations — use <strong> for key terms, <em> for important values
+4. <ul><li> for bullet points (key facts, features, types)
+5. <code> for formulas, values, drug names, normal ranges
+6. <table> for comparisons (if applicable)
+7. A "Key Points for Exam" section at the end with <ul>
+8. Clinical significance / exam tips section
 
-Return ONLY a JSON object with this exact structure:
+Requirements:
+- 800-1200 words of actual content
+- Factually accurate for {exam_name} exam level
+- Include normal values, drug doses, or reference ranges where relevant
+- Include mnemonics if helpful
+- Cover: definition, types/classification, pathophysiology/mechanism, clinical features, management, nursing care (if applicable)
+
+Return ONLY a JSON object — no markdown fences:
 {{
   "title": "{title}",
-  "description": "Brief 1-sentence description of what this note covers",
-  "content": "<h2>Topic Heading</h2><p>Content here...</p>",
+  "description": "One sentence describing what this note covers",
+  "content": "<h2>...</h2><p>...</p>...",
   "tags": ["tag1", "tag2", "tag3", "tag4", "tag5"]
-}}
+}}"""
 
-The content field must be valid HTML string. Make it comprehensive (500-1000 words of content).
-Return ONLY the JSON object, no markdown fences:"""
-
-    print(f"  [Builder] Generating note: {subj_name} / {topic}")
-    result = gemini_client.generate(prompt, expect_json=True)
+    print(f"    Generating note: {subj_name}/{topic} [Flash]...")
+    result = gemini_client.generate_flash(prompt, expect_json=True, max_tokens=8192)
 
     if not isinstance(result, dict):
         result = {"title": title, "description": f"Notes on {topic}", "content": str(result), "tags": []}
 
     content_html = result.get("content", "")
     if not content_html:
-        content_html = f"<h2>{topic}</h2><p>Notes on {topic} from {chapter}.</p>"
+        content_html = f"<h2>{topic}</h2><p>Study notes on {topic} from {chapter}.</p>"
 
     payload = {
         "id": uid,
         "title": result.get("title", title),
         "description": result.get("description", f"Complete study notes on {topic} for {exam_name}"),
         "type": "note",
-        "board": board,
-        "classSlug": class_slug,
-        "classNumber": 0,
-        "subject": subj_slug,
-        "chapter": chapter,
-        "tags": result.get("tags", [class_slug, subj_slug, topic.lower().replace(" ", "-")]),
-        "createdBy": "admin",
-        "createdByName": "EduTest Admin",
+        "board": board, "classSlug": class_slug, "classNumber": 0,
+        "subject": subj_slug, "chapter": chapter,
+        "tags": result.get("tags", make_tags(class_slug, subj_slug, chapter, topic)),
+        "createdBy": "admin", "createdByName": "EduTest Admin",
         "publishedAt": now_iso(),
-        "isPublic": True,
-        "isPublished": True,
-        "isAdmin": True,
+        "isPublic": True, "isPublished": True, "isAdmin": True,
         "content": content_html,
         "imageUrls": []
     }
@@ -571,30 +532,23 @@ Return ONLY the JSON object, no markdown fences:"""
     save_file(path, payload)
 
     index_entry = {
-        "id": uid,
-        "type": "note",
-        "title": payload["title"],
-        "description": payload["description"],
-        "subject": subj_slug,
-        "board": board,
-        "classSlug": class_slug,
-        "classNumber": 0,
+        "id": uid, "type": "note",
+        "title": payload["title"], "description": payload["description"],
+        "subject": subj_slug, "board": board, "classSlug": class_slug, "classNumber": 0,
         "chapter": chapter,
-        "author": "EduTest Admin",
-        "authorId": "admin",
-        "isAdmin": True,
-        "tags": payload["tags"],
-        "cdnUrl": cdn_url(path),
-        "path": path,
+        "author": "EduTest Admin", "authorId": "admin", "isAdmin": True,
+        "tags": payload["tags"], "cdnUrl": cdn_url(path), "path": path,
         "publishedAt": payload["publishedAt"]
     }
-
     return uid, path, index_entry
 
-# ── Formula builder ───────────────────────────────────────────────────────────
+# ── Formula builder (PRO model — precision) ───────────────────────────────────
 
 def build_formula(topic_info):
-    """Generate 1 formula sheet."""
+    """
+    Generate 1 formula/quick-reference sheet.
+    Uses gemini-2.5-pro for maximum factual precision.
+    """
     class_slug = topic_info["classSlug"]
     board = topic_info["board"]
     subj_slug = topic_info["subjectSlug"]
@@ -604,61 +558,62 @@ def build_formula(topic_info):
     exam_name = class_slug.upper().replace("-", " ")
 
     uid = make_id()
-    title = f"{subj_name} — {topic} | Formula Sheet"
+    title = f"{subj_name} — {topic} | Quick Reference"
 
-    prompt = f"""You are an expert {exam_name} educator creating a formula/quick-reference sheet.
+    prompt = f"""You are a senior {exam_name} educator creating a precision quick-reference sheet.
 Create a comprehensive formula and key-facts sheet for:
+
 Exam: {exam_name}
 Subject: {subj_name}
 Chapter: {chapter}
 Topic: {topic}
 
-Return ONLY a JSON object with this exact structure:
+The sheet must be in clean HTML format.
+Include ALL of the following that apply:
+1. <h2> main heading
+2. <h3> subsections (Formulas, Normal Values, Key Facts, Classifications, Mnemonics)
+3. All formulas in <code> tags
+4. Normal values / reference ranges in <strong> tags
+5. Drug doses / concentrations in <code> tags
+6. Classifications in <ul><li> lists
+7. Comparison tables with <table><tr><th><td>
+8. Mnemonics in <em> tags
+9. "Exam Traps" section — common wrong answers to avoid
+
+Requirements:
+- Factually precise — every value must be correct for {exam_name} level
+- Concise but complete (400-700 words)
+- Organized for quick revision before exam
+
+Return ONLY a JSON object — no markdown fences:
 {{
   "title": "{title}",
-  "description": "Brief description",
-  "content": "<h2>Formulas and Key Facts</h2><p>Content here...</p>",
+  "description": "One sentence describing this formula sheet",
+  "content": "<h2>...</h2>...",
   "tags": ["tag1", "tag2", "tag3"]
-}}
+}}"""
 
-The content field must be valid HTML with:
-- All important formulas in <code> tags
-- Key values and normal ranges in <strong> tags
-- Organized sections with <h3> subheadings
-- Bullet lists for quick reference points
-- Mnemonics if applicable
-- Normal values / reference ranges if medical topic
-
-Make it a complete quick-reference sheet (300-600 words).
-Return ONLY the JSON object:"""
-
-    print(f"  [Builder] Generating formula: {subj_name} / {topic}")
-    result = gemini_client.generate(prompt, expect_json=True)
+    print(f"    Generating formula: {subj_name}/{topic} [Pro]...")
+    result = gemini_client.generate_pro(prompt, expect_json=True, max_tokens=4096)
 
     if not isinstance(result, dict):
         result = {"title": title, "description": f"Formula sheet for {topic}", "content": str(result), "tags": []}
 
     content_html = result.get("content", "")
     if not content_html:
-        content_html = f"<h2>{topic} — Key Formulas</h2><p>Formula sheet for {topic}.</p>"
+        content_html = f"<h2>{topic} — Key Reference</h2><p>Quick reference for {topic}.</p>"
 
     payload = {
         "id": uid,
         "title": result.get("title", title),
-        "description": result.get("description", f"Formula sheet and quick reference for {topic}"),
+        "description": result.get("description", f"Quick reference sheet for {topic}"),
         "type": "formula",
-        "board": board,
-        "classSlug": class_slug,
-        "classNumber": 0,
-        "subject": subj_slug,
-        "chapter": chapter,
-        "tags": result.get("tags", [class_slug, subj_slug, "formula"]),
-        "createdBy": "admin",
-        "createdByName": "EduTest Admin",
+        "board": board, "classSlug": class_slug, "classNumber": 0,
+        "subject": subj_slug, "chapter": chapter,
+        "tags": result.get("tags", make_tags(class_slug, subj_slug, chapter, topic)),
+        "createdBy": "admin", "createdByName": "EduTest Admin",
         "publishedAt": now_iso(),
-        "isPublic": True,
-        "isPublished": True,
-        "isAdmin": True,
+        "isPublic": True, "isPublished": True, "isAdmin": True,
         "content": content_html,
         "imageUrls": []
     }
@@ -667,22 +622,12 @@ Return ONLY the JSON object:"""
     save_file(path, payload)
 
     index_entry = {
-        "id": uid,
-        "type": "formula",
-        "title": payload["title"],
-        "description": payload["description"],
-        "subject": subj_slug,
-        "board": board,
-        "classSlug": class_slug,
-        "classNumber": 0,
+        "id": uid, "type": "formula",
+        "title": payload["title"], "description": payload["description"],
+        "subject": subj_slug, "board": board, "classSlug": class_slug, "classNumber": 0,
         "chapter": chapter,
-        "author": "EduTest Admin",
-        "authorId": "admin",
-        "isAdmin": True,
-        "tags": payload["tags"],
-        "cdnUrl": cdn_url(path),
-        "path": path,
+        "author": "EduTest Admin", "authorId": "admin", "isAdmin": True,
+        "tags": payload["tags"], "cdnUrl": cdn_url(path), "path": path,
         "publishedAt": payload["publishedAt"]
     }
-
     return uid, path, index_entry
