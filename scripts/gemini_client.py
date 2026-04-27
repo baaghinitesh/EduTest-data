@@ -1,62 +1,50 @@
 """
-gemini_client.py — Dual-model Gemini API wrapper.
+gemini_client.py — Single model: gemini-2.5-pro only.
 
-Model assignment:
-  FLASH (gemini-2.5-flash) — long content: full-length tests, long notes
-      Free tier: 10 RPM, 250 RPD, 1M token context
-  PRO   (gemini-2.5-pro)   — precision content: formulas, short/topic tests
-      Free tier: 5 RPM, 100 RPD
-
-Rate-limit aware: auto-sleeps between calls to stay within RPM limits.
+Free tier: 5 RPM, 100 RPD
+Strategy: 4 runs/day x ~20 calls/run = ~80 calls/day (safe under 100 RPD)
+All content uses Pro for maximum quality — medical accuracy is non-negotiable.
 """
 import os, json, re, time
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 
-# ── Model names ───────────────────────────────────────────────────────────────
-MODEL_FLASH = "gemini-2.5-flash"   # long content, full-length tests, long notes
-MODEL_PRO   = "gemini-2.5-pro"     # precision content, formulas, short tests
-
-# ── Rate limit guards (free tier) ─────────────────────────────────────────────
-# We stay well under limits by enforcing minimum gaps between calls
-RPM_FLASH = 10   # 10 RPM → 1 call per 6s minimum
-RPM_PRO   = 5    # 5 RPM  → 1 call per 12s minimum
-_last_call = {"flash": 0.0, "pro": 0.0}
-
+MODEL = "gemini-2.5-pro"
+RPM   = 4        # actual limit 5, use 4 for safety (1 call per 15s)
 MAX_RETRIES = 3
-_initialized = False
 
-def init():
-    global _initialized
-    if _initialized:
-        return
-    api_key = os.environ.get("GEMINI_API_KEY", "")
-    if not api_key:
-        raise ValueError("GEMINI_API_KEY environment variable not set")
-    genai.configure(api_key=api_key)
-    _initialized = True
+_client = None
+_last_call = 0.0
 
-def _rate_limit_sleep(model_key, rpm):
-    """Sleep if needed to respect RPM limit."""
-    min_gap = 60.0 / rpm
-    elapsed = time.time() - _last_call[model_key]
+def _get_client():
+    global _client
+    if _client is None:
+        api_key = os.environ.get("GEMINI_API_KEY", "")
+        if not api_key:
+            raise ValueError("GEMINI_API_KEY environment variable not set")
+        _client = genai.Client(api_key=api_key)
+    return _client
+
+def _rate_limit_sleep():
+    """Enforce minimum gap between calls to stay under 5 RPM."""
+    global _last_call
+    min_gap = 60.0 / RPM   # 15 seconds between calls
+    elapsed = time.time() - _last_call
     if elapsed < min_gap:
-        sleep_time = min_gap - elapsed + 0.5  # 0.5s buffer
-        print(f"  [RateLimit] Sleeping {sleep_time:.1f}s for {model_key} RPM limit...")
-        time.sleep(sleep_time)
-    _last_call[model_key] = time.time()
+        wait = min_gap - elapsed + 1.0   # 1s buffer
+        print(f"  [RateLimit] Waiting {wait:.1f}s (Pro 5 RPM limit)...")
+        time.sleep(wait)
+    _last_call = time.time()
 
 def _extract_json(text):
-    """Strip markdown fences and extract the first valid JSON object/array."""
-    # Remove ```json ... ``` or ``` ... ```
+    """Strip markdown fences and extract first valid JSON object/array."""
     text = re.sub(r"```(?:json)?\s*", "", text)
     text = re.sub(r"```", "", text)
     text = text.strip()
-    # Try direct parse first
     try:
         return json.loads(text)
     except json.JSONDecodeError:
         pass
-    # Find first [ or { and extract balanced block
     for start_char, end_char in [("[", "]"), ("{", "}")]:
         idx = text.find(start_char)
         if idx == -1:
@@ -74,18 +62,22 @@ def _extract_json(text):
                         break
     raise ValueError("No valid JSON found in Gemini response")
 
-def _call(model_name, model_key, rpm, prompt, expect_json, max_tokens):
-    """Internal: call a specific model with rate limiting and retries."""
-    init()
+def generate(prompt, expect_json=True, max_tokens=8192):
+    """
+    Call gemini-2.5-pro with rate limiting and retries.
+    Returns parsed JSON if expect_json=True, else raw text.
+    """
+    client = _get_client()
     last_err = None
+
     for attempt in range(1, MAX_RETRIES + 1):
         try:
-            _rate_limit_sleep(model_key, rpm)
-            model = genai.GenerativeModel(model_name)
-            response = model.generate_content(
-                prompt,
-                generation_config=genai.types.GenerationConfig(
-                    temperature=0.7,
+            _rate_limit_sleep()
+            response = client.models.generate_content(
+                model=MODEL,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    temperature=0.65,
                     max_output_tokens=max_tokens,
                 )
             )
@@ -93,39 +85,23 @@ def _call(model_name, model_key, rpm, prompt, expect_json, max_tokens):
             if not expect_json:
                 return text
             return _extract_json(text)
+
         except Exception as e:
             last_err = e
             err_str = str(e)
-            print(f"  [Gemini/{model_key}] Attempt {attempt} failed: {err_str[:120]}")
-            # If rate limited (429), wait longer
-            if "429" in err_str or "quota" in err_str.lower():
-                wait = 30 * attempt
-                print(f"  [Gemini/{model_key}] Rate limited — waiting {wait}s...")
+            print(f"  [Pro] Attempt {attempt} failed: {err_str[:150]}")
+
+            if "429" in err_str or "quota" in err_str.lower() or "RESOURCE_EXHAUSTED" in err_str:
+                retry_match = re.search(r"(\d+)\s*second", err_str)
+                suggested = int(retry_match.group(1)) if retry_match else 60
+                wait = max(suggested + 5, 60) * attempt
+                print(f"  [Pro] Rate limited — waiting {wait}s...")
                 time.sleep(wait)
             elif attempt < MAX_RETRIES:
-                time.sleep(2 ** attempt)
-    raise RuntimeError(f"Gemini/{model_key} failed after {MAX_RETRIES} attempts: {last_err}")
+                time.sleep(5 * attempt)
 
-# ── Public API ────────────────────────────────────────────────────────────────
+    raise RuntimeError(f"Gemini Pro failed after {MAX_RETRIES} attempts: {last_err}")
 
-def generate_flash(prompt, expect_json=True, max_tokens=8192):
-    """
-    Use gemini-2.5-flash.
-    Best for: full-length tests (100Q), long notes (1000+ words), multi-subject tests.
-    Free: 10 RPM, 250 RPD, 1M token context.
-    """
-    return _call(MODEL_FLASH, "flash", RPM_FLASH, prompt, expect_json, max_tokens)
-
-def generate_pro(prompt, expect_json=True, max_tokens=4096):
-    """
-    Use gemini-2.5-pro.
-    Best for: formula sheets, short/topic tests (20-30Q), precision factual content.
-    Free: 5 RPM, 100 RPD.
-    """
-    return _call(MODEL_PRO, "pro", RPM_PRO, prompt, expect_json, max_tokens)
-
-def generate(prompt, expect_json=True, model="flash"):
-    """Convenience wrapper — model='flash' or 'pro'."""
-    if model == "pro":
-        return generate_pro(prompt, expect_json)
-    return generate_flash(prompt, expect_json)
+# Aliases so content_builder.py works without changes
+generate_flash = generate
+generate_pro   = generate

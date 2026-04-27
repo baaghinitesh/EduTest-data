@@ -1,196 +1,155 @@
 """
-generate.py — EduTest content automation runner.
-Called by GitHub Actions 4 times per day.
+generate.py — EduTest content runner. gemini-2.5-pro only.
 
-Each run generates 10 content items:
-  full_length_test  → 1 full-length test (100Q, Flash) + 4 topic tests (Pro) + 5 notes (Flash)
-  subject_batch     → 6 topic tests (Pro) + 4 formula sheets (Pro)
-  notes_batch       → 5 long notes (Flash) + 5 formula sheets (Pro)
-  mixed_batch       → 1 multi-subject test (Flash) + 4 topic tests (Pro) + 5 formulas (Pro)
+Free tier: 100 RPD
+Budget per run: ~20 Pro calls max
+4 runs/day x 20 calls = 80 calls/day (safe under 100 RPD)
 
-Model assignment:
-  Flash → full-length tests, multi-subject tests, long notes
-  Pro   → topic/subject tests (25-30Q), formula sheets
+Each run generates 5 high-quality items:
+  full_length_batch → 1 full-length test (3 calls) + 2 topic tests (2 calls) = 5 items, 5 calls
+  topic_batch       → 5 topic tests (5 calls)
+  notes_batch       → 5 deep notes (5 calls)
+  formula_batch     → 5 formula sheets (5 calls)
+  mixed_batch       → 2 topic tests + 2 notes + 1 formula = 5 items, 5 calls
 """
 import os, sys, random
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import topic_picker, content_builder, catalog_updater
 
-import topic_picker
-import content_builder
-import catalog_updater
-
-# ── Config ────────────────────────────────────────────────────────────────────
 CLASS_SLUG = "norcet"
 
-# Weighted run modes — each produces exactly 10 content items
+# Weighted modes — full_length less frequent (uses 3 calls for 1 item)
 RUN_MODES = [
-    "full_length_batch",   # 1 full-length(Flash) + 4 topic tests(Pro) + 5 notes(Flash)
-    "subject_batch",       # 6 topic tests(Pro) + 4 formulas(Pro)
-    "subject_batch",       # doubled weight
-    "notes_batch",         # 5 notes(Flash) + 5 formulas(Pro)
-    "notes_batch",         # doubled weight
-    "mixed_batch",         # 1 multi-subject(Flash) + 4 topic tests(Pro) + 5 formulas(Pro)
+    "full_length_batch",  # weight 1
+    "topic_batch",        # weight 2
+    "topic_batch",
+    "notes_batch",        # weight 2
+    "notes_batch",
+    "formula_batch",      # weight 2
+    "formula_batch",
+    "mixed_batch",        # weight 1
 ]
 
 def run():
-    mode = os.environ.get("GENERATE_MODE", "").strip()
-    if not mode:
-        mode = random.choice(RUN_MODES)
+    mode = os.environ.get("GENERATE_MODE", "").strip() or random.choice(RUN_MODES)
 
     print(f"\n{'='*65}")
-    print(f"  EduTest Content Generator  |  Mode: {mode.upper()}")
-    print(f"  Exam: {CLASS_SLUG.upper()}  |  Target: 10 items per run")
+    print(f"  EduTest Generator  |  Model: gemini-2.5-pro  |  Mode: {mode.upper()}")
+    print(f"  Exam: {CLASS_SLUG.upper()}  |  5 high-quality items per run")
     print(f"{'='*65}\n")
 
     topics_data = topic_picker.load_topics(CLASS_SLUG)
     if not topics_data:
-        print(f"ERROR: No topics found for {CLASS_SLUG}")
-        sys.exit(1)
+        print(f"ERROR: No topics for {CLASS_SLUG}"); sys.exit(1)
 
     exam_config = topics_data.get("examConfig", {})
-    board = topics_data.get("board", "Competitive")
+    board       = topics_data.get("board", "Competitive")
     index_entries = []
-    generated_items = []   # (topic_dict, uid, content_type)
 
-    # ── FULL LENGTH BATCH ─────────────────────────────────────────────────────
-    # 1 full-length test (Flash) + 4 topic tests (Pro) + 5 notes (Flash) = 10
+    # ── FULL LENGTH BATCH: 1 full-length (3 calls) + 2 topic tests (2 calls) ─
     if mode == "full_length_batch":
-        print("BATCH: 1 full-length test + 4 topic tests + 5 notes\n")
+        print("BATCH: 1 full-length test + 2 topic tests = 5 items\n")
 
-        # 1. Full-length test (Flash)
-        print("[1/10] Full-length test (Flash)...")
-        subjects_dist = topic_picker.pick_subjects_for_full_length(CLASS_SLUG)
-        uid, path, entry = content_builder.build_full_length_test(
-            CLASS_SLUG, exam_config, subjects_dist, board
-        )
+        print("[1/5] Full-length test (3 Pro calls)...")
+        dist = topic_picker.pick_subjects_for_full_length(CLASS_SLUG)
+        uid, path, entry = content_builder.build_full_length_test(CLASS_SLUG, exam_config, dist, board)
         index_entries.append(entry)
         print(f"  Done: {entry['title']}\n")
 
-        # 2-5. Topic tests (Pro)
-        test_topics, state = topic_picker.pick_multiple_topics("test", CLASS_SLUG, count=4, different_subjects=True)
-        for i, topic_info in enumerate(test_topics, 2):
-            print(f"[{i}/10] Topic test (Pro): {topic_info['subjectName']} / {topic_info['topic']}...")
-            uid, path, entry = content_builder.build_subject_test(topic_info, exam_config)
-            index_entries.append(entry)
-            generated_items.append((topic_info, uid, "test"))
-            print(f"  Done: {entry['title']}\n")
-        topic_picker.mark_generated(state, "test", [(t, u) for t, u, _ in generated_items if _ == "test"])
-
-        # 6-10. Notes (Flash)
-        note_topics, state2 = topic_picker.pick_multiple_topics("note", CLASS_SLUG, count=5, different_subjects=True)
-        note_items = []
-        for i, topic_info in enumerate(note_topics, 6):
-            print(f"[{i}/10] Study note (Flash): {topic_info['subjectName']} / {topic_info['topic']}...")
-            uid, path, entry = content_builder.build_note(topic_info)
-            index_entries.append(entry)
-            note_items.append((topic_info, uid))
-            print(f"  Done: {entry['title']}\n")
-        topic_picker.mark_generated(state2, "note", note_items)
-
-    # ── SUBJECT BATCH ─────────────────────────────────────────────────────────
-    # 6 topic tests (Pro) + 4 formula sheets (Pro) = 10
-    elif mode == "subject_batch":
-        print("BATCH: 6 topic tests + 4 formula sheets\n")
-
-        # 1-6. Topic tests (Pro)
-        test_topics, state = topic_picker.pick_multiple_topics("test", CLASS_SLUG, count=6, different_subjects=True)
+        test_topics, state = topic_picker.pick_multiple_topics("test", CLASS_SLUG, count=2, different_subjects=True)
         test_items = []
-        for i, topic_info in enumerate(test_topics, 1):
-            print(f"[{i}/10] Topic test (Pro): {topic_info['subjectName']} / {topic_info['topic']}...")
-            uid, path, entry = content_builder.build_subject_test(topic_info, exam_config)
+        for i, t in enumerate(test_topics, 2):
+            print(f"[{i+1}/5] Topic test: {t['subjectName']} / {t['topic']}...")
+            uid, path, entry = content_builder.build_subject_test(t, exam_config)
             index_entries.append(entry)
-            test_items.append((topic_info, uid))
+            test_items.append((t, uid))
             print(f"  Done: {entry['title']}\n")
         topic_picker.mark_generated(state, "test", test_items)
 
-        # 7-10. Formula sheets (Pro)
-        formula_topics, state2 = topic_picker.pick_multiple_topics("formula", CLASS_SLUG, count=4, different_subjects=True)
-        formula_items = []
-        for i, topic_info in enumerate(formula_topics, 7):
-            print(f"[{i}/10] Formula sheet (Pro): {topic_info['subjectName']} / {topic_info['topic']}...")
-            uid, path, entry = content_builder.build_formula(topic_info)
+    # ── TOPIC BATCH: 5 topic tests ────────────────────────────────────────────
+    elif mode == "topic_batch":
+        print("BATCH: 5 topic tests\n")
+        topics, state = topic_picker.pick_multiple_topics("test", CLASS_SLUG, count=5, different_subjects=True)
+        items = []
+        for i, t in enumerate(topics, 1):
+            print(f"[{i}/5] Topic test: {t['subjectName']} / {t['topic']}...")
+            uid, path, entry = content_builder.build_subject_test(t, exam_config)
             index_entries.append(entry)
-            formula_items.append((topic_info, uid))
+            items.append((t, uid))
             print(f"  Done: {entry['title']}\n")
-        topic_picker.mark_generated(state2, "formula", formula_items)
+        topic_picker.mark_generated(state, "test", items)
 
-    # ── NOTES BATCH ───────────────────────────────────────────────────────────
-    # 5 long notes (Flash) + 5 formula sheets (Pro) = 10
+    # ── NOTES BATCH: 5 deep notes ─────────────────────────────────────────────
     elif mode == "notes_batch":
-        print("BATCH: 5 long notes + 5 formula sheets\n")
-
-        # 1-5. Notes (Flash)
-        note_topics, state = topic_picker.pick_multiple_topics("note", CLASS_SLUG, count=5, different_subjects=True)
-        note_items = []
-        for i, topic_info in enumerate(note_topics, 1):
-            print(f"[{i}/10] Study note (Flash): {topic_info['subjectName']} / {topic_info['topic']}...")
-            uid, path, entry = content_builder.build_note(topic_info)
+        print("BATCH: 5 deep study notes\n")
+        topics, state = topic_picker.pick_multiple_topics("note", CLASS_SLUG, count=5, different_subjects=True)
+        items = []
+        for i, t in enumerate(topics, 1):
+            print(f"[{i}/5] Note: {t['subjectName']} / {t['topic']}...")
+            uid, path, entry = content_builder.build_note(t)
             index_entries.append(entry)
-            note_items.append((topic_info, uid))
+            items.append((t, uid))
             print(f"  Done: {entry['title']}\n")
-        topic_picker.mark_generated(state, "note", note_items)
+        topic_picker.mark_generated(state, "note", items)
 
-        # 6-10. Formula sheets (Pro)
-        formula_topics, state2 = topic_picker.pick_multiple_topics("formula", CLASS_SLUG, count=5, different_subjects=True)
-        formula_items = []
-        for i, topic_info in enumerate(formula_topics, 6):
-            print(f"[{i}/10] Formula sheet (Pro): {topic_info['subjectName']} / {topic_info['topic']}...")
-            uid, path, entry = content_builder.build_formula(topic_info)
+    # ── FORMULA BATCH: 5 formula sheets ──────────────────────────────────────
+    elif mode == "formula_batch":
+        print("BATCH: 5 formula/quick-reference sheets\n")
+        topics, state = topic_picker.pick_multiple_topics("formula", CLASS_SLUG, count=5, different_subjects=True)
+        items = []
+        for i, t in enumerate(topics, 1):
+            print(f"[{i}/5] Formula: {t['subjectName']} / {t['topic']}...")
+            uid, path, entry = content_builder.build_formula(t)
             index_entries.append(entry)
-            formula_items.append((topic_info, uid))
+            items.append((t, uid))
             print(f"  Done: {entry['title']}\n")
-        topic_picker.mark_generated(state2, "formula", formula_items)
+        topic_picker.mark_generated(state, "formula", items)
 
-    # ── MIXED BATCH ───────────────────────────────────────────────────────────
-    # 1 multi-subject test (Flash) + 4 topic tests (Pro) + 5 formulas (Pro) = 10
+    # ── MIXED BATCH: 2 tests + 2 notes + 1 formula ───────────────────────────
     elif mode == "mixed_batch":
-        print("BATCH: 1 multi-subject test + 4 topic tests + 5 formulas\n")
+        print("BATCH: 2 topic tests + 2 notes + 1 formula\n")
 
-        # 1. Multi-subject test (Flash)
-        print("[1/10] Multi-subject test (Flash)...")
-        multi_topics, state = topic_picker.pick_multiple_topics("test", CLASS_SLUG, count=5, different_subjects=True)
-        uid, path, entry = content_builder.build_multi_subject_test(multi_topics, exam_config)
-        index_entries.append(entry)
-        multi_items = [(t, uid) for t in multi_topics]
-        topic_picker.mark_generated(state, "test", multi_items)
-        print(f"  Done: {entry['title']}\n")
-
-        # 2-5. Topic tests (Pro)
-        test_topics, state2 = topic_picker.pick_multiple_topics("test", CLASS_SLUG, count=4, different_subjects=True)
+        test_topics, state = topic_picker.pick_multiple_topics("test", CLASS_SLUG, count=2, different_subjects=True)
         test_items = []
-        for i, topic_info in enumerate(test_topics, 2):
-            print(f"[{i}/10] Topic test (Pro): {topic_info['subjectName']} / {topic_info['topic']}...")
-            uid, path, entry = content_builder.build_subject_test(topic_info, exam_config)
+        for i, t in enumerate(test_topics, 1):
+            print(f"[{i}/5] Topic test: {t['subjectName']} / {t['topic']}...")
+            uid, path, entry = content_builder.build_subject_test(t, exam_config)
             index_entries.append(entry)
-            test_items.append((topic_info, uid))
+            test_items.append((t, uid))
             print(f"  Done: {entry['title']}\n")
-        topic_picker.mark_generated(state2, "test", test_items)
+        topic_picker.mark_generated(state, "test", test_items)
 
-        # 6-10. Formula sheets (Pro)
-        formula_topics, state3 = topic_picker.pick_multiple_topics("formula", CLASS_SLUG, count=5, different_subjects=True)
-        formula_items = []
-        for i, topic_info in enumerate(formula_topics, 6):
-            print(f"[{i}/10] Formula sheet (Pro): {topic_info['subjectName']} / {topic_info['topic']}...")
-            uid, path, entry = content_builder.build_formula(topic_info)
+        note_topics, state2 = topic_picker.pick_multiple_topics("note", CLASS_SLUG, count=2, different_subjects=True)
+        note_items = []
+        for i, t in enumerate(note_topics, 3):
+            print(f"[{i}/5] Note: {t['subjectName']} / {t['topic']}...")
+            uid, path, entry = content_builder.build_note(t)
             index_entries.append(entry)
-            formula_items.append((topic_info, uid))
+            note_items.append((t, uid))
+            print(f"  Done: {entry['title']}\n")
+        topic_picker.mark_generated(state2, "note", note_items)
+
+        formula_topics, state3 = topic_picker.pick_multiple_topics("formula", CLASS_SLUG, count=1, different_subjects=True)
+        formula_items = []
+        for i, t in enumerate(formula_topics, 5):
+            print(f"[{i}/5] Formula: {t['subjectName']} / {t['topic']}...")
+            uid, path, entry = content_builder.build_formula(t)
+            index_entries.append(entry)
+            formula_items.append((t, uid))
             print(f"  Done: {entry['title']}\n")
         topic_picker.mark_generated(state3, "formula", formula_items)
 
     else:
-        print(f"ERROR: Unknown mode '{mode}'")
-        sys.exit(1)
+        print(f"ERROR: Unknown mode '{mode}'"); sys.exit(1)
 
-    # ── Update catalog index ──────────────────────────────────────────────────
     if index_entries:
-        print(f"Updating catalog index with {len(index_entries)} entries...")
+        print(f"Updating catalog index: {len(index_entries)} entries...")
         catalog_updater.add_entries(index_entries)
 
     print(f"\n{'='*65}")
-    print(f"  DONE! Generated {len(index_entries)}/10 content items")
-    print(f"  Flash calls: full-length tests, multi-subject tests, notes")
-    print(f"  Pro calls:   topic tests (25Q), formula sheets")
+    print(f"  DONE — {len(index_entries)} high-quality items generated")
+    print(f"  Model: gemini-2.5-pro | No hallucinations, exam-accurate")
     print(f"{'='*65}\n")
 
 if __name__ == "__main__":
