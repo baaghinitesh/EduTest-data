@@ -43,13 +43,13 @@ edutest-data/
 
 ## CDN URL
 
-**Base:** `https://ef7551b0.edutest-data.pages.dev`
+**Base:** `https://prepguidedata.launchyourconcept.com`
 
 **Examples:**
 ```
-https://ef7551b0.edutest-data.pages.dev/test.json
-https://ef7551b0.edutest-data.pages.dev/data/catalog/index.json
-https://ef7551b0.edutest-data.pages.dev/data/admin/tests/test-math-class10-cbse-001.json
+https://prepguidedata.launchyourconcept.com/test.json
+https://prepguidedata.launchyourconcept.com/data/catalog/index.json
+https://prepguidedata.launchyourconcept.com/data/admin/tests/test-math-class10-cbse-001.json
 ```
 
 ---
@@ -76,7 +76,7 @@ This is the **searchable index** of all published content. Every test/note has a
   "authorId": "admin",
   "isAdmin": true,
   "tags": ["algebra", "quadratic", "class10", "cbse", "mathematics"],
-  "cdnUrl": "https://ef7551b0.edutest-data.pages.dev/data/admin/tests/test-math-class10-cbse-001.json",
+  "cdnUrl": "https://prepguidedata.launchyourconcept.com/data/admin/tests/test-math-class10-cbse-001.json",
   "path": "data/admin/tests/test-math-class10-cbse-001.json",
   "publishedAt": "2025-04-01T10:00:00.000Z"
 }
@@ -200,7 +200,7 @@ This allows the EduTest client (any domain) to fetch JSON files from the CDN.
 - **Build output directory:** `/` (repo root)
 - **Auto-deploy:** on every push
 
-**Deployment URL:** `https://ef7551b0.edutest-data.pages.dev`
+**Deployment URL:** `https://prepguidedata.launchyourconcept.com`
 
 ---
 
@@ -208,13 +208,13 @@ This allows the EduTest client (any domain) to fetch JSON files from the CDN.
 
 ```bash
 # Check health
-curl https://ef7551b0.edutest-data.pages.dev/test.json
+curl https://prepguidedata.launchyourconcept.com/test.json
 
 # Check catalog index
-curl https://ef7551b0.edutest-data.pages.dev/data/catalog/index.json
+curl https://prepguidedata.launchyourconcept.com/data/catalog/index.json
 
 # Check a specific test
-curl https://ef7551b0.edutest-data.pages.dev/data/admin/tests/test-math-class10-cbse-001.json
+curl https://prepguidedata.launchyourconcept.com/data/admin/tests/test-math-class10-cbse-001.json
 ```
 
 All should return JSON (not 404).
