@@ -2,7 +2,7 @@
 topic_picker.py — Smart topic selector with no-repeat tracking.
 
 Picks randomly from ALL available exam topic files (competitive + school).
-Falls back to norcet if nothing else is available.
+Handles modular structure (index.json + subjects/*.json).
 """
 import os, json, random
 
@@ -27,19 +27,56 @@ def save_state(state):
 
 # ── Topic file loaders ─────────────────────────────────────────────────────────
 
+def _load_modular_data(base_path, class_slug):
+    """Load index.json and resolve all subject files."""
+    index_path = os.path.join(base_path, "index.json")
+    if not os.path.exists(index_path):
+        return None
+    with open(index_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    
+    resolved_subjects = []
+    for s in data.get("subjects", []):
+        sub_file = s.get("file")
+        if sub_file:
+            sub_path = os.path.join(base_path, sub_file)
+            if os.path.exists(sub_path):
+                with open(sub_path, "r", encoding="utf-8") as sf:
+                    sub_data = json.load(sf)
+                    # Merge properties from index into the loaded subject
+                    sub_data.update(s)
+                    resolved_subjects.append(sub_data)
+        else:
+            resolved_subjects.append(s)
+    
+    data["subjects"] = resolved_subjects
+    return data
+
 def load_topics(class_slug):
-    """Load topics JSON for a classSlug. Checks competitive/ then school/ dirs."""
-    path = os.path.join(TOPICS_DIR, "competitive", class_slug + ".json")
-    if os.path.exists(path):
-        with open(path, "r", encoding="utf-8") as f:
+    """Load topics JSON for a classSlug. Handles both modular dirs and flat json files."""
+    # 1. Check competitive directory modular
+    comp_dir = os.path.join(TOPICS_DIR, "competitive", class_slug)
+    if os.path.isdir(comp_dir):
+        return _load_modular_data(comp_dir, class_slug)
+    
+    # 2. Check competitive flat file
+    comp_file = os.path.join(TOPICS_DIR, "competitive", class_slug + ".json")
+    if os.path.exists(comp_file):
+        with open(comp_file, "r", encoding="utf-8") as f:
             return json.load(f)
-    # School: cbse-class-10 → topics/school/cbse/class-10.json
+            
+    # 3. Check school boards modular
     for board in ["cbse", "icse", "maharashtra", "up-board", "isc"]:
         if class_slug.startswith(board):
-            num  = class_slug.replace(board + "-class-", "")
-            path = os.path.join(TOPICS_DIR, "school", board, f"class-{num}.json")
-            if os.path.exists(path):
-                with open(path, "r", encoding="utf-8") as f:
+            num = class_slug.replace(board + "-class-", "")
+            school_dir = os.path.join(TOPICS_DIR, "school", board, f"class-{num}")
+            if os.path.isdir(school_dir):
+                return _load_modular_data(school_dir, class_slug)
+            
+            # 4. Check school flat file
+            school_file = os.path.join(TOPICS_DIR, "school", board, f"class-{num}.json")
+            if os.path.exists(school_file):
+                with open(school_file, "r", encoding="utf-8") as f:
                     return json.load(f)
     return None
 
@@ -51,23 +88,49 @@ def get_all_available_exams():
         base = os.path.join(TOPICS_DIR, sub)
         if not os.path.exists(base):
             continue
-        for root, dirs, files in os.walk(base):
-            for f in files:
-                if not f.endswith(".json"):
-                    continue
+        
+        # Check directories (modular)
+        for d in os.listdir(base):
+            d_path = os.path.join(base, d)
+            if os.path.isdir(d_path):
+                # School structure is school/<board>/class-<num>
+                if sub == "school":
+                    for sd in os.listdir(d_path):
+                        sd_path = os.path.join(d_path, sd)
+                        if os.path.isdir(sd_path) and sd.startswith("class-"):
+                            slug = f"{d}-{sd}"
+                            data = _load_modular_data(sd_path, slug)
+                            if _has_topics(data):
+                                exams.append(slug)
+                        elif sd_path.endswith(".json"):
+                            slug = f"{d}-{sd.replace('.json', '')}"
+                            try:
+                                with open(sd_path, "r", encoding="utf-8") as fh:
+                                    data = json.load(fh)
+                                if _has_topics(data):
+                                    exams.append(slug)
+                            except: pass
+                else: # Competitive
+                    data = _load_modular_data(d_path, d)
+                    if _has_topics(data):
+                        exams.append(d)
+            elif d.endswith(".json"):
+                slug = d.replace(".json", "")
                 try:
-                    with open(os.path.join(root, f), "r", encoding="utf-8") as fh:
+                    with open(d_path, "r", encoding="utf-8") as fh:
                         data = json.load(fh)
-                    # Must have at least one subject with at least one chapter with topics
-                    if any(
-                        any(len(ch.get("topics", [])) > 0 for ch in s.get("chapters", []))
-                        for s in data.get("subjects", [])
-                    ):
-                        slug = data.get("classSlug") or f.replace(".json", "")
+                    if _has_topics(data):
                         exams.append(slug)
-                except Exception:
-                    pass
+                except: pass
     return exams if exams else ["norcet"]
+
+
+def _has_topics(data):
+    if not data: return False
+    return any(
+        any(len(ch.get("topics", [])) > 0 for ch in s.get("chapters", []))
+        for s in data.get("subjects", [])
+    )
 
 
 # ── Used-key helpers ───────────────────────────────────────────────────────────
