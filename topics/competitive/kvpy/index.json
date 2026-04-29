@@ -13,6 +13,54 @@
     "correctMarkValue": 1,
     "negativeMarkValue": 0.25
   },
-  "testTypes": [],
-  "subjects": []
+  "testTypes": [
+    {
+      "type": "full-length",
+      "label": "Full Length Test",
+      "questions": 80,
+      "marks": 100,
+      "duration": 180
+    },
+    {
+      "type": "subject-wise",
+      "label": "Subject Wise Test",
+      "questions": 20,
+      "marks": 25,
+      "duration": 45
+    }
+  ],
+  "subjects": [
+    {
+      "slug": "kvpy-physics",
+      "name": "Physics",
+      "icon": "⚛️",
+      "color": "#3b82f6",
+      "weightage": 25,
+      "file": "subjects/kvpy-physics.json"
+    },
+    {
+      "slug": "kvpy-chemistry",
+      "name": "Chemistry",
+      "icon": "🧪",
+      "color": "#10b981",
+      "weightage": 25,
+      "file": "subjects/kvpy-chemistry.json"
+    },
+    {
+      "slug": "kvpy-maths",
+      "name": "Mathematics",
+      "icon": "📐",
+      "color": "#8b5cf6",
+      "weightage": 25,
+      "file": "subjects/kvpy-maths.json"
+    },
+    {
+      "slug": "kvpy-biology",
+      "name": "Biology",
+      "icon": "🌿",
+      "color": "#22c55e",
+      "weightage": 25,
+      "file": "subjects/kvpy-biology.json"
+    }
+  ]
 }

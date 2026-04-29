@@ -3,16 +3,48 @@
   "board": "Competitive",
   "type": "competitive",
   "examConfig": {
-    "fullLengthQuestions": 75,
-    "fullLengthMarks": 300,
-    "fullLengthDuration": 105,
-    "subjectWiseQuestions": 25,
-    "subjectWiseMarks": 100,
-    "subjectWiseDuration": 35,
+    "fullLengthQuestions": 100,
+    "fullLengthMarks": 400,
+    "fullLengthDuration": 120,
+    "subjectWiseQuestions": 50,
+    "subjectWiseMarks": 200,
+    "subjectWiseDuration": 60,
     "negativeMarking": true,
     "correctMarkValue": 4,
     "negativeMarkValue": 1
   },
-  "testTypes": [],
-  "subjects": []
+  "testTypes": [
+    {
+      "type": "full-length",
+      "label": "Full Length Test",
+      "questions": 100,
+      "marks": 400,
+      "duration": 120
+    },
+    {
+      "type": "subject-wise",
+      "label": "Subject Wise Test",
+      "questions": 50,
+      "marks": 200,
+      "duration": 60
+    }
+  ],
+  "subjects": [
+    {
+      "slug": "cuet-pg-core",
+      "name": "Core Subject",
+      "icon": "📚",
+      "color": "#dc2626",
+      "weightage": 75,
+      "file": "subjects/cuet-pg-core.json"
+    },
+    {
+      "slug": "cuet-pg-language",
+      "name": "Language Comprehension",
+      "icon": "📝",
+      "color": "#7c3aed",
+      "weightage": 25,
+      "file": "subjects/cuet-pg-language.json"
+    }
+  ]
 }

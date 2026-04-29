@@ -1,8 +1,89 @@
 {
   "classSlug": "icse-class-10",
+  "classNumber": 10,
   "board": "ICSE",
   "type": "school",
-  "examConfig": {},
-  "testTypes": [],
-  "subjects": []
+  "examConfig": {
+    "fullLengthQuestions": 40,
+    "fullLengthMarks": 80,
+    "fullLengthDuration": 180,
+    "subjectWiseQuestions": 20,
+    "subjectWiseMarks": 40,
+    "subjectWiseDuration": 90,
+    "negativeMarking": false,
+    "correctMarkValue": 2,
+    "negativeMarkValue": 0
+  },
+  "testTypes": [
+    {
+      "type": "full-length",
+      "label": "Full Length Test",
+      "questions": 40,
+      "marks": 80,
+      "duration": 180
+    },
+    {
+      "type": "subject-wise",
+      "label": "Subject Wise Test",
+      "questions": 20,
+      "marks": 40,
+      "duration": 90
+    },
+    {
+      "type": "chapter-wise",
+      "label": "Chapter Wise Test",
+      "questions": 15,
+      "marks": 30,
+      "duration": 45
+    },
+    {
+      "type": "topic-wise",
+      "label": "Topic Wise Test",
+      "questions": 10,
+      "marks": 20,
+      "duration": 25
+    }
+  ],
+  "subjects": [
+    {
+      "slug": "icse10-english",
+      "name": "English",
+      "icon": "📝",
+      "color": "#7c3aed",
+      "weightage": 20,
+      "file": "subjects/icse10-english.json"
+    },
+    {
+      "slug": "icse10-hindi",
+      "name": "Hindi",
+      "icon": "📖",
+      "color": "#ec4899",
+      "weightage": 20,
+      "file": "subjects/icse10-hindi.json"
+    },
+    {
+      "slug": "icse10-maths",
+      "name": "Mathematics",
+      "icon": "🔢",
+      "color": "#dc2626",
+      "weightage": 20,
+      "file": "subjects/icse10-maths.json"
+    },
+    {
+      "slug": "icse10-science",
+      "name": "Science",
+      "icon": "🔬",
+      "color": "#22c55e",
+      "weightage": 20,
+      "file": "subjects/icse10-science.json"
+    },
+    {
+      "slug": "icse10-sst",
+      "name": "Social Science",
+      "icon": "🌍",
+      "color": "#f59e0b",
+      "weightage": 20,
+      "file": "subjects/icse10-sst.json"
+    }
+  ]
 }

@@ -3,9 +3,9 @@
   "board": "Competitive",
   "type": "competitive",
   "examConfig": {
-    "fullLengthQuestions": 50,
-    "fullLengthMarks": 200,
-    "fullLengthDuration": 45,
+    "fullLengthQuestions": 200,
+    "fullLengthMarks": 800,
+    "fullLengthDuration": 195,
     "subjectWiseQuestions": 50,
     "subjectWiseMarks": 200,
     "subjectWiseDuration": 45,
@@ -13,6 +13,46 @@
     "correctMarkValue": 5,
     "negativeMarkValue": 1
   },
-  "testTypes": [],
-  "subjects": []
+  "testTypes": [
+    {
+      "type": "full-length",
+      "label": "Full Length Test",
+      "questions": 200,
+      "marks": 800,
+      "duration": 195
+    },
+    {
+      "type": "subject-wise",
+      "label": "Subject Wise Test",
+      "questions": 50,
+      "marks": 200,
+      "duration": 45
+    }
+  ],
+  "subjects": [
+    {
+      "slug": "cuet-english",
+      "name": "English Language",
+      "icon": "📝",
+      "color": "#7c3aed",
+      "weightage": 25,
+      "file": "subjects/cuet-english.json"
+    },
+    {
+      "slug": "cuet-domain",
+      "name": "Domain Subject",
+      "icon": "📚",
+      "color": "#dc2626",
+      "weightage": 50,
+      "file": "subjects/cuet-domain.json"
+    },
+    {
+      "slug": "cuet-gat",
+      "name": "General Test",
+      "icon": "🌐",
+      "color": "#0891b2",
+      "weightage": 25,
+      "file": "subjects/cuet-gat.json"
+    }
+  ]
 }

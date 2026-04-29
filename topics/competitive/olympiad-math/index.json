@@ -4,15 +4,63 @@
   "type": "competitive",
   "examConfig": {
     "fullLengthQuestions": 30,
-    "fullLengthMarks": 30,
-    "fullLengthDuration": 60,
-    "subjectWiseQuestions": 30,
-    "subjectWiseMarks": 30,
+    "fullLengthMarks": 102,
+    "fullLengthDuration": 180,
+    "subjectWiseQuestions": 10,
+    "subjectWiseMarks": 34,
     "subjectWiseDuration": 60,
-    "negativeMarking": false,
-    "correctMarkValue": 1,
-    "negativeMarkValue": 0
+    "negativeMarking": true,
+    "correctMarkValue": 4,
+    "negativeMarkValue": 1
   },
-  "testTypes": [],
-  "subjects": []
+  "testTypes": [
+    {
+      "type": "full-length",
+      "label": "Full Length Test",
+      "questions": 30,
+      "marks": 102,
+      "duration": 180
+    },
+    {
+      "type": "chapter-wise",
+      "label": "Chapter Wise Test",
+      "questions": 10,
+      "marks": 34,
+      "duration": 60
+    }
+  ],
+  "subjects": [
+    {
+      "slug": "olympiad-algebra",
+      "name": "Algebra",
+      "icon": "📐",
+      "color": "#8b5cf6",
+      "weightage": 30,
+      "file": "subjects/olympiad-algebra.json"
+    },
+    {
+      "slug": "olympiad-geometry",
+      "name": "Geometry",
+      "icon": "📏",
+      "color": "#3b82f6",
+      "weightage": 30,
+      "file": "subjects/olympiad-geometry.json"
+    },
+    {
+      "slug": "olympiad-combinatorics",
+      "name": "Combinatorics",
+      "icon": "🔢",
+      "color": "#dc2626",
+      "weightage": 20,
+      "file": "subjects/olympiad-combinatorics.json"
+    },
+    {
+      "slug": "olympiad-number-theory",
+      "name": "Number Theory",
+      "icon": "🔍",
+      "color": "#f59e0b",
+      "weightage": 20,
+      "file": "subjects/olympiad-number-theory.json"
+    }
+  ]
 }

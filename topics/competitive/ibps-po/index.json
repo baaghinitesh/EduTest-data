@@ -13,6 +13,53 @@
     "correctMarkValue": 1,
     "negativeMarkValue": 0.25
   },
-  "testTypes": [],
-  "subjects": []
+  "testTypes": [
+    {
+      "type": "full-length",
+      "label": "Prelims Test",
+      "questions": 100,
+      "marks": 100,
+      "duration": 60
+    },
+    {
+      "type": "subject-wise",
+      "label": "Subject Wise Test",
+      "questions": 35,
+      "marks": 35,
+      "duration": 20
+    },
+    {
+      "type": "chapter-wise",
+      "label": "Chapter Wise Test",
+      "questions": 20,
+      "marks": 20,
+      "duration": 12
+    }
+  ],
+  "subjects": [
+    {
+      "slug": "bank-english",
+      "name": "English Language",
+      "icon": "📝",
+      "color": "#7c3aed",
+      "weightage": 30,
+      "file": "subjects/bank-english.json"
+    },
+    {
+      "slug": "bank-quant",
+      "name": "Quantitative Aptitude",
+      "icon": "🔢",
+      "color": "#dc2626",
+      "weightage": 35,
+      "file": "subjects/bank-quant.json"
+    },
+    {
+      "slug": "bank-reasoning",
+      "name": "Reasoning Ability",
+      "icon": "🧩",
+      "color": "#f59e0b",
+      "weightage": 35,
+      "file": "subjects/bank-reasoning.json"
+    }
+  ]
 }

@@ -7,12 +7,52 @@
     "fullLengthMarks": 100,
     "fullLengthDuration": 120,
     "subjectWiseQuestions": 40,
-    "subjectWiseMarks": 33,
-    "subjectWiseDuration": 40,
+    "subjectWiseMarks": 100,
+    "subjectWiseDuration": 120,
     "negativeMarking": true,
     "correctMarkValue": 1,
     "negativeMarkValue": 0.33
   },
-  "testTypes": [],
-  "subjects": []
+  "testTypes": [
+    {
+      "type": "full-length",
+      "label": "Full Length Test",
+      "questions": 120,
+      "marks": 100,
+      "duration": 120
+    },
+    {
+      "type": "subject-wise",
+      "label": "Subject Wise Test",
+      "questions": 40,
+      "marks": 100,
+      "duration": 120
+    }
+  ],
+  "subjects": [
+    {
+      "slug": "cds-english",
+      "name": "English",
+      "icon": "📝",
+      "color": "#7c3aed",
+      "weightage": 33,
+      "file": "subjects/cds-english.json"
+    },
+    {
+      "slug": "cds-gk",
+      "name": "General Knowledge",
+      "icon": "🌐",
+      "color": "#0891b2",
+      "weightage": 33,
+      "file": "subjects/cds-gk.json"
+    },
+    {
+      "slug": "cds-maths",
+      "name": "Elementary Mathematics",
+      "icon": "🔢",
+      "color": "#dc2626",
+      "weightage": 34,
+      "file": "subjects/cds-maths.json"
+    }
+  ]
 }

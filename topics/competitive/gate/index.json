@@ -6,13 +6,53 @@
     "fullLengthQuestions": 65,
     "fullLengthMarks": 100,
     "fullLengthDuration": 180,
-    "subjectWiseQuestions": 20,
-    "subjectWiseMarks": 30,
-    "subjectWiseDuration": 60,
+    "subjectWiseQuestions": 30,
+    "subjectWiseMarks": 50,
+    "subjectWiseDuration": 90,
     "negativeMarking": true,
     "correctMarkValue": 2,
-    "negativeMarkValue": 0.66
+    "negativeMarkValue": 0.67
   },
-  "testTypes": [],
-  "subjects": []
+  "testTypes": [
+    {
+      "type": "full-length",
+      "label": "Full Length Test",
+      "questions": 65,
+      "marks": 100,
+      "duration": 180
+    },
+    {
+      "type": "subject-wise",
+      "label": "Subject Wise Test",
+      "questions": 30,
+      "marks": 50,
+      "duration": 90
+    }
+  ],
+  "subjects": [
+    {
+      "slug": "gate-core",
+      "name": "Core Engineering Subject",
+      "icon": "⚙️",
+      "color": "#dc2626",
+      "weightage": 72,
+      "file": "subjects/gate-core.json"
+    },
+    {
+      "slug": "gate-maths",
+      "name": "Engineering Mathematics",
+      "icon": "📐",
+      "color": "#8b5cf6",
+      "weightage": 15,
+      "file": "subjects/gate-maths.json"
+    },
+    {
+      "slug": "gate-aptitude",
+      "name": "General Aptitude",
+      "icon": "🧩",
+      "color": "#f59e0b",
+      "weightage": 13,
+      "file": "subjects/gate-aptitude.json"
+    }
+  ]
 }

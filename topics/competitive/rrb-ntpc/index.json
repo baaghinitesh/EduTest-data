@@ -13,6 +13,46 @@
     "correctMarkValue": 1,
     "negativeMarkValue": 0.33
   },
-  "testTypes": [],
-  "subjects": []
+  "testTypes": [
+    {
+      "type": "full-length",
+      "label": "Full Length Test",
+      "questions": 100,
+      "marks": 100,
+      "duration": 90
+    },
+    {
+      "type": "subject-wise",
+      "label": "Subject Wise Test",
+      "questions": 30,
+      "marks": 30,
+      "duration": 27
+    }
+  ],
+  "subjects": [
+    {
+      "slug": "rrb-gk",
+      "name": "General Awareness",
+      "icon": "🌐",
+      "color": "#0891b2",
+      "weightage": 40,
+      "file": "subjects/rrb-gk.json"
+    },
+    {
+      "slug": "rrb-maths",
+      "name": "Mathematics",
+      "icon": "🔢",
+      "color": "#dc2626",
+      "weightage": 30,
+      "file": "subjects/rrb-maths.json"
+    },
+    {
+      "slug": "rrb-reasoning",
+      "name": "General Intelligence",
+      "icon": "🧩",
+      "color": "#f59e0b",
+      "weightage": 30,
+      "file": "subjects/rrb-reasoning.json"
+    }
+  ]
 }

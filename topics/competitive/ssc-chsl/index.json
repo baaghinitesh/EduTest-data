@@ -13,6 +13,54 @@
     "correctMarkValue": 2,
     "negativeMarkValue": 0.5
   },
-  "testTypes": [],
-  "subjects": []
+  "testTypes": [
+    {
+      "type": "full-length",
+      "label": "Full Length Test",
+      "questions": 100,
+      "marks": 200,
+      "duration": 60
+    },
+    {
+      "type": "subject-wise",
+      "label": "Subject Wise Test",
+      "questions": 25,
+      "marks": 50,
+      "duration": 15
+    }
+  ],
+  "subjects": [
+    {
+      "slug": "chsl-gk",
+      "name": "General Awareness",
+      "icon": "🌐",
+      "color": "#0891b2",
+      "weightage": 25,
+      "file": "subjects/chsl-gk.json"
+    },
+    {
+      "slug": "chsl-english",
+      "name": "English Language",
+      "icon": "📝",
+      "color": "#7c3aed",
+      "weightage": 25,
+      "file": "subjects/chsl-english.json"
+    },
+    {
+      "slug": "chsl-quant",
+      "name": "Quantitative Aptitude",
+      "icon": "🔢",
+      "color": "#dc2626",
+      "weightage": 25,
+      "file": "subjects/chsl-quant.json"
+    },
+    {
+      "slug": "chsl-reasoning",
+      "name": "General Intelligence",
+      "icon": "��",
+      "color": "#f59e0b",
+      "weightage": 25,
+      "file": "subjects/chsl-reasoning.json"
+    }
+  ]
 }

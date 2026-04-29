@@ -3,16 +3,64 @@
   "board": "Competitive",
   "type": "competitive",
   "examConfig": {
-    "fullLengthQuestions": 90,
-    "fullLengthMarks": 150,
+    "fullLengthQuestions": 100,
+    "fullLengthMarks": 100,
     "fullLengthDuration": 90,
     "subjectWiseQuestions": 25,
-    "subjectWiseMarks": 40,
-    "subjectWiseDuration": 25,
-    "negativeMarking": true,
-    "correctMarkValue": 2,
-    "negativeMarkValue": 0.5
+    "subjectWiseMarks": 25,
+    "subjectWiseDuration": 22,
+    "negativeMarking": false,
+    "correctMarkValue": 1,
+    "negativeMarkValue": 0
   },
-  "testTypes": [],
-  "subjects": []
+  "testTypes": [
+    {
+      "type": "full-length",
+      "label": "Full Length Test",
+      "questions": 100,
+      "marks": 100,
+      "duration": 90
+    },
+    {
+      "type": "subject-wise",
+      "label": "Subject Wise Test",
+      "questions": 25,
+      "marks": 25,
+      "duration": 22
+    }
+  ],
+  "subjects": [
+    {
+      "slug": "mts-gk",
+      "name": "General Awareness",
+      "icon": "🌐",
+      "color": "#0891b2",
+      "weightage": 25,
+      "file": "subjects/mts-gk.json"
+    },
+    {
+      "slug": "mts-english",
+      "name": "English Language",
+      "icon": "📝",
+      "color": "#7c3aed",
+      "weightage": 25,
+      "file": "subjects/mts-english.json"
+    },
+    {
+      "slug": "mts-quant",
+      "name": "Numerical Aptitude",
+      "icon": "🔢",
+      "color": "#dc2626",
+      "weightage": 25,
+      "file": "subjects/mts-quant.json"
+    },
+    {
+      "slug": "mts-reasoning",
+      "name": "General Intelligence",
+      "icon": "🧩",
+      "color": "#f59e0b",
+      "weightage": 25,
+      "file": "subjects/mts-reasoning.json"
+    }
+  ]
 }

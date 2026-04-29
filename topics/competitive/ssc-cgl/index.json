@@ -13,6 +13,61 @@
     "correctMarkValue": 2,
     "negativeMarkValue": 0.5
   },
-  "testTypes": [],
-  "subjects": []
+  "testTypes": [
+    {
+      "type": "full-length",
+      "label": "Full Length Test",
+      "questions": 100,
+      "marks": 200,
+      "duration": 60
+    },
+    {
+      "type": "subject-wise",
+      "label": "Subject Wise Test",
+      "questions": 25,
+      "marks": 50,
+      "duration": 15
+    },
+    {
+      "type": "chapter-wise",
+      "label": "Chapter Wise Test",
+      "questions": 20,
+      "marks": 40,
+      "duration": 12
+    }
+  ],
+  "subjects": [
+    {
+      "slug": "ssc-gk",
+      "name": "General Awareness",
+      "icon": "🌐",
+      "color": "#0891b2",
+      "weightage": 25,
+      "file": "subjects/ssc-gk.json"
+    },
+    {
+      "slug": "ssc-english",
+      "name": "English Language",
+      "icon": "📝",
+      "color": "#7c3aed",
+      "weightage": 25,
+      "file": "subjects/ssc-english.json"
+    },
+    {
+      "slug": "ssc-quant",
+      "name": "Quantitative Aptitude",
+      "icon": "🔢",
+      "color": "#dc2626",
+      "weightage": 25,
+      "file": "subjects/ssc-quant.json"
+    },
+    {
+      "slug": "ssc-reasoning",
+      "name": "General Intelligence",
+      "icon": "��",
+      "color": "#f59e0b",
+      "weightage": 25,
+      "file": "subjects/ssc-reasoning.json"
+    }
+  ]
 }

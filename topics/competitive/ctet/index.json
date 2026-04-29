@@ -13,6 +13,69 @@
     "correctMarkValue": 1,
     "negativeMarkValue": 0
   },
-  "testTypes": [],
-  "subjects": []
+  "testTypes": [
+    {
+      "type": "full-length",
+      "label": "Full Length Test",
+      "questions": 150,
+      "marks": 150,
+      "duration": 150
+    },
+    {
+      "type": "subject-wise",
+      "label": "Subject Wise Test",
+      "questions": 30,
+      "marks": 30,
+      "duration": 30
+    },
+    {
+      "type": "chapter-wise",
+      "label": "Chapter Wise Test",
+      "questions": 20,
+      "marks": 20,
+      "duration": 20
+    }
+  ],
+  "subjects": [
+    {
+      "slug": "ctet-cdp",
+      "name": "Child Development Pedagogy",
+      "icon": "👶",
+      "color": "#ec4899",
+      "weightage": 20,
+      "file": "subjects/ctet-cdp.json"
+    },
+    {
+      "slug": "ctet-language1",
+      "name": "Language I Hindi",
+      "icon": "📖",
+      "color": "#7c3aed",
+      "weightage": 20,
+      "file": "subjects/ctet-language1.json"
+    },
+    {
+      "slug": "ctet-language2",
+      "name": "Language II English",
+      "icon": "📝",
+      "color": "#0891b2",
+      "weightage": 20,
+      "file": "subjects/ctet-language2.json"
+    },
+    {
+      "slug": "ctet-maths",
+      "name": "Mathematics",
+      "icon": "🔢",
+      "color": "#dc2626",
+      "weightage": 20,
+      "file": "subjects/ctet-maths.json"
+    },
+    {
+      "slug": "ctet-evs",
+      "name": "Environmental Studies",
+      "icon": "🌿",
+      "color": "#22c55e",
+      "weightage": 20,
+      "file": "subjects/ctet-evs.json"
+    }
+  ]
 }

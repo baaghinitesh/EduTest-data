@@ -6,13 +6,84 @@
     "fullLengthQuestions": 100,
     "fullLengthMarks": 200,
     "fullLengthDuration": 120,
-    "subjectWiseQuestions": 25,
-    "subjectWiseMarks": 50,
-    "subjectWiseDuration": 30,
+    "subjectWiseQuestions": 50,
+    "subjectWiseMarks": 100,
+    "subjectWiseDuration": 60,
     "negativeMarking": true,
     "correctMarkValue": 2,
     "negativeMarkValue": 0.66
   },
-  "testTypes": [],
-  "subjects": []
+  "testTypes": [
+    {
+      "type": "full-length",
+      "label": "Full Length Test",
+      "questions": 100,
+      "marks": 200,
+      "duration": 120
+    },
+    {
+      "type": "subject-wise",
+      "label": "Subject Wise Test",
+      "questions": 50,
+      "marks": 100,
+      "duration": 60
+    },
+    {
+      "type": "chapter-wise",
+      "label": "Chapter Wise Test",
+      "questions": 25,
+      "marks": 50,
+      "duration": 30
+    }
+  ],
+  "subjects": [
+    {
+      "slug": "upsc-history",
+      "name": "History",
+      "icon": "��️",
+      "color": "#b45309",
+      "weightage": 15,
+      "file": "subjects/upsc-history.json"
+    },
+    {
+      "slug": "upsc-geography",
+      "name": "Geography",
+      "icon": "🌍",
+      "color": "#059669",
+      "weightage": 15,
+      "file": "subjects/upsc-geography.json"
+    },
+    {
+      "slug": "upsc-polity",
+      "name": "Indian Polity",
+      "icon": "⚖️",
+      "color": "#7c3aed",
+      "weightage": 15,
+      "file": "subjects/upsc-polity.json"
+    },
+    {
+      "slug": "upsc-economy",
+      "name": "Economy",
+      "icon": "💹",
+      "color": "#0891b2",
+      "weightage": 15,
+      "file": "subjects/upsc-economy.json"
+    },
+    {
+      "slug": "upsc-science",
+      "name": "Science Technology",
+      "icon": "🔬",
+      "color": "#dc2626",
+      "weightage": 10,
+      "file": "subjects/upsc-science.json"
+    },
+    {
+      "slug": "upsc-csat",
+      "name": "CSAT Aptitude",
+      "icon": "🧮",
+      "color": "#f59e0b",
+      "weightage": 30,
+      "file": "subjects/upsc-csat.json"
+    }
+  ]
 }

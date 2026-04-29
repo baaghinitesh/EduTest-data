@@ -13,6 +13,62 @@
     "correctMarkValue": 4,
     "negativeMarkValue": 1
   },
-  "testTypes": [],
-  "subjects": []
+  "testTypes": [
+    {
+      "type": "full-length",
+      "label": "Full Length Test",
+      "questions": 200,
+      "marks": 800,
+      "duration": 210
+    },
+    {
+      "type": "subject-wise",
+      "label": "Subject Wise Test",
+      "questions": 50,
+      "marks": 200,
+      "duration": 52
+    }
+  ],
+  "subjects": [
+    {
+      "slug": "neet-pg-medicine",
+      "name": "General Medicine",
+      "icon": "🏥",
+      "color": "#ef4444",
+      "weightage": 20,
+      "file": "subjects/neet-pg-medicine.json"
+    },
+    {
+      "slug": "neet-pg-surgery",
+      "name": "General Surgery",
+      "icon": "🔪",
+      "color": "#f97316",
+      "weightage": 15,
+      "file": "subjects/neet-pg-surgery.json"
+    },
+    {
+      "slug": "neet-pg-obg",
+      "name": "Obstetrics Gynecology",
+      "icon": "👶",
+      "color": "#ec4899",
+      "weightage": 12,
+      "file": "subjects/neet-pg-obg.json"
+    },
+    {
+      "slug": "neet-pg-pediatrics",
+      "name": "Pediatrics",
+      "icon": "🧒",
+      "color": "#8b5cf6",
+      "weightage": 10,
+      "file": "subjects/neet-pg-pediatrics.json"
+    },
+    {
+      "slug": "neet-pg-preclinical",
+      "name": "Pre Clinical Subjects",
+      "icon": "🔬",
+      "color": "#0891b2",
+      "weightage": 43,
+      "file": "subjects/neet-pg-preclinical.json"
+    }
+  ]
 }

@@ -1,28 +1,21 @@
 """
-groq_client.py — Groq API wrapper for notes and formulas.
+groq_client.py — Groq API wrapper. Dynamic system prompt (not NORCET-specific).
 
-Free tier: 14,400 RPD, 6,000 TPM per model.
-Models:
-  llama-3.3-70b-versatile → notes AND formulas
-    (8B instant has only 6K TPM — our prompts exceed that limit)
-
-Graceful failure: raises GroqError so caller can skip and continue.
+Free tier: 14,400 RPD, 6,000 TPM — essentially unlimited for our use.
+Model: llama-3.3-70b-versatile for all content (notes, formulas, resources, formatter).
 """
 import os, json, re, time
 from groq import Groq
 
-MODEL_NOTES    = "llama-3.3-70b-versatile"
-MODEL_FORMULAS = "llama-3.3-70b-versatile"  # 8B TPM too low for our prompts
-
+MODEL = "llama-3.3-70b-versatile"
 MAX_RETRIES = 3
-MIN_GAP     = 2.0   # minimal gap — external 60s delays handle rate limiting
+MIN_GAP     = 2.0
 
 _client    = None
 _last_call = 0.0
 
 
 class GroqError(Exception):
-    """Raised when Groq call fails after retries."""
     pass
 
 
@@ -31,7 +24,7 @@ def _get_client():
     if _client is None:
         api_key = os.environ.get("GROQ_API_KEY", "")
         if not api_key:
-            raise GroqError("GROQ_API_KEY environment variable not set")
+            raise GroqError("GROQ_API_KEY not set")
         _client = Groq(api_key=api_key)
     return _client
 
@@ -46,114 +39,108 @@ def _rate_limit_sleep():
 
 def _extract_json(text):
     text = re.sub(r"```(?:json)?\s*", "", text)
-    text = re.sub(r"```", "", text)
-    text = text.strip()
+    text = re.sub(r"```", "", text).strip()
     try:
         return json.loads(text)
     except json.JSONDecodeError:
         pass
-    for start_char, end_char in [("{", "}"), ("[", "]")]:
-        idx = text.find(start_char)
+    for s, e in [("{", "}"), ("[", "]")]:
+        idx = text.find(s)
         if idx == -1:
             continue
         depth = 0
         for i, ch in enumerate(text[idx:], idx):
-            if ch == start_char:
+            if ch == s:
                 depth += 1
-            elif ch == end_char:
+            elif ch == e:
                 depth -= 1
                 if depth == 0:
                     try:
                         return json.loads(text[idx:i+1])
                     except json.JSONDecodeError:
                         break
-    raise GroqError("No valid JSON found in Groq response")
+    raise GroqError("No valid JSON in Groq response")
 
 
-def _call(model, prompt, expect_json, max_tokens):
-    client = _get_client()
+def _call(prompt, expect_json, max_tokens, system_prompt):
+    client   = _get_client()
     last_err = None
-
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             _rate_limit_sleep()
             response = client.chat.completions.create(
-                model=model,
+                model=MODEL,
                 messages=[
-                    {
-                        "role": "system",
-                        "content": (
-                            "You are an expert medical educator specializing in NORCET nursing exam. "
-                            "Generate accurate, comprehensive educational content. "
-                            "ALWAYS respond with valid JSON only — no markdown fences, no extra text outside JSON."
-                        )
-                    },
-                    {"role": "user", "content": prompt}
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user",   "content": prompt},
                 ],
                 temperature=0.6,
                 max_tokens=max_tokens,
             )
             text = response.choices[0].message.content
-            if not expect_json:
-                return text
-            return _extract_json(text)
+            return text if not expect_json else _extract_json(text)
 
         except GroqError:
             raise
-
         except Exception as e:
             last_err = e
             err_str  = str(e)
             print(f"  [Groq] Attempt {attempt}/{MAX_RETRIES} failed: {err_str[:120]}")
-
-            # Prompt too large (413) — no point retrying
             if "413" in err_str:
-                raise GroqError(f"Prompt too large for Groq (413): {err_str[:80]}")
-
-            # Rate limited (429) — wait and retry
-            if "429" in err_str or "rate_limit" in err_str.lower() or "rate limit" in err_str.lower():
-                retry_match = re.search(r"try again in (\d+\.?\d*)s", err_str, re.IGNORECASE)
-                wait = float(retry_match.group(1)) + 2 if retry_match else 45
-                print(f"  [Groq] Rate limited (429) — waiting {wait:.0f}s...")
+                raise GroqError(f"Prompt too large (413)")
+            if "429" in err_str or "rate_limit" in err_str.lower():
+                m = re.search(r"try again in (\d+\.?\d*)s", err_str, re.IGNORECASE)
+                wait = float(m.group(1)) + 2 if m else 45
+                print(f"  [Groq] Rate limited — waiting {wait:.0f}s...")
                 time.sleep(wait)
                 continue
-
             if attempt < MAX_RETRIES:
                 time.sleep(4 * attempt)
-
     raise GroqError(f"Groq failed after {MAX_RETRIES} attempts: {last_err}")
 
 
-def generate_note(prompt, expect_json=True):
-    """llama-3.3-70b for comprehensive notes."""
-    return _call(MODEL_NOTES, prompt, expect_json, max_tokens=8000)
+def _sys(exam_name, subject_name=""):
+    """Build a dynamic system prompt based on exam context."""
+    ctx = f"{exam_name} exam"
+    if subject_name:
+        ctx += f", {subject_name} subject"
+    return (
+        f"You are an expert educator and content creator specializing in the {ctx}. "
+        "Generate accurate, comprehensive educational content. "
+        "ALWAYS respond with valid JSON only — no markdown fences, no extra text outside JSON."
+    )
 
 
-def generate_formula(prompt, expect_json=True):
-    """llama-3.3-70b for formula/quick-reference sheets."""
-    return _call(MODEL_FORMULAS, prompt, expect_json, max_tokens=5000)
+def format_questions(raw_text, schema_example, exam_name, subject_name=""):
+    """Step 4 — Formatter: extract structured JSON from audited raw text."""
+    prompt = (
+        f"Extract questions, options, correct answers, and explanations from this text.\n"
+        f"Output ONLY a valid JSON array matching this schema:\n{schema_example}\n"
+        f"Output absolutely nothing but valid JSON array starting with [.\n\n"
+        f"{raw_text}\n["
+    )
+    sys = _sys(exam_name, subject_name)
+    return _call(prompt, expect_json=True, max_tokens=8000, system_prompt=sys)
 
 
-def expand_content(existing_html, topic, subj_name, content_type="note"):
-    """
-    Expand existing HTML content that is too short.
-    Returns additional HTML to append to existing content.
-    """
-    prompt = f"""The following {content_type} about {topic} ({subj_name}) is incomplete and needs more content.
+def generate_note(prompt, exam_name, subject_name="", expect_json=False):
+    return _call(prompt, expect_json, max_tokens=8000, system_prompt=_sys(exam_name, subject_name))
 
-EXISTING CONTENT:
-{existing_html[:2000]}
 
-Please CONTINUE and EXPAND this content by adding:
-- More detailed explanations for each section
-- Additional clinical examples and case scenarios
-- More specific drug doses and normal values in <code> tags
-- Additional mnemonics and memory aids in <em> tags
-- More exam-focused key points
-- Any missing sections from: Classification, Pathophysiology, Clinical Features, Management, Nursing Care, Complications
+def generate_formula(prompt, exam_name, subject_name="", expect_json=True):
+    return _call(prompt, expect_json, max_tokens=5000, system_prompt=_sys(exam_name, subject_name))
 
-Write ONLY the additional HTML to append (starting with <h3> or <p>).
-Do NOT repeat what's already written. Just add new content.
-Write at least 500 more words of detailed HTML."""
 
-    return _call(MODEL_NOTES, prompt, expect_json=False, max_tokens=4000)
+def generate_resource(prompt, exam_name, subject_name="", expect_json=True):
+    return _call(prompt, expect_json, max_tokens=5000, system_prompt=_sys(exam_name, subject_name))
+
+
+def expand_content(existing_html, topic, subj_name, exam_name, content_type="note"):
+    prompt = (
+        f"The following {content_type} about {topic} ({subj_name}) is incomplete.\n\n"
+        f"EXISTING:\n{existing_html[:2000]}\n\n"
+        "Add MORE content: detailed explanations, clinical examples, drug doses in <code>, "
+        "mnemonics in <em>, key points. Write ONLY the additional HTML to append "
+        "(start with <h3> or <p>). At least 500 more words. Do NOT repeat existing content."
+    )
+    return _call(prompt, expect_json=False, max_tokens=4000, system_prompt=_sys(exam_name, subj_name))

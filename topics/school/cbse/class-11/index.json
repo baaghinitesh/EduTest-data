@@ -1,8 +1,82 @@
 {
   "classSlug": "cbse-class-11",
+  "classNumber": 11,
   "board": "CBSE",
   "type": "school",
-  "examConfig": {},
-  "testTypes": [],
-  "subjects": []
+  "examConfig": {
+    "fullLengthQuestions": 35,
+    "fullLengthMarks": 70,
+    "fullLengthDuration": 180,
+    "subjectWiseQuestions": 20,
+    "subjectWiseMarks": 40,
+    "subjectWiseDuration": 90,
+    "negativeMarking": false,
+    "correctMarkValue": 2,
+    "negativeMarkValue": 0
+  },
+  "testTypes": [
+    {
+      "type": "full-length",
+      "label": "Full Length Test",
+      "questions": 35,
+      "marks": 70,
+      "duration": 180
+    },
+    {
+      "type": "subject-wise",
+      "label": "Subject Wise Test",
+      "questions": 20,
+      "marks": 40,
+      "duration": 90
+    },
+    {
+      "type": "chapter-wise",
+      "label": "Chapter Wise Test",
+      "questions": 15,
+      "marks": 30,
+      "duration": 45
+    }
+  ],
+  "subjects": [
+    {
+      "slug": "cbse11-physics",
+      "name": "Physics",
+      "icon": "⚛️",
+      "color": "#3b82f6",
+      "weightage": 20,
+      "file": "subjects/cbse11-physics.json"
+    },
+    {
+      "slug": "cbse11-chemistry",
+      "name": "Chemistry",
+      "icon": "🧪",
+      "color": "#10b981",
+      "weightage": 20,
+      "file": "subjects/cbse11-chemistry.json"
+    },
+    {
+      "slug": "cbse11-maths",
+      "name": "Mathematics",
+      "icon": "📐",
+      "color": "#8b5cf6",
+      "weightage": 20,
+      "file": "subjects/cbse11-maths.json"
+    },
+    {
+      "slug": "cbse11-biology",
+      "name": "Biology",
+      "icon": "🌿",
+      "color": "#22c55e",
+      "weightage": 20,
+      "file": "subjects/cbse11-biology.json"
+    },
+    {
+      "slug": "cbse11-english",
+      "name": "English",
+      "icon": "📝",
+      "color": "#7c3aed",
+      "weightage": 20,
+      "file": "subjects/cbse11-english.json"
+    }
+  ]
 }

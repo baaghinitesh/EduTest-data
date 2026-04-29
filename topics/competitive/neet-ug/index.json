@@ -13,6 +13,68 @@
     "correctMarkValue": 4,
     "negativeMarkValue": 1
   },
-  "testTypes": [],
-  "subjects": []
+  "testTypes": [
+    {
+      "type": "full-length",
+      "label": "Full Length Test",
+      "questions": 180,
+      "marks": 720,
+      "duration": 200
+    },
+    {
+      "type": "subject-wise",
+      "label": "Subject Wise Test",
+      "questions": 45,
+      "marks": 180,
+      "duration": 60
+    },
+    {
+      "type": "chapter-wise",
+      "label": "Chapter Wise Test",
+      "questions": 30,
+      "marks": 120,
+      "duration": 40
+    },
+    {
+      "type": "topic-wise",
+      "label": "Topic Wise Test",
+      "questions": 15,
+      "marks": 60,
+      "duration": 20
+    }
+  ],
+  "subjects": [
+    {
+      "slug": "neet-physics",
+      "name": "Physics",
+      "icon": "⚛️",
+      "color": "#3b82f6",
+      "weightage": 25,
+      "file": "subjects/neet-physics.json"
+    },
+    {
+      "slug": "neet-chemistry",
+      "name": "Chemistry",
+      "icon": "🧪",
+      "color": "#10b981",
+      "weightage": 25,
+      "file": "subjects/neet-chemistry.json"
+    },
+    {
+      "slug": "neet-botany",
+      "name": "Botany",
+      "icon": "🌿",
+      "color": "#22c55e",
+      "weightage": 25,
+      "file": "subjects/neet-botany.json"
+    },
+    {
+      "slug": "neet-zoology",
+      "name": "Zoology",
+      "icon": "🐾",
+      "color": "#f59e0b",
+      "weightage": 25,
+      "file": "subjects/neet-zoology.json"
+    }
+  ]
 }

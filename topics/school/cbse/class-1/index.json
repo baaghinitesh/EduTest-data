@@ -1,8 +1,81 @@
 {
   "classSlug": "cbse-class-1",
+  "classNumber": 1,
   "board": "CBSE",
   "type": "school",
-  "examConfig": {},
-  "testTypes": [],
-  "subjects": []
+  "examConfig": {
+    "fullLengthQuestions": 40,
+    "fullLengthMarks": 40,
+    "fullLengthDuration": 60,
+    "subjectWiseQuestions": 20,
+    "subjectWiseMarks": 20,
+    "subjectWiseDuration": 30,
+    "negativeMarking": false,
+    "correctMarkValue": 1,
+    "negativeMarkValue": 0
+  },
+  "testTypes": [
+    {
+      "type": "full-length",
+      "label": "Full Length Test",
+      "questions": 40,
+      "marks": 40,
+      "duration": 60
+    },
+    {
+      "type": "subject-wise",
+      "label": "Subject Wise Test",
+      "questions": 20,
+      "marks": 20,
+      "duration": 30
+    },
+    {
+      "type": "chapter-wise",
+      "label": "Chapter Wise Test",
+      "questions": 15,
+      "marks": 15,
+      "duration": 20
+    },
+    {
+      "type": "topic-wise",
+      "label": "Topic Wise Test",
+      "questions": 10,
+      "marks": 10,
+      "duration": 15
+    }
+  ],
+  "subjects": [
+    {
+      "slug": "cbse1-english",
+      "name": "English",
+      "icon": "📝",
+      "color": "#7c3aed",
+      "weightage": 25,
+      "file": "subjects/cbse1-english.json"
+    },
+    {
+      "slug": "cbse1-hindi",
+      "name": "Hindi",
+      "icon": "📖",
+      "color": "#ec4899",
+      "weightage": 25,
+      "file": "subjects/cbse1-hindi.json"
+    },
+    {
+      "slug": "cbse1-maths",
+      "name": "Mathematics",
+      "icon": "🔢",
+      "color": "#dc2626",
+      "weightage": 25,
+      "file": "subjects/cbse1-maths.json"
+    },
+    {
+      "slug": "cbse1-evs",
+      "name": "Environmental Studies",
+      "icon": "🌿",
+      "color": "#22c55e",
+      "weightage": 25,
+      "file": "subjects/cbse1-evs.json"
+    }
+  ]
 }
