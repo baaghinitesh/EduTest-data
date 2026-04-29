@@ -1,156 +1,183 @@
 """
-generate.py — EduTest content runner. gemini-2.5-pro only.
+generate.py — EduTest content runner. 3-API strategy.
 
-Free tier: 100 RPD
-Budget per run: ~20 Pro calls max
-4 runs/day x 20 calls = 80 calls/day (safe under 100 RPD)
+Per run generates up to 11 items:
+  1 full-length test  (Gemini Pro,   GEMINI_API_KEY_PRO)
+  2 subject tests     (Gemini Flash, GEMINI_API_KEY)
+  4 notes             (Groq 70B,     GROQ_API_KEY)
+  4 formulas          (Groq 8B,      GROQ_API_KEY)
 
-Each run generates 5 high-quality items:
-  full_length_batch → 1 full-length test (3 calls) + 2 topic tests (2 calls) = 5 items, 5 calls
-  topic_batch       → 5 topic tests (5 calls)
-  notes_batch       → 5 deep notes (5 calls)
-  formula_batch     → 5 formula sheets (5 calls)
-  mixed_batch       → 2 topic tests + 2 notes + 1 formula = 5 items, 5 calls
+GRACEFUL FAILURE POLICY:
+  - Each item is wrapped in try/except
+  - If an item fails (quota, network, bad JSON) → log warning, skip, continue
+  - Run only fails if ZERO items were generated
+  - Partial success (e.g. 7/11 items) → commits what was generated, exits 0
+  - This prevents GitHub Actions from marking the run as failed
+    when only 1-2 API calls hit quota limits
 """
-import os, sys, random
+import os, sys, random, traceback
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import topic_picker, content_builder, catalog_updater
+
+import topic_picker
+import content_builder
+import catalog_updater
+from gemini_client import GeminiError
+from groq_client import GroqError
 
 CLASS_SLUG = "norcet"
 
-# Weighted modes — full_length less frequent (uses 3 calls for 1 item)
-RUN_MODES = [
-    "full_length_batch",  # weight 1
-    "topic_batch",        # weight 2
-    "topic_batch",
-    "notes_batch",        # weight 2
-    "notes_batch",
-    "formula_batch",      # weight 2
-    "formula_batch",
-    "mixed_batch",        # weight 1
-]
+def safe_run(label, fn, *args, **kwargs):
+    """
+    Run fn(*args, **kwargs) safely.
+    Returns (result, None) on success.
+    Returns (None, error_str) on failure — never raises.
+    """
+    try:
+        result = fn(*args, **kwargs)
+        return result, None
+    except (GeminiError, GroqError) as e:
+        msg = f"API quota/error: {e}"
+        print(f"  [SKIP] {label} — {msg}")
+        return None, msg
+    except Exception as e:
+        msg = f"Unexpected error: {e}"
+        print(f"  [SKIP] {label} — {msg}")
+        traceback.print_exc()
+        return None, msg
 
 def run():
-    mode = os.environ.get("GENERATE_MODE", "").strip() or random.choice(RUN_MODES)
+    mode = os.environ.get("GENERATE_MODE", "").strip()
 
     print(f"\n{'='*65}")
-    print(f"  EduTest Generator  |  Model: gemini-2.5-pro  |  Mode: {mode.upper()}")
-    print(f"  Exam: {CLASS_SLUG.upper()}  |  5 high-quality items per run")
+    print(f"  EduTest Generator  |  3-API Strategy")
+    print(f"  Exam: {CLASS_SLUG.upper()}  |  Target: 11 items per run")
+    print(f"  APIs: Gemini Pro (full-length) + Flash (tests) + Groq (notes/formulas)")
     print(f"{'='*65}\n")
 
     topics_data = topic_picker.load_topics(CLASS_SLUG)
     if not topics_data:
-        print(f"ERROR: No topics for {CLASS_SLUG}"); sys.exit(1)
+        print(f"ERROR: No topics for {CLASS_SLUG}")
+        sys.exit(1)
 
     exam_config = topics_data.get("examConfig", {})
     board       = topics_data.get("board", "Competitive")
     index_entries = []
+    errors = []
+    item_num = 0
 
-    # ── FULL LENGTH BATCH: 1 full-length (3 calls) + 2 topic tests (2 calls) ─
-    if mode == "full_length_batch":
-        print("BATCH: 1 full-length test + 2 topic tests = 5 items\n")
-
-        print("[1/5] Full-length test (3 Pro calls)...")
-        dist = topic_picker.pick_subjects_for_full_length(CLASS_SLUG)
-        uid, path, entry = content_builder.build_full_length_test(CLASS_SLUG, exam_config, dist, board)
+    # ── 1. Full-length test (Gemini Pro) ──────────────────────────────────────
+    item_num += 1
+    print(f"[{item_num}/11] Full-length test (Gemini Pro)...")
+    dist = topic_picker.pick_subjects_for_full_length(CLASS_SLUG)
+    result, err = safe_run(
+        "full-length test",
+        content_builder.build_full_length_test,
+        CLASS_SLUG, exam_config, dist, board
+    )
+    if result:
+        uid, path, entry = result
         index_entries.append(entry)
-        print(f"  Done: {entry['title']}\n")
-
-        test_topics, state = topic_picker.pick_multiple_topics("test", CLASS_SLUG, count=2, different_subjects=True)
-        test_items = []
-        for i, t in enumerate(test_topics, 2):
-            print(f"[{i+1}/5] Topic test: {t['subjectName']} / {t['topic']}...")
-            uid, path, entry = content_builder.build_subject_test(t, exam_config)
-            index_entries.append(entry)
-            test_items.append((t, uid))
-            print(f"  Done: {entry['title']}\n")
-        topic_picker.mark_generated(state, "test", test_items)
-
-    # ── TOPIC BATCH: 5 topic tests ────────────────────────────────────────────
-    elif mode == "topic_batch":
-        print("BATCH: 5 topic tests\n")
-        topics, state = topic_picker.pick_multiple_topics("test", CLASS_SLUG, count=5, different_subjects=True)
-        items = []
-        for i, t in enumerate(topics, 1):
-            print(f"[{i}/5] Topic test: {t['subjectName']} / {t['topic']}...")
-            uid, path, entry = content_builder.build_subject_test(t, exam_config)
-            index_entries.append(entry)
-            items.append((t, uid))
-            print(f"  Done: {entry['title']}\n")
-        topic_picker.mark_generated(state, "test", items)
-
-    # ── NOTES BATCH: 5 deep notes ─────────────────────────────────────────────
-    elif mode == "notes_batch":
-        print("BATCH: 5 deep study notes\n")
-        topics, state = topic_picker.pick_multiple_topics("note", CLASS_SLUG, count=5, different_subjects=True)
-        items = []
-        for i, t in enumerate(topics, 1):
-            print(f"[{i}/5] Note: {t['subjectName']} / {t['topic']}...")
-            uid, path, entry = content_builder.build_note(t)
-            index_entries.append(entry)
-            items.append((t, uid))
-            print(f"  Done: {entry['title']}\n")
-        topic_picker.mark_generated(state, "note", items)
-
-    # ── FORMULA BATCH: 5 formula sheets ──────────────────────────────────────
-    elif mode == "formula_batch":
-        print("BATCH: 5 formula/quick-reference sheets\n")
-        topics, state = topic_picker.pick_multiple_topics("formula", CLASS_SLUG, count=5, different_subjects=True)
-        items = []
-        for i, t in enumerate(topics, 1):
-            print(f"[{i}/5] Formula: {t['subjectName']} / {t['topic']}...")
-            uid, path, entry = content_builder.build_formula(t)
-            index_entries.append(entry)
-            items.append((t, uid))
-            print(f"  Done: {entry['title']}\n")
-        topic_picker.mark_generated(state, "formula", items)
-
-    # ── MIXED BATCH: 2 tests + 2 notes + 1 formula ───────────────────────────
-    elif mode == "mixed_batch":
-        print("BATCH: 2 topic tests + 2 notes + 1 formula\n")
-
-        test_topics, state = topic_picker.pick_multiple_topics("test", CLASS_SLUG, count=2, different_subjects=True)
-        test_items = []
-        for i, t in enumerate(test_topics, 1):
-            print(f"[{i}/5] Topic test: {t['subjectName']} / {t['topic']}...")
-            uid, path, entry = content_builder.build_subject_test(t, exam_config)
-            index_entries.append(entry)
-            test_items.append((t, uid))
-            print(f"  Done: {entry['title']}\n")
-        topic_picker.mark_generated(state, "test", test_items)
-
-        note_topics, state2 = topic_picker.pick_multiple_topics("note", CLASS_SLUG, count=2, different_subjects=True)
-        note_items = []
-        for i, t in enumerate(note_topics, 3):
-            print(f"[{i}/5] Note: {t['subjectName']} / {t['topic']}...")
-            uid, path, entry = content_builder.build_note(t)
-            index_entries.append(entry)
-            note_items.append((t, uid))
-            print(f"  Done: {entry['title']}\n")
-        topic_picker.mark_generated(state2, "note", note_items)
-
-        formula_topics, state3 = topic_picker.pick_multiple_topics("formula", CLASS_SLUG, count=1, different_subjects=True)
-        formula_items = []
-        for i, t in enumerate(formula_topics, 5):
-            print(f"[{i}/5] Formula: {t['subjectName']} / {t['topic']}...")
-            uid, path, entry = content_builder.build_formula(t)
-            index_entries.append(entry)
-            formula_items.append((t, uid))
-            print(f"  Done: {entry['title']}\n")
-        topic_picker.mark_generated(state3, "formula", formula_items)
-
+        print(f"  ✅ Done: {entry['title']}\n")
     else:
-        print(f"ERROR: Unknown mode '{mode}'"); sys.exit(1)
+        errors.append(f"Full-length test: {err}")
+        print(f"  ⚠️  Skipped — continuing with other items\n")
 
+    # ── 2-3. Subject-wise tests (Gemini Flash) ────────────────────────────────
+    test_topics, state = topic_picker.pick_multiple_topics("test", CLASS_SLUG, count=2, different_subjects=True)
+    test_items_generated = []
+
+    for i, t in enumerate(test_topics):
+        item_num += 1
+        print(f"[{item_num}/11] Subject test (Gemini Flash): {t['subjectName']}/{t['topic']}...")
+        result, err = safe_run(
+            f"subject test {i+1}",
+            content_builder.build_subject_test,
+            t, exam_config
+        )
+        if result:
+            uid, path, entry = result
+            index_entries.append(entry)
+            test_items_generated.append((t, uid))
+            print(f"  ✅ Done: {entry['title']}\n")
+        else:
+            errors.append(f"Subject test {i+1}: {err}")
+            print(f"  ⚠️  Skipped\n")
+
+    if test_items_generated:
+        topic_picker.mark_generated(state, "test", test_items_generated)
+
+    # ── 4-7. Notes (Groq llama-3.3-70b) ──────────────────────────────────────
+    note_topics, state2 = topic_picker.pick_multiple_topics("note", CLASS_SLUG, count=4, different_subjects=True)
+    note_items_generated = []
+
+    for i, t in enumerate(note_topics):
+        item_num += 1
+        print(f"[{item_num}/11] Note (Groq 70B): {t['subjectName']}/{t['topic']}...")
+        result, err = safe_run(
+            f"note {i+1}",
+            content_builder.build_note,
+            t
+        )
+        if result:
+            uid, path, entry = result
+            index_entries.append(entry)
+            note_items_generated.append((t, uid))
+            print(f"  ✅ Done: {entry['title']}\n")
+        else:
+            errors.append(f"Note {i+1}: {err}")
+            print(f"  ⚠️  Skipped\n")
+
+    if note_items_generated:
+        topic_picker.mark_generated(state2, "note", note_items_generated)
+
+    # ── 8-11. Formulas (Groq llama-3.1-8b) ───────────────────────────────────
+    formula_topics, state3 = topic_picker.pick_multiple_topics("formula", CLASS_SLUG, count=4, different_subjects=True)
+    formula_items_generated = []
+
+    for i, t in enumerate(formula_topics):
+        item_num += 1
+        print(f"[{item_num}/11] Formula (Groq 8B): {t['subjectName']}/{t['topic']}...")
+        result, err = safe_run(
+            f"formula {i+1}",
+            content_builder.build_formula,
+            t
+        )
+        if result:
+            uid, path, entry = result
+            index_entries.append(entry)
+            formula_items_generated.append((t, uid))
+            print(f"  ✅ Done: {entry['title']}\n")
+        else:
+            errors.append(f"Formula {i+1}: {err}")
+            print(f"  ⚠️  Skipped\n")
+
+    if formula_items_generated:
+        topic_picker.mark_generated(state3, "formula", formula_items_generated)
+
+    # ── Update catalog index ──────────────────────────────────────────────────
     if index_entries:
         print(f"Updating catalog index: {len(index_entries)} entries...")
         catalog_updater.add_entries(index_entries)
 
+    # ── Final report ──────────────────────────────────────────────────────────
+    success_count = len(index_entries)
+    fail_count    = len(errors)
+
     print(f"\n{'='*65}")
-    print(f"  DONE — {len(index_entries)} high-quality items generated")
-    print(f"  Model: gemini-2.5-pro | No hallucinations, exam-accurate")
+    print(f"  DONE — {success_count}/11 items generated successfully")
+    if errors:
+        print(f"  Skipped {fail_count} items:")
+        for e in errors:
+            print(f"    - {e}")
     print(f"{'='*65}\n")
+
+    # Only exit with error if NOTHING was generated at all
+    if success_count == 0:
+        print("ERROR: No items generated. Check API keys and quotas.")
+        sys.exit(1)
+    # Partial success is fine — exit 0 so GitHub Actions marks run as passed
+    sys.exit(0)
 
 if __name__ == "__main__":
     run()

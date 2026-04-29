@@ -10,16 +10,9 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "Generation mode (leave empty for random)"
+        description: "Override mode (leave empty for default)"
         required: false
         default: ""
-        type: choice
-        options:
-          - ""
-          - full_length_batch
-          - subject_batch
-          - notes_batch
-          - mixed_batch
 
 jobs:
   generate:
@@ -47,6 +40,8 @@ jobs:
       - name: Run content generator
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_PRO: ${{ secrets.GEMINI_API_KEY_PRO }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GENERATE_MODE: ${{ github.event.inputs.mode }}
         run: |
           cd scripts
@@ -58,9 +53,10 @@ jobs:
           git config --global user.email "bot@edutest.app"
           git add -A
           if git diff --staged --quiet; then
-            echo "No changes to commit"
+            echo "No new content generated — nothing to commit"
           else
             TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
-            git commit -m "auto: generate content [$TIMESTAMP]"
+            COUNT=$(git diff --staged --name-only | grep -c "data/admin" || true)
+            git commit -m "auto: +${COUNT} content items [$TIMESTAMP]"
             git push
           fi
