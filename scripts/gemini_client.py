@@ -1,32 +1,37 @@
 """
-gemini_client.py — Dual Gemini key support.
+gemini_client.py — 3-API strategy with Pro→Flash fallback.
 
-  GEMINI_API_KEY   → gemini-2.5-flash  (subject-wise tests, 10-50Q)
-  GEMINI_API_KEY_1 → gemini-2.5-pro    (full-length tests only, 1 call/run)
+  GEMINI_API_KEY_1 → gemini-2.5-pro  (full-length tests, best quality)
+  GEMINI_API_KEY   → gemini-2.5-flash (subject tests, fallback for Pro)
 
-Free tier:
-  Flash: 10 RPM, 20 RPD
-  Pro:   5 RPM,  25 RPD (fresh account)
-
-Graceful failure: raises GeminiError so caller can skip and continue.
+Logic:
+  - Always try Pro first for full-length tests
+  - If Pro quota exhausted (429) → automatically fall back to Flash
+  - Flash used directly for subject-wise tests
+  - Both keys independent accounts = separate quotas
 """
 import os, json, re, time
 from google import genai
 from google.genai import types
 
-MODEL_FLASH = "gemini-2.5-flash"
 MODEL_PRO   = "gemini-2.5-pro"
+MODEL_FLASH = "gemini-2.5-flash"
 
-RPM_FLASH   = 8    # stay under 10 RPM limit
-RPM_PRO     = 4    # stay under 5 RPM limit
-MAX_RETRIES = 4    # enough retries for 503 transient errors
+RPM_PRO     = 4    # 5 RPM limit, use 4 for safety
+RPM_FLASH   = 8    # 10 RPM limit, use 8 for safety
+MAX_RETRIES = 4
 
 _clients   = {}
-_last_call = {"flash": 0.0, "pro": 0.0}
+_last_call = {"pro": 0.0, "flash": 0.0}
 
 
 class GeminiError(Exception):
-    """Raised when Gemini quota is exhausted or call fails after retries."""
+    """Raised when all retries exhausted or unrecoverable error."""
+    pass
+
+
+class GeminiQuotaError(GeminiError):
+    """Raised specifically when quota is exhausted — triggers fallback."""
     pass
 
 
@@ -50,13 +55,17 @@ def _rate_limit_sleep(model_key, rpm):
 
 
 def _extract_json(text):
+    """Extract first valid JSON array or object from text."""
+    # Strip markdown fences
     text = re.sub(r"```(?:json)?\s*", "", text)
     text = re.sub(r"```", "", text)
     text = text.strip()
+    # Direct parse
     try:
         return json.loads(text)
     except json.JSONDecodeError:
         pass
+    # Find first balanced [ ] or { }
     for start_char, end_char in [("[", "]"), ("{", "}")]:
         idx = text.find(start_char)
         if idx == -1:
@@ -76,6 +85,7 @@ def _extract_json(text):
 
 
 def _call(model_name, model_key, key_env, rpm, prompt, expect_json, max_tokens):
+    """Call a specific Gemini model with retries."""
     client = _get_client(key_env)
     last_err = None
 
@@ -96,42 +106,46 @@ def _call(model_name, model_key, key_env, rpm, prompt, expect_json, max_tokens):
             return _extract_json(text)
 
         except GeminiError:
-            raise  # re-raise our own errors immediately
+            raise
 
         except Exception as e:
             last_err = e
             err_str  = str(e)
-            print(f"  [Gemini/{model_key}] Attempt {attempt}/{MAX_RETRIES} failed: {err_str[:120]}")
+            print(f"  [Gemini/{model_key}] Attempt {attempt}/{MAX_RETRIES}: {err_str[:100]}")
 
-            # Quota exhausted — no point retrying
+            # Quota exhausted — raise special error to trigger fallback
             if "429" in err_str or "RESOURCE_EXHAUSTED" in err_str or "quota" in err_str.lower():
-                raise GeminiError(f"Quota exhausted for {model_key}: {err_str[:100]}")
+                raise GeminiQuotaError(f"Quota exhausted for {model_key}")
 
-            # Transient server overload (503) — wait and retry
+            # Server busy (503) — wait and retry
             if "503" in err_str or "UNAVAILABLE" in err_str:
-                wait = 20 * attempt   # 20s, 40s, 60s, 80s
-                print(f"  [Gemini/{model_key}] Server busy — waiting {wait}s before retry {attempt+1}...")
+                wait = 20 * attempt
+                print(f"  [Gemini/{model_key}] Server busy — waiting {wait}s...")
                 time.sleep(wait)
                 continue
 
-            # Other errors — short backoff
             if attempt < MAX_RETRIES:
                 time.sleep(5 * attempt)
 
     raise GeminiError(f"Gemini/{model_key} failed after {MAX_RETRIES} attempts: {last_err}")
 
 
-def generate_flash(prompt, expect_json=True, max_tokens=6144):
-    """
-    gemini-2.5-flash via GEMINI_API_KEY.
-    For: subject-wise tests (10-50Q).
-    """
-    return _call(MODEL_FLASH, "flash", "GEMINI_API_KEY", RPM_FLASH, prompt, expect_json, max_tokens)
-
-
 def generate_pro(prompt, expect_json=True, max_tokens=8192):
     """
-    gemini-2.5-pro via GEMINI_API_KEY_1.
-    For: full-length tests only (1 call per run).
+    Try gemini-2.5-pro (GEMINI_API_KEY_1) first.
+    If quota exhausted, automatically falls back to gemini-2.5-flash (GEMINI_API_KEY).
     """
-    return _call(MODEL_PRO, "pro", "GEMINI_API_KEY_1", RPM_PRO, prompt, expect_json, max_tokens)
+    try:
+        result = _call(MODEL_PRO, "pro", "GEMINI_API_KEY_1", RPM_PRO, prompt, expect_json, max_tokens)
+        return result
+    except GeminiQuotaError:
+        print(f"  [Gemini/pro] Quota exhausted — falling back to Flash...")
+        return _call(MODEL_FLASH, "flash", "GEMINI_API_KEY", RPM_FLASH, prompt, expect_json, max_tokens)
+
+
+def generate_flash(prompt, expect_json=True, max_tokens=6144):
+    """
+    Use gemini-2.5-flash (GEMINI_API_KEY) directly.
+    For subject-wise tests.
+    """
+    return _call(MODEL_FLASH, "flash", "GEMINI_API_KEY", RPM_FLASH, prompt, expect_json, max_tokens)

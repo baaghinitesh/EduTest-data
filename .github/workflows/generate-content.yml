@@ -87,6 +87,8 @@ jobs:
           else
             TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
             COUNT=$(git diff --staged --name-only | grep -c "data/admin" || true)
+            # Pull remote changes first to avoid rejection when two runs overlap
+            git pull --rebase origin master || true
             git commit -m "auto: +${COUNT} content items [$TIMESTAMP]"
             git push
           fi
