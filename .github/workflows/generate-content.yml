@@ -37,6 +37,36 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
+      - name: Validate API keys
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          echo "=== API Key Validation ==="
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "❌ GEMINI_API_KEY — NOT SET (Flash subject tests will be skipped)"
+          else
+            echo "✅ GEMINI_API_KEY — set (${#GEMINI_API_KEY} chars)"
+          fi
+          if [ -z "$GEMINI_API_KEY_1" ]; then
+            echo "❌ GEMINI_API_KEY_1 — NOT SET (Full-length tests will be skipped)"
+          else
+            echo "✅ GEMINI_API_KEY_1 — set (${#GEMINI_API_KEY_1} chars)"
+          fi
+          if [ -z "$GROQ_API_KEY" ]; then
+            echo "❌ GROQ_API_KEY — NOT SET (Notes and formulas will be skipped)"
+          else
+            echo "✅ GROQ_API_KEY — set (${#GROQ_API_KEY} chars)"
+          fi
+          if [ -z "$GH_PAT" ]; then
+            echo "❌ GH_PAT — NOT SET (Git push will fail)"
+          else
+            echo "✅ GH_PAT — set (${#GH_PAT} chars)"
+          fi
+          echo "=========================="
+
       - name: Run content generator
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
