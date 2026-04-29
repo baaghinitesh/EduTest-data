@@ -123,7 +123,7 @@ def generate_note(prompt, expect_json=True):
     Use llama-3.3-70b for high-quality notes.
     Raises GroqError on failure — caller should catch and skip.
     """
-    return _call(MODEL_NOTES, prompt, expect_json, max_tokens=4096)
+    return _call(MODEL_NOTES, prompt, expect_json, max_tokens=8000)
 
 
 def generate_formula(prompt, expect_json=True):
@@ -131,4 +131,4 @@ def generate_formula(prompt, expect_json=True):
     Use llama-3.1-8b for fast, precise formula sheets.
     Raises GroqError on failure — caller should catch and skip.
     """
-    return _call(MODEL_FORMULAS, prompt, expect_json, max_tokens=3000)
+    return _call(MODEL_FORMULAS, prompt, expect_json, max_tokens=6000)

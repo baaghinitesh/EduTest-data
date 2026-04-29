@@ -124,8 +124,8 @@ def generate_flash(prompt, expect_json=True, max_tokens=6144):
 
 def generate_pro(prompt, expect_json=True, max_tokens=8192):
     """
-    gemini-2.5-pro via GEMINI_API_KEY_PRO.
+    gemini-2.5-pro via GEMINI_API_KEY_1.
     Use for: full-length tests only (1 call per run).
     Raises GeminiError on failure — caller should catch and skip.
     """
-    return _call(MODEL_PRO, "pro", "GEMINI_API_KEY_PRO", RPM_PRO, prompt, expect_json, max_tokens)
+    return _call(MODEL_PRO, "pro", "GEMINI_API_KEY_1", RPM_PRO, prompt, expect_json, max_tokens)
