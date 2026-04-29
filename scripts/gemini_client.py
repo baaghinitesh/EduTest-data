@@ -134,13 +134,16 @@ def generate_pro(prompt, expect_json=True, max_tokens=8192):
     """
     Try gemini-2.5-pro (GEMINI_API_KEY_1) first.
     If quota exhausted, automatically falls back to gemini-2.5-flash (GEMINI_API_KEY).
+    For large prompts (full-length tests), Flash fallback uses smaller chunks.
     """
     try:
         result = _call(MODEL_PRO, "pro", "GEMINI_API_KEY_1", RPM_PRO, prompt, expect_json, max_tokens)
         return result
     except GeminiQuotaError:
-        print(f"  [Gemini/pro] Quota exhausted — falling back to Flash...")
-        return _call(MODEL_FLASH, "flash", "GEMINI_API_KEY", RPM_FLASH, prompt, expect_json, max_tokens)
+        print(f"  [Gemini/pro] Quota exhausted — falling back to Flash (smaller chunks)...")
+        # Flash handles smaller requests better — reduce max_tokens
+        flash_max = min(max_tokens, 4096)
+        return _call(MODEL_FLASH, "flash", "GEMINI_API_KEY", RPM_FLASH, prompt, expect_json, flash_max)
 
 
 def generate_flash(prompt, expect_json=True, max_tokens=6144):

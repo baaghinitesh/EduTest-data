@@ -15,7 +15,7 @@ MODEL_NOTES    = "llama-3.3-70b-versatile"
 MODEL_FORMULAS = "llama-3.3-70b-versatile"  # 8B TPM too low for our prompts
 
 MAX_RETRIES = 3
-MIN_GAP     = 3.0   # 3s between calls — stays well under 6K TPM
+MIN_GAP     = 2.0   # minimal gap — external 60s delays handle rate limiting
 
 _client    = None
 _last_call = 0.0
@@ -106,15 +106,15 @@ def _call(model, prompt, expect_json, max_tokens):
             err_str  = str(e)
             print(f"  [Groq] Attempt {attempt}/{MAX_RETRIES} failed: {err_str[:120]}")
 
-            # Prompt too large — no point retrying with same prompt
-            if "413" in err_str or ("tokens" in err_str.lower() and "limit" in err_str.lower()):
-                raise GroqError(f"Prompt too large for Groq: {err_str[:100]}")
+            # Prompt too large (413) — no point retrying
+            if "413" in err_str:
+                raise GroqError(f"Prompt too large for Groq (413): {err_str[:80]}")
 
-            # Rate limited — wait and retry
-            if "rate_limit" in err_str.lower() or "429" in err_str:
+            # Rate limited (429) — wait and retry
+            if "429" in err_str or "rate_limit" in err_str.lower() or "rate limit" in err_str.lower():
                 retry_match = re.search(r"try again in (\d+\.?\d*)s", err_str, re.IGNORECASE)
-                wait = float(retry_match.group(1)) + 2 if retry_match else 30
-                print(f"  [Groq] Rate limited — waiting {wait:.0f}s...")
+                wait = float(retry_match.group(1)) + 2 if retry_match else 45
+                print(f"  [Groq] Rate limited (429) — waiting {wait:.0f}s...")
                 time.sleep(wait)
                 continue
 
@@ -132,3 +132,28 @@ def generate_note(prompt, expect_json=True):
 def generate_formula(prompt, expect_json=True):
     """llama-3.3-70b for formula/quick-reference sheets."""
     return _call(MODEL_FORMULAS, prompt, expect_json, max_tokens=5000)
+
+
+def expand_content(existing_html, topic, subj_name, content_type="note"):
+    """
+    Expand existing HTML content that is too short.
+    Returns additional HTML to append to existing content.
+    """
+    prompt = f"""The following {content_type} about {topic} ({subj_name}) is incomplete and needs more content.
+
+EXISTING CONTENT:
+{existing_html[:2000]}
+
+Please CONTINUE and EXPAND this content by adding:
+- More detailed explanations for each section
+- Additional clinical examples and case scenarios
+- More specific drug doses and normal values in <code> tags
+- Additional mnemonics and memory aids in <em> tags
+- More exam-focused key points
+- Any missing sections from: Classification, Pathophysiology, Clinical Features, Management, Nursing Care, Complications
+
+Write ONLY the additional HTML to append (starting with <h3> or <p>).
+Do NOT repeat what's already written. Just add new content.
+Write at least 500 more words of detailed HTML."""
+
+    return _call(MODEL_NOTES, prompt, expect_json=False, max_tokens=4000)

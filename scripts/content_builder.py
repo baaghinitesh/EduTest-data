@@ -198,12 +198,20 @@ Rules: distribute questions per subject as specified, 1 isCorrect per question, 
             raw = []
 
         subj_name_to_slug = {s["subjectName"]: s["subjectSlug"] for s in group}
+        # Filter out non-dict items
+        raw = [q for q in raw if isinstance(q, dict)]
         for q in raw[:group_q_total]:
             subj_name_q = q.get("subject", group[0]["subjectName"])
             subj_slug = subj_name_to_slug.get(subj_name_q, group[0]["subjectSlug"])
             validated = validate_question(q, q_idx, mark_val, neg_val, neg, subj_slug)
             all_questions.append(validated)
             q_idx += 1
+
+        # 16s gap between Pro groups (same model cooldown)
+        if g_num < len(groups):
+            import time
+            print(f"    [ModelGap/pro] Waiting 16s before next group...")
+            time.sleep(16)
 
     all_questions = all_questions[:total_q]
     if len(all_questions) == 0:
@@ -302,6 +310,9 @@ def build_subject_test(topic_info, exam_config, size_override=None):
 
     if not isinstance(raw, list) or len(raw) == 0:
         raise GeminiError(f"No valid questions returned (got {type(raw).__name__})")
+
+    # Filter out non-dict items (Flash sometimes returns strings)
+    raw = [q for q in raw if isinstance(q, dict)]
 
     if len(raw) < max(1, q_count // 3):
         raise GeminiError(f"Too few questions: {len(raw)} returned, need at least {q_count // 3}")
@@ -439,8 +450,19 @@ Write ONLY the HTML content. Start with <h2> and end with </ol> or </ul>. No JSO
     if not html_content.startswith("<"):
         raise GroqError(f"Note content is not HTML: {html_content[:80]}")
 
+    # If content is too short, expand it with a second call
+    if len(html_content) < 3000:
+        print(f"    [Groq] Note too short ({len(html_content)} chars), expanding...")
+        try:
+            extra = groq_client.expand_content(html_content, topic, subj_name, "note")
+            if extra and isinstance(extra, str) and len(extra) > 200:
+                html_content = html_content + "\n" + extra.strip()
+                print(f"    [Groq] Expanded to {len(html_content)} chars")
+        except Exception as e:
+            print(f"    [Groq] Expansion failed (keeping original): {e}")
+
     if len(html_content) < 1000:
-        raise GroqError(f"Note too short ({len(html_content)} chars) — requesting more content")
+        raise GroqError(f"Note too short ({len(html_content)} chars)")
 
     content = html_content
 
@@ -542,6 +564,17 @@ Return ONLY this JSON (no markdown):
 
     if len(content) < 200:
         raise GroqError(f"Formula too short ({len(content)} chars)")
+
+    # If formula is too short, expand it
+    if len(content) < 1500:
+        print(f"    [Groq] Formula too short ({len(content)} chars), expanding...")
+        try:
+            extra = groq_client.expand_content(content, topic, subj_name, "formula/quick-reference")
+            if extra and isinstance(extra, str) and len(extra) > 200:
+                content = content + "\n" + extra.strip()
+                print(f"    [Groq] Expanded to {len(content)} chars")
+        except Exception as e:
+            print(f"    [Groq] Expansion failed (keeping original): {e}")
 
     payload = {
         "id": uid,
