@@ -1,14 +1,14 @@
 """
 gemini_client.py — Dual Gemini key support.
 
-  GEMINI_API_KEY     → gemini-2.5-flash  (Key 1, subject-wise tests)
-  GEMINI_API_KEY_PRO → gemini-2.5-pro    (Key 2, full-length tests only)
+  GEMINI_API_KEY   → gemini-2.5-flash  (subject-wise tests, 10-50Q)
+  GEMINI_API_KEY_1 → gemini-2.5-pro    (full-length tests only, 1 call/run)
 
 Free tier:
   Flash: 10 RPM, 20 RPD
-  Pro:   5 RPM,  25 RPD (preview)
+  Pro:   5 RPM,  25 RPD (fresh account)
 
-Graceful failure: raises GeminiError on exhaustion so caller can skip item.
+Graceful failure: raises GeminiError so caller can skip and continue.
 """
 import os, json, re, time
 from google import genai
@@ -17,11 +17,11 @@ from google.genai import types
 MODEL_FLASH = "gemini-2.5-flash"
 MODEL_PRO   = "gemini-2.5-pro"
 
-RPM_FLASH = 8    # stay under 10 RPM
-RPM_PRO   = 4    # stay under 5 RPM
-MAX_RETRIES = 2  # fewer retries — fail fast, skip item, move on
+RPM_FLASH   = 8    # stay under 10 RPM limit
+RPM_PRO     = 4    # stay under 5 RPM limit
+MAX_RETRIES = 4    # enough retries for 503 transient errors
 
-_clients = {}
+_clients   = {}
 _last_call = {"flash": 0.0, "pro": 0.0}
 
 
@@ -100,13 +100,21 @@ def _call(model_name, model_key, key_env, rpm, prompt, expect_json, max_tokens):
 
         except Exception as e:
             last_err = e
-            err_str = str(e)
-            print(f"  [Gemini/{model_key}] Attempt {attempt} failed: {err_str[:120]}")
+            err_str  = str(e)
+            print(f"  [Gemini/{model_key}] Attempt {attempt}/{MAX_RETRIES} failed: {err_str[:120]}")
 
+            # Quota exhausted — no point retrying
             if "429" in err_str or "RESOURCE_EXHAUSTED" in err_str or "quota" in err_str.lower():
-                # Quota exhausted — no point retrying, skip this item
                 raise GeminiError(f"Quota exhausted for {model_key}: {err_str[:100]}")
 
+            # Transient server overload (503) — wait and retry
+            if "503" in err_str or "UNAVAILABLE" in err_str:
+                wait = 20 * attempt   # 20s, 40s, 60s, 80s
+                print(f"  [Gemini/{model_key}] Server busy — waiting {wait}s before retry {attempt+1}...")
+                time.sleep(wait)
+                continue
+
+            # Other errors — short backoff
             if attempt < MAX_RETRIES:
                 time.sleep(5 * attempt)
 
@@ -116,8 +124,7 @@ def _call(model_name, model_key, key_env, rpm, prompt, expect_json, max_tokens):
 def generate_flash(prompt, expect_json=True, max_tokens=6144):
     """
     gemini-2.5-flash via GEMINI_API_KEY.
-    Use for: subject-wise tests (10-50Q).
-    Raises GeminiError on failure — caller should catch and skip.
+    For: subject-wise tests (10-50Q).
     """
     return _call(MODEL_FLASH, "flash", "GEMINI_API_KEY", RPM_FLASH, prompt, expect_json, max_tokens)
 
@@ -125,7 +132,6 @@ def generate_flash(prompt, expect_json=True, max_tokens=6144):
 def generate_pro(prompt, expect_json=True, max_tokens=8192):
     """
     gemini-2.5-pro via GEMINI_API_KEY_1.
-    Use for: full-length tests only (1 call per run).
-    Raises GeminiError on failure — caller should catch and skip.
+    For: full-length tests only (1 call per run).
     """
     return _call(MODEL_PRO, "pro", "GEMINI_API_KEY_1", RPM_PRO, prompt, expect_json, max_tokens)

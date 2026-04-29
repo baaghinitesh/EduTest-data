@@ -1,24 +1,24 @@
 """
 groq_client.py — Groq API wrapper for notes and formulas.
 
-Free tier: 14,400 RPD, 6,000 tokens/minute — essentially unlimited.
+Free tier: 14,400 RPD, 6,000 TPM per model.
 Models:
-  llama-3.3-70b-versatile  → notes (high quality, detailed)
-  llama-3.1-8b-instant     → formulas (fast, precise)
+  llama-3.3-70b-versatile → notes AND formulas
+    (8B instant has only 6K TPM — our prompts exceed that limit)
 
-Graceful failure: raises GroqError so caller can skip item and continue.
+Graceful failure: raises GroqError so caller can skip and continue.
 """
 import os, json, re, time
 from groq import Groq
 
 MODEL_NOTES    = "llama-3.3-70b-versatile"
-MODEL_FORMULAS = "llama-3.1-8b-instant"
+MODEL_FORMULAS = "llama-3.3-70b-versatile"  # 8B TPM too low for our prompts
 
-MAX_RETRIES = 2
-_client = None
+MAX_RETRIES = 3
+MIN_GAP     = 3.0   # 3s between calls — stays well under 6K TPM
+
+_client    = None
 _last_call = 0.0
-TPM_LIMIT = 6000   # tokens per minute free tier
-MIN_GAP = 2.0      # minimum 2s between calls to stay under TPM
 
 
 class GroqError(Exception):
@@ -83,9 +83,9 @@ def _call(model, prompt, expect_json, max_tokens):
                     {
                         "role": "system",
                         "content": (
-                            "You are an expert medical educator specializing in NORCET exam preparation. "
-                            "You generate accurate, high-quality educational content. "
-                            "Always respond with valid JSON only — no markdown fences, no extra text."
+                            "You are an expert medical educator specializing in NORCET nursing exam. "
+                            "Generate accurate, comprehensive educational content. "
+                            "ALWAYS respond with valid JSON only — no markdown fences, no extra text outside JSON."
                         )
                     },
                     {"role": "user", "content": prompt}
@@ -103,32 +103,32 @@ def _call(model, prompt, expect_json, max_tokens):
 
         except Exception as e:
             last_err = e
-            err_str = str(e)
-            print(f"  [Groq] Attempt {attempt} failed: {err_str[:120]}")
+            err_str  = str(e)
+            print(f"  [Groq] Attempt {attempt}/{MAX_RETRIES} failed: {err_str[:120]}")
 
+            # Prompt too large — no point retrying with same prompt
+            if "413" in err_str or ("tokens" in err_str.lower() and "limit" in err_str.lower()):
+                raise GroqError(f"Prompt too large for Groq: {err_str[:100]}")
+
+            # Rate limited — wait and retry
             if "rate_limit" in err_str.lower() or "429" in err_str:
-                # Parse retry-after if available
                 retry_match = re.search(r"try again in (\d+\.?\d*)s", err_str, re.IGNORECASE)
                 wait = float(retry_match.group(1)) + 2 if retry_match else 30
                 print(f"  [Groq] Rate limited — waiting {wait:.0f}s...")
                 time.sleep(wait)
-            elif attempt < MAX_RETRIES:
-                time.sleep(3 * attempt)
+                continue
+
+            if attempt < MAX_RETRIES:
+                time.sleep(4 * attempt)
 
     raise GroqError(f"Groq failed after {MAX_RETRIES} attempts: {last_err}")
 
 
 def generate_note(prompt, expect_json=True):
-    """
-    Use llama-3.3-70b for high-quality notes.
-    Raises GroqError on failure — caller should catch and skip.
-    """
+    """llama-3.3-70b for comprehensive notes."""
     return _call(MODEL_NOTES, prompt, expect_json, max_tokens=8000)
 
 
 def generate_formula(prompt, expect_json=True):
-    """
-    Use llama-3.1-8b for fast, precise formula sheets.
-    Raises GroqError on failure — caller should catch and skip.
-    """
-    return _call(MODEL_FORMULAS, prompt, expect_json, max_tokens=6000)
+    """llama-3.3-70b for formula/quick-reference sheets."""
+    return _call(MODEL_FORMULAS, prompt, expect_json, max_tokens=5000)

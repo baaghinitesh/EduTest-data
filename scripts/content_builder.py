@@ -110,44 +110,44 @@ def validate_question(q, idx, marks, neg_mark, neg_marking, subj_slug):
 # ── Question prompt ───────────────────────────────────────────────────────────
 
 def _q_prompt(exam_name, subj_name, chapter, topic, count):
-    # Build a few example questions inline so the model understands the exact format
-    return f"""You are a senior {exam_name} exam expert and question setter.
-Generate exactly {count} high-quality MCQ questions for the NORCET nursing exam.
+    """High-quality MCQ prompt for Gemini Flash — structured for reliable JSON array output."""
+    return f"""You are a senior NORCET nursing exam question setter with 15+ years experience.
 
-Subject: {subj_name}
-Chapter: {chapter}
-Topic: {topic}
+Task: Generate exactly {count} MCQ questions for NORCET exam.
+Subject: {subj_name} | Chapter: {chapter} | Topic: {topic}
 
-CRITICAL RULES — READ CAREFULLY:
-1. You MUST return a JSON ARRAY containing exactly {count} question objects
-2. The array MUST start with [ and end with ]
-3. Every question must be specifically about: {topic}
-4. Each question object MUST have exactly 4 options (A, B, C, D)
-5. Exactly ONE option must have "isCorrect": true — the others must have "isCorrect": false
-6. Every option must have an "explanation" field (1-2 sentences)
-7. Difficulty distribution: questions 1-{max(1,count//3)} = easy, {max(1,count//3)+1}-{max(1,count*4//5)} = medium, rest = hard
-8. All values, drug doses, and clinical facts must be accurate for NORCET level
-9. Do NOT number the questions in the question text
-10. Return ONLY the JSON array — absolutely no markdown, no ```json, no explanation text
+OUTPUT RULES (strictly follow):
+- Return ONLY a JSON array starting with [ and ending with ]
+- No markdown, no ```json, no text before or after the array
+- Array must contain exactly {count} question objects
 
-EXACT FORMAT (copy this structure for all {count} questions):
+QUESTION QUALITY RULES:
+- Every question must test knowledge of: {topic}
+- 4 options per question (A, B, C, D) — exactly ONE isCorrect: true
+- Each option needs a 1-2 sentence explanation (why correct or why wrong)
+- Overall explanation: why the correct answer is right + clinical significance
+- Hint: a helpful clue without giving away the answer
+- Difficulty: first {max(1,count//3)} questions = easy, next {max(1,count//2)} = medium, last {max(1,count//5)} = hard
+- All drug doses, lab values, normal ranges must be clinically accurate
+- Questions must be exam-standard — not too simple, not trick questions
+
+JSON FORMAT (repeat for all {count} questions):
 [
   {{
-    "question": "Which of the following best describes [topic concept]?",
+    "question": "Complete clinical question ending with ?",
     "difficulty": "easy",
-    "explanation": "The correct answer is X because [reason]. This is important for NORCET because [clinical relevance].",
-    "hint": "Think about [key concept].",
+    "explanation": "Correct answer is [X] because [clinical reason]. Key point: [exam relevance].",
+    "hint": "Consider [key concept] when answering.",
     "options": [
-      {{"letter": "A", "text": "First option text", "isCorrect": false, "explanation": "This is wrong because [reason]."}},
-      {{"letter": "B", "text": "Second option text", "isCorrect": true,  "explanation": "This is correct because [reason]."}},
-      {{"letter": "C", "text": "Third option text",  "isCorrect": false, "explanation": "This is wrong because [reason]."}},
-      {{"letter": "D", "text": "Fourth option text", "isCorrect": false, "explanation": "This is wrong because [reason]."}}
+      {{"letter":"A","text":"Option A text","isCorrect":false,"explanation":"Wrong because [specific reason]."}},
+      {{"letter":"B","text":"Option B text","isCorrect":true, "explanation":"Correct because [specific reason]."}},
+      {{"letter":"C","text":"Option C text","isCorrect":false,"explanation":"Wrong because [specific reason]."}},
+      {{"letter":"D","text":"Option D text","isCorrect":false,"explanation":"Wrong because [specific reason]."}}
     ]
-  }},
-  ... (continue for all {count} questions)
+  }}
 ]
 
-NOW generate exactly {count} questions about {topic} as a JSON array:"""
+Generate exactly {count} questions about {topic} now:"""
 
 # ── Full-length test (Gemini Pro — 1 call per run) ────────────────────────────
 
@@ -473,13 +473,27 @@ CRITICAL: Return ONLY a JSON object — no markdown fences, no extra text:
 
     content = result.get("content", "")
 
-    # Validate content is actual HTML, not a list/garbage
+    # Validate content is actual HTML — if not, retry with a simpler prompt
     if not content or not isinstance(content, str) or not content.strip().startswith("<"):
-        raise GroqError(f"Note content is not valid HTML: {str(content)[:100]}")
+        print(f"    [Groq] Content not HTML, retrying with simplified prompt...")
+        simple_prompt = (
+            f"Write comprehensive NORCET nursing study notes on: {topic} ({subj_name})\n"
+            f"Return ONLY this JSON object:\n"
+            f'{{"title":"{title}","description":"NORCET notes on {topic}","content":"<h2>{topic}</h2><p>...full HTML content here...</p>","tags":["{subj_slug}","norcet"]}}\n'
+            f"The content field must be detailed HTML (800+ words) covering definition, types, clinical features, management, nursing care, and key exam points."
+        )
+        result2 = groq_client.generate_note(simple_prompt, expect_json=True)
+        if isinstance(result2, dict):
+            content = result2.get("content", "")
+            if content and isinstance(content, str) and content.strip().startswith("<"):
+                result = result2
+            else:
+                raise GroqError(f"Note content still not valid HTML after retry: {str(content)[:80]}")
+        else:
+            raise GroqError("Note retry also failed to return a dict")
 
-    # Minimum quality check — must have at least 500 chars of content
     if len(content) < 500:
-        raise GroqError(f"Note content too short ({len(content)} chars) — likely a failed generation")
+        raise GroqError(f"Note content too short ({len(content)} chars)")
 
     payload = {
         "id": uid,
@@ -527,47 +541,24 @@ def build_formula(topic_info):
 
     print(f"    [Groq/8B] Formula: {subj_name}/{topic}")
 
-    prompt = f"""You are a senior {exam_name} educator creating a comprehensive quick-reference sheet.
-Exam: {exam_name} | Subject: {subj_name} | Chapter: {chapter} | Topic: {topic}
+    prompt = f"""You are a senior NORCET nursing educator. Create a quick-reference sheet.
+Subject: {subj_name} | Chapter: {chapter} | Topic: {topic}
 
-Create a DETAILED formula and key-facts sheet in clean HTML. Include ALL sections below:
-
+Write clean HTML with these sections:
 <h2>{topic} — Quick Reference</h2>
+<h3>Normal Values / Key Formulas</h3> — all values in <code> tags, ranges in <strong>
+<h3>Classification</h3> — use <table> for comparison
+<h3>Drug Doses</h3> — <code>drug: dose route frequency</code> (if applicable)
+<h3>Diagnostic Criteria</h3> — <ol><li> with threshold values in <code>
+<h3>Mnemonics</h3> — 2 mnemonics in <em>, explain each letter
+<h3>Exam Traps</h3> — 4-5 common mistakes with explanations
+<h3>Quick Recall</h3> — 8-10 bullet points, <strong> for key values
 
-<h3>Key Formulas / Normal Values</h3>
-  - All important formulas in <code> tags
-  - All normal ranges in <strong> tags with units
-  - Reference values with <code>value (unit)</code> format
+Rules: <strong> for values, <code> for doses/ranges, <em> for mnemonics, <table> for comparisons.
+Write 120-180 lines of HTML. Every value must be clinically accurate for NORCET.
 
-<h3>Classification / Types</h3>
-  - Complete classification with distinguishing features
-  - Use <table> for side-by-side comparison
-
-<h3>Drug Doses (if applicable)</h3>
-  - Drug name: <code>dose route frequency</code>
-  - Include monitoring parameters
-
-<h3>Key Diagnostic Criteria</h3>
-  - Numbered criteria using <ol><li>
-  - Threshold values in <code> tags
-
-<h3>Mnemonics</h3>
-  - At least 2 mnemonics in <em> tags
-  - Explain what each letter stands for
-
-<h3>Exam Traps — Common Mistakes</h3>
-  - 4-6 common wrong answers students choose
-  - Why each is wrong
-
-<h3>Quick Recall Points</h3>
-  - 8-10 bullet points of most tested facts
-  - Use <strong> for the key value/fact
-
-FORMATTING: Use <strong> for values, <code> for doses/ranges, <em> for mnemonics, <table> for comparisons.
-Target: 150-200 lines of HTML content.
-
-CRITICAL: Return ONLY a JSON object — no markdown fences, no extra text:
-{{"title":"{title}","description":"Quick reference sheet for {topic} covering normal values, classifications, drug doses, and exam traps for NORCET","content":"<h2>...</h2><h3>...</h3>...","tags":["{subj_slug}","norcet","quick-reference","{topic.lower().replace(' ','-')[:20]}"]}}"""
+Return ONLY this JSON (no markdown, no extra text):
+{{"title":"{title}","description":"NORCET quick reference for {topic} — normal values, classifications, drug doses, mnemonics, exam traps","content":"<h2>...</h2>...","tags":["{subj_slug}","norcet","quick-reference","{topic.lower().replace(' ','-')[:25]}"]}}"""
 
     result = groq_client.generate_formula(prompt, expect_json=True)
     if not isinstance(result, dict):
@@ -575,13 +566,27 @@ CRITICAL: Return ONLY a JSON object — no markdown fences, no extra text:
 
     content = result.get("content", "")
 
-    # Validate content is actual HTML, not a list/garbage
+    # Validate content is actual HTML — retry with simpler prompt if not
     if not content or not isinstance(content, str) or not content.strip().startswith("<"):
-        raise GroqError(f"Formula content is not valid HTML: {str(content)[:100]}")
+        print(f"    [Groq] Formula content not HTML, retrying...")
+        simple_prompt = (
+            f"Create a NORCET quick-reference sheet for: {topic} ({subj_name})\n"
+            f"Return ONLY this JSON:\n"
+            f'{{"title":"{title}","description":"NORCET quick reference for {topic}","content":"<h2>{topic}</h2>...HTML content...","tags":["{subj_slug}","norcet"]}}\n'
+            f"Content must be HTML with normal values, classifications, drug doses, mnemonics, exam traps."
+        )
+        result2 = groq_client.generate_formula(simple_prompt, expect_json=True)
+        if isinstance(result2, dict):
+            content = result2.get("content", "")
+            if content and isinstance(content, str) and content.strip().startswith("<"):
+                result = result2
+            else:
+                raise GroqError(f"Formula content still not HTML after retry: {str(content)[:80]}")
+        else:
+            raise GroqError("Formula retry also failed")
 
-    # Minimum quality check
-    if len(content) < 300:
-        raise GroqError(f"Formula content too short ({len(content)} chars) — likely a failed generation")
+    if len(content) < 200:
+        raise GroqError(f"Formula content too short ({len(content)} chars)")
 
     payload = {
         "id": uid,
