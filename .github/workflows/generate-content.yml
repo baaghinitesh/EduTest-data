@@ -2,15 +2,20 @@ name: Generate EduTest Content
 
 on:
   schedule:
-    # 4 runs daily (IST: 6:00 AM, 11:00 AM, 4:00 PM, 9:00 PM)
-    - cron: "30 0 * * *"   # 12:30 AM UTC = 6:00 AM IST
-    - cron: "30 5 * * *"   # 5:30 AM UTC  = 11:00 AM IST
-    - cron: "30 10 * * *"  # 10:30 AM UTC = 4:00 PM IST
-    - cron: "30 15 * * *"  # 3:30 PM UTC  = 9:00 PM IST
+    # 4 runs daily — first run is FULL mode (UTC 00:xx = 5:30 AM IST)
+    # Remaining 3 runs are SUBJECT mode
+    - cron: "30 0  * * *"   # 12:30 AM UTC = 6:00 AM  IST  → FULL  mode (UTC hour=0)
+    - cron: "30 6  * * *"   # 6:30  AM UTC = 12:00 PM IST  → SUBJECT mode
+    - cron: "30 11 * * *"   # 11:30 AM UTC = 5:00  PM IST  → SUBJECT mode
+    - cron: "30 15 * * *"   # 3:30  PM UTC = 9:00  PM IST  → SUBJECT mode
   workflow_dispatch:
     inputs:
       mode:
-        description: "Override mode (leave empty for default)"
+        description: "Override mode: 'full' or 'subject' (leave blank for auto)"
+        required: false
+        default: ""
+      exam:
+        description: "Force a specific exam slug (e.g. neet-ug, jee-mains, norcet)"
         required: false
         default: ""
 
@@ -39,47 +44,34 @@ jobs:
 
       - name: Validate API keys
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY:   ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          GH_PAT: ${{ secrets.GH_PAT }}
+          GROQ_API_KEY:     ${{ secrets.GROQ_API_KEY }}
+          GH_PAT:           ${{ secrets.GH_PAT }}
         run: |
           echo "=== API Key Validation ==="
-          if [ -z "$GEMINI_API_KEY" ]; then
-            echo "❌ GEMINI_API_KEY — NOT SET (Flash subject tests will be skipped)"
-          else
-            echo "✅ GEMINI_API_KEY — set (${#GEMINI_API_KEY} chars)"
-          fi
-          if [ -z "$GEMINI_API_KEY_1" ]; then
-            echo "❌ GEMINI_API_KEY_1 — NOT SET (Full-length tests will be skipped)"
-          else
-            echo "✅ GEMINI_API_KEY_1 — set (${#GEMINI_API_KEY_1} chars)"
-          fi
-          if [ -z "$GROQ_API_KEY" ]; then
-            echo "❌ GROQ_API_KEY — NOT SET (Notes and formulas will be skipped)"
-          else
-            echo "✅ GROQ_API_KEY — set (${#GROQ_API_KEY} chars)"
-          fi
-          if [ -z "$GH_PAT" ]; then
-            echo "❌ GH_PAT — NOT SET (Git push will fail)"
-          else
-            echo "✅ GH_PAT — set (${#GH_PAT} chars)"
-          fi
+          [ -z "$GEMINI_API_KEY"   ] && echo "❌ GEMINI_API_KEY   — NOT SET (Flash/Researcher missing)" \
+                                     || echo "✅ GEMINI_API_KEY   — set (${#GEMINI_API_KEY} chars)"
+          [ -z "$GEMINI_API_KEY_1" ] && echo "❌ GEMINI_API_KEY_1 — NOT SET (Pro Generator missing)" \
+                                     || echo "✅ GEMINI_API_KEY_1 — set (${#GEMINI_API_KEY_1} chars)"
+          [ -z "$GROQ_API_KEY"     ] && echo "❌ GROQ_API_KEY     — NOT SET (Notes/Formulas/Format missing)" \
+                                     || echo "✅ GROQ_API_KEY     — set (${#GROQ_API_KEY} chars)"
+          [ -z "$GH_PAT"           ] && echo "❌ GH_PAT           — NOT SET (Git push will FAIL)" \
+                                     || echo "✅ GH_PAT           — set (${#GH_PAT} chars)"
           echo "=========================="
 
       - name: Run content generator
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY:   ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          GENERATE_MODE: ${{ github.event.inputs.mode }}
-        run: |
-          cd scripts
-          python generate.py
+          GROQ_API_KEY:     ${{ secrets.GROQ_API_KEY }}
+          GENERATE_MODE:    ${{ github.event.inputs.mode }}
+          FORCE_EXAM:       ${{ github.event.inputs.exam }}
+        run: python scripts/generate.py
 
       - name: Commit and push generated content
         run: |
-          git config --global user.name "EduTest Bot"
+          git config --global user.name  "EduTest Bot"
           git config --global user.email "bot@edutest.app"
           git add -A
           if git diff --staged --quiet; then
@@ -87,7 +79,6 @@ jobs:
           else
             TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
             COUNT=$(git diff --staged --name-only | grep -c "data/admin" || true)
-            # Stash staged changes, pull remote, then restore
             git stash
             git pull --rebase origin master || true
             git stash pop || true

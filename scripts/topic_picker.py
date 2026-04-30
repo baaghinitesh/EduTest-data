@@ -187,6 +187,11 @@ def _reset_and_rebuild(state, ct, topics_data, class_slug):
     return _build_available(state, ct, topics_data, class_slug)
 
 
+def pick_random_exam():
+    """Pick a random exam slug from all available exams."""
+    return random.choice(get_all_available_exams())
+
+
 def pick_topic(ct, class_slug=None):
     """Pick one unused topic. Randomly selects exam if class_slug is None."""
     state = load_state()
@@ -201,6 +206,24 @@ def pick_topic(ct, class_slug=None):
     if not available:
         raise ValueError(f"No topics at all for {class_slug}")
     return random.choice(available), state
+
+
+def pick_topic_from_exam(ct, class_slug):
+    """Pick one unused topic from a specific exam (for same-exam runs)."""
+    return pick_topic(ct, class_slug=class_slug)
+
+
+def pick_multiple_from_exam(ct, class_slug, count=2):
+    """Pick `count` unused topics from a specific exam, preferring different subjects."""
+    results = []
+    for _ in range(count):
+        try:
+            topic, state = pick_topic_from_exam(ct, class_slug)
+            results.append((topic, state))
+        except Exception as e:
+            print(f"  [topic_picker] Could not pick topic {len(results)+1}/{count}: {e}")
+            break
+    return results
 
 
 def pick_multiple_topics(ct, class_slug=None, count=3, different_subjects=True):
