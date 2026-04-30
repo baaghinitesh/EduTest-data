@@ -30,7 +30,6 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import topic_picker
 import content_builder
-import catalog_updater
 from gemini_client import GeminiError
 from groq_client   import GroqError
 
@@ -165,11 +164,6 @@ def run():
         run_full_mode(class_slug, index_entries, errors)
     else:
         run_subject_mode(class_slug, index_entries, errors)
-
-    # Update catalog
-    if index_entries:
-        print(f"\nUpdating catalog index: {len(index_entries)} entries...")
-        catalog_updater.add_entries(index_entries)
 
     # Final report
     ok = len(index_entries)

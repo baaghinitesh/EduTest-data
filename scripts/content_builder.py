@@ -51,8 +51,15 @@ def make_tags(class_slug, subj_slug, chapter, topic):
             tags.add(word.replace("'", "").replace(",", ""))
     return list(tags)[:8]
 
-def admin_path(type_folder, uid, title):
-    return f"data/admin/{type_folder}/{make_slug(title, uid)}.json"
+def admin_path(type_folder, uid, title, class_slug="general"):
+    """
+    Build the CDN path for admin-published content, organised by class/exam.
+    e.g. data/admin/norcet/tests/norcet-msn-topic-test-abc12345.json
+    """
+    # Normalise class_slug to a safe folder name
+    folder = re.sub(r"[^a-z0-9-]", "-", (class_slug or "general").lower())
+    folder = re.sub(r"-+", "-", folder).strip("-") or "general"
+    return f"data/admin/{folder}/{type_folder}/{make_slug(title, uid)}.json"
 
 
 # ── Question Validation ───────────────────────────────────────────────────────
@@ -318,7 +325,7 @@ def build_full_length_test(class_slug):
         "createdBy": "admin", "createdByName": "EduTest Admin",
         "publishedAt": now_iso(), "questions": questions
     }
-    path = admin_path("tests", uid, title)
+    path = admin_path("tests", uid, title, class_slug)
     save_file(path, payload)
 
     entry = {
@@ -380,7 +387,7 @@ def build_subject_test(topic_info):
         "createdBy": "admin", "createdByName": "EduTest Admin",
         "publishedAt": now_iso(), "questions": questions
     }
-    path = admin_path("tests", uid, title)
+    path = admin_path("tests", uid, title, class_slug)
     save_file(path, payload)
 
     entry = {
@@ -433,7 +440,7 @@ def build_note(topic_info):
         "publishedAt": now_iso(), "isPublic": True, "isPublished": True, "isAdmin": True,
         "content": content, "imageUrls": []
     }
-    path = admin_path("notes", uid, title)
+    path = admin_path("notes", uid, title, class_slug)
     save_file(path, payload)
 
     entry = {
@@ -482,7 +489,7 @@ def build_formula(topic_info):
         "publishedAt": now_iso(), "isPublic": True, "isPublished": True, "isAdmin": True,
         "content": content, "imageUrls": []
     }
-    path = admin_path("formulas", uid, title)
+    path = admin_path("formulas", uid, title, class_slug)
     save_file(path, payload)
 
     entry = {
@@ -531,7 +538,7 @@ def build_resource(topic_info):
         "publishedAt": now_iso(), "isPublic": True, "isPublished": True, "isAdmin": True,
         "content": content, "links": links, "imageUrls": []
     }
-    path = admin_path("resources", uid, title)
+    path = admin_path("resources", uid, title, class_slug)
     save_file(path, payload)
 
     entry = {
