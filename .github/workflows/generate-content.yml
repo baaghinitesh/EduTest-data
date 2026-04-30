@@ -78,11 +78,7 @@ jobs:
             echo "No new content generated — nothing to commit"
           else
             TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
-            COUNT=$(git diff --staged --name-only | grep -c "data/admin" || true)
-            git stash
-            git pull --rebase origin master || true
-            git stash pop || true
-            git add -A
+            COUNT=$(git diff --staged --name-only | grep -c "\.json" || true)
             git commit -m "auto: +${COUNT} content items [$TIMESTAMP]"
             git push
           fi
