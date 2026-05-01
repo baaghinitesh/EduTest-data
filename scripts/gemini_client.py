@@ -1,46 +1,43 @@
 """
-gemini_client.py — 3 Gemini keys with round-robin load balancing.
+gemini_client.py — 3 Gemini Flash keys, no Pro (Pro quota exhausted on free tier).
 
 GitHub Secret names (exact):
-  GEMINI_API_KEY    → K1 Flash  — researcher + generation fallback
-  GEMINI_API_KEY_1  → K2 Flash  — researcher fallback + generation fallback
-  GEMINI_API_KEY2   → K3 Pro/Flash — primary generator
+  GEMINI_API_KEY    → K1 Flash 2.5 — primary researcher + generation
+  GEMINI_API_KEY_1  → K2 Flash 2.5 — researcher fallback + generation fallback
+  GEMINI_API_KEY2   → K3 Flash 2.5 — generation primary (dedicated generator key)
+
+Why no Pro: Gemini 2.5 Pro free tier = 25 RPD. Gets exhausted in the first run.
+Flash 2.5 free tier = 1500 RPD, 10 RPM — much more headroom.
 
 Generation key rotation (round-robin across chunks):
-  Chunk 1 → K3 Pro
-  Chunk 2 → K1 Flash
-  Chunk 3 → K2 Flash
-  Chunk 4 → K3 Flash (Pro quota hit fallback)
-  Chunk 5 → K1 Flash  ... and so on
+  Chunk 0 → K3 Flash (dedicated generator)
+  Chunk 1 → K1 Flash
+  Chunk 2 → K2 Flash
+  Chunk 3 → K3 Flash ... repeats
 
-This spreads RPM/RPD load across all 3 keys so no single key
-hits rate limits during a multi-chunk generation run.
+Research:
+  K1 Flash → K2 Flash → empty string (never crashes)
 
-Free-tier daily budget per key:
-  Flash: 1,500 RPD, 10 RPM
-  Pro:   25 RPD, 5 RPM
+Structure fallback (when both Groq keys fail):
+  K1 Flash → K2 Flash → raise
 """
 import os, json, re, time
 from google import genai
 from google.genai import types
 
-MODEL_PRO   = "gemini-2.5-pro"
-MODEL_FLASH = "gemini-2.5-flash"
+MODEL_FLASH_25 = "gemini-2.5-flash"   # primary — best quality Flash
+MODEL_FLASH_20 = "gemini-2.0-flash"   # fallback — higher TPM, good for structuring
 
-RPM_PRO   = 4    # 5 RPM official → 4 safe
 RPM_FLASH = 8    # 10 RPM official → 8 safe
 MAX_RETRIES = 3
 
 # ── Exact GitHub secret names ─────────────────────────────────────────────────
 KEY_K1 = "GEMINI_API_KEY"    # Flash K1
 KEY_K2 = "GEMINI_API_KEY_1"  # Flash K2
-KEY_K3 = "GEMINI_API_KEY2"   # Pro/Flash K3
+KEY_K3 = "GEMINI_API_KEY2"   # Flash K3 (dedicated generator)
 
 _clients   = {}
 _last_call = {}
-
-# Round-robin counter for generation — shared across all calls in a run
-_gen_round_robin = 0
 
 
 class GeminiError(Exception):
@@ -97,12 +94,12 @@ def _extract_json(text):
     raise GeminiError("No valid JSON found in Gemini response")
 
 
-def _call(model, tracker, key_env, rpm, prompt, expect_json, max_tokens):
+def _call(model, tracker, key_env, prompt, expect_json, max_tokens):
     client   = _get_client(key_env)
     last_err = None
     for attempt in range(1, MAX_RETRIES + 1):
         try:
-            _rate_limit(tracker, rpm)
+            _rate_limit(tracker, RPM_FLASH)
             resp = client.models.generate_content(
                 model=model,
                 contents=prompt,
@@ -125,12 +122,12 @@ def _call(model, tracker, key_env, rpm, prompt, expect_json, max_tokens):
             if any(x in s for x in ["429", "RESOURCE_EXHAUSTED", "quota"]):
                 raise GeminiQuotaError(f"Quota hit on {tracker} ({key_env})")
             if any(x in s for x in ["503", "UNAVAILABLE", "overloaded"]):
-                wait = 25 * attempt
+                wait = 20 * attempt
                 print(f"  [Gemini/{tracker}] server busy — sleeping {wait}s")
                 time.sleep(wait)
                 continue
             if attempt < MAX_RETRIES:
-                time.sleep(6 * attempt)
+                time.sleep(5 * attempt)
     raise GeminiError(f"{tracker} failed after {MAX_RETRIES} attempts: {last_err}")
 
 
@@ -143,22 +140,20 @@ def _available(key_env):
 def research(prompt, max_tokens=1500):
     """
     Research step — K1 Flash → K2 Flash → empty string (never raises).
-    Returns full research text (not trimmed — quality matters here).
     """
     for tracker, key_env in [("research_k1", KEY_K1),
                               ("research_k2", KEY_K2)]:
         if not _available(key_env):
             continue
         try:
-            result = _call(MODEL_FLASH, tracker, key_env, RPM_FLASH,
-                           prompt, False, max_tokens)
+            result = _call(MODEL_FLASH_25, tracker, key_env, prompt, False, max_tokens)
             if result and len(result) > 50:
                 print(f"  [Research] ✅ {tracker}")
                 return result
         except GeminiQuotaError:
-            print(f"  [Research] {tracker} quota hit — trying next")
+            print(f"  [Research] {tracker} quota hit — trying next key")
         except GeminiError as e:
-            print(f"  [Research] {tracker} failed ({e}) — trying next")
+            print(f"  [Research] {tracker} failed ({e}) — trying next key")
 
     print("  [Research] All keys failed — using empty context")
     return ""
@@ -167,42 +162,28 @@ def research(prompt, max_tokens=1500):
 def generate_questions_for_chunk(prompt, chunk_index=0, max_tokens=4096):
     """
     Generate raw questions for ONE chunk (10Q).
-    Uses round-robin across all 3 keys to spread RPM/RPD load.
-
-    Key rotation order per chunk_index:
-      0 → K3 Pro (best quality)
-      1 → K1 Flash
-      2 → K2 Flash
-      3 → K3 Flash (if Pro quota hit on K3)
-      4 → K1 Flash ... repeats
-
-    If the primary key for this chunk fails, falls back through all others.
+    Round-robin across K3 → K1 → K2 based on chunk_index.
+    Falls back through all keys if primary fails.
+    No Pro model — Flash only (higher RPD limits).
     """
-    # Build ordered attempt list based on chunk_index for load balancing
-    # Primary key rotates: K3→K1→K2→K3→K1→K2...
+    # Rotation: K3 → K1 → K2 → K3 → K1 → K2 ...
     rotation = [
-        (MODEL_PRO,   "gen_k3_pro",   KEY_K3, RPM_PRO),    # K3 Pro
-        (MODEL_FLASH, "gen_k1_flash", KEY_K1, RPM_FLASH),  # K1 Flash
-        (MODEL_FLASH, "gen_k2_flash", KEY_K2, RPM_FLASH),  # K2 Flash
+        ("gen_k3", KEY_K3),
+        ("gen_k1", KEY_K1),
+        ("gen_k2", KEY_K2),
     ]
-    # Rotate starting point based on chunk_index
-    start = chunk_index % len(rotation)
+    start   = chunk_index % len(rotation)
     ordered = rotation[start:] + rotation[:start]
 
-    # Always add K3 Flash as final fallback (if K3 Pro was primary and failed)
-    fallback = (MODEL_FLASH, "gen_k3_flash", KEY_K3, RPM_FLASH)
-
-    attempts = ordered + [fallback]
     last_err = "no keys available"
-
-    for model, tracker, key_env, rpm in attempts:
+    for tracker, key_env in ordered:
         if not _available(key_env):
+            print(f"  [Generate] {key_env} not set — skipping {tracker}")
             continue
-        # Skip duplicate tracker (K3 Flash already tried if K3 Pro was in ordered)
         try:
-            result = _call(model, tracker, key_env, rpm, prompt, False, max_tokens)
+            result = _call(MODEL_FLASH_25, tracker, key_env, prompt, False, max_tokens)
             if result and len(result) > 80:
-                print(f"  [Generate] ✅ chunk via {tracker} ({model})")
+                print(f"  [Generate] ✅ {tracker} (Flash 2.5)")
                 return result
         except GeminiQuotaError:
             print(f"  [Generate] {tracker} quota hit — trying next key")
@@ -211,23 +192,28 @@ def generate_questions_for_chunk(prompt, chunk_index=0, max_tokens=4096):
             print(f"  [Generate] {tracker} failed ({e}) — trying next key")
             last_err = str(e)
 
-    raise GeminiError(f"All Gemini keys failed for chunk {chunk_index}. Last: {last_err}")
+    raise GeminiError(f"All Flash keys exhausted for chunk {chunk_index}. Last: {last_err}")
 
 
 def structure_with_flash(prompt, max_tokens=4096):
     """
     Fallback JSON structurer when both Groq keys fail.
-    K1 Flash → K2 Flash → raise.
+    Tries Flash 2.0 first (higher TPM) then Flash 2.5 K1 → K2.
     """
-    for tracker, key_env in [("struct_k1", KEY_K1),
-                              ("struct_k2", KEY_K2)]:
+    # Flash 2.0 has higher TPM — better for structuring when rate limited
+    attempts = [
+        ("struct_k1_20", KEY_K1, MODEL_FLASH_20),
+        ("struct_k2_20", KEY_K2, MODEL_FLASH_20),
+        ("struct_k1_25", KEY_K1, MODEL_FLASH_25),
+        ("struct_k2_25", KEY_K2, MODEL_FLASH_25),
+    ]
+    for tracker, key_env, model in attempts:
         if not _available(key_env):
             continue
         try:
-            result = _call(MODEL_FLASH, tracker, key_env, RPM_FLASH,
-                           prompt, True, max_tokens)
+            result = _call(model, tracker, key_env, prompt, True, max_tokens)
             if result:
-                print(f"  [StructureFlash] ✅ {tracker}")
+                print(f"  [StructureFlash] ✅ {tracker} ({model})")
                 return result
         except Exception as e:
             print(f"  [StructureFlash] {tracker} failed ({e}) — trying next")

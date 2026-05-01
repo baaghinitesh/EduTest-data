@@ -127,5 +127,7 @@ jobs:
             [ "$CACHE_COUNT" -gt 0 ] && MSG="${MSG}, +${CACHE_COUNT} research cache"
             MSG="${MSG} [$TIMESTAMP]"
             git commit -m "$MSG"
-            git push
+            # Pull remote changes first to avoid rejection when another run pushed concurrently
+            git pull --rebase origin master || git pull --rebase origin main || true
+            git push origin HEAD
           fi

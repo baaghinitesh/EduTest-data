@@ -52,7 +52,8 @@ def _now():
     return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
 def _cdn(path):
-    return f"{CDN_BASE}/{path}"
+    # path already starts with "data/..." — no extra slash needed
+    return f"{CDN_BASE}/{path.lstrip('/')}"
 
 def _slug(title, uid):
     s = re.sub(r"[^a-z0-9\s-]", "", title.lower())
