@@ -21,6 +21,7 @@ from datetime import datetime, timezone
 import gemini_client
 import groq_client
 import research_cache
+import publish_to_server
 from gemini_client import GeminiError
 from groq_client   import GroqError
 import topic_picker
@@ -70,6 +71,14 @@ def _save(path, data):
     with open(full, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
     print(f"  [Saved] {path}")
+
+
+def _save_and_publish(path, data):
+    """Save JSON to disk AND publish to server MongoDB so it appears in the app."""
+    _save(path, data)
+    # Publish to server — creates MongoDB record with cdnUrl + githubPath
+    # so the test shows up in /api/content immediately
+    publish_to_server.publish_test(data, path)
 
 def _tags(class_slug, subj_slug, *extra):
     tags = {class_slug, subj_slug}
@@ -410,7 +419,7 @@ def build_full_length_test(class_slug):
         "publishedAt": _now(), "questions": all_questions,
     }
     path = _admin_path("tests", uid, title, class_slug)
-    _save(path, payload)
+    _save_and_publish(path, payload)
 
     entry = {
         "id": uid, "type": "test", "title": title,
@@ -494,7 +503,7 @@ def build_subject_test(topic_info):
         "publishedAt": _now(), "questions": questions,
     }
     path = _admin_path("tests", uid, title, class_slug)
-    _save(path, payload)
+    _save_and_publish(path, payload)
 
     entry = {
         "id": uid, "type": "test", "title": title,
@@ -584,7 +593,7 @@ def build_combined_test(class_slug, subject_topics):
         "publishedAt": _now(), "questions": all_questions,
     }
     path = _admin_path("tests", uid, title, class_slug)
-    _save(path, payload)
+    _save_and_publish(path, payload)
 
     entry = {
         "id": uid, "type": "test", "title": title,
