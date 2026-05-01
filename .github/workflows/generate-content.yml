@@ -22,6 +22,10 @@ on:
         description: "Force exam slug (e.g. neet-ug, jee-mains, cbse-class-10). Leave blank for random."
         required: false
         default: ""
+      backfill:
+        description: "Set to 'true' to publish all existing content to MongoDB (one-time backfill)."
+        required: false
+        default: "false"
 
 jobs:
   generate:
@@ -100,7 +104,13 @@ jobs:
           EDUTEST_API_URL:         ${{ secrets.EDUTEST_API_URL }}
           EDUTEST_ADMIN_EMAIL:     ${{ secrets.EDUTEST_ADMIN_EMAIL }}
           EDUTEST_ADMIN_PASSWORD:  ${{ secrets.EDUTEST_ADMIN_PASSWORD }}
-        run: python scripts/generate.py
+        run: |
+          if [ "${{ github.event.inputs.backfill }}" = "true" ]; then
+            echo "=== BACKFILL MODE: Publishing existing content to MongoDB ==="
+            python scripts/backfill_to_server.py
+          else
+            python scripts/generate.py
+          fi
 
       - name: Commit and push
         run: |
