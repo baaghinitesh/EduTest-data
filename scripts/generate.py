@@ -15,16 +15,15 @@ Pipeline per test:
   Step 3 — Structure  : Groq K1 → Groq K2 → Flash K1 → Flash K2 (JSON)
 
 API keys used (5 total — exact GitHub secret names):
-  GEMINI_API_KEY    → Flash K1  (researcher + gen last-resort fallback)
+  GEMINI_API_KEY    → Flash K1  (researcher + gen fallback)
   GEMINI_API_KEY_1  → Flash K2  (researcher fallback + gen fallback)
-  GEMINI_API_KEY2   → Pro/Flash (primary question generator)
+  GEMINI_API_KEY2   → Flash K3  (primary question generator, round-robin)
   GROQ_API_KEY      → Groq K1   (primary structurer)
   GROQ_API_KEY2     → Groq K2   (fallback structurer)
 
 Daily budget (4 runs: 1 full + 3 subject):
-  Flash K1/K2 : ~4-8 research calls/day  (limit 1500 RPD) ✅
-  Pro K2      : ~3-6 generation calls/day (limit 25 RPD)  ✅
-  Groq K1/K2  : ~4-12 structure calls/day (limit 14400 RPD) ✅
+  Flash K1/K2/K3 : ~4-16 calls/day each  (limit 1500 RPD each) ✅
+  Groq K1/K2     : ~4-12 structure calls/day (limit 100K TPD each) ✅
 """
 import os, sys, traceback, random
 from datetime import datetime, timezone
