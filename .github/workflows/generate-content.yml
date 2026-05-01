@@ -1,21 +1,25 @@
-name: Generate EduTest Content
+name: Generate EduTest Tests
 
 on:
   schedule:
-    # 4 runs daily — first run is FULL mode (UTC 00:xx = 5:30 AM IST)
-    # Remaining 3 runs are SUBJECT mode
-    - cron: "30 0  * * *"   # 12:30 AM UTC = 6:00 AM  IST  → FULL  mode (UTC hour=0)
-    - cron: "30 6  * * *"   # 6:30  AM UTC = 12:00 PM IST  → SUBJECT mode
-    - cron: "30 11 * * *"   # 11:30 AM UTC = 5:00  PM IST  → SUBJECT mode
-    - cron: "30 15 * * *"   # 3:30  PM UTC = 9:00  PM IST  → SUBJECT mode
+    # 4 runs daily (IST times):
+    # UTC 00:30 = 6:00 AM  IST → FULL mode  (first run of day, UTC hour=0)
+    # UTC 06:30 = 12:00 PM IST → SUBJECT mode
+    # UTC 11:30 = 5:00  PM IST → SUBJECT mode
+    # UTC 15:30 = 9:00  PM IST → SUBJECT mode
+    - cron: "30 0  * * *"
+    - cron: "30 6  * * *"
+    - cron: "30 11 * * *"
+    - cron: "30 15 * * *"
+
   workflow_dispatch:
     inputs:
       mode:
-        description: "Override mode: 'full' or 'subject' (leave blank for auto)"
+        description: "Mode: 'full' (full-length) or 'subject' (subject/combined). Leave blank for auto."
         required: false
         default: ""
       exam:
-        description: "Force a specific exam slug (e.g. neet-ug, jee-mains, norcet)"
+        description: "Force exam slug (e.g. neet-ug, jee-mains, cbse-class-10). Leave blank for random."
         required: false
         default: ""
 
@@ -44,41 +48,59 @@ jobs:
 
       - name: Validate API keys
         env:
-          GEMINI_API_KEY:   ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
-          GROQ_API_KEY:     ${{ secrets.GROQ_API_KEY }}
-          GH_PAT:           ${{ secrets.GH_PAT }}
+          GEMINI_API_KEY:  ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
+          GEMINI_API_KEY2: ${{ secrets.GEMINI_API_KEY2 }}
+          GROQ_API_KEY:    ${{ secrets.GROQ_API_KEY }}
+          GROQ_API_KEY2:   ${{ secrets.GROQ_API_KEY2 }}
+          GH_PAT:          ${{ secrets.GH_PAT }}
         run: |
-          echo "=== API Key Validation ==="
-          [ -z "$GEMINI_API_KEY"   ] && echo "❌ GEMINI_API_KEY   — NOT SET (Flash/Researcher missing)" \
-                                     || echo "✅ GEMINI_API_KEY   — set (${#GEMINI_API_KEY} chars)"
-          [ -z "$GEMINI_API_KEY_1" ] && echo "❌ GEMINI_API_KEY_1 — NOT SET (Pro Generator missing)" \
-                                     || echo "✅ GEMINI_API_KEY_1 — set (${#GEMINI_API_KEY_1} chars)"
-          [ -z "$GROQ_API_KEY"     ] && echo "❌ GROQ_API_KEY     — NOT SET (Notes/Formulas/Format missing)" \
-                                     || echo "✅ GROQ_API_KEY     — set (${#GROQ_API_KEY} chars)"
-          [ -z "$GH_PAT"           ] && echo "❌ GH_PAT           — NOT SET (Git push will FAIL)" \
-                                     || echo "✅ GH_PAT           — set (${#GH_PAT} chars)"
-          echo "=========================="
+          echo "=== API Key Status ==="
+          [ -z "$GEMINI_API_KEY"  ] \
+            && echo "❌ GEMINI_API_KEY  (Flash K1 researcher + gen fallback) — NOT SET" \
+            || echo "✅ GEMINI_API_KEY  (Flash K1 researcher + gen fallback) — ${#GEMINI_API_KEY} chars"
+          [ -z "$GEMINI_API_KEY1" ] \
+            && echo "❌ GEMINI_API_KEY1 (Flash K2 researcher + gen fallback) — NOT SET" \
+            || echo "✅ GEMINI_API_KEY1 (Flash K2 researcher + gen fallback) — ${#GEMINI_API_KEY1} chars"
+          [ -z "$GEMINI_API_KEY2" ] \
+            && echo "❌ GEMINI_API_KEY2 (Pro/Flash primary generator)        — NOT SET ⚠️ CRITICAL" \
+            || echo "✅ GEMINI_API_KEY2 (Pro/Flash primary generator)        — ${#GEMINI_API_KEY2} chars"
+          [ -z "$GROQ_API_KEY"   ] \
+            && echo "❌ GROQ_API_KEY    (Groq K1 primary structurer)         — NOT SET ⚠️ CRITICAL" \
+            || echo "✅ GROQ_API_KEY    (Groq K1 primary structurer)         — ${#GROQ_API_KEY} chars"
+          [ -z "$GROQ_API_KEY2"  ] \
+            && echo "❌ GROQ_API_KEY2   (Groq K2 fallback structurer)        — NOT SET" \
+            || echo "✅ GROQ_API_KEY2   (Groq K2 fallback structurer)        — ${#GROQ_API_KEY2} chars"
+          [ -z "$GH_PAT"         ] \
+            && echo "❌ GH_PAT          (git push)                           — NOT SET ⚠️ CRITICAL" \
+            || echo "✅ GH_PAT          (git push)                           — ${#GH_PAT} chars"
+          echo "======================"
 
-      - name: Run content generator
+      - name: Run test generator
         env:
-          GEMINI_API_KEY:   ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
-          GROQ_API_KEY:     ${{ secrets.GROQ_API_KEY }}
-          GENERATE_MODE:    ${{ github.event.inputs.mode }}
-          FORCE_EXAM:       ${{ github.event.inputs.exam }}
+          GEMINI_API_KEY:  ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
+          GEMINI_API_KEY2: ${{ secrets.GEMINI_API_KEY2 }}
+          GROQ_API_KEY:    ${{ secrets.GROQ_API_KEY }}
+          GROQ_API_KEY2:   ${{ secrets.GROQ_API_KEY2 }}
+          GENERATE_MODE:   ${{ github.event.inputs.mode }}
+          FORCE_EXAM:      ${{ github.event.inputs.exam }}
         run: python scripts/generate.py
 
-      - name: Commit and push generated content
+      - name: Commit and push
         run: |
           git config --global user.name  "EduTest Bot"
           git config --global user.email "bot@edutest.app"
           git add -A
           if git diff --staged --quiet; then
-            echo "No new content generated — nothing to commit"
+            echo "Nothing to commit — no new content generated"
           else
             TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
-            COUNT=$(git diff --staged --name-only | grep -c "\.json" || true)
-            git commit -m "auto: +${COUNT} content items [$TIMESTAMP]"
+            TEST_COUNT=$(git diff --staged --name-only | grep -c "data/admin/.*/tests/" || true)
+            CACHE_COUNT=$(git diff --staged --name-only | grep -c "data/research/" || true)
+            MSG="auto: +${TEST_COUNT} test(s)"
+            [ "$CACHE_COUNT" -gt 0 ] && MSG="${MSG}, +${CACHE_COUNT} research cache"
+            MSG="${MSG} [$TIMESTAMP]"
+            git commit -m "$MSG"
             git push
           fi

@@ -1,40 +1,48 @@
 """
-groq_client.py — Groq API wrapper. Dynamic system prompt (not NORCET-specific).
+groq_client.py — 2 Groq keys with fallback.
 
+GitHub Secret names (exact):
+  GROQ_API_KEY   → Groq K1 — primary structurer
+  GROQ_API_KEY2  → Groq K2 — fallback structurer  (no underscore before 2)
+
+If both Groq keys fail, caller falls back to gemini_client.structure_with_flash().
 Free tier: 14,400 RPD, 6,000 TPM — essentially unlimited for our use.
-Model: llama-3.3-70b-versatile for all content (notes, formulas, resources, formatter).
 """
 import os, json, re, time
 from groq import Groq
 
-MODEL = "llama-3.3-70b-versatile"
+MODEL       = "llama-3.3-70b-versatile"
 MAX_RETRIES = 3
-MIN_GAP     = 2.0
+MIN_GAP     = 2.0   # seconds between calls
 
-_client    = None
-_last_call = 0.0
+# ── Exact GitHub secret names ─────────────────────────────────────────────────
+KEY_G1 = "GROQ_API_KEY"    # Groq K1 — primary
+KEY_G2 = "GROQ_API_KEY2"   # Groq K2 — fallback  (no underscore)
+
+_clients   = {}
+_last_call = {}   # key_env → float timestamp
 
 
 class GroqError(Exception):
     pass
 
 
-def _get_client():
-    global _client
-    if _client is None:
-        api_key = os.environ.get("GROQ_API_KEY", "")
+# ── Internal helpers ──────────────────────────────────────────────────────────
+
+def _get_client(key_env):
+    if key_env not in _clients:
+        api_key = os.environ.get(key_env, "").strip()
         if not api_key:
-            raise GroqError("GROQ_API_KEY not set")
-        _client = Groq(api_key=api_key)
-    return _client
+            raise GroqError(f"{key_env} not set or empty")
+        _clients[key_env] = Groq(api_key=api_key)
+    return _clients[key_env]
 
 
-def _rate_limit_sleep():
-    global _last_call
-    elapsed = time.time() - _last_call
+def _rate_limit(key_env):
+    elapsed = time.time() - _last_call.get(key_env, 0.0)
     if elapsed < MIN_GAP:
         time.sleep(MIN_GAP - elapsed)
-    _last_call = time.time()
+    _last_call[key_env] = time.time()
 
 
 def _extract_json(text):
@@ -44,103 +52,104 @@ def _extract_json(text):
         return json.loads(text)
     except json.JSONDecodeError:
         pass
-    for s, e in [("{", "}"), ("[", "]")]:
-        idx = text.find(s)
+    for start, end in [("{", "}"), ("[", "]")]:
+        idx = text.find(start)
         if idx == -1:
             continue
         depth = 0
         for i, ch in enumerate(text[idx:], idx):
-            if ch == s:
+            if ch == start:
                 depth += 1
-            elif ch == e:
+            elif ch == end:
                 depth -= 1
                 if depth == 0:
                     try:
-                        return json.loads(text[idx:i+1])
+                        return json.loads(text[idx : i + 1])
                     except json.JSONDecodeError:
                         break
     raise GroqError("No valid JSON in Groq response")
 
 
-def _call(prompt, expect_json, max_tokens, system_prompt):
-    client   = _get_client()
+def _call_one(key_env, system_prompt, user_prompt, expect_json, max_tokens):
+    """Call one Groq key with retry. Returns result or raises GroqError."""
+    client   = _get_client(key_env)
     last_err = None
     for attempt in range(1, MAX_RETRIES + 1):
         try:
-            _rate_limit_sleep()
-            response = client.chat.completions.create(
+            _rate_limit(key_env)
+            resp = client.chat.completions.create(
                 model=MODEL,
                 messages=[
                     {"role": "system", "content": system_prompt},
-                    {"role": "user",   "content": prompt},
+                    {"role": "user",   "content": user_prompt},
                 ],
-                temperature=0.6,
+                temperature=0.5,
                 max_tokens=max_tokens,
             )
-            text = response.choices[0].message.content
+            text = (resp.choices[0].message.content or "").strip()
+            if not text:
+                raise GroqError("Empty response")
             return text if not expect_json else _extract_json(text)
 
         except GroqError:
             raise
         except Exception as e:
             last_err = e
-            err_str  = str(e)
-            print(f"  [Groq] Attempt {attempt}/{MAX_RETRIES} failed: {err_str[:120]}")
-            if "413" in err_str:
-                raise GroqError(f"Prompt too large (413)")
-            if "429" in err_str or "rate_limit" in err_str.lower():
-                m = re.search(r"try again in (\d+\.?\d*)s", err_str, re.IGNORECASE)
+            s = str(e)
+            print(f"  [Groq/{key_env}] attempt {attempt}/{MAX_RETRIES}: {s[:120]}")
+            if "413" in s:
+                raise GroqError("Prompt too large (413)")
+            if "429" in s or "rate_limit" in s.lower():
+                m = re.search(r"try again in (\d+\.?\d*)s", s, re.IGNORECASE)
                 wait = float(m.group(1)) + 2 if m else 45
-                print(f"  [Groq] Rate limited — waiting {wait:.0f}s...")
+                print(f"  [Groq/{key_env}] rate limited — sleeping {wait:.0f}s")
                 time.sleep(wait)
                 continue
             if attempt < MAX_RETRIES:
                 time.sleep(4 * attempt)
-    raise GroqError(f"Groq failed after {MAX_RETRIES} attempts: {last_err}")
+    raise GroqError(f"Groq/{key_env} failed after {MAX_RETRIES} attempts: {last_err}")
 
 
 def _sys(exam_name, subject_name=""):
-    """Build a dynamic system prompt based on exam context."""
     ctx = f"{exam_name} exam"
     if subject_name:
-        ctx += f", {subject_name} subject"
+        ctx += f", {subject_name}"
     return (
-        f"You are an expert educator and content creator specializing in the {ctx}. "
-        "Generate accurate, comprehensive educational content. "
-        "ALWAYS respond with valid JSON only — no markdown fences, no extra text outside JSON."
+        f"You are an expert educator specialising in the {ctx}. "
+        "Generate accurate, exam-standard content. "
+        "ALWAYS respond with valid JSON only — no markdown fences, no text outside JSON."
     )
 
 
+def _key_available(key_env):
+    return bool(os.environ.get(key_env, "").strip())
+
+
+# ── Public API ────────────────────────────────────────────────────────────────
+
 def format_questions(raw_text, schema_example, exam_name, subject_name=""):
-    """Step 4 — Formatter: extract structured JSON from audited raw text."""
+    """
+    Structure raw question text into JSON array.
+    GROQ_API_KEY → GROQ_API_KEY2 → raises GroqError (caller falls back to Flash).
+    """
     prompt = (
-        f"Extract questions, options, correct answers, and explanations from this text.\n"
-        f"Output ONLY a valid JSON array matching this schema:\n{schema_example}\n"
-        f"Output absolutely nothing but valid JSON array starting with [.\n\n"
+        f"Extract ALL questions, options, correct answers, and explanations from the text below.\n"
+        f"Output ONLY a valid JSON array matching this schema exactly:\n{schema_example}\n"
+        f"Start your response with [ and end with ]. No other text.\n\n"
         f"{raw_text}\n["
     )
     sys = _sys(exam_name, subject_name)
-    return _call(prompt, expect_json=True, max_tokens=8000, system_prompt=sys)
 
+    for key_env in [KEY_G1, KEY_G2]:
+        if not _key_available(key_env):
+            print(f"  [Groq] {key_env} not set — skipping")
+            continue
+        try:
+            result = _call_one(key_env, sys, prompt, expect_json=True, max_tokens=8000)
+            if result:
+                print(f"  [Groq] ✅ {key_env} structured successfully")
+                return result
+        except GroqError as e:
+            print(f"  [Groq] {key_env} failed ({e}) — trying next key")
 
-def generate_note(prompt, exam_name, subject_name="", expect_json=False):
-    return _call(prompt, expect_json, max_tokens=8000, system_prompt=_sys(exam_name, subject_name))
-
-
-def generate_formula(prompt, exam_name, subject_name="", expect_json=True):
-    return _call(prompt, expect_json, max_tokens=5000, system_prompt=_sys(exam_name, subject_name))
-
-
-def generate_resource(prompt, exam_name, subject_name="", expect_json=True):
-    return _call(prompt, expect_json, max_tokens=5000, system_prompt=_sys(exam_name, subject_name))
-
-
-def expand_content(existing_html, topic, subj_name, exam_name, content_type="note"):
-    prompt = (
-        f"The following {content_type} about {topic} ({subj_name}) is incomplete.\n\n"
-        f"EXISTING:\n{existing_html[:2000]}\n\n"
-        "Add MORE content: detailed explanations, clinical examples, drug doses in <code>, "
-        "mnemonics in <em>, key points. Write ONLY the additional HTML to append "
-        "(start with <h3> or <p>). At least 500 more words. Do NOT repeat existing content."
-    )
-    return _call(prompt, expect_json=False, max_tokens=4000, system_prompt=_sys(exam_name, subj_name))
+    raise GroqError("Both Groq keys failed — caller should fall back to Flash")
