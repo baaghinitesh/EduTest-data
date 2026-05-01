@@ -14,12 +14,12 @@ Pipeline per test:
   Step 2 — Generate   : Pro K2 → Flash K2 → Flash K1 → Flash K2 (raw text)
   Step 3 — Structure  : Groq K1 → Groq K2 → Flash K1 → Flash K2 (JSON)
 
-API keys used (5 total):
-  GEMINI_API_KEY   → Flash K1  (researcher + gen fallback)
-  GEMINI_API_KEY1  → Flash K2  (researcher + gen fallback)
-  GEMINI_API_KEY2  → Pro/Flash (primary question generator)
-  GROQ_API_KEY     → Groq K1   (primary structurer)
-  GROQ_API_KEY2    → Groq K2   (fallback structurer)
+API keys used (5 total — exact GitHub secret names):
+  GEMINI_API_KEY    → Flash K1  (researcher + gen last-resort fallback)
+  GEMINI_API_KEY_1  → Flash K2  (researcher fallback + gen fallback)
+  GEMINI_API_KEY2   → Pro/Flash (primary question generator)
+  GROQ_API_KEY      → Groq K1   (primary structurer)
+  GROQ_API_KEY2     → Groq K2   (fallback structurer)
 
 Daily budget (4 runs: 1 full + 3 subject):
   Flash K1/K2 : ~4-8 research calls/day  (limit 1500 RPD) ✅
@@ -68,11 +68,11 @@ def _get_mode():
 def _validate_keys():
     """Print which keys are set. Warn if critical ones are missing."""
     keys = {
-        "GEMINI_API_KEY":  "Flash K1 (researcher + gen fallback)",
-        "GEMINI_API_KEY1": "Flash K2 (researcher + gen fallback)",
-        "GEMINI_API_KEY2": "Pro/Flash K3 (primary generator)",
-        "GROQ_API_KEY":    "Groq K1 (structurer)",
-        "GROQ_API_KEY2":   "Groq K2 (fallback structurer)",
+        "GEMINI_API_KEY":   "Flash K1 (researcher + gen fallback)",
+        "GEMINI_API_KEY_1": "Flash K2 (researcher fallback + gen fallback)",
+        "GEMINI_API_KEY2":  "Pro/Flash K3 (primary generator)",
+        "GROQ_API_KEY":     "Groq K1 (primary structurer)",
+        "GROQ_API_KEY2":    "Groq K2 (fallback structurer)",
     }
     print("\n  API Keys:")
     missing_critical = []

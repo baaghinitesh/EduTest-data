@@ -1,7 +1,7 @@
 """
 groq_client.py — 2 Groq keys with fallback.
 
-GitHub Secret names (exact):
+GitHub Secret names (exact — verified from repo settings):
   GROQ_API_KEY   → Groq K1 — primary structurer
   GROQ_API_KEY2  → Groq K2 — fallback structurer  (no underscore before 2)
 
@@ -16,8 +16,8 @@ MAX_RETRIES = 3
 MIN_GAP     = 2.0   # seconds between calls
 
 # ── Exact GitHub secret names ─────────────────────────────────────────────────
-KEY_G1 = "GROQ_API_KEY"    # Groq K1 — primary
-KEY_G2 = "GROQ_API_KEY2"   # Groq K2 — fallback  (no underscore)
+KEY_G1 = "GROQ_API_KEY"   # Groq K1 — primary
+KEY_G2 = "GROQ_API_KEY2"  # Groq K2 — fallback (no underscore before 2)
 
 _clients   = {}
 _last_call = {}   # key_env → float timestamp

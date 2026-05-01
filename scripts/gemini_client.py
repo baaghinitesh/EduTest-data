@@ -1,24 +1,25 @@
 """
 gemini_client.py — 3 Gemini keys, correct secret names, full load-balancing.
 
-GitHub Secret names (exact):
-  GEMINI_API_KEY   → Flash K1  — primary researcher + generation last-resort fallback
-  GEMINI_API_KEY1  → Flash K2  — secondary researcher + generation fallback
-  GEMINI_API_KEY2  → Pro first, then Flash — PRIMARY question generator
+GitHub Secret names (exact — verified from repo settings):
+  GEMINI_API_KEY    → Flash K1  — primary researcher + gen last-resort fallback
+  GEMINI_API_KEY_1  → Flash K2  — secondary researcher + gen fallback  (underscore before 1)
+  GEMINI_API_KEY2   → Pro first, then Flash — PRIMARY question generator (no underscore before 2)
 
 Key assignment per task:
-  ┌─────────────────┬──────────────────────────────────────────────────────┐
-  │ Task            │ Key order (first available wins)                     │
-  ├─────────────────┼──────────────────────────────────────────────────────┤
-  │ Research        │ K1 (Flash) → K2 (Flash) → empty string (graceful)   │
-  │ Generate        │ K2 (Pro) → K2 (Flash) → K1 (Flash) → K2 (Flash)    │
-  │ Structure(fall) │ K1 (Flash) → K2 (Flash) → raise                     │
-  └─────────────────┴──────────────────────────────────────────────────────┘
+  ┌─────────────────┬──────────────────────────────────────────────────────────┐
+  │ Task            │ Key order (first available, first success wins)          │
+  ├─────────────────┼──────────────────────────────────────────────────────────┤
+  │ Research        │ K1 Flash → K2 Flash → empty string (never crashes)      │
+  │ Generate        │ K3 Pro → K3 Flash → K1 Flash → K2 Flash → raise         │
+  │ Structure(fall) │ K1 Flash → K2 Flash → raise                             │
+  └─────────────────┴──────────────────────────────────────────────────────────┘
 
 Free-tier daily budget (4 runs):
-  Flash K1 : ~4-8 research + fallback gen calls  (1500 RPD limit) ✅
-  Flash K2 : ~4-8 research + fallback gen calls  (1500 RPD limit) ✅
-  Pro   K2 : ~4-12 generation calls              (25 RPD limit)   ✅
+  Flash K1  : ~4-8 research + fallback gen calls  (1500 RPD limit) ✅
+  Flash K2  : ~4-8 research + fallback gen calls  (1500 RPD limit) ✅
+  Pro   K3  : ~4-12 generation calls              (25 RPD limit)   ✅
+  Flash K3  : fallback only if Pro K3 quota hit   (1500 RPD limit) ✅
 """
 import os, json, re, time
 from google import genai
@@ -33,9 +34,9 @@ RPM_FLASH = 8    # 10 RPM official → 8 safe
 MAX_RETRIES = 3
 
 # ── Exact GitHub secret names ─────────────────────────────────────────────────
-KEY_K1 = "GEMINI_API_KEY"    # Flash K1 — researcher + gen fallback
-KEY_K2 = "GEMINI_API_KEY1"   # Flash K2 — researcher + gen fallback  (no underscore)
-KEY_K3 = "GEMINI_API_KEY2"   # Pro/Flash — primary generator          (no underscore)
+KEY_K1 = "GEMINI_API_KEY"    # Flash K1 — researcher + gen last-resort
+KEY_K2 = "GEMINI_API_KEY_1"  # Flash K2 — researcher fallback + gen fallback (underscore_1)
+KEY_K3 = "GEMINI_API_KEY2"   # Pro/Flash — primary generator (no underscore, just 2)
 
 _clients   = {}
 _last_call = {}   # tracker_key → float timestamp
@@ -147,8 +148,7 @@ def _available(key_env):
 def research(prompt, max_tokens=1500):
     """
     Step 1 — Research.
-    Tries K1 (Flash) first, then K2 (Flash).
-    Returns empty string on total failure — never raises, never crashes the run.
+    K1 Flash → K2 Flash → empty string (never raises, never crashes the run).
     """
     for tracker, key_env in [("research_k1", KEY_K1),
                               ("research_k2", KEY_K2)]:
@@ -166,18 +166,18 @@ def research(prompt, max_tokens=1500):
         except GeminiError as e:
             print(f"  [Research] {tracker} failed ({e}) — trying next key")
 
-    print("  [Research] All keys failed or unavailable — using empty context")
+    print("  [Research] All keys failed — using empty context")
     return ""
 
 
 def generate_questions(prompt, max_tokens=8192):
     """
     Step 2 — Generate raw questions (plain text, NOT JSON).
-    Load-balanced across all 3 keys:
-      1. K3 Pro   — best quality, uses Pro quota
-      2. K3 Flash — same account, Flash model (if Pro quota hit)
-      3. K1 Flash — fallback researcher key used for generation
-      4. K2 Flash — last resort
+    All 3 keys used in order:
+      1. K3 Pro   — best quality, uses Pro quota (GEMINI_API_KEY2)
+      2. K3 Flash — same key, Flash model if Pro quota hit
+      3. K1 Flash — fallback (GEMINI_API_KEY)
+      4. K2 Flash — last resort (GEMINI_API_KEY_1)
     Raises GeminiError only if ALL keys fail.
     """
     attempts = [
@@ -204,14 +204,13 @@ def generate_questions(prompt, max_tokens=8192):
             print(f"  [Generate] {tracker} failed ({e}) — trying next")
             last_err = str(e)
 
-    raise GeminiError(f"All 3 Gemini keys exhausted for generation. Last error: {last_err}")
+    raise GeminiError(f"All 3 Gemini keys exhausted for generation. Last: {last_err}")
 
 
 def structure_with_flash(prompt, max_tokens=6144):
     """
     Fallback JSON structurer — called only when both Groq keys fail.
-    Tries K1 Flash → K2 Flash.
-    Returns parsed JSON dict/list or raises GeminiError.
+    K1 Flash → K2 Flash → raise.
     """
     for tracker, key_env in [("struct_k1", KEY_K1),
                               ("struct_k2", KEY_K2)]:
