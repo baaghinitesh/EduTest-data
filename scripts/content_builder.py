@@ -1,19 +1,21 @@
 """
 content_builder.py — TEST-ONLY generation pipeline.
 
-Two test types per run (decided by generate.py):
-  full     → 1 full-length test covering ALL subjects (exact question count from examConfig)
-  subject  → 1 subject-wise OR combined (2-3 subjects) test
+Design:
+  - Always generate in 10Q chunks — never more per API call
+  - Iterate chunks until target reached: 10→20→30→40→50 for subject tests
+  - Full-length: iterate until exam's fullLengthQuestions count reached
+  - All 3 Gemini keys rotate across chunks (round-robin) — no single key overloaded
+  - Research done ONCE per subject, full quality, cached for reuse
+  - Groq structures each chunk independently — K1→K2→Flash fallback per chunk
+  - Accept partial results — save what we have if a chunk fails mid-way
 
-Pipeline per test:
-  Step 1 — Research   : Flash K1 → Flash K2 → cached → empty (never crashes)
-  Step 2 — Generate   : Pro K2 → Flash K2 → Flash K1 → Flash K2 (raw text)
-  Step 3 — Structure  : Groq K1 → Groq K2 → Flash K1 → Flash K2 (JSON)
-
-Research is cached in data/research/<class_slug>.json (30-day TTL).
-If the same exam is picked again, cached research is reused — no extra API call.
+Pipeline per chunk:
+  Step 1 — Research   : Flash K1 → Flash K2 → cached (once per subject)
+  Step 2 — Generate   : K3 Pro → K1 Flash → K2 Flash → K3 Flash (rotates per chunk)
+  Step 3 — Structure  : Groq K1 → Groq K2 → Flash K1 → Flash K2 (per chunk)
 """
-import os, json, uuid, re, random
+import os, json, uuid, re
 from datetime import datetime, timezone
 
 import gemini_client
@@ -26,21 +28,18 @@ import topic_picker
 ROOT     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CDN_BASE = "https://prepguidedata.launchyourconcept.com"
 
-# ── Shared JSON schema for the structurer ─────────────────────────────────────
-_SCHEMA = """[
-  {
-    "question": "Full question text here?",
-    "difficulty": "medium",
-    "explanation": "Detailed explanation of why the correct answer is right",
-    "hint": "Optional short hint",
-    "options": [
-      {"letter": "A", "text": "Option text", "isCorrect": true,  "explanation": "Why A is correct"},
-      {"letter": "B", "text": "Option text", "isCorrect": false, "explanation": "Why B is wrong"},
-      {"letter": "C", "text": "Option text", "isCorrect": false, "explanation": "Why C is wrong"},
-      {"letter": "D", "text": "Option text", "isCorrect": false, "explanation": "Why D is wrong"}
-    ]
-  }
-]"""
+# ── 10Q per chunk — safe for all API limits ───────────────────────────────────
+CHUNK = 10
+
+# ── Compact JSON schema ───────────────────────────────────────────────────────
+_SCHEMA = (
+    '[{"question":"...","difficulty":"medium","explanation":"...",'
+    '"hint":"","options":['
+    '{"letter":"A","text":"...","isCorrect":true,"explanation":"..."},'
+    '{"letter":"B","text":"...","isCorrect":false,"explanation":"..."},'
+    '{"letter":"C","text":"...","isCorrect":false,"explanation":"..."},'
+    '{"letter":"D","text":"...","isCorrect":false,"explanation":"..."}]}]'
+)
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -87,9 +86,7 @@ def _exam_name(class_slug):
 # ── Question validation ───────────────────────────────────────────────────────
 
 def _validate_q(raw, idx, marks, neg_val, neg_marking, subj_slug):
-    """Normalise a raw question dict into the app's expected schema."""
     qid = f"q-{int(datetime.now().timestamp()*1000)}-{uuid.uuid4().hex[:5]}"
-
     options = raw.get("options", [])
     validated = []
     for i, opt in enumerate(options[:4]):
@@ -98,44 +95,36 @@ def _validate_q(raw, idx, marks, neg_val, neg_marking, subj_slug):
             "text":        str(opt.get("text", f"Option {chr(65+i)}")).strip(),
             "isCorrect":   bool(opt.get("isCorrect", False)),
             "index":       i,
-            "imageUrl":    str(opt.get("imageUrl", "")).strip(),
+            "imageUrl":    "",
             "explanation": str(opt.get("explanation", "")).strip(),
         })
-    # Pad to 4 options
     while len(validated) < 4:
         i = len(validated)
         validated.append({
             "letter": chr(65+i), "text": f"Option {chr(65+i)}",
             "isCorrect": False, "index": i, "imageUrl": "", "explanation": "",
         })
-
-    # Ensure exactly one correct answer
     correct = [i for i, o in enumerate(validated) if o["isCorrect"]]
     if not correct:
         validated[0]["isCorrect"] = True
     elif len(correct) > 1:
         for i, o in enumerate(validated):
             o["isCorrect"] = (i == correct[0])
-
     diff = raw.get("difficulty", "medium").lower()
     if diff not in ("easy", "medium", "hard"):
         diff = "medium"
-
     return {
         "id": qid, "order": idx + 1,
         "question":    str(raw.get("question", f"Question {idx+1}")).strip(),
-        "type":        "mcq",
-        "options":     validated,
+        "type":        "mcq", "options": validated,
         "answer":      "", "alternateAnswers": [],
         "explanation": str(raw.get("explanation", "")).strip(),
         "hint":        str(raw.get("hint", "")).strip(),
         "marks":       marks,
         "negativeMark":    neg_val if neg_marking else 0,
         "negativeMarking": neg_marking,
-        "imageUrl":    str(raw.get("imageUrl", "")).strip(),
-        "subject":     subj_slug,
-        "difficulty":  diff,
-        "hasError":    False,
+        "imageUrl":    "", "subject": subj_slug,
+        "difficulty":  diff, "hasError": False,
     }
 
 
@@ -143,141 +132,197 @@ def _validate_q(raw, idx, marks, neg_val, neg_marking, subj_slug):
 
 def _get_research(class_slug, subject_slug, subject_name, chapters_str, exam_name):
     """
-    Return research text for a subject.
-    Cache hit → return immediately (no API call).
-    Cache miss → call Flash K1 → Flash K2 → store → return.
+    Full-quality research for a subject. Cached — only fetched once per subject.
+    Returns complete research text (not trimmed) for high-quality generation.
     """
     cached = research_cache.get_subject_research(class_slug, subject_slug, chapters_str)
     if cached:
-        print(f"  [Research] ✅ Cache hit for {subject_slug}")
+        print(f"  [Research] ✅ Cache hit: {subject_slug}")
         return cached
 
     prompt = (
         f"You are a senior {exam_name} exam expert.\n"
         f"Subject: {subject_name}\n"
         f"Key chapters: {chapters_str}\n\n"
-        "Provide a focused 200-word analysis covering:\n"
-        "1. Most-tested question patterns and formats\n"
+        "Provide a detailed 250-word analysis:\n"
+        "1. Most-tested question patterns and formats in this exam\n"
         "2. Difficulty distribution (Easy/Medium/Hard %)\n"
-        "3. Top 6 high-yield topics students must master\n"
+        "3. Top 8 high-yield topics students must master\n"
         "4. Common wrong-answer traps and misconceptions\n"
-        "5. Any numerical/formula-heavy areas to watch\n"
+        "5. Numerical/formula-heavy areas with examples\n"
+        "6. Recent trend: topics gaining more weightage\n"
         "Be specific and exam-focused. No generic advice."
     )
-    print(f"  [Research] Fetching for {subject_slug}...")
+    print(f"  [Research] Fetching: {subject_slug}...")
     result = gemini_client.research(prompt, max_tokens=1500)
     if result:
         research_cache.store_subject_research(class_slug, subject_slug, result, chapters_str)
+        print(f"  [Research] Cached {len(result)} chars for {subject_slug}")
     return result or "Standard exam difficulty. Focus on core concepts."
 
 
 def _get_full_exam_research(class_slug, exam_name, subjects_summary):
-    """Research for full-length tests — cached at exam level."""
+    """Full-quality full-exam research. Cached at exam level."""
     cached = research_cache.get_full_exam_research(class_slug)
     if cached:
-        print(f"  [Research] ✅ Full-exam cache hit for {class_slug}")
+        print(f"  [Research] ✅ Full-exam cache hit: {class_slug}")
         return cached
 
     prompt = (
         f"You are a senior {exam_name} exam expert.\n"
-        f"Subjects covered: {subjects_summary}\n\n"
-        "Provide a 250-word full-exam analysis:\n"
+        f"Subjects: {subjects_summary}\n\n"
+        "Provide a detailed 300-word full-exam analysis:\n"
         "1. Overall difficulty profile and marking scheme\n"
         "2. Subject-wise weightage and question distribution\n"
-        "3. Top 3 high-yield topics per subject\n"
+        "3. Top 4 high-yield topics per subject\n"
         "4. Time management strategy for the full paper\n"
         "5. Most common traps across all subjects\n"
+        "6. Which subjects to attempt first for maximum score\n"
         "Be specific to this exam. No generic advice."
     )
-    print(f"  [Research] Fetching full-exam research for {class_slug}...")
+    print(f"  [Research] Fetching full-exam: {class_slug}...")
     result = gemini_client.research(prompt, max_tokens=2000)
     if result:
         research_cache.store_full_exam_research(class_slug, result)
+        print(f"  [Research] Cached {len(result)} chars for {class_slug}")
     return result or "Standard exam. Cover all subjects equally."
 
 
-# ── Step 2+3: Generate + Structure (with full fallback) ───────────────────────
+# ── Step 2: Generate one 10Q chunk (round-robin key selection) ────────────────
 
-def _generate_and_structure(count, exam_name, subject_name, research_ctx,
-                             chapters_str, subj_slug, class_slug):
+def _generate_one_chunk(count, exam_name, subject_name, research_ctx,
+                         topic_str, chunk_index):
     """
-    Generate `count` questions for one subject chunk.
-    Step 2: Gemini generates raw text.
-    Step 3: Groq K1 → Groq K2 → Flash structures into JSON.
-    Returns list of raw question dicts (may be shorter than count if some fail).
+    Generate exactly `count` questions (≤10) as raw text.
+    Uses chunk_index to rotate across Gemini keys — spreads RPM/RPD load.
+    Returns raw text string or empty string on failure.
     """
-    gen_prompt = (
-        f"EXAM RESEARCH CONTEXT:\n{research_ctx}\n\n"
-        f"TASK: Generate exactly {count} high-quality MCQ questions for the "
-        f"{exam_name} exam.\n"
+    prompt = (
+        f"You are an expert question setter for the {exam_name} exam.\n\n"
+        f"EXAM RESEARCH (use this to set correct difficulty and focus):\n"
+        f"{research_ctx}\n\n"
+        f"TASK: Generate exactly {count} high-quality MCQ questions.\n"
         f"Subject: {subject_name}\n"
-        f"Chapters/Topics: {chapters_str}\n\n"
-        "Requirements:\n"
-        "- Difficulty: 25% easy, 50% medium, 25% hard\n"
-        "- Each question: clear stem, 4 options (A/B/C/D), mark the ONE correct answer\n"
-        "- Include a detailed explanation for the correct answer\n"
-        "- Include a brief note on why each wrong option is incorrect\n"
-        "- Questions must be exam-standard, not trivial\n"
-        "- For numerical questions, show the calculation in the explanation\n\n"
-        "Output format: plain text, numbered 1 to {count}. "
-        "Do NOT output JSON. Write naturally."
-    ).replace("{count}", str(count))
-
-    print(f"    [Step 2: Generate] {count}Q for {subject_name}...")
-    try:
-        raw_text = gemini_client.generate_questions(gen_prompt, max_tokens=8192)
-    except GeminiError as e:
-        print(f"    [Step 2] Generation failed: {e}")
-        return []
-
-    if not raw_text or len(raw_text) < 100:
-        print("    [Step 2] Response too short — skipping chunk")
-        return []
-
-    # Step 3: Structure with Groq, fall back to Flash
-    struct_prompt = (
-        f"Extract ALL questions from the text below and output a JSON array.\n"
-        f"Schema for each question:\n{_SCHEMA}\n"
-        f"Rules:\n"
-        f"- Output ONLY the JSON array starting with [ and ending with ]\n"
-        f"- Include ALL {count} questions\n"
-        f"- Mark exactly ONE option as isCorrect: true per question\n"
-        f"- difficulty must be 'easy', 'medium', or 'hard'\n\n"
-        f"TEXT TO EXTRACT FROM:\n{raw_text}\n["
+        f"Topic/Chapter: {topic_str}\n\n"
+        f"Requirements:\n"
+        f"- Difficulty: 30% easy, 45% medium, 25% hard\n"
+        f"- Each question must have a clear, unambiguous stem\n"
+        f"- 4 options (A/B/C/D) — only ONE is correct\n"
+        f"- Mark the correct answer with an asterisk: *A) or *B) etc.\n"
+        f"- After each question, write: EXPLANATION: <why correct answer is right>\n"
+        f"- Questions must be exam-standard, not trivial\n"
+        f"- For numerical questions, show the calculation step-by-step\n"
+        f"- Vary question types: direct recall, application, clinical/practical\n\n"
+        f"Format: number each question 1. 2. 3. etc.\n"
+        f"Do NOT output JSON. Write in plain text."
     )
-
-    print(f"    [Step 3: Structure] Extracting JSON...")
     try:
-        questions = groq_client.format_questions(raw_text, _SCHEMA, exam_name, subject_name)
-        if isinstance(questions, list) and questions:
-            return questions
-        if isinstance(questions, dict):
-            return [questions]
-    except GroqError as e:
-        print(f"    [Step 3] Both Groq keys failed ({e}) — falling back to Flash...")
-
-    # Flash fallback for structuring
-    try:
-        questions = gemini_client.structure_with_flash(struct_prompt, max_tokens=6144)
-        if isinstance(questions, list) and questions:
-            print(f"    [Step 3] ✅ Flash fallback succeeded")
-            return questions
-        if isinstance(questions, dict):
-            return [questions]
+        raw = gemini_client.generate_questions_for_chunk(
+            prompt, chunk_index=chunk_index, max_tokens=4096
+        )
+        if raw and len(raw) > 80:
+            return raw
+        print(f"    [Generate] Response too short — skipping chunk")
     except GeminiError as e:
-        print(f"    [Step 3] Flash fallback also failed: {e}")
+        print(f"    [Generate] All keys failed: {e}")
+    return ""
+
+
+# ── Step 3: Structure one chunk into JSON ─────────────────────────────────────
+
+def _structure_one_chunk(raw_text, exam_name, subject_name):
+    """
+    Structure raw text (one 10Q chunk) into JSON list.
+    Groq K1 → Groq K2 → Flash K1 → Flash K2.
+    Returns list of question dicts (may be empty on total failure).
+    """
+    try:
+        qs = groq_client.format_questions(raw_text, _SCHEMA, exam_name, subject_name)
+        if isinstance(qs, list) and qs:
+            return qs
+        if isinstance(qs, dict):
+            return [qs]
+    except GroqError as e:
+        print(f"    [Structure] Groq failed ({e}) — trying Flash fallback...")
+
+    # Flash fallback
+    flash_prompt = (
+        f"Extract ALL questions from the text below.\n"
+        f"Output ONLY a JSON array. Schema: {_SCHEMA}\n"
+        f"Rules: ONE isCorrect:true per question, "
+        f"difficulty must be 'easy', 'medium', or 'hard'.\n\n"
+        f"TEXT:\n{raw_text}"
+    )
+    try:
+        qs = gemini_client.structure_with_flash(flash_prompt, max_tokens=4096)
+        if isinstance(qs, list) and qs:
+            print(f"    [Structure] ✅ Flash fallback succeeded")
+            return qs
+        if isinstance(qs, dict):
+            return [qs]
+    except GeminiError as e:
+        print(f"    [Structure] Flash fallback also failed: {e}")
 
     return []
+
+
+# ── Core iterator: generate until target reached ──────────────────────────────
+
+def _iterate_to_target(target_count, exam_name, subject_name,
+                        research_ctx, topic_str):
+    """
+    Iterate 10Q chunks until `target_count` questions are collected.
+    Each chunk uses the next Gemini key in rotation.
+
+    target_count can be 10, 20, 30, 40, 50 (subject) or any number (full-length).
+    Stops when target reached OR when a chunk fails (saves what we have).
+    Returns list of raw question dicts.
+    """
+    all_qs    = []
+    collected = 0
+    chunk_idx = 0
+    max_chunks = (target_count // CHUNK) + 2  # allow 2 extra attempts for partial chunks
+
+    print(f"    Target: {target_count}Q in {CHUNK}Q chunks "
+          f"({(target_count + CHUNK - 1) // CHUNK} chunks needed)")
+
+    while collected < target_count and chunk_idx < max_chunks:
+        remaining = target_count - collected
+        cnt       = min(remaining, CHUNK)
+        chunk_num = chunk_idx + 1
+        total_needed = (target_count + CHUNK - 1) // CHUNK
+
+        print(f"    ── Chunk {chunk_num}/{total_needed} ({cnt}Q, "
+              f"key rotation slot {chunk_idx % 3}) ──")
+
+        # Step 2: Generate
+        raw = _generate_one_chunk(
+            cnt, exam_name, subject_name, research_ctx, topic_str, chunk_idx
+        )
+        if not raw:
+            print(f"    Chunk {chunk_num} generation failed — stopping iteration")
+            break
+
+        # Step 3: Structure
+        qs = _structure_one_chunk(raw, exam_name, subject_name)
+        if qs:
+            all_qs.extend(qs)
+            collected += len(qs)
+            print(f"    Chunk {chunk_num} → {len(qs)}Q extracted "
+                  f"(total so far: {collected}/{target_count})")
+        else:
+            print(f"    Chunk {chunk_num} structuring failed — stopping iteration")
+            break
+
+        chunk_idx += 1
+
+    print(f"    Iteration complete: {len(all_qs)}/{target_count}Q collected")
+    return all_qs
 
 
 # ── Full-length test builder ──────────────────────────────────────────────────
 
 def build_full_length_test(class_slug):
-    """
-    Full-length test covering ALL subjects.
-    Question count comes from examConfig.fullLengthQuestions.
-    Uses Flash-only for research (Pro saved for subject tests).
-    """
     topics_data = topic_picker.load_topics(class_slug)
     if not topics_data:
         raise ValueError(f"No topic data for {class_slug}")
@@ -299,69 +344,55 @@ def build_full_length_test(class_slug):
     uid   = _make_id()
     title = f"{exam_name} — Full Length Mock Test"
 
-    # Full-exam research (cached)
     subjects_summary = ", ".join(s["subjectName"] for s in subjects_data)
     exam_research = _get_full_exam_research(class_slug, exam_name, subjects_summary)
 
     print(f"\n  [Full-Length] {title}")
     print(f"  Subjects: {subjects_summary}")
-    print(f"  Target: {total_q}Q across {len(subjects_data)} subjects\n")
+    print(f"  Target: {total_q}Q | Chunk size: {CHUNK}Q\n")
 
     all_questions = []
-    CHUNK = 20   # Flash handles 20Q per call comfortably
 
     for subj in subjects_data:
-        subj_slug  = subj["subjectSlug"]
-        subj_name  = subj["subjectName"]
-        q_count    = subj["questionCount"]
-        chapters   = subj.get("chapters", [])
-        ch_str     = ", ".join(c["name"] for c in chapters[:6]) if chapters else "General Topics"
+        subj_slug = subj["subjectSlug"]
+        subj_name = subj["subjectName"]
+        q_count   = subj["questionCount"]
+        chapters  = subj.get("chapters", [])
+        ch_str    = ", ".join(c["name"] for c in chapters[:6]) if chapters else "General Topics"
 
-        print(f"  [{subj_name}] {q_count}Q")
+        print(f"\n  [{subj_name}] Target: {q_count}Q")
 
-        # Subject-level research (cached, reuses full-exam context if subject cache empty)
+        # Full research per subject (cached after first fetch)
         subj_research = _get_research(class_slug, subj_slug, subj_name, ch_str, exam_name)
-        combined_ctx  = f"{exam_research}\n\nSubject-specific:\n{subj_research}".strip()
+        # Combine exam-level + subject-level research for maximum context
+        combined_ctx = (
+            f"EXAM OVERVIEW:\n{exam_research}\n\n"
+            f"SUBJECT DETAIL:\n{subj_research}"
+        ).strip()
 
-        # Generate in chunks
-        chunks = [CHUNK] * (q_count // CHUNK)
-        if q_count % CHUNK:
-            chunks.append(q_count % CHUNK)
-
-        subj_qs = []
-        for i, cnt in enumerate(chunks, 1):
-            print(f"    Chunk {i}/{len(chunks)} ({cnt}Q):")
-            chunk = _generate_and_structure(
-                cnt, exam_name, subj_name, combined_ctx, ch_str, subj_slug, class_slug
-            )
-            subj_qs.extend(chunk)
-            if len(subj_qs) >= q_count:
-                break
-
-        # Validate and add
-        for raw_q in subj_qs[:q_count]:
+        raw_qs = _iterate_to_target(
+            q_count, exam_name, subj_name, combined_ctx, ch_str
+        )
+        for raw_q in raw_qs[:q_count]:
             idx = len(all_questions)
             all_questions.append(_validate_q(raw_q, idx, mark_val, neg_val, neg, subj_slug))
 
-    if len(all_questions) < max(10, total_q // 4):
+    # Accept if we got at least 5 questions
+    if len(all_questions) < 5:
         raise Exception(
-            f"Too few questions generated: {len(all_questions)}/{total_q}. "
+            f"Too few questions: {len(all_questions)}/{total_q}. "
             "Check API keys and quotas."
         )
 
     neg_instr = f"Wrong answer: -{neg_val} mark" if neg else "No negative marking"
     payload = {
         "id": uid, "title": title,
-        "description": (
-            f"Full-length mock test for {exam_name}. "
-            f"{len(all_questions)} questions across all subjects."
-        ),
+        "description": f"Full-length mock test for {exam_name}. {len(all_questions)} questions.",
         "board": board, "classSlug": class_slug, "classNumber": 0,
         "subjects": [s["subjectSlug"] for s in subjects_data],
         "subject": "all", "chapter": "Full Syllabus", "topic": "Full Length",
         "testType": "full-length",
-        "duration": duration,
-        "totalMarks": total_m,
+        "duration": duration, "totalMarks": total_m,
         "passingMarks": round(total_m * 0.35),
         "totalQuestions": len(all_questions),
         "isPublic": True, "isPublished": True, "isAdmin": True,
@@ -396,14 +427,9 @@ def build_full_length_test(class_slug):
     return uid, path, entry
 
 
-# ── Subject-wise / Combined test builder ─────────────────────────────────────
+# ── Subject-wise test builder ─────────────────────────────────────────────────
 
 def build_subject_test(topic_info):
-    """
-    Subject-wise test: one topic from one subject.
-    Uses the full pipeline: Pro K2 → Flash fallback → Groq structure.
-    Question count from examConfig.subjectWiseQuestions (default 20).
-    """
     class_slug = topic_info["classSlug"]
     board      = topic_info["board"]
     subj_slug  = topic_info["subjectSlug"]
@@ -413,6 +439,7 @@ def build_subject_test(topic_info):
     exam_name  = _exam_name(class_slug)
     cfg        = topic_info.get("examConfig", {})
 
+    # Use the exam's configured question count (10, 20, 30, 40, 50 — whatever the exam defines)
     q_count  = cfg.get("subjectWiseQuestions", 20)
     duration = cfg.get("subjectWiseDuration", 45)
     mark_val = cfg.get("correctMarkValue", 1)
@@ -422,18 +449,20 @@ def build_subject_test(topic_info):
     uid   = _make_id()
     title = f"{exam_name} — {subj_name} | {topic}"
 
-    print(f"\n  [Subject Test] {title} ({q_count}Q)")
+    print(f"\n  [Subject Test] {title}")
+    print(f"  Target: {q_count}Q in {CHUNK}Q chunks")
 
-    # Research (cached)
-    ch_str   = chapter
-    research = _get_research(class_slug, subj_slug, subj_name, ch_str, exam_name)
+    # Full research (cached)
+    chapters_str = chapter
+    research = _get_research(class_slug, subj_slug, subj_name, chapters_str, exam_name)
 
-    # Generate all questions (single chunk for subject tests)
-    raw_qs = _generate_and_structure(
-        q_count, exam_name, subj_name, research, f"{chapter} — {topic}", subj_slug, class_slug
+    # Iterate chunks until q_count reached
+    raw_qs = _iterate_to_target(
+        q_count, exam_name, subj_name, research, f"{chapter} — {topic}"
     )
 
-    if len(raw_qs) < max(3, q_count // 4):
+    # Accept if we got at least 5 questions
+    if len(raw_qs) < 5:
         raise Exception(f"Too few questions: {len(raw_qs)}/{q_count}")
 
     questions = [
@@ -443,7 +472,7 @@ def build_subject_test(topic_info):
 
     payload = {
         "id": uid, "title": title,
-        "description": f"Subject-wise test on {topic} ({subj_name}) for {exam_name}. {len(questions)} questions.",
+        "description": f"Subject-wise test on {topic} ({subj_name}) for {exam_name}. {len(questions)}Q.",
         "board": board, "classSlug": class_slug, "classNumber": 0,
         "subjects": [subj_slug], "subject": subj_slug,
         "chapter": chapter, "topic": topic,
@@ -482,12 +511,9 @@ def build_subject_test(topic_info):
     return uid, path, entry
 
 
+# ── Combined test builder ─────────────────────────────────────────────────────
+
 def build_combined_test(class_slug, subject_topics):
-    """
-    Combined test: 2-3 subjects, each contributing questions proportionally.
-    subject_topics: list of topic_info dicts (one per subject).
-    Total questions from examConfig.subjectWiseQuestions * num_subjects (capped at 40).
-    """
     if not subject_topics:
         raise ValueError("No subjects provided for combined test")
 
@@ -496,21 +522,22 @@ def build_combined_test(class_slug, subject_topics):
     board       = (topics_data or {}).get("board", "Competitive")
     exam_name   = _exam_name(class_slug)
 
-    per_subj_q = cfg.get("subjectWiseQuestions", 20)
-    total_q    = min(per_subj_q * len(subject_topics), 40)
-    q_per_subj = total_q // len(subject_topics)
+    # Use exam's configured per-subject count (no artificial cap)
+    q_per_subj = cfg.get("subjectWiseQuestions", 20)
     duration   = cfg.get("subjectWiseDuration", 45) * len(subject_topics)
     mark_val   = cfg.get("correctMarkValue", 1)
     neg        = cfg.get("negativeMarking", False)
     neg_val    = cfg.get("negativeMarkValue", 0)
 
-    uid         = _make_id()
-    subj_names  = " + ".join(t["subjectName"] for t in subject_topics)
-    title       = f"{exam_name} — Combined: {subj_names}"
+    uid        = _make_id()
+    subj_names = " + ".join(t["subjectName"] for t in subject_topics)
+    title      = f"{exam_name} — Combined: {subj_names}"
+    total_q    = q_per_subj * len(subject_topics)
 
-    print(f"\n  [Combined Test] {title} ({total_q}Q across {len(subject_topics)} subjects)")
+    print(f"\n  [Combined Test] {title}")
+    print(f"  Target: {total_q}Q ({q_per_subj}Q × {len(subject_topics)} subjects)")
 
-    all_questions = []
+    all_questions  = []
     all_subj_slugs = []
 
     for ti in subject_topics:
@@ -518,34 +545,29 @@ def build_combined_test(class_slug, subject_topics):
         subj_name = ti["subjectName"]
         chapter   = ti["chapter"]
         topic     = ti["topic"]
-        ch_str    = chapter
         all_subj_slugs.append(subj_slug)
 
-        print(f"  [{subj_name}] {q_per_subj}Q on {topic}")
-        research = _get_research(class_slug, subj_slug, subj_name, ch_str, exam_name)
+        print(f"\n  [{subj_name}] Target: {q_per_subj}Q on {topic}")
+        research = _get_research(class_slug, subj_slug, subj_name, chapter, exam_name)
 
-        raw_qs = _generate_and_structure(
-            q_per_subj, exam_name, subj_name, research,
-            f"{chapter} — {topic}", subj_slug, class_slug
+        raw_qs = _iterate_to_target(
+            q_per_subj, exam_name, subj_name, research, f"{chapter} — {topic}"
         )
         for raw_q in raw_qs[:q_per_subj]:
             idx = len(all_questions)
             all_questions.append(_validate_q(raw_q, idx, mark_val, neg_val, neg, subj_slug))
 
-    if len(all_questions) < max(5, total_q // 4):
+    if len(all_questions) < 5:
         raise Exception(f"Too few questions: {len(all_questions)}/{total_q}")
 
     payload = {
         "id": uid, "title": title,
-        "description": (
-            f"Combined test covering {subj_names} for {exam_name}. "
-            f"{len(all_questions)} questions."
-        ),
+        "description": f"Combined test: {subj_names} for {exam_name}. {len(all_questions)}Q.",
         "board": board, "classSlug": class_slug, "classNumber": 0,
         "subjects": all_subj_slugs, "subject": all_subj_slugs[0],
         "chapter": "Multiple Chapters", "topic": "Combined",
         "testType": "subject-wise",
-        "duration": min(duration, 120),
+        "duration": min(duration, 90),
         "totalMarks": len(all_questions) * mark_val,
         "passingMarks": round(len(all_questions) * mark_val * 0.4),
         "totalQuestions": len(all_questions),
@@ -555,7 +577,7 @@ def build_combined_test(class_slug, subject_topics):
         "tags": _tags(class_slug, "+".join(all_subj_slugs), subj_names),
         "instructions": [
             f"Subjects: {subj_names}",
-            f"Duration: {min(duration, 120)} mins",
+            f"Duration: {min(duration, 90)} mins",
             f"+{mark_val} per correct answer",
         ],
         "createdBy": "admin", "createdByName": "EduTest Admin",
