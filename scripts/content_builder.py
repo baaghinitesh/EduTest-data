@@ -53,6 +53,7 @@ import gemini_client
 import groq_client
 import research_cache
 import publish_to_server
+import draft_store
 from gemini_client import GeminiError, GeminiQuotaError
 from groq_client   import GroqError
 import topic_picker
@@ -103,8 +104,20 @@ def _save(path, data):
     print(f"  [Saved] {path}")
 
 def _save_and_publish(path, data):
+    """Save to CDN path AND publish to MongoDB. Only called for COMPLETE tests."""
     _save(path, data)
     publish_to_server.publish_test(data, path)
+
+def _save_draft(draft_path, data):
+    """
+    Save a PARTIAL test to data/drafts/ — committed to git but NOT published
+    to MongoDB. The app never sees drafts. Next run will resume from here.
+    """
+    full = os.path.join(ROOT, draft_path)
+    os.makedirs(os.path.dirname(full), exist_ok=True)
+    with open(full, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    print(f"  [Draft] Saved partial test: {draft_path}")
 
 def _tags(class_slug, subj_slug, *extra):
     tags = {class_slug, subj_slug}
@@ -598,14 +611,13 @@ def build_school_full_length_test(class_slug):
     neg_instr   = f"Wrong answer: -{neg_val} mark" if neg else "No negative marking"
     is_partial  = actual_q < total_q
     if is_partial:
-        print(f"  [Partial] Saving {actual_q}/{total_q}Q — quota or API limit reached")
+        print(f"  [Partial] {actual_q}/{total_q}Q — saving draft, will resume next run")
 
     payload = {
         "id": uid, "title": title,
         "description": (
             f"Full-length {subj_name} test for {exam_name}. "
             f"{actual_q} questions covering all chapters."
-            + (" [Partial]" if is_partial else "")
         ),
         "board": board, "classSlug": class_slug,
         "classNumber": class_number or 0,
@@ -634,7 +646,22 @@ def build_school_full_length_test(class_slug):
         "publishedAt": _now(), "questions": questions,
     }
     path = _admin_path("tests", uid, title, class_slug)
-    _save_and_publish(path, payload)
+
+    if is_partial:
+        # Save draft — NOT published to MongoDB, app won't see it
+        draft_store.save_draft(
+            uid=uid, title=title, class_slug=class_slug,
+            test_type="school-full-length", target_q=total_q,
+            payload=payload, final_path=path,
+            resume_context={
+                "subj_slug": subj_slug, "subj_name": subj_name,
+                "ch_str": ch_str, "class_number": class_number,
+                "remaining_q": total_q - actual_q,
+            }
+        )
+    else:
+        # Complete — save to CDN and publish to MongoDB
+        _save_and_publish(path, payload)
 
     entry = {
         "id": uid, "type": "test", "title": title,
@@ -729,8 +756,7 @@ def build_exam_full_length_test(class_slug):
     actual_q  = len(all_questions)
     is_partial = actual_q < total_q
     if is_partial:
-        print(f"  [Partial] Saving {actual_q}/{total_q}Q — quota or API limit reached")
-        # Scale marks proportionally for partial tests
+        print(f"  [Partial] {actual_q}/{total_q}Q — saving draft, will resume next run")
         total_m = round(total_m * actual_q / total_q)
 
     neg_instr = f"Wrong answer: -{neg_val} mark" if neg else "No negative marking"
@@ -739,7 +765,6 @@ def build_exam_full_length_test(class_slug):
         "description": (
             f"Full-length mock test for {exam_name}. "
             f"{actual_q} questions across all subjects."
-            + (" [Partial]" if is_partial else "")
         ),
         "board": board, "classSlug": class_slug, "classNumber": 0,
         "subjects": [s["subjectSlug"] for s in subjects_data],
@@ -764,7 +789,31 @@ def build_exam_full_length_test(class_slug):
         "publishedAt": _now(), "questions": all_questions,
     }
     path = _admin_path("tests", uid, title, class_slug)
-    _save_and_publish(path, payload)
+
+    # Work out which subjects still need questions (for resume)
+    collected_per_subj = {}
+    for q in all_questions:
+        s = q.get("subject", "")
+        collected_per_subj[s] = collected_per_subj.get(s, 0) + 1
+    remaining_subjects = []
+    for subj in subjects_data:
+        needed = subj["questionCount"] - collected_per_subj.get(subj["subjectSlug"], 0)
+        if needed > 0:
+            remaining_subjects.append({**subj, "questionCount": needed})
+
+    if is_partial:
+        draft_store.save_draft(
+            uid=uid, title=title, class_slug=class_slug,
+            test_type="exam-full-length", target_q=total_q,
+            payload=payload, final_path=path,
+            resume_context={
+                "remaining_subjects": remaining_subjects,
+                "mark_val": mark_val, "neg": neg, "neg_val": neg_val,
+                "exam_research": exam_research,
+            }
+        )
+    else:
+        _save_and_publish(path, payload)
 
     entry = {
         "id": uid, "type": "test", "title": title,
@@ -867,13 +916,13 @@ def build_subject_test(topic_info, q_count_override=None):
     total_marks = actual_q * mark_val
     neg_instr   = f"Wrong answer: -{neg_val} mark" if neg else "No negative marking"
     if is_partial:
-        print(f"  [Partial] Saving {actual_q}/{q_count}Q — quota or API limit reached")
+        print(f"  [Partial] {actual_q}/{q_count}Q — saving draft, will resume next run")
 
     payload = {
         "id": uid, "title": title,
         "description": (
             f"Subject-wise test on {topic} ({subj_name}) for {exam_name}. "
-            f"{actual_q}Q." + (" [Partial]" if is_partial else "")
+            f"{actual_q}Q."
         ),
         "board": board, "classSlug": class_slug,
         "classNumber": class_number or 0,
@@ -899,7 +948,22 @@ def build_subject_test(topic_info, q_count_override=None):
         "publishedAt": _now(), "questions": questions,
     }
     path = _admin_path("tests", uid, title, class_slug)
-    _save_and_publish(path, payload)
+
+    if is_partial:
+        draft_store.save_draft(
+            uid=uid, title=title, class_slug=class_slug,
+            test_type="subject-wise", target_q=q_count,
+            payload=payload, final_path=path,
+            resume_context={
+                "remaining_q": q_count - actual_q,
+                "subj_slug": subj_slug, "subj_name": subj_name,
+                "chapter": chapter, "topic": topic,
+                "is_school": is_school, "class_number": class_number,
+                "cycle": cycle,
+            }
+        )
+    else:
+        _save_and_publish(path, payload)
 
     entry = {
         "id": uid, "type": "test", "title": title,
@@ -1007,13 +1071,13 @@ def build_combined_test(class_slug, subject_topics, q_per_subj_override=None):
     total_marks = actual_q * mark_val
     neg_instr   = f"Wrong answer: -{neg_val} mark" if neg else "No negative marking"
     if is_partial:
-        print(f"  [Partial] Saving {actual_q}/{total_q}Q — quota or API limit reached")
+        print(f"  [Partial] {actual_q}/{total_q}Q — saving draft, will resume next run")
 
     payload = {
         "id": uid, "title": title,
         "description": (
             f"Combined test: {subj_names} for {exam_name}. "
-            f"{actual_q}Q." + (" [Partial]" if is_partial else "")
+            f"{actual_q}Q."
         ),
         "board": board, "classSlug": class_slug,
         "classNumber": class_number or 0,
@@ -1039,7 +1103,32 @@ def build_combined_test(class_slug, subject_topics, q_per_subj_override=None):
         "publishedAt": _now(), "questions": all_questions,
     }
     path = _admin_path("tests", uid, title, class_slug)
-    _save_and_publish(path, payload)
+
+    # Work out which subjects still need questions (for resume)
+    collected_per_subj = {}
+    for q in all_questions:
+        s = q.get("subject", "")
+        collected_per_subj[s] = collected_per_subj.get(s, 0) + 1
+    remaining_topics = [
+        ti for ti in subject_topics
+        if collected_per_subj.get(ti["subjectSlug"], 0) < q_per_subj
+    ]
+
+    if is_partial:
+        draft_store.save_draft(
+            uid=uid, title=title, class_slug=class_slug,
+            test_type="combined", target_q=total_q,
+            payload=payload, final_path=path,
+            resume_context={
+                "remaining_topics": remaining_topics,
+                "q_per_subj": q_per_subj,
+                "collected_per_subj": collected_per_subj,
+                "is_school": is_school, "class_number": class_number,
+                "cycle": cycle,
+            }
+        )
+    else:
+        _save_and_publish(path, payload)
 
     entry = {
         "id": uid, "type": "test", "title": title,
@@ -1067,3 +1156,241 @@ def build_full_length_test(class_slug):
     if _is_school(topics_data):
         return build_school_full_length_test(class_slug)
     return build_exam_full_length_test(class_slug)
+
+
+# ════════════════════════════════════════════════════════════════════
+#  DRAFT RESUME
+# ════════════════════════════════════════════════════════════════════
+
+def resume_draft(draft):
+    """
+    Resume a partial test from a saved draft.
+
+    Generates the remaining questions, appends them to the existing
+    questions in the draft payload, then:
+      - If now complete → saves to CDN + publishes to MongoDB + deletes draft
+      - If still partial → updates the draft file for the next run
+
+    Returns (uid, path, entry) on completion, or (None, None, None) if
+    still incomplete after this run.
+    Raises GeminiQuotaError if all keys are exhausted mid-resume.
+    """
+    uid          = draft["uid"]
+    title        = draft["title"]
+    class_slug   = draft["class_slug"]
+    test_type    = draft["test_type"]
+    target_q     = draft["target_q"]
+    payload      = draft["payload"]
+    final_path   = draft["final_path"]
+    resume_ctx   = draft["resume_context"]
+    exam_name    = _exam_name(class_slug)
+
+    existing_qs  = payload.get("questions", [])
+    collected    = len(existing_qs)
+    still_needed = target_q - collected
+
+    print(f"\n  [Resume] {title}")
+    print(f"  Progress: {collected}/{target_q}Q — need {still_needed} more")
+
+    topics_data  = topic_picker.load_topics(class_slug)
+    cfg          = (topics_data or {}).get("examConfig", {})
+    mark_val     = cfg.get("correctMarkValue", 1)
+    neg          = cfg.get("negativeMarking", False)
+    neg_val      = cfg.get("negativeMarkValue", 0)
+
+    new_qs = []
+
+    if test_type in ("subject-wise",):
+        # ── Resume subject-wise / combined subject ────────────────────────────
+        subj_slug    = resume_ctx["subj_slug"]
+        subj_name    = resume_ctx["subj_name"]
+        chapter      = resume_ctx["chapter"]
+        topic        = resume_ctx["topic"]
+        is_school    = resume_ctx.get("is_school", False)
+        class_number = resume_ctx.get("class_number")
+        cycle        = resume_ctx.get("cycle", 1)
+
+        research = _get_research(
+            class_slug, subj_slug, subj_name, chapter, exam_name,
+            is_school_exam=is_school, class_number=class_number
+        )
+        if is_school:
+            prompt_fn     = _gen_prompt_school_subject
+            prompt_kwargs = {"class_number": class_number, "cycle": cycle}
+        else:
+            prompt_fn     = _gen_prompt_exam_subject
+            prompt_kwargs = {"cycle": cycle}
+
+        raw_qs = _iterate_to_target(
+            still_needed, exam_name, subj_name, research,
+            f"{chapter} — {topic}",
+            prompt_fn=prompt_fn, prompt_kwargs=prompt_kwargs
+        )
+        for raw_q in raw_qs[:still_needed]:
+            idx = len(existing_qs) + len(new_qs)
+            new_qs.append(_validate_q(raw_q, idx, mark_val, neg_val, neg, subj_slug))
+
+    elif test_type in ("school-full-length",):
+        # ── Resume school full-length ─────────────────────────────────────────
+        subj_slug    = resume_ctx["subj_slug"]
+        subj_name    = resume_ctx["subj_name"]
+        ch_str       = resume_ctx["ch_str"]
+        class_number = resume_ctx.get("class_number")
+
+        research = _get_school_full_research(
+            class_slug, subj_slug, subj_name, ch_str, exam_name, class_number
+        )
+        raw_qs = _iterate_to_target(
+            still_needed, exam_name, subj_name, research, ch_str,
+            prompt_fn=_gen_prompt_school_full,
+            prompt_kwargs={"class_number": class_number}
+        )
+        for raw_q in raw_qs[:still_needed]:
+            idx = len(existing_qs) + len(new_qs)
+            new_qs.append(_validate_q(raw_q, idx, mark_val, neg_val, neg, subj_slug))
+
+    elif test_type in ("exam-full-length",):
+        # ── Resume exam full-length — continue from remaining subjects ────────
+        remaining_subjects = resume_ctx.get("remaining_subjects", [])
+        exam_research      = resume_ctx.get("exam_research", "")
+
+        for subj in remaining_subjects:
+            subj_slug = subj["subjectSlug"]
+            subj_name = subj["subjectName"]
+            q_count   = subj["questionCount"]
+            chapters  = subj.get("chapters", [])
+            ch_str    = ", ".join(c["name"] for c in chapters[:6]) if chapters else "General Topics"
+
+            print(f"\n  [{subj_name}] Resume: {q_count}Q remaining")
+            subj_research = _get_research(
+                class_slug, subj_slug, subj_name, ch_str, exam_name,
+                is_school_exam=False
+            )
+            combined_ctx = (
+                f"EXAM OVERVIEW:\n{exam_research}\n\n"
+                f"SUBJECT DETAIL:\n{subj_research}"
+            ).strip()
+
+            raw_qs = _iterate_to_target(
+                q_count, exam_name, subj_name, combined_ctx, ch_str,
+                prompt_fn=_gen_prompt_exam_full
+            )
+            for raw_q in raw_qs[:q_count]:
+                idx = len(existing_qs) + len(new_qs)
+                new_qs.append(_validate_q(raw_q, idx, mark_val, neg_val, neg, subj_slug))
+
+    elif test_type in ("combined",):
+        # ── Resume combined — continue from remaining subjects ────────────────
+        remaining_topics   = resume_ctx.get("remaining_topics", [])
+        q_per_subj         = resume_ctx.get("q_per_subj", 25)
+        collected_per_subj = resume_ctx.get("collected_per_subj", {})
+        is_school          = resume_ctx.get("is_school", False)
+        class_number       = resume_ctx.get("class_number")
+        cycle              = resume_ctx.get("cycle", 1)
+
+        if is_school:
+            prompt_fn     = _gen_prompt_school_subject
+            prompt_kwargs = {"class_number": class_number, "cycle": cycle}
+        else:
+            prompt_fn     = _gen_prompt_exam_subject
+            prompt_kwargs = {"cycle": cycle}
+
+        for ti in remaining_topics:
+            subj_slug = ti["subjectSlug"]
+            subj_name = ti["subjectName"]
+            chapter   = ti["chapter"]
+            topic     = ti["topic"]
+            already   = collected_per_subj.get(subj_slug, 0)
+            need      = q_per_subj - already
+
+            print(f"\n  [{subj_name}] Resume: {need}Q remaining on {topic}")
+            research = _get_research(
+                class_slug, subj_slug, subj_name, chapter, exam_name,
+                is_school_exam=is_school, class_number=class_number
+            )
+            raw_qs = _iterate_to_target(
+                need, exam_name, subj_name, research,
+                f"{chapter} — {topic}",
+                prompt_fn=prompt_fn, prompt_kwargs=prompt_kwargs
+            )
+            for raw_q in raw_qs[:need]:
+                idx = len(existing_qs) + len(new_qs)
+                new_qs.append(_validate_q(raw_q, idx, mark_val, neg_val, neg, subj_slug))
+
+    # ── Merge new questions into payload ──────────────────────────────────────
+    all_questions = existing_qs + new_qs
+    actual_q      = len(all_questions)
+    is_partial    = actual_q < target_q
+
+    # Update payload with merged questions and correct counts
+    total_marks = actual_q * mark_val
+    payload["questions"]      = all_questions
+    payload["totalQuestions"] = actual_q
+    payload["totalMarks"]     = total_marks
+    payload["passingMarks"]   = round(total_marks * 0.35)
+
+    print(f"\n  [Resume] Now have {actual_q}/{target_q}Q")
+
+    if is_partial:
+        # Still not done — update draft for next run
+        print(f"  [Resume] Still partial — updating draft for next run")
+        # Rebuild resume_context with updated remaining info
+        if test_type == "exam-full-length":
+            collected_per_subj = {}
+            for q in all_questions:
+                s = q.get("subject", "")
+                collected_per_subj[s] = collected_per_subj.get(s, 0) + 1
+            orig_subjects = topic_picker.pick_subjects_for_full_length(class_slug)
+            remaining_subjects = []
+            for subj in orig_subjects:
+                needed = subj["questionCount"] - collected_per_subj.get(subj["subjectSlug"], 0)
+                if needed > 0:
+                    remaining_subjects.append({**subj, "questionCount": needed})
+            resume_ctx["remaining_subjects"] = remaining_subjects
+        elif test_type == "combined":
+            collected_per_subj = {}
+            for q in all_questions:
+                s = q.get("subject", "")
+                collected_per_subj[s] = collected_per_subj.get(s, 0) + 1
+            resume_ctx["collected_per_subj"] = collected_per_subj
+            resume_ctx["remaining_topics"] = [
+                ti for ti in resume_ctx.get("remaining_topics", [])
+                if collected_per_subj.get(ti["subjectSlug"], 0) < resume_ctx.get("q_per_subj", 25)
+            ]
+        else:
+            resume_ctx["remaining_q"] = target_q - actual_q
+
+        draft_store.save_draft(
+            uid=uid, title=title, class_slug=class_slug,
+            test_type=test_type, target_q=target_q,
+            payload=payload, final_path=final_path,
+            resume_context=resume_ctx
+        )
+        return None, None, None
+
+    # ── Complete! Save to CDN, publish to MongoDB, delete draft ──────────────
+    print(f"  [Resume] ✅ Complete! Publishing to CDN + MongoDB")
+    _save_and_publish(final_path, payload)
+    draft_store.delete_draft(uid, class_slug)
+
+    entry = {
+        "id": uid, "type": "test", "title": title,
+        "description": payload.get("description", ""),
+        "subjects": payload.get("subjects", []),
+        "subject":  payload.get("subject", ""),
+        "board":    payload.get("board", ""),
+        "classSlug": class_slug,
+        "classNumber": payload.get("classNumber", 0),
+        "chapter":  payload.get("chapter", ""),
+        "topic":    payload.get("topic", ""),
+        "testType": payload.get("testType", "subject-wise"),
+        "totalQuestions": actual_q,
+        "targetQuestions": target_q,
+        "duration":   payload.get("duration", 60),
+        "totalMarks": total_marks,
+        "author": "EduTest Admin", "authorId": "admin", "isAdmin": True,
+        "tags": payload.get("tags", []),
+        "cdnUrl": _cdn(final_path), "path": final_path,
+        "publishedAt": payload.get("publishedAt", _now()),
+    }
+    return uid, final_path, entry

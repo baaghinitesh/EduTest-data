@@ -40,6 +40,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import topic_picker
 import content_builder
+import draft_store
 from gemini_client import GeminiError, GeminiQuotaError
 from groq_client   import GroqError
 
@@ -285,6 +286,24 @@ def run_subject(class_slug):
         return None
 
 
+def _print_final_report(generated, failed):
+    eq = chr(61) * 65
+    pending = draft_store.load_all_drafts()
+    print("\n" + eq)
+    print("  RUN COMPLETE")
+    print("  Published  : " + str(len(generated)) + " test(s)")
+    print("  Failed     : " + str(failed) + " test(s)")
+    print("  Drafts left: " + str(len(pending)) + " (will resume next run)")
+    for e in generated:
+        q   = e["totalQuestions"]
+        tgt = e.get("targetQuestions", q)
+        print("    ✅ " + e["title"] + " [" + str(q) + "Q]")
+    if pending:
+        for d in pending:
+            print("    ⏳ " + d["title"] + " [" + str(d["collected_q"]) + "/" + str(d["target_q"]) + "Q draft]")
+    print(eq + "\n")
+
+
 # ---- Main run loop ------------------------------------------------------------
 
 def run():
@@ -313,9 +332,41 @@ def run():
     generated = []
     failed    = 0
 
-    for attempt in range(1, MAX_TESTS_PER_RUN + 1):
+    # ── Step 1: Resume any pending drafts first ───────────────────────────────
+    pending_drafts = draft_store.load_all_drafts()
+    if pending_drafts:
+        print("\n  📋 Found " + str(len(pending_drafts)) + " pending draft(s) — resuming first")
+        for draft in pending_drafts:
+            dq = chr(9552) * 65
+            print("\n" + dq)
+            print("  RESUME DRAFT: " + draft["title"])
+            print("  Progress: " + str(draft["collected_q"]) + "/" + str(draft["target_q"]) + "Q")
+            print(dq)
+            try:
+                result, err = _safe("resume draft", content_builder.resume_draft, draft)
+                if result:
+                    uid, path, entry = result
+                    generated.append(entry)
+                    print("  ✅ Draft completed and published: " + entry["title"])
+                else:
+                    # Still partial after this run — draft updated, try again next run
+                    print("  ⏳ Draft still incomplete — will continue next run")
+            except AllKeysExhausted as e:
+                print("\n  🛑 ALL API KEYS EXHAUSTED during draft resume: " + str(e))
+                print("  Draft progress saved. Stopping run.")
+                _print_final_report(generated, failed)
+                sys.exit(0)
+
+    # ── Step 2: Generate new tests (up to MAX_TESTS_PER_RUN) ─────────────────
+    slots_remaining = MAX_TESTS_PER_RUN - len(generated)
+    if slots_remaining <= 0:
+        print("\n  Max tests reached from draft resumption — skipping new generation")
+        _print_final_report(generated, failed)
+        sys.exit(0)
+
+    for attempt in range(1, slots_remaining + 1):
         print("\n" + dq)
-        print("  Test " + str(attempt) + "/" + str(MAX_TESTS_PER_RUN))
+        print("  Test " + str(attempt) + "/" + str(slots_remaining))
         print(dq)
         try:
             entry = run_full(class_slug) if mode == "full" else run_subject(class_slug)
@@ -328,6 +379,10 @@ def run():
             print("\n  🛑 ALL API KEYS EXHAUSTED: " + str(e))
             print("  Stopping after " + str(len(generated)) + " test(s) generated.")
             break
+
+    _print_final_report(generated, failed)
+    # Always exit 0 -- git commit step must run to save any partial content / drafts
+    sys.exit(0)
 
     # Final report
     print("\n" + eq)
