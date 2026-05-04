@@ -1,29 +1,57 @@
 """
 generate.py — EduTest TEST-ONLY generator.
 
-Each run produces exactly ONE test:
-  MODE "full"    → 1 full-length test  (all subjects, exact question count from examConfig)
-  MODE "subject" → 1 subject-wise OR combined test (2-3 subjects, 50/50 chance)
+════════════════════════════════════════════════════════════════════
+  BEHAVIOUR RULES
+════════════════════════════════════════════════════════════════════
 
-Mode decision:
-  Priority 1: GENERATE_MODE env var ("full" or "subject")
-  Priority 2: UTC hour — 00:xx = "full", all others = "subject"
+  ┌─────────────────────────────────────────────────────────────────┐
+  │  SCHOOL CLASSES  (type = "school")                              │
+  │  e.g. CBSE Class 10, ICSE Class 9, Maharashtra Class 7 …       │
+  │                                                                 │
+  │  full-length  → pick ONE subject at random, generate 100Q       │
+  │                 from that subject (chapter-spanning).           │
+  │                 Title: "CBSE CLASS 10 — Mathematics | Full      │
+  │                          Length Test"                           │
+  │                                                                 │
+  │  subject-wise → pick ONE subject, generate subjectWiseQ (20Q)  │
+  │                 on a specific chapter/topic.                    │
+  │                 Title: "CBSE CLASS 10 — Mathematics | Algebra"  │
+  │                                                                 │
+  │  combined     → pick 2-3 subjects, generate subjectWiseQ each. │
+  │                 Title: "CBSE CLASS 10 — Combined: Maths +       │
+  │                          Physics"                               │
+  └─────────────────────────────────────────────────────────────────┘
 
-Pipeline per test:
-  Step 1 — Research   : Flash K1 → Flash K2 → cached → empty (never crashes)
-  Step 2 — Generate   : Pro K2 → Flash K2 → Flash K1 → Flash K2 (raw text)
-  Step 3 — Structure  : Groq K1 → Groq K2 → Flash K1 → Flash K2 (JSON)
+  ┌─────────────────────────────────────────────────────────────────┐
+  │  COMPETITIVE EXAMS  (type = "competitive")                      │
+  │  e.g. NEET-UG, JEE Mains, NORCET, CDS, UPSC CSE …             │
+  │                                                                 │
+  │  full-length  → ALL subjects combined, exact question count     │
+  │                 per subject from full-length.json / weightage.  │
+  │                 Title: "NEET UG — Full Length Mock Test"        │
+  │                                                                 │
+  │  subject-wise → pick ONE subject, generate subjectWiseQ (40Q)  │
+  │                 on a specific chapter/topic.                    │
+  │                 Title: "NEET UG — Physics | Thermodynamics"     │
+  │                                                                 │
+  │  combined     → pick 2-3 subjects, generate subjectWiseQ each. │
+  │                 Title: "NEET UG — Combined: Physics + Chemistry"│
+  └─────────────────────────────────────────────────────────────────┘
 
-API keys used (5 total — exact GitHub secret names):
+  Mode decision (per run):
+    Priority 1: GENERATE_MODE env var ("full" or "subject")
+    Priority 2: UTC hour — 00:xx = "full", all others = "subject"
+
+  subject mode: 50% chance combined (2-3 subjects) vs single-subject.
+  Combined only when exam has ≥ 2 subjects with topics.
+
+API keys (5 total — exact GitHub secret names):
   GEMINI_API_KEY    → Flash K1  (researcher + gen fallback)
   GEMINI_API_KEY_1  → Flash K2  (researcher fallback + gen fallback)
   GEMINI_API_KEY2   → Flash K3  (primary question generator, round-robin)
   GROQ_API_KEY      → Groq K1   (primary structurer)
   GROQ_API_KEY2     → Groq K2   (fallback structurer)
-
-Daily budget (4 runs: 1 full + 3 subject):
-  Flash K1/K2/K3 : ~4-16 calls/day each  (limit 1500 RPD each) ✅
-  Groq K1/K2     : ~4-12 structure calls/day (limit 100K TPD each) ✅
 """
 import os, sys, traceback, random
 from datetime import datetime, timezone
@@ -64,8 +92,13 @@ def _get_mode():
     return mode
 
 
+def _is_school(class_slug):
+    """Return True if this slug belongs to a school class (not a competitive exam)."""
+    topics_data = topic_picker.load_topics(class_slug)
+    return (topics_data or {}).get("type", "competitive") == "school"
+
+
 def _validate_keys():
-    """Print which keys are set. Warn if critical ones are missing."""
     keys = {
         "GEMINI_API_KEY":   "Flash K1 (researcher + gen fallback)",
         "GEMINI_API_KEY_1": "Flash K2 (researcher fallback + gen fallback)",
@@ -88,15 +121,36 @@ def _validate_keys():
         print("  Generation will attempt fallbacks but may fail.\n")
 
 
-# ── Mode runners ──────────────────────────────────────────────────────────────
+# ── Full-length runners ───────────────────────────────────────────────────────
 
 def run_full(class_slug):
-    """Generate one full-length test covering all subjects."""
-    print(f"\n{'─'*65}")
-    print(f"  FULL-LENGTH TEST  |  {class_slug.upper()}")
-    print(f"{'─'*65}")
+    """
+    Generate one full-length test.
 
-    result, err = _safe("full-length test", content_builder.build_full_length_test, class_slug)
+    SCHOOL CLASS  → pick ONE subject, generate 100Q spanning all its chapters.
+    COMPETITIVE   → ALL subjects combined, exact per-subject question counts.
+    """
+    print(f"\n{'─'*65}")
+
+    if _is_school(class_slug):
+        # ── School: single-subject full-length (100Q) ─────────────────────────
+        print(f"  FULL-LENGTH TEST (School — Single Subject)  |  {class_slug.upper()}")
+        print(f"{'─'*65}")
+        result, err = _safe(
+            "school full-length test",
+            content_builder.build_school_full_length_test,
+            class_slug
+        )
+    else:
+        # ── Competitive: all-subjects full-length ─────────────────────────────
+        print(f"  FULL-LENGTH TEST (Exam — All Subjects)  |  {class_slug.upper()}")
+        print(f"{'─'*65}")
+        result, err = _safe(
+            "exam full-length test",
+            content_builder.build_exam_full_length_test,
+            class_slug
+        )
+
     if result:
         uid, path, entry = result
         print(f"\n  ✅ Generated: {entry['title']}")
@@ -107,21 +161,24 @@ def run_full(class_slug):
         return None
 
 
+# ── Subject-wise / combined runner ───────────────────────────────────────────
+
 def run_subject(class_slug):
     """
     Generate one subject-wise OR combined test.
     50% chance of combined (2-3 subjects) vs single-subject.
     Combined only if the exam has ≥ 2 subjects with topics.
+    Works identically for school classes and competitive exams —
+    the difference is in question count and prompt style (handled in content_builder).
     """
     print(f"\n{'─'*65}")
 
-    # Decide: single subject or combined?
     use_combined = random.random() < 0.5
     topics_data  = topic_picker.load_topics(class_slug)
     num_subjects = len((topics_data or {}).get("subjects", []))
 
     if use_combined and num_subjects >= 2:
-        # Pick 2-3 topics from different subjects
+        # ── Combined: 2-3 subjects ─────────────────────────────────────────────
         n = 2 if num_subjects == 2 else random.choice([2, 3])
         n = min(n, num_subjects)
         print(f"  COMBINED TEST ({n} subjects)  |  {class_slug.upper()}")
@@ -132,7 +189,7 @@ def run_subject(class_slug):
             used_subjects = set()
             state = topic_picker.load_state()
 
-            for _ in range(n * 3):   # try up to 3× to get n different subjects
+            for _ in range(n * 3):
                 if len(picked_topics) >= n:
                     break
                 topic_info, state = topic_picker.pick_topic("test", class_slug)
@@ -150,7 +207,6 @@ def run_subject(class_slug):
             )
             if result:
                 uid, path, entry = result
-                # Mark all picked topics as used
                 topic_picker.mark_generated(
                     state, "test",
                     [(t, uid) for t in picked_topics]
@@ -161,12 +217,11 @@ def run_subject(class_slug):
             else:
                 print(f"\n  ❌ Combined test failed: {err}")
                 print("  Falling back to single-subject test...")
-                # Fall through to single-subject below
 
         except Exception as e:
             print(f"  ⚠️  Combined test setup failed ({e}) — falling back to single-subject")
 
-    # Single-subject test
+    # ── Single-subject ─────────────────────────────────────────────────────────
     print(f"  SUBJECT-WISE TEST  |  {class_slug.upper()}")
     print(f"{'─'*65}")
 
@@ -204,7 +259,13 @@ def run():
     forced_exam = os.environ.get("FORCE_EXAM", "").strip().lower()
     class_slug  = forced_exam if forced_exam else topic_picker.pick_random_exam()
     forced_str  = " (forced)" if forced_exam else ""
+
+    topics_data  = topic_picker.load_topics(class_slug)
+    exam_type    = (topics_data or {}).get("type", "competitive")
+    type_label   = "School Class" if exam_type == "school" else "Competitive Exam"
+
     print(f"\n  Exam: {class_slug.upper()}{forced_str}")
+    print(f"  Type: {type_label}")
     print(f"  Mode: {mode.upper()}\n")
 
     if mode == "full":
@@ -212,7 +273,6 @@ def run():
     else:
         entry = run_subject(class_slug)
 
-    # Final report
     print(f"\n{'='*65}")
     if entry:
         print(f"  ✅ SUCCESS — 1 test generated")

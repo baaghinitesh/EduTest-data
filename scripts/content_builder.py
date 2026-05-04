@@ -1,21 +1,52 @@
+# start
+
 """
 content_builder.py — TEST-ONLY generation pipeline.
 
-Design:
-  - Always generate in 10Q chunks — never more per API call
-  - Iterate chunks until target reached: 10→20→30→40→50 for subject tests
-  - Full-length: iterate until exam's fullLengthQuestions count reached
-  - All 3 Gemini keys rotate across chunks (round-robin) — no single key overloaded
-  - Research done ONCE per subject, full quality, cached for reuse
-  - Groq structures each chunk independently — K1→K2→Flash fallback per chunk
-  - Accept partial results — save what we have if a chunk fails mid-way
+════════════════════════════════════════════════════════════════════
+  BEHAVIOUR RULES
+════════════════════════════════════════════════════════════════════
+
+  SCHOOL CLASSES  (type = "school")
+  ─────────────────────────────────
+  full-length  → ONE subject picked at random, 100Q spanning ALL its
+                 chapters (broad coverage, not a single topic).
+                 Title: "CBSE CLASS 10 — Mathematics | Full Length Test"
+                 Prompt style: school exam, board-pattern questions,
+                 NCERT-aligned, age-appropriate difficulty.
+
+  subject-wise → ONE subject, subjectWiseQuestions (e.g. 20Q) on a
+                 specific chapter/topic.
+                 Title: "CBSE CLASS 10 — Mathematics | Algebra"
+                 Prompt style: chapter-focused, NCERT-based.
+
+  combined     → 2-3 subjects, subjectWiseQuestions each.
+                 Title: "CBSE CLASS 10 — Combined: Maths + Physics"
+                 Prompt style: multi-subject school paper.
+
+  COMPETITIVE EXAMS  (type = "competitive")
+  ──────────────────────────────────────────
+  full-length  → ALL subjects combined, exact per-subject question
+                 counts from full-length.json / weightage.
+                 Title: "NEET UG — Full Length Mock Test"
+                 Prompt style: competitive exam standard, high
+                 difficulty, negative marking awareness.
+
+  subject-wise → ONE subject, subjectWiseQuestions (e.g. 40-45Q) on
+                 a specific chapter/topic.
+                 Title: "NEET UG — Physics | Thermodynamics"
+                 Prompt style: competitive, exam-pattern questions.
+
+  combined     → 2-3 subjects, subjectWiseQuestions each.
+                 Title: "NEET UG — Combined: Physics + Chemistry"
+                 Prompt style: competitive multi-subject.
 
 Pipeline per chunk:
   Step 1 — Research   : Flash K1 → Flash K2 → cached (once per subject)
-  Step 2 — Generate   : K3 Pro → K1 Flash → K2 Flash → K3 Flash (rotates per chunk)
-  Step 3 — Structure  : Groq K1 → Groq K2 → Flash K1 → Flash K2 (per chunk)
+  Step 2 — Generate   : K3 → K1 → K2 (rotates per chunk, round-robin)
+  Step 3 — Structure  : Groq K1 → Groq K2 → Flash K1 → Flash K2
 """
-import os, json, uuid, re
+import os, json, uuid, re, random
 from datetime import datetime, timezone
 
 import gemini_client
@@ -29,10 +60,9 @@ import topic_picker
 ROOT     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CDN_BASE = "https://prepguidedata.launchyourconcept.com"
 
-# ── 10Q per chunk — safe for all API limits ───────────────────────────────────
-CHUNK = 10
+CHUNK = 10   # always generate in 10Q chunks — safe for all API limits
 
-# ── Compact JSON schema ───────────────────────────────────────────────────────
+# ── Compact JSON schema sent to structurer ────────────────────────────────────
 _SCHEMA = (
     '[{"question":"...","difficulty":"medium","explanation":"...",'
     '"hint":"","options":['
@@ -43,7 +73,7 @@ _SCHEMA = (
 )
 
 
-# ── Helpers ───────────────────────────────────────────────────────────────────
+# ── Utility helpers ───────────────────────────────────────────────────────────
 
 def _make_id():
     return str(uuid.uuid4())
@@ -52,7 +82,6 @@ def _now():
     return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
 def _cdn(path):
-    # path already starts with "data/..." — no extra slash needed
     return f"{CDN_BASE}/{path.lstrip('/')}"
 
 def _slug(title, uid):
@@ -73,12 +102,8 @@ def _save(path, data):
         json.dump(data, f, indent=2, ensure_ascii=False)
     print(f"  [Saved] {path}")
 
-
 def _save_and_publish(path, data):
-    """Save JSON to disk AND publish to server MongoDB so it appears in the app."""
     _save(path, data)
-    # Publish to server — creates MongoDB record with cdnUrl + githubPath
-    # so the test shows up in /api/content immediately
     publish_to_server.publish_test(data, path)
 
 def _tags(class_slug, subj_slug, *extra):
@@ -91,6 +116,9 @@ def _tags(class_slug, subj_slug, *extra):
 
 def _exam_name(class_slug):
     return class_slug.upper().replace("-", " ")
+
+def _is_school(topics_data):
+    return (topics_data or {}).get("type", "competitive") == "school"
 
 
 # ── Question validation ───────────────────────────────────────────────────────
@@ -138,48 +166,45 @@ def _validate_q(raw, idx, marks, neg_val, neg_marking, subj_slug):
     }
 
 
-# ── Step 1: Research (with cache) ─────────────────────────────────────────────
+# ── Research prompts ──────────────────────────────────────────────────────────
 
-def _get_research(class_slug, subject_slug, subject_name, chapters_str, exam_name):
-    """
-    Full-quality research for a subject. Cached — only fetched once per subject.
-    Returns complete research text (not trimmed) for high-quality generation.
-    """
-    cached = research_cache.get_subject_research(class_slug, subject_slug, chapters_str)
-    if cached:
-        print(f"  [Research] ✅ Cache hit: {subject_slug}")
-        return cached
+def _research_prompt_school(exam_name, subject_name, chapters_str, class_number=None):
+    """Research prompt for school class subjects — NCERT/board aligned."""
+    grade_ctx = f"Class {class_number}" if class_number else exam_name
+    return (
+        f"You are a senior {exam_name} board exam expert.\n"
+        f"Subject: {subject_name} | Grade: {grade_ctx}\n"
+        f"Key chapters: {chapters_str}\n\n"
+        "Provide a focused 200-word analysis for question setters:\n"
+        "1. Most-tested question patterns in board exams for this subject\n"
+        "2. Difficulty distribution (Easy 40% / Medium 40% / Hard 20%)\n"
+        "3. Top 6 high-yield topics students must master\n"
+        "4. Common mistakes students make in this subject\n"
+        "5. NCERT-specific concepts that appear frequently\n"
+        "6. Numerical/formula areas with worked examples\n"
+        "Be specific to the board exam pattern. No generic advice."
+    )
 
-    prompt = (
-        f"You are a senior {exam_name} exam expert.\n"
+def _research_prompt_exam(exam_name, subject_name, chapters_str):
+    """Research prompt for competitive exam subjects — high difficulty, exam-pattern."""
+    return (
+        f"You are a senior {exam_name} competitive exam expert.\n"
         f"Subject: {subject_name}\n"
         f"Key chapters: {chapters_str}\n\n"
-        "Provide a detailed 250-word analysis:\n"
+        "Provide a detailed 250-word analysis for question setters:\n"
         "1. Most-tested question patterns and formats in this exam\n"
-        "2. Difficulty distribution (Easy/Medium/Hard %)\n"
+        "2. Difficulty distribution (Easy 25% / Medium 45% / Hard 30%)\n"
         "3. Top 8 high-yield topics students must master\n"
         "4. Common wrong-answer traps and misconceptions\n"
-        "5. Numerical/formula-heavy areas with examples\n"
+        "5. Numerical/formula-heavy areas with calculation examples\n"
         "6. Recent trend: topics gaining more weightage\n"
         "Be specific and exam-focused. No generic advice."
     )
-    print(f"  [Research] Fetching: {subject_slug}...")
-    result = gemini_client.research(prompt, max_tokens=1500)
-    if result:
-        research_cache.store_subject_research(class_slug, subject_slug, result, chapters_str)
-        print(f"  [Research] Cached {len(result)} chars for {subject_slug}")
-    return result or "Standard exam difficulty. Focus on core concepts."
 
-
-def _get_full_exam_research(class_slug, exam_name, subjects_summary):
-    """Full-quality full-exam research. Cached at exam level."""
-    cached = research_cache.get_full_exam_research(class_slug)
-    if cached:
-        print(f"  [Research] ✅ Full-exam cache hit: {class_slug}")
-        return cached
-
-    prompt = (
-        f"You are a senior {exam_name} exam expert.\n"
+def _full_exam_research_prompt(exam_name, subjects_summary):
+    """Research prompt for full competitive exam overview."""
+    return (
+        f"You are a senior {exam_name} competitive exam expert.\n"
         f"Subjects: {subjects_summary}\n\n"
         "Provide a detailed 300-word full-exam analysis:\n"
         "1. Overall difficulty profile and marking scheme\n"
@@ -190,6 +215,56 @@ def _get_full_exam_research(class_slug, exam_name, subjects_summary):
         "6. Which subjects to attempt first for maximum score\n"
         "Be specific to this exam. No generic advice."
     )
+
+def _full_school_research_prompt(exam_name, subject_name, chapters_str, class_number=None):
+    """Research prompt for school full-length single-subject test (100Q)."""
+    grade_ctx = f"Class {class_number}" if class_number else exam_name
+    return (
+        f"You are a senior {exam_name} board exam expert.\n"
+        f"Subject: {subject_name} | Grade: {grade_ctx}\n"
+        f"All chapters: {chapters_str}\n\n"
+        "Provide a 250-word analysis for a comprehensive full-length test:\n"
+        "1. Chapter-wise weightage for board exams\n"
+        "2. Most important topics across ALL chapters\n"
+        "3. Difficulty distribution for a full-length paper\n"
+        "4. Question types: MCQ, assertion-reason, case-based\n"
+        "5. Common errors students make across chapters\n"
+        "6. NCERT exemplar-level questions to include\n"
+        "Be specific to the board exam pattern."
+    )
+
+
+# ── Research fetchers (with cache) ────────────────────────────────────────────
+
+def _get_research(class_slug, subject_slug, subject_name, chapters_str,
+                  exam_name, is_school_exam=False, class_number=None):
+    """Fetch or return cached subject research."""
+    cached = research_cache.get_subject_research(class_slug, subject_slug, chapters_str)
+    if cached:
+        print(f"  [Research] ✅ Cache hit: {subject_slug}")
+        return cached
+
+    if is_school_exam:
+        prompt = _research_prompt_school(exam_name, subject_name, chapters_str, class_number)
+    else:
+        prompt = _research_prompt_exam(exam_name, subject_name, chapters_str)
+
+    print(f"  [Research] Fetching: {subject_slug}...")
+    result = gemini_client.research(prompt, max_tokens=1500)
+    if result:
+        research_cache.store_subject_research(class_slug, subject_slug, result, chapters_str)
+        print(f"  [Research] Cached {len(result)} chars for {subject_slug}")
+    return result or "Standard exam difficulty. Focus on core concepts."
+
+
+def _get_full_exam_research(class_slug, exam_name, subjects_summary):
+    """Fetch or return cached full-exam research (competitive only)."""
+    cached = research_cache.get_full_exam_research(class_slug)
+    if cached:
+        print(f"  [Research] ✅ Full-exam cache hit: {class_slug}")
+        return cached
+
+    prompt = _full_exam_research_prompt(exam_name, subjects_summary)
     print(f"  [Research] Fetching full-exam: {class_slug}...")
     result = gemini_client.research(prompt, max_tokens=2000)
     if result:
@@ -198,34 +273,133 @@ def _get_full_exam_research(class_slug, exam_name, subjects_summary):
     return result or "Standard exam. Cover all subjects equally."
 
 
-# ── Step 2: Generate one 10Q chunk (round-robin key selection) ────────────────
+def _get_school_full_research(class_slug, subject_slug, subject_name,
+                               chapters_str, exam_name, class_number=None):
+    """Fetch or return cached school full-length subject research."""
+    cache_key = f"{subject_slug}-full"
+    cached = research_cache.get_subject_research(class_slug, cache_key, chapters_str)
+    if cached:
+        print(f"  [Research] ✅ School full-length cache hit: {subject_slug}")
+        return cached
 
-def _generate_one_chunk(count, exam_name, subject_name, research_ctx,
-                         topic_str, chunk_index):
-    """
-    Generate exactly `count` questions (≤10) as raw text.
-    Uses chunk_index to rotate across Gemini keys — spreads RPM/RPD load.
-    Returns raw text string or empty string on failure.
-    """
-    prompt = (
-        f"You are an expert question setter for the {exam_name} exam.\n\n"
+    prompt = _full_school_research_prompt(exam_name, subject_name, chapters_str, class_number)
+    print(f"  [Research] Fetching school full-length: {subject_slug}...")
+    result = gemini_client.research(prompt, max_tokens=2000)
+    if result:
+        research_cache.store_subject_research(class_slug, cache_key, result, chapters_str)
+        print(f"  [Research] Cached {len(result)} chars for {subject_slug}-full")
+    return result or "Standard school exam. Cover all chapters equally."
+
+
+# ── Generation prompts ────────────────────────────────────────────────────────
+
+def _gen_prompt_school_subject(count, exam_name, subject_name, research_ctx,
+                                topic_str, class_number=None):
+    """Prompt for school class subject-wise / combined test chunk."""
+    grade_ctx = f"Class {class_number}" if class_number else exam_name
+    return (
+        f"You are an expert question setter for {exam_name} board exams.\n\n"
+        f"EXAM RESEARCH (use this to set correct difficulty and focus):\n"
+        f"{research_ctx}\n\n"
+        f"TASK: Generate exactly {count} high-quality MCQ questions.\n"
+        f"Grade: {grade_ctx} | Subject: {subject_name}\n"
+        f"Topic/Chapter: {topic_str}\n\n"
+        f"Requirements:\n"
+        f"- Follow NCERT/board exam pattern strictly\n"
+        f"- Difficulty: 40% easy, 40% medium, 20% hard\n"
+        f"- Include: direct recall, application, assertion-reason, case-based\n"
+        f"- Each question must have a clear, unambiguous stem\n"
+        f"- 4 options (A/B/C/D) — only ONE is correct\n"
+        f"- Mark the correct answer with an asterisk: *A) or *B) etc.\n"
+        f"- After each question, write: EXPLANATION: <why correct answer is right>\n"
+        f"- Questions must match board exam standard — not trivial, not too hard\n"
+        f"- For numerical questions, show the calculation step-by-step\n\n"
+        f"Format: number each question 1. 2. 3. etc.\n"
+        f"Do NOT output JSON. Write in plain text."
+    )
+
+def _gen_prompt_school_full(count, exam_name, subject_name, research_ctx,
+                             chapters_str, class_number=None):
+    """Prompt for school class full-length test chunk (100Q, all chapters)."""
+    grade_ctx = f"Class {class_number}" if class_number else exam_name
+    return (
+        f"You are an expert question setter for {exam_name} board exams.\n\n"
+        f"EXAM RESEARCH (use this to set correct difficulty and focus):\n"
+        f"{research_ctx}\n\n"
+        f"TASK: Generate exactly {count} high-quality MCQ questions.\n"
+        f"Grade: {grade_ctx} | Subject: {subject_name}\n"
+        f"Chapters to cover: {chapters_str}\n\n"
+        f"Requirements:\n"
+        f"- This is a FULL-LENGTH test — cover ALL chapters proportionally\n"
+        f"- Follow NCERT/board exam pattern strictly\n"
+        f"- Difficulty: 35% easy, 45% medium, 20% hard\n"
+        f"- Include: direct recall, application, assertion-reason, case-based\n"
+        f"- Spread questions across different chapters — do NOT focus on one chapter\n"
+        f"- Each question must have a clear, unambiguous stem\n"
+        f"- 4 options (A/B/C/D) — only ONE is correct\n"
+        f"- Mark the correct answer with an asterisk: *A) or *B) etc.\n"
+        f"- After each question, write: EXPLANATION: <why correct answer is right>\n"
+        f"- For numerical questions, show the calculation step-by-step\n\n"
+        f"Format: number each question 1. 2. 3. etc.\n"
+        f"Do NOT output JSON. Write in plain text."
+    )
+
+def _gen_prompt_exam_subject(count, exam_name, subject_name, research_ctx, topic_str):
+    """Prompt for competitive exam subject-wise / combined test chunk."""
+    return (
+        f"You are an expert question setter for the {exam_name} competitive exam.\n\n"
         f"EXAM RESEARCH (use this to set correct difficulty and focus):\n"
         f"{research_ctx}\n\n"
         f"TASK: Generate exactly {count} high-quality MCQ questions.\n"
         f"Subject: {subject_name}\n"
         f"Topic/Chapter: {topic_str}\n\n"
         f"Requirements:\n"
-        f"- Difficulty: 30% easy, 45% medium, 25% hard\n"
+        f"- Match the exact difficulty and style of {exam_name} official papers\n"
+        f"- Difficulty: 25% easy, 45% medium, 30% hard\n"
         f"- Each question must have a clear, unambiguous stem\n"
         f"- 4 options (A/B/C/D) — only ONE is correct\n"
         f"- Mark the correct answer with an asterisk: *A) or *B) etc.\n"
         f"- After each question, write: EXPLANATION: <why correct answer is right>\n"
-        f"- Questions must be exam-standard, not trivial\n"
+        f"- Questions must be exam-standard — include tricky distractors\n"
         f"- For numerical questions, show the calculation step-by-step\n"
-        f"- Vary question types: direct recall, application, clinical/practical\n\n"
+        f"- Vary question types: direct recall, application, analytical\n\n"
         f"Format: number each question 1. 2. 3. etc.\n"
         f"Do NOT output JSON. Write in plain text."
     )
+
+def _gen_prompt_exam_full(count, exam_name, subject_name, research_ctx, chapters_str):
+    """Prompt for competitive exam full-length test chunk (one subject section)."""
+    return (
+        f"You are an expert question setter for the {exam_name} competitive exam.\n\n"
+        f"EXAM RESEARCH (use this to set correct difficulty and focus):\n"
+        f"{research_ctx}\n\n"
+        f"TASK: Generate exactly {count} high-quality MCQ questions.\n"
+        f"Subject: {subject_name} (section of the full-length {exam_name} paper)\n"
+        f"Chapters to cover: {chapters_str}\n\n"
+        f"Requirements:\n"
+        f"- This is the {subject_name} SECTION of a full-length {exam_name} mock test\n"
+        f"- Match the exact difficulty and style of {exam_name} official papers\n"
+        f"- Difficulty: 25% easy, 45% medium, 30% hard\n"
+        f"- Spread questions across different chapters — do NOT focus on one chapter\n"
+        f"- Each question must have a clear, unambiguous stem\n"
+        f"- 4 options (A/B/C/D) — only ONE is correct\n"
+        f"- Mark the correct answer with an asterisk: *A) or *B) etc.\n"
+        f"- After each question, write: EXPLANATION: <why correct answer is right>\n"
+        f"- Include tricky distractors that test deep understanding\n"
+        f"- For numerical questions, show the calculation step-by-step\n\n"
+        f"Format: number each question 1. 2. 3. etc.\n"
+        f"Do NOT output JSON. Write in plain text."
+    )
+
+
+# ── Step 2: Generate one 10Q chunk ────────────────────────────────────────────
+
+def _generate_one_chunk(prompt, chunk_index):
+    """
+    Generate one chunk using the given prompt.
+    Rotates across Gemini keys by chunk_index to spread RPM/RPD load.
+    Returns raw text string or empty string on failure.
+    """
     try:
         raw = gemini_client.generate_questions_for_chunk(
             prompt, chunk_index=chunk_index, max_tokens=4096
@@ -242,9 +416,8 @@ def _generate_one_chunk(count, exam_name, subject_name, research_ctx,
 
 def _structure_one_chunk(raw_text, exam_name, subject_name):
     """
-    Structure raw text (one 10Q chunk) into JSON list.
+    Structure raw text into JSON list.
     Groq K1 → Groq K2 → Flash K1 → Flash K2.
-    Returns list of question dicts (may be empty on total failure).
     """
     try:
         qs = groq_client.format_questions(raw_text, _SCHEMA, exam_name, subject_name)
@@ -255,7 +428,6 @@ def _structure_one_chunk(raw_text, exam_name, subject_name):
     except GroqError as e:
         print(f"    [Structure] Groq failed ({e}) — trying Flash fallback...")
 
-    # Flash fallback
     flash_prompt = (
         f"Extract ALL questions from the text below.\n"
         f"Output ONLY a JSON array. Schema: {_SCHEMA}\n"
@@ -276,44 +448,38 @@ def _structure_one_chunk(raw_text, exam_name, subject_name):
     return []
 
 
-# ── Core iterator: generate until target reached ──────────────────────────────
+# ── Core iterator ─────────────────────────────────────────────────────────────
 
 def _iterate_to_target(target_count, exam_name, subject_name,
-                        research_ctx, topic_str):
+                        research_ctx, topic_str, prompt_fn, prompt_kwargs=None):
     """
-    Iterate 10Q chunks until `target_count` questions are collected.
-    Each chunk uses the next Gemini key in rotation.
-
-    target_count can be 10, 20, 30, 40, 50 (subject) or any number (full-length).
-    Stops when target reached OR when a chunk fails (saves what we have).
+    Iterate 10Q chunks until target_count questions are collected.
+    prompt_fn(count, exam_name, subject_name, research_ctx, topic_str, **prompt_kwargs)
     Returns list of raw question dicts.
     """
     all_qs    = []
     collected = 0
     chunk_idx = 0
-    max_chunks = (target_count // CHUNK) + 2  # allow 2 extra attempts for partial chunks
+    max_chunks = (target_count // CHUNK) + 3
 
-    print(f"    Target: {target_count}Q in {CHUNK}Q chunks "
-          f"({(target_count + CHUNK - 1) // CHUNK} chunks needed)")
+    total_needed = (target_count + CHUNK - 1) // CHUNK
+    print(f"    Target: {target_count}Q in {CHUNK}Q chunks ({total_needed} chunks needed)")
 
     while collected < target_count and chunk_idx < max_chunks:
         remaining = target_count - collected
         cnt       = min(remaining, CHUNK)
         chunk_num = chunk_idx + 1
-        total_needed = (target_count + CHUNK - 1) // CHUNK
 
-        print(f"    ── Chunk {chunk_num}/{total_needed} ({cnt}Q, "
-              f"key rotation slot {chunk_idx % 3}) ──")
+        print(f"    ── Chunk {chunk_num}/{total_needed} ({cnt}Q, key slot {chunk_idx % 3}) ──")
 
-        # Step 2: Generate
-        raw = _generate_one_chunk(
-            cnt, exam_name, subject_name, research_ctx, topic_str, chunk_idx
-        )
+        kwargs = prompt_kwargs or {}
+        prompt = prompt_fn(cnt, exam_name, subject_name, research_ctx, topic_str, **kwargs)
+
+        raw = _generate_one_chunk(prompt, chunk_idx)
         if not raw:
             print(f"    Chunk {chunk_num} generation failed — stopping iteration")
             break
 
-        # Step 3: Structure
         qs = _structure_one_chunk(raw, exam_name, subject_name)
         if qs:
             all_qs.extend(qs)
@@ -330,9 +496,136 @@ def _iterate_to_target(target_count, exam_name, subject_name,
     return all_qs
 
 
-# ── Full-length test builder ──────────────────────────────────────────────────
+# ════════════════════════════════════════════════════════════════════
+#  SCHOOL CLASS BUILDERS
+# ════════════════════════════════════════════════════════════════════
 
-def build_full_length_test(class_slug):
+def build_school_full_length_test(class_slug):
+    """
+    School full-length test:
+      - Pick ONE subject at random from the class
+      - Generate 100Q spanning ALL chapters of that subject
+      - Title: "CBSE CLASS 10 — Mathematics | Full Length Test"
+    """
+    topics_data = topic_picker.load_topics(class_slug)
+    if not topics_data:
+        raise ValueError(f"No topic data for {class_slug}")
+
+    cfg          = topics_data.get("examConfig", {})
+    board        = topics_data.get("board", "School")
+    class_number = topics_data.get("classNumber")
+    exam_name    = _exam_name(class_slug)
+
+    # School full-length = 100Q from one subject
+    total_q  = 100
+    mark_val = cfg.get("correctMarkValue", 1)
+    neg      = cfg.get("negativeMarking", False)
+    neg_val  = cfg.get("negativeMarkValue", 0)
+    # Duration: 100Q at ~1.5 min each = 150 min
+    duration = 150
+
+    # Pick one subject at random
+    subjects = topics_data.get("subjects", [])
+    if not subjects:
+        raise ValueError(f"No subjects for {class_slug}")
+
+    subj = random.choice(subjects)
+    subj_slug = subj["slug"]
+    subj_name = subj["name"]
+    chapters  = subj.get("chapters", [])
+    ch_str    = ", ".join(c["name"] for c in chapters) if chapters else "All Topics"
+
+    uid   = _make_id()
+    title = f"{exam_name} — {subj_name} | Full Length Test"
+
+    print(f"\n  [School Full-Length] {title}")
+    print(f"  Subject: {subj_name} | Chapters: {ch_str[:80]}")
+    print(f"  Target: {total_q}Q spanning all chapters\n")
+
+    # Research: full-subject coverage
+    research = _get_school_full_research(
+        class_slug, subj_slug, subj_name, ch_str, exam_name, class_number
+    )
+
+    # Generate 100Q — prompt instructs to spread across all chapters
+    raw_qs = _iterate_to_target(
+        total_q, exam_name, subj_name, research, ch_str,
+        prompt_fn=_gen_prompt_school_full,
+        prompt_kwargs={"class_number": class_number}
+    )
+
+    if len(raw_qs) < 5:
+        raise Exception(f"Too few questions: {len(raw_qs)}/{total_q}")
+
+    questions = [
+        _validate_q(q, i, mark_val, neg_val, neg, subj_slug)
+        for i, q in enumerate(raw_qs[:total_q])
+    ]
+
+    total_marks = len(questions) * mark_val
+    neg_instr   = f"Wrong answer: -{neg_val} mark" if neg else "No negative marking"
+
+    payload = {
+        "id": uid, "title": title,
+        "description": (
+            f"Full-length {subj_name} test for {exam_name}. "
+            f"{len(questions)} questions covering all chapters."
+        ),
+        "board": board, "classSlug": class_slug,
+        "classNumber": class_number or 0,
+        "subjects": [subj_slug], "subject": subj_slug,
+        "chapter": "All Chapters", "topic": "Full Length",
+        "testType": "full-length",
+        "duration": duration,
+        "totalMarks": total_marks,
+        "passingMarks": round(total_marks * 0.35),
+        "totalQuestions": len(questions),
+        "isPublic": True, "isPublished": True, "isAdmin": True,
+        "showCorrectAnswers": True, "randomizeQuestions": True,
+        "unlimitedAttempts": True, "allowedAttempts": 0,
+        "tags": _tags(class_slug, subj_slug, "full-length", subj_name),
+        "instructions": [
+            f"Subject: {subj_name}",
+            f"Total Questions: {len(questions)}",
+            f"Total Marks: {total_marks}",
+            f"Duration: {duration} minutes",
+            f"Correct answer: +{mark_val} mark",
+            neg_instr,
+            "Covers all chapters of the subject",
+        ],
+        "createdBy": "admin", "createdByName": "EduTest Admin",
+        "publishedAt": _now(), "questions": questions,
+    }
+    path = _admin_path("tests", uid, title, class_slug)
+    _save_and_publish(path, payload)
+
+    entry = {
+        "id": uid, "type": "test", "title": title,
+        "description": payload["description"],
+        "subjects": [subj_slug], "subject": subj_slug,
+        "board": board, "classSlug": class_slug,
+        "classNumber": class_number or 0,
+        "chapter": "All Chapters", "testType": "full-length",
+        "totalQuestions": len(questions),
+        "duration": duration, "totalMarks": total_marks,
+        "author": "EduTest Admin", "authorId": "admin", "isAdmin": True,
+        "tags": payload["tags"], "cdnUrl": _cdn(path), "path": path,
+        "publishedAt": payload["publishedAt"],
+    }
+    return uid, path, entry
+
+
+# ════════════════════════════════════════════════════════════════════
+#  COMPETITIVE EXAM BUILDERS
+# ════════════════════════════════════════════════════════════════════
+
+def build_exam_full_length_test(class_slug):
+    """
+    Competitive exam full-length test:
+      - ALL subjects combined
+      - Exact per-subject question counts from full-length.json / weightage
+      - Title: "NEET UG — Full Length Mock Test"
+    """
     topics_data = topic_picker.load_topics(class_slug)
     if not topics_data:
         raise ValueError(f"No topic data for {class_slug}")
@@ -355,11 +648,11 @@ def build_full_length_test(class_slug):
     title = f"{exam_name} — Full Length Mock Test"
 
     subjects_summary = ", ".join(s["subjectName"] for s in subjects_data)
-    exam_research = _get_full_exam_research(class_slug, exam_name, subjects_summary)
+    exam_research    = _get_full_exam_research(class_slug, exam_name, subjects_summary)
 
-    print(f"\n  [Full-Length] {title}")
+    print(f"\n  [Exam Full-Length] {title}")
     print(f"  Subjects: {subjects_summary}")
-    print(f"  Target: {total_q}Q | Chunk size: {CHUNK}Q\n")
+    print(f"  Target: {total_q}Q | Duration: {duration}min\n")
 
     all_questions = []
 
@@ -372,22 +665,23 @@ def build_full_length_test(class_slug):
 
         print(f"\n  [{subj_name}] Target: {q_count}Q")
 
-        # Full research per subject (cached after first fetch)
-        subj_research = _get_research(class_slug, subj_slug, subj_name, ch_str, exam_name)
-        # Combine exam-level + subject-level research for maximum context
+        subj_research = _get_research(
+            class_slug, subj_slug, subj_name, ch_str, exam_name,
+            is_school_exam=False
+        )
         combined_ctx = (
             f"EXAM OVERVIEW:\n{exam_research}\n\n"
             f"SUBJECT DETAIL:\n{subj_research}"
         ).strip()
 
         raw_qs = _iterate_to_target(
-            q_count, exam_name, subj_name, combined_ctx, ch_str
+            q_count, exam_name, subj_name, combined_ctx, ch_str,
+            prompt_fn=_gen_prompt_exam_full
         )
         for raw_q in raw_qs[:q_count]:
             idx = len(all_questions)
             all_questions.append(_validate_q(raw_q, idx, mark_val, neg_val, neg, subj_slug))
 
-    # Accept if we got at least 5 questions
     if len(all_questions) < 5:
         raise Exception(
             f"Too few questions: {len(all_questions)}/{total_q}. "
@@ -397,7 +691,10 @@ def build_full_length_test(class_slug):
     neg_instr = f"Wrong answer: -{neg_val} mark" if neg else "No negative marking"
     payload = {
         "id": uid, "title": title,
-        "description": f"Full-length mock test for {exam_name}. {len(all_questions)} questions.",
+        "description": (
+            f"Full-length mock test for {exam_name}. "
+            f"{len(all_questions)} questions across all subjects."
+        ),
         "board": board, "classSlug": class_slug, "classNumber": 0,
         "subjects": [s["subjectSlug"] for s in subjects_data],
         "subject": "all", "chapter": "Full Syllabus", "topic": "Full Length",
@@ -437,21 +734,33 @@ def build_full_length_test(class_slug):
     return uid, path, entry
 
 
-# ── Subject-wise test builder ─────────────────────────────────────────────────
+# ════════════════════════════════════════════════════════════════════
+#  SHARED BUILDERS (subject-wise + combined — work for both types)
+# ════════════════════════════════════════════════════════════════════
 
 def build_subject_test(topic_info):
-    class_slug = topic_info["classSlug"]
-    board      = topic_info["board"]
-    subj_slug  = topic_info["subjectSlug"]
-    subj_name  = topic_info["subjectName"]
-    chapter    = topic_info["chapter"]
-    topic      = topic_info["topic"]
-    exam_name  = _exam_name(class_slug)
-    cfg        = topic_info.get("examConfig", {})
+    """
+    Subject-wise test for both school classes and competitive exams.
+    Uses the correct prompt style based on exam type.
+    """
+    class_slug   = topic_info["classSlug"]
+    board        = topic_info["board"]
+    subj_slug    = topic_info["subjectSlug"]
+    subj_name    = topic_info["subjectName"]
+    chapter      = topic_info["chapter"]
+    topic        = topic_info["topic"]
+    exam_name    = _exam_name(class_slug)
+    cfg          = topic_info.get("examConfig", {})
+    exam_type    = topic_info.get("type", "competitive")
+    is_school    = (exam_type == "school")
+    class_number = None
 
-    # Use the exam's configured question count (10, 20, 30, 40, 50 — whatever the exam defines)
-    q_count  = cfg.get("subjectWiseQuestions", 20)
-    duration = cfg.get("subjectWiseDuration", 45)
+    if is_school:
+        topics_data  = topic_picker.load_topics(class_slug)
+        class_number = (topics_data or {}).get("classNumber")
+
+    q_count  = cfg.get("subjectWiseQuestions", 20 if is_school else 40)
+    duration = cfg.get("subjectWiseDuration", 45 if is_school else 60)
     mark_val = cfg.get("correctMarkValue", 1)
     neg      = cfg.get("negativeMarking", False)
     neg_val  = cfg.get("negativeMarkValue", 0)
@@ -460,18 +769,26 @@ def build_subject_test(topic_info):
     title = f"{exam_name} — {subj_name} | {topic}"
 
     print(f"\n  [Subject Test] {title}")
-    print(f"  Target: {q_count}Q in {CHUNK}Q chunks")
+    print(f"  Type: {'School' if is_school else 'Competitive'} | Target: {q_count}Q")
 
-    # Full research (cached)
-    chapters_str = chapter
-    research = _get_research(class_slug, subj_slug, subj_name, chapters_str, exam_name)
-
-    # Iterate chunks until q_count reached
-    raw_qs = _iterate_to_target(
-        q_count, exam_name, subj_name, research, f"{chapter} — {topic}"
+    research = _get_research(
+        class_slug, subj_slug, subj_name, chapter, exam_name,
+        is_school_exam=is_school, class_number=class_number
     )
 
-    # Accept if we got at least 5 questions
+    if is_school:
+        prompt_fn     = _gen_prompt_school_subject
+        prompt_kwargs = {"class_number": class_number}
+    else:
+        prompt_fn     = _gen_prompt_exam_subject
+        prompt_kwargs = {}
+
+    raw_qs = _iterate_to_target(
+        q_count, exam_name, subj_name, research,
+        f"{chapter} — {topic}",
+        prompt_fn=prompt_fn, prompt_kwargs=prompt_kwargs
+    )
+
     if len(raw_qs) < 5:
         raise Exception(f"Too few questions: {len(raw_qs)}/{q_count}")
 
@@ -480,16 +797,23 @@ def build_subject_test(topic_info):
         for i, q in enumerate(raw_qs[:q_count])
     ]
 
+    total_marks = len(questions) * mark_val
+    neg_instr   = f"Wrong answer: -{neg_val} mark" if neg else "No negative marking"
+
     payload = {
         "id": uid, "title": title,
-        "description": f"Subject-wise test on {topic} ({subj_name}) for {exam_name}. {len(questions)}Q.",
-        "board": board, "classSlug": class_slug, "classNumber": 0,
+        "description": (
+            f"Subject-wise test on {topic} ({subj_name}) for {exam_name}. "
+            f"{len(questions)}Q."
+        ),
+        "board": board, "classSlug": class_slug,
+        "classNumber": class_number or 0,
         "subjects": [subj_slug], "subject": subj_slug,
         "chapter": chapter, "topic": topic,
         "testType": "subject-wise",
         "duration": duration,
-        "totalMarks": len(questions) * mark_val,
-        "passingMarks": round(len(questions) * mark_val * 0.4),
+        "totalMarks": total_marks,
+        "passingMarks": round(total_marks * 0.4),
         "totalQuestions": len(questions),
         "isPublic": True, "isPublished": True, "isAdmin": True,
         "showCorrectAnswers": True, "randomizeQuestions": False,
@@ -499,6 +823,7 @@ def build_subject_test(topic_info):
             f"Subject: {subj_name}", f"Topic: {topic}",
             f"Duration: {duration} mins",
             f"+{mark_val} per correct answer",
+            neg_instr,
         ],
         "createdBy": "admin", "createdByName": "EduTest Admin",
         "publishedAt": _now(), "questions": questions,
@@ -510,10 +835,11 @@ def build_subject_test(topic_info):
         "id": uid, "type": "test", "title": title,
         "description": payload["description"],
         "subjects": [subj_slug], "subject": subj_slug,
-        "board": board, "classSlug": class_slug, "classNumber": 0,
+        "board": board, "classSlug": class_slug,
+        "classNumber": class_number or 0,
         "chapter": chapter, "topic": topic, "testType": "subject-wise",
         "totalQuestions": len(questions),
-        "duration": duration, "totalMarks": payload["totalMarks"],
+        "duration": duration, "totalMarks": total_marks,
         "author": "EduTest Admin", "authorId": "admin", "isAdmin": True,
         "tags": payload["tags"], "cdnUrl": _cdn(path), "path": path,
         "publishedAt": payload["publishedAt"],
@@ -521,23 +847,29 @@ def build_subject_test(topic_info):
     return uid, path, entry
 
 
-# ── Combined test builder ─────────────────────────────────────────────────────
-
 def build_combined_test(class_slug, subject_topics):
+    """
+    Combined test (2-3 subjects) for both school classes and competitive exams.
+    Uses the correct prompt style based on exam type.
+    """
     if not subject_topics:
         raise ValueError("No subjects provided for combined test")
 
-    topics_data = topic_picker.load_topics(class_slug)
-    cfg         = (topics_data or {}).get("examConfig", {})
-    board       = (topics_data or {}).get("board", "Competitive")
-    exam_name   = _exam_name(class_slug)
+    topics_data  = topic_picker.load_topics(class_slug)
+    cfg          = (topics_data or {}).get("examConfig", {})
+    board        = (topics_data or {}).get("board", "Competitive")
+    exam_name    = _exam_name(class_slug)
+    is_school    = _is_school(topics_data)
+    class_number = (topics_data or {}).get("classNumber") if is_school else None
 
-    # Use exam's configured per-subject count (no artificial cap)
-    q_per_subj = cfg.get("subjectWiseQuestions", 20)
-    duration   = cfg.get("subjectWiseDuration", 45) * len(subject_topics)
+    q_per_subj = cfg.get("subjectWiseQuestions", 20 if is_school else 40)
     mark_val   = cfg.get("correctMarkValue", 1)
     neg        = cfg.get("negativeMarking", False)
     neg_val    = cfg.get("negativeMarkValue", 0)
+
+    # Duration: per-subject duration × number of subjects, capped at 120 min
+    subj_dur   = cfg.get("subjectWiseDuration", 45 if is_school else 60)
+    duration   = min(subj_dur * len(subject_topics), 120)
 
     uid        = _make_id()
     subj_names = " + ".join(t["subjectName"] for t in subject_topics)
@@ -545,7 +877,15 @@ def build_combined_test(class_slug, subject_topics):
     total_q    = q_per_subj * len(subject_topics)
 
     print(f"\n  [Combined Test] {title}")
+    print(f"  Type: {'School' if is_school else 'Competitive'}")
     print(f"  Target: {total_q}Q ({q_per_subj}Q × {len(subject_topics)} subjects)")
+
+    if is_school:
+        prompt_fn     = _gen_prompt_school_subject
+        prompt_kwargs = {"class_number": class_number}
+    else:
+        prompt_fn     = _gen_prompt_exam_subject
+        prompt_kwargs = {}
 
     all_questions  = []
     all_subj_slugs = []
@@ -558,10 +898,15 @@ def build_combined_test(class_slug, subject_topics):
         all_subj_slugs.append(subj_slug)
 
         print(f"\n  [{subj_name}] Target: {q_per_subj}Q on {topic}")
-        research = _get_research(class_slug, subj_slug, subj_name, chapter, exam_name)
+        research = _get_research(
+            class_slug, subj_slug, subj_name, chapter, exam_name,
+            is_school_exam=is_school, class_number=class_number
+        )
 
         raw_qs = _iterate_to_target(
-            q_per_subj, exam_name, subj_name, research, f"{chapter} — {topic}"
+            q_per_subj, exam_name, subj_name, research,
+            f"{chapter} — {topic}",
+            prompt_fn=prompt_fn, prompt_kwargs=prompt_kwargs
         )
         for raw_q in raw_qs[:q_per_subj]:
             idx = len(all_questions)
@@ -570,16 +915,23 @@ def build_combined_test(class_slug, subject_topics):
     if len(all_questions) < 5:
         raise Exception(f"Too few questions: {len(all_questions)}/{total_q}")
 
+    total_marks = len(all_questions) * mark_val
+    neg_instr   = f"Wrong answer: -{neg_val} mark" if neg else "No negative marking"
+
     payload = {
         "id": uid, "title": title,
-        "description": f"Combined test: {subj_names} for {exam_name}. {len(all_questions)}Q.",
-        "board": board, "classSlug": class_slug, "classNumber": 0,
+        "description": (
+            f"Combined test: {subj_names} for {exam_name}. "
+            f"{len(all_questions)}Q."
+        ),
+        "board": board, "classSlug": class_slug,
+        "classNumber": class_number or 0,
         "subjects": all_subj_slugs, "subject": all_subj_slugs[0],
         "chapter": "Multiple Chapters", "topic": "Combined",
         "testType": "subject-wise",
-        "duration": min(duration, 90),
-        "totalMarks": len(all_questions) * mark_val,
-        "passingMarks": round(len(all_questions) * mark_val * 0.4),
+        "duration": duration,
+        "totalMarks": total_marks,
+        "passingMarks": round(total_marks * 0.4),
         "totalQuestions": len(all_questions),
         "isPublic": True, "isPublished": True, "isAdmin": True,
         "showCorrectAnswers": True, "randomizeQuestions": False,
@@ -587,8 +939,9 @@ def build_combined_test(class_slug, subject_topics):
         "tags": _tags(class_slug, "+".join(all_subj_slugs), subj_names),
         "instructions": [
             f"Subjects: {subj_names}",
-            f"Duration: {min(duration, 90)} mins",
+            f"Duration: {duration} mins",
             f"+{mark_val} per correct answer",
+            neg_instr,
         ],
         "createdBy": "admin", "createdByName": "EduTest Admin",
         "publishedAt": _now(), "questions": all_questions,
@@ -600,12 +953,24 @@ def build_combined_test(class_slug, subject_topics):
         "id": uid, "type": "test", "title": title,
         "description": payload["description"],
         "subjects": all_subj_slugs, "subject": all_subj_slugs[0],
-        "board": board, "classSlug": class_slug, "classNumber": 0,
+        "board": board, "classSlug": class_slug,
+        "classNumber": class_number or 0,
         "chapter": "Multiple Chapters", "testType": "subject-wise",
         "totalQuestions": len(all_questions),
-        "duration": payload["duration"], "totalMarks": payload["totalMarks"],
+        "duration": duration, "totalMarks": total_marks,
         "author": "EduTest Admin", "authorId": "admin", "isAdmin": True,
         "tags": payload["tags"], "cdnUrl": _cdn(path), "path": path,
         "publishedAt": payload["publishedAt"],
     }
     return uid, path, entry
+
+
+# ── Legacy alias — kept so any external callers still work ───────────────────
+def build_full_length_test(class_slug):
+    """
+    Backwards-compatible wrapper. Routes to the correct builder based on type.
+    """
+    topics_data = topic_picker.load_topics(class_slug)
+    if _is_school(topics_data):
+        return build_school_full_length_test(class_slug)
+    return build_exam_full_length_test(class_slug)
