@@ -4,7 +4,7 @@
   "class_slug": "norcet",
   "test_type": "subject-wise",
   "target_q": 35,
-  "collected_q": 2,
+  "collected_q": 5,
   "final_path": "data/admin/norcet/tests/norcet-microbiology-hospital-acquired-infections-89cf499f.json",
   "payload": {
     "id": "89cf499f-c8c9-44e8-98f9-ec554bedd867",
@@ -21,9 +21,9 @@
     "topic": "Hospital Acquired Infections",
     "testType": "subject-wise",
     "duration": 45,
-    "totalMarks": 2,
-    "passingMarks": 1,
-    "totalQuestions": 2,
+    "totalMarks": 5,
+    "passingMarks": 2,
+    "totalQuestions": 5,
     "targetQuestions": 35,
     "isPublic": true,
     "isPublished": true,
@@ -154,11 +154,164 @@
         "subject": "norcet-microbiology",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1777900055882-2f37b",
+        "order": 3,
+        "question": "Which of the following describes an infection acquired by a patient in a healthcare setting that was not present or incubating at the time of admission?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Community-acquired infection",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Community-acquired infections are acquired outside of a healthcare setting."
+          },
+          {
+            "letter": "B",
+            "text": "Opportunistic infection",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Opportunistic infections are caused by pathogens that take advantage of a weakened immune system."
+          },
+          {
+            "letter": "C",
+            "text": "Latent infection",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Latent infections are characterized by a period of inactivity, where the pathogen is present but not actively replicating."
+          },
+          {
+            "letter": "D",
+            "text": "Healthcare-associated infection (HAI)",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "HAIs are acquired by patients during the course of receiving treatment for other conditions within a healthcare setting."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "A Healthcare-Associated Infection (HAI) is defined as an infection acquired by a patient during the course of receiving treatment for other conditions within a healthcare setting, which was not present or incubating at the time of admission.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "norcet-microbiology",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1777900055882-28567",
+        "order": 4,
+        "question": "Which bacterium is most commonly implicated in causing Catheter-Associated Urinary Tract Infections (CAUTIs)?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Staphylococcus aureus",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Staphylococcus aureus is a common cause of skin and soft tissue infections, but not typically CAUTIs."
+          },
+          {
+            "letter": "B",
+            "text": "Pseudomonas aeruginosa",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Pseudomonas aeruginosa is a common cause of hospital-acquired infections, but not typically CAUTIs."
+          },
+          {
+            "letter": "C",
+            "text": "Escherichia coli",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Escherichia coli is the most common cause of CAUTIs due to its presence in the gut flora and ability to ascend the urinary tract."
+          },
+          {
+            "letter": "D",
+            "text": "Klebsiella pneumoniae",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Klebsiella pneumoniae is a common cause of hospital-acquired infections, but not typically CAUTIs."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Escherichia coli (E. coli) is the most common pathogen responsible for Catheter-Associated Urinary Tract Infections (CAUTIs), accounting for a significant percentage of cases due to its presence in the gut flora and ability to ascend the urinary tract.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "norcet-microbiology",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1777900055882-b286d",
+        "order": 5,
+        "question": "A patient admitted to the ICU requires a central venous catheter. As part of the Central Line-Associated Bloodstream Infection (CLABSI) prevention bundle, which of the following skin antiseptics is recommended for site preparation?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Povidone-iodine solution",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Povidone-iodine solution is an antiseptic, but not the recommended choice for CLABSI prevention."
+          },
+          {
+            "letter": "B",
+            "text": "70% Isopropyl alcohol",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "70% Isopropyl alcohol is an antiseptic, but not the recommended choice for CLABSI prevention."
+          },
+          {
+            "letter": "C",
+            "text": "Chlorhexidine gluconate (CHG) >0.5% with alcohol",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Chlorhexidine gluconate (CHG) >0.5% with alcohol is the recommended skin antiseptic for CLABSI prevention due to its superior efficacy."
+          },
+          {
+            "letter": "D",
+            "text": "Hydrogen peroxide",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Hydrogen peroxide is an antiseptic, but not the recommended choice for CLABSI prevention."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The CDC and other guidelines strongly recommend the use of chlorhexidine gluconate (CHG) >0.5% with alcohol as the preferred skin antiseptic for central line insertion site preparation due to its superior efficacy in reducing CLABSI rates compared to povidone-iodine or alcohol alone.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "norcet-microbiology",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 33,
+    "remaining_q": 30,
     "subj_slug": "norcet-microbiology",
     "subj_name": "Microbiology",
     "chapter": "Infection Control Microbiology",
@@ -167,6 +320,6 @@
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-05-04T12:26:57.999403Z",
-  "updated_at": "2026-05-04T12:26:57.999417Z"
+  "created_at": "2026-05-04T13:07:35.882107Z",
+  "updated_at": "2026-05-04T13:07:35.882120Z"
 }
