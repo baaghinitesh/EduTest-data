@@ -4,7 +4,7 @@
   "class_slug": "norcet",
   "test_type": "subject-wise",
   "target_q": 35,
-  "collected_q": 1,
+  "collected_q": 2,
   "final_path": "data/admin/norcet/tests/norcet-microbiology-hospital-acquired-infections-89cf499f.json",
   "payload": {
     "id": "89cf499f-c8c9-44e8-98f9-ec554bedd867",
@@ -21,9 +21,9 @@
     "topic": "Hospital Acquired Infections",
     "testType": "subject-wise",
     "duration": 45,
-    "totalMarks": 1,
-    "passingMarks": 0,
-    "totalQuestions": 1,
+    "totalMarks": 2,
+    "passingMarks": 1,
+    "totalQuestions": 2,
     "targetQuestions": 35,
     "isPublic": true,
     "isPublished": true,
@@ -103,11 +103,62 @@
         "subject": "norcet-microbiology",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1777897617999-51b16",
+        "order": 2,
+        "question": "A patient admitted for elective surgery develops a urinary tract infection (UTI) 72 hours after insertion of a Foley catheter. This infection was not present on admission. Which term best describes this type of infection?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Community-acquired infection",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "Opportunistic infection",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "Healthcare-associated infection",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "Latent infection",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "A healthcare-associated infection (HAI), also known as a hospital-acquired infection (nosocomial infection), is an infection acquired by a patient during the course of receiving treatment for another condition within a healthcare setting. The key criteria often include onset after 48-72 hours of admission or within a specific timeframe after discharge/procedure, and not being present or incubating at the time of admission.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "norcet-microbiology",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 34,
+    "remaining_q": 33,
     "subj_slug": "norcet-microbiology",
     "subj_name": "Microbiology",
     "chapter": "Infection Control Microbiology",
@@ -116,6 +167,6 @@
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-05-04T12:23:15.609541Z",
-  "updated_at": "2026-05-04T12:23:15.609545Z"
+  "created_at": "2026-05-04T12:26:57.999403Z",
+  "updated_at": "2026-05-04T12:26:57.999417Z"
 }
