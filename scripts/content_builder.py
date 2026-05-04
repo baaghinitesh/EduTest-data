@@ -53,7 +53,7 @@ import gemini_client
 import groq_client
 import research_cache
 import publish_to_server
-from gemini_client import GeminiError
+from gemini_client import GeminiError, GeminiQuotaError
 from groq_client   import GroqError
 import topic_picker
 
@@ -415,6 +415,7 @@ def _generate_one_chunk(prompt, chunk_index):
     Generate one chunk using the given prompt.
     Rotates across Gemini keys by chunk_index to spread RPM/RPD load.
     Returns raw text string or empty string on failure.
+    Raises GeminiQuotaError if ALL keys are quota-exhausted (caller stops iteration).
     """
     try:
         raw = gemini_client.generate_questions_for_chunk(
@@ -423,6 +424,8 @@ def _generate_one_chunk(prompt, chunk_index):
         if raw and len(raw) > 80:
             return raw
         print(f"    [Generate] Response too short — skipping chunk")
+    except GeminiQuotaError:
+        raise   # propagate — all keys exhausted, stop the run
     except GeminiError as e:
         print(f"    [Generate] All keys failed: {e}")
     return ""
@@ -471,7 +474,12 @@ def _iterate_to_target(target_count, exam_name, subject_name,
     """
     Iterate 10Q chunks until target_count questions are collected.
     prompt_fn(count, exam_name, subject_name, research_ctx, topic_str, **prompt_kwargs)
-    Returns list of raw question dicts.
+
+    Returns list of raw question dicts — may be fewer than target_count if:
+      - A chunk fails (API glitch, structuring error) → saves what we have
+      - Quota is exhausted → raises GeminiQuotaError immediately
+
+    The caller decides whether the partial result is acceptable.
     """
     all_qs    = []
     collected = 0
@@ -491,9 +499,15 @@ def _iterate_to_target(target_count, exam_name, subject_name,
         kwargs = prompt_kwargs or {}
         prompt = prompt_fn(cnt, exam_name, subject_name, research_ctx, topic_str, **kwargs)
 
-        raw = _generate_one_chunk(prompt, chunk_idx)
+        try:
+            raw = _generate_one_chunk(prompt, chunk_idx)
+        except GeminiQuotaError:
+            # All keys exhausted — save what we have and signal the run loop
+            print(f"    [Generate] Quota exhausted after {collected}Q — saving partial result")
+            break
+
         if not raw:
-            print(f"    Chunk {chunk_num} generation failed — stopping iteration")
+            print(f"    Chunk {chunk_num} generation failed — saving {collected}Q collected so far")
             break
 
         qs = _structure_one_chunk(raw, exam_name, subject_name)
@@ -503,7 +517,7 @@ def _iterate_to_target(target_count, exam_name, subject_name,
             print(f"    Chunk {chunk_num} → {len(qs)}Q extracted "
                   f"(total so far: {collected}/{target_count})")
         else:
-            print(f"    Chunk {chunk_num} structuring failed — stopping iteration")
+            print(f"    Chunk {chunk_num} structuring failed — saving {collected}Q collected so far")
             break
 
         chunk_idx += 1
@@ -570,22 +584,28 @@ def build_school_full_length_test(class_slug):
         prompt_kwargs={"class_number": class_number}
     )
 
-    if len(raw_qs) < 5:
-        raise Exception(f"Too few questions: {len(raw_qs)}/{total_q}")
+    # Accept any result with at least 1 question — partial is better than nothing
+    if len(raw_qs) < 1:
+        raise Exception(f"Zero questions generated for {class_slug} full-length")
 
     questions = [
         _validate_q(q, i, mark_val, neg_val, neg, subj_slug)
         for i, q in enumerate(raw_qs[:total_q])
     ]
 
-    total_marks = len(questions) * mark_val
+    actual_q    = len(questions)
+    total_marks = actual_q * mark_val
     neg_instr   = f"Wrong answer: -{neg_val} mark" if neg else "No negative marking"
+    is_partial  = actual_q < total_q
+    if is_partial:
+        print(f"  [Partial] Saving {actual_q}/{total_q}Q — quota or API limit reached")
 
     payload = {
         "id": uid, "title": title,
         "description": (
             f"Full-length {subj_name} test for {exam_name}. "
-            f"{len(questions)} questions covering all chapters."
+            f"{actual_q} questions covering all chapters."
+            + (" [Partial]" if is_partial else "")
         ),
         "board": board, "classSlug": class_slug,
         "classNumber": class_number or 0,
@@ -595,14 +615,15 @@ def build_school_full_length_test(class_slug):
         "duration": duration,
         "totalMarks": total_marks,
         "passingMarks": round(total_marks * 0.35),
-        "totalQuestions": len(questions),
+        "totalQuestions": actual_q,
+        "targetQuestions": total_q,
         "isPublic": True, "isPublished": True, "isAdmin": True,
         "showCorrectAnswers": True, "randomizeQuestions": True,
         "unlimitedAttempts": True, "allowedAttempts": 0,
         "tags": _tags(class_slug, subj_slug, "full-length", subj_name),
         "instructions": [
             f"Subject: {subj_name}",
-            f"Total Questions: {len(questions)}",
+            f"Total Questions: {actual_q}",
             f"Total Marks: {total_marks}",
             f"Duration: {duration} minutes",
             f"Correct answer: +{mark_val} mark",
@@ -622,7 +643,8 @@ def build_school_full_length_test(class_slug):
         "board": board, "classSlug": class_slug,
         "classNumber": class_number or 0,
         "chapter": "All Chapters", "testType": "full-length",
-        "totalQuestions": len(questions),
+        "totalQuestions": actual_q,
+        "targetQuestions": total_q,
         "duration": duration, "totalMarks": total_marks,
         "author": "EduTest Admin", "authorId": "admin", "isAdmin": True,
         "tags": payload["tags"], "cdnUrl": _cdn(path), "path": path,
@@ -698,18 +720,26 @@ def build_exam_full_length_test(class_slug):
             idx = len(all_questions)
             all_questions.append(_validate_q(raw_q, idx, mark_val, neg_val, neg, subj_slug))
 
-    if len(all_questions) < 5:
+    if len(all_questions) < 1:
         raise Exception(
-            f"Too few questions: {len(all_questions)}/{total_q}. "
+            f"Zero questions generated for {class_slug} full-length. "
             "Check API keys and quotas."
         )
+
+    actual_q  = len(all_questions)
+    is_partial = actual_q < total_q
+    if is_partial:
+        print(f"  [Partial] Saving {actual_q}/{total_q}Q — quota or API limit reached")
+        # Scale marks proportionally for partial tests
+        total_m = round(total_m * actual_q / total_q)
 
     neg_instr = f"Wrong answer: -{neg_val} mark" if neg else "No negative marking"
     payload = {
         "id": uid, "title": title,
         "description": (
             f"Full-length mock test for {exam_name}. "
-            f"{len(all_questions)} questions across all subjects."
+            f"{actual_q} questions across all subjects."
+            + (" [Partial]" if is_partial else "")
         ),
         "board": board, "classSlug": class_slug, "classNumber": 0,
         "subjects": [s["subjectSlug"] for s in subjects_data],
@@ -717,13 +747,14 @@ def build_exam_full_length_test(class_slug):
         "testType": "full-length",
         "duration": duration, "totalMarks": total_m,
         "passingMarks": round(total_m * 0.35),
-        "totalQuestions": len(all_questions),
+        "totalQuestions": actual_q,
+        "targetQuestions": total_q,
         "isPublic": True, "isPublished": True, "isAdmin": True,
         "showCorrectAnswers": True, "randomizeQuestions": True,
         "unlimitedAttempts": True, "allowedAttempts": 0,
         "tags": [class_slug, "full-length", "mock-test", "all-subjects"],
         "instructions": [
-            f"Total Questions: {len(all_questions)}",
+            f"Total Questions: {actual_q}",
             f"Total Marks: {total_m}",
             f"Duration: {duration} minutes",
             f"Correct answer: +{mark_val} mark",
@@ -741,7 +772,8 @@ def build_exam_full_length_test(class_slug):
         "subjects": payload["subjects"], "subject": "all",
         "board": board, "classSlug": class_slug, "classNumber": 0,
         "chapter": "Full Syllabus", "testType": "full-length",
-        "totalQuestions": len(all_questions),
+        "totalQuestions": actual_q,
+        "targetQuestions": total_q,
         "duration": duration, "totalMarks": total_m,
         "author": "EduTest Admin", "authorId": "admin", "isAdmin": True,
         "tags": payload["tags"], "cdnUrl": _cdn(path), "path": path,
@@ -825,22 +857,23 @@ def build_subject_test(topic_info, q_count_override=None):
         prompt_fn=prompt_fn, prompt_kwargs=prompt_kwargs
     )
 
-    if len(raw_qs) < 5:
-        raise Exception(f"Too few questions: {len(raw_qs)}/{q_count}")
+    # Accept any result with at least 1 question — partial is better than nothing
+    if len(raw_qs) < 1:
+        raise Exception(f"Zero questions generated for {title}")
 
-    questions = [
-        _validate_q(q, i, mark_val, neg_val, neg, subj_slug)
-        for i, q in enumerate(raw_qs[:q_count])
-    ]
-
-    total_marks = len(questions) * mark_val
+    questions   = [_validate_q(q, i, mark_val, neg_val, neg, subj_slug) for i, q in enumerate(raw_qs[:q_count])]
+    actual_q    = len(questions)
+    is_partial  = actual_q < q_count
+    total_marks = actual_q * mark_val
     neg_instr   = f"Wrong answer: -{neg_val} mark" if neg else "No negative marking"
+    if is_partial:
+        print(f"  [Partial] Saving {actual_q}/{q_count}Q — quota or API limit reached")
 
     payload = {
         "id": uid, "title": title,
         "description": (
             f"Subject-wise test on {topic} ({subj_name}) for {exam_name}. "
-            f"{len(questions)}Q."
+            f"{actual_q}Q." + (" [Partial]" if is_partial else "")
         ),
         "board": board, "classSlug": class_slug,
         "classNumber": class_number or 0,
@@ -850,7 +883,8 @@ def build_subject_test(topic_info, q_count_override=None):
         "duration": duration,
         "totalMarks": total_marks,
         "passingMarks": round(total_marks * 0.4),
-        "totalQuestions": len(questions),
+        "totalQuestions": actual_q,
+        "targetQuestions": q_count,
         "isPublic": True, "isPublished": True, "isAdmin": True,
         "showCorrectAnswers": True, "randomizeQuestions": False,
         "unlimitedAttempts": True, "allowedAttempts": 0,
@@ -874,7 +908,8 @@ def build_subject_test(topic_info, q_count_override=None):
         "board": board, "classSlug": class_slug,
         "classNumber": class_number or 0,
         "chapter": chapter, "topic": topic, "testType": "subject-wise",
-        "totalQuestions": len(questions),
+        "totalQuestions": actual_q,
+        "targetQuestions": q_count,
         "duration": duration, "totalMarks": total_marks,
         "author": "EduTest Admin", "authorId": "admin", "isAdmin": True,
         "tags": payload["tags"], "cdnUrl": _cdn(path), "path": path,
@@ -963,17 +998,22 @@ def build_combined_test(class_slug, subject_topics, q_per_subj_override=None):
             idx = len(all_questions)
             all_questions.append(_validate_q(raw_q, idx, mark_val, neg_val, neg, subj_slug))
 
-    if len(all_questions) < 5:
-        raise Exception(f"Too few questions: {len(all_questions)}/{total_q}")
+    # Accept any result with at least 1 question — partial is better than nothing
+    if len(all_questions) < 1:
+        raise Exception(f"Zero questions generated for combined test: {title}")
 
-    total_marks = len(all_questions) * mark_val
+    actual_q    = len(all_questions)
+    is_partial  = actual_q < total_q
+    total_marks = actual_q * mark_val
     neg_instr   = f"Wrong answer: -{neg_val} mark" if neg else "No negative marking"
+    if is_partial:
+        print(f"  [Partial] Saving {actual_q}/{total_q}Q — quota or API limit reached")
 
     payload = {
         "id": uid, "title": title,
         "description": (
             f"Combined test: {subj_names} for {exam_name}. "
-            f"{len(all_questions)}Q."
+            f"{actual_q}Q." + (" [Partial]" if is_partial else "")
         ),
         "board": board, "classSlug": class_slug,
         "classNumber": class_number or 0,
@@ -983,7 +1023,8 @@ def build_combined_test(class_slug, subject_topics, q_per_subj_override=None):
         "duration": duration,
         "totalMarks": total_marks,
         "passingMarks": round(total_marks * 0.4),
-        "totalQuestions": len(all_questions),
+        "totalQuestions": actual_q,
+        "targetQuestions": total_q,
         "isPublic": True, "isPublished": True, "isAdmin": True,
         "showCorrectAnswers": True, "randomizeQuestions": False,
         "unlimitedAttempts": True, "allowedAttempts": 0,
@@ -1007,7 +1048,8 @@ def build_combined_test(class_slug, subject_topics, q_per_subj_override=None):
         "board": board, "classSlug": class_slug,
         "classNumber": class_number or 0,
         "chapter": "Multiple Chapters", "testType": "subject-wise",
-        "totalQuestions": len(all_questions),
+        "totalQuestions": actual_q,
+        "targetQuestions": total_q,
         "duration": duration, "totalMarks": total_marks,
         "author": "EduTest Admin", "authorId": "admin", "isAdmin": True,
         "tags": payload["tags"], "cdnUrl": _cdn(path), "path": path,

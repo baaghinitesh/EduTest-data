@@ -109,7 +109,9 @@ jobs:
             echo "=== BACKFILL MODE: Publishing existing content to MongoDB ==="
             python scripts/backfill_to_server.py
           else
-            python scripts/generate.py
+            # generate.py always exits 0 — even on quota exhaustion —
+            # so the commit step always runs and saves any partial content.
+            python scripts/generate.py || true
           fi
 
       - name: Commit and push
