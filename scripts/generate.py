@@ -337,25 +337,32 @@ def run():
     if pending_drafts:
         print("\n  📋 Found " + str(len(pending_drafts)) + " pending draft(s) — resuming first")
         for draft in pending_drafts:
-            dq = chr(9552) * 65
             print("\n" + dq)
             print("  RESUME DRAFT: " + draft["title"])
             print("  Progress: " + str(draft["collected_q"]) + "/" + str(draft["target_q"]) + "Q")
             print(dq)
             try:
-                result, err = _safe("resume draft", content_builder.resume_draft, draft)
-                if result:
-                    uid, path, entry = result
+                # resume_draft returns (uid, path, entry) when complete, (None, None, None) when still partial
+                resume_result = content_builder.resume_draft(draft)
+                uid, path, entry = resume_result
+                if entry is not None:
                     generated.append(entry)
                     print("  ✅ Draft completed and published: " + entry["title"])
                 else:
-                    # Still partial after this run — draft updated, try again next run
+                    # Still partial — draft file updated on disk, will retry next run
                     print("  ⏳ Draft still incomplete — will continue next run")
             except AllKeysExhausted as e:
                 print("\n  🛑 ALL API KEYS EXHAUSTED during draft resume: " + str(e))
                 print("  Draft progress saved. Stopping run.")
                 _print_final_report(generated, failed)
                 sys.exit(0)
+            except GeminiQuotaError as e:
+                print("\n  🛑 Quota exhausted during draft resume: " + str(e))
+                _print_final_report(generated, failed)
+                sys.exit(0)
+            except Exception as e:
+                print("  ⚠️  Draft resume error (" + str(e) + ") — skipping this draft")
+                traceback.print_exc()
 
     # ── Step 2: Generate new tests (up to MAX_TESTS_PER_RUN) ─────────────────
     slots_remaining = MAX_TESTS_PER_RUN - len(generated)
@@ -382,21 +389,6 @@ def run():
 
     _print_final_report(generated, failed)
     # Always exit 0 -- git commit step must run to save any partial content / drafts
-    sys.exit(0)
-
-    # Final report
-    print("\n" + eq)
-    print("  RUN COMPLETE")
-    print("  Generated : " + str(len(generated)) + " test(s)")
-    print("  Failed    : " + str(failed) + " test(s)")
-    for e in generated:
-        q   = e["totalQuestions"]
-        tgt = e.get("targetQuestions", q)
-        partial = " [" + str(q) + "/" + str(tgt) + "Q partial]" if q < tgt else " [" + str(q) + "Q]"
-        print("    ✅ " + e["title"] + partial)
-    print(eq + "\n")
-
-    # Always exit 0 -- git commit step must run to save any partial content
     sys.exit(0)
 
 

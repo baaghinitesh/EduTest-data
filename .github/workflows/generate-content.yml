@@ -125,8 +125,10 @@ jobs:
             TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
             TEST_COUNT=$(git diff --staged --name-only | grep -c "data/admin/.*/tests/" || true)
             CACHE_COUNT=$(git diff --staged --name-only | grep -c "data/research/" || true)
+            DRAFT_COUNT=$(git diff --staged --name-only | grep -c "data/drafts/" || true)
             MSG="auto: +${TEST_COUNT} test(s)"
             [ "$CACHE_COUNT" -gt 0 ] && MSG="${MSG}, +${CACHE_COUNT} research cache"
+            [ "$DRAFT_COUNT" -gt 0 ] && MSG="${MSG}, ${DRAFT_COUNT} draft(s)"
             MSG="${MSG} [$TIMESTAMP]"
             git commit -m "$MSG"
             # Pull remote changes first; on conflict accept ours (each run generates unique files)
@@ -134,7 +136,8 @@ jobs:
               # Rebase conflict — accept our version for all conflicted data files
               git checkout --ours -- .
               git add -A
-              git rebase --continue --no-edit || git rebase --skip
+              # Use GIT_EDITOR=true to avoid --no-edit flag (not supported in all git versions)
+              GIT_EDITOR=true git rebase --continue || git rebase --skip
             fi
             git push origin HEAD:master
           fi
