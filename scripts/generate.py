@@ -173,6 +173,27 @@ def run_full(class_slug):
 # School subject-wise sizes — picked randomly each run
 _SCHOOL_SIZES = [25, 40, 50]
 
+
+def _pick_exam_sw_size(cfg):
+    """
+    Pick a random subject-wise question count for a competitive exam.
+    Uses subjectWiseQMin / subjectWiseQMax from examConfig.
+    Falls back to subjectWiseQuestions if range not set.
+    Snaps to the nearest multiple of 5 for clean numbers.
+    """
+    sw_min = cfg.get("subjectWiseQMin")
+    sw_max = cfg.get("subjectWiseQMax")
+    default = cfg.get("subjectWiseQuestions", 30)
+
+    if sw_min and sw_max and sw_min < sw_max:
+        # Build candidate list: every multiple of 5 in [min, max]
+        candidates = [v for v in range(sw_min, sw_max + 1) if v % 5 == 0]
+        if not candidates:
+            candidates = [sw_min, sw_max]
+        return random.choice(candidates)
+    return default
+
+
 def run_subject(class_slug):
     """
     Generate one subject-wise test (school) or subject-wise / combined test (exam).
@@ -184,9 +205,13 @@ def run_subject(class_slug):
 
     COMPETITIVE EXAMS:
       - 50% chance combined (2-3 subjects) vs single-subject.
-      - Question count from examConfig.subjectWiseQuestions.
+      - Subject-wise: random count from [subjectWiseQMin .. subjectWiseQMax].
+      - Combined: uses combinedTestQPerSubject per subject.
     """
     print(f"\n{'─'*65}")
+
+    topics_data = topic_picker.load_topics(class_slug)
+    cfg         = (topics_data or {}).get("examConfig", {})
 
     if _is_school(class_slug):
         # ── School: always single-subject, random size ─────────────────────────
@@ -221,13 +246,16 @@ def run_subject(class_slug):
 
     # ── Competitive: combined (50%) or single-subject ─────────────────────────
     use_combined = random.random() < 0.5
-    topics_data  = topic_picker.load_topics(class_slug)
     num_subjects = len((topics_data or {}).get("subjects", []))
 
     if use_combined and num_subjects >= 2:
         n = 2 if num_subjects == 2 else random.choice([2, 3])
         n = min(n, num_subjects)
-        print(f"  COMBINED TEST ({n} subjects)  |  {class_slug.upper()}")
+        # Combined uses combinedTestQPerSubject (lighter than full subject-wise)
+        comb_q = cfg.get("combinedTestQPerSubject",
+                         cfg.get("subjectWiseQMin",
+                                 cfg.get("subjectWiseQuestions", 25)))
+        print(f"  COMBINED TEST ({n} subjects, {comb_q}Q/subj)  |  {class_slug.upper()}")
         print(f"{'─'*65}")
 
         try:
@@ -249,7 +277,8 @@ def run_subject(class_slug):
             result, err = _safe(
                 "combined test",
                 content_builder.build_combined_test,
-                class_slug, picked_topics
+                class_slug, picked_topics,
+                q_per_subj_override=comb_q
             )
             if result:
                 uid, path, entry = result
@@ -267,15 +296,23 @@ def run_subject(class_slug):
         except Exception as e:
             print(f"  ⚠️  Combined test setup failed ({e}) — falling back to single-subject")
 
-    # ── Competitive single-subject ─────────────────────────────────────────────
-    print(f"  SUBJECT-WISE TEST  |  {class_slug.upper()}")
+    # ── Competitive single-subject — random size ───────────────────────────────
+    q_count = _pick_exam_sw_size(cfg)
+    print(f"  SUBJECT-WISE TEST ({q_count}Q)  |  {class_slug.upper()}")
     print(f"{'─'*65}")
 
     try:
         topic_info, state = topic_picker.pick_topic("test", class_slug)
         print(f"  Topic: {topic_info['subjectName']} / {topic_info['chapter']} / {topic_info['topic']}")
+        print(f"  Size:  {q_count}Q (randomly chosen from "
+              f"{cfg.get('subjectWiseQMin','?')}–{cfg.get('subjectWiseQMax','?')})")
 
-        result, err = _safe("subject test", content_builder.build_subject_test, topic_info)
+        result, err = _safe(
+            "subject test",
+            content_builder.build_subject_test,
+            topic_info,
+            q_count_override=q_count
+        )
         if result:
             uid, path, entry = result
             topic_picker.mark_generated(state, "test", [(topic_info, uid)])

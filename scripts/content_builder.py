@@ -742,12 +742,12 @@ def build_subject_test(topic_info, q_count_override=None):
     """
     Subject-wise test for both school classes and competitive exams.
 
-    q_count_override: for school classes, the caller (generate.py) passes
-                      the randomly chosen size (25, 40, or 50). If None,
-                      falls back to examConfig.subjectWiseQuestions.
+    q_count_override: for both school and competitive, the caller (generate.py)
+                      passes the randomly chosen size. If None, falls back to
+                      examConfig.subjectWiseQuestions.
 
     Uses the correct prompt style based on exam type.
-    Duration scales with question count for school tests.
+    Duration scales with question count.
     """
     class_slug   = topic_info["classSlug"]
     board        = topic_info["board"]
@@ -765,14 +765,18 @@ def build_subject_test(topic_info, q_count_override=None):
         topics_data  = topic_picker.load_topics(class_slug)
         class_number = (topics_data or {}).get("classNumber")
 
-    # Question count: override (school random size) > config default
-    if q_count_override and is_school:
+    # Question count: caller override > config default
+    if q_count_override:
         q_count = q_count_override
-        # Scale duration: ~1.5 min per question for school tests
-        duration = max(30, round(q_count * 1.5))
+        if is_school:
+            # School: ~1.5 min/Q
+            duration = max(30, round(q_count * 1.5))
+        else:
+            # Competitive: use configured duration (it's per-session, not per-Q)
+            duration = cfg.get("subjectWiseDuration", 60)
     else:
-        q_count  = cfg.get("subjectWiseQuestions", 20 if is_school else 40)
-        duration = cfg.get("subjectWiseDuration", 60 if is_school else 60)
+        q_count  = cfg.get("subjectWiseQuestions", 20 if is_school else 30)
+        duration = cfg.get("subjectWiseDuration", 60)
 
     mark_val = cfg.get("correctMarkValue", 1)
     neg      = cfg.get("negativeMarking", False)
@@ -860,10 +864,13 @@ def build_subject_test(topic_info, q_count_override=None):
     return uid, path, entry
 
 
-def build_combined_test(class_slug, subject_topics):
+def build_combined_test(class_slug, subject_topics, q_per_subj_override=None):
     """
-    Combined test (2-3 subjects) for both school classes and competitive exams.
-    Uses the correct prompt style based on exam type.
+    Combined test (2-3 subjects) for competitive exams only.
+
+    q_per_subj_override: caller passes combinedTestQPerSubject from examConfig.
+                         Falls back to combinedTestQPerSubject in config, then
+                         subjectWiseQMin, then subjectWiseQuestions.
     """
     if not subject_topics:
         raise ValueError("No subjects provided for combined test")
@@ -875,13 +882,22 @@ def build_combined_test(class_slug, subject_topics):
     is_school    = _is_school(topics_data)
     class_number = (topics_data or {}).get("classNumber") if is_school else None
 
-    q_per_subj = cfg.get("subjectWiseQuestions", 20 if is_school else 40)
+    # Q per subject: caller override > config combinedTestQPerSubject > subjectWiseQMin > subjectWiseQuestions
+    if q_per_subj_override:
+        q_per_subj = q_per_subj_override
+    else:
+        q_per_subj = cfg.get(
+            "combinedTestQPerSubject",
+            cfg.get("subjectWiseQMin",
+                    cfg.get("subjectWiseQuestions", 25))
+        )
+
     mark_val   = cfg.get("correctMarkValue", 1)
     neg        = cfg.get("negativeMarking", False)
     neg_val    = cfg.get("negativeMarkValue", 0)
 
-    # Duration: per-subject duration × number of subjects, capped at 120 min
-    subj_dur   = cfg.get("subjectWiseDuration", 45 if is_school else 60)
+    # Duration: configured subject-wise duration (it's per-session, not scaled)
+    subj_dur   = cfg.get("subjectWiseDuration", 60)
     duration   = min(subj_dur * len(subject_topics), 120)
 
     uid        = _make_id()

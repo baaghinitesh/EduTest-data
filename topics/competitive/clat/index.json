@@ -8,25 +8,37 @@
     "fullLengthDuration": 120,
     "subjectWiseQuestions": 30,
     "subjectWiseMarks": 30,
-    "subjectWiseDuration": 24,
+    "subjectWiseDuration": 30,
     "negativeMarking": true,
     "correctMarkValue": 1,
-    "negativeMarkValue": 0.25
+    "negativeMarkValue": 0.25,
+    "subjectWiseQMin": 20,
+    "subjectWiseQMax": 30,
+    "combinedTestQPerSubject": 20
   },
   "testTypes": [
     {
       "type": "full-length",
-      "label": "Full Length Test",
+      "label": "Full Length Mock Test",
       "questions": 150,
       "marks": 150,
-      "duration": 120
+      "duration": 120,
+      "note": "All subjects combined — exact exam pattern"
     },
     {
       "type": "subject-wise",
       "label": "Subject Wise Test",
-      "questions": 30,
-      "marks": 30,
-      "duration": 24
+      "questions": "20–30",
+      "marks": "20–30",
+      "duration": 30,
+      "note": "One subject, one topic — size picked randomly each run"
+    },
+    {
+      "type": "combined",
+      "label": "Combined Subject Test",
+      "questions": "20 per subject",
+      "duration": 30,
+      "note": "2-3 subjects, same topic depth as subject-wise"
     }
   ],
   "subjects": [
