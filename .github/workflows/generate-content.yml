@@ -127,7 +127,12 @@ jobs:
             [ "$CACHE_COUNT" -gt 0 ] && MSG="${MSG}, +${CACHE_COUNT} research cache"
             MSG="${MSG} [$TIMESTAMP]"
             git commit -m "$MSG"
-            # Pull remote changes first to avoid rejection when another run pushed concurrently
-            git pull --rebase origin master || git pull --rebase origin main || true
-            git push origin HEAD
+            # Pull remote changes first; on conflict accept ours (each run generates unique files)
+            if ! git pull --rebase origin master 2>/dev/null; then
+              # Rebase conflict — accept our version for all conflicted data files
+              git checkout --ours -- .
+              git add -A
+              git rebase --continue --no-edit || git rebase --skip
+            fi
+            git push origin HEAD:master
           fi
