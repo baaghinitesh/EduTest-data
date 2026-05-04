@@ -294,16 +294,22 @@ def _get_school_full_research(class_slug, subject_slug, subject_name,
 # ── Generation prompts ────────────────────────────────────────────────────────
 
 def _gen_prompt_school_subject(count, exam_name, subject_name, research_ctx,
-                                topic_str, class_number=None):
-    """Prompt for school class subject-wise / combined test chunk."""
+                                topic_str, class_number=None, cycle=1):
+    """Prompt for school class subject-wise test chunk."""
     grade_ctx = f"Class {class_number}" if class_number else exam_name
+    cycle_note = (
+        f"\nIMPORTANT: This is generation cycle {cycle}. "
+        f"Generate COMPLETELY DIFFERENT questions from any previous tests on this topic. "
+        f"Use different question angles, different numerical values, different scenarios."
+        if cycle > 1 else ""
+    )
     return (
         f"You are an expert question setter for {exam_name} board exams.\n\n"
         f"EXAM RESEARCH (use this to set correct difficulty and focus):\n"
         f"{research_ctx}\n\n"
         f"TASK: Generate exactly {count} high-quality MCQ questions.\n"
         f"Grade: {grade_ctx} | Subject: {subject_name}\n"
-        f"Topic/Chapter: {topic_str}\n\n"
+        f"Topic/Chapter: {topic_str}{cycle_note}\n\n"
         f"Requirements:\n"
         f"- Follow NCERT/board exam pattern strictly\n"
         f"- Difficulty: 40% easy, 40% medium, 20% hard\n"
@@ -313,13 +319,14 @@ def _gen_prompt_school_subject(count, exam_name, subject_name, research_ctx,
         f"- Mark the correct answer with an asterisk: *A) or *B) etc.\n"
         f"- After each question, write: EXPLANATION: <why correct answer is right>\n"
         f"- Questions must match board exam standard — not trivial, not too hard\n"
-        f"- For numerical questions, show the calculation step-by-step\n\n"
+        f"- For numerical questions, show the calculation step-by-step\n"
+        f"- Do NOT repeat questions that would have the same answer as obvious recall\n\n"
         f"Format: number each question 1. 2. 3. etc.\n"
         f"Do NOT output JSON. Write in plain text."
     )
 
 def _gen_prompt_school_full(count, exam_name, subject_name, research_ctx,
-                             chapters_str, class_number=None):
+                             chapters_str, class_number=None, cycle=1):
     """Prompt for school class full-length test chunk (100Q, all chapters)."""
     grade_ctx = f"Class {class_number}" if class_number else exam_name
     return (
@@ -344,15 +351,22 @@ def _gen_prompt_school_full(count, exam_name, subject_name, research_ctx,
         f"Do NOT output JSON. Write in plain text."
     )
 
-def _gen_prompt_exam_subject(count, exam_name, subject_name, research_ctx, topic_str):
+def _gen_prompt_exam_subject(count, exam_name, subject_name, research_ctx,
+                             topic_str, cycle=1):
     """Prompt for competitive exam subject-wise / combined test chunk."""
+    cycle_note = (
+        f"\nIMPORTANT: This is generation cycle {cycle}. "
+        f"Generate COMPLETELY DIFFERENT questions from any previous tests on this topic. "
+        f"Use different question angles, different numerical values, different application scenarios."
+        if cycle > 1 else ""
+    )
     return (
         f"You are an expert question setter for the {exam_name} competitive exam.\n\n"
         f"EXAM RESEARCH (use this to set correct difficulty and focus):\n"
         f"{research_ctx}\n\n"
         f"TASK: Generate exactly {count} high-quality MCQ questions.\n"
         f"Subject: {subject_name}\n"
-        f"Topic/Chapter: {topic_str}\n\n"
+        f"Topic/Chapter: {topic_str}{cycle_note}\n\n"
         f"Requirements:\n"
         f"- Match the exact difficulty and style of {exam_name} official papers\n"
         f"- Difficulty: 25% easy, 45% medium, 30% hard\n"
@@ -362,12 +376,14 @@ def _gen_prompt_exam_subject(count, exam_name, subject_name, research_ctx, topic
         f"- After each question, write: EXPLANATION: <why correct answer is right>\n"
         f"- Questions must be exam-standard — include tricky distractors\n"
         f"- For numerical questions, show the calculation step-by-step\n"
-        f"- Vary question types: direct recall, application, analytical\n\n"
+        f"- Vary question types: direct recall, application, analytical\n"
+        f"- Do NOT repeat questions with the same stem or answer pattern\n\n"
         f"Format: number each question 1. 2. 3. etc.\n"
         f"Do NOT output JSON. Write in plain text."
     )
 
-def _gen_prompt_exam_full(count, exam_name, subject_name, research_ctx, chapters_str):
+def _gen_prompt_exam_full(count, exam_name, subject_name, research_ctx,
+                          chapters_str, cycle=1):
     """Prompt for competitive exam full-length test chunk (one subject section)."""
     return (
         f"You are an expert question setter for the {exam_name} competitive exam.\n\n"
@@ -765,6 +781,9 @@ def build_subject_test(topic_info, q_count_override=None):
         topics_data  = topic_picker.load_topics(class_slug)
         class_number = (topics_data or {}).get("classNumber")
 
+    # Cycle number — passed in topic_info by topic_picker
+    cycle = topic_info.get("cycle", 1)
+
     # Question count: caller override > config default
     if q_count_override:
         q_count = q_count_override
@@ -795,10 +814,10 @@ def build_subject_test(topic_info, q_count_override=None):
 
     if is_school:
         prompt_fn     = _gen_prompt_school_subject
-        prompt_kwargs = {"class_number": class_number}
+        prompt_kwargs = {"class_number": class_number, "cycle": cycle}
     else:
         prompt_fn     = _gen_prompt_exam_subject
-        prompt_kwargs = {}
+        prompt_kwargs = {"cycle": cycle}
 
     raw_qs = _iterate_to_target(
         q_count, exam_name, subj_name, research,
@@ -905,16 +924,19 @@ def build_combined_test(class_slug, subject_topics, q_per_subj_override=None):
     title      = f"{exam_name} — Combined: {subj_names}"
     total_q    = q_per_subj * len(subject_topics)
 
+    # Use the highest cycle number across all picked topics
+    cycle = max((ti.get("cycle", 1) for ti in subject_topics), default=1)
+
     print(f"\n  [Combined Test] {title}")
-    print(f"  Type: {'School' if is_school else 'Competitive'}")
+    print(f"  Type: {'School' if is_school else 'Competitive'} | Cycle: {cycle}")
     print(f"  Target: {total_q}Q ({q_per_subj}Q × {len(subject_topics)} subjects)")
 
     if is_school:
         prompt_fn     = _gen_prompt_school_subject
-        prompt_kwargs = {"class_number": class_number}
+        prompt_kwargs = {"class_number": class_number, "cycle": cycle}
     else:
         prompt_fn     = _gen_prompt_exam_subject
-        prompt_kwargs = {}
+        prompt_kwargs = {"cycle": cycle}
 
     all_questions  = []
     all_subj_slugs = []

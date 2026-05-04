@@ -3,8 +3,18 @@ topic_picker.py — Smart topic selector with no-repeat tracking.
 
 Picks randomly from ALL available exam topic files (competitive + school).
 Handles modular structure (index.json + subjects/*.json).
+
+No-repeat guarantee:
+  Each (classSlug, subjectSlug, chapter, topic) combo is tracked in state.json.
+  When ALL topics for a class are exhausted, the tracker resets automatically
+  and a new cycle begins — so the same subject can be picked again but with
+  fresh topic selection, ensuring question variety across cycles.
+
+  The cycle number is stored per class so generation prompts can reference it
+  ("this is cycle 2 — generate different questions from cycle 1").
 """
 import os, json, random
+from datetime import datetime, timezone
 
 ROOT       = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TOPICS_DIR = os.path.join(ROOT, "topics")
@@ -17,12 +27,30 @@ def load_state():
     if os.path.exists(STATE_FILE):
         with open(STATE_FILE, "r", encoding="utf-8") as f:
             return json.load(f)
-    return {"generated_tests": [], "generated_notes": [], "generated_formulas": [], "generated_resources": []}
+    return {
+        "generated_tests": [],
+        "generated_notes": [],
+        "generated_formulas": [],
+        "generated_resources": [],
+        "cycles": {},          # classSlug → cycle number (increments on reset)
+    }
 
 
 def save_state(state):
     with open(STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=2, ensure_ascii=False)
+
+
+def get_cycle(state, class_slug):
+    """Return the current generation cycle number for a class (starts at 1)."""
+    return state.get("cycles", {}).get(class_slug, 1)
+
+
+def _increment_cycle(state, class_slug):
+    """Increment cycle counter when topics are exhausted and reset."""
+    state.setdefault("cycles", {})
+    state["cycles"][class_slug] = state["cycles"].get(class_slug, 1) + 1
+    print(f"  [TopicPicker] 🔄 {class_slug} cycle reset → cycle {state['cycles'][class_slug]}")
 
 
 # ── Topic file loaders ─────────────────────────────────────────────────────────
@@ -180,10 +208,18 @@ def _build_available(state, ct, topics_data, class_slug):
 
 
 def _reset_and_rebuild(state, ct, topics_data, class_slug):
-    """Clear used entries for this class+ct, rebuild available list."""
+    """Clear used entries for this class+ct, increment cycle, rebuild available list."""
     store_key = f"generated_{ct}s"
+    used_count = sum(1 for e in state.get(store_key, []) if e.get("classSlug") == class_slug)
     state[store_key] = [e for e in state.get(store_key, []) if e.get("classSlug") != class_slug]
+    _increment_cycle(state, class_slug)
     save_state(state)
+    total = sum(
+        len(t) for s in topics_data.get("subjects", [])
+        for c in s.get("chapters", [])
+        for t in [c.get("topics", [])]
+    )
+    print(f"  [TopicPicker] Reset {class_slug}: cleared {used_count} used entries, {total} topics available again")
     return _build_available(state, ct, topics_data, class_slug)
 
 
@@ -193,7 +229,11 @@ def pick_random_exam():
 
 
 def pick_topic(ct, class_slug=None):
-    """Pick one unused topic. Randomly selects exam if class_slug is None."""
+    """
+    Pick one unused topic. Randomly selects exam if class_slug is None.
+    Returns (topic_info, state). topic_info includes 'cycle' so the
+    generation prompt can vary questions across cycles.
+    """
     state = load_state()
     if class_slug is None:
         class_slug = random.choice(get_all_available_exams())
@@ -202,10 +242,13 @@ def pick_topic(ct, class_slug=None):
         raise ValueError(f"No topics for {class_slug}")
     available = _build_available(state, ct, topics_data, class_slug)
     if not available:
+        print(f"  [TopicPicker] All {class_slug} topics used — resetting cycle")
         available = _reset_and_rebuild(state, ct, topics_data, class_slug)
     if not available:
         raise ValueError(f"No topics at all for {class_slug}")
-    return random.choice(available), state
+    topic = random.choice(available)
+    topic["cycle"] = get_cycle(state, class_slug)
+    return topic, state
 
 
 def pick_topic_from_exam(ct, class_slug):
