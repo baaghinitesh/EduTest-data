@@ -10,17 +10,19 @@ generate.py — EduTest TEST-ONLY generator.
   │  e.g. CBSE Class 10, ICSE Class 9, Maharashtra Class 7 …       │
   │                                                                 │
   │  full-length  → pick ONE subject at random, generate 100Q       │
-  │                 from that subject (chapter-spanning).           │
-  │                 Title: "CBSE CLASS 10 — Mathematics | Full      │
-  │                          Length Test"                           │
+  │                 spanning ALL chapters of that subject.          │
+  │                 Title: "CBSE CLASS 10 — Mathematics |           │
+  │                          Full Length Test"                      │
+  │                 Duration: 150 min                               │
   │                                                                 │
-  │  subject-wise → pick ONE subject, generate subjectWiseQ (20Q)  │
-  │                 on a specific chapter/topic.                    │
+  │  subject-wise → pick ONE subject + ONE topic, generate          │
+  │                 25Q, 40Q, or 50Q (chosen randomly each run).    │
   │                 Title: "CBSE CLASS 10 — Mathematics | Algebra"  │
+  │                 Duration: 60 min                                │
   │                                                                 │
-  │  combined     → pick 2-3 subjects, generate subjectWiseQ each. │
-  │                 Title: "CBSE CLASS 10 — Combined: Maths +       │
-  │                          Physics"                               │
+  │  NO combined tests for school classes.                          │
+  │  Same subject can repeat across runs — only the specific        │
+  │  chapter+topic is tracked to avoid question repetition.         │
   └─────────────────────────────────────────────────────────────────┘
 
   ┌─────────────────────────────────────────────────────────────────┐
@@ -31,20 +33,25 @@ generate.py — EduTest TEST-ONLY generator.
   │                 per subject from full-length.json / weightage.  │
   │                 Title: "NEET UG — Full Length Mock Test"        │
   │                                                                 │
-  │  subject-wise → pick ONE subject, generate subjectWiseQ (40Q)  │
-  │                 on a specific chapter/topic.                    │
+  │  subject-wise → pick ONE subject, generate subjectWiseQ         │
+  │                 (exam-configured, e.g. 40-45Q) on a topic.      │
   │                 Title: "NEET UG — Physics | Thermodynamics"     │
   │                                                                 │
-  │  combined     → pick 2-3 subjects, generate subjectWiseQ each. │
+  │  combined     → pick 2-3 subjects, subjectWiseQ each.           │
   │                 Title: "NEET UG — Combined: Physics + Chemistry"│
+  │                 50% chance vs single-subject.                   │
   └─────────────────────────────────────────────────────────────────┘
 
   Mode decision (per run):
     Priority 1: GENERATE_MODE env var ("full" or "subject")
     Priority 2: UTC hour — 00:xx = "full", all others = "subject"
 
-  subject mode: 50% chance combined (2-3 subjects) vs single-subject.
-  Combined only when exam has ≥ 2 subjects with topics.
+  No-repeat tracking:
+    Each (classSlug, subjectSlug, chapter, topic) combo is marked
+    used after generation. When all topics for a class are exhausted,
+    the tracker resets — so the same subject can be picked again
+    with a fresh set of topics (no question repetition guaranteed
+    within a cycle).
 
 API keys (5 total — exact GitHub secret names):
   GEMINI_API_KEY    → Flash K1  (researcher + gen fallback)
@@ -163,22 +170,61 @@ def run_full(class_slug):
 
 # ── Subject-wise / combined runner ───────────────────────────────────────────
 
+# School subject-wise sizes — picked randomly each run
+_SCHOOL_SIZES = [25, 40, 50]
+
 def run_subject(class_slug):
     """
-    Generate one subject-wise OR combined test.
-    50% chance of combined (2-3 subjects) vs single-subject.
-    Combined only if the exam has ≥ 2 subjects with topics.
-    Works identically for school classes and competitive exams —
-    the difference is in question count and prompt style (handled in content_builder).
+    Generate one subject-wise test (school) or subject-wise / combined test (exam).
+
+    SCHOOL CLASSES:
+      - Always single-subject, no combined.
+      - Question count chosen randomly from [25, 40, 50] each run.
+      - Same subject can be picked again on future runs (different topic).
+
+    COMPETITIVE EXAMS:
+      - 50% chance combined (2-3 subjects) vs single-subject.
+      - Question count from examConfig.subjectWiseQuestions.
     """
     print(f"\n{'─'*65}")
 
+    if _is_school(class_slug):
+        # ── School: always single-subject, random size ─────────────────────────
+        q_count = random.choice(_SCHOOL_SIZES)
+        print(f"  SUBJECT-WISE TEST (School — {q_count}Q)  |  {class_slug.upper()}")
+        print(f"{'─'*65}")
+
+        try:
+            topic_info, state = topic_picker.pick_topic("test", class_slug)
+            print(f"  Topic: {topic_info['subjectName']} / {topic_info['chapter']} / {topic_info['topic']}")
+            print(f"  Size:  {q_count}Q (randomly chosen from 25/40/50)")
+
+            result, err = _safe(
+                "school subject test",
+                content_builder.build_subject_test,
+                topic_info,
+                q_count_override=q_count
+            )
+            if result:
+                uid, path, entry = result
+                topic_picker.mark_generated(state, "test", [(topic_info, uid)])
+                print(f"\n  ✅ Generated: {entry['title']}")
+                print(f"     {entry['totalQuestions']}Q | {entry['duration']}min | {entry['totalMarks']} marks")
+                return entry
+            else:
+                print(f"\n  ❌ School subject test failed: {err}")
+                return None
+
+        except Exception as e:
+            print(f"\n  ❌ Topic pick failed: {e}")
+            return None
+
+    # ── Competitive: combined (50%) or single-subject ─────────────────────────
     use_combined = random.random() < 0.5
     topics_data  = topic_picker.load_topics(class_slug)
     num_subjects = len((topics_data or {}).get("subjects", []))
 
     if use_combined and num_subjects >= 2:
-        # ── Combined: 2-3 subjects ─────────────────────────────────────────────
         n = 2 if num_subjects == 2 else random.choice([2, 3])
         n = min(n, num_subjects)
         print(f"  COMBINED TEST ({n} subjects)  |  {class_slug.upper()}")
@@ -221,7 +267,7 @@ def run_subject(class_slug):
         except Exception as e:
             print(f"  ⚠️  Combined test setup failed ({e}) — falling back to single-subject")
 
-    # ── Single-subject ─────────────────────────────────────────────────────────
+    # ── Competitive single-subject ─────────────────────────────────────────────
     print(f"  SUBJECT-WISE TEST  |  {class_slug.upper()}")
     print(f"{'─'*65}")
 

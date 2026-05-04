@@ -4,44 +4,34 @@
   "board": "UP Board",
   "type": "school",
   "examConfig": {
-    "fullLengthQuestions": 40,
-    "fullLengthMarks": 80,
-    "fullLengthDuration": 180,
-    "subjectWiseQuestions": 20,
+    "fullLengthQuestions": 100,
+    "fullLengthMarks": 100,
+    "fullLengthDuration": 150,
+    "subjectWiseQuestions": 40,
+    "subjectWiseQMin": 25,
+    "subjectWiseQMax": 50,
     "subjectWiseMarks": 40,
-    "subjectWiseDuration": 90,
+    "subjectWiseDuration": 60,
     "negativeMarking": false,
-    "correctMarkValue": 2,
+    "correctMarkValue": 1,
     "negativeMarkValue": 0
   },
   "testTypes": [
     {
       "type": "full-length",
       "label": "Full Length Test",
-      "questions": 40,
-      "marks": 80,
-      "duration": 180
+      "questions": 100,
+      "marks": 100,
+      "duration": 150,
+      "note": "One subject, all chapters"
     },
     {
       "type": "subject-wise",
       "label": "Subject Wise Test",
-      "questions": 20,
-      "marks": 40,
-      "duration": 90
-    },
-    {
-      "type": "chapter-wise",
-      "label": "Chapter Wise Test",
-      "questions": 15,
-      "marks": 30,
-      "duration": 45
-    },
-    {
-      "type": "topic-wise",
-      "label": "Topic Wise Test",
-      "questions": 10,
-      "marks": 20,
-      "duration": 25
+      "questions": "25 / 40 / 50",
+      "marks": "25 / 40 / 50",
+      "duration": 60,
+      "note": "One subject, one topic — size picked randomly each run"
     }
   ],
   "subjects": [
