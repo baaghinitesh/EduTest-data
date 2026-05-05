@@ -100,6 +100,7 @@ def _validate_keys():
         "GEMINI_API_KEY2":  "Flash K3 (primary generator)",
         "GROQ_API_KEY":     "Groq K1 (primary structurer)",
         "GROQ_API_KEY2":    "Groq K2 (fallback structurer)",
+        "MISTRAL_API_KEY":  "Mistral (4th gen fallback + 3rd structurer)",
     }
     print("\n  API Keys:")
     missing_critical = []
@@ -108,7 +109,9 @@ def _validate_keys():
         if val:
             print("    ✅ " + env + " (" + role + ") -- " + str(len(val)) + " chars")
         else:
-            print("    ❌ " + env + " (" + role + ") -- NOT SET")
+            label = "optional" if env == "MISTRAL_API_KEY" else "NOT SET"
+            icon  = "⚠️ " if env == "MISTRAL_API_KEY" else "❌"
+            print("    " + icon + " " + env + " (" + role + ") -- " + label)
             if env in ("GEMINI_API_KEY2", "GROQ_API_KEY"):
                 missing_critical.append(env)
     if missing_critical:

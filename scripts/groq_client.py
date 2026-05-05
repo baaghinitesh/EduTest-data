@@ -251,6 +251,19 @@ def format_questions(raw_text, schema_example, exam_name, subject_name=""):
                 print(f"  [Groq] {key_env} failed on chunk {chunk_idx} ({err[:80]}) — trying next key")
 
         if not chunk_done:
+            # Both Groq keys failed — try Mistral before giving up on this chunk
+            try:
+                import mistral_client
+                if mistral_client.available():
+                    qs = mistral_client.structure_questions(chunk, exam_name, subject_name, _COMPACT_SCHEMA)
+                    if qs:
+                        all_questions.extend(qs)
+                        print(f"  [Groq] ✅ chunk {chunk_idx}/{len(chunks)} — {len(qs)}Q via Mistral fallback")
+                        chunk_done = True
+            except Exception as e:
+                print(f"  [Groq] Mistral fallback also failed for chunk {chunk_idx} ({str(e)[:60]})")
+
+        if not chunk_done:
             print(f"  [Groq] chunk {chunk_idx} failed on all keys — skipping")
 
     if not all_questions:

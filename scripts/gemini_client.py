@@ -1,25 +1,24 @@
 """
-gemini_client.py — 3 Gemini Flash keys, no Pro (Pro quota exhausted on free tier).
+gemini_client.py — 3 Gemini Flash keys + Mistral fallback.
 
 GitHub Secret names (exact):
   GEMINI_API_KEY    → K1 Flash 2.5 — primary researcher + generation
   GEMINI_API_KEY_1  → K2 Flash 2.5 — researcher fallback + generation fallback
   GEMINI_API_KEY2   → K3 Flash 2.5 — generation primary (dedicated generator key)
-
-Why no Pro: Gemini 2.5 Pro free tier = 25 RPD. Gets exhausted in the first run.
-Flash 2.5 free tier = 1500 RPD, 10 RPM — much more headroom.
+  MISTRAL_API_KEY   → Mistral small — 4th fallback when ALL Gemini keys exhausted
 
 Generation key rotation (round-robin across chunks):
   Chunk 0 → K3 Flash (dedicated generator)
   Chunk 1 → K1 Flash
   Chunk 2 → K2 Flash
   Chunk 3 → K3 Flash ... repeats
+  If ALL Gemini keys exhausted → Mistral fallback
 
 Research:
-  K1 Flash → K2 Flash → empty string (never crashes)
+  K1 Flash → K2 Flash → Mistral → empty string (never crashes)
 
 Structure fallback (when both Groq keys fail):
-  K1 Flash → K2 Flash → raise
+  Mistral → Flash 2.0 K1 → Flash 2.0 K2 → Flash 2.5 K1 → Flash 2.5 K2
 """
 import os, json, re, time
 from google import genai
@@ -139,7 +138,7 @@ def _available(key_env):
 
 def research(prompt, max_tokens=1500):
     """
-    Research step — K1 Flash → K2 Flash → empty string (never raises).
+    Research step — K1 Flash → K2 Flash → Mistral → empty string (never raises).
     """
     for tracker, key_env in [("research_k1", KEY_K1),
                               ("research_k2", KEY_K2)]:
@@ -155,6 +154,15 @@ def research(prompt, max_tokens=1500):
         except GeminiError as e:
             print(f"  [Research] {tracker} failed ({e}) — trying next key")
 
+    # Mistral fallback — only imported if needed to avoid startup cost
+    try:
+        import mistral_client
+        result = mistral_client.research(prompt, max_tokens=max_tokens)
+        if result:
+            return result
+    except Exception as e:
+        print(f"  [Research] Mistral fallback failed ({e})")
+
     print("  [Research] All keys failed — using empty context")
     return ""
 
@@ -163,8 +171,7 @@ def generate_questions_for_chunk(prompt, chunk_index=0, max_tokens=4096):
     """
     Generate raw questions for ONE chunk (10Q).
     Round-robin across K3 → K1 → K2 based on chunk_index.
-    Falls back through all keys if primary fails.
-    No Pro model — Flash only (higher RPD limits).
+    Falls back through all Gemini keys, then Mistral if all Gemini exhausted.
     """
     # Rotation: K3 → K1 → K2 → K3 → K1 → K2 ...
     rotation = [
@@ -176,6 +183,8 @@ def generate_questions_for_chunk(prompt, chunk_index=0, max_tokens=4096):
     ordered = rotation[start:] + rotation[:start]
 
     last_err = "no keys available"
+    gemini_all_quota = True   # track if ALL Gemini keys hit quota
+
     for tracker, key_env in ordered:
         if not _available(key_env):
             print(f"  [Generate] {key_env} not set — skipping {tracker}")
@@ -185,12 +194,28 @@ def generate_questions_for_chunk(prompt, chunk_index=0, max_tokens=4096):
             if result and len(result) > 80:
                 print(f"  [Generate] ✅ {tracker} (Flash 2.5)")
                 return result
+            gemini_all_quota = False   # got a response, just too short
         except GeminiQuotaError:
             print(f"  [Generate] {tracker} quota hit — trying next key")
             last_err = f"{tracker} quota exhausted"
         except GeminiError as e:
             print(f"  [Generate] {tracker} failed ({e}) — trying next key")
             last_err = str(e)
+            gemini_all_quota = False   # non-quota failure
+
+    # All Gemini keys failed — try Mistral as 4th fallback
+    try:
+        import mistral_client
+        if mistral_client.available():
+            print(f"  [Generate] All Gemini keys failed — trying Mistral fallback")
+            result = mistral_client.generate_questions(prompt, max_tokens=max_tokens)
+            if result and len(result) > 80:
+                return result
+        else:
+            print(f"  [Generate] Mistral not configured (MISTRAL_API_KEY not set)")
+    except Exception as e:
+        print(f"  [Generate] Mistral fallback failed ({e})")
+        last_err = str(e)
 
     raise GeminiError(f"All Flash keys exhausted for chunk {chunk_index}. Last: {last_err}")
 
@@ -198,9 +223,30 @@ def generate_questions_for_chunk(prompt, chunk_index=0, max_tokens=4096):
 def structure_with_flash(prompt, max_tokens=4096):
     """
     Fallback JSON structurer when both Groq keys fail.
-    Tries Flash 2.0 first (higher TPM) then Flash 2.5 K1 → K2.
+    Order: Mistral → Flash 2.0 K1 → Flash 2.0 K2 → Flash 2.5 K1 → Flash 2.5 K2
+    Mistral is tried first because it's not rate-limited by the same quota as Gemini.
     """
-    # Flash 2.0 has higher TPM — better for structuring when rate limited
+    # Try Mistral first — separate quota from Gemini
+    try:
+        import mistral_client
+        if mistral_client.available():
+            # Extract the raw text and schema from the flash_prompt format
+            # The prompt is: "Extract ALL questions...\nTEXT:\n{raw_text}"
+            result = mistral_client._call(
+                "You are an expert educator. Output ONLY valid JSON — no markdown, no text outside the JSON array.",
+                prompt,
+                expect_json=True,
+                max_tokens=max_tokens
+            )
+            if isinstance(result, list) and result:
+                print(f"  [StructureFlash] ✅ mistral (mistral-small-latest)")
+                return result
+            if isinstance(result, dict):
+                return [result]
+    except Exception as e:
+        print(f"  [StructureFlash] Mistral failed ({e}) — trying Flash")
+
+    # Flash fallback — 2.0 first (higher TPM), then 2.5
     attempts = [
         ("struct_k1_20", KEY_K1, MODEL_FLASH_20),
         ("struct_k2_20", KEY_K2, MODEL_FLASH_20),
