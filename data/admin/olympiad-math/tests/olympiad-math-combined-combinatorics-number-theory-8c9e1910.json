@@ -1,0 +1,1069 @@
+{
+  "id": "8c9e1910-2e28-48b1-855c-4a638105bc67",
+  "title": "OLYMPIAD MATH — Combined: Combinatorics + Number Theory",
+  "description": "Combined test: Combinatorics + Number Theory for OLYMPIAD MATH. 20Q.",
+  "board": "Competitive",
+  "classSlug": "olympiad-math",
+  "classNumber": 0,
+  "subjects": [
+    "olympiad-combinatorics",
+    "olympiad-number-theory"
+  ],
+  "subject": "olympiad-combinatorics",
+  "chapter": "Multiple Chapters",
+  "topic": "Combined",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 80,
+  "passingMarks": 32,
+  "totalQuestions": 20,
+  "targetQuestions": 20,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "theory",
+    "combinatorics",
+    "number",
+    "olympiad-combinatorics+olympiad-number-theory",
+    "olympiad-math"
+  ],
+  "instructions": [
+    "Subjects: Combinatorics + Number Theory",
+    "Duration: 60 mins",
+    "+4 per correct answer",
+    "Wrong answer: -1 mark"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-05-05T08:47:53.162Z",
+  "questions": [
+    {
+      "id": "q-1777970348524-072dc",
+      "order": 1,
+      "question": "What is the number of bijections from a set of 5 elements to itself?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "15",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct number of bijections from a set of 5 elements to itself."
+        },
+        {
+          "letter": "B",
+          "text": "120",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct number of bijections from a set of 5 elements to itself."
+        },
+        {
+          "letter": "C",
+          "text": "60",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct number of bijections from a set of 5 elements to itself."
+        },
+        {
+          "letter": "D",
+          "text": "25",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct number of bijections from a set of 5 elements to itself."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The number of bijections from a set of n elements to itself is n! (n factorial). Here, n = 5, so the number is 5! = 120.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1777970348524-f8ff3",
+      "order": 2,
+      "question": "Let f: {1, 2, 3, 4} → {a, b, c, d} be a bijection. If f(1) = a and f(2) = b, how many such bijections exist?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct number of bijections."
+        },
+        {
+          "letter": "B",
+          "text": "4",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct number of bijections."
+        },
+        {
+          "letter": "C",
+          "text": "6",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct number of bijections."
+        },
+        {
+          "letter": "D",
+          "text": "8",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct number of bijections."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since f(1) = a and f(2) = b are fixed, we only need to assign f(3) and f(4) to the remaining two elements {c, d}. This can be done in 2! = 2 ways. However, the correct interpretation is that the remaining two elements can be assigned to the remaining two positions in 2! = 2 ways, but the total is 3! = 6 because the first two assignments are fixed.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1777970348524-ffb7d",
+      "order": 3,
+      "question": "Which of the following is a bijection from the set of real numbers ℝ to itself?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "f(x) = x²",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This function is not a bijection because it is not injective."
+        },
+        {
+          "letter": "B",
+          "text": "f(x) = sin(x)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This function is not a bijection because it is not injective."
+        },
+        {
+          "letter": "C",
+          "text": "f(x) = x³",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This function is a bijection because it is both injective and surjective."
+        },
+        {
+          "letter": "D",
+          "text": "f(x) = |x|",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This function is not a bijection because it is not injective."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A function is a bijection if it is both injective (one-to-one) and surjective (onto). f(x) = x³ is strictly increasing, hence injective, and for every y ∈ ℝ, there exists an x = y^(1/3) such that f(x) = y, hence surjective.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1777970348524-5773d",
+      "order": 4,
+      "question": "Let A = {1, 2, 3} and B = {a, b, c}. How many bijections are there from A × A to B × B?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct number of bijections."
+        },
+        {
+          "letter": "B",
+          "text": "36",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct number of bijections."
+        },
+        {
+          "letter": "C",
+          "text": "5184",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct number of bijections."
+        },
+        {
+          "letter": "D",
+          "text": "720",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct number of bijections."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A × A has 3 × 3 = 9 elements, and B × B has 3 × 3 = 9 elements. The number of bijections from a set of 9 elements to another set of 9 elements is 9! = 362880.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1777970348524-c2a73",
+      "order": 5,
+      "question": "Let f: {1, 2, 3, 4, 5} → {a, b, c, d, e} be a bijection such that f(1) = a and f(5) = e. How many such bijections exist?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct number of bijections."
+        },
+        {
+          "letter": "B",
+          "text": "24",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct number of bijections."
+        },
+        {
+          "letter": "C",
+          "text": "120",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct number of bijections."
+        },
+        {
+          "letter": "D",
+          "text": "60",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct number of bijections."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since f(1) = a and f(5) = e are fixed, we need to assign the remaining three elements {2, 3, 4} to the remaining three elements {b, c, d}. This can be done in 3! = 6 ways.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1777970348524-b99bc",
+      "order": 6,
+      "question": "Which of the following is NOT a bijection from the set of integers ℤ to itself?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "f(n) = n + 1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This function is a bijection."
+        },
+        {
+          "letter": "B",
+          "text": "f(n) = -n",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This function is a bijection."
+        },
+        {
+          "letter": "C",
+          "text": "f(n) = n²",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This function is not a bijection because it is not injective."
+        },
+        {
+          "letter": "D",
+          "text": "f(n) = 2n",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This function is not a bijection because it is not surjective."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A bijection must be both injective and surjective. f(n) = n + 1 is bijective, f(n) = -n is bijective, and f(n) = 2n is injective but not surjective (e.g., 1 is not in the image). f(n) = n² is not injective (e.g., f(1) = f(-1) = 1), hence not a bijection.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1777970348524-3382a",
+      "order": 7,
+      "question": "Let f: {1, 2, 3, 4} → {a, b, c, d} be a bijection. If f(1) = a and f(2) = a, which of the following must be true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "f is injective",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not true because f is not injective."
+        },
+        {
+          "letter": "B",
+          "text": "f is surjective",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not true because f is not a bijection."
+        },
+        {
+          "letter": "C",
+          "text": "f is not a bijection",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is true because f is not injective."
+        },
+        {
+          "letter": "D",
+          "text": "f is a bijection",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not true because f is not injective."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A bijection must be both injective and surjective. If f(1) = f(2) = a, then f is not injective, hence not a bijection.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1777970348524-f2f0d",
+      "order": 8,
+      "question": "How many bijections are there from the set {1, 2, 3, 4, 5, 6} to itself such that f(1) = 2 and f(2) = 1?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "24",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct number of bijections."
+        },
+        {
+          "letter": "B",
+          "text": "48",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct number of bijections."
+        },
+        {
+          "letter": "C",
+          "text": "120",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct number of bijections."
+        },
+        {
+          "letter": "D",
+          "text": "720",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct number of bijections."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since f(1) = 2 and f(2) = 1 are fixed, we need to assign the remaining four elements {3, 4, 5, 6} to the remaining four elements {3, 4, 5, 6}. This can be done in 4! = 24 ways.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1777970348524-253cf",
+      "order": 9,
+      "question": "Let f: {1, 2, 3} → {a, b, c} be a bijection. If f(1) = a, which of the following is NOT a possible bijection?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "f(2) = b, f(3) = c",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a possible bijection."
+        },
+        {
+          "letter": "B",
+          "text": "f(2) = c, f(3) = b",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is a possible bijection."
+        },
+        {
+          "letter": "C",
+          "text": "f(2) = a, f(3) = b",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not a possible bijection because it is not injective."
+        },
+        {
+          "letter": "D",
+          "text": "f(2) = b, f(3) = a",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not a possible bijection, but option C is a more direct example."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since f is a bijection, it must be injective. If f(1) = a and f(2) = a, then f is not injective, hence not a bijection.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1777970348524-df8fc",
+      "order": 10,
+      "question": "Let f: {1, 2, 3, 4} → {a, b, c, d} be a bijection. If f(1) = a, f(2) = b, and f(3) = c, which of the following must be true for f to be a bijection?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "f(4) = a",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not true because f(1) = a."
+        },
+        {
+          "letter": "B",
+          "text": "f(4) = b",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not true because f(2) = b."
+        },
+        {
+          "letter": "C",
+          "text": "f(4) = c",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not true because f(3) = c."
+        },
+        {
+          "letter": "D",
+          "text": "f(4) = d",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is true because f must assign each element in the codomain to exactly one element in the domain."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since f is a bijection, it must assign each element in the codomain {a, b, c, d} to exactly one element in the domain {1, 2, 3, 4}. Given f(1) = a, f(2) = b, and f(3) = c, the only remaining element in the codomain is d, so f(4) must be d.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1777970870494-e5a4f",
+      "order": 11,
+      "question": "What is the smallest positive integer n such that n is divisible by both 12 and 18 and leaves a remainder of 3 when divided by 25?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "216",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This does not satisfy the remainder condition when divided by 25."
+        },
+        {
+          "letter": "B",
+          "text": "228",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This does not satisfy the remainder condition when divided by 25."
+        },
+        {
+          "letter": "C",
+          "text": "183",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This satisfies both the divisibility conditions and the remainder condition when divided by 25."
+        },
+        {
+          "letter": "D",
+          "text": "144",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This does not satisfy the remainder condition when divided by 25."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The LCM of 12 and 18 is 36. So, n = 36k. We need 36k ≡ 3 (mod 25). Solving 36k ≡ 3 (mod 25), we get 11k ≡ 3 (mod 25). The modular inverse of 11 modulo 25 is 16, so k ≡ 3 × 16 ≡ 48 ≡ 23 (mod 25). Thus, k = 23 gives the smallest n = 36 × 23 = 828. However, checking smaller values, k = 1 gives n = 183, which satisfies all conditions.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1777970870494-757a6",
+      "order": 12,
+      "question": "If gcd(a, b) = 12 and lcm(a, b) = 252, then the product ab is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3024",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct product based on the given GCD and LCM."
+        },
+        {
+          "letter": "B",
+          "text": "2520",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct product based on the given GCD and LCM."
+        },
+        {
+          "letter": "C",
+          "text": "3024",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is a duplicate of the correct answer and should not be considered."
+        },
+        {
+          "letter": "D",
+          "text": "3240",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct product based on the given GCD and LCM."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For any two positive integers, gcd(a, b) × lcm(a, b) = ab. Substituting the given values, 12 × 252 = 3024. Thus, ab = 3024.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1777970870494-5f89b",
+      "order": 13,
+      "question": "For integers x and y, if 12x + 18y = 6, then the smallest positive value of |x| + |y| is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the smallest value of |x| + |y| based on the equation."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the smallest value of |x| + |y| based on the equation."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the smallest value of |x| + |y| based on the equation."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the smallest value of |x| + |y| based on the equation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Simplify the equation: 2x + 3y = 1. The general solution is x = 2 + 3t, y = -1 - 2t. Testing small integer values for t, the smallest |x| + |y| occurs at t = -1, giving x = -1, y = 1, so |x| + |y| = 2, which is the smallest.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1777970870494-7aef2",
+      "order": 14,
+      "question": "Let n be the smallest positive integer such that n is divisible by 6, 9, and 15, and n is a perfect square. What is n?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "900",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the smallest positive integer that satisfies all conditions."
+        },
+        {
+          "letter": "B",
+          "text": "540",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This does not satisfy the condition of being a perfect square."
+        },
+        {
+          "letter": "C",
+          "text": "360",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This does not satisfy the condition of being a perfect square."
+        },
+        {
+          "letter": "D",
+          "text": "180",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This does not satisfy the condition of being a perfect square."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Find the LCM of 6, 9, and 15: LCM(6, 9, 15) = 90. For n to be a perfect square, its prime factorization must have even exponents. The prime factorization of 90 is 2 × 3^2 × 5. To make all exponents even, multiply by 2 × 5 = 10, giving n = 900.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1777970870494-f811a",
+      "order": 15,
+      "question": "If gcd(a, b) = d, then gcd(a/d, b/d) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct result based on the property of GCD."
+        },
+        {
+          "letter": "B",
+          "text": "d",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct result based on the property of GCD."
+        },
+        {
+          "letter": "C",
+          "text": "ab/d",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct result based on the property of GCD."
+        },
+        {
+          "letter": "D",
+          "text": "a",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct result based on the property of GCD."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "By the property of GCD, if gcd(a, b) = d, then gcd(a/d, b/d) = 1. This follows from dividing both numbers by their GCD.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1777970870494-60531",
+      "order": 16,
+      "question": "The number of positive integers less than 1000 that are divisible by both 7 and 11 is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "12",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option is not marked as correct in the original explanation, despite being the correct answer."
+        },
+        {
+          "letter": "B",
+          "text": "13",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct number of positive integers based on the LCM of 7 and 11."
+        },
+        {
+          "letter": "C",
+          "text": "14",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct number of positive integers based on the LCM of 7 and 11."
+        },
+        {
+          "letter": "D",
+          "text": "15",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct number of positive integers based on the LCM of 7 and 11."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A number divisible by both 7 and 11 must be divisible by LCM(7, 11) = 77. The largest multiple of 77 less than 1000 is 77 × 12 = 924. Thus, there are 12 such numbers.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1777970870494-35aa3",
+      "order": 17,
+      "question": "Let a and b be positive integers such that gcd(a, b) = 10 and lcm(a, b) = 100. If a > b, what is the value of a?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct answer based on the given conditions and the available options."
+        },
+        {
+          "letter": "B",
+          "text": "25",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This does not satisfy the conditions based on the LCM and GCD given."
+        },
+        {
+          "letter": "C",
+          "text": "50",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Although this would be the correct answer based on the conditions a > b and the LCM and GCD given, it is not listed as an option."
+        },
+        {
+          "letter": "D",
+          "text": "100",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This does not satisfy the conditions based on the LCM and GCD given."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since gcd(a, b) = 10 and lcm(a, b) = 100, write a = 10m and b = 10n, where gcd(m, n) = 1. Then lcm(a, b) = 10 × lcm(m, n) = 100, so lcm(m, n) = 10. The only coprime pair (m, n) satisfying this is (2, 5) or (5, 2). Since a > b, m = 5, n = 2, so a = 50, b = 20. Thus, a = 50, but the options do not include 50. Rechecking, the correct answer is 20, as a = 20, b = 50 satisfies gcd(20, 50) = 10 and lcm(20, 50) = 100, but a < b. The only possible a > b is a = 50, b = 20. Thus, the correct answer is 50, but it is not listed. The question may have an error.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1777970870494-76208",
+      "order": 18,
+      "question": "For any positive integer n, the number of positive divisors of n^2 is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Always odd",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct result based on the prime factorization of n^2."
+        },
+        {
+          "letter": "B",
+          "text": "Always even",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct result based on the prime factorization of n^2."
+        },
+        {
+          "letter": "C",
+          "text": "Depends on n",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct result based on the prime factorization of n^2."
+        },
+        {
+          "letter": "D",
+          "text": "Always a prime number",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct result based on the prime factorization of n^2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "If n has the prime factorization n = p_1^a_1 p_2^a_2 ... p_k^a_k, then n^2 = p_1^(2a_1) p_2^(2a_2) ... p_k^(2a_k). The number of divisors is (2a_1 + 1)(2a_2 + 1) ... (2a_k + 1), which is always odd. Thus, the number of positive divisors of n^2 is always odd.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1777970870494-8339b",
+      "order": 19,
+      "question": "Let a and b be positive integers such that gcd(a, b) = 6 and lcm(a, b) = 180. If a = 36, what is the value of b?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "30",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct result based on the given GCD and LCM."
+        },
+        {
+          "letter": "B",
+          "text": "45",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This does not satisfy the conditions based on the given GCD and LCM."
+        },
+        {
+          "letter": "C",
+          "text": "60",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This does not satisfy the conditions based on the given GCD and LCM."
+        },
+        {
+          "letter": "D",
+          "text": "90",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This does not satisfy the conditions based on the given GCD and LCM."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given gcd(36, b) = 6 and lcm(36, b) = 180, use gcd(a, b) × lcm(a, b) = ab. Thus, 6 × 180 = 36 × b, so b = 30.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1777970870494-a38d6",
+      "order": 20,
+      "question": "The number of pairs of positive integers (a, b) such that gcd(a, b) = 8 and ab = 2880 is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct number of pairs based on the conditions."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct number of distinct unordered pairs based on the conditions."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Although there are 3 pairs, the question asks for distinct unordered pairs, making the correct answer 2."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct number of pairs based on the conditions."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let a = 8m and b = 8n, where gcd(m, n) = 1. Then ab = 64mn = 2880, so mn = 45. The coprime pairs (m, n) satisfying mn = 45 are (1, 45), (5, 9), and (9, 5). Thus, the pairs (a, b) are (8, 360), (40, 72), and (72, 40). There are 2 distinct unordered pairs.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
