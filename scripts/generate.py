@@ -15,23 +15,37 @@ COMPETITIVE EXAMS (type = competitive):
   combined     -> 2-3 subjects, combinedTestQPerSubject each (50% chance).
 
 Run loop (per GitHub Actions invocation):
-  - Generates up to MAX_TESTS_PER_RUN tests per run.
-  - Stops early when ALL Gemini keys return quota errors (AllKeysExhausted).
-  - Each test is saved immediately when generated, even if partial.
-  - Partial tests (fewer Q than target) are saved with actual count.
-  - Topic is only marked used AFTER successful save.
-  - Always exits 0 so git commit step runs and saves partial content.
+  PHASE 1 — Resume pending drafts from previous runs:
+    For each pending draft:
+      → Try to complete it (resume generation)
+      → If complete: publish to CDN + MongoDB, delete draft ✅
+      → If still partial: save updated draft, STOP the run entirely
+        (quota likely exhausted — no point starting new tests)
+      → If quota exhausted: save progress, STOP
 
-Mode decision:
-  Priority 1: GENERATE_MODE env var (full or subject)
-  Priority 2: UTC hour -- 00:xx = full, all others = subject
+  PHASE 2 — Generate up to MAX_TESTS_PER_RUN new tests:
+    (Only runs if Phase 1 left zero pending drafts)
+    For each test slot (up to 3):
+      → Generate the test
+      → If partial (quota hit mid-generation):
+          Immediately try to resume/complete it in the SAME run
+          If still partial after resume: save draft, STOP (no more new tests)
+          If complete after resume: publish ✅, continue to next slot
+      → If complete on first try: publish ✅, continue to next slot
+      → If quota exhausted: STOP (no more new tests)
+      → If non-quota failure: skip this slot, try next
 
-API keys (5 total -- exact GitHub secret names):
+  Key guarantee: a partial test is ALWAYS attempted for completion
+  before the run ends. Only if quota is truly exhausted does it
+  get saved as a draft for the next run.
+
+API keys:
   GEMINI_API_KEY    -> Flash K1  (researcher + gen fallback)
   GEMINI_API_KEY_1  -> Flash K2  (researcher fallback + gen fallback)
   GEMINI_API_KEY2   -> Flash K3  (primary question generator, round-robin)
   GROQ_API_KEY      -> Groq K1   (primary structurer)
   GROQ_API_KEY2     -> Groq K2   (fallback structurer)
+  MISTRAL_API_KEY   -> Mistral   (4th gen fallback + 3rd structurer, optional)
 """
 import os, sys, traceback, random
 from datetime import datetime, timezone
@@ -44,8 +58,8 @@ import draft_store
 from gemini_client import GeminiError, GeminiQuotaError
 from groq_client   import GroqError
 
-# How many tests to attempt per GitHub Actions run.
-# 4 runs/day x 3 tests = 12 tests/day -- well within free-tier limits.
+# How many new tests to attempt per run (when no drafts are pending).
+# 4 runs/day × 3 tests = 12 new tests/day — well within free-tier limits.
 MAX_TESTS_PER_RUN = 3
 
 
@@ -296,15 +310,56 @@ def _print_final_report(generated, failed):
     print("  RUN COMPLETE")
     print("  Published  : " + str(len(generated)) + " test(s)")
     print("  Failed     : " + str(failed) + " test(s)")
-    print("  Drafts left: " + str(len(pending)) + " (will resume next run)")
+    print("  Drafts left: " + str(len(pending)))
     for e in generated:
         q   = e["totalQuestions"]
         tgt = e.get("targetQuestions", q)
         print("    ✅ " + e["title"] + " [" + str(q) + "Q]")
     if pending:
+        print("  ⏳ Pending (will resume next run):")
         for d in pending:
-            print("    ⏳ " + d["title"] + " [" + str(d["collected_q"]) + "/" + str(d["target_q"]) + "Q draft]")
+            pct = int(d["collected_q"] / d["target_q"] * 100) if d["target_q"] else 0
+            print("    • " + d["title"] + " [" + str(d["collected_q"]) + "/" + str(d["target_q"]) + "Q  " + str(pct) + "%]")
     print(eq + "\n")
+
+
+def _try_complete(entry, label):
+    """
+    If entry is partial (totalQ < targetQ), immediately try to resume it
+    in the same run. Returns the (possibly updated) entry.
+    Raises AllKeysExhausted if quota is gone.
+    """
+    q   = entry.get("totalQuestions", 0)
+    tgt = entry.get("targetQuestions", q)
+    if q >= tgt:
+        return entry   # already complete
+
+    print("\n  ♻️  " + label + " is partial (" + str(q) + "/" + str(tgt) + "Q) — attempting completion now")
+
+    # Find the draft that was just saved for this entry
+    uid = entry.get("id")
+    class_slug = entry.get("classSlug", "")
+    drafts = draft_store.load_all_drafts()
+    draft = next((d for d in drafts if d.get("uid") == uid), None)
+
+    if not draft:
+        print("  ⚠️  Draft not found for uid=" + str(uid) + " — cannot resume inline")
+        return entry
+
+    try:
+        resume_result = content_builder.resume_draft(draft)
+        uid2, path2, completed_entry = resume_result
+        if completed_entry is not None:
+            print("  ✅ Completed inline: " + completed_entry["title"])
+            return completed_entry
+        else:
+            print("  ⏳ Still partial after inline resume — will continue next run")
+            return entry   # return the partial entry (draft already updated)
+    except AllKeysExhausted:
+        raise   # propagate — stops the run loop
+    except Exception as e:
+        print("  ⚠️  Inline resume error (" + str(e) + ") — keeping partial draft")
+        return entry
 
 
 # ---- Main run loop ------------------------------------------------------------
@@ -322,41 +377,40 @@ def run():
     mode        = _get_mode()
     forced_exam = os.environ.get("FORCE_EXAM", "").strip().lower()
     forced_str  = " (forced)" if forced_exam else ""
-    class_slug  = forced_exam if forced_exam else topic_picker.pick_random_exam()
-    topics_data = topic_picker.load_topics(class_slug)
-    exam_type   = (topics_data or {}).get("type", "competitive")
-    type_label  = "School Class" if exam_type == "school" else "Competitive Exam"
-
-    print("\n  Exam: " + class_slug.upper() + forced_str)
-    print("  Type: " + type_label)
-    print("  Mode: " + mode.upper())
-    print("  Max tests this run: " + str(MAX_TESTS_PER_RUN) + "\n")
 
     generated = []
     failed    = 0
 
-    # ── Step 1: Resume any pending drafts first ───────────────────────────────
+    # ══════════════════════════════════════════════════════════════════
+    #  PHASE 1 — Resume pending drafts from previous runs
+    #  Rule: try to complete each draft. If still partial after attempt
+    #  (quota exhausted), stop the run — don't start new tests.
+    # ══════════════════════════════════════════════════════════════════
     pending_drafts = draft_store.load_all_drafts()
+
     if pending_drafts:
-        print("\n  📋 Found " + str(len(pending_drafts)) + " pending draft(s) — resuming first")
+        print("\n  📋 PHASE 1: " + str(len(pending_drafts)) + " pending draft(s) — resuming before new work")
+
         for draft in pending_drafts:
             print("\n" + dq)
             print("  RESUME DRAFT: " + draft["title"])
             print("  Progress: " + str(draft["collected_q"]) + "/" + str(draft["target_q"]) + "Q")
             print(dq)
             try:
-                # resume_draft returns (uid, path, entry) when complete, (None, None, None) when still partial
                 resume_result = content_builder.resume_draft(draft)
                 uid, path, entry = resume_result
                 if entry is not None:
                     generated.append(entry)
                     print("  ✅ Draft completed and published: " + entry["title"])
                 else:
-                    # Still partial — draft file updated on disk, will retry next run
-                    print("  ⏳ Draft still incomplete — will continue next run")
+                    # Still partial — quota exhausted during resume
+                    print("  ⏳ Draft still partial — quota exhausted, stopping run")
+                    print("  ℹ️  No new tests started — will resume this draft next run")
+                    _print_final_report(generated, failed)
+                    sys.exit(0)
+
             except AllKeysExhausted as e:
                 print("\n  🛑 ALL API KEYS EXHAUSTED during draft resume: " + str(e))
-                print("  Draft progress saved. Stopping run.")
                 _print_final_report(generated, failed)
                 sys.exit(0)
             except GeminiQuotaError as e:
@@ -367,31 +421,75 @@ def run():
                 print("  ⚠️  Draft resume error (" + str(e) + ") — skipping this draft")
                 traceback.print_exc()
 
-    # ── Step 2: Generate new tests (up to MAX_TESTS_PER_RUN) ─────────────────
-    slots_remaining = MAX_TESTS_PER_RUN - len(generated)
-    if slots_remaining <= 0:
-        print("\n  Max tests reached from draft resumption — skipping new generation")
-        _print_final_report(generated, failed)
-        sys.exit(0)
+        # If any drafts still remain (e.g. resume errored), don't start new tests
+        still_pending = draft_store.load_all_drafts()
+        if still_pending:
+            print("\n  ⏳ " + str(len(still_pending)) + " draft(s) still pending — no new tests this run")
+            _print_final_report(generated, failed)
+            sys.exit(0)
 
-    for attempt in range(1, slots_remaining + 1):
+        print("\n  ✅ All drafts completed — proceeding to new generation")
+
+    # ══════════════════════════════════════════════════════════════════
+    #  PHASE 2 — Generate new tests (only when draft queue is empty)
+    #
+    #  For each slot (up to MAX_TESTS_PER_RUN):
+    #    1. Generate the test
+    #    2. If partial → immediately try to complete it in this same run
+    #    3. If still partial after inline resume → save draft, STOP
+    #       (quota exhausted — don't start another new test)
+    #    4. If complete → publish, move to next slot
+    #    5. If quota exhausted → STOP
+    #    6. If non-quota failure → skip slot, try next
+    # ══════════════════════════════════════════════════════════════════
+    class_slug  = forced_exam if forced_exam else topic_picker.pick_random_exam()
+    topics_data = topic_picker.load_topics(class_slug)
+    exam_type   = (topics_data or {}).get("type", "competitive")
+    type_label  = "School Class" if exam_type == "school" else "Competitive Exam"
+
+    print("\n  📝 PHASE 2: Generating new tests")
+    print("  Exam: " + class_slug.upper() + forced_str)
+    print("  Type: " + type_label)
+    print("  Mode: " + mode.upper())
+    print("  Target: " + str(MAX_TESTS_PER_RUN) + " test(s) this run\n")
+
+    for attempt in range(1, MAX_TESTS_PER_RUN + 1):
         print("\n" + dq)
-        print("  Test " + str(attempt) + "/" + str(slots_remaining))
+        print("  Test " + str(attempt) + "/" + str(MAX_TESTS_PER_RUN))
         print(dq)
         try:
             entry = run_full(class_slug) if mode == "full" else run_subject(class_slug)
-            if entry:
-                generated.append(entry)
-            else:
+
+            if entry is None:
+                # Non-quota failure (bad topic, API glitch) — try next slot
                 failed += 1
-                print("  ⚠️  Test " + str(attempt) + " failed (non-quota) -- continuing to next")
+                print("  ⚠️  Test " + str(attempt) + " failed (non-quota) — trying next slot")
+                continue
+
+            # Check if partial — if so, try to complete it right now
+            q   = entry.get("totalQuestions", 0)
+            tgt = entry.get("targetQuestions", q)
+            if q < tgt:
+                entry = _try_complete(entry, "Test " + str(attempt))
+                # Re-check after inline resume
+                q2   = entry.get("totalQuestions", 0)
+                tgt2 = entry.get("targetQuestions", q2)
+                if q2 < tgt2:
+                    # Still partial — quota exhausted, stop the run
+                    print("\n  🛑 Test " + str(attempt) + " still partial after resume — stopping run")
+                    print("  ℹ️  Draft saved. No more new tests this run.")
+                    generated.append(entry)   # count the partial as attempted
+                    break
+
+            generated.append(entry)
+
         except AllKeysExhausted as e:
             print("\n  🛑 ALL API KEYS EXHAUSTED: " + str(e))
-            print("  Stopping after " + str(len(generated)) + " test(s) generated.")
+            print("  Stopping after " + str(len(generated)) + " test(s).")
             break
 
     _print_final_report(generated, failed)
-    # Always exit 0 -- git commit step must run to save any partial content / drafts
+    # Always exit 0 — git commit step must run to save any partial content / drafts
     sys.exit(0)
 
 
