@@ -440,6 +440,10 @@ def _generate_one_chunk(prompt, chunk_index):
     except GeminiQuotaError:
         raise   # propagate — all keys exhausted, stop the run
     except GeminiError as e:
+        s = str(e)
+        # If the error message indicates all keys are exhausted, re-raise as quota error
+        if any(x in s.lower() for x in ["exhausted", "all flash keys", "all keys"]):
+            raise GeminiQuotaError(f"All generation keys exhausted: {s}")
         print(f"    [Generate] All keys failed: {e}")
     return ""
 
@@ -488,16 +492,17 @@ def _iterate_to_target(target_count, exam_name, subject_name,
     Iterate 10Q chunks until target_count questions are collected.
     prompt_fn(count, exam_name, subject_name, research_ctx, topic_str, **prompt_kwargs)
 
-    Returns list of raw question dicts — may be fewer than target_count if:
-      - A chunk fails (API glitch, structuring error) → saves what we have
-      - Quota is exhausted → raises GeminiQuotaError immediately
+    Returns (list_of_raw_question_dicts, quota_exhausted: bool).
+      - quota_exhausted=True  → ALL API keys are exhausted; caller must stop the run
+      - quota_exhausted=False → stopped due to API glitch / structuring error (non-fatal)
 
     The caller decides whether the partial result is acceptable.
     """
-    all_qs    = []
-    collected = 0
-    chunk_idx = 0
-    max_chunks = (target_count // CHUNK) + 3
+    all_qs          = []
+    collected       = 0
+    chunk_idx       = 0
+    quota_exhausted = False
+    max_chunks      = (target_count // CHUNK) + 3
 
     total_needed = (target_count + CHUNK - 1) // CHUNK
     print(f"    Target: {target_count}Q in {CHUNK}Q chunks ({total_needed} chunks needed)")
@@ -515,8 +520,9 @@ def _iterate_to_target(target_count, exam_name, subject_name,
         try:
             raw = _generate_one_chunk(prompt, chunk_idx)
         except GeminiQuotaError:
-            # All keys exhausted — save what we have and signal the run loop
-            print(f"    [Generate] Quota exhausted after {collected}Q — saving partial result")
+            # ALL keys exhausted — save what we have and signal the run loop to stop
+            print(f"    [Generate] ⚠️  ALL keys quota-exhausted after {collected}Q — stopping")
+            quota_exhausted = True
             break
 
         if not raw:
@@ -535,8 +541,9 @@ def _iterate_to_target(target_count, exam_name, subject_name,
 
         chunk_idx += 1
 
-    print(f"    Iteration complete: {len(all_qs)}/{target_count}Q collected")
-    return all_qs
+    print(f"    Iteration complete: {len(all_qs)}/{target_count}Q collected"
+          + (" [QUOTA EXHAUSTED]" if quota_exhausted else ""))
+    return all_qs, quota_exhausted
 
 
 # ════════════════════════════════════════════════════════════════════
@@ -591,7 +598,7 @@ def build_school_full_length_test(class_slug):
     )
 
     # Generate 100Q — prompt instructs to spread across all chapters
-    raw_qs = _iterate_to_target(
+    raw_qs, quota_hit = _iterate_to_target(
         total_q, exam_name, subj_name, research, ch_str,
         prompt_fn=_gen_prompt_school_full,
         prompt_kwargs={"class_number": class_number}
@@ -599,6 +606,8 @@ def build_school_full_length_test(class_slug):
 
     # Accept any result with at least 1 question — partial is better than nothing
     if len(raw_qs) < 1:
+        if quota_hit:
+            raise GeminiQuotaError(f"All keys exhausted — zero questions for {class_slug} full-length")
         raise Exception(f"Zero questions generated for {class_slug} full-length")
 
     questions = [
@@ -611,7 +620,8 @@ def build_school_full_length_test(class_slug):
     neg_instr   = f"Wrong answer: -{neg_val} mark" if neg else "No negative marking"
     is_partial  = actual_q < total_q
     if is_partial:
-        print(f"  [Partial] {actual_q}/{total_q}Q — saving draft, will resume next run")
+        status = " [QUOTA EXHAUSTED]" if quota_hit else ""
+        print(f"  [Partial] {actual_q}/{total_q}Q — saving draft, will resume next run{status}")
 
     payload = {
         "id": uid, "title": title,
@@ -659,6 +669,12 @@ def build_school_full_length_test(class_slug):
                 "remaining_q": total_q - actual_q,
             }
         )
+        if quota_hit:
+            # Signal to generate.py that all keys are exhausted — stop the run
+            raise GeminiQuotaError(
+                f"All keys exhausted after {actual_q}/{total_q}Q for {title}. "
+                "Draft saved — will resume next run."
+            )
     else:
         # Complete — save to CDN and publish to MongoDB
         _save_and_publish(path, payload)
@@ -739,15 +755,23 @@ def build_exam_full_length_test(class_slug):
             f"SUBJECT DETAIL:\n{subj_research}"
         ).strip()
 
-        raw_qs = _iterate_to_target(
+        raw_qs, quota_hit = _iterate_to_target(
             q_count, exam_name, subj_name, combined_ctx, ch_str,
             prompt_fn=_gen_prompt_exam_full
         )
         for raw_q in raw_qs[:q_count]:
             idx = len(all_questions)
             all_questions.append(_validate_q(raw_q, idx, mark_val, neg_val, neg, subj_slug))
+        if quota_hit:
+            print(f"  [ExamFull] Quota exhausted after {subj_name} — stopping subject loop")
+            break
 
     if len(all_questions) < 1:
+        if quota_hit:
+            raise GeminiQuotaError(
+                f"All keys exhausted — zero questions for {class_slug} full-length. "
+                "Check API keys and quotas."
+            )
         raise Exception(
             f"Zero questions generated for {class_slug} full-length. "
             "Check API keys and quotas."
@@ -756,7 +780,8 @@ def build_exam_full_length_test(class_slug):
     actual_q  = len(all_questions)
     is_partial = actual_q < total_q
     if is_partial:
-        print(f"  [Partial] {actual_q}/{total_q}Q — saving draft, will resume next run")
+        status = " [QUOTA EXHAUSTED]" if quota_hit else ""
+        print(f"  [Partial] {actual_q}/{total_q}Q — saving draft, will resume next run{status}")
         total_m = round(total_m * actual_q / total_q)
 
     neg_instr = f"Wrong answer: -{neg_val} mark" if neg else "No negative marking"
@@ -812,6 +837,11 @@ def build_exam_full_length_test(class_slug):
                 "exam_research": exam_research,
             }
         )
+        if quota_hit:
+            raise GeminiQuotaError(
+                f"All keys exhausted after {actual_q}/{total_q}Q for {title}. "
+                "Draft saved — will resume next run."
+            )
     else:
         _save_and_publish(path, payload)
 
@@ -900,7 +930,7 @@ def build_subject_test(topic_info, q_count_override=None):
         prompt_fn     = _gen_prompt_exam_subject
         prompt_kwargs = {"cycle": cycle}
 
-    raw_qs = _iterate_to_target(
+    raw_qs, quota_hit = _iterate_to_target(
         q_count, exam_name, subj_name, research,
         f"{chapter} — {topic}",
         prompt_fn=prompt_fn, prompt_kwargs=prompt_kwargs
@@ -908,6 +938,8 @@ def build_subject_test(topic_info, q_count_override=None):
 
     # Accept any result with at least 1 question — partial is better than nothing
     if len(raw_qs) < 1:
+        if quota_hit:
+            raise GeminiQuotaError(f"All keys exhausted — zero questions for {title}")
         raise Exception(f"Zero questions generated for {title}")
 
     questions   = [_validate_q(q, i, mark_val, neg_val, neg, subj_slug) for i, q in enumerate(raw_qs[:q_count])]
@@ -916,7 +948,8 @@ def build_subject_test(topic_info, q_count_override=None):
     total_marks = actual_q * mark_val
     neg_instr   = f"Wrong answer: -{neg_val} mark" if neg else "No negative marking"
     if is_partial:
-        print(f"  [Partial] {actual_q}/{q_count}Q — saving draft, will resume next run")
+        status = " [QUOTA EXHAUSTED]" if quota_hit else ""
+        print(f"  [Partial] {actual_q}/{q_count}Q — saving draft, will resume next run{status}")
 
     payload = {
         "id": uid, "title": title,
@@ -962,6 +995,11 @@ def build_subject_test(topic_info, q_count_override=None):
                 "cycle": cycle,
             }
         )
+        if quota_hit:
+            raise GeminiQuotaError(
+                f"All keys exhausted after {actual_q}/{q_count}Q for {title}. "
+                "Draft saved — will resume next run."
+            )
     else:
         _save_and_publish(path, payload)
 
@@ -1053,7 +1091,7 @@ def build_combined_test(class_slug, subject_topics, q_per_subj_override=None):
             is_school_exam=is_school, class_number=class_number
         )
 
-        raw_qs = _iterate_to_target(
+        raw_qs, quota_hit = _iterate_to_target(
             q_per_subj, exam_name, subj_name, research,
             f"{chapter} — {topic}",
             prompt_fn=prompt_fn, prompt_kwargs=prompt_kwargs
@@ -1061,9 +1099,14 @@ def build_combined_test(class_slug, subject_topics, q_per_subj_override=None):
         for raw_q in raw_qs[:q_per_subj]:
             idx = len(all_questions)
             all_questions.append(_validate_q(raw_q, idx, mark_val, neg_val, neg, subj_slug))
+        if quota_hit:
+            print(f"  [Combined] Quota exhausted after {subj_name} — stopping subject loop")
+            break
 
     # Accept any result with at least 1 question — partial is better than nothing
     if len(all_questions) < 1:
+        if quota_hit:
+            raise GeminiQuotaError(f"All keys exhausted — zero questions for combined test: {title}")
         raise Exception(f"Zero questions generated for combined test: {title}")
 
     actual_q    = len(all_questions)
@@ -1071,7 +1114,8 @@ def build_combined_test(class_slug, subject_topics, q_per_subj_override=None):
     total_marks = actual_q * mark_val
     neg_instr   = f"Wrong answer: -{neg_val} mark" if neg else "No negative marking"
     if is_partial:
-        print(f"  [Partial] {actual_q}/{total_q}Q — saving draft, will resume next run")
+        status = " [QUOTA EXHAUSTED]" if quota_hit else ""
+        print(f"  [Partial] {actual_q}/{total_q}Q — saving draft, will resume next run{status}")
 
     payload = {
         "id": uid, "title": title,
@@ -1127,6 +1171,11 @@ def build_combined_test(class_slug, subject_topics, q_per_subj_override=None):
                 "cycle": cycle,
             }
         )
+        if quota_hit:
+            raise GeminiQuotaError(
+                f"All keys exhausted after {actual_q}/{total_q}Q for {title}. "
+                "Draft saved — will resume next run."
+            )
     else:
         _save_and_publish(path, payload)
 
@@ -1198,7 +1247,8 @@ def resume_draft(draft):
     neg          = cfg.get("negativeMarking", False)
     neg_val      = cfg.get("negativeMarkValue", 0)
 
-    new_qs = []
+    new_qs    = []
+    quota_hit = False   # tracks whether any _iterate_to_target call hit quota
 
     if test_type in ("subject-wise",):
         # ── Resume subject-wise / combined subject ────────────────────────────
@@ -1221,7 +1271,7 @@ def resume_draft(draft):
             prompt_fn     = _gen_prompt_exam_subject
             prompt_kwargs = {"cycle": cycle}
 
-        raw_qs = _iterate_to_target(
+        raw_qs, quota_hit = _iterate_to_target(
             still_needed, exam_name, subj_name, research,
             f"{chapter} — {topic}",
             prompt_fn=prompt_fn, prompt_kwargs=prompt_kwargs
@@ -1240,7 +1290,7 @@ def resume_draft(draft):
         research = _get_school_full_research(
             class_slug, subj_slug, subj_name, ch_str, exam_name, class_number
         )
-        raw_qs = _iterate_to_target(
+        raw_qs, quota_hit = _iterate_to_target(
             still_needed, exam_name, subj_name, research, ch_str,
             prompt_fn=_gen_prompt_school_full,
             prompt_kwargs={"class_number": class_number}
@@ -1253,6 +1303,7 @@ def resume_draft(draft):
         # ── Resume exam full-length — continue from remaining subjects ────────
         remaining_subjects = resume_ctx.get("remaining_subjects", [])
         exam_research      = resume_ctx.get("exam_research", "")
+        quota_hit          = False
 
         for subj in remaining_subjects:
             subj_slug = subj["subjectSlug"]
@@ -1271,13 +1322,16 @@ def resume_draft(draft):
                 f"SUBJECT DETAIL:\n{subj_research}"
             ).strip()
 
-            raw_qs = _iterate_to_target(
+            raw_qs, quota_hit = _iterate_to_target(
                 q_count, exam_name, subj_name, combined_ctx, ch_str,
                 prompt_fn=_gen_prompt_exam_full
             )
             for raw_q in raw_qs[:q_count]:
                 idx = len(existing_qs) + len(new_qs)
                 new_qs.append(_validate_q(raw_q, idx, mark_val, neg_val, neg, subj_slug))
+            if quota_hit:
+                print(f"  [Resume] Quota exhausted after {subj_name} — stopping subject loop")
+                break
 
     elif test_type in ("combined",):
         # ── Resume combined — continue from remaining subjects ────────────────
@@ -1287,6 +1341,7 @@ def resume_draft(draft):
         is_school          = resume_ctx.get("is_school", False)
         class_number       = resume_ctx.get("class_number")
         cycle              = resume_ctx.get("cycle", 1)
+        quota_hit          = False
 
         if is_school:
             prompt_fn     = _gen_prompt_school_subject
@@ -1308,7 +1363,7 @@ def resume_draft(draft):
                 class_slug, subj_slug, subj_name, chapter, exam_name,
                 is_school_exam=is_school, class_number=class_number
             )
-            raw_qs = _iterate_to_target(
+            raw_qs, quota_hit = _iterate_to_target(
                 need, exam_name, subj_name, research,
                 f"{chapter} — {topic}",
                 prompt_fn=prompt_fn, prompt_kwargs=prompt_kwargs
@@ -1316,6 +1371,9 @@ def resume_draft(draft):
             for raw_q in raw_qs[:need]:
                 idx = len(existing_qs) + len(new_qs)
                 new_qs.append(_validate_q(raw_q, idx, mark_val, neg_val, neg, subj_slug))
+            if quota_hit:
+                print(f"  [Resume] Quota exhausted after {subj_name} — stopping subject loop")
+                break
 
     # ── Merge new questions into payload ──────────────────────────────────────
     all_questions = existing_qs + new_qs
@@ -1329,7 +1387,8 @@ def resume_draft(draft):
     payload["totalMarks"]     = total_marks
     payload["passingMarks"]   = round(total_marks * 0.35)
 
-    print(f"\n  [Resume] Now have {actual_q}/{target_q}Q")
+    print(f"\n  [Resume] Now have {actual_q}/{target_q}Q"
+          + (" [QUOTA EXHAUSTED]" if quota_hit else ""))
 
     if is_partial:
         # Still not done — update draft for next run
@@ -1366,6 +1425,12 @@ def resume_draft(draft):
             payload=payload, final_path=final_path,
             resume_context=resume_ctx
         )
+        # If quota was exhausted, signal the run loop to stop
+        if quota_hit:
+            raise GeminiQuotaError(
+                f"All keys exhausted during resume of {title} "
+                f"({actual_q}/{target_q}Q). Draft updated — will resume next run."
+            )
         return None, None, None
 
     # ── Complete! Save to CDN, publish to MongoDB, delete draft ──────────────

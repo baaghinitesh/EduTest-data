@@ -32,20 +32,25 @@ Run loop (per GitHub Actions invocation):
           If still partial after resume: save draft, STOP (no more new tests)
           If complete after resume: publish ✅, continue to next slot
       → If complete on first try: publish ✅, continue to next slot
-      → If quota exhausted: STOP (no more new tests)
+      → If ALL keys exhausted: STOP (no more new tests)
       → If non-quota failure: skip this slot, try next
 
   Key guarantee: a partial test is ALWAYS attempted for completion
-  before the run ends. Only if quota is truly exhausted does it
+  before the run ends. Only if ALL keys are truly exhausted does it
   get saved as a draft for the next run.
 
-API keys:
+API keys (all 6 are tried before giving up):
   GEMINI_API_KEY    -> Flash K1  (researcher + gen fallback)
   GEMINI_API_KEY_1  -> Flash K2  (researcher fallback + gen fallback)
   GEMINI_API_KEY2   -> Flash K3  (primary question generator, round-robin)
   GROQ_API_KEY      -> Groq K1   (primary structurer)
   GROQ_API_KEY2     -> Groq K2   (fallback structurer)
   MISTRAL_API_KEY   -> Mistral   (4th gen fallback + 3rd structurer, optional)
+
+Quota handling:
+  RPM/TPM hit (short wait ≤ 90s) → sleep stated time, retry SAME key
+  RPD/TPD hit (long wait > 90s)  → mark key exhausted, try next key
+  AllKeysExhausted only raised when EVERY key is RPD/TPD-exhausted
 """
 import os, sys, traceback, random
 from datetime import datetime, timezone
@@ -64,7 +69,7 @@ MAX_TESTS_PER_RUN = 3
 
 
 class AllKeysExhausted(Exception):
-    """Raised when every Gemini key has hit its quota. Stops the run loop."""
+    """Raised when every API key (Gemini + Groq + Mistral) is truly exhausted."""
     pass
 
 
@@ -72,13 +77,14 @@ def _safe(label, fn, *args, **kwargs):
     """
     Run fn, return (result, None) or (None, error_str).
     Re-raises AllKeysExhausted so the run loop can stop cleanly.
+    GeminiQuotaError from builders means ALL keys exhausted → stop run.
     """
     try:
         return fn(*args, **kwargs), None
     except AllKeysExhausted:
         raise
     except GeminiQuotaError as e:
-        # All Gemini keys exhausted -- stop the whole run
+        # All Gemini + Mistral keys exhausted — stop the whole run
         raise AllKeysExhausted(str(e))
     except (GeminiError, GroqError) as e:
         msg = "API error: " + str(e)
@@ -109,28 +115,33 @@ def _is_school(class_slug):
 
 def _validate_keys():
     keys = {
-        "GEMINI_API_KEY":   "Flash K1 (researcher + gen fallback)",
-        "GEMINI_API_KEY_1": "Flash K2 (researcher fallback + gen fallback)",
-        "GEMINI_API_KEY2":  "Flash K3 (primary generator)",
-        "GROQ_API_KEY":     "Groq K1 (primary structurer)",
-        "GROQ_API_KEY2":    "Groq K2 (fallback structurer)",
-        "MISTRAL_API_KEY":  "Mistral (4th gen fallback + 3rd structurer)",
+        "GEMINI_API_KEY":   ("Flash K1 (researcher + gen fallback)",   "critical"),
+        "GEMINI_API_KEY_1": ("Flash K2 (researcher fallback + gen)",    "critical"),
+        "GEMINI_API_KEY2":  ("Flash K3 (primary generator)",            "critical"),
+        "GROQ_API_KEY":     ("Groq K1 (primary structurer)",            "critical"),
+        "GROQ_API_KEY2":    ("Groq K2 (fallback structurer)",           "critical"),
+        "MISTRAL_API_KEY":  ("Mistral (gen fallback + structurer)",     "optional"),
     }
-    print("\n  API Keys:")
+    print("\n  API Keys (all 6 tried before giving up):")
     missing_critical = []
-    for env, role in keys.items():
+    total_set = 0
+    for env, (role, importance) in keys.items():
         val = os.environ.get(env, "").strip()
         if val:
+            total_set += 1
             print("    ✅ " + env + " (" + role + ") -- " + str(len(val)) + " chars")
         else:
-            label = "optional" if env == "MISTRAL_API_KEY" else "NOT SET"
-            icon  = "⚠️ " if env == "MISTRAL_API_KEY" else "❌"
-            print("    " + icon + " " + env + " (" + role + ") -- " + label)
-            if env in ("GEMINI_API_KEY2", "GROQ_API_KEY"):
+            if importance == "optional":
+                print("    ⚠️  " + env + " (" + role + ") -- optional, not set")
+            else:
+                print("    ❌ " + env + " (" + role + ") -- NOT SET")
                 missing_critical.append(env)
+    print(f"\n  {total_set}/6 keys configured")
     if missing_critical:
-        print("\n  ⚠️  Critical keys missing: " + str(missing_critical))
-        print("  Generation will attempt fallbacks but may fail.\n")
+        print("  ⚠️  Missing keys: " + str(missing_critical))
+        print("  Generation will attempt fallbacks but may produce fewer questions.\n")
+    else:
+        print("  All keys set — maximum free-tier capacity available.\n")
 
 
 # School subject-wise sizes -- picked randomly each run
@@ -304,6 +315,8 @@ def run_subject(class_slug):
 
 
 def _print_final_report(generated, failed):
+    import gemini_client as _gc
+    import groq_client   as _gq
     eq = chr(61) * 65
     pending = draft_store.load_all_drafts()
     print("\n" + eq)
@@ -320,6 +333,10 @@ def _print_final_report(generated, failed):
         for d in pending:
             pct = int(d["collected_q"] / d["target_q"] * 100) if d["target_q"] else 0
             print("    • " + d["title"] + " [" + str(d["collected_q"]) + "/" + str(d["target_q"]) + "Q  " + str(pct) + "%]")
+    # Show which keys hit their daily limit this run
+    exhausted = list(_gc._rpd_exhausted) + list(_gq._tpd_exhausted)
+    if exhausted:
+        print("  🔑 Keys that hit daily limit this run: " + ", ".join(exhausted))
     print(eq + "\n")
 
 
@@ -338,7 +355,6 @@ def _try_complete(entry, label):
 
     # Find the draft that was just saved for this entry
     uid = entry.get("id")
-    class_slug = entry.get("classSlug", "")
     drafts = draft_store.load_all_drafts()
     draft = next((d for d in drafts if d.get("uid") == uid), None)
 
@@ -355,8 +371,8 @@ def _try_complete(entry, label):
         else:
             print("  ⏳ Still partial after inline resume — will continue next run")
             return entry   # return the partial entry (draft already updated)
-    except AllKeysExhausted:
-        raise   # propagate — stops the run loop
+    except (AllKeysExhausted, GeminiQuotaError) as e:
+        raise AllKeysExhausted(str(e))   # propagate — stops the run loop
     except Exception as e:
         print("  ⚠️  Inline resume error (" + str(e) + ") — keeping partial draft")
         return entry

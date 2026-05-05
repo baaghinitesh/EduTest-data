@@ -10,6 +10,11 @@ Free tier limits:
   TPD: 100,000 tokens/day   ← THIS is the real limit
   TPM: 6,000 tokens/minute
 
+Quota handling:
+  TPM hit (429, wait ≤ 90s) → sleep the stated wait time, retry SAME key
+  TPD hit (429, wait > 90s) → mark key TPD-exhausted, switch to next key
+  A TPD-exhausted key is skipped for the rest of this process run.
+
 Strategy: never send more than ~4,000 tokens per call.
 Raw text for 10 questions ≈ 2,000-3,000 tokens → safe.
 If raw text is too large, split it into 10Q segments first.
@@ -18,15 +23,16 @@ import os, json, re, time
 from groq import Groq
 
 MODEL       = "llama-3.3-70b-versatile"
-MAX_RETRIES = 3
-MIN_GAP     = 3.0   # seconds between calls — stay under 6000 TPM
+MAX_RETRIES = 4    # extra retry to handle short TPM waits
+MIN_GAP     = 3.0  # seconds between calls — stay under 6000 TPM
 
 # ── Exact GitHub secret names ─────────────────────────────────────────────────
 KEY_G1 = "GROQ_API_KEY"   # Groq K1 — primary
 KEY_G2 = "GROQ_API_KEY2"  # Groq K2 — fallback
 
-_clients   = {}
-_last_call = {}
+_clients      = {}
+_last_call    = {}
+_tpd_exhausted: set = set()   # keys that hit daily token limit this run
 
 
 class GroqError(Exception):
@@ -55,7 +61,6 @@ def _extract_json(text):
     """Robustly extract JSON array or object from text."""
     text = re.sub(r"```(?:json)?\s*", "", text)
     text = re.sub(r"```", "", text).strip()
-    # Ensure it starts with [
     if not text.startswith("["):
         idx = text.find("[")
         if idx != -1:
@@ -85,29 +90,38 @@ def _extract_json(text):
 def _parse_wait_seconds(err_str):
     """
     Parse wait time from Groq rate-limit error.
-    Handles both "try again in 45s" and "try again in 1h49m48.864s" formats.
+    Returns (seconds: float, is_tpd: bool).
+    is_tpd=True  → daily token limit hit, switch key immediately.
+    is_tpd=False → per-minute limit, sleep and retry same key.
     """
-    # Try "Xh Ym Zs" format
     m = re.search(r"try again in\s+(?:(\d+)h\s*)?(?:(\d+)m\s*)?(\d+\.?\d*)s",
                   err_str, re.IGNORECASE)
     if m:
-        h = int(m.group(1) or 0)
+        h    = int(m.group(1) or 0)
         mins = int(m.group(2) or 0)
         secs = float(m.group(3) or 0)
         total = h * 3600 + mins * 60 + secs
-        # Cap at 120s — if wait is longer, switch to other key immediately
-        return min(total, 120.0) + 2
-    # Try plain seconds
+        return total, total > 90
     m = re.search(r"try again in (\d+\.?\d*)s", err_str, re.IGNORECASE)
     if m:
-        return min(float(m.group(1)), 120.0) + 2
-    return 45.0  # default
+        secs = float(m.group(1))
+        return secs, secs > 90
+    return 45.0, False   # default: assume short TPM hit
 
 
 def _call_one(key_env, system_prompt, user_prompt, max_tokens):
-    """Call one Groq key with retry. Returns text or raises GroqError."""
+    """
+    Call one Groq key with retry.
+    - TPM hit (short wait) → sleep stated time, retry same key
+    - TPD hit (long wait)  → mark exhausted, raise GroqError immediately
+    Returns text or raises GroqError.
+    """
+    if key_env in _tpd_exhausted:
+        raise GroqError(f"{key_env} already TPD-exhausted this run")
+
     client   = _get_client(key_env)
     last_err = None
+
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             _rate_limit(key_env)
@@ -131,18 +145,25 @@ def _call_one(key_env, system_prompt, user_prompt, max_tokens):
             last_err = e
             s = str(e)
             print(f"  [Groq/{key_env}] attempt {attempt}/{MAX_RETRIES}: {s[:150]}")
+
             if "413" in s:
                 raise GroqError("Prompt too large (413) — chunk smaller")
+
             if "429" in s or "rate_limit" in s.lower():
-                wait = _parse_wait_seconds(s)
-                # If wait > 90s, this key is exhausted for the day — switch immediately
-                if wait > 90:
-                    raise GroqError(f"TPD exhausted on {key_env} — switching key")
-                print(f"  [Groq/{key_env}] rate limited — sleeping {wait:.0f}s")
+                wait, is_tpd = _parse_wait_seconds(s)
+                if is_tpd:
+                    _tpd_exhausted.add(key_env)
+                    print(f"  [Groq/{key_env}] TPD exhausted — marking as done for this run")
+                    raise GroqError(f"TPD exhausted on {key_env}")
+                # TPM hit — sleep and retry same key
+                wait = min(wait, 65.0)
+                print(f"  [Groq/{key_env}] TPM hit — sleeping {wait:.0f}s then retrying")
                 time.sleep(wait)
                 continue
+
             if attempt < MAX_RETRIES:
                 time.sleep(4 * attempt)
+
     raise GroqError(f"Groq/{key_env} failed after {MAX_RETRIES} attempts: {last_err}")
 
 
@@ -157,7 +178,8 @@ def _sys(exam_name, subject_name=""):
 
 
 def _key_available(key_env):
-    return bool(os.environ.get(key_env, "").strip())
+    """Key is available if set AND not TPD-exhausted this run."""
+    return bool(os.environ.get(key_env, "").strip()) and key_env not in _tpd_exhausted
 
 
 # ── Compact schema (fewer tokens) ─────────────────────────────────────────────
@@ -198,18 +220,18 @@ def _split_raw_text(raw_text, questions_per_chunk=10):
     Split raw numbered question text into chunks of N questions each.
     Splits on question number boundaries like '1.' '2.' etc.
     """
-    # Find all question start positions
     pattern = re.compile(r'(?:^|\n)\s*(\d+)\s*[.)]\s', re.MULTILINE)
     matches = list(pattern.finditer(raw_text))
 
     if len(matches) < 2:
-        # Can't split — return as single chunk
         return [raw_text]
 
     chunks = []
     for i in range(0, len(matches), questions_per_chunk):
         start = matches[i].start()
-        end   = matches[i + questions_per_chunk].start() if (i + questions_per_chunk) < len(matches) else len(raw_text)
+        end   = (matches[i + questions_per_chunk].start()
+                 if (i + questions_per_chunk) < len(matches)
+                 else len(raw_text))
         chunk = raw_text[start:end].strip()
         if chunk:
             chunks.append(chunk)
@@ -221,10 +243,15 @@ def _split_raw_text(raw_text, questions_per_chunk=10):
 def format_questions(raw_text, schema_example, exam_name, subject_name=""):
     """
     Structure raw question text into JSON array.
-    - Splits raw text into ≤10Q chunks to stay under token limits
-    - GROQ_API_KEY → GROQ_API_KEY2 → raises GroqError (caller falls back to Flash)
+
+    Per chunk:
+      1. Try Groq K1 (with TPM-wait retry)
+      2. Try Groq K2 (with TPM-wait retry)
+      3. Try Mistral (separate quota)
+      4. Skip chunk (caller falls back to Flash structurer)
+
+    Raises GroqError only if ALL chunks fail on ALL keys.
     """
-    # Split into manageable chunks
     chunks = _split_raw_text(raw_text, questions_per_chunk=10)
     print(f"  [Groq] Structuring {len(chunks)} chunk(s)...")
 
@@ -232,8 +259,13 @@ def format_questions(raw_text, schema_example, exam_name, subject_name=""):
 
     for chunk_idx, chunk in enumerate(chunks, 1):
         chunk_done = False
+
+        # ── Try both Groq keys ────────────────────────────────────────────────
         for key_env in [KEY_G1, KEY_G2]:
-            if not _key_available(key_env):
+            if not os.environ.get(key_env, "").strip():
+                continue
+            if key_env in _tpd_exhausted:
+                print(f"  [Groq] {key_env} TPD-exhausted — skipping for chunk {chunk_idx}")
                 continue
             try:
                 qs = _structure_chunk(chunk, exam_name, subject_name, key_env)
@@ -244,29 +276,37 @@ def format_questions(raw_text, schema_example, exam_name, subject_name=""):
             except GroqError as e:
                 err = str(e)
                 if "413" in err or "too large" in err.lower():
-                    # This chunk is still too big — skip it, don't retry
                     print(f"  [Groq] chunk {chunk_idx} too large even after split — skipping")
                     chunk_done = True
                     break
                 print(f"  [Groq] {key_env} failed on chunk {chunk_idx} ({err[:80]}) — trying next key")
 
+        # ── Mistral fallback for this chunk ───────────────────────────────────
         if not chunk_done:
-            # Both Groq keys failed — try Mistral before giving up on this chunk
             try:
                 import mistral_client
                 if mistral_client.available():
-                    qs = mistral_client.structure_questions(chunk, exam_name, subject_name, _COMPACT_SCHEMA)
+                    qs = mistral_client.structure_questions(
+                        chunk, _COMPACT_SCHEMA, exam_name, subject_name
+                    )
                     if qs:
                         all_questions.extend(qs)
-                        print(f"  [Groq] ✅ chunk {chunk_idx}/{len(chunks)} — {len(qs)}Q via Mistral fallback")
+                        print(f"  [Groq] ✅ chunk {chunk_idx}/{len(chunks)} — {len(qs)}Q via Mistral")
                         chunk_done = True
             except Exception as e:
-                print(f"  [Groq] Mistral fallback also failed for chunk {chunk_idx} ({str(e)[:60]})")
+                print(f"  [Groq] Mistral fallback failed for chunk {chunk_idx} ({str(e)[:60]})")
 
         if not chunk_done:
             print(f"  [Groq] chunk {chunk_idx} failed on all keys — skipping")
 
     if not all_questions:
-        raise GroqError("All chunks failed on all Groq keys")
+        raise GroqError("All chunks failed on all Groq keys + Mistral")
 
     return all_questions
+
+
+def all_groq_exhausted():
+    """True if every configured Groq key is TPD-exhausted."""
+    keys = [KEY_G1, KEY_G2]
+    configured = [k for k in keys if os.environ.get(k, "").strip()]
+    return bool(configured) and all(k in _tpd_exhausted for k in configured)
