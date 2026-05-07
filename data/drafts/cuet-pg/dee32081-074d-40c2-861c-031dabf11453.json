@@ -4,7 +4,7 @@
   "class_slug": "cuet-pg",
   "test_type": "combined",
   "target_q": 60,
-  "collected_q": 30,
+  "collected_q": 42,
   "final_path": "data/admin/cuet-pg/tests/cuet-pg-combined-language-comprehension-core-subject-dee32081.json",
   "payload": {
     "id": "dee32081-074d-40c2-861c-031dabf11453",
@@ -22,9 +22,9 @@
     "topic": "Combined",
     "testType": "subject-wise",
     "duration": 90,
-    "totalMarks": 120,
-    "passingMarks": 42,
-    "totalQuestions": 30,
+    "totalMarks": 168,
+    "passingMarks": 59,
+    "totalQuestions": 42,
     "targetQuestions": 60,
     "isPublic": true,
     "isPublished": true,
@@ -1580,6 +1580,618 @@
         "subject": "cuet-pg-language",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1778127323918-f946d",
+        "order": 31,
+        "question": "A monatomic ideal gas undergoes a reversible isothermal expansion from an initial volume V1 to a final volume V2 = 2V1 at a constant temperature T. If the initial pressure is P1, what is the work done by the gas during this process?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "-P1V1",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect because work done by the gas in an expansion is positive."
+          },
+          {
+            "letter": "B",
+            "text": "P1V1 ln(2)",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct because it matches the formula W = P1V1 ln(V2/V1) with V2 = 2V1."
+          },
+          {
+            "letter": "C",
+            "text": "-P1V1 ln(2)",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect because work done by the gas in an expansion is positive, not negative."
+          },
+          {
+            "letter": "D",
+            "text": "2P1V1",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect because it does not match the formula for work done in a reversible isothermal expansion."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For a reversible isothermal expansion of an ideal gas, the work done by the gas is given by W = nRT ln(V2/V1). Using the ideal gas law, P1V1 = nRT. Given V2 = 2V1, we have: W = P1V1 ln(2V1/V1) = P1V1 ln(2).",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778127323918-754ae",
+        "order": 32,
+        "question": "A long solenoid has 2000 turns per meter and carries a current of 2.0 A. An electron moves inside the solenoid with a speed of 4.0 x 10^5 m/s perpendicular to the solenoid's axis. Calculate the magnitude of the magnetic force experienced by the electron.",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "3.2 x 10^-14 N",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Correct calculation of magnetic force using F = qvB sin(θ)."
+          },
+          {
+            "letter": "B",
+            "text": "3.2 x 10^-15 N",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "C",
+            "text": "1.6 x 10^-14 N",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "D",
+            "text": "1.6 x 10^-13 N",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The magnetic field inside a solenoid is given by B = μ0nI, where n is the number of turns per meter and I is the current. The magnetic force on a moving charge is given by F = qvB sin(θ), where q is the charge, v is the velocity, B is the magnetic field, and θ is the angle between the velocity and the magnetic field. Since the electron moves perpendicular to the solenoid's axis, θ = 90 degrees and sin(θ) = 1.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "hard",
+        "hasError": false
+      },
+      {
+        "id": "q-1778127323918-18448",
+        "order": 33,
+        "question": "A Carnot engine operates between a heat source at 500 K and a heat sink at 300 K. If the engine absorbs 1000 J of heat from the source in each cycle, what is the work done by the engine per cycle?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "200 J",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect, as the efficiency is 0.4 and the heat absorbed is 1000 J."
+          },
+          {
+            "letter": "B",
+            "text": "300 J",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect, as the efficiency is 0.4 and the heat absorbed is 1000 J."
+          },
+          {
+            "letter": "C",
+            "text": "400 J",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct, as the efficiency is 0.4 and the heat absorbed is 1000 J."
+          },
+          {
+            "letter": "D",
+            "text": "600 J",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect, as the efficiency is 0.4 and the heat absorbed is 1000 J."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The efficiency of a Carnot engine is given by η = 1 - (T_c / T_h), where T_c is the temperature of the cold reservoir and T_h is the temperature of the hot reservoir. Therefore, η = 1 - (300 K / 500 K) = 1 - 0.6 = 0.4. The work done per cycle is given by W = η * Q, where Q is the heat absorbed from the source. So, W = 0.4 * 1000 J = 400 J.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778127323918-baaa5",
+        "order": 34,
+        "question": "What is the coefficient of performance (COP) for an ideal Carnot refrigerator operating between a cold reservoir at -13°C and a hot reservoir at 27°C?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "6.0",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because the calculated COP is 6.5, not 6.0."
+          },
+          {
+            "letter": "B",
+            "text": "6.5",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This option is correct because the calculated COP using the formula K = T_c / (T_h - T_c) is indeed 6.5."
+          },
+          {
+            "letter": "C",
+            "text": "7.0",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because the calculated COP is 6.5, not 7.0."
+          },
+          {
+            "letter": "D",
+            "text": "7.5",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because the calculated COP is 6.5, not 7.5."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The coefficient of performance (COP) for an ideal Carnot refrigerator is given by the formula K = T_c / (T_h - T_c), where T_c is the temperature of the cold reservoir and T_h is the temperature of the hot reservoir. First, convert the temperatures to Kelvin: T_c = -13°C + 273.15 = 260.15K, T_h = 27°C + 273.15 = 300.15K. Then, calculate the COP: K = 260.15K / (300.15K - 260.15K) = 260.15K / 40K = 6.5",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1778127323918-a056a",
+        "order": 35,
+        "question": "A heat engine operates between a source at 500 K and a sink at 300 K. It absorbs 1000 J of heat from the source in each cycle. If the engine's actual efficiency is 60% of the Carnot efficiency, how much work does the engine perform per cycle?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "400 J",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is incorrect because it assumes 100% of Carnot efficiency, which is not the case."
+          },
+          {
+            "letter": "B",
+            "text": "240 J",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is correct as it matches the calculated work done per cycle."
+          },
+          {
+            "letter": "C",
+            "text": "120 J",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is incorrect as it represents 50% of the Carnot efficiency, not 60%."
+          },
+          {
+            "letter": "D",
+            "text": "600 J",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is incorrect as it represents 60% of the total heat absorbed, not the work done."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "First, calculate the Carnot efficiency (η_C): η_C = 1 - (T_sink / T_source) = 1 - (300 K / 500 K) = 1 - 0.6 = 0.4 (or 40%). The actual efficiency is 60% of the Carnot efficiency, so η_actual = 0.6 * 0.4 = 0.24 (or 24%). Work done (W) = η_actual * Q_in = 0.24 * 1000 J = 240 J.",
+        "hint": "Use the Carnot efficiency formula first, then find the actual efficiency, and finally calculate the work done.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778127323918-0b1e7",
+        "order": 36,
+        "question": "Which of the following processes involves no heat exchange between the system and its surroundings?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Isobaric process",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Isobaric process involves constant pressure, but it can have heat exchange."
+          },
+          {
+            "letter": "B",
+            "text": "Isothermal process",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Isothermal process involves constant temperature, and it can have heat exchange to maintain the constant temperature."
+          },
+          {
+            "letter": "C",
+            "text": "Adiabatic process",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "An adiabatic process is defined as a thermodynamic process in which there is no heat transfer (Q=0) into or out of the system."
+          },
+          {
+            "letter": "D",
+            "text": "Isochoric process",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Isochoric process involves constant volume, but it can have heat exchange."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "An adiabatic process is defined as a thermodynamic process in which there is no heat transfer (Q=0) into or out of the system.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1778127323918-7b617",
+        "order": 37,
+        "question": "A Carnot engine operates between two reservoirs at temperatures of 600 K and 300 K. If the engine absorbs 1200 J of heat from the high-temperature reservoir in one cycle, what is the work done by the engine in that cycle?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "300 J",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect. The efficiency calculation shows the work done should be higher than 300 J."
+          },
+          {
+            "letter": "B",
+            "text": "400 J",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect. The efficiency calculation shows the work done should be 600 J."
+          },
+          {
+            "letter": "C",
+            "text": "500 J",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect. The efficiency calculation shows the work done should be 600 J."
+          },
+          {
+            "letter": "D",
+            "text": "600 J",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Correct. The work done by the engine is 600 J, calculated using the Carnot efficiency."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The efficiency of a Carnot engine is given by η = 1 - TC/TH, where TC is the cold reservoir temperature and TH is the hot reservoir temperature. Given TH = 600 K and TC = 300 K, η = 1 - 300/600 = 0.5 (or 50%). The efficiency is also defined as η = W/QH, where W is the work done and QH is the heat absorbed from the hot reservoir. Given QH = 1200 J, W = η × QH = 0.5 × 1200 J = 600 J.",
+        "hint": "Recall the formula for the efficiency of a Carnot engine and its relation to work done and heat absorbed.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1778127323918-9bfc1",
+        "order": 38,
+        "question": "A proton enters a region with a uniform electric field E⃗ = (2 × 10^4 ĵ) N/C and a uniform magnetic field B⃗ = (0.5 k̂) T. If the proton moves undeflected through this region, what must be its velocity vector? (Assume the proton moves in the x-y plane)",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "(4 × 10^4 î) m/s",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Correct. The proton must move with a velocity of (4 × 10^4 î) m/s to remain undeflected."
+          },
+          {
+            "letter": "B",
+            "text": "(4 × 10^4 î) m/s",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Duplicate option. Ignore."
+          },
+          {
+            "letter": "C",
+            "text": "(-4 × 10^4 î) m/s",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect. The direction of the velocity must be positive x-direction to balance the forces."
+          },
+          {
+            "letter": "D",
+            "text": "(4 × 10^4 ĵ) m/s",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect. The velocity cannot have a y-component as it would result in a net force."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For the proton to move undeflected, the net force on it must be zero. This means the electric force FE and the magnetic force FB must be equal in magnitude and opposite in direction. Given E⃗ = (2 × 10^4 ĵ) N/C and B⃗ = (0.5 k̂) T, solving for the velocity vector v⃗ = vx î + vy ĵ, we find that vy = 0 and vx = 4 × 10^4 m/s. Therefore, the velocity must be purely in the x-direction.",
+        "hint": "Consider the conditions for zero net force on the proton involving both electric and magnetic fields.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778127323918-362ac",
+        "order": 39,
+        "question": "Consider an electron confined in a one-dimensional infinite potential well of width L. If the width of the well is instantaneously doubled to 2L, what happens to the expectation value of the electron's momentum in the ground state immediately after the change?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "It doubles.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect. The expectation value of momentum does not change; it remains zero."
+          },
+          {
+            "letter": "B",
+            "text": "It halves.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect. The expectation value of momentum does not change; it remains zero."
+          },
+          {
+            "letter": "C",
+            "text": "It remains unchanged.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect. While the value remains zero, it is more precise to state that it remains zero rather than just 'unchanged'."
+          },
+          {
+            "letter": "D",
+            "text": "It remains zero.",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Correct. The expectation value of momentum for the ground state in an infinite potential well is zero, and it remains zero immediately after the change in well width."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For an electron in a one-dimensional infinite potential well, the expectation value of momentum ⟨p⟩ for any stationary state is zero due to the symmetry of the wave function and the properties of the momentum operator. When the width of the well is instantaneously doubled, the electron is still in the original ground state wave function, which has a symmetric probability distribution. Thus, the expectation value of momentum remains zero immediately after the change.",
+        "hint": "Recall that the expectation value of momentum for a stationary state in an infinite potential well is zero due to symmetry.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "hard",
+        "hasError": false
+      },
+      {
+        "id": "q-1778127323918-40d9c",
+        "order": 40,
+        "question": "A semiconductor material is doped with a pentavalent impurity. Which of the following statements is true regarding this doped semiconductor?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "It becomes a p-type semiconductor with holes as majority carriers.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect. Pentavalent impurities do not create p-type semiconductors."
+          },
+          {
+            "letter": "B",
+            "text": "It becomes a p-type semiconductor with electrons as majority carriers.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect. Pentavalent impurities do not create p-type semiconductors."
+          },
+          {
+            "letter": "C",
+            "text": "It becomes an n-type semiconductor with electrons as majority carriers.",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct. Doping with pentavalent impurities results in an n-type semiconductor with electrons as majority carriers."
+          },
+          {
+            "letter": "D",
+            "text": "It becomes an n-type semiconductor with holes as majority carriers.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect. Doping with pentavalent impurities results in electrons as majority carriers, not holes."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Pentavalent impurities (e.g., Phosphorus, Arsenic) have 5 valence electrons. When such an impurity atom replaces a semiconductor atom (which has 4 valence electrons) in the crystal lattice, 4 of its valence electrons form covalent bonds, and the fifth becomes a free electron. This makes electrons the majority carriers, resulting in an n-type semiconductor.",
+        "hint": "Recall the effect of doping with pentavalent impurities on the majority charge carriers in a semiconductor.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778127323918-e1128",
+        "order": 41,
+        "question": "For a system described by a Lagrangian L(q, q̇, t), the generalized momentum p_j conjugate to the generalized coordinate q_j is defined as:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "p_j = ∂L/∂q_j",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect. This is not the definition of generalized momentum."
+          },
+          {
+            "letter": "B",
+            "text": "p_j = ∂L/∂q̇_j",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct. The generalized momentum is defined as the partial derivative of the Lagrangian with respect to the generalized velocity."
+          },
+          {
+            "letter": "C",
+            "text": "p_j = d/dt(∂L/∂q̇_j)",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect. This is part of the Euler-Lagrange equation, not the definition of generalized momentum."
+          },
+          {
+            "letter": "D",
+            "text": "p_j = ∂H/∂q_j",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect. This is related to Hamiltonian mechanics, not the definition of generalized momentum."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "In Lagrangian mechanics, the generalized momentum p_j conjugate to the generalized coordinate q_j is defined as the partial derivative of the Lagrangian L with respect to the generalized velocity q̇_j. So, p_j = ∂L/∂q̇_j.",
+        "hint": "Recall the definition of generalized momentum in Lagrangian mechanics.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1778127323918-d8ff6",
+        "order": 42,
+        "question": "A thin film of refractive index 1.5 is placed on a glass surface of refractive index 1.6. When white light is incident normally on the film, the reflected light shows a strong constructive interference for a wavelength of 600 nm and a strong destructive interference for a wavelength of 450 nm. What is the minimum possible thickness of the film?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "100 nm",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect. The minimum thickness satisfying both interference conditions is greater than 100 nm."
+          },
+          {
+            "letter": "B",
+            "text": "150 nm",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect. The minimum thickness satisfying both interference conditions is 200 nm."
+          },
+          {
+            "letter": "C",
+            "text": "200 nm",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct. The minimum thickness of the film is 200 nm."
+          },
+          {
+            "letter": "D",
+            "text": "225 nm",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect. The minimum thickness satisfying both interference conditions is 200 nm."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Given n1 = 1 (air), n2 = 1.5 (film), n3 = 1.6 (glass), the phase changes at both interfaces cancel out. For constructive interference, 2n2t = mλ1, and for destructive interference, 2n2t = (m + 1/2)λ2. Solving for m using λ1 = 600 nm and λ2 = 450 nm, we find that m = 1 satisfies both conditions. Substituting m = 1 into 2n2t = mλ1 gives t = (600 × 10^-9) / (2 × 1.5) = 200 × 10^-9 m = 200 nm.",
+        "hint": "Use the conditions for constructive and destructive interference in thin films and solve for the thickness t.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "hard",
+        "hasError": false
       }
     ]
   },
@@ -1614,12 +2226,13 @@
     ],
     "q_per_subj": 30,
     "collected_per_subj": {
-      "cuet-pg-language": 30
+      "cuet-pg-language": 30,
+      "cuet-pg-core": 12
     },
     "is_school": false,
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-05-06T17:07:07.562896Z",
-  "updated_at": "2026-05-06T17:07:07.562907Z"
+  "created_at": "2026-05-07T04:15:23.918782Z",
+  "updated_at": "2026-05-07T04:15:23.918793Z"
 }
