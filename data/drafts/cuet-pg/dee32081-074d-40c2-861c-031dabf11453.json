@@ -4,7 +4,7 @@
   "class_slug": "cuet-pg",
   "test_type": "combined",
   "target_q": 60,
-  "collected_q": 42,
+  "collected_q": 55,
   "final_path": "data/admin/cuet-pg/tests/cuet-pg-combined-language-comprehension-core-subject-dee32081.json",
   "payload": {
     "id": "dee32081-074d-40c2-861c-031dabf11453",
@@ -22,9 +22,9 @@
     "topic": "Combined",
     "testType": "subject-wise",
     "duration": 90,
-    "totalMarks": 168,
-    "passingMarks": 59,
-    "totalQuestions": 42,
+    "totalMarks": 220,
+    "passingMarks": 77,
+    "totalQuestions": 55,
     "targetQuestions": 60,
     "isPublic": true,
     "isPublished": true,
@@ -2192,6 +2192,669 @@
         "subject": "cuet-pg-core",
         "difficulty": "hard",
         "hasError": false
+      },
+      {
+        "id": "q-1778145778450-0d0bf",
+        "order": 43,
+        "question": "A gas undergoes an isothermal expansion from volume V₁ to V₂. If the external pressure is held constant at P_ext, which of the following expressions correctly gives the work done by the gas?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "P_ext(V_2 - V_1)",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is the correct expression for work done by a gas in an isothermal expansion against constant external pressure."
+          },
+          {
+            "letter": "B",
+            "text": "nRT ln(V_2/V_1)",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This expression applies to reversible isothermal expansion against varying pressure."
+          },
+          {
+            "letter": "C",
+            "text": "(P_1V_1 - P_2V_2)/(γ - 1)",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This expression is for adiabatic processes."
+          },
+          {
+            "letter": "D",
+            "text": "1/2 * P_ext(V_2 - V_1)",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This expression incorrectly scales the work done."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For an isothermal process with constant external pressure, work done by the gas is W = P_ext ΔV, where ΔV = V_2 - V_1.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778145778450-67467",
+        "order": 44,
+        "question": "In a semiconductor, the effective mass of an electron in the conduction band is observed to be 0.3 times the free electron mass. If the band curvature is expressed as 1/m* = 1/ℏ^2 * d^2E/dk^2, what can be inferred about the band structure?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "The conduction band is nearly parabolic with a wide energy gap",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This contradicts the small effective mass."
+          },
+          {
+            "letter": "B",
+            "text": "The conduction band is highly non-parabolic, indicating strong electron-phonon coupling",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is consistent with the small effective mass."
+          },
+          {
+            "letter": "C",
+            "text": "The valence band has a smaller effective mass than the conduction band",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is irrelevant to the information given."
+          },
+          {
+            "letter": "D",
+            "text": "The semiconductor exhibits metallic behavior",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This contradicts semiconducting behavior."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "A small effective mass relative to free electrons suggests high curvature in the E-k diagram, implying non-parabolicity and strong interaction effects like electron-phonon coupling.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778145778450-dc429",
+        "order": 45,
+        "question": "A particle of mass m moves under a central potential V(r) = -k/r^2. Which of the following statements about its angular momentum L is correct?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "L is conserved and equal to √(2mE) * r",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This incorrectly relates L to energy and position."
+          },
+          {
+            "letter": "B",
+            "text": "L is not conserved because the potential is not central",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "V(r) = -k/r^2 is a central potential."
+          },
+          {
+            "letter": "C",
+            "text": "L is conserved, but the radial motion is not separable",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Radial motion is separable in central potentials."
+          },
+          {
+            "letter": "D",
+            "text": "L is conserved and the effective potential includes a centrifugal term",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is the correct statement about angular momentum conservation and the effective potential."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For any central potential V(r), angular momentum L is conserved. The effective potential is V_eff(r) = V(r) + L^2/(2mr^2), where the centrifugal term L^2/(2mr^2) arises due to conservation of L.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778145778450-6270b",
+        "order": 46,
+        "question": "A photon of energy 5 eV is incident on a metal with work function 3 eV. If the maximum kinetic energy of emitted photoelectrons is measured as 1.8 eV, what is the value of the stopping potential?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "1.8 V",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is the correct stopping potential."
+          },
+          {
+            "letter": "B",
+            "text": "3.0 V",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the work function, not the stopping potential."
+          },
+          {
+            "letter": "C",
+            "text": "1.2 V",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is not the correct stopping potential."
+          },
+          {
+            "letter": "D",
+            "text": "5.0 V",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is the photon energy, not the stopping potential."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Stopping potential V_s is the potential required to stop the most energetic photoelectrons. It satisfies eV_s = K_max = 1.8 eV. Thus, V_s = 1.8 V.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1778145778450-c6556",
+        "order": 47,
+        "question": "A parallel plate capacitor has plate area A and separation d. It is connected to a battery of voltage V. If a dielectric slab of thickness t < d and dielectric constant κ is inserted slowly while the battery remains connected, the final charge on the capacitor will be:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "ε_0 A V / d",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is for no dielectric."
+          },
+          {
+            "letter": "B",
+            "text": "ε_0 A V / (d - t + t/κ)",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the correct expression for the charge."
+          },
+          {
+            "letter": "C",
+            "text": "κε_0 A V / d",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This assumes full separation filled with dielectric."
+          },
+          {
+            "letter": "D",
+            "text": "ε_0 A V / (d - t)",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This ignores the dielectric effect."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The capacitor remains connected to the battery, so voltage V is constant. The effective separation becomes d_eff = d - t + t/κ. Capacitance C = ε_0 A / d_eff, so charge Q = CV = ε_0 A V / (d - t + t/κ).",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778145778450-5b867",
+        "order": 48,
+        "question": "A particle moves in one dimension under the potential V(x) = ax^4 - bx^2. At what value of x does the particle experience stable equilibrium?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "x = 0",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is an unstable point."
+          },
+          {
+            "letter": "B",
+            "text": "x = ±√(b/2a)",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "These are the stable points."
+          },
+          {
+            "letter": "C",
+            "text": "x = ±√(b/a)",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "These are not the stable points."
+          },
+          {
+            "letter": "D",
+            "text": "x = ±b/2a",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "These are not the stable points."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Stable equilibrium occurs where dV/dx = 0 and d^2V/dx^2 > 0. dV/dx = 4ax^3 - 2bx = 0 => x(4ax^2 - 2b) = 0 => x = 0, ±√(b/2a). Second derivative: d^2V/dx^2 = 12ax^2 - 2b. At x = ±√(b/2a), d^2V/dx^2 = 12a * b/2a - 2b = 6b - 2b = 4b > 0 (assuming b > 0). At x = 0, d^2V/dx^2 = -2b < 0 (unstable). Thus, stable points are at x = ±√(b/2a).",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "hard",
+        "hasError": false
+      },
+      {
+        "id": "q-1778145778450-5de4a",
+        "order": 49,
+        "question": "Consider the time-independent Schrödinger equation for a particle in a 1D infinite potential well of width L. Which of the following statements about the energy eigenvalues E_n is true?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "E_n ∝ n",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This does not match the quadratic dependence."
+          },
+          {
+            "letter": "B",
+            "text": "E_n ∝ n^2",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the correct dependence."
+          },
+          {
+            "letter": "C",
+            "text": "E_n ∝ 1/n^2",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This does not match the quadratic dependence."
+          },
+          {
+            "letter": "D",
+            "text": "E_n ∝ n^3",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This does not match the quadratic dependence."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The energy eigenvalues are E_n = n^2 π^2 ℏ^2 / (2mL^2), so E_n ∝ n^2. This is a standard result for the infinite square well.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778145778450-3fb7b",
+        "order": 50,
+        "question": "A charged particle moves with velocity v in a region where both electric E and magnetic B fields are present. If v, E, and B are mutually perpendicular, under what condition will the particle move in a straight line?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "|E| = |v| |B|",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is dimensionally or physically inconsistent."
+          },
+          {
+            "letter": "B",
+            "text": "E · B = 0",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is always true for perpendicular vectors but not sufficient."
+          },
+          {
+            "letter": "C",
+            "text": "E + v × B = 0",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the correct condition for straight-line motion."
+          },
+          {
+            "letter": "D",
+            "text": "|E| = |B| / |v|",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is dimensionally or physically inconsistent."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The Lorentz force is F = q(E + v × B). For straight-line motion, net force must be zero. Since v, E, B are mutually perpendicular, v × B is parallel to E. Hence, E + v × B = 0 ensures zero net force.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778145778450-a8066",
+        "order": 51,
+        "question": "In a blackbody radiation experiment, the peak wavelength of emitted radiation shifts from 600 nm to 400 nm when the temperature is increased. By what factor does the total energy radiated per unit area increase?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "2.25",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is not the correct factor."
+          },
+          {
+            "letter": "B",
+            "text": "5.06",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the correct factor."
+          },
+          {
+            "letter": "C",
+            "text": "16",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is not the correct factor."
+          },
+          {
+            "letter": "D",
+            "text": "2.8",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is not the correct factor."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Using Wien’s displacement law: λ_max T = constant. So, T_2 / T_1 = λ_1 / λ_2 = 600 / 400 = 1.5. Total energy radiated per unit area is given by the Stefan-Boltzmann law: j = σT^4. Hence, j_2 / j_1 = (T_2 / T_1)^4 = (1.5)^4 = 5.0625 ≈ 5.06.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778145778450-339d4",
+        "order": 52,
+        "question": "A rigid body rotates about a fixed axis with angular velocity ω. If its moment of inertia about the axis is I, and a torque τ is applied for a time t, causing the angular velocity to change from ω_1 to ω_2, which equation correctly relates these quantities?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "τ = I (ω_2 - ω_1)",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is dimensionally incorrect (torque vs. angular momentum change)."
+          },
+          {
+            "letter": "B",
+            "text": "τt = I (ω_2 - ω_1)",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This implies τt = ΔL, which is true but not in the form of the law."
+          },
+          {
+            "letter": "C",
+            "text": "τ = Iα, where α = (ω_2 - ω_1) / t",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the correct expression of the rotational analog of Newton’s second law."
+          },
+          {
+            "letter": "D",
+            "text": "τ = I / t (ω_2^2 - ω_1^2)",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This suggests an energy relation, not torque."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The correct rotational analog of Newton’s second law is τ = Iα, where α = Δω / Δt = (ω_2 - ω_1) / t for constant torque.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778145778450-a0234",
+        "order": 53,
+        "question": "A Carnot engine operates between a source at 500 K and a sink at 300 K. If it absorbs 1000 J of heat from the source in each cycle, what is the work done by the engine in one cycle?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "400 J",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Using the formula for efficiency: efficiency = 1 - (300 K / 500 K) = 1 - 0.6 = 0.4. Then, efficiency = W / Q_h => 0.4 = W / 1000 J => W = 0.4 * 1000 J = 400 J."
+          },
+          {
+            "letter": "B",
+            "text": "600 J",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because it does not match the calculated work done using the efficiency formula."
+          },
+          {
+            "letter": "C",
+            "text": "200 J",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because it does not match the calculated work done using the efficiency formula."
+          },
+          {
+            "letter": "D",
+            "text": "800 J",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because it does not match the calculated work done using the efficiency formula."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The efficiency of a Carnot engine is given by the formula: efficiency = 1 - (T_c / T_h), where T_c is the temperature of the cold reservoir and T_h is the temperature of the hot reservoir. The efficiency can also be expressed as the ratio of work done to the heat absorbed: efficiency = W / Q_h. Given that the engine absorbs 1000 J of heat from the source, we can calculate the efficiency and then find the work done.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778145778450-b2cb2",
+        "order": 54,
+        "question": "A gas undergoes an isothermal expansion from an initial volume V1 to a final volume V2 = 2V1. If the initial pressure of the gas is P1, what is the work done by the gas during this process?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "P1 V1 ln(2)",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is the correct formula for work done by the gas during an isothermal expansion from V1 to 2V1."
+          },
+          {
+            "letter": "B",
+            "text": "-P1 V1 ln(2)",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "The negative sign is incorrect because work done by the gas is positive during expansion."
+          },
+          {
+            "letter": "C",
+            "text": "2 P1 V1",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This option does not correctly represent the work done during an isothermal expansion."
+          },
+          {
+            "letter": "D",
+            "text": "P1 V",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This option is incomplete and does not represent the correct formula for work done during the process."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The work done by a gas during an isothermal expansion can be calculated using the formula W = nRT ln(V2/V1) or W = P1V1 ln(V2/V1) for an ideal gas, where n is the number of moles, R is the gas constant, T is the temperature, P1 is the initial pressure, and V1 and V2 are the initial and final volumes respectively. Given that V2 = 2V1, the work done is W = P1V1 ln(2).",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1778145778450-2785a",
+        "order": 55,
+        "question": "A Carnot engine operates between a hot reservoir at 600 K and a cold reservoir at 300 K. If it absorbs 1200 J of heat from the hot reservoir in each cycle, how much work is done by the engine per cycle?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "300 J",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is incorrect. The efficiency is 0.5, so the work done should be 600 J, not 300 J."
+          },
+          {
+            "letter": "B",
+            "text": "400 J",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is incorrect. The efficiency is 0.5, so the work done should be 600 J, not 400 J."
+          },
+          {
+            "letter": "C",
+            "text": "600 J",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct. The efficiency is 0.5, so the work done is 0.5 * 1200 J = 600 J."
+          },
+          {
+            "letter": "D",
+            "text": "900 J",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is incorrect. The efficiency is 0.5, so the work done should be 600 J, not 900 J."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The efficiency (η) of a Carnot engine is given by η = 1 - (Tc/Th), where Tc is the temperature of the cold reservoir and Th is the temperature of the hot reservoir. Here, η = 1 - (300/600) = 0.5. The work done is efficiency multiplied by the heat absorbed from the hot reservoir, so Work = 0.5 * 1200 J = 600 J.",
+        "hint": "Calculate the Carnot efficiency first, then multiply it by the heat absorbed to find the work done.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "easy",
+        "hasError": false
       }
     ]
   },
@@ -2227,12 +2890,12 @@
     "q_per_subj": 30,
     "collected_per_subj": {
       "cuet-pg-language": 30,
-      "cuet-pg-core": 12
+      "cuet-pg-core": 25
     },
     "is_school": false,
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-05-07T04:15:23.918782Z",
-  "updated_at": "2026-05-07T04:15:23.918793Z"
+  "created_at": "2026-05-07T09:22:58.450629Z",
+  "updated_at": "2026-05-07T09:22:58.450639Z"
 }
