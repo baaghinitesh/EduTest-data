@@ -11,19 +11,38 @@
     "subjectWiseDuration": 60,
     "negativeMarking": true,
     "correctMarkValue": 2,
-    "negativeMarkValue": 0.66,
+    "negativeMarkValue": 0.67,
     "subjectWiseQMin": 30,
     "subjectWiseQMax": 50,
-    "combinedTestQPerSubject": 30
+    "combinedTestQPerSubject": 30,
+    "papers": 2,
+    "paper1": {
+      "name": "General Studies Paper 1",
+      "questions": 100,
+      "marks": 200,
+      "duration": 120,
+      "qualifying": false,
+      "note": "Merit-determining. 100 MCQs, 2 marks each, -0.67 per wrong answer."
+    },
+    "paper2": {
+      "name": "CSAT General Studies Paper 2",
+      "questions": 80,
+      "marks": 200,
+      "duration": 120,
+      "qualifying": true,
+      "passingMarks": 66,
+      "note": "Qualifying only — need 33% (66/200). 80 MCQs, 2.5 marks each, -0.83 per wrong."
+    },
+    "examNote": "UPSC CSE Prelims: 2 papers on same day. GS Paper 1 (100Q, 200 marks) is merit-determining. CSAT Paper 2 (80Q, 200 marks) is qualifying — need 33%. Our mock tests simulate GS Paper 1."
   },
   "testTypes": [
     {
       "type": "full-length",
-      "label": "Full Length Mock Test",
+      "label": "Full Length Mock Test (GS Paper 1)",
       "questions": 100,
       "marks": 200,
       "duration": 120,
-      "note": "All subjects combined — exact exam pattern"
+      "note": "Simulates UPSC Prelims GS Paper 1 — 100 MCQs, 2 marks each, -0.67 wrong"
     },
     {
       "type": "subject-wise",
@@ -31,21 +50,21 @@
       "questions": "30–50",
       "marks": "60–100",
       "duration": 60,
-      "note": "One subject, one topic — size picked randomly each run"
+      "note": "One subject, one topic — UPSC Prelims difficulty"
     },
     {
       "type": "combined",
       "label": "Combined Subject Test",
       "questions": "30 per subject",
       "duration": 60,
-      "note": "2-3 subjects, same topic depth as subject-wise"
+      "note": "2-3 subjects, GS Paper 1 style"
     }
   ],
   "subjects": [
     {
       "slug": "upsc-history",
       "name": "History",
-      "icon": "��️",
+      "icon": "🏛️",
       "color": "#b45309",
       "weightage": 15,
       "file": "subjects/upsc-history.json"
@@ -76,18 +95,26 @@
     },
     {
       "slug": "upsc-science",
-      "name": "Science Technology",
+      "name": "Science & Technology",
       "icon": "🔬",
       "color": "#dc2626",
       "weightage": 10,
       "file": "subjects/upsc-science.json"
     },
     {
+      "slug": "upsc-environment",
+      "name": "Environment & Ecology",
+      "icon": "🌱",
+      "color": "#16a34a",
+      "weightage": 10,
+      "file": "subjects/upsc-environment.json"
+    },
+    {
       "slug": "upsc-csat",
       "name": "CSAT Aptitude",
       "icon": "🧮",
       "color": "#f59e0b",
-      "weightage": 30,
+      "weightage": 20,
       "file": "subjects/upsc-csat.json"
     }
   ]

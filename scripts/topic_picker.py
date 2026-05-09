@@ -24,99 +24,237 @@ STATE_FILE = os.path.join(ROOT, "scripts", "state.json")
 # ── Slug normalisation ─────────────────────────────────────────────────────────
 # Maps any user-supplied variant → canonical classSlug (folder name).
 # Keys are lowercased + stripped; values are the exact folder names.
-_SLUG_ALIASES = {
-    # JEE Mains
-    "jee":              "jee-mains",
-    "jee-main":         "jee-mains",
-    "jee-mains":        "jee-mains",
-    "jeemains":         "jee-mains",
-    "jeemain":          "jee-mains",
-    "jee mains":        "jee-mains",
-    "jee main":         "jee-mains",
-    # JEE Advanced
-    "jee-advance":      "jee-advanced",
-    "jee-advanced":     "jee-advanced",
-    "jeeadvanced":      "jee-advanced",
-    "jeeadvance":       "jee-advanced",
-    "jee advance":      "jee-advanced",
-    "jee advanced":     "jee-advanced",
-    # NEET
-    "neet":             "neet-ug",
-    "neet-ug":          "neet-ug",
-    "neetug":           "neet-ug",
-    "neet ug":          "neet-ug",
-    "neet-pg":          "neet-pg",
-    "neetpg":           "neet-pg",
-    # UPSC
-    "upsc":             "upsc-cse",
-    "upsc-cse":         "upsc-cse",
-    "upsccse":          "upsc-cse",
-    # SSC
-    "ssc":              "ssc-cgl",
-    "ssc-cgl":          "ssc-cgl",
-    "ssccgl":           "ssc-cgl",
-    "ssc-chsl":         "ssc-chsl",
-    "ssc-mts":          "ssc-mts",
-    # GATE
-    "gate":             "gate",
-    # CAT
-    "cat":              "cat",
-    # CUET
-    "cuet":             "cuet-ug",
-    "cuet-ug":          "cuet-ug",
-    "cuet-pg":          "cuet-pg",
-    # IBPS
-    "ibps":             "ibps-po",
-    "ibps-po":          "ibps-po",
-    "ibps-clerk":       "ibps-clerk",
-    # SBI
-    "sbi":              "sbi-po",
-    "sbi-po":           "sbi-po",
-    # RRB
-    "rrb":              "rrb-ntpc",
-    "rrb-ntpc":         "rrb-ntpc",
-    "rrb-group-d":      "rrb-group-d",
-    # NDA / CDS / CLAT / CTET / KVPY / DSSSB / NORCET
-    "nda":              "nda",
-    "cds":              "cds",
-    "clat":             "clat",
-    "ctet":             "ctet",
-    "kvpy":             "kvpy",
-    "dsssb":            "dsssb",
-    "norcet":           "norcet",
-    # Olympiads
-    "olympiad":         "olympiad-math",
-    "olympiad-math":    "olympiad-math",
-    "olympiad-science": "olympiad-science",
-}
+#
+# Covers:
+#   • All competitive exams (with common typos / abbreviations)
+#   • All school boards × classes 1-12 in every natural format:
+#       "cbse 10", "cbse class 10", "cbse-class-10", "class10", "10", etc.
+#   • Board short names: "cbse", "icse", "isc", "up", "maharashtra", "maha"
+
+def _build_slug_aliases() -> dict:
+    aliases = {}
+
+    # ── Competitive exams ──────────────────────────────────────────────────────
+    comp = {
+        # JEE Mains
+        "jee":                  "jee-mains",
+        "jee-main":             "jee-mains",
+        "jee-mains":            "jee-mains",
+        "jeemains":             "jee-mains",
+        "jeemain":              "jee-mains",
+        "jee mains":            "jee-mains",
+        "jee main":             "jee-mains",
+        "jee mains exam":       "jee-mains",
+        # JEE Advanced
+        "jee-advance":          "jee-advanced",
+        "jee-advanced":         "jee-advanced",
+        "jeeadvanced":          "jee-advanced",
+        "jeeadvance":           "jee-advanced",
+        "jee advance":          "jee-advanced",
+        "jee advanced":         "jee-advanced",
+        "jee adv":              "jee-advanced",
+        "jee-adv":              "jee-advanced",
+        # NEET UG
+        "neet":                 "neet-ug",
+        "neet-ug":              "neet-ug",
+        "neetug":               "neet-ug",
+        "neet ug":              "neet-ug",
+        "neet undergraduate":   "neet-ug",
+        # NEET PG
+        "neet-pg":              "neet-pg",
+        "neetpg":               "neet-pg",
+        "neet pg":              "neet-pg",
+        "neet postgraduate":    "neet-pg",
+        # UPSC CSE
+        "upsc":                 "upsc-cse",
+        "upsc-cse":             "upsc-cse",
+        "upsccse":              "upsc-cse",
+        "upsc cse":             "upsc-cse",
+        "ias":                  "upsc-cse",
+        "civil services":       "upsc-cse",
+        "upsc civil services":  "upsc-cse",
+        "upsc prelims":         "upsc-cse",
+        # UPSC CAPF
+        "upsc-capf":            "upsc-capf",
+        "upsccapf":             "upsc-capf",
+        "upsc capf":            "upsc-capf",
+        "capf":                 "upsc-capf",
+        # SSC
+        "ssc":                  "ssc-cgl",
+        "ssc-cgl":              "ssc-cgl",
+        "ssccgl":               "ssc-cgl",
+        "ssc cgl":              "ssc-cgl",
+        "ssc-chsl":             "ssc-chsl",
+        "sscchsl":              "ssc-chsl",
+        "ssc chsl":             "ssc-chsl",
+        "ssc-mts":              "ssc-mts",
+        "sscmts":               "ssc-mts",
+        "ssc mts":              "ssc-mts",
+        # GATE
+        "gate":                 "gate",
+        # CAT
+        "cat":                  "cat",
+        "cat exam":             "cat",
+        "common admission test":"cat",
+        # CUET UG
+        "cuet":                 "cuet-ug",
+        "cuet-ug":              "cuet-ug",
+        "cuetug":               "cuet-ug",
+        "cuet ug":              "cuet-ug",
+        # CUET PG
+        "cuet-pg":              "cuet-pg",
+        "cuetpg":               "cuet-pg",
+        "cuet pg":              "cuet-pg",
+        # IBPS
+        "ibps":                 "ibps-po",
+        "ibps-po":              "ibps-po",
+        "ibpspo":               "ibps-po",
+        "ibps po":              "ibps-po",
+        "ibps-clerk":           "ibps-clerk",
+        "ibpsclerk":            "ibps-clerk",
+        "ibps clerk":           "ibps-clerk",
+        # SBI
+        "sbi":                  "sbi-po",
+        "sbi-po":               "sbi-po",
+        "sbipo":                "sbi-po",
+        "sbi po":               "sbi-po",
+        # RRB
+        "rrb":                  "rrb-ntpc",
+        "rrb-ntpc":             "rrb-ntpc",
+        "rrbntpc":              "rrb-ntpc",
+        "rrb ntpc":             "rrb-ntpc",
+        "rrb-group-d":          "rrb-group-d",
+        "rrbgroupd":            "rrb-group-d",
+        "rrb group d":          "rrb-group-d",
+        "rrb group-d":          "rrb-group-d",
+        # NDA
+        "nda":                  "nda",
+        "nda exam":             "nda",
+        # CDS
+        "cds":                  "cds",
+        "cds exam":             "cds",
+        # CLAT
+        "clat":                 "clat",
+        "clat exam":            "clat",
+        # CTET
+        "ctet":                 "ctet",
+        "ctet exam":            "ctet",
+        # KVPY
+        "kvpy":                 "kvpy",
+        # DSSSB
+        "dsssb":                "dsssb",
+        # NORCET
+        "norcet":               "norcet",
+        # Olympiads
+        "olympiad":             "olympiad-math",
+        "olympiad-math":        "olympiad-math",
+        "olympiadmath":         "olympiad-math",
+        "olympiad math":        "olympiad-math",
+        "math olympiad":        "olympiad-math",
+        "maths olympiad":       "olympiad-math",
+        "olympiad-science":     "olympiad-science",
+        "olympiadscience":      "olympiad-science",
+        "olympiad science":     "olympiad-science",
+        "science olympiad":     "olympiad-science",
+    }
+    aliases.update(comp)
+
+    # ── School boards × classes 1–12 ──────────────────────────────────────────
+    # Board name variants → canonical board prefix used in folder names
+    board_variants = {
+        "cbse":         "cbse",
+        "central board":"cbse",
+        "icse":         "icse",
+        "isc":          "isc",
+        "up":           "up-board",
+        "up board":     "up-board",
+        "up-board":     "up-board",
+        "uttar pradesh":"up-board",
+        "maharashtra":  "maharashtra",
+        "maha":         "maharashtra",
+        "msbshse":      "maharashtra",
+        "ssc maharashtra": "maharashtra",
+    }
+    # ISC only has class-11 and class-12
+    isc_classes = {11, 12}
+
+    for bv, board_slug in board_variants.items():
+        max_class = 12
+        for n in range(1, max_class + 1):
+            if board_slug == "isc" and n not in isc_classes:
+                continue
+            canonical = f"{board_slug}-class-{n}"
+            # All the ways a user might type "cbse class 10"
+            variants = [
+                f"{bv} {n}",
+                f"{bv}-{n}",
+                f"{bv}{n}",
+                f"{bv} class {n}",
+                f"{bv} class-{n}",
+                f"{bv}-class-{n}",
+                f"{bv}-class {n}",
+                f"{bv}class{n}",
+                f"{bv}class-{n}",
+                f"class {n} {bv}",
+                f"class-{n} {bv}",
+                f"class{n} {bv}",
+                f"{bv} std {n}",
+                f"{bv} standard {n}",
+                f"{bv} grade {n}",
+            ]
+            for v in variants:
+                aliases[v] = canonical
+            # Also map the canonical form itself (idempotent)
+            aliases[canonical] = canonical
+
+    # Bare class numbers → CBSE (most common default)
+    for n in range(1, 13):
+        for v in [str(n), f"class {n}", f"class-{n}", f"class{n}",
+                  f"std {n}", f"grade {n}"]:
+            if v not in aliases:   # don't override board-specific entries
+                aliases[v] = f"cbse-class-{n}"
+
+    return aliases
+
+
+_SLUG_ALIASES = _build_slug_aliases()
 
 
 def normalize_exam_slug(raw: str) -> str:
     """
     Convert any user-supplied exam name to the canonical classSlug.
 
-    Handles:
-      - Case insensitivity:  JEE-ADVANCED → jee-advanced
-      - Spacing variants:    "jee advance" → jee-advanced
-      - Missing hyphens:     jeeadvanced   → jee-advanced
-      - Short aliases:       jee           → jee-mains
-      - Already correct:     jee-mains     → jee-mains
+    Handles all of:
+      • Case insensitivity:       JEE-ADVANCED  → jee-advanced
+      • Spacing variants:         "jee advance" → jee-advanced
+      • Missing hyphens:          jeeadvanced   → jee-advanced
+      • Short aliases:            jee           → jee-mains
+      • School class variants:    "cbse 10", "cbse class 10", "class 10",
+                                  "CBSE-CLASS-10", "10", "cbse10" → cbse-class-10
+      • Board short names:        "up 9" → up-board-class-9
+      • Already canonical:        jee-mains     → jee-mains (no-op)
 
     Falls back to the lowercased, hyphenated form if no alias matches,
     so unknown-but-valid slugs (e.g. a new exam folder) still work.
     """
     if not raw:
         return raw
-    # Normalise: lowercase, collapse whitespace/underscores to hyphens
-    key = raw.strip().lower().replace("_", "-").replace("  ", " ")
-    # Try alias lookup (with and without spaces-as-hyphens)
+    # Normalise: lowercase, collapse underscores → hyphens, strip extra spaces
+    key = raw.strip().lower().replace("_", "-")
+    key = " ".join(key.split())          # collapse multiple spaces
+    # Direct lookup
     if key in _SLUG_ALIASES:
         return _SLUG_ALIASES[key]
-    key_hyphen = key.replace(" ", "-")
-    if key_hyphen in _SLUG_ALIASES:
-        return _SLUG_ALIASES[key_hyphen]
+    # Try with spaces replaced by hyphens
+    key_h = key.replace(" ", "-")
+    if key_h in _SLUG_ALIASES:
+        return _SLUG_ALIASES[key_h]
+    # Try with hyphens replaced by spaces
+    key_s = key.replace("-", " ")
+    if key_s in _SLUG_ALIASES:
+        return _SLUG_ALIASES[key_s]
     # Return hyphenated lowercase as best-effort canonical form
-    return key_hyphen
+    return key_h if key_h else key
 
 
 # ── State I/O ──────────────────────────────────────────────────────────────────

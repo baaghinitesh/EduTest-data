@@ -2,23 +2,37 @@
   "classSlug": "jee-mains",
   "board": "Competitive",
   "totalQuestions": 90,
+  "totalQuestionsToAttempt": 75,
   "totalMarks": 300,
   "duration": 180,
+  "examNote": "90 questions total (30 per subject); attempt 75. Section A: 20 MCQ compulsory + Section B: 10 numerical, attempt any 5. +4 correct, -1 wrong (MCQ only, no negative for numerical).",
   "subjects": [
     {
       "subjectSlug": "jee-physics",
       "subjectName": "Physics",
-      "questionCount": 30
+      "questionCount": 30,
+      "questionsToAttempt": 25,
+      "sectionA": 20,
+      "sectionB": 10,
+      "sectionBAttempt": 5
     },
     {
       "subjectSlug": "jee-chemistry",
       "subjectName": "Chemistry",
-      "questionCount": 30
+      "questionCount": 30,
+      "questionsToAttempt": 25,
+      "sectionA": 20,
+      "sectionB": 10,
+      "sectionBAttempt": 5
     },
     {
       "subjectSlug": "jee-maths",
       "subjectName": "Mathematics",
-      "questionCount": 30
+      "questionCount": 30,
+      "questionsToAttempt": 25,
+      "sectionA": 20,
+      "sectionB": 10,
+      "sectionBAttempt": 5
     }
   ]
 }

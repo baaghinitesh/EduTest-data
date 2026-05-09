@@ -4,9 +4,11 @@
   "type": "competitive",
   "examConfig": {
     "fullLengthQuestions": 90,
+    "fullLengthQuestionsToAttempt": 75,
     "fullLengthMarks": 300,
     "fullLengthDuration": 180,
     "subjectWiseQuestions": 30,
+    "subjectWiseQuestionsToAttempt": 25,
     "subjectWiseMarks": 100,
     "subjectWiseDuration": 60,
     "negativeMarking": true,
@@ -14,16 +16,20 @@
     "negativeMarkValue": 1,
     "subjectWiseQMin": 20,
     "subjectWiseQMax": 30,
-    "combinedTestQPerSubject": 20
+    "combinedTestQPerSubject": 20,
+    "sectionA": { "questions": 20, "type": "MCQ", "compulsory": true },
+    "sectionB": { "questions": 10, "type": "Numerical", "attemptAny": 5 },
+    "examNote": "90 questions total (30 per subject); attempt 75. Section A: 20 MCQ (compulsory) + Section B: 10 numerical (attempt any 5) per subject. +4 correct, -1 wrong MCQ, no negative for numerical."
   },
   "testTypes": [
     {
       "type": "full-length",
       "label": "Full Length Mock Test",
       "questions": 90,
+      "questionsToAttempt": 75,
       "marks": 300,
       "duration": 180,
-      "note": "All subjects combined — exact exam pattern"
+      "note": "90 questions — attempt 75. Section A: 20 MCQ + Section B: attempt 5 of 10 numerical per subject."
     },
     {
       "type": "subject-wise",
@@ -31,14 +37,14 @@
       "questions": "20–30",
       "marks": "80–120",
       "duration": 60,
-      "note": "One subject, one topic — size picked randomly each run"
+      "note": "One subject, one topic — MCQ + numerical style"
     },
     {
       "type": "combined",
       "label": "Combined Subject Test",
       "questions": "20 per subject",
       "duration": 60,
-      "note": "2-3 subjects, same topic depth as subject-wise"
+      "note": "2-3 subjects, JEE Mains pattern"
     }
   ],
   "subjects": [

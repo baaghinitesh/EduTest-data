@@ -3,27 +3,37 @@
   "board": "Competitive",
   "type": "competitive",
   "examConfig": {
-    "fullLengthQuestions": 54,
-    "fullLengthMarks": 183,
+    "fullLengthQuestions": 51,
+    "fullLengthMarks": 180,
     "fullLengthDuration": 180,
-    "subjectWiseQuestions": 18,
-    "subjectWiseMarks": 61,
+    "subjectWiseQuestions": 17,
+    "subjectWiseMarks": 60,
     "subjectWiseDuration": 60,
     "negativeMarking": true,
     "correctMarkValue": 3,
     "negativeMarkValue": 1,
     "subjectWiseQMin": 15,
     "subjectWiseQMax": 20,
-    "combinedTestQPerSubject": 15
+    "combinedTestQPerSubject": 15,
+    "papers": 2,
+    "marksPerPaper": 180,
+    "totalExamMarks": 360,
+    "questionTypes": [
+      { "type": "single_correct_mcq", "marks": 3, "negative": -1, "desc": "Single correct MCQ" },
+      { "type": "multi_correct_mcq",  "marks": 4, "partial": true, "negative": -2, "desc": "Multiple correct — full/partial/zero marks" },
+      { "type": "numerical",          "marks": 3, "negative": 0,   "desc": "Numerical answer type — no negative marking" },
+      { "type": "matching",           "marks": 3, "negative": -1,  "desc": "Match the column / list" }
+    ],
+    "examNote": "2 papers × 180 marks = 360 total. Each paper: 3 sections (Physics, Chemistry, Maths), ~17Q each. Mixed types: single-correct MCQ, multi-correct MCQ (partial marks), numerical (no negative), matching. Our mock tests simulate Paper 1 pattern."
   },
   "testTypes": [
     {
       "type": "full-length",
-      "label": "Full Length Mock Test",
-      "questions": 54,
-      "marks": 183,
+      "label": "Full Length Mock Test (Paper 1)",
+      "questions": 51,
+      "marks": 180,
       "duration": 180,
-      "note": "All subjects combined — exact exam pattern"
+      "note": "Simulates JEE Advanced Paper 1 — 17Q per subject, mixed question types"
     },
     {
       "type": "subject-wise",
@@ -31,14 +41,14 @@
       "questions": "15–20",
       "marks": "45–60",
       "duration": 60,
-      "note": "One subject, one topic — size picked randomly each run"
+      "note": "One subject, advanced difficulty — conceptual + numerical"
     },
     {
       "type": "combined",
       "label": "Combined Subject Test",
       "questions": "15 per subject",
       "duration": 60,
-      "note": "2-3 subjects, same topic depth as subject-wise"
+      "note": "2-3 subjects, JEE Advanced difficulty"
     }
   ],
   "subjects": [

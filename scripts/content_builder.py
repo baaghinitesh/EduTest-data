@@ -570,6 +570,123 @@ def _iterate_to_target(target_count, exam_name, subject_name,
 
 
 # ════════════════════════════════════════════════════════════════════
+#  EXAM-ACCURATE INSTRUCTIONS BUILDER
+# ════════════════════════════════════════════════════════════════════
+
+# Per-exam instruction templates — reflects real 2025/2026 exam patterns.
+_EXAM_INSTRUCTIONS = {
+    "neet-ug": {
+        "full": [
+            "Total Questions: 200 | Attempt any 180",
+            "Each subject: Section A — 35 questions (all compulsory)",
+            "Each subject: Section B — 15 questions (attempt any 10)",
+            "Correct answer: +4 marks | Wrong answer: -1 mark",
+            "Unattempted questions: 0 marks (no penalty)",
+            "Total Marks: 720 | Duration: 200 minutes",
+            "Subjects: Physics (45), Chemistry (45), Botany (45), Zoology (45)",
+            "Exam mode: Offline (OMR-based pen & paper)",
+        ],
+        "subject": [
+            "Section A: All questions compulsory",
+            "Section B: Attempt any 10 out of 15 questions",
+            "Correct answer: +4 marks | Wrong answer: -1 mark",
+            "Unattempted questions carry no penalty",
+            "NCERT-based — focus on conceptual clarity",
+        ],
+    },
+    "jee-mains": {
+        "full": [
+            "Total Questions: 90 (30 per subject) | Attempt 75",
+            "Section A: 20 MCQs per subject — all compulsory (+4/-1)",
+            "Section B: 10 Numerical questions per subject — attempt any 5",
+            "Section B numerical: +4 correct | 0 wrong (no negative marking)",
+            "Total Marks: 300 | Duration: 180 minutes",
+            "Subjects: Physics (100), Chemistry (100), Mathematics (100)",
+            "Exam mode: Computer-Based Test (CBT)",
+        ],
+        "subject": [
+            "Section A: MCQ questions — all compulsory (+4/-1)",
+            "Section B: Numerical value questions — no negative marking",
+            "Correct MCQ: +4 marks | Wrong MCQ: -1 mark",
+            "Numerical: +4 marks correct | 0 marks wrong (no penalty)",
+            "Enter numerical answers as integers rounded to nearest value",
+        ],
+    },
+    "jee-advanced": {
+        "full": [
+            "Simulates JEE Advanced Paper 1 (180 marks, 51 questions)",
+            "Real exam: 2 papers × 180 marks = 360 total marks",
+            "Single-correct MCQ: +3 correct / -1 wrong",
+            "Multi-correct MCQ: +4 full / partial marks / -2 wrong",
+            "Numerical answer type: +3 correct / 0 wrong (no negative)",
+            "Duration: 180 minutes | Subjects: Physics, Chemistry, Mathematics",
+            "Highest difficulty — requires deep conceptual understanding",
+        ],
+        "subject": [
+            "JEE Advanced difficulty — conceptual and multi-step problems",
+            "Single-correct MCQ: +3 correct / -1 wrong",
+            "Numerical questions: +3 correct / no negative marking",
+            "Focus on derivations, applications, and problem-solving",
+            "Multi-step problems — show working for numerical answers",
+        ],
+    },
+    "upsc-cse": {
+        "full": [
+            "Simulates UPSC Prelims GS Paper 1 (100 questions, 200 marks)",
+            "Correct answer: +2 marks | Wrong answer: -0.67 marks (1/3 deduction)",
+            "Unattempted questions: 0 marks",
+            "Duration: 120 minutes | Total Marks: 200",
+            "Real exam also has CSAT Paper 2 (qualifying — need 33%)",
+            "GS Paper 1 covers: History, Geography, Polity, Economy, Environment, Science",
+        ],
+        "subject": [
+            "UPSC Prelims GS Paper 1 style questions",
+            "Correct answer: +2 marks | Wrong answer: -0.67 marks",
+            "Unattempted questions carry no penalty",
+            "Focus on factual accuracy and current affairs linkage",
+        ],
+    },
+}
+
+
+def _build_exam_instructions(
+    class_slug, cfg, total_q, total_m, duration,
+    mark_val, neg_val, neg,
+    subject_name=None, topic_name=None, is_subject_wise=False
+):
+    """
+    Return an accurate instructions list for a generated test.
+    Uses per-exam templates where available; falls back to generic.
+    """
+    template = _EXAM_INSTRUCTIONS.get(class_slug.lower())
+
+    if template:
+        key = "subject" if is_subject_wise else "full"
+        instrs = list(template.get(key, template.get("full", [])))
+        if is_subject_wise and subject_name:
+            instrs = [f"Subject: {subject_name}"] + instrs
+        if is_subject_wise and topic_name:
+            instrs.append(f"Topic: {topic_name}")
+        instrs.append(f"Duration: {duration} minutes")
+        return instrs
+
+    # Generic fallback for all other exams
+    neg_instr = f"Wrong answer: -{neg_val} mark" if neg else "No negative marking"
+    instrs = [
+        f"Total Questions: {total_q}",
+        f"Total Marks: {total_m}",
+        f"Duration: {duration} minutes",
+        f"Correct answer: +{mark_val} mark",
+        neg_instr,
+    ]
+    if is_subject_wise and subject_name:
+        instrs = [f"Subject: {subject_name}"] + instrs
+    if is_subject_wise and topic_name:
+        instrs.append(f"Topic: {topic_name}")
+    return instrs
+
+
+# ════════════════════════════════════════════════════════════════════
 #  SCHOOL CLASS BUILDERS
 # ════════════════════════════════════════════════════════════════════
 
@@ -666,15 +783,11 @@ def build_school_full_length_test(class_slug):
         "showCorrectAnswers": True, "randomizeQuestions": True,
         "unlimitedAttempts": True, "allowedAttempts": 0,
         "tags": _tags(class_slug, subj_slug, "full-length", subj_name),
-        "instructions": [
-            f"Subject: {subj_name}",
-            f"Total Questions: {actual_q}",
-            f"Total Marks: {total_marks}",
-            f"Duration: {duration} minutes",
-            f"Correct answer: +{mark_val} mark",
-            neg_instr,
-            "Covers all chapters of the subject",
-        ],
+        "instructions": _build_exam_instructions(
+            class_slug, cfg, actual_q, total_marks, duration,
+            mark_val, neg_val, neg,
+            subject_name=subj_name, is_subject_wise=False
+        ) + ["Covers all chapters of the subject"],
         "createdBy": "admin", "createdByName": "EduTest Admin",
         "publishedAt": _now(), "questions": questions,
     }
@@ -808,6 +921,10 @@ def build_exam_full_length_test(class_slug):
         total_m = round(total_m * actual_q / total_q)
 
     neg_instr = f"Wrong answer: -{neg_val} mark" if neg else "No negative marking"
+
+    # ── Build exam-accurate instructions ──────────────────────────────────────
+    exam_instructions = _build_exam_instructions(class_slug, cfg, actual_q, total_m, duration, mark_val, neg_val, neg)
+
     payload = {
         "id": uid, "title": title,
         "description": (
@@ -826,13 +943,7 @@ def build_exam_full_length_test(class_slug):
         "showCorrectAnswers": True, "randomizeQuestions": True,
         "unlimitedAttempts": True, "allowedAttempts": 0,
         "tags": [class_slug, "full-length", "mock-test", "all-subjects"],
-        "instructions": [
-            f"Total Questions: {actual_q}",
-            f"Total Marks: {total_m}",
-            f"Duration: {duration} minutes",
-            f"Correct answer: +{mark_val} mark",
-            neg_instr,
-        ],
+        "instructions": exam_instructions,
         "createdBy": "admin", "createdByName": "EduTest Admin",
         "publishedAt": _now(), "questions": all_questions,
     }
@@ -974,6 +1085,14 @@ def build_subject_test(topic_info, q_count_override=None):
         status = " [QUOTA EXHAUSTED]" if quota_hit else ""
         print(f"  [Partial] {actual_q}/{q_count}Q — saving draft, will resume next run{status}")
 
+    # ── Build exam-accurate instructions ──────────────────────────────────────
+    cfg_for_instr = topic_info.get("examConfig", {})
+    sw_instructions = _build_exam_instructions(
+        class_slug, cfg_for_instr, actual_q, total_marks, duration,
+        mark_val, neg_val, neg,
+        subject_name=subj_name, topic_name=topic, is_subject_wise=True
+    )
+
     payload = {
         "id": uid, "title": title,
         "description": (
@@ -994,12 +1113,7 @@ def build_subject_test(topic_info, q_count_override=None):
         "showCorrectAnswers": True, "randomizeQuestions": False,
         "unlimitedAttempts": True, "allowedAttempts": 0,
         "tags": _tags(class_slug, subj_slug, chapter, topic),
-        "instructions": [
-            f"Subject: {subj_name}", f"Topic: {topic}",
-            f"Duration: {duration} mins",
-            f"+{mark_val} per correct answer",
-            neg_instr,
-        ],
+        "instructions": sw_instructions,
         "createdBy": "admin", "createdByName": "EduTest Admin",
         "publishedAt": _now(), "questions": questions,
     }
@@ -1160,12 +1274,11 @@ def build_combined_test(class_slug, subject_topics, q_per_subj_override=None):
         "showCorrectAnswers": True, "randomizeQuestions": False,
         "unlimitedAttempts": True, "allowedAttempts": 0,
         "tags": _tags(class_slug, "+".join(all_subj_slugs), subj_names),
-        "instructions": [
-            f"Subjects: {subj_names}",
-            f"Duration: {duration} mins",
-            f"+{mark_val} per correct answer",
-            neg_instr,
-        ],
+        "instructions": _build_exam_instructions(
+            class_slug, cfg, actual_q, total_marks, duration,
+            mark_val, neg_val, neg,
+            subject_name=subj_names, is_subject_wise=True
+        ),
         "createdBy": "admin", "createdByName": "EduTest Admin",
         "publishedAt": _now(), "questions": all_questions,
     }

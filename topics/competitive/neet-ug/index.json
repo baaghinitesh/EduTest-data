@@ -3,42 +3,48 @@
   "board": "Competitive",
   "type": "competitive",
   "examConfig": {
-    "fullLengthQuestions": 180,
+    "fullLengthQuestions": 200,
+    "fullLengthQuestionsToAttempt": 180,
     "fullLengthMarks": 720,
     "fullLengthDuration": 200,
-    "subjectWiseQuestions": 45,
+    "subjectWiseQuestions": 50,
+    "subjectWiseQuestionsToAttempt": 45,
     "subjectWiseMarks": 180,
     "subjectWiseDuration": 60,
     "negativeMarking": true,
     "correctMarkValue": 4,
     "negativeMarkValue": 1,
-    "subjectWiseQMin": 30,
+    "subjectWiseQMin": 35,
     "subjectWiseQMax": 50,
-    "combinedTestQPerSubject": 30
+    "combinedTestQPerSubject": 35,
+    "sectionA": { "questions": 35, "compulsory": true },
+    "sectionB": { "questions": 15, "attemptAny": 10 },
+    "examNote": "200 questions total per paper; attempt any 180. Each subject: Section A (35 compulsory) + Section B (15 questions, attempt any 10)."
   },
   "testTypes": [
     {
       "type": "full-length",
       "label": "Full Length Mock Test",
-      "questions": 180,
+      "questions": 200,
+      "questionsToAttempt": 180,
       "marks": 720,
       "duration": 200,
-      "note": "All subjects combined — exact exam pattern"
+      "note": "200 questions — attempt 180. Section A: 35 compulsory + Section B: attempt 10 of 15 per subject."
     },
     {
       "type": "subject-wise",
       "label": "Subject Wise Test",
-      "questions": "30–50",
-      "marks": "120–200",
+      "questions": "35–50",
+      "marks": "140–200",
       "duration": 60,
-      "note": "One subject, one topic — size picked randomly each run"
+      "note": "One subject, one topic — Section A (compulsory) + Section B (optional)"
     },
     {
       "type": "combined",
       "label": "Combined Subject Test",
-      "questions": "30 per subject",
+      "questions": "35 per subject",
       "duration": 60,
-      "note": "2-3 subjects, same topic depth as subject-wise"
+      "note": "2-3 subjects, NEET-pattern difficulty"
     }
   ],
   "subjects": [
