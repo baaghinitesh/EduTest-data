@@ -19,7 +19,11 @@ on:
         required: false
         default: ""
       exam:
-        description: "Force exam slug (e.g. neet-ug, jee-mains, cbse-class-10). Leave blank for random."
+        description: "Force exam slug — any format works: jee, jee-advance, JEE-ADVANCED, neet, cbse-class-10, etc."
+        required: false
+        default: ""
+      instructions:
+        description: "Custom generation instructions, e.g. 'Generate JEE Advanced conceptual and reasoning-based questions with PYQs style'. Leave blank for default."
         required: false
         default: ""
       backfill:
@@ -106,6 +110,7 @@ jobs:
           MISTRAL_API_KEY:         ${{ secrets.MISTRAL_API_KEY }}
           GENERATE_MODE:           ${{ github.event.inputs.mode }}
           FORCE_EXAM:              ${{ github.event.inputs.exam }}
+          GENERATION_INSTRUCTIONS: ${{ github.event.inputs.instructions }}
           EDUTEST_API_URL:         ${{ secrets.EDUTEST_API_URL }}
           EDUTEST_ADMIN_EMAIL:     ${{ secrets.EDUTEST_ADMIN_EMAIL }}
           EDUTEST_ADMIN_PASSWORD:  ${{ secrets.EDUTEST_ADMIN_PASSWORD }}

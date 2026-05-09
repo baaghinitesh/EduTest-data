@@ -63,6 +63,16 @@ CDN_BASE = "https://prepguidedata.launchyourconcept.com"
 
 CHUNK = 10   # always generate in 10Q chunks — safe for all API limits
 
+# ── Custom instructions (set by generate.py from GENERATION_INSTRUCTIONS env) ─
+_CUSTOM_INSTRUCTIONS = ""
+
+def set_custom_instructions(instructions: str):
+    """Called by generate.py when GENERATION_INSTRUCTIONS env var is set."""
+    global _CUSTOM_INSTRUCTIONS
+    _CUSTOM_INSTRUCTIONS = instructions.strip()
+    if _CUSTOM_INSTRUCTIONS:
+        print(f"  [ContentBuilder] Custom instructions active: {_CUSTOM_INSTRUCTIONS[:100]}")
+
 # ── Compact JSON schema sent to structurer ────────────────────────────────────
 _SCHEMA = (
     '[{"question":"...","difficulty":"medium","explanation":"...",'
@@ -200,6 +210,10 @@ def _research_prompt_school(exam_name, subject_name, chapters_str, class_number=
 
 def _research_prompt_exam(exam_name, subject_name, chapters_str):
     """Research prompt for competitive exam subjects — high difficulty, exam-pattern."""
+    custom_note = (
+        f"\n\nOperator focus for this run: {_CUSTOM_INSTRUCTIONS}"
+        if _CUSTOM_INSTRUCTIONS else ""
+    )
     return (
         f"You are a senior {exam_name} competitive exam expert.\n"
         f"Subject: {subject_name}\n"
@@ -211,7 +225,7 @@ def _research_prompt_exam(exam_name, subject_name, chapters_str):
         "4. Common wrong-answer traps and misconceptions\n"
         "5. Numerical/formula-heavy areas with calculation examples\n"
         "6. Recent trend: topics gaining more weightage\n"
-        "Be specific and exam-focused. No generic advice."
+        f"Be specific and exam-focused. No generic advice.{custom_note}"
     )
 
 def _full_exam_research_prompt(exam_name, subjects_summary):
@@ -373,13 +387,17 @@ def _gen_prompt_exam_subject(count, exam_name, subject_name, research_ctx,
         f"Use different question angles, different numerical values, different application scenarios."
         if cycle > 1 else ""
     )
+    custom_note = (
+        f"\n\nSPECIAL INSTRUCTIONS FROM OPERATOR:\n{_CUSTOM_INSTRUCTIONS}"
+        if _CUSTOM_INSTRUCTIONS else ""
+    )
     return (
         f"You are an expert question setter for the {exam_name} competitive exam.\n\n"
         f"EXAM RESEARCH (use this to set correct difficulty and focus):\n"
         f"{research_ctx}\n\n"
         f"TASK: Generate exactly {count} high-quality MCQ questions.\n"
         f"Subject: {subject_name}\n"
-        f"Topic/Chapter: {topic_str}{cycle_note}\n\n"
+        f"Topic/Chapter: {topic_str}{cycle_note}{custom_note}\n\n"
         f"Requirements:\n"
         f"- Match the exact difficulty and style of {exam_name} official papers\n"
         f"- Difficulty: 25% easy, 45% medium, 30% hard\n"
@@ -398,6 +416,10 @@ def _gen_prompt_exam_subject(count, exam_name, subject_name, research_ctx,
 def _gen_prompt_exam_full(count, exam_name, subject_name, research_ctx,
                           chapters_str, cycle=1):
     """Prompt for competitive exam full-length test chunk (one subject section)."""
+    custom_note = (
+        f"\n\nSPECIAL INSTRUCTIONS FROM OPERATOR:\n{_CUSTOM_INSTRUCTIONS}"
+        if _CUSTOM_INSTRUCTIONS else ""
+    )
     return (
         f"You are an expert question setter for the {exam_name} competitive exam.\n\n"
         f"EXAM RESEARCH (use this to set correct difficulty and focus):\n"
@@ -415,7 +437,8 @@ def _gen_prompt_exam_full(count, exam_name, subject_name, research_ctx,
         f"- Mark the correct answer with an asterisk: *A) or *B) etc.\n"
         f"- After each question, write: EXPLANATION: <why correct answer is right>\n"
         f"- Include tricky distractors that test deep understanding\n"
-        f"- For numerical questions, show the calculation step-by-step\n\n"
+        f"- For numerical questions, show the calculation step-by-step\n"
+        f"{custom_note}\n"
         f"Format: number each question 1. 2. 3. etc.\n"
         f"Do NOT output JSON. Write in plain text."
     )

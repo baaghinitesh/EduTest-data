@@ -392,7 +392,11 @@ def run():
 
     mode        = _get_mode()
     forced_exam = os.environ.get("FORCE_EXAM", "").strip().lower()
+    forced_exam = topic_picker.normalize_exam_slug(forced_exam) if forced_exam else ""
     forced_str  = " (forced)" if forced_exam else ""
+
+    # Custom generation instructions from workflow_dispatch input
+    custom_instructions = os.environ.get("GENERATION_INSTRUCTIONS", "").strip()
 
     generated = []
     failed    = 0
@@ -467,7 +471,12 @@ def run():
     print("  Exam: " + class_slug.upper() + forced_str)
     print("  Type: " + type_label)
     print("  Mode: " + mode.upper())
-    print("  Target: " + str(MAX_TESTS_PER_RUN) + " test(s) this run\n")
+    print("  Target: " + str(MAX_TESTS_PER_RUN) + " test(s) this run")
+    if custom_instructions:
+        print("  Instructions: " + custom_instructions[:120])
+        # Pass instructions into content_builder for this run
+        content_builder.set_custom_instructions(custom_instructions)
+    print()
 
     for attempt in range(1, MAX_TESTS_PER_RUN + 1):
         print("\n" + dq)

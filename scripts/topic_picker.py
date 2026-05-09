@@ -21,6 +21,104 @@ TOPICS_DIR = os.path.join(ROOT, "topics")
 STATE_FILE = os.path.join(ROOT, "scripts", "state.json")
 
 
+# ── Slug normalisation ─────────────────────────────────────────────────────────
+# Maps any user-supplied variant → canonical classSlug (folder name).
+# Keys are lowercased + stripped; values are the exact folder names.
+_SLUG_ALIASES = {
+    # JEE Mains
+    "jee":              "jee-mains",
+    "jee-main":         "jee-mains",
+    "jee-mains":        "jee-mains",
+    "jeemains":         "jee-mains",
+    "jeemain":          "jee-mains",
+    "jee mains":        "jee-mains",
+    "jee main":         "jee-mains",
+    # JEE Advanced
+    "jee-advance":      "jee-advanced",
+    "jee-advanced":     "jee-advanced",
+    "jeeadvanced":      "jee-advanced",
+    "jeeadvance":       "jee-advanced",
+    "jee advance":      "jee-advanced",
+    "jee advanced":     "jee-advanced",
+    # NEET
+    "neet":             "neet-ug",
+    "neet-ug":          "neet-ug",
+    "neetug":           "neet-ug",
+    "neet ug":          "neet-ug",
+    "neet-pg":          "neet-pg",
+    "neetpg":           "neet-pg",
+    # UPSC
+    "upsc":             "upsc-cse",
+    "upsc-cse":         "upsc-cse",
+    "upsccse":          "upsc-cse",
+    # SSC
+    "ssc":              "ssc-cgl",
+    "ssc-cgl":          "ssc-cgl",
+    "ssccgl":           "ssc-cgl",
+    "ssc-chsl":         "ssc-chsl",
+    "ssc-mts":          "ssc-mts",
+    # GATE
+    "gate":             "gate",
+    # CAT
+    "cat":              "cat",
+    # CUET
+    "cuet":             "cuet-ug",
+    "cuet-ug":          "cuet-ug",
+    "cuet-pg":          "cuet-pg",
+    # IBPS
+    "ibps":             "ibps-po",
+    "ibps-po":          "ibps-po",
+    "ibps-clerk":       "ibps-clerk",
+    # SBI
+    "sbi":              "sbi-po",
+    "sbi-po":           "sbi-po",
+    # RRB
+    "rrb":              "rrb-ntpc",
+    "rrb-ntpc":         "rrb-ntpc",
+    "rrb-group-d":      "rrb-group-d",
+    # NDA / CDS / CLAT / CTET / KVPY / DSSSB / NORCET
+    "nda":              "nda",
+    "cds":              "cds",
+    "clat":             "clat",
+    "ctet":             "ctet",
+    "kvpy":             "kvpy",
+    "dsssb":            "dsssb",
+    "norcet":           "norcet",
+    # Olympiads
+    "olympiad":         "olympiad-math",
+    "olympiad-math":    "olympiad-math",
+    "olympiad-science": "olympiad-science",
+}
+
+
+def normalize_exam_slug(raw: str) -> str:
+    """
+    Convert any user-supplied exam name to the canonical classSlug.
+
+    Handles:
+      - Case insensitivity:  JEE-ADVANCED → jee-advanced
+      - Spacing variants:    "jee advance" → jee-advanced
+      - Missing hyphens:     jeeadvanced   → jee-advanced
+      - Short aliases:       jee           → jee-mains
+      - Already correct:     jee-mains     → jee-mains
+
+    Falls back to the lowercased, hyphenated form if no alias matches,
+    so unknown-but-valid slugs (e.g. a new exam folder) still work.
+    """
+    if not raw:
+        return raw
+    # Normalise: lowercase, collapse whitespace/underscores to hyphens
+    key = raw.strip().lower().replace("_", "-").replace("  ", " ")
+    # Try alias lookup (with and without spaces-as-hyphens)
+    if key in _SLUG_ALIASES:
+        return _SLUG_ALIASES[key]
+    key_hyphen = key.replace(" ", "-")
+    if key_hyphen in _SLUG_ALIASES:
+        return _SLUG_ALIASES[key_hyphen]
+    # Return hyphenated lowercase as best-effort canonical form
+    return key_hyphen
+
+
 # ── State I/O ──────────────────────────────────────────────────────────────────
 
 def load_state():
@@ -81,18 +179,35 @@ def _load_modular_data(base_path, class_slug):
     return data
 
 def load_topics(class_slug):
-    """Load topics JSON for a classSlug. Handles both modular dirs and flat json files."""
+    """
+    Load topics JSON for a classSlug.
+    Handles both modular dirs and flat json files.
+    If no topic data exists at all, auto-generates and saves at least 10 topics
+    per subject using the AI pipeline before returning.
+    """
+    data = _load_topics_raw(class_slug)
+    if data and _has_topics(data):
+        return data
+
+    # ── No usable topic data — auto-generate via AI ───────────────────────────
+    print(f"  [TopicPicker] ⚠️  No topic data for '{class_slug}' — auto-generating topics...")
+    data = _generate_and_save_topics(class_slug, existing_data=data)
+    return data
+
+
+def _load_topics_raw(class_slug):
+    """Internal: load topic data without auto-generation fallback."""
     # 1. Check competitive directory modular
     comp_dir = os.path.join(TOPICS_DIR, "competitive", class_slug)
     if os.path.isdir(comp_dir):
         return _load_modular_data(comp_dir, class_slug)
-    
+
     # 2. Check competitive flat file
     comp_file = os.path.join(TOPICS_DIR, "competitive", class_slug + ".json")
     if os.path.exists(comp_file):
         with open(comp_file, "r", encoding="utf-8") as f:
             return json.load(f)
-            
+
     # 3. Check school boards modular
     for board in ["cbse", "icse", "maharashtra", "up-board", "isc"]:
         if class_slug.startswith(board):
@@ -100,13 +215,252 @@ def load_topics(class_slug):
             school_dir = os.path.join(TOPICS_DIR, "school", board, f"class-{num}")
             if os.path.isdir(school_dir):
                 return _load_modular_data(school_dir, class_slug)
-            
+
             # 4. Check school flat file
             school_file = os.path.join(TOPICS_DIR, "school", board, f"class-{num}.json")
             if os.path.exists(school_file):
                 with open(school_file, "r", encoding="utf-8") as f:
                     return json.load(f)
     return None
+
+
+# ── AI-powered topic generation ────────────────────────────────────────────────
+
+def _generate_and_save_topics(class_slug, existing_data=None):
+    """
+    Use Gemini to generate at least 10 topics per subject for an exam that has
+    no topic data. Saves the result to topics/competitive/<class_slug>/index.json
+    and subjects/*.json so subsequent runs can use it normally.
+
+    Returns the generated topics_data dict (or a minimal fallback on failure).
+    """
+    try:
+        import gemini_client
+    except ImportError:
+        print("  [TopicPicker] gemini_client not available — using minimal fallback topics")
+        return _minimal_fallback_topics(class_slug)
+
+    exam_name = class_slug.upper().replace("-", " ")
+
+    # If we have partial data (index.json exists but subjects are empty), use it
+    # as a skeleton; otherwise build from scratch.
+    if existing_data and existing_data.get("subjects"):
+        subjects_meta = [
+            {"name": s.get("name", s.get("slug", "General")),
+             "slug": s.get("slug", s.get("name", "general").lower().replace(" ", "-"))}
+            for s in existing_data["subjects"]
+        ]
+    else:
+        # Ask AI what subjects this exam has
+        subjects_meta = _ai_get_subjects(gemini_client, exam_name, class_slug)
+
+    if not subjects_meta:
+        print(f"  [TopicPicker] Could not determine subjects for {class_slug} — using fallback")
+        return _minimal_fallback_topics(class_slug)
+
+    # Generate chapters + topics for each subject
+    generated_subjects = []
+    for subj in subjects_meta:
+        subj_name = subj["name"]
+        subj_slug = subj["slug"]
+        print(f"  [TopicPicker] Generating topics for {exam_name} — {subj_name}...")
+        chapters = _ai_get_chapters_and_topics(gemini_client, exam_name, subj_name)
+        if not chapters:
+            # Minimal fallback for this subject
+            chapters = [{"name": "General Topics",
+                         "topics": [f"Topic {i+1}" for i in range(10)]}]
+        generated_subjects.append({
+            "slug": subj_slug,
+            "name": subj_name,
+            "icon": subj.get("icon", "📚"),
+            "color": subj.get("color", "#6366f1"),
+            "weightage": subj.get("weightage", round(100 / len(subjects_meta))),
+            "chapters": chapters,
+        })
+
+    # Build the full topics_data structure
+    exam_config = (existing_data or {}).get("examConfig") or _default_exam_config(class_slug)
+    board       = (existing_data or {}).get("board", "Competitive")
+    exam_type   = (existing_data or {}).get("type", "competitive")
+
+    topics_data = {
+        "classSlug":  class_slug,
+        "board":      board,
+        "type":       exam_type,
+        "examConfig": exam_config,
+        "subjects":   generated_subjects,
+    }
+
+    # Persist to disk so future runs load it directly
+    _save_generated_topics(class_slug, topics_data, exam_type)
+    total_topics = sum(
+        len(t) for s in generated_subjects
+        for c in s["chapters"]
+        for t in [c.get("topics", [])]
+    )
+    print(f"  [TopicPicker] ✅ Auto-generated {total_topics} topics across "
+          f"{len(generated_subjects)} subjects for {class_slug}")
+    return topics_data
+
+
+def _ai_get_subjects(gemini_client, exam_name, class_slug):
+    """Ask AI for the list of subjects in this exam. Returns list of {name, slug, ...}."""
+    prompt = (
+        f"List the main subjects tested in the {exam_name} exam.\n"
+        f"Output ONLY a JSON array, no explanation. Each item: "
+        f'{{\"name\": \"Physics\", \"slug\": \"physics\", \"icon\": \"⚛️\", '
+        f'\"color\": \"#3b82f6\", \"weightage\": 33}}\n'
+        f"Include weightage (%) that sums to 100. Typical exams have 2-5 subjects."
+    )
+    try:
+        raw = gemini_client.research(prompt, max_tokens=800)
+        if not raw:
+            return None
+        # Extract JSON array from response
+        import re
+        match = re.search(r'\[.*\]', raw, re.DOTALL)
+        if match:
+            return json.loads(match.group())
+    except Exception as e:
+        print(f"  [TopicPicker] Subject AI call failed: {e}")
+    return None
+
+
+def _ai_get_chapters_and_topics(gemini_client, exam_name, subject_name):
+    """
+    Ask AI for chapters and at least 10 topics per chapter for this exam+subject.
+    Returns list of {name, topics: [...]} dicts.
+    """
+    prompt = (
+        f"List the key chapters and topics for {subject_name} in the {exam_name} exam.\n"
+        f"Requirements:\n"
+        f"- At least 8 chapters\n"
+        f"- At least 10 topics per chapter (specific, exam-relevant topic names)\n"
+        f"- Topics should reflect actual {exam_name} syllabus\n"
+        f"Output ONLY a JSON array, no explanation:\n"
+        f'[{{"name": "Chapter Name", "topics": ["Topic 1", "Topic 2", ...]}}]\n'
+        f"Be specific and comprehensive. No generic placeholders."
+    )
+    try:
+        raw = gemini_client.research(prompt, max_tokens=3000)
+        if not raw:
+            return None
+        import re
+        match = re.search(r'\[.*\]', raw, re.DOTALL)
+        if match:
+            chapters = json.loads(match.group())
+            # Ensure each chapter has at least 10 topics
+            for ch in chapters:
+                topics = ch.get("topics", [])
+                if len(topics) < 10:
+                    # Pad with generic but named topics
+                    while len(topics) < 10:
+                        topics.append(f"{ch['name']} — Advanced Concepts {len(topics)+1}")
+                    ch["topics"] = topics
+            return chapters
+    except Exception as e:
+        print(f"  [TopicPicker] Chapters AI call failed: {e}")
+    return None
+
+
+def _save_generated_topics(class_slug, topics_data, exam_type):
+    """Save generated topics to the topics/ directory in modular format."""
+    if exam_type == "school":
+        # School: topics/school/<board>/class-<num>/
+        # For now save as competitive flat file — school slugs are more complex
+        out_dir  = os.path.join(TOPICS_DIR, "competitive")
+        out_file = os.path.join(out_dir, class_slug + ".json")
+    else:
+        out_dir  = os.path.join(TOPICS_DIR, "competitive", class_slug)
+        out_file = os.path.join(out_dir, "index.json")
+
+    os.makedirs(out_dir, exist_ok=True)
+
+    # For modular format: save index.json (without chapters) + subjects/*.json
+    if exam_type != "school":
+        subjects_dir = os.path.join(out_dir, "subjects")
+        os.makedirs(subjects_dir, exist_ok=True)
+
+        index_subjects = []
+        for subj in topics_data["subjects"]:
+            subj_slug = subj["slug"]
+            subj_file = f"subjects/{subj_slug}.json"
+            # Save subject file with chapters
+            subj_path = os.path.join(out_dir, subj_file)
+            subj_data = {
+                "slug":      subj_slug,
+                "name":      subj["name"],
+                "icon":      subj.get("icon", "📚"),
+                "color":     subj.get("color", "#6366f1"),
+                "weightage": subj.get("weightage", 33),
+                "classSlug": class_slug,
+                "board":     topics_data.get("board", "Competitive"),
+                "chapters":  subj.get("chapters", []),
+            }
+            with open(subj_path, "w", encoding="utf-8") as f:
+                json.dump(subj_data, f, indent=2, ensure_ascii=False)
+            print(f"  [TopicPicker] Saved {subj_path}")
+
+            index_subjects.append({
+                "slug":      subj_slug,
+                "name":      subj["name"],
+                "icon":      subj.get("icon", "📚"),
+                "color":     subj.get("color", "#6366f1"),
+                "weightage": subj.get("weightage", 33),
+                "file":      subj_file,
+            })
+
+        # Save index.json (no chapters — those are in subject files)
+        index_data = {k: v for k, v in topics_data.items() if k != "subjects"}
+        index_data["subjects"] = index_subjects
+        with open(out_file, "w", encoding="utf-8") as f:
+            json.dump(index_data, f, indent=2, ensure_ascii=False)
+        print(f"  [TopicPicker] Saved {out_file}")
+    else:
+        # Flat file for school or fallback
+        with open(out_file, "w", encoding="utf-8") as f:
+            json.dump(topics_data, f, indent=2, ensure_ascii=False)
+        print(f"  [TopicPicker] Saved {out_file}")
+
+
+def _default_exam_config(class_slug):
+    """Return a sensible default examConfig for an unknown exam."""
+    return {
+        "fullLengthQuestions": 100,
+        "fullLengthMarks": 400,
+        "fullLengthDuration": 180,
+        "subjectWiseQuestions": 30,
+        "subjectWiseMarks": 120,
+        "subjectWiseDuration": 60,
+        "negativeMarking": False,
+        "correctMarkValue": 4,
+        "negativeMarkValue": 1,
+        "subjectWiseQMin": 20,
+        "subjectWiseQMax": 40,
+        "combinedTestQPerSubject": 20,
+    }
+
+
+def _minimal_fallback_topics(class_slug):
+    """Return a minimal in-memory topics structure when AI is unavailable."""
+    exam_name = class_slug.upper().replace("-", " ")
+    return {
+        "classSlug":  class_slug,
+        "board":      "Competitive",
+        "type":       "competitive",
+        "examConfig": _default_exam_config(class_slug),
+        "subjects": [{
+            "slug":      f"{class_slug}-general",
+            "name":      "General",
+            "icon":      "📚",
+            "color":     "#6366f1",
+            "weightage": 100,
+            "chapters": [{
+                "name":   "Core Concepts",
+                "topics": [f"{exam_name} Topic {i+1}" for i in range(10)],
+            }],
+        }],
+    }
 
 
 def get_all_available_exams():
