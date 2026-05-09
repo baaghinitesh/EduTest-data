@@ -4,7 +4,7 @@
   "class_slug": "sbi-po",
   "test_type": "combined",
   "target_q": 50,
-  "collected_q": 43,
+  "collected_q": 48,
   "final_path": "data/admin/sbi-po/tests/sbi-po-combined-quantitative-aptitude-english-language-082a18a3.json",
   "payload": {
     "id": "082a18a3-a7ed-4551-ab8d-0dd39e4e8f22",
@@ -22,9 +22,9 @@
     "topic": "Combined",
     "testType": "subject-wise",
     "duration": 60,
-    "totalMarks": 43,
-    "passingMarks": 15,
-    "totalQuestions": 43,
+    "totalMarks": 48,
+    "passingMarks": 17,
+    "totalQuestions": 48,
     "targetQuestions": 50,
     "isPublic": true,
     "isPublished": true,
@@ -2245,6 +2245,261 @@
         "subject": "bank-english",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1778343270167-18494",
+        "order": 44,
+        "question": "What is the largest number that divides 398, 436 and 542 leaving remainders 7, 11 and 15 respectively?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "15",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Not the largest number that divides 398, 436 and 542 leaving remainders 7, 11 and 15 respectively"
+          },
+          {
+            "letter": "B",
+            "text": "17",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "The largest number that divides 398, 436 and 542 leaving remainders 7, 11 and 15 respectively"
+          },
+          {
+            "letter": "C",
+            "text": "19",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Not the largest number that divides 398, 436 and 542 leaving remainders 7, 11 and 15 respectively"
+          },
+          {
+            "letter": "D",
+            "text": "23",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Not the largest number that divides 398, 436 and 542 leaving remainders 7, 11 and 15 respectively"
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "If a number 'N' divides 'A' leaving remainder 'R', then 'N' must divide (A - R) exactly.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0.25,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "bank-quant",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1778343270167-b40ba",
+        "order": 45,
+        "question": "A six-digit number 479xyz is divisible by 7, 11, and 13. What is the value of (y+z-x)?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "11",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "The value of (y+z-x) is not 11, it is (7 + 9 - 4) = 12"
+          },
+          {
+            "letter": "B",
+            "text": "12",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "The value of (y+z-x) is (7 + 9 - 4) = 12, which is the correct answer"
+          },
+          {
+            "letter": "C",
+            "text": "13",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "The value of (y+z-x) is not 13, it is (7 + 9 - 4) = 12"
+          },
+          {
+            "letter": "D",
+            "text": "10",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "The value of (y+z-x) is not 10, it is (7 + 9 - 4) = 12"
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "A number that is divisible by 7, 11, and 13 is also divisible by their product. LCM(7, 11, 13) = 7 × 11 × 13 = 1001. Any number of the form 'abcabc' is divisible by 1001. Given the number is 479xyz. For it to be divisible by 1001, it must be of the form 479479. Comparing 479xyz with 479479, we get: x = 4, y = 7, z = 9. We need to find the value of (y+z-x). (y+z-x) = (7 + 9 - 4) = 12",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0.25,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "bank-quant",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778343270167-4994a",
+        "order": 46,
+        "question": "What is the sum of all two-digit numbers which are divisible by 7?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "714",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is not the correct sum of all two-digit numbers which are divisible by 7."
+          },
+          {
+            "letter": "B",
+            "text": "693",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is not the correct sum of all two-digit numbers which are divisible by 7."
+          },
+          {
+            "letter": "C",
+            "text": "728",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the correct sum of all two-digit numbers which are divisible by 7."
+          },
+          {
+            "letter": "D",
+            "text": "700",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is not the correct sum of all two-digit numbers which are divisible by 7."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The sum of an AP is given by: Sum = (n/2) * (a + l), where n is the number of terms, a is the first term, and l is the last term. In this case, a = 14, l = 98, and n = 13, so Sum = (13/2) * (14 + 98) = 728",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0.25,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "bank-quant",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778343270167-150b5",
+        "order": 47,
+        "question": "A number when divided by 5, 6, and 8 leaves a remainder of 3 in each case. If the number is between 1000 and 1200, what is the sum of its digits?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "9",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is not the correct sum of the digits of the number."
+          },
+          {
+            "letter": "B",
+            "text": "12",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the correct sum of the digits of the number."
+          },
+          {
+            "letter": "C",
+            "text": "15",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is not the correct sum of the digits of the number."
+          },
+          {
+            "letter": "D",
+            "text": "18",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is not the correct sum of the digits of the number."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The number N can be expressed as N = 120k + 3, where k is a positive integer. Since 1000 < N < 1200, we can find the value of k and then calculate the sum of the digits of N.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0.25,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "bank-quant",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778343270167-f4798",
+        "order": 48,
+        "question": "What is the unit digit of (7^95 - 3^58)?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "2",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is not the correct unit digit of (7^95 - 3^58)."
+          },
+          {
+            "letter": "B",
+            "text": "4",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the correct unit digit of (7^95 - 3^58)."
+          },
+          {
+            "letter": "C",
+            "text": "6",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is not the correct unit digit of (7^95 - 3^58)."
+          },
+          {
+            "letter": "D",
+            "text": "8",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is not the correct unit digit of (7^95 - 3^58)."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "To find the unit digit of a number raised to a power, we look at the cyclicity of the unit digit. For 7^N, the cyclicity is 4, and for 3^N, the cyclicity is also 4. We can use this to find the unit digits of 7^95 and 3^58, and then subtract them to find the unit digit of (7^95 - 3^58).",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0.25,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "bank-quant",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
@@ -2279,13 +2534,13 @@
     ],
     "q_per_subj": 25,
     "collected_per_subj": {
-      "bank-quant": 18,
+      "bank-quant": 23,
       "bank-english": 25
     },
     "is_school": false,
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-05-09T12:17:07.704796Z",
-  "updated_at": "2026-05-09T12:17:07.704807Z"
+  "created_at": "2026-05-09T16:14:30.167443Z",
+  "updated_at": "2026-05-09T16:14:30.167457Z"
 }
