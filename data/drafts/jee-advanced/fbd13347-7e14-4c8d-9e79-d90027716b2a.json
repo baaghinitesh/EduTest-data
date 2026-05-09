@@ -4,7 +4,7 @@
   "class_slug": "jee-advanced",
   "test_type": "subject-wise",
   "target_q": 20,
-  "collected_q": 13,
+  "collected_q": 16,
   "final_path": "data/admin/jee-advanced/tests/jee-advanced-physics-lens-combinations-fbd13347.json",
   "payload": {
     "id": "fbd13347-7e14-4c8d-9e79-d90027716b2a",
@@ -21,9 +21,9 @@
     "topic": "Lens Combinations",
     "testType": "subject-wise",
     "duration": 60,
-    "totalMarks": 39,
-    "passingMarks": 14,
-    "totalQuestions": 13,
+    "totalMarks": 48,
+    "passingMarks": 17,
+    "totalQuestions": 16,
     "targetQuestions": 20,
     "isPublic": true,
     "isPublished": true,
@@ -716,11 +716,164 @@
         "subject": "jee-adv-physics",
         "difficulty": "easy",
         "hasError": false
+      },
+      {
+        "id": "q-1778327862959-71daa",
+        "order": 14,
+        "question": "A convex lens of focal length $f_1 = +20 \\text{ cm}$ and a concave lens of focal length $f_2 = -40 \\text{ cm}$ are placed in contact. The equivalent focal length of the combination is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$+60 \\text{ cm}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect option, the correct calculation yields $f_{eq} = +40 \\text{ cm}$."
+          },
+          {
+            "letter": "B",
+            "text": "$+40 \\text{ cm}$",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct option, the combination acts as a converging lens with a focal length of $+40 \\text{ cm}$."
+          },
+          {
+            "letter": "C",
+            "text": "$-60 \\text{ cm}$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect option, the correct calculation yields $f_{eq} = +40 \\text{ cm}$."
+          },
+          {
+            "letter": "D",
+            "text": "$-20 \\text{ cm}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect option, the correct calculation yields $f_{eq} = +40 \\text{ cm}$."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For two thin lenses in contact, the equivalent focal length $f_{eq}$ is given by the formula: $ \\frac{1}{f_{eq}} = \\frac{1}{f_1} + \\frac{1}{f_2} $. Given $f_1 = +20 \\text{ cm}$ and $f_2 = -40 \\text{ cm}$. $ \\frac{1}{f_{eq}} = \\frac{1}{+20} + \\frac{1}{-40} $ $ \\frac{1}{f_{eq}} = \\frac{2}{40} - \\frac{1}{40} $ $ \\frac{1}{f_{eq}} = \\frac{1}{40} $ $ f_{eq} = +40 \\text{ cm} $ The combination acts as a converging lens with a focal length of $+40 \\text{ cm}$.",
+        "hint": "",
+        "marks": 3,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-adv-physics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778327862959-0fcb3",
+        "order": 15,
+        "question": "Two thin lenses, one convex with focal length $f_1 = +15$ cm and another concave with focal length $f_2 = -10$ cm, are placed in contact. The combination is then immersed in a liquid with refractive index 1.5. If the lenses are made of a material with refractive index 1.5, what is the power of the combination in the liquid?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "+10 D",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because the power of the combination in the liquid is not +10 D."
+          },
+          {
+            "letter": "B",
+            "text": "-10 D",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because the power of the combination in the liquid is not -10 D."
+          },
+          {
+            "letter": "C",
+            "text": "+6.67 D",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because the power of the combination in the liquid is not +6.67 D."
+          },
+          {
+            "letter": "D",
+            "text": "0",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is the correct option because the power of the combination in the liquid will be zero, as the refractive indices are the same and there will be no net bending of light."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Since the lenses are made of a material with the same refractive index as the liquid, the power of the combination in the liquid will be zero, as the refractive indices are the same and there will be no net bending of light.",
+        "hint": "",
+        "marks": 3,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-adv-physics",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1778327862959-32243",
+        "order": 16,
+        "question": "A convex lens of focal length 20 cm and a concave lens of focal length 25 cm are placed in contact coaxially. An object is placed at a distance of 100 cm from the combination. What is the position of the final image?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "At infinity",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "The image is formed at infinity because the net power of the lens combination is 1/100 and the object is at a distance of 100 cm."
+          },
+          {
+            "letter": "B",
+            "text": "100 cm from the combination",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because the image is not formed at the same distance as the object."
+          },
+          {
+            "letter": "C",
+            "text": "50 cm from the combination",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because the image is not formed at a distance of 50 cm."
+          },
+          {
+            "letter": "D",
+            "text": "20 cm from the combination",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because the image is not formed at a distance of 20 cm."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The power of the convex lens is 1/20 and the power of the concave lens is -1/25. The net power is 1/20 - 1/25 = 1/100. Using the lens equation, 1/f = 1/v - 1/u, we get 1/100 = 1/v - 1/(-100). Solving for v, we get v = -100 * 100 / (100 - 100) which tends to infinity.",
+        "hint": "",
+        "marks": 3,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-adv-physics",
+        "difficulty": "easy",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 7,
+    "remaining_q": 4,
     "subj_slug": "jee-adv-physics",
     "subj_name": "Physics",
     "chapter": "Optics Advanced",
@@ -729,6 +882,6 @@
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-05-09T08:18:22.882299Z",
-  "updated_at": "2026-05-09T08:18:22.882310Z"
+  "created_at": "2026-05-09T11:57:42.959560Z",
+  "updated_at": "2026-05-09T11:57:42.959572Z"
 }
