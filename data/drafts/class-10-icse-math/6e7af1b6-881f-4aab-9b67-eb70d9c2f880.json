@@ -4,7 +4,7 @@
   "class_slug": "class-10-icse-math",
   "test_type": "subject-wise",
   "target_q": 25,
-  "collected_q": 13,
+  "collected_q": 19,
   "final_path": "data/admin/class-10-icse-math/tests/class-10-icse-math-mathematics-topic-7-6e7af1b6.json",
   "payload": {
     "id": "6e7af1b6-881f-4aab-9b67-eb70d9c2f880",
@@ -21,9 +21,9 @@
     "topic": "Topic 7",
     "testType": "subject-wise",
     "duration": 60,
-    "totalMarks": 52,
-    "passingMarks": 18,
-    "totalQuestions": 13,
+    "totalMarks": 76,
+    "passingMarks": 27,
+    "totalQuestions": 19,
     "targetQuestions": 25,
     "isPublic": true,
     "isPublished": true,
@@ -714,11 +714,317 @@
         "subject": "mathematics",
         "difficulty": "easy",
         "hasError": false
+      },
+      {
+        "id": "q-1778500844483-382d7",
+        "order": 14,
+        "question": "If the roots of the quadratic equation $x^2 + kx + 4 = 0$ are real and equal, what is the value of $k$?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "4",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is only one possible value of $k$, but the correct answer includes both positive and negative values."
+          },
+          {
+            "letter": "B",
+            "text": "-4",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is only one possible value of $k$, but the correct answer includes both positive and negative values."
+          },
+          {
+            "letter": "C",
+            "text": "±4",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the correct value of $k$ as it satisfies the condition for equal roots."
+          },
+          {
+            "letter": "D",
+            "text": "0",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Substituting $k = 0$ does not satisfy the condition for equal roots, as the discriminant would be $-16$, which is not zero."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For a quadratic equation $ax^2 + bx + c = 0$ to have real and equal roots, its discriminant ($D = b^2 - 4ac$) must be equal to 0. In the given equation, $x^2 + kx + 4 = 0$, we have $a = 1$, $b = k$, and $c = 4$. Setting the discriminant to zero: $k^2 - 4(1)(4) = 0$ → $k^2 - 16 = 0$ → $k^2 = 16$ → $k = \\pm 4$.",
+        "hint": "Recall that for equal roots, the discriminant must be zero.",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1778500844483-527df",
+        "order": 15,
+        "question": "For what value of k does the quadratic equation $kx^2 - 4x + 1 = 0$ have real and equal roots?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "1",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is not the correct value of k."
+          },
+          {
+            "letter": "B",
+            "text": "2",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is not the correct value of k."
+          },
+          {
+            "letter": "C",
+            "text": "3",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is not the correct value of k."
+          },
+          {
+            "letter": "D",
+            "text": "4",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is the correct value of k."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For a quadratic equation $ax^2 + bx + c = 0$ to have real and equal roots, its discriminant must be zero, i.e., $b^2 - 4ac = 0$. In the given equation, $a=k$, $b=-4$, and $c=1$. So, $b^2 - 4ac = (-4)^2 - 4(k)(1) = 16 - 4k = 0$. Solving for $k$, we get $k = 4$.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778500844483-4e23e",
+        "order": 16,
+        "question": "The discriminant of the quadratic equation $\\sqrt{3}x^2 - 2\\sqrt{2}x - 2\\sqrt{3} = 0$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "24",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect. The calculation yields 32, not 24."
+          },
+          {
+            "letter": "B",
+            "text": "32",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct. The discriminant is calculated as 32."
+          },
+          {
+            "letter": "C",
+            "text": "40",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect. The calculation does not yield 40."
+          },
+          {
+            "letter": "D",
+            "text": "32",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect. This option is a duplicate and should not be marked as correct."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The discriminant of a quadratic equation $ax^2 + bx + c = 0$ is given by $D = b^2 - 4ac$. For the given equation, $a = \\sqrt{3}$, $b = -2\\sqrt{2}$, and $c = -2\\sqrt{3}$. Substituting these values, we get $D = (-2\\sqrt{2})^2 - 4(\\sqrt{3})(-2\\sqrt{3}) = 8 + 24 = 32$.",
+        "hint": "Use the formula $D = b^2 - 4ac$ for the discriminant.",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778500844483-002a7",
+        "order": 17,
+        "question": "A retailer buys an article for ₹5000 and marks it 20% above the cost price. He then sells it at a discount of 10% on the marked price. If the rate of GST is 18%, the amount of GST paid by the customer is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "₹810",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect. The GST is calculated as 18% of ₹5400, which is ₹972."
+          },
+          {
+            "letter": "B",
+            "text": "₹900",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect. The GST is ₹972, not ₹900."
+          },
+          {
+            "letter": "C",
+            "text": "₹972",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct. The GST is calculated as ₹972."
+          },
+          {
+            "letter": "D",
+            "text": "₹1080",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect. The GST is ₹972, not ₹1080."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The cost price (CP) is ₹5000. The marked price (MP) is 20% above CP: $MP = 5000 + 0.20 \\times 5000 = ₹6000$. A 10% discount on MP gives a selling price (SP) of $SP = 6000 - 0.10 \\times 6000 = ₹5400$. The GST is 18% of SP: $GST = 0.18 \\times 5400 = ₹972$.",
+        "hint": "Calculate the marked price first, then apply the discount, and finally compute the GST on the selling price.",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778500844483-0108e",
+        "order": 18,
+        "question": "In the given figure, O is the center of the circle. PQ is a tangent to the circle at point A. If $\\angle PAB = 58^\\circ$, what is the measure of $\\angle AOB$?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$29^\\circ$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect. The correct measure is $116^\\circ$."
+          },
+          {
+            "letter": "B",
+            "text": "$100^\\circ$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect. The correct measure is $116^\\circ$."
+          },
+          {
+            "letter": "C",
+            "text": "$116^\\circ$",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct. The measure of $\\angle AOB$ is $116^\\circ$."
+          },
+          {
+            "letter": "D",
+            "text": "$122^\\circ$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect. The correct measure is $116^\\circ$."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Since PQ is a tangent at A, the radius OA is perpendicular to PQ, so $\\angle OAP = 90^\\circ$. Given $\\angle PAB = 58^\\circ$, we find $\\angle OAB = 90^\\circ - 58^\\circ = 32^\\circ$. In $\\triangle OAB$, OA = OB (radii), so it is isosceles. Thus, $\\angle OBA = \\angle OAB = 32^\\circ$. The sum of angles in $\\triangle OAB$ is $180^\\circ$, so $\\angle AOB = 180^\\circ - 32^\\circ - 32^\\circ = 116^\\circ$.",
+        "hint": "Use the property that the radius is perpendicular to the tangent at the point of contact.",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778500844484-690db",
+        "order": 19,
+        "question": "If the 5th term of an Arithmetic Progression (AP) is 18 and the 12th term is 32, what is the sum of the first 20 terms?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "400",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect. The sum of the first 20 terms is 580."
+          },
+          {
+            "letter": "B",
+            "text": "440",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect. The sum of the first 20 terms is 580."
+          },
+          {
+            "letter": "C",
+            "text": "420",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect. The sum of the first 20 terms is 580."
+          },
+          {
+            "letter": "D",
+            "text": "580",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Correct. The sum of the first 20 terms is 580."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let the first term be $a$ and the common difference be $d$. The 5th term is $a + 4d = 18$ and the 12th term is $a + 11d = 32$. Solving these equations, we get $d = 2$ and $a = 10$. The sum of the first 20 terms is $S_{20} = \\frac{20}{2}[2(10) + (20-1)(2)] = 10[20 + 38] = 580$.",
+        "hint": "Use the formula for the $n^{th}$ term of an AP to find $a$ and $d$, then use the sum formula.",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 12,
+    "remaining_q": 6,
     "subj_slug": "mathematics",
     "subj_name": "Mathematics",
     "chapter": "General Topics",
@@ -727,6 +1033,6 @@
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-05-11T11:06:52.164902Z",
-  "updated_at": "2026-05-11T11:06:52.164913Z"
+  "created_at": "2026-05-11T12:00:44.484023Z",
+  "updated_at": "2026-05-11T12:00:44.484036Z"
 }
