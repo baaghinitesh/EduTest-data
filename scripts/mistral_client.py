@@ -26,6 +26,7 @@ KEY_ENV = "MISTRAL_API_KEY"
 
 _client    = None
 _last_call = 0.0
+_exhausted = False   # set True when Mistral hits quota/rate-limit this run
 
 
 class MistralError(Exception):
@@ -88,6 +89,10 @@ def _extract_json(text):
 
 def _call(system_prompt, user_prompt, expect_json=False, max_tokens=4096):
     """Call Mistral with retry. Returns text or parsed JSON."""
+    global _exhausted
+    if _exhausted:
+        raise MistralQuotaError("Mistral already exhausted this run")
+    
     client   = _get_client()
     last_err = None
     for attempt in range(1, MAX_RETRIES + 1):
@@ -114,6 +119,8 @@ def _call(system_prompt, user_prompt, expect_json=False, max_tokens=4096):
             s = str(e)
             print(f"  [Mistral] attempt {attempt}/{MAX_RETRIES}: {s[:120]}")
             if any(x in s for x in ["429", "rate_limit", "quota", "too many"]):
+                _exhausted = True
+                print(f"  [Mistral] Quota/rate-limit hit — marking Mistral exhausted for this run")
                 raise MistralQuotaError(f"Mistral quota/rate-limit hit: {s[:80]}")
             if any(x in s for x in ["503", "502", "unavailable"]):
                 wait = 15 * attempt
@@ -126,8 +133,13 @@ def _call(system_prompt, user_prompt, expect_json=False, max_tokens=4096):
 
 
 def available():
-    """Return True if MISTRAL_API_KEY is set."""
-    return bool(os.environ.get(KEY_ENV, "").strip())
+    """Return True if MISTRAL_API_KEY is set and not exhausted this run."""
+    return bool(os.environ.get(KEY_ENV, "").strip()) and not _exhausted
+
+
+def _is_exhausted():
+    """Return True if Mistral hit quota/rate-limit this run."""
+    return _exhausted
 
 
 # ── Public API ────────────────────────────────────────────────────────────────
@@ -135,11 +147,13 @@ def available():
 def generate_questions(prompt, max_tokens=4096):
     """
     Generate raw question text using Mistral.
-    Called when all 3 Gemini keys are exhausted.
+    Called when all 3 Gemini keys are exhausted, or as part of rotation.
     Returns raw text string or raises MistralError.
     """
-    if not available():
+    if not os.environ.get(KEY_ENV, "").strip():
         raise MistralError(f"{KEY_ENV} not set — Mistral unavailable")
+    if _exhausted:
+        raise MistralQuotaError("Mistral already exhausted this run")
 
     system = (
         "You are an expert MCQ question setter for competitive and school exams. "
@@ -159,8 +173,10 @@ def structure_questions(raw_text, schema, exam_name, subject_name=""):
     Called when both Groq keys fail, before Flash fallback.
     Returns list of question dicts or raises MistralError.
     """
-    if not available():
+    if not os.environ.get(KEY_ENV, "").strip():
         raise MistralError(f"{KEY_ENV} not set — Mistral unavailable")
+    if _exhausted:
+        raise MistralQuotaError("Mistral already exhausted this run")
 
     ctx = f"{exam_name} exam" + (f", {subject_name}" if subject_name else "")
     system = (
@@ -185,10 +201,13 @@ def structure_questions(raw_text, schema, exam_name, subject_name=""):
 
 def research(prompt, max_tokens=1500):
     """
-    Research step using Mistral — fallback when both Gemini keys fail.
+    Research step using Mistral — fallback when Gemini keys fail.
     Returns text or empty string (never raises).
     """
-    if not available():
+    if not os.environ.get(KEY_ENV, "").strip():
+        return ""
+    if _exhausted:
+        print("  [Research] Mistral already exhausted this run — skipping")
         return ""
     try:
         system = (

@@ -120,7 +120,7 @@ def _validate_keys():
         "GEMINI_API_KEY2":  ("Flash K3 (primary generator)",            "critical"),
         "GROQ_API_KEY":     ("Groq K1 (primary structurer)",            "critical"),
         "GROQ_API_KEY2":    ("Groq K2 (fallback structurer)",           "critical"),
-        "MISTRAL_API_KEY":  ("Mistral (gen fallback + structurer)",     "optional"),
+        "MISTRAL_API_KEY":  ("Mistral (gen rotation + structurer)",     "optional"),
     }
     print("\n  API Keys (all 6 tried before giving up):")
     missing_critical = []
@@ -142,6 +142,13 @@ def _validate_keys():
         print("  Generation will attempt fallbacks but may produce fewer questions.\n")
     else:
         print("  All keys set — maximum free-tier capacity available.\n")
+    
+    # Show key rotation strategy
+    print("  Key rotation strategy:")
+    print("    Generation : K3→K1→K2→Mistral (rotates per chunk, Mistral every 4th)")
+    print("    Research   : K1→K2→K3→Mistral→Flash2.0 (all tried before empty ctx)")
+    print("    Structuring: GroqK1→GroqK2→Mistral→Flash2.0→Flash2.5 (all 6 keys)")
+    print()
 
 
 # School subject-wise sizes -- picked randomly each run
@@ -317,6 +324,12 @@ def run_subject(class_slug):
 def _print_final_report(generated, failed):
     import gemini_client as _gc
     import groq_client   as _gq
+    try:
+        import mistral_client as _mc
+        mistral_exhausted = _mc._is_exhausted()
+    except Exception:
+        mistral_exhausted = False
+
     eq = chr(61) * 65
     pending = draft_store.load_all_drafts()
     print("\n" + eq)
@@ -335,8 +348,14 @@ def _print_final_report(generated, failed):
             print("    • " + d["title"] + " [" + str(d["collected_q"]) + "/" + str(d["target_q"]) + "Q  " + str(pct) + "%]")
     # Show which keys hit their daily limit this run
     exhausted = list(_gc._rpd_exhausted) + list(_gq._tpd_exhausted)
+    if mistral_exhausted:
+        exhausted.append("MISTRAL_API_KEY")
     if exhausted:
         print("  🔑 Keys that hit daily limit this run: " + ", ".join(exhausted))
+    total_keys = 6
+    exhausted_count = len(exhausted)
+    remaining = total_keys - exhausted_count
+    print(f"  📊 Key status: {remaining}/{total_keys} keys still available")
     print(eq + "\n")
 
 

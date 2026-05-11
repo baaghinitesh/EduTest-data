@@ -244,10 +244,10 @@ def format_questions(raw_text, schema_example, exam_name, subject_name=""):
     """
     Structure raw question text into JSON array.
 
-    Per chunk:
+    Per chunk — tries ALL available keys before skipping:
       1. Try Groq K1 (with TPM-wait retry)
       2. Try Groq K2 (with TPM-wait retry)
-      3. Try Mistral (separate quota)
+      3. Try Mistral (separate quota — always worth trying)
       4. Skip chunk (caller falls back to Flash structurer)
 
     Raises GroqError only if ALL chunks fail on ALL keys.
@@ -281,11 +281,12 @@ def format_questions(raw_text, schema_example, exam_name, subject_name=""):
                     break
                 print(f"  [Groq] {key_env} failed on chunk {chunk_idx} ({err[:80]}) — trying next key")
 
-        # ── Mistral fallback for this chunk ───────────────────────────────────
+        # ── Mistral fallback for this chunk (separate quota — always try) ─────
         if not chunk_done:
             try:
                 import mistral_client
                 if mistral_client.available():
+                    print(f"  [Groq] Both Groq keys failed — trying Mistral for chunk {chunk_idx}")
                     qs = mistral_client.structure_questions(
                         chunk, _COMPACT_SCHEMA, exam_name, subject_name
                     )
@@ -293,11 +294,13 @@ def format_questions(raw_text, schema_example, exam_name, subject_name=""):
                         all_questions.extend(qs)
                         print(f"  [Groq] ✅ chunk {chunk_idx}/{len(chunks)} — {len(qs)}Q via Mistral")
                         chunk_done = True
+                else:
+                    print(f"  [Groq] Mistral not available for chunk {chunk_idx}")
             except Exception as e:
                 print(f"  [Groq] Mistral fallback failed for chunk {chunk_idx} ({str(e)[:60]})")
 
         if not chunk_done:
-            print(f"  [Groq] chunk {chunk_idx} failed on all keys — skipping")
+            print(f"  [Groq] chunk {chunk_idx} failed on all keys (Groq K1, K2, Mistral) — skipping")
 
     if not all_questions:
         raise GroqError("All chunks failed on all Groq keys + Mistral")
