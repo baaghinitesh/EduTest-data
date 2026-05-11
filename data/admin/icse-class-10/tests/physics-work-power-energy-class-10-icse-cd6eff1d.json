@@ -65,7 +65,7 @@
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "The formula for work done is , where is the angle between the applied force and the displacement. The force of gravity acts vertically downwards, while the displacement of the man is horizontally forward. The angle between them is . Since , the work done by gravity is zero.",
+      "explanation": "The formula for work done is W = F \\times d \\times \\cos\\theta, where \\theta is the angle between the applied force and the displacement. The force of gravity acts vertically downwards, while the displacement of the man is horizontally forward. The angle between them is 90°. Since \\cos 90° = 0, the work done by gravity is zero.",
       "hint": "",
       "marks": 1,
       "negativeMark": 0,
@@ -116,7 +116,7 @@
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "1 kilowatt-hour is the energy consumed when an appliance of 1 kilowatt (1000 Watts) power is used for 1 hour.\n.\nSince 1 hour = 3600 seconds,\n.",
+      "explanation": "1 kilowatt-hour is the energy consumed when an appliance of 1 kilowatt (1000 Watts) power is used for 1 hour.\nE = P \\times t.\nSince 1 hour = 3600 seconds,\nE = 1000 \\text{ W} \\times 3600 \\text{ s} = 3.6 \\times 10^6 \\text{ J}.",
       "hint": "",
       "marks": 1,
       "negativeMark": 0,
@@ -129,7 +129,7 @@
     },
     {
       "id": "q-1778035999739-31y02",
-      "question": "A constant force of 20 N displaces a body by 5 m. If the angle between the direction of the force and the direction of displacement is , calculate the work done.",
+      "question": "A constant force of 20 N displaces a body by 5 m. If the angle between the direction of the force and the direction of displacement is 60°, calculate the work done.",
       "type": "mcq",
       "options": [
         {
@@ -167,7 +167,7 @@
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "The work done is calculated using the formula .\nHere, , , and .\n.\nSince ,\n.",
+      "explanation": "The work done is calculated using the formula W = F \\times d \\times \\cos\\theta.\nHere, F = 20 \\text{ N}, d = 5 \\text{ m}, and \\theta = 60°.\nW = 20 \\times 5 \\times \\cos 60°.\nSince \\cos 60° = 0.5,\nW = 20 \\times 5 \\times 0.5 = 50 \\text{ J}.",
       "hint": "",
       "marks": 1,
       "negativeMark": 0,
@@ -218,7 +218,7 @@
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "The relationship between kinetic energy () and momentum () is .\nLet the initial kinetic energy be .\nIf the momentum is doubled (), the new kinetic energy is:\n.\nTherefore, the kinetic energy becomes four times its original value.",
+      "explanation": "The relationship between kinetic energy (KE) and momentum (p) is KE = \\frac{p^2}{2m}.\nLet the initial kinetic energy be KE_1 = \\frac{p^2}{2m}.\nIf the momentum is doubled (p' = 2p), the new kinetic energy is:\nKE_2 = \\frac{(2p)^2}{2m} = \\frac{4p^2}{2m} = 4 \\times \\frac{p^2}{2m} = 4 \\cdot KE_1.\nTherefore, the kinetic energy becomes four times its original value.",
       "hint": "",
       "marks": 1,
       "negativeMark": 0,
@@ -231,7 +231,7 @@
     },
     {
       "id": "q-1778035999740-mnx3e",
-      "question": "An electric water pump raises 50 kg of water to a height of 20 m in 10 seconds. Assuming the acceleration due to gravity , what is the output power of the pump?",
+      "question": "An electric water pump raises 50 kg of water to a height of 20 m in 10 seconds. Assuming the acceleration due to gravity g = 10 \\text{ m/s}^2, what is the output power of the pump?",
       "type": "mcq",
       "options": [
         {
@@ -269,7 +269,7 @@
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "Power is the rate of doing work: .\nThe work done by the pump in lifting the water against gravity is equal to the potential energy gained: .\n.\nTime .\nPower (or 1 kW).",
+      "explanation": "Power is the rate of doing work: P = \\frac{W}{t}.\nThe work done by the pump in lifting the water against gravity is equal to the potential energy gained: W = mgh.\nW = 50 \\times 10 \\times 20 = 10000 \\text{ J}.\nTime t = 10 \\text{ s}.\nPower P = \\frac{10000}{10} = 1000 \\text{ W} (or 1 kW).",
       "hint": "",
       "marks": 1,
       "negativeMark": 0,
@@ -282,7 +282,7 @@
     },
     {
       "id": "q-1778035999741-94xug",
-      "question": "A body of mass 2 kg is thrown vertically upwards with an initial velocity of . What will be its maximum potential energy at the highest point? (Take and assume no air resistance).",
+      "question": "A body of mass 2 kg is thrown vertically upwards with an initial velocity of 20 m/s. What will be its maximum potential energy at the highest point? (Take g = 10 \\text{ m/s}^2 and assume no air resistance).",
       "type": "mcq",
       "options": [
         {
@@ -320,7 +320,7 @@
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "According to the Law of Conservation of Energy, in the absence of air resistance, the maximum potential energy at the highest point is equal to the initial kinetic energy given to the body at the point of projection.\nInitial Kinetic Energy () .\n.\nTherefore, the potential energy at the maximum height is 400 J.",
+      "explanation": "According to the Law of Conservation of Energy, in the absence of air resistance, the maximum potential energy at the highest point is equal to the initial kinetic energy given to the body at the point of projection.\nInitial Kinetic Energy (KE) = \\frac{1}{2}mv^2.\nKE = \\frac{1}{2} \\times 2 \\times (20)^2 = \\frac{1}{2} \\times 2 \\times 400 = 400 \\text{ J}.\nTherefore, the potential energy at the maximum height is 400 J.",
       "hint": "",
       "marks": 1,
       "negativeMark": 0,
@@ -333,7 +333,7 @@
     },
     {
       "id": "q-1778035999742-pqkp2",
-      "question": "Two distinct bodies A and B of masses and respectively have the exact same kinetic energy. What is the ratio of their linear momenta ()?",
+      "question": "Two distinct bodies A and B of masses m and 4m respectively have the exact same kinetic energy. What is the ratio of their linear momenta (p_A : p_B)?",
       "type": "mcq",
       "options": [
         {
@@ -371,7 +371,7 @@
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "The momentum of a body in terms of its mass and kinetic energy is given by .\nSince the kinetic energy is the same for both bodies, is directly proportional to .\nRatio .",
+      "explanation": "The momentum of a body in terms of its mass and kinetic energy is given by p = \\sqrt{2m \\cdot KE}.\nSince the kinetic energy is the same for both bodies, p is directly proportional to \\sqrt{m}.\nRatio p_A : p_B = \\sqrt{m} : \\sqrt{4m} = \\sqrt{m} : 2\\sqrt{m} = 1 : 2.",
       "hint": "",
       "marks": 1,
       "negativeMark": 0,
@@ -384,7 +384,7 @@
     },
     {
       "id": "q-1778035999742-pqdkr",
-      "question": "The physical work done by a human heart in pumping of blood is approximately . Calculate the power of the heart if it pumps of blood per minute.",
+      "question": "The physical work done by a human heart in pumping 75 mL of blood is approximately 0.2 J. Calculate the power of the heart if it pumps 75 mL of blood per minute.",
       "type": "mcq",
       "options": [
         {
@@ -422,7 +422,7 @@
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "First, find the total work done in one minute.\nWork done for .\nWork done for .\nTime given is 1 minute, which must be converted to SI units: .\nPower .",
+      "explanation": "First, find the total work done in one minute.\nWork done for 1 beat = 0.2 J.\nWork done for 60 beats (1 minute) = 0.2 \\times 60 = 12 J.\nTime given is 1 minute, which must be converted to SI units: t = 60 \\text{ s}.\nPower P = \\frac{W}{t} = \\frac{12}{60} = 0.2 \\text{ W}.",
       "hint": "",
       "marks": 1,
       "negativeMark": 0,
@@ -435,7 +435,7 @@
     },
     {
       "id": "q-1778035999742-9dby4",
-      "question": "A bullet of mass 50 g is moving with a velocity of . It penetrates a wooden target and comes to rest. What is the kinetic energy of the bullet just before hitting the target?",
+      "question": "A bullet of mass 50 g is moving with a velocity of 500 m/s. It penetrates a wooden target and comes to rest. What is the kinetic energy of the bullet just before hitting the target?",
       "type": "mcq",
       "options": [
         {
@@ -473,7 +473,7 @@
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "First, convert the mass from grams to kilograms: .\nVelocity .\nKinetic Energy .\n.\n.",
+      "explanation": "First, convert the mass from grams to kilograms: m = 50 \\text{ g} = 0.05 \\text{ kg}.\nVelocity v = 500 \\text{ m/s}.\nKinetic Energy KE = \\frac{1}{2}mv^2.\nKE = \\frac{1}{2} \\times 0.05 \\times (500)^2.\nKE = \\frac{1}{2} \\times 0.05 \\times 250000 = 6250 \\text{ J}.",
       "hint": "",
       "marks": 1,
       "negativeMark": 0,
@@ -524,7 +524,7 @@
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "Efficiency () is defined as the ratio of useful output power to total input power, expressed as a percentage.\n\n.\n.\nOutput Power .",
+      "explanation": "Efficiency (\\eta) is defined as the ratio of useful output power to total input power, expressed as a percentage.\n\\eta = \\frac{P_{output}}{P_{input}} \\times 100.\n80 = \\frac{P_{output}}{2} \\times 100.\nP_{output} = \\frac{80 \\times 2}{100} = 1.6 \\text{ kW}.",
       "hint": "",
       "marks": 1,
       "negativeMark": 0,
@@ -538,7 +538,7 @@
     },
     {
       "id": "q-1778035999744-nlaf3",
-      "question": "A boy of mass 40 kg climbs up a staircase consisting of 20 steps, each step being 15 cm high, in 10 seconds. Calculate the total work done by the boy against gravity. (Take ).",
+      "question": "A boy of mass 40 kg climbs up a staircase consisting of 20 steps, each step being 15 cm high, in 10 seconds. Calculate the total work done by the boy against gravity. (Take g = 10 \\text{ m/s}^2).",
       "type": "mcq",
       "options": [
         {
@@ -576,7 +576,7 @@
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "First, calculate the total vertical height () climbed by the boy.\nHeight of one step = .\nTotal height .\nWork done against gravity .\n.",
+      "explanation": "First, calculate the total vertical height (h) climbed by the boy.\nHeight of one step = 15 \\text{ cm} = 0.15 \\text{ m}.\nTotal height h = 20 \\times 0.15 = 3 \\text{ m}.\nWork done against gravity W = mgh.\nW = 40 \\times 10 \\times 3 = 1200 \\text{ J}.",
       "hint": "",
       "marks": 1,
       "negativeMark": 0,
@@ -627,7 +627,7 @@
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "Let the initial kinetic energy be and initial momentum be . .\nIf increases by 300%, the new kinetic energy is .\nThe new momentum .\nThe increase in momentum is .\nPercentage increase .",
+      "explanation": "Let the initial kinetic energy be KE_1 = E and initial momentum be p_1. KE = \\frac{p^2}{2m}, so p = \\sqrt{2m \\cdot KE}.\nIf KE increases by 300%, the new kinetic energy is KE_2 = E + 3E = 4E.\nThe new momentum p_2 = \\sqrt{2m \\times 4E} = 2\\sqrt{2mE} = 2p_1.\nThe increase in momentum is p_2 - p_1 = 2p_1 - p_1 = p_1.\nPercentage increase = \\frac{p_1}{p_1} \\times 100 = 100\\%.",
       "hint": "",
       "marks": 1,
       "negativeMark": 0,
@@ -640,7 +640,7 @@
     },
     {
       "id": "q-1778035999744-mg171",
-      "question": "A spring is compressed by a distance . The elastic potential energy stored in it is . If the spring is compressed further such that the total compression becomes , the new total potential energy stored will be:",
+      "question": "A spring is compressed by a distance x. The elastic potential energy stored in it is U. If the spring is compressed further such that the total compression becomes 2x, the new total potential energy stored will be:",
       "type": "mcq",
       "options": [
         {
@@ -678,7 +678,7 @@
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "The elastic potential energy stored in a spring is given by , where is the spring constant and is the compression.\nWhen the compression becomes , the new potential energy is:\n.",
+      "explanation": "The elastic potential energy stored in a spring is given by PE = \\frac{1}{2}kx^2, where k is the spring constant and x is the compression.\nInitial: U = \\frac{1}{2}kx^2.\nWhen the compression becomes 2x, the new potential energy is:\nPE_{new} = \\frac{1}{2}k(2x)^2 = \\frac{1}{2}k \\times 4x^2 = 4 \\times \\frac{1}{2}kx^2 = 4U.",
       "hint": "",
       "marks": 1,
       "negativeMark": 0,
@@ -742,7 +742,7 @@
     },
     {
       "id": "q-1778035999746-shhvf",
-      "question": "A car moving with a speed of comes to a halt in 20 m after the driver slams the brakes. If the mass of the car is 1000 kg, calculate the average retarding force exerted by the brakes using the Work-Energy Theorem.",
+      "question": "A car moving with a speed of 20 m/s comes to a halt in 20 m after the driver slams the brakes. If the mass of the car is 1000 kg, calculate the average retarding force exerted by the brakes using the Work-Energy Theorem.",
       "type": "mcq",
       "options": [
         {
@@ -780,7 +780,7 @@
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "First, convert the initial velocity to SI units: . Final velocity .\nAccording to the Work-Energy Theorem, Work Done = Change in Kinetic Energy.\n. (Negative sign because force opposes motion).\n.\n.\n.\n.",
+      "explanation": "First, convert the initial velocity to SI units: u = 20 \\text{ m/s}. Final velocity v = 0 \\text{ m/s}.\nAccording to the Work-Energy Theorem, Work Done = Change in Kinetic Energy.\nW = \\frac{1}{2}mv^2 - \\frac{1}{2}mu^2 = 0 - \\frac{1}{2} \\times 1000 \\times (20)^2.\nW = -\\frac{1}{2} \\times 1000 \\times 400 = -200000 \\text{ J}.\nW = F \\times d \\implies -200000 = -F \\times 20.\nF = \\frac{200000}{20} = 10000 \\text{ N}.",
       "hint": "",
       "marks": 1,
       "negativeMark": 0,
@@ -831,7 +831,7 @@
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "Energy .\nPower .\nTime .\n.\n(Alternatively, ).",
+      "explanation": "Energy E = P \\times t.\nPower P = 100 \\text{ W}.\nTime t = 10 \\text{ hours} = 10 \\times 3600 = 36000 \\text{ s}.\nE = 100 \\times 36000 = 3.6 \\times 10^6 \\text{ J}.\n(Alternatively, E = 100 \\text{ W} \\times 10 \\text{ h} = 1000 \\text{ Wh} = 1 \\text{ kWh} = 3.6 \\times 10^6 \\text{ J}).",
       "hint": "",
       "marks": 1,
       "negativeMark": 0,
@@ -882,7 +882,7 @@
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "For a body moving in a circular path, the gravitational force provides the necessary centripetal force, which acts strictly towards the center of the circle. The instantaneous displacement of the planet is always tangential to the circular path. The angle between the radius (force) and the tangent (displacement) is exactly at every point. Since and , the work done is zero.",
+      "explanation": "For a body moving in a circular path, the gravitational force provides the necessary centripetal force, which acts strictly towards the center of the circle. The instantaneous displacement of the planet is always tangential to the circular path. The angle between the radius (force) and the tangent (displacement) is exactly 90° at every point. Since W = F \\times d \\times \\cos 90° and \\cos 90° = 0, the work done is zero.",
       "hint": "",
       "marks": 1,
       "negativeMark": 0,
@@ -895,7 +895,7 @@
     },
     {
       "id": "q-1778035999747-rclwe",
-      "question": "A block of mass 5 kg slides down a rough inclined plane from a vertical height of 10 m. If the velocity of the block when it reaches the bottom is , calculate the work done against friction. (Take ).",
+      "question": "A block of mass 5 kg slides down a rough inclined plane from a vertical height of 10 m. If the velocity of the block when it reaches the bottom is 10 m/s, calculate the work done against friction. (Take g = 10 \\text{ m/s}^2).",
       "type": "mcq",
       "options": [
         {
@@ -933,7 +933,7 @@
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "Total Mechanical Energy at the top = Potential Energy () .\nTotal Mechanical Energy at the bottom = Kinetic Energy () .\nAccording to the principle of conservation of energy (considering non-conservative forces):\n.\n.\n.",
+      "explanation": "Total Mechanical Energy at the top = Potential Energy (PE) = mgh.\nPE = 5 \\times 10 \\times 10 = 500 \\text{ J}.\nTotal Mechanical Energy at the bottom = Kinetic Energy (KE) = \\frac{1}{2}mv^2.\nKE = \\frac{1}{2} \\times 5 \\times (10)^2 = \\frac{1}{2} \\times 5 \\times 100 = 250 \\text{ J}.\nAccording to the principle of conservation of energy (considering non-conservative forces):\nW_{friction} = PE - KE = 500 - 250 = 250 \\text{ J}.",
       "hint": "",
       "marks": 1,
       "negativeMark": 0,
@@ -946,7 +946,7 @@
     },
     {
       "id": "q-1778035999748-m61dy",
-      "question": "An industrial engine develops of power. How much time will it require to lift a heavy load of mass to a vertical height of ? (Take ).",
+      "question": "An industrial engine develops 5000 W of power. How much time will it require to lift a heavy load of mass 500 kg to a vertical height of 8 m? (Take g = 10 \\text{ m/s}^2).",
       "type": "mcq",
       "options": [
         {
@@ -984,7 +984,7 @@
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "First, calculate the total work done required to lift the load:\n.\nThe power of the engine (Joules per second).\nPower , so .\n.",
+      "explanation": "First, calculate the total work done required to lift the load:\nW = mgh = 500 \\times 10 \\times 8 = 40000 \\text{ J}.\nThe power of the engine P = 5000 \\text{ W} (Joules per second).\nPower P = \\frac{W}{t}, so t = \\frac{W}{P}.\nt = \\frac{40000}{5000} = 8 \\text{ s}.",
       "hint": "",
       "marks": 1,
       "negativeMark": 0,
@@ -997,7 +997,7 @@
     },
     {
       "id": "q-1778035999748-czaud",
-      "question": "A severely compressed mechanical spring has an elastic potential energy of stored in it. When abruptly released, it shoots a small metal ball of mass horizontally. Assuming a 100% transfer of energy with no losses, what is the maximum velocity acquired by the ball?",
+      "question": "A severely compressed mechanical spring has an elastic potential energy of 100 J stored in it. When abruptly released, it shoots a small metal ball of mass 0.5 kg horizontally. Assuming a 100% transfer of energy with no losses, what is the maximum velocity acquired by the ball?",
       "type": "mcq",
       "options": [
         {
@@ -1035,7 +1035,7 @@
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "By the conservation of energy, the total elastic potential energy of the spring is entirely converted into the kinetic energy of the metal ball.\n.\n.\n.\n.\n.\nTaking the square root of both sides gives .",
+      "explanation": "By the conservation of energy, the total elastic potential energy of the spring is entirely converted into the kinetic energy of the metal ball.\nPE_{spring} = KE_{ball}.\n100 = \\frac{1}{2}mv^2.\n100 = \\frac{1}{2} \\times 0.5 \\times v^2.\n100 = 0.25 v^2.\nv^2 = \\frac{100}{0.25} = 400.\nTaking the square root of both sides gives v = 20 \\text{ m/s}.",
       "hint": "",
       "marks": 1,
       "negativeMark": 0,
