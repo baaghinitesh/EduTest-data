@@ -115,12 +115,12 @@ def _is_school(class_slug):
 
 def _validate_keys():
     keys = {
-        "GEMINI_API_KEY":   ("Flash K1 (researcher + gen fallback)",   "critical"),
-        "GEMINI_API_KEY_1": ("Flash K2 (researcher fallback + gen)",    "critical"),
-        "GEMINI_API_KEY2":  ("Flash K3 (primary generator)",            "critical"),
-        "GROQ_API_KEY":     ("Groq K1 (primary structurer)",            "critical"),
-        "GROQ_API_KEY2":    ("Groq K2 (fallback structurer)",           "critical"),
-        "MISTRAL_API_KEY":  ("Mistral (gen rotation + structurer)",     "optional"),
+        "GEMINI_API_KEY":   ("Flash K1 (researcher + gen fallback)",          "critical"),
+        "GEMINI_API_KEY_1": ("Flash K2 (researcher fallback + gen)",           "critical"),
+        "GEMINI_API_KEY2":  ("Flash K3 (primary generator)",                   "critical"),
+        "GROQ_API_KEY":     ("Groq K1 (primary structurer + gen last-resort)", "critical"),
+        "GROQ_API_KEY2":    ("Groq K2 (fallback structurer + gen last-resort)","critical"),
+        "MISTRAL_API_KEY":  ("Mistral (gen rotation + 3rd structurer)",        "optional"),
     }
     print("\n  API Keys (all 6 tried before giving up):")
     missing_critical = []
@@ -145,9 +145,9 @@ def _validate_keys():
     
     # Show key rotation strategy
     print("  Key rotation strategy:")
-    print("    Generation : K3→K1→K2→Mistral (rotates per chunk, Mistral every 4th)")
+    print("    Generation : K3→K1→K2→Mistral→GroqK1→GroqK2 (all 6 keys tried per chunk)")
     print("    Research   : K1→K2→K3→Mistral→Flash2.0 (all tried before empty ctx)")
-    print("    Structuring: GroqK1→GroqK2→Mistral→Flash2.0→Flash2.5 (all 6 keys)")
+    print("    Structuring: GroqK1→GroqK2→Mistral→Flash2.0(K1/K2/K3)→Flash2.5(K1/K2/K3)")
     print()
 
 

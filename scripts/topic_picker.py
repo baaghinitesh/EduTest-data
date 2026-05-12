@@ -321,13 +321,14 @@ def load_topics(class_slug):
     Load topics JSON for a classSlug.
     Handles both modular dirs and flat json files.
     If no topic data exists at all, auto-generates and saves at least 10 topics
-    per subject using the AI pipeline before returning.
+    per subject using the AI pipeline (tries all 6 keys) before returning.
+    Always returns something usable — never returns None if auto-gen is possible.
     """
     data = _load_topics_raw(class_slug)
     if data and _has_topics(data):
         return data
 
-    # ── No usable topic data — auto-generate via AI ───────────────────────────
+    # ── No usable topic data — auto-generate via AI (all keys tried) ─────────
     print(f"  [TopicPicker] ⚠️  No topic data for '{class_slug}' — auto-generating topics...")
     data = _generate_and_save_topics(class_slug, existing_data=data)
     return data
@@ -364,21 +365,69 @@ def _load_topics_raw(class_slug):
 
 # ── AI-powered topic generation ────────────────────────────────────────────────
 
+def _ai_research_with_all_keys(prompt, max_tokens=1500, label="topic-gen"):
+    """
+    Call the research pipeline trying ALL available keys iteratively:
+      Gemini K1 → K2 → K3 → Mistral → Groq K1 → Groq K2
+    Returns the first non-empty result, or empty string if all fail.
+    This ensures topic generation never silently fails due to one key being exhausted.
+    """
+    import re as _re
+
+    # ── Gemini keys (via gemini_client.research which already rotates K1→K2→K3→Mistral) ──
+    try:
+        import gemini_client
+        result = gemini_client.research(prompt, max_tokens=max_tokens)
+        if result and len(result) > 50:
+            print(f"  [TopicPicker/{label}] ✅ Gemini research succeeded")
+            return result
+    except Exception as e:
+        print(f"  [TopicPicker/{label}] Gemini research failed ({e})")
+
+    # ── Groq fallback — use raw chat for topic generation ──────────────────────
+    for key_env in ["GROQ_API_KEY", "GROQ_API_KEY2"]:
+        api_key = os.environ.get(key_env, "").strip()
+        if not api_key:
+            continue
+        try:
+            from groq import Groq
+            import time as _time
+            client = Groq(api_key=api_key)
+            _time.sleep(2)  # basic rate limiting
+            resp = client.chat.completions.create(
+                model="llama-3.3-70b-versatile",
+                messages=[
+                    {"role": "system", "content": "You are an expert exam curriculum designer. Output ONLY what is asked — no preamble."},
+                    {"role": "user",   "content": prompt},
+                ],
+                temperature=0.5,
+                max_tokens=max_tokens,
+            )
+            text = (resp.choices[0].message.content or "").strip()
+            if text and len(text) > 50:
+                print(f"  [TopicPicker/{label}] ✅ Groq fallback ({key_env}) succeeded")
+                return text
+        except Exception as e:
+            print(f"  [TopicPicker/{label}] Groq {key_env} failed ({e})")
+
+    print(f"  [TopicPicker/{label}] All keys exhausted — returning empty")
+    return ""
+
+
 def _generate_and_save_topics(class_slug, existing_data=None):
     """
-    Use Gemini to generate at least 10 topics per subject for an exam that has
-    no topic data. Saves the result to topics/competitive/<class_slug>/index.json
-    and subjects/*.json so subsequent runs can use it normally.
+    Use AI (all 6 keys tried iteratively) to generate at least 10 topics per
+    subject for an exam that has no topic data.
+    Saves the result to topics/competitive/<class_slug>/index.json and
+    subjects/*.json so subsequent runs can use it normally.
+
+    Key rotation: Gemini K1→K2→K3→Mistral (via gemini_client.research),
+    then Groq K1→K2 as final fallback.
 
     Returns the generated topics_data dict (or a minimal fallback on failure).
     """
-    try:
-        import gemini_client
-    except ImportError:
-        print("  [TopicPicker] gemini_client not available — using minimal fallback topics")
-        return _minimal_fallback_topics(class_slug)
-
     exam_name = class_slug.upper().replace("-", " ")
+    print(f"  [TopicPicker] 🔄 Auto-generating topics for '{exam_name}' using all available keys...")
 
     # If we have partial data (index.json exists but subjects are empty), use it
     # as a skeleton; otherwise build from scratch.
@@ -388,25 +437,27 @@ def _generate_and_save_topics(class_slug, existing_data=None):
              "slug": s.get("slug", s.get("name", "general").lower().replace(" ", "-"))}
             for s in existing_data["subjects"]
         ]
+        print(f"  [TopicPicker] Using existing skeleton: {len(subjects_meta)} subjects")
     else:
-        # Ask AI what subjects this exam has
-        subjects_meta = _ai_get_subjects(gemini_client, exam_name, class_slug)
+        # Ask AI what subjects this exam has — tries all keys
+        subjects_meta = _ai_get_subjects(exam_name, class_slug)
 
     if not subjects_meta:
         print(f"  [TopicPicker] Could not determine subjects for {class_slug} — using fallback")
         return _minimal_fallback_topics(class_slug)
 
-    # Generate chapters + topics for each subject
+    # Generate chapters + topics for each subject — each call tries all keys
     generated_subjects = []
     for subj in subjects_meta:
         subj_name = subj["name"]
         subj_slug = subj["slug"]
         print(f"  [TopicPicker] Generating topics for {exam_name} — {subj_name}...")
-        chapters = _ai_get_chapters_and_topics(gemini_client, exam_name, subj_name)
+        chapters = _ai_get_chapters_and_topics(exam_name, subj_name)
         if not chapters:
-            # Minimal fallback for this subject
+            # Minimal fallback for this subject — still usable
+            print(f"  [TopicPicker] ⚠️  Using fallback chapters for {subj_name}")
             chapters = [{"name": "General Topics",
-                         "topics": [f"Topic {i+1}" for i in range(10)]}]
+                         "topics": [f"{subj_name} Topic {i+1}" for i in range(15)]}]
         generated_subjects.append({
             "slug": subj_slug,
             "name": subj_name,
@@ -441,8 +492,12 @@ def _generate_and_save_topics(class_slug, existing_data=None):
     return topics_data
 
 
-def _ai_get_subjects(gemini_client, exam_name, class_slug):
-    """Ask AI for the list of subjects in this exam. Returns list of {name, slug, ...}."""
+def _ai_get_subjects(exam_name, class_slug):
+    """
+    Ask AI for the list of subjects in this exam.
+    Tries all available keys iteratively (Gemini K1→K2→K3→Mistral→Groq K1→K2).
+    Returns list of {name, slug, icon, color, weightage} or None.
+    """
     prompt = (
         f"List the main subjects tested in the {exam_name} exam.\n"
         f"Output ONLY a JSON array, no explanation. Each item: "
@@ -450,24 +505,24 @@ def _ai_get_subjects(gemini_client, exam_name, class_slug):
         f'\"color\": \"#3b82f6\", \"weightage\": 33}}\n'
         f"Include weightage (%) that sums to 100. Typical exams have 2-5 subjects."
     )
+    raw = _ai_research_with_all_keys(prompt, max_tokens=800, label="subjects")
+    if not raw:
+        return None
     try:
-        raw = gemini_client.research(prompt, max_tokens=800)
-        if not raw:
-            return None
-        # Extract JSON array from response
-        import re
-        match = re.search(r'\[.*\]', raw, re.DOTALL)
+        import re as _re
+        match = _re.search(r'\[.*\]', raw, _re.DOTALL)
         if match:
             return json.loads(match.group())
     except Exception as e:
-        print(f"  [TopicPicker] Subject AI call failed: {e}")
+        print(f"  [TopicPicker] Subject JSON parse failed: {e}")
     return None
 
 
-def _ai_get_chapters_and_topics(gemini_client, exam_name, subject_name):
+def _ai_get_chapters_and_topics(exam_name, subject_name):
     """
     Ask AI for chapters and at least 10 topics per chapter for this exam+subject.
-    Returns list of {name, topics: [...]} dicts.
+    Tries all available keys iteratively (Gemini K1→K2→K3→Mistral→Groq K1→K2).
+    Returns list of {name, topics: [...]} dicts, or None on total failure.
     """
     prompt = (
         f"List the key chapters and topics for {subject_name} in the {exam_name} exam.\n"
@@ -479,25 +534,24 @@ def _ai_get_chapters_and_topics(gemini_client, exam_name, subject_name):
         f'[{{"name": "Chapter Name", "topics": ["Topic 1", "Topic 2", ...]}}]\n'
         f"Be specific and comprehensive. No generic placeholders."
     )
+    raw = _ai_research_with_all_keys(prompt, max_tokens=3000, label=f"chapters-{subject_name[:20]}")
+    if not raw:
+        return None
     try:
-        raw = gemini_client.research(prompt, max_tokens=3000)
-        if not raw:
-            return None
-        import re
-        match = re.search(r'\[.*\]', raw, re.DOTALL)
+        import re as _re
+        match = _re.search(r'\[.*\]', raw, _re.DOTALL)
         if match:
             chapters = json.loads(match.group())
             # Ensure each chapter has at least 10 topics
             for ch in chapters:
                 topics = ch.get("topics", [])
                 if len(topics) < 10:
-                    # Pad with generic but named topics
                     while len(topics) < 10:
                         topics.append(f"{ch['name']} — Advanced Concepts {len(topics)+1}")
                     ch["topics"] = topics
             return chapters
     except Exception as e:
-        print(f"  [TopicPicker] Chapters AI call failed: {e}")
+        print(f"  [TopicPicker] Chapters JSON parse failed: {e}")
     return None
 
 
@@ -725,19 +779,40 @@ def pick_topic(ct, class_slug=None):
     Pick one unused topic. Randomly selects exam if class_slug is None.
     Returns (topic_info, state). topic_info includes 'cycle' so the
     generation prompt can vary questions across cycles.
+
+    Exhaustion handling:
+      1. If all topics used → reset cycle, rebuild available list, continue.
+      2. If topics_data has no topics at all (e.g. empty file) → auto-generate
+         new topics using all 6 API keys, then continue.
+      3. Only raises ValueError if everything fails (no keys, no fallback).
     """
     state = load_state()
     if class_slug is None:
         class_slug = random.choice(get_all_available_exams())
+
     topics_data = load_topics(class_slug)
     if not topics_data:
-        raise ValueError(f"No topics for {class_slug}")
+        raise ValueError(f"No topics for {class_slug} and auto-generation failed")
+
     available = _build_available(state, ct, topics_data, class_slug)
+
     if not available:
         print(f"  [TopicPicker] All {class_slug} topics used — resetting cycle")
         available = _reset_and_rebuild(state, ct, topics_data, class_slug)
+
     if not available:
-        raise ValueError(f"No topics at all for {class_slug}")
+        # Topics data exists but has no topics (empty chapters) — regenerate
+        print(f"  [TopicPicker] ⚠️  Topics data for {class_slug} has no usable topics — regenerating...")
+        topics_data = _generate_and_save_topics(class_slug, existing_data=topics_data)
+        # Clear state for this class and rebuild
+        store_key = f"generated_{ct}s"
+        state[store_key] = [e for e in state.get(store_key, []) if e.get("classSlug") != class_slug]
+        save_state(state)
+        available = _build_available(state, ct, topics_data, class_slug)
+
+    if not available:
+        raise ValueError(f"No topics at all for {class_slug} even after regeneration")
+
     topic = random.choice(available)
     topic["cycle"] = get_cycle(state, class_slug)
     return topic, state
@@ -773,6 +848,15 @@ def pick_multiple_topics(ct, class_slug=None, count=3, different_subjects=True):
     available = _build_available(state, ct, topics_data, class_slug)
     if len(available) < count:
         available = _reset_and_rebuild(state, ct, topics_data, class_slug)
+
+    # If still not enough after reset, regenerate topics
+    if not available:
+        print(f"  [TopicPicker] ⚠️  No topics after reset for {class_slug} — regenerating...")
+        topics_data = _generate_and_save_topics(class_slug, existing_data=topics_data)
+        store_key = f"generated_{ct}s"
+        state[store_key] = [e for e in state.get(store_key, []) if e.get("classSlug") != class_slug]
+        save_state(state)
+        available = _build_available(state, ct, topics_data, class_slug)
 
     random.shuffle(available)
 

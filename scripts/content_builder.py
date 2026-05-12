@@ -475,8 +475,18 @@ def _generate_one_chunk(prompt, chunk_index):
 
 def _structure_one_chunk(raw_text, exam_name, subject_name):
     """
-    Structure raw text into JSON list.
-    Groq K1 → Groq K2 → Flash K1 → Flash K2.
+    Structure raw text into JSON list using the full fallback chain:
+
+      Step A — groq_client.format_questions():
+        Groq K1 → Groq K2 → Mistral
+        (all 3 tried per chunk before moving to Step B)
+
+      Step B — gemini_client.structure_with_flash():
+        Flash 2.0 K1 → Flash 2.0 K2 → Flash 2.0 K3
+        → Flash 2.5 K1 → Flash 2.5 K2 → Flash 2.5 K3
+        (only reached if Groq K1 + K2 + Mistral all fail)
+
+    Returns list of question dicts, or [] if everything fails.
     """
     try:
         qs = groq_client.format_questions(raw_text, _SCHEMA, exam_name, subject_name)
@@ -485,8 +495,9 @@ def _structure_one_chunk(raw_text, exam_name, subject_name):
         if isinstance(qs, dict):
             return [qs]
     except GroqError as e:
-        print(f"    [Structure] Groq failed ({e}) — trying Flash fallback...")
+        print(f"    [Structure] Groq+Mistral all failed ({e}) — trying Flash fallback...")
 
+    # Flash fallback — only reached when Groq K1 + K2 + Mistral all failed
     flash_prompt = (
         f"Extract ALL questions from the text below.\n"
         f"Output ONLY a JSON array. Schema: {_SCHEMA}\n"

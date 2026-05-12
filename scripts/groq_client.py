@@ -1,9 +1,13 @@
 """
-groq_client.py — 2 Groq keys with fallback + smart chunking.
+groq_client.py — 2 Groq keys with Mistral fallback + smart chunking.
 
 GitHub Secret names (exact):
   GROQ_API_KEY   → Groq K1 — primary structurer
   GROQ_API_KEY2  → Groq K2 — fallback structurer
+  MISTRAL_API_KEY → Mistral — 3rd fallback structurer (before Flash)
+
+Structuring chain per chunk:
+  Groq K1 → Groq K2 → Mistral → (caller falls back to Flash via structure_with_flash)
 
 Free tier limits:
   RPD: 14,400 requests/day  (not a concern)
@@ -244,13 +248,14 @@ def format_questions(raw_text, schema_example, exam_name, subject_name=""):
     """
     Structure raw question text into JSON array.
 
-    Per chunk — tries ALL available keys before skipping:
-      1. Try Groq K1 (with TPM-wait retry)
-      2. Try Groq K2 (with TPM-wait retry)
-      3. Try Mistral (separate quota — always worth trying)
-      4. Skip chunk (caller falls back to Flash structurer)
+    Per chunk — full 3-step chain before giving up to Flash:
+      1. Groq K1  (with TPM-wait retry on rate limit)
+      2. Groq K2  (with TPM-wait retry on rate limit)
+      3. Mistral  (separate quota — always worth trying)
+      → If all 3 fail: returns partial results; caller (content_builder)
+        falls back to structure_with_flash (Flash 2.0/2.5 K1/K2/K3).
 
-    Raises GroqError only if ALL chunks fail on ALL keys.
+    Raises GroqError only if ALL chunks fail on ALL 3 keys (Groq K1+K2+Mistral).
     """
     chunks = _split_raw_text(raw_text, questions_per_chunk=10)
     print(f"  [Groq] Structuring {len(chunks)} chunk(s)...")

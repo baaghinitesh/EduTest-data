@@ -7,12 +7,13 @@ GitHub Secret names (exact):
   GEMINI_API_KEY2   → K3 Flash 2.5 — generation primary (dedicated generator key)
   MISTRAL_API_KEY   → Mistral small — 4th key in generation rotation (every chunk)
 
-Generation key rotation (round-robin across chunks, ALL 4 keys tried per chunk):
-  Chunk 0 → K3 → K1 → K2 → Mistral
-  Chunk 1 → K1 → K2 → K3 → Mistral
-  Chunk 2 → K2 → K3 → K1 → Mistral
-  Chunk 3 → Mistral → K3 → K1 → K2  (Mistral gets priority every 4th chunk)
+Generation key rotation (round-robin across chunks, ALL 6 keys tried per chunk):
+  Chunk 0 → K3 → K1 → K2 → Mistral → Groq K1 → Groq K2
+  Chunk 1 → K1 → K2 → K3 → Mistral → Groq K1 → Groq K2
+  Chunk 2 → K2 → K3 → K1 → Mistral → Groq K1 → Groq K2
+  Chunk 3 → Mistral → K3 → K1 → K2 → Groq K1 → Groq K2
   ...repeats
+  Groq is used as last-resort generation fallback (it can generate MCQs too).
 
 Quota handling (per key):
   RPM (429 with short wait ≤ 90s) → wait and retry on SAME key
@@ -23,8 +24,9 @@ Quota handling (per key):
 Research (all keys tried before returning empty):
   K1 Flash 2.5 → K2 Flash 2.5 → K3 Flash 2.5 → Mistral → Flash 2.0 K1/K2/K3
 
-Structure fallback (when both Groq keys fail):
-  Mistral → Flash 2.0 K1 → Flash 2.0 K2 → Flash 2.0 K3 → Flash 2.5 K1 → Flash 2.5 K2 → Flash 2.5 K3
+Structure fallback (when both Groq keys AND Mistral fail — called from content_builder):
+  Flash 2.0 K1 → Flash 2.0 K2 → Flash 2.0 K3 → Flash 2.5 K1 → Flash 2.5 K2 → Flash 2.5 K3
+  NOTE: Groq K1→K2→Mistral are handled BEFORE this function is called (in groq_client).
 """
 import os, json, re, time
 from google import genai
@@ -208,13 +210,16 @@ def all_gemini_exhausted():
 
 def all_keys_exhausted():
     """
-    True if ALL generation keys (Gemini + Mistral) are exhausted.
+    True if ALL generation keys (Gemini K1/K2/K3 + Mistral + Groq K1/K2) are exhausted.
     Used to determine if the run should stop entirely.
+    Groq is included because it's used as last-resort generation fallback.
     """
     import mistral_client as _mc
-    gemini_done = all_gemini_exhausted()
+    import groq_client as _gq
+    gemini_done  = all_gemini_exhausted()
     mistral_done = not _mc.available() or _mc._is_exhausted()
-    return gemini_done and mistral_done
+    groq_done    = _gq.all_groq_exhausted()
+    return gemini_done and mistral_done and groq_done
 
 
 # ── Public API ────────────────────────────────────────────────────────────────
@@ -278,56 +283,54 @@ def generate_questions_for_chunk(prompt, chunk_index=0, max_tokens=4096):
     """
     Generate raw questions for ONE chunk (10Q).
 
-    IMPROVED KEY ROTATION — tries ALL 4 generation keys before giving up:
-      Chunk 0 → K3 → K1 → K2 → Mistral
-      Chunk 1 → K1 → K2 → K3 → Mistral
-      Chunk 2 → K2 → K3 → K1 → Mistral
-      Chunk 3 → Mistral → K3 → K1 → K2  (Mistral gets priority every 4th chunk)
+    Full key rotation — tries ALL 6 keys before giving up:
+      Chunk 0 → K3 → K1 → K2 → Mistral → Groq K1 → Groq K2
+      Chunk 1 → K1 → K2 → K3 → Mistral → Groq K1 → Groq K2
+      Chunk 2 → K2 → K3 → K1 → Mistral → Groq K1 → Groq K2
+      Chunk 3 → Mistral → K3 → K1 → K2 → Groq K1 → Groq K2
       ...repeats
+      Groq is last-resort generation (it can generate MCQs in plain text too).
 
     RPM hit on a key → wait and retry on SAME key (handled inside _call).
     RPD hit on a key → skip to next key immediately.
-    All 4 keys exhausted → raise GeminiQuotaError (run loop stops, draft saved).
+    All 6 keys exhausted → raise GeminiQuotaError (run loop stops, draft saved).
     """
-    # Build rotation with Mistral included
-    # Every 4th chunk, Mistral gets first priority to spread load
+    # Build Gemini+Mistral rotation
     if chunk_index % 4 == 3:
-        rotation = [
+        gemini_mistral_order = [
             ("gen_mistral", "MISTRAL"),
             ("gen_k3", KEY_K3),
             ("gen_k1", KEY_K1),
             ("gen_k2", KEY_K2),
         ]
     else:
-        rotation = [
+        gemini_mistral_order = [
             ("gen_k3", KEY_K3),
             ("gen_k1", KEY_K1),
             ("gen_k2", KEY_K2),
             ("gen_mistral", "MISTRAL"),
         ]
-    
-    start   = chunk_index % 3  # rotate Gemini keys
-    # Reorder Gemini keys, keep Mistral at its position
-    gemini_keys = [(t, k) for t, k in rotation if k != "MISTRAL"]
-    mistral_pos = next(i for i, (t, k) in enumerate(rotation) if k == "MISTRAL")
-    
+
+    # Rotate Gemini keys by chunk index
+    start       = chunk_index % 3
+    gemini_keys = [(t, k) for t, k in gemini_mistral_order if k != "MISTRAL"]
+    mistral_pos = next(i for i, (t, k) in enumerate(gemini_mistral_order) if k == "MISTRAL")
     gemini_ordered = gemini_keys[start:] + gemini_keys[:start]
-    ordered = gemini_ordered[:mistral_pos] + [("gen_mistral", "MISTRAL")] + gemini_ordered[mistral_pos:]
+    ordered = (gemini_ordered[:mistral_pos]
+               + [("gen_mistral", "MISTRAL")]
+               + gemini_ordered[mistral_pos:])
 
-    last_err         = "no keys available"
-    any_key_tried    = False
-    keys_tried       = []
+    last_err      = "no keys available"
+    keys_tried    = []
 
+    # ── Phase 1: Gemini K1/K2/K3 + Mistral ───────────────────────────────────
     for tracker, key_env in ordered:
-        # Handle Mistral separately
         if key_env == "MISTRAL":
             try:
                 import mistral_client
                 if not mistral_client.available():
                     print(f"  [Generate] Mistral not configured — skipping")
                     continue
-                
-                any_key_tried = True
                 keys_tried.append("Mistral")
                 print(f"  [Generate] Trying Mistral (mistral-small-latest)")
                 result = mistral_client.generate_questions(prompt, max_tokens=max_tokens)
@@ -340,8 +343,8 @@ def generate_questions_for_chunk(prompt, chunk_index=0, max_tokens=4096):
                 print(f"  [Generate] Mistral failed ({e}) — trying next key")
                 last_err = str(e)
             continue
-        
-        # Gemini keys
+
+        # Gemini key
         if not os.environ.get(key_env, "").strip():
             print(f"  [Generate] {key_env} not set — skipping {tracker}")
             continue
@@ -349,7 +352,6 @@ def generate_questions_for_chunk(prompt, chunk_index=0, max_tokens=4096):
             print(f"  [Generate] {tracker} RPD-exhausted — skipping")
             continue
 
-        any_key_tried = True
         keys_tried.append(tracker)
         try:
             result = _call(MODEL_FLASH_25, tracker, key_env, prompt, False, max_tokens)
@@ -365,14 +367,40 @@ def generate_questions_for_chunk(prompt, chunk_index=0, max_tokens=4096):
             print(f"  [Generate] {tracker} failed ({e}) — trying next key")
             last_err = str(e)
 
-    # Every key exhausted or failed
+    # ── Phase 2: Groq fallback generation (last resort — all Gemini+Mistral failed) ──
+    # Groq can generate MCQs in plain text format just like Gemini.
+    import groq_client as _gq
+    for groq_key_env in [_gq.KEY_G1, _gq.KEY_G2]:
+        if not os.environ.get(groq_key_env, "").strip():
+            continue
+        if groq_key_env in _gq._tpd_exhausted:
+            print(f"  [Generate] Groq {groq_key_env} TPD-exhausted — skipping")
+            continue
+        try:
+            keys_tried.append(f"Groq/{groq_key_env}")
+            print(f"  [Generate] All Gemini+Mistral keys failed — trying Groq {groq_key_env} for generation")
+            text = _gq._call_one(
+                groq_key_env,
+                "You are an expert MCQ question setter. Generate high-quality questions exactly as instructed. Do NOT output JSON — write in plain numbered text format.",
+                prompt,
+                max_tokens=min(max_tokens, 4000),
+            )
+            if text and len(text) > 80:
+                print(f"  [Generate] ✅ Groq {groq_key_env} generation fallback (chunk {chunk_index})")
+                return text
+            print(f"  [Generate] Groq {groq_key_env} response too short — trying next")
+            last_err = "Groq response too short"
+        except Exception as e:
+            print(f"  [Generate] Groq {groq_key_env} generation failed ({e}) — trying next")
+            last_err = str(e)
+
+    # All 6 keys exhausted or failed
     tried_str = ", ".join(keys_tried) if keys_tried else "none"
     if all_gemini_exhausted():
         raise GeminiQuotaError(
-            f"All 4 generation keys exhausted for chunk {chunk_index}. "
+            f"All 6 generation keys exhausted for chunk {chunk_index}. "
             f"Tried: {tried_str}. Last error: {last_err}"
         )
-    # Non-quota failure (all keys tried but got errors, not quota)
     raise GeminiError(
         f"All {len(keys_tried)} available keys failed for chunk {chunk_index}. "
         f"Tried: {tried_str}. Last error: {last_err}"
@@ -381,33 +409,13 @@ def generate_questions_for_chunk(prompt, chunk_index=0, max_tokens=4096):
 
 def structure_with_flash(prompt, max_tokens=4096):
     """
-    Fallback JSON structurer when both Groq keys AND Mistral fail.
-    Order: Mistral → Flash 2.0 K1 → Flash 2.0 K2 → Flash 2.0 K3 → Flash 2.5 K1 → Flash 2.5 K2 → Flash 2.5 K3
-    Mistral is tried first because it has a separate quota from Gemini.
-    Uses ALL 3 Gemini keys (not just K1+K2) to maximise chances.
-    """
-    # Try Mistral first — separate quota from Gemini
-    try:
-        import mistral_client
-        if mistral_client.available():
-            result = mistral_client._call(
-                "You are an expert educator. Output ONLY valid JSON — no markdown, no text outside the JSON array.",
-                prompt,
-                expect_json=True,
-                max_tokens=max_tokens
-            )
-            if isinstance(result, list) and result:
-                print(f"  [StructureFlash] ✅ mistral (mistral-small-latest)")
-                return result
-            if isinstance(result, dict):
-                return [result]
-        else:
-            print(f"  [StructureFlash] Mistral not available — trying Flash")
-    except Exception as e:
-        print(f"  [StructureFlash] Mistral failed ({e}) — trying Flash")
+    Last-resort JSON structurer — called only after Groq K1, Groq K2, AND Mistral
+    have all failed (those are handled in groq_client.format_questions).
 
-    # Flash fallback — 2.0 first (higher TPM), then 2.5
-    # Use ALL 3 keys (K1, K2, K3) for structuring to maximise chances
+    Order: Flash 2.0 K1 → Flash 2.0 K2 → Flash 2.0 K3 → Flash 2.5 K1 → Flash 2.5 K2 → Flash 2.5 K3
+    Flash 2.0 is tried first (higher TPM quota bucket).
+    All 3 Gemini keys are tried on both models = 6 attempts total.
+    """
     attempts = [
         ("struct_k1_20", KEY_K1, MODEL_FLASH_20),
         ("struct_k2_20", KEY_K2, MODEL_FLASH_20),
@@ -429,4 +437,4 @@ def structure_with_flash(prompt, max_tokens=4096):
         except Exception as e:
             print(f"  [StructureFlash] {tracker} failed ({e}) — trying next")
 
-    raise GeminiError("Flash structuring failed on all keys (Mistral + Flash 2.0 K1/K2/K3 + Flash 2.5 K1/K2/K3)")
+    raise GeminiError("Flash structuring failed on all keys (Flash 2.0 K1/K2/K3 + Flash 2.5 K1/K2/K3)")

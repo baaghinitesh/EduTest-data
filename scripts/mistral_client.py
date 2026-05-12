@@ -16,7 +16,13 @@ Model used:
 API: OpenAI-compatible — https://api.mistral.ai/v1/chat/completions
 """
 import os, json, re, time
-from mistralai import Mistral
+
+# Support both mistralai v1.x (from mistralai import Mistral)
+# and v2.x (from mistralai.client import Mistral — same API, different import path)
+try:
+    from mistralai.client import Mistral  # v2.x
+except ImportError:
+    from mistralai import Mistral         # v1.x
 
 MODEL       = "mistral-small-latest"   # fast + good quality
 MAX_RETRIES = 3
