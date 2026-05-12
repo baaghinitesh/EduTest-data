@@ -42,7 +42,7 @@
   ],
   "createdBy": "admin",
   "createdByName": "EduTest Admin",
-  "publishedAt": "2026-05-11T14:03:37.323Z",
+  "publishedAt": "2026-05-12T15:14:18.966Z",
   "questions": [
     {
       "id": "q-1778497536515-53fca",
@@ -1014,47 +1014,47 @@
       "hasError": false
     },
     {
-      "id": "q-1778508214136-70ef3",
+      "id": "q-1778520830980-98b14",
       "order": 20,
-      "question": "The 15th term of the Arithmetic Progression (AP): 3, 7, 11, 15, ... is:",
+      "question": "If one root of the quadratic equation $x^2 - 5x + p = 0$ is 2, then what is the value of $p$?",
       "type": "mcq",
       "options": [
         {
           "letter": "A",
-          "text": "59",
-          "isCorrect": true,
+          "text": "4",
+          "isCorrect": false,
           "index": 0,
           "imageUrl": "",
-          "explanation": "Using the AP formula"
+          "explanation": "This is incorrect because substituting $x=2$ into the equation yields $p = 6$, not $4$."
         },
         {
           "letter": "B",
-          "text": "63",
-          "isCorrect": false,
+          "text": "6",
+          "isCorrect": true,
           "index": 1,
           "imageUrl": "",
-          "explanation": "Incorrect calculation"
+          "explanation": "This is correct because substituting $x=2$ into the equation yields $p = 6$."
         },
         {
           "letter": "C",
-          "text": "67",
+          "text": "-6",
           "isCorrect": false,
           "index": 2,
           "imageUrl": "",
-          "explanation": "Incorrect calculation"
+          "explanation": "This is incorrect because substituting $x=2$ into the equation yields $p = 6$, not $-6$."
         },
         {
           "letter": "D",
-          "text": "61",
+          "text": "-4",
           "isCorrect": false,
           "index": 3,
           "imageUrl": "",
-          "explanation": "Incorrect calculation"
+          "explanation": "This is incorrect because substituting $x=2$ into the equation yields $p = 6$, not $-4$."
         }
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "The first term (a) = 3. The common difference (d) = 7 - 3 = 4. The formula for the nth term of an AP is a_n = a + (n-1)d. For the 15th term (n=15): a_15 = 3 + (15-1) * 4 = 3 + 14 * 4 = 3 + 56 = 59",
+      "explanation": "If 2 is a root of the quadratic equation $x^2 - 5x + p = 0$, it must satisfy the equation when substituted for $x$. Substitute $x=2$ into the equation: $(2)^2 - 5(2) + p = 0$. This simplifies to $4 - 10 + p = 0$, which further simplifies to $-6 + p = 0$. Solving for $p$ gives $p = 6$.",
       "hint": "",
       "marks": 4,
       "negativeMark": 0,
@@ -1065,47 +1065,47 @@
       "hasError": false
     },
     {
-      "id": "q-1778508214136-605c5",
+      "id": "q-1778520830980-939fc",
       "order": 21,
-      "question": "The distance between the points (x, 1) and (4, 5) is 5 units. The possible value(s) of x is/are:",
+      "question": "For what value of k does the quadratic equation 4x^2 - 12x + k = 0 have real and equal roots?",
       "type": "mcq",
       "options": [
         {
           "letter": "A",
-          "text": "1 or 7",
+          "text": "9",
           "isCorrect": true,
           "index": 0,
           "imageUrl": "",
-          "explanation": "Using the distance formula and solving for x"
+          "explanation": "Substituting the values of a, b, and c into the discriminant formula, we get D = (-12)^2 - 4*4*k = 0. Solving for k, we get 144 - 16k = 0, which gives k = 9."
         },
         {
           "letter": "B",
-          "text": "4 or 0",
+          "text": "-9",
           "isCorrect": false,
           "index": 1,
           "imageUrl": "",
-          "explanation": "Incorrect calculation"
+          "explanation": "This value of k does not satisfy the condition for real and equal roots."
         },
         {
           "letter": "C",
-          "text": "7 only",
+          "text": "3",
           "isCorrect": false,
           "index": 2,
           "imageUrl": "",
-          "explanation": "Only one possible value, but there are two"
+          "explanation": "This value of k does not satisfy the condition for real and equal roots."
         },
         {
           "letter": "D",
-          "text": "0 only",
+          "text": "12",
           "isCorrect": false,
           "index": 3,
           "imageUrl": "",
-          "explanation": "Incorrect calculation"
+          "explanation": "This value of k does not satisfy the condition for real and equal roots."
         }
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "Using the distance formula, d = √[(x₂ - x₁)² + (y₂ - y₁)²]: 5 = √[(4 - x)² + (5 - 1)²]. After squaring both sides and simplifying, we get ±3 = 4 - x, which gives x = 1 or x = 7",
+      "explanation": "For a quadratic equation ax^2 + bx + c = 0 to have real and equal roots, its discriminant (D) must be zero. The discriminant is given by D = b^2 - 4ac. In the given equation 4x^2 - 12x + k = 0, we have a=4, b=-12, and c=k.",
       "hint": "",
       "marks": 4,
       "negativeMark": 0,
@@ -1116,98 +1116,47 @@
       "hasError": false
     },
     {
-      "id": "q-1778508214136-3994a",
+      "id": "q-1778520830980-98939",
       "order": 22,
-      "question": "In a circle with centre O and radius 13 cm, a chord AB has length 24 cm. The distance of the chord from the centre is:",
+      "question": "A bag contains 5 red balls, 3 blue balls, and 2 green balls. If a ball is drawn at random from the bag, what is the probability that the ball drawn is not blue?",
       "type": "mcq",
       "options": [
         {
           "letter": "A",
-          "text": "5 cm",
-          "isCorrect": true,
-          "index": 0,
-          "imageUrl": "",
-          "explanation": "Using the Pythagorean theorem"
-        },
-        {
-          "letter": "B",
-          "text": "7 cm",
-          "isCorrect": false,
-          "index": 1,
-          "imageUrl": "",
-          "explanation": "Incorrect calculation"
-        },
-        {
-          "letter": "C",
-          "text": "10 cm",
-          "isCorrect": false,
-          "index": 2,
-          "imageUrl": "",
-          "explanation": "Incorrect calculation"
-        },
-        {
-          "letter": "D",
-          "text": "12 cm",
-          "isCorrect": false,
-          "index": 3,
-          "imageUrl": "",
-          "explanation": "Incorrect calculation"
-        }
-      ],
-      "answer": "",
-      "alternateAnswers": [],
-      "explanation": "Let the radius of the circle (OA) be r = 13 cm. Let the length of the chord (AB) be 24 cm. The perpendicular from the centre to a chord bisects the chord. Using the Pythagorean theorem in triangle OMA: OA² = OM² + AM², we get 13² = OM² + 12², which gives OM = 5 cm",
-      "hint": "",
-      "marks": 4,
-      "negativeMark": 0,
-      "negativeMarking": false,
-      "imageUrl": "",
-      "subject": "mathematics",
-      "difficulty": "medium",
-      "hasError": false
-    },
-    {
-      "id": "q-1778508214136-d3748",
-      "order": 23,
-      "question": "A bag contains 5 red, 8 blue, and 7 green balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is neither red nor green?",
-      "type": "mcq",
-      "options": [
-        {
-          "letter": "A",
-          "text": "1/4",
-          "isCorrect": false,
-          "index": 0,
-          "imageUrl": "",
-          "explanation": "Incorrect calculation"
-        },
-        {
-          "letter": "B",
-          "text": "2/5",
-          "isCorrect": true,
-          "index": 1,
-          "imageUrl": "",
-          "explanation": "Using the probability formula"
-        },
-        {
-          "letter": "C",
-          "text": "7/20",
-          "isCorrect": false,
-          "index": 2,
-          "imageUrl": "",
-          "explanation": "Incorrect calculation"
-        },
-        {
-          "letter": "D",
           "text": "3/10",
           "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the probability of drawing a ball that is not blue is 7/10, not 3/10."
+        },
+        {
+          "letter": "B",
+          "text": "7/10",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is correct because the probability of drawing a ball that is not blue is indeed 7/10."
+        },
+        {
+          "letter": "C",
+          "text": "1/2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the probability of drawing a ball that is not blue is 7/10, not 1/2."
+        },
+        {
+          "letter": "D",
+          "text": "4/5",
+          "isCorrect": false,
           "index": 3,
           "imageUrl": "",
-          "explanation": "Incorrect calculation"
+          "explanation": "This option is incorrect because the probability of drawing a ball that is not blue is 7/10, not 4/5."
         }
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "Total number of balls in the bag = 5 + 8 + 7 = 20. The event 'neither red nor green' means the ball drawn must be blue. Number of favourable outcomes (blue balls) = 8. Probability (event) = (Number of favourable outcomes) / (Total number of outcomes) = 8 / 20 = 2 / 5",
+      "explanation": "Total number of balls in the bag = Number of red balls + Number of blue balls + Number of green balls. Total number of balls = 5 + 3 + 2 = 10. Number of blue balls = 3. Number of balls that are NOT blue = Total number of balls - Number of blue balls. Number of balls that are NOT blue = 10 - 3 = 7. The probability of drawing a ball that is not blue is given by: P(not blue) = (Number of non-blue balls) / (Total number of balls). P(not blue) = 7/10",
       "hint": "",
       "marks": 4,
       "negativeMark": 0,
@@ -1218,105 +1167,156 @@
       "hasError": false
     },
     {
-      "id": "q-1778508214136-34136",
-      "order": 24,
-      "question": "If tan A = n tan B and sin A = m sin B, then the value of cos² A is:",
+      "id": "q-1778598855796-a6f62",
+      "order": 23,
+      "question": "For what value of 'k' will the quadratic equation $2x^2 - kx + 8 = 0$ have equal roots?",
       "type": "mcq",
       "options": [
         {
           "letter": "A",
-          "text": "(m² - 1) / (n² - 1)",
-          "isCorrect": true,
+          "text": "4",
+          "isCorrect": false,
           "index": 0,
           "imageUrl": "",
-          "explanation": "Using the trigonometric identities and solving for cos² A"
+          "explanation": "This value does not satisfy the condition for equal roots."
         },
         {
           "letter": "B",
-          "text": "(m² + 1) / (n² + 1)",
+          "text": "-8",
           "isCorrect": false,
           "index": 1,
           "imageUrl": "",
-          "explanation": "Incorrect calculation"
+          "explanation": "This value satisfies the condition but is not the only correct answer."
         },
         {
           "letter": "C",
-          "text": "(n² - 1) / (m² - 1)",
-          "isCorrect": false,
+          "text": "$\\pm 8$",
+          "isCorrect": true,
           "index": 2,
           "imageUrl": "",
-          "explanation": "Incorrect calculation"
+          "explanation": "This value satisfies the condition for equal roots as $k^2 - 64 = 0$ leads to $k = \\pm 8$."
         },
         {
           "letter": "D",
-          "text": "(n² + 1) / (m² + 1)",
+          "text": "$\\pm 4$",
           "isCorrect": false,
           "index": 3,
           "imageUrl": "",
-          "explanation": "Incorrect calculation"
+          "explanation": "This value does not satisfy the condition for equal roots."
         }
       ],
       "answer": "",
       "alternateAnswers": [],
-      "explanation": "Given: tan A = n tan B and sin A = m sin B. Using the trigonometric identity and solving for cos² A, we get cos² A = (m² - 1) / (n² - 1)",
-      "hint": "",
+      "explanation": "For a quadratic equation to have equal roots, its discriminant must be zero. The discriminant of $ax^2 + bx + c = 0$ is $b^2 - 4ac$. Substituting $a=2$, $b=-k$, and $c=8$, we get $(-k)^2 - 4(2)(8) = 0$, which simplifies to $k^2 - 64 = 0$, giving $k = \\pm 8$.",
+      "hint": "Recall that for equal roots, the discriminant ($b^2 - 4ac$) must be zero.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "mathematics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1778598855796-9bc07",
+      "order": 24,
+      "question": "The coordinates of point P which divides the line segment joining A(4, -3) and B(9, 7) in the ratio 3:2 internally are:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(6, 1)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct point using the section formula."
+        },
+        {
+          "letter": "B",
+          "text": "(7, 3)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct point using the section formula."
+        },
+        {
+          "letter": "C",
+          "text": "(7, 1)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct point using the section formula."
+        },
+        {
+          "letter": "D",
+          "text": "(6, 3)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct point using the section formula."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the section formula for internal division, if a point divides the line segment joining $(x_1, y_1)$ and $(x_2, y_2)$ in the ratio $m:n$, its coordinates are $\\left(\\frac{m x_2 + n x_1}{m+n}, \\frac{m y_2 + n y_1}{m+n}\\right)$. Substituting the given points and ratio, we get the coordinates of P as (7, 3).",
+      "hint": "Use the section formula to find the coordinates of the dividing point.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "mathematics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1778598855796-1df0a",
+      "order": 25,
+      "question": "If $(x-2)$ is a factor of $x^3 - kx^2 + 12x - 8$ and also of $x^2 - mx + 6$, then the value of $(k+m)$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "9",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct sum of $k$ and $m$."
+        },
+        {
+          "letter": "B",
+          "text": "10",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct sum of $k$ and $m$."
+        },
+        {
+          "letter": "C",
+          "text": "11",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct sum as $k=6$ and $m=5$, so $k+m=11$."
+        },
+        {
+          "letter": "D",
+          "text": "12",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct sum of $k$ and $m$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the Factor Theorem, substitute $x=2$ into both polynomials to find $k$ and $m$. For $x^3 - kx^2 + 12x - 8$, we get $k=6$. For $x^2 - mx + 6$, we get $m=5$. Thus, $k+m=11$.",
+      "hint": "Apply the Factor Theorem to find the values of $k$ and $m$ by substituting $x=2$ into both polynomials.",
       "marks": 4,
       "negativeMark": 0,
       "negativeMarking": false,
       "imageUrl": "",
       "subject": "mathematics",
       "difficulty": "hard",
-      "hasError": false
-    },
-    {
-      "id": "q-1778508214136-8bb7b",
-      "order": 25,
-      "question": "A solid metallic sphere of radius 6 cm is melted and recast into a solid cylinder of height 32 cm. What is the curved surface area of the cylinder?",
-      "type": "mcq",
-      "options": [
-        {
-          "letter": "A",
-          "text": "$192 \\pi \\text{ cm}^2$",
-          "isCorrect": true,
-          "index": 0,
-          "imageUrl": "",
-          "explanation": "This is the correct answer because the volume of the sphere is $288 \\pi \\text{ cm}^3$ and when recast into a cylinder of height 32 cm, the radius of the cylinder is 3 cm. The curved surface area of the cylinder is $2 \\pi r_c h_c = 2 \\pi (3)(32) = 192 \\pi \\text{ cm}^2$."
-        },
-        {
-          "letter": "B",
-          "text": "$210 \\pi \\text{ cm}^2$",
-          "isCorrect": false,
-          "index": 1,
-          "imageUrl": "",
-          "explanation": "This is incorrect because the calculated curved surface area of the cylinder is $192 \\pi \\text{ cm}^2$, not $210 \\pi \\text{ cm}^2$."
-        },
-        {
-          "letter": "C",
-          "text": "$384 \\pi \\text{ cm}^2$",
-          "isCorrect": false,
-          "index": 2,
-          "imageUrl": "",
-          "explanation": "This is incorrect because the calculated curved surface area of the cylinder is $192 \\pi \\text{ cm}^2$, not $384 \\pi \\text{ cm}^2$."
-        },
-        {
-          "letter": "D",
-          "text": "$288 \\pi \\text{ cm}^2$",
-          "isCorrect": false,
-          "index": 3,
-          "imageUrl": "",
-          "explanation": "This is incorrect because the calculated curved surface area of the cylinder is $192 \\pi \\text{ cm}^2$, not $288 \\pi \\text{ cm}^2$."
-        }
-      ],
-      "answer": "",
-      "alternateAnswers": [],
-      "explanation": "To find the curved surface area of the cylinder, first calculate the volume of the sphere and then use the principle that the volume remains constant when a solid is melted and recast. From the volume of the cylinder formula, find the radius of the cylinder and then use it to calculate the curved surface area.",
-      "hint": "",
-      "marks": 4,
-      "negativeMark": 0,
-      "negativeMarking": false,
-      "imageUrl": "",
-      "subject": "mathematics",
-      "difficulty": "medium",
       "hasError": false
     }
   ],
