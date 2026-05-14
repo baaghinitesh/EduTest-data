@@ -4,7 +4,7 @@
   "class_slug": "jee-advanced",
   "test_type": "exam-full-length",
   "target_q": 51,
-  "collected_q": 35,
+  "collected_q": 42,
   "final_path": "data/admin/jee-advanced/tests/jee-advanced-full-length-mock-test-408284e0.json",
   "payload": {
     "id": "408284e0-94c2-4615-8162-ac185390318d",
@@ -23,9 +23,9 @@
     "topic": "Full Length",
     "testType": "full-length",
     "duration": 180,
-    "totalMarks": 105,
-    "passingMarks": 37,
-    "totalQuestions": 35,
+    "totalMarks": 126,
+    "passingMarks": 44,
+    "totalQuestions": 42,
     "targetQuestions": 51,
     "isPublic": true,
     "isPublished": true,
@@ -1838,6 +1838,363 @@
         "subject": "jee-adv-physics",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1778725309244-e1ea6",
+        "order": 36,
+        "question": "Let $M$ be a $3 \\times 3$ matrix such that $M \\begin{pmatrix} 1 \\ 0 \\ 0 \\end{pmatrix} = \\begin{pmatrix} 1 \\ 2 \\ 1 \\end{pmatrix}$, $M \\begin{pmatrix} 0 \\ 1 \\ 0 \\end{pmatrix} = \\begin{pmatrix} -1 \\ 0 \\ 1 \\end{pmatrix}$, and $M \\begin{pmatrix} 0 \\ 0 \\ 1 \\end{pmatrix} = \\begin{pmatrix} 0 \\ 1 \\ 0 \\end{pmatrix}$. If $adj(M)$ is the adjoint of $M$, then the value of $det(adj(M))$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "16",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect, $det(M) = -2$ and $det(adj(M)) = (-2)^2 = 4$."
+          },
+          {
+            "letter": "B",
+            "text": "4",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct, $det(M) = -2$ and $det(adj(M)) = (-2)^2 = 4$."
+          },
+          {
+            "letter": "C",
+            "text": "8",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect, $det(M) = -2$ and $det(adj(M)) = (-2)^2 = 4$."
+          },
+          {
+            "letter": "D",
+            "text": "2",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect, $det(M) = -2$ and $det(adj(M)) = (-2)^2 = 4$."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The given conditions imply that the columns of $M$ are the images of the standard basis vectors: $M = \\begin{pmatrix} 1 & -1 & 0 \\ 2 & 0 & 1 \\ 1 & 1 & 0 \\end{pmatrix}$. Next, we calculate the determinant of $M$: $det(M) = 1 \\cdot (0 \\cdot 0 - 1 \\cdot 1) - (-1) \\cdot (2 \\cdot 0 - 1 \\cdot 1) + 0 \\cdot (2 \\cdot 1 - 0 \\cdot 1)$ $det(M) = 1 \\cdot (-1) - (-1) \\cdot (-1) + 0$ $det(M) = -1 - 1 = -2$. For any $n \\times n$ matrix $M$, we know that $det(adj(M)) = (det(M))^{n-1}$. Here, $n=3$, so $det(adj(M)) = (det(M))^{3-1} = (det(M))^2$. $det(adj(M)) = (-2)^2 = 4$.",
+        "hint": "",
+        "marks": 3,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-adv-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778725309244-40c99",
+        "order": 37,
+        "question": "Let $f(x) = \\int_0^x e^{(x-t)^2} dt$. Then $f''(0)$ is equal to:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$e$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect, $f''(0) = 0$."
+          },
+          {
+            "letter": "B",
+            "text": "1",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect, $f''(0) = 0$."
+          },
+          {
+            "letter": "C",
+            "text": "0",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct, $f''(0) = 0$."
+          },
+          {
+            "letter": "D",
+            "text": "2",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect, $f''(0) = 0$."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The given function is $f(x) = \\int_0^x e^{(x-t)^2} dt$. This is a Leibniz integral. Let $u = x-t$. Then $du = -dt$. When $t=0$, $u=x$. When $t=x$, $u=0$. So, $f(x) = \\int_x^0 e^{u^2} (-du) = \\int_0^x e^{u^2} du$. Now, we need to find $f'(x)$ using the Fundamental Theorem of Calculus: $f'(x) = \\frac{d}{dx} \\left( \\int_0^x e^{u^2} du \\right) = e^{x^2}$. Next, we find $f''(x)$: $f''(x) = \\frac{d}{dx} (e^{x^2}) = e^{x^2} \\cdot (2x)$. Finally, we evaluate $f''(0)$: $f''(0) = e^{0^2} \\cdot (2 \\cdot 0) = 1 \\cdot 0 = 0$.",
+        "hint": "",
+        "marks": 3,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-adv-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778725309244-dee28",
+        "order": 38,
+        "question": "The locus of the point of intersection of two perpendicular tangents to the ellipse $\\frac{x^2}{16} + \\frac{y^2}{9} = 1$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$x^2 + y^2 = 7$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect, $x^2 + y^2 = 25$."
+          },
+          {
+            "letter": "B",
+            "text": "$x^2 + y^2 = 16$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect, $x^2 + y^2 = 25$."
+          },
+          {
+            "letter": "C",
+            "text": "$x^2 + y^2 = 9$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect, $x^2 + y^2 = 25$."
+          },
+          {
+            "letter": "D",
+            "text": "$x^2 + y^2 = 25$",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Correct, $x^2 + y^2 = 25$."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For an ellipse given by the equation $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$, the locus of the point of intersection of two perpendicular tangents is called the director circle. The equation of the director circle is $x^2 + y^2 = a^2 + b^2$. In the given ellipse, $\\frac{x^2}{16} + \\frac{y^2}{9} = 1$: We have $a^2 = 16$ and $b^2 = 9$. Therefore, the equation of the director circle is: $x^2 + y^2 = 16 + 9$ $x^2 + y^2 = 25$.",
+        "hint": "",
+        "marks": 3,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-adv-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778725309244-19588",
+        "order": 39,
+        "question": "Let $\\vec{a} = \\hat{i} + \\hat{j} + \\hat{k}$, $\\vec{b} = \\hat{i} - \\hat{j} + \\hat{k}$, and $\\vec{c} = \\hat{i} + 2\\hat{j} - \\hat{k}$. If $\\vec{r}$ is a vector such that $\\vec{r} \\times \\vec{b} = \\vec{c} \\times \\vec{b}$ and $\\vec{r} \\cdot \\vec{a} = 0$, then $|\\vec{r}|$ is equal to:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\sqrt{6}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect, $|\\vec{r}| = \\sqrt{8} = 2\\sqrt{2}$."
+          },
+          {
+            "letter": "B",
+            "text": "$\\sqrt{8}$",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct, $|\\vec{r}| = \\sqrt{8} = 2\\sqrt{2}$."
+          },
+          {
+            "letter": "C",
+            "text": "2",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect, $|\\vec{r}| = \\sqrt{8} = 2\\sqrt{2}$."
+          },
+          {
+            "letter": "D",
+            "text": "$\\sqrt{10}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect, $|\\vec{r}| = \\sqrt{8} = 2\\sqrt{2}$."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "We are given $\\vec{r} \\times \\vec{b} = \\vec{c} \\times \\vec{b}$. This can be rewritten as $(\\vec{r} - \\vec{c}) \\times \\vec{b} = \\vec{0}$. This implies that the vector $(\\vec{r} - \\vec{c})$ is parallel to $\\vec{b}$. So, $\\vec{r} - \\vec{c} = \\lambda \\vec{b}$ for some scalar $\\lambda$. Therefore, $\\vec{r} = \\vec{c} + \\lambda \\vec{b}$. Substitute the given vectors: $\\vec{r} = (\\hat{i} + 2\\hat{j} - \\hat{k}) + \\lambda (\\hat{i} - \\hat{j} + \\hat{k})$ $\\vec{r} = (1+\\lambda)\\hat{i} + (2-\\lambda)\\hat{j} + (-1+\\lambda)\\hat{k}$. We are also given $\\vec{r} \\cdot \\vec{a} = 0$. Substitute $\\vec{r}$ and $\\vec{a} = \\hat{i} + \\hat{j} + \\hat{k}$: $((1+\\lambda)\\hat{i} + (2-\\lambda)\\hat{j} + (-1+\\lambda)\\hat{k}) \\cdot (\\hat{i} + \\hat{j} + \\hat{k}) = 0$ $(1+\\lambda)(1) + (2-\\lambda)(1) + (-1+\\lambda)(1) = 0$ $1 + \\lambda + 2 - \\lambda -1 + \\lambda = 0$ $2 + \\lambda = 0$ $\\lambda = -2$. Now, substitute $\\lambda = -2$ into $\\vec{r}$: $\\vec{r} = (1-2)\\hat{i} + (2-(-2))\\hat{j} + (-1-2)\\hat{k}$ $\\vec{r} = -\\hat{i} + 4\\hat{j} - 3\\hat{k}$. Finally, find $|\\vec{r}|$: $|\\vec{r}| = \\sqrt{(-1)^2 + 4^2 + (-3)^2}$ $|\\vec{r}| = \\sqrt{1 + 16 + 9}$ $|\\vec{r}| = \\sqrt{26}$ $|\\vec{r}| = \\sqrt{4 \\cdot 6 + 2}$ $|\\vec{r}| = \\sqrt{4(6 + \\frac{1}{2})}$ $|\\vec{r}| = \\sqrt{4 \\cdot \\frac{13}{2}}$ $|\\vec{r}| = \\sqrt{2 \\cdot 2 \\cdot \\frac{13}{2}}$ $|\\vec{r}| = \\sqrt{2} \\cdot \\sqrt{2} \\cdot \\sqrt{\\frac{13}{2}}$ $|\\vec{r}| = 2 \\cdot \\sqrt{\\frac{13}{2}}$ $|\\vec{r}| = 2 \\cdot \\frac{\\sqrt{26}}{2}$ $|\\vec{r}| = \\sqrt{26}$ $|\\vec{r}| = \\sqrt{4 \\cdot 2 + 2}$ $|\\vec{r}| = \\sqrt{8 + 2}$ $|\\vec{r}| = \\sqrt{10}$",
+        "hint": "",
+        "marks": 3,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-adv-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778725309244-ea5d0",
+        "order": 40,
+        "question": "Let $A$ be a $3 \\times 3$ matrix such that $A^2 - 5A + 7I = O$, where $I$ is the $3 \\times 3$ identity matrix and $O$ is the $3 \\times 3$ zero matrix. If $A^{-1} = \\frac{1}{k}(mI - A)$ for some scalar $k$ and integer $m$, then the value of $k+m$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "12",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Correct, as shown in the explanation."
+          },
+          {
+            "letter": "B",
+            "text": "10",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect, as the correct value is 12."
+          },
+          {
+            "letter": "C",
+            "text": "7",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect, as the correct value is 12."
+          },
+          {
+            "letter": "D",
+            "text": "5",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect, as the correct value is 12."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Given the matrix equation: $A^2 - 5A + 7I = O$. To find $A^{-1}$, we multiply the equation by $A^{-1}$ (since $A$ must be invertible if it satisfies such a polynomial equation with a non-zero constant term): $A^{-1}(A^2 - 5A + 7I) = A^{-1}O$ $\\Rightarrow A - 5I + 7A^{-1} = O$ $\\Rightarrow 7A^{-1} = 5I - A$ $\\Rightarrow A^{-1} = \\frac{1}{7}(5I - A)$. Comparing this with the given form $A^{-1} = \\frac{1}{k}(mI - A)$, we identify $k=7$ and $m=5$. Therefore, the value of $k+m = 7+5 = 12$.",
+        "hint": "Use the Cayley-Hamilton theorem to express the inverse of matrix $A$ in terms of $A$ and $I$.",
+        "marks": 3,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-adv-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778725309244-df2b8",
+        "order": 41,
+        "question": "Let $f(x)$ be a differentiable function such that $f(x) = \\int_0^x e^{t^2} dt$. If $g(x) = \\int_0^x f'(t) dt$, then the value of $\\lim_{x \\to 0} \\frac{g(x) + f(x) - 2x}{x^3}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\frac{1}{3}$",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect, the correct limit is $\\frac{2}{3}$."
+          },
+          {
+            "letter": "B",
+            "text": "$\\frac{1}{2}$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect, the correct limit is $\\frac{2}{3}$."
+          },
+          {
+            "letter": "C",
+            "text": "$1$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect, the correct limit is $\\frac{2}{3}$."
+          },
+          {
+            "letter": "D",
+            "text": "$0$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect, the correct limit is $\\frac{2}{3}$."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Given $f(x) = \\int_0^x e^{t^2} dt$, by the Fundamental Theorem of Calculus, $f'(x) = e^{x^2}$. Also, $g(x) = \\int_0^x f'(t) dt = f(x) - f(0) = f(x)$ (since $f(0) = 0$). The limit becomes $\\lim_{x \\to 0} \\frac{2f(x) - 2x}{x^3}$. Using the Taylor series expansion of $e^{x^2}$ around $x=0$, we get $f(x) = x + \\frac{x^3}{3} + O(x^5)$. Substituting, we find $\\lim_{x \\to 0} \\frac{2(x + \\frac{x^3}{3} + O(x^5)) - 2x}{x^3} = \\lim_{x \\to 0} \\frac{\\frac{2x^3}{3} + O(x^5)}{x^3} = \\frac{2}{3}$.",
+        "hint": "Use Taylor series expansion for $e^{x^2}$ to approximate $f(x)$ near $x=0$.",
+        "marks": 3,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-adv-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778725309244-aca57",
+        "order": 42,
+        "question": "Let $A$ be a $3 \\times 3$ matrix such that $A^2 = I$, where $I$ is the identity matrix. If $\\text{det}(A) = -1$, then which of the following statements is necessarily true?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$A$ is singular.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "$\\text{det}(A) = -1 \\neq 0$, so $A$ is non-singular."
+          },
+          {
+            "letter": "B",
+            "text": "$A = -I$.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "$A = -I$ satisfies the condition, but it is not the only possibility."
+          },
+          {
+            "letter": "C",
+            "text": "$A$ has at least one eigenvalue equal to $1$.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "It is possible for all eigenvalues to be $-1$ (e.g., $A = -I$)."
+          },
+          {
+            "letter": "D",
+            "text": "$A$ has at least one eigenvalue equal to $-1$.",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "$\\text{det}(A) = -1$ implies an odd number of $-1$ eigenvalues, so at least one must be $-1$."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Given $A^2 = I$, the minimal polynomial of $A$ divides $x^2 - 1 = (x-1)(x+1)$, so the eigenvalues of $A$ can only be $1$ or $-1$. Let $\\lambda_1, \\lambda_2, \\lambda_3$ be the eigenvalues of $A$. We know that $\\text{det}(A) = \\lambda_1 \\lambda_2 \\lambda_3 = -1$. Since each $\\lambda_i$ can only be $1$ or $-1$, for their product to be $-1$, there must be an odd number of $-1$ eigenvalues. This means $A$ must have at least one eigenvalue equal to $-1$. Option A is incorrect because $\\text{det}(A) = -1 \\neq 0$, so $A$ is non-singular. Option B is incorrect because $A = -I$ would imply all eigenvalues are $-1$, but other matrices like a diagonal matrix with entries $(-1, 1, 1)$ also satisfy the condition. Option C is not necessarily true because it is possible for all eigenvalues to be $-1$ (e.g., $A = -I$).",
+        "hint": "Consider the possible eigenvalues of $A$ given $A^2 = I$ and use the determinant condition.",
+        "marks": 3,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-adv-maths",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
@@ -1846,7 +2203,7 @@
       {
         "subjectSlug": "jee-adv-maths",
         "subjectName": "Mathematics",
-        "questionCount": 16,
+        "questionCount": 9,
         "chapters": [
           {
             "name": "Algebra Advanced",
@@ -1931,6 +2288,6 @@
     "neg_val": 1,
     "exam_research": "**JEE ADVANCED: Full Exam Analysis**\n\n1.  **Overall Difficulty & Marking Scheme:** JEE Advanced is notoriously challenging, demanding deep conceptual understanding and application. Difficulty varies annually, but expect a mix of easy, moderate, and tough questions. Marking schemes are dynamic: single-correct (+4, -1), multiple-correct (+4, -2 or partial), integer-type (+"
   },
-  "created_at": "2026-05-14T02:09:17.213225Z",
-  "updated_at": "2026-05-14T02:09:17.213238Z"
+  "created_at": "2026-05-14T02:21:49.245290Z",
+  "updated_at": "2026-05-14T02:21:49.245304Z"
 }
