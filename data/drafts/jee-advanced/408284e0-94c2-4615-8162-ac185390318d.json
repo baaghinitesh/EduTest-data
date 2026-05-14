@@ -4,7 +4,7 @@
   "class_slug": "jee-advanced",
   "test_type": "exam-full-length",
   "target_q": 51,
-  "collected_q": 42,
+  "collected_q": 45,
   "final_path": "data/admin/jee-advanced/tests/jee-advanced-full-length-mock-test-408284e0.json",
   "payload": {
     "id": "408284e0-94c2-4615-8162-ac185390318d",
@@ -23,9 +23,9 @@
     "topic": "Full Length",
     "testType": "full-length",
     "duration": 180,
-    "totalMarks": 126,
-    "passingMarks": 44,
-    "totalQuestions": 42,
+    "totalMarks": 135,
+    "passingMarks": 47,
+    "totalQuestions": 45,
     "targetQuestions": 51,
     "isPublic": true,
     "isPublished": true,
@@ -2195,6 +2195,159 @@
         "subject": "jee-adv-maths",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1778733015071-e6c99",
+        "order": 43,
+        "question": "Let A be a 3x3 non-zero matrix such that A² = I, where I is the 3x3 identity matrix. If det(A) = -1, then det(A + I) is equal to",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "0",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Since det(A) = -1 and A² = I, we have det(A²) = det(I) = 1. Using the property det(AB) = det(A)det(B), we get det(A)det(A) = 1, which gives (-1)(-1) = 1. Now, det(A + I) = det(A)det(I + A⁻¹) = -1 * det(I + A⁻¹). Since A² = I, A⁻¹ = A. So, det(I + A⁻¹) = det(I + A) = 0, because (A - I)(A + I) = 0 and det(A - I) ≠ 0, which implies det(A + I) = 0."
+          },
+          {
+            "letter": "B",
+            "text": "1",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because det(A + I) = 0 as explained above."
+          },
+          {
+            "letter": "C",
+            "text": "-1",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because det(A + I) = 0 as explained above."
+          },
+          {
+            "letter": "D",
+            "text": "2",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because det(A + I) = 0 as explained above."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "We are given A² = I. This can be rewritten as A² - I = 0, which factors as (A - I)(A + I)",
+        "hint": "",
+        "marks": 3,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-adv-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778733015071-a3b55",
+        "order": 44,
+        "question": "Consider the system of linear equations: $x + y + z = 1$, $x + 2y + 4z = k$, $x + 4y + 10z = k^2$. For what value(s) of $k$ does the system have infinitely many solutions?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "k=1 only",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "While k=1 is a solution, k=2 is also valid."
+          },
+          {
+            "letter": "B",
+            "text": "k=2 only",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "While k=2 is a solution, k=1 is also valid."
+          },
+          {
+            "letter": "C",
+            "text": "k=1 or k=2",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "The determinant is zero for both k=1 and k=2, and the system is consistent for these values."
+          },
+          {
+            "letter": "D",
+            "text": "No such value of k exists",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "There are values of k (1 and 2) for which the system has infinitely many solutions."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The system has infinitely many solutions if the determinant of the coefficient matrix is zero and the augmented matrix has the same rank. The determinant of the coefficient matrix is $4k^2 - 12k + 8 = 4(k-1)(k-2)$. Setting this to zero gives $k=1$ or $k=2$. For these values, the augmented matrix also has rank 2, matching the coefficient matrix, confirming infinitely many solutions.",
+        "hint": "Find the determinant of the coefficient matrix and check for which k it becomes zero. Then verify the consistency of the system for those k values.",
+        "marks": 3,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-adv-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778733015071-e46ea",
+        "order": 45,
+        "question": "Let $A$ be a $3 \\times 3$ matrix with real entries such that $A^3 - 6A^2 + 11A - 6I = O$, where $I$ is the $3 \\times 3$ identity matrix and $O$ is the $3 \\times 3$ zero matrix. Which of the following statements is NOT necessarily true?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$A$ is invertible.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Since the eigenvalues are $1$, $2$, and $3$, none of which is zero, $A$ is invertible."
+          },
+          {
+            "letter": "B",
+            "text": "$\\det(A) = 6$.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "The determinant of $A$ is the product of its eigenvalues, which is $1 \\times 2 \\times 3 = 6$."
+          },
+          {
+            "letter": "C",
+            "text": "$A^{-1} = \\frac{1}{6}(A^2 - 6A + 11I)$.",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "From the matrix equation, we can express $A^{-1}$ in terms of $A$ as $A^{-1} = \\frac{1}{6}(A^2 - 6A + 11I)$. This is a valid expression for the inverse of $A$."
+          },
+          {
+            "letter": "D",
+            "text": "$A$ has three distinct eigenvalues.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "The eigenvalues of $A$ are $1$, $2$, and $3$, which are distinct."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The given matrix equation $A^3 - 6A^2 + 11A - 6I = O$ can be factored as $(A - I)(A - 2I)(A - 3I) = O$. This implies that the eigenvalues of $A$ are $1$, $2$, and $3$. Since the determinant of a matrix is the product of its eigenvalues, $\\det(A) = 1 \\times 2 \\times 3 = 6$. The matrix $A$ is invertible because $0$ is not an eigenvalue. However, the statement that $\\det(A) = 6$ is always true, so the correct answer is the one that is NOT necessarily true.",
+        "hint": "Factor the polynomial equation to find the eigenvalues of $A$.",
+        "marks": 3,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-adv-maths",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
@@ -2203,7 +2356,7 @@
       {
         "subjectSlug": "jee-adv-maths",
         "subjectName": "Mathematics",
-        "questionCount": 9,
+        "questionCount": 6,
         "chapters": [
           {
             "name": "Algebra Advanced",
@@ -2288,6 +2441,6 @@
     "neg_val": 1,
     "exam_research": "**JEE ADVANCED: Full Exam Analysis**\n\n1.  **Overall Difficulty & Marking Scheme:** JEE Advanced is notoriously challenging, demanding deep conceptual understanding and application. Difficulty varies annually, but expect a mix of easy, moderate, and tough questions. Marking schemes are dynamic: single-correct (+4, -1), multiple-correct (+4, -2 or partial), integer-type (+"
   },
-  "created_at": "2026-05-14T02:21:49.245290Z",
-  "updated_at": "2026-05-14T02:21:49.245304Z"
+  "created_at": "2026-05-14T04:30:15.071862Z",
+  "updated_at": "2026-05-14T04:30:15.071873Z"
 }
