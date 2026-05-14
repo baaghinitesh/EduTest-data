@@ -4,7 +4,7 @@
   "class_slug": "jee-advanced",
   "test_type": "exam-full-length",
   "target_q": 51,
-  "collected_q": 45,
+  "collected_q": 49,
   "final_path": "data/admin/jee-advanced/tests/jee-advanced-full-length-mock-test-408284e0.json",
   "payload": {
     "id": "408284e0-94c2-4615-8162-ac185390318d",
@@ -23,9 +23,9 @@
     "topic": "Full Length",
     "testType": "full-length",
     "duration": 180,
-    "totalMarks": 135,
-    "passingMarks": 47,
-    "totalQuestions": 45,
+    "totalMarks": 147,
+    "passingMarks": 51,
+    "totalQuestions": 49,
     "targetQuestions": 51,
     "isPublic": true,
     "isPublished": true,
@@ -2348,6 +2348,210 @@
         "subject": "jee-adv-maths",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1778750045332-bd63c",
+        "order": 46,
+        "question": "Let A be a 3x3 matrix such that det(A) = 4. If B = adj(A), then det(B⁻¹(A)) is",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "4",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect, as det(B) = (det(A))^(n-1) = 4^2 = 16, and det(B⁻¹) = 1/det(B) = 1/16, so det(B⁻¹(A)) = det(B⁻¹) * det(A) = (1/16) * 4 = 1/4"
+          },
+          {
+            "letter": "B",
+            "text": "1/4",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct, as det(B) = (det(A))^(n-1) = 4^2 = 16, and det(B⁻¹) = 1/det(B) = 1/16, so det(B⁻¹(A)) = det(B⁻¹) * det(A) = (1/16) * 4 = 1/4"
+          },
+          {
+            "letter": "C",
+            "text": "1/16",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect, as det(B⁻¹(A)) = det(B⁻¹) * det(A) = (1/16) * 4 = 1/4, not 1/16"
+          },
+          {
+            "letter": "D",
+            "text": "16",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect, as det(B) = (det(A))^(n-1) = 4^2 = 16, and det(B⁻¹) = 1/det(B) = 1/16, so det(B⁻¹(A)) = det(B⁻¹) * det(A) = (1/16) * 4 = 1/4, not 16"
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Given det(A) = 4. B = adj(A). For a 3x3 matrix A, the determinant of its adjoint is given by det(adj(A)) = (det(A))^(n-1), where n is the order of the matrix. Here, n",
+        "hint": "",
+        "marks": 3,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-adv-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778750045332-e5da9",
+        "order": 47,
+        "question": "Let $P(x)$ be a polynomial with real coefficients such that $P(x) - P'(x) = x^3 - 3x^2 + 6x - 6$. If $P(0) = 0$, then the value of $P(1)$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "7",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This option does not align with the solution derived from the given equation and initial condition."
+          },
+          {
+            "letter": "B",
+            "text": "6",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This option does not match the calculated value of $P(1)$ based on $P(x)$."
+          },
+          {
+            "letter": "C",
+            "text": "0",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Given $P(0) = 0$, this option might seem plausible but does not fit the calculated $P(1)$."
+          },
+          {
+            "letter": "D",
+            "text": "-1",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "By solving the differential equation formed from $P(x) - P'(x) = x^3 - 3x^2 + 6x - 6$ and applying $P(0) = 0$, we find $P(1) = -1$."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "To find the value of $P(1)$, we first need to determine the form of $P(x)$. Given $P(x) - P'(x) = x^3 - 3x^2 + 6x - 6$, let's assume $P(x)$ is of degree $n$. Since $P(x) - P'(x)$ is of degree 3, $P(x)$ must be of degree 3 as well because the derivative $P'(x)$ would be of degree $n-1$, and for the equation to hold, $n$ must be 3.",
+        "hint": "Consider the form of $P(x)$ and use the given equation to derive its coefficients.",
+        "marks": 3,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-adv-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778750045332-6b747",
+        "order": 48,
+        "question": "Let A be a 3x3 matrix such that det(A) = 4. If B is a matrix such that B = 2A⁻¹, then det(B) is equal to:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "1/2",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because det(B) = 2³ * (1/det(A)) = 8 * (1/4) = 2, not 1/2."
+          },
+          {
+            "letter": "B",
+            "text": "2",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This option is correct because det(B) = 2³ * (1/det(A)) = 8 * (1/4) = 2."
+          },
+          {
+            "letter": "C",
+            "text": "4",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because det(B) = 2³ * (1/det(A)) = 8 * (1/4) = 2, not 4."
+          },
+          {
+            "letter": "D",
+            "text": "8",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because det(B) = 2³ * (1/det(A)) = 8 * (1/4) = 2, not 8."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Given that A is a 3x3 matrix and det(A) = 4. We are given B = 2A⁻¹. For any scalar k and an n x n matrix M, det(kM) = kⁿ det(M). Since A is a 3x3 matrix, n = 3. So, det(B) = det(2A⁻¹) = 2³ det(A⁻¹). We know that det(A⁻¹) = 1/det(A). Therefore, det(B) = 2³ * (1/det(A)) = 8 * (1/4) = 2.",
+        "hint": "",
+        "marks": 3,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-adv-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778750045332-8d3b3",
+        "order": 49,
+        "question": "Consider the parabola y² = 4x. Let P be a point on the parabola such that the tangent at P is perpendicular to the line x + y = 0. Let S be the focus of the parabola. If Q is the foot of the perpendicular from S to the tangent at P, then the area of the triangle SPQ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "1/2",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because the area of triangle SPQ is 1, not 1/2."
+          },
+          {
+            "letter": "B",
+            "text": "1",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This option is correct because the area of triangle SPQ is 1."
+          },
+          {
+            "letter": "C",
+            "text": "2",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because the area of triangle SPQ is 1, not 2."
+          },
+          {
+            "letter": "D",
+            "text": "√2",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because the area of triangle SPQ is 1, not √2."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The equation of the parabola is y² = 4x. The focus is S(a, 0). Here, 4a = 4, so a = 1. Thus, S = (1, 0). Any point on the parabola can be parameterized as P(t², 2t). The equation of the tangent at P(t², 2t) is ty = x + t². The slope of this tangent is m_tangent = 1/t. The given line is x + y = 0, which can be written as y = -x. Its slope is m_line = -1. Since the tangent at P is perpendicular to the line x + y = 0, the product of their slopes must be -1. m_tangent * m_line = -1 (1/t) * (-1) = -1 1/t = 1 => t = 1. So, the point P on the parabola is (1², 2(1)) = (1, 2). The equation of the tangent at P is (1)y = x + (1)², which simplifies to y = x + 1. Now, we need to find Q, the foot of the perpendicular from the focus S(1, 0) to the tangent y = x + 1 (or x - y + 1 = 0). The line SQ passes through S(1, 0) and is perpendicular to the tangent y = x + 1. The slope of SQ is -1 (since the slope of the tangent is 1). Equation of line SQ: y - 0 = -1(x - 1) => y = -x + 1. To find Q, we find the intersection of the tangent (y = x + 1) and line SQ (y = -x + 1). x + 1 = -x + 1 2x = 0 => x = 0. Substituting x = 0 into y = x + 1, we get y = 0 + 1 => y = 1. So, Q = (0, 1). Now we have the vertices of triangle SPQ: S(1, 0), P(1, 2), Q(0, 1). We can calculate the area using the determinant formula or by basic geometry. Using basic geometry: The base SP is a vertical segment. Length SP = |y_P - y_S| = |2 - 0| = 2. The line containing SP is x = 1. The height of the triangle with respect to base SP is the perpendicular distance from Q to the line x = 1. Height = |x_Q - 1| = |0 - 1| = 1. Area of triangle SPQ = (1/2) * base * height = (1/2) * 2 * 1 = 1.",
+        "hint": "",
+        "marks": 3,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-adv-maths",
+        "difficulty": "hard",
+        "hasError": false
       }
     ]
   },
@@ -2356,7 +2560,7 @@
       {
         "subjectSlug": "jee-adv-maths",
         "subjectName": "Mathematics",
-        "questionCount": 6,
+        "questionCount": 2,
         "chapters": [
           {
             "name": "Algebra Advanced",
@@ -2441,6 +2645,6 @@
     "neg_val": 1,
     "exam_research": "**JEE ADVANCED: Full Exam Analysis**\n\n1.  **Overall Difficulty & Marking Scheme:** JEE Advanced is notoriously challenging, demanding deep conceptual understanding and application. Difficulty varies annually, but expect a mix of easy, moderate, and tough questions. Marking schemes are dynamic: single-correct (+4, -1), multiple-correct (+4, -2 or partial), integer-type (+"
   },
-  "created_at": "2026-05-14T04:30:15.071862Z",
-  "updated_at": "2026-05-14T04:30:15.071873Z"
+  "created_at": "2026-05-14T09:14:05.332677Z",
+  "updated_at": "2026-05-14T09:14:05.332689Z"
 }
