@@ -4,7 +4,7 @@
   "class_slug": "cbse-class-8",
   "test_type": "subject-wise",
   "target_q": 40,
-  "collected_q": 12,
+  "collected_q": 30,
   "final_path": "data/admin/cbse-class-8/tests/cbse-class-8-mathematics-direct-inverse-proportion-ad884b28.json",
   "payload": {
     "id": "ad884b28-39db-4c52-8401-fb70ed1b32e5",
@@ -21,9 +21,9 @@
     "topic": "Direct Inverse Proportion",
     "testType": "subject-wise",
     "duration": 60,
-    "totalMarks": 12,
-    "passingMarks": 4,
-    "totalQuestions": 12,
+    "totalMarks": 30,
+    "passingMarks": 10,
+    "totalQuestions": 30,
     "targetQuestions": 40,
     "isPublic": true,
     "isPublished": true,
@@ -666,11 +666,929 @@
         "subject": "cbse8-maths",
         "difficulty": "easy",
         "hasError": false
+      },
+      {
+        "id": "q-1778779238101-3e188",
+        "order": 13,
+        "question": "If two quantities x and y are in direct proportion, which of the following statements is true?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "x - y = constant",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is not a correct representation of direct proportion."
+          },
+          {
+            "letter": "B",
+            "text": "x + y = constant",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is not a correct representation of direct proportion."
+          },
+          {
+            "letter": "C",
+            "text": "x * y = constant",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is a representation of inverse proportion, not direct proportion."
+          },
+          {
+            "letter": "D",
+            "text": "x / y = constant",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is the correct representation of direct proportion."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "In direct proportion, as one quantity increases, the other increases proportionally, and their ratio remains constant.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "cbse8-maths",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1778779238101-176dc",
+        "order": 14,
+        "question": "If 5 pens cost ₹60, what will be the cost of 8 pens?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "₹75",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "B",
+            "text": "₹80",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "C",
+            "text": "₹85",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "D",
+            "text": "₹96",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Correct calculation based on direct proportion."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "This is a direct proportion problem. Cost of 1 pen = ₹60 / 5 = ₹12. Cost of 8 pens = 8 * ₹12 = ₹96.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "cbse8-maths",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1778779238101-5dec3",
+        "order": 15,
+        "question": "Which of the following describes an inverse proportion relationship between two quantities A and B?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "As A increases, B also increases.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This describes direct proportion, not inverse proportion."
+          },
+          {
+            "letter": "B",
+            "text": "The ratio A/B remains constant.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This describes direct proportion, not inverse proportion."
+          },
+          {
+            "letter": "C",
+            "text": "As A increases, B decreases.",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the correct description of inverse proportion."
+          },
+          {
+            "letter": "D",
+            "text": "The sum A+B remains constant.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This does not describe inverse proportion."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "In inverse proportion, as one quantity increases, the other quantity decreases, and vice-versa, such that their product remains constant.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "cbse8-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778779238101-cc353",
+        "order": 16,
+        "question": "A car takes 2 hours to cover a certain distance at a speed of 60 km/h. How long will it take to cover the same distance at a speed of 80 km/h?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "1.25 hours",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "B",
+            "text": "1.5 hours",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct calculation based on inverse proportion."
+          },
+          {
+            "letter": "C",
+            "text": "1.75 hours",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "D",
+            "text": "2.67 hours",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "This is an inverse proportion problem (more speed, less time for the same distance).",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "cbse8-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778779238101-a7264",
+        "order": 17,
+        "question": "The weight of 12 identical books is 2.4 kg. What is the weight of 5 such books?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "1 kg",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Correct calculation based on direct proportion."
+          },
+          {
+            "letter": "B",
+            "text": "1.2 kg",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "C",
+            "text": "0.8 kg",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "D",
+            "text": "1.5 kg",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "This is a direct proportion problem. Weight of 1 book = 2.4 kg / 12 = 0.2 kg. Weight of 5 books = 5 * 0.2 kg = 1.0 kg.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "cbse8-maths",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1778779238101-cd05e",
+        "order": 18,
+        "question": "6 workers can complete a task in 10 days. If 4 more workers join them, how many days will it take to complete the same task?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "4 days",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "B",
+            "text": "5 days",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "C",
+            "text": "6 days",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct calculation based on inverse proportion."
+          },
+          {
+            "letter": "D",
+            "text": "8 days",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "This is an inverse proportion problem (more workers, less time).",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "cbse8-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778779238101-0c324",
+        "order": 19,
+        "question": "Assertion (A): If the cost of 10 kg of sugar is ₹350, then the cost of 3 kg of sugar is ₹105. Reason (R): Cost and weight of sugar are in direct proportion.",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Both A and R are true and R is the correct explanation of A.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "R is not the correct explanation of A."
+          },
+          {
+            "letter": "B",
+            "text": "Both A and R are true but R is not the correct explanation of A.",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Both are true, but R explains why the calculation method for A is valid, not the numerical result of A itself."
+          },
+          {
+            "letter": "C",
+            "text": "A is true but R is false.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Both A and R are true."
+          },
+          {
+            "letter": "D",
+            "text": "A is false but R is true.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Both A and R are true."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Both A and R are true but R is not the correct explanation of A.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "cbse8-maths",
+        "difficulty": "hard",
+        "hasError": false
+      },
+      {
+        "id": "q-1778779238101-c0996",
+        "order": 20,
+        "question": "Which of the following tables shows an inverse proportion between x and y?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "| x | y | |---|---| | 2 | 4 | | 3 | 6 | | 4 | 8 |",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "The product x * y is not constant."
+          },
+          {
+            "letter": "B",
+            "text": "| x | y | |---|---| | 5 | 10 | | 10 | 15 | | 15 | 20 |",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "The product x * y is not constant."
+          },
+          {
+            "letter": "C",
+            "text": "| x | y | |---|---| | 2 | 12 | | 3 | 8 | | 4 | 6 |",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "The product x * y is constant, which indicates inverse proportion."
+          },
+          {
+            "letter": "D",
+            "text": "| x | y | |---|---| | 1 | 5 | | 2 | 7 | | 3 | 9 |",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "The product x * y is not constant."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "In inverse proportion, the product x * y should be constant.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "cbse8-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778779238101-b6866",
+        "order": 21,
+        "question": "What will be the cost of production per toy if the factory works for 12 hours?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "₹6",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "B",
+            "text": "₹8",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct calculation based on inverse proportion."
+          },
+          {
+            "letter": "C",
+            "text": "₹9",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "D",
+            "text": "₹10",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The number of toys (T) is directly proportional to working hours (H). So, T1/H1 = T2/H2. T1 = 500 toys, H1 = 8 hours. H2 = 12 hours. T2 = (500 * 12) / 8 = 750 toys. The cost of production per toy is inversely proportional to the number of toys produced.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "cbse8-maths",
+        "difficulty": "hard",
+        "hasError": false
+      },
+      {
+        "id": "q-1778779238101-b7093",
+        "order": 22,
+        "question": "If the cost per toy (C) is inversely proportional to the number of toys (T), and C1 = ₹12, T1 = 500 toys, T2 = 750 toys, find the new cost per toy (C2).",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "₹6",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is not the correct calculation."
+          },
+          {
+            "letter": "B",
+            "text": "₹8",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the correct calculation using the inverse proportionality formula."
+          },
+          {
+            "letter": "C",
+            "text": "₹10",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is not the correct calculation."
+          },
+          {
+            "letter": "D",
+            "text": "₹12",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is the original cost per toy, not the new cost."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Since C is inversely proportional to T, we can use the formula C1 * T1 = C2 * T2. Plugging in the values, we get 12 * 500 = C2 * 750. Solving for C2, we get C2 = 6000 / 750 = 8.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "cbse8-maths",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1778779238101-ce5d7",
+        "order": 23,
+        "question": "If x and y are in direct proportion, and when x = 2a+3, y = 4, and when x = 5a-1, y = 8, find the value of a.",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "1",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is not the correct solution."
+          },
+          {
+            "letter": "B",
+            "text": "2",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This was initially considered as a potential answer, but it does not satisfy the proportion."
+          },
+          {
+            "letter": "C",
+            "text": "3",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is not the correct solution."
+          },
+          {
+            "letter": "D",
+            "text": "7",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is the correct solution, as it satisfies the proportion (2a+3)/4 = (5a-1)/8."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Since x and y are in direct proportion, their ratio x/y is constant. We can set up the equation (2a+3)/4 = (5a-1)/8 and solve for a.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "cbse8-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778779238101-2c04c",
+        "order": 24,
+        "question": "If 5 kg of sugar costs ₹200, what is the cost of 12 kg of sugar?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "₹400",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation"
+          },
+          {
+            "letter": "B",
+            "text": "₹480",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct calculation"
+          },
+          {
+            "letter": "C",
+            "text": "₹500",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation"
+          },
+          {
+            "letter": "D",
+            "text": "₹600",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation"
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "This is a direct proportion problem. Cost of 5 kg sugar = ₹200, Cost of 1 kg sugar = ₹200 / 5 = ₹40, Cost of 12 kg sugar = 12 × ₹40 = ₹480",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "cbse8-maths",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1778779238101-c1067",
+        "order": 25,
+        "question": "Which of the following statements is true for rational numbers?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Subtraction is commutative.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Subtraction is not commutative for rational numbers"
+          },
+          {
+            "letter": "B",
+            "text": "Division is associative.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Division is not associative for rational numbers"
+          },
+          {
+            "letter": "C",
+            "text": "Multiplication is distributive over addition.",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct statement"
+          },
+          {
+            "letter": "D",
+            "text": "All rational numbers have a reciprocal.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Zero is a rational number but does not have a reciprocal"
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Rational numbers follow the distributive property of multiplication over addition (a × (b + c) = a × b + a × c).",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "cbse8-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778779238101-d684f",
+        "order": 26,
+        "question": "Simplify: (2^(-3) × 2^5)",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "2^8",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation"
+          },
+          {
+            "letter": "B",
+            "text": "2^(-2)",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation"
+          },
+          {
+            "letter": "C",
+            "text": "2^2",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct calculation"
+          },
+          {
+            "letter": "D",
+            "text": "4^2",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation"
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Using the law of exponents a^m × a^n = a^(m+n): (2^(-3) × 2^5) = 2^(-3+5) = 2^2",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "cbse8-maths",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1778779238101-6ad25",
+        "order": 27,
+        "question": "Solve for x: 3x - 5 = 10",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "3",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect solution"
+          },
+          {
+            "letter": "B",
+            "text": "5",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct solution"
+          },
+          {
+            "letter": "C",
+            "text": "-5",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect solution"
+          },
+          {
+            "letter": "D",
+            "text": "15",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect solution"
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "3x - 5 = 10, 3x = 10 + 5, 3x = 15, x = 15/3, x = 5",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "cbse8-maths",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1778779238101-99b26",
+        "order": 28,
+        "question": "8 workers can build a wall in 15 days. How many days will 12 workers take to build the same wall?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "10 days",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Correct calculation"
+          },
+          {
+            "letter": "B",
+            "text": "12 days",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation"
+          },
+          {
+            "letter": "C",
+            "text": "20 days",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation"
+          },
+          {
+            "letter": "D",
+            "text": "8 days",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation"
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "This is an inverse proportion problem. More workers mean less time to build the same wall. W1 × D1 = W2 × D2, 8 × 15 = 12 × D2, 120 = 12 × D2, D2 = 120/12, D2 = 10",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "cbse8-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778779238101-25620",
+        "order": 29,
+        "question": "Expand: (2x - 3y)^2",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "4x^2 - 9y^2",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect expansion"
+          },
+          {
+            "letter": "B",
+            "text": "4x^2 + 9y^2",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect expansion"
+          },
+          {
+            "letter": "C",
+            "text": "4x^2 - 12xy + 9y^2",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct expansion"
+          },
+          {
+            "letter": "D",
+            "text": "4x^2 + 12xy + 9y^2",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect expansion"
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Using the algebraic identity (a-b)^2 = a^2 - 2ab + b^2: (2x - 3y)^2 = (2x)^2 - 2(2x)(3y) + (3y)^2 = 4x^2 - 12xy + 9y^2",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "cbse8-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1778779238101-1075a",
+        "order": 30,
+        "question": "Simplify: 3/4 + (-2/3) - 1/6",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "1/12",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation"
+          },
+          {
+            "letter": "B",
+            "text": "5/12",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation"
+          },
+          {
+            "letter": "C",
+            "text": "-1/12",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct calculation"
+          },
+          {
+            "letter": "D",
+            "text": "7/12",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation"
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Find the Least Common Multiple (LCM) of the denominators 4, 3, and 6. The LCM is 12. 3/4 + (-2/3) - 1/6 = (3 × 3)/(4 × 3) + (-2 × 4)/(3 × 4) - (1 × 2)/(6 × 2) = 9/12 - 8/12 - 2/12 = (9 - 8 - 2)/12 = -1/12",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "cbse8-maths",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 28,
+    "remaining_q": 10,
     "subj_slug": "cbse8-maths",
     "subj_name": "Mathematics",
     "chapter": "Number System Algebra",
@@ -679,6 +1597,6 @@
     "class_number": 8,
     "cycle": 1
   },
-  "created_at": "2026-05-14T14:28:21.264365Z",
-  "updated_at": "2026-05-14T14:28:21.264379Z"
+  "created_at": "2026-05-14T17:20:38.101540Z",
+  "updated_at": "2026-05-14T17:20:38.101554Z"
 }
