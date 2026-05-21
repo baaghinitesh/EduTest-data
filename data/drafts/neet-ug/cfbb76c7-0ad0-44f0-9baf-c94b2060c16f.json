@@ -4,7 +4,7 @@
   "class_slug": "neet-ug",
   "test_type": "combined",
   "target_q": 105,
-  "collected_q": 75,
+  "collected_q": 76,
   "final_path": "data/admin/neet-ug/tests/neet-ug-combined-zoology-chemistry-physics-cfbb76c7.json",
   "payload": {
     "id": "cfbb76c7-0ad0-44f0-9baf-c94b2060c16f",
@@ -23,9 +23,9 @@
     "topic": "Combined",
     "testType": "subject-wise",
     "duration": 120,
-    "totalMarks": 300,
-    "passingMarks": 105,
-    "totalQuestions": 75,
+    "totalMarks": 304,
+    "passingMarks": 106,
+    "totalQuestions": 76,
     "targetQuestions": 105,
     "isPublic": true,
     "isPublished": true,
@@ -3878,6 +3878,57 @@
         "subject": "neet-physics",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1779373295719-e228c",
+        "order": 76,
+        "question": "A car travels 50 km due North and then 120 km due East. The magnitude of the net displacement of the car from its starting point is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "70 km",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect. 70 km is the sum of the magnitudes, not the resultant."
+          },
+          {
+            "letter": "B",
+            "text": "170 km",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect. 170 km is the sum of the magnitudes, not the resultant."
+          },
+          {
+            "letter": "C",
+            "text": "130 km",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct. The resultant displacement is 130 km."
+          },
+          {
+            "letter": "D",
+            "text": "100 km",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect. 100 km is not the resultant displacement."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The car's displacement vectors are perpendicular to each other. The net displacement is calculated using the Pythagorean theorem: √(50² + 120²) = √(2500 + 14400) = √16900 = 130 km.",
+        "hint": "Use the Pythagorean theorem for perpendicular vectors.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "easy",
+        "hasError": false
       }
     ]
   },
@@ -3925,12 +3976,12 @@
     "collected_per_subj": {
       "neet-zoology": 35,
       "neet-chemistry": 35,
-      "neet-physics": 5
+      "neet-physics": 6
     },
     "is_school": false,
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-05-21T10:08:56.140026Z",
-  "updated_at": "2026-05-21T10:08:56.140040Z"
+  "created_at": "2026-05-21T14:21:35.719972Z",
+  "updated_at": "2026-05-21T14:21:35.719985Z"
 }
