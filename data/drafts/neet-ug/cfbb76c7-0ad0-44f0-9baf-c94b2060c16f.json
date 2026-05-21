@@ -4,7 +4,7 @@
   "class_slug": "neet-ug",
   "test_type": "combined",
   "target_q": 105,
-  "collected_q": 76,
+  "collected_q": 77,
   "final_path": "data/admin/neet-ug/tests/neet-ug-combined-zoology-chemistry-physics-cfbb76c7.json",
   "payload": {
     "id": "cfbb76c7-0ad0-44f0-9baf-c94b2060c16f",
@@ -23,9 +23,9 @@
     "topic": "Combined",
     "testType": "subject-wise",
     "duration": 120,
-    "totalMarks": 304,
-    "passingMarks": 106,
-    "totalQuestions": 76,
+    "totalMarks": 308,
+    "passingMarks": 108,
+    "totalQuestions": 77,
     "targetQuestions": 105,
     "isPublic": true,
     "isPublished": true,
@@ -3929,6 +3929,57 @@
         "subject": "neet-physics",
         "difficulty": "easy",
         "hasError": false
+      },
+      {
+        "id": "q-1779385068560-75550",
+        "order": 77,
+        "question": "Which of the following statements about vector addition is incorrect?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Vector addition is commutative.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This statement is correct as vector addition follows the commutative property."
+          },
+          {
+            "letter": "B",
+            "text": "Vector addition is associative.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This statement is correct as vector addition follows the associative property."
+          },
+          {
+            "letter": "C",
+            "text": "The magnitude of the resultant of two vectors is always greater than or equal to the magnitude of either vector.",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This statement is incorrect because the magnitude of the resultant can be less than the magnitude of either vector."
+          },
+          {
+            "letter": "D",
+            "text": "The resultant of two vectors can be zero if they are equal in magnitude and opposite in direction.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This statement is correct as when two vectors are equal in magnitude and opposite in direction, their resultant is zero."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The magnitude of the resultant of two vectors can be less than the magnitude of either vector.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
@@ -3976,12 +4027,12 @@
     "collected_per_subj": {
       "neet-zoology": 35,
       "neet-chemistry": 35,
-      "neet-physics": 6
+      "neet-physics": 7
     },
     "is_school": false,
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-05-21T14:21:35.719972Z",
-  "updated_at": "2026-05-21T14:21:35.719985Z"
+  "created_at": "2026-05-21T17:37:48.560910Z",
+  "updated_at": "2026-05-21T17:37:48.560925Z"
 }
