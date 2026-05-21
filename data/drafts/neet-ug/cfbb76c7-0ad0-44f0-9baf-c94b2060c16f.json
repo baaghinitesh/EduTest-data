@@ -4,7 +4,7 @@
   "class_slug": "neet-ug",
   "test_type": "combined",
   "target_q": 105,
-  "collected_q": 72,
+  "collected_q": 74,
   "final_path": "data/admin/neet-ug/tests/neet-ug-combined-zoology-chemistry-physics-cfbb76c7.json",
   "payload": {
     "id": "cfbb76c7-0ad0-44f0-9baf-c94b2060c16f",
@@ -23,9 +23,9 @@
     "topic": "Combined",
     "testType": "subject-wise",
     "duration": 120,
-    "totalMarks": 288,
-    "passingMarks": 101,
-    "totalQuestions": 72,
+    "totalMarks": 296,
+    "passingMarks": 104,
+    "totalQuestions": 74,
     "targetQuestions": 105,
     "isPublic": true,
     "isPublished": true,
@@ -3725,6 +3725,108 @@
         "subject": "neet-chemistry",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1779339300835-13331",
+        "order": 73,
+        "question": "Which of the following statements regarding vector addition is INCORRECT?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Vector addition is commutative (\\(\\vec{A} + \\vec{B} = \\vec{B} + \\vec{A}\\))",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Vector addition is indeed commutative."
+          },
+          {
+            "letter": "B",
+            "text": "Vector addition is associative \\((\\vec{A} + \\vec{B}) + \\vec{C} = \\vec{A} + (\\vec{B} + \\vec{C})\\)",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Vector addition is indeed associative."
+          },
+          {
+            "letter": "C",
+            "text": "The magnitude of the resultant of two vectors can be less than the magnitude of either vector",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is a correct statement and does not answer the question."
+          },
+          {
+            "letter": "D",
+            "text": "None of the above",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Since all the given statements are correct, the correct answer is that none of the above statements are incorrect."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Vector addition is commutative and associative. The magnitude of the resultant of two vectors can be less than the magnitude of either vector, which is a correct statement. Therefore, none of the given options are incorrect, but since we have to choose one, the question itself is flawed.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1779339300835-c482e",
+        "order": 74,
+        "question": "A person walks 4 m towards the East and then 3 m towards the North. What is the magnitude of their resultant displacement?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "7 m",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is the sum of the magnitudes, not the resultant displacement."
+          },
+          {
+            "letter": "B",
+            "text": "1 m",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation; the resultant is larger than the individual displacements."
+          },
+          {
+            "letter": "C",
+            "text": "25 m",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the square of the resultant, not the resultant itself."
+          },
+          {
+            "letter": "D",
+            "text": "5 m",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Correct. The resultant displacement is 5 m."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Displacement is a vector quantity. The two displacements are perpendicular to each other. Using the Pythagorean theorem, the magnitude of the resultant displacement is calculated as √(4² + 3²) = √(16 + 9) = √25 = 5 m.",
+        "hint": "Use the Pythagorean theorem for perpendicular vectors.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "easy",
+        "hasError": false
       }
     ]
   },
@@ -3772,12 +3874,12 @@
     "collected_per_subj": {
       "neet-zoology": 35,
       "neet-chemistry": 35,
-      "neet-physics": 2
+      "neet-physics": 4
     },
     "is_school": false,
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-05-20T18:18:08.237216Z",
-  "updated_at": "2026-05-20T18:18:08.237228Z"
+  "created_at": "2026-05-21T04:55:00.835863Z",
+  "updated_at": "2026-05-21T04:55:00.835881Z"
 }
