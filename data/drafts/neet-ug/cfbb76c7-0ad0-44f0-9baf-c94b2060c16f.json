@@ -4,7 +4,7 @@
   "class_slug": "neet-ug",
   "test_type": "combined",
   "target_q": 105,
-  "collected_q": 74,
+  "collected_q": 75,
   "final_path": "data/admin/neet-ug/tests/neet-ug-combined-zoology-chemistry-physics-cfbb76c7.json",
   "payload": {
     "id": "cfbb76c7-0ad0-44f0-9baf-c94b2060c16f",
@@ -23,9 +23,9 @@
     "topic": "Combined",
     "testType": "subject-wise",
     "duration": 120,
-    "totalMarks": 296,
-    "passingMarks": 104,
-    "totalQuestions": 74,
+    "totalMarks": 300,
+    "passingMarks": 105,
+    "totalQuestions": 75,
     "targetQuestions": 105,
     "isPublic": true,
     "isPublished": true,
@@ -3827,6 +3827,57 @@
         "subject": "neet-physics",
         "difficulty": "easy",
         "hasError": false
+      },
+      {
+        "id": "q-1779358136139-9b264",
+        "order": 75,
+        "question": "Which of the following statements about vector addition is true?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Vector addition is associative but not commutative.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Vector addition is both associative and commutative."
+          },
+          {
+            "letter": "B",
+            "text": "Vector addition is commutative but not associative.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Vector addition is both associative and commutative."
+          },
+          {
+            "letter": "C",
+            "text": "Vector addition is both commutative and associative.",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Vector addition follows both the commutative law ($\\vec{A} + \\vec{B} = \\vec{B} + \\vec{A}$) and the associative law [$(\\vec{A} + \\vec{B}) + \\vec{C} = \\vec{A} + (\\vec{B} + \\vec{C})]$"
+          },
+          {
+            "letter": "D",
+            "text": "Vector addition is neither commutative nor associative.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Vector addition is both associative and commutative."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Vector addition follows both the commutative law and the associative law",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
@@ -3874,12 +3925,12 @@
     "collected_per_subj": {
       "neet-zoology": 35,
       "neet-chemistry": 35,
-      "neet-physics": 4
+      "neet-physics": 5
     },
     "is_school": false,
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-05-21T04:55:00.835863Z",
-  "updated_at": "2026-05-21T04:55:00.835881Z"
+  "created_at": "2026-05-21T10:08:56.140026Z",
+  "updated_at": "2026-05-21T10:08:56.140040Z"
 }
