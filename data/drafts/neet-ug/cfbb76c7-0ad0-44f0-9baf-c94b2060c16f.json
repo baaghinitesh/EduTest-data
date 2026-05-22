@@ -4,7 +4,7 @@
   "class_slug": "neet-ug",
   "test_type": "combined",
   "target_q": 105,
-  "collected_q": 99,
+  "collected_q": 100,
   "final_path": "data/admin/neet-ug/tests/neet-ug-combined-zoology-chemistry-physics-cfbb76c7.json",
   "payload": {
     "id": "cfbb76c7-0ad0-44f0-9baf-c94b2060c16f",
@@ -23,9 +23,9 @@
     "topic": "Combined",
     "testType": "subject-wise",
     "duration": 120,
-    "totalMarks": 396,
-    "passingMarks": 139,
-    "totalQuestions": 99,
+    "totalMarks": 400,
+    "passingMarks": 140,
+    "totalQuestions": 100,
     "targetQuestions": 105,
     "isPublic": true,
     "isPublished": true,
@@ -5102,6 +5102,57 @@
         "subject": "neet-physics",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1779419477436-69ee2",
+        "order": 100,
+        "question": "A car travels 5 km due North and then 12 km due East. The magnitude of the resultant displacement of the car is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "7 km",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This option does not match the calculated magnitude of the resultant displacement."
+          },
+          {
+            "letter": "B",
+            "text": "13 km",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the correct magnitude of the resultant displacement calculated using the Pythagorean theorem."
+          },
+          {
+            "letter": "C",
+            "text": "17 km",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This option does not match the calculated magnitude of the resultant displacement."
+          },
+          {
+            "letter": "D",
+            "text": "$\\sqrt{119}$ km",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This option does not match the calculated magnitude of the resultant displacement."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The two displacements are perpendicular to each other. We can find the magnitude of the resultant displacement using the Pythagorean theorem.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
@@ -5149,12 +5200,12 @@
     "collected_per_subj": {
       "neet-zoology": 35,
       "neet-chemistry": 35,
-      "neet-physics": 29
+      "neet-physics": 30
     },
     "is_school": false,
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-05-22T03:09:30.186230Z",
-  "updated_at": "2026-05-22T03:09:30.186245Z"
+  "created_at": "2026-05-22T03:11:17.436598Z",
+  "updated_at": "2026-05-22T03:11:17.436613Z"
 }
