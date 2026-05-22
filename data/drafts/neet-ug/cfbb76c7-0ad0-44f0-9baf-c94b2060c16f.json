@@ -4,7 +4,7 @@
   "class_slug": "neet-ug",
   "test_type": "combined",
   "target_q": 105,
-  "collected_q": 77,
+  "collected_q": 79,
   "final_path": "data/admin/neet-ug/tests/neet-ug-combined-zoology-chemistry-physics-cfbb76c7.json",
   "payload": {
     "id": "cfbb76c7-0ad0-44f0-9baf-c94b2060c16f",
@@ -23,9 +23,9 @@
     "topic": "Combined",
     "testType": "subject-wise",
     "duration": 120,
-    "totalMarks": 308,
-    "passingMarks": 108,
-    "totalQuestions": 77,
+    "totalMarks": 316,
+    "passingMarks": 111,
+    "totalQuestions": 79,
     "targetQuestions": 105,
     "isPublic": true,
     "isPublished": true,
@@ -3980,6 +3980,108 @@
         "subject": "neet-physics",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1779418967051-6647f",
+        "order": 78,
+        "question": "Two vectors $\\vec{A}$ and $\\vec{B}$ have magnitudes 3 units and 4 units respectively. If the angle between them is $90^\\circ$, what is the magnitude of their resultant vector $\\vec{R} = \\vec{A} + \\vec{B}$?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "1 unit",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect. The resultant magnitude is not the difference of the magnitudes."
+          },
+          {
+            "letter": "B",
+            "text": "5 units",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct. The calculation yields 5 units as the resultant magnitude."
+          },
+          {
+            "letter": "C",
+            "text": "7 units",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect. This would be the sum of the magnitudes, not the resultant."
+          },
+          {
+            "letter": "D",
+            "text": "$\\sqrt{7}$ units",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect. This value does not match the calculation for the resultant magnitude."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For two vectors with magnitudes $A$ and $B$ and angle $\\theta$ between them, the magnitude of the resultant vector is given by $R = \\sqrt{A^2 + B^2 + 2AB \\cos\\theta}$. Given $A=3$, $B=4$, and $\\theta = 90^\\circ$, $\\cos 90^\\circ = 0$, so $R = \\sqrt{3^2 + 4^2} = \\sqrt{25} = 5$ units.",
+        "hint": "Use the formula for the magnitude of the resultant of two vectors with an angle between them.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1779418967051-89821",
+        "order": 79,
+        "question": "Question 79",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Option A",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "Option B",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "Option C",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "Option D",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "This describes $\\vec{A} + \\vec{B}$, not $\\vec{A} - \\vec{B}$.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
@@ -4027,12 +4129,12 @@
     "collected_per_subj": {
       "neet-zoology": 35,
       "neet-chemistry": 35,
-      "neet-physics": 7
+      "neet-physics": 9
     },
     "is_school": false,
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-05-21T17:37:48.560910Z",
-  "updated_at": "2026-05-21T17:37:48.560925Z"
+  "created_at": "2026-05-22T03:02:47.051571Z",
+  "updated_at": "2026-05-22T03:02:47.051584Z"
 }
