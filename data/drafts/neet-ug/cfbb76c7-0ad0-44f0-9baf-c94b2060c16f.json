@@ -4,7 +4,7 @@
   "class_slug": "neet-ug",
   "test_type": "combined",
   "target_q": 105,
-  "collected_q": 79,
+  "collected_q": 83,
   "final_path": "data/admin/neet-ug/tests/neet-ug-combined-zoology-chemistry-physics-cfbb76c7.json",
   "payload": {
     "id": "cfbb76c7-0ad0-44f0-9baf-c94b2060c16f",
@@ -23,9 +23,9 @@
     "topic": "Combined",
     "testType": "subject-wise",
     "duration": 120,
-    "totalMarks": 316,
-    "passingMarks": 111,
-    "totalQuestions": 79,
+    "totalMarks": 332,
+    "passingMarks": 116,
+    "totalQuestions": 83,
     "targetQuestions": 105,
     "isPublic": true,
     "isPublished": true,
@@ -4082,6 +4082,210 @@
         "subject": "neet-physics",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1779419127913-f6535",
+        "order": 80,
+        "question": "Which of the following statements regarding vector addition is INCORRECT?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Vector addition is commutative.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Vector addition is commutative."
+          },
+          {
+            "letter": "B",
+            "text": "Vector addition is associative.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Vector addition is associative."
+          },
+          {
+            "letter": "C",
+            "text": "The magnitude of the resultant of two vectors can be less than the magnitude of either vector.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "The magnitude of the resultant of two vectors can indeed be less than the magnitude of either vector."
+          },
+          {
+            "letter": "D",
+            "text": "The magnitude of the resultant of two vectors can be greater than the sum of their individual magnitudes.",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "The magnitude of the resultant of two vectors cannot be greater than the sum of their individual magnitudes, according to the triangle inequality."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Vector addition is commutative and associative. The magnitude of the resultant of two vectors can be less than the magnitude of either vector, but it cannot be greater than the sum of their individual magnitudes.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1779419127913-02208",
+        "order": 81,
+        "question": "The magnitude of the net displacement of the particle is",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "√13 m",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "The magnitude of the net displacement is |⟨D| = √((2)^2 + (3)^2) = √(4 + 9) = √13 m."
+          },
+          {
+            "letter": "B",
+            "text": "√17 m",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation of the magnitude."
+          },
+          {
+            "letter": "C",
+            "text": "√5 m",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation of the magnitude."
+          },
+          {
+            "letter": "D",
+            "text": "13 m",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation of the magnitude."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The net displacement is the vector sum of the individual displacements. Combine the components and calculate the magnitude.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1779419127913-9575d",
+        "order": 82,
+        "question": "If ⟨A, ⟨B, and ⟨C are three vectors such that ⟨A + ⟨B = ⟨C, which of the following diagrams correctly represents the vector subtraction ⟨C - ⟨B?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "A vector pointing from the tail of ⟨B to the head of ⟨C",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect representation of vector subtraction."
+          },
+          {
+            "letter": "B",
+            "text": "A vector pointing from the head of ⟨B to the head of ⟨C",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct representation of vector subtraction."
+          },
+          {
+            "letter": "C",
+            "text": "A vector pointing from the head of ⟨C to the head of ⟨B",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect representation of vector subtraction."
+          },
+          {
+            "letter": "D",
+            "text": "A vector pointing from the tail of ⟨C to the tail of ⟨B",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect representation of vector subtraction."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "From the given equation, we can infer that ⟨A = ⟨C - ⟨B. In vector subtraction, if ⟨X = ⟨Y - ⟨Z, then ⟨X is the vector that goes from the head of ⟨Z to the head of ⟨Y.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1779419127913-e9a6a",
+        "order": 83,
+        "question": "Two cars, A and B, start at the same point. Car A moves eastward at a speed of 30 km/h, and car B moves northward at a speed of 40 km/h. What is the relative speed of car A with respect to car B after 1 hour?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "10 km/h",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation of the relative speed."
+          },
+          {
+            "letter": "B",
+            "text": "50 km/h",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "The relative velocity of car A with respect to car B is ⟨v_A - ⟨v_B = 30ɾ5i - 40ɾ5j. The magnitude of the relative velocity is √(30^2 + 40^2) = √(900 + 1600) = √2500 = 50 km/h."
+          },
+          {
+            "letter": "C",
+            "text": "70 km/h",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation of the relative speed."
+          },
+          {
+            "letter": "D",
+            "text": "25 km/h",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation of the relative speed."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let the velocity of car A be ⟨v_A = 30ɾ5i and the velocity of car B be ⟨v_B = 40ɾ5j. The relative velocity of car A with respect to car B is ⟨v_A - ⟨v_B. Calculate the magnitude of the relative velocity.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
@@ -4129,12 +4333,12 @@
     "collected_per_subj": {
       "neet-zoology": 35,
       "neet-chemistry": 35,
-      "neet-physics": 9
+      "neet-physics": 13
     },
     "is_school": false,
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-05-22T03:02:47.051571Z",
-  "updated_at": "2026-05-22T03:02:47.051584Z"
+  "created_at": "2026-05-22T03:05:27.913308Z",
+  "updated_at": "2026-05-22T03:05:27.913321Z"
 }
