@@ -4,7 +4,7 @@
   "class_slug": "jee-mains",
   "test_type": "exam-full-length",
   "target_q": 90,
-  "collected_q": 65,
+  "collected_q": 66,
   "final_path": "data/admin/jee-mains/tests/jee-mains-full-length-mock-test-a4b91e47.json",
   "payload": {
     "id": "a4b91e47-4618-4da2-b100-1fbe36450e2b",
@@ -23,9 +23,9 @@
     "topic": "Full Length",
     "testType": "full-length",
     "duration": 180,
-    "totalMarks": 260,
-    "passingMarks": 91,
-    "totalQuestions": 65,
+    "totalMarks": 264,
+    "passingMarks": 92,
+    "totalQuestions": 66,
     "targetQuestions": 90,
     "isPublic": true,
     "isPublished": true,
@@ -3368,6 +3368,57 @@
         "subject": "jee-maths",
         "difficulty": "easy",
         "hasError": false
+      },
+      {
+        "id": "q-1779470547063-95a62",
+        "order": 66,
+        "question": "If A is a 3 × 3 matrix such that det(A) = 5, then det(2A) is equal to",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "10",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because it does not apply the property det(kA) = k^n det(A) correctly."
+          },
+          {
+            "letter": "B",
+            "text": "25",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because it does not consider the dimension of the matrix (n = 3) when applying the property."
+          },
+          {
+            "letter": "C",
+            "text": "40",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This option is correct because it applies the property det(kA) = k^n det(A) with n = 3 and k = 2, resulting in det(2A) = 2^3 * det(A) = 8 * 5 = 40."
+          },
+          {
+            "letter": "D",
+            "text": "125",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because it does not follow the property det(kA) = k^n det(A) for the given matrix and scalar."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For an n × n matrix A and a scalar k, we have the property det(kA) = k^n det(A). In this problem, A is a 3 × 3 matrix, so n = 3. Given det(A) = 5 and k = 2, we can calculate det(2A) = 2^3 * det(A) = 8 * 5 = 40.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-maths",
+        "difficulty": "easy",
+        "hasError": false
       }
     ]
   },
@@ -3376,7 +3427,7 @@
       {
         "subjectSlug": "jee-maths",
         "subjectName": "Mathematics",
-        "questionCount": 26,
+        "questionCount": 25,
         "chapters": [
           {
             "name": "Sets Relations and Functions",
@@ -3596,6 +3647,6 @@
     "neg_val": 1,
     "exam_research": "As a seasoned JEE Mains expert, here's a detailed analysis to optimize your performance:\n\n**1. Overall Difficulty Profile & Marking Scheme**\nJEE Mains typically presents a **moderate to moderately difficult** paper. It tests conceptual clarity, application skills, and calculation speed. The marking scheme is consistent: **+4 marks for every correct answer, -1 mark for every incorrect answer**, and 0 for unattempted questions. Each subject has 20 Multiple Choice Questions (MCQs) and 10 Numerical Value Questions (NVQs), out of which 5 NVQs must be attempted.\n\n**2. Subject-wise Weightage & Question Distribution**\nEach subject (Physics, Chemistry, Mathematics) carries equal weightage of **100 marks**, totaling 300 marks. The distribution within subjects is generally balanced, but certain topics consistently appear. Expect a mix of theoretical, conceptual, and problem-solving questions across all three.\n\n**3. Top 4 High-Yield Topics Per Subject**\n*   **Physics:** **Modern Physics** (Dual Nature, Atoms, Nuclei), **Current Electricity & Magnetism** (Circuits, EMI, AC), **Mechanics** (Newton's Laws, Work-Power-Energy, Rotational Motion), **Optics** (Ray & Wave Optics). These offer high return on investment.\n*   **Chemistry:** **Chemical Bonding & Molecular Structure**, **General Organic Chemistry (GOC) & Reaction Mechanisms**, **Coordination Compounds & d-block Elements**, **Solutions & Electrochemistry**. These are fundamental and frequently tested.\n*   **Mathematics:** **Vectors & 3D Geometry**, **Calculus** (Definite Integration, Differential Equations, Area under curves), **Matrices & Determinants**, **Coordinate Geometry** (Circles, Parabola, Ellipse). These topics are often scoring if concepts are clear.\n\n**4. Time Management Strategy for the Full Paper**\nYou have 180 minutes. Allocate approximately **50-55 minutes per subject**.\n*   **First Pass (60-70 minutes):** Quickly scan all questions in your chosen order. Attempt all easy, direct, and quick-to-solve problems across all subjects. Mark questions you're confident you can solve but need more time.\n*   **Second Pass (60-70 minutes):** Revisit marked questions. Tackle moderate difficulty problems, focusing on accuracy. Prioritize NVQs you are sure about.\n*   **Third Pass (30-40 minutes):** Review answers, recheck calculations, and attempt any remaining challenging questions where you have a clear approach. Avoid blind guessing.\n\n**5. Most Common Traps Across All Subjects**\n*   **Silly Calculation Errors:** The most frequent culprit. Double-check arithmetic.\n*   **Misinterpretation of Question:** Read carefully for keywords like \"not,\" \"incorrect,\" \"minimum,\" \"maximum.\"\n*   **Overspending Time:** Getting stuck on a single difficult question is a score killer. Move on if you're not making progress within 2-3 minutes.\n*   **Distractors in MCQs:** Options are often designed to catch common mistakes.\n*   **Negative Marking:** Avoid random guessing, especially when unsure.\n\n**6. Which Subjects to Attempt First for Maximum Score**\nGenerally, the optimal order is: **Chemistry → Physics → Mathematics**.\n*   **Chemistry:** Usually the quickest, boosts confidence, and requires less calculation.\n*   **Physics:** Requires conceptual application and moderate calculations.\n*   **Mathematics:** Often the most time-consuming and calculation-intensive. Attempting it last ensures you dedicate maximum focused time without feeling rushed by other subjects.\n\nRemember, consistent practice and mock tests are crucial to internalize these strategies. Good luck!"
   },
-  "created_at": "2026-05-22T13:45:18.678284Z",
-  "updated_at": "2026-05-22T13:45:18.678295Z"
+  "created_at": "2026-05-22T17:22:27.064293Z",
+  "updated_at": "2026-05-22T17:22:27.064309Z"
 }
