@@ -4,7 +4,7 @@
   "class_slug": "neet-ug",
   "test_type": "combined",
   "target_q": 105,
-  "collected_q": 83,
+  "collected_q": 99,
   "final_path": "data/admin/neet-ug/tests/neet-ug-combined-zoology-chemistry-physics-cfbb76c7.json",
   "payload": {
     "id": "cfbb76c7-0ad0-44f0-9baf-c94b2060c16f",
@@ -23,9 +23,9 @@
     "topic": "Combined",
     "testType": "subject-wise",
     "duration": 120,
-    "totalMarks": 332,
-    "passingMarks": 116,
-    "totalQuestions": 83,
+    "totalMarks": 396,
+    "passingMarks": 139,
+    "totalQuestions": 99,
     "targetQuestions": 105,
     "isPublic": true,
     "isPublished": true,
@@ -4286,6 +4286,822 @@
         "subject": "neet-physics",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1779419261788-bb4b1",
+        "order": 84,
+        "question": "A car travels 3 km eastward and then 4 km northward. The magnitude of the resultant displacement of the car is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "1 km",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is not the correct magnitude of the resultant displacement."
+          },
+          {
+            "letter": "B",
+            "text": "5 km",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the correct magnitude of the resultant displacement."
+          },
+          {
+            "letter": "C",
+            "text": "7 km",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is not the correct magnitude of the resultant displacement."
+          },
+          {
+            "letter": "D",
+            "text": "12 km",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is not the correct magnitude of the resultant displacement."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The car's movements are perpendicular to each other. The resultant displacement is the hypotenuse of a right-angled triangle formed by the eastward and northward displacements.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1779419261788-3c18c",
+        "order": 85,
+        "question": "Which of the following statements is incorrect regarding vector addition?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Vector addition is commutative (\\( \\vec{A} + \\vec{B} = \\vec{B} + \\vec{A} \\)).",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This statement is correct."
+          },
+          {
+            "letter": "B",
+            "text": "Vector addition is associative (\\( (\\vec{A} + \\vec{B}) + \\vec{C} = \\vec{A} + (\\vec{B} + \\vec{C}) \\)).",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This statement is correct."
+          },
+          {
+            "letter": "C",
+            "text": "The magnitude of the resultant of two vectors can be less than the magnitude of either vector.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This statement is correct."
+          },
+          {
+            "letter": "D",
+            "text": "The magnitude of the resultant of two vectors is always greater than or equal to the magnitude of either vector.",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This statement is incorrect."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Vector addition is commutative and associative, but the magnitude of the resultant of two vectors can be less than the magnitude of either vector if they are in opposite directions.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1779419261788-6114b",
+        "order": 86,
+        "question": "Two cars A and B are moving in the same direction with velocities 20 m/s and 30 m/s respectively. What is the relative velocity of car B with respect to car A?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "50 m/s in the direction of motion",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is not the correct relative velocity."
+          },
+          {
+            "letter": "B",
+            "text": "10 m/s in the direction of motion",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the correct relative velocity."
+          },
+          {
+            "letter": "C",
+            "text": "10 m/s opposite to the direction of motion",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is not the correct relative velocity."
+          },
+          {
+            "letter": "D",
+            "text": "-50 m/s in the direction of motion",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is not the correct relative velocity."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The relative velocity of car B with respect to car A is the difference between their velocities.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1779419261788-77bcb",
+        "order": 87,
+        "question": "A projectile is fired with an initial velocity of 20 m/s at an angle of 30° above the horizontal. What is the change in the velocity vector of the projectile when it reaches its maximum height from the point of projection?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "10 m/s downwards",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is the correct change in velocity."
+          },
+          {
+            "letter": "B",
+            "text": "10 m/s upwards",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is not the correct change in velocity."
+          },
+          {
+            "letter": "C",
+            "text": "20 m/s downwards",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is not the correct change in velocity."
+          },
+          {
+            "letter": "D",
+            "text": "20 m/s upwards",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is not the correct change in velocity."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "At maximum height, the vertical component of velocity becomes zero, while the horizontal component remains constant.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1779419261788-e2ba5",
+        "order": 88,
+        "question": "A boatman wants to cross a river of width 500 m. The river flows with a velocity of 5 m/s. The boatman can row his boat with a velocity of 10 m/s relative to the water. If he wants to cross the river in the shortest possible time, what will be the magnitude of his resultant velocity relative to the ground?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "5 m/s",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is not the correct magnitude of the resultant velocity."
+          },
+          {
+            "letter": "B",
+            "text": "10 m/s",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is not the correct magnitude of the resultant velocity."
+          },
+          {
+            "letter": "C",
+            "text": "\\( 5\\sqrt{5} \\) m/s",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the correct magnitude of the resultant velocity."
+          },
+          {
+            "letter": "D",
+            "text": "\\( 10\\sqrt{2} \\) m/s",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is not the correct magnitude of the resultant velocity."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For the shortest time, the boatman must row his boat perpendicular to the river flow direction.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1779419261788-ef7a3",
+        "order": 89,
+        "question": "A particle starts from the origin, moves 20 m along the positive x-axis, then 10 m along the positive y-axis, and finally 5 m along the negative x-axis. What is the magnitude of the net displacement of the particle?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "25 m",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is not the correct magnitude of the net displacement."
+          },
+          {
+            "letter": "B",
+            "text": "35 m",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is not the correct magnitude of the net displacement."
+          },
+          {
+            "letter": "C",
+            "text": "\\( 5\\sqrt{13} \\) m",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the correct magnitude of the net displacement."
+          },
+          {
+            "letter": "D",
+            "text": "\\( \\sqrt{325} \\) m",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is not the correct magnitude of the net displacement."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The net displacement is the vector sum of the individual displacements.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1779419261788-a1fc5",
+        "order": 90,
+        "question": "A particle is moving in a circle of radius R with a constant speed v. What is the magnitude of the change in its velocity vector when it has covered one-fourth of the circle?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "0",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is not the correct magnitude of the change in velocity."
+          },
+          {
+            "letter": "B",
+            "text": "v",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is not the correct magnitude of the change in velocity."
+          },
+          {
+            "letter": "C",
+            "text": "\\( \\sqrt{2}v \\)",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the correct magnitude of the change in velocity."
+          },
+          {
+            "letter": "D",
+            "text": "2v",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is not the correct magnitude of the change in velocity."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The change in velocity is the difference between the final and initial velocity vectors.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1779419261788-31b28",
+        "order": 91,
+        "question": "Rain is falling vertically downwards with a speed of 30 m/s. A man is riding a bicycle with a speed of 10 m/s in the east direction. At what angle with the vertical should he hold his umbrella to protect himself from the rain?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "\\( \\tan^{-1}(1/3) \\)",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is the correct angle."
+          },
+          {
+            "letter": "B",
+            "text": "\\( \\tan^{-1}(3) \\)",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is not the correct angle."
+          },
+          {
+            "letter": "C",
+            "text": "\\( \\sin^{-1}(1/3) \\)",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is not the correct angle."
+          },
+          {
+            "letter": "D",
+            "text": "\\( \\cos^{-1}(1/3) \\)",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is not the correct angle."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The angle is given by the inverse tangent of the ratio of the horizontal to vertical components of the rain velocity relative to the man.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1779419261788-15dc5",
+        "order": 92,
+        "question": "Two vectors, $\\vec{A}$ and $\\vec{B}$, have magnitudes 5 units and 12 units respectively. The magnitude of their resultant vector $\\vec{R} = \\vec{A} + \\vec{B}$ can be:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "5 units",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is less than the minimum possible magnitude of the resultant vector."
+          },
+          {
+            "letter": "B",
+            "text": "6 units",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is less than the minimum possible magnitude of the resultant vector."
+          },
+          {
+            "letter": "C",
+            "text": "12 units",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the magnitude of vector $\\vec{B}$ but not the resultant vector."
+          },
+          {
+            "letter": "D",
+            "text": "15 units",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This falls within the possible range of the resultant vector's magnitude."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The magnitude of the resultant of two vectors $\\vec{A}$ and $\\vec{B}$ lies between $||\\vec{A}| - |\\vec{B}||$ and $|\\vec{A}| + |\\vec{B}|$. In this case, $|5 - 12| \\le |\\vec{R}| \\le |5 + 12|$, which means $7 \\le |\\vec{R}| \\le 17$. Among the given options, only 15 units falls within this range.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1779419261788-5161b",
+        "order": 93,
+        "question": "A car is moving east at a speed of 10 m/s. Another car is moving north at a speed of 10 m/s. What is the magnitude of the relative velocity of the second car with respect to the first car?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "0 m/s",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "The relative velocity cannot be zero since the cars are moving."
+          },
+          {
+            "letter": "B",
+            "text": "$10\\sqrt{2}$ m/s",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the correct magnitude of the relative velocity."
+          },
+          {
+            "letter": "C",
+            "text": "10 m/s",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the speed of each car but not the relative velocity."
+          },
+          {
+            "letter": "D",
+            "text": "20 m/s",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is twice the speed of each car and not the relative velocity."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let $\\vec{v}_1$ be the velocity of the first car (east) and $\\vec{v}_2$ be the velocity of the second car (north). $\\vec{v}_1 = 10 \\hat{i}$ m/s $\\vec{v}_2 = 10 \\hat{j}$ m/s The relative velocity of the second car with respect to the first is $\\vec{v}_{21} = \\vec{v}_2 - \\vec{v}_1$. $\\vec{v}_{21} = 10 \\hat{j} - 10 \\hat{i}$ m/s Magnitude of $\\vec{v}_{21} = \\sqrt{(-10)^2 + (10)^2} = \\sqrt{100 + 100} = \\sqrt{200} = 10\\sqrt{2}$ m/s.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1779419261788-96a5d",
+        "order": 94,
+        "question": "A man can swim in still water with a speed of 4 km/h. He wants to cross a river 1 km wide flowing at 3 km/h. If he aims to cross the river along the shortest possible path, what will be his speed relative to the ground?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "7 km/h",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is the sum of the man's speed and the river's speed, not the speed relative to the ground."
+          },
+          {
+            "letter": "B",
+            "text": "5 km/h",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is not the correct speed relative to the ground."
+          },
+          {
+            "letter": "C",
+            "text": "$\\sqrt{7}$ km/h",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the correct speed relative to the ground for the shortest path."
+          },
+          {
+            "letter": "D",
+            "text": "1 km/h",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is not the correct speed relative to the ground."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "To cross the river along the shortest path (perpendicular to the river flow), the man must swim at an angle upstream such that the resultant velocity is perpendicular to the river flow. Let $\\vec{v}_m$ be the man's velocity relative to water (magnitude 4 km/h). Let $\\vec{v}_r$ be the river's velocity (magnitude 3 km/h). Let $\\vec{v}_g$ be the man's velocity relative to the ground. $\\vec{v}_g = \\vec{v}_m + \\vec{v}_r$. For the shortest path, $\\vec{v}_g$ must be perpendicular to $\\vec{v}_r$. This forms a right-angled triangle where $\\vec{v}_m$ is the hypotenuse. So, $v_m^2 = v_g^2 + v_r^2$ $4^2 = v_g^2 + 3^2$ $16 = v_g^2 + 9$ $v_g^2 = 16 - 9 = 7$ $v_g = \\sqrt{7}$ km/h.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1779419261788-834f8",
+        "order": 95,
+        "question": "A particle moves in a circle of radius $R$ with uniform speed $v$. When it moves from point P to point Q, covering an angle $\\theta$ at the center, the magnitude of the change in its velocity vector is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "0",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "The change in velocity cannot be zero since the particle is moving in a circle."
+          },
+          {
+            "letter": "B",
+            "text": "$v \\sin(\\theta/2)$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is half the correct magnitude of the change in velocity."
+          },
+          {
+            "letter": "C",
+            "text": "$2v \\sin\\theta$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is not the correct formula for the magnitude of the change in velocity."
+          },
+          {
+            "letter": "D",
+            "text": "$2v \\sin(\\theta/2)$",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is the correct formula for the magnitude of the change in velocity."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let the initial velocity be $\\vec{v}_1$ and the final velocity be $\\vec{v}_2$. Both have magnitude $v$. The angle between $\\vec{v}_1$ and $\\vec{v}_2$ is $\\theta$. The change in velocity is $\\Delta\\vec{v} = \\vec{v}_2 - \\vec{v}_1$. The magnitude of $\\Delta\\vec{v}$ can be found using the formula for vector subtraction: $|\\Delta\\vec{v}| = \\sqrt{v_1^2 + v_2^2 - 2v_1v_2 \\cos\\theta}$ Since $v_1 = v_2 = v$, $|\\Delta\\vec{v}| = \\sqrt{v^2 + v^2 - 2v^2 \\cos\\theta} = \\sqrt{2v^2(1 - \\cos\\theta)}$ Using the trigonometric identity $1 - \\cos\\theta = 2\\sin^2(\\theta/2)$: $|\\Delta\\vec{v}| = \\sqrt{2v^2(2\\sin^2(\\theta/2))} = \\sqrt{4v^2\\sin^2(\\theta/2)} = 2v \\sin(\\theta/2)$.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1779419261788-68834",
+        "order": 96,
+        "question": "The sum of the magnitudes of two forces is 18 N, and the magnitude of their resultant is 12 N. If the resultant is perpendicular to the smaller force, then the magnitudes of the two forces are:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "5 N and 13 N",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "These are the correct magnitudes of the two forces."
+          },
+          {
+            "letter": "B",
+            "text": "6 N and 12 N",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "These do not satisfy the given conditions."
+          },
+          {
+            "letter": "C",
+            "text": "7 N and 11 N",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "These do not satisfy the given conditions."
+          },
+          {
+            "letter": "D",
+            "text": "8 N and 10 N",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "These do not satisfy the given conditions."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let the two forces be $F_1$ and $F_2$, with $F_1  F_2$. Given: $F_1 + F_2 = 18$ N (Eq. 1) Let the resultant be $R = 12$ N. The resultant $R$ is perpendicular to the smaller force $F_1$. This means if we draw the vector triangle, $F_1$, $R$, and $F_2$ form a right-angled triangle, with $F_2$ as the hypotenuse. So, $F_2^2 = R^2 + F_1^2$ $F_2^2 = 12^2 + F_1^2$ $F_2^2 - F_1^2 = 144$ $(F_2 - F_1)(F_2 + F_1) = 144$ Substitute $F_1 + F_2 = 18$ from Eq. 1: $(F_2 - F_1)(18) = 144$ $F_2 - F_1 = \\frac{144}{18} = 8$ N (Eq. 2) Now, solve Eq. 1 and Eq. 2: $(F_1 + F_2) + (F_2 - F_1) = 18 + 8$ $2F_2 = 26 \\implies F_2 = 13$ N Substitute $F_2 = 13$ N into Eq. 1: $F_1 + 13 = 18 \\implies F_1 = 5$ N The magnitudes of the two forces are 5 N and 13 N.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1779419261788-d7dc0",
+        "order": 97,
+        "question": "A particle starts from the origin at $t=0$ with an initial velocity $\\vec{v}_0 = 5.0 \\hat{i}$ m/s and moves in the xy-plane with a constant acceleration $\\vec{a} = (3.0 \\hat{i} + 2.0 \\hat{j})$ m/s$^2$. What is the velocity of the particle at $t=2.0$ s?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$(11.0 \\hat{i} + 4.0 \\hat{j})$ m/s",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is the correct velocity of the particle at $t=2.0$ s."
+          },
+          {
+            "letter": "B",
+            "text": "$(8.0 \\hat{i} + 2.0 \\hat{j})$ m/s",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is not the correct velocity of the particle at $t=2.0$ s."
+          },
+          {
+            "letter": "C",
+            "text": "$(10.0 \\hat{i} + 4.0 \\hat{j})$ m/s",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is not the correct velocity of the particle at $t=2.0$ s."
+          },
+          {
+            "letter": "D",
+            "text": "$(11.0 \\hat{i} + 4.0 \\hat{j})$ m/s",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is the correct velocity of the particle at $t=2.0$ s."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Using the first kinematic equation in vector form: $\\vec{v} = \\vec{v}_0 + \\vec{a}t$ Given: $\\vec{v}_0 = 5.0 \\hat{i}$ m/s $\\vec{a} = (3.0 \\hat{i} + 2.0 \\hat{j})$ m/s$^2$ $t = 2.0$ s $\\vec{v} = (5.0 \\hat{i}) + (3.0 \\hat{i} + 2.0 \\hat{j})(2.0)$ $\\vec{v} = 5.0 \\hat{i} + (6.0 \\hat{i} + 4.0 \\hat{j})$ $\\vec{v} = (5.0 + 6.0) \\hat{i} + 4.0 \\hat{j}$ $\\vec{v} = (11.0 \\hat{i} + 4.0 \\hat{j})$ m/s.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1779419261788-720fe",
+        "order": 98,
+        "question": "A boat is moving with a velocity $(3\\hat{i} + 4\\hat{j})$ km/h relative to the ground. The water in the river is flowing with a velocity $(-3\\hat{i} - 4\\hat{j})$ km/h. What is the velocity of the boat relative to the water?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$(0\\hat{i} + 0\\hat{j})$ km/h",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "The velocity of the boat relative to the water cannot be zero."
+          },
+          {
+            "letter": "B",
+            "text": "$(6\\hat{i} + 8\\hat{j})$ km/h",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the correct velocity but the question asks for the correct letter."
+          },
+          {
+            "letter": "C",
+            "text": "$(6\\hat{i} + 8\\hat{j})$ km/h",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the correct velocity of the boat relative to the water."
+          },
+          {
+            "letter": "D",
+            "text": "$(0\\hat{i} - 0\\hat{j})$ km/h",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "The velocity of the boat relative to the water cannot be zero."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let $\\vec{v}_{bg}$ be the velocity of the boat relative to the ground. Let $\\vec{v}_{wg}$ be the velocity of the water relative to the ground. Let $\\vec{v}_{bw}$ be the velocity of the boat relative to the water. The relationship is $\\vec{v}_{bg} = \\vec{v}_{bw} + \\vec{v}_{wg}$. We need to find $\\vec{v}_{bw}$. $\\vec{v}_{bw} = \\vec{v}_{bg} - \\vec{v}_{wg}$ Given: $\\vec{v}_{bg} = (3\\hat{i} + 4\\hat{j})$ km/h $\\vec{v}_{wg} = (-3\\hat{i} - 4\\hat{j})$ km/h $\\vec{v}_{bw} = (3\\hat{i} + 4\\hat{j}) - (-3\\hat{i} - 4\\hat{j})$ $\\vec{v}_{bw} = (3\\hat{i} + 4\\hat{j} + 3\\hat{i} + 4\\hat{j})$ $\\vec{v}_{bw} = (6\\hat{i} + 8\\hat{j})$ km/h.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "hard",
+        "hasError": false
+      },
+      {
+        "id": "q-1779419261788-0076b",
+        "order": 99,
+        "question": "Three forces of magnitudes 10 N, 10 N, and $10\\sqrt{2}$ N are acting on a particle. The first two forces are mutually perpendicular. What is the angle between the third force and the resultant of the first two forces if the particle is in equilibrium?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$0^\\circ$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "The angle cannot be zero for the particle to be in equilibrium."
+          },
+          {
+            "letter": "B",
+            "text": "$45^\\circ$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the angle between the resultant and each of the first two forces, not the angle between the third force and the resultant."
+          },
+          {
+            "letter": "C",
+            "text": "$180^\\circ$",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the correct angle between the third force and the resultant of the first two forces for the particle to be in equilibrium."
+          },
+          {
+            "letter": "D",
+            "text": "$90^\\circ$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is not the correct angle for the particle to be in equilibrium."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let $\\vec{F}_1$ and $\\vec{F}_2$ be the two mutually perpendicular forces of 10 N each. The resultant of $\\vec{F}_1$ and $\\vec{F}_2$, let's call it $\\vec{R}_{12}$, has a magnitude: $|\\vec{R}_{12}| = \\sqrt{F_1^2 + F_2^2} = \\sqrt{10^2 + 10^2} = \\sqrt{100 + 100} = \\sqrt{200} = 10\\sqrt{2}$ N. The direction of $\\vec{R}_{12}$ is at $45^\\circ$ to both $\\vec{F}_1$ and $\\vec{F}_2$. For the particle to be in equilibrium, the third force must be equal in magnitude and opposite in direction to $\\vec{R}_{12}$. Thus, the angle between the third force and $\\vec{R}_{12}$ is $180^\\circ$.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "neet-physics",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
@@ -4333,12 +5149,12 @@
     "collected_per_subj": {
       "neet-zoology": 35,
       "neet-chemistry": 35,
-      "neet-physics": 13
+      "neet-physics": 29
     },
     "is_school": false,
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-05-22T03:05:27.913308Z",
-  "updated_at": "2026-05-22T03:05:27.913321Z"
+  "created_at": "2026-05-22T03:07:41.788777Z",
+  "updated_at": "2026-05-22T03:07:41.788789Z"
 }
