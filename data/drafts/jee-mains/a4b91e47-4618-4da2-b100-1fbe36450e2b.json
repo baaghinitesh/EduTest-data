@@ -4,7 +4,7 @@
   "class_slug": "jee-mains",
   "test_type": "exam-full-length",
   "target_q": 90,
-  "collected_q": 63,
+  "collected_q": 65,
   "final_path": "data/admin/jee-mains/tests/jee-mains-full-length-mock-test-a4b91e47.json",
   "payload": {
     "id": "a4b91e47-4618-4da2-b100-1fbe36450e2b",
@@ -23,9 +23,9 @@
     "topic": "Full Length",
     "testType": "full-length",
     "duration": 180,
-    "totalMarks": 252,
-    "passingMarks": 88,
-    "totalQuestions": 63,
+    "totalMarks": 260,
+    "passingMarks": 91,
+    "totalQuestions": 65,
     "targetQuestions": 90,
     "isPublic": true,
     "isPublished": true,
@@ -3266,6 +3266,108 @@
         "subject": "jee-maths",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1779457518677-34e17",
+        "order": 64,
+        "question": "Let $f: \\mathbb{R} \\to \\mathbb{R}$ be a function defined by $f(x) = x^3 - 3x^2 + 3x + 7$. Which of the following statements is true about $f(x)$?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$f(x)$ is injective but not surjective.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "The function is both injective and surjective, so this option is incorrect."
+          },
+          {
+            "letter": "B",
+            "text": "$f(x)$ is surjective but not injective.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "The function is both injective and surjective, so this option is incorrect."
+          },
+          {
+            "letter": "C",
+            "text": "$f(x)$ is neither injective nor surjective.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "The function is both injective and surjective, so this option is incorrect."
+          },
+          {
+            "letter": "D",
+            "text": "$f(x)$ is both injective and surjective.",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "The function is strictly increasing and covers all real numbers, making it both injective and surjective."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "A function is injective if different inputs give different outputs and surjective if every element in the codomain is mapped to by some element in the domain. Here, $f(x) = x^3 - 3x^2 + 3x + 7$ can be rewritten as $f(x) = (x-1)^3 + 8$. The derivative $f'(x) = 3(x-1)^2 \\geq 0$ shows the function is strictly increasing (except at $x=1$ where the derivative is zero but the function remains strictly increasing overall). Thus, $f(x)$ is injective. Since it is a cubic polynomial with no horizontal asymptotes, it is also surjective. Hence, $f(x)$ is both injective and surjective.",
+        "hint": "Check the derivative to determine if the function is strictly increasing. Also, consider the end behavior of the cubic function.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1779457518677-469b8",
+        "order": 65,
+        "question": "The determinant of the matrix $\\begin{pmatrix} 1 & \\omega & \\omega^2 \\\\ \\omega & \\omega^2 & 1 \\\\ \\omega^2 & 1 & \\omega \\end{pmatrix}$ where $\\omega$ is a non-real cube root of unity, is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "1",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect. The determinant is not 1."
+          },
+          {
+            "letter": "B",
+            "text": "$\\omega$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect. The determinant is not $\\omega$."
+          },
+          {
+            "letter": "C",
+            "text": "$\\omega^2$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect. The determinant is not $\\omega^2$."
+          },
+          {
+            "letter": "D",
+            "text": "0",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Correct. The determinant of the given matrix is 0."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let the given matrix be A. Since $\\omega$ is a non-real cube root of unity, it satisfies $\\omega^3 = 1$ and $1 + \\omega + \\omega^2 = 0$. Using these properties, we can compute the determinant by expanding it. The determinant simplifies to 0 due to the linear dependence of rows or columns.",
+        "hint": "Recall that for a cube root of unity $\\omega$, $1 + \\omega + \\omega^2 = 0$ and $\\omega^3 = 1$.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-maths",
+        "difficulty": "easy",
+        "hasError": false
       }
     ]
   },
@@ -3274,7 +3376,7 @@
       {
         "subjectSlug": "jee-maths",
         "subjectName": "Mathematics",
-        "questionCount": 28,
+        "questionCount": 26,
         "chapters": [
           {
             "name": "Sets Relations and Functions",
@@ -3494,6 +3596,6 @@
     "neg_val": 1,
     "exam_research": "As a seasoned JEE Mains expert, here's a detailed analysis to optimize your performance:\n\n**1. Overall Difficulty Profile & Marking Scheme**\nJEE Mains typically presents a **moderate to moderately difficult** paper. It tests conceptual clarity, application skills, and calculation speed. The marking scheme is consistent: **+4 marks for every correct answer, -1 mark for every incorrect answer**, and 0 for unattempted questions. Each subject has 20 Multiple Choice Questions (MCQs) and 10 Numerical Value Questions (NVQs), out of which 5 NVQs must be attempted.\n\n**2. Subject-wise Weightage & Question Distribution**\nEach subject (Physics, Chemistry, Mathematics) carries equal weightage of **100 marks**, totaling 300 marks. The distribution within subjects is generally balanced, but certain topics consistently appear. Expect a mix of theoretical, conceptual, and problem-solving questions across all three.\n\n**3. Top 4 High-Yield Topics Per Subject**\n*   **Physics:** **Modern Physics** (Dual Nature, Atoms, Nuclei), **Current Electricity & Magnetism** (Circuits, EMI, AC), **Mechanics** (Newton's Laws, Work-Power-Energy, Rotational Motion), **Optics** (Ray & Wave Optics). These offer high return on investment.\n*   **Chemistry:** **Chemical Bonding & Molecular Structure**, **General Organic Chemistry (GOC) & Reaction Mechanisms**, **Coordination Compounds & d-block Elements**, **Solutions & Electrochemistry**. These are fundamental and frequently tested.\n*   **Mathematics:** **Vectors & 3D Geometry**, **Calculus** (Definite Integration, Differential Equations, Area under curves), **Matrices & Determinants**, **Coordinate Geometry** (Circles, Parabola, Ellipse). These topics are often scoring if concepts are clear.\n\n**4. Time Management Strategy for the Full Paper**\nYou have 180 minutes. Allocate approximately **50-55 minutes per subject**.\n*   **First Pass (60-70 minutes):** Quickly scan all questions in your chosen order. Attempt all easy, direct, and quick-to-solve problems across all subjects. Mark questions you're confident you can solve but need more time.\n*   **Second Pass (60-70 minutes):** Revisit marked questions. Tackle moderate difficulty problems, focusing on accuracy. Prioritize NVQs you are sure about.\n*   **Third Pass (30-40 minutes):** Review answers, recheck calculations, and attempt any remaining challenging questions where you have a clear approach. Avoid blind guessing.\n\n**5. Most Common Traps Across All Subjects**\n*   **Silly Calculation Errors:** The most frequent culprit. Double-check arithmetic.\n*   **Misinterpretation of Question:** Read carefully for keywords like \"not,\" \"incorrect,\" \"minimum,\" \"maximum.\"\n*   **Overspending Time:** Getting stuck on a single difficult question is a score killer. Move on if you're not making progress within 2-3 minutes.\n*   **Distractors in MCQs:** Options are often designed to catch common mistakes.\n*   **Negative Marking:** Avoid random guessing, especially when unsure.\n\n**6. Which Subjects to Attempt First for Maximum Score**\nGenerally, the optimal order is: **Chemistry → Physics → Mathematics**.\n*   **Chemistry:** Usually the quickest, boosts confidence, and requires less calculation.\n*   **Physics:** Requires conceptual application and moderate calculations.\n*   **Mathematics:** Often the most time-consuming and calculation-intensive. Attempting it last ensures you dedicate maximum focused time without feeling rushed by other subjects.\n\nRemember, consistent practice and mock tests are crucial to internalize these strategies. Good luck!"
   },
-  "created_at": "2026-05-22T09:54:37.501926Z",
-  "updated_at": "2026-05-22T09:54:37.501964Z"
+  "created_at": "2026-05-22T13:45:18.678284Z",
+  "updated_at": "2026-05-22T13:45:18.678295Z"
 }
