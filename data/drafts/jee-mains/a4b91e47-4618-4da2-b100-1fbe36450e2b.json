@@ -4,7 +4,7 @@
   "class_slug": "jee-mains",
   "test_type": "exam-full-length",
   "target_q": 90,
-  "collected_q": 75,
+  "collected_q": 77,
   "final_path": "data/admin/jee-mains/tests/jee-mains-full-length-mock-test-a4b91e47.json",
   "payload": {
     "id": "a4b91e47-4618-4da2-b100-1fbe36450e2b",
@@ -23,9 +23,9 @@
     "topic": "Full Length",
     "testType": "full-length",
     "duration": 180,
-    "totalMarks": 300,
-    "passingMarks": 105,
-    "totalQuestions": 75,
+    "totalMarks": 308,
+    "passingMarks": 108,
+    "totalQuestions": 77,
     "targetQuestions": 90,
     "isPublic": true,
     "isPublished": true,
@@ -3878,6 +3878,108 @@
         "subject": "jee-maths",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1779544617377-41df8",
+        "order": 76,
+        "question": "Let $f: \\mathbb{R} \\setminus \\{1\\} \\to \\mathbb{R} \\setminus \\{1\\}$ be a function defined by $f(x) = \\frac{x+1}{x-1}$. Then $f(f(x))$ is equal to:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\frac{1}{x}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect. The simplification leads to $x$, not $\\frac{1}{x}$."
+          },
+          {
+            "letter": "B",
+            "text": "$x^2$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect. The simplification leads to $x$, not $x^2$."
+          },
+          {
+            "letter": "C",
+            "text": "$x$",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct. The simplification shows $f(f(x)) = x$."
+          },
+          {
+            "letter": "D",
+            "text": "$1$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect. The simplification leads to $x$, not $1$."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "We are given $f(x) = \\frac{x+1}{x-1}$. To find $f(f(x))$, substitute $f(x)$ into itself: $f(f(x)) = f\\left(\\frac{x+1}{x-1}\\right) = \\frac{\\left(\\frac{x+1}{x-1}\\right)+1}{\\left(\\frac{x+1}{x-1}\\right)-1}$. Simplify numerator and denominator: Numerator: $\\frac{x+1 + (x-1)}{x-1} = \\frac{2x}{x-1}$, Denominator: $\\frac{x+1 - (x-1)}{x-1} = \\frac{2}{x-1}$. Thus, $f(f(x)) = \\frac{\\frac{2x}{x-1}}{\\frac{2}{x-1}} = x$.",
+        "hint": "Substitute $f(x)$ into itself and simplify the resulting expression.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1779544617377-842ea",
+        "order": 77,
+        "question": "If the sum of the first $n$ terms of an arithmetic progression (A.P.) is given by $S_n = 3n^2 + 5n$, then its common difference is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "4",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect. The common difference is 6, not 4."
+          },
+          {
+            "letter": "B",
+            "text": "6",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct. The common difference is 6."
+          },
+          {
+            "letter": "C",
+            "text": "8",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect. The common difference is 6, not 8."
+          },
+          {
+            "letter": "D",
+            "text": "10",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect. The common difference is 6, not 10."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The sum of the first $n$ terms of an A.P. is $S_n = 3n^2 + 5n$. The first term, $a_1$, is $S_1 = 3(1)^2 + 5(1) = 8$. The sum of the first two terms, $S_2$, is $3(2)^2 + 5(2) = 12 + 10 = 22$, so $a_2 = S_2 - S_1 = 22 - 8 = 14$. The common difference $d = a_2 - a_1 = 14 - 8 = 6$.",
+        "hint": "Use the given sum formula to find the first two terms and then compute the common difference.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-maths",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
@@ -3886,7 +3988,7 @@
       {
         "subjectSlug": "jee-maths",
         "subjectName": "Mathematics",
-        "questionCount": 16,
+        "questionCount": 14,
         "chapters": [
           {
             "name": "Sets Relations and Functions",
@@ -4106,6 +4208,6 @@
     "neg_val": 1,
     "exam_research": "As a seasoned JEE Mains expert, here's a detailed analysis to optimize your performance:\n\n**1. Overall Difficulty Profile & Marking Scheme**\nJEE Mains typically presents a **moderate to moderately difficult** paper. It tests conceptual clarity, application skills, and calculation speed. The marking scheme is consistent: **+4 marks for every correct answer, -1 mark for every incorrect answer**, and 0 for unattempted questions. Each subject has 20 Multiple Choice Questions (MCQs) and 10 Numerical Value Questions (NVQs), out of which 5 NVQs must be attempted.\n\n**2. Subject-wise Weightage & Question Distribution**\nEach subject (Physics, Chemistry, Mathematics) carries equal weightage of **100 marks**, totaling 300 marks. The distribution within subjects is generally balanced, but certain topics consistently appear. Expect a mix of theoretical, conceptual, and problem-solving questions across all three.\n\n**3. Top 4 High-Yield Topics Per Subject**\n*   **Physics:** **Modern Physics** (Dual Nature, Atoms, Nuclei), **Current Electricity & Magnetism** (Circuits, EMI, AC), **Mechanics** (Newton's Laws, Work-Power-Energy, Rotational Motion), **Optics** (Ray & Wave Optics). These offer high return on investment.\n*   **Chemistry:** **Chemical Bonding & Molecular Structure**, **General Organic Chemistry (GOC) & Reaction Mechanisms**, **Coordination Compounds & d-block Elements**, **Solutions & Electrochemistry**. These are fundamental and frequently tested.\n*   **Mathematics:** **Vectors & 3D Geometry**, **Calculus** (Definite Integration, Differential Equations, Area under curves), **Matrices & Determinants**, **Coordinate Geometry** (Circles, Parabola, Ellipse). These topics are often scoring if concepts are clear.\n\n**4. Time Management Strategy for the Full Paper**\nYou have 180 minutes. Allocate approximately **50-55 minutes per subject**.\n*   **First Pass (60-70 minutes):** Quickly scan all questions in your chosen order. Attempt all easy, direct, and quick-to-solve problems across all subjects. Mark questions you're confident you can solve but need more time.\n*   **Second Pass (60-70 minutes):** Revisit marked questions. Tackle moderate difficulty problems, focusing on accuracy. Prioritize NVQs you are sure about.\n*   **Third Pass (30-40 minutes):** Review answers, recheck calculations, and attempt any remaining challenging questions where you have a clear approach. Avoid blind guessing.\n\n**5. Most Common Traps Across All Subjects**\n*   **Silly Calculation Errors:** The most frequent culprit. Double-check arithmetic.\n*   **Misinterpretation of Question:** Read carefully for keywords like \"not,\" \"incorrect,\" \"minimum,\" \"maximum.\"\n*   **Overspending Time:** Getting stuck on a single difficult question is a score killer. Move on if you're not making progress within 2-3 minutes.\n*   **Distractors in MCQs:** Options are often designed to catch common mistakes.\n*   **Negative Marking:** Avoid random guessing, especially when unsure.\n\n**6. Which Subjects to Attempt First for Maximum Score**\nGenerally, the optimal order is: **Chemistry → Physics → Mathematics**.\n*   **Chemistry:** Usually the quickest, boosts confidence, and requires less calculation.\n*   **Physics:** Requires conceptual application and moderate calculations.\n*   **Mathematics:** Often the most time-consuming and calculation-intensive. Attempting it last ensures you dedicate maximum focused time without feeling rushed by other subjects.\n\nRemember, consistent practice and mock tests are crucial to internalize these strategies. Good luck!"
   },
-  "created_at": "2026-05-23T13:50:51.675565Z",
-  "updated_at": "2026-05-23T13:50:51.675577Z"
+  "created_at": "2026-05-23T13:56:57.378186Z",
+  "updated_at": "2026-05-23T13:56:57.378198Z"
 }
