@@ -4,7 +4,7 @@
   "class_slug": "jee-mains",
   "test_type": "exam-full-length",
   "target_q": 90,
-  "collected_q": 68,
+  "collected_q": 73,
   "final_path": "data/admin/jee-mains/tests/jee-mains-full-length-mock-test-a4b91e47.json",
   "payload": {
     "id": "a4b91e47-4618-4da2-b100-1fbe36450e2b",
@@ -23,9 +23,9 @@
     "topic": "Full Length",
     "testType": "full-length",
     "duration": 180,
-    "totalMarks": 272,
-    "passingMarks": 95,
-    "totalQuestions": 68,
+    "totalMarks": 292,
+    "passingMarks": 102,
+    "totalQuestions": 73,
     "targetQuestions": 90,
     "isPublic": true,
     "isPublished": true,
@@ -3521,6 +3521,261 @@
         "subject": "jee-maths",
         "difficulty": "easy",
         "hasError": false
+      },
+      {
+        "id": "q-1779543769515-6e3eb",
+        "order": 69,
+        "question": "If $A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\\\ 7 & 8 & 9 \\end{pmatrix}$, then the value of $\\det(A)$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "1",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is incorrect as the determinant is not 1."
+          },
+          {
+            "letter": "B",
+            "text": "6",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is incorrect as the determinant is not 6."
+          },
+          {
+            "letter": "C",
+            "text": "0",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "The determinant is 0 because the rows are linearly dependent."
+          },
+          {
+            "letter": "D",
+            "text": "-1",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is incorrect as the determinant is not -1."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The determinant of a matrix can be calculated using the formula for a 3x3 matrix. For the given matrix, we observe that the third row is a linear combination of the first two rows (Row 3 = Row 2 + Row 1), which implies that the rows are linearly dependent. Therefore, the determinant of the matrix is 0.",
+        "hint": "Check if any row or column is a linear combination of others.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-maths",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1779543769516-d1832",
+        "order": 70,
+        "question": "The coefficient of the term independent of $x$ in the expansion of $\\left(x^2 + \\frac{1}{x}\\right)^9$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "36",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is incorrect as the coefficient is not 36."
+          },
+          {
+            "letter": "B",
+            "text": "48",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is incorrect as the coefficient is not 48."
+          },
+          {
+            "letter": "C",
+            "text": "84",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "The coefficient of the term independent of $x$ is 84."
+          },
+          {
+            "letter": "D",
+            "text": "126",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is incorrect as the coefficient is not 126."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The general term in the expansion is $T_{r+1} = \\binom{9}{r} x^{18-3r}$. For the term independent of $x$, set the exponent of $x$ to 0: $18 - 3r = 0 \\implies r = 6$. The coefficient is $\\binom{9}{6} = 84$.",
+        "hint": "Find the value of $r$ such that the exponent of $x$ is zero.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1779543769516-006df",
+        "order": 71,
+        "question": "Let $f: \\mathbb{R} \\to \\mathbb{R}$ be a function defined by $f(x) = 3x - 5$. The inverse function $f^{-1}(x)$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$f^{-1}(x) = \\frac{x}{3} + 5$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is incorrect as it does not satisfy the inverse function condition."
+          },
+          {
+            "letter": "B",
+            "text": "$f^{-1}(x) = 5 - 3x$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is incorrect as it does not satisfy the inverse function condition."
+          },
+          {
+            "letter": "C",
+            "text": "$f^{-1}(x) = \\frac{x+5}{3}$",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the correct inverse function."
+          },
+          {
+            "letter": "D",
+            "text": "$f^{-1}(x) = \\frac{x-5}{3}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is incorrect as it does not satisfy the inverse function condition."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "To find the inverse function, set $y = 3x - 5$, swap $x$ and $y$, and solve for $y$: $x = 3y - 5 \\implies y = \\frac{x + 5}{3}$. Thus, $f^{-1}(x) = \\frac{x + 5}{3}$.",
+        "hint": "Swap $x$ and $y$ in the equation and solve for $y$ to find the inverse function.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-maths",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1779543769516-6baa1",
+        "order": 72,
+        "question": "If $\\alpha$ and $\\beta$ are the roots of the quadratic equation $x^2 - 3x + 1 = 0$, then the value of $\\alpha^2 + \\beta^2$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "5",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is incorrect as $\\alpha^2 + \\beta^2$ is not 5."
+          },
+          {
+            "letter": "B",
+            "text": "7",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "The value of $\\alpha^2 + \\beta^2$ is 7."
+          },
+          {
+            "letter": "C",
+            "text": "9",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is incorrect as $\\alpha^2 + \\beta^2$ is not 9."
+          },
+          {
+            "letter": "D",
+            "text": "1",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is incorrect as $\\alpha^2 + \\beta^2$ is not 1."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For the quadratic equation $x^2 - 3x + 1 = 0$, the sum of the roots is $\\alpha + \\beta = 3$ and the product is $\\alpha\\beta = 1$. Using the identity $\\alpha^2 + \\beta^2 = (\\alpha + \\beta)^2 - 2\\alpha\\beta$, we get $\\alpha^2 + \\beta^2 = 3^2 - 2(1) = 9 - 2 = 7$.",
+        "hint": "Use the identity $\\alpha^2 + \\beta^2 = (\\alpha + \\beta)^2 - 2\\alpha\\beta$ to find the required value.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1779543769516-1e53d",
+        "order": 73,
+        "question": "The sum of the series $1 \\cdot 2 + 2 \\cdot 3 + 3 \\cdot 4 + \\dots + n(n+1)$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\frac{n(n+1)(n+2)}{2}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is incorrect as the sum is not $\\frac{n(n+1)(n+2)}{2}$."
+          },
+          {
+            "letter": "B",
+            "text": "$\\frac{n(n+1)(2n+1)}{6}$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is incorrect as the sum is not $\\frac{n(n+1)(2n+1)}{6}$."
+          },
+          {
+            "letter": "C",
+            "text": "$\\frac{n(n+1)(n+2)}{3}$",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "The sum of the series is $\\frac{n(n+1)(n+2)}{3}$."
+          },
+          {
+            "letter": "D",
+            "text": "$\\frac{n(n+2)(2n+1)}{3}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is incorrect as the sum is not $\\frac{n(n+2)(2n+1)}{3}$."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The general term of the series is $T_k = k(k+1) = k^2 + k$. The sum of the series up to $n$ terms is $S_n = \\sum_{k=1}^n (k^2 + k) = \\sum_{k=1}^n k^2 + \\sum_{k=1}^n k = \\frac{n(n+1)(2n+1)}{6} + \\frac{n(n+1)}{2} = \\frac{n(n+1)(n+2)}{3}$.",
+        "hint": "Express the general term as a sum of $k^2$ and $k$, then use the standard summation formulas.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-maths",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
@@ -3529,7 +3784,7 @@
       {
         "subjectSlug": "jee-maths",
         "subjectName": "Mathematics",
-        "questionCount": 23,
+        "questionCount": 18,
         "chapters": [
           {
             "name": "Sets Relations and Functions",
@@ -3749,6 +4004,6 @@
     "neg_val": 1,
     "exam_research": "As a seasoned JEE Mains expert, here's a detailed analysis to optimize your performance:\n\n**1. Overall Difficulty Profile & Marking Scheme**\nJEE Mains typically presents a **moderate to moderately difficult** paper. It tests conceptual clarity, application skills, and calculation speed. The marking scheme is consistent: **+4 marks for every correct answer, -1 mark for every incorrect answer**, and 0 for unattempted questions. Each subject has 20 Multiple Choice Questions (MCQs) and 10 Numerical Value Questions (NVQs), out of which 5 NVQs must be attempted.\n\n**2. Subject-wise Weightage & Question Distribution**\nEach subject (Physics, Chemistry, Mathematics) carries equal weightage of **100 marks**, totaling 300 marks. The distribution within subjects is generally balanced, but certain topics consistently appear. Expect a mix of theoretical, conceptual, and problem-solving questions across all three.\n\n**3. Top 4 High-Yield Topics Per Subject**\n*   **Physics:** **Modern Physics** (Dual Nature, Atoms, Nuclei), **Current Electricity & Magnetism** (Circuits, EMI, AC), **Mechanics** (Newton's Laws, Work-Power-Energy, Rotational Motion), **Optics** (Ray & Wave Optics). These offer high return on investment.\n*   **Chemistry:** **Chemical Bonding & Molecular Structure**, **General Organic Chemistry (GOC) & Reaction Mechanisms**, **Coordination Compounds & d-block Elements**, **Solutions & Electrochemistry**. These are fundamental and frequently tested.\n*   **Mathematics:** **Vectors & 3D Geometry**, **Calculus** (Definite Integration, Differential Equations, Area under curves), **Matrices & Determinants**, **Coordinate Geometry** (Circles, Parabola, Ellipse). These topics are often scoring if concepts are clear.\n\n**4. Time Management Strategy for the Full Paper**\nYou have 180 minutes. Allocate approximately **50-55 minutes per subject**.\n*   **First Pass (60-70 minutes):** Quickly scan all questions in your chosen order. Attempt all easy, direct, and quick-to-solve problems across all subjects. Mark questions you're confident you can solve but need more time.\n*   **Second Pass (60-70 minutes):** Revisit marked questions. Tackle moderate difficulty problems, focusing on accuracy. Prioritize NVQs you are sure about.\n*   **Third Pass (30-40 minutes):** Review answers, recheck calculations, and attempt any remaining challenging questions where you have a clear approach. Avoid blind guessing.\n\n**5. Most Common Traps Across All Subjects**\n*   **Silly Calculation Errors:** The most frequent culprit. Double-check arithmetic.\n*   **Misinterpretation of Question:** Read carefully for keywords like \"not,\" \"incorrect,\" \"minimum,\" \"maximum.\"\n*   **Overspending Time:** Getting stuck on a single difficult question is a score killer. Move on if you're not making progress within 2-3 minutes.\n*   **Distractors in MCQs:** Options are often designed to catch common mistakes.\n*   **Negative Marking:** Avoid random guessing, especially when unsure.\n\n**6. Which Subjects to Attempt First for Maximum Score**\nGenerally, the optimal order is: **Chemistry → Physics → Mathematics**.\n*   **Chemistry:** Usually the quickest, boosts confidence, and requires less calculation.\n*   **Physics:** Requires conceptual application and moderate calculations.\n*   **Mathematics:** Often the most time-consuming and calculation-intensive. Attempting it last ensures you dedicate maximum focused time without feeling rushed by other subjects.\n\nRemember, consistent practice and mock tests are crucial to internalize these strategies. Good luck!"
   },
-  "created_at": "2026-05-23T13:41:15.732999Z",
-  "updated_at": "2026-05-23T13:41:15.733011Z"
+  "created_at": "2026-05-23T13:42:49.516576Z",
+  "updated_at": "2026-05-23T13:42:49.516587Z"
 }
