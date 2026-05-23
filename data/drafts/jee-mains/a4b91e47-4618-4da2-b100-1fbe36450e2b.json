@@ -4,7 +4,7 @@
   "class_slug": "jee-mains",
   "test_type": "exam-full-length",
   "target_q": 90,
-  "collected_q": 77,
+  "collected_q": 82,
   "final_path": "data/admin/jee-mains/tests/jee-mains-full-length-mock-test-a4b91e47.json",
   "payload": {
     "id": "a4b91e47-4618-4da2-b100-1fbe36450e2b",
@@ -23,9 +23,9 @@
     "topic": "Full Length",
     "testType": "full-length",
     "duration": 180,
-    "totalMarks": 308,
-    "passingMarks": 108,
-    "totalQuestions": 77,
+    "totalMarks": 328,
+    "passingMarks": 115,
+    "totalQuestions": 82,
     "targetQuestions": 90,
     "isPublic": true,
     "isPublished": true,
@@ -3980,6 +3980,261 @@
         "subject": "jee-maths",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1779544993982-032fc",
+        "order": 78,
+        "question": "Let $f: \\mathbb{R} - \\{2\\} \\to \\mathbb{R}$ be a function defined by $f(x) = \\frac{x+1}{x-2}$. Then $f(f(x))$ is equal to:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$x$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is not the result of $f(f(x))$ for the given function."
+          },
+          {
+            "letter": "B",
+            "text": "$\\frac{x+1}{x-2}$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the original function $f(x)$, not $f(f(x))$."
+          },
+          {
+            "letter": "C",
+            "text": "$\\frac{2x-1}{5-x}$",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "After substituting and simplifying, $f(f(x)) = \\frac{2x-1}{5-x}$."
+          },
+          {
+            "letter": "D",
+            "text": "$\\frac{5-x}{2x-1}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is the reciprocal of the correct result."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "We need to find $f(f(x))$: $f(f(x)) = f\\left(\\frac{x+1}{x-2}\\right) = \\frac{\\left(\\frac{x+1}{x-2}\\right)+1}{\\left(\\frac{x+1}{x-2}\\right)-2}$. Simplify the numerator and denominator separately: Numerator: $\\frac{x+1}{x-2} + 1 = \\frac{x+1 + x-2}{x-2} = \\frac{2x-1}{x-2}$. Denominator: $\\frac{x+1}{x-2} - 2 = \\frac{x+1 - 2x + 4}{x-2} = \\frac{-x+5}{x-2}$. Now, $f(f(x)) = \\frac{\\frac{2x-1}{x-2}}{\\frac{-x+5}{x-2}} = \\frac{2x-1}{-x+5} = \\frac{2x-1}{5-x}$. This result is not in the options, so let's correct the question to align with the explanation.",
+        "hint": "Compute $f(f(x))$ by substituting $f(x)$ into itself and simplifying step-by-step.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1779544993982-32059",
+        "order": 79,
+        "question": "If $f(x) = \\frac{ax+b}{cx+d}$ is a linear fractional transformation such that $f(f(x)) = x$ for all $x$ in its domain, then which of the following must hold?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$a + b = 0$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is not a necessary condition for $f(f(x)) = x$."
+          },
+          {
+            "letter": "B",
+            "text": "$a + d = 0$",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "For $f(f(x)) = x$, the function must satisfy $a + d = 0$."
+          },
+          {
+            "letter": "C",
+            "text": "$b + c = 0$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is not a necessary condition for $f(f(x)) = x$."
+          },
+          {
+            "letter": "D",
+            "text": "$a - d = 0$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This would imply $a = d$, which is not sufficient for $f(f(x)) = x$."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For a linear fractional transformation $f(x) = \\frac{ax+b}{cx+d}$, the condition $f(f(x)) = x$ implies that $f$ is an involution. This requires that $a + d = 0$ (i.e., $d = -a$). Thus, the function must satisfy $f(x) = \\frac{ax+b}{cx-a}$ for some constants $a, b, c$ with $a \\neq 0$.",
+        "hint": "Consider the condition for a function to be its own inverse, i.e., $f(f(x)) = x$.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1779544993982-11e7d",
+        "order": 80,
+        "question": "Let $f(x) = \\frac{1}{1-x}$. Then $f(f(f(x)))$ is equal to:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$x$",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "After computing $f(f(f(x)))$, we find it equals $x$."
+          },
+          {
+            "letter": "B",
+            "text": "$\\frac{1}{1-x}$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the original function $f(x)$, not the triple composition."
+          },
+          {
+            "letter": "C",
+            "text": "$\\frac{x-1}{x}$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the result of $f(f(x))$, not $f(f(f(x)))$."
+          },
+          {
+            "letter": "D",
+            "text": "$1-x$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is not related to the composition of $f(x)$."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Compute $f(f(x))$ first: $f(f(x)) = f\\left(\\frac{1}{1-x}\\right) = \\frac{1}{1 - \\frac{1}{1-x}} = \\frac{1-x}{(1-x)-1} = \\frac{1-x}{-x} = \\frac{x-1}{x}$. Now compute $f(f(f(x)))$: $f(f(f(x))) = f\\left(\\frac{x-1}{x}\\right) = \\frac{1}{1 - \\frac{x-1}{x}} = \\frac{1}{\\frac{x - (x-1)}{x}} = \\frac{1}{\\frac{1}{x}} = x$.",
+        "hint": "Compute the composition step-by-step, starting from $f(x)$ and substituting into itself twice.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1779544993982-6690d",
+        "order": 81,
+        "question": "If $f(x) = \\frac{2x+3}{x-1}$, then $f^{-1}(x)$ (the inverse function of $f$) is given by:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\frac{x+3}{x-2}$",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is the correct inverse function derived from the original function."
+          },
+          {
+            "letter": "B",
+            "text": "$\\frac{2x+3}{x-1}$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the original function, not its inverse."
+          },
+          {
+            "letter": "C",
+            "text": "$\\frac{x-2}{x+3}$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the reciprocal of the correct inverse function."
+          },
+          {
+            "letter": "D",
+            "text": "$\\frac{2x-3}{x+1}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This does not match the derived inverse function."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "To find the inverse function, set $y = \\frac{2x+3}{x-1}$ and solve for $x$ in terms of $y$: $y(x-1) = 2x + 3 \\implies yx - y = 2x + 3 \\implies yx - 2x = y + 3 \\implies x(y-2) = y + 3 \\implies x = \\frac{y+3}{y-2}$. Thus, the inverse function is $f^{-1}(x) = \\frac{x+3}{x-2}$.",
+        "hint": "To find the inverse, swap $x$ and $y$ in the original equation and solve for $y$ again.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-maths",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1779544993982-851c9",
+        "order": 82,
+        "question": "Let $f(x) = e^x$ and $g(x) = \\ln(x)$. Then the composition $(f \\circ g)(x)$ is equal to:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$x$",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "The composition of $e^x$ and $\\ln(x)$ simplifies to $x$."
+          },
+          {
+            "letter": "B",
+            "text": "$e^x$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the original function $f(x)$, not the composition."
+          },
+          {
+            "letter": "C",
+            "text": "$\\ln(x)$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the original function $g(x)$, not the composition."
+          },
+          {
+            "letter": "D",
+            "text": "$e^{\\ln(x)}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is an intermediate step, not the simplified result."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The composition $(f \\circ g)(x)$ means $f(g(x))$. Substituting $g(x) = \\ln(x)$ into $f(x) = e^x$, we get $f(g(x)) = e^{\\ln(x)} = x$, since $e^x$ and $\\ln(x)$ are inverse functions.",
+        "hint": "Recall that $e^{\\ln(x)} = x$ and $\\ln(e^x) = x$ due to the inverse relationship between exponential and logarithmic functions.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-maths",
+        "difficulty": "easy",
+        "hasError": false
       }
     ]
   },
@@ -3988,7 +4243,7 @@
       {
         "subjectSlug": "jee-maths",
         "subjectName": "Mathematics",
-        "questionCount": 14,
+        "questionCount": 9,
         "chapters": [
           {
             "name": "Sets Relations and Functions",
@@ -4208,6 +4463,6 @@
     "neg_val": 1,
     "exam_research": "As a seasoned JEE Mains expert, here's a detailed analysis to optimize your performance:\n\n**1. Overall Difficulty Profile & Marking Scheme**\nJEE Mains typically presents a **moderate to moderately difficult** paper. It tests conceptual clarity, application skills, and calculation speed. The marking scheme is consistent: **+4 marks for every correct answer, -1 mark for every incorrect answer**, and 0 for unattempted questions. Each subject has 20 Multiple Choice Questions (MCQs) and 10 Numerical Value Questions (NVQs), out of which 5 NVQs must be attempted.\n\n**2. Subject-wise Weightage & Question Distribution**\nEach subject (Physics, Chemistry, Mathematics) carries equal weightage of **100 marks**, totaling 300 marks. The distribution within subjects is generally balanced, but certain topics consistently appear. Expect a mix of theoretical, conceptual, and problem-solving questions across all three.\n\n**3. Top 4 High-Yield Topics Per Subject**\n*   **Physics:** **Modern Physics** (Dual Nature, Atoms, Nuclei), **Current Electricity & Magnetism** (Circuits, EMI, AC), **Mechanics** (Newton's Laws, Work-Power-Energy, Rotational Motion), **Optics** (Ray & Wave Optics). These offer high return on investment.\n*   **Chemistry:** **Chemical Bonding & Molecular Structure**, **General Organic Chemistry (GOC) & Reaction Mechanisms**, **Coordination Compounds & d-block Elements**, **Solutions & Electrochemistry**. These are fundamental and frequently tested.\n*   **Mathematics:** **Vectors & 3D Geometry**, **Calculus** (Definite Integration, Differential Equations, Area under curves), **Matrices & Determinants**, **Coordinate Geometry** (Circles, Parabola, Ellipse). These topics are often scoring if concepts are clear.\n\n**4. Time Management Strategy for the Full Paper**\nYou have 180 minutes. Allocate approximately **50-55 minutes per subject**.\n*   **First Pass (60-70 minutes):** Quickly scan all questions in your chosen order. Attempt all easy, direct, and quick-to-solve problems across all subjects. Mark questions you're confident you can solve but need more time.\n*   **Second Pass (60-70 minutes):** Revisit marked questions. Tackle moderate difficulty problems, focusing on accuracy. Prioritize NVQs you are sure about.\n*   **Third Pass (30-40 minutes):** Review answers, recheck calculations, and attempt any remaining challenging questions where you have a clear approach. Avoid blind guessing.\n\n**5. Most Common Traps Across All Subjects**\n*   **Silly Calculation Errors:** The most frequent culprit. Double-check arithmetic.\n*   **Misinterpretation of Question:** Read carefully for keywords like \"not,\" \"incorrect,\" \"minimum,\" \"maximum.\"\n*   **Overspending Time:** Getting stuck on a single difficult question is a score killer. Move on if you're not making progress within 2-3 minutes.\n*   **Distractors in MCQs:** Options are often designed to catch common mistakes.\n*   **Negative Marking:** Avoid random guessing, especially when unsure.\n\n**6. Which Subjects to Attempt First for Maximum Score**\nGenerally, the optimal order is: **Chemistry → Physics → Mathematics**.\n*   **Chemistry:** Usually the quickest, boosts confidence, and requires less calculation.\n*   **Physics:** Requires conceptual application and moderate calculations.\n*   **Mathematics:** Often the most time-consuming and calculation-intensive. Attempting it last ensures you dedicate maximum focused time without feeling rushed by other subjects.\n\nRemember, consistent practice and mock tests are crucial to internalize these strategies. Good luck!"
   },
-  "created_at": "2026-05-23T14:01:20.120361Z",
-  "updated_at": "2026-05-23T14:01:20.120373Z"
+  "created_at": "2026-05-23T14:03:13.983311Z",
+  "updated_at": "2026-05-23T14:03:13.983324Z"
 }
