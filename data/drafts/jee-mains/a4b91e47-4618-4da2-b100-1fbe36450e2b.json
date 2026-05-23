@@ -4,7 +4,7 @@
   "class_slug": "jee-mains",
   "test_type": "exam-full-length",
   "target_q": 90,
-  "collected_q": 67,
+  "collected_q": 68,
   "final_path": "data/admin/jee-mains/tests/jee-mains-full-length-mock-test-a4b91e47.json",
   "payload": {
     "id": "a4b91e47-4618-4da2-b100-1fbe36450e2b",
@@ -23,9 +23,9 @@
     "topic": "Full Length",
     "testType": "full-length",
     "duration": 180,
-    "totalMarks": 268,
-    "passingMarks": 94,
-    "totalQuestions": 67,
+    "totalMarks": 272,
+    "passingMarks": 95,
+    "totalQuestions": 68,
     "targetQuestions": 90,
     "isPublic": true,
     "isPublished": true,
@@ -3470,6 +3470,57 @@
         "subject": "jee-maths",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1779543592549-59676",
+        "order": 68,
+        "question": "Let $f: \\mathbb{R} \\to \\mathbb{R}$ be a function defined by $f(x) = x^2 - 6x + 10$. The range of $f$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$[1, \\infty)$",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is the correct range of the function $f(x) = x^2 - 6x + 10$ as explained in the detailed solution."
+          },
+          {
+            "letter": "B",
+            "text": "$(-\\infty, 1]$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is incorrect as the parabola opens upwards, so the function has a minimum value at the vertex."
+          },
+          {
+            "letter": "C",
+            "text": "$[10, \\infty)$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is incorrect as the minimum value of the function is 1, not 10."
+          },
+          {
+            "letter": "D",
+            "text": "$(-\\infty, \\infty)$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This is incorrect as the function is a quadratic with a minimum value, so it does not cover all real numbers."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The given function is a quadratic $f(x) = x^2 - 6x + 10$. To find its range, we first determine its minimum value. The vertex of the parabola $f(x) = ax^2 + bx + c$ occurs at $x = -b/(2a)$. Here, $a = 1$, $b = -6$, so the vertex is at $x = 6/2 = 3$. Substituting $x = 3$ into $f(x)$: $f(3) = 3^2 - 6(3) + 10 = 9 - 18 + 10 = 1$. Since the parabola opens upwards (coefficient of $x^2 > 0$), the range is $[1, \\infty)$.",
+        "hint": "Find the vertex of the quadratic function to determine its minimum value.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "jee-maths",
+        "difficulty": "easy",
+        "hasError": false
       }
     ]
   },
@@ -3478,7 +3529,7 @@
       {
         "subjectSlug": "jee-maths",
         "subjectName": "Mathematics",
-        "questionCount": 24,
+        "questionCount": 23,
         "chapters": [
           {
             "name": "Sets Relations and Functions",
@@ -3698,6 +3749,6 @@
     "neg_val": 1,
     "exam_research": "As a seasoned JEE Mains expert, here's a detailed analysis to optimize your performance:\n\n**1. Overall Difficulty Profile & Marking Scheme**\nJEE Mains typically presents a **moderate to moderately difficult** paper. It tests conceptual clarity, application skills, and calculation speed. The marking scheme is consistent: **+4 marks for every correct answer, -1 mark for every incorrect answer**, and 0 for unattempted questions. Each subject has 20 Multiple Choice Questions (MCQs) and 10 Numerical Value Questions (NVQs), out of which 5 NVQs must be attempted.\n\n**2. Subject-wise Weightage & Question Distribution**\nEach subject (Physics, Chemistry, Mathematics) carries equal weightage of **100 marks**, totaling 300 marks. The distribution within subjects is generally balanced, but certain topics consistently appear. Expect a mix of theoretical, conceptual, and problem-solving questions across all three.\n\n**3. Top 4 High-Yield Topics Per Subject**\n*   **Physics:** **Modern Physics** (Dual Nature, Atoms, Nuclei), **Current Electricity & Magnetism** (Circuits, EMI, AC), **Mechanics** (Newton's Laws, Work-Power-Energy, Rotational Motion), **Optics** (Ray & Wave Optics). These offer high return on investment.\n*   **Chemistry:** **Chemical Bonding & Molecular Structure**, **General Organic Chemistry (GOC) & Reaction Mechanisms**, **Coordination Compounds & d-block Elements**, **Solutions & Electrochemistry**. These are fundamental and frequently tested.\n*   **Mathematics:** **Vectors & 3D Geometry**, **Calculus** (Definite Integration, Differential Equations, Area under curves), **Matrices & Determinants**, **Coordinate Geometry** (Circles, Parabola, Ellipse). These topics are often scoring if concepts are clear.\n\n**4. Time Management Strategy for the Full Paper**\nYou have 180 minutes. Allocate approximately **50-55 minutes per subject**.\n*   **First Pass (60-70 minutes):** Quickly scan all questions in your chosen order. Attempt all easy, direct, and quick-to-solve problems across all subjects. Mark questions you're confident you can solve but need more time.\n*   **Second Pass (60-70 minutes):** Revisit marked questions. Tackle moderate difficulty problems, focusing on accuracy. Prioritize NVQs you are sure about.\n*   **Third Pass (30-40 minutes):** Review answers, recheck calculations, and attempt any remaining challenging questions where you have a clear approach. Avoid blind guessing.\n\n**5. Most Common Traps Across All Subjects**\n*   **Silly Calculation Errors:** The most frequent culprit. Double-check arithmetic.\n*   **Misinterpretation of Question:** Read carefully for keywords like \"not,\" \"incorrect,\" \"minimum,\" \"maximum.\"\n*   **Overspending Time:** Getting stuck on a single difficult question is a score killer. Move on if you're not making progress within 2-3 minutes.\n*   **Distractors in MCQs:** Options are often designed to catch common mistakes.\n*   **Negative Marking:** Avoid random guessing, especially when unsure.\n\n**6. Which Subjects to Attempt First for Maximum Score**\nGenerally, the optimal order is: **Chemistry → Physics → Mathematics**.\n*   **Chemistry:** Usually the quickest, boosts confidence, and requires less calculation.\n*   **Physics:** Requires conceptual application and moderate calculations.\n*   **Mathematics:** Often the most time-consuming and calculation-intensive. Attempting it last ensures you dedicate maximum focused time without feeling rushed by other subjects.\n\nRemember, consistent practice and mock tests are crucial to internalize these strategies. Good luck!"
   },
-  "created_at": "2026-05-23T12:12:00.053772Z",
-  "updated_at": "2026-05-23T12:12:00.053788Z"
+  "created_at": "2026-05-23T13:39:52.550423Z",
+  "updated_at": "2026-05-23T13:39:52.550437Z"
 }
