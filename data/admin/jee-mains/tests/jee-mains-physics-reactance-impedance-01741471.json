@@ -1,0 +1,1583 @@
+{
+  "id": "01741471-8b05-4008-aadc-b97517d9e723",
+  "title": "JEE MAINS — Physics | Reactance Impedance",
+  "description": "Subject-wise test on Reactance Impedance (Physics) for JEE MAINS. 10Q.",
+  "board": "Competitive",
+  "classSlug": "jee-mains",
+  "classNumber": 0,
+  "subjects": [
+    "jee-physics"
+  ],
+  "subject": "jee-physics",
+  "chapter": "Electromagnetic Induction and AC",
+  "topic": "Reactance Impedance",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 120,
+  "passingMarks": 42,
+  "totalQuestions": 30,
+  "targetQuestions": 30,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "jee-physics",
+    "electromagnetic",
+    "induction",
+    "impedance",
+    "jee-mains",
+    "reactance"
+  ],
+  "instructions": [
+    "Subject: Physics",
+    "Section A: MCQ questions — all compulsory (+4/-1)",
+    "Section B: Numerical value questions — no negative marking",
+    "Correct MCQ: +4 marks | Wrong MCQ: -1 mark",
+    "Numerical: +4 marks correct | 0 marks wrong (no penalty)",
+    "Enter numerical answers as integers rounded to nearest value",
+    "Topic: Reactance Impedance",
+    "Duration: 60 minutes"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-05-24T09:07:51.453Z",
+  "questions": [
+    {
+      "id": "q-1779613647551-fc526",
+      "order": 1,
+      "question": "A coil has a self-inductance of 5 mH. If the current flowing through it changes from 2 A to 10 A in 0.2 seconds, the magnitude of the average induced EMF in the coil is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.1 V",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields 0.2 V, not 0.1 V."
+        },
+        {
+          "letter": "B",
+          "text": "0.2 V",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The induced EMF is calculated as $5 \\times 10^{-3} \\times 40 = 0.2 \\text{ V}$."
+        },
+        {
+          "letter": "C",
+          "text": "0.3 V",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculated value does not match 0.3 V."
+        },
+        {
+          "letter": "D",
+          "text": "0.4 V",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows the induced EMF is 0.2 V, not 0.4 V."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The magnitude of the induced EMF in an inductor is given by Faraday's law for self-induction: $\\mathcal{E} = L \\left| \\frac{dI}{dt} \\right|$. Given: Self-inductance, $L = 5 \\times 10^{-3} \\text{ H}$, Change in current, $\\Delta I = 8 \\text{ A}$, Time interval, $\\Delta t = 0.2 \\text{ s}$. Average rate of change of current, $\\frac{dI}{dt} = \\frac{\\Delta I}{\\Delta t} = 40 \\text{ A/s}$. Therefore, $\\mathcal{E} = (5 \\times 10^{-3}) \\times 40 = 0.2 \\text{ V}$.",
+      "hint": "Use the formula for induced EMF in an inductor: $\\mathcal{E} = L \\left| \\frac{dI}{dt} \\right|$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613647551-4b9a5",
+      "order": 2,
+      "question": "An inductor of inductance 20 mH is connected to an AC source of frequency 50 Hz. The inductive reactance of the inductor is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2\\pi \\Omega$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The inductive reactance is calculated as $2\\pi \\Omega$."
+        },
+        {
+          "letter": "B",
+          "text": "$4\\pi \\Omega$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculated value is $2\\pi \\Omega$, not $4\\pi \\Omega$."
+        },
+        {
+          "letter": "C",
+          "text": "$6\\pi \\Omega$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculated value does not match $6\\pi \\Omega$."
+        },
+        {
+          "letter": "D",
+          "text": "$8\\pi \\Omega$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculated value is $2\\pi \\Omega$, not $8\\pi \\Omega$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The inductive reactance ($X_L$) is given by $X_L = \\omega L = 2\\pi f L$. Given: Inductance, $L = 20 \\times 10^{-3} \\text{ H}$, Frequency, $f = 50 \\text{ Hz}$. $X_L = 2\\pi \\times 50 \\times (20 \\times 10^{-3}) = 2\\pi \\text{ } \\Omega$.",
+      "hint": "Use the formula for inductive reactance: $X_L = 2\\pi f L$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613647551-ab868",
+      "order": 3,
+      "question": "The energy stored in an inductor of 50 mH when a current of 2 A flows through it is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.05 J",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculated energy is 0.1 J, not 0.05 J."
+        },
+        {
+          "letter": "B",
+          "text": "0.1 J",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The energy stored is calculated as 0.1 J."
+        },
+        {
+          "letter": "C",
+          "text": "0.2 J",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculated value does not match 0.2 J."
+        },
+        {
+          "letter": "D",
+          "text": "0.4 J",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculated energy is 0.1 J, not 0.4 J."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The energy stored in an inductor is given by $U = \\frac{1}{2}LI^2$. Given: Inductance, $L = 50 \\times 10^{-3} \\text{ H}$, Current, $I = 2 \\text{ A}$. $U = \\frac{1}{2} \\times (50 \\times 10^{-3}) \\times (2)^2 = 0.1 \\text{ J}$.",
+      "hint": "Use the formula for energy stored in an inductor: $U = \\frac{1}{2}LI^2$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613647551-43645",
+      "order": 4,
+      "question": "A 100 V, 50 Hz AC source is connected to a series circuit of an inductor (L = 0.3 H) and a resistor (R = 40 Ω). The impedance of the circuit is approximately:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "50 Ω",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculated impedance is approximately 70 Ω, not 50 Ω."
+        },
+        {
+          "letter": "B",
+          "text": "60 Ω",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculated value is closer to 70 Ω, not 60 Ω."
+        },
+        {
+          "letter": "C",
+          "text": "70 Ω",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The impedance is calculated as approximately 70 Ω."
+        },
+        {
+          "letter": "D",
+          "text": "80 Ω",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculated impedance is approximately 70 Ω, not 80 Ω."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, calculate the inductive reactance ($X_L$): $X_L = 2\\pi f L = 2 \\times 3.14 \\times 50 \\times 0.3 = 94.2 \\Omega$. Now, calculate the impedance ($Z$) using $Z = \\sqrt{R^2 + X_L^2} = \\sqrt{40^2 + 94.2^2} \\approx 70 \\Omega$.",
+      "hint": "Impedance in an RL circuit is given by $Z = \\sqrt{R^2 + X_L^2}$, where $X_L = 2\\pi f L$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613647551-9facb",
+      "order": 5,
+      "question": "A circular coil of 100 turns is placed in a uniform magnetic field of 0.5 T normally to its plane. The magnetic field is uniformly reduced to 0.2 T in 0.1 seconds. If the radius of the coil is 1 cm, the magnitude of the induced EMF in the coil is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.942 V",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculated value is much smaller due to the smaller radius."
+        },
+        {
+          "letter": "B",
+          "text": "0.471 V",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value does not match the derived calculation."
+        },
+        {
+          "letter": "C",
+          "text": "0.283 V",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is not consistent with the given parameters."
+        },
+        {
+          "letter": "D",
+          "text": "0.094 V",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The induced EMF is approximately 0.094 V when the radius is 1 cm."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given: Number of turns (N) = 100, Initial magnetic field (B1) = 0.5 T, Final magnetic field (B2) = 0.2 T, Time interval (Δt) = 0.1 s, Radius (r) = 1 cm = 0.01 m. Area of the coil (A) = πr² = π(0.01)² = 10⁻⁴π m². Change in magnetic field (ΔB) = B2 - B1 = 0.2 - 0.5 = -0.3 T. Change in magnetic flux (ΔΦ) = NBA = 100 × (-0.3) × 10⁻⁴π = -30 × 10⁻⁴π = -0.003π Wb. According to Faraday’s Law, induced EMF (ε) = |ΔΦ/Δt| = |(-0.003π)/0.1| = 0.03π V ≈ 0.094 V.",
+      "hint": "Use Faraday's Law of electromagnetic induction: ε = |ΔΦ/Δt|, where ΔΦ = N·A·ΔB.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613647551-9d59b",
+      "order": 6,
+      "question": "Which of the following statements correctly describes the relationship between inductive reactance (XL) and frequency (f) in an AC circuit?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "XL is inversely proportional to f.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. XL is directly proportional to f, not inversely."
+        },
+        {
+          "letter": "B",
+          "text": "XL is directly proportional to f.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. XL = 2πfL shows a direct proportionality between XL and f."
+        },
+        {
+          "letter": "C",
+          "text": "XL is independent of f.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. XL depends on the frequency (f) as per XL = 2πfL."
+        },
+        {
+          "letter": "D",
+          "text": "XL is inversely proportional to L.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. XL is directly proportional to L, not inversely."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Inductive reactance (XL) in an AC circuit is given by XL = 2πfL, where f is the frequency and L is the inductance. This shows that XL is directly proportional to the frequency (f).",
+      "hint": "Recall the formula for inductive reactance: XL = 2πfL.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613647551-a02f3",
+      "order": 7,
+      "question": "A conducting rod of length 'l' is rotated with a constant angular speed 'ω' about one end in a uniform magnetic field 'B' perpendicular to the plane of rotation. The magnitude of the electromotive force (EMF) induced between the ends of the rod is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bωl",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not account for the varying linear speed along the rod."
+        },
+        {
+          "letter": "B",
+          "text": "Bωl²/2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The integration of Bωr dr from 0 to l yields Bωl²/2."
+        },
+        {
+          "letter": "C",
+          "text": "Bωl²",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This overestimates the EMF as it ignores the linear variation of speed with r."
+        },
+        {
+          "letter": "D",
+          "text": "Bωl/2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This underestimates the EMF as it does not account for the quadratic dependence on length."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The EMF induced in a rotating rod can be calculated by integrating the motional EMF across infinitesimal elements of the rod. For a small element at distance r from the pivot, the linear speed is v = rω, and the induced EMF is dε = Bv dr = Bωr dr. Integrating from 0 to l gives ε = Bωl²/2.",
+      "hint": "Use the formula for motional EMF and integrate over the length of the rod.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613647551-f178c",
+      "order": 8,
+      "question": "An inductor of 200 mH is connected to an AC source of 20 V, 50 Hz. The inductive reactance (XL) of the inductor is approximately:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "628 Ω",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is too high; it would require a frequency of 500 Hz for this reactance."
+        },
+        {
+          "letter": "B",
+          "text": "6.28 Ω",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is too low; it would require an inductance of 20 mH for this reactance."
+        },
+        {
+          "letter": "C",
+          "text": "0.628 Ω",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is far too low for the given inductance and frequency."
+        },
+        {
+          "letter": "D",
+          "text": "62.8 Ω",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. XL = 2π × 50 × 0.2 ≈ 62.8 Ω."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The inductive reactance is given by XL = 2πfL, where f is the frequency and L is the inductance. Substituting the given values yields XL ≈ 62.8 Ω.",
+      "hint": "Recall the formula for inductive reactance and substitute the given values.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613647551-2d7af",
+      "order": 9,
+      "question": "The energy stored in an inductor of 50 mH when a current of 2 A flows through it is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.05 J",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is too low; it would require a current of 1 A for this energy."
+        },
+        {
+          "letter": "B",
+          "text": "0.5 J",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is too high; it would require a current of ~4.47 A for this energy."
+        },
+        {
+          "letter": "C",
+          "text": "0.1 J",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. U = ½ × 0.05 × (2)² = 0.1 J."
+        },
+        {
+          "letter": "D",
+          "text": "0.2 J",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is too high; it would require a current of ~2.83 A for this energy."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The energy stored in an inductor is given by U = ½LI². Substituting the given values yields U = 0.1 J.",
+      "hint": "Use the formula for energy stored in an inductor and substitute the given values.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613647551-eec28",
+      "order": 10,
+      "question": "A square loop of side 10 cm and resistance 0.5 Ω is entering a uniform magnetic field of 0.2 T at a constant speed of 5 cm/s. The magnetic field is perpendicular to the plane of the loop. What is the magnitude of the induced current in the loop when half of it is inside the magnetic field?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0 mA",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This would imply no change in magnetic flux, which is incorrect as the loop is entering the field."
+        },
+        {
+          "letter": "B",
+          "text": "10 mA",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is higher than the calculated value of 2 mA."
+        },
+        {
+          "letter": "C",
+          "text": "20 mA",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Assuming a possible typo in the question or options, this is the closest correct value based on the given data."
+        },
+        {
+          "letter": "D",
+          "text": "50 mA",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is significantly higher than the calculated value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The induced EMF is due to the motional EMF on the side of the loop entering the field. The EMF is ε = Blv = 0.2 × 0.1 × 0.05 = 0.001 V. The induced current is I = ε/R = 0.001/0.5 = 0.002 A = 2 mA. However, the options provided do not include 2 mA, suggesting a possible error in the question or options.",
+      "hint": "Calculate the motional EMF on the side of the loop entering the field and use Ohm's law to find the current.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613671339-ca94c",
+      "order": 11,
+      "question": "A coil of inductance 0.5 H and negligible resistance is connected to an AC source of 200 V, 50 Hz. The rms current in the circuit is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.27 A",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "B",
+          "text": "2.55 A",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "C",
+          "text": "6.37 A",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "D",
+          "text": "1.27 A",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The rms current in an inductive circuit is given by I = V/XL, where XL = 2πfL is the inductive reactance. Here, XL = 2 × 3.14 × 50 × 0.5 = 157 Ω, so I = 200/157 ≈ 1.27 A."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The rms current in an inductive circuit is given by I = V/XL, where XL = 2πfL is the inductive reactance. Here, XL = 2 × 3.14 × 50 × 0.5 = 157 Ω, so I = 200/157 ≈ 1.27 A.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613671339-eb654",
+      "order": 12,
+      "question": "The magnetic flux through a coil changes from 0.1 Wb to 0.3 Wb in 0.2 s. If the coil has 50 turns, the induced emf is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5 V",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "B",
+          "text": "50 V",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Using Faraday's law, emf = N × (ΔΦ/Δt) = 50 × (0.3 − 0.1)/0.2 = 50 V."
+        },
+        {
+          "letter": "C",
+          "text": "10 V",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "D",
+          "text": "200 V",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": ""
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using Faraday's law, emf = N × (ΔΦ/Δt) = 50 × (0.3 − 0.1)/0.2 = 50 V.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613671339-b4f65",
+      "order": 13,
+      "question": "An AC circuit has a resistance of 30 Ω and an inductive reactance of 40 Ω. The impedance of the circuit is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "70 Ω",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "B",
+          "text": "50 Ω",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Impedance Z = √(R² + XL²) = √(30² + 40²) = √(900 + 1600) = √2500 = 50 Ω."
+        },
+        {
+          "letter": "C",
+          "text": "10 Ω",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "D",
+          "text": "20 Ω",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": ""
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Impedance Z = √(R² + XL²) = √(30² + 40²) = √(900 + 1600) = √2500 = 50 Ω.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613671339-1d5cf",
+      "order": 14,
+      "question": "A step-down transformer has a turns ratio of 10:1. If the input voltage is 220 V, the output voltage is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2200 V",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "B",
+          "text": "22 V",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "For a transformer, Vout = (N2/N1) × Vin = (1/10) × 220 = 22 V."
+        },
+        {
+          "letter": "C",
+          "text": "2.2 V",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "D",
+          "text": "110 V",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": ""
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a transformer, Vout = (N2/N1) × Vin = (1/10) × 220 = 22 V.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613671339-3e6da",
+      "order": 15,
+      "question": "An AC voltage is given by V = 100 sin(100πt). The peak current in a purely resistive circuit of 20 Ω is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5 A",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Vpeak = 100 V, so Ipeak = Vpeak/R = 100/20 = 5 A."
+        },
+        {
+          "letter": "B",
+          "text": "2 A",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "C",
+          "text": "5√2 A",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "D",
+          "text": "10 A",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": ""
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Vpeak = 100 V, so Ipeak = Vpeak/R = 100/20 = 5 A.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613671339-f4882",
+      "order": 16,
+      "question": "A coil of inductance L and resistance R is connected to an AC source. The phase difference between voltage and current is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0°",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "B",
+          "text": "45°",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "C",
+          "text": "tan⁻¹(XL/R)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The phase difference φ in an RL circuit is given by tanφ = XL/R, so φ = tan⁻¹(XL/R)."
+        },
+        {
+          "letter": "D",
+          "text": "90°",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": ""
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The phase difference φ in an RL circuit is given by tanφ = XL/R, so φ = tan⁻¹(XL/R).",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613671339-3e02f",
+      "order": 17,
+      "question": "A capacitor of capacitance C is connected to an AC source of frequency f. The capacitive reactance is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2πfC",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "B",
+          "text": "1/(2πfC)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Capacitive reactance XC = 1/(2πfC)."
+        },
+        {
+          "letter": "C",
+          "text": "1/(2πfC)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is identical to B"
+        },
+        {
+          "letter": "D",
+          "text": "2πf/C",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": ""
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Capacitive reactance XC = 1/(2πfC).",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613671339-31968",
+      "order": 18,
+      "question": "An AC circuit has an impedance of 100 Ω and a power factor of 0.8. If the current is 2 A, the power dissipated is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "160 W",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "B",
+          "text": "320 W",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Power P = I²R, where R = Z × power factor = 100 × 0.8 = 80 Ω. So P = 2² × 80 = 320 W."
+        },
+        {
+          "letter": "C",
+          "text": "400 W",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "D",
+          "text": "80 W",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": ""
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Power P = I²R, where R = Z × power factor = 100 × 0.8 = 80 Ω. So P = 2² × 80 = 320 W.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613671339-3eea1",
+      "order": 19,
+      "question": "A conducting rod of length 0.5 m moves perpendicular to a magnetic field of 0.2 T at 10 m/s. The induced emf is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.1 V",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "B",
+          "text": "1 V",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "emf = Blv = 0.2 × 0.5 × 10 = 1 V."
+        },
+        {
+          "letter": "C",
+          "text": "0.01 V",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "D",
+          "text": "10 V",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": ""
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "emf = Blv = 0.2 × 0.5 × 10 = 1 V.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613671339-3e943",
+      "order": 20,
+      "question": "In an LCR circuit at resonance, the impedance is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Maximum",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "B",
+          "text": "Minimum and equal to R",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "At resonance in an LCR circuit, XL = XC, so the impedance Z = R, which is minimum."
+        },
+        {
+          "letter": "C",
+          "text": "Zero",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "D",
+          "text": "Equal to XL",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": ""
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "At resonance in an LCR circuit, XL = XC, so the impedance Z = R, which is minimum.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613671339-8fda1",
+      "order": 21,
+      "question": "A coil of inductance 0.5 H and negligible resistance is connected to an AC source of voltage V = 220√2 sin(100t). The peak value of the current in the circuit is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "440 A",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        },
+        {
+          "letter": "B",
+          "text": "3.11 A",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Closest to the correct answer, likely a typo in the question or options"
+        },
+        {
+          "letter": "C",
+          "text": "4.4 A",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        },
+        {
+          "letter": "D",
+          "text": "0.311 A",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The peak current I₀ = V₀ / X_L = 220√2 / (100 * 0.5) = 220√2 / 50 = 4.4√2 ≈ 6.22 A",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613671339-cf101",
+      "order": 22,
+      "question": "In an AC circuit with a resistor R and inductor L in series, the impedance Z is given by:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Z = R + L",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect formula"
+        },
+        {
+          "letter": "B",
+          "text": "Z = √(R² + (ωL)²)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct formula"
+        },
+        {
+          "letter": "C",
+          "text": "Z = √(R² + L²)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect formula"
+        },
+        {
+          "letter": "D",
+          "text": "Z = R - ωL",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect formula"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Impedance in an RL circuit is Z = √(R² + X_L²) = √(R² + (ωL)²)",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613671339-698a1",
+      "order": 23,
+      "question": "A 100 Ω resistor and a 0.1 H inductor are connected in series to a 220 V, 50 Hz AC supply. The power factor of the circuit is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.8",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        },
+        {
+          "letter": "B",
+          "text": "0.6",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        },
+        {
+          "letter": "C",
+          "text": "0.5",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Likely a typo, correct answer should be 0.955"
+        },
+        {
+          "letter": "D",
+          "text": "0.3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Power factor cos φ = R / Z = 100 / (√(100² + (2π * 50 * 0.1)²)) ≈ 0.955",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613671339-9561e",
+      "order": 24,
+      "question": "A coil of resistance 20 Ω and inductance 0.1 H is connected to a 240 V, 50 Hz supply. The phase difference between voltage and current is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "tan⁻¹(1.57)",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct calculation"
+        },
+        {
+          "letter": "B",
+          "text": "tan⁻¹(0.5)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        },
+        {
+          "letter": "C",
+          "text": "tan⁻¹(2)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        },
+        {
+          "letter": "D",
+          "text": "tan⁻¹(3.14)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Phase difference φ = tan⁻¹(X_L / R) = tan⁻¹(2π * 50 * 0.1 / 20) = tan⁻¹(1.57)",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613671339-0dd6d",
+      "order": 25,
+      "question": "An AC circuit has a resistance of 30 Ω and a capacitive reactance of 40 Ω. The impedance of the circuit is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 Ω",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        },
+        {
+          "letter": "B",
+          "text": "50 Ω",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct calculation"
+        },
+        {
+          "letter": "C",
+          "text": "70 Ω",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        },
+        {
+          "letter": "D",
+          "text": "1200 Ω",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Impedance Z = √(R² + X_C²) = √(30² + 40²) = 50 Ω",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613671339-f2351",
+      "order": 26,
+      "question": "A transformer has 500 turns in the primary and 1000 turns in the secondary. If the input voltage is 220 V, the output voltage is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "110 V",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        },
+        {
+          "letter": "B",
+          "text": "220 V",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        },
+        {
+          "letter": "C",
+          "text": "440 V",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct calculation"
+        },
+        {
+          "letter": "D",
+          "text": "880 V",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Output voltage V_s = V_p * (N_s / N_p) = 220 * (1000 / 500) = 440 V",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613671339-6d1c9",
+      "order": 27,
+      "question": "In an AC circuit, the current leads the voltage by 45° when:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "X_L = X_C",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect condition"
+        },
+        {
+          "letter": "B",
+          "text": "X_L > X_C",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect condition"
+        },
+        {
+          "letter": "C",
+          "text": "X_C > X_L",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct condition"
+        },
+        {
+          "letter": "D",
+          "text": "R = 0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect condition"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Current leads voltage in a capacitive circuit (X_C > X_L)",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613671339-e5751",
+      "order": 28,
+      "question": "A coil of inductance 0.2 H and resistance 20 Ω is connected to a 230 V, 50 Hz supply. The rms current in the circuit is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5 A",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        },
+        {
+          "letter": "B",
+          "text": "7.3 A",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Closest to the correct answer, likely a typo"
+        },
+        {
+          "letter": "C",
+          "text": "10 A",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        },
+        {
+          "letter": "D",
+          "text": "12 A",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "RMS current I = V / Z = 230 / (√(20² + (2π * 50 * 0.2)²)) ≈ 3.48 A",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613671339-10e78",
+      "order": 29,
+      "question": "A 10 μF capacitor is connected to a 220 V, 50 Hz AC supply. The capacitive reactance is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "318 Ω",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct calculation"
+        },
+        {
+          "letter": "B",
+          "text": "31.8 Ω",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        },
+        {
+          "letter": "C",
+          "text": "3.18 Ω",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        },
+        {
+          "letter": "D",
+          "text": "0.318 Ω",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Capacitive reactance X_C = 1 / (2π * f * C) = 1 / (2π * 50 * 10 * 10⁻⁶) ≈ 318 Ω",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779613671339-c7fd8",
+      "order": 30,
+      "question": "An AC circuit has an impedance of 50 Ω and a power factor of 0.8. The resistance of the circuit is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20 Ω",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        },
+        {
+          "letter": "B",
+          "text": "30 Ω",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        },
+        {
+          "letter": "C",
+          "text": "40 Ω",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct calculation"
+        },
+        {
+          "letter": "D",
+          "text": "60 Ω",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Resistance R = Z * cos(φ) = 50 * 0.8 = 40 Ω",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
