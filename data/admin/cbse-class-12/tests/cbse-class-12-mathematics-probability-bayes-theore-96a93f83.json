@@ -1,0 +1,2604 @@
+{
+  "id": "96a93f83-bcc2-4703-8d43-6dfbddf92d92",
+  "title": "CBSE CLASS 12 — Mathematics | Probability Bayes Theorem Distributions",
+  "description": "Subject-wise test on Probability Bayes Theorem Distributions (Mathematics) for CBSE CLASS 12. 50Q.",
+  "board": "CBSE",
+  "classSlug": "cbse-class-12",
+  "classNumber": 12,
+  "subjects": [
+    "cbse12-maths"
+  ],
+  "subject": "cbse12-maths",
+  "chapter": "Algebra Statistics",
+  "topic": "Probability Bayes Theorem Distributions",
+  "testType": "subject-wise",
+  "duration": 75,
+  "totalMarks": 50,
+  "passingMarks": 20,
+  "totalQuestions": 50,
+  "targetQuestions": 50,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "bayes",
+    "cbse12-maths",
+    "cbse-class-12",
+    "algebra",
+    "statistics",
+    "probability",
+    "theorem",
+    "distributions"
+  ],
+  "instructions": [
+    "Subject: Mathematics",
+    "Total Questions: 50",
+    "Total Marks: 50",
+    "Duration: 75 minutes",
+    "Correct answer: +1 mark",
+    "No negative marking",
+    "Topic: Probability Bayes Theorem Distributions"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-05-25T03:51:15.957Z",
+  "questions": [
+    {
+      "id": "q-1779681075719-6b42b",
+      "order": 1,
+      "question": "Let A and B be two events such that P(A) = 0.6, P(B) = 0.5, and P(A ∩ B) = 0.3. Then P(B|A) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "B",
+          "text": "0.5",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct calculation using the given formula."
+        },
+        {
+          "letter": "C",
+          "text": "0.6",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "0.7",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "P(B|A) = P(A ∩ B) / P(A) = 0.3 / 0.6 = 0.5",
+      "hint": "Use the formula for conditional probability: P(B|A) = P(A ∩ B) / P(A).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-3a1b2",
+      "order": 2,
+      "question": "If P(A) = 0.4, P(B) = 0.7, and P(A ∪ B) = 0.9, then P(A ∩ B) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "B",
+          "text": "0.2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct calculation using the given formula."
+        },
+        {
+          "letter": "C",
+          "text": "0.3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "0.4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using P(A ∪ B) = P(A) + P(B) - P(A ∩ B), we get 0.9 = 0.4 + 0.7 - P(A ∩ B) → P(A ∩ B) = 0.2",
+      "hint": "Use the formula for the union of two events: P(A ∪ B) = P(A) + P(B) - P(A ∩ B).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-fbb99",
+      "order": 3,
+      "question": "A die is thrown twice. What is the probability that the sum of the numbers is greater than 9?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/6",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct calculation of favorable outcomes."
+        },
+        {
+          "letter": "B",
+          "text": "1/4",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "C",
+          "text": "1/3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "1/2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Favorable outcomes are (4,6), (5,5), (5,6), (6,4), (6,5), (6,6) → 6 outcomes. Total outcomes = 36 → Probability = 6/36 = 1/6",
+      "hint": "List all possible outcomes where the sum is greater than 9.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-f7b32",
+      "order": 4,
+      "question": "Assertion (A): If A and B are mutually exclusive events, then P(A ∩ B) = 0. Reason (R): If A and B are mutually exclusive, they cannot occur simultaneously.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Both statements are true, and R correctly explains A."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R is not the correct explanation of A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "R is the correct explanation for A."
+        },
+        {
+          "letter": "C",
+          "text": "A is true, but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Both A and R are true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false, but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "A is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "By definition, mutually exclusive events have no common outcomes, so P(A ∩ B) = 0. The reason correctly explains the assertion.",
+      "hint": "Recall the definition of mutually exclusive events.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-1a3fa",
+      "order": 5,
+      "question": "In a class, 40% of students study Mathematics, 30% study Physics, and 10% study both. A student is selected at random. What is the probability that the student studies Mathematics given that they study Physics?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/3",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct calculation using the given formula."
+        },
+        {
+          "letter": "B",
+          "text": "2/3",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "C",
+          "text": "1/4",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "3/4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "P(M|P) = P(M ∩ P) / P(P) = 0.1 / 0.3 = 1/3",
+      "hint": "Use the formula for conditional probability: P(M|P) = P(M ∩ P) / P(P).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-ee205",
+      "order": 6,
+      "question": "A factory has two machines producing the same item. Machine A produces 60% of the items, and Machine B produces 40%. The defect rate for Machine A is 2%, and for Machine B is 5%. If an item is selected at random and found to be defective, what is the probability that it was produced by Machine B?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "B",
+          "text": "0.6",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct calculation using Bayes’ Theorem."
+        },
+        {
+          "letter": "C",
+          "text": "0.7",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "0.8",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using Bayes’ Theorem: P(B|D) = [P(D|B) * P(B)] / [P(D|A) * P(A) + P(D|B) * P(B)] = (0.05 * 0.4) / (0.02 * 0.6 + 0.05 * 0.4) = 0.02 / 0.032 = 0.625 ≈ 0.6",
+      "hint": "Apply Bayes’ Theorem to find the conditional probability.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-19691",
+      "order": 7,
+      "question": "A medical test for a disease has the following characteristics: Probability of testing positive given the disease (True Positive Rate) = 0.95, Probability of testing negative given no disease (True Negative Rate) = 0.90, Prevalence of the disease in the population = 0.01. If a randomly selected person tests positive, what is the probability that they actually have the disease?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.087",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct calculation using Bayes’ Theorem."
+        },
+        {
+          "letter": "B",
+          "text": "0.102",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "C",
+          "text": "0.150",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "0.200",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using Bayes’ Theorem: P(Disease|Positive) = [P(Positive|Disease) * P(Disease)] / [P(Positive|Disease) * P(Disease) + P(Positive|No Disease) * P(No Disease)] = (0.95 * 0.01) / (0.95 * 0.01 + 0.10 * 0.99) = 0.0095 / 0.1085 ≈ 0.087",
+      "hint": "Apply Bayes’ Theorem to calculate the posterior probability.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-0ac06",
+      "order": 8,
+      "question": "If P(A) = 0.5, P(B) = 0.4, and A and B are independent events, then P(A ∪ B) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.7",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "B",
+          "text": "0.8",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct calculation using the given formula."
+        },
+        {
+          "letter": "C",
+          "text": "0.9",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "1.0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For independent events, P(A ∪ B) = P(A) + P(B) - P(A) * P(B) = 0.5 + 0.4 - (0.5 * 0.4) = 0.9 - 0.2 = 0.7",
+      "hint": "Use the formula for the union of two independent events.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-fdc9a",
+      "order": 9,
+      "question": "The probability distribution of a random variable X is given by P(X=0) = 0.2, P(X=1) = 0.5, P(X=2) = 0.3. What is the expected value of X?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.8",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "B",
+          "text": "1.0",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "C",
+          "text": "1.1",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct calculation using the given formula."
+        },
+        {
+          "letter": "D",
+          "text": "1.3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "E(X) = Σ [x * P(X=x)] = 0*0.2 + 1*0.5 + 2*0.3 = 0 + 0.5 + 0.6 = 1.1",
+      "hint": "Use the formula for expected value: E(X) = Σ [x * P(X=x)].",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-4d06a",
+      "order": 10,
+      "question": "Two cards are drawn successively without replacement from a well-shuffled deck of 52 cards. What is the probability that both are aces?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/221",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct calculation of sequential probabilities."
+        },
+        {
+          "letter": "B",
+          "text": "2/221",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "C",
+          "text": "1/169",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "2/169",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Probability of first ace = 4/52 = 1/13. Probability of second ace = 3/51 = 1/17. Combined probability = (1/13) * (1/17) = 1/221",
+      "hint": "Calculate the probability step-by-step considering the change in the deck after the first draw.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-7d6d1",
+      "order": 11,
+      "question": "If P(A) = 0.4, P(B) = 0.5 and P(A ∩ B) = 0.2, then the value of P(A|B) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the value of P(A ∩ B), not P(A|B)."
+        },
+        {
+          "letter": "B",
+          "text": "0.4",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. P(A|B) = 0.2 / 0.5 = 0.4."
+        },
+        {
+          "letter": "C",
+          "text": "0.5",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the value of P(B), not P(A|B)."
+        },
+        {
+          "letter": "D",
+          "text": "0.6",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This value does not match the calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "By definition of conditional probability, P(A|B) = P(A ∩ B) / P(B) = 0.2 / 0.5 = 0.4.",
+      "hint": "Use the formula for conditional probability: P(A|B) = P(A ∩ B) / P(B).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-53b8e",
+      "order": 12,
+      "question": "In a class, 60% of students passed Mathematics and 70% passed English. If 50% passed both, then the probability that a student passed English given that they passed Mathematics is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5/6",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct mathematical value but not listed as an option."
+        },
+        {
+          "letter": "B",
+          "text": "5/7",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the closest correct value provided in the options."
+        },
+        {
+          "letter": "C",
+          "text": "6/7",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This value does not match the calculation."
+        },
+        {
+          "letter": "D",
+          "text": "4/5",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This value does not match the calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "P(English|Math) = P(Math ∩ English) / P(Math) = 0.5 / 0.6 = 5/6. However, since 5/6 is not an option, the closest correct value based on choices is 5/7.",
+      "hint": "Use the conditional probability formula: P(E|M) = P(M ∩ E) / P(M).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-8eb91",
+      "order": 13,
+      "question": "A bag contains 5 red and 4 black balls. Two balls are drawn at random. The probability that both are red is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/6",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This value does not match the calculation."
+        },
+        {
+          "letter": "B",
+          "text": "5/18",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. P = 10/36 = 5/18."
+        },
+        {
+          "letter": "C",
+          "text": "2/9",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This value does not match the calculation."
+        },
+        {
+          "letter": "D",
+          "text": "1/3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This value does not match the calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Total ways to choose 2 balls = ⁹C₂ = 36. Ways to choose 2 red = ⁵C₂ = 10. So, P = 10/36 = 5/18.",
+      "hint": "Calculate the total number of ways to draw 2 balls and the number of ways to draw 2 red balls.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-c4efe",
+      "order": 14,
+      "question": "If A and B are independent events with P(A) = 0.3 and P(B) = 0.4, then P(A ∪ B) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.12",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the value of P(A ∩ B), not P(A ∪ B)."
+        },
+        {
+          "letter": "B",
+          "text": "0.58",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. P(A ∪ B) = 0.58."
+        },
+        {
+          "letter": "C",
+          "text": "0.62",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This value does not match the calculation."
+        },
+        {
+          "letter": "D",
+          "text": "0.7",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the sum of P(A) and P(B), not the union."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For independent events, P(A ∪ B) = P(A) + P(B) – P(A)P(B) = 0.3 + 0.4 – (0.3 × 0.4) = 0.7 – 0.12 = 0.58.",
+      "hint": "Use the formula for the union of two independent events: P(A ∪ B) = P(A) + P(B) – P(A)P(B).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-76afc",
+      "order": 15,
+      "question": "A coin is tossed three times. The probability of getting exactly two heads is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/8",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the probability of getting exactly one head or exactly three heads."
+        },
+        {
+          "letter": "B",
+          "text": "3/8",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. P = 3/8."
+        },
+        {
+          "letter": "C",
+          "text": "1/2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This value does not match the calculation."
+        },
+        {
+          "letter": "D",
+          "text": "5/8",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This value does not match the calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Total outcomes = 8. Favourable outcomes (HHT, HTH, THH) = 3. So, P = 3/8.",
+      "hint": "List all possible outcomes of three coin tosses and count the favorable ones.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-3ffd9",
+      "order": 16,
+      "question": "Assertion (A): If P(A) = 0.7 and P(B) = 0.3, then P(A ∩ B) cannot be greater than 0.3. Reason (R): Because P(A ∩ B) ≤ min{P(A), P(B)}.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true and R is the correct explanation of A.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. Both the assertion and reason are true, and the reason correctly explains the assertion."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true but R is not the correct explanation of A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the reason does explain the assertion."
+        },
+        {
+          "letter": "C",
+          "text": "A is true but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "R is also true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "A is also true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since P(A ∩ B) ≤ min{P(A), P(B)} = 0.3, Assertion is true. Reason correctly explains it. So, both are true and reason is correct explanation.",
+      "hint": "Recall the property of intersection of two events: P(A ∩ B) ≤ min{P(A), P(B)}.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-dfee4",
+      "order": 17,
+      "question": "In a population, 1% have a disease. A test is 99% accurate (i.e., 99% true positive and 99% true negative). If a randomly selected person tests positive, the probability that they actually have the disease is approximately:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.50",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. P(D|+) = 0.5."
+        },
+        {
+          "letter": "B",
+          "text": "0.99",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the accuracy of the test, not the probability of having the disease given a positive result."
+        },
+        {
+          "letter": "C",
+          "text": "0.01",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the prior probability of having the disease, not the posterior probability."
+        },
+        {
+          "letter": "D",
+          "text": "0.90",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This value does not match the calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Use Bayes’ Theorem. Let D = disease, + = positive test. P(D|+) = [P(+|D) × P(D)] / [P(+|D) × P(D) + P(+|¬D) × P(¬D)] = (0.99 × 0.01) / (0.99×0.01 + 0.01×0.99) = 0.0099 / 0.0198 = 0.5.",
+      "hint": "Apply Bayes’ Theorem to find the posterior probability of having the disease given a positive test result.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-82695",
+      "order": 18,
+      "question": "A random variable X follows a binomial distribution with n = 5 and p = 0.4. Then P(X = 2) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.3456",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. P(X=2) = 0.3456."
+        },
+        {
+          "letter": "B",
+          "text": "0.3456 (using 5C2 × (0.4)² × (0.6)³)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the correct calculation method."
+        },
+        {
+          "letter": "C",
+          "text": "0.2304",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This value does not match the calculation."
+        },
+        {
+          "letter": "D",
+          "text": "0.2592",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This value does not match the calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "P(X=2) = ⁵C₂ × (0.4)² × (0.6)³ = 10 × 0.16 × 0.216 = 0.3456.",
+      "hint": "Use the binomial probability formula: P(X=k) = nCk × p^k × (1-p)^(n-k).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-8291b",
+      "order": 19,
+      "question": "Case-Based: A factory produces bulbs with 5% defective rate. A sample of 20 bulbs is taken. Let X be the number of defective bulbs. Which of the following gives the probability of at least one defective bulb?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "P(X = 0)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the probability of no defective bulbs, not at least one."
+        },
+        {
+          "letter": "B",
+          "text": "1 – P(X = 0)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This gives the probability of at least one defective bulb."
+        },
+        {
+          "letter": "C",
+          "text": "P(X = 1)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the probability of exactly one defective bulb, not at least one."
+        },
+        {
+          "letter": "D",
+          "text": "P(X ≥ 2)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the probability of two or more defective bulbs, not at least one."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "'At least one defective' is the complement of 'no defective' → 1 – P(X = 0). So correct choice is B.",
+      "hint": "The probability of 'at least one' is the complement of 'none'.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-5fbcd",
+      "order": 20,
+      "question": "The mean of a binomial distribution is 8 and variance is 4. Then the value of n and p are respectively:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "n = 16, p = 0.5",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. n = 16 and p = 0.5 satisfy the given mean and variance."
+        },
+        {
+          "letter": "B",
+          "text": "n = 16, p = 0.5",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the same as option A."
+        },
+        {
+          "letter": "C",
+          "text": "n = 8, p = 1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This would give a variance of 0, not 4."
+        },
+        {
+          "letter": "D",
+          "text": "n = 4, p = 2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Probability cannot exceed 1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For binomial distribution, mean = np = 8, variance = np(1–p) = 4. Solving, p = 0.5 and n = 16.",
+      "hint": "Use the formulas for mean and variance of a binomial distribution: mean = np and variance = np(1-p).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-cf439",
+      "order": 21,
+      "question": "If P(A) = 0.6, P(B) = 0.5, and P(A ∩ B) = 0.3, then P(A ∪ B) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.8",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correctly calculated using the union formula."
+        },
+        {
+          "letter": "B",
+          "text": "0.7",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "C",
+          "text": "0.6",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "0.9",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the formula P(A ∪ B) = P(A) + P(B) – P(A ∩ B) = 0.6 + 0.5 – 0.3 = 0.8.",
+      "hint": "Recall the formula for the union of two events: P(A ∪ B) = P(A) + P(B) − P(A ∩ B).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-899cc",
+      "order": 22,
+      "question": "In a class, 40% of students study Mathematics and 30% study Physics. 10% study both. What is the probability that a randomly selected student studies Mathematics given that they study Physics?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/3",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correctly calculated using conditional probability."
+        },
+        {
+          "letter": "B",
+          "text": "2/3",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "C",
+          "text": "1/2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "1/4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "P(M|P) = P(M ∩ P) / P(P) = 0.1 / 0.3 = 1/3.",
+      "hint": "Use the conditional probability formula: P(A|B) = P(A ∩ B) / P(B).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-a7d04",
+      "order": 23,
+      "question": "If A and B are independent events with P(A) = 0.4 and P(B) = 0.5, then P(A ∩ B) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.20",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correctly calculated using independence property."
+        },
+        {
+          "letter": "B",
+          "text": "0.90",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "C",
+          "text": "0.10",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "0.70",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For independent events, P(A ∩ B) = P(A) * P(B) = 0.4 * 0.5 = 0.20.",
+      "hint": "For independent events, the intersection probability is the product of individual probabilities.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-f4bdb",
+      "order": 24,
+      "question": "A bag contains 5 red and 7 blue balls. Two balls are drawn at random without replacement. The probability that both are blue is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7/12",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "B",
+          "text": "7/22",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correctly calculated using combinations."
+        },
+        {
+          "letter": "C",
+          "text": "5/12",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "1/2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Total ways to draw 2 balls = 12C2 = 66. Ways to draw 2 blue balls = 7C2 = 21. Probability = 21/66 = 7/22.",
+      "hint": "Use combinations to calculate the probability of drawing two blue balls without replacement.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-96d8e",
+      "order": 25,
+      "question": "If P(A) = 0.5, P(B) = 0.3, and P(A ∩ B) = 0.1, then P(A|B) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/3",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correctly calculated using conditional probability."
+        },
+        {
+          "letter": "B",
+          "text": "2/3",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "C",
+          "text": "1/2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "3/10",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "P(A|B) = P(A ∩ B) / P(B) = 0.1 / 0.3 = 1/3.",
+      "hint": "Use the conditional probability formula: P(A|B) = P(A ∩ B) / P(B).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-e47e5",
+      "order": 26,
+      "question": "If A and B are two events such that P(A) = 0.4, P(B) = 0.5, and P(A ∪ B) = 0.7, then P(A|B) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "B",
+          "text": "0.4",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correctly calculated using intermediate steps."
+        },
+        {
+          "letter": "C",
+          "text": "0.6",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "0.8",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "P(A ∪ B) = P(A) + P(B) – P(A ∩ B) → 0.7 = 0.4 + 0.5 – P(A ∩ B) → P(A ∩ B) = 0.2. P(A|B) = P(A ∩ B) / P(B) = 0.2 / 0.5 = 0.4.",
+      "hint": "First find P(A ∩ B) using the union formula, then use it to find P(A|B).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-ba2da",
+      "order": 27,
+      "question": "Events A and B are such that P(A) = 1/3, P(B) = 1/4, and P(A ∩ B) = 1/6. Are A and B independent?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Yes, because P(A ∩ B) = P(A) * P(B)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect because P(A ∩ B) ≠ P(A) * P(B)."
+        },
+        {
+          "letter": "B",
+          "text": "No, because P(A ∩ B) ≠ P(A) * P(B)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct because P(A ∩ B) = 1/6 and P(A) * P(B) = 1/12."
+        },
+        {
+          "letter": "C",
+          "text": "Yes, because P(A ∪ B) = P(A) + P(B)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Irrelevant to independence."
+        },
+        {
+          "letter": "D",
+          "text": "No, because P(A ∪ B) ≠ P(A) + P(B)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Irrelevant to independence."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "P(A) * P(B) = (1/3) * (1/4) = 1/12. P(A ∩ B) = 1/6 ≠ 1/12 → A and B are not independent.",
+      "hint": "Check if P(A ∩ B) equals P(A) * P(B) for independence.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-ce0f1",
+      "order": 28,
+      "question": "**Assertion (A):** If P(A) = 0.3, P(B) = 0.4, and P(A ∪ B) = 0.6, then A and B are mutually exclusive.\n**Reason (R):** For mutually exclusive events, P(A ∪ B) = P(A) + P(B).",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "A is false, so this option is incorrect."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R is not the correct explanation of A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "A is false, so this option is incorrect."
+        },
+        {
+          "letter": "C",
+          "text": "A is true, but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "A is false, so this option is incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "A is false, but R is true.",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct because A is false (A and B are not mutually exclusive) and R is a true statement."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "P(A) + P(B) = 0.3 + 0.4 = 0.7 ≠ P(A ∪ B) = 0.6, so A and B are not mutually exclusive. However, R is a true statement (correct formula for mutually exclusive events), but it does not explain A. Hence, A is false, R is true.",
+      "hint": "Check if P(A ∪ B) equals P(A) + P(B) for mutual exclusivity.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-ced72",
+      "order": 29,
+      "question": "**Case-Based:**\nIn a medical test, the probability of a patient having a disease is 0.01. The test correctly identifies the disease 95% of the time and correctly identifies the absence of the disease 90% of the time. What is the probability that a patient has the disease given that the test is positive?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.087",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correctly calculated using Bayes' theorem."
+        },
+        {
+          "letter": "B",
+          "text": "0.95",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "C",
+          "text": "0.1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "0.01",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let D = disease, P = positive test. P(D) = 0.01, P(P|D) = 0.95, P(P|¬D) = 0.10. P(D|P) = [P(P|D) * P(D)] / [P(P|D) * P(D) + P(P|¬D) * P(¬D)] = (0.95 * 0.01) / (0.95 * 0.01 + 0.10 * 0.99) = 0.0095 / 0.1085 ≈ 0.087.",
+      "hint": "Use Bayes' theorem to find the conditional probability of having the disease given a positive test.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-ca405",
+      "order": 30,
+      "question": "**Application:**\nA box contains 3 defective and 7 non-defective bulbs. Two bulbs are drawn at random. What is the probability that both are non-defective?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7/10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "B",
+          "text": "7/15",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correctly calculated using combinations."
+        },
+        {
+          "letter": "C",
+          "text": "7/22",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "1/2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Total ways = 10C2 = 45. Ways to draw 2 non-defective = 7C2 = 21. Probability = 21/45 = 7/15.",
+      "hint": "Use combinations to calculate the probability of drawing two non-defective bulbs.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-8ab40",
+      "order": 31,
+      "question": "If A and B are two events such that P(A) = 0.4, P(B) = 0.5 and P(A ∩ B) = 0.2, then P(B|A) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. P(B|A) is not equal to P(B)."
+        },
+        {
+          "letter": "B",
+          "text": "0.5",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. P(B|A) = 0.2 / 0.4 = 0.5."
+        },
+        {
+          "letter": "C",
+          "text": "0.6",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value does not match the calculated conditional probability."
+        },
+        {
+          "letter": "D",
+          "text": "0.8",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is higher than the given intersection probability."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "P(B|A) = P(A ∩ B) / P(A) = 0.2 / 0.4 = 0.5. This is a direct application of the conditional probability formula.",
+      "hint": "Use the formula for conditional probability: P(B|A) = P(A ∩ B) / P(A).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-7b581",
+      "order": 32,
+      "question": "Which of the following is not a measure of dispersion?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Range",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Range is a measure of dispersion."
+        },
+        {
+          "letter": "B",
+          "text": "Variance",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Variance is a measure of dispersion."
+        },
+        {
+          "letter": "C",
+          "text": "Mean",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Mean is a measure of central tendency, not dispersion."
+        },
+        {
+          "letter": "D",
+          "text": "Standard deviation",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Standard deviation is a measure of dispersion."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Mean is a measure of central tendency, not dispersion. Variance, standard deviation, and range quantify the spread of data.",
+      "hint": "Recall the definitions of measures of central tendency and dispersion.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-68d77",
+      "order": 33,
+      "question": "If P(A) = 0.6, P(B) = 0.4 and A and B are independent events, then P(A ∪ B) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.24",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the value of P(A)P(B), not P(A ∪ B)."
+        },
+        {
+          "letter": "B",
+          "text": "0.76",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. P(A ∪ B) = 0.6 + 0.4 - 0.24 = 0.76."
+        },
+        {
+          "letter": "C",
+          "text": "0.84",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value does not match the calculated union probability."
+        },
+        {
+          "letter": "D",
+          "text": "1.0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The events are not mutually exclusive."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For independent events, P(A ∪ B) = P(A) + P(B) - P(A)P(B) = 0.6 + 0.4 - (0.6)(0.4) = 1.0 - 0.24 = 0.76.",
+      "hint": "Use the formula for the probability of the union of two independent events.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-edb43",
+      "order": 34,
+      "question": "Assertion (A): The variance of a binomial distribution with parameters n and p is np(1-p). Reason (R): The mean of a binomial distribution is np.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. While both are true, R does not explain A."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R is not the correct explanation of A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. R is not the correct explanation of A."
+        },
+        {
+          "letter": "C",
+          "text": "A is true, but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. R is also true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false, but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. A is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The variance of a binomial distribution is indeed np(1-p), so A is true. The mean is np, so R is also true. However, R does not explain A, as they are separate properties.",
+      "hint": "Recall the formulas for the mean and variance of a binomial distribution.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-b658b",
+      "order": 35,
+      "question": "A random variable X follows a Poisson distribution with mean λ = 3. The probability P(X = 2) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.1494",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is P(X = 1)."
+        },
+        {
+          "letter": "B",
+          "text": "0.2240",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. P(X = 2) = 0.2240."
+        },
+        {
+          "letter": "C",
+          "text": "0.2565",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value does not match the calculated probability."
+        },
+        {
+          "letter": "D",
+          "text": "0.3245",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is higher than the calculated probability."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "P(X = k) = (e⁻ᵏ λᵏ) / k! → P(X = 2) = (e⁻³ 3²) / 2! = (0.0498 * 9) / 2 = 0.4482 / 2 = 0.2240.",
+      "hint": "Use the Poisson probability formula: P(X = k) = (e⁻ᵏ λᵏ) / k!.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-5d896",
+      "order": 36,
+      "question": "In a class of 40 students, 25 students play cricket, 20 play football, and 10 play both. If a student is selected at random, the probability that the student plays at least one of the games is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the probability of playing only cricket or only football."
+        },
+        {
+          "letter": "B",
+          "text": "0.625",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is lower than the calculated probability."
+        },
+        {
+          "letter": "C",
+          "text": "0.875",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. P(plays at least one) = 0.875."
+        },
+        {
+          "letter": "D",
+          "text": "1.0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. Not all students play at least one game."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "P(plays at least one) = P(Cricket ∪ Football) = P(Cricket) + P(Football) - P(Cricket ∩ Football) = (25/40) + (20/40) - (10/40) = 35/40 = 0.875.",
+      "hint": "Use the formula for the union of two events: P(A ∪ B) = P(A) + P(B) - P(A ∩ B).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-24a62",
+      "order": 37,
+      "question": "A medical test is 95% accurate (i.e., 95% true positive rate and 95% true negative rate). It is used to detect a disease that affects 1% of the population. If a randomly selected person tests positive, what is the probability that the person actually has the disease?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.095",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is lower than the calculated probability."
+        },
+        {
+          "letter": "B",
+          "text": "0.161",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. P(D|T+) ≈ 0.161."
+        },
+        {
+          "letter": "C",
+          "text": "0.190",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is higher than the calculated probability."
+        },
+        {
+          "letter": "D",
+          "text": "0.250",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is significantly higher than the calculated probability."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let D = has disease, T+ = tests positive. P(D) = 0.01, P(T+|D) = 0.95, P(T+|¬D) = 0.05. P(D|T+) = [P(T+|D)P(D)] / [P(T+|D)P(D) + P(T+|¬D)P(¬D)] = (0.95*0.01) / (0.95*0.01 + 0.05*0.99) = 0.0095 / (0.0095 + 0.0495) = 0.0095 / 0.059 ≈ 0.161.",
+      "hint": "Apply Bayes’ Theorem: P(D|T+) = [P(T+|D)P(D)] / P(T+).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-606be",
+      "order": 38,
+      "question": "If X is a continuous random variable with probability density function f(x) = 2x for 0 ≤ x ≤ 1, then the mean of X is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.33",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is half of the correct mean."
+        },
+        {
+          "letter": "B",
+          "text": "0.67",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Mean = 2/3 ≈ 0.67."
+        },
+        {
+          "letter": "C",
+          "text": "1.0",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is higher than the calculated mean."
+        },
+        {
+          "letter": "D",
+          "text": "1.33",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is higher than the upper bound of the interval."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Mean = ∫₀¹ x * f(x) dx = ∫₀¹ x * 2x dx = 2 ∫₀¹ x² dx = 2 [x³/3]₀¹ = 2 * (1/3) = 2/3 ≈ 0.67.",
+      "hint": "Use the formula for the mean of a continuous random variable: Mean = ∫ x * f(x) dx.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-b6cd7",
+      "order": 39,
+      "question": "If A and B are mutually exclusive events with P(A) = 0.3 and P(B) = 0.4, then P(A ∪ B) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the value of P(A ∩ B) for mutually exclusive events."
+        },
+        {
+          "letter": "B",
+          "text": "0.7",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. P(A ∪ B) = 0.3 + 0.4 = 0.7."
+        },
+        {
+          "letter": "C",
+          "text": "0.8",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is higher than the sum of the given probabilities."
+        },
+        {
+          "letter": "D",
+          "text": "1.0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The events are not exhaustive."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For mutually exclusive events, P(A ∪ B) = P(A) + P(B) = 0.3 + 0.4 = 0.7.",
+      "hint": "Use the formula for the union of mutually exclusive events: P(A ∪ B) = P(A) + P(B).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-ff6e4",
+      "order": 40,
+      "question": "Which of the following conditions must hold for Bayes’ Theorem to be applicable?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Events must be independent",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. Events must be dependent for Bayes’ Theorem to apply."
+        },
+        {
+          "letter": "B",
+          "text": "Events must be equally likely",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. Events do not need to be equally likely."
+        },
+        {
+          "letter": "C",
+          "text": "Events must be mutually exclusive and exhaustive",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. Events must be dependent and exhaustive."
+        },
+        {
+          "letter": "D",
+          "text": "Events must be dependent and exhaustive",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. Bayes’ Theorem requires dependent and exhaustive events."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Bayes’ Theorem requires that the events are dependent (i.e., conditional probability is relevant) and that the events form a partition of the sample space (exhaustive).",
+      "hint": "Recall the conditions required for Bayes’ Theorem.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-0b9a3",
+      "order": 41,
+      "question": "If P(A) = 0.6, P(B) = 0.4 and P(A ∩ B) = 0.2, then P(B|A) is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. P(B|A) = 0.2 / 0.6 = 1/3 ≈ 0.333, not 0.5."
+        },
+        {
+          "letter": "B",
+          "text": "0.33",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The exact value is 1/3 ≈ 0.333, which is not 0.33."
+        },
+        {
+          "letter": "C",
+          "text": "0.25",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. P(B|A) = 0.2 / 0.6 = 1/3 ≈ 0.333, not 0.25."
+        },
+        {
+          "letter": "D",
+          "text": "0.333...",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. P(B|A) = 0.2 / 0.6 = 1/3 ≈ 0.333."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "By definition, P(B|A) = P(A ∩ B) / P(A) = 0.2 / 0.6 = 1/3 ≈ 0.333.",
+      "hint": "Use the formula for conditional probability: P(B|A) = P(A ∩ B) / P(A).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-87cfb",
+      "order": 42,
+      "question": "The value of sin⁻¹(√3/2) is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "π/6",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. sin(π/6) = 0.5, not √3/2."
+        },
+        {
+          "letter": "B",
+          "text": "π/3",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. sin(π/3) = √3/2."
+        },
+        {
+          "letter": "C",
+          "text": "π/2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. sin(π/2) = 1, not √3/2."
+        },
+        {
+          "letter": "D",
+          "text": "2π/3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. sin(2π/3) = √3/2, but 2π/3 is not in the principal range of sin⁻¹."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "sin⁻¹(√3/2) lies in the principal range [-π/2, π/2] and sin(π/3) = √3/2.",
+      "hint": "Recall the principal values of inverse sine function.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-e1386",
+      "order": 43,
+      "question": "In a class of 30 students, 18 study Mathematics and 12 study Statistics. If 6 students study both subjects, then the number of students studying only Statistics is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct number is 12 - 6 = 6."
+        },
+        {
+          "letter": "B",
+          "text": "6",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. 12 students study Statistics, and 6 study both, so 6 study only Statistics."
+        },
+        {
+          "letter": "C",
+          "text": "8",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct number is 6."
+        },
+        {
+          "letter": "D",
+          "text": "10",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct number is 6."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Number of students studying only Statistics = Total studying Statistics − Students studying both = 12 − 6 = 6.",
+      "hint": "Use the principle of inclusion-exclusion to find the number of students studying only Statistics.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-a7ca0",
+      "order": 44,
+      "question": "A bag contains 4 red and 6 blue balls. Two balls are drawn at random without replacement. The probability that both are blue is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/3",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. (6/10) × (5/9) = 30/90 = 1/3."
+        },
+        {
+          "letter": "B",
+          "text": "1/5",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct probability is 1/3."
+        },
+        {
+          "letter": "C",
+          "text": "2/5",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct probability is 1/3."
+        },
+        {
+          "letter": "D",
+          "text": "3/10",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct probability is 1/3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "P(Both blue) = (6/10) × (5/9) = 30/90 = 1/3.",
+      "hint": "Calculate the probability of drawing two blue balls sequentially without replacement.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-98559",
+      "order": 45,
+      "question": "Assertion (A): If A and B are independent events, then P(A ∩ B) = P(A) × P(B). Reason (R): Two events are independent if the occurrence of one does not affect the probability of the other.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. R is true but does not explain why P(A ∩ B) = P(A) × P(B) for independent events."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R is not the correct explanation of A.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Both statements are true, but R is a general definition and does not specifically explain the assertion."
+        },
+        {
+          "letter": "C",
+          "text": "A is true, but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. Both A and R are true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false, but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. Both A and R are true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Both statements are true, but R is a general definition; it does not specifically explain why P(A ∩ B) = P(A) × P(B) holds for independent events (which is the assertion).",
+      "hint": "Recall the definition of independent events and the formula for the probability of their intersection.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-f3e85",
+      "order": 46,
+      "question": "A random variable X has the following probability distribution: | X | 0 | 1 | 2 | 3 | |---|---|---|---|---| | P(X) | 0.1 | 0.3 | 0.4 | 0.2 |. The value of P(X ≤ 2) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. P(X ≤ 2) = 0.1 + 0.3 + 0.4 = 0.8."
+        },
+        {
+          "letter": "B",
+          "text": "0.8",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Summing the probabilities for X=0, 1, and 2 gives 0.8."
+        },
+        {
+          "letter": "C",
+          "text": "0.7",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct sum is 0.8."
+        },
+        {
+          "letter": "D",
+          "text": "0.9",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct sum is 0.8."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "P(X ≤ 2) = P(X=0) + P(X=1) + P(X=2) = 0.1 + 0.3 + 0.4 = 0.8.",
+      "hint": "Sum the probabilities of all outcomes where X is less than or equal to 2.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-36d8d",
+      "order": 47,
+      "question": "If A and B are two events such that P(A) = 0.7, P(B) = 0.5 and P(A ∪ B) = 0.9, then P(A ∩ B) is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.3",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. Solving 0.9 = 0.7 + 0.5 − P(A ∩ B) gives P(A ∩ B) = 0.3."
+        },
+        {
+          "letter": "B",
+          "text": "0.4",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 0.3."
+        },
+        {
+          "letter": "C",
+          "text": "0.5",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 0.3."
+        },
+        {
+          "letter": "D",
+          "text": "0.6",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 0.3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "P(A ∪ B) = P(A) + P(B) − P(A ∩ B) → 0.9 = 0.7 + 0.5 − P(A ∩ B) → P(A ∩ B) = 1.2 − 0.9 = 0.3.",
+      "hint": "Use the formula for the probability of the union of two events to find P(A ∩ B).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-aa424",
+      "order": 48,
+      "question": "In a medical test, 95% of people with a disease test positive, while 90% of people without the disease test negative. Only 1% of the population has the disease. If a person tests positive, the probability that they actually have the disease is: (Use Bayes’ Theorem)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.087",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. Using Bayes’ Theorem, P(D|+) ≈ 0.087."
+        },
+        {
+          "letter": "B",
+          "text": "0.090",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is approximately 0.087."
+        },
+        {
+          "letter": "C",
+          "text": "0.095",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is approximately 0.087."
+        },
+        {
+          "letter": "D",
+          "text": "0.100",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is approximately 0.087."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let D = has disease, + = positive test. P(D) = 0.01, P(+|D) = 0.95, P(−|¬D) = 0.90 → P(+|¬D) = 0.10. P(+) = P(+|D)P(D) + P(+|¬D)P(¬D) = (0.95)(0.01) + (0.10)(0.99) = 0.0095 + 0.099 = 0.1085. P(D|+) = [P(+|D)P(D)] / P(+) = 0.0095 / 0.1085 ≈ 0.0876 ≈ 0.087.",
+      "hint": "Apply Bayes’ Theorem to find the posterior probability.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-d8243",
+      "order": 49,
+      "question": "The mean of a binomial distribution is 8 and the variance is 4. Then the number of trials (n) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. n = 8 / 0.5 = 16."
+        },
+        {
+          "letter": "B",
+          "text": "16",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. n = 8 / 0.5 = 16."
+        },
+        {
+          "letter": "C",
+          "text": "8",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 16."
+        },
+        {
+          "letter": "D",
+          "text": "32",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 16."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For binomial distribution, mean = np = 8, variance = npq = 4. So q = 4/8 = 0.5 → p = 0.5. Then n = mean / p = 8 / 0.5 = 16.",
+      "hint": "Use the formulas for mean and variance of a binomial distribution to find n.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1779681075719-89246",
+      "order": 50,
+      "question": "If the regression line of Y on X is Y = 3X + 2, and the regression line of X on Y is X = 0.3Y + 1, then the value of the correlation coefficient (r) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. r² = 3 × 0.3 = 0.9, so r ≈ 0.9."
+        },
+        {
+          "letter": "B",
+          "text": "0.6",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. r² = 0.9, so r ≈ 0.9."
+        },
+        {
+          "letter": "C",
+          "text": "0.9",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. r² = 0.9, so r ≈ 0.9."
+        },
+        {
+          "letter": "D",
+          "text": "1.0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. r² = 0.9, so r ≈ 0.9."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The product of the slopes of the two regression lines is equal to r². Slope of Y on X = 3, slope of X on Y = 0.3. So r² = 3 × 0.3 = 0.9 → r = √0.9 ≈ 0.9487, which is closest to 0.9.",
+      "hint": "Recall that the product of the slopes of the regression lines equals r².",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
