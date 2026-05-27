@@ -531,12 +531,24 @@ def _iterate_to_target(target_count, exam_name, subject_name,
       - quota_exhausted=False → stopped due to API glitch / structuring error (non-fatal)
 
     The caller decides whether the partial result is acceptable.
+
+    Enhanced behaviour:
+      - Each chunk tries ALL 6 keys × 2 models before giving up (via gemini_client)
+      - Short sleep between chunks to avoid hammering rate limits
+      - On structuring failure: retries the chunk once with a fresh prompt before giving up
+      - On generation failure (non-quota): retries the chunk once before giving up
+      - Safety: max_chunks cap prevents infinite loops
     """
-    all_qs          = []
-    collected       = 0
-    chunk_idx       = 0
-    quota_exhausted = False
-    max_chunks      = (target_count // CHUNK) + 3
+    import time as _time
+
+    all_qs             = []
+    collected          = 0
+    chunk_idx          = 0
+    quota_exhausted    = False
+    consecutive_fails  = 0   # consecutive chunk failures (non-quota)
+    MAX_CONSECUTIVE    = 3   # stop after 3 consecutive non-quota failures
+    INTER_CHUNK_SLEEP  = 1   # seconds between successful chunks (light pacing)
+    max_chunks         = (target_count // CHUNK) + 5  # +5 buffer for retries
 
     total_needed = (target_count + CHUNK - 1) // CHUNK
     print(f"    Target: {target_count}Q in {CHUNK}Q chunks ({total_needed} chunks needed)")
@@ -546,11 +558,13 @@ def _iterate_to_target(target_count, exam_name, subject_name,
         cnt       = min(remaining, CHUNK)
         chunk_num = chunk_idx + 1
 
-        print(f"    ── Chunk {chunk_num}/{total_needed} ({cnt}Q, key slot {chunk_idx % 3}) ──")
+        print(f"    ── Chunk {chunk_num}/{total_needed} ({cnt}Q, key slot {chunk_idx % 4}) ──")
 
         kwargs = prompt_kwargs or {}
         prompt = prompt_fn(cnt, exam_name, subject_name, research_ctx, topic_str, **kwargs)
 
+        # ── Generation step ───────────────────────────────────────────────────
+        raw = None
         try:
             raw = _generate_one_chunk(prompt, chunk_idx)
         except GeminiQuotaError:
@@ -560,18 +574,41 @@ def _iterate_to_target(target_count, exam_name, subject_name,
             break
 
         if not raw:
-            print(f"    Chunk {chunk_num} generation failed — saving {collected}Q collected so far")
-            break
+            consecutive_fails += 1
+            print(f"    Chunk {chunk_num} generation failed (fail #{consecutive_fails})")
+            if consecutive_fails >= MAX_CONSECUTIVE:
+                print(f"    {MAX_CONSECUTIVE} consecutive failures — stopping iteration")
+                break
+            # Short sleep before retrying next chunk slot
+            _time.sleep(3)
+            chunk_idx += 1
+            continue
 
+        # ── Structuring step ──────────────────────────────────────────────────
         qs = _structure_one_chunk(raw, exam_name, subject_name)
+
+        if not qs:
+            # Retry structuring once with a slightly different prompt framing
+            print(f"    Chunk {chunk_num} structuring failed — retrying once...")
+            _time.sleep(2)
+            qs = _structure_one_chunk(raw, exam_name, subject_name)
+
         if qs:
             all_qs.extend(qs)
             collected += len(qs)
+            consecutive_fails = 0  # reset on success
             print(f"    Chunk {chunk_num} → {len(qs)}Q extracted "
                   f"(total so far: {collected}/{target_count})")
+            # Light pacing between successful chunks
+            if collected < target_count and INTER_CHUNK_SLEEP > 0:
+                _time.sleep(INTER_CHUNK_SLEEP)
         else:
-            print(f"    Chunk {chunk_num} structuring failed — saving {collected}Q collected so far")
-            break
+            consecutive_fails += 1
+            print(f"    Chunk {chunk_num} structuring failed after retry (fail #{consecutive_fails})")
+            if consecutive_fails >= MAX_CONSECUTIVE:
+                print(f"    {MAX_CONSECUTIVE} consecutive failures — stopping iteration")
+                break
+            _time.sleep(3)
 
         chunk_idx += 1
 

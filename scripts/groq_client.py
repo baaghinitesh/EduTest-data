@@ -113,7 +113,7 @@ def _parse_wait_seconds(err_str):
     return 45.0, False   # default: assume short TPM hit
 
 
-def _call_one(key_env, system_prompt, user_prompt, max_tokens):
+def _call_one(key_env, system_prompt, user_prompt, max_tokens, model=None):
     """
     Call one Groq key with retry.
     - TPM hit (short wait) → sleep stated time, retry same key
@@ -125,12 +125,13 @@ def _call_one(key_env, system_prompt, user_prompt, max_tokens):
 
     client   = _get_client(key_env)
     last_err = None
+    call_model = model if model is not None else MODEL
 
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             _rate_limit(key_env)
             resp = client.chat.completions.create(
-                model=MODEL,
+                model=call_model,
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user",   "content": user_prompt},
@@ -197,7 +198,7 @@ _COMPACT_SCHEMA = (
 )
 
 
-def _structure_chunk(raw_chunk, exam_name, subject_name, key_env):
+def _structure_chunk(raw_chunk, exam_name, subject_name, key_env, model=None):
     """
     Structure one small chunk of raw text (≤10 questions) into JSON.
     Returns list of question dicts or raises GroqError.
@@ -210,7 +211,7 @@ def _structure_chunk(raw_chunk, exam_name, subject_name, key_env):
         f"difficulty is 'easy'/'medium'/'hard'.\n\n"
         f"TEXT:\n{raw_chunk}"
     )
-    text = _call_one(key_env, sys_prompt, user_prompt, max_tokens=4000)
+    text = _call_one(key_env, sys_prompt, user_prompt, max_tokens=4000, model=model)
     result = _extract_json(text)
     if isinstance(result, list):
         return result
@@ -248,14 +249,16 @@ def format_questions(raw_text, schema_example, exam_name, subject_name=""):
     """
     Structure raw question text into JSON array.
 
-    Per chunk — full 3-step chain before giving up to Flash:
-      1. Groq K1  (with TPM-wait retry on rate limit)
-      2. Groq K2  (with TPM-wait retry on rate limit)
-      3. Mistral  (separate quota — always worth trying)
-      → If all 3 fail: returns partial results; caller (content_builder)
+    Per chunk — full fallback chain:
+      1. Groq K1  (primary model: llama-3.3-70b-versatile)
+      2. Groq K2  (primary model: llama-3.3-70b-versatile)
+      3. Mistral  (mistral-small-latest)
+      4. Groq K1  (lower model: llama-3.1-8b-instant)
+      5. Groq K2  (lower model: llama-3.1-8b-instant)
+      → If all fail: returns partial results; caller (content_builder)
         falls back to structure_with_flash (Flash 2.0/2.5 K1/K2/K3).
 
-    Raises GroqError only if ALL chunks fail on ALL 3 keys (Groq K1+K2+Mistral).
+    Raises GroqError only if ALL chunks fail on ALL keys/models.
     """
     chunks = _split_raw_text(raw_text, questions_per_chunk=10)
     print(f"  [Groq] Structuring {len(chunks)} chunk(s)...")
@@ -265,7 +268,7 @@ def format_questions(raw_text, schema_example, exam_name, subject_name=""):
     for chunk_idx, chunk in enumerate(chunks, 1):
         chunk_done = False
 
-        # ── Try both Groq keys ────────────────────────────────────────────────
+        # ── Step 1: Try both Groq keys with Primary Model ────────────────────
         for key_env in [KEY_G1, KEY_G2]:
             if not os.environ.get(key_env, "").strip():
                 continue
@@ -273,9 +276,9 @@ def format_questions(raw_text, schema_example, exam_name, subject_name=""):
                 print(f"  [Groq] {key_env} TPD-exhausted — skipping for chunk {chunk_idx}")
                 continue
             try:
-                qs = _structure_chunk(chunk, exam_name, subject_name, key_env)
+                qs = _structure_chunk(chunk, exam_name, subject_name, key_env, model=MODEL)
                 all_questions.extend(qs)
-                print(f"  [Groq] ✅ chunk {chunk_idx}/{len(chunks)} — {len(qs)}Q via {key_env}")
+                print(f"  [Groq] ✅ chunk {chunk_idx}/{len(chunks)} — {len(qs)}Q via {key_env} (primary)")
                 chunk_done = True
                 break
             except GroqError as e:
@@ -284,9 +287,9 @@ def format_questions(raw_text, schema_example, exam_name, subject_name=""):
                     print(f"  [Groq] chunk {chunk_idx} too large even after split — skipping")
                     chunk_done = True
                     break
-                print(f"  [Groq] {key_env} failed on chunk {chunk_idx} ({err[:80]}) — trying next key")
+                print(f"  [Groq] {key_env} primary failed on chunk {chunk_idx} ({err[:80]}) — trying next")
 
-        # ── Mistral fallback for this chunk (separate quota — always try) ─────
+        # ── Step 2: Mistral fallback for this chunk (separate quota) ─────────
         if not chunk_done:
             try:
                 import mistral_client
@@ -303,6 +306,24 @@ def format_questions(raw_text, schema_example, exam_name, subject_name=""):
                     print(f"  [Groq] Mistral not available for chunk {chunk_idx}")
             except Exception as e:
                 print(f"  [Groq] Mistral fallback failed for chunk {chunk_idx} ({str(e)[:60]})")
+
+        # ── Step 3: Try both Groq keys with Lower Model fallback ─────────────
+        if not chunk_done:
+            for key_env in [KEY_G1, KEY_G2]:
+                if not os.environ.get(key_env, "").strip():
+                    continue
+                if key_env in _tpd_exhausted:
+                    continue
+                try:
+                    print(f"  [Groq] Trying Groq {key_env} lower model (llama-3.1-8b-instant) for chunk {chunk_idx}")
+                    qs = _structure_chunk(chunk, exam_name, subject_name, key_env, model="llama-3.1-8b-instant")
+                    all_questions.extend(qs)
+                    print(f"  [Groq] ✅ chunk {chunk_idx}/{len(chunks)} — {len(qs)}Q via {key_env} (lower model)")
+                    chunk_done = True
+                    break
+                except GroqError as e:
+                    err = str(e)
+                    print(f"  [Groq] {key_env} lower model failed on chunk {chunk_idx} ({err[:80]}) — trying next")
 
         if not chunk_done:
             print(f"  [Groq] chunk {chunk_idx} failed on all keys (Groq K1, K2, Mistral) — skipping")

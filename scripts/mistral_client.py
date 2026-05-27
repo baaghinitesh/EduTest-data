@@ -93,7 +93,7 @@ def _extract_json(text):
     raise MistralError("No valid JSON found in Mistral response")
 
 
-def _call(system_prompt, user_prompt, expect_json=False, max_tokens=4096):
+def _call(system_prompt, user_prompt, expect_json=False, max_tokens=4096, model=None):
     """Call Mistral with retry. Returns text or parsed JSON."""
     global _exhausted
     if _exhausted:
@@ -101,11 +101,12 @@ def _call(system_prompt, user_prompt, expect_json=False, max_tokens=4096):
     
     client   = _get_client()
     last_err = None
+    call_model = model if model is not None else MODEL
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             _rate_limit()
             resp = client.chat.complete(
-                model=MODEL,
+                model=call_model,
                 messages=[
                     {"role": "system",  "content": system_prompt},
                     {"role": "user",    "content": user_prompt},
@@ -150,7 +151,7 @@ def _is_exhausted():
 
 # ── Public API ────────────────────────────────────────────────────────────────
 
-def generate_questions(prompt, max_tokens=4096):
+def generate_questions(prompt, max_tokens=4096, model=None):
     """
     Generate raw question text using Mistral.
     Called when all 3 Gemini keys are exhausted, or as part of rotation.
@@ -166,14 +167,14 @@ def generate_questions(prompt, max_tokens=4096):
         "Generate high-quality questions exactly as instructed. "
         "Do NOT output JSON — write in plain numbered text format."
     )
-    result = _call(system, prompt, expect_json=False, max_tokens=max_tokens)
+    result = _call(system, prompt, expect_json=False, max_tokens=max_tokens, model=model)
     if result and len(result) > 80:
-        print("  [Generate] ✅ mistral (mistral-small-latest)")
+        print(f"  [Generate] ✅ mistral ({model or MODEL})")
         return result
     raise MistralError("Mistral response too short")
 
 
-def structure_questions(raw_text, schema, exam_name, subject_name=""):
+def structure_questions(raw_text, schema, exam_name, subject_name="", model=None):
     """
     Structure raw question text into JSON array using Mistral.
     Called when both Groq keys fail, before Flash fallback.
@@ -196,16 +197,16 @@ def structure_questions(raw_text, schema, exam_name, subject_name=""):
         f"difficulty is 'easy'/'medium'/'hard'.\n\n"
         f"TEXT:\n{raw_text}"
     )
-    result = _call(system, user, expect_json=True, max_tokens=4096)
+    result = _call(system, user, expect_json=True, max_tokens=4096, model=model)
     if isinstance(result, list) and result:
-        print(f"  [Structure] ✅ Mistral fallback — {len(result)}Q")
+        print(f"  [Structure] ✅ Mistral fallback — {len(result)}Q ({model or MODEL})")
         return result
     if isinstance(result, dict):
         return [result]
     raise MistralError("Mistral returned unexpected JSON structure")
 
 
-def research(prompt, max_tokens=1500):
+def research(prompt, max_tokens=1500, model=None):
     """
     Research step using Mistral — fallback when Gemini keys fail.
     Returns text or empty string (never raises).
@@ -220,9 +221,9 @@ def research(prompt, max_tokens=1500):
             "You are a senior exam expert. Provide concise, focused analysis "
             "for question setters. Be specific and exam-focused."
         )
-        result = _call(system, prompt, expect_json=False, max_tokens=max_tokens)
+        result = _call(system, prompt, expect_json=False, max_tokens=max_tokens, model=model)
         if result and len(result) > 50:
-            print("  [Research] ✅ mistral fallback")
+            print(f"  [Research] ✅ mistral fallback ({model or MODEL})")
             return result
     except Exception as e:
         print(f"  [Research] Mistral failed ({e}) — using empty context")

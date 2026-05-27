@@ -26,6 +26,7 @@ Run loop (per GitHub Actions invocation):
   PHASE 2 — Generate up to MAX_TESTS_PER_RUN new tests:
     (Only runs if Phase 1 left zero pending drafts)
     For each test slot (up to 3):
+      → Pick a fresh exam slug for each slot (variety across slots)
       → Generate the test
       → If partial (quota hit mid-generation):
           Immediately try to resume/complete it in the SAME run
@@ -39,7 +40,7 @@ Run loop (per GitHub Actions invocation):
   before the run ends. Only if ALL keys are truly exhausted does it
   get saved as a draft for the next run.
 
-API keys (all 6 are tried before giving up):
+API keys (all 6 × 2 models tried before giving up):
   GEMINI_API_KEY    -> Flash K1  (researcher + gen fallback)
   GEMINI_API_KEY_1  -> Flash K2  (researcher fallback + gen fallback)
   GEMINI_API_KEY2   -> Flash K3  (primary question generator, round-robin)
@@ -47,10 +48,17 @@ API keys (all 6 are tried before giving up):
   GROQ_API_KEY2     -> Groq K2   (fallback structurer)
   MISTRAL_API_KEY   -> Mistral   (4th gen fallback + 3rd structurer, optional)
 
+Generation rotation per chunk (ALL 9 combinations tried before giving up):
+  K_a-Flash2.5 → K_a-Flash2.0 → K_b-Flash2.5 → K_b-Flash2.0
+  → K_c-Flash2.5 → K_c-Flash2.0 → Mistral → GroqK1 → GroqK2
+  Key order (a,b,c) rotates by chunk index for load spreading.
+
 Quota handling:
-  RPM/TPM hit (short wait ≤ 90s) → sleep stated time, retry SAME key
-  RPD/TPD hit (long wait > 90s)  → mark key exhausted, try next key
-  AllKeysExhausted only raised when EVERY key is RPD/TPD-exhausted
+  RPM/TPM hit (short wait ≤ 90s) → sleep stated time, retry SAME key+model
+  RPD hit on Flash2.5 → try Flash2.0 on same key before moving to next key
+  RPD hit on both models for a key → mark key fully exhausted, try next key
+  AllKeysExhausted only raised when EVERY key+model combination is exhausted
+  Safety: inter-key sleep, consecutive-fail cap, no infinite loops
 """
 import os, sys, traceback, random
 from datetime import datetime, timezone
@@ -144,10 +152,12 @@ def _validate_keys():
         print("  All keys set — maximum free-tier capacity available.\n")
     
     # Show key rotation strategy
-    print("  Key rotation strategy:")
-    print("    Generation : K3→K1→K2→Mistral→GroqK1→GroqK2 (all 6 keys tried per chunk)")
-    print("    Research   : K1→K2→K3→Mistral→Flash2.0 (all tried before empty ctx)")
+    print("  Key rotation strategy (ALL 6 keys × 2 models tried per chunk):")
+    print("    Generation : K_a-2.5→K_a-2.0→K_b-2.5→K_b-2.0→K_c-2.5→K_c-2.0→Mistral→GroqK1→GroqK2")
+    print("    Key order rotates per chunk: chunk%4=0→K3,K1,K2 | 1→K1,K2,K3 | 2→K2,K3,K1 | 3→Mistral-first")
+    print("    Research   : K1-2.5→K2-2.5→K3-2.5→Mistral→K1-2.0→K2-2.0→K3-2.0 (all tried before empty ctx)")
     print("    Structuring: GroqK1→GroqK2→Mistral→Flash2.0(K1/K2/K3)→Flash2.5(K1/K2/K3)")
+    print("    Safety     : short sleep between key switches, consecutive-fail cap, no infinite loops")
     print()
 
 
@@ -340,20 +350,39 @@ def _print_final_report(generated, failed):
     for e in generated:
         q   = e["totalQuestions"]
         tgt = e.get("targetQuestions", q)
-        print("    ✅ " + e["title"] + " [" + str(q) + "Q]")
+        status = " [partial: " + str(q) + "/" + str(tgt) + "Q]" if q < tgt else " [" + str(q) + "Q]"
+        print("    ✅ " + e["title"] + status)
     if pending:
         print("  ⏳ Pending (will resume next run):")
         for d in pending:
             pct = int(d["collected_q"] / d["target_q"] * 100) if d["target_q"] else 0
             print("    • " + d["title"] + " [" + str(d["collected_q"]) + "/" + str(d["target_q"]) + "Q  " + str(pct) + "%]")
+
     # Show which keys hit their daily limit this run
-    exhausted = list(_gc._rpd_exhausted) + list(_gq._tpd_exhausted)
+    exhausted_keys = list(_gc._rpd_exhausted) + list(_gq._tpd_exhausted)
     if mistral_exhausted:
-        exhausted.append("MISTRAL_API_KEY")
-    if exhausted:
-        print("  🔑 Keys that hit daily limit this run: " + ", ".join(exhausted))
+        exhausted_keys.append("MISTRAL_API_KEY")
+
+    # Show per-model exhaustion detail for Gemini keys
+    model_detail = []
+    for key_env in [_gc.KEY_K1, _gc.KEY_K2, _gc.KEY_K3]:
+        if not os.environ.get(key_env, "").strip():
+            continue
+        ex25 = _gc._model_exhausted.get((key_env, _gc.MODEL_FLASH_25), False)
+        ex20 = _gc._model_exhausted.get((key_env, _gc.MODEL_FLASH_20), False)
+        if ex25 or ex20:
+            models = []
+            if ex25: models.append("Flash2.5")
+            if ex20: models.append("Flash2.0")
+            model_detail.append(f"{key_env}({'+'.join(models)})")
+
+    if exhausted_keys:
+        print("  🔑 Keys that hit daily limit this run: " + ", ".join(exhausted_keys))
+    if model_detail:
+        print("  📉 Per-model exhaustion: " + ", ".join(model_detail))
+
     total_keys = 6
-    exhausted_count = len(exhausted)
+    exhausted_count = len(exhausted_keys)
     remaining = total_keys - exhausted_count
     print(f"  📊 Key status: {remaining}/{total_keys} keys still available")
     print(eq + "\n")
@@ -473,22 +502,23 @@ def run():
     #  PHASE 2 — Generate new tests (only when draft queue is empty)
     #
     #  For each slot (up to MAX_TESTS_PER_RUN):
-    #    1. Generate the test
-    #    2. If partial → immediately try to complete it in this same run
-    #    3. If still partial after inline resume → save draft, STOP
+    #    1. Pick a fresh exam slug (variety across slots in same run)
+    #    2. Generate the test
+    #    3. If partial → immediately try to complete it in this same run
+    #    4. If still partial after inline resume → save draft, STOP
     #       (quota exhausted — don't start another new test)
-    #    4. If complete → publish, move to next slot
-    #    5. If quota exhausted → STOP
-    #    6. If non-quota failure → skip slot, try next
+    #    5. If complete → publish, move to next slot
+    #    6. If quota exhausted → STOP
+    #    7. If non-quota failure → skip slot, try next
     # ══════════════════════════════════════════════════════════════════
-    class_slug  = forced_exam if forced_exam else topic_picker.pick_random_exam()
-    topics_data = topic_picker.load_topics(class_slug)
-    exam_type   = (topics_data or {}).get("type", "competitive")
-    type_label  = "School Class" if exam_type == "school" else "Competitive Exam"
+    # Base exam for this run (used when FORCE_EXAM is set)
+    base_exam = forced_exam if forced_exam else None
 
     print("\n  📝 PHASE 2: Generating new tests")
-    print("  Exam: " + class_slug.upper() + forced_str)
-    print("  Type: " + type_label)
+    if base_exam:
+        print("  Exam: " + base_exam.upper() + " (forced)")
+    else:
+        print("  Exam: random per slot (variety across slots)")
     print("  Mode: " + mode.upper())
     print("  Target: " + str(MAX_TESTS_PER_RUN) + " test(s) this run")
     if custom_instructions:
@@ -501,6 +531,15 @@ def run():
         print("\n" + dq)
         print("  Test " + str(attempt) + "/" + str(MAX_TESTS_PER_RUN))
         print(dq)
+
+        # Pick exam for this slot — fresh pick each slot for variety
+        # (unless forced via FORCE_EXAM env var)
+        class_slug = base_exam if base_exam else topic_picker.pick_random_exam()
+        topics_data = topic_picker.load_topics(class_slug)
+        exam_type   = (topics_data or {}).get("type", "competitive")
+        type_label  = "School Class" if exam_type == "school" else "Competitive Exam"
+        print("  Exam: " + class_slug.upper() + " (" + type_label + ")")
+
         try:
             entry = run_full(class_slug) if mode == "full" else run_subject(class_slug)
 
