@@ -471,11 +471,16 @@ def run():
                     generated.append(entry)
                     print("  ✅ Draft completed and published: " + entry["title"])
                 else:
-                    # Still partial — quota exhausted during resume
-                    print("  ⏳ Draft still partial — quota exhausted, stopping run")
-                    print("  ℹ️  No new tests started — will resume this draft next run")
-                    _print_final_report(generated, failed)
-                    sys.exit(0)
+                    # Still partial — check if actually exhausted
+                    import gemini_client as _gc
+                    if _gc.all_keys_exhausted():
+                        print("  🛑 Draft still partial and all keys exhausted — stopping run")
+                        print("  ℹ️  No new tests started — will resume this draft next run")
+                        _print_final_report(generated, failed)
+                        sys.exit(0)
+                    else:
+                        print("  ⏳ Draft still partial (non-quota issue) — keeping draft, continuing to next draft")
+                        failed += 1
 
             except AllKeysExhausted as e:
                 print("\n  🛑 ALL API KEYS EXHAUSTED during draft resume: " + str(e))
@@ -489,12 +494,18 @@ def run():
                 print("  ⚠️  Draft resume error (" + str(e) + ") — skipping this draft")
                 traceback.print_exc()
 
-        # If any drafts still remain (e.g. resume errored), don't start new tests
+        # If any drafts still remain (e.g. resume errored / still partial), don't start new tests
         still_pending = draft_store.load_all_drafts()
         if still_pending:
-            print("\n  ⏳ " + str(len(still_pending)) + " draft(s) still pending — no new tests this run")
-            _print_final_report(generated, failed)
-            sys.exit(0)
+            import gemini_client as _gc
+            if _gc.all_keys_exhausted():
+                print("\n  ⏳ " + str(len(still_pending)) + " draft(s) still pending & keys exhausted — stopping run")
+                _print_final_report(generated, failed)
+                sys.exit(0)
+            else:
+                print("\n  ⏳ " + str(len(still_pending)) + " draft(s) still pending — no new tests this run to avoid piling drafts")
+                _print_final_report(generated, failed)
+                sys.exit(0)
 
         print("\n  ✅ All drafts completed — proceeding to new generation")
 
@@ -558,11 +569,17 @@ def run():
                 q2   = entry.get("totalQuestions", 0)
                 tgt2 = entry.get("targetQuestions", q2)
                 if q2 < tgt2:
-                    # Still partial — quota exhausted, stop the run
-                    print("\n  🛑 Test " + str(attempt) + " still partial after resume — stopping run")
-                    print("  ℹ️  Draft saved. No more new tests this run.")
-                    generated.append(entry)   # count the partial as attempted
-                    break
+                    # Still partial — check if truly all keys exhausted
+                    import gemini_client as _gc
+                    if _gc.all_keys_exhausted():
+                        print("\n  🛑 Test " + str(attempt) + " still partial and all keys exhausted — stopping run")
+                        print("  ℹ️  Draft saved. No more new tests this run.")
+                        generated.append(entry)   # count the partial as attempted
+                        break
+                    else:
+                        print("\n  ⏳ Test " + str(attempt) + " still partial (non-quota issue) — keeping draft, continuing to next slot")
+                        generated.append(entry)
+                        continue
 
             generated.append(entry)
 

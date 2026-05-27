@@ -102,6 +102,13 @@ def _call(system_prompt, user_prompt, expect_json=False, max_tokens=4096, model=
     client   = _get_client()
     last_err = None
     call_model = model if model is not None else MODEL
+    
+    # Use deterministic low temperature for structuring/JSON tasks
+    call_temp = 0.15 if expect_json else 0.7
+    extra_args = {}
+    if expect_json:
+        extra_args["response_format"] = {"type": "json_object"}
+
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             _rate_limit()
@@ -111,8 +118,9 @@ def _call(system_prompt, user_prompt, expect_json=False, max_tokens=4096, model=
                     {"role": "system",  "content": system_prompt},
                     {"role": "user",    "content": user_prompt},
                 ],
-                temperature=0.7,
+                temperature=call_temp,
                 max_tokens=max_tokens,
+                **extra_args
             )
             text = (resp.choices[0].message.content or "").strip()
             if not text:
