@@ -1,0 +1,61 @@
+{
+  "classSlug": "cbse-class-11-mathematics",
+  "board": "Competitive",
+  "type": "competitive",
+  "examConfig": {
+    "fullLengthQuestions": 100,
+    "fullLengthMarks": 400,
+    "fullLengthDuration": 180,
+    "subjectWiseQuestions": 30,
+    "subjectWiseMarks": 120,
+    "subjectWiseDuration": 60,
+    "negativeMarking": false,
+    "correctMarkValue": 4,
+    "negativeMarkValue": 1,
+    "subjectWiseQMin": 20,
+    "subjectWiseQMax": 40,
+    "combinedTestQPerSubject": 20
+  },
+  "subjects": [
+    {
+      "slug": "sets-and-functions",
+      "name": "Sets and Functions",
+      "icon": "📚",
+      "color": "#8b5cf6",
+      "weightage": 20,
+      "file": "subjects/sets-and-functions.json"
+    },
+    {
+      "slug": "algebra",
+      "name": "Algebra",
+      "icon": "🔢",
+      "color": "#ec4899",
+      "weightage": 30,
+      "file": "subjects/algebra.json"
+    },
+    {
+      "slug": "coordinate-geometry",
+      "name": "Coordinate Geometry",
+      "icon": "📐",
+      "color": "#f59e0b",
+      "weightage": 15,
+      "file": "subjects/coordinate-geometry.json"
+    },
+    {
+      "slug": "calculus",
+      "name": "Calculus",
+      "icon": "📈",
+      "color": "#10b981",
+      "weightage": 20,
+      "file": "subjects/calculus.json"
+    },
+    {
+      "slug": "statistics-probability",
+      "name": "Statistics and Probability",
+      "icon": "📊",
+      "color": "#f97316",
+      "weightage": 15,
+      "file": "subjects/statistics-probability.json"
+    }
+  ]
+}
