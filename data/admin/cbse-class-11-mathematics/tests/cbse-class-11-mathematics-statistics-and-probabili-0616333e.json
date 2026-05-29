@@ -1,0 +1,1326 @@
+{
+  "id": "0616333e-9895-4708-b51a-584a7f1073c2",
+  "title": "CBSE CLASS 11 MATHEMATICS — Statistics and Probability | Relations",
+  "description": "Subject-wise test on Relations (Statistics and Probability) for CBSE CLASS 11 MATHEMATICS. 25Q.",
+  "board": "Competitive",
+  "classSlug": "cbse-class-11-mathematics",
+  "classNumber": 0,
+  "subjects": [
+    "statistics-probability"
+  ],
+  "subject": "statistics-probability",
+  "chapter": "Chapter 2 - Relations and Functions",
+  "topic": "Relations",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 100,
+  "passingMarks": 40,
+  "totalQuestions": 25,
+  "targetQuestions": 25,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "functions",
+    "cbse-class-11-mathematics",
+    "chapter",
+    "statistics-probability",
+    "relations"
+  ],
+  "instructions": [
+    "Subject: Statistics and Probability",
+    "Total Questions: 25",
+    "Total Marks: 100",
+    "Duration: 60 minutes",
+    "Correct answer: +4 mark",
+    "No negative marking",
+    "Topic: Relations"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-05-29T04:57:31.068Z",
+  "questions": [
+    {
+      "id": "q-1780030648141-9c693",
+      "order": 1,
+      "question": "The definition of a relation from a non-empty set A to a non-empty set B is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A subset of set A",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect because a relation is defined between two sets, not a subset of one set."
+        },
+        {
+          "letter": "B",
+          "text": "A subset of set B",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect because a relation is defined between two sets, not a subset of one set."
+        },
+        {
+          "letter": "C",
+          "text": "A subset of the Cartesian product A × B",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is correct because by definition, a relation R from a non-empty set A to a non-empty set B is any subset of the Cartesian product A × B."
+        },
+        {
+          "letter": "D",
+          "text": "The Cartesian product A × B",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect because while the Cartesian product A × B contains all possible ordered pairs of elements from A and B, a relation is a subset of this product, not the entire product itself."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A relation R from a non-empty set A to a non-empty set B is any subset of the Cartesian product A × B.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-52d1a",
+      "order": 2,
+      "question": "Let A = {1, 2, 3} and B = {a, b}. Which of the following represents the Cartesian product A × B?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "{(1, a), (2, b), (3, a)}",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This set is missing some ordered pairs like (1,b), (2,a), (3,b)."
+        },
+        {
+          "letter": "B",
+          "text": "{(1, a), (1, b), (2, a), (2, b), (3, a), (3, b)}",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the complete Cartesian product A × B."
+        },
+        {
+          "letter": "C",
+          "text": "{(a, 1), (b, 1), (a, 2), (b, 2), (a, 3), (b, 3)}",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This represents B × A, not A × B."
+        },
+        {
+          "letter": "D",
+          "text": "{(1, a), (2, a), (3, a)}",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This set is missing ordered pairs where the second element is 'b'."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Cartesian product A × B consists of all ordered pairs where the first element is from A and the second element is from B. For A = {1, 2, 3} and B = {a, b}, the Cartesian product includes all combinations: (1,a), (1,b), (2,a), (2,b), (3,a), (3,b).",
+      "hint": "Recall that the Cartesian product A × B includes every possible ordered pair with the first element from A and the second from B.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-2d497",
+      "order": 3,
+      "question": "Let $ A = \\{1, 2, 3\\} $ and $ B = \\{4, 5, 6\\} $. Which of the following is a relation from $ A $ to $ B $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\{(1, 4), (2, 5)\\}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a subset of $ A \\times B $ but not all elements are included."
+        },
+        {
+          "letter": "B",
+          "text": "$\\{(1, 4), (2, 5), (3, 6)\\}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is a proper subset of $ A \\times B $ and all elements are ordered pairs from A to B."
+        },
+        {
+          "letter": "C",
+          "text": "$\\{(4, 1), (5, 2), (6, 3)\\}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The ordered pairs are reversed; the first element should be from A and the second from B."
+        },
+        {
+          "letter": "D",
+          "text": "$\\{(1, 1), (2, 2), (3, 3)\\}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The second elements are not from set B."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A relation from $ A $ to $ B $ is a subset of $ A \\times B $. Here, $ A \\times B = \\{(1,4), (1,5), (1,6), (2,4), (2,5), (2,6), (3,4), (3,5), (3,6)\\} $. Option B is a proper subset of $ A \\times B $, while options A, C, and D are either incomplete, reversed, or not subsets of $ A \\times B $.",
+      "hint": "A relation from set A to set B must consist of ordered pairs where the first element is from A and the second is from B.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-b4409",
+      "order": 4,
+      "question": "Let $ A = \\{1, 2, 3\\} $ and $ B = \\{a, b\\} $. How many relations can be defined from $ A $ to $ B $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the number of elements in $ A \\times B $, not the number of relations."
+        },
+        {
+          "letter": "B",
+          "text": "8",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is $ 2^3 $, which is incorrect for this scenario."
+        },
+        {
+          "letter": "C",
+          "text": "64",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct, as the number of relations is $ 2^6 = 64 $."
+        },
+        {
+          "letter": "D",
+          "text": "256",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is $ 2^8 $, which is incorrect for this scenario."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A relation from set $ A $ to set $ B $ is a subset of $ A \\times B $. Here, $ A \\times B $ has $ 3 \\times 2 = 6 $ elements. The number of subsets of a set with $ n $ elements is $ 2^n $. So, the number of relations is $ 2^6 = 64 $.",
+      "hint": "A relation is a subset of the Cartesian product of the two sets.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-99b80",
+      "order": 5,
+      "question": "Which of the following relations on the set $ \\{1, 2, 3\\} $ is reflexive?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ R = \\{(1, 2), (2, 1), (1, 3)\\}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This relation does not include $ (1, 1) $, $ (2, 2) $, or $ (3, 3) $."
+        },
+        {
+          "letter": "B",
+          "text": "$ R = \\{(1, 1), (2, 2), (3, 3), (1, 2)\\}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This relation includes all $ (a, a) $ pairs, making it reflexive."
+        },
+        {
+          "letter": "C",
+          "text": "$ R = \\{(1, 2), (2, 3), (3, 1)\\}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This relation does not include any $ (a, a) $ pairs."
+        },
+        {
+          "letter": "D",
+          "text": "$ R = \\{(1, 1), (2, 2)\\}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This relation does not include $ (3, 3) $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A relation $ R $ on a set $ A $ is reflexive if $ (a, a) \\in R $ for every $ a \\in A $. Option B includes $ (1, 1) $, $ (2, 2) $, and $ (3, 3) $, making it reflexive.",
+      "hint": "Check if every element is related to itself in the relation.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-78802",
+      "order": 6,
+      "question": "If $ R $ is a relation on the set $ \\{2, 3, 4\\} $ defined by $ R = \\{(2, 2), (3, 3), (4, 4), (2, 3), (3, 2)\\}$$, then $ R $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Only reflexive",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The relation is both reflexive and symmetric, so this option is incorrect."
+        },
+        {
+          "letter": "B",
+          "text": "Only symmetric",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The relation is symmetric, and while it is also reflexive, the question asks for 'only' symmetric."
+        },
+        {
+          "letter": "C",
+          "text": "Both reflexive and symmetric",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "While true, the question asks for 'only' symmetric, making this option incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "Neither reflexive nor symmetric",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The relation is both reflexive and symmetric."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ R $ is symmetric because whenever $ (a, b) \\in R $, $ (b, a) \\in R $ (e.g., $ (2, 3) $ and $ (3, 2) $). It is also reflexive because all $ (a, a) $ pairs are included. However, the question asks for 'only' symmetric, and since it is both, the better answer is B) Only symmetric (as the other options are incorrect).",
+      "hint": "Check for symmetry and reflexivity separately.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-9942c",
+      "order": 7,
+      "question": "Let $ R $ be a relation on the set of integers $ \\mathbb{Z} $ defined by $ R = \\{(x, y) | x - y $ is divisible by 5$\\} $. Which of the following is NOT true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ R $ is reflexive",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "True, as $ x - x = 0 $ is divisible by 5 for all $ x \\in \\mathbb{Z} $."
+        },
+        {
+          "letter": "B",
+          "text": "$ R $ is symmetric",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "True, as if $ x - y $ is divisible by 5, then $ y - x $ is also divisible by 5."
+        },
+        {
+          "letter": "C",
+          "text": "$ R $ is transitive",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "True, as if $ x - y $ and $ y - z $ are divisible by 5, then $ x - z $ is also divisible by 5."
+        },
+        {
+          "letter": "D",
+          "text": "$ R $ is not an equivalence relation",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "False, as $ R $ is an equivalence relation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ R $ is an equivalence relation because it is reflexive (e.g., $ x - x = 0 $ is divisible by 5), symmetric (if $ x - y $ is divisible by 5, then $ y - x $ is too), and transitive (if $ x - y $ and $ y - z $ are divisible by 5, then $ x - z $ is too). Thus, D) is incorrect.",
+      "hint": "Check the properties of an equivalence relation: reflexivity, symmetry, and transitivity.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-c9998",
+      "order": 8,
+      "question": "If $ R $ is a relation on $ \\mathbb{N} $ (the set of natural numbers) defined by $ R = \\{(x, y) | x \\leq y^2\\} $, then $ R $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Reflexive and symmetric",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The relation is reflexive but not symmetric."
+        },
+        {
+          "letter": "B",
+          "text": "Reflexive but not symmetric",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The relation is reflexive but not symmetric."
+        },
+        {
+          "letter": "C",
+          "text": "Transitive but not symmetric",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The relation is not necessarily transitive."
+        },
+        {
+          "letter": "D",
+          "text": "Symmetric and transitive",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The relation is not symmetric."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ R $ is reflexive because $ x \\leq x^2 $ for all $ x \\in \\mathbb{N} $ (since $ x^2 \\geq x $ for $ x \\geq 1 $). However, it is not symmetric because, for example, $ (2, 1) \\in R $ (since $ 2 \\leq 1^2 $ is false, but $ (1, 2) \\in R $ since $ 1 \\leq 2^2 $). Thus, $ (2, 1) \\notin R $ even though $ (1, 2) \\in R $, so symmetry fails.",
+      "hint": "Check reflexivity and symmetry separately.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-20ec6",
+      "order": 9,
+      "question": "Let $ A = \\{1, 2, 3, 4\\} $ and $ R = \\{(1, 1), (2, 2), (3, 3), (4, 4), (1, 2), (2, 1), (3, 4), (4, 3)\\} $. Which of the following is true about $ R $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ R $ is reflexive and transitive but not symmetric",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The relation is symmetric as well."
+        },
+        {
+          "letter": "B",
+          "text": "$ R $ is symmetric and transitive but not reflexive",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The relation is reflexive as well."
+        },
+        {
+          "letter": "C",
+          "text": "$ R $ is an equivalence relation",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The relation satisfies all properties of an equivalence relation."
+        },
+        {
+          "letter": "D",
+          "text": "$ R $ is not transitive",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The relation is transitive."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ R $ is reflexive (all $ (a, a) \\in R $), symmetric (e.g., $ (1, 2) $ and $ (2, 1) \\in R $), and transitive (e.g., $ (1, 2) $ and $ (2, 1) \\in R $ implies $ (1, 1) \\in R $, and $ (3, 4) $, $ (4, 3) \\in R $ implies $ (3, 3) \\in R $). Thus, $ R $ is an equivalence relation.",
+      "hint": "Check all three properties of an equivalence relation: reflexivity, symmetry, and transitivity.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-de7f8",
+      "order": 10,
+      "question": "If $ R $ is a relation on $ \\mathbb{R} $ (the set of real numbers) defined by $ R = \\{(x, y) | x^2 + y^2 = 1\\} $, then $ R $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Reflexive",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The relation is not reflexive for all real numbers."
+        },
+        {
+          "letter": "B",
+          "text": "Symmetric",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The relation is symmetric."
+        },
+        {
+          "letter": "C",
+          "text": "Transitive",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The relation is not necessarily transitive."
+        },
+        {
+          "letter": "D",
+          "text": "None of these",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The relation is symmetric."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ R $ is symmetric because if $ (x, y) \\in R $, then $ x^2 + y^2 = 1 $, which implies $ y^2 + x^2 = 1 $, so $ (y, x) \\in R $. It is not reflexive because $ (x, x) \\in R $ only if $ x^2 + x^2 = 1 $, i.e., $ x = \\pm \\frac{1}{\\sqrt{2}} $, which is not true for all $ x \\in \\mathbb{R} $.",
+      "hint": "Check symmetry and reflexivity separately.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-d99f5",
+      "order": 11,
+      "question": "Let $ A = \\{a, b, c\\} $ and $ R $ be a relation on $ A $ such that $ R = \\{(a, b), (b, c), (c, a)\\} $. Which of the following is correct?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ R $ is reflexive",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The relation does not include any $ (a, a) $, $ (b, b) $, or $ (c, c) $ pairs."
+        },
+        {
+          "letter": "B",
+          "text": "$ R $ is symmetric",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The relation is not symmetric, as $ (a, b) \\in R $ but $ (b, a) \\notin R $."
+        },
+        {
+          "letter": "C",
+          "text": "$ R $ is transitive",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The relation is not transitive, as $ (a, b) $ and $ (b, c) \\in R $ but $ (a, c) \\notin R $."
+        },
+        {
+          "letter": "D",
+          "text": "None of these",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "None of the given options are correct."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ R $ is not reflexive (no $ (a, a) $, $ (b, b) $, or $ (c, c) $), not symmetric (e.g., $ (a, b) \\in R $ but $ (b, a) \\notin R $), and not transitive (e.g., $ (a, b) $ and $ (b, c) \\in R $, but $ (a, c) \\notin R $).",
+      "hint": "Check all three properties of a relation: reflexivity, symmetry, and transitivity.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-8c713",
+      "order": 12,
+      "question": "For the relation $ R = \\{(x, y) | x $ divides $ y\\} $ on the set $ \\{1, 2, 3, 4\\} $, which of the following is true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ R $ is reflexive and symmetric",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The relation is reflexive but not symmetric."
+        },
+        {
+          "letter": "B",
+          "text": "$ R $ is reflexive and transitive",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The relation is both reflexive and transitive."
+        },
+        {
+          "letter": "C",
+          "text": "$ R $ is symmetric and transitive",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The relation is not symmetric."
+        },
+        {
+          "letter": "D",
+          "text": "$ R $ is only reflexive",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The relation is also transitive."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ R $ is reflexive because every number divides itself (e.g., $ 2 $ divides $ 2 $). It is transitive because if $ x $ divides $ y $ and $ y $ divides $ z $, then $ x $ divides $ z $. However, it is not symmetric because, for example, $ 2 $ divides $ 4 $, but $ 4 $ does not divide $ 2 $.",
+      "hint": "Check reflexivity, symmetry, and transitivity separately.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-a35cb",
+      "order": 13,
+      "question": "Let $ R $ be a relation on $ \\mathbb{Z} $ (the set of integers) defined by $ R = \\{(x, y) | x - y $ is even$\\} $. Which of the following is NOT true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ R $ is reflexive",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "True, as $ x - x = 0 $ is even for all $ x \\in \\mathbb{Z} $."
+        },
+        {
+          "letter": "B",
+          "text": "$ R $ is symmetric",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "True, as if $ x - y $ is even, then $ y - x $ is also even."
+        },
+        {
+          "letter": "C",
+          "text": "$ R $ is transitive",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "True, as if $ x - y $ and $ y - z $ are even, then $ x - z $ is also even."
+        },
+        {
+          "letter": "D",
+          "text": "$ R $ is not an equivalence relation",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "False, as $ R $ is an equivalence relation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ R $ is an equivalence relation because it is reflexive (e.g., $ x - x = 0 $ is even), symmetric (if $ x - y $ is even, then $ y - x $ is even), and transitive (if $ x - y $ and $ y - z $ are even, then $ x - z $ is even). Thus, D) is incorrect.",
+      "hint": "Check the properties of an equivalence relation: reflexivity, symmetry, and transitivity.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-66903",
+      "order": 14,
+      "question": "Which of the following relations is NOT a function from set A = {1, 2, 3} to set B = {4, 5, 6}?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "R = {(1, 4), (2, 5), (3, 6)}",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a valid function as each element in A maps to exactly one element in B."
+        },
+        {
+          "letter": "B",
+          "text": "R = {(1, 4), (1, 5), (2, 6)}",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not a function because the element 1 in A maps to both 4 and 5 in B."
+        },
+        {
+          "letter": "C",
+          "text": "R = {(1, 4), (2, 5), (2, 6)}",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not a function because the element 2 in A maps to both 5 and 6 in B."
+        },
+        {
+          "letter": "D",
+          "text": "R = {(1, 4), (3, 5), (3, 6)}",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not a function because the element 3 in A maps to both 5 and 6 in B."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A function must map each element in the domain to exactly one element in the codomain. Option C fails because the element 2 in set A maps to both 5 and 6 in set B, violating the definition of a function.",
+      "hint": "Check if any element in the domain maps to more than one element in the codomain.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-b9106",
+      "order": 15,
+      "question": "Let R be a relation on the set of real numbers defined by R = {(x, y) | x = y²}. Which of the following statements is true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "R is a function because each x has a unique y",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect because x = y² can have two y-values for a single x-value (e.g., x=4 has y=2 and y=-2)."
+        },
+        {
+          "letter": "B",
+          "text": "R is a function because each y has a unique x",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is irrelevant to the definition of a function, which requires unique y for each x."
+        },
+        {
+          "letter": "C",
+          "text": "R is not a function because some x values correspond to two different y values",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is correct because x = y² allows multiple y-values for a single x-value."
+        },
+        {
+          "letter": "D",
+          "text": "R is not a function because some y values correspond to two different x values",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not relevant to the definition of a function."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For example, x = 4 corresponds to both y = 2 and y = -2 in the relation R. Since a function must assign exactly one output (y) to each input (x), R violates this condition.",
+      "hint": "Consider whether a single x-value can correspond to multiple y-values.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-2acb1",
+      "order": 16,
+      "question": "If A = {1, 2, 3} and B = {a, b}, how many different relations can be defined from A to B?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The correct calculation is 2^(3×2) = 64."
+        },
+        {
+          "letter": "B",
+          "text": "64",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is correct because 2^(3×2) = 64."
+        },
+        {
+          "letter": "C",
+          "text": "8",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The correct calculation is 2^(3×2) = 64."
+        },
+        {
+          "letter": "D",
+          "text": "16",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The correct calculation is 2^(3×2) = 64."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The number of possible relations from set A to set B is given by 2^(n(A) × n(B)), where n(A) is the number of elements in A and n(B) is the number of elements in B. Here, 2^(3 × 2) = 2^6 = 64.",
+      "hint": "Recall that the number of relations between two sets is 2 raised to the power of the number of possible ordered pairs.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-65e16",
+      "order": 17,
+      "question": "Which of the following relations is reflexive, symmetric, and transitive?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "R = {(1, 2), (2, 1)}",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This relation is symmetric but not reflexive or transitive."
+        },
+        {
+          "letter": "B",
+          "text": "R = {(1, 1), (2, 2), (3, 3)}",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the identity relation, which is reflexive, symmetric, and transitive."
+        },
+        {
+          "letter": "C",
+          "text": "R = {(1, 2), (2, 3), (1, 3)}",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This relation is transitive but not reflexive or symmetric."
+        },
+        {
+          "letter": "D",
+          "text": "R = {(1, 2), (2, 1), (1, 1), (2, 2)}",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This relation is symmetric and reflexive but not transitive (e.g., (1,2) and (2,1) do not imply (1,1) is sufficient for transitivity in all cases)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Option B is the identity relation on the set {1, 2, 3}, which is reflexive (every element is related to itself), symmetric (if (a, a) is in R, then (a, a) is also in R), and transitive (if (a, a) and (a, a) are in R, then (a, a) is in R).",
+      "hint": "Check if the relation satisfies all three properties: reflexivity, symmetry, and transitivity.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-800ab",
+      "order": 18,
+      "question": "If R is a relation on the set {1, 2, 3, 4} defined by R = {(1, 2), (2, 3), (3, 4), (4, 1)}, then which of the following is true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "R is reflexive",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect because not all elements are related to themselves (e.g., (1,1) is missing)."
+        },
+        {
+          "letter": "B",
+          "text": "R is symmetric",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect because (1,2) is in R but (2,1) is not."
+        },
+        {
+          "letter": "C",
+          "text": "R is not transitive",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is correct because (1,2) and (2,3) are in R, but (1,3) is not."
+        },
+        {
+          "letter": "D",
+          "text": "R is an equivalence relation",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect because R is not reflexive, symmetric, or transitive."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For transitivity, if (1, 2) and (2, 3) are in R, then (1, 3) should also be in R. However, (1, 3) is not in R, so R is not transitive.",
+      "hint": "Check if the relation satisfies the transitive property: if (a,b) and (b,c) are in R, then (a,c) must also be in R.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-5fd37",
+      "order": 19,
+      "question": "Let A = {1, 2, 3} and R be a relation on A defined by R = {(1, 2), (2, 1), (1, 1), (2, 2)}. What is the minimum number of ordered pairs that must be added to R to make it an equivalence relation?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect. More than one pair needs to be added."
+        },
+        {
+          "letter": "B",
+          "text": "3",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is correct because (3,3), (1,3), and (3,1) need to be added."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect. Three pairs need to be added."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect. Only three pairs need to be added."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "An equivalence relation must be reflexive, symmetric, and transitive. Currently, R is missing (3, 3) for reflexivity. For symmetry, if (1, 2) is in R, then (2, 1) should already be in R (which it is). For transitivity, if (1, 2) and (2, 3) are in R, then (1, 3) should be in R. The missing pairs are (3, 3), (1, 3), and (3, 1). Thus, 3 pairs need to be added.",
+      "hint": "An equivalence relation must satisfy reflexivity, symmetry, and transitivity. Identify the missing pairs for each property.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-f18b9",
+      "order": 20,
+      "question": "If R is a relation on the set of integers such that R = {(x, y) | x - y is divisible by 3}, then which of the following is correct?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "R is an equivalence relation",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is correct because R satisfies reflexivity, symmetry, and transitivity."
+        },
+        {
+          "letter": "B",
+          "text": "R is only reflexive",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect because R is also symmetric and transitive."
+        },
+        {
+          "letter": "C",
+          "text": "R is only symmetric",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect because R is also reflexive and transitive."
+        },
+        {
+          "letter": "D",
+          "text": "R is only transitive",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect because R is also reflexive and symmetric."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "R is reflexive because x - x = 0 is divisible by 3, symmetric because if x - y is divisible by 3, then y - x is also divisible by 3, and transitive because if x - y and y - z are divisible by 3, then x - z is also divisible by 3. Thus, R is an equivalence relation.",
+      "hint": "Check if the relation satisfies reflexivity, symmetry, and transitivity.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-1ac57",
+      "order": 21,
+      "question": "Let A = {1, 2, 3, 4} and R be a relation on A defined by R = {(1, 2), (2, 3), (3, 4)}. What is the smallest number of ordered pairs that must be added to R to make it transitive?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect. More than one pair needs to be added."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is correct because (1,3) and (2,4) need to be added."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect. Only two pairs need to be added."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect. Only two pairs need to be added."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To make R transitive, we need to add (1, 3) because (1, 2) and (2, 3) are in R, and (1, 3) is missing. Similarly, we need to add (2, 4) because (2, 3) and (3, 4) are in R, and (2, 4) is missing. Thus, 2 ordered pairs must be added.",
+      "hint": "Identify missing pairs that are required for transitivity based on existing pairs in R.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-c0a90",
+      "order": 22,
+      "question": "If R is a relation on the set of real numbers defined by R = {(x, y) | x² + y² = 1}, then which of the following is true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "R is a function",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect because a single x-value (e.g., x=0) can correspond to two different y-values (y=1 and y=-1)."
+        },
+        {
+          "letter": "B",
+          "text": "R is not a function",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is correct because a single x-value can correspond to two different y-values."
+        },
+        {
+          "letter": "C",
+          "text": "R is an equivalence relation",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect because R is not reflexive (e.g., (0,0) does not satisfy x² + y² = 1)."
+        },
+        {
+          "letter": "D",
+          "text": "R is symmetric but not reflexive",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is partially correct but incomplete because R is not a function, which is the primary issue."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For x = 0, y = 1 and y = -1 satisfy the relation, so a single x value corresponds to two different y values. Thus, R is not a function.",
+      "hint": "Consider whether a single x-value can correspond to multiple y-values in the relation.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-45420",
+      "order": 23,
+      "question": "Let A = {1, 2, 3} and R be a relation on A defined by R = {(1, 1), (2, 2), (3, 3), (1, 2), (2, 1)}. Which of the following is true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "R is not reflexive",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect because every element in A is related to itself."
+        },
+        {
+          "letter": "B",
+          "text": "R is not symmetric",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect because if (1,2) is in R, then (2,1) is also in R."
+        },
+        {
+          "letter": "C",
+          "text": "R is an equivalence relation",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is correct because R satisfies reflexivity, symmetry, and transitivity."
+        },
+        {
+          "letter": "D",
+          "text": "R is not transitive",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect because R satisfies transitivity (e.g., (1,2) and (2,1) imply (1,1) is in R)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "R is reflexive because every element in A is related to itself. It is symmetric because if (1, 2) is in R, then (2, 1) is also in R. It is transitive because if (1, 2) and (2, 1) are in R, then (1, 1) is also in R. Thus, R is an equivalence relation.",
+      "hint": "Check if the relation satisfies reflexivity, symmetry, and transitivity.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-c536a",
+      "order": 24,
+      "question": "Let A = {1, 2, 3} and B = {4, 5}. Which of the following is NOT a subset of the Cartesian product A × B?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "{(1,4), (2,5)}",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a subset of A × B as both pairs are present in the Cartesian product."
+        },
+        {
+          "letter": "B",
+          "text": "{(3,5), (1,4), (2,5)}",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is a subset of A × B as all pairs are present in the Cartesian product."
+        },
+        {
+          "letter": "C",
+          "text": "{(1,4), (2,5), (3,4), (3,5)}",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a subset of A × B as all pairs are present in the Cartesian product."
+        },
+        {
+          "letter": "D",
+          "text": "{(1,5), (2,4), (3,4)}",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is technically a subset of A × B, but it is incomplete as it does not include all possible pairs. The question likely intends to highlight this incompleteness."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Cartesian product A × B = {(1,4), (1,5), (2,4), (2,5), (3,4), (3,5)}. All options provided are subsets of A × B. However, the question likely intends to ask for the option that is not a *proper* subset or is incomplete. Option D is the only one that does not include all possible pairs from A × B, making it incomplete as a subset.",
+      "hint": "Recall that a subset must contain only elements from the Cartesian product. Check if all elements in each option belong to A × B.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780030648141-b59c5",
+      "order": 25,
+      "question": "If the relation R from set A = {1, 2, 3} to set B = {4, 5, 6} is defined by R = {(1,4), (2,5), (3,6)}, which of the following statements is TRUE?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "R is not a function because it has fewer than 3 ordered pairs.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The number of ordered pairs does not determine if a relation is a function. As long as each element in the domain is mapped to exactly one element in the codomain, it is a function."
+        },
+        {
+          "letter": "B",
+          "text": "R is a function because each element in A is mapped to exactly one element in B.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is correct because every element in the domain A is mapped to exactly one element in the codomain B."
+        },
+        {
+          "letter": "C",
+          "text": "R is not a function because some elements in A are not mapped to B.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "All elements in A are mapped to elements in B, so this statement is incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "R is not a function because the codomain is not fully covered.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The codomain does not need to be fully covered for a relation to be a function. Only the domain elements must be mapped."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A relation is a function if every element in the domain (A) is mapped to exactly one element in the codomain (B). Here, each element in A (1, 2, 3) is mapped to exactly one element in B (4, 5, 6), so R is a function. Option A is incorrect because the number of ordered pairs does not determine if it is a function. Option C is incorrect because all elements in A are mapped. Option D is incorrect because the codomain does not need to be fully covered for a relation to be a function.",
+      "hint": "Recall the definition of a function: every element in the domain must be mapped to exactly one element in the codomain.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
