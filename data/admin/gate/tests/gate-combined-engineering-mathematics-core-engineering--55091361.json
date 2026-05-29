@@ -1,0 +1,2089 @@
+{
+  "id": "55091361-203c-470a-b165-d12718b3cab1",
+  "title": "GATE — Combined: Engineering Mathematics + Core Engineering Subject",
+  "description": "Combined test: Engineering Mathematics + Core Engineering Subject for GATE. 40Q.",
+  "board": "Competitive",
+  "classSlug": "gate",
+  "classNumber": 0,
+  "subjects": [
+    "gate-maths",
+    "gate-core"
+  ],
+  "subject": "gate-maths",
+  "chapter": "Multiple Chapters",
+  "topic": "Combined",
+  "testType": "subject-wise",
+  "duration": 120,
+  "totalMarks": 80,
+  "passingMarks": 32,
+  "totalQuestions": 40,
+  "targetQuestions": 40,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "subject",
+    "mathematics",
+    "core",
+    "gate",
+    "engineering",
+    "gate-maths+gate-core"
+  ],
+  "instructions": [
+    "Subject: Engineering Mathematics + Core Engineering Subject",
+    "Total Questions: 40",
+    "Total Marks: 80",
+    "Duration: 120 minutes",
+    "Correct answer: +2 mark",
+    "Wrong answer: -0.67 mark"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-05-29T14:36:24.377751Z",
+  "questions": [
+    {
+      "id": "q-1780065264082-4b9f5",
+      "order": 1,
+      "question": "Which of the following statements best describes the primary objective of simple linear regression analysis?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To determine the causal relationship between two categorical variables.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Regression primarily deals with continuous variables and focuses on association rather than strict causation."
+        },
+        {
+          "letter": "B",
+          "text": "To predict the value of a dependent variable based on the value of an independent variable.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the primary objective of simple linear regression."
+        },
+        {
+          "letter": "C",
+          "text": "To classify data points into predefined groups.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Classification is not the objective of regression analysis."
+        },
+        {
+          "letter": "D",
+          "text": "To identify the central tendency of a single dataset.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Central tendency is a descriptive statistic, not the objective of regression."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Simple linear regression aims to model the relationship between two continuous variables, where one (dependent) is predicted or explained by the other (independent).",
+      "hint": "Focus on the relationship between dependent and independent variables.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065264082-96bd7",
+      "order": 2,
+      "question": "In a simple linear regression model, the coefficient of determination (R²) is calculated as 0.81. What does this value imply?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "81% of the observed data points lie exactly on the regression line.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "R² measures explained variance, not exact fit of individual points."
+        },
+        {
+          "letter": "B",
+          "text": "The correlation coefficient between the dependent and independent variables is 0.81.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "R² is the square of the correlation coefficient (r² = 0.81, so r = ±0.9)."
+        },
+        {
+          "letter": "C",
+          "text": "81% of the total variation in the dependent variable is explained by the independent variable.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "An R² of 0.81 means that 81% of the total variation in the dependent variable can be explained by the linear relationship with the independent variable."
+        },
+        {
+          "letter": "D",
+          "text": "The slope of the regression line is 0.81.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "R² is not the slope; it measures the goodness of fit."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The coefficient of determination (R²) represents the proportion of the variance in the dependent variable that is predictable from the independent variable(s).",
+      "hint": "R² measures the proportion of variance explained by the model.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065264082-49d82",
+      "order": 3,
+      "question": "Consider a simple linear regression model Y = β₀ + β₁X + ε. Which of the following statements about the least squares regression line is FALSE?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The sum of the residuals is always zero.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "By definition, the least squares method ensures that the sum of the residuals is zero."
+        },
+        {
+          "letter": "B",
+          "text": "The regression line always passes through the mean of the independent variable (X̄) and the mean of the dependent variable (Ȳ).",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The least squares estimates ensure the regression line passes through (X̄, Ȳ)."
+        },
+        {
+          "letter": "C",
+          "text": "The sum of the squared residuals is minimized.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The 'least squares' method minimizes the sum of the squared residuals."
+        },
+        {
+          "letter": "D",
+          "text": "The correlation coefficient between the predicted values (Ŷ) and the actual values (Y) is always negative if the slope is negative.",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The correlation coefficient between predicted values (Ŷ) and actual values (Y) is always positive, regardless of the sign of the slope."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The correlation coefficient between predicted values (Ŷ) and actual values (Y) is always positive, regardless of the sign of the slope.",
+      "hint": "Recall properties of least squares regression and correlation.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065264082-9a23b",
+      "order": 4,
+      "question": "For a dataset with 5 observations, the following summary statistics are available: ΣX = 20, ΣY = 30, ΣX² = 100, ΣY² = 200, ΣXY = 150. What is the estimated slope (β₁) of the simple linear regression line Y = β₀ + β₁X?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.5",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "β₁ = [5 * 150 - (20 * 30)] / [5 * 100 - (20)²] = 150 / 100 = 1.5."
+        },
+        {
+          "letter": "B",
+          "text": "2.0",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation based on the given data."
+        },
+        {
+          "letter": "C",
+          "text": "2.5",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation based on the given data."
+        },
+        {
+          "letter": "D",
+          "text": "3.0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation based on the given data."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The formula for the estimated slope (β₁) in simple linear regression is β₁ = [nΣXY - (ΣX)(ΣY)] / [nΣX² - (ΣX)²].",
+      "hint": "Use the formula for the slope in simple linear regression.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065264082-98082",
+      "order": 5,
+      "question": "A company wants to model the relationship between advertising expenditure (X, in lakhs of INR) and monthly sales (Y, in crores of INR). A simple linear regression model yields the equation Ŷ = 2.5 + 0.8X. Which of the following is the correct interpretation of the coefficient 0.8?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "For every 1 lakh INR increase in advertising expenditure, sales are predicted to increase by 0.8 crores INR.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The slope (0.8) indicates the change in Y (sales) for a unit change in X (advertising expenditure)."
+        },
+        {
+          "letter": "B",
+          "text": "When advertising expenditure is zero, monthly sales are 0.8 crores INR.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This describes the intercept (β₀ = 2.5), not the slope."
+        },
+        {
+          "letter": "C",
+          "text": "The correlation between advertising expenditure and sales is 0.8.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This describes the correlation coefficient, not the slope."
+        },
+        {
+          "letter": "D",
+          "text": "80% of the variation in sales can be explained by advertising expenditure.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This describes the coefficient of determination (R²), not the slope."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The coefficient 0.8 represents the slope (β₁) of the regression line, indicating the change in Y for a unit change in X.",
+      "hint": "Focus on the interpretation of the slope in the regression equation.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065264082-4fd07",
+      "order": 6,
+      "question": "Which of the following assumptions is NOT a standard assumption for the errors (ε) in a classical simple linear regression model?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The errors are normally distributed.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Normality of errors is a standard assumption."
+        },
+        {
+          "letter": "B",
+          "text": "The errors have constant variance (homoscedasticity).",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Homoscedasticity is a standard assumption."
+        },
+        {
+          "letter": "C",
+          "text": "The errors are independent of each other.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Independence of errors is a standard assumption."
+        },
+        {
+          "letter": "D",
+          "text": "The errors are correlated with the independent variable X.",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The errors should not be correlated with the independent variable X in a classical linear regression model."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The errors should not be correlated with the independent variable X in a classical linear regression model.",
+      "hint": "Recall the standard assumptions for the error term in linear regression.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065264082-a8d10",
+      "order": 7,
+      "question": "Which of the following is NOT a standard assumption of the errors in a simple linear regression model?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The mean of the errors is zero.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a standard assumption of errors in linear regression."
+        },
+        {
+          "letter": "B",
+          "text": "The errors are independent of the independent variable X.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is a standard assumption of errors in linear regression."
+        },
+        {
+          "letter": "C",
+          "text": "The errors have constant variance.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a standard assumption of errors in linear regression (homoscedasticity)."
+        },
+        {
+          "letter": "D",
+          "text": "The errors are correlated with the independent variable X.",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is NOT a standard assumption and violates the independence of errors, indicating potential model misspecification."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The standard assumptions of errors in a simple linear regression model include: zero mean, homoscedasticity (constant variance), independence of errors, and normality of errors. If errors are correlated with the independent variable X, it violates the independence assumption and indicates model misspecification.",
+      "hint": "Recall the Gauss-Markov assumptions for linear regression errors.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065264082-4bb7f",
+      "order": 8,
+      "question": "A researcher performs a simple linear regression analysis and obtains an R² value of 0.64. The estimated regression equation is Ŷ = 10 - 2X. What is the correlation coefficient (r) between the independent variable (X) and the dependent variable (Y)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.8",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the magnitude of r but does not account for the negative slope."
+        },
+        {
+          "letter": "B",
+          "text": "-0.8",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. R² = 0.64 implies r = ±0.8, and the negative slope indicates r = -0.8."
+        },
+        {
+          "letter": "C",
+          "text": "0.64",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the value of R², not the correlation coefficient r."
+        },
+        {
+          "letter": "D",
+          "text": "-0.64",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the square root of R² or the slope sign."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The coefficient of determination (R²) is the square of the correlation coefficient (r). Given R² = 0.64, r = ±√0.64 = ±0.8. The sign of r must match the sign of the slope (β₁) of the regression line. Here, β₁ = -2 (negative), so r = -0.8.",
+      "hint": "R² = r², and the sign of r matches the slope of the regression line.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065264082-94dbc",
+      "order": 9,
+      "question": "Consider two variables, X and Y, with the following statistics: Mean of X (X̄) = 10, Mean of Y (Ȳ) = 15, Standard deviation of X (s_X) = 2, Standard deviation of Y (s_Y) = 3, Correlation coefficient (r_XY) = 0.75. What is the intercept (β₀) of the simple linear regression line Ŷ = β₀ + β₁X?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3.75",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. Calculated as β₀ = Ȳ - β₁X̄ = 15 - 1.125*10 = 3.75."
+        },
+        {
+          "letter": "B",
+          "text": "6.00",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not match the calculated intercept."
+        },
+        {
+          "letter": "C",
+          "text": "9.25",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not match the calculated intercept."
+        },
+        {
+          "letter": "D",
+          "text": "12.00",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not match the calculated intercept."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, calculate the slope (β₁) using β₁ = r_XY * (s_Y / s_X) = 0.75 * (3 / 2) = 1.125. Then, use the regression line passing through the means: Ȳ = β₀ + β₁X̄ → β₀ = Ȳ - β₁X̄ = 15 - (1.125 * 10) = 3.75.",
+      "hint": "Use the formula for the slope (β₁) and the fact that the regression line passes through (X̄, Ȳ).",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065264082-7b25c",
+      "order": 10,
+      "question": "A simple linear regression model is developed to predict house price (Y, in lakhs INR) based on area (X, in square meters). The regression equation is Ŷ = 50 + 0.5X. If the area (X) is measured in square feet instead of square meters (1 square meter ≈ 10.764 square feet), how would the new slope coefficient change?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The new slope coefficient would remain the same.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The slope changes because the unit of X has changed."
+        },
+        {
+          "letter": "B",
+          "text": "The new slope coefficient would increase.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The slope decreases because the unit of X has increased."
+        },
+        {
+          "letter": "C",
+          "text": "The new slope coefficient would decrease.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The slope decreases as the unit of X increases (1 square meter ≈ 10.764 square feet)."
+        },
+        {
+          "letter": "D",
+          "text": "The new slope coefficient would become zero.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The slope does not become zero; it changes proportionally."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The slope coefficient (β₁) represents the change in Y per unit change in X. If X is converted from square meters to square feet, the new slope (β₁') = β₁ * (1 square meter / 10.764 square feet) = 0.5 * (1 / 10.764) ≈ 0.0465. The slope decreases because the unit of X has increased (1 square meter ≈ 10.764 square feet).",
+      "hint": "The slope coefficient is inversely proportional to the change in the unit of the independent variable.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065264082-054c6",
+      "order": 11,
+      "question": "The coefficient of determination, R², in a simple linear regression model represents:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The slope of the regression line.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The slope of the regression line is represented by the regression coefficient (β₁), not R²."
+        },
+        {
+          "letter": "B",
+          "text": "The strength and direction of the linear relationship between variables.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The strength and direction of the linear relationship is represented by the correlation coefficient (r), not R²."
+        },
+        {
+          "letter": "C",
+          "text": "The proportion of the total variation in the dependent variable that is explained by the independent variable.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "R² represents the proportion of the variance in the dependent variable that is predictable from the independent variable(s)."
+        },
+        {
+          "letter": "D",
+          "text": "The average distance between the observed values and the regression line.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The average distance between observed values and the regression line is related to the standard error of the estimate, not R²."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The coefficient of determination, R², quantifies the proportion of the variance in the dependent variable that is predictable from the independent variable(s). Option A describes the regression coefficient (beta_1). Option B describes the correlation coefficient (r). Option D relates to the standard error of the estimate.",
+      "hint": "R² measures how well the independent variable explains the variability of the dependent variable.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065264082-8eff7",
+      "order": 12,
+      "question": "Which of the following is a fundamental assumption of the Ordinary Least Squares (OLS) method in simple linear regression?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The independent variable (X) must be normally distributed.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The independent variable (X) does not need to be normally distributed for OLS to be valid."
+        },
+        {
+          "letter": "B",
+          "text": "The dependent variable (Y) must be normally distributed.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The dependent variable (Y) does not need to be normally distributed for OLS estimation, though it is often assumed for hypothesis testing."
+        },
+        {
+          "letter": "C",
+          "text": "The error terms (residuals) are normally distributed with a mean of zero and constant variance.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "OLS assumes that the error terms (residuals) are normally distributed with a mean of zero and constant variance (homoscedasticity)."
+        },
+        {
+          "letter": "D",
+          "text": "The relationship between X and Y is always non-linear.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "OLS assumes a linear relationship between X and Y, not a non-linear one."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For valid inference using OLS, the error terms are assumed to be independent, normally distributed with a mean of zero, and have constant variance (homoscedasticity). While X and Y can be normally distributed, it is not a strict assumption for OLS estimation itself, but rather for hypothesis testing on the coefficients. A linear relationship is assumed, not non-linear.",
+      "hint": "OLS assumes that the residuals (errors) meet certain conditions for the estimates to be reliable.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065264082-28ce6",
+      "order": 13,
+      "question": "A simple linear regression model is given by Y = 15 + 2.5X. If a new observation has an independent variable value of X = 10, what is the predicted value of the dependent variable Y?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "17.5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The calculation does not match the regression equation."
+        },
+        {
+          "letter": "B",
+          "text": "25",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The calculation does not match the regression equation."
+        },
+        {
+          "letter": "C",
+          "text": "40",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is correct. Substituting X = 10 into the equation gives Y = 40."
+        },
+        {
+          "letter": "D",
+          "text": "37.5",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The calculation does not match the regression equation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given the regression equation: Y = 15 + 2.5X. Substitute X = 10 into the equation: Y_predicted = 15 + 2.5 * 10 = 15 + 25 = 40.",
+      "hint": "Substitute the given value of X into the regression equation to find the predicted Y.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065264082-dd5e7",
+      "order": 14,
+      "question": "In a simple linear regression model of 'housing price (Y)' in Lakhs of Rupees versus 'area (X)' in square meters, the estimated regression equation is Y = 50 + 0.05X. What is the correct interpretation of the slope coefficient (0.05)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "For every 1 Lakh increase in housing price, the area increases by 0.05 square meters.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This reverses the interpretation of the slope coefficient."
+        },
+        {
+          "letter": "B",
+          "text": "The average housing price for an area of 0 square meters is 50 Lakhs.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This describes the intercept (β₀), not the slope coefficient."
+        },
+        {
+          "letter": "C",
+          "text": "For every 1 square meter increase in area, the housing price is predicted to increase by 0.05 Lakhs.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct interpretation of the slope coefficient."
+        },
+        {
+          "letter": "D",
+          "text": "The housing price is 50 Lakhs when the area is 0.05 square meters.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The intercept describes the housing price when area is 0, not 0.05."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The slope coefficient (β₁) represents the expected change in the dependent variable (Y) for a one-unit increase in the independent variable (X), assuming all other variables are held constant. In this case, for every 1 square meter increase in area, the housing price is predicted to increase by 0.05 Lakhs.",
+      "hint": "The slope coefficient indicates the change in Y for a one-unit change in X.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065264082-75333",
+      "order": 15,
+      "question": "Consider a simple linear regression model Y = β₀ + β₁X + ε. Which of the following statements about the Ordinary Least Squares (OLS) estimators β̂₀ and β̂₁ is generally TRUE under the Gauss-Markov assumptions?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "They are biased but consistent.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "OLS estimators are unbiased under the Gauss-Markov assumptions."
+        },
+        {
+          "letter": "B",
+          "text": "They are always normally distributed, regardless of the error distribution.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Normality of errors is required for the estimators to be normally distributed."
+        },
+        {
+          "letter": "C",
+          "text": "They are the Best Linear Unbiased Estimators (BLUE).",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Under the Gauss-Markov assumptions, OLS estimators are BLUE."
+        },
+        {
+          "letter": "D",
+          "text": "They minimize the sum of absolute errors.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "OLS minimizes the sum of *squared* errors, not absolute errors."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Under the Gauss-Markov assumptions (linearity, random sampling, conditional mean zero errors, homoscedasticity, no perfect multicollinearity), the OLS estimators are the Best Linear Unbiased Estimators (BLUE). This means they are unbiased, linear functions of the observed Y values, and have the smallest variance among all linear unbiased estimators. They minimize the sum of *squared* errors, not absolute errors. Normality of errors is needed for the estimators to be normally distributed, otherwise, the Central Limit Theorem might apply for large samples.",
+      "hint": "The Gauss-Markov theorem states that OLS estimators are BLUE under certain assumptions.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065264082-4ae02",
+      "order": 16,
+      "question": "A researcher performs a simple linear regression and obtains a coefficient of determination (R²) of 0.64. If the slope of the regression line is found to be negative, what is the value of the correlation coefficient (r)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.64",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is R², not the correlation coefficient r."
+        },
+        {
+          "letter": "B",
+          "text": "0.80",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the positive root of R², but the slope is negative, so r must be negative."
+        },
+        {
+          "letter": "C",
+          "text": "-0.64",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The square root of 0.64 is ±0.80, not -0.64."
+        },
+        {
+          "letter": "D",
+          "text": "-0.80",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is correct. The correlation coefficient r is -0.80, matching the negative slope."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The coefficient of determination R² is the square of the correlation coefficient r (i.e., R² = r²). Given R² = 0.64, r² = 0.64. Taking the square root, r = ±√0.64 = ±0.80. Since the slope of the regression line is negative, the correlation coefficient (r) must also be negative, as they always share the same sign in simple linear regression. Therefore, r = -0.80.",
+      "hint": "R² is the square of r, and the sign of r matches the sign of the slope.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065264082-9f28a",
+      "order": 17,
+      "question": "A residual plot for a simple linear regression model shows a distinct U-shaped pattern (residuals are positive for low X, negative for middle X, and positive again for high X). What does this pattern primarily suggest?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The variance of the error terms is not constant (heteroscedasticity).",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Heteroscedasticity typically appears as a fanning-out or fanning-in pattern, not a U-shape."
+        },
+        {
+          "letter": "B",
+          "text": "The error terms are correlated with each other (autocorrelation).",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Autocorrelation might show a cyclical pattern over time for time-series data, not a U-shape."
+        },
+        {
+          "letter": "C",
+          "text": "The linear model is not appropriate; a non-linear relationship might exist.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "A U-shaped residual plot suggests that the linear model is missing a non-linear component."
+        },
+        {
+          "letter": "D",
+          "text": "The independent variable X is highly correlated with the dependent variable Y.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "High correlation between X and Y would generally result in a good fit, not a patterned residual plot."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A distinct pattern in the residual plot, such as a U-shape or inverted U-shape, strongly indicates that the linear model does not adequately capture the relationship between X and Y. This suggests that a non-linear model (e.g., quadratic) might be more appropriate. Heteroscedasticity typically appears as a fanning-out or fanning-in pattern. Autocorrelation might show a cyclical pattern over time for time-series data. High correlation between X and Y would generally result in a good fit, not a patterned residual plot suggesting a poor model choice.",
+      "hint": "A U-shaped residual plot suggests that the linear model is missing a non-linear component.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065264082-508ac",
+      "order": 18,
+      "question": "A simple linear regression model is fitted to 25 data points. The estimated regression equation is Ŷ = 10 + 2.5X. The standard error of the slope coefficient (s_β̂₁) is 0.5. To test the null hypothesis H₀: β₁ = 0 against the alternative H₁: β₁ ≠ 0 at a 5% significance level, what is the calculated t-statistic and the critical value?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "t-statistic = 5.0, Critical Value = 2.064",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The critical value for df = 23 is 2.069, not 2.064."
+        },
+        {
+          "letter": "B",
+          "text": "t-statistic = 2.5, Critical Value = 2.069",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The t-statistic is calculated as 5.0, not 2.5."
+        },
+        {
+          "letter": "C",
+          "text": "t-statistic = 5.0, Critical Value = 2.069",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The t-statistic is 5.0, and the critical value for df = 23 is 2.069."
+        },
+        {
+          "letter": "D",
+          "text": "t-statistic = 2.5, Critical Value = 2.064",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Both the t-statistic and critical value are incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "1. Calculate the t-statistic: t = (β̂₁ - β₁_null) / s_β̂₁ = (2.5 - 0) / 0.5 = 5.0. 2. Determine the Degrees of Freedom (df): df = n - k - 1 = 25 - 1 - 1 = 23. For a two-tailed t-test at 5% significance level with df = 23, the critical value is t_0.025, 23 = 2.069.",
+      "hint": "Calculate the t-statistic using the formula t = (estimated slope - hypothesized slope) / standard error. Degrees of freedom for the t-test in regression is n - 2.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065264082-4c221",
+      "order": 19,
+      "question": "For a two-tailed hypothesis test with a significance level of 5% (α = 0.05) and degrees of freedom (df) equal to 23, what is the critical value of the t-distribution?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.714",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the critical value for a one-tailed test at α = 0.05 with df = 23."
+        },
+        {
+          "letter": "B",
+          "text": "2.069",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct critical value for a two-tailed test at α = 0.05 with df = 23."
+        },
+        {
+          "letter": "C",
+          "text": "2.500",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This value is not associated with the given significance level and degrees of freedom."
+        },
+        {
+          "letter": "D",
+          "text": "2.807",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the critical value for a one-tailed test at α = 0.01 with df = 23."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The critical value for a two-tailed test at α = 0.05 with df = 23 is found using the t-distribution table for t_(α/2, df) = t_(0.025, 23). The value is 2.069.",
+      "hint": "Refer to the t-distribution table for the critical value corresponding to α/2 = 0.025 and df = 23.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065264082-802a0",
+      "order": 20,
+      "question": "In a simple linear regression model (Y = β₀ + β₁X + ε), if an influential outlier point is removed from the dataset, which of the following is MOST likely to occur?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The R² value will always decrease.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "R² can increase if the outlier was pulling the regression line away from the main data, reducing residuals."
+        },
+        {
+          "letter": "B",
+          "text": "The standard error of the regression will always increase.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The standard error may decrease if the outlier was inflating uncertainty in the model."
+        },
+        {
+          "letter": "C",
+          "text": "Both the estimated slope (β̂₁) and its standard error (s_β̂₁) could change significantly.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the most accurate statement, as influential outliers can distort both the slope and its precision."
+        },
+        {
+          "letter": "D",
+          "text": "The intercept (β̂₀) will remain unchanged if the outlier has a high leverage.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The intercept is also likely to change if the outlier has high leverage."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Influential outliers can significantly alter the regression line, especially if they have high leverage. Removing such a point can change both the estimated slope (β̂₁) and its standard error (s_β̂₁), as well as the intercept (β̂₀). The standard error may decrease, and R² may increase if the outlier was distorting the model.",
+      "hint": "Consider the impact of high-leverage points on regression coefficients and model fit.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065384377-a5f02",
+      "order": 21,
+      "question": "Consider a connected undirected graph G = (V, E) with V vertices and E edges. Which of the following statements about its representation is TRUE?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "An adjacency matrix always requires O(V^2) space, regardless of the graph's density.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "An adjacency matrix always requires O(V^2) space because it stores a V x V matrix, regardless of the number of edges."
+        },
+        {
+          "letter": "B",
+          "text": "An adjacency list always requires O(V+E) space, regardless of the graph's density.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "An adjacency list uses O(V + E) space, but this is not always true regardless of density. For dense graphs, the space can be closer to O(V^2)."
+        },
+        {
+          "letter": "C",
+          "text": "For a dense graph (E ≈ V^2), an adjacency list is always more space-efficient than an adjacency matrix.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "For dense graphs, O(V + E) ≈ O(V^2), so an adjacency list offers no significant space advantage over an adjacency matrix."
+        },
+        {
+          "letter": "D",
+          "text": "For a sparse graph (E ≈ V), an adjacency matrix is always more space-efficient than an adjacency list.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "For sparse graphs, O(V + E) ≈ O(V), which is significantly more space-efficient than O(V^2) for an adjacency matrix."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "An adjacency matrix is a V x V matrix where entry M[i][j] indicates an edge between vertex i and vertex j. This representation always requires V*V = O(V^2) space, irrespective of the number of edges (graph density).",
+      "hint": "Recall the space complexity of adjacency matrix and adjacency list representations.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065384377-8d6a7",
+      "order": 22,
+      "question": "Which of the following algorithms can be used to find the shortest path from a source vertex to all other vertices in an unweighted, undirected graph?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Dijkstra's Algorithm",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Dijkstra's algorithm finds shortest paths in graphs with non-negative edge weights. While it would work for an unweighted graph, BFS is simpler and more efficient for this specific case."
+        },
+        {
+          "letter": "B",
+          "text": "Bellman-Ford Algorithm",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Bellman-Ford algorithm finds shortest paths in graphs with potentially negative edge weights (but no negative cycles). It is overkill for unweighted graphs."
+        },
+        {
+          "letter": "C",
+          "text": "Breadth-First Search (BFS)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "BFS explores the graph layer by layer, guaranteeing that it finds the shortest path in terms of the number of edges for an unweighted graph."
+        },
+        {
+          "letter": "D",
+          "text": "Depth-First Search (DFS)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "DFS explores as far as possible along each branch before backtracking. It does not guarantee finding the shortest path in terms of edge count."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "BFS explores the graph layer by layer, guaranteeing that it finds the shortest path in terms of the number of edges for an unweighted graph. The first time a vertex is visited during a BFS traversal from a source, the path to it is the shortest path.",
+      "hint": "Consider the properties of BFS and its suitability for unweighted graphs.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065384377-d9a73",
+      "order": 23,
+      "question": "Consider the following undirected graph with edge weights: Edges: (A, B, 3), (A, C, 4), (B, C, 2), (B, D, 6), (C, D, 5), (C, E, 8), (D, E, 7). What is the weight of the Minimum Spanning Tree (MST) of this graph?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "18",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The total weight of the MST is not 18."
+        },
+        {
+          "letter": "B",
+          "text": "19",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The total weight of the MST is not 19."
+        },
+        {
+          "letter": "C",
+          "text": "20",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The total weight of the MST is not 20."
+        },
+        {
+          "letter": "D",
+          "text": "21",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The total weight of the MST is not 21."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using Kruskal's algorithm, the MST edges are (B, C, 2), (A, B, 3), (C, D, 5), and (D, E, 7). The total weight is 2 + 3 + 5 + 7 = 17.",
+      "hint": "Apply Kruskal's algorithm to find the MST and sum the weights of the selected edges.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065384377-0b0a7",
+      "order": 24,
+      "question": "What is the total weight of the Minimum Spanning Tree (MST) constructed using Kruskal's algorithm for the given graph with adjusted edge weights?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "17",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This was the initial incorrect total weight before adjusting the edge (D, E) to 9."
+        },
+        {
+          "letter": "B",
+          "text": "18",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This does not match the sum of the selected edges in the MST."
+        },
+        {
+          "letter": "C",
+          "text": "19",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The correct total weight of the MST after adjusting the edge (D, E) to 9 is 2 + 3 + 5 + 9 = 19."
+        },
+        {
+          "letter": "D",
+          "text": "20",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This does not match the sum of the selected edges in the MST."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Kruskal's algorithm selects edges in increasing order of weight, avoiding cycles. The edges added to the MST are (B, C, 2), (A, B, 3), (C, D, 5), and (D, E, 9). The total weight is calculated as 2 + 3 + 5 + 9 = 19.",
+      "hint": "Kruskal's algorithm requires selecting edges in ascending order of weight while avoiding cycles. The MST for a graph with 5 vertices will have exactly 4 edges.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065384377-6acb8",
+      "order": 25,
+      "question": "What is the total weight of the Minimum Spanning Tree (MST) edges listed as {(B, C), (A, B), (C, D)} with individual weights 5, 5, and 5 respectively?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option incorrectly sums only two edges (5 + 5) and ignores the third edge."
+        },
+        {
+          "letter": "B",
+          "text": "15",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The total weight is the sum of all three edges: 5 + 5 + 5 = 15."
+        },
+        {
+          "letter": "C",
+          "text": "20",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option incorrectly doubles the sum of the edges."
+        },
+        {
+          "letter": "D",
+          "text": "25",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option incorrectly triples the sum of the edges."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The total weight of the MST is the sum of the weights of all edges in the MST. Here, the edges (B, C), (A, B), and (C, D) each have a weight of 5, so the total weight is 5 + 5 + 5 = 15.",
+      "hint": "Sum the weights of all edges in the MST.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065384377-12846",
+      "order": 26,
+      "question": "Which of the following edges is NOT part of the Minimum Spanning Tree (MST) with edges {(B, C), (A, B), (C, D)}?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(A, C)",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. (A, C) is not listed in the MST edges {(B, C), (A, B), (C, D)}."
+        },
+        {
+          "letter": "B",
+          "text": "(B, C)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. (B, C) is part of the MST."
+        },
+        {
+          "letter": "C",
+          "text": "(A, B)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. (A, B) is part of the MST."
+        },
+        {
+          "letter": "D",
+          "text": "(C, D)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. (C, D) is part of the MST."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The MST consists of the edges (B, C), (A, B), and (C, D). Any edge not listed in this set is not part of the MST.",
+      "hint": "Identify the edges that are not included in the given MST set.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065384377-b15ca",
+      "order": 27,
+      "question": "Consider an undirected graph G = (V, E) with |V| vertices and |E| edges. If G is a connected graph and has exactly |V| - 1 edges, then G must be a:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Complete graph",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "A complete graph has all possible edges between vertices, which is more than |V| - 1 edges."
+        },
+        {
+          "letter": "B",
+          "text": "Cyclic graph",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "A cyclic graph contains at least one cycle, but a tree cannot have cycles."
+        },
+        {
+          "letter": "C",
+          "text": "Tree",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "A tree is a connected, acyclic graph with exactly |V| - 1 edges."
+        },
+        {
+          "letter": "D",
+          "text": "Directed Acyclic Graph (DAG)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "A DAG is a directed graph, while the given graph is undirected."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A tree is defined as an undirected graph that is connected and has no cycles. A fundamental property of a tree with |V| vertices is that it always has exactly |V| - 1 edges.",
+      "hint": "Recall the properties of trees in graph theory.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065384377-4c2ac",
+      "order": 28,
+      "question": "Consider a simple undirected graph with $N$ vertices. What is the maximum number of edges it can have?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$N(N-1)$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This counts ordered pairs, but edges are unordered."
+        },
+        {
+          "letter": "B",
+          "text": "$N(N-1)/2$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the combination formula for choosing 2 vertices out of N."
+        },
+        {
+          "letter": "C",
+          "text": "$N^2$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This overcounts edges and includes invalid cases like self-loops."
+        },
+        {
+          "letter": "D",
+          "text": "$N \u001a \u001a \u001a \u001a \u001a \u001a \u001a \u001a N$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not a valid formula for the maximum number of edges in a simple undirected graph."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A simple undirected graph does not allow self-loops or multiple edges between the same pair of vertices. The number of ways to choose 2 vertices from $N$ vertices is given by the combination formula $C(N, 2) = N(N-1)/2$. This represents the maximum possible number of edges.",
+      "hint": "Think about the number of unique pairs of vertices.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065384377-8e9bf",
+      "order": 29,
+      "question": "Which of the following statements about Breadth-First Search (BFS) is TRUE for an unweighted graph?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "BFS always finds a path with the maximum number of edges between two given vertices.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "BFS finds shortest paths, not longest paths."
+        },
+        {
+          "letter": "B",
+          "text": "BFS always uses a stack data structure for vertex exploration.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "BFS uses a queue, while DFS uses a stack."
+        },
+        {
+          "letter": "C",
+          "text": "BFS always finds a shortest path (in terms of number of edges) from a source vertex to all other reachable vertices.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. This is a key property of BFS in unweighted graphs."
+        },
+        {
+          "letter": "D",
+          "text": "BFS is guaranteed to find a path in a graph containing a cycle.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "BFS can find a path in a graph with a cycle, but it is not guaranteed just because a cycle exists."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For unweighted graphs, BFS explores vertices layer by layer, ensuring the first time a vertex is discovered, the path taken to reach it is a shortest path in terms of the number of edges.",
+      "hint": "BFS is known for finding shortest paths in unweighted graphs.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065384377-252b2",
+      "order": 30,
+      "question": "Given a graph with $V$ vertices and $E$ edges. For a sparse graph where $E \\ll V^2$, which of the following graph representations is generally more space-efficient?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Adjacency Matrix",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Requires $O(V^2)$ space, which is inefficient for sparse graphs."
+        },
+        {
+          "letter": "B",
+          "text": "Adjacency List",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Requires $O(V+E)$ space, which is efficient for sparse graphs."
+        },
+        {
+          "letter": "C",
+          "text": "Incidence Matrix",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Requires $O(V \\times E)$ space, which is typically worse than $O(V^2)$ for sparse graphs."
+        },
+        {
+          "letter": "D",
+          "text": "Both Adjacency Matrix and Adjacency List have similar space complexity.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Their space complexities are distinct, and one is clearly better for sparse graphs."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "An Adjacency List requires $O(V+E)$ space, which is significantly less than $O(V^2)$ for sparse graphs where $E$ is much smaller than $V^2$.",
+      "hint": "Consider the space complexity of different graph representations.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065384377-3c4e6",
+      "order": 31,
+      "question": "Consider the following undirected graph: Vertices: {A, B, C, D, E, F}, Edges: (A,B), (A,C), (B,D), (C,E), (D,F), (E,F). If a Breadth-First Search (BFS) is performed starting from vertex A, which of the following is a possible sequence of vertices visited? (Assume alphabetical order for tie-breaking when choosing next vertex from queue).",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A, B, C, D, E, F",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. This is a valid BFS traversal sequence."
+        },
+        {
+          "letter": "B",
+          "text": "A, C, B, E, D, F",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. BFS explores neighbors in alphabetical order, so B should come before C."
+        },
+        {
+          "letter": "C",
+          "text": "A, B, C, D, E, F",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the same as option A and is correct."
+        },
+        {
+          "letter": "D",
+          "text": "A, D, B, F, C, E",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. D is not a direct neighbor of A, so it cannot be visited second."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Starting from A, BFS explores neighbors in alphabetical order: A -> B, C -> D, E -> F. The sequence A, B, C, D, E, F is a valid BFS traversal.",
+      "hint": "Perform BFS step-by-step, considering alphabetical order for tie-breaking.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065384377-e1429",
+      "order": 32,
+      "question": "What is the shortest path distance from S to T using Dijkstra's algorithm in the given weighted directed graph?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "9",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the shortest path. The path S -> B -> T has a distance of 11, and S -> A -> C -> T has a distance of 8."
+        },
+        {
+          "letter": "B",
+          "text": "8",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The shortest path is S -> A -> C -> T with distances 3 (S->A) + 1 (A->C) + 4 (C->T) = 8."
+        },
+        {
+          "letter": "C",
+          "text": "11",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the distance for the path S -> B -> T, which is not the shortest."
+        },
+        {
+          "letter": "D",
+          "text": "7",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "No path in the graph has a distance of 7 from S to T."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Dijkstra's algorithm computes the shortest path by iteratively relaxing edges and selecting the vertex with the minimum distance. The shortest path from S to T is S -> A -> C -> T with a total distance of 8.",
+      "hint": "Start from vertex S and relax edges to find the minimum distance to T.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065384377-fdec3",
+      "order": 33,
+      "question": "Which of the following statements is TRUE regarding a Minimum Spanning Tree (MST) of a connected, undirected graph with distinct edge weights?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "There can be multiple MSTs if the graph has cycles.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Multiple MSTs can exist only if there are duplicate edge weights. With distinct weights, the MST is unique."
+        },
+        {
+          "letter": "B",
+          "text": "The MST is unique.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is a fundamental property of MSTs with distinct edge weights."
+        },
+        {
+          "letter": "C",
+          "text": "Removing any edge from an MST always disconnects the graph.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Removing an edge from an MST disconnects the MST itself, but the original graph may still be connected via other edges not in the MST."
+        },
+        {
+          "letter": "D",
+          "text": "Adding any edge to an MST creates a unique cycle.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "While adding an edge to an MST does create a cycle, this is not a distinguishing property specific to MSTs with distinct edge weights."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a connected, undirected graph with distinct edge weights, the MST is always unique. This is because the cut property and cycle property ensure that no two edges can be swapped without violating the MST conditions.",
+      "hint": "Consider the properties of MSTs when edge weights are distinct.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065384377-ed6b9",
+      "order": 34,
+      "question": "A directed graph has a topological sort if and only if:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It is a complete graph.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "A complete graph is not necessary for a topological sort. The graph must be acyclic."
+        },
+        {
+          "letter": "B",
+          "text": "It has at least one source vertex.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Having a source vertex is not sufficient. The graph must be acyclic to have a topological sort."
+        },
+        {
+          "letter": "C",
+          "text": "It is a Directed Acyclic Graph (DAG).",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "A DAG is the necessary and sufficient condition for a topological sort."
+        },
+        {
+          "letter": "D",
+          "text": "It is a strongly connected graph.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Strongly connected graphs cannot have a topological sort unless they are trivial (single vertex)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A directed graph has a topological sort if and only if it is a Directed Acyclic Graph (DAG). This is because a topological sort requires a linear ordering of vertices such that for every directed edge (u, v), u comes before v in the ordering, which is only possible if the graph has no cycles.",
+      "hint": "Recall the definition of a topological sort and its relationship with graph cycles.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065384377-ae000",
+      "order": 35,
+      "question": "Which of the following graph traversal algorithms uses a queue to keep track of vertices to visit next?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Depth-First Search (DFS)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "DFS uses a stack (or recursion) to explore vertices, not a queue."
+        },
+        {
+          "letter": "B",
+          "text": "Breadth-First Search (BFS)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "BFS uses a queue to explore vertices level by level."
+        },
+        {
+          "letter": "C",
+          "text": "Dijkstra's algorithm",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Dijkstra's algorithm uses a priority queue, not a standard queue."
+        },
+        {
+          "letter": "D",
+          "text": "Prim's algorithm",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Prim's algorithm uses a priority queue to select the minimum-weight edge."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "BFS uses a queue to explore vertices level by level, ensuring the oldest discovered vertex is visited first, which aligns with the FIFO property of queues.",
+      "hint": "Think about the data structure used to maintain the order of vertex exploration in BFS.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065384377-c3b60",
+      "order": 36,
+      "question": "Consider a directed graph with 5 vertices and the following edges: (1,2), (1,3), (2,4), (3,4), (4,5). What is the in-degree of vertex 4?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Only one edge points to vertex 4."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Edges (2,4) and (3,4) point to vertex 4."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "No third edge points to vertex 4."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "No four edges point to vertex 4."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The in-degree of a vertex is the number of edges coming into it. For vertex 4, edges (2,4) and (3,4) contribute to its in-degree, which is 2.",
+      "hint": "Count the number of edges pointing to vertex 4.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065384377-70c29",
+      "order": 37,
+      "question": "In a binary search tree (BST), what is the time complexity of finding the minimum element?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "O(1)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "O(1) is only possible if the minimum is stored separately."
+        },
+        {
+          "letter": "B",
+          "text": "O(log n) under balanced conditions",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "In a balanced BST, the height is logarithmic, making the traversal O(log n)."
+        },
+        {
+          "letter": "C",
+          "text": "O(n) in the worst case",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "O(n) is the worst-case time for an unbalanced BST."
+        },
+        {
+          "letter": "D",
+          "text": "O(n log n)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "O(n log n) is not relevant for finding the minimum element."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "In a BST, the minimum element is the leftmost node. Traversing to it takes O(h) time, where h is the height. For a balanced BST, h = log n, so the time complexity is O(log n).",
+      "hint": "Consider the height of the BST and how it affects traversal time.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065384377-26140",
+      "order": 38,
+      "question": "Which of the following statements about adjacency lists and adjacency matrices for graph representation is correct?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Adjacency lists are more space-efficient for dense graphs.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Adjacency lists are space-efficient for sparse graphs, not dense ones."
+        },
+        {
+          "letter": "B",
+          "text": "Adjacency matrices allow O(1) time complexity for checking the existence of an edge.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Adjacency matrices provide constant-time access to edge existence."
+        },
+        {
+          "letter": "C",
+          "text": "Adjacency lists always use less memory than adjacency matrices.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Adjacency lists may use less memory for sparse graphs but not always."
+        },
+        {
+          "letter": "D",
+          "text": "Adjacency matrices are preferred for graphs with a large number of vertices and few edges.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Adjacency lists are preferred for such graphs due to space efficiency."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Adjacency matrices allow O(1) time complexity to check if an edge exists between two vertices by directly accessing the matrix entry, unlike adjacency lists which require traversal.",
+      "hint": "Compare the time complexity of edge existence checks in both representations.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065384377-26fcc",
+      "order": 39,
+      "question": "A graph has 8 vertices with degrees 3, 3, 2, 2, 2, 2, 1, and 1. Which of the following is true about this graph?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It is a complete graph.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "A complete graph with 8 vertices would have each vertex with degree 7."
+        },
+        {
+          "letter": "B",
+          "text": "It is a tree.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "A tree with 8 vertices would have 7 edges, but the sum of degrees here is 16 (8 edges)."
+        },
+        {
+          "letter": "C",
+          "text": "It has an Eulerian path but not an Eulerian circuit.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The graph has exactly two vertices of odd degree, satisfying the condition for an Eulerian path."
+        },
+        {
+          "letter": "D",
+          "text": "It cannot exist because the sum of degrees is odd.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The sum of degrees is even (16), so the graph can exist."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The sum of degrees is 3+3+2+2+2+2+1+1 = 16 (even), so the graph can exist. It has exactly two vertices of odd degree (vertices with degree 3 and 3), which means it has an Eulerian path but not an Eulerian circuit.",
+      "hint": "Recall the conditions for Eulerian paths and circuits in graphs.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780065384377-2660b",
+      "order": 40,
+      "question": "In a weighted undirected graph, Prim’s algorithm starts with an arbitrary vertex and grows the minimum spanning tree (MST) by adding the cheapest edge from the tree to a vertex not yet in the tree. What is the time complexity of Prim’s algorithm when implemented using a binary heap?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "O(V + E)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the time complexity for adjacency list traversal, not Prim's algorithm with a binary heap."
+        },
+        {
+          "letter": "B",
+          "text": "O(E log V)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Each edge is processed once, and heap operations take O(log V) time."
+        },
+        {
+          "letter": "C",
+          "text": "O(V^2)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the time complexity for Prim's algorithm using an adjacency matrix."
+        },
+        {
+          "letter": "D",
+          "text": "O(V log V)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This does not account for the number of edges processed."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "When using a binary heap, Prim’s algorithm has a time complexity of O(E log V) because each edge is processed once, and each heap operation (insertion/decrease-key) takes O(log V) time.",
+      "hint": "Consider the operations performed on the binary heap during the algorithm's execution.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ]
+}
