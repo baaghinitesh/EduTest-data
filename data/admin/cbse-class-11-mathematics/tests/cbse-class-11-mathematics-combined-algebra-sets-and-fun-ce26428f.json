@@ -1,0 +1,2088 @@
+{
+  "id": "ce26428f-e712-4308-ab1d-086aa5a6ccc5",
+  "title": "CBSE CLASS 11 MATHEMATICS — Combined: Algebra + Sets and Functions",
+  "description": "Combined test: Algebra + Sets and Functions for CBSE CLASS 11 MATHEMATICS. 40Q.",
+  "board": "Competitive",
+  "classSlug": "cbse-class-11-mathematics",
+  "classNumber": 0,
+  "subjects": [
+    "algebra",
+    "sets-and-functions"
+  ],
+  "subject": "algebra",
+  "chapter": "Multiple Chapters",
+  "topic": "Combined",
+  "testType": "subject-wise",
+  "duration": 120,
+  "totalMarks": 160,
+  "passingMarks": 64,
+  "totalQuestions": 40,
+  "targetQuestions": 40,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "cbse-class-11-mathematics",
+    "algebra",
+    "algebra+sets-and-functions",
+    "functions",
+    "sets"
+  ],
+  "instructions": [
+    "Subject: Algebra + Sets and Functions",
+    "Total Questions: 40",
+    "Total Marks: 160",
+    "Duration: 120 minutes",
+    "Correct answer: +4 mark",
+    "No negative marking"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-05-30T16:39:35.984180Z",
+  "questions": [
+    {
+      "id": "q-1780159115702-ffca2",
+      "order": 1,
+      "question": "The Principle of Mathematical Induction is used to prove statements about:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "All real numbers",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Induction does not apply to all real numbers."
+        },
+        {
+          "letter": "B",
+          "text": "All integers greater than or equal to a fixed integer",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Induction can be applied to integers, but the standard form is for natural numbers."
+        },
+        {
+          "letter": "C",
+          "text": "All natural numbers",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. Induction is primarily used for natural numbers."
+        },
+        {
+          "letter": "D",
+          "text": "All rational numbers",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Induction does not apply to rational numbers."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Principle of Mathematical Induction is specifically used to prove statements that are asserted for all natural numbers or integers starting from a base case.",
+      "hint": "Think about the domain where induction is typically applied.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "algebra",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159115702-13a91",
+      "order": 2,
+      "question": "Which of the following is the correct base case for proving 'For all natural numbers n, $ n^2 + n $ is even' using mathematical induction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ n = 0 $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "While $ 0^2 + 0 = 0 $ is even, natural numbers typically start from 1 in induction."
+        },
+        {
+          "letter": "B",
+          "text": "$ n = 1 $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. $ 1^2 + 1 = 2 $, which is even."
+        },
+        {
+          "letter": "C",
+          "text": "$ n = 2 $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Though $ 2^2 + 2 = 6 $ is even, the base case should start at the smallest natural number."
+        },
+        {
+          "letter": "D",
+          "text": "$ n = 3 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The base case should start at the smallest natural number."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The base case for induction in natural numbers typically starts at $ n = 1 $. For $ n = 1 $, $ 1^2 + 1 = 2 $, which is even.",
+      "hint": "Check the smallest natural number for which the statement holds.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159115702-fbe2f",
+      "order": 3,
+      "question": "Assume that for some $ k \\geq 1 $, $ P(k): 1 + 2 + \\dots + k = \\frac{k(k+1)}{2} $ is true. To prove $ P(k+1) $, one should show that:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ 1 + 2 + \\dots + (k+1) = \\frac{(k+1)(k+2)}{2} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the statement to be proven, not the step."
+        },
+        {
+          "letter": "B",
+          "text": "$ 1 + 2 + \\dots + k + (k+1) = \\frac{k(k+1)}{2} + (k+1) $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This uses the inductive hypothesis and adds $ (k+1) $."
+        },
+        {
+          "letter": "C",
+          "text": "$ 1 + 2 + \\dots + (k+1) = \\frac{k(k+1)}{3} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect formula."
+        },
+        {
+          "letter": "D",
+          "text": "$ 1 + 2 + \\dots + k = \\frac{(k+1)(k+2)}{2} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct step for proving $ P(k+1) $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The correct approach is to start with the left-hand side of $ P(k+1) $ and use the inductive hypothesis $ P(k) $ to substitute the sum up to $ k $, then add $ (k+1) $.",
+      "hint": "Use the inductive hypothesis to express the sum up to $ k+1 $ in terms of the sum up to $ k $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "algebra",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159115702-03670",
+      "order": 4,
+      "question": "Which of the following statements is NOT a valid use of the Principle of Mathematical Induction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Proving that the sum of the first $ n $ odd numbers is $ n^2 $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Valid use of induction."
+        },
+        {
+          "letter": "B",
+          "text": "Proving that $ 2^n > n^2 $ for all $ n \\geq 5 $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Valid use of induction for integers $ n \\geq 5 $."
+        },
+        {
+          "letter": "C",
+          "text": "Proving that a statement holds for all real numbers $ x $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Induction does not apply to real numbers."
+        },
+        {
+          "letter": "D",
+          "text": "Proving that $ n^3 - n $ is divisible by 3 for all natural numbers $ n $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Valid use of induction."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Mathematical induction applies only to statements about natural numbers or integers starting from a base case, not to all real numbers.",
+      "hint": "Consider the domain of the statement being proven.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159115702-6dbb3",
+      "order": 5,
+      "question": "If the base case $ P(1) $ is true and the inductive step '$ P(k) \\implies P(k+1) $' is proven, then by the Principle of Mathematical Induction, the statement $ P(n) $ is true for:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "All integers",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Induction applies to natural numbers, not all integers."
+        },
+        {
+          "letter": "B",
+          "text": "All rational numbers",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Induction does not apply to rational numbers."
+        },
+        {
+          "letter": "C",
+          "text": "All natural numbers $ n \\geq 1 $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The principle guarantees the statement for all natural numbers starting from the base case."
+        },
+        {
+          "letter": "D",
+          "text": "All even natural numbers",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The principle does not restrict the statement to even natural numbers."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The principle guarantees the statement holds for all natural numbers starting from the base case.",
+      "hint": "Recall the conclusion of the Principle of Mathematical Induction.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "algebra",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159115702-60609",
+      "order": 6,
+      "question": "To prove '$ 3^n > 2^n $' for all $ n \\geq 1 $' by induction, the inductive step requires showing:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "If $ 3^k > 2^k $, then $ 3^{k+1} > 2^{k+1} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the statement to be proven, not the step."
+        },
+        {
+          "letter": "B",
+          "text": "If $ 3^k > 2^k $, then $ 3^{k+1} = 3 \\cdot 3^k > 2 \\cdot 2^k = 2^{k+1} $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This uses the inductive hypothesis and multiplies both sides appropriately."
+        },
+        {
+          "letter": "C",
+          "text": "If $ 3^k > 2^k $, then $ 3^{k+1} > 2^k $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This does not correctly compare $ 3^{k+1} $ and $ 2^{k+1} $."
+        },
+        {
+          "letter": "D",
+          "text": "If $ 3^{k} > 2^{k+1} $, then $ 3^{k+1} > 2^{k+1} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct inductive step."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The correct inductive step uses the assumption $ 3^k > 2^k $ and multiplies both sides by 3 and 2 respectively to compare $ 3^{k+1} $ and $ 2^{k+1} $.",
+      "hint": "Use the inductive hypothesis to derive the inequality for $ k+1 $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "algebra",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159115702-5127e",
+      "order": 7,
+      "question": "Which of the following is a common mistake when applying the Principle of Mathematical Induction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Proving the base case $ P(1) $ is true",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a necessary step in induction."
+        },
+        {
+          "letter": "B",
+          "text": "Assuming $ P(k+1) $ is true to prove $ P(k) $ is true",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This reverses the correct direction of the inductive step."
+        },
+        {
+          "letter": "C",
+          "text": "Using the inductive hypothesis $ P(k) $ to prove $ P(k+1) $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct approach."
+        },
+        {
+          "letter": "D",
+          "text": "Verifying the base case and inductive step separately",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is a correct practice in induction."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A common error is reversing the direction of the implication; induction requires proving $ P(k) \\implies P(k+1) $, not the converse.",
+      "hint": "Recall the correct direction of the inductive step.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159115702-a76c9",
+      "order": 8,
+      "question": "The statement 'For all $ n \\geq 1 $, $ 4^n - 1 $ is divisible by 3' can be proven by induction. The inductive step involves showing that if $ 4^k - 1 $ is divisible by 3, then:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ 4^{k+1} - 1 = 4(4^k) - 1 $ is divisible by 3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This does not use the inductive hypothesis."
+        },
+        {
+          "letter": "B",
+          "text": "$ 4^{k+1} - 1 = 4(4^k - 1) + 3 $ is divisible by 3",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This shows divisibility by 3 using the inductive hypothesis."
+        },
+        {
+          "letter": "C",
+          "text": "$ 4^{k+1} - 1 = 3(4^k) $ is divisible by 3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "$ 4^{k+1} - 1 = 4^k - 1 + 3 $ is divisible by 3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The correct expansion is $ 4^{k+1} - 1 = 4 \\cdot 4^k - 1 = 4(4^k - 1) + 4 - 1 = 4(4^k - 1) + 3 $. Since $ 4^k - 1 $ is divisible by 3 (by hypothesis) and 3 is divisible by 3, the entire expression is divisible by 3.",
+      "hint": "Express $ 4^{k+1} - 1 $ in terms of $ 4^k - 1 $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "algebra",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159115702-25330",
+      "order": 9,
+      "question": "A student claims that the Principle of Mathematical Induction can be used to prove the statement 'All horses are the same color.' The flaw in this reasoning is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The base case $ P(1) $ is false",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The base case $ P(1) $ is true (a single horse is the same color as itself)."
+        },
+        {
+          "letter": "B",
+          "text": "The inductive step fails for $ n = 2 $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The inductive step fails for $ n = 2 $, but the base case is not the issue."
+        },
+        {
+          "letter": "C",
+          "text": "The inductive step fails for $ n = 2 $, as there exist two horses of different colors",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The inductive step fails when moving from $ n=1 $ to $ n=2 $."
+        },
+        {
+          "letter": "D",
+          "text": "The statement is not about natural numbers",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The statement is about a set of horses, which can be mapped to natural numbers."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The classic 'all horses are the same color' paradox highlights that the inductive step (assuming $ P(k) $ implies $ P(k+1) $) fails when $ n = 2 $, as two horses may not be the same color.",
+      "hint": "Consider the inductive step for $ n = 2 $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159115702-adc95",
+      "order": 10,
+      "question": "Which of the following is a correct application of the Principle of Mathematical Induction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Proving that $ n^2 - n + 41 $ is prime for all natural numbers $ n $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is false for $ n = 41 $, as $ 41^2 - 41 + 41 = 41^2 $, which is not prime."
+        },
+        {
+          "letter": "B",
+          "text": "Proving that $ 2^n > n^3 $ for all $ n \\geq 1 $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is false for $ n = 10 $, as $ 2^{10} = 1024 $ and $ 10^3 = 1000 $, but $ 2^n $ is not always greater than $ n^3 $."
+        },
+        {
+          "letter": "C",
+          "text": "Proving that $ 1^3 + 2^3 + \\dots + n^3 = \\left( \\frac{n(n+1)}{2} \\right)^2 $ for all $ n \\geq 1 $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. This is a well-known formula that can be proven by induction."
+        },
+        {
+          "letter": "D",
+          "text": "Proving that $ n! > 3^n $ for all $ n \\geq 1 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is false for $ n = 1, 2, 3 $, as $ 1! = 1 < 3^1 = 3 $, $ 2! = 2 < 3^2 = 9 $, and $ 3! = 6 < 3^3 = 27 $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The formula for the sum of cubes is a well-known result that can be proven by induction. The other options are either false (A, B, D) or not universally true (e.g., $ n! > 3^n $ fails for $ n = 1, 2, 3 $).",
+      "hint": "Evaluate the truth of each statement for small values of $ n $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "algebra",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159115702-feb68",
+      "order": 11,
+      "question": "Which of the following is the correct statement of the Principle of Mathematical Induction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "If a statement is true for n = 1, then it is true for all n ∈ ℕ.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incomplete as it does not include the inductive step."
+        },
+        {
+          "letter": "B",
+          "text": "If a statement is true for n = 1 and the truth of the statement for n = k implies the truth for n = k+1, then the statement is true for all n ∈ ℕ.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct statement of the Principle of Mathematical Induction."
+        },
+        {
+          "letter": "C",
+          "text": "If a statement is true for some n = k, then it is true for all n ≥ k.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct statement of induction."
+        },
+        {
+          "letter": "D",
+          "text": "If a statement is true for n = 1 and n = 2, then it is true for all n ∈ ℕ.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not follow the standard induction framework."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Principle of Mathematical Induction requires two steps: verifying the base case (usually n = 1) and proving that if the statement holds for n = k, it also holds for n = k+1. Option B correctly states both conditions.",
+      "hint": "Recall that induction involves a base case and an inductive step.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "algebra",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159115702-6a3f2",
+      "order": 12,
+      "question": "For the statement P(n): 1 + 2 + 3 + … + n = n(n+1)/2, which of the following is the correct base case verification?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "P(0): 0 = 0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The base case usually starts at n = 1, not n = 0."
+        },
+        {
+          "letter": "B",
+          "text": "P(1): 1 = 1(1+1)/2 = 1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct base case verification."
+        },
+        {
+          "letter": "C",
+          "text": "P(2): 1 + 2 = 3 = 2(2+1)/2 = 3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the base case; it is an example of the inductive step."
+        },
+        {
+          "letter": "D",
+          "text": "P(3): 1 + 2 + 3 = 6 = 3(3+1)/2 = 6",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the base case; it is an example of the inductive step."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The base case for induction proofs typically starts at n = 1. Here, P(1) is verified as 1 = 1(1+1)/2 = 1, which is correct. Option A is incorrect because the principle usually starts at n = 1, not n = 0.",
+      "hint": "Check the value of the sum when n = 1.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "algebra",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159115702-87055",
+      "order": 13,
+      "question": "Let P(n) be the statement: 2ⁿ > n². Which of the following is true for the base case n = 1?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "P(1) is false because 2¹ = 2 and 1² = 1, so 2 > 1 is true.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The statement is true, so this option is incorrect."
+        },
+        {
+          "letter": "B",
+          "text": "P(1) is true because 2¹ = 2 > 1² = 1.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct evaluation of the base case."
+        },
+        {
+          "letter": "C",
+          "text": "P(1) is false because 2¹ = 2 is not greater than 1² = 1.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The statement is true, so this option is incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "P(1) is true, but the statement is not valid for induction.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The base case is true, and the statement can be validated further."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For n = 1, 2¹ = 2 and 1² = 1. Since 2 > 1, P(1) is true. Option B is correct.",
+      "hint": "Evaluate both sides of the inequality for n = 1.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "algebra",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159115702-3656f",
+      "order": 14,
+      "question": "Suppose P(k) is true for some k ≥ 1. To prove P(k+1) using induction, which of the following steps is necessary?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Show that P(k) implies P(k-1).",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct inductive step."
+        },
+        {
+          "letter": "B",
+          "text": "Show that P(k) implies P(k+1).",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct inductive step."
+        },
+        {
+          "letter": "C",
+          "text": "Show that P(k+1) is true regardless of P(k).",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The inductive step depends on P(k) being true."
+        },
+        {
+          "letter": "D",
+          "text": "Show that P(1) implies P(k).",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the inductive step."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The inductive step requires proving that if P(k) is true, then P(k+1) must also be true. Option B correctly states this requirement.",
+      "hint": "Recall the inductive step in mathematical induction.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159115702-3a0af",
+      "order": 15,
+      "question": "For the statement P(n): 3ⁿ - 1 is divisible by 2, which of the following is the correct inductive step?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Assume 3ᵏ - 1 is divisible by 2, and show 3^(k+1) - 1 is divisible by 2.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incomplete as it does not show the derivation."
+        },
+        {
+          "letter": "B",
+          "text": "Assume 3ᵏ - 1 is divisible by 2, and show 3^(k+1) - 3 is divisible by 2.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This correctly represents the inductive step."
+        },
+        {
+          "letter": "C",
+          "text": "Assume 3ᵏ is divisible by 2, and show 3^(k+1) - 1 is divisible by 2.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The inductive hypothesis is about 3ᵏ - 1, not 3ᵏ."
+        },
+        {
+          "letter": "D",
+          "text": "Assume 3ᵏ - 1 is divisible by 2, and show 3ᵏ - 1 is divisible by 2.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This does not prove the statement for k+1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To prove divisibility by 2 for 3^(k+1) - 1, we write 3^(k+1) - 1 = 3·3ᵏ - 1 = 3(3ᵏ - 1) + 2. Since 3ᵏ - 1 is divisible by 2 (by the inductive hypothesis) and 2 is divisible by 2, the entire expression is divisible by 2. Option B correctly represents this step.",
+      "hint": "Express 3^(k+1) - 1 in terms of 3ᵏ - 1.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159115702-3b3ee",
+      "order": 16,
+      "question": "Which of the following is an example of a statement that cannot be proved by the Principle of Mathematical Induction as stated?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The sum of the first n natural numbers is n(n+1)/2.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This can be proved using induction."
+        },
+        {
+          "letter": "B",
+          "text": "2ⁿ > n² for all n ≥ 5.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This can be proved using induction."
+        },
+        {
+          "letter": "C",
+          "text": "The product of any two even numbers is even.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a general statement about even numbers, not a sequential one."
+        },
+        {
+          "letter": "D",
+          "text": "n³ + 2n is divisible by 3 for all n ∈ ℕ.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This can be proved using induction."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Principle of Mathematical Induction is used to prove statements about natural numbers where the truth for n = k implies the truth for n = k+1. Option C is a statement about all even numbers, not specifically about natural numbers in a sequential manner, and does not fit the induction framework.",
+      "hint": "Consider whether the statement is about a sequence of natural numbers.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "algebra",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159115702-1a9b2",
+      "order": 17,
+      "question": "Let P(n) be the statement: 1³ + 2³ + … + n³ = (n(n+1)/2)². What is the correct inductive hypothesis for P(k+1)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1³ + 2³ + … + (k+1)³ = ((k+1)(k+2)/2)²",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the statement to be proved, not the hypothesis."
+        },
+        {
+          "letter": "B",
+          "text": "Assume 1³ + 2³ + … + k³ = (k(k+1)/2)², and prove 1³ + 2³ + … + (k+1)³ = ((k+1)(k+2)/2)².",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This correctly states the inductive hypothesis and the goal."
+        },
+        {
+          "letter": "C",
+          "text": "Assume 1³ + 2³ + … + k³ = (k(k+1)/2)², and prove 1³ + 2³ + … + k³ = ((k+1)(k+2)/2)².",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This does not correctly state the goal for P(k+1)."
+        },
+        {
+          "letter": "D",
+          "text": "Assume 1³ + 2³ + … + (k+1)³ = (k(k+1)/2)², and prove 1³ + 2³ + … + (k+1)³ = ((k+1)(k+2)/2)².",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This incorrectly assumes P(k+1) in the hypothesis."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The inductive hypothesis assumes P(k) is true (i.e., the sum of cubes up to k equals the given formula), and the goal is to prove P(k+1) (i.e., the sum of cubes up to k+1 equals the formula with k+1). Option B correctly states this.",
+      "hint": "Recall the structure of an inductive hypothesis.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159115702-41567",
+      "order": 18,
+      "question": "For the statement P(n): 5ⁿ - 1 is divisible by 4, which of the following is the correct base case?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "P(1): 5¹ - 1 = 4, which is divisible by 4.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct base case verification."
+        },
+        {
+          "letter": "B",
+          "text": "P(0): 5⁰ - 1 = 0, which is divisible by 4.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The base case usually starts at n = 1."
+        },
+        {
+          "letter": "C",
+          "text": "P(2): 5² - 1 = 24, which is divisible by 4.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the base case; it is an example of the inductive step."
+        },
+        {
+          "letter": "D",
+          "text": "P(3): 5³ - 1 = 124, which is not divisible by 4.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as 124 is divisible by 4."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The base case for induction is typically n = 1. Here, 5¹ - 1 = 4, which is divisible by 4. Option A is correct.",
+      "hint": "Evaluate the expression for n = 1.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "algebra",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159115702-3915d",
+      "order": 19,
+      "question": "Which of the following is a common mistake when applying the Principle of Mathematical Induction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Not verifying the base case.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a mistake, but not the most common one."
+        },
+        {
+          "letter": "B",
+          "text": "Assuming the inductive hypothesis without proving it.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not a common mistake in induction."
+        },
+        {
+          "letter": "C",
+          "text": "Skipping the inductive step and only verifying the base case.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a common mistake in induction."
+        },
+        {
+          "letter": "D",
+          "text": "Using P(k) to prove P(k-1) instead of P(k+1).",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not a standard mistake in induction."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A common mistake is to verify only the base case and skip the inductive step, assuming the statement holds for all n without proving the implication. Option C is correct.",
+      "hint": "Think about the steps required in induction.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159115702-f92c2",
+      "order": 20,
+      "question": "Let P(n) be the statement: n² + n is even. Which of the following is the correct approach to prove P(k+1) using induction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Assume k² + k is even, and show (k+1)² + (k+1) is odd.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the sum should be even."
+        },
+        {
+          "letter": "B",
+          "text": "Assume k² + k is odd, and show (k+1)² + (k+1) is even.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The inductive hypothesis assumes P(k) is true, i.e., k² + k is even."
+        },
+        {
+          "letter": "C",
+          "text": "Assume k² + k is even, and show (k+1)² + (k+1) = k² + 3k + 2 is even.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This correctly represents the inductive step."
+        },
+        {
+          "letter": "D",
+          "text": "Assume k² + k is even, and show (k+1)² + (k+1) = k² + k + 2(k+1) is odd.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The sum of two even numbers is even, not odd."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To prove P(k+1), we start with the inductive hypothesis that P(k) is true (i.e., k² + k is even). Then, (k+1)² + (k+1) = k² + 2k + 1 + k + 1 = k² + 3k + 2 = (k² + k) + 2(k+1). Since k² + k is even (by hypothesis) and 2(k+1) is even, their sum is even. Option C correctly represents this step.",
+      "hint": "Express (k+1)² + (k+1) in terms of k² + k.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159175983-45a46",
+      "order": 21,
+      "question": "The general term in the expansion of (a + b)^n is given by:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "T_r = C(n, r) * a^{n-r} * b^r",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect indexing; the term should be T_{r+1}."
+        },
+        {
+          "letter": "B",
+          "text": "T_{r+1} = C(n, r) * a^{n-r} * b^r",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct form of the general term in binomial expansion."
+        },
+        {
+          "letter": "C",
+          "text": "T_{r-1} = C(n, r) * a^{r} * b^{n-r}",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect indexing and exponents."
+        },
+        {
+          "letter": "D",
+          "text": "T_r = C(n, r) * a^{r} * b^{n-r}",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect indexing and exponents."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The standard form of the general term in the binomial expansion (a + b)^n is T_{r+1} = C(n, r) * a^{n-r} * b^r, where r ranges from 0 to n.",
+      "hint": "Recall the standard form of the binomial expansion general term.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "sets-and-functions",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159175983-a3999",
+      "order": 22,
+      "question": "The 4th term in the expansion of (x + 2)^6 is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "120x^4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of the term."
+        },
+        {
+          "letter": "B",
+          "text": "40x^3",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect coefficient."
+        },
+        {
+          "letter": "C",
+          "text": "160x^3",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct calculation of the 4th term."
+        },
+        {
+          "letter": "D",
+          "text": "80x^2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect term and exponent."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "General term: T_{r+1} = C(6, r) * x^{6-r} * 2^r. For the 4th term (r = 3): T_4 = C(6, 3) * x^3 * 2^3 = 20 * x^3 * 8 = 160x^3.",
+      "hint": "Use the general term formula for binomial expansion and substitute r = 3 for the 4th term.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "sets-and-functions",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159175984-18df7",
+      "order": 23,
+      "question": "If the coefficient of x^5 in (1 + x)^n is 252, then n is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "8",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "C(8, 5) = 56 ≠ 252."
+        },
+        {
+          "letter": "B",
+          "text": "9",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "C(9, 5) = 126 ≠ 252."
+        },
+        {
+          "letter": "C",
+          "text": "10",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "C(10, 5) = 252."
+        },
+        {
+          "letter": "D",
+          "text": "11",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "C(11, 5) = 462 ≠ 252."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The coefficient of x^5 in (1 + x)^n is C(n, 5) = 252. Solving C(10, 5) = 252, so n = 10.",
+      "hint": "Use the binomial coefficient formula C(n, k) and solve for n.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "sets-and-functions",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159175984-2ca91",
+      "order": 24,
+      "question": "The middle term in the expansion of (2x - 3y)^8 is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(8, 3) * (2x)^5 * (3y)^3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect term and exponents."
+        },
+        {
+          "letter": "B",
+          "text": "C(8, 4) * (2x)^4 * (-3y)^4",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct middle term for the given expansion."
+        },
+        {
+          "letter": "C",
+          "text": "C(8, 4) * (2x)^4 * (-3y)^4",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Duplicate correct option."
+        },
+        {
+          "letter": "D",
+          "text": "C(8, 5) * (2x)^3 * (-3y)^5",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect term and exponents."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For n = 8 (even), the middle term is the (8/2 + 1)th term, i.e., the 5th term (r = 4): T_5 = C(8, 4) * (2x)^4 * (-3y)^4.",
+      "hint": "For even n, the middle term is the (n/2 + 1)th term in the expansion.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "sets-and-functions",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159175984-4e8e9",
+      "order": 25,
+      "question": "The sum of the binomial coefficients in the expansion of (1 + x)^n is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2^n",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct sum of binomial coefficients."
+        },
+        {
+          "letter": "B",
+          "text": "n^2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect formula."
+        },
+        {
+          "letter": "C",
+          "text": "2n",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect formula."
+        },
+        {
+          "letter": "D",
+          "text": "n + 1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect formula."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The sum of binomial coefficients is obtained by setting x = 1 in (1 + x)^n, giving 2^n.",
+      "hint": "Substitute x = 1 in the binomial expansion to find the sum of coefficients.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "sets-and-functions",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159175984-c59fb",
+      "order": 26,
+      "question": "The coefficient of x^6 in (x^2 + 3x)^4 is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "81",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect coefficient."
+        },
+        {
+          "letter": "B",
+          "text": "54",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct coefficient of x^6."
+        },
+        {
+          "letter": "C",
+          "text": "27",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect coefficient."
+        },
+        {
+          "letter": "D",
+          "text": "162",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect coefficient."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Rewrite (x^2 + 3x)^4 = x^4(1 + 3/x)^4. The term containing x^6 comes from x^4 * C(4, 2) * (3/x)^2 = 6 * 9 * x^2 = 54x^2. Wait, correction: The expansion is (x^2 + 3x)^4 = sum_{k=0}^4 C(4, k) * (x^2)^{4-k} * (3x)^k = sum_{k=0}^4 C(4, k) * 3^k * x^{8 - k}. For x^6, 8 - k = 6 => k = 2. Coefficient = C(4, 2) * 3^2 = 6 * 9 = 54.",
+      "hint": "Expand the expression and find the term with x^6.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "sets-and-functions",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159175984-fd6cb",
+      "order": 27,
+      "question": "Using the binomial theorem, the approximate value of (1.02)^5 using the first three terms is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Approximation is less accurate."
+        },
+        {
+          "letter": "B",
+          "text": "1.10408",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Closest approximation to the calculated value."
+        },
+        {
+          "letter": "C",
+          "text": "1.08",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect approximation."
+        },
+        {
+          "letter": "D",
+          "text": "1.06",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect approximation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "(1 + 0.02)^5 ≈ 1 + 5(0.02) + 10(0.02)^2 = 1 + 0.1 + 0.004 = 1.104. Among options, 1.10408 is closest.",
+      "hint": "Use the first three terms of the binomial expansion for approximation.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "sets-and-functions",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159175984-126fb",
+      "order": 28,
+      "question": "The value of sum_{k=0}^n C(n, k)^2 is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C(2n, n-1)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect identity."
+        },
+        {
+          "letter": "B",
+          "text": "C(2n, n)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct identity for the sum of squared binomial coefficients."
+        },
+        {
+          "letter": "C",
+          "text": "C(n, n/2)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect identity."
+        },
+        {
+          "letter": "D",
+          "text": "2^n",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect identity."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a known combinatorial identity: sum_{k=0}^n C(n, k)^2 = C(2n, n).",
+      "hint": "Recall the combinatorial identity involving squares of binomial coefficients.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "sets-and-functions",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159175984-6cbd9",
+      "order": 29,
+      "question": "If (1 + x)^{2n} = sum_{k=0}^{2n} C(2n, k) x^k, then the value of sum_{k=0}^n C(2n, 2k) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2^{2n}",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect sum."
+        },
+        {
+          "letter": "B",
+          "text": "2^{2n-1}",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct sum of even binomial coefficients."
+        },
+        {
+          "letter": "C",
+          "text": "2^{n}",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect sum."
+        },
+        {
+          "letter": "D",
+          "text": "2^{n-1}",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect sum."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The sum of even binomial coefficients in (1 + x)^{2n} is 2^{2n-1} (since sum_{k=0}^{2n} C(2n, k) = 2^{2n} and even/odd terms are equal).",
+      "hint": "Use the property of binomial coefficients for even and odd terms.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "sets-and-functions",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159175984-3f4ce",
+      "order": 30,
+      "question": "Prove that n^5 - n is divisible by 5 for all n ∈ N. Using the binomial theorem, the key step involves:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Expanding (n + 1)^5 and comparing terms",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect key step."
+        },
+        {
+          "letter": "B",
+          "text": "Using (5 - 1)^n and binomial expansion",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect approach."
+        },
+        {
+          "letter": "C",
+          "text": "Expanding (n + 1)^5 - (n + 1) and analyzing modulo 5",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct key step for the proof."
+        },
+        {
+          "letter": "D",
+          "text": "Applying Fermat’s Little Theorem directly",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect approach for this context."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the binomial expansion of (n + 1)^5 - (n + 1) = n^5 + 5n^4 + 10n^3 + 10n^2 + 5n, all terms except n^5 - n are divisible by 5, proving divisibility.",
+      "hint": "Expand (n + 1)^5 and analyze the terms modulo 5.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "sets-and-functions",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159175984-f8bc9",
+      "order": 31,
+      "question": "The binomial expansion of (a + b)^4 is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct expansion of (a + b)^4."
+        },
+        {
+          "letter": "B",
+          "text": "a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Same as option A, but marked as incorrect in the original text."
+        },
+        {
+          "letter": "C",
+          "text": "a^4 + 3a^3b + 3a^2b^2 + ab^3 + b^4",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect coefficients for the binomial expansion."
+        },
+        {
+          "letter": "D",
+          "text": "a^4 + 4a^3b + 3a^2b^2 + 4ab^3 + b^4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect coefficients for the binomial expansion."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The expansion follows the binomial coefficients (4 choose 0), (4 choose 1), (4 choose 2), (4 choose 3), (4 choose 4), which are 1, 4, 6, 4, 1.",
+      "hint": "Recall the binomial theorem: (a + b)^n = Σ (n choose k) * a^(n-k) * b^k from k=0 to n.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "sets-and-functions",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159175984-30da5",
+      "order": 32,
+      "question": "The general term in the expansion of (x + 1/x)^6 is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(6 choose r) x^(6 - 2r)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incomplete representation of the general term."
+        },
+        {
+          "letter": "B",
+          "text": "(6 choose r) x^(6 - r) * (1/x)^r = (6 choose r) x^(6 - 2r)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct general term for the expansion."
+        },
+        {
+          "letter": "C",
+          "text": "(6 choose r) x^(6 + r)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect exponent for x."
+        },
+        {
+          "letter": "D",
+          "text": "(6 choose r) x^r",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect representation of the general term."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The general term T_(r+1) = (6 choose r) * x^(6 - r) * (1/x)^r = (6 choose r) * x^(6 - 2r).",
+      "hint": "Use the binomial theorem for (x + 1/x)^n and simplify the general term.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "sets-and-functions",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159175984-e6d96",
+      "order": 33,
+      "question": "The middle term in the expansion of (3x - 2/x^2)^10 is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5th term",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Only one of the two middle terms."
+        },
+        {
+          "letter": "B",
+          "text": "6th term",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Only one of the two middle terms."
+        },
+        {
+          "letter": "C",
+          "text": "5th and 6th terms (since n = 10 is even, there are two middle terms)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct identification of the middle terms."
+        },
+        {
+          "letter": "D",
+          "text": "7th term",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect term number."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For n = 10, the middle terms are the 5th and 6th terms since n is even.",
+      "hint": "For an even power n, there are two middle terms: the (n/2)th and (n/2 + 1)th terms.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "sets-and-functions",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159175984-4420e",
+      "order": 34,
+      "question": "The coefficient of x^5 in the expansion of (x^2 + 3/x)^10 is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1458",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of the coefficient."
+        },
+        {
+          "letter": "B",
+          "text": "3240",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct coefficient of x^5."
+        },
+        {
+          "letter": "C",
+          "text": "2187",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of the coefficient."
+        },
+        {
+          "letter": "D",
+          "text": "1024",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of the coefficient."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "General term: (10 choose r) * 3^r * x^(20 - 3r). Set 20 - 3r = 5 to find r = 5. Coefficient = (10 choose 5) * 3^5 = 252 * 243 = 3240.",
+      "hint": "Use the general term formula for binomial expansion and solve for the exponent of x.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "sets-and-functions",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159175984-322d0",
+      "order": 35,
+      "question": "If the sum of the coefficients in the expansion of (1 + x)^n is 512, then n is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "2^6 = 64 ≠ 512."
+        },
+        {
+          "letter": "B",
+          "text": "7",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "2^7 = 128 ≠ 512."
+        },
+        {
+          "letter": "C",
+          "text": "8",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "2^8 = 256 ≠ 512."
+        },
+        {
+          "letter": "D",
+          "text": "9",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "2^9 = 512."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Sum of coefficients = (1 + 1)^n = 2^n = 512. Thus, n = 9.",
+      "hint": "The sum of the coefficients in the expansion of (1 + x)^n is obtained by substituting x = 1.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "sets-and-functions",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159175984-09edb",
+      "order": 36,
+      "question": "The approximate value of (1.02)^6 using the first three terms of its binomial expansion is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.106",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect approximation."
+        },
+        {
+          "letter": "B",
+          "text": "1.126",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct approximation using the first three terms."
+        },
+        {
+          "letter": "C",
+          "text": "1.136",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect approximation."
+        },
+        {
+          "letter": "D",
+          "text": "1.146",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect approximation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "(1 + 0.02)^6 ≈ 1 + 6(0.02) + 15(0.02)^2 = 1 + 0.12 + 0.006 = 1.126.",
+      "hint": "Use the binomial expansion for (1 + x)^n and approximate by taking the first three terms.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "sets-and-functions",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159175984-51722",
+      "order": 37,
+      "question": "The value of Σ (n choose k)^2 from k=0 to n is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2^(2n)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect identity."
+        },
+        {
+          "letter": "B",
+          "text": "(2n choose n)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct identity for the sum of squares of binomial coefficients."
+        },
+        {
+          "letter": "C",
+          "text": "n^2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect identity."
+        },
+        {
+          "letter": "D",
+          "text": "2^n",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect identity."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a known combinatorial identity: Σ (n choose k)^2 = (2n choose n).",
+      "hint": "Recall Vandermonde's identity or combinatorial proofs for sums of squares of binomial coefficients.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "sets-and-functions",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159175984-6a851",
+      "order": 38,
+      "question": "If (1 + x)^(2n) = Σ a_k x^k from k=0 to 2n, then the value of Σ (-1)^k a_k from k=0 to 2n is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct evaluation of the alternating sum."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation."
+        },
+        {
+          "letter": "C",
+          "text": "-1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation."
+        },
+        {
+          "letter": "D",
+          "text": "2^(2n)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Substitute x = -1: (1 - 1)^(2n) = 0 = Σ a_k (-1)^k.",
+      "hint": "Use the binomial expansion and substitute x = -1 to evaluate the alternating sum.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "sets-and-functions",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159175984-65972",
+      "order": 39,
+      "question": "The term independent of x in the expansion of (x^2 - 2/x^3)^5 is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "40",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct term independent of x."
+        },
+        {
+          "letter": "B",
+          "text": "-80",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "C",
+          "text": "80",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "-40",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "General term: (5 choose r) * (-2)^r * x^(10 - 5r). Set 10 - 5r = 0 to find r = 2. Term = (5 choose 2) * (-2)^2 = 10 * 4 = 40.",
+      "hint": "Find the value of r for which the exponent of x is zero in the general term.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "sets-and-functions",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780159175984-1dd2d",
+      "order": 40,
+      "question": "The value of (10 choose 0) - (10 choose 1) + (10 choose 2) - ... + (10 choose 10) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct evaluation of the alternating sum."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation."
+        },
+        {
+          "letter": "C",
+          "text": "-1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation."
+        },
+        {
+          "letter": "D",
+          "text": "2^10",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is the expansion of (1 - 1)^10 = 0^10 = 0.",
+      "hint": "Recognize the alternating sum as the binomial expansion of (1 - 1)^n.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "sets-and-functions",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ]
+}
