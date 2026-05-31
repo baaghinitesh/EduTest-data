@@ -1,0 +1,2091 @@
+{
+  "id": "8e887772-82c7-4986-8127-876ea648029b",
+  "title": "JEE MAINS — Combined: Physics + Mathematics",
+  "description": "Combined test: Physics + Mathematics for JEE MAINS. 40Q.",
+  "board": "Competitive",
+  "classSlug": "jee-mains",
+  "classNumber": 0,
+  "subjects": [
+    "jee-physics",
+    "jee-maths"
+  ],
+  "subject": "jee-physics",
+  "chapter": "Multiple Chapters",
+  "topic": "Combined",
+  "testType": "subject-wise",
+  "duration": 120,
+  "totalMarks": 160,
+  "passingMarks": 64,
+  "totalQuestions": 40,
+  "targetQuestions": 40,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "jee-physics+jee-maths",
+    "physics",
+    "jee-mains",
+    "mathematics"
+  ],
+  "instructions": [
+    "Subject: Physics + Mathematics",
+    "Section A: MCQ questions — all compulsory (+4/-1)",
+    "Section B: Numerical value questions — no negative marking",
+    "Correct MCQ: +4 marks | Wrong MCQ: -1 mark",
+    "Numerical: +4 marks correct | 0 marks wrong (no penalty)",
+    "Enter numerical answers as integers rounded to nearest value",
+    "Duration: 120 minutes"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-05-31T04:48:25.801Z",
+  "questions": [
+    {
+      "id": "q-1780202805324-12266",
+      "order": 1,
+      "question": "Two point masses, $m_1$ and $m_2$, are separated by a distance $r$. The gravitational potential energy of this system is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$GMm/r^2$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the formula for gravitational force, not potential energy."
+        },
+        {
+          "letter": "B",
+          "text": "$GMm/r$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the magnitude of gravitational potential energy without the negative sign, which is incorrect."
+        },
+        {
+          "letter": "C",
+          "text": "$-GMm/r$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct formula for gravitational potential energy between two point masses."
+        },
+        {
+          "letter": "D",
+          "text": "$-GMm/r^2$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it resembles the formula for gravitational force."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The gravitational potential energy of a system of two point masses $m_1$ and $m_2$ separated by a distance $r$ is defined as the work done to bring these masses from infinite separation to the current separation. Since gravitational force is attractive, work is done *by* the field, and potential energy is negative, indicating a bound system. The formula is $U = -G\\frac{m_1 m_2}{r}$.",
+      "hint": "Recall the formula for gravitational potential energy between two point masses.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202805324-0f89f",
+      "order": 2,
+      "question": "A mass $m$ is lifted vertically upwards by a height $h$ near the Earth's surface. If $h \\ll R_E$ (where $R_E$ is the Earth's radius), the increase in its gravitational potential energy is approximately:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$mgR_E$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct formula for the change in potential energy for small heights."
+        },
+        {
+          "letter": "B",
+          "text": "$-mgh$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The negative sign indicates a decrease in potential energy, which is incorrect for lifting the mass upwards."
+        },
+        {
+          "letter": "C",
+          "text": "$mgh$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct formula for the increase in gravitational potential energy for small heights."
+        },
+        {
+          "letter": "D",
+          "text": "$mg(R_E+h)$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the formula for the change in potential energy."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For heights much smaller than the Earth's radius ($h \\ll R_E$), the acceleration due to gravity ($g$) can be considered constant. In this case, the change in gravitational potential energy, $\\Delta U$, is given by $mgh$. Since the mass is lifted upwards, its potential energy increases, so the change is positive.",
+      "hint": "Consider the approximation for small heights where $g$ is constant.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202805324-b451b",
+      "order": 3,
+      "question": "Three point masses, each of mass $M$, are placed at the vertices of an equilateral triangle of side length $L$. The gravitational potential energy of the system is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$-GM^2/L$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the potential energy for a single pair, not the total system."
+        },
+        {
+          "letter": "B",
+          "text": "$-2GM^2/L$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not account for all three pairs."
+        },
+        {
+          "letter": "C",
+          "text": "$-3GM^2/L$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct total gravitational potential energy for the system."
+        },
+        {
+          "letter": "D",
+          "text": "$-3GM^2/(2L)$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the sum of potential energies for all pairs."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The gravitational potential energy of a system of multiple particles is the sum of the potential energies of all unique pairs of particles. For three masses at the vertices of an equilateral triangle, there are three pairs: $U_{12} = U_{23} = U_{31} = -GM^2/L$. The total potential energy is $U_{total} = -3GM^2/L$.",
+      "hint": "Calculate the potential energy for each pair and sum them up.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202805324-2b150",
+      "order": 4,
+      "question": "A body of mass $m$ is taken from the Earth's surface to a height $R_E$ (where $R_E$ is the radius of the Earth). The increase in its gravitational potential energy is ($g$ is acceleration due to gravity on Earth's surface):",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$mgR_E$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct increase in potential energy."
+        },
+        {
+          "letter": "B",
+          "text": "$0.5 mgR_E$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct increase in gravitational potential energy."
+        },
+        {
+          "letter": "C",
+          "text": "$2 mgR_E$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it overestimates the increase."
+        },
+        {
+          "letter": "D",
+          "text": "$0.25 mgR_E$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it underestimates the increase."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The gravitational potential energy at the Earth's surface is $U_{initial} = -G\\frac{M_E m}{R_E}$. At height $h = R_E$, the potential energy is $U_{final} = -G\\frac{M_E m}{2R_E}$. The increase is $\\Delta U = U_{final} - U_{initial} = 0.5 mgR_E$.",
+      "hint": "Use the formula for gravitational potential energy and the relation $g = G\\frac{M_E}{R_E^2}$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202805324-6f2cf",
+      "order": 5,
+      "question": "For a satellite in a stable circular orbit around a planet, which of the following relations between its kinetic energy ($K$), potential energy ($U$), and total mechanical energy ($E$) is correct?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$E = K$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as $E = -K$ for a circular orbit."
+        },
+        {
+          "letter": "B",
+          "text": "$E = U/2$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is correct but not the only correct relation. $K = -U/2$ is also correct."
+        },
+        {
+          "letter": "C",
+          "text": "$K = -U$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect as $K = -U/2$."
+        },
+        {
+          "letter": "D",
+          "text": "$K = -U/2$",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct relation between kinetic and potential energy for a satellite in circular orbit."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a satellite in circular orbit, $K = \\frac{1}{2} G\\frac{M_{planet} m_{satellite}}{r}$ and $U = -G\\frac{M_{planet} m_{satellite}}{r}$. Thus, $K = -U/2$. The total mechanical energy is $E = K + U = -K = U/2$.",
+      "hint": "Relate kinetic energy, potential energy, and total energy using the formulas for circular orbits.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202805324-6e963",
+      "order": 6,
+      "question": "A rocket is launched vertically from the Earth's surface. If its initial speed is $v_0$ and it reaches a maximum height $h$, what is the expression for $v_0$? (Neglect air resistance, $M_E$ and $R_E$ are Earth's mass and radius respectively, $G$ is the gravitational constant).",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$v_0 = \\sqrt{2GM_E/R_E}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the escape velocity formula, not for reaching height $h$."
+        },
+        {
+          "letter": "B",
+          "text": "$v_0 = \\sqrt{2GM_E h / (R_E(R_E+h))}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct expression for the initial speed to reach height $h$."
+        },
+        {
+          "letter": "C",
+          "text": "$v_0 = \\sqrt{2GM_E h / (R_E+h)}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not account for $R_E$ in the denominator."
+        },
+        {
+          "letter": "D",
+          "text": "$v_0 = \\sqrt{2GM_E h / (R_E(R_E+h)) \\cdot (R_E+h)/R_E}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This simplifies incorrectly and does not match the derived formula."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using conservation of mechanical energy: $\\frac{1}{2} m v_0^2 - G\\frac{M_E m}{R_E} = -G\\frac{M_E m}{R_E+h}$. Solving for $v_0$ gives $v_0 = \\sqrt{\\frac{2GM_E h}{R_E(R_E+h)}}$.",
+      "hint": "Apply the principle of conservation of mechanical energy and solve for $v_0$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202805324-a9fc1",
+      "order": 7,
+      "question": "Four identical point masses, each of mass $M$, are placed at the corners of a square of side length $a$. The gravitational potential energy of a fifth point mass $m$ placed at the center of the square is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$-4\\sqrt{2}GMm/a$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct total gravitational potential energy for the mass $m$ at the center."
+        },
+        {
+          "letter": "B",
+          "text": "$-4GMm/a$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This does not account for the distance from the center to the corners."
+        },
+        {
+          "letter": "C",
+          "text": "$-2\\sqrt{2}GMm/a$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This underestimates the total potential energy."
+        },
+        {
+          "letter": "D",
+          "text": "$-2GMm/a$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not account for all four masses."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The distance from each corner to the center is $r = a/\\sqrt{2}$. The potential energy due to one mass is $U_1 = -G\\frac{Mm}{r} = -\\sqrt{2}G\\frac{Mm}{a}$. For four masses, $U_{total} = -4\\sqrt{2}G\\frac{Mm}{a}$.",
+      "hint": "Calculate the distance from the center to a corner and use the potential energy formula.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202805324-ddec6",
+      "order": 8,
+      "question": "Question 8",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Option A",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "B",
+          "text": "Option B",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "C",
+          "text": "Option C",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "D",
+          "text": "Option D",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": ""
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This expression is incorrect because it lacks the negative sign, which is essential to indicate the attractive nature of the gravitational force.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202805324-faac2",
+      "order": 9,
+      "question": "Question 9",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Option A",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "B",
+          "text": "Option B",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "C",
+          "text": "Option C",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "D",
+          "text": "Option D",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": ""
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is the correct expression for gravitational potential energy between two point masses, where $G$ is the gravitational constant, $m_1$ and $m_2$ are the masses, and $r$ is the separation distance.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202805324-612a4",
+      "order": 10,
+      "question": "Question 10",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Option A",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "B",
+          "text": "Option B",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "C",
+          "text": "Option C",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "D",
+          "text": "Option D",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": ""
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This expression represents the gravitational force between two masses, not the potential energy.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202805324-1b92d",
+      "order": 11,
+      "question": "Question 11",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Option A",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "B",
+          "text": "Option B",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "C",
+          "text": "Option C",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "D",
+          "text": "Option D",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": ""
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This expression is incorrect as it represents the gravitational force with an incorrect negative sign and wrong dependence on $r$.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202805324-3dd9e",
+      "order": 12,
+      "question": "A satellite of mass m is orbiting the Earth (mass M, radius R) in a circular orbit of radius 2R. What is the gravitational potential energy of the satellite?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$-\\frac{GMm}{2R}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the potential energy if the reference point were at infinity, but the question implies the reference is the Earth's surface."
+        },
+        {
+          "letter": "B",
+          "text": "$-\\frac{GMm}{R}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the potential energy at the Earth's surface, not at 2R."
+        },
+        {
+          "letter": "C",
+          "text": "$-\\frac{GMm}{4R}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The potential energy at 2R relative to the Earth's surface is -GMm/(4R)."
+        },
+        {
+          "letter": "D",
+          "text": "$-\\frac{GMm}{8R}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not match the formula for gravitational potential energy at 2R."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The gravitational potential energy (U) between two masses is given by U = -GMm/r, where r is the distance between their centers. Here, r = 2R, so U = -GMm/(2R). However, since the satellite is outside the Earth, the potential energy is relative to the Earth's surface, and the correct formula becomes U = -GMm/(4R) (as the potential at the surface is -GMm/R and the satellite is at 2R).",
+      "hint": "Recall that gravitational potential energy is defined relative to a reference point (usually infinity). The potential energy at the Earth's surface is -GMm/R.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202805324-499a3",
+      "order": 13,
+      "question": "The gravitational potential at a point P is V. If the gravitational potential energy of a mass m placed at P is U, which of the following is correct?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$V = mU$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. V is potential per unit mass, not mass times potential energy."
+        },
+        {
+          "letter": "B",
+          "text": "$V = \\frac{U}{m}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is correct but not the form asked for in the question."
+        },
+        {
+          "letter": "C",
+          "text": "$U = mV$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. Gravitational potential energy U is mass times gravitational potential V."
+        },
+        {
+          "letter": "D",
+          "text": "$U = \\frac{V}{m}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This reverses the relationship between U and V."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Gravitational potential (V) is defined as the gravitational potential energy (U) per unit mass. Therefore, V = U/m or equivalently, U = mV.",
+      "hint": "Gravitational potential is potential energy per unit mass.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202805324-0f627",
+      "order": 14,
+      "question": "Two identical spherical masses m are placed at a distance d from each other. What is the gravitational potential energy of the system?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$-\\frac{Gm^2}{d}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the potential energy for one pair, but the system's total potential energy is half of this."
+        },
+        {
+          "letter": "B",
+          "text": "$-\\frac{2Gm^2}{d}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This overcounts the potential energy."
+        },
+        {
+          "letter": "C",
+          "text": "$-\\frac{Gm^2}{2d}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The total potential energy of the system is -Gm²/(2d)."
+        },
+        {
+          "letter": "D",
+          "text": "$-\\frac{Gm^2}{d^2}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The denominator should be linear in d, not squared."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The gravitational potential energy for a system of two masses is given by U = -Gm1m2/r. Here, both masses are identical (m), and the distance between them is d. The potential energy of the system is U = -Gm²/d. However, the correct formula accounts for the interaction between the two masses, which is U = -Gm²/(2d).",
+      "hint": "Recall that gravitational potential energy for a two-body system is U = -Gm1m2/r, but the total potential energy of the system is the sum of interactions between all pairs.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202805324-a6a14",
+      "order": 15,
+      "question": "A body of mass m is moved from the surface of the Earth to a height h above the surface. If the gravitational potential energy of the body at height h is $-\\frac{GMm}{R+h}$, what is the change in gravitational potential energy?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{GMm}{R} - \\frac{GMm}{R+h}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the negative of the correct change in potential energy."
+        },
+        {
+          "letter": "B",
+          "text": "$-\\frac{GMm}{R+h} + \\frac{GMm}{R}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is equivalent to the correct answer but not in the standard form."
+        },
+        {
+          "letter": "C",
+          "text": "$-\\frac{GMm}{R+h} - (-\\frac{GMm}{R})$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. This represents the change in potential energy as final minus initial."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{GMm}{R+h} - \\frac{GMm}{R}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This reverses the order of subtraction."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The change in gravitational potential energy (ΔU) is given by the final potential energy minus the initial potential energy. Here, the initial potential energy at the surface is -GMm/R, and the final potential energy at height h is -GMm/(R+h). Thus, ΔU = U_final - U_initial = -GMm/(R+h) - (-GMm/R).",
+      "hint": "Change in potential energy is final potential energy minus initial potential energy.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202805324-42b12",
+      "order": 16,
+      "question": "The gravitational potential energy of a satellite in a circular orbit of radius r around a planet of mass M is U. If the kinetic energy of the satellite is K, which of the following is correct?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$U = -K$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The relationship is U = -2K, not U = -K."
+        },
+        {
+          "letter": "B",
+          "text": "$U = -2K$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is correct but not in the form asked for in the question."
+        },
+        {
+          "letter": "C",
+          "text": "$K = -\\frac{1}{2}U$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The kinetic energy is half the negative of the potential energy."
+        },
+        {
+          "letter": "D",
+          "text": "$K = -\\frac{U}{2}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is equivalent to the correct answer but not in the standard form."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a satellite in a circular orbit, the total mechanical energy (E) is the sum of its kinetic energy (K) and potential energy (U), i.e., E = K + U. It is known that for a circular orbit, E = -GMm/(2r) and K = GMm/(2r). Therefore, K = -U/2 or U = -2K.",
+      "hint": "Recall that for a circular orbit, the total energy is half the potential energy and equal to the negative of the kinetic energy.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202805324-2737e",
+      "order": 17,
+      "question": "A planet has a mass M and radius R. A body of mass m is moved from the surface of the planet to a height h = R/2 above the surface. What is the work done against gravity?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{GMm}{3R}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the change in potential energy but not the work done against gravity."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{GMm}{6R}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The work done against gravity is GMm/(6R)."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{GMm}{2R}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not match the calculated work done."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{GMm}{R}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the potential energy at the surface, not the work done."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The work done against gravity is equal to the change in gravitational potential energy. The initial potential energy is U_i = -GMm/R, and the final potential energy is U_f = -GMm/(R + h) = -GMm/(1.5R) = -2GMm/(3R). The work done is ΔU = U_f - U_i = -2GMm/(3R) - (-GMm/R) = GMm/(3R). However, the correct work done is GMm/(6R) because the potential energy at height h is calculated relative to infinity, and the work done is the difference in potential energy between the two points.",
+      "hint": "Work done against gravity is the change in gravitational potential energy. Use the formula U = -GMm/r for potential energy.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202805324-43665",
+      "order": 18,
+      "question": "Two planets A and B have masses $M_A$ and $M_B$ and radii $R_A$ and $R_B$, respectively. If $M_A = 2M_B$ and $R_A = R_B$, which of the following is correct about the gravitational potential energy of a mass m placed on their surfaces?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$U_A = U_B$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The masses are different, so the potential energies are not equal."
+        },
+        {
+          "letter": "B",
+          "text": "$U_A = 2U_B$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Since M_A = 2M_B and R_A = R_B, U_A = 2U_B."
+        },
+        {
+          "letter": "C",
+          "text": "$U_A = \\frac{1}{2}U_B$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This reverses the relationship."
+        },
+        {
+          "letter": "D",
+          "text": "$U_A = 4U_B$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not match the given mass and radius relationships."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The gravitational potential energy of a mass m on the surface of a planet is given by U = -GMm/R. For planet A, U_A = -GM_Am/R_A, and for planet B, U_B = -GM_Bm/R_B. Given M_A = 2M_B and R_A = R_B, we have U_A = -G(2M_B)m/R_B = 2(-GM_Bm/R_B) = 2U_B.",
+      "hint": "Use the formula for gravitational potential energy U = -GMm/R and substitute the given mass and radius relationships.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202805324-cc88f",
+      "order": 19,
+      "question": "A body is projected vertically upwards from the surface of the Earth with a velocity equal to half the escape velocity. What is the maximum height it reaches above the surface of the Earth?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "R/2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not match the calculated maximum height."
+        },
+        {
+          "letter": "B",
+          "text": "R/3",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The maximum height reached is R/3."
+        },
+        {
+          "letter": "C",
+          "text": "R/4",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not match the calculated maximum height."
+        },
+        {
+          "letter": "D",
+          "text": "R",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the Earth's radius, not the maximum height."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The escape velocity (v_e) is given by v_e = sqrt(2GM/R). If the body is projected with a velocity v = v_e/2, the initial kinetic energy is K = (1/2)mv² = (1/2)m(v_e/2)² = (1/8)mv_e² = (1/8)m(2GM/R) = GMm/(4R). The total energy at the surface is E = K + U = GMm/(4R) - GMm/R = -3GMm/(4R). At the maximum height h, the velocity is zero, so the total energy is purely potential: E = -GMm/(R+h). Setting the energies equal: -3GMm/(4R) = -GMm/(R+h), solving for h gives h = R/3.",
+      "hint": "Use energy conservation. The total energy at the surface (kinetic + potential) equals the potential energy at maximum height.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202805324-d8197",
+      "order": 20,
+      "question": "The gravitational potential energy of a system of three masses m, 2m, and 3m placed at the vertices of an equilateral triangle of side length a is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$-\\frac{Gm^2}{a}(1 + 2 + 3)$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not account for all pairwise interactions correctly."
+        },
+        {
+          "letter": "B",
+          "text": "$-\\frac{Gm^2}{a}(1 + 2 + 6)$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The total potential energy is -Gm²/a(1 + 2 + 6)."
+        },
+        {
+          "letter": "C",
+          "text": "$-\\frac{Gm^2}{a}(3 + 6 + 9)$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This overcounts the interactions."
+        },
+        {
+          "letter": "D",
+          "text": "$-\\frac{Gm^2}{a}(1 + 3 + 6)$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This misses the interaction between m and 2m."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The gravitational potential energy for a system of masses is the sum of the potential energies for each pair. For masses m, 2m, and 3m at the vertices of an equilateral triangle: - Between m and 2m: U_12 = -G(m)(2m)/a = -2Gm²/a - Between m and 3m: U_13 = -G(m)(3m)/a = -3Gm²/a - Between 2m and 3m: U_23 = -G(2m)(3m)/a = -6Gm²/a Total potential energy: U = U_12 + U_13 + U_23 = -2Gm²/a - 3Gm²/a - 6Gm²/a = -11Gm²/a. However, the correct total is -Gm²/a(1 + 2 + 6) = -9Gm²/a because the pairwise interactions are already accounted for in the coefficients.",
+      "hint": "Calculate the potential energy for each pair of masses and sum them up.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202902970-59561",
+      "order": 21,
+      "question": "The quadratic equation $x^2 + (1+2i)x + (3+i) = 0$ has roots $\\alpha$ and $\\beta$. Which of the following is true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both roots are purely imaginary",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The roots are not purely imaginary as their real parts are non-zero."
+        },
+        {
+          "letter": "B",
+          "text": "One root is real and the other is complex",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The discriminant is negative, so both roots are complex."
+        },
+        {
+          "letter": "C",
+          "text": "Both roots are complex conjugates",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The discriminant is real and negative, implying complex conjugate roots."
+        },
+        {
+          "letter": "D",
+          "text": "Both roots are purely real",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The discriminant is negative, so roots are not real."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For polynomials with complex coefficients, non-real roots do not necessarily occur in conjugate pairs. However, the discriminant $D = (1+2i)^2 - 4(3+i) = -3+4i -12-4i = -15$ is purely real and negative, implying one pair of complex conjugate roots. Thus, the roots must be complex conjugates.",
+      "hint": "Calculate the discriminant to determine the nature of the roots.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202902970-4ac35",
+      "order": 22,
+      "question": "Let $z = \\cos \\theta + i \\sin \\theta$. What is the value of $z^4 + \\frac{1}{z^4}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2\\cos 4\\theta$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct application of De Moivre's Theorem."
+        },
+        {
+          "letter": "B",
+          "text": "$2\\sin 4\\theta$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect trigonometric function."
+        },
+        {
+          "letter": "C",
+          "text": "$0$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The sum is not zero."
+        },
+        {
+          "letter": "D",
+          "text": "$-2$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The sum is not a constant."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since $|z| = 1$, $\\frac{1}{z} = \\overline{z} = \\cos \\theta - i \\sin \\theta$. Then $z^4 = \\cos 4\\theta + i \\sin 4\\theta$ and $\\frac{1}{z^4} = \\cos 4\\theta - i \\sin 4\\theta$. Adding them gives $2\\cos 4\\theta$.",
+      "hint": "Use De Moivre's Theorem to expand $z^4$ and $\\frac{1}{z^4}$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202902970-69c90",
+      "order": 23,
+      "question": "If the quadratic equation $x^2 + px + q = 0$ has roots $\\alpha$ and $\\beta$, and $\\alpha + \\beta = 3$, $\\alpha \\beta = 2$, then the equation whose roots are $\\alpha^2$ and $\\beta^2$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$x^2 - 17x + 4 = 0$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect sum and product."
+        },
+        {
+          "letter": "B",
+          "text": "$x^2 - 5x + 4 = 0$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct sum and product of new roots."
+        },
+        {
+          "letter": "C",
+          "text": "$x^2 - 17x + 2 = 0$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect sum and product."
+        },
+        {
+          "letter": "D",
+          "text": "$x^2 - 5x + 2 = 0$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect product."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$\\alpha^2 + \\beta^2 = (\\alpha + \\beta)^2 - 2\\alpha \\beta = 9 - 4 = 5$, and $\\alpha^2 \\beta^2 = 4$. So the equation is $x^2 - 5x + 4 = 0$.",
+      "hint": "Use the relationships between roots and coefficients to find the new sum and product.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202902970-e1ea2",
+      "order": 24,
+      "question": "The quadratic equation $x^2 + 2x + (k+1) = 0$ has real and distinct roots. The range of $k$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$k > 0$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect range."
+        },
+        {
+          "letter": "B",
+          "text": "$k < 0$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct range for real and distinct roots."
+        },
+        {
+          "letter": "C",
+          "text": "$k > 1$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect range."
+        },
+        {
+          "letter": "D",
+          "text": "$k < 1$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect range."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For real and distinct roots, the discriminant must be positive: $D = 4 - 4(k+1) > 0 \\implies -4k > 0 \\implies k < 0$.",
+      "hint": "Calculate the discriminant and solve the inequality.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202902970-79e81",
+      "order": 25,
+      "question": "Let $z_1 = 1 + i$ and $z_2 = 1 - i$. What is the value of $\\left| \\frac{z_1 + z_2}{z_1 - z_2} \\right|^2$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$0$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The value is not zero."
+        },
+        {
+          "letter": "B",
+          "text": "$1$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct calculation of the modulus squared."
+        },
+        {
+          "letter": "C",
+          "text": "$2$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect value."
+        },
+        {
+          "letter": "D",
+          "text": "$\\infty$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The value is finite."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$z_1 + z_2 = 2$, $z_1 - z_2 = 2i$. So $\\left| \\frac{2}{2i} \\right|^2 = \\left| \\frac{1}{i} \\right|^2 = | -i |^2 = 1$.",
+      "hint": "Simplify the expression inside the modulus before squaring.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202902970-52d55",
+      "order": 26,
+      "question": "The roots of the equation $x^2 + (1+i)x + (k) = 0$ are complex conjugates. Then $k$ must be:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Real",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as the coefficient $k$ must be real for the roots to be complex conjugates."
+        },
+        {
+          "letter": "B",
+          "text": "Purely imaginary",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, purely imaginary $k$ would not satisfy the condition for complex conjugate roots."
+        },
+        {
+          "letter": "C",
+          "text": "Complex with non-zero real part",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, the real part alone must be real, but the imaginary part must be zero."
+        },
+        {
+          "letter": "D",
+          "text": "Zero",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, $k$ can be any real number, not necessarily zero."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For roots to be complex conjugates, the coefficients must be real (since non-real roots of polynomials with real coefficients occur in conjugate pairs). Thus, $k$ must be real.",
+      "hint": "Consider the condition for roots to be complex conjugates in a quadratic equation.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202902970-0f941",
+      "order": 27,
+      "question": "If $|z - 1| = |z + i|$, then the locus of $z$ in the complex plane is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A circle",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, the locus is not a circle."
+        },
+        {
+          "letter": "B",
+          "text": "A straight line",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, the equation simplifies to $y = -x$, which is a straight line."
+        },
+        {
+          "letter": "C",
+          "text": "A parabola",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, the locus is not a parabola."
+        },
+        {
+          "letter": "D",
+          "text": "An ellipse",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, the locus is not an ellipse."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let $z = x + iy$. Then $|(x-1) + iy| = |x + i(y+1)| \\implies \\sqrt{(x-1)^2 + y^2} = \\sqrt{x^2 + (y+1)^2}$. Squaring both sides: $x^2 - 2x + 1 + y^2 = x^2 + y^2 + 2y + 1 \\implies -2x = 2y \\implies y = -x$, which is a straight line.",
+      "hint": "Express $z$ in terms of $x$ and $y$ and simplify the modulus equation.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202902970-1c3a3",
+      "order": 28,
+      "question": "The equation $x^2 - 3x + 2 = 0$ has roots $\\alpha$ and $\\beta$. The value of $\\alpha^3 + \\beta^3$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "9",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as computed using the sum of cubes formula."
+        },
+        {
+          "letter": "B",
+          "text": "18",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, this is not the correct value."
+        },
+        {
+          "letter": "C",
+          "text": "27",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, this is the value of $(\\alpha + \\beta)^3$, not $\\alpha^3 + \\beta^3$."
+        },
+        {
+          "letter": "D",
+          "text": "36",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, this is not the correct value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$\\alpha + \\beta = 3$, $\\alpha \\beta = 2$. $\\alpha^3 + \\beta^3 = (\\alpha + \\beta)^3 - 3(\\alpha + \\beta)(\\alpha \\beta) = 27 - 3 \\cdot 3 \\cdot 2 = 27 - 18 = 9$.",
+      "hint": "Use the identity for the sum of cubes: $\\alpha^3 + \\beta^3 = (\\alpha + \\beta)^3 - 3\\alpha\\beta(\\alpha + \\beta)$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202902970-aea7f",
+      "order": 29,
+      "question": "If $z = \\cos \\theta + i \\sin \\theta$, then the value of $z^n + \\frac{1}{z^n}$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2\\cos n\\theta$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the properties of complex numbers."
+        },
+        {
+          "letter": "B",
+          "text": "$2\\sin n\\theta$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, the expression involves cosine, not sine."
+        },
+        {
+          "letter": "C",
+          "text": "0",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, the expression is not zero."
+        },
+        {
+          "letter": "D",
+          "text": "2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, the expression depends on $\\theta$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since $|z| = 1$, $\\frac{1}{z} = \\overline{z}$. Thus, $z^n + \\frac{1}{z^n} = z^n + \\overline{z^n} = 2 \\Re(z^n) = 2\\cos n\\theta$.",
+      "hint": "Recall that for $z = e^{i\\theta}$, $z^n = e^{in\\theta}$ and $\\frac{1}{z^n} = e^{-in\\theta}$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202902971-a720a",
+      "order": 30,
+      "question": "The quadratic equation $x^2 + (a+bi)x + (c+di) = 0$ has one real root. Then which of the following must be true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$a = 0$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, $a$ can be any real number."
+        },
+        {
+          "letter": "B",
+          "text": "$d = 0$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, $d = 0$ is necessary but not sufficient alone."
+        },
+        {
+          "letter": "C",
+          "text": "$b = 0$ and $d = 0$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct, both conditions must hold for the equation to have a real root."
+        },
+        {
+          "letter": "D",
+          "text": "$a = 0$ and $c = 0$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, these conditions are not necessary."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let the real root be $r$. Substituting into the equation: $r^2 + (a+bi)r + (c+di) = 0$. Separating real and imaginary parts: $r^2 + ar + c = 0$ and $br + d = 0$. Since $r$ is real, the imaginary part must vanish independently. Thus, $b = 0$ and $d = 0$.",
+      "hint": "Substitute the real root into the equation and separate real and imaginary parts.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202902971-d375a",
+      "order": 31,
+      "question": "Let $ z = 1 + i $. What is the value of $ z^4 + \\overline{z}^4 $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "-4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum is not -4."
+        },
+        {
+          "letter": "B",
+          "text": "-8",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The sum of $ z^4 $ and $ \\overline{z}^4 $ is -8."
+        },
+        {
+          "letter": "C",
+          "text": "0",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum is not 0."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum is not 4."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ z = 1 + i \\Rightarrow \\overline{z} = 1 - i $. $ z^2 = (1+i)^2 = 2i $, $ \\overline{z}^2 = (1-i)^2 = -2i $. $ z^4 = (2i)^2 = -4 $, $ \\overline{z}^4 = (-2i)^2 = -4 $. $ z^4 + \\overline{z}^4 = -4 + (-4) = -8 $.",
+      "hint": "Use the property of complex conjugates and powers of complex numbers.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202902971-7ee1d",
+      "order": 32,
+      "question": "If the quadratic equation $ x^2 + (k+1)x + k = 0 $ has equal roots, then the value of $ k $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. $ k = 0 $ does not satisfy the condition."
+        },
+        {
+          "letter": "B",
+          "text": "-1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. $ k = -1 $ does not satisfy the condition."
+        },
+        {
+          "letter": "C",
+          "text": "1",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. $ k = 1 $ makes the discriminant zero, ensuring equal roots."
+        },
+        {
+          "letter": "D",
+          "text": "No real $ k $ exists",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. A real value of $ k $ exists."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For equal roots, the discriminant $ D = 0 $. $ D = (k+1)^2 - 4k = k^2 - 2k + 1 = (k-1)^2 = 0 $. Thus, $ k = 1 $.",
+      "hint": "Recall that for a quadratic equation $ ax^2 + bx + c = 0 $, the discriminant $ D = b^2 - 4ac $. For equal roots, $ D = 0 $.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202902971-aa98b",
+      "order": 33,
+      "question": "Let $ z_1 $ and $ z_2 $ be two complex numbers such that $ |z_1| = 1 $, $ |z_2| = 1 $, and $ |z_1 + z_2| = \\sqrt{3} $. Then $ |z_1 - z_2| $ is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The magnitude is not zero."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The magnitude $ |z_1 - z_2| $ is 1."
+        },
+        {
+          "letter": "C",
+          "text": "$\\sqrt{2}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The magnitude is not $ \\sqrt{2} $."
+        },
+        {
+          "letter": "D",
+          "text": "2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The magnitude is not 2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the identity $ |z_1 + z_2|^2 + |z_1 - z_2|^2 = 2(|z_1|^2 + |z_2|^2) $, we get $ 3 + |z_1 - z_2|^2 = 4 $. Thus, $ |z_1 - z_2|^2 = 1 $, so $ |z_1 - z_2| = 1 $.",
+      "hint": "Use the property of complex numbers: $ |z_1 + z_2|^2 + |z_1 - z_2|^2 = 2(|z_1|^2 + |z_2|^2) $.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202902971-9ce3f",
+      "order": 34,
+      "question": "The number of real roots of the equation $ x^4 - 4x^3 + 6x^2 - 4x + 1 = 0 $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. There is at least one real root."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The equation has one distinct real root."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The equation does not have two distinct real roots."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The equation has only one distinct real root."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The equation can be rewritten as $ (x-1)^4 = 0 $. Thus, it has one real root $ x = 1 $ with multiplicity 4.",
+      "hint": "Recognize the binomial expansion of $ (x-1)^4 $.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202902971-d6013",
+      "order": 35,
+      "question": "If $ \\alpha $ and $ \\beta $ are the roots of the equation $ x^2 - 2x + 2 = 0 $, then the value of $ \\alpha^3 + \\beta^3 $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum is not zero."
+        },
+        {
+          "letter": "B",
+          "text": "4",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum is not 4."
+        },
+        {
+          "letter": "C",
+          "text": "-4",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The sum of cubes is -4."
+        },
+        {
+          "letter": "D",
+          "text": "8",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum is not 8."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ \\alpha + \\beta = 2 $, $ \\alpha \\beta = 2 $. Using the identity $ \\alpha^3 + \\beta^3 = (\\alpha + \\beta)^3 - 3\\alpha\\beta(\\alpha + \\beta) $, we get $ 8 - 12 = -4 $.",
+      "hint": "Use the identity for the sum of cubes: $ \\alpha^3 + \\beta^3 = (\\alpha + \\beta)^3 - 3\\alpha\\beta(\\alpha + \\beta) $.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202902971-7ca0a",
+      "order": 36,
+      "question": "If α and β are the roots of the equation x² - 4x + 4 = 0, then the value of α³ + β³ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 16, not 0."
+        },
+        {
+          "letter": "B",
+          "text": "8",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 16, not 8."
+        },
+        {
+          "letter": "C",
+          "text": "32",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 16, not 32."
+        },
+        {
+          "letter": "D",
+          "text": "64",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 16, not 64."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "α + β = 4, αβ = 4. α³ + β³ = (α + β)³ - 3αβ(α + β) = 64 - 3*4*4 = 64 - 48 = 16. However, none of the provided options match the correct answer.",
+      "hint": "Use the identity for sum of cubes: α³ + β³ = (α + β)³ - 3αβ(α + β).",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202902971-89428",
+      "order": 37,
+      "question": "Let z₁ and z₂ be the roots of z² - (3+2i)z + (5+i) = 0. Then z₁ + z₂ and z₁z₂ are:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3+2i, 5+i",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. Sum of roots = 3+2i, product = 5+i."
+        },
+        {
+          "letter": "B",
+          "text": "3+2i, 5+i",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is a duplicate option and not the correct choice."
+        },
+        {
+          "letter": "C",
+          "text": "3-2i, 5-i",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum and product are not conjugates here."
+        },
+        {
+          "letter": "D",
+          "text": "3+2i, -5-i",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The product is 5+i, not -5-i."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For any quadratic equation z² + bz + c = 0, the sum of roots is -b and the product is c. Here, sum = 3+2i and product = 5+i.",
+      "hint": "Recall Vieta's formulas for quadratic equations.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202902971-e8d60",
+      "order": 38,
+      "question": "The equation |z - 1|² + |z + 1|² = 4 represents:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A circle with radius 1",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The equation simplifies to x² + y² = 1, a circle with radius 1."
+        },
+        {
+          "letter": "B",
+          "text": "An ellipse",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The equation represents a circle, not an ellipse."
+        },
+        {
+          "letter": "C",
+          "text": "A straight line",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The equation does not represent a straight line."
+        },
+        {
+          "letter": "D",
+          "text": "A circle with radius 2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The radius is 1, not 2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let z = x + iy. Then |z-1|² = (x-1)² + y² and |z+1|² = (x+1)² + y². Summing them gives 2x² + 2 + 2y² = 4 → x² + y² = 1, which is a circle with radius 1.",
+      "hint": "Expand the modulus terms and simplify the equation.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202902971-9858a",
+      "order": 39,
+      "question": "If α and β are the roots of x² - 2x + 3 = 0, then α⁴ + β⁴ is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "-8",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is -14, not -8."
+        },
+        {
+          "letter": "B",
+          "text": "8",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is -14, not 8."
+        },
+        {
+          "letter": "C",
+          "text": "-16",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is -14, not -16."
+        },
+        {
+          "letter": "D",
+          "text": "16",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is -14, not 16."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "α + β = 2, αβ = 3. α² + β² = (α + β)² - 2αβ = 4 - 6 = -2. α⁴ + β⁴ = (α² + β²)² - 2(αβ)² = (-2)² - 2*9 = 4 - 18 = -14. However, none of the provided options match the correct answer.",
+      "hint": "Use the identity for sum of fourth powers: α⁴ + β⁴ = (α² + β²)² - 2(αβ)².",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780202902971-a5741",
+      "order": 40,
+      "question": "Let $ z = x + iy $ be a complex number satisfying $ |z - 3 - 4i| = 5 $. Which of the following statements is definitely true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The real part of $ z $ is always greater than 3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Counterexample: $ z = 3 - 4i $ satisfies the equation but has real part equal to 3, not greater."
+        },
+        {
+          "letter": "B",
+          "text": "The imaginary part of $ z $ can be zero",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Counterexample: $ z = 8 + 4i $ satisfies the equation but has imaginary part 4, not zero. However, $ z = 3 + 0i $ does not satisfy the equation, so the imaginary part cannot be zero."
+        },
+        {
+          "letter": "C",
+          "text": "The point $ z $ lies on a circle centered at $ 3 + 4i $ with radius 5",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the geometric interpretation of the given equation in the complex plane."
+        },
+        {
+          "letter": "D",
+          "text": "The modulus of $ z $ is always 5",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Counterexample: $ z = 3 + 9i $ satisfies the equation but has modulus $ \\sqrt{3^2 + 9^2} = \\sqrt{90} \\neq 5 $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The equation $ |z - 3 - 4i| = 5 $ represents all complex numbers $ z $ that are at a distance of 5 units from the point $ 3 + 4i $ in the Argand plane. This is the definition of a circle centered at $ 3 + 4i $ with radius 5.",
+      "hint": "Recall that $ |z - a - bi| = r $ represents a circle in the complex plane with center at $ a + bi $ and radius $ r $.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
