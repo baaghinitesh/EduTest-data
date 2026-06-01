@@ -1,0 +1,1071 @@
+{
+  "id": "cc670577-1b4a-4875-823d-eb22ce31b42b",
+  "title": "GATE — Core Engineering Subject | Microprocessors",
+  "description": "Subject-wise test on Microprocessors (Core Engineering Subject) for GATE. 20Q.",
+  "board": "Competitive",
+  "classSlug": "gate",
+  "classNumber": 0,
+  "subjects": [
+    "gate-core"
+  ],
+  "subject": "gate-core",
+  "chapter": "Digital Logic",
+  "topic": "Microprocessors",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 40,
+  "passingMarks": 16,
+  "totalQuestions": 20,
+  "targetQuestions": 20,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "gate-core",
+    "logic",
+    "gate",
+    "digital",
+    "microprocessors"
+  ],
+  "instructions": [
+    "Subject: Core Engineering Subject",
+    "Total Questions: 20",
+    "Total Marks: 40",
+    "Duration: 60 minutes",
+    "Correct answer: +2 mark",
+    "Wrong answer: -0.67 mark",
+    "Topic: Microprocessors"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-06-01T20:02:08.440Z",
+  "questions": [
+    {
+      "id": "q-1780344125869-b80d1",
+      "order": 1,
+      "question": "Which of the following registers in the 8085 microprocessor is a 16-bit register used to hold the address of the next instruction to be fetched from memory?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Accumulator",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Accumulator is an 8-bit register for arithmetic/logic operations."
+        },
+        {
+          "letter": "B",
+          "text": "Stack Pointer",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Stack Pointer is a 16-bit register used for stack operations."
+        },
+        {
+          "letter": "C",
+          "text": "Program Counter",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Program Counter is a 16-bit register that stores the memory address of the next instruction to be executed."
+        },
+        {
+          "letter": "D",
+          "text": "Instruction Register",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Instruction Register holds the opcode of the instruction currently being executed."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Program Counter (PC) is a 16-bit register that stores the memory address of the next instruction to be executed. The Accumulator (A) is an 8-bit register for arithmetic/logic operations. The Stack Pointer (SP) is a 16-bit register used for stack operations. The Instruction Register (IR) holds the opcode of the instruction currently being executed.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780344125869-a0bf9",
+      "order": 2,
+      "question": "Which of the following 8085 microprocessor pins is used to differentiate between memory access and I/O access?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "IO/M*",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The IO/M* (Input/Output / Memory) pin is a status signal in the 8085 microprocessor."
+        },
+        {
+          "letter": "B",
+          "text": "S0, S1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "S0 and S1 are status signals but indicate the type of machine cycle."
+        },
+        {
+          "letter": "C",
+          "text": "RD*, WR*",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "RD* and WR* are control signals for read and write operations, respectively, but they don't differentiate between memory and I/O by themselves."
+        },
+        {
+          "letter": "D",
+          "text": "ALE",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "ALE (Address Latch Enable) is used to demultiplex the address/data bus."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The IO/M* pin is used to differentiate between memory access and I/O access.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780344125870-640a4",
+      "order": 3,
+      "question": "Consider the following 8085 assembly language instructions: MVI A, 05H ORI 0FAH What will be the content of the Accumulator (A) and the Zero Flag (Z) after the execution of these two instructions?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A = 00H, Z = 1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The result of the OR operation is not 00H."
+        },
+        {
+          "letter": "B",
+          "text": "A = FFH, Z = 0",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The result of the OR operation is not FFH."
+        },
+        {
+          "letter": "C",
+          "text": "A = 0FH, Z = 0",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The result of the OR operation is not 0FH."
+        },
+        {
+          "letter": "D",
+          "text": "A = F5H, Z = 0",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The result of the OR operation is F5H and the Zero Flag (Z) is reset to 0."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Accumulator will contain F5H and the Zero Flag (Z) will be reset to 0.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780344125870-e2d0d",
+      "order": 4,
+      "question": "A particular 8086 microprocessor is operating at a clock frequency of 5 MHz. How many clock cycles would be required to execute the instruction MOV AX, [BX+SI+1000H] if the effective address calculation takes 8 clock cycles and the memory read operation takes 4 clock cycles?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "12 clock cycles",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Total clock cycles = EA Calculation cycles + Memory Read cycles = 8 + 4 = 12 clock cycles."
+        },
+        {
+          "letter": "B",
+          "text": "8 clock cycles",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Only accounts for the effective address calculation cycles."
+        },
+        {
+          "letter": "C",
+          "text": "4 clock cycles",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Only accounts for the memory read operation cycles."
+        },
+        {
+          "letter": "D",
+          "text": "16 clock cycles",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of total clock cycles."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The total clock cycles required is the sum of the effective address calculation cycles and the memory read operation cycles.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780344125870-ce75c",
+      "order": 5,
+      "question": "Which of the following 8086 addressing modes is used in the instruction MOV AX, 2000H[BX]",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Direct Addressing Mode",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Only displacement is used in Direct Addressing Mode."
+        },
+        {
+          "letter": "B",
+          "text": "Register Indirect Addressing Mode",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Only a base register is used in Register Indirect Addressing Mode."
+        },
+        {
+          "letter": "C",
+          "text": "Based Indexed Addressing Mode",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The instruction uses a base register (BX) and a displacement (2000H)."
+        },
+        {
+          "letter": "D",
+          "text": "Relative Based Addressing Mode",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Not a standard addressing mode in the 8086 microprocessor."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The instruction uses the Based Indexed Addressing mode.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780344125870-a36e5",
+      "order": 6,
+      "question": "In the 8085 microprocessor, what is the vector address for the RST 6.5 interrupt?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0030H",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Not the correct vector address for RST 6.5."
+        },
+        {
+          "letter": "B",
+          "text": "0034H",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The correct vector address for RST 6.5 is 0034H."
+        },
+        {
+          "letter": "C",
+          "text": "0038H",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Not the correct vector address for RST 6.5."
+        },
+        {
+          "letter": "D",
+          "text": "002CH",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The vector address for RST 5.5 is 002CH."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The vector address for RST 6.5 is 0034H.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780344125870-465bf",
+      "order": 7,
+      "question": "Consider an 8085 microprocessor system with a clock frequency of 3 MHz. A subroutine named DELAY is called, which contains the following instructions: ... What is the approximate total delay produced by this subroutine in microseconds?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "100 µs",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of total delay."
+        },
+        {
+          "letter": "B",
+          "text": "123 µs",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of total delay."
+        },
+        {
+          "letter": "C",
+          "text": "130 µs",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of total delay."
+        },
+        {
+          "letter": "D",
+          "text": "133 µs",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The correct calculation of total delay based on the T-states for each instruction."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The total delay is calculated by summing the T-states for each instruction and converting to microseconds.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780344125870-e56f9",
+      "order": 8,
+      "question": "What is the total number of T-states for the given 8085 microprocessor code?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "140",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect total T-states."
+        },
+        {
+          "letter": "B",
+          "text": "154",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct total T-states."
+        },
+        {
+          "letter": "C",
+          "text": "157",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect total T-states."
+        },
+        {
+          "letter": "D",
+          "text": "163",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect total T-states."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The total number of T-states is calculated by adding the T-states for each instruction: MVI C, 0AH (7 T-states), DCR C (10 * 4 = 40 T-states), JNZ LOOP (9 * 10 + 1 * 7 = 97 T-states), and RET (10 T-states).",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780344125870-91845",
+      "order": 9,
+      "question": "What is the approximate total delay for the given 8085 microprocessor code?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "50 µs",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect delay."
+        },
+        {
+          "letter": "B",
+          "text": "51.33 µs",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct delay."
+        },
+        {
+          "letter": "C",
+          "text": "52.33 µs",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect delay."
+        },
+        {
+          "letter": "D",
+          "text": "55 µs",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect delay."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The approximate total delay is calculated by multiplying the total number of T-states by the time per T-state (1/3 * 10^6 seconds or 0.333 microseconds).",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780344125870-238b9",
+      "order": 10,
+      "question": "How many times does the JNZ LOOP instruction execute with a jump?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "8",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect number of iterations."
+        },
+        {
+          "letter": "B",
+          "text": "9",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct number of iterations."
+        },
+        {
+          "letter": "C",
+          "text": "10",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect number of iterations."
+        },
+        {
+          "letter": "D",
+          "text": "11",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect number of iterations."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The JNZ LOOP instruction executes with a jump 9 times, once for each iteration where C is not zero.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780344125870-24717",
+      "order": 11,
+      "question": "What is the total number of T-states for the DCR C instruction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "30",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect total T-states."
+        },
+        {
+          "letter": "B",
+          "text": "40",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct total T-states."
+        },
+        {
+          "letter": "C",
+          "text": "50",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect total T-states."
+        },
+        {
+          "letter": "D",
+          "text": "60",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect total T-states."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The DCR C instruction executes 10 times, once for each iteration of the loop, resulting in a total of 10 * 4 = 40 T-states.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780344125870-4c921",
+      "order": 12,
+      "question": "In an 8085 microprocessor, which of the following registers is used to hold the 16-bit address of the next instruction to be fetched from memory?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Accumulator (A)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The Accumulator holds 8-bit data and is not used to hold the address of the next instruction."
+        },
+        {
+          "letter": "B",
+          "text": "Stack Pointer (SP)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The Stack Pointer is a 16-bit register that stores the memory address of the top of the stack, not the address of the next instruction."
+        },
+        {
+          "letter": "C",
+          "text": "Program Counter (PC)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The Program Counter is a 16-bit register that stores the memory address of the next instruction to be executed."
+        },
+        {
+          "letter": "D",
+          "text": "Instruction Register (IR)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The Instruction Register holds the current instruction being executed, not the address of the next instruction."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Program Counter (PC) is a 16-bit register that stores the memory address of the next instruction to be executed.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780344125870-4d0b2",
+      "order": 13,
+      "question": "Which of the following pins of the 8085 microprocessor is used to indicate that the data bus is in a high-impedance state?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ALE",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "ALE (Address Latch Enable) is used to latch the lower 8 bits of the address bus."
+        },
+        {
+          "letter": "B",
+          "text": "HLDA",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "HLDA (Hold Acknowledge) indicates that the processor has granted the bus to another master."
+        },
+        {
+          "letter": "C",
+          "text": "HOLD",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "HOLD is used to request the bus from the processor."
+        },
+        {
+          "letter": "D",
+          "text": "READY",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "READY is used to synchronize the processor with slower peripherals and can place the data bus in a high-impedance state."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The READY pin is used to synchronize the microprocessor with slower peripherals. When READY is low, the 8085 enters a wait state, and the data bus goes into a high-impedance state to allow other devices to use the bus.",
+      "hint": "This pin is used to handle synchronization with slower devices.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780344125870-143f7",
+      "order": 14,
+      "question": "In the 8085 instruction set, which instruction is used to load the accumulator with the contents of the memory location pointed to by the HL register pair?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "LDA addr",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "LDA addr loads the accumulator directly from a specified address."
+        },
+        {
+          "letter": "B",
+          "text": "STA addr",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "STA addr stores the accumulator contents at a specified address."
+        },
+        {
+          "letter": "C",
+          "text": "MOV A, M",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "MOV A, M loads the accumulator with the contents of the memory location pointed to by the HL register pair."
+        },
+        {
+          "letter": "D",
+          "text": "LHLD addr",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "LHLD addr loads the HL register pair directly from a specified address."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The MOV A, M instruction copies the contents of the memory location pointed to by the HL register pair into the accumulator. This is a direct memory access instruction in the 8085 instruction set.",
+      "hint": "This instruction uses the HL register pair to point to memory.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780344125870-8aeee",
+      "order": 15,
+      "question": "A designer is interfacing an 8-bit DAC with the 8085 microprocessor. If the DAC uses memory-mapped I/O, which of the following address lines must be decoded to generate the chip select signal for the DAC?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A0–A7",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "A0–A7 are used for lower address decoding within a memory block."
+        },
+        {
+          "letter": "B",
+          "text": "A8–A15",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "A8–A15 are used for higher address decoding but not typically for chip select alone."
+        },
+        {
+          "letter": "C",
+          "text": "A15 only",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "A15 is often used to generate the chip select signal for memory-mapped I/O devices."
+        },
+        {
+          "letter": "D",
+          "text": "A0 only",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "A0 alone is insufficient for chip select generation in memory-mapped I/O."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "In memory-mapped I/O, the DAC is treated as a memory location. The 8085 uses the higher address lines (A8–A15) to select the memory block, but the chip select is typically generated using A15 to ensure the DAC is uniquely addressed.",
+      "hint": "Memory-mapped I/O treats I/O devices as memory locations, often using higher address lines for chip selection.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780344125870-2f2de",
+      "order": 16,
+      "question": "For the 8085 microprocessor, which of the following statements about the TRAP interrupt is correct?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It is a maskable interrupt.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "TRAP is a non-maskable interrupt."
+        },
+        {
+          "letter": "B",
+          "text": "It has the lowest priority among all interrupts.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "TRAP has the highest priority among all interrupts."
+        },
+        {
+          "letter": "C",
+          "text": "Its interrupt service routine starts at memory address 0024H.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The ISR for TRAP starts at address 0024H in the interrupt vector table."
+        },
+        {
+          "letter": "D",
+          "text": "It is triggered by a high-to-low transition on the TRAP pin.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "TRAP is triggered by a low-to-high transition on the TRAP pin."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The TRAP interrupt is a non-maskable interrupt in the 8085 and has the highest priority. It is edge-triggered and its ISR starts at address 0024H in the interrupt vector table.",
+      "hint": "TRAP is a non-maskable interrupt with the highest priority in the 8085.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780344125870-e7479",
+      "order": 17,
+      "question": "A student is designing a system using the 8085 microprocessor to control an LED display. The student wants to use the SOD (Serial Output Data) pin to send serial data to the LED driver. Which instruction should the student use to send a bit serially through the SOD pin?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "OUT port",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "OUT port is used to output data to a specified I/O port."
+        },
+        {
+          "letter": "B",
+          "text": "SIM",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "SIM is used to send serial data through the SOD pin when serial output mode is enabled."
+        },
+        {
+          "letter": "C",
+          "text": "RIM",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "RIM is used to read the interrupt mask and serial data input status."
+        },
+        {
+          "letter": "D",
+          "text": "HLT",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "HLT is used to halt the processor."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The SIM (Set Interrupt Mask) instruction is used to send serial data through the SOD pin when the serial output mode is enabled. The data to be sent is loaded into bit 7 of the accumulator before executing SIM.",
+      "hint": "This instruction is used to control serial data output via the SOD pin.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780344125870-9a704",
+      "order": 18,
+      "question": "In an 8085-based system, the following instructions are executed sequentially: MVI A, 35H; MVI B, 12H; ADD B. What will be the content of the accumulator (A) and the status of the carry flag (CY) after these instructions?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A = 47H, CY = 0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The accumulator value is correct, but the carry flag status is correct as well."
+        },
+        {
+          "letter": "B",
+          "text": "A = 47H, CY = 1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The accumulator value is correct, but the carry flag status is incorrect."
+        },
+        {
+          "letter": "C",
+          "text": "A = 47H, CY = 0",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The accumulator value is 47H, and the carry flag is 0 since no carry is generated."
+        },
+        {
+          "letter": "D",
+          "text": "A = 47H, CY = 1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The accumulator value is correct, but the carry flag status is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "MVI A, 35H → A = 35H (0011 0101); MVI B, 12H → B = 12H (0001 0010); ADD B → A = A + B = 35H + 12H = 47H (0100 0111). The addition of 35H and 12H does not produce a carry, so CY = 0.",
+      "hint": "Perform the addition step-by-step to determine the final accumulator value and carry flag status.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780344125870-da26c",
+      "order": 19,
+      "question": "Which of the following statements about the 8086 microprocessor is INCORRECT when compared to the 8085?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The 8086 has a 16-bit data bus, while the 8085 has an 8-bit data bus.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a correct statement about the 8086 compared to the 8085."
+        },
+        {
+          "letter": "B",
+          "text": "The 8086 uses a segmented memory architecture, while the 8085 uses a linear memory architecture.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is a correct statement about the 8086 compared to the 8085."
+        },
+        {
+          "letter": "C",
+          "text": "The 8086 has a pipelined architecture, while the 8085 does not.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a correct statement about the 8086 compared to the 8085."
+        },
+        {
+          "letter": "D",
+          "text": "The 8086 supports memory-mapped I/O exclusively, while the 8085 supports both memory-mapped and isolated I/O.",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the 8086 supports both memory-mapped and isolated I/O, similar to the 8085."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The 8086 supports both memory-mapped I/O and isolated I/O (using IN and OUT instructions), similar to the 8085. The other statements are correct comparisons between the two microprocessors.",
+      "hint": "Compare the I/O handling mechanisms of the 8086 and 8085.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780344125870-7b2ee",
+      "order": 20,
+      "question": "A microprocessor system designer is using the 8085 to interface a 4KB EPROM chip (address range 0000H–0FFFH) and a 2KB RAM chip (address range 2000H–27FFH). Which of the following address lines must be decoded to generate the chip select signal for the RAM chip?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A0–A10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "A0–A10 are used for addressing within the RAM but not sufficient for chip select alone."
+        },
+        {
+          "letter": "B",
+          "text": "A11–A15",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "A11–A15 are higher address lines but not all are required for chip select decoding."
+        },
+        {
+          "letter": "C",
+          "text": "A11 and A12",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "A11 and A12 are required to uniquely select the RAM chip within the given address range."
+        },
+        {
+          "letter": "D",
+          "text": "A0–A11",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "A0–A11 are used for addressing within the EPROM and RAM but not sufficient for chip select alone."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The EPROM occupies 4KB (2^12), so address lines A0–A11 are used for addressing within the EPROM. The RAM occupies 2KB (2^11), so address lines A0–A10 are used for addressing within the RAM. To uniquely select the RAM chip, we need to decode A11 and A12. A11 differentiates between the EPROM (A11=0) and RAM (A11=1), and A12 further ensures the address falls within 2000H–27FFH.",
+      "hint": "Analyze the address ranges of the EPROM and RAM to determine the required address lines for chip select decoding.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
