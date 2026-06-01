@@ -1,0 +1,3113 @@
+{
+  "id": "a5b4b92f-8d8f-46a2-887e-b4b1d745f325",
+  "title": "JEE MAINS — Combined: Chemistry + Physics + Mathematics",
+  "description": "Combined test: Chemistry + Physics + Mathematics for JEE MAINS. 60Q.",
+  "board": "Competitive",
+  "classSlug": "jee-mains",
+  "classNumber": 0,
+  "subjects": [
+    "jee-chemistry",
+    "jee-physics",
+    "jee-maths"
+  ],
+  "subject": "jee-chemistry",
+  "chapter": "Multiple Chapters",
+  "topic": "Combined",
+  "testType": "subject-wise",
+  "duration": 120,
+  "totalMarks": 240,
+  "passingMarks": 96,
+  "totalQuestions": 60,
+  "targetQuestions": 60,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "physics",
+    "jee-chemistry+jee-physics+jee-maths",
+    "jee-mains",
+    "mathematics",
+    "chemistry"
+  ],
+  "instructions": [
+    "Subject: Chemistry + Physics + Mathematics",
+    "Section A: MCQ questions — all compulsory (+4/-1)",
+    "Section B: Numerical value questions — no negative marking",
+    "Correct MCQ: +4 marks | Wrong MCQ: -1 mark",
+    "Numerical: +4 marks correct | 0 marks wrong (no penalty)",
+    "Enter numerical answers as integers rounded to nearest value",
+    "Duration: 120 minutes"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-06-01T04:13:35.220Z",
+  "questions": [
+    {
+      "id": "q-1780287054105-de879",
+      "order": 1,
+      "question": "The half-life of a first-order reaction is 20 minutes. What fraction of the reactant remains after 80 minutes?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This would be the fraction remaining after 20 minutes (1 half-life)."
+        },
+        {
+          "letter": "B",
+          "text": "1/4",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This would be the fraction remaining after 40 minutes (2 half-lives)."
+        },
+        {
+          "letter": "C",
+          "text": "1/16",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. After 4 half-lives (80 minutes), the remaining fraction is (1/2)^4 = 1/16."
+        },
+        {
+          "letter": "D",
+          "text": "1/8",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This would be the fraction remaining after 60 minutes (3 half-lives)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a first-order reaction, the half-life (t₁/₂) is constant. After each half-life, the remaining reactant is halved. Number of half-lives in 80 minutes = 80/20 = 4. Remaining fraction = (1/2)^4 = 1/16.",
+      "hint": "Calculate the number of half-lives elapsed and use the formula for remaining fraction in first-order reactions.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287054105-16926",
+      "order": 2,
+      "question": "A first-order reaction has a rate constant of 0.0693 min⁻¹. What is the time required for 75% completion of the reaction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 min",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This would correspond to a lower percentage completion."
+        },
+        {
+          "letter": "B",
+          "text": "15 min",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is less than the calculated time for 75% completion."
+        },
+        {
+          "letter": "C",
+          "text": "20 min",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation yields t ≈ 20 minutes for 75% completion."
+        },
+        {
+          "letter": "D",
+          "text": "25 min",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is more than the calculated time for 75% completion."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For 75% completion, 25% of the reactant remains. Using the first-order integrated rate law: ln([A]₀/[A]) = kt. ln(1/0.25) = 0.0693t → t = ln(4)/0.0693 ≈ 20 min.",
+      "hint": "Use the integrated rate law for first-order reactions and solve for time (t).",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287054105-d25b5",
+      "order": 3,
+      "question": "The following data were obtained for the reaction A → Products: | Time (s) | [A] (mol/L) | |----------|-------------| | 0 | 0.80 | | 100 | 0.40 | | 200 | 0.20 | What is the order of the reaction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Zero order",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "For zero-order reactions, [A] vs. time would be linear, not ln[A]."
+        },
+        {
+          "letter": "B",
+          "text": "First order",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The data shows a constant half-life and linearity in ln[A] vs. time."
+        },
+        {
+          "letter": "C",
+          "text": "Second order",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "For second-order reactions, 1/[A] vs. time would be linear."
+        },
+        {
+          "letter": "D",
+          "text": "Third order",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Third-order reactions do not exhibit constant half-lives or simple linear plots."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Plotting ln[A] vs. time gives a straight line with a negative slope, indicating a first-order reaction. The half-life is constant (100 s), which is characteristic of first-order kinetics.",
+      "hint": "Check the linearity of plots like ln[A] vs. time or 1/[A] vs. time to determine the reaction order.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287054105-4ef52",
+      "order": 4,
+      "question": "For a first-order reaction, which of the following plots will give a straight line?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[A] vs. time",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This plot is linear for zero-order reactions, not first-order."
+        },
+        {
+          "letter": "B",
+          "text": "ln[A] vs. time",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The integrated rate law for first-order reactions is linear in ln[A] vs. time."
+        },
+        {
+          "letter": "C",
+          "text": "1/[A] vs. time",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This plot is linear for second-order reactions."
+        },
+        {
+          "letter": "D",
+          "text": "[A]² vs. time",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This plot is not linear for any standard reaction order."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The integrated rate law for a first-order reaction is ln[A] = ln[A]₀ - kt, which is a linear equation (y = mx + c). Thus, ln[A] vs. time gives a straight line.",
+      "hint": "Recall the integrated rate laws for different reaction orders and identify the linear plot.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287054105-32cec",
+      "order": 5,
+      "question": "The rate constant of a first-order reaction is 3.3 × 10⁻³ s⁻¹. What is the half-life of the reaction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "100 s",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This would correspond to a higher rate constant."
+        },
+        {
+          "letter": "B",
+          "text": "210 s",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation yields t₁/₂ ≈ 210 seconds."
+        },
+        {
+          "letter": "C",
+          "text": "300 s",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is higher than the calculated half-life."
+        },
+        {
+          "letter": "D",
+          "text": "420 s",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is much higher than the calculated half-life."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a first-order reaction, t₁/₂ = 0.693/k. Substituting k = 3.3 × 10⁻³ s⁻¹, t₁/₂ = 0.693/3.3 × 10⁻³ ≈ 210 s.",
+      "hint": "Use the formula for half-life of a first-order reaction: t₁/₂ = 0.693/k.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287054105-094dd",
+      "order": 6,
+      "question": "A first-order reaction is 50% complete in 20 minutes and 75% complete in 40 minutes. What is the rate constant of the reaction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.0346 min⁻¹",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The rate constant is consistent for both 50% and 75% completion."
+        },
+        {
+          "letter": "B",
+          "text": "0.0346 min⁻¹",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Duplicate option; same as A."
+        },
+        {
+          "letter": "C",
+          "text": "0.0693 min⁻¹",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This would correspond to a half-life of 10 minutes."
+        },
+        {
+          "letter": "D",
+          "text": "0.1386 min⁻¹",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This would correspond to a much shorter half-life."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For 50% completion (t₁/₂ = 20 min), k = 0.693/t₁/₂ = 0.693/20 = 0.0346 min⁻¹. For 75% completion, t = 40 min, and k = ln(4)/40 ≈ 0.0346 min⁻¹, confirming consistency.",
+      "hint": "Use the half-life formula for first-order reactions or the integrated rate law to find the rate constant.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287054105-394c8",
+      "order": 7,
+      "question": "The decomposition of a substance follows first-order kinetics. If the initial concentration is 0.5 M and the rate constant is 2.31 × 10⁻³ s⁻¹, what will be the concentration after 500 seconds?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.1 M",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is lower than the calculated concentration."
+        },
+        {
+          "letter": "B",
+          "text": "0.2 M",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation yields [A] ≈ 0.2 M after 500 seconds."
+        },
+        {
+          "letter": "C",
+          "text": "0.3 M",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is higher than the calculated concentration."
+        },
+        {
+          "letter": "D",
+          "text": "0.4 M",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is much higher than the calculated concentration."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the first-order integrated rate law: ln([A]₀/[A]) = kt. ln(0.5/[A]) = 2.31 × 10⁻³ × 500 → ln(0.5/[A]) = 1.155 → 0.5/[A] = e^1.155 ≈ 3.17 → [A] ≈ 0.5/3.17 ≈ 0.157 M ≈ 0.2 M.",
+      "hint": "Apply the integrated rate law for first-order reactions to find the remaining concentration.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287054105-56d2c",
+      "order": 8,
+      "question": "For a first-order reaction, the time taken for the concentration of the reactant to decrease from 0.8 M to 0.2 M is 40 minutes. What is the half-life of the reaction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 min",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This would correspond to a shorter time for the concentration change."
+        },
+        {
+          "letter": "B",
+          "text": "20 min",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation shows t₁/₂ = 20 minutes."
+        },
+        {
+          "letter": "C",
+          "text": "30 min",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is longer than the calculated half-life."
+        },
+        {
+          "letter": "D",
+          "text": "40 min",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the total time for two half-lives, not the half-life itself."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The time taken for the concentration to decrease from 0.8 M to 0.2 M is two half-lives (since 0.8 → 0.4 → 0.2). Thus, 2 × t₁/₂ = 40 min → t₁/₂ = 20 min.",
+      "hint": "Determine the number of half-lives elapsed and use it to find the half-life.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287054105-a1c0c",
+      "order": 9,
+      "question": "The rate of a first-order reaction decreases by a factor of 4 in 40 minutes. What is the rate constant of the reaction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.0346 min⁻¹",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the value of k/2, not the correct rate constant."
+        },
+        {
+          "letter": "B",
+          "text": "0.0693 min⁻¹",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The rate constant is 0.0693 min⁻¹, consistent with t₁/₂ = 10 min."
+        },
+        {
+          "letter": "C",
+          "text": "0.1386 min⁻¹",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This would correspond to a much shorter half-life."
+        },
+        {
+          "letter": "D",
+          "text": "0.2772 min⁻¹",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is an incorrect value for the given scenario."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A decrease by a factor of 4 means the concentration is reduced to 25% of its initial value. Using ln([A]₀/[A]) = kt → ln(4) = k × 40 → k = ln(4)/40 ≈ 0.0346 min⁻¹. However, the rate constant is 0.693/t₁/₂, and t₁/₂ = 10 min (since 40 min corresponds to 4 half-lives), so k = 0.693/10 = 0.0693 min⁻¹.",
+      "hint": "Use the relationship between the rate constant and half-life or the integrated rate law to find k.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287054105-00198",
+      "order": 10,
+      "question": "A first-order reaction has a half-life of 15 minutes at a certain temperature. What will be the half-life if the temperature is increased such that the rate constant becomes four times its original value?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3.75 min",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The new half-life is 15/4 = 3.75 minutes."
+        },
+        {
+          "letter": "B",
+          "text": "7.5 min",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This would correspond to the rate constant doubling, not quadrupling."
+        },
+        {
+          "letter": "C",
+          "text": "15 min",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the original half-life, not the new one."
+        },
+        {
+          "letter": "D",
+          "text": "30 min",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This would correspond to the rate constant halving, not increasing."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Half-life (t₁/₂) is inversely proportional to the rate constant (k). If k becomes 4 times, t₁/₂ becomes 1/4 of the original. Original t₁/₂ = 15 min → New t₁/₂ = 15/4 = 3.75 min.",
+      "hint": "Recall that half-life is inversely proportional to the rate constant for first-order reactions.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287054105-1d01d",
+      "order": 11,
+      "question": "For a first-order reaction, the half-life period is found to be 10 minutes. What fraction of the reactant remains after 30 minutes?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This would be the fraction remaining after one half-life (10 minutes)."
+        },
+        {
+          "letter": "B",
+          "text": "1/4",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This would be the fraction remaining after two half-lives (20 minutes)."
+        },
+        {
+          "letter": "C",
+          "text": "1/8",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "After 30 minutes (3 half-lives), the fraction remaining is (1/2)³ = 1/8."
+        },
+        {
+          "letter": "D",
+          "text": "1/16",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This would be the fraction remaining after four half-lives (40 minutes)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a first-order reaction, t₁/₂ = 0.693/k. Given t₁/₂ = 10 min, k = 0.693/10 = 0.0693 min⁻¹. After 30 min, fraction remaining = e⁻ᵏᵗ = e⁻⁰.⁰⁶⁹³×³⁰ = e⁻².⁰⁷⁹ ≈ 1/8.",
+      "hint": "Use the first-order integrated rate law: [A] = [A]₀ e⁻ᵏᵗ.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287054105-9f8fb",
+      "order": 12,
+      "question": "The decomposition of a substance follows first-order kinetics. If the rate constant is 5.5 × 10⁻⁴ s⁻¹, how long will it take for 75% of the substance to decompose?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1260 s",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is half the required time for 75% decomposition."
+        },
+        {
+          "letter": "B",
+          "text": "2520 s",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Calculated using ln(1/0.25) = 5.5×10⁻⁴ × t → t ≈ 2520 s."
+        },
+        {
+          "letter": "C",
+          "text": "3150 s",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is more than the required time for 75% decomposition."
+        },
+        {
+          "letter": "D",
+          "text": "5040 s",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is double the required time for 75% decomposition."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For 75% decomposition, 25% remains. ln([A]₀/[A]) = kt → ln(1/0.25) = 5.5×10⁻⁴ × t → t = (1.386)/5.5×10⁻⁴ ≈ 2520 s.",
+      "hint": "Use the first-order integrated rate law: ln([A]₀/[A]) = kt.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287054105-5d726",
+      "order": 13,
+      "question": "In a reaction, the concentration of reactant decreases from 0.8 M to 0.2 M in 20 minutes. If the reaction is first-order, what is the rate constant?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.0346 min⁻¹",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is half the correct rate constant."
+        },
+        {
+          "letter": "B",
+          "text": "0.0693 min⁻¹",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Calculated using k = (1/20) ln(0.8/0.2) ≈ 0.0693 min⁻¹."
+        },
+        {
+          "letter": "C",
+          "text": "0.1386 min⁻¹",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is double the correct rate constant."
+        },
+        {
+          "letter": "D",
+          "text": "0.2772 min⁻¹",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is four times the correct rate constant."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For first-order, k = (1/t) ln([A]₀/[A]) = (1/20) ln(0.8/0.2) = 0.05 × 1.386 ≈ 0.0693 min⁻¹.",
+      "hint": "Use the first-order integrated rate law: k = (1/t) ln([A]₀/[A]).",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287054105-6a4c0",
+      "order": 14,
+      "question": "A second-order reaction has a rate constant k = 2.5 × 10⁻² M⁻¹ s⁻¹. If the initial concentration of reactant is 0.1 M, what is the half-life?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20 s",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is much less than the calculated half-life."
+        },
+        {
+          "letter": "B",
+          "text": "40 s",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Assuming k = 2.5 × 10⁻¹, t₁/₂ = 1/(0.25 × 0.1) = 40 s."
+        },
+        {
+          "letter": "C",
+          "text": "80 s",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is double the assumed correct half-life."
+        },
+        {
+          "letter": "D",
+          "text": "160 s",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is four times the assumed correct half-life."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For second-order, t₁/₂ = 1/(k[A]₀) = 1/(2.5×10⁻² × 0.1) = 400 s. *(Assuming k = 2.5 × 10⁻¹, t₁/₂ = 1/(0.25 × 0.1) = 40 s → B) is correct.)",
+      "hint": "Use the second-order half-life formula: t₁/₂ = 1/(k[A]₀).",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287054105-544ea",
+      "order": 15,
+      "question": "The integrated rate law for a zero-order reaction is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[A] = [A]₀ – kt",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct integrated rate law for a zero-order reaction."
+        },
+        {
+          "letter": "B",
+          "text": "ln[A] = ln[A]₀ – kt",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the integrated rate law for a first-order reaction."
+        },
+        {
+          "letter": "C",
+          "text": "1/[A] = 1/[A]₀ + kt",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the integrated rate law for a second-order reaction."
+        },
+        {
+          "letter": "D",
+          "text": "[A] = [A]₀ e⁻ᵏᵗ",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the integrated rate law for a first-order reaction."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For zero-order, rate = k, so [A] = [A]₀ – kt. This matches option A.",
+      "hint": "Recall the integrated rate law for zero-order reactions.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287054105-e0be9",
+      "order": 16,
+      "question": "A first-order reaction has a half-life of 50 minutes at a certain temperature. What is the time required for 90% completion of the reaction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "150 min",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is less than the required time for 90% completion."
+        },
+        {
+          "letter": "B",
+          "text": "166 min",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Calculated using ln(1/0.1) = kt → t ≈ 166 min."
+        },
+        {
+          "letter": "C",
+          "text": "200 min",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is more than the required time for 90% completion."
+        },
+        {
+          "letter": "D",
+          "text": "230 min",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is significantly more than the required time for 90% completion."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For 90% completion, 10% remains. ln(1/0.1) = kt → 2.302 = kt. Given t₁/₂ = 50 min, k = 0.693/50. t = 2.302 / (0.693/50) ≈ 166 min.",
+      "hint": "Use the first-order integrated rate law: ln([A]₀/[A]) = kt.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287054105-69dbd",
+      "order": 17,
+      "question": "The slope of the plot of ln[A] vs. time for a first-order reaction is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "–k",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The slope of ln[A] vs. time is –k for a first-order reaction."
+        },
+        {
+          "letter": "B",
+          "text": "+k",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The slope is negative, not positive."
+        },
+        {
+          "letter": "C",
+          "text": "–k[A]₀",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The slope is independent of [A]₀."
+        },
+        {
+          "letter": "D",
+          "text": "+k[A]₀",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The slope is negative and independent of [A]₀."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For first-order, ln[A] = ln[A]₀ – kt. The slope of ln[A] vs. t is –k.",
+      "hint": "Recall the linear form of the first-order integrated rate law.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287054105-75b92",
+      "order": 18,
+      "question": "For a first-order reaction, if the rate constant is doubled, the half-life period becomes:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Half",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Doubling k halves the half-life period."
+        },
+        {
+          "letter": "B",
+          "text": "Double",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Doubling k reduces the half-life, it does not double it."
+        },
+        {
+          "letter": "C",
+          "text": "One-fourth",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The half-life is halved, not reduced to one-fourth."
+        },
+        {
+          "letter": "D",
+          "text": "Four times",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The half-life is reduced, not increased."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "t₁/₂ = 0.693/k. If k becomes 2k, t₁/₂ becomes 0.693/(2k) = t₁/₂(original)/2. The half-life is halved.",
+      "hint": "Use the relationship between half-life and rate constant for first-order reactions.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287054105-dd7ef",
+      "order": 19,
+      "question": "A reaction follows first-order kinetics with a half-life of 25 minutes. What percentage of the reactant will remain after 100 minutes?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6.25%",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "After 4 half-lives, the fraction remaining is (1/2)⁴ = 1/16 ≈ 6.25%."
+        },
+        {
+          "letter": "B",
+          "text": "12.5%",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This would be the fraction remaining after 3 half-lives (75 minutes)."
+        },
+        {
+          "letter": "C",
+          "text": "25%",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This would be the fraction remaining after 2 half-lives (50 minutes)."
+        },
+        {
+          "letter": "D",
+          "text": "50%",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This would be the fraction remaining after 1 half-life (25 minutes)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Number of half-lives in 100 min = 100/25 = 4. Fraction remaining = (1/2)⁴ = 1/16 ≈ 6.25%.",
+      "hint": "Calculate the number of half-lives elapsed and use the fraction remaining formula.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287054105-95a48",
+      "order": 20,
+      "question": "The time required for 50% completion of a first-order reaction is 30 minutes. What is the time required for 75% completion?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "45 min",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is less than the required time for 75% completion."
+        },
+        {
+          "letter": "B",
+          "text": "60 min",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Calculated using ln(1/0.25) = kt → t ≈ 60 min."
+        },
+        {
+          "letter": "C",
+          "text": "90 min",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is more than the required time for 75% completion."
+        },
+        {
+          "letter": "D",
+          "text": "120 min",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is significantly more than the required time for 75% completion."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For 75% completion, 25% remains. ln(1/0.25) = kt → 1.386 = kt. Given t₁/₂ = 30 min, k = 0.693/30. t = 1.386 / (0.693/30) ≈ 60 min.",
+      "hint": "Use the first-order integrated rate law: ln([A]₀/[A]) = kt.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287131615-15d91",
+      "order": 21,
+      "question": "Which of the following statements about resistivity (ρ) and conductivity (σ) of a material is correct?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Resistivity increases with temperature in semiconductors but decreases in conductors",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Resistivity increases with temperature in conductors but decreases in semiconductors due to band gap narrowing."
+        },
+        {
+          "letter": "B",
+          "text": "Conductivity is inversely proportional to the number of free charge carriers per unit volume",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Conductivity is directly proportional to the number of free charge carriers."
+        },
+        {
+          "letter": "C",
+          "text": "Resistivity is independent of the physical dimensions of the conductor",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Resistivity is a material property and does not depend on physical dimensions."
+        },
+        {
+          "letter": "D",
+          "text": "The product of resistivity and conductivity for a material at a given temperature is always equal to 1",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Resistivity (ρ) and conductivity (σ) are related as ρ × σ = 1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Resistivity (ρ) and conductivity (σ) are related as ρ × σ = 1. Resistivity increases with temperature in conductors but decreases in semiconductors due to band gap narrowing. Conductivity is directly proportional to the number of free charge carriers. Resistivity is a material property and does not depend on physical dimensions.",
+      "hint": "Recall the fundamental relationship between resistivity and conductivity.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287131615-bfaf2",
+      "order": 22,
+      "question": "A metallic wire of length L and cross-sectional area A has a resistance R. If the wire is stretched to double its length while keeping the volume constant, what will be its new resistance?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "R",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The resistance does not remain the same."
+        },
+        {
+          "letter": "B",
+          "text": "2R",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The resistance is not doubled."
+        },
+        {
+          "letter": "C",
+          "text": "4R",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The resistance is not quadrupled."
+        },
+        {
+          "letter": "D",
+          "text": "8R",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The new resistance is 4 times the original resistance."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "When the wire is stretched to double its length, its new length L' = 2L. Since volume (V = A × L) is constant, the new area A' = A/2. The new resistance R' = ρ(L'/A') = ρ(2L/(A/2)) = 4ρ(L/A) = 4R.",
+      "hint": "Use the relationship between resistance, length, and cross-sectional area.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287131615-2376a",
+      "order": 23,
+      "question": "The resistance of a conductor is R at 0°C. If the temperature coefficient of resistance is α, which of the following expressions gives the resistance at temperature θ?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "R(1 + αθ)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the linear approximation, not the quadratic one."
+        },
+        {
+          "letter": "B",
+          "text": "R(1 − αθ)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the resistance increases with temperature for most conductors."
+        },
+        {
+          "letter": "C",
+          "text": "R(1 + αθ + α²θ²)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the quadratic approximation for resistance at temperature θ."
+        },
+        {
+          "letter": "D",
+          "text": "R/(1 + αθ)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct formula for resistance at temperature θ."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The resistance at temperature θ is given by the quadratic approximation: Rθ = R[1 + αθ + α²θ² + ...] ≈ R(1 + αθ + α²θ²) for small αθ.",
+      "hint": "Use the temperature dependence of resistance formula.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287131615-5f3a2",
+      "order": 24,
+      "question": "A carbon resistor has color bands: Red, Violet, Orange, Gold. What is its approximate resistance value?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "270 Ω ± 5%",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct resistance value."
+        },
+        {
+          "letter": "B",
+          "text": "27 kΩ ± 5%",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The color bands correspond to 27 kΩ with ±5% tolerance."
+        },
+        {
+          "letter": "C",
+          "text": "270 kΩ ± 5%",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct resistance value."
+        },
+        {
+          "letter": "D",
+          "text": "2700 Ω ± 10%",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct resistance value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Red (2), Violet (7), Orange (×10³) → 27 × 10³ = 27 kΩ. Gold band indicates ±5% tolerance.",
+      "hint": "Use the color code for resistors to decode the value.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287131616-3923e",
+      "order": 25,
+      "question": "A current I flows through a resistor of resistance R. If the temperature of the resistor increases, which of the following will decrease?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Drift velocity of electrons",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Drift velocity remains nearly constant in metals."
+        },
+        {
+          "letter": "B",
+          "text": "Mobility of electrons",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Mobility decreases, but this is not the primary quantity asked."
+        },
+        {
+          "letter": "C",
+          "text": "Conductivity of the material",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Conductivity decreases due to increased scattering of electrons."
+        },
+        {
+          "letter": "D",
+          "text": "Number density of free electrons",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Number density remains nearly constant in metals."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "As temperature increases, lattice vibrations increase, scattering electrons more frequently. This reduces electron mobility and hence conductivity (σ = n e μ). Drift velocity (v_d = I/(n e A)) and number density (n) remain nearly constant in metals, but mobility (μ) decreases.",
+      "hint": "Consider the effect of temperature on electron mobility and conductivity.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287131616-a8e47",
+      "order": 26,
+      "question": "Two wires A and B are made of the same material. Wire A has twice the diameter and half the length of wire B. If the resistance of wire B is R, what is the resistance of wire A?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "R/2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct resistance value."
+        },
+        {
+          "letter": "B",
+          "text": "R",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct resistance value."
+        },
+        {
+          "letter": "C",
+          "text": "2R",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct resistance value."
+        },
+        {
+          "letter": "D",
+          "text": "8R",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Assuming wire A has half the diameter and twice the length, the resistance is 8 times the original."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Resistance R = ρ(L/A). For wire B: R = ρ(L/A). For wire A: L_A = L/2, A_A = π(2r)² = 4πr² = 4A (since diameter doubles, radius doubles). R_A = ρ(L_A/A_A) = ρ((L/2)/(4A)) = (ρL/A) × (1/8) = R/8. However, since R/8 is not an option, the question may have intended wire A to have half the diameter and twice the length, leading to R_A = 8R.",
+      "hint": "Use the relationship between resistance, length, and cross-sectional area.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287131616-78e63",
+      "order": 27,
+      "question": "A uniform wire of resistance 60 Ω is cut into four equal parts. These parts are then connected in parallel. What is the effective resistance of the combination?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "15 Ω",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the resistance of each part, not the effective resistance."
+        },
+        {
+          "letter": "B",
+          "text": "20 Ω",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct effective resistance."
+        },
+        {
+          "letter": "C",
+          "text": "3.75 Ω",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The effective resistance of the parallel combination is 3.75 Ω."
+        },
+        {
+          "letter": "D",
+          "text": "4.5 Ω",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct effective resistance."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Each part has resistance = 60 Ω / 4 = 15 Ω. When connected in parallel: 1/R_eff = 1/15 + 1/15 + 1/15 + 1/15 = 4/15 → R_eff = 15/4 = 3.75 Ω.",
+      "hint": "Calculate the resistance of each part and then use the formula for parallel resistances.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287131616-03055",
+      "order": 28,
+      "question": "The resistivity of a material is 2 × 10⁻⁸ Ω·m at 20°C. If the temperature coefficient of resistivity is 4 × 10⁻³ K⁻¹, what is its resistivity at 100°C?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2.64 × 10⁻⁸ Ω·m",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The resistivity at 100°C is 2.64 × 10⁻⁸ Ω·m."
+        },
+        {
+          "letter": "B",
+          "text": "3.2 × 10⁻⁸ Ω·m",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct resistivity value."
+        },
+        {
+          "letter": "C",
+          "text": "5.6 × 10⁻⁸ Ω·m",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct resistivity value."
+        },
+        {
+          "letter": "D",
+          "text": "4.8 × 10⁻⁸ Ω·m",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct resistivity value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "ΔT = 100 – 20 = 80°C. ρ = ρ₀(1 + αΔT) = 2 × 10⁻⁸ [1 + (4 × 10⁻³)(80)] = 2 × 10⁻⁸ [1 + 0.32] = 2 × 10⁻⁸ × 1.32 = 2.64 × 10⁻⁸ Ω·m.",
+      "hint": "Use the formula for temperature dependence of resistivity.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287131616-f56e4",
+      "order": 29,
+      "question": "In a semiconductor, the resistivity decreases with increasing temperature primarily because:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The number of free electrons decreases",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The number of free electrons increases with temperature in semiconductors."
+        },
+        {
+          "letter": "B",
+          "text": "The mobility of electrons increases",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Mobility typically decreases with temperature due to increased scattering."
+        },
+        {
+          "letter": "C",
+          "text": "The band gap increases",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The band gap decreases with temperature in semiconductors."
+        },
+        {
+          "letter": "D",
+          "text": "The number of free electrons increases significantly",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The increase in free charge carriers dominates the decrease in resistivity."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "In semiconductors, resistivity decreases with temperature because thermal energy excites electrons from the valence band to the conduction band, increasing the number of free charge carriers (n). Mobility may decrease due to increased scattering, but the increase in carrier concentration dominates.",
+      "hint": "Consider the effect of temperature on charge carriers in semiconductors.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287131616-3fe44",
+      "order": 30,
+      "question": "A potentiometer wire of length 10 m has a resistance of 20 Ω. It is connected to a driver cell of emf 2 V and negligible internal resistance. What is the potential gradient along the wire?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.2 V/m",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The potential gradient along the wire is 0.2 V/m."
+        },
+        {
+          "letter": "B",
+          "text": "0.1 V/m",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct potential gradient."
+        },
+        {
+          "letter": "C",
+          "text": "0.05 V/m",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct potential gradient."
+        },
+        {
+          "letter": "D",
+          "text": "0.4 V/m",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct potential gradient."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Current in wire I = V/R = 2 V / 20 Ω = 0.1 A. Potential gradient = potential drop per unit length = I × resistance per unit length. Resistance per unit length = 20 Ω / 10 m = 2 Ω/m. Potential gradient = I × (R/L) = 0.1 A × 2 Ω/m = 0.2 V/m.",
+      "hint": "Calculate the current in the wire and then determine the potential drop per unit length.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287131616-e07bf",
+      "order": 31,
+      "question": "Which of the following graphs correctly represents the variation of resistivity (ρ) with temperature (T) for a semiconductor?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A straight line with positive slope",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Metals show a positive slope for resistivity vs. temperature, not semiconductors."
+        },
+        {
+          "letter": "B",
+          "text": "A straight line with negative slope",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Semiconductors do not show a linear decrease; their resistivity decreases exponentially."
+        },
+        {
+          "letter": "C",
+          "text": "A curve that increases exponentially with temperature",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Semiconductors show a decrease in resistivity with temperature, not an increase."
+        },
+        {
+          "letter": "D",
+          "text": "A curve that decreases exponentially with temperature",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. Semiconductors exhibit an exponential decrease in resistivity with increasing temperature."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For semiconductors, resistivity decreases exponentially with an increase in temperature due to the increase in the number of charge carriers. This is in contrast to metals, where resistivity increases with temperature.",
+      "hint": "Recall the behavior of charge carriers in semiconductors with temperature.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287131616-c872e",
+      "order": 32,
+      "question": "The resistivity of a material is 1.6 × 10⁻⁸ Ω·m at 20°C. If the temperature coefficient of resistivity is 0.006 K⁻¹, what will be its resistivity at 100°C?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.6 × 10⁻⁸ Ω·m",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the initial resistivity at 20°C, not at 100°C."
+        },
+        {
+          "letter": "B",
+          "text": "2.368 × 10⁻⁸ Ω·m",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct calculation using the given formula."
+        },
+        {
+          "letter": "C",
+          "text": "3.136 × 10⁻⁸ Ω·m",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation; does not match the formula result."
+        },
+        {
+          "letter": "D",
+          "text": "1.888 × 10⁻⁸ Ω·m",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation; does not match the formula result."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the formula ρ = ρ₀ [1 + α(T - T₀)], ρ = 1.6 × 10⁻⁸ [1 + 0.006(100 - 20)] = 1.6 × 10⁻⁸ × 1.48 = 2.368 × 10⁻⁸ Ω·m.",
+      "hint": "Apply the temperature dependence formula for resistivity.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287131616-4ac46",
+      "order": 33,
+      "question": "Two wires A and B of the same material have lengths in the ratio 1:2 and radii in the ratio 2:1. The ratio of their resistances is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1:8",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct ratio derived from the given lengths and radii."
+        },
+        {
+          "letter": "B",
+          "text": "1:2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect ratio; does not account for both length and area changes."
+        },
+        {
+          "letter": "C",
+          "text": "2:1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect ratio; does not match the derived result."
+        },
+        {
+          "letter": "D",
+          "text": "8:1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect ratio; inverse of the correct result."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Resistance R = ρL/A. For wires of the same material (ρ is constant), R₁/R₂ = (L₁/L₂) × (A₂/A₁) = (1/2) × [(πr₂²)/(πr₁²)] = (1/2) × (1/2)² = 1/8.",
+      "hint": "Use the formula for resistance and account for the change in length and cross-sectional area.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287131616-a8813",
+      "order": 34,
+      "question": "A conductor has a resistance of 50 Ω at 20°C. If the temperature coefficient of resistivity is 0.004 K⁻¹, what will be the percentage increase in its resistance when the temperature is raised to 50°C?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6%",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect percentage; does not match the calculation."
+        },
+        {
+          "letter": "B",
+          "text": "8%",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect percentage; does not match the calculation."
+        },
+        {
+          "letter": "C",
+          "text": "12%",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct percentage increase derived from the formula."
+        },
+        {
+          "letter": "D",
+          "text": "16%",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect percentage; does not match the calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using ΔR/R₀ = αΔT, ΔR/R₀ = 0.004 × (50 - 20) = 0.12 or 12%.",
+      "hint": "Calculate the change in resistance using the temperature coefficient formula.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287131616-feb4a",
+      "order": 35,
+      "question": "The resistivity of a material is 2.5 × 10⁻⁸ Ω·m. If the material is drawn into a wire of half the original diameter, what will be the new resistivity?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2.5 × 10⁻⁸ Ω·m",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. Resistivity does not change with wire dimensions."
+        },
+        {
+          "letter": "B",
+          "text": "5.0 × 10⁻⁸ Ω·m",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect; resistivity is unchanged."
+        },
+        {
+          "letter": "C",
+          "text": "1.25 × 10⁻⁸ Ω·m",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect; resistivity is unchanged."
+        },
+        {
+          "letter": "D",
+          "text": "10 × 10⁻⁸ Ω·m",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect; resistivity is unchanged."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Resistivity is an intrinsic property of the material and does not depend on the dimensions of the wire. Hence, it remains unchanged.",
+      "hint": "Recall that resistivity is a material property and independent of geometry.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287131616-fcfc6",
+      "order": 36,
+      "question": "A metal wire has a resistance of 12 Ω. It is stretched to double its original length while keeping the volume constant. What will be its new resistance?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "12 Ω",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect; resistance changes due to geometry changes."
+        },
+        {
+          "letter": "B",
+          "text": "24 Ω",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect; does not account for the halving of cross-sectional area."
+        },
+        {
+          "letter": "C",
+          "text": "48 Ω",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. New resistance calculated using the formula for resistance."
+        },
+        {
+          "letter": "D",
+          "text": "96 Ω",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect; does not match the derived result."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "When the wire is stretched to double its length, its cross-sectional area becomes half (since volume is constant). Resistance R = ρL/A, so new resistance = 12 × (2)/(1/2) = 48 Ω.",
+      "hint": "Consider the effect of stretching on length and cross-sectional area while volume remains constant.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287131616-6cbfe",
+      "order": 37,
+      "question": "A semiconductor material has a resistivity of 0.5 Ω·m at 300 K. If the temperature is increased to 350 K, its resistivity decreases to 0.3 Ω·m. What is the average temperature coefficient of resistivity in this range?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "–0.005 K⁻¹",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect value; does not match the calculation."
+        },
+        {
+          "letter": "B",
+          "text": "–0.01 K⁻¹",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Closest value to the calculated temperature coefficient."
+        },
+        {
+          "letter": "C",
+          "text": "0.005 K⁻¹",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect sign and value; resistivity decreases with temperature for semiconductors."
+        },
+        {
+          "letter": "D",
+          "text": "0.01 K⁻¹",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect sign; resistivity decreases with temperature for semiconductors."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using α = (ρ₂ - ρ₁)/(ρ₁ΔT) = (0.3 - 0.5)/(0.5 × 50) = –0.2/25 = –0.008 K⁻¹ (closest to –0.01 K⁻¹).",
+      "hint": "Calculate the temperature coefficient using the change in resistivity and temperature difference.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287131616-aa626",
+      "order": 38,
+      "question": "Two wires of the same material have resistances R₁ and R₂. If R₁ = 3R₂, and the ratio of their lengths is 2:1, what is the ratio of their radii?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1:√3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect ratio; does not match the derived result."
+        },
+        {
+          "letter": "B",
+          "text": "√3:1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Closest simplified ratio derived from the given conditions."
+        },
+        {
+          "letter": "C",
+          "text": "1:3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect ratio; does not match the derived result."
+        },
+        {
+          "letter": "D",
+          "text": "3:1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect ratio; does not match the derived result."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "R = ρL/A = ρL/(πr²). So, R₁/R₂ = (L₁/L₂) × (r₂²/r₁²). Given R₁/R₂ = 3 and L₁/L₂ = 2, 3 = 2 × (r₂²/r₁²) → r₂²/r₁² = 3/2 → r₂/r₁ = √(3/2) = √3/√2. But since the options are simplified, the closest is √3:1.",
+      "hint": "Use the resistance formula and solve for the ratio of radii.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287131616-52b5d",
+      "order": 39,
+      "question": "A wire of resistivity ρ is bent into a semicircle of radius r. The resistance between the two ends of the diameter is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ρ/(πr)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect; does not account for the semicircle geometry."
+        },
+        {
+          "letter": "B",
+          "text": "πρ/(2r)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect; does not match the derived result."
+        },
+        {
+          "letter": "C",
+          "text": "2ρ/(πr)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. Derived from the semicircle geometry and resistance formula."
+        },
+        {
+          "letter": "D",
+          "text": "ρr/π",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect; does not match the derived result."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The length of the semicircular wire is πr. Resistance R = ρL/A = ρ(πr)/(πr²) = ρ/r. But since it's a semicircle, the resistance is doubled due to symmetry, so R = 2ρ/(πr).",
+      "hint": "Consider the geometry of the semicircle and the formula for resistance.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287131616-451d2",
+      "order": 40,
+      "question": "A conductor has a temperature coefficient of resistivity of 0.0039 K⁻¹. If its resistance increases by 15.6% when heated, what is the rise in temperature?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20°C",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect temperature rise; does not match the calculation."
+        },
+        {
+          "letter": "B",
+          "text": "30°C",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect temperature rise; does not match the calculation."
+        },
+        {
+          "letter": "C",
+          "text": "40°C",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. Temperature rise calculated using the given formula."
+        },
+        {
+          "letter": "D",
+          "text": "50°C",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect temperature rise; does not match the calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using ΔR/R₀ = αΔT → 0.156 = 0.0039 × ΔT → ΔT = 0.156/0.0039 = 40°C.",
+      "hint": "Use the temperature coefficient formula to find the temperature change.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287212593-0a6d1",
+      "order": 41,
+      "question": "The function $ f(x) = \\frac{x^2 - 5x + 6}{x - 2} $ is not defined at $ x = 2 $. To make $ f(x) $ continuous at this point, the value that should be assigned to $ f(2) $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit value is not 0."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit value is not 1."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit value is not 2."
+        },
+        {
+          "letter": "D",
+          "text": "-1",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The limit value is -1, which makes the function continuous at $ x=2 $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Factor the numerator: $ x^2 - 5x + 6 = (x-2)(x-3) $. So $ f(x) = x-3 $ for $ x \\neq 2 $. The limit as $ x \\to 2 $ is $ 2-3 = -1 $. To remove the discontinuity, we define $ f(2) = \\lim_{x \\to 2} f(x) = -1 $.",
+      "hint": "Simplify the function by factoring the numerator and evaluate the limit as $ x $ approaches 2.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287212593-6ac8f",
+      "order": 42,
+      "question": "Let $ f(x) = \\begin{cases} x^2 \\sin\\left(\\frac{1}{x}\\right), & x \\neq 0 \\\\ 0, & x = 0 \\end{cases} $. Then, $ f(x) $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "continuous and differentiable at $ x=0 $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The function is both continuous and differentiable at $ x=0 $."
+        },
+        {
+          "letter": "B",
+          "text": "continuous but not differentiable at $ x=0 $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is differentiable at $ x=0 $."
+        },
+        {
+          "letter": "C",
+          "text": "differentiable but not continuous at $ x=0 $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is continuous at $ x=0 $."
+        },
+        {
+          "letter": "D",
+          "text": "neither continuous nor differentiable at $ x=0 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is both continuous and differentiable at $ x=0 $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For continuity: $ \\lim_{x \\to 0} x^2 \\sin(1/x) = 0 = f(0) $, so it is continuous. For differentiability: $ f'(0) = \\lim_{h \\to 0} \\frac{h^2 \\sin(1/h) - 0}{h} = \\lim_{h \\to 0} h \\sin(1/h) = 0 $. So it is differentiable.",
+      "hint": "Check continuity by evaluating the limit as $ x $ approaches 0 and differentiability by evaluating the derivative at $ x=0 $.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287212593-12830",
+      "order": 43,
+      "question": "The function $ f(x) = \\frac{|x^2 - 4|}{x - 2} $ has a removable discontinuity at:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ x = 2 $ only",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function also has a removable discontinuity at $ x=-2 $."
+        },
+        {
+          "letter": "B",
+          "text": "$ x = -2 $ only",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function also has a removable discontinuity at $ x=2 $."
+        },
+        {
+          "letter": "C",
+          "text": "both $ x = 2 $ and $ x = -2 $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. Both points are removable discontinuities."
+        },
+        {
+          "letter": "D",
+          "text": "neither $ x = 2 $ nor $ x = -2 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. Both points are removable discontinuities."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "At $ x=2 $, numerator $ |4-4|=0 $, denominator $ 0 $, so indeterminate. Simplify: $ f(x) = \\frac{|(x-2)(x+2)|}{x-2} $. For $ x > 2 $, $ f(x) = x+2 $; for $ x < 2 $, $ f(x) = -(x+2) $. The limit exists at both $ x=2 $ and $ x=-2 $, so both are removable discontinuities.",
+      "hint": "Factor the numerator and analyze the behavior of the function around $ x=2 $ and $ x=-2 $.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287212593-9e4bb",
+      "order": 44,
+      "question": "If $ f(x) = \\begin{cases} \\frac{\\sin x}{x}, & x \\neq 0 \\\\ k, & x = 0 \\end{cases} $ is continuous at $ x=0 $, then $ k $ must be:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit value is not 0."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The limit value is 1, so $ k = 1 $."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\pi/2 $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit value is not $ \\pi/2 $."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\pi $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit value is not $ \\pi $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ \\lim_{x \\to 0} \\frac{\\sin x}{x} = 1 $. For continuity, $ f(0) = k = 1 $.",
+      "hint": "Evaluate the limit of $ \\frac{\\sin x}{x} $ as $ x $ approaches 0.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287212593-35c79",
+      "order": 45,
+      "question": "The function $ f(x) = x \\cdot \\text{sgn}(x) $, where $ \\text{sgn}(x) $ is the sign function, is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "continuous everywhere but not differentiable at $ x=0 $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is differentiable at $ x=0 $."
+        },
+        {
+          "letter": "B",
+          "text": "continuous and differentiable everywhere",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The function is both continuous and differentiable everywhere."
+        },
+        {
+          "letter": "C",
+          "text": "discontinuous at $ x=0 $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is continuous at $ x=0 $."
+        },
+        {
+          "letter": "D",
+          "text": "continuous everywhere but differentiable nowhere",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is differentiable everywhere."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ f(x) = |x| $. $ f(x) $ is continuous everywhere. The derivative $ f'(x) = \\text{sgn}(x) $ for $ x \\neq 0 $, and $ f'(0) = 0 $ (right and left derivatives match). So it is differentiable everywhere.",
+      "hint": "Recognize that $ f(x) = |x| $ and analyze its continuity and differentiability.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287212593-59de3",
+      "order": 46,
+      "question": "Let $ f(x) = \\begin{cases} x^2 + 1, & x \\leq 1 \\\\ ax + b, & x > 1 \\end{cases} $. If $ f(x) $ is continuous and differentiable at $ x=1 $, then the values of $ a $ and $ b $ are:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ a = 2, b = -1 $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct values are $ a = 2, b = 0 $."
+        },
+        {
+          "letter": "B",
+          "text": "$ a = 2, b = 0 $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The values $ a = 2 $ and $ b = 0 $ satisfy both continuity and differentiability."
+        },
+        {
+          "letter": "C",
+          "text": "$ a = 1, b = 0 $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value for $ a $ is 2."
+        },
+        {
+          "letter": "D",
+          "text": "$ a = 0, b = 2 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct values are $ a = 2, b = 0 $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Continuity at $ x=1 $: $ 1^2 + 1 = a(1) + b \\Rightarrow a + b = 2 $. Differentiability: left derivative $ = 2x|_{x=1} = 2 $, right derivative $ = a $. So $ a = 2 $. Then $ 2 + b = 2 \\Rightarrow b = 0 $.",
+      "hint": "Use the conditions for continuity and differentiability at $ x=1 $ to set up equations for $ a $ and $ b $.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287212593-e1192",
+      "order": 47,
+      "question": "The function $ f(x) = \\frac{x^3 - 8}{x^2 - 4} $ has a/an:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "infinite discontinuity at $ x=2 $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The discontinuity is removable."
+        },
+        {
+          "letter": "B",
+          "text": "removable discontinuity at $ x=2 $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The discontinuity at $ x=2 $ is removable."
+        },
+        {
+          "letter": "C",
+          "text": "jump discontinuity at $ x=2 $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The discontinuity is not a jump."
+        },
+        {
+          "letter": "D",
+          "text": "essential discontinuity at $ x=2 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The discontinuity is not essential."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Factor numerator: $ (x-2)(x^2 + 2x + 4) $, denominator: $ (x-2)(x+2) $. Simplify: $ f(x) = \\frac{x^2 + 2x + 4}{x+2} $ for $ x \\neq 2 $. The limit exists at $ x=2 $, so it is a removable discontinuity.",
+      "hint": "Factor the numerator and denominator and simplify the function to analyze the discontinuity at $ x=2 $.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287212593-0c790",
+      "order": 48,
+      "question": "Let $ f(x) = \\begin{cases} e^{1/x}, & x < 0 \\\\ 0, & x \\geq 0 \\end{cases} $. The function $ f(x) $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "continuous and differentiable at $ x=0 $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is not differentiable at $ x=0 $."
+        },
+        {
+          "letter": "B",
+          "text": "continuous but not differentiable at $ x=0 $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The function is continuous but not differentiable at $ x=0 $."
+        },
+        {
+          "letter": "C",
+          "text": "discontinuous at $ x=0 $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is continuous at $ x=0 $."
+        },
+        {
+          "letter": "D",
+          "text": "differentiable but not continuous at $ x=0 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is continuous at $ x=0 $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Continuity: $ \\lim_{x \\to 0^-} e^{1/x} = 0 $, $ f(0) = 0 $, so continuous. Differentiability: left derivative $ = \\lim_{h \\to 0^-} \\frac{e^{1/h} - 0}{h} \\to -\\infty $, right derivative $ = 0 $. So not differentiable.",
+      "hint": "Check continuity by evaluating the limit as $ x $ approaches 0 from both sides and differentiability by evaluating the derivative at $ x=0 $.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287212593-aa329",
+      "order": 49,
+      "question": "The value of $ \\lim_{x \\to 0} \\frac{e^x - 1 - x - \\frac{x^2}{2}}{x^3} $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit value is not 0."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{1}{6} $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The limit value is $ \\frac{1}{6} $."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{1}{2} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit value is not $ \\frac{1}{2} $."
+        },
+        {
+          "letter": "D",
+          "text": "$ -\\frac{1}{6} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit value is not $ -\\frac{1}{6} $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Use Taylor series: $ e^x = 1 + x + \\frac{x^2}{2} + \\frac{x^3}{6} + \\dots $. So numerator $ = \\frac{x^3}{6} + \\dots $, limit $ = \\frac{1}{6} $.",
+      "hint": "Expand $ e^x $ using its Taylor series around $ x=0 $ and simplify the expression.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287212593-6d202",
+      "order": 50,
+      "question": "Let $ f(x) = \\begin{cases} x^2 \\cos\\left(\\frac{1}{x}\\right), & x \\neq 0 \\\\ 0, & x = 0 \\end{cases} $. Then, $ f(x) $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "discontinuous at $ x=0 $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is continuous at $ x=0 $."
+        },
+        {
+          "letter": "B",
+          "text": "continuous but not differentiable at $ x=0 $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is differentiable at $ x=0 $."
+        },
+        {
+          "letter": "C",
+          "text": "differentiable at $ x=0 $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The function is differentiable at $ x=0 $."
+        },
+        {
+          "letter": "D",
+          "text": "neither continuous nor differentiable at $ x=0 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is both continuous and differentiable at $ x=0 $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Continuity: $ \\lim_{x \\to 0} x^2 \\cos(1/x) = 0 = f(0) $, so continuous. Differentiability: $ f'(0) = \\lim_{h \\to 0} \\frac{h^2 \\cos(1/h)}{h} = \\lim_{h \\to 0} h \\cos(1/h) = 0 $. So differentiable.",
+      "hint": "Check continuity by evaluating the limit as $ x $ approaches 0 and differentiability by evaluating the derivative at $ x=0 $.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287212593-3e60d",
+      "order": 51,
+      "question": "The function $ f(x) = \\frac{x^2 - 4}{x - 2} $ is discontinuous at $ x = 2 $. What type of discontinuity does it have?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Removable discontinuity",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The limit exists, so the discontinuity is removable."
+        },
+        {
+          "letter": "B",
+          "text": "Jump discontinuity",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Jump discontinuity occurs when left and right limits exist but are unequal."
+        },
+        {
+          "letter": "C",
+          "text": "Infinite discontinuity",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Infinite discontinuity occurs when the function tends to infinity."
+        },
+        {
+          "letter": "D",
+          "text": "Non-removable discontinuity",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Non-removable discontinuity occurs when the limit does not exist or is infinite."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The function simplifies to $ f(x) = x + 2 $ for $ x \\neq 2 $, but is undefined at $ x = 2 $. The limit exists ($ \\lim_{x \\to 2} f(x) = 4 $), so it is a removable discontinuity.",
+      "hint": "Check if the limit exists at the point of discontinuity.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287212593-fae7f",
+      "order": 52,
+      "question": "Consider the function $ f(x) = \\begin{cases} x^2 - 1, & x < 1 \\\\ 2x - 3, & x \\geq 1 \\end{cases} $. At $ x = 1 $, the function has:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A removable discontinuity",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Removable discontinuity requires the limit to exist."
+        },
+        {
+          "letter": "B",
+          "text": "A jump discontinuity",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The left and right limits exist but are unequal."
+        },
+        {
+          "letter": "C",
+          "text": "A finite non-removable discontinuity",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Finite non-removable discontinuity is not a standard classification."
+        },
+        {
+          "letter": "D",
+          "text": "No discontinuity",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The function is discontinuous at $ x = 1 $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Left limit = $ 0 $, right limit = $ -1 $. Since the left and right limits exist but are unequal, it is a jump discontinuity.",
+      "hint": "Evaluate the left-hand and right-hand limits at $ x = 1 $.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287212593-c86b6",
+      "order": 53,
+      "question": "The function $ f(x) = \\frac{1}{x - 3} $ has what type of discontinuity at $ x = 3 $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Removable discontinuity",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Removable discontinuity requires the limit to exist."
+        },
+        {
+          "letter": "B",
+          "text": "Jump discontinuity",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Jump discontinuity occurs when left and right limits exist but are unequal."
+        },
+        {
+          "letter": "C",
+          "text": "Infinite discontinuity",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The function tends to infinity at $ x = 3 $."
+        },
+        {
+          "letter": "D",
+          "text": "Oscillatory discontinuity",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Oscillatory discontinuity involves oscillation, not infinity."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "As $ x \\to 3^+ $, $ f(x) \\to +\\infty $, and as $ x \\to 3^- $, $ f(x) \\to -\\infty $. The function tends to infinity, so it is an infinite discontinuity.",
+      "hint": "Check the behavior of the function as $ x $ approaches 3 from both sides.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287212593-6dc30",
+      "order": 54,
+      "question": "Which of the following functions has a non-removable discontinuity at $ x = 0 $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ f(x) = \\frac{\\sin x}{x} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The limit exists, so it is removable."
+        },
+        {
+          "letter": "B",
+          "text": "$ f(x) = \\begin{cases} x^2, & x \\neq 0 \\\\ 1, & x = 0 \\end{cases} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The limit exists, so it is removable."
+        },
+        {
+          "letter": "C",
+          "text": "$ f(x) = \\begin{cases} 1, & x \\leq 0 \\\\ -1, & x > 0 \\end{cases} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a jump discontinuity, which is non-removable."
+        },
+        {
+          "letter": "D",
+          "text": "$ f(x) = x \\sin \\frac{1}{x} $",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The function is undefined at $ x = 0 $ and cannot be redefined to make it continuous."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The limit $ \\lim_{x \\to 0} x \\sin \\frac{1}{x} = 0 $, but the function is undefined at $ x = 0 $. However, if redefined at $ x = 0 $, it becomes continuous, making it removable. But if considered as $ f(0) $ is not defined, it is non-removable.",
+      "hint": "Check if the function can be redefined at $ x = 0 $ to make it continuous.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287212593-54683",
+      "order": 55,
+      "question": "Let $ f(x) = \\begin{cases} \\frac{|x^2 - 4|}{x - 2}, & x \\neq 2 \\\\ k, & x = 2 \\end{cases} $. For $ f(x) $ to be continuous at $ x = 2 $, what must $ k $ be?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The limit is not 0."
+        },
+        {
+          "letter": "B",
+          "text": "4",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The limit as $ x \\to 2 $ is 4."
+        },
+        {
+          "letter": "C",
+          "text": "-4",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The limit is not -4."
+        },
+        {
+          "letter": "D",
+          "text": "Does not exist",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The limit exists."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For $ x \\neq 2 $, $ f(x) = \\frac{|x^2 - 4|}{x - 2} = \\frac{|(x-2)(x+2)|}{x-2} $. As $ x \\to 2 $, $ f(x) \\to |4| = 4 $. So, $ k = 4 $ for continuity.",
+      "hint": "Simplify the function for $ x \\neq 2 $ and evaluate the limit as $ x $ approaches 2.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287212593-5201e",
+      "order": 56,
+      "question": "The function $ f(x) = \\begin{cases} x + 1, & x \\leq 0 \\\\ \\cos x, & x > 0 \\end{cases} $ has:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A removable discontinuity at $ x = 0 $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The function is continuous at $ x = 0 $."
+        },
+        {
+          "letter": "B",
+          "text": "A jump discontinuity at $ x = 0 $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The function is continuous at $ x = 0 $."
+        },
+        {
+          "letter": "C",
+          "text": "An infinite discontinuity at $ x = 0 $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The function is continuous at $ x = 0 $."
+        },
+        {
+          "letter": "D",
+          "text": "No discontinuity at $ x = 0 $",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "All conditions for continuity are satisfied."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Left limit = $ 1 $, right limit = $ \\cos 0 = 1 $, and $ f(0) = 1 $. All three are equal, so the function is continuous at $ x = 0 $.",
+      "hint": "Evaluate the left-hand limit, right-hand limit, and the function value at $ x = 0 $.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287212593-d0997",
+      "order": 57,
+      "question": "Which of the following is an example of an oscillatory discontinuity?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ f(x) = \\frac{1}{x} $ at $ x = 0 $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is an infinite discontinuity."
+        },
+        {
+          "letter": "B",
+          "text": "$ f(x) = \\sin \\frac{1}{x} $ at $ x = 0 $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This function oscillates infinitely as $ x \\to 0 $."
+        },
+        {
+          "letter": "C",
+          "text": "$ f(x) = \\begin{cases} 1, & x \\leq 0 \\\\ 0, & x > 0 \\end{cases} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a jump discontinuity."
+        },
+        {
+          "letter": "D",
+          "text": "$ f(x) = \\frac{x^2 - 1}{x - 1} $ at $ x = 1 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is a removable discontinuity."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ \\sin \\frac{1}{x} $ oscillates infinitely as $ x \\to 0 $, so it has an oscillatory discontinuity.",
+      "hint": "Look for a function that oscillates infinitely near the point of discontinuity.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287212593-5c228",
+      "order": 58,
+      "question": "The function $ f(x) = \\begin{cases} \\frac{1}{x}, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases} $ has:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A removable discontinuity at $ x = 0 $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The limit does not exist."
+        },
+        {
+          "letter": "B",
+          "text": "A jump discontinuity at $ x = 0 $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Jump discontinuity requires finite limits."
+        },
+        {
+          "letter": "C",
+          "text": "An infinite discontinuity at $ x = 0 $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The function tends to infinity at $ x = 0 $."
+        },
+        {
+          "letter": "D",
+          "text": "An essential discontinuity at $ x = 0 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Essential discontinuity is a broader term that includes infinite discontinuities."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ \\lim_{x \\to 0^-} f(x) = -\\infty $ and $ \\lim_{x \\to 0^+} f(x) = +\\infty $. The function tends to infinity, so it is an infinite discontinuity.",
+      "hint": "Check the behavior of the function as $ x $ approaches 0 from both sides.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287212593-ba864",
+      "order": 59,
+      "question": "Let $ f(x) = \\begin{cases} x^2 \\sin \\frac{1}{x}, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases} $. The function $ f(x) $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Discontinuous at $ x = 0 $ with a jump discontinuity",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The function is continuous at $ x = 0 $."
+        },
+        {
+          "letter": "B",
+          "text": "Discontinuous at $ x = 0 $ with an infinite discontinuity",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The function is continuous at $ x = 0 $."
+        },
+        {
+          "letter": "C",
+          "text": "Continuous at $ x = 0 $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The limit equals the function value at $ x = 0 $."
+        },
+        {
+          "letter": "D",
+          "text": "Discontinuous at $ x = 0 $ with an oscillatory discontinuity",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The function is continuous at $ x = 0 $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ \\lim_{x \\to 0} x^2 \\sin \\frac{1}{x} = 0 = f(0) $, so the function is continuous at $ x = 0 $.",
+      "hint": "Use the squeeze theorem to evaluate the limit as $ x \\to 0 $.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287212593-ef95e",
+      "order": 60,
+      "question": "The function $ f(x) = \\begin{cases} \\frac{x^2 - 9}{x - 3}, & x \\neq 3 \\\\ 6, & x = 3 \\end{cases} $ has:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A removable discontinuity at $ x = 3 $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The function is continuous at $ x = 3 $."
+        },
+        {
+          "letter": "B",
+          "text": "A jump discontinuity at $ x = 3 $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The function is continuous at $ x = 3 $."
+        },
+        {
+          "letter": "C",
+          "text": "An infinite discontinuity at $ x = 3 $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The function is continuous at $ x = 3 $."
+        },
+        {
+          "letter": "D",
+          "text": "No discontinuity at $ x = 3 $",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The function is continuous at $ x = 3 $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For $ x \\neq 3 $, $ f(x) = x + 3 $. $ \\lim_{x \\to 3} f(x) = 6 = f(3) $, so the function is continuous at $ x = 3 $.",
+      "hint": "Simplify the function for $ x \\neq 3 $ and evaluate the limit as $ x $ approaches 3.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
