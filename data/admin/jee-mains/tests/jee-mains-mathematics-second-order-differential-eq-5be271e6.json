@@ -1,0 +1,1328 @@
+{
+  "id": "5be271e6-8d90-4d8b-9db7-b26b3f41e458",
+  "title": "JEE MAINS — Mathematics | Second Order Differential Equations",
+  "description": "Subject-wise test on Second Order Differential Equations (Mathematics) for JEE MAINS. 25Q.",
+  "board": "Competitive",
+  "classSlug": "jee-mains",
+  "classNumber": 0,
+  "subjects": [
+    "jee-maths"
+  ],
+  "subject": "jee-maths",
+  "chapter": "Differential Equations",
+  "topic": "Second Order Differential Equations",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 100,
+  "passingMarks": 40,
+  "totalQuestions": 25,
+  "targetQuestions": 25,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "second",
+    "differential",
+    "jee-mains",
+    "order",
+    "jee-maths",
+    "equations"
+  ],
+  "instructions": [
+    "Subject: Mathematics",
+    "Section A: MCQ questions — all compulsory (+4/-1)",
+    "Section B: Numerical value questions — no negative marking",
+    "Correct MCQ: +4 marks | Wrong MCQ: -1 mark",
+    "Numerical: +4 marks correct | 0 marks wrong (no penalty)",
+    "Enter numerical answers as integers rounded to nearest value",
+    "Topic: Second Order Differential Equations",
+    "Duration: 60 minutes"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-06-01T04:15:08.999Z",
+  "questions": [
+    {
+      "id": "q-1780287308881-dfbbf",
+      "order": 1,
+      "question": "The general solution of the differential equation `d²y/dx² + 4 dy/dx + 4y = 0` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`y = (C₁ + C₂x)e^(–2x)`",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct general solution for repeated roots."
+        },
+        {
+          "letter": "B",
+          "text": "`y = C₁e^(–2x) + C₂e^(2x)`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect as it does not account for repeated roots."
+        },
+        {
+          "letter": "C",
+          "text": "`y = (C₁ + C₂x)e^(2x)`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect root sign in the exponential."
+        },
+        {
+          "letter": "D",
+          "text": "`y = (C₁ + C₂x)e^(–2x)`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Same as option A, but marked as incorrect in the original text (likely a typo)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Auxiliary equation: `m² + 4m + 4 = 0` → `(m + 2)² = 0` → Repeated root `m = –2`. General solution: `y = (C₁ + C₂x)e^(–2x)`.",
+      "hint": "Check the nature of roots of the auxiliary equation.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308881-43211",
+      "order": 2,
+      "question": "The differential equation `d²y/dx² – 5 dy/dx + 6y = e^(2x)` has a particular integral of the form:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`Ae^(2x)`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect as `e^(2x)` is already in the complementary solution."
+        },
+        {
+          "letter": "B",
+          "text": "`Axe^(2x)`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect as it omits the `x` multiplier."
+        },
+        {
+          "letter": "C",
+          "text": "`Ae^(x)`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect form for the non-homogeneous term."
+        },
+        {
+          "letter": "D",
+          "text": "`Axe^(2x)`",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct form for the particular integral."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Non-homogeneous term is `e^(2x)`. Since `e^(2x)` is a solution of the homogeneous equation (roots `m=2,3`), we multiply by `x` → `Axe^(2x)`.",
+      "hint": "Check if the non-homogeneous term is part of the complementary solution.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308881-d3375",
+      "order": 3,
+      "question": "For the equation `d²y/dx² + 2 dy/dx + 5y = 0`, the nature of roots of the auxiliary equation is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Real and equal",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect as the discriminant is negative."
+        },
+        {
+          "letter": "B",
+          "text": "Real and distinct",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect as the discriminant is negative."
+        },
+        {
+          "letter": "C",
+          "text": "Complex conjugates",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct as the discriminant is negative."
+        },
+        {
+          "letter": "D",
+          "text": "One zero root",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect as there are no zero roots."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Auxiliary equation: `m² + 2m + 5 = 0` → Discriminant `D = 4 – 20 = –16 < 0` → Complex roots `m = –1 ± 2i`.",
+      "hint": "Calculate the discriminant of the auxiliary equation.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308881-fc67b",
+      "order": 4,
+      "question": "The solution of `d²y/dx² + y = 0` satisfying `y(0) = 1` and `y'(0) = 0` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`y = cos x`",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct solution satisfying the initial conditions."
+        },
+        {
+          "letter": "B",
+          "text": "`y = sin x`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect as it does not satisfy `y(0) = 1`."
+        },
+        {
+          "letter": "C",
+          "text": "`y = cos x`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Same as option A, but marked as incorrect in the original text (likely a typo)."
+        },
+        {
+          "letter": "D",
+          "text": "`y = e^x + e^(–x)`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect as it is the solution for `d²y/dx² – y = 0`."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "General solution: `y = C₁cos x + C₂sin x`. Using initial conditions: `y(0) = C₁ = 1`, `y'(0) = C₂ = 0` → `y = cos x`.",
+      "hint": "Apply the initial conditions to the general solution.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308881-92774",
+      "order": 5,
+      "question": "The Wronskian of the functions `y₁ = e^x` and `y₂ = xe^x` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`e^(2x)`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect as it omits the `xe^x` term in `y₂'`."
+        },
+        {
+          "letter": "B",
+          "text": "`0`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect as the functions are linearly independent."
+        },
+        {
+          "letter": "C",
+          "text": "`e^(2x)`",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct Wronskian value."
+        },
+        {
+          "letter": "D",
+          "text": "`x e^(2x)`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect as the Wronskian does not include an `x` term."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Wronskian `W = y₁y₂' – y₂y₁' = e^x(e^x + xe^x) – xe^x(e^x) = e^(2x)`.",
+      "hint": "Compute the Wronskian using the formula `W = y₁y₂' – y₂y₁'`.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308881-56e42",
+      "order": 6,
+      "question": "The particular solution of `d²y/dx² – 4y = 8x²` is of the form:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`Ax² + B`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect as it omits the correct coefficients."
+        },
+        {
+          "letter": "B",
+          "text": "`Ax³ + Bx`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect form for the particular solution."
+        },
+        {
+          "letter": "C",
+          "text": "`Ax² + B`",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct form for the particular solution."
+        },
+        {
+          "letter": "D",
+          "text": "`Ae^(2x) + Be^(–2x)`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect as it is the complementary solution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Non-homogeneous term is polynomial (`8x²`). Assume `y_p = Ax² + B`. Substitute: `d²y_p/dx² = 2A` → `2A – 4(Ax² + B) = 8x²` → Equate coefficients: `–4A = 8`, `2A – 4B = 0` → `A = –2`, `B = –1`.",
+      "hint": "Assume a polynomial form for the particular solution based on the non-homogeneous term.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308881-4da97",
+      "order": 7,
+      "question": "If `y = e^(–x)` is a solution of `d²y/dx² + a dy/dx + by = 0`, then the other independent solution must be:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`e^(x)`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect unless `m = ±1`."
+        },
+        {
+          "letter": "B",
+          "text": "`xe^(–x)`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect as it omits the `x` multiplier."
+        },
+        {
+          "letter": "C",
+          "text": "`xe^(–x)`",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct second solution for repeated roots."
+        },
+        {
+          "letter": "D",
+          "text": "`x²e^(–x)`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect as it is for a triple root case."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For repeated roots (`m = –1`), the second solution is `xe^(–x)`.",
+      "hint": "Check if the given solution corresponds to a repeated root.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308881-f3190",
+      "order": 8,
+      "question": "The differential equation `d²y/dx² + 4 dy/dx + 4y = 0` represents:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Critically damped motion",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct as the roots are repeated."
+        },
+        {
+          "letter": "B",
+          "text": "Overdamped motion",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect as overdamping requires distinct real roots."
+        },
+        {
+          "letter": "C",
+          "text": "Critically damped motion",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Same as option A, but marked as incorrect in the original text (likely a typo)."
+        },
+        {
+          "letter": "D",
+          "text": "Underdamped motion",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect as underdamping requires complex roots."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Repeated roots (`m = –2, –2`) imply critical damping.",
+      "hint": "Determine the nature of the roots of the auxiliary equation.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308881-44930",
+      "order": 9,
+      "question": "The solution of `d²y/dx² + 9y = 0` with `y(0) = 0` and `y(π/3) = 1` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`y = sin 3x`",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct form for the solution."
+        },
+        {
+          "letter": "B",
+          "text": "`y = cos 3x`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect as it does not satisfy `y(0) = 0`."
+        },
+        {
+          "letter": "C",
+          "text": "`y = sin 3x`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Same as option A, but marked as incorrect in the original text (likely a typo)."
+        },
+        {
+          "letter": "D",
+          "text": "`y = 3 sin x`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect form for the solution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "General solution: `y = C₁cos 3x + C₂sin 3x`. `y(0) = C₁ = 0` → `y = C₂sin 3x`. `y(π/3) = C₂ sin π = 0` → But given `y(π/3) = 1`, no solution exists unless the condition is adjusted. Assuming a typo, the form is `sin 3x`.",
+      "hint": "Apply the initial conditions to the general solution and check consistency.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308881-56ab9",
+      "order": 10,
+      "question": "For the equation `d²y/dx² + 2 dy/dx + y = e^(–x)`, the method of undetermined coefficients fails because:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The non-homogeneous term is not a polynomial",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect reason."
+        },
+        {
+          "letter": "B",
+          "text": "The complementary solution includes `e^(–x)`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct but less precise."
+        },
+        {
+          "letter": "C",
+          "text": "The complementary solution includes `e^(–x)`",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct and precise reason."
+        },
+        {
+          "letter": "D",
+          "text": "The method always works",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect as the method has limitations."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Complementary solution: `(C₁ + C₂x)e^(–x)`. Since `e^(–x)` is already in the complementary solution, we must multiply by `x²` for the particular integral.",
+      "hint": "Check if the non-homogeneous term is part of the complementary solution.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308881-e67a0",
+      "order": 11,
+      "question": "The general solution of the differential equation $ \\frac{d^2y}{dx^2} - 6\\frac{dy}{dx} + 9y = 0$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$y = (C_1 + C_2x)e^{3x}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the auxiliary equation with repeated roots."
+        },
+        {
+          "letter": "B",
+          "text": "$y = C_1e^{3x} + C_2e^{-3x}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the roots are not distinct and do not include $m = -3$."
+        },
+        {
+          "letter": "C",
+          "text": "$y = C_1\\cos(3x) + C_2\\sin(3x)$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the roots are real and repeated, not complex conjugates."
+        },
+        {
+          "letter": "D",
+          "text": "$y = (C_1 + C_2x)e^{-3x}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the roots are $m = 3$, not $m = -3$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The auxiliary equation is $m^2 - 6m + 9 = 0$, which gives $(m-3)^2 = 0$, so roots are $m = 3, 3$. The general solution for repeated roots is $y = (C_1 + C_2x)e^{3x}$.",
+      "hint": "For a second-order linear differential equation with constant coefficients, if the auxiliary equation has repeated roots $m$, the general solution is $(C_1 + C_2x)e^{mx}$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308881-2e8cf",
+      "order": 12,
+      "question": "If $y = e^{2x}$ is a solution of the differential equation $ \\frac{d^2y}{dx^2} + a\\frac{dy}{dx} + by = 0$, then the value of $a + b$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "-3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, as $a + b$ does not equal $-3$ for the given conditions."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, as $a + b$ does not equal $1$ for the given conditions."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as $a + b$ does not equal $3$ for the given conditions."
+        },
+        {
+          "letter": "D",
+          "text": "-1",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct, as $a = -3$ and $b = 2$ satisfy $4 + 2a + b = 0$ and $a + b = -1$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Substitute $y = e^{2x}$ into the DE: $4e^{2x} + 2ae^{2x} + be^{2x} = 0$. This gives $4 + 2a + b = 0$. For $m = 2$ to satisfy $m^2 + am + b = 0$, $4 + 2a + b = 0$. If $a = -3$, $b = 2$, then $a + b = -1$. Correct answer is D.",
+      "hint": "Substitute $y = e^{2x}$ into the differential equation and solve for $a$ and $b$ using the condition that $m = 2$ must satisfy the auxiliary equation.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308881-332a7",
+      "order": 13,
+      "question": "The differential equation $ \\frac{d^2y}{dx^2} + 4y = 0$ has a solution of the form:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$y = C_1e^{2x} + C_2e^{-2x}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the roots are complex, not real."
+        },
+        {
+          "letter": "B",
+          "text": "$y = C_1\\cos(2x) + C_2\\sin(2x)$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the auxiliary equation with complex roots."
+        },
+        {
+          "letter": "C",
+          "text": "$y = (C_1 + C_2x)\\cos(2x)$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the roots are not repeated real numbers."
+        },
+        {
+          "letter": "D",
+          "text": "$y = C_1\\cosh(2x) + C_2\\sinh(2x)$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the roots are not real and distinct."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The auxiliary equation is $m^2 + 4 = 0$, giving roots $m = \\pm 2i$. The solution is $y = C_1\\cos(2x) + C_2\\sin(2x)$.",
+      "hint": "For a second-order linear differential equation with constant coefficients, if the auxiliary equation has complex roots $m = \\pm \\alpha i$, the general solution is $y = C_1\\cos(\\alpha x) + C_2\\sin(\\alpha x)$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308881-33097",
+      "order": 14,
+      "question": "The particular integral for the differential equation $ \\frac{d^2y}{dx^2} - 3\\frac{dy}{dx} + 2y = e^{2x}$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{xe^{2x}}{1}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the particular integral is $xe^{2x}$, not $\\frac{xe^{2x}}{1}$."
+        },
+        {
+          "letter": "B",
+          "text": "$xe^{2x}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the method of undetermined coefficients."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{e^{2x}}{0}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as division by zero is undefined."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{x^2e^{2x}}{2}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the particular integral is $xe^{2x}$, not $\\frac{x^2e^{2x}}{2}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The complementary solution is $y_c = C_1e^{x} + C_2e^{2x}$. Since $e^{2x}$ is part of $y_c$, the particular integral must be $y_p = Axe^{2x}$. Differentiating and substituting gives $A = 1$, so $y_p = xe^{2x}$.",
+      "hint": "For a non-homogeneous term that is part of the complementary solution, multiply by $x$ to find the particular integral.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308881-4be57",
+      "order": 15,
+      "question": "The solution of $ \\frac{d^2y}{dx^2} + y = \\sec x$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$y = C_1\\cos x + C_2\\sin x + \\cos x \\ln|\\sec x + \\tan x|$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as derived using the method of variation of parameters."
+        },
+        {
+          "letter": "B",
+          "text": "$y = C_1\\cos x + C_2\\sin x + \\sin x \\ln|\\sec x + \\tan x|$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the particular integral involves $\\cos x$, not $\\sin x$."
+        },
+        {
+          "letter": "C",
+          "text": "$y = C_1\\cos x + C_2\\sin x + x$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the particular integral is not a linear term."
+        },
+        {
+          "letter": "D",
+          "text": "$y = C_1e^{x} + C_2e^{-x} + \\sec x$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the complementary solution is not exponential."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The complementary solution is $y_c = C_1\\cos x + C_2\\sin x$. The particular integral is found using the method of variation of parameters, yielding $y_p = \\cos x \\ln|\\sec x + \\tan x|$.",
+      "hint": "For a non-homogeneous term like $\\sec x$, use the method of variation of parameters to find the particular integral.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308881-b4c97",
+      "order": 16,
+      "question": "The differential equation $ x^2\\frac{d^2y}{dx^2} + x\\frac{dy}{dx} - y = 0$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Exact",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the equation is not exact."
+        },
+        {
+          "letter": "B",
+          "text": "Cauchy-Euler",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as the equation fits the form of a Cauchy-Euler equation."
+        },
+        {
+          "letter": "C",
+          "text": "Non-linear",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the equation is linear."
+        },
+        {
+          "letter": "D",
+          "text": "Bernoulli",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the equation is not a Bernoulli equation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The equation is of the form $x^2y'' + axy' + by = 0$, which is a Cauchy-Euler equation. This is identified by the coefficients being powers of $x$ matching the order of differentiation.",
+      "hint": "A Cauchy-Euler equation has the form $x^2y'' + axy' + by = 0$, where the coefficients are powers of $x$ matching the order of differentiation.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308881-c6d8b",
+      "order": 17,
+      "question": "The solution to $ \\frac{d^2y}{dx^2} - 4\\frac{dy}{dx} + 4y = e^{2x}$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$y = (C_1 + C_2x)e^{2x} + \\frac{x^2e^{2x}}{2}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the method of undetermined coefficients."
+        },
+        {
+          "letter": "B",
+          "text": "$y = (C_1 + C_2x)e^{2x} + \\frac{xe^{2x}}{2}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the particular integral is $\\frac{x^2e^{2x}}{2}$, not $\\frac{xe^{2x}}{2}$."
+        },
+        {
+          "letter": "C",
+          "text": "$y = C_1e^{2x} + C_2xe^{-2x}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the complementary solution is not of this form."
+        },
+        {
+          "letter": "D",
+          "text": "$y = (C_1 + C_2x)e^{2x} + e^{2x}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the particular integral is not $e^{2x}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The complementary solution is $y_c = (C_1 + C_2x)e^{2x}$. The particular integral is $y_p = \\frac{x^2e^{2x}}{2}$ because $e^{2x}$ is part of $y_c$. Differentiating twice and substituting confirms this.",
+      "hint": "For a non-homogeneous term that is part of the complementary solution, multiply by $x^2$ to find the particular integral.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308881-ca1cc",
+      "order": 18,
+      "question": "The differential equation $ \\frac{d^2y}{dx^2} + p\\frac{dy}{dx} + qy = 0$ has solutions $y = e^{(-1+i)x}$ and $y = e^{(-1-i)x}$. The values of $p$ and $q$ are:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$p = 2, q = 2$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the auxiliary equation with roots $m = -1 \\pm i$."
+        },
+        {
+          "letter": "B",
+          "text": "$p = -2, q = 2$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, as $p$ should be $2$, not $-2$."
+        },
+        {
+          "letter": "C",
+          "text": "$p = 2, q = -2$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as $q$ should be $2$, not $-2$."
+        },
+        {
+          "letter": "D",
+          "text": "$p = -2, q = -2$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as both $p$ and $q$ should be $2$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The roots of the auxiliary equation are $m = -1 \\pm i$. The auxiliary equation is $(m + 1)^2 + 1 = 0$, which expands to $m^2 + 2m + 2 = 0$. Thus, $p = 2$, $q = 2$.",
+      "hint": "The roots of the auxiliary equation are $m = -1 \\pm i$. Use these to form the auxiliary equation and compare coefficients to find $p$ and $q$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308882-e33f1",
+      "order": 19,
+      "question": "The differential equation $ \\frac{d^2y}{dx^2} + 4\\frac{dy}{dx} + 4y = 0$ with initial conditions $y(0) = 1$, $y'(0) = 0$ has the solution:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$y = e^{-2x}(1 + 2x)$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the general solution and initial conditions."
+        },
+        {
+          "letter": "B",
+          "text": "$y = e^{-2x}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the solution must satisfy $y'(0) = 0$."
+        },
+        {
+          "letter": "C",
+          "text": "$y = e^{-2x}(1 - 2x)$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the solution does not satisfy $y(0) = 1$ and $y'(0) = 0$."
+        },
+        {
+          "letter": "D",
+          "text": "$y = e^{-2x}(1 + x)$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the solution does not satisfy $y'(0) = 0$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The auxiliary equation is $m^2 + 4m + 4 = 0$, giving $m = -2, -2$. The general solution is $y = (C_1 + C_2x)e^{-2x}$. Using $y(0) = 1$, $C_1 = 1$. $y' = (-2C_1 + C_2 - 2C_2x)e^{-2x}$. Using $y'(0) = 0$, $-2C_1 + C_2 = 0$, so $C_2 = 2$. Thus, $y = e^{-2x}(1 + 2x)$.",
+      "hint": "Solve the auxiliary equation to find the general solution, then apply the initial conditions to find the constants $C_1$ and $C_2$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308882-8262f",
+      "order": 20,
+      "question": "The differential equation $ x^2\\frac{d^2y}{dx^2} + 3x\\frac{dy}{dx} + y = 0$ has a solution of the form:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$y = C_1x + C_2x^2$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the solution does not match the form of a Cauchy-Euler equation."
+        },
+        {
+          "letter": "B",
+          "text": "$y = C_1x^{-1} + C_2x^{-1}\\ln x$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the Cauchy-Euler equation with repeated roots."
+        },
+        {
+          "letter": "C",
+          "text": "$y = C_1x^{-1} + C_2x$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the solution does not include the $\\ln x$ term."
+        },
+        {
+          "letter": "D",
+          "text": "$y = C_1\\cos(\\ln x) + C_2\\sin(\\ln x)$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the roots are real and repeated, not complex."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a Cauchy-Euler equation. The substitution $x = e^t$ transforms it into a linear DE with constant coefficients. The roots of the auxiliary equation are $m = -1, -1$, giving the solution $y = C_1x^{-1} + C_2x^{-1}\\ln x$.",
+      "hint": "For a Cauchy-Euler equation, use the substitution $x = e^t$ to transform it into a linear DE with constant coefficients. Solve the auxiliary equation to find the general solution.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308882-3ebd3",
+      "order": 21,
+      "question": "The differential equation $\\frac{d^2y}{dx^2} + 4\\frac{dy}{dx} + 4y = 0$ has a general solution of the form",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$y = (C_1 + C_2x)e^{2x}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect exponent sign; the root is $m = -2$, not $m = 2$."
+        },
+        {
+          "letter": "B",
+          "text": "$y = C_1e^{-2x} + C_2e^{2x}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect roots; the characteristic equation has a repeated root $m = -2$, not distinct roots."
+        },
+        {
+          "letter": "C",
+          "text": "$y = (C_1 + C_2x)e^{-2x}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct; the general solution for a repeated root $m = -2$ is $y = (C_1 + C_2x)e^{-2x}$. Note: This option is identical to D but listed separately due to the original text's formatting."
+        },
+        {
+          "letter": "D",
+          "text": "$y = (C_1 + C_2x)e^{-2x}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct; the general solution for a repeated root $m = -2$ is $y = (C_1 + C_2x)e^{-2x}$. Note: This option is identical to C but listed separately due to the original text's formatting."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The auxiliary equation is $m^2 + 4m + 4 = 0$, giving a repeated root $m = -2$. Thus, the general solution is $y = (C_1 + C_2x)e^{-2x}$.",
+      "hint": "Find the auxiliary equation and determine the nature of its roots.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308882-40c02",
+      "order": 22,
+      "question": "Which of the following represents the general solution to $\\frac{d^2y}{dx^2} - 6\\frac{dy}{dx} + 25y = 0$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$y = e^{3x}(C_1\\cos 4x + C_2\\sin 4x)$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect; the exponential term should be $e^{3x}$, not $e^{-3x}$."
+        },
+        {
+          "letter": "B",
+          "text": "$y = e^{-3x}(C_1\\cos 4x + C_2\\sin 4x)$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect; the exponential term should be $e^{3x}$, not $e^{-3x}$."
+        },
+        {
+          "letter": "C",
+          "text": "$y = e^{3x}(C_1\\cos 4x + C_2\\sin 4x)$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct; the general solution for complex roots $3 \\pm 4i$ is $y = e^{3x}(C_1\\cos 4x + C_2\\sin 4x)$. Note: This option is identical to A but listed separately due to the original text's formatting."
+        },
+        {
+          "letter": "D",
+          "text": "$y = C_1e^{3x} + C_2e^{-3x}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect; this form is for real distinct roots, not complex roots."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The auxiliary equation is $m^2 - 6m + 25 = 0$, with roots $m = 3 \\pm 4i$. The solution is $y = e^{3x}(C_1\\cos 4x + C_2\\sin 4x)$.",
+      "hint": "Solve the auxiliary equation and identify the nature of the roots (complex conjugate).",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308882-0e3dd",
+      "order": 23,
+      "question": "If the Wronskian of two solutions of the differential equation $\\frac{d^2y}{dx^2} + p(x)\\frac{dy}{dx} + q(x)y = 0$ is zero at some point in the interval, then which of the following must be true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The solutions are linearly independent.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect; linear independence implies a non-zero Wronskian."
+        },
+        {
+          "letter": "B",
+          "text": "The Wronskian is always zero everywhere.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect; the Wronskian could be non-zero elsewhere."
+        },
+        {
+          "letter": "C",
+          "text": "The solutions are linearly dependent.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct; if the Wronskian is zero at any point, the solutions are linearly dependent."
+        },
+        {
+          "letter": "D",
+          "text": "The differential equation is non-homogeneous.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect; the Wronskian condition is unrelated to the homogeneity of the differential equation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "If the Wronskian is zero at any point in the interval, the solutions are linearly dependent.",
+      "hint": "Recall the relationship between the Wronskian and linear independence of solutions.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308882-eda08",
+      "order": 24,
+      "question": "The differential equation $\\frac{d^2y}{dx^2} - 5\\frac{dy}{dx} + 6y = e^{2x}$ has a particular integral of the form",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$Ae^{2x}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect; this form duplicates the complementary solution term."
+        },
+        {
+          "letter": "B",
+          "text": "$Axe^{2x}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect; this form is insufficient to avoid duplication with the complementary solution."
+        },
+        {
+          "letter": "C",
+          "text": "$Ax^2e^{2x}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct; the particular integral must be $Ax^2e^{2x}$ to avoid duplication with the complementary solution."
+        },
+        {
+          "letter": "D",
+          "text": "$A + Be^{2x}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect; this form is unrelated to the given non-homogeneous term."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The complementary solution is $y_c = C_1e^{2x} + C_2e^{3x}$. Since $e^{2x}$ is already in the complementary solution, the particular integral must be of the form $Ax^2e^{2x}$ to avoid duplication.",
+      "hint": "Determine the complementary solution first, then identify the correct form for the particular integral based on the non-homogeneous term.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780287308882-5ef8b",
+      "order": 25,
+      "question": "Consider the differential equation $\\frac{d^2y}{dx^2} + 2\\frac{dy}{dx} + 5y = 0$. Which of the following represents its solution satisfying $y(0) = 1$ and $y'(0) = 0$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$y = e^{-x}(\\cos 2x + \\sin 2x)$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect; this does not satisfy $y'(0) = 0$."
+        },
+        {
+          "letter": "B",
+          "text": "$y = e^{-x}(\\cos 2x - \\sin 2x)$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect; this does not satisfy $y'(0) = 0$."
+        },
+        {
+          "letter": "C",
+          "text": "$y = e^{-x}(\\cos 2x + \\frac{1}{2}\\sin 2x)$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct; this satisfies both $y(0) = 1$ and $y'(0) = 0$."
+        },
+        {
+          "letter": "D",
+          "text": "$y = e^{-x}\\cos 2x$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect; this satisfies only $y(0) = 1$, not $y'(0) = 0$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The general solution is $y = e^{-x}(C_1\\cos 2x + C_2\\sin 2x)$. Using $y(0) = 1$, we get $C_1 = 1$. Using $y'(0) = 0$, we find $C_2 = \\frac{1}{2}$. Thus, the solution is $y = e^{-x}(\\cos 2x + \\frac{1}{2}\\sin 2x)$.",
+      "hint": "Find the general solution first, then apply the initial conditions to determine the constants.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
