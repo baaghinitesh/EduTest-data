@@ -1,0 +1,1327 @@
+{
+  "id": "b8025641-721e-4410-8117-2f6f318f62b6",
+  "title": "MAHARASHTRA CLASS 11 — Mathematics | Determinants Properties",
+  "description": "Subject-wise test on Determinants Properties (Mathematics) for MAHARASHTRA CLASS 11. 25Q.",
+  "board": "Maharashtra",
+  "classSlug": "maharashtra-class-11",
+  "classNumber": 11,
+  "subjects": [
+    "maha11-maths"
+  ],
+  "subject": "maha11-maths",
+  "chapter": "Calculus Geometry",
+  "topic": "Determinants Properties",
+  "testType": "subject-wise",
+  "duration": 38,
+  "totalMarks": 25,
+  "passingMarks": 10,
+  "totalQuestions": 25,
+  "targetQuestions": 25,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "calculus",
+    "properties",
+    "determinants",
+    "maha11-maths",
+    "geometry",
+    "maharashtra-class-11"
+  ],
+  "instructions": [
+    "Subject: Mathematics",
+    "Total Questions: 25",
+    "Total Marks: 25",
+    "Duration: 38 minutes",
+    "Correct answer: +1 mark",
+    "No negative marking",
+    "Topic: Determinants Properties"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-06-08T15:05:01.299Z",
+  "questions": [
+    {
+      "id": "q-1780931101007-565f9",
+      "order": 1,
+      "question": "If any two rows or columns of a determinant are identical, then the value of the determinant is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 1."
+        },
+        {
+          "letter": "B",
+          "text": "-1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not -1."
+        },
+        {
+          "letter": "C",
+          "text": "0",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The value of the determinant is 0."
+        },
+        {
+          "letter": "D",
+          "text": "Undefined",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is defined and equals 0."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a fundamental property of determinants. If two rows or columns are identical, performing the operation R_i → R_i - R_j (where R_i and R_j are the identical rows) would result in a row of all zeros. A determinant with a row (or column) of all zeros has a value of 0.",
+      "hint": "Recall the property of determinants when two rows or columns are identical.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-fd237",
+      "order": 2,
+      "question": "The value of the determinant $\\begin{vmatrix} 5 & 2 & 3 \\\\ 0 & 0 & 0 \\\\ 1 & 4 & 6 \\end{vmatrix}$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 5."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 1."
+        },
+        {
+          "letter": "C",
+          "text": "0",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The value of the determinant is 0."
+        },
+        {
+          "letter": "D",
+          "text": "-1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not -1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a direct application of a determinant property. If any row or any column of a determinant consists of all zeros, then the value of the determinant is zero. Here, the second row consists entirely of zeros.",
+      "hint": "Check if any row or column is entirely zero.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-27942",
+      "order": 3,
+      "question": "If we interchange any two rows of a determinant, then the value of the determinant:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "remains unchanged",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value changes sign."
+        },
+        {
+          "letter": "B",
+          "text": "changes its sign",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The value changes its sign."
+        },
+        {
+          "letter": "C",
+          "text": "becomes zero",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value does not become zero."
+        },
+        {
+          "letter": "D",
+          "text": "is multiplied by a scalar k",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is multiplied by -1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a direct recall of a property of determinants. Interchanging any two rows (or any two columns) of a determinant results in a new determinant whose value is the negative of the original determinant.",
+      "hint": "Recall the effect of interchanging two rows on the determinant's value.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-1d118",
+      "order": 4,
+      "question": "If each element of a row (or a column) of a determinant is multiplied by a constant 'k', then the value of the determinant is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "unchanged",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value changes."
+        },
+        {
+          "letter": "B",
+          "text": "multiplied by k^n (where n is the order of the determinant)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is multiplied by k, not k^n."
+        },
+        {
+          "letter": "C",
+          "text": "multiplied by k",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The value is multiplied by k."
+        },
+        {
+          "letter": "D",
+          "text": "divided by k",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is multiplied by k."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a fundamental property of determinants. When a common factor 'k' is taken out from any one row or one column of a determinant, it multiplies the entire determinant. Conversely, if a row or column is multiplied by 'k', the determinant's value is multiplied by 'k'.",
+      "hint": "Recall the property of determinants when a row or column is multiplied by a scalar.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-8e2f0",
+      "order": 5,
+      "question": "The value of $\\begin{vmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\\\ 7 & 8 & 9 \\end{vmatrix}$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 1."
+        },
+        {
+          "letter": "B",
+          "text": "-1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not -1."
+        },
+        {
+          "letter": "C",
+          "text": "0",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The value of the determinant is 0."
+        },
+        {
+          "letter": "D",
+          "text": "2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We can apply row operations to simplify the determinant. $D = \\begin{vmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\\\ 7 & 8 & 9 \\end{vmatrix}$. Apply $R_2 \\to R_2 - R_1$ and $R_3 \\to R_3 - R_1$: $D = \\begin{vmatrix} 1 & 2 & 3 \\\\ 3 & 3 & 3 \\\\ 6 & 6 & 6 \\end{vmatrix}$. Now, take common factor 3 from $R_2$ and 6 from $R_3$: $D = 3 \\times 6 \\begin{vmatrix} 1 & 2 & 3 \\\\ 1 & 1 & 1 \\\\ 1 & 1 & 1 \\end{vmatrix}$. Since two rows ($R_2$ and $R_3$) are identical, the value of the determinant is 0. So, $D = 3 \\times 6 \\times 0 = 0$.",
+      "hint": "Use row operations to simplify the determinant and check for identical rows.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-99237",
+      "order": 6,
+      "question": "If the points (x, -2), (5, 2), and (8, 8) are collinear, then the value of x is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value of x is not 1."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value of x is not 2."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The value of x is 3."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value of x is not 4."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For three points $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$ to be collinear, the area of the triangle formed by them must be zero. The area of a triangle can be calculated using the determinant: Area $= \\frac{1}{2} \\begin{vmatrix} x_1 & y_1 & 1 \\\\ x_2 & y_2 & 1 \\\\ x_3 & y_3 & 1 \\end{vmatrix}$. Setting the determinant to zero for collinearity: $\\begin{vmatrix} x & -2 & 1 \\\\ 5 & 2 & 1 \\\\ 8 & 8 & 1 \\end{vmatrix} = 0$. Expand along the first row: $x(2 \\times 1 - 8 \\times 1) - (-2)(5 \\times 1 - 8 \\times 1) + 1(5 \\times 8 - 8 \\times 2) = 0$. Solving this gives $x = 3$.",
+      "hint": "Use the condition for collinearity of three points using determinants.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-fa20f",
+      "order": 7,
+      "question": "If $\\Delta = \\begin{vmatrix} a & b & c \\\\ d & e & f \\\\ g & h & i \\end{vmatrix}$, then $\\begin{vmatrix} a & b & c \\\\ d+2a & e+2b & f+2c \\\\ g & h & i \\end{vmatrix}$ is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\Delta$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The value of the determinant is equal to $\\Delta$."
+        },
+        {
+          "letter": "B",
+          "text": "$2\\Delta$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not $2\\Delta$."
+        },
+        {
+          "letter": "C",
+          "text": "$-\\Delta$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not $-\\Delta$."
+        },
+        {
+          "letter": "D",
+          "text": "0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 0."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let the given determinant be $\\Delta'$. $\\Delta' = \\begin{vmatrix} a & b & c \\\\ d+2a & e+2b & f+2c \\\\ g & h & i \\end{vmatrix}$. Apply the property $R_2 \\to R_2 - 2R_1$. This operation does not change the value of the determinant. $\\Delta' = \\begin{vmatrix} a & b & c \\\\ (d+2a)-2a & (e+2b)-2b & (f+2c)-2c \\\\ g & h & i \\end{vmatrix} = \\begin{vmatrix} a & b & c \\\\ d & e & f \\\\ g & h & i \\end{vmatrix} = \\Delta$.",
+      "hint": "Use row operations to simplify the determinant and compare it with the original.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-dc0c1",
+      "order": 8,
+      "question": "If $A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}$, then the value of $\\det(2A)$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "-4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not -4."
+        },
+        {
+          "letter": "B",
+          "text": "-8",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The value of $\\det(2A)$ is -8."
+        },
+        {
+          "letter": "C",
+          "text": "-16",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not -16."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 4."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, find the determinant of A: $\\det(A) = \\begin{vmatrix} 1 & 2 \\\\ 3 & 4 \\end{vmatrix} = (1 \\times 4) - (2 \\times 3) = 4 - 6 = -2$. Now, find the matrix 2A: $2A = 2 \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ 6 & 8 \\end{pmatrix}$. Next, find the determinant of 2A: $\\det(2A) = \\begin{vmatrix} 2 & 4 \\\\ 6 & 8 \\end{vmatrix} = (2 \\times 8) - (4 \\times 6) = 16 - 24 = -8$. Alternatively, using the property $\\det(kA) = k^n \\det(A)$, where n is the order of the matrix. Here, k=2 and n=2 (since A is a 2x2 matrix). $\\det(2A) = 2^2 \\det(A) = 4 \\times (-2) = -8$.",
+      "hint": "Use the property of determinants for scalar multiplication of a matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-6800e",
+      "order": 9,
+      "question": "**Assertion (A):** If $\\begin{vmatrix} x & 2 \\\\ 1 & x \\end{vmatrix} = \\begin{vmatrix} 3 & 2 \\\\ 1 & 3 \\end{vmatrix}$, then $x = \\pm 3$. **Reason (R):** For two determinants to be equal, their corresponding elements must be equal.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true and R is the correct explanation of A.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. R is false."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true but R is NOT the correct explanation of A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. R is false."
+        },
+        {
+          "letter": "C",
+          "text": "A is true but R is false.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. A is true, but R is false."
+        },
+        {
+          "letter": "D",
+          "text": "A is false but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. A is true, and R is false."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "**Evaluate Assertion (A):** $\\begin{vmatrix} x & 2 \\\\ 1 & x \\end{vmatrix} = x \\cdot x - 2 \\cdot 1 = x^2 - 2$. $\\begin{vmatrix} 3 & 2 \\\\ 1 & 3 \\end{vmatrix} = 3 \\cdot 3 - 2 \\cdot 1 = 9 - 2 = 7$. So, $x^2 - 2 = 7 \\implies x^2 = 9 \\implies x = \\pm 3$. Thus, Assertion (A) is TRUE. **Evaluate Reason (R):** 'For two determinants to be equal, their corresponding elements must be equal.' This statement is FALSE. Determinants are scalar values. Two determinants can be equal in value even if their corresponding elements are not equal.",
+      "hint": "Evaluate the truth of the assertion and reason separately.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-42aa6",
+      "order": 10,
+      "question": "If two rows (or columns) of a determinant are identical, then the value of the determinant is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The value of the determinant is not 1 when two rows or columns are identical."
+        },
+        {
+          "letter": "B",
+          "text": "-1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The value of the determinant is not -1 when two rows or columns are identical."
+        },
+        {
+          "letter": "C",
+          "text": "0",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The value of the determinant is zero when two rows or columns are identical."
+        },
+        {
+          "letter": "D",
+          "text": "Undefined",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The value of the determinant is defined and equals zero when two rows or columns are identical."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a fundamental property of determinants. If any two rows or columns are identical, the determinant's value is zero.",
+      "hint": "Recall the property of determinants related to identical rows or columns.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-a83fe",
+      "order": 11,
+      "question": "What is the value of the determinant $\\begin{vmatrix} 5 & 2 & 8 \\\\ 0 & 0 & 0 \\\\ 1 & 7 & 3 \\end{vmatrix}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The value is not 5."
+        },
+        {
+          "letter": "B",
+          "text": "10",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The value is not 10."
+        },
+        {
+          "letter": "C",
+          "text": "1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The value is not 1."
+        },
+        {
+          "letter": "D",
+          "text": "0",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The value of the determinant is zero because the second row is all zeros."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "If all elements of a row (or a column) of a determinant are zero, then the value of the determinant is zero. Here, the second row consists entirely of zeros.",
+      "hint": "Check if any row or column has all elements as zero.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-73e26",
+      "order": 12,
+      "question": "If we interchange any two rows or any two columns of a determinant, the value of the determinant:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "remains unchanged",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The value does not remain unchanged; it changes sign."
+        },
+        {
+          "letter": "B",
+          "text": "changes its sign",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The value of the determinant changes its sign when two rows or columns are interchanged."
+        },
+        {
+          "letter": "C",
+          "text": "becomes zero",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The value does not become zero; it changes sign."
+        },
+        {
+          "letter": "D",
+          "text": "is multiplied by 2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The value is not multiplied by 2; it changes sign."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a direct property of determinants. Interchanging any two rows or columns results in a change of sign of the determinant's value.",
+      "hint": "Recall the effect of interchanging rows or columns on the determinant's value.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-193d1",
+      "order": 13,
+      "question": "If each element of a row (or a column) of a determinant is multiplied by a constant $k$, then the value of the determinant:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "remains unchanged",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The value does not remain unchanged; it is multiplied by $k$."
+        },
+        {
+          "letter": "B",
+          "text": "is multiplied by $k^n$ (where n is the order of the determinant)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is true only if the entire determinant is multiplied by $k$, not a single row or column."
+        },
+        {
+          "letter": "C",
+          "text": "is multiplied by $k$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The value of the determinant is multiplied by $k$ if a single row or column is multiplied by $k$."
+        },
+        {
+          "letter": "D",
+          "text": "becomes zero",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The value does not become zero; it is multiplied by $k$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "If each element of a single row or a single column of a determinant is multiplied by a constant $k$, the value of the determinant is multiplied by $k$. If the entire determinant of order 'n' is multiplied by k, then its value is multiplied by $k^n$.",
+      "hint": "Recall the property of determinants related to multiplying a row or column by a scalar.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-27498",
+      "order": 14,
+      "question": "Consider the determinant $\\Delta = \\begin{vmatrix} a & b & c \\\\ x & y & z \\\\ p & q & r \\end{vmatrix}$. Which of the following operations will result in a determinant with a value of $-\\Delta$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$R_1 \\leftrightarrow R_1 + R_2$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This operation does not change the sign of the determinant."
+        },
+        {
+          "letter": "B",
+          "text": "$C_1 \\to 2C_1$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This operation multiplies the determinant by 2, not changes its sign."
+        },
+        {
+          "letter": "C",
+          "text": "$R_1 \\leftrightarrow R_2$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Interchanging two rows changes the sign of the determinant."
+        },
+        {
+          "letter": "D",
+          "text": "$R_1 \\to R_1 + kR_2$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This operation does not change the sign of the determinant."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "According to the properties of determinants, if any two rows or columns are interchanged, the sign of the determinant changes. Option C, $R_1 \\leftrightarrow R_2$, involves interchanging Row 1 and Row 2, thus changing the sign of the determinant. Other operations either keep the value same (D) or multiply it by a scalar (B) or don't generally result in $-\\Delta$ (A).",
+      "hint": "Identify the operation that changes the sign of the determinant.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-69392",
+      "order": 15,
+      "question": "If $\\begin{vmatrix} 1 & x & x^2 \\\\ 1 & y & y^2 \\\\ 1 & z & z^2 \\end{vmatrix} = (x-y)(y-z)(z-x)$, then the value of $\\begin{vmatrix} 1 & 2 & 4 \\\\ 1 & 3 & 9 \\\\ 1 & 4 & 16 \\end{vmatrix}$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The value is not 1."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The value of the determinant is 2."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The value of the determinant is 2."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The value is not 4."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a Vandermonde determinant. Given $\\begin{vmatrix} 1 & x & x^2 \\\\ 1 & y & y^2 \\\\ 1 & z & z^2 \\end{vmatrix} = (x-y)(y-z)(z-x)$. For the given determinant $\\begin{vmatrix} 1 & 2 & 4 \\\\ 1 & 3 & 9 \\\\ 1 & 4 & 16 \\end{vmatrix}$, we have $x=2, y=3, z=4$. Substitute these values into the formula: Value = $(2-3)(3-4)(4-2) = (-1)(-1)(2) = 2$.",
+      "hint": "Recognize the pattern of a Vandermonde determinant and apply the given formula.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-22606",
+      "order": 16,
+      "question": "If for a $3 \\times 3$ matrix $A$, $\\det(A) = 5$, then $\\det(2A)$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The value is not 10."
+        },
+        {
+          "letter": "B",
+          "text": "20",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The value is not 20."
+        },
+        {
+          "letter": "C",
+          "text": "25",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The value is not 25."
+        },
+        {
+          "letter": "D",
+          "text": "40",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The value of $\\det(2A)$ is 40."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For an $n \\times n$ matrix $A$ and a scalar $k$, $\\det(kA) = k^n \\det(A)$. Here, the matrix $A$ is $3 \\times 3$, so $n=3$. The scalar $k=2$. Given $\\det(A) = 5$. Therefore, $\\det(2A) = 2^3 \\det(A) = 8 \\times 5 = 40$.",
+      "hint": "Recall the property of determinants related to scaling a matrix by a scalar.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-c1f9a",
+      "order": 17,
+      "question": "**Assertion (A):** The value of the determinant $\\begin{vmatrix} a & b & c \\\\ a+x & b+y & c+z \\\\ x & y & z \\end{vmatrix}$ is zero. **Reason (R):** If a determinant has two identical rows, its value is zero.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Both Assertion (A) and Reason (R) are true, and R correctly explains why A is true."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R is not the correct explanation of A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "R is the correct explanation for A."
+        },
+        {
+          "letter": "C",
+          "text": "A is true, but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Both A and R are true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false, but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "A is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "**Assertion (A):** Let's evaluate the determinant in Assertion (A): $\\begin{vmatrix} a & b & c \\\\ a+x & b+y & c+z \\\\ x & y & z \\end{vmatrix}$. Apply the operation $R_2 \\to R_2 - R_3$: $= \\begin{vmatrix} a & b & c \\\\ (a+x)-x & (b+y)-y & (c+z)-z \\\\ x & y & z \\end{vmatrix} = \\begin{vmatrix} a & b & c \\\\ a & b & c \\\\ x & y & z \\end{vmatrix}$. Now, Row 1 and Row 2 are identical. Therefore, the value of the determinant is 0. So, Assertion (A) is true. **Reason (R):** \"If a determinant has two identical rows, its value is zero.\" This is a fundamental property of determinants and is true. The truth of Assertion (A) is ultimately derived from the fact that it can be transformed into a determinant with two identical rows, for which Reason (R) provides the explanation of why its value is zero. Thus, R is the correct explanation for A.",
+      "hint": "Evaluate the determinant in Assertion (A) and recall the property stated in Reason (R).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-3fa7e",
+      "order": 18,
+      "question": "Given that $A, B, C$ are the angles of a triangle, and the determinant $\\begin{vmatrix} \\sin^2 A & \\cot C & 1 \\\\ \\sin^2 B & \\cot A & 1 \\\\ \\sin^2 C & \\cot B & 1 \\end{vmatrix} = 0$. If the triangle is isosceles, which of the following must be true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$A = B = C$ (equilateral)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "While an equilateral triangle satisfies the condition, it is not the only possibility."
+        },
+        {
+          "letter": "B",
+          "text": "$A=90^\\circ$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not necessarily true."
+        },
+        {
+          "letter": "C",
+          "text": "$B=90^\\circ$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not necessarily true."
+        },
+        {
+          "letter": "D",
+          "text": "$C=90^\\circ$",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "If the triangle is isosceles and right-angled, $C=90^\\circ$ must be true for the determinant to be zero."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "If the determinant is 0, it implies some relationship between the rows/columns. If the triangle is isosceles, let's assume $A=B$. Then the determinant becomes $\\begin{vmatrix} \\sin^2 A & \\cot C & 1 \\\\ \\sin^2 A & \\cot A & 1 \\\\ \\sin^2 C & \\cot B & 1 \\end{vmatrix}$. For the determinant to be 0, we'd need the rows to be identical, implying $\\cot C = \\cot A$. Since $A, B, C$ are angles of a triangle, $\\cot C = \\cot A \\implies C=A$. If $A=B$ and $A=C$, then $A=B=C$, meaning it's an equilateral triangle. Now, if the triangle is isosceles and right-angled, let $C=90^\\circ$, then $A=B=45^\\circ$. Substituting these values into the determinant also results in 0. Thus, the triangle must be equilateral or an isosceles right-angled triangle with $C=90^\\circ$.",
+      "hint": "Consider the properties of an isosceles triangle and the given determinant condition.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-082c9",
+      "order": 19,
+      "question": "If A is a square matrix of order 3 and det(A) = 5, then det(2A) is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The scalar multiplication property must be applied with the order of the matrix."
+        },
+        {
+          "letter": "B",
+          "text": "20",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The scalar multiplication property must be applied with the order of the matrix."
+        },
+        {
+          "letter": "C",
+          "text": "40",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. det(2A) = 2^3 * det(A) = 8 * 5 = 40."
+        },
+        {
+          "letter": "D",
+          "text": "40",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is a duplicate option and not the correct choice."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a square matrix A of order n, det(kA) = k^n * det(A). Here, n = 3 and k = 2. det(2A) = 2^3 * det(A) = 8 * 5 = 40.",
+      "hint": "Recall the property of determinants for scalar multiplication of a matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-0366b",
+      "order": 20,
+      "question": "The value of the determinant $\\begin{vmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\\\ 7 & 8 & 9 \\end{vmatrix}$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not 1."
+        },
+        {
+          "letter": "B",
+          "text": "-1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not -1."
+        },
+        {
+          "letter": "C",
+          "text": "0",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant is 0 due to linear dependence of rows."
+        },
+        {
+          "letter": "D",
+          "text": "2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not 2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Expanding the determinant: 1(5*9 - 6*8) - 2(4*9 - 6*7) + 3(4*8 - 5*7) = 1(-3) - 2(-6) + 3(-3) = -3 + 12 - 9 = 0. Alternatively, rows are linearly dependent, so the determinant is 0.",
+      "hint": "Check for linear dependence among rows or columns.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-08bc8",
+      "order": 21,
+      "question": "The area of the triangle with vertices (1, 0), (6, 0), and (4, 3) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6 sq. units",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The area is not 6 sq. units."
+        },
+        {
+          "letter": "B",
+          "text": "7.5 sq. units",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The area is 7.5 sq. units."
+        },
+        {
+          "letter": "C",
+          "text": "7.5 sq. units",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is a duplicate option and not the correct choice."
+        },
+        {
+          "letter": "D",
+          "text": "9 sq. units",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The area is not 9 sq. units."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the formula for the area of a triangle with vertices (x1,y1), (x2,y2), (x3,y3): Area = 1/2 |x1(y2 - y3) + x2(y3 - y1) + x3(y1 - y2)|. Substituting the values: Area = 1/2 |1(0 - 3) + 6(3 - 0) + 4(0 - 0)| = 1/2 |-3 + 18| = 1/2 * 15 = 7.5 sq. units.",
+      "hint": "Use the determinant formula for the area of a triangle.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-3ab50",
+      "order": 22,
+      "question": "If A is a square matrix of order 3 such that det(A) = 4, and B is a matrix obtained from A by performing the operation R2 → R2 + 3R1, then det(B) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "12",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant remains unchanged under the given row operation."
+        },
+        {
+          "letter": "B",
+          "text": "4",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. det(B) = det(A) = 4."
+        },
+        {
+          "letter": "C",
+          "text": "16",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant remains unchanged under the given row operation."
+        },
+        {
+          "letter": "D",
+          "text": "7",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant remains unchanged under the given row operation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "One of the fundamental properties of determinants is that if we apply the operation R_i → R_i + k R_j to a matrix, its determinant remains unchanged. Since matrix B is obtained from A by such an operation, det(B) = det(A) = 4.",
+      "hint": "Recall the property of determinants under row operations.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-fb5b4",
+      "order": 23,
+      "question": "**Assertion (A):** If A is a square matrix of order n, and k is a scalar, then det(kA) = k^n det(A). **Reason (R):** Each of the n rows (or columns) of the matrix A is multiplied by k to form kA, and each such multiplication by k scales the determinant by k.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true and R is the correct explanation of A.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. Both the assertion and reason are true, and the reason correctly explains the assertion."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true but R is not the correct explanation of A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The reason correctly explains the assertion."
+        },
+        {
+          "letter": "C",
+          "text": "A is true but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. Both the assertion and reason are true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The assertion is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The assertion is a correct property of determinants. The reason accurately explains why this property holds. When a row (or column) of a determinant is multiplied by a scalar k, the value of the determinant gets multiplied by k. For kA, each of the n rows is multiplied by k, so the determinant is multiplied by k for each row, resulting in k^n times the original determinant.",
+      "hint": "Understand the effect of scalar multiplication on the determinant of a matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-4920e",
+      "order": 24,
+      "question": "If A is a square matrix, then det($A^T$) is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "-det(A)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant of the transpose is not the negative of the determinant."
+        },
+        {
+          "letter": "B",
+          "text": "det(A)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. det($A^T$) = det(A)."
+        },
+        {
+          "letter": "C",
+          "text": "1/det(A)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant of the transpose is not the reciprocal of the determinant."
+        },
+        {
+          "letter": "D",
+          "text": "det(A) * det(A)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant of the transpose is not the square of the determinant."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "One of the basic properties of determinants states that the determinant of a matrix is equal to the determinant of its transpose. det($A^T$) = det(A).",
+      "hint": "Recall the property of determinants for the transpose of a matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780931101007-4c4e2",
+      "order": 25,
+      "question": "**Case-Based Question:** A system of linear equations is given by: x + y + z = 6, x - y + z = 2, 3x + 2y - z = 4. What is the value of the determinant D of the coefficient matrix?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not 0."
+        },
+        {
+          "letter": "B",
+          "text": "8",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant D is 8."
+        },
+        {
+          "letter": "C",
+          "text": "8",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is a duplicate option and not the correct choice."
+        },
+        {
+          "letter": "D",
+          "text": "-10",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not -10."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The coefficient matrix M is [[1,1,1],[1,-1,1],[3,2,-1]]. Calculating the determinant: D = 1((-1)(-1) - (1)(2)) - 1((1)(-1) - (1)(3)) + 1((1)(2) - (-1)(3)) = 1(1-2) - 1(-1-3) + 1(2+3) = -1 + 4 + 5 = 8.",
+      "hint": "Calculate the determinant of the coefficient matrix using expansion by minors.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
