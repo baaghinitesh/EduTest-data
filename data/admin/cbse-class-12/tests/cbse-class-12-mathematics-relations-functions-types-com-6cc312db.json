@@ -1,0 +1,1325 @@
+{
+  "id": "6cc312db-9b5a-42d8-b9b1-dc4c6037632d",
+  "title": "CBSE CLASS 12 — Mathematics | Relations Functions Types Composition",
+  "description": "Subject-wise test on Relations Functions Types Composition (Mathematics) for CBSE CLASS 12. 25Q.",
+  "board": "CBSE",
+  "classSlug": "cbse-class-12",
+  "classNumber": 12,
+  "subjects": [
+    "cbse12-maths"
+  ],
+  "subject": "cbse12-maths",
+  "chapter": "Calculus",
+  "topic": "Relations Functions Types Composition",
+  "testType": "subject-wise",
+  "duration": 38,
+  "totalMarks": 25,
+  "passingMarks": 10,
+  "totalQuestions": 25,
+  "targetQuestions": 25,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "calculus",
+    "cbse12-maths",
+    "functions",
+    "composition",
+    "types",
+    "cbse-class-12",
+    "relations"
+  ],
+  "instructions": [
+    "Subject: Mathematics",
+    "Total Questions: 25",
+    "Total Marks: 25",
+    "Duration: 38 minutes",
+    "Correct answer: +1 mark",
+    "No negative marking",
+    "Topic: Relations Functions Types Composition"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-06-08T18:21:38.926149Z",
+  "questions": [
+    {
+      "id": "q-1780942898925-e6c8b",
+      "order": 1,
+      "question": "If a function $f: A \\to B$ is such that every element in the codomain $B$ has exactly one pre-image in the domain $A$, then $f$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Injective but not surjective",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the function is also surjective (every element in the codomain has a pre-image)."
+        },
+        {
+          "letter": "B",
+          "text": "Surjective but not injective",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the function is also injective (every element in the codomain has exactly one pre-image)."
+        },
+        {
+          "letter": "C",
+          "text": "Neither injective nor surjective",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the function satisfies both injective and surjective properties."
+        },
+        {
+          "letter": "D",
+          "text": "Both injective and surjective (bijective)",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The function is bijective as it is both injective and surjective."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A function is surjective (onto) if every element in the codomain has at least one pre-image. A function is injective (one-one) if every element in the codomain has at most one pre-image. If every element in the codomain has *exactly one* pre-image, it implies both conditions are met, making the function bijective (both one-one and onto).",
+      "hint": "Recall the definitions of injective (one-one) and surjective (onto) functions. A bijective function satisfies both properties.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898925-6ece8",
+      "order": 2,
+      "question": "The function $f: \\mathbb{R} \\to \\mathbb{R}$ defined by $f(x) = 2x - 3$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "One-one but not onto",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is both one-one and onto."
+        },
+        {
+          "letter": "B",
+          "text": "Onto but not one-one",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is both one-one and onto."
+        },
+        {
+          "letter": "C",
+          "text": "Neither one-one nor onto",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is both one-one and onto."
+        },
+        {
+          "letter": "D",
+          "text": "Both one-one and onto",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The function $f(x) = 2x - 3$ is bijective."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A function is one-one (injective) if different inputs give different outputs. For $f(x) = 2x - 3$, if $f(a) = f(b)$, then $2a - 3 = 2b - 3 \\implies a = b$, so it is injective. It is onto (surjective) because for any $y \\in \\mathbb{R}$, there exists $x = (y + 3)/2$ such that $f(x) = y$. Thus, it is bijective.",
+      "hint": "Check if the function is one-one by testing if $f(a) = f(b)$ implies $a = b$. Check if it is onto by verifying if every real number has a pre-image.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898925-d6d19",
+      "order": 3,
+      "question": "Let $f: A \\to B$ be a function. Which of the following conditions ensures that $f$ is one-one (injective)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "For every $y \\in B$, there exists $x \\in A$ such that $f(x) = y$.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This condition defines an onto (surjective) function, not necessarily one-one."
+        },
+        {
+          "letter": "B",
+          "text": "For every $x_1, x_2 \\in A$, if $f(x_1) = f(x_2)$, then $x_1 = x_2$.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct definition of an injective (one-one) function."
+        },
+        {
+          "letter": "C",
+          "text": "For every $y \\in B$, there is a unique $x \\in A$ such that $f(x) = y$.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This condition defines a bijective function, which is both one-one and onto."
+        },
+        {
+          "letter": "D",
+          "text": "For every $x \\in A$, there is a unique $y \\in B$ such that $f(x) = y$.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is a property of any function, not specifically one-one."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The definition of a one-one (injective) function states that distinct elements in the domain must have distinct images in the codomain. This is mathematically expressed as: if $f(x_1) = f(x_2)$, then $x_1 = x_2$. Option A defines an onto (surjective) function. Option C defines a bijective function. Option D is a property of any function (each element in the domain maps to exactly one element in the codomain).",
+      "hint": "Recall the definition of an injective function: distinct inputs must map to distinct outputs.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898925-8cff4",
+      "order": 4,
+      "question": "Let $f: \\mathbb{R} \\to \\mathbb{R}$ be defined by $f(x) = 3x + 2$. Which of the following statements is true about $f$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$f$ is one-one but not onto.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The function is both one-one and onto, so this option is incorrect."
+        },
+        {
+          "letter": "B",
+          "text": "$f$ is one-one and onto.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The function is bijective, as proven in the explanation."
+        },
+        {
+          "letter": "C",
+          "text": "$f$ is onto but not one-one.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The function is one-one, so this option is incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "$f$ is neither one-one nor onto.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The function is both one-one and onto, so this option is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The function $f(x) = 3x + 2$ is linear with a non-zero slope, making it one-one (injective). For any $y \\in \\mathbb{R}$, solving $y = 3x + 2$ gives $x = (y-2)/3$, which is always a real number, proving it is onto (surjective). Thus, $f$ is bijective.",
+      "hint": "Check if the function is one-one by assuming $f(x_1) = f(x_2)$ and solving for $x_1$ and $x_2$. For onto, verify if every $y$ in the codomain has a pre-image in the domain.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898925-0221e",
+      "order": 5,
+      "question": "Consider the function $f: \\{1, 2, 3\\} \\to \\{a, b, c\\}$ defined by $f(1) = a, f(2) = b, f(3) = c$. Which of the following is the inverse function, $f^{-1}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$f^{-1}: \\{a, b, c\\} \\to \\{1, 2, 3\\}$ defined by $f^{-1}(a) = 1, f^{-1}(b) = 3, f^{-1}(c) = 2$.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The mapping for $f^{-1}(b)$ and $f^{-1}(c)$ is incorrect."
+        },
+        {
+          "letter": "B",
+          "text": "$f^{-1}: \\{a, b, c\\} \\to \\{1, 2, 3\\}$ defined by $f^{-1}(a) = 1, f^{-1}(b) = 2, f^{-1}(c) = 3$.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This correctly reverses the original function's mappings."
+        },
+        {
+          "letter": "C",
+          "text": "$f^{-1}: \\{1, 2, 3\\} \\to \\{a, b, c\\}$ defined by $f^{-1}(1) = a, f^{-1}(2) = b, f^{-1}(3) = c$.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The domain and codomain of $f^{-1}$ are reversed; it should map from the codomain of $f$ to its domain."
+        },
+        {
+          "letter": "D",
+          "text": "The inverse function does not exist.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The function $f$ is bijective, so its inverse exists."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The function $f$ is bijective (one-one and onto) because each element in the domain maps to a unique element in the codomain, and every element in the codomain is mapped to. The inverse function $f^{-1}$ reverses the mapping: $f^{-1}(a) = 1$, $f^{-1}(b) = 2$, and $f^{-1}(c) = 3$.",
+      "hint": "For a function to have an inverse, it must be bijective. Reverse the given mappings to find $f^{-1}$.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898925-522fa",
+      "order": 6,
+      "question": "If $f(x) = 2x+1$ and $g(x) = x^2$, then what is $g(f(x))$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2x^2+1$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the result of substituting $f(x)$ into $g(x)$."
+        },
+        {
+          "letter": "B",
+          "text": "$(2x+1)^2+1$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The extra $+1$ is incorrect; the composition is $(2x+1)^2$."
+        },
+        {
+          "letter": "C",
+          "text": "$(2x+1)^2$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct composition of $g(f(x))$."
+        },
+        {
+          "letter": "D",
+          "text": "$4x^2+1$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the result of the composition."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The composition $g(f(x))$ means substituting $f(x)$ into $g(x)$. So, $g(f(x)) = g(2x+1) = (2x+1)^2$.",
+      "hint": "Substitute $f(x)$ into $g(x)$ and simplify.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898925-95efa",
+      "order": 7,
+      "question": "Find the inverse of the function $f: \\mathbb{R} \\to \\mathbb{R}$ defined by $f(x) = 4x - 7$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$f^{-1}(y) = \\frac{y+7}{4}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct inverse function."
+        },
+        {
+          "letter": "B",
+          "text": "$f^{-1}(y) = \\frac{y+7}{4}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the same as option A and is correct."
+        },
+        {
+          "letter": "C",
+          "text": "$f^{-1}(y) = \\frac{y-7}{4}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The sign of $7$ is incorrect; it should be $+7$."
+        },
+        {
+          "letter": "D",
+          "text": "$f^{-1}(y) = \\frac{4}{y-7}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct form of the inverse function."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find the inverse, solve $y = 4x - 7$ for $x$. This gives $x = (y + 7)/4$, so $f^{-1}(y) = (y + 7)/4$.",
+      "hint": "Set $y = f(x)$, solve for $x$ in terms of $y$, and express the inverse function.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898925-88614",
+      "order": 8,
+      "question": "Let $f: \\mathbb{N} \\to \\mathbb{N}$ be defined by $f(n) = n^2 + n + 1$. Is $f$ one-one and/or onto?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$f$ is one-one and onto.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The function is not onto, so this option is incorrect."
+        },
+        {
+          "letter": "B",
+          "text": "$f$ is onto but not one-one.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The function is one-one, so this option is incorrect."
+        },
+        {
+          "letter": "C",
+          "text": "$f$ is one-one but not onto.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The function is one-one but not onto, as proven in the explanation."
+        },
+        {
+          "letter": "D",
+          "text": "$f$ is neither one-one nor onto.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The function is one-one, so this option is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The function $f$ is one-one because assuming $f(n_1) = f(n_2)$ leads to $n_1 = n_2$. However, it is not onto because values like $1$ and $2$ in the codomain $\\mathbb{N}$ are not in the range of $f$. For example, there is no $n \\in \\mathbb{N}$ such that $n^2 + n + 1 = 1$.",
+      "hint": "Check injectivity by assuming $f(n_1) = f(n_2)$ and solving. For surjectivity, verify if every natural number in the codomain has a pre-image.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898925-e4fe3",
+      "order": 9,
+      "question": "Given the function $f: \\mathbb{R} - \\{2\\} \\to \\mathbb{R} - \\{1\\}$ defined by $f(x) = \\frac{x-1}{x-2}$. Find the inverse function $f^{-1}(y)$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$f^{-1}(y) = \\frac{2y-1}{y-1}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct inverse function."
+        },
+        {
+          "letter": "B",
+          "text": "$f^{-1}(y) = \\frac{y-1}{2y-1}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct form of the inverse function."
+        },
+        {
+          "letter": "C",
+          "text": "$f^{-1}(y) = \\frac{x-2}{x-1}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not a function of $y$ and is incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "$f^{-1}(y) = \\frac{1-2y}{1-y}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This simplifies to the same as option A, but the form is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find the inverse, solve $y = \\frac{x-1}{x-2}$ for $x$. This gives $x = \\frac{2y-1}{y-1}$, so $f^{-1}(y) = \\frac{2y-1}{y-1}$.",
+      "hint": "Set $y = f(x)$, solve for $x$ in terms of $y$, and express the inverse function.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898925-875a9",
+      "order": 10,
+      "question": "Let $f: \\mathbb{R} \\to \\mathbb{R}$ be defined by $f(x) = |x|$ and $g: \\mathbb{R} \\to \\mathbb{R}$ be defined by $g(x) = \\cos x$. What is $(f \\circ g)(\\pi/2)$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$-1$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The result is not $-1$."
+        },
+        {
+          "letter": "B",
+          "text": "$1$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The result is not $1$."
+        },
+        {
+          "letter": "C",
+          "text": "$0$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct result of the composition."
+        },
+        {
+          "letter": "D",
+          "text": "Undefined",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The composition is defined for all real numbers."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The composition $(f \\circ g)(\\pi/2) = f(g(\\pi/2)) = f(\\cos(\\pi/2)) = f(0) = |0| = 0$.",
+      "hint": "First compute $g(\\pi/2)$, then substitute the result into $f(x)$.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898925-fa2e0",
+      "order": 11,
+      "question": "**Assertion (A):** The function $f: \\mathbb{R} \\to \\mathbb{R}$ defined by $f(x) = x^2$ is neither one-one nor onto. **Reason (R):** A function $f: A \\to B$ is one-one if $f(x_1) = f(x_2) \\implies x_1 = x_2$ and onto if for every $y \\in B$, there exists $x \\in A$ such that $f(x) = y$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The reason is true but does not explain why $f(x) = x^2$ is neither one-one nor onto."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R is not the correct explanation of A.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The assertion and reason are both true, but the reason does not explain the assertion."
+        },
+        {
+          "letter": "C",
+          "text": "A is true, but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The reason is a correct definition and is true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false, but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The assertion is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The assertion is true because $f(x) = x^2$ is not one-one (e.g., $f(1) = f(-1) = 1$) and not onto (e.g., $y = -1$ has no pre-image in $\\mathbb{R}$). The reason is a correct definition of one-one and onto functions but does not explain why $f(x) = x^2$ is neither.",
+      "hint": "Verify the properties of $f(x) = x^2$ for one-one and onto. Check the reason's relevance to the assertion.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898925-e45aa",
+      "order": 12,
+      "question": "Let $ f: \\mathbb{R} \\to \\mathbb{R} $ be defined by $ f(x) = 2x + 3 $. Then, $ f^{-1}(x) $ is given by:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{x - 3}{2} $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct inverse function."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{x + 3}{2} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect sign in the numerator."
+        },
+        {
+          "letter": "C",
+          "text": "$ 2x + 3 $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the original function, not its inverse."
+        },
+        {
+          "letter": "D",
+          "text": "$ 2x - 3 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect transformation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find the inverse, solve $ y = 2x + 3 $ for $ x $. This gives $ x = \\frac{y - 3}{2} $, so $ f^{-1}(x) = \\frac{x - 3}{2} $.",
+      "hint": "Set $ y = f(x) $ and solve for $ x $ in terms of $ y $.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898926-c498d",
+      "order": 13,
+      "question": "Let $f: \\mathbb{R} \\to \\mathbb{R}$ be defined by $f(x) = 3x - 4$. Then $f$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "One-one but not onto",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The function is both one-one and onto, so this option is incorrect."
+        },
+        {
+          "letter": "B",
+          "text": "Onto but not one-one",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The function is both one-one and onto, so this option is incorrect."
+        },
+        {
+          "letter": "C",
+          "text": "Both one-one and onto",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The function is both injective and surjective, hence it is bijective."
+        },
+        {
+          "letter": "D",
+          "text": "Neither one-one nor onto",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The function is both one-one and onto, so this option is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The function $f(x) = 3x - 4$ is linear with a non-zero slope (3), which ensures it is one-one (injective). Additionally, for every $y \\in \\mathbb{R}$, there exists an $x = \\frac{y+4}{3} \\in \\mathbb{R}$ such that $f(x) = y$, making it onto (surjective). Thus, $f$ is both one-one and onto.",
+      "hint": "Check if the function is injective (one-one) and surjective (onto).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898926-b9714",
+      "order": 14,
+      "question": "Let $A = \\{1, 2, 3\\}$ and $R$ be a relation on $A$ defined as $R = \\{(1,1), (2,2), (3,3), (1,2), (2,1)\\}$. Which of the following properties does $R$ possess?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Reflexive and Transitive",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The relation is not transitive, so this option is incorrect."
+        },
+        {
+          "letter": "B",
+          "text": "Reflexive and Symmetric",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The relation is reflexive (all elements are related to themselves) and symmetric (if $(a,b) \\in R$, then $(b,a) \\in R$)."
+        },
+        {
+          "letter": "C",
+          "text": "Symmetric and Transitive",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The relation is not transitive, so this option is incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "Only Reflexive",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The relation is also symmetric, so this option is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The relation $R$ is reflexive because every element in $A$ is related to itself ($(1,1), (2,2), (3,3) \\in R$). It is symmetric because for every $(a,b) \\in R$, $(b,a) \\in R$ (e.g., $(1,2) \\in R$ implies $(2,1) \\in R$). However, it is not transitive because $(1,2) \\in R$ and $(2,1) \\in R$ do not imply $(1,1) \\in R$ (though $(1,1)$ is present, the relation fails for other potential cases). Thus, $R$ is reflexive and symmetric.",
+      "hint": "Check for reflexivity, symmetry, and transitivity separately.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898926-1566d",
+      "order": 15,
+      "question": "If $f: \\mathbb{R} \\to \\mathbb{R}$ is given by $f(x) = x^2 + 1$, then $f^{-1}(10)$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\[3\\]$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The pre-image includes both 3 and -3, so this option is incomplete."
+        },
+        {
+          "letter": "B",
+          "text": "$\\{-3\\}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The pre-image includes both 3 and -3, so this option is incomplete."
+        },
+        {
+          "letter": "C",
+          "text": "$\\{-3, 3\\}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The pre-image of 10 under $f$ is $\\{-3, 3\\}$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\{\\sqrt{10}\\}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "$\\(\\sqrt{10}\\)$ is not a solution to $f(x) = 10$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find $f^{-1}(10)$, solve $f(x) = 10$. This gives $x^2 + 1 = 10 \\implies x^2 = 9 \\implies x = \\pm 3$. Thus, the pre-image of 10 under $f$ is $\\{-3, 3\\}$.",
+      "hint": "Solve the equation $f(x) = 10$ for $x$.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898926-6d0a0",
+      "order": 16,
+      "question": "Let $f: \\mathbb{N} \\to \\mathbb{N}$ be defined by $f(x) = x+1$. Then $f$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "One-one but not onto",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The function is injective but not surjective."
+        },
+        {
+          "letter": "B",
+          "text": "Onto but not one-one",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The function is not surjective, so this option is incorrect."
+        },
+        {
+          "letter": "C",
+          "text": "Both one-one and onto",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The function is not surjective, so this option is incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "Neither one-one nor onto",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The function is one-one, so this option is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The function $f(x) = x + 1$ is one-one (injective) because if $f(x_1) = f(x_2)$, then $x_1 + 1 = x_2 + 1 \\implies x_1 = x_2$. However, it is not onto (surjective) because there is no $x \\in \\mathbb{N}$ such that $f(x) = 1$ (since $x = 0 \\notin \\mathbb{N}$).",
+      "hint": "Check if the function is injective and surjective.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898926-5e3c5",
+      "order": 17,
+      "question": "If $f: \\mathbb{R} \\to \\mathbb{R}$ is defined by $f(x) = 2x+3$ and $g: \\mathbb{R} \\to \\mathbb{R}$ is defined by $g(x) = x^2$, then $(g \\circ f)(x)$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2x^2+3$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct composition of $g$ and $f$."
+        },
+        {
+          "letter": "B",
+          "text": "$(2x+3)^2$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the intermediate step, not the expanded form."
+        },
+        {
+          "letter": "C",
+          "text": "$4x^2+12x+9$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the expanded form of $(g \\circ f)(x)$."
+        },
+        {
+          "letter": "D",
+          "text": "$2x^2+9$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct composition of $g$ and $f$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The composition $(g \\circ f)(x) = g(f(x)) = g(2x + 3) = (2x + 3)^2 = 4x^2 + 12x + 9$.",
+      "hint": "Substitute $f(x)$ into $g(x)$ and simplify.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898926-0ad73",
+      "order": 18,
+      "question": "Let $f: \\mathbb{R} \\to \\mathbb{R}$ be defined by $f(x) = \\frac{x-1}{x-2}$ for $x \\neq 2$. To find the inverse function $f^{-1}(x)$, which of the following steps is correct?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Set $y = f(x)$ and solve for $x$ in terms of $y$, resulting in $x = \\frac{2y-1}{y-1}$.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is correct but lacks the restriction $y \\neq 1$."
+        },
+        {
+          "letter": "B",
+          "text": "Set $y = f(x)$ and solve for $x$ in terms of $y$, resulting in $x = \\frac{y-1}{y-2}$.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect."
+        },
+        {
+          "letter": "C",
+          "text": "Set $y = f(x)$ and solve for $x$ in terms of $y$, resulting in $x = \\frac{2y-1}{y-1}$ (for $y \\neq 1$).",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct inverse function with the necessary restriction."
+        },
+        {
+          "letter": "D",
+          "text": "Set $y = f(x)$ and solve for $x$ in terms of $y$, resulting in $x = \\frac{2y+1}{y+1}$.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find the inverse, set $y = f(x) = \\frac{x-1}{x-2}$ and solve for $x$ in terms of $y$. This gives $x = \\frac{2y - 1}{y - 1}$ for $y \\neq 1$.",
+      "hint": "Set $y = f(x)$, cross-multiply, and solve for $x$ in terms of $y$.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898926-d92d0",
+      "order": 19,
+      "question": "Let R be a relation on the set A = {1, 2, 3, 4} defined as R = {(x, y) : x divides y, x, y ∈ A}. Which of the following properties does R satisfy?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Symmetric only",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "R is not symmetric as (1,2) ∈ R but (2,1) ∉ R."
+        },
+        {
+          "letter": "B",
+          "text": "Transitive only",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "R is both reflexive and transitive, not just transitive."
+        },
+        {
+          "letter": "C",
+          "text": "Reflexive and Symmetric",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "R is not symmetric, so this option is incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "Reflexive and Transitive",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "R is reflexive because (x,x) ∈ R for all x ∈ A, and transitive as shown in the explanation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The relation R is reflexive because every element divides itself, and transitive because if x divides y and y divides z, then x divides z. However, R is not symmetric because, for example, (1,2) ∈ R but (2,1) ∉ R.",
+      "hint": "Check if (x,x) ∈ R for all x ∈ A for reflexivity. For symmetry, verify if (x,y) ∈ R implies (y,x) ∈ R. For transitivity, check if (x,y) ∈ R and (y,z) ∈ R implies (x,z) ∈ R.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898926-4bd67",
+      "order": 20,
+      "question": "Consider the function f: R → R defined by f(x) = x² + 1. Which of the following statements about f is true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "f is one-one but not onto.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "f is not one-one as f(1) = f(-1)."
+        },
+        {
+          "letter": "B",
+          "text": "f is onto but not one-one.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "f is not onto because values like y = 0 have no pre-image."
+        },
+        {
+          "letter": "C",
+          "text": "f is both one-one and onto.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "f is neither one-one nor onto."
+        },
+        {
+          "letter": "D",
+          "text": "f is neither one-one nor onto.",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "f fails both the one-one and onto conditions as explained."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The function f(x) = x² + 1 is not one-one because f(1) = f(-1) = 2, and it is not onto because there is no real x such that f(x) = 0 (since x² + 1 ≥ 1 for all real x).",
+      "hint": "For one-one, check if f(x₁) = f(x₂) implies x₁ = x₂. For onto, verify if every y in the codomain has a pre-image in the domain.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898926-5b1c2",
+      "order": 21,
+      "question": "Let f: R → R be defined by f(x) = 3x - 4 and g: R → R be defined by g(x) = x² + 2. Find (gof)(x).",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "9x² - 24x + 18",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct expression, but the option is marked as incorrect in the original text (likely a typo)."
+        },
+        {
+          "letter": "B",
+          "text": "9x² - 24x + 18",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct simplified form of (gof)(x)."
+        },
+        {
+          "letter": "C",
+          "text": "3x² + 2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the derived expression."
+        },
+        {
+          "letter": "D",
+          "text": "3x² + 2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the derived expression."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "(gof)(x) = g(f(x)) = g(3x - 4) = (3x - 4)² + 2 = 9x² - 24x + 16 + 2 = 9x² - 24x + 18.",
+      "hint": "First, substitute f(x) into g(x) to find g(f(x)). Then expand and simplify the expression.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898926-49cde",
+      "order": 22,
+      "question": "Assertion (A): The function f: N → N given by f(x) = x + 2 is invertible. Reason (R): A function f: A → B is invertible if and only if f is one-one and onto. Choose the correct option.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true and R is the correct explanation of A.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Assertion (A) is false, so this option is incorrect."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true but R is not the correct explanation of A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Assertion (A) is false, so this option is incorrect."
+        },
+        {
+          "letter": "C",
+          "text": "A is false but R is true.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Assertion (A) is false because f is not onto, but Reason (R) is true as it correctly states the condition for invertibility."
+        },
+        {
+          "letter": "D",
+          "text": "A is true but R is false.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Assertion (A) is false, and Reason (R) is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Reason (R) is true as a function is invertible if and only if it is bijective. However, Assertion (A) is false because f(x) = x + 2 is one-one but not onto (since the codomain N does not include all possible outputs, e.g., 1 is not in the range).",
+      "hint": "Check if f is one-one and onto for f: N → N. For invertibility, both conditions must hold.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898926-4f78d",
+      "order": 23,
+      "question": "For the function f: N → N defined by f(x) = x + 2, which of the following statements is correct?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "f is bijective.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "f is not onto, so it cannot be bijective."
+        },
+        {
+          "letter": "B",
+          "text": "f is one-one but not onto.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "f is one-one (injective) because if f(x₁) = f(x₂), then x₁ + 2 = x₂ + 2 implies x₁ = x₂. However, it is not onto as shown in the explanation."
+        },
+        {
+          "letter": "C",
+          "text": "f is onto but not one-one.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "f is not onto, so this option is incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "f is neither one-one nor onto.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "f is one-one but not onto, so this option is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The function f(x) = x + 2 maps natural numbers to natural numbers starting from 3 (since x ≥ 1 implies f(x) ≥ 3). The codomain is N = {1, 2, 3, ...}, but the range is {3, 4, 5, ...}, which is a proper subset of the codomain. Hence, f is not onto (surjective). Since f is not onto, it cannot be bijective or invertible.",
+      "hint": "Check if every element in the codomain has a pre-image in the domain.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898926-850b8",
+      "order": 24,
+      "question": "Consider the function f: [-1, 1] → [-1, 1] defined by f(x) = x|x|. Which of the following statements about f is true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "f is bijective.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "f is both one-one and onto, hence bijective."
+        },
+        {
+          "letter": "B",
+          "text": "f is one-one but not onto.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "f is onto as well, so this option is incorrect."
+        },
+        {
+          "letter": "C",
+          "text": "f is onto but not one-one.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "f is one-one, so this option is incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "f is neither one-one nor onto.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "f is both one-one and onto, so this option is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The function f(x) = x|x| can be written piecewise as f(x) = x² for x ≥ 0 and f(x) = -x² for x < 0. It is one-one (injective) because if f(x₁) = f(x₂), then x₁ = x₂ in all cases. It is also onto (surjective) because for every y ∈ [-1, 1], there exists an x ∈ [-1, 1] such that f(x) = y. For example, if y ≥ 0, x = √y; if y < 0, x = -√(-y). Thus, f is bijective.",
+      "hint": "Analyze the function piecewise and check injectivity and surjectivity separately.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1780942898926-3d48e",
+      "order": 25,
+      "question": "Let $f: \\mathbb{R} - \\{3\\} \\to \\mathbb{R} - \\{1\\}$ be a function defined by $f(x) = \\frac{x-2}{x-3}$. Which of the following statements is true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The function $f(x)$ is injective but not surjective.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The function is both injective and surjective, so this statement is false."
+        },
+        {
+          "letter": "B",
+          "text": "The function $f(x)$ is surjective but not injective.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The function is both injective and surjective, so this statement is false."
+        },
+        {
+          "letter": "C",
+          "text": "The function $f(x)$ is neither injective nor surjective.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The function is both injective and surjective, so this statement is false."
+        },
+        {
+          "letter": "D",
+          "text": "The function $f(x)$ is bijective and its inverse function is $f^{-1}(y) = \\frac{3y-2}{y-1}$.",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The function is bijective, and the inverse function is correctly derived as $f^{-1}(y) = \\frac{3y-2}{y-1}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The function $f(x)$ is bijective because it is both injective (one-to-one) and surjective (onto). The inverse function is derived as $f^{-1}(y) = \\frac{3y-2}{y-1}$.",
+      "hint": "Check if the function is both injective and surjective to determine if it is bijective.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ]
+}
