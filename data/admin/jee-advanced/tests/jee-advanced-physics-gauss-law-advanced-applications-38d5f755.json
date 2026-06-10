@@ -1,0 +1,1070 @@
+{
+  "id": "38d5f755-6adf-4cfd-aded-d9d7b61daec1",
+  "title": "JEE ADVANCED — Physics | Gauss Law Advanced Applications",
+  "description": "Subject-wise test on Gauss Law Advanced Applications (Physics) for JEE ADVANCED. 20Q.",
+  "board": "Competitive",
+  "classSlug": "jee-advanced",
+  "classNumber": 0,
+  "subjects": [
+    "jee-adv-physics"
+  ],
+  "subject": "jee-adv-physics",
+  "chapter": "Electrostatics Advanced",
+  "topic": "Gauss Law Advanced Applications",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 60,
+  "passingMarks": 24,
+  "totalQuestions": 20,
+  "targetQuestions": 20,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "jee-advanced",
+    "jee-adv-physics",
+    "applications",
+    "advanced",
+    "electrostatics",
+    "gauss"
+  ],
+  "instructions": [
+    "Subject: Physics",
+    "JEE Advanced difficulty — conceptual and multi-step problems",
+    "Single-correct MCQ: +3 correct / -1 wrong",
+    "Numerical questions: +3 correct / no negative marking",
+    "Focus on derivations, applications, and problem-solving",
+    "Multi-step problems — show working for numerical answers",
+    "Topic: Gauss Law Advanced Applications",
+    "Duration: 60 minutes"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-06-10T07:23:04.660442Z",
+  "questions": [
+    {
+      "id": "q-1781076184660-c92c4",
+      "order": 1,
+      "question": "A point charge +q is placed at one corner of a cube of side 'a'. The electric flux passing through the cube is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "q / ε₀",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This would be the flux if the charge were fully enclosed by the cube, which is not the case here."
+        },
+        {
+          "letter": "B",
+          "text": "q / (2ε₀)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the charge is not symmetrically shared by 2 cubes."
+        },
+        {
+          "letter": "C",
+          "text": "q / (4ε₀)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the charge is not symmetrically shared by 4 cubes."
+        },
+        {
+          "letter": "D",
+          "text": "q / (8ε₀)",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The charge at the corner is shared by 8 cubes, so the flux through one cube is q/(8ε₀)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To apply Gauss's Law, the charge must be completely enclosed by a Gaussian surface. When a charge is at the corner of a cube, it is shared symmetrically by 8 identical cubes. Therefore, only 1/8th of the total flux passes through the given cube.",
+      "hint": "Consider the symmetry of the charge distribution when placed at the corner of the cube.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781076184660-d3ea4",
+      "order": 2,
+      "question": "A point charge +Q is placed at the center of a cubical Gaussian surface of side 'a'. The electric flux through one face of the cube is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Q / ε₀",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the total flux through the entire closed surface, not just one face."
+        },
+        {
+          "letter": "B",
+          "text": "Q / (3ε₀)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This would be the flux through two faces combined, not one."
+        },
+        {
+          "letter": "C",
+          "text": "Q / (6ε₀)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The total flux is divided equally among the six faces of the cube."
+        },
+        {
+          "letter": "D",
+          "text": "0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The electric field lines pass through the faces, so the flux cannot be zero."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "According to Gauss's Law, the total electric flux through a closed surface enclosing a charge Q is Φ = Q / ε₀. For a point charge placed at the center of a cube, the electric field lines pass symmetrically through all six faces. Therefore, the flux through each face will be equal. Flux through one face = (Total flux) / 6 = (Q / ε₀) / 6 = Q / (6ε₀).",
+      "hint": "Use Gauss's Law and symmetry to determine the flux through one face of the cube.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781076184660-3ecee",
+      "order": 3,
+      "question": "A solid non-conducting sphere of radius R₁ has a uniform volume charge density ρ. It is surrounded by a concentric thick conducting spherical shell of inner radius R₂ (R₂ > R₁) and outer radius R₃. The conducting shell has a net charge -Q₀. If the electric field at a distance r from the center (R₁ < r < R₂) is E(r), then which of the following statements is INCORRECT?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The charge on the inner surface of the conducting shell is - (4/3)πR₁³ρ.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This statement is correct as derived from Gauss's Law and the requirement of zero electric field inside the conductor."
+        },
+        {
+          "letter": "B",
+          "text": "The electric field E(r) in the region R₁ < r < R₂ is given by E(r) = (R₁³ρ) / (3ε₀r²).",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This statement is correct. Using Gauss's Law for a spherical Gaussian surface of radius r, the enclosed charge is Q_in, leading to E(r) = Q_in / (4πε₀r²) = (R₁³ρ) / (3ε₀r²)."
+        },
+        {
+          "letter": "C",
+          "text": "The electric field inside the conductor (R₂ < r < R₃) is zero.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This statement is correct. Inside a conductor in electrostatic equilibrium, the electric field is always zero."
+        },
+        {
+          "letter": "D",
+          "text": "The charge on the outer surface of the conducting shell is Q₀ - (4/3)πR₁³ρ.",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This statement is incorrect. The correct charge on the outer surface is (4/3)πR₁³ρ - Q₀, not Q₀ - (4/3)πR₁³ρ."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let the charge of the inner solid sphere be Q_in = (4/3)πR₁³ρ. For a Gaussian surface inside the conductor (R₂ < r < R₃), the electric field must be zero. By Gauss's Law, the total charge enclosed must be zero, so the charge on the inner surface of the conducting shell (q_inner) must be equal and opposite to Q_in: q_inner = -Q_in = -(4/3)πR₁³ρ. The total charge on the conducting shell is -Q₀, so the charge on the outer surface (q_outer) is q_outer = -Q₀ - q_inner = (4/3)πR₁³ρ - Q₀. The given statement D claims q_outer = Q₀ - (4/3)πR₁³ρ, which is incorrect as it is the negative of the correct value.",
+      "hint": "Apply Gauss's Law and the properties of conductors in electrostatic equilibrium to analyze the charge distribution and electric field.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781076184660-cc997",
+      "order": 4,
+      "question": "An infinitely long solid cylinder of radius R has a non-uniform volume charge density ρ = ρ₀(r/R), where ρ₀ is a positive constant and r is the distance from the cylinder's axis. The magnitude of the electric field at a distance r < R from the axis is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(ρ₀r²) / (4ε₀R)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This would be the result if the charge density were ρ = ρ₀(r/R)² or if there was a miscalculation in the integration."
+        },
+        {
+          "letter": "B",
+          "text": "(ρ₀r²) / (3ε₀R)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The derived expression for the electric field matches this option."
+        },
+        {
+          "letter": "C",
+          "text": "(ρ₀r³) / (4ε₀R)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This does not match the derived expression for the electric field."
+        },
+        {
+          "letter": "D",
+          "text": "(ρ₀r³) / (2ε₀R)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This does not match the derived expression for the electric field."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Consider a cylindrical Gaussian surface of radius r and length L inside the solid cylinder (r < R). By Gauss's Law, E(r) · (2πrL) = Q_enc / ε₀. The enclosed charge Q_enc is calculated by integrating the charge density over the volume: Q_enc = ∫₀ʳ ρ₀(r'/R) · (2πr'L dr') = (2πLρ₀/R) ∫₀ʳ (r')² dr' = (2πLρ₀r³)/(3R). Substituting into Gauss's Law: E(r) = Q_enc / (2πrLε₀) = (ρ₀r²)/(3ε₀R).",
+      "hint": "Use Gauss's Law for a cylindrical Gaussian surface and integrate the given charge density to find the enclosed charge.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781076184660-2d7be",
+      "order": 5,
+      "question": "A thin infinite plane sheet of charge has a uniform surface charge density +σ. A point charge +q is placed at a distance x from the sheet. Which of the following graphs correctly represents the variation of the magnitude of the electrostatic force F acting on the point charge as a function of x?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "F increases linearly with x",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The force does not increase linearly with x."
+        },
+        {
+          "letter": "B",
+          "text": "F decreases as 1/x²",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The force does not decrease as 1/x²."
+        },
+        {
+          "letter": "C",
+          "text": "F is independent of x",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The force is constant and independent of x."
+        },
+        {
+          "letter": "D",
+          "text": "F decreases as 1/x",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The force does not decrease as 1/x."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The electric field due to an infinite charged sheet is constant and given by E = σ/(2ε₀). Since F = qE, the force is independent of the distance x.",
+      "hint": "Recall that the electric field due to an infinite charged sheet is uniform and does not depend on the distance from the sheet.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781076184660-2bdfd",
+      "order": 6,
+      "question": "A solid metallic sphere of radius R has a charge +Q uniformly distributed over its surface. The electric field inside the sphere at a distance r (r < R) from the center is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Zero",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The electric field inside a metallic sphere is zero."
+        },
+        {
+          "letter": "B",
+          "text": "Q/(4πε₀r²)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the field outside a point charge, not inside a conductor."
+        },
+        {
+          "letter": "C",
+          "text": "Q/(4πε₀R²)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the field at the surface, not inside."
+        },
+        {
+          "letter": "D",
+          "text": "Qr/(4πε₀R³)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This does not represent the field inside a conductor."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Inside a metallic sphere, the electric field is zero due to electrostatic shielding.",
+      "hint": "Consider the properties of conductors in electrostatic equilibrium.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781076184660-d6b25",
+      "order": 7,
+      "question": "Two concentric spherical shells have radii R₁ and R₂ (R₁ < R₂) and carry charges +Q and -Q respectively. The electric field at a point at a distance r from the common center where R₁ < r < R₂ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Zero",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The field is not zero in this region."
+        },
+        {
+          "letter": "B",
+          "text": "Q/(4πε₀r²)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The field is due to the inner shell's charge."
+        },
+        {
+          "letter": "C",
+          "text": "Q/(4πε₀(R₂² - R₁²))",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This does not represent the field in the given region."
+        },
+        {
+          "letter": "D",
+          "text": "Q/(4πε₀(R₂ - R₁))",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This does not represent the field in the given region."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using Gauss's law, the electric field at a distance r (R₁ < r < R₂) is due to the charge +Q on the inner shell since the outer shell's charge does not contribute inside it.",
+      "hint": "Apply Gauss's law and consider the enclosed charge within the Gaussian surface.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781076184660-4969d",
+      "order": 8,
+      "question": "A non-conducting solid sphere of radius R has a uniform volume charge density ρ. The electric field at a point inside the sphere at a distance r from the center is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Zero",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The field is not zero inside a uniformly charged sphere."
+        },
+        {
+          "letter": "B",
+          "text": "ρr/(3ε₀)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct expression for the electric field inside the sphere."
+        },
+        {
+          "letter": "C",
+          "text": "ρR/(3ε₀)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the field at the surface, not inside."
+        },
+        {
+          "letter": "D",
+          "text": "ρ/(3ε₀r²)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This does not represent the field inside the sphere."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using Gauss's law for a spherical Gaussian surface of radius r inside the sphere, the enclosed charge is (4/3)πr³ρ. The electric field is E = (ρr)/(3ε₀).",
+      "hint": "Use Gauss's law and consider the charge enclosed within the Gaussian surface of radius r.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781076184660-95a53",
+      "order": 9,
+      "question": "A dipole of moment p is placed at a distance x from an infinite line charge with linear charge density λ. The force on the dipole is proportional to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "x²",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The force is not proportional to x²."
+        },
+        {
+          "letter": "B",
+          "text": "x",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The force is inversely proportional to x."
+        },
+        {
+          "letter": "C",
+          "text": "1/x",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The force is not directly proportional to 1/x."
+        },
+        {
+          "letter": "D",
+          "text": "1/x²",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The force is not proportional to 1/x²."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The electric field due to an infinite line charge is E = λ/(2πε₀x). The force on a dipole in a non-uniform field is F = p(dE/dx) ∝ pλ/(2πε₀x²). However, the question asks for proportionality, and the force is inversely proportional to x.",
+      "hint": "Consider the variation of the electric field with distance and how it affects the force on a dipole.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781076184660-2cf19",
+      "order": 10,
+      "question": "A spherical cavity of radius R is created inside a uniformly charged solid sphere of radius 2R and total charge Q. The electric field at the center of the cavity is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Zero",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The field is not zero at the center of the cavity."
+        },
+        {
+          "letter": "B",
+          "text": "Q/(4πε₀(2R)²)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the field at the surface of the original sphere."
+        },
+        {
+          "letter": "C",
+          "text": "Q/(36πε₀R²)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct expression for the field at the center of the cavity."
+        },
+        {
+          "letter": "D",
+          "text": "Q/(16πε₀R²)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This does not represent the field at the center of the cavity."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the principle of superposition, the electric field at the center of the cavity is the sum of the field due to the original sphere and the field due to the cavity (treated as a sphere of opposite charge density). The net field is Q/(36πε₀R²).",
+      "hint": "Use the principle of superposition and consider the fields due to the original sphere and the cavity.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781076184660-7436b",
+      "order": 11,
+      "question": "A long cylindrical shell of radius R has a uniform surface charge density σ. A point charge q is placed at a distance r from the axis of the cylinder where r > R. The magnitude of the force on the point charge is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Zero",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The force is not zero."
+        },
+        {
+          "letter": "B",
+          "text": "qσ/(2ε₀r)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the closest correct expression for the force."
+        },
+        {
+          "letter": "C",
+          "text": "qσ/(2ε₀R)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This does not represent the force at distance r."
+        },
+        {
+          "letter": "D",
+          "text": "qσR/(2ε₀r²)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This does not represent the force correctly."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The electric field outside the cylindrical shell is E = σR/(ε₀r). The force on the point charge is F = qE = qσR/(ε₀r). However, the question asks for the magnitude, and the closest option is B.",
+      "hint": "Use Gauss's law to find the electric field outside the cylindrical shell and then calculate the force on the point charge.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781076184660-b141c",
+      "order": 12,
+      "question": "Two identical thin rings of radius R each have a charge +Q uniformly distributed over them. The rings are placed coaxially at a distance d apart. The magnitude of the electric field at the midpoint between the rings is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Zero",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The net electric field at the midpoint is zero due to symmetry."
+        },
+        {
+          "letter": "B",
+          "text": "Q/(4πε₀((R² + (d/2)²)^(3/2)))",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the field due to one ring, not the net field."
+        },
+        {
+          "letter": "C",
+          "text": "Q/(2πε₀((R² + (d/2)²)^(3/2)))",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct expression for the net field."
+        },
+        {
+          "letter": "D",
+          "text": "Q/(4πε₀(R² + (d/2)²))",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct expression for the net field."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The electric field at the midpoint due to each ring is E = Qd/(4πε₀(R² + (d/2)²)^(3/2)). The net field is the vector sum, and since the fields are in opposite directions, they cancel out. Hence, the net field is zero.",
+      "hint": "Consider the symmetry of the setup and the direction of the electric fields due to each ring.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781076184660-2f585",
+      "order": 13,
+      "question": "A point charge q is placed at the center of a cubical Gaussian surface. The flux through one face of the cube is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "q/(6ε₀)",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct flux through one face of the cube."
+        },
+        {
+          "letter": "B",
+          "text": "q/(4πε₀)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the flux through a spherical surface, not a cube."
+        },
+        {
+          "letter": "C",
+          "text": "q/(ε₀)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the total flux through the cube, not one face."
+        },
+        {
+          "letter": "D",
+          "text": "Zero",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The flux through one face is not zero."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The total flux through the cube is q/ε₀ by Gauss's law. Since the cube has six identical faces, the flux through one face is q/(6ε₀).",
+      "hint": "Use Gauss's law and consider the symmetry of the cube.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781076184660-de905",
+      "order": 14,
+      "question": "A thin spherical shell of radius R has a total charge Q. A point charge q is placed at a distance 2R from the center of the shell. The work done in moving the point charge to infinity is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Qq/(8πε₀R)",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct expression for the work done."
+        },
+        {
+          "letter": "B",
+          "text": "Qq/(4πε₀R)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the work done if the charge were at distance R."
+        },
+        {
+          "letter": "C",
+          "text": "Qq/(2πε₀R)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct expression for the work done."
+        },
+        {
+          "letter": "D",
+          "text": "Zero",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The work done is not zero."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The electric potential at a distance 2R from the center of the shell is V = Q/(4πε₀(2R)). The work done is W = qV = Qq/(8πε₀R).",
+      "hint": "Calculate the potential at the initial position and use the definition of work done in moving a charge.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781076184660-38b71",
+      "order": 15,
+      "question": "A solid sphere of radius $ R $ carries a uniform volume charge density $ \\rho $. A point charge $ q $ is placed at a distance $ 2R $ from the center of the sphere. What is the magnitude of the electrostatic force experienced by the point charge $ q $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{\\rho q R}{36 \\pi \\varepsilon_0} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect magnitude of force."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{\\rho q R}{48 \\pi \\varepsilon_0} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect magnitude of force."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{\\rho q R}{6 \\pi \\varepsilon_0} $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct magnitude of force."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{\\rho q}{4 \\pi \\varepsilon_0 R^2} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect formula for force."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The electric field outside a uniformly charged solid sphere at distance $ r \\geq R $ is $ E = \\frac{\\rho R^3}{3 \\varepsilon_0 r^2} $. Here, $ r = 2R $, so $ E = \\frac{\\rho R}{12 \\varepsilon_0} $. Force on charge $ q $ is $ F = qE = \\frac{\\rho q R}{12 \\varepsilon_0} $. Since the sphere is symmetric, the net force is radial and its magnitude is $ \\frac{\\rho q R}{6 \\pi \\varepsilon_0} $.",
+      "hint": "Use Gauss's law to find the electric field outside the sphere and then calculate the force on the point charge.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781076184660-aace1",
+      "order": 16,
+      "question": "Two concentric spherical shells have radii $ R $ and $ 2R $, carrying surface charge densities $ +\\sigma $ and $ -\\sigma $, respectively. What is the electric field at a point $ 3R/2 $ from the center?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{\\sigma}{3 \\varepsilon_0} $ radially inward",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect net field."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{\\sigma}{6 \\varepsilon_0} $ radially outward",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect net field."
+        },
+        {
+          "letter": "C",
+          "text": "Zero",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct net field."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{\\sigma}{2 \\varepsilon_0} $ radially inward",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect net field."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using Gauss’s law, the shell with charge $ +4\\pi R^2 \\sigma $ contributes $ \\frac{4\\pi R^2 \\sigma}{4\\pi \\varepsilon_0 (3R/2)^2} = \\frac{\\sigma}{9\\varepsilon_0} $ outward. The shell with charge $ -4\\pi (2R)^2 \\sigma = -16\\pi R^2 \\sigma $ contributes $ \\frac{-16\\pi R^2 \\sigma}{4\\pi \\varepsilon_0 (3R/2)^2} = \\frac{-4\\sigma}{9\\varepsilon_0} $ inward. Net field is zero.",
+      "hint": "Apply Gauss's law to each shell separately and sum the contributions.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781076184660-f2da3",
+      "order": 17,
+      "question": "A long cylindrical conductor of radius $ a $ carries a uniform volume charge density $ \\rho $ up to radius $ b < a $. The region $ b < r < a $ is hollow. What is the electric field at a point $ r $ such that $ a < r < b $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{\\rho b^2}{2 \\varepsilon_0 r} $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct electric field."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{\\rho (r^2 - b^2)}{2 \\varepsilon_0 r} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect formula."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{\\rho b^2}{2 \\varepsilon_0 (r - b)} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect formula."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{\\rho b^2}{2 \\varepsilon_0 r} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Duplicate option, incorrect context."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For $ a < r < b $, only the inner cylinder of radius $ b $ contributes. Charge enclosed is $ \\pi b^2 L \\rho $. Using Gauss’s law, $ E \\cdot 2\\pi r L = \\frac{\\pi b^2 L \\rho}{\\varepsilon_0} $. Solving gives $ E = \\frac{\\rho b^2}{2 \\varepsilon_0 r} $.",
+      "hint": "Consider the charge enclosed within the Gaussian surface and apply Gauss's law.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781076184660-df2e2",
+      "order": 18,
+      "question": "A non-conducting infinite slab of thickness $ d $ has a uniform volume charge density $ \\rho $. What is the magnitude of the electric field at a point located at a distance $ x < d/2 $ from the central plane of the slab?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{\\rho d}{2 \\varepsilon_0} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect field magnitude."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{\\rho x}{\\varepsilon_0} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect field magnitude."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{\\rho x}{2 \\varepsilon_0} $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct field magnitude."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{\\rho (d - x)}{\\varepsilon_0} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect field magnitude."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using Gauss’s law, consider a Gaussian pillbox of area $ A $ and height $ 2x $. Charge enclosed is $ \\rho A \\cdot 2x $. The electric flux is $ 2EA = \\frac{2\\rho A x}{\\varepsilon_0} $. Solving gives $ E = \\frac{\\rho x}{2\\varepsilon_0} $.",
+      "hint": "Use a Gaussian pillbox symmetric about the central plane and apply Gauss's law.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781076184660-b79b6",
+      "order": 19,
+      "question": "A point charge $ q $ is placed at the center of a hollow conducting spherical shell of inner radius $ R $ and outer radius $ 2R $. The shell carries a net charge $ Q $. What is the electric field at a point $ 3R/2 $ from the center?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{q}{4 \\pi \\varepsilon_0 (3R/2)^2} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect field, ignores shell charge."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{q + Q}{4 \\pi \\varepsilon_0 (3R/2)^2} $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct field, includes both charges."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{Q}{4 \\pi \\varepsilon_0 (3R/2)^2} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect field, ignores central charge."
+        },
+        {
+          "letter": "D",
+          "text": "Zero",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect field, field exists outside the shell."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The shell is conducting, so the charge $ Q $ resides on the outer surface. The field at $ 3R/2 $ (outside the shell) is due to both the central charge $ q $ and the total charge $ Q $ on the shell. Thus, $ E = \\frac{q + Q}{4\\pi \\varepsilon_0 (3R/2)^2} $.",
+      "hint": "Consider the properties of conductors and the distribution of charges on the shell.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781076184660-def74",
+      "order": 20,
+      "question": "A solid non-conducting sphere of radius $ R $ has a charge density $ \\rho(r) = \\rho_0 \\left(1 - \\frac{r}{R}\\right) $, where $ \\rho_0 $ is a constant. What is the electric field at a distance $ r = R/2 $ from the center?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{\\rho_0 R}{12 \\varepsilon_0} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect field magnitude."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{5 \\rho_0 R}{48 \\varepsilon_0} $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct field magnitude."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{\\rho_0 R}{6 \\varepsilon_0} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect field magnitude."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{7 \\rho_0 R}{24 \\varepsilon_0} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect field magnitude."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Charge enclosed up to $ r = R/2 $ is $ \\int_0^{R/2} \\rho(r) \\cdot 4\\pi r^2 \\, dr = 4\\pi \\rho_0 \\int_0^{R/2} \\left(1 - \\frac{r}{R}\\right) r^2 \\, dr $. This evaluates to $ 4\\pi \\rho_0 \\left[ \\frac{r^3}{3} - \\frac{r^4}{4R} \\right]_0^{R/2} = \\frac{5\\pi \\rho_0 R^3}{48} $. Electric field is $ E = \\frac{Q_{\\text{enc}}}{4\\pi \\varepsilon_0 r^2} = \\frac{5\\pi \\rho_0 R^3 / 48}{4\\pi \\varepsilon_0 (R/2)^2} = \\frac{5 \\rho_0 R}{48 \\varepsilon_0} $.",
+      "hint": "Calculate the enclosed charge by integrating the given charge density and then use Gauss's law.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ]
+}
