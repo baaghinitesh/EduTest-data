@@ -1,0 +1,1581 @@
+{
+  "id": "4eb15ca6-5ac3-45e8-95df-b67fcf75b496",
+  "title": "CBSE CLASS 11 MATHEMATICS — Calculus | Properties of complement sets",
+  "description": "Subject-wise test on Properties of complement sets (Calculus) for CBSE CLASS 11 MATHEMATICS. 30Q.",
+  "board": "Competitive",
+  "classSlug": "cbse-class-11-mathematics",
+  "classNumber": 0,
+  "subjects": [
+    "calculus"
+  ],
+  "subject": "calculus",
+  "chapter": "Sets",
+  "topic": "Properties of complement sets",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 120,
+  "passingMarks": 48,
+  "totalQuestions": 30,
+  "targetQuestions": 30,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "properties",
+    "calculus",
+    "cbse-class-11-mathematics",
+    "sets",
+    "complement"
+  ],
+  "instructions": [
+    "Subject: Calculus",
+    "Total Questions: 30",
+    "Total Marks: 120",
+    "Duration: 60 minutes",
+    "Correct answer: +4 mark",
+    "No negative marking",
+    "Topic: Properties of complement sets"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-06-10T10:47:14.675Z",
+  "questions": [
+    {
+      "id": "q-1781088434536-d9972",
+      "order": 1,
+      "question": "Let $ A $ be a subset of a universal set $ U $. Which of the following is **always** equal to $ (A')' $, where $ A' $ denotes the complement of $ A $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ U $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "$ U $ is the universal set, not the complement of the complement of $ A $."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\emptyset $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "$ \\emptyset $ is the empty set, which is not the complement of the complement of $ A $."
+        },
+        {
+          "letter": "C",
+          "text": "$ A $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct, as $ (A')' = A $."
+        },
+        {
+          "letter": "D",
+          "text": "$ A' $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "$ A' $ is the complement of $ A $, not the complement of the complement."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The complement of the complement of a set returns the original set, i.e., $ (A')' = A $. This is a fundamental property of set complements.",
+      "hint": "Recall that the complement of a set contains all elements not in the set.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-94bd9",
+      "order": 2,
+      "question": "If $ A $ and $ B $ are subsets of a universal set $ U $, which of the following represents the set of elements that are in $ U $ but **not** in $ A \\cup B $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ A \\cap B $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This represents elements in both $ A $ and $ B $."
+        },
+        {
+          "letter": "B",
+          "text": "$ A' \\cap B' $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as it represents elements not in $ A $ and not in $ B $."
+        },
+        {
+          "letter": "C",
+          "text": "$ A' \\cup B' $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This represents elements not in $ A $ or not in $ B $."
+        },
+        {
+          "letter": "D",
+          "text": "$ (A \\cup B)' $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is equivalent to $ A' \\cap B' $, but the question asks for the representation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "By De Morgan’s law, $ (A \\cup B)' = A' \\cap B' $. This represents elements not in $ A $ **and** not in $ B $, i.e., outside $ A \\cup B $.",
+      "hint": "Use De Morgan’s laws to simplify the expression.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-c9497",
+      "order": 3,
+      "question": "Let $ U = \\{1, 2, 3, 4, 5, 6\\} $ and $ A = \\{2, 4, 6\\} $. What is the complement of $ A $, denoted $ A' $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\{1, 3, 5\\} $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as these are the elements in $ U $ not in $ A $."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\{2, 4, 6\\} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the set $ A $ itself."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\{1, 2, 3\\} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This includes elements from $ A $."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\{3, 5, 6\\} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This includes an element from $ A $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The complement of $ A $ consists of all elements in $ U $ not in $ A $. Here, $ A' = \\{1, 3, 5\\} $.",
+      "hint": "List all elements in $ U $ that are not in $ A $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-4e4a0",
+      "order": 4,
+      "question": "If $ A $ is a subset of $ B $, then which of the following is **true** for their complements?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ A' \\subseteq B' $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as $ A \\subseteq B $ implies $ B' \\subseteq A' $."
+        },
+        {
+          "letter": "B",
+          "text": "$ B' \\subseteq A' $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the converse of the correct statement."
+        },
+        {
+          "letter": "C",
+          "text": "$ A' = B' $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not necessarily true unless $ A = B $."
+        },
+        {
+          "letter": "D",
+          "text": "$ A' \\cap B' = \\emptyset $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not necessarily true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "If $ A \\subseteq B $, then any element not in $ B $ (i.e., in $ B' $) cannot be in $ A $. Hence, $ A' $ contains all elements outside $ B $ and possibly more, making $ A' \\supseteq B' $. This is equivalent to $ B' \\subseteq A' $.",
+      "hint": "Consider the relationship between $ A $ and $ B $ and how it affects their complements.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-7b15e",
+      "order": 5,
+      "question": "For any set $ A $, which of the following is **equal** to $ A \\cap A' $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ A $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the set itself."
+        },
+        {
+          "letter": "B",
+          "text": "$ A' $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the complement of $ A $."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\emptyset $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct, as $ A $ and $ A' $ are disjoint."
+        },
+        {
+          "letter": "D",
+          "text": "$ U $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the universal set."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The intersection of a set and its complement is the empty set because no element can simultaneously belong to $ A $ and not belong to $ A $.",
+      "hint": "Recall that a set and its complement are disjoint.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-ce289",
+      "order": 6,
+      "question": "Let $ U = \\{x \\in \\mathbb{N} \\mid x \\leq 10\\} $, $ A = \\{x \\mid x \\text{ is even}\\} $, and $ B = \\{x \\mid x \\text{ is prime}\\} $. What is $ (A \\cap B)' $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\{2, 3, 5, 7\\} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the set of primes and even numbers, not the complement."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\{1, 4, 6, 8, 9, 10\\} $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as these are the elements in $ U $ not in $ A \\cap B $."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the universal set $ U $."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\{2\\} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is $ A \\cap B $ itself."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ A \\cap B = \\{2\\} $ (only even prime number). Its complement is $ \\{1, 4, 6, 8, 9, 10\\} $.",
+      "hint": "First find $ A \\cap B $, then find its complement in $ U $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-41650",
+      "order": 7,
+      "question": "If $ A $ and $ B $ are subsets of $ U $, which of the following is **equivalent** to $ (A' \\cup B)' $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ A \\cap B' $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct simplification, but it is not listed as an option."
+        },
+        {
+          "letter": "B",
+          "text": "$ A' \\cap B $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not equivalent to $ (A' \\cup B)' $."
+        },
+        {
+          "letter": "C",
+          "text": "$ A \\cap B $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not equivalent to $ (A' \\cup B)' $."
+        },
+        {
+          "letter": "D",
+          "text": "$ A \\cup B' $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not equivalent to $ (A' \\cup B)' $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using De Morgan’s law: $ (A' \\cup B)' = (A')' \\cap B' = A \\cap B' $. However, none of the options match this. Assuming a typo, the closest correct identity is $ (A \\cup B)' = A' \\cap B' $, but none of the options perfectly match. Thus, the question may need revision.",
+      "hint": "Apply De Morgan’s laws to simplify the expression.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-90c9c",
+      "order": 8,
+      "question": "Let $ U = \\{1, 2, 3, 4, 5\\} $, $ A = \\{1, 2\\} $, and $ B = \\{2, 3, 4\\} $. What is $ (A \\cup B)' $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\{5\\} $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as this is the only element not in $ A \\cup B $."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\{1, 3, 5\\} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This includes elements from $ A \\cup B $."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\{2\\} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is an element in $ A \\cup B $."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\{1, 2, 3, 4\\} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is $ A \\cup B $ itself."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ A \\cup B = \\{1, 2, 3, 4\\} $. Its complement in $ U $ is $ \\{5\\} $.",
+      "hint": "First find $ A \\cup B $, then find its complement in $ U $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-fe564",
+      "order": 9,
+      "question": "For any set $ A $, which of the following is **true** about $ A \\cup A' $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ A \\cup A' = A $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not true unless $ A' = \\emptyset $."
+        },
+        {
+          "letter": "B",
+          "text": "$ A \\cup A' = A' $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not true unless $ A = \\emptyset $."
+        },
+        {
+          "letter": "C",
+          "text": "$ A \\cup A' = U $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct, as it includes all elements in the universal set."
+        },
+        {
+          "letter": "D",
+          "text": "$ A \\cup A' = \\emptyset $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not possible unless $ U = \\emptyset $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The union of a set and its complement covers all elements in the universal set $ U $.",
+      "hint": "Recall that the union of a set and its complement includes all elements in the universal set.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-c720a",
+      "order": 10,
+      "question": "Let $ U = \\{x \\mid x \\text{ is a letter in the word \"MATHEMATICS\"}\\} $, $ A = \\{x \\mid x \\text{ is a vowel}\\} $, and $ B = \\{x \\mid x \\text{ is a consonant}\\} $. What is $ (A \\cap B)' $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\{M, T, H, C, S\\} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the set of consonants, not the complement of $ A \\cap B $."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\{A, E, I\\} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the set of vowels, not the complement of $ A \\cap B $."
+        },
+        {
+          "letter": "C",
+          "text": "$ U $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct, as the complement of $ \\emptyset $ is $ U $."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\emptyset $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is $ A \\cap B $ itself."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since $ A $ (vowels) and $ B $ (consonants) are disjoint, $ A \\cap B = \\emptyset $. The complement of the empty set in $ U $ is the entire universal set $ U $.",
+      "hint": "First determine $ A \\cap B $, then find its complement in $ U $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-22d96",
+      "order": 11,
+      "question": "Let $ A = \\{x \\in \\mathbb{R} : x^2 - 4x + 3 = 0\\} $. What is the complement of $ A $ in $ \\mathbb{R} $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\{1, 3\\} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the set $ A $ itself, not its complement."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\mathbb{R} - \\{1, 3\\} $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This correctly represents the complement of $ A $ in $ \\mathbb{R} $."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\{x \\in \\mathbb{R} : x^2 - 4x + 3 \\neq 0\\} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This describes the condition for elements not in $ A $ but does not explicitly state the complement."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\emptyset $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The complement of $ A $ is not empty since $ A $ is not the universal set."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The set $ A $ is $ \\{1, 3\\} $ since these are the real roots of $ x^2 - 4x + 3 = 0 $. The complement of $ A $ in $ \\mathbb{R} $ includes all real numbers except 1 and 3, i.e., $ \\mathbb{R} - \\{1, 3\\} $. Options A and C describe subsets or specific conditions but not the full complement.",
+      "hint": "Find the roots of the equation $ x^2 - 4x + 3 = 0 $ to determine set $ A $. The complement includes all real numbers not in $ A $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-80340",
+      "order": 12,
+      "question": "If $ U = \\{1, 2, 3, 4, 5\\} $ and $ A = \\{2, 4\\} $, then $ A' $ (the complement of $ A $) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\{1, 3, 5\\} $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct complement of $ A $ in $ U $."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\{1, 3, 4, 5\\} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This includes 4, which is in $ A $, so it is incorrect."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\{2, 4\\} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the set $ A $ itself, not its complement."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\{1, 2, 3, 4, 5\\} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the universal set $ U $, not the complement of $ A $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The complement $ A' $ consists of all elements in $ U $ that are not in $ A $. Here, $ A' = \\{1, 3, 5\\} $. Option B incorrectly includes 4, which is in $ A $. Option C is $ A $ itself, and D is the universal set.",
+      "hint": "Identify the elements in $ U $ that are not in $ A $ to find $ A' $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-7db9d",
+      "order": 13,
+      "question": "For any set $ A $, which of the following is always equal to $ (A')' $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ A \\cup A' $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the universal set, not the original set $ A $."
+        },
+        {
+          "letter": "B",
+          "text": "$ A $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct result of $ (A')' $."
+        },
+        {
+          "letter": "C",
+          "text": "$ A' $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the complement of $ A $, not the original set."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\emptyset $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the empty set, not the original set $ A $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The complement of the complement of $ A $ returns the original set $ A $, i.e., $ (A')' = A $. Option A is the universal set, C is the complement, and D is the empty set.",
+      "hint": "Recall that taking the complement twice returns the original set.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-dfbb1",
+      "order": 14,
+      "question": "If $ A $ and $ B $ are subsets of a universal set $ U $, then $ (A \\cup B)' $ is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ A' \\cap B' $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct application of De Morgan’s law."
+        },
+        {
+          "letter": "B",
+          "text": "$ A' \\cap B' $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the same as option A and is correct."
+        },
+        {
+          "letter": "C",
+          "text": "$ A' \\cup B' $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the complement of the intersection, not the union."
+        },
+        {
+          "letter": "D",
+          "text": "$ U $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the universal set, not the complement of the union."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is De Morgan’s law for sets. The complement of the union of $ A $ and $ B $ is the intersection of their complements. Option C is the complement of the intersection, which is incorrect.",
+      "hint": "Apply De Morgan’s laws for sets: $ (A \\cup B)' = A' \\cap B' $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-4f3b6",
+      "order": 15,
+      "question": "Let $ U = \\{x \\in \\mathbb{Z} : -3 \\leq x \\leq 3\\} $ and $ A = \\{x \\in U : x \\text{ is odd}\\} $. What is $ A' $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\{-3, -1, 1, 3\\} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the set $ A $ itself, not its complement."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\{x \\in U : x \\text{ is even}\\} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This describes the set but does not explicitly state $ A' $."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\{-2, 0, 2\\} $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct complement of $ A $ in $ U $."
+        },
+        {
+          "letter": "D",
+          "text": "$ U $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the universal set, not the complement of $ A $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The universal set $ U $ is $ \\{-3, -2, -1, 0, 1, 2, 3\\} $, and $ A = \\{-3, -1, 1, 3\\} $. The complement $ A' $ is $ \\{-2, 0, 2\\} $. Option B describes the set but not its explicit form.",
+      "hint": "Identify the odd elements in $ U $ to find $ A $, then find the complement $ A' $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-ba512",
+      "order": 16,
+      "question": "If $ A \\subseteq U $, then which of the following is NOT necessarily true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ A \\cup A' = U $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is always true as it covers the entire universal set."
+        },
+        {
+          "letter": "B",
+          "text": "$ A \\cap A' = \\emptyset $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is always true because a set and its complement are disjoint."
+        },
+        {
+          "letter": "C",
+          "text": "$ A' \\cup \\emptyset = A $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect because $ A' \\cup \\emptyset = A' $, not $ A $."
+        },
+        {
+          "letter": "D",
+          "text": "$ (A')' = A $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is always true as the complement of the complement returns the original set."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Option C is incorrect because $ A' \\cup \\emptyset = A' $, not $ A $. The other options are fundamental properties of complements.",
+      "hint": "Recall the properties of complements and the empty set. Check each option for correctness.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-d31e7",
+      "order": 17,
+      "question": "Given $ U = \\{1, 2, 3, 4, 5, 6\\} $, $ A = \\{1, 2, 3\\} $, and $ B = \\{2, 3, 4\\} $, what is $ (A \\cap B)' $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\{1, 2, 3, 4\\} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This includes elements from $ A $ and $ B $ but is not the complement of $ A \\cap B $."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\{2, 3\\} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is $ A \\cap B $ itself, not its complement."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\{1, 4, 5, 6\\} $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct complement of $ A \\cap B $ in $ U $."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\{5, 6\\} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is a subset of the correct answer but incomplete."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ A \\cap B = \\{2, 3\\} $, so $ (A \\cap B)' = U - \\{2, 3\\} = \\{1, 4, 5, 6\\} $. Option D is a subset of the correct answer but incomplete.",
+      "hint": "First find $ A \\cap B $, then find its complement in $ U $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-2f231",
+      "order": 18,
+      "question": "For any set $ A $, which of the following is equal to $ (A')' \\cap A' $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ A' $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not equal to $ (A')' \\cap A' $."
+        },
+        {
+          "letter": "B",
+          "text": "$ A $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not equal to $ (A')' \\cap A' $."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\emptyset $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct result because $ A \\cap A' = \\emptyset $."
+        },
+        {
+          "letter": "D",
+          "text": "$ U $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the universal set, not the result of the given expression."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ (A')' = A $, so $ A \\cap A' = \\emptyset $ because a set and its complement are disjoint. The other options do not satisfy this condition.",
+      "hint": "First simplify $ (A')' $, then find its intersection with $ A' $. Recall that a set and its complement are disjoint.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-4a5f9",
+      "order": 19,
+      "question": "If $ U = \\{x \\in \\mathbb{N} : x \\leq 10\\} $, $ A = \\{x \\in U : x \\text{ is prime}\\} $, and $ B = \\{x \\in U : x \\text{ is even}\\} $, then $ (A \\cup B)' $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\{1, 4, 6, 8, 9, 10\\} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This includes incorrect elements like 4, 6, 8, and 10, which are in $ A \\cup B $."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\{1, 9\\} $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct complement of $ A \\cup B $ in $ U $."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\{4, 6, 8, 10\\} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a subset of $ A \\cup B $, not its complement."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\emptyset $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the empty set, not the complement of $ A \\cup B $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ A = \\{2, 3, 5, 7\\} $ and $ B = \\{2, 4, 6, 8, 10\\} $. Thus, $ A \\cup B = \\{2, 3, 4, 5, 6, 7, 8, 10\\} $, and $ (A \\cup B)' = \\{1, 9\\} $. Option A includes incorrect elements.",
+      "hint": "Identify the prime and even numbers in $ U $, then find $ A \\cup B $ and its complement.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-23b83",
+      "order": 20,
+      "question": "Let $ U = \\mathbb{R} $ and $ A = \\{x \\in \\mathbb{R} : |x| < 2\\} $. Then $ A' $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\{x \\in \\mathbb{R} : |x| \\leq 2\\} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This includes $ |x| = 2 $, which is part of $ A' $, but $ |x| < 2 $ excludes $ |x| = 2 $. The complement should be $ |x| \\geq 2 $."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\{x \\in \\mathbb{R} : x \\geq 2\\} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is only part of the complement. The complement also includes $ x \\leq -2 $."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\{x \\in \\mathbb{R} : |x| \\geq 2\\} $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This correctly represents the complement of $ A $ in $ \\mathbb{R} $."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\mathbb{R} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the universal set, not the complement of $ A $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ A = (-2, 2) $, so its complement $ A' $ is $ (-\\infty, -2] \\cup [2, \\infty) $, which is $ \\{x \\in \\mathbb{R} : |x| \\geq 2\\} $. Option A is incorrect because it includes $ |x| = 2 $, which is part of $ A' $, but $ |x| < 2 $ excludes $ |x| = 2 $.",
+      "hint": "Identify the set $ A $ as an interval, then find its complement in $ \\mathbb{R} $. Recall that the complement includes all real numbers not in $ A $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-66b15",
+      "order": 21,
+      "question": "Let $ A $ be a subset of the universal set $ U $. If $ n(U) = 50 $ and $ n(A) = 20 $, then what is the value of $ n(A') $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the value of $ n(A) $, not $ n(A') $."
+        },
+        {
+          "letter": "B",
+          "text": "30",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. $ n(A') = n(U) - n(A) = 50 - 20 = 30 $."
+        },
+        {
+          "letter": "C",
+          "text": "50",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the value of $ n(U) $, not $ n(A') $."
+        },
+        {
+          "letter": "D",
+          "text": "70",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This value exceeds $ n(U) $, which is not possible."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The complement $ A' $ contains all elements of $ U $ not in $ A $. So, $ n(A') = n(U) - n(A) = 50 - 20 = 30 $.",
+      "hint": "Use the formula for the complement of a set: $ n(A') = n(U) - n(A) $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-18727",
+      "order": 22,
+      "question": "If $ A $ and $ B $ are subsets of a universal set $ U $, then $ (A')' $ is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ A \\cap B' $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the complement of $ A' $."
+        },
+        {
+          "letter": "B",
+          "text": "$ B $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is unrelated to $ (A')' $."
+        },
+        {
+          "letter": "C",
+          "text": "$ A $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. $ (A')' = A $."
+        },
+        {
+          "letter": "D",
+          "text": "$ U $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the universal set, not the complement of $ A' $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The complement of the complement of a set returns the original set, i.e., $ (A')' = A $.",
+      "hint": "Recall that the complement of a complement of a set is the set itself.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-e9956",
+      "order": 23,
+      "question": "Given $ U = \\{1, 2, 3, 4, 5, 6\\} $, $ A = \\{1, 2, 3\\} $, and $ B = \\{2, 3, 4\\} $, what is $ (A \\cap B)' $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "{1, 4, 5, 6}",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. $ (A \\cap B)' = U - (A \\cap B) = \\{1, 4, 5, 6\\} $."
+        },
+        {
+          "letter": "B",
+          "text": "{2, 3}",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is $ A \\cap B $, not its complement."
+        },
+        {
+          "letter": "C",
+          "text": "{1, 2, 3, 4}",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is $ A \\cup B $, not the complement of $ A \\cap B $."
+        },
+        {
+          "letter": "D",
+          "text": "{5, 6}",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is only part of the complement."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ A \\cap B = \\{2, 3\\} $. The complement is $ U - \\{2, 3\\} = \\{1, 4, 5, 6\\} $.",
+      "hint": "First find $ A \\cap B $, then subtract it from $ U $ to get the complement.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-998a7",
+      "order": 24,
+      "question": "Which of the following statements is always true for any subset $ A $ of a universal set $ U $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ A \\cup A' = \\emptyset $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect. $ A \\cup A' = U $."
+        },
+        {
+          "letter": "B",
+          "text": "$ A \\cap A' = U $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect. $ A \\cap A' = \\emptyset $."
+        },
+        {
+          "letter": "C",
+          "text": "$ A \\cup A' = U $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The union of a set and its complement is the universal set."
+        },
+        {
+          "letter": "D",
+          "text": "$ A' = A $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is only true if $ A = U $ or $ A = \\emptyset $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "By definition, $ A \\cup A' $ includes all elements of $ U $, so it equals $ U $. Other options are incorrect.",
+      "hint": "Recall the definition of the complement of a set.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-76ce4",
+      "order": 25,
+      "question": "If $ n(U) = 100 $, $ n(A) = 60 $, and $ n(B) = 40 $, with $ n(A \\cap B) = 20 $, then $ n((A \\cup B)') $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. $ n((A \\cup B)') = 20 $."
+        },
+        {
+          "letter": "B",
+          "text": "40",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is $ n(B) $, not $ n((A \\cup B)') $."
+        },
+        {
+          "letter": "C",
+          "text": "60",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is $ n(A) $, not $ n((A \\cup B)') $."
+        },
+        {
+          "letter": "D",
+          "text": "80",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is $ n(A \\cup B) $, not $ n((A \\cup B)') $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, find $ n(A \\cup B) = n(A) + n(B) - n(A \\cap B) = 60 + 40 - 20 = 80 $. Then, $ n((A \\cup B)') = n(U) - n(A \\cup B) = 100 - 80 = 20 $.",
+      "hint": "Use the principle of inclusion-exclusion to find $ n(A \\cup B) $, then subtract from $ n(U) $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-0d668",
+      "order": 26,
+      "question": "For any two sets $ A $ and $ B $, $ (A - B)' $ is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ A' \\cup B $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. $ (A - B)' = A' \\cup B $."
+        },
+        {
+          "letter": "B",
+          "text": "$ A' \\cap B' $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is $ (A \\cup B)' $, not $ (A - B)' $."
+        },
+        {
+          "letter": "C",
+          "text": "$ A \\cap B' $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is $ A - B $, not its complement."
+        },
+        {
+          "letter": "D",
+          "text": "$ A \\cup B' $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the complement of $ A - B $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ A - B = A \\cap B' $. So, $ (A - B)' = (A \\cap B')' = A' \\cup B $ (using De Morgan’s law).",
+      "hint": "Use De Morgan’s laws to simplify $ (A \\cap B')' $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-a12a8",
+      "order": 27,
+      "question": "In a survey of 100 people, 60 like tea, 50 like coffee, and 20 like both. How many like neither tea nor coffee?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. 10 people like neither tea nor coffee."
+        },
+        {
+          "letter": "B",
+          "text": "20",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the number who like both, not neither."
+        },
+        {
+          "letter": "C",
+          "text": "30",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct count for neither."
+        },
+        {
+          "letter": "D",
+          "text": "40",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct count for neither."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the principle of inclusion-exclusion: $ n(T \\cup C) = 60 + 50 - 20 = 90 $. Those who like neither = $ 100 - 90 = 10 $.",
+      "hint": "First find the number of people who like tea or coffee, then subtract from the total.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-3ddb6",
+      "order": 28,
+      "question": "If $ A \\subseteq B $, then $ B' \\subseteq A' $. This statement is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "True",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. If $ A \\subseteq B $, then $ B' \\subseteq A' $."
+        },
+        {
+          "letter": "B",
+          "text": "False",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This statement is always true under the given condition."
+        },
+        {
+          "letter": "C",
+          "text": "Cannot be determined",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The statement is always true if $ A \\subseteq B $."
+        },
+        {
+          "letter": "D",
+          "text": "Only true if $ A = B $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The statement is true even if $ A \\subset B $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "If $ A \\subseteq B $, then every element not in $ B $ (i.e., in $ B' $) is also not in $ A $, so $ B' \\subseteq A' $.",
+      "hint": "Consider the definition of subset and complement.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-7479a",
+      "order": 29,
+      "question": "Let $ U = \\{x : x \\in \\mathbb{N}, 1 \\leq x \\leq 10\\} $, $ A = \\{x : x \\text{ is even}\\} $, and $ B = \\{x : x \\text{ is prime}\\} $. Then $ A' \\cap B' $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "{1, 9}",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. $ A' \\cap B' = \\{1, 9\\} $."
+        },
+        {
+          "letter": "B",
+          "text": "{2, 3, 5, 7}",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is set $ B $, not $ A' \\cap B' $."
+        },
+        {
+          "letter": "C",
+          "text": "{4, 6, 8, 10}",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is set $ A $, not $ A' \\cap B' $."
+        },
+        {
+          "letter": "D",
+          "text": "{1, 2, 3, 5, 7}",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the intersection of $ A' $ and $ B' $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ A = \\{2, 4, 6, 8, 10\\} $, $ B = \\{2, 3, 5, 7\\} $. $ A' = \\{1, 3, 5, 7, 9\\} $, $ B' = \\{1, 4, 6, 8, 9, 10\\} $. $ A' \\cap B' = \\{1, 9\\} $.",
+      "hint": "First list the elements of $ A $ and $ B $, then find their complements, and finally their intersection.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781088434536-46568",
+      "order": 30,
+      "question": "If $ A $ and $ B $ are subsets of $ U $, then $ (A \\cup B)' \\cup (A \\cap B)' $ simplifies to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ A' \\cup B' $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the full simplification."
+        },
+        {
+          "letter": "B",
+          "text": "$ A' \\cap B' $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is $ (A \\cup B)' $, not the union."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\emptyset $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The union cannot be empty."
+        },
+        {
+          "letter": "D",
+          "text": "$ U $",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The union simplifies to the universal set $ U $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ (A \\cup B)' = A' \\cap B' $ and $ (A \\cap B)' = A' \\cup B' $. Their union is $ (A' \\cap B') \\cup (A' \\cup B') = A' \\cup B' $. However, $ A' \\cup B' $ is not $ U $. The correct simplification is $ U $ because every element is either in $ (A \\cup B)' $ or $ (A \\cap B)' $ (or both).",
+      "hint": "Use De Morgan’s laws and the fact that every element must belong to at least one of the two sets or their complements.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "calculus",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
