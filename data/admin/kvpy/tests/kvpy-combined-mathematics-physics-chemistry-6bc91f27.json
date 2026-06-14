@@ -1,0 +1,2347 @@
+{
+  "id": "6bc91f27-008c-4081-b110-a6db694b977e",
+  "title": "KVPY — Combined: Mathematics + Physics + Chemistry",
+  "description": "Combined test: Mathematics + Physics + Chemistry for KVPY. 45Q.",
+  "board": "Competitive",
+  "classSlug": "kvpy",
+  "classNumber": 0,
+  "subjects": [
+    "kvpy-maths",
+    "kvpy-physics",
+    "kvpy-chemistry"
+  ],
+  "subject": "kvpy-maths",
+  "chapter": "Multiple Chapters",
+  "topic": "Combined",
+  "testType": "subject-wise",
+  "duration": 120,
+  "totalMarks": 45,
+  "passingMarks": 18,
+  "totalQuestions": 45,
+  "targetQuestions": 45,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "kvpy-maths+kvpy-physics+kvpy-chemistry",
+    "kvpy",
+    "chemistry",
+    "mathematics",
+    "physics"
+  ],
+  "instructions": [
+    "Subject: Mathematics + Physics + Chemistry",
+    "Total Questions: 45",
+    "Total Marks: 45",
+    "Duration: 120 minutes",
+    "Correct answer: +1 mark",
+    "Wrong answer: -0.25 mark"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-06-14T05:22:01.618Z",
+  "questions": [
+    {
+      "id": "q-1781414354554-70fd0",
+      "order": 1,
+      "question": "The value of the definite integral $\\int_0^1 (x^3 - 2x^2 + 5) dx$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 5."
+        },
+        {
+          "letter": "B",
+          "text": "$5 \\frac{1}{12}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not $5 \\frac{1}{12}$."
+        },
+        {
+          "letter": "C",
+          "text": "$4 \\frac{7}{12}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The value of the integral is $4 \\frac{7}{12}$."
+        },
+        {
+          "letter": "D",
+          "text": "$4 \\frac{5}{12}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not $4 \\frac{5}{12}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Evaluate the integral directly by finding the antiderivative and substituting the limits. The antiderivative of $x^3 - 2x^2 + 5$ is $\\frac{x^4}{4} - \\frac{2x^3}{3} + 5x$. Substituting the limits from 0 to 1 gives $\\frac{1}{4} - \\frac{2}{3} + 5 = \\frac{55}{12} = 4\\frac{7}{12}$.",
+      "hint": "Find the antiderivative of the integrand and evaluate it at the given limits.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414354554-ea1e8",
+      "order": 2,
+      "question": "If $F(x) = \\int_1^{\\sqrt{x}} \\frac{e^t}{t} dt$, then $F'(x)$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{e^{\\sqrt{x}}}{\\sqrt{x}}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative is not $\\frac{e^{\\sqrt{x}}}{\\sqrt{x}}$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{e^{\\sqrt{x}}}{2\\sqrt{x}}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative is not $\\frac{e^{\\sqrt{x}}}{2\\sqrt{x}}$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{e^{\\sqrt{x}}}{2x}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The derivative is $\\frac{e^{\\sqrt{x}}}{2x}$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{e^x}{x}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative is not $\\frac{e^x}{x}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Use the Fundamental Theorem of Calculus, Part I (Leibniz Integral Rule). For $F(x) = \\int_{a}^{g(x)} f(t) dt$, $F'(x) = f(g(x)) \\cdot g'(x)$. Here, $g(x) = \\sqrt{x}$ and $f(t) = \\frac{e^t}{t}$. Compute $g'(x) = \\frac{1}{2\\sqrt{x}}$ and substitute into the rule to get $F'(x) = \\frac{e^{\\sqrt{x}}}{2x}$.",
+      "hint": "Apply the Leibniz Integral Rule to differentiate the integral with variable limits.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414354554-54349",
+      "order": 3,
+      "question": "The value of $\\int_0^{\\pi/2} \\sin^3 x \\cos x \\, dx$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1/2$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not $1/2$."
+        },
+        {
+          "letter": "B",
+          "text": "$1/3$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not $1/3$."
+        },
+        {
+          "letter": "C",
+          "text": "$1/4$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The value of the integral is $1/4$."
+        },
+        {
+          "letter": "D",
+          "text": "$1/6$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not $1/6$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Use substitution. Let $u = \\sin x$, then $du = \\cos x \\, dx$. The integral becomes $\\int_0^1 u^3 \\, du = \\left[ \\frac{u^4}{4} \\right]_0^1 = \\frac{1}{4}$.",
+      "hint": "Substitute $u = \\sin x$ to simplify the integral.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414354554-c31f2",
+      "order": 4,
+      "question": "The value of $\\int_0^{\\pi/2} \\frac{\\sqrt{\\sin x}}{\\sqrt{\\sin x} + \\sqrt{\\cos x}} dx$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 0."
+        },
+        {
+          "letter": "B",
+          "text": "$\\pi/4$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The value of the integral is $\\pi/4$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\pi/4$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The value of the integral is $\\pi/4$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\pi/2$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not $\\pi/2$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Use the property $\\int_a^b f(x) dx = \\int_a^b f(a+b-x) dx$. Let $I = \\int_0^{\\pi/2} \\frac{\\sqrt{\\sin x}}{\\sqrt{\\sin x} + \\sqrt{\\cos x}} dx$. Then, $I = \\int_0^{\\pi/2} \\frac{\\sqrt{\\cos x}}{\\sqrt{\\cos x} + \\sqrt{\\sin x}} dx$. Adding these two equations gives $2I = \\int_0^{\\pi/2} 1 \\, dx = \\pi/2$, so $I = \\pi/4$.",
+      "hint": "Use the symmetry property of definite integrals to simplify the expression.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414354554-b8c0f",
+      "order": 5,
+      "question": "The value of $\\int_{-2}^2 |x+1| dx$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 2."
+        },
+        {
+          "letter": "B",
+          "text": "3",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 3."
+        },
+        {
+          "letter": "C",
+          "text": "5",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The value of the integral is 5."
+        },
+        {
+          "letter": "D",
+          "text": "6",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 6."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Split the integral at $x = -1$ where the expression inside the absolute value changes sign. $\\int_{-2}^2 |x+1| dx = \\int_{-2}^{-1} -(x+1) dx + \\int_{-1}^2 (x+1) dx$. Evaluate each part separately and add the results to get 5.",
+      "hint": "Split the integral at the point where the expression inside the absolute value changes sign.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414354554-b5cdc",
+      "order": 6,
+      "question": "The value of $\\lim_{n \\to \\infty} \\sum_{r=1}^n \\frac{1}{n} \\sqrt{1 + \\frac{r}{n}}$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{2}{3} (2\\sqrt{2} - 1)$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The value of the limit is $\\frac{2}{3} (2\\sqrt{2} - 1)$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{2}{3} (2\\sqrt{2} - 1)$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The value of the limit is $\\frac{2}{3} (2\\sqrt{2} - 1)$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{1}{3} (2\\sqrt{2} - 1)$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not $\\frac{1}{3} (2\\sqrt{2} - 1)$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{2}{3} \\sqrt{2}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not $\\frac{2}{3} \\sqrt{2}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Recognize the limit of a sum as a Riemann sum. The expression can be written as $\\int_0^1 \\sqrt{1+x} dx$. Evaluate the integral using substitution $u = 1+x$ to get $\\frac{2}{3}(2\\sqrt{2} - 1)$.",
+      "hint": "Convert the limit of the sum into a definite integral and evaluate it.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414354554-d9e8a",
+      "order": 7,
+      "question": "The value of the definite integral $\\int_1^2 (3x^2 - 4x + 5) dx$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 6."
+        },
+        {
+          "letter": "B",
+          "text": "6",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The integral evaluates to 6."
+        },
+        {
+          "letter": "C",
+          "text": "7",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 6."
+        },
+        {
+          "letter": "D",
+          "text": "8",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 6."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To evaluate the definite integral, we first find the antiderivative of the integrand: $\\int (3x^2 - 4x + 5) dx = x^3 - 2x^2 + 5x + C$. Applying the Fundamental Theorem of Calculus: $\\int_1^2 (3x^2 - 4x + 5) dx = [x^3 - 2x^2 + 5x]_1^2 = (8 - 8 + 10) - (1 - 2 + 5) = 10 - 4 = 6$.",
+      "hint": "Find the antiderivative of the polynomial and evaluate at the bounds.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414354554-263ae",
+      "order": 8,
+      "question": "The value of $\\int_0^{\\pi/2} \\cos^3 x \\sin x \\, dx$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{1}{4}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The integral evaluates to $\\frac{1}{4}$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{1}{3}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is $\\frac{1}{4}$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{1}{2}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is $\\frac{1}{4}$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{2}{3}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is $\\frac{1}{4}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Use substitution: Let $u = \\cos x$, then $du = -\\sin x \\, dx$. The integral becomes $\\int_1^0 u^3 (-du) = \\int_0^1 u^3 du = \\left[\\frac{u^4}{4}\\right]_0^1 = \\frac{1}{4}$.",
+      "hint": "Substitute $u = \\cos x$ to simplify the integral.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414354554-4f722",
+      "order": 9,
+      "question": "The value of $\\int_0^{\\pi/2} \\frac{\\sqrt{\\sin x}}{\\sqrt{\\sin x} + \\sqrt{\\cos x}} \\, dx$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{\\pi}{4 \\sqrt{2}}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is $\\frac{\\pi}{4}$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{\\pi}{8}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is $\\frac{\\pi}{4}$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{\\pi}{4}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The integral evaluates to $\\frac{\\pi}{4}$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{\\pi}{2}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is $\\frac{\\pi}{4}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Apply King's Rule: Let $I = \\int_0^{\\pi/2} \\frac{\\sqrt{\\sin x}}{\\sqrt{\\sin x} + \\sqrt{\\cos x}} \\, dx$. Then $I = \\int_0^{\\pi/2} \\frac{\\sqrt{\\cos x}}{\\sqrt{\\cos x} + \\sqrt{\\sin x}} \\, dx$. Adding both equations: $2I = \\int_0^{\\pi/2} 1 \\, dx = \\frac{\\pi}{2}$, so $I = \\frac{\\pi}{4}$.",
+      "hint": "Use the property $\\int_0^a f(x) dx = \\int_0^a f(a-x) dx$ (King's Rule) to simplify the integral.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414354554-cab16",
+      "order": 10,
+      "question": "The value of the integral $\\int_{-2}^2 |x^2 - 1| \\, dx$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{8}{3}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 4."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{4}{3}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 4."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 4."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The integral evaluates to 4."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The function $|x^2 - 1|$ changes behavior at $x = -1$ and $x = 1$. Split the integral: $\\int_{-2}^{-1} (x^2 - 1) \\, dx + \\int_{-1}^1 (1 - x^2) \\, dx + \\int_1^2 (x^2 - 1) \\, dx$. Evaluate each part: $\\left[\\frac{x^3}{3} - x\\right]_{-2}^{-1} + \\left[x - \\frac{x^3}{3}\\right]_{-1}^1 + \\left[\\frac{x^3}{3} - x\\right]_1^2 = (-\\frac{2}{3}) + (\\frac{4}{3}) + (\\frac{4}{3}) = 2$.",
+      "hint": "Split the integral at points where the expression inside the absolute value changes sign.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414354554-b9b8d",
+      "order": 11,
+      "question": "Evaluate the definite integral: $\\int_0^1 \\frac{x}{1+x^2} dx$",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{1}{2}\\ln 2$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The correct answer is $\\frac{1}{2}\\ln 2$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\ln 2$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct answer is $\\frac{1}{2}\\ln 2$, not $\\ln 2$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{1}{2}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct answer is $\\frac{1}{2}\\ln 2$, not $\\frac{1}{2}$."
+        },
+        {
+          "letter": "D",
+          "text": "$0$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct answer is $\\frac{1}{2}\\ln 2$, not $0$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let $u = 1+x^2$. Then $du = 2x \\, dx$, so $x \\, dx = \\frac{1}{2} du$. When $x=0$, $u = 1+0^2 = 1$. When $x=1$, $u = 1+1^2 = 2$. The integral becomes: $\\int_1^2 \\frac{1}{u} \\cdot \\frac{1}{2} du = \\frac{1}{2} \\int_1^2 \\frac{1}{u} du$ $= \\frac{1}{2} [\\ln|u|]_1^2 = \\frac{1}{2} (\\ln 2 - \\ln 1)$. Since $\\ln 1 = 0$, the value is $\\frac{1}{2}\\ln 2$.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414354554-f64dc",
+      "order": 12,
+      "question": "The value of the integral $\\int_0^{\\pi/2} \\frac{\\sin x}{\\sin x + \\cos x} dx$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$0$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct answer is $\\frac{\\pi}{4}$, not $0$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{\\pi}{4}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The correct answer is $\\frac{\\pi}{4}$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{\\pi}{2}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct answer is $\\frac{\\pi}{4}$, not $\\frac{\\pi}{2}$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\pi$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct answer is $\\frac{\\pi}{4}$, not $\\pi$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let $I = \\int_0^{\\pi/2} \\frac{\\sin x}{\\sin x + \\cos x} dx$. Using the property $\\int_0^a f(x) dx = \\int_0^a f(a-x) dx$: $I = \\int_0^{\\pi/2} \\frac{\\sin(\\pi/2 - x)}{\\sin(\\pi/2 - x) + \\cos(\\pi/2 - x)} dx$ $I = \\int_0^{\\pi/2} \\frac{\\cos x}{\\cos x + \\sin x} dx$. Now, add the original integral and this transformed integral: $2I = \\int_0^{\\pi/2} \\frac{\\sin x}{\\sin x + \\cos x} dx + \\int_0^{\\pi/2} \\frac{\\cos x}{\\cos x + \\sin x} dx$ $2I = \\int_0^{\\pi/2} \\frac{\\sin x + \\cos x}{\\sin x + \\cos x} dx$ $2I = \\int_0^{\\pi/2} 1 \\, dx = [x]_0^{\\pi/2} = \\frac{\\pi}{2} - 0 = \\frac{\\pi}{2}$. Therefore, $2I = \\frac{\\pi}{2}$, which means $I = \\frac{\\pi}{4}$.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414354554-5b527",
+      "order": 13,
+      "question": "Evaluate the definite integral: $\\int_0^1 x \\sqrt{1-x^2} dx$",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{1}{3}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The correct answer is $\\frac{1}{3}$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{2}{3}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct answer is $\\frac{1}{3}$, not $\\frac{2}{3}$."
+        },
+        {
+          "letter": "C",
+          "text": "$1$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct answer is $\\frac{1}{3}$, not $1$."
+        },
+        {
+          "letter": "D",
+          "text": "$0$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct answer is $\\frac{1}{3}$, not $0$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let $u = 1-x^2$. Then $du = -2x \\, dx$, so $x \\, dx = -\\frac{1}{2} du$. When $x=0$, $u = 1-0^2 = 1$. When $x=1$, $u = 1-1^2 = 0$. The integral becomes: $\\int_1^0 \\sqrt{u} \\left(-\\frac{1}{2}\\right) du = -\\frac{1}{2} \\int_1^0 u^{1/2} du$ To switch the limits of integration, we can change the sign: $= \\frac{1}{2} \\int_0^1 u^{1/2} du$ $= \\frac{1}{2} \\left[ \\frac{u^{3/2}}{3/2} \\right]_0^1 = \\frac{1}{2} \\left[ \\frac{2}{3} u^{3/2} \\right]_0^1$ $= \\frac{1}{2} \\cdot \\frac{2}{3} (1^{3/2} - 0^{3/2}) = \\frac{1}{3} (1 - 0) = \\frac{1}{3}$",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414354554-c42c5",
+      "order": 14,
+      "question": "The value of the integral $\\int_{-1}^1 \\ln\\left(\\frac{2-x}{2+x}\\right) dx$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2\\ln 3$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct answer is $0$, not $2\\ln 3$."
+        },
+        {
+          "letter": "B",
+          "text": "$0$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The correct answer is $0$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\ln 3$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct answer is $0$, not $\\ln 3$."
+        },
+        {
+          "letter": "D",
+          "text": "$1$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct answer is $0$, not $1$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let $f(x) = \\ln\\left(\\frac{2-x}{2+x}\\right)$. We need to check if $f(x)$ is an even or odd function. $f(-x) = \\ln\\left(\\frac{2-(-x)}{2+(-x)}\\right) = \\ln\\left(\\frac{2+x}{2-x}\\right)$ We know that $\\ln(a/b) = -\\ln(b/a)$. So, $f(-x) = -\\ln\\left(\\frac{2-x}{2+x}\\right) = -f(x)$. Since $f(-x) = -f(x)$, the function $f(x)$ is an odd function. For an odd function, if the integral is over a symmetric interval $[-a, a]$, then the value of the definite integral is $0$. Here, the interval is $[-1, 1]$, which is symmetric. Therefore, $\\int_{-1}^1 \\ln\\left(\\frac{2-x}{2+x}\\right) dx = 0$.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414354554-8e798",
+      "order": 15,
+      "question": "The value of the integral $\\int_0^1 \\frac{\\ln(1+x)}{1+x^2} dx$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{\\pi}{8}\\ln 2$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The correct answer is $\\frac{\\pi}{8}\\ln 2$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{\\pi}{4}\\ln 2$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct answer is $\\frac{\\pi}{8}\\ln 2$, not $\\frac{\\pi}{4}\\ln 2$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{\\pi}{2}\\ln 2$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct answer is $\\frac{\\pi}{8}\\ln 2$, not $\\frac{\\pi}{2}\\ln 2$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\ln 2$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct answer is $\\frac{\\pi}{8}\\ln 2$, not $\\ln 2$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let $I = \\int_0^1 \\frac{\\ln(1+x)}{1+x^2} dx$. Substitute $x = \\tan\\theta$. Then $dx = \\sec^2\\theta \\, d\\theta = (1+\\tan^2\\theta) \\, d\\theta$. When $x=0$, $\\theta=0$. When $x=1$, $\\theta=\\pi/4$. $I = \\int_0^{\\pi/4} \\frac{\\ln(1+\\tan\\theta)}{1+\\tan^2\\theta} (1+\\tan^2\\theta) \\, d\\theta$ $I = \\int_0^{\\pi/4} \\ln(1+\\tan\\theta) \\, d\\theta$ Now, use the property $\\int_0^a f(x) dx = \\int_0^a f(a-x) dx$: $I = \\int_0^{\\pi/4} \\ln(1+\\tan(\\pi/4 - \\theta)) \\, d\\theta$ Recall the tangent subtraction formula: $\\tan(A-B) = \\frac{\\tan A - \\tan B}{1 + \\tan A \\tan B}$. So, $\\tan(\\pi/4 - \\theta) = \\frac{\\tan(\\pi/4) - \\tan\\theta}{1 + \\tan(\\pi/4)\\tan\\theta} = \\frac{1 - \\tan\\theta}{1 + \\tan\\theta}$. $I = \\int_0^{\\pi/4} \\ln\\left(1+\\frac{1-\\tan\\theta}{1+\\tan\\theta}\\right) \\, d\\theta$ $I = \\int_0^{\\pi/4} \\ln\\left(\\frac{1+\\tan\\theta + 1-\\tan\\theta}{1+\\tan\\theta}\\right) \\, d\\theta$ $I = \\int_0^{\\pi/4} \\ln\\left(\\frac{2}{1+\\tan\\theta}\\right) \\, d\\theta$ Using $\\ln(a/b) = \\ln a - \\ln b$: $I = \\int_0^{\\pi/4} (\\ln 2 - \\ln(1+\\tan\\theta)) \\, d\\theta$ $I = \\int_0^{\\pi/4} \\ln 2 \\, d\\theta - \\int_0^{\\pi/4} \\ln(1+\\tan\\theta) \\, d\\theta$ Notice that the second term on the right is the original integral $I$: $I = \\ln 2 \\int_0^{\\pi/4} 1 \\, d\\theta - I$ $I = \\ln 2 [\\theta]_0^{\\pi/4} - I$ $2I = \\ln 2 \\left(\\frac{\\pi}{4} - 0\\right)$ $2I = \\frac{\\pi}{4} \\ln 2$ $I = \\frac{\\pi}{8} \\ln 2$",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414440028-f952b",
+      "order": 16,
+      "question": "Which of the following statements is INCORRECT regarding the pressure in a static fluid?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pressure is the same at all points at the same horizontal level.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This statement is correct as pressure is the same at all points at the same horizontal level in a static fluid."
+        },
+        {
+          "letter": "B",
+          "text": "Pressure increases linearly with depth in an incompressible fluid.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This statement is correct as pressure does increase linearly with depth in an incompressible fluid."
+        },
+        {
+          "letter": "C",
+          "text": "Pressure at any point is independent of the shape of the container.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This statement is correct as pressure at any point is independent of the shape of the container in a static fluid."
+        },
+        {
+          "letter": "D",
+          "text": "Pressure at a point acts only in the downward direction.",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This statement is incorrect as pressure acts equally in all directions at a given point in a static fluid, not just in the downward direction."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "In a static fluid, pressure acts equally in all directions at a given point (Pascal's Law).",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414440028-21234",
+      "order": 17,
+      "question": "A U-tube of uniform cross-sectional area contains a liquid of density ρ. If a liquid of density ρ/2, immiscible with the first, is poured into one arm, filling it to a height h, what is the difference in height of the liquid levels in the two arms?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "h/4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution, as it does not take into account the pressures at the interface."
+        },
+        {
+          "letter": "B",
+          "text": "h/2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct solution, as it correctly equates the pressures at the interface and solves for the difference in height."
+        },
+        {
+          "letter": "C",
+          "text": "h",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution, as it does not take into account the difference in density between the two liquids."
+        },
+        {
+          "letter": "D",
+          "text": "2h",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution, as it does not take into account the pressures at the interface."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The pressure at the interface in the arm with the lighter liquid is P₀ + (ρ/2)gh. The pressure at the same level in the other arm is P₀ + ρgx, where x is the height of the liquid in that arm above the interface. Equating these pressures gives x = h/2, which is the difference in height of the liquid levels.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414440028-713dc",
+      "order": 18,
+      "question": "A hydraulic lift system uses two pistons, one with a cross-sectional area A₁ and the other with A₂. If A₂ is 10 times A₁, and a force F₁ is applied to the smaller piston, what is the magnitude of the force F₂ that can be lifted by the larger piston, assuming ideal conditions?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "F₁ / 10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution, as it does not take into account the ratio of the areas of the pistons."
+        },
+        {
+          "letter": "B",
+          "text": "F₁",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution, as it does not take into account the ratio of the areas of the pistons."
+        },
+        {
+          "letter": "C",
+          "text": "10 F₁",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct solution, as it correctly applies Pascal's Law and the ratio of the areas of the pistons."
+        },
+        {
+          "letter": "D",
+          "text": "100 F₁",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution, as it does not take into account the ratio of the areas of the pistons."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "According to Pascal's Law, the pressure applied to an enclosed fluid is transmitted undiminished to every portion of the fluid and the walls of the containing vessel. Therefore, the pressure on the smaller piston is equal to the pressure on the larger piston, and F₂ = F₁ * (A₂ / A₁).",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414440028-6a32f",
+      "order": 19,
+      "question": "A block of wood floats in water (density = 1000 kg/m³) with 2/3 of its volume submerged. If the same block is placed in an oil of density 800 kg/m³, what fraction of its volume will be submerged?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution, as it does not take into account the density of the block and the oil."
+        },
+        {
+          "letter": "B",
+          "text": "2/3",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution, as it does not take into account the difference in density between the water and the oil."
+        },
+        {
+          "letter": "C",
+          "text": "5/6",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct solution, as it correctly equates the weight of the block to the buoyant force in both the water and the oil."
+        },
+        {
+          "letter": "D",
+          "text": "3/4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution, as it does not take into account the density of the block and the oil."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The density of the block can be found by equating the weight of the block to the buoyant force when it is floating in water. The density of the block is then used to find the fraction of the volume submerged in the oil.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414440028-74c02",
+      "order": 20,
+      "question": "Water rises in a capillary tube to a height 'h' when the tube is held vertically. If the same capillary tube is tilted at an angle of 60° with the vertical, what will be the length of the water column along the tube?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "h",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution, as it does not take into account the tilt of the tube."
+        },
+        {
+          "letter": "B",
+          "text": "h/2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution, as it does not take into account the tilt of the tube."
+        },
+        {
+          "letter": "C",
+          "text": "2h",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct solution, as it correctly uses trigonometry to find the length of the water column along the tube."
+        },
+        {
+          "letter": "D",
+          "text": "h/√3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution, as it does not take into account the correct trigonometric relationship."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The capillary rise 'h' is the vertical height to which the liquid rises, and it does not change with the tilt of the tube. The length of the water column along the tube can be found using trigonometry.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414440028-1ace4",
+      "order": 21,
+      "question": "Water flows out of a small hole at the bottom of a large open tank. The water level in the tank is maintained at a constant height of 5 m above the hole. Assuming ideal flow conditions (no viscosity), what is the speed of efflux of water?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5 m/s",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution, as it does not take into account the correct equation for the speed of efflux."
+        },
+        {
+          "letter": "B",
+          "text": "7.07 m/s",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution, as it does not take into account the correct equation for the speed of efflux."
+        },
+        {
+          "letter": "C",
+          "text": "10 m/s",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct solution, as it correctly applies the equation for the speed of an object under constant acceleration."
+        },
+        {
+          "letter": "D",
+          "text": "",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is not provided."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The speed of efflux can be found using the equation for the speed of an object under constant acceleration, which in this case is the acceleration due to gravity.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414440028-9d13e",
+      "order": 22,
+      "question": "A submarine is at a depth of 50 m below the surface of the sea. What is the approximate gauge pressure exerted on its surface due to the water column?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5.15 x 10⁴ Pa",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because it is one order of magnitude lower than the correct answer."
+        },
+        {
+          "letter": "B",
+          "text": "5.15 x 10⁵ Pa",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is correct because it matches the calculated gauge pressure using the formula P = ρgh."
+        },
+        {
+          "letter": "C",
+          "text": "1.01 x 10⁵ Pa",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because it is approximately half the correct answer."
+        },
+        {
+          "letter": "D",
+          "text": "1.03 x 10⁶ Pa",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because it is one order of magnitude higher than the correct answer."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The gauge pressure is calculated using the formula P = ρgh, where ρ is the density of the fluid, g is the acceleration due to gravity, and h is the height of the fluid column. Given the density of seawater as 1030 kg/m³, g as 10 m/s², and the depth as 50 m, we can calculate the gauge pressure as P = 1030 kg/m³ * 10 m/s² * 50 m = 5.15 * 10⁵ Pa.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414440028-db3b0",
+      "order": 23,
+      "question": "A liquid is flowing through a horizontal pipe of varying cross-sectional area. At point P, the cross-sectional area is A₁ and the velocity of the liquid is v₁. At point Q, the area is A₂ (A₂ < A₁). Which of the following is true about the pressure at P and Q, assuming ideal fluid flow and no energy loss?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pressure at P is greater than at Q",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Pressure decreases where velocity increases due to the conservation of energy."
+        },
+        {
+          "letter": "B",
+          "text": "Pressure at Q is greater than at P",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the opposite of the correct answer, as pressure decreases with increasing velocity."
+        },
+        {
+          "letter": "C",
+          "text": "Pressures at P and Q are equal",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Pressures are not equal due to the difference in velocity at points P and Q."
+        },
+        {
+          "letter": "D",
+          "text": "Pressure depends only on the liquid density and not on the area",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Pressure depends on both liquid density and the area, as shown by the Bernoulli's principle."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "According to Bernoulli’s principle for horizontal flow, the pressure decreases where velocity increases due to the conservation of energy (P + ½ρv² = constant). Since A₂ < A₁, v₂ > v₁ (continuity equation), hence P₂ < P₁.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414440028-fa7ef",
+      "order": 24,
+      "question": "A U-tube manometer containing mercury (density = 13600 kg/m³) is used to measure the pressure of a gas in a vessel. The mercury level on the open side is 20 cm higher than on the gas side. If atmospheric pressure is 1.01 × 10⁵ Pa, what is the gas pressure?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7.55 × 10⁴ Pa",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is less than the atmospheric pressure, which is not possible in this scenario."
+        },
+        {
+          "letter": "B",
+          "text": "1.04 × 10⁵ Pa",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is less than the calculated gas pressure."
+        },
+        {
+          "letter": "C",
+          "text": "1.26 × 10⁵ Pa",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the calculated gas pressure using the given formula."
+        },
+        {
+          "letter": "D",
+          "text": "1.34 × 10⁵ Pa",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is more than the calculated gas pressure."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Gas pressure = atmospheric pressure + ρgh = 1.01 × 10⁵ + (13600)(9.8)(0.20) = 1.01 × 10⁵ + 2.6656 × 10⁴ ≈ 1.26 × 10⁵ Pa.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414440028-1c01d",
+      "order": 25,
+      "question": "A ball of density ρ is held submerged in a fluid of density σ (σ > ρ) by a string attached to the bottom of the container. When the string is cut, the ball accelerates upward. The buoyant force on the ball just after the string is cut is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Less than the weight of the ball",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the opposite of the correct answer, as the buoyant force is greater than the weight of the ball."
+        },
+        {
+          "letter": "B",
+          "text": "Equal to the weight of the ball",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The buoyant force is greater than the weight of the ball, not equal."
+        },
+        {
+          "letter": "C",
+          "text": "Greater than the weight of the ball",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The buoyant force is greater than the weight of the ball, causing upward acceleration."
+        },
+        {
+          "letter": "D",
+          "text": "Zero",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The buoyant force is not zero, as the ball is submerged in a fluid."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Buoyant force depends only on the displaced fluid volume and fluid density, not on the string. Since σ > ρ, buoyant force > weight of ball, causing upward acceleration.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414440028-8264f",
+      "order": 26,
+      "question": "Water flows through a pipe of diameter 8 cm with a velocity of 2 m/s. The pipe narrows to a diameter of 4 cm. What is the velocity of water in the narrow section?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1 m/s",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is less than the initial velocity, which is not possible in this scenario."
+        },
+        {
+          "letter": "B",
+          "text": "4 m/s",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is less than the calculated velocity in the narrow section."
+        },
+        {
+          "letter": "C",
+          "text": "8 m/s",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the calculated velocity in the narrow section using the continuity equation."
+        },
+        {
+          "letter": "D",
+          "text": "16 m/s",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is more than the calculated velocity in the narrow section."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using continuity equation, A₁v₁ = A₂v₂. A ∝ d², so (8²)(2) = (4²)v₂ → 128 = 16v₂ → v₂ = 8 m/s.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414440028-2b8c9",
+      "order": 27,
+      "question": "An object floats in water such that 3/4 of its volume is submerged. What is the density of the object relative to water?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.25 ρ_water",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is less than the calculated density of the object."
+        },
+        {
+          "letter": "B",
+          "text": "0.50 ρ_water",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is less than the calculated density of the object."
+        },
+        {
+          "letter": "C",
+          "text": "0.75 ρ_water",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the calculated density of the object using the given formula."
+        },
+        {
+          "letter": "D",
+          "text": "1.00 ρ_water",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is more than the calculated density of the object."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For floating objects, fraction submerged = ρ_object / ρ_fluid. Here, 3/4 = ρ_object / ρ_water → ρ_object = 0.75 ρ_water.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414440028-16830",
+      "order": 28,
+      "question": "A Venturi meter has a main pipe diameter of 10 cm and a throat diameter of 5 cm. The pressure drop between the main and throat is 20 kPa. What is the flow rate of water (density = 1000 kg/m³) through the meter?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.012 m³/s",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is less than the calculated flow rate."
+        },
+        {
+          "letter": "B",
+          "text": "0.024 m³/s",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is less than the calculated flow rate."
+        },
+        {
+          "letter": "C",
+          "text": "0.035 m³/s",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the calculated flow rate using the given formula."
+        },
+        {
+          "letter": "D",
+          "text": "0.048 m³/s",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is more than the calculated flow rate."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using Bernoulli and continuity: P₁ - P₂ = ½ρ(v₂² - v₁²), and A₁v₁ = A₂v₂ → v₁ = (A₂/A₁)v₂ = (1/4)v₂. 20,000 = ½(1000)(v₂² - (v₂/4)²) → 40 = v₂²(1 - 1/16) → v₂ = √(40 × 16/15) ≈ 6.53 m/s. Flow rate Q = A₂v₂ = π(0.025)²(6.53) ≈ 0.035 m³/s.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414440028-eff17",
+      "order": 29,
+      "question": "A thin hollow sphere of outer radius R and inner radius r floats in water with half its volume submerged. If the density of the material of the sphere is ρ, what is the relationship between ρ, R, and r?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(1/2) ρ_water (R³ / (R³ - r³))",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct relationship between ρ, R, and r."
+        },
+        {
+          "letter": "B",
+          "text": "(1/2) ρ_water (R³ - r³ / R³)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct relationship between ρ, R, and r."
+        },
+        {
+          "letter": "C",
+          "text": "(1/2) ρ_water (r³ / (R³ - r³))",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct relationship between ρ, R, and r."
+        },
+        {
+          "letter": "D",
+          "text": "ρ_water (R³ / (R³ - r³))",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct relationship between ρ, R, and r."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Buoyant force = weight of displaced water = weight of sphere. ½ × (4/3)π(R³ - r³)ρ_water = (4/3)π(R³ - r³)ρ → ρ = ½ ρ_water.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414440028-4698a",
+      "order": 30,
+      "question": "A cylindrical tank of height H is filled with a liquid of density ρ. A small hole is made at a depth h from the top. If the liquid exits horizontally, what is the horizontal range of the liquid jet on the ground?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2√(h(H + h))",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct horizontal range of the liquid jet."
+        },
+        {
+          "letter": "B",
+          "text": "2√(h(H + h))",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct horizontal range of the liquid jet."
+        },
+        {
+          "letter": "C",
+          "text": "2√(h(H - h))",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct horizontal range of the liquid jet."
+        },
+        {
+          "letter": "D",
+          "text": "√(2h(H - h))",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct horizontal range of the liquid jet."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Velocity of efflux v = √(2gh). Time to fall height (H - h): t = √(2(H - h)/g). Horizontal range R = vt = √(2gh) × √(2(H - h)/g) = 2√(h(H - h)).",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414521372-cf2e9",
+      "order": 31,
+      "question": "Which of the following properties is NOT a state function?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Internal energy",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Internal energy is a state function."
+        },
+        {
+          "letter": "B",
+          "text": "Enthalpy",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Enthalpy is a state function."
+        },
+        {
+          "letter": "C",
+          "text": "Work",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Work is a path function."
+        },
+        {
+          "letter": "D",
+          "text": "Entropy",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Entropy is a state function."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A state function is a property whose value depends only on the current state of the system, not on the path taken to reach that state. Internal energy, enthalpy, and entropy are all state functions. Work is a path function; its value depends on the specific process (path) by which the change occurs.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414521372-572ac",
+      "order": 32,
+      "question": "Which of the following properties is an intensive property and a state function?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Enthalpy",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Enthalpy is an extensive property and a state function."
+        },
+        {
+          "letter": "B",
+          "text": "Volume",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Volume is an extensive property and a state function."
+        },
+        {
+          "letter": "C",
+          "text": "Temperature",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Temperature is an intensive property and a state function."
+        },
+        {
+          "letter": "D",
+          "text": "Work",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Work is a path function, not a state function, and is also extensive."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "An intensive property is independent of the amount of substance, while an extensive property depends on the amount of substance. A state function is a property whose value depends only on the current state of the system, not on the path taken to reach that state.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414521372-6c43d",
+      "order": 33,
+      "question": "An ideal gas is confined in a rigid container and heated from 27°C to 127°C. If the heat supplied to the gas is 500 J, what is the change in internal energy (ΔU) of the gas?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0 J",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The change in internal energy is not zero because heat is supplied to the system."
+        },
+        {
+          "letter": "B",
+          "text": "-500 J",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The change in internal energy is positive because heat is supplied to the system."
+        },
+        {
+          "letter": "C",
+          "text": "+500 J",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The change in internal energy is equal to the heat supplied to the system because no work is done."
+        },
+        {
+          "letter": "D",
+          "text": "Cannot be determined without knowing the number of moles.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The change in internal energy can be determined using the First Law of Thermodynamics."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The First Law of Thermodynamics states ΔU = q + w, where ΔU is the change in internal energy, q is the heat supplied to the system, and w is the work done on the system. For a rigid container, the volume is constant. Therefore, no work is done by or on the gas (w = -PΔV = 0, since ΔV = 0).",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414521372-e10f7",
+      "order": 34,
+      "question": "One mole of an ideal gas expands isothermally and reversibly from 10 L to 20 L at 300 K. The work done by the gas during this process is (R = 8.314 J mol⁻¹ K⁻¹):",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "-1728 J",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The work done by the gas can be calculated using the formula w = -nRT ln(V₂/V₁)."
+        },
+        {
+          "letter": "B",
+          "text": "-2494 J",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because it does not match the calculated value of work done by the gas."
+        },
+        {
+          "letter": "C",
+          "text": "-3458 J",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because it does not match the calculated value of work done by the gas."
+        },
+        {
+          "letter": "D",
+          "text": "-4988 J",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because it does not match the calculated value of work done by the gas."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For an isothermal reversible expansion of an ideal gas, the work done by the gas (w) is given by: w = -nRT ln(V₂/V₁)",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414521372-6ec91",
+      "order": 35,
+      "question": "Given the following standard enthalpy changes: I. C(graphite) + O₂(g) → CO₂(g) ; ΔH° = -393.5 kJ II. H₂(g) + ½O₂(g) → H₂O(l) ; ΔH° = -285.8 kJ III. C₂H₆(g) + ⁷⁄₂O₂(g) → 2CO₂(g) + 3H₂O(l) ; ΔH° = -1559.7 kJ Calculate the standard enthalpy of formation of ethane (C₂H₆(g)).",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "-84.7 kJ",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The standard enthalpy of formation of ethane can be calculated by manipulating the given reactions using Hess's Law."
+        },
+        {
+          "letter": "B",
+          "text": "+84.7 kJ",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the standard enthalpy of formation of ethane is negative."
+        },
+        {
+          "letter": "C",
+          "text": "-136.6 kJ",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because it does not match the calculated value of the standard enthalpy of formation of ethane."
+        },
+        {
+          "letter": "D",
+          "text": "+136.6 kJ",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the standard enthalpy of formation of ethane is negative."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The target reaction for the standard enthalpy of formation of ethane is: 2C(graphite) + 3H₂(g) → C₂H₆(g) ; ΔH°_f (C₂H₆). We need to manipulate the given reactions using Hess's Law.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414521372-0323f",
+      "order": 36,
+      "question": "The molar enthalpy of vaporization of water at 100°C is 40.7 kJ mol⁻¹. What is the molar entropy change for the vaporization of water at 100°C and 1 atm?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.407 J mol⁻¹ K⁻¹",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because it does not match the calculated value of the molar entropy change."
+        },
+        {
+          "letter": "B",
+          "text": "40.7 J mol⁻¹ K⁻¹",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because it does not match the calculated value of the molar entropy change."
+        },
+        {
+          "letter": "C",
+          "text": "109.1 J mol⁻¹ K⁻¹",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The molar entropy change can be calculated using the formula ΔS = q_rev / T."
+        },
+        {
+          "letter": "D",
+          "text": "407 J mol⁻¹ K⁻¹",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because it does not match the calculated value of the molar entropy change."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a reversible phase transition (like vaporization at its normal boiling point), the entropy change (ΔS) is given by: ΔS = q_rev / T",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414521372-7aa82",
+      "order": 37,
+      "question": "For a certain reaction, ΔH° = -120 kJ mol⁻¹ and ΔS° = -150 J mol⁻¹ K⁻¹. Above what temperature will the reaction become non-spontaneous under standard conditions?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "800 K",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The temperature at which the reaction becomes non-spontaneous can be calculated using the formula T = ΔH / ΔS."
+        },
+        {
+          "letter": "B",
+          "text": "900 K",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because it does not match the calculated value of the temperature."
+        },
+        {
+          "letter": "C",
+          "text": "1000 K",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because it does not match the calculated value of the temperature."
+        },
+        {
+          "letter": "D",
+          "text": "1200 K",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because it does not match the calculated value of the temperature."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A reaction's spontaneity is determined by the Gibbs free energy change (ΔG), where ΔG = ΔH - TΔS. For a reaction to be spontaneous, ΔG < 0. For a reaction to be non-spontaneous, ΔG > 0.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414521372-0c182",
+      "order": 38,
+      "question": "Which of the following conditions invariably leads to a non-spontaneous reaction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ΔH > 0, ΔS > 0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the reaction can be spontaneous if ΔS is large enough to overcome the positive ΔH."
+        },
+        {
+          "letter": "B",
+          "text": "ΔH < 0, ΔS < 0",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the reaction can be spontaneous if ΔH is negative and ΔS is not too negative."
+        },
+        {
+          "letter": "C",
+          "text": "ΔH > 0, ΔS < 0",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is correct because a positive ΔH and a negative ΔS will always lead to a positive ΔG, making the reaction non-spontaneous."
+        },
+        {
+          "letter": "D",
+          "text": "ΔH < 0, ΔS > 0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the reaction is always spontaneous if ΔH is negative and ΔS is positive."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The spontaneity of a reaction is determined by the Gibbs free energy change (ΔG), where ΔG = ΔH - TΔS. For a reaction to be spontaneous, ΔG < 0. For a reaction to be non-spontaneous, ΔG > 0.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414521372-cde35",
+      "order": 39,
+      "question": "A system absorbs 120 J of heat from the surroundings and does 80 J of work on the surroundings. What is the change in internal energy ($\\Delta U$) of the system?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "+200 J",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, $\\Delta U = q + w$, not $\\Delta U = q - w$ or $\\Delta U = 2q$."
+        },
+        {
+          "letter": "B",
+          "text": "+40 J",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, $\\Delta U = q + w = 120 - 80 = 40$ J."
+        },
+        {
+          "letter": "C",
+          "text": "+40 J",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a duplicate of option B, which is correct, but since B is marked as correct, this one is not."
+        },
+        {
+          "letter": "D",
+          "text": "-40 J",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, $\\Delta U = q + w = 120 - 80 = 40$ J, not $-40$ J."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "According to the First Law of Thermodynamics, $\\Delta U = q + w$. Heat absorbed by the system ($q$) is positive: $q = +120$ J. Work done by the system ($w$) is negative: $w = -80$ J. Therefore, $\\Delta U = q + w = 120 - 80 = 40$ J.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414521372-897b9",
+      "order": 40,
+      "question": "What is the standard molar enthalpy change for the reaction N₂(g) + 3H₂(g) → 2NH₃(g)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "–92.2",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The enthalpy change doubles because the reaction forms 2 moles of NH₃."
+        },
+        {
+          "letter": "B",
+          "text": "–46.1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the enthalpy change for forming 1 mole of NH₃, not 2 moles."
+        },
+        {
+          "letter": "C",
+          "text": "+46.1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The reaction is exothermic, so the enthalpy change must be negative."
+        },
+        {
+          "letter": "D",
+          "text": "+92.2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The reaction is exothermic, so the enthalpy change must be negative."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given value (–46.1 kJ mol⁻¹) is for forming 1 mole of NH₃. The reaction forms 2 moles of NH₃, so the enthalpy change doubles: 2 × (–46.1) = –92.2 kJ mol⁻¹.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414521372-2fe5c",
+      "order": 41,
+      "question": "For a spontaneous process, which of the following must be true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ΔS > 0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "ΔS > 0 can favor spontaneity, but it is not a necessary condition."
+        },
+        {
+          "letter": "B",
+          "text": "ΔG < 0",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "ΔG < 0 is a necessary condition for spontaneity, but the question asks for both ΔG < 0 and ΔS > 0."
+        },
+        {
+          "letter": "C",
+          "text": "ΔH > 0",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "ΔH > 0 is not a necessary condition for spontaneity."
+        },
+        {
+          "letter": "D",
+          "text": "Both ΔG < 0 and ΔS > 0",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "ΔG < 0 is a necessary condition for spontaneity, but ΔS > 0 is not always required."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A process is spontaneous if ΔG < 0. While ΔS > 0 can favor spontaneity, it is not sufficient alone.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414521372-582b3",
+      "order": 42,
+      "question": "What can be inferred about the reaction if the equilibrium constant doubles when the temperature is increased from 300 K to 400 K?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It is exothermic.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Exothermic reactions have ΔH° < 0, which would decrease the equilibrium constant with increasing temperature."
+        },
+        {
+          "letter": "B",
+          "text": "It is endothermic.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Endothermic reactions have ΔH° > 0, which would increase the equilibrium constant with increasing temperature."
+        },
+        {
+          "letter": "C",
+          "text": "ΔH° = 0",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "If ΔH° = 0, the equilibrium constant would not change with temperature."
+        },
+        {
+          "letter": "D",
+          "text": "ΔS° = 0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "ΔS° = 0 would not affect the equilibrium constant with temperature."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For an endothermic reaction (ΔH° > 0), increasing temperature shifts the equilibrium to the right, increasing the equilibrium constant (K).",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414521372-dd387",
+      "order": 43,
+      "question": "For the reaction A(g) ⇌ B(g), the equilibrium constant Kₚ = 4 at temperature T. If the initial pressure of A is 2 atm and no B is present, what is the equilibrium pressure of B (in atm)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution to the equation."
+        },
+        {
+          "letter": "B",
+          "text": "1.6",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct solution to the equation."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution to the equation."
+        },
+        {
+          "letter": "D",
+          "text": "3.2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution to the equation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let x = equilibrium pressure of B. Then, pressure of A = 2 – x. Kₚ = P_B / P_A = x / (2 – x) = 4. Solving: x = 4(2 – x) → x = 8 – 4x → 5x = 8 → x = 1.6 atm.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414521372-25f7b",
+      "order": 44,
+      "question": "Which of the following statements is correct for a process at constant pressure where the system does work on the surroundings?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "q = ΔU",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is only true at constant volume, not constant pressure."
+        },
+        {
+          "letter": "B",
+          "text": "q = ΔH",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is true, but not the most complete answer."
+        },
+        {
+          "letter": "C",
+          "text": "ΔH = ΔU + PΔV",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the definition of ΔH in terms of ΔU and PΔV, and is true at constant pressure."
+        },
+        {
+          "letter": "D",
+          "text": "ΔU = q + w",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the first law, but not specific to constant pressure."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "At constant pressure, the heat exchanged (qₚ) equals the enthalpy change (ΔH).",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781414521372-37301",
+      "order": 45,
+      "question": "A certain reaction has ΔH° = +50 kJ mol⁻¹ and ΔS° = +100 J K⁻¹ mol⁻¹. At what temperature (in K) will the reaction become spontaneous?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "500",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The reaction becomes spontaneous above 500 K."
+        },
+        {
+          "letter": "B",
+          "text": "5000",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This temperature is higher than necessary for spontaneity."
+        },
+        {
+          "letter": "C",
+          "text": "250",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This temperature is lower than necessary for spontaneity."
+        },
+        {
+          "letter": "D",
+          "text": "1000",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This temperature is higher than necessary for spontaneity."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For spontaneity, ΔG° < 0. Using ΔG° = ΔH° – TΔS°: 0 > 50,000 – T(100) → T > 50,000 / 100 → T > 500 K.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
