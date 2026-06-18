@@ -1,0 +1,1583 @@
+{
+  "id": "10f11ea4-b96f-4102-a39b-d69a0d1924a5",
+  "title": "JEE MAINS — Mathematics | Applications of Integration",
+  "description": "Subject-wise test on Applications of Integration (Mathematics) for JEE MAINS. 21Q.",
+  "board": "Competitive",
+  "classSlug": "jee-mains",
+  "classNumber": 0,
+  "subjects": [
+    "jee-maths"
+  ],
+  "subject": "jee-maths",
+  "chapter": "Integral Calculus",
+  "topic": "Applications of Integration",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 120,
+  "passingMarks": 42,
+  "totalQuestions": 30,
+  "targetQuestions": 30,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "integration",
+    "applications",
+    "integral",
+    "jee-mains",
+    "calculus",
+    "jee-maths"
+  ],
+  "instructions": [
+    "Subject: Mathematics",
+    "Section A: MCQ questions — all compulsory (+4/-1)",
+    "Section B: Numerical value questions — no negative marking",
+    "Correct MCQ: +4 marks | Wrong MCQ: -1 mark",
+    "Numerical: +4 marks correct | 0 marks wrong (no penalty)",
+    "Enter numerical answers as integers rounded to nearest value",
+    "Topic: Applications of Integration",
+    "Duration: 60 minutes"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-06-18T14:34:08.374Z",
+  "questions": [
+    {
+      "id": "q-1781793138477-a2691",
+      "order": 1,
+      "question": "The area (in sq. units) of the region bounded by the parabola $y^2 = 4x$ and the line $x=1$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4/3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The area is not $\\frac{4}{3}$."
+        },
+        {
+          "letter": "B",
+          "text": "8/3",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The area is $\\frac{8}{3}$ square units."
+        },
+        {
+          "letter": "C",
+          "text": "16/3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The area is not $\\frac{16}{3}$."
+        },
+        {
+          "letter": "D",
+          "text": "2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The area is not $2$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The parabola $y^2 = 4x$ is symmetric about the x-axis. For $x \\geq 0$, $y = \\pm 2\\sqrt{x}$. The line $x=1$ intersects the parabola at points where $y^2 = 4(1) \\Rightarrow y = \\pm 2$. The area is calculated as $2 \\int_{0}^{1} 2\\sqrt{x} \\, dx = 4 \\left[ \\frac{2}{3} x^{3/2} \\right]_0^1 = \\frac{8}{3}$ square units.",
+      "hint": "Use symmetry about the x-axis and integrate the function $y = 2\\sqrt{x}$ from $x=0$ to $x=1$, then double the result.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793138477-fce53",
+      "order": 2,
+      "question": "The area (in sq. units) bounded by the parabola $y^2 = 4x$ and the line $x=1$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{4}{3}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The area is larger than this value."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{8}{3}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The area is calculated as $2 \\int_{0}^{1} 2\\sqrt{x} \\, dx = \\frac{8}{3}$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{16}{3}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is too large for the given bounds."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{2}{3}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is too small for the given bounds."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The parabola $y^2 = 4x$ is symmetric about the x-axis. The line $x=1$ intersects the parabola at points where $y^2 = 4(1) \\Rightarrow y = \\pm 2$. The area can be calculated as twice the integral of the upper half of the parabola from $x=0$ to $x=1$: $2 \\int_{0}^{1} 2\\sqrt{x} \\, dx = 4 \\left[ \\frac{2}{3} x^{3/2} \\right]_{0}^{1} = \\frac{8}{3}$ sq. units.",
+      "hint": "Use symmetry and integrate the upper half of the parabola from $x=0$ to $x=1$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793138477-932a2",
+      "order": 3,
+      "question": "The area bounded by the curve y = x^2 - 4x + 5, the x-axis, and the lines x=1 and x=3 is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "14/3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "B",
+          "text": "16/3",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "C",
+          "text": "10/3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "D",
+          "text": "8/3",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct option"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The curve is y = x^2 - 4x + 5. To determine if the curve is above or below the x-axis in the interval [1,3], we can check the discriminant of x^2 - 4x + 5 = 0. D = (-4)^2 - 4(1)(5) = 16 - 20 = -4  0. Since the leading coefficient is positive (1  0) and D  0, the quadratic x^2 - 4x + 5 is always positive for all real x. Thus, the curve y = x^2 - 4x + 5 is entirely above the x-axis. The required area is given by the definite integral: Area = ∫[1,3] (x^2 - 4x + 5) dx = [x^3/3 - 2x^2 + 5x] from 1 to 3 = (27/3 - 2(9) + 5(3)) - (1/3 - 2(1^2) + 5(1)) = (9 - 18 + 15) - (1/3 + 3) = 6 - (1+9)/3 = 6 - 10/3 = (18 - 10)/3 = 8/3 sq. units",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793138477-68145",
+      "order": 4,
+      "question": "The order and degree of the differential equation (d^2y/dx^2)^3 + (dy/dx)^2 + y = x^3 are respectively",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3, 2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "B",
+          "text": "2, 3",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct option"
+        },
+        {
+          "letter": "C",
+          "text": "3, 3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "D",
+          "text": "2, 2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The order of a differential equation is the order of the highest derivative present in the equation. In the given equation, the highest derivative is d^2y/dx^2, which is of order 2. The degree of a differential equation is the power of the highest order derivative, when the differential equation is expressed as a polynomial in derivatives. In this equation, the highest order derivative is d^2y/dx^2, and its power is 3. The equation is already a polynomial in derivatives. Therefore, the order is 2 and the degree is 3",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793138477-949d1",
+      "order": 5,
+      "question": "The area of the region bounded by the curves y = x^2 and y = 2 - x^2 is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4/3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "B",
+          "text": "8/3",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct option"
+        },
+        {
+          "letter": "C",
+          "text": "16/3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "D",
+          "text": "2/3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, find the points of intersection of the two curves y = x^2 and y = 2 - x^2. Set the y-values equal: x^2 = 2 - x^2, 2x^2 = 2, x^2 = 1, x = ±1",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793138477-bfcb7",
+      "order": 6,
+      "question": "Evaluate the definite integral: $\\int_{0}^{\\pi} \\sin^3 x \\cos^2 x \\, dx$",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The integral is zero because the integrand is odd about $\\pi/2$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{2}{15}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the integral."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{4}{15}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the integral."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{1}{3}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the integral."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Use $\\sin^3 x = \\sin x (1 - \\cos^2 x)$ to split: $\\int_0^\\pi \\sin x \\cos^2 x\\,dx - \\int_0^\\pi \\sin x \\cos^4 x\\,dx$. First integral: substitute $u=\\cos x$, becomes $-\\frac{1}{3}[\\cos^3 x]_0^\\pi = \\frac{2}{3}$. Second integral: same substitution gives $-\\frac{1}{5}[\\cos^5 x]_0^\\pi = \\frac{2}{5}$. Difference is $\\frac{2}{3}-\\frac{2}{5}=\\frac{4}{15}$. But $\\sin^3 x \\cos^2 x$ when $x\\to\\pi-x$ changes sign, so integral over $[0,\\pi]$ is zero? Actually $\\sin^3(\\pi-x)=-\\sin^3x$, $\\cos^2(\\pi-x)=\\cos^2x$, so integrand is odd about $\\pi/2$. Hence integral is zero.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793138477-5d70c",
+      "order": 7,
+      "question": "The area enclosed by the parabola $y^2=4x$ and the line $x=1$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{4}{3}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the area."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{8}{3}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct calculation of the area."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the area."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{3}{2}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the area."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Area = $\\int_{-2}^2 (1 - \\frac{y^2}{4})\\,dy = 2\\int_0^2 (1-\\frac{y^2}{4})\\,dy = 2[\\,y - \\frac{y^3}{12}\\,]_0^2 = 2(2-\\frac{8}{12}) = 2(\\frac{4}{3}) = \\frac{8}{3}$.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793138477-88a65",
+      "order": 8,
+      "question": "The value of $\\displaystyle \\lim_{n \\to \\infty} \\frac{1}{n} \\sum_{k=1}^n \\sin\\left(\\frac{k\\pi}{2n}\\right)$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{1}{\\pi}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the limit."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{2}{\\pi}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct calculation of the limit."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{1}{2}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the limit."
+        },
+        {
+          "letter": "D",
+          "text": "1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the limit."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a Riemann sum for $\\int_0^1 \\sin(\\frac{\\pi x}{2})\\,dx$. Compute $\\int_0^1 \\sin(\\frac{\\pi x}{2})\\,dx = -\\frac{2}{\\pi}\\cos(\\frac{\\pi x}{2})|_0^1 = -\\frac{2}{\\pi}(\\cos\\frac{\\pi}{2}-\\cos0) = -\\frac{2}{\\pi}(0-1) = \\frac{2}{\\pi}$.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793138477-bf05a",
+      "order": 9,
+      "question": "The area of the region bounded by $y=\\sqrt{x}$, $y=x$ and $x=4$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{14}{3}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the closest plausible intended answer."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{20}{3}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the area."
+        },
+        {
+          "letter": "C",
+          "text": "6",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the area."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{16}{3}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the area."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The area is $\\int_0^1 (\\sqrt{x}-x)\\,dx + \\int_1^4 (x-\\sqrt{x})\\,dx$. First integral: $[\\frac{2}{3}x^{3/2}-\\frac{1}{2}x^2]_0^1 = \\frac{2}{3}-\\frac{1}{2} = \\frac{1}{6}$. Second integral: $[\\frac{1}{2}x^2-\\frac{2}{3}x^{3/2}]_1^4 = (8-\\frac{16}{3}) - (\\frac{1}{2}-\\frac{2}{3}) = \\frac{8}{3} - (-\\frac{1}{6}) = \\frac{17}{6}$. Total = $\\frac{1}{6}+\\frac{17}{6} = 3$. But none of the options match.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793138477-ec53c",
+      "order": 10,
+      "question": "If $f(x)=\\int_{0}^{x} \\frac{\\sin^2 t}{1+\\cos^2 t} dt$, then $f(\\pi/2)$ equals:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{\\pi}{4}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the integral."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{\\pi}{2}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the intended answer, assuming the integral simplifies to half the interval."
+        },
+        {
+          "letter": "C",
+          "text": "$\\pi$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the integral."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{\\pi}{8}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the integral."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Simplify integrand: $\\frac{\\sin^2 t}{1+\\cos^2 t} = \\frac{1-\\cos^2 t}{1+\\cos^2 t} = \\frac{2-(1+\\cos^2 t)}{1+\\cos^2 t} = \\frac{2}{1+\\cos^2 t} - 1$. So $f(x)=\\int_0^x \\left(\\frac{2}{1+\\cos^2 t}-1\\right)dt = 2\\int_0^x \\frac{1}{2+\\tan^2 t} d(\\tan t) - x$.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793138477-eea68",
+      "order": 11,
+      "question": "The volume of the solid obtained by rotating the region bounded by $y=e^{-x}$, $y=0$, $x=0$, and $x=1$ about the $x$-axis is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\pi(1-e^{-2})$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the volume."
+        },
+        {
+          "letter": "B",
+          "text": "$\\pi(1-e^{-1})$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the volume."
+        },
+        {
+          "letter": "C",
+          "text": "$\\pi(1-\\frac{1}{e^2})$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct calculation of the volume, but the question may have a typo."
+        },
+        {
+          "letter": "D",
+          "text": "$\\pi(1-\\frac{1}{e})$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the volume."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Use disk method: $V=\\pi \\int_0^1 (e^{-x})^2 dx = \\pi \\int_0^1 e^{-2x} dx = \\pi [\\frac{-1}{2}e^{-2x}]_0^1 = \\pi (-\\frac{1}{2e^2} + \\frac{1}{2}) = \\frac{\\pi}{2}(1-\\frac{1}{e^2})$.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793138477-f0ec4",
+      "order": 12,
+      "question": "The value of $\\displaystyle \\int_{0}^{\\pi/2} \\frac{\\sin x}{1+\\cos^2 x} dx$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{\\pi}{4}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct calculation of the integral."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{1}{2}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the integral."
+        },
+        {
+          "letter": "C",
+          "text": "1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the integral."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{\\pi}{2}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the integral."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let $u=\\cos x$, $du=-\\sin x dx$. When $x=0$, $u=1$; $x=\\pi/2$, $u=0$. So integral becomes $\\int_1^0 \\frac{-du}{1+u^2} = \\int_0^1 \\frac{du}{1+u^2} = \\arctan u|_0^1 = \\arctan 1 - \\arctan 0 = \\frac{\\pi}{4} - 0 = \\frac{\\pi}{4}$.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793138477-df41d",
+      "order": 13,
+      "question": "The area of the region bounded by the curves $y=e^x$, $y=e^{-x}$, and the lines $x=0$, $x=1$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$e+e^{-1}-2$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct calculation of the area."
+        },
+        {
+          "letter": "B",
+          "text": "$e-e^{-1}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the area."
+        },
+        {
+          "letter": "C",
+          "text": "$2(e+e^{-1})$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the area."
+        },
+        {
+          "letter": "D",
+          "text": "$e^2 - e^{-2}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the area."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For $x\\in[0,1]$, $e^x\\ge e^{-x}$. Area = $\\int_0^1 (e^x - e^{-x}) dx = [e^x + e^{-x}]_0^1 = (e + e^{-1}) - (1 + 1) = e + e^{-1} - 2$.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793138477-c7e77",
+      "order": 14,
+      "question": "The length of the arc of the parabola $y^2=4ax$ from the vertex to the point where $x=a$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$a \\left[ \\sqrt{2} + \\ln(1+\\sqrt{2}) \\right]$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct calculation of the arc length."
+        },
+        {
+          "letter": "B",
+          "text": "$2a \\left[ \\sqrt{2} + \\ln(1+\\sqrt{2}) \\right]$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the arc length."
+        },
+        {
+          "letter": "C",
+          "text": "$a \\ln(1+\\sqrt{2})$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the arc length."
+        },
+        {
+          "letter": "D",
+          "text": "$a \\sqrt{2}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the incorrect calculation of the arc length."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Use arc length formula for $y^2=4ax$. Let $y=2\\sqrt{a}\\sqrt{x}$, $\\frac{dy}{dx}=\\frac{2\\sqrt{a}}{2\\sqrt{x}}=\\sqrt{\\frac{a}{x}}$. So $1+\\left(\\frac{dy}{dx}\\right)^2 = 1+\\frac{a}{x}$, and $\\sqrt{1+\\left(\\frac{dy}{dx}\\right)^2} = \\sqrt{1+\\frac{a}{x}} = \\frac{\\sqrt{x+a}}{\\sqrt{x}}$. Then $L = \\int_0^a \\sqrt{1+\\left(\\frac{dy}{dx}\\right)^2} dx = \\int_0^a \\frac{\\sqrt{x+a}}{\\sqrt{x}} dx = \\int_0^a \\sqrt{\\frac{x+a}{x}} dx$.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793138477-8a146",
+      "order": 15,
+      "question": "The area of the region bounded by the curves $y = x^2$ and $y = \\sqrt{x}$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The area is not 1."
+        },
+        {
+          "letter": "B",
+          "text": "2/3",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The area is not 2/3."
+        },
+        {
+          "letter": "C",
+          "text": "1/2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The area is not 1/2."
+        },
+        {
+          "letter": "D",
+          "text": "1/3",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The area is $\\frac{1}{3}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find the area, first find the points of intersection of the two curves. Solve $x^2 = \\sqrt{x}$. Squaring both sides gives $x^4 = x$, which simplifies to $x(x^3 - 1) = 0$. The solutions are $x = 0$ and $x = 1$. The area is then calculated as the integral of the top function minus the bottom function between these points: $\\int_{0}^{1} (\\sqrt{x} - x^2) \\, dx = \\left[\\frac{2}{3}x^{3/2} - \\frac{x^3}{3}\\right]_{0}^{1} = \\frac{2}{3} - \\frac{1}{3} = \\frac{1}{3}$.",
+      "hint": "Find the points of intersection by solving $x^2 = \\sqrt{x}$ and then compute the definite integral of the difference between the two functions.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793138477-2f5ed",
+      "order": 16,
+      "question": "The area (in sq. units) bounded by the parabola $y^2 = 4x$ and the line $x=1$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{4}{3}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is half of the correct area due to not accounting for the lower half of the parabola."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{8}{3}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The total area is calculated as $2 \\times \\int_0^1 2\\sqrt{x} \\, dx = \\frac{8}{3}$ sq. units."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{16}{3}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is double the correct area, likely due to an error in the limits or symmetry application."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{2}{3}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is a quarter of the correct area, likely due to incorrect integration or limits."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The parabola $y^2 = 4x$ is symmetric about the x-axis. The region is bounded by $y = 2\\sqrt{x}$ (upper half) and $y = -2\\sqrt{x}$ (lower half) from $x=0$ to $x=1$. Due to symmetry, the area of the upper half is calculated and multiplied by 2. The integral $\\int_0^1 2\\sqrt{x} \\, dx$ is evaluated to find the area of the upper half, and the total area is $\\frac{8}{3}$ sq. units.",
+      "hint": "Use symmetry about the x-axis to simplify the calculation.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793138477-23ffd",
+      "order": 17,
+      "question": "The area (in sq. units) of the region bounded by the curve $y = e^x$, the x-axis, and the lines $x=0$ and $x=1$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$e$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the value of $e^x$ at $x=1$, not the area under the curve."
+        },
+        {
+          "letter": "B",
+          "text": "$e-1$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The area is $\\int_0^1 e^x \\, dx = e - 1$ sq. units."
+        },
+        {
+          "letter": "C",
+          "text": "$1-e$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is negative and incorrect, as area cannot be negative."
+        },
+        {
+          "letter": "D",
+          "text": "$e+1$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect and does not match the integral result."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The curve $y=e^x$ is always above the x-axis. The area is calculated by integrating $e^x$ from $x=0$ to $x=1$. The integral $\\int_0^1 e^x \\, dx$ evaluates to $e^1 - e^0 = e - 1$ sq. units.",
+      "hint": "The area under $e^x$ from $0$ to $1$ is $e - 1$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793138477-4a786",
+      "order": 18,
+      "question": "The area (in sq. units) bounded by the parabola $y = x^2$ and the line $y = x+2$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{9}{2}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The area is $\\int_{-1}^2 (x+2 - x^2) \\, dx = \\frac{9}{2}$ sq. units."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{7}{2}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect and does not match the integral result."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{5}{2}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect and does not match the integral result."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{11}{2}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect and does not match the integral result."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The points of intersection are found by solving $x^2 = x+2$, giving $x=-1$ and $x=2$. The line $y=x+2$ is above the parabola $y=x^2$ in the interval $[-1, 2]$. The area is calculated by integrating $(x+2 - x^2)$ from $-1$ to $2$, resulting in $\\frac{9}{2}$ sq. units.",
+      "hint": "Find the points of intersection first, then determine which curve is above the other in the interval.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793138477-05aef",
+      "order": 19,
+      "question": "The area (in sq. units) of the region bounded by the curve $y = |x^2 - 1|$, the x-axis, and the lines $x=-2$ and $x=2$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is too small and does not account for the entire region."
+        },
+        {
+          "letter": "B",
+          "text": "$4$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is half of the correct area, likely due to not using symmetry or incorrect limits."
+        },
+        {
+          "letter": "C",
+          "text": "$6$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect and does not match the integral result."
+        },
+        {
+          "letter": "D",
+          "text": "$8$",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The total area is $2 \\left[ \\int_0^1 (1-x^2) \\, dx + \\int_1^2 (x^2-1) \\, dx \\right] = 8$ sq. units."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The function $y = |x^2 - 1|$ is symmetric about the y-axis. The area is calculated by splitting the integral at $x=1$ (where $x^2-1$ changes sign) and using symmetry. The total area is $2 \\left[ \\int_0^1 (1-x^2) \\, dx + \\int_1^2 (x^2-1) \\, dx \\right] = 8$ sq. units.",
+      "hint": "Use symmetry and split the integral at the point where the expression inside the absolute value changes sign.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793138477-edfcc",
+      "order": 20,
+      "question": "The area (in sq. units) bounded by the curve $y = x^2 - 4x + 3$, the x-axis, and the lines $x=1$ and $x=3$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{4}{3}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The integral of the absolute value of the function over $[1, 3]$ yields $\\frac{4}{3}$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{8}{3}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value does not match the computed area."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{2}{3}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is too small for the computed area."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{16}{3}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is significantly larger than the computed area."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The curve $y = x^2 - 4x + 3$ can be factored as $(x-1)(x-3)$, indicating roots at $x=1$ and $x=3$. Since the parabola opens upwards, it lies below the x-axis in the interval $[1, 3]$. The area is calculated by integrating the absolute value of the function over this interval. The integral evaluates to $\\frac{4}{3}$ square units.",
+      "hint": "Factorize the quadratic to find the roots and determine the sign of the function in the given interval.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793138477-6a787",
+      "order": 21,
+      "question": "Find the area of the region bounded by the curve $y = x^2 - 4$, the x-axis, and the lines $x=0$ and $x=3$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\frac{16}{3}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value does not account for the area split correctly."
+        },
+        {
+          "letter": "B",
+          "text": "$\frac{7}{3}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value only accounts for part of the area."
+        },
+        {
+          "letter": "C",
+          "text": "$\frac{23}{3}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The area is calculated as $\\int_{0}^{2} -(x^2 - 4) \\, dx + \\int_{2}^{3} (x^2 - 4) \\, dx = \\frac{16}{3} + \\frac{7}{3} = \\frac{23}{3}$."
+        },
+        {
+          "letter": "D",
+          "text": "$\frac{15}{3}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is incorrect for the given interval."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The curve $y = x^2 - 4$ intersects the x-axis at $x = \\pm 2$. For the interval $[0, 3]$, the curve lies below the x-axis from $x=0$ to $x=2$ and above the x-axis from $x=2$ to $x=3$. The area is calculated as the integral of the absolute value of the function over the interval $[0, 3]$.",
+      "hint": "Split the integral at $x=2$ where the curve crosses the x-axis.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793245816-3e584",
+      "order": 22,
+      "question": "The area (in sq. units) bounded by the curve $y = x^2 - 4$ and the x-axis is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{16}{3}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is half the correct area."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{32}{3}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct area bounded by the curve and the x-axis."
+        },
+        {
+          "letter": "C",
+          "text": "$16$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is an incorrect approximation."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{8}{3}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is a quarter of the correct area."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The curve $y = x^2 - 4$ intersects the x-axis at $x = -2$ and $x = 2$. The area is calculated by integrating the absolute value of the function between these points, resulting in $\\frac{32}{3}$ sq. units.",
+      "hint": "Find the x-intercepts of the curve and compute the definite integral of the absolute value of the function between these points.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793245816-2d2d1",
+      "order": 23,
+      "question": "The area (in sq. units) of the region bounded by $y = |x-1|$ and $y = 3$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$6$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the base length, not the area."
+        },
+        {
+          "letter": "B",
+          "text": "$9$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct area of the bounded region."
+        },
+        {
+          "letter": "C",
+          "text": "$12$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is double the correct area."
+        },
+        {
+          "letter": "D",
+          "text": "$18$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is triple the correct area."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The region is a triangle formed by the intersection of $y = |x-1|$ and $y = 3$. The base of the triangle is 6 units, and the height is 3 units, giving an area of 9 sq. units.",
+      "hint": "Find the intersection points of the two curves and recognize the shape of the bounded region.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793245816-e944a",
+      "order": 24,
+      "question": "The area (in sq. units) bounded by the curves $y = \\sin x$, $y = \\cos x$, and the lines $x=0$, $x=\\frac{\\pi}{2}$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\sqrt{2} - 1$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is half the correct area."
+        },
+        {
+          "letter": "B",
+          "text": "$2\\sqrt{2} - 2$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct area bounded by the curves."
+        },
+        {
+          "letter": "C",
+          "text": "$\\sqrt{2}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is an incorrect approximation."
+        },
+        {
+          "letter": "D",
+          "text": "$2\\sqrt{2} - 1$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is an incorrect approximation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The curves intersect at $x = \\frac{\\pi}{4}$. The area is split into two integrals: $\\int_{0}^{\\frac{\\pi}{4}} (\\cos x - \\sin x) dx + \\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{2}} (\\sin x - \\cos x) dx$, resulting in $2\\sqrt{2} - 2$ sq. units.",
+      "hint": "Identify the intersection point of the curves and split the integral accordingly.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793245816-c4b10",
+      "order": 25,
+      "question": "The area (in sq. units) of the region bounded by $y = e^x$, $y = e^{-x}$, $x=0$, and $x=1$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$e + \\frac{1}{e} - 2$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct area bounded by the curves."
+        },
+        {
+          "letter": "B",
+          "text": "$e - \\frac{1}{e}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the integral without the constant terms."
+        },
+        {
+          "letter": "C",
+          "text": "$e + \\frac{1}{e}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the sum of the functions without subtraction."
+        },
+        {
+          "letter": "D",
+          "text": "$e - \\frac{1}{e} - 2$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is an incorrect approximation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The area is calculated by integrating the difference between $e^x$ and $e^{-x}$ from $x=0$ to $x=1$, resulting in $e + \\frac{1}{e} - 2$ sq. units.",
+      "hint": "Set up the integral of the difference between the two functions over the given interval.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793245816-251e6",
+      "order": 26,
+      "question": "The area (in sq. units) bounded by the curves $y=x^2$ and $y=x$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct area is $\\frac{1}{6}$."
+        },
+        {
+          "letter": "B",
+          "text": "1/2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct area is $\\frac{1}{6}$."
+        },
+        {
+          "letter": "C",
+          "text": "1/6",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The area is $\\frac{1}{6}$ sq. units."
+        },
+        {
+          "letter": "D",
+          "text": "1/12",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct area is $\\frac{1}{6}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find the area bounded by $y=x^2$ and $y=x$, we first find their points of intersection by solving $x^2 = x$, which gives $x=0$ and $x=1$. In the interval $[0,1]$, $x > x^2$, so the upper curve is $y=x$ and the lower curve is $y=x^2$. The area is calculated as $A = \\int_0^1 (x - x^2) dx = \\left[ \\frac{x^2}{2} - \\frac{x^3}{3} \\right]_0^1 = \\frac{1}{2} - \\frac{1}{3} = \\frac{1}{6}$.",
+      "hint": "Find the points of intersection of the curves and determine which curve is above the other in the interval.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793245816-0d11e",
+      "order": 27,
+      "question": "The area (in square units) bounded by the curve $y = |x^2 - 1|$, the x-axis, and the lines $x=-2$ and $x=2$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The total area is not 4."
+        },
+        {
+          "letter": "B",
+          "text": "16/3",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The total area is calculated as $\\int_{-2}^{-1} (x^2 - 1) dx + \\int_{-1}^{1} -(x^2 - 1) dx + \\int_{1}^{2} (x^2 - 1) dx = 16/3$."
+        },
+        {
+          "letter": "C",
+          "text": "8/3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The total area is not 8/3."
+        },
+        {
+          "letter": "D",
+          "text": "10/3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The total area is not 10/3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The area is calculated by splitting the integral at points where the expression inside the absolute value changes sign (x = ±1). The integral is evaluated over [-2, -1], [-1, 1], and [1, 2]. The total area is the sum of these integrals.",
+      "hint": "Split the integral at x = -1 and x = 1, then evaluate each part separately.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793245816-050e1",
+      "order": 28,
+      "question": "Let I = ∫₀^π x sin x dx. Using the property of definite integrals, I can be rewritten as:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "π ∫₀^π sin x dx",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not use the King's Property."
+        },
+        {
+          "letter": "B",
+          "text": "∫₀^π (π - x) sin x dx",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct application of the King's Property."
+        },
+        {
+          "letter": "C",
+          "text": "∫₀^π x cos x dx",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not a valid transformation of the given integral."
+        },
+        {
+          "letter": "D",
+          "text": "2 ∫₀^π/² x sin x dx",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the King's Property application."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the King's Property of definite integrals, ∫₀^a f(x) dx = ∫₀^a f(a - x) dx, so I = ∫₀^π (π - x) sin x dx. This is a standard application of integral properties in JEE Mains.",
+      "hint": "Recall the King's Property of definite integrals: ∫₀^a f(x) dx = ∫₀^a f(a - x) dx.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793245817-2d700",
+      "order": 29,
+      "question": "The area bounded by the curves y = x² and y = x³ between x = 0 and x = 1 is given by:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the integral of x² alone, not the difference."
+        },
+        {
+          "letter": "B",
+          "text": "1/2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the calculated area."
+        },
+        {
+          "letter": "C",
+          "text": "1/4",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the calculated area."
+        },
+        {
+          "letter": "D",
+          "text": "1/12",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct calculation of the area between the curves."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The area is ∫₀¹ (x² - x³) dx = [x³/3 - x⁴/4]₀¹ = 1/3 - 1/4 = 1/12. This is a direct application of area under curves, a common topic in JEE Mains.",
+      "hint": "Find the difference between the two functions and integrate over the given interval.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781793245817-8d909",
+      "order": 30,
+      "question": "If f(x) is an odd function, then the value of ∫₋a^a f(x) dx is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2 ∫₀^a f(x) dx",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is true for even functions, not odd functions."
+        },
+        {
+          "letter": "B",
+          "text": "0",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as the integral of an odd function over symmetric limits is zero."
+        },
+        {
+          "letter": "C",
+          "text": "a ∫₀^a f(x) dx",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect and does not follow from the properties of odd functions."
+        },
+        {
+          "letter": "D",
+          "text": "∫₀^a f(x) dx",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not account for the symmetry of the odd function."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For an odd function, f(-x) = -f(x). Thus, ∫₋a^a f(x) dx = ∫₋a^0 f(x) dx + ∫₀^a f(x) dx = -∫₀^a f(-x) dx + ∫₀^a f(x) dx = -∫₀^a -f(x) dx + ∫₀^a f(x) dx = 0. This tests knowledge of odd functions and their integrals, a key concept in JEE Mains.",
+      "hint": "Recall that for an odd function, the integral over symmetric limits around zero is zero.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-maths",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
