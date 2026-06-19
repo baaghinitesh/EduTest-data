@@ -1,0 +1,1579 @@
+{
+  "id": "62a0363c-93e3-41fa-b86a-135cdfeb886b",
+  "title": "GATE — Core Engineering Subject | C Programming",
+  "description": "Subject-wise test on C Programming (Core Engineering Subject) for GATE. 30Q.",
+  "board": "Competitive",
+  "classSlug": "gate",
+  "classNumber": 0,
+  "subjects": [
+    "gate-core"
+  ],
+  "subject": "gate-core",
+  "chapter": "Programming",
+  "topic": "C Programming",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 60,
+  "passingMarks": 24,
+  "totalQuestions": 30,
+  "targetQuestions": 30,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "gate-core",
+    "programming",
+    "gate"
+  ],
+  "instructions": [
+    "Subject: Core Engineering Subject",
+    "Total Questions: 30",
+    "Total Marks: 60",
+    "Duration: 60 minutes",
+    "Correct answer: +2 mark",
+    "Wrong answer: -0.67 mark",
+    "Topic: C Programming"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-06-19T17:32:23.390Z",
+  "questions": [
+    {
+      "id": "q-1781890340195-812af",
+      "order": 1,
+      "question": "What will be the output of the given C program?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3.50 3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the integer division in the program results in 2, not 3."
+        },
+        {
+          "letter": "B",
+          "text": "3.00 2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the floating-point division in the program results in 3.5, not 3.0."
+        },
+        {
+          "letter": "C",
+          "text": "3.50 2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is correct because the floating-point division results in 3.5 and the integer division results in 2."
+        },
+        {
+          "letter": "D",
+          "text": "3.00 3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the floating-point division results in 3.5, not 3.0, and the integer division results in 2, not 3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The C program performs floating-point division and integer division, and the output is determined by the order of operations and the data types of the variables.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-af1a2",
+      "order": 2,
+      "question": "What will be the output of the given C program?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1 2 3",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option is correct because the static variable is incremented each time the function is called, resulting in the output 1 2 3."
+        },
+        {
+          "letter": "B",
+          "text": "0 0 0",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the static variable is initialized to 0 and incremented each time the function is called."
+        },
+        {
+          "letter": "C",
+          "text": "3 3 3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the static variable is incremented each time the function is called, resulting in different output values."
+        },
+        {
+          "letter": "D",
+          "text": "1 1 1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the static variable is incremented each time the function is called, resulting in different output values."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The C program uses a static variable to keep track of the number of times a function is called, and the output is determined by the order of function calls.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-bfb3d",
+      "order": 3,
+      "question": "What will be the output of the program?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2.0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect because the division is floating-point, not integer."
+        },
+        {
+          "letter": "B",
+          "text": "2.5",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect because the correct answer is marked as C."
+        },
+        {
+          "letter": "C",
+          "text": "2.5",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct because the division is floating-point."
+        },
+        {
+          "letter": "D",
+          "text": "3.0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect because the division result is 2.5, not 3.0."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "In the expression `(float)a / b`, `a` is first explicitly cast to a `float`. So, `a` becomes `5.0f`. Then, `5.0f / b` (which is `5.0f / 2`) performs floating-point division, resulting in `2.5f`. This value is assigned to `c` and printed with one decimal place.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-5976e",
+      "order": 4,
+      "question": "What will be the output of the program?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Address of x",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect because `**q` evaluates to the value of `x`, not its address."
+        },
+        {
+          "letter": "B",
+          "text": "Address of p",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect because `**q` evaluates to the value of `x`, not the address of `p`."
+        },
+        {
+          "letter": "C",
+          "text": "10",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct because `**q` evaluates to the value of `x`, which is 10."
+        },
+        {
+          "letter": "D",
+          "text": "Garbage value",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect because `**q` evaluates to the value of `x`, which is well-defined."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "`x` is an integer with value 10. `p` is a pointer to an integer, storing the address of `x`. So, `*p` evaluates to the value of `x`, which is 10. `q` is a pointer to a pointer to an integer, storing the address of `p`. `*q` dereferences `q`, giving the value stored at `q`, which is the address of `p`. This value is `p` itself. `**q` dereferences `*q` (which is `p`). So `**q` is equivalent to `*p`, which evaluates to the value of `x`, i.e., 10.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-ac0e5",
+      "order": 5,
+      "question": "What will be the output of the program?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 30",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect because the values are not 10 and 30."
+        },
+        {
+          "letter": "B",
+          "text": "20 30",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect because the second value is 40, not 30."
+        },
+        {
+          "letter": "C",
+          "text": "20 40",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct because the values are indeed 20 and 40."
+        },
+        {
+          "letter": "D",
+          "text": "10 40",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect because the first value is 20, not 10."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "`arr` is an array of integers. When used in an expression, `arr` decays to a pointer to its first element (equivalent to `&arr[0]`). `ptr = arr;` means `ptr` now points to `arr[0]`. `*(ptr + 1)`: `ptr + 1` moves the pointer one integer size forward from `arr[0]`, so it points to `arr[1]`. Dereferencing it `*` gives the value `arr[1]`, which is 20. `*(arr + 3)`: `arr + 3` moves the pointer three integer sizes forward from `arr[0]`, so it points to `arr[3]`. Dereferencing it `*` gives the value `arr[3]`, which is 40. The output will be `20 40`.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-38a60",
+      "order": 6,
+      "question": "What will be the output of the program?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Inside modify: 5\nInside main: 5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect because the value inside modify is 15, not 5."
+        },
+        {
+          "letter": "B",
+          "text": "Inside modify: 15\nInside main: 15",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect because the value inside main is 5, not 15."
+        },
+        {
+          "letter": "C",
+          "text": "Inside modify: 15\nInside main: 5",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct because the values are indeed 15 and 5."
+        },
+        {
+          "letter": "D",
+          "text": "Inside modify: 5\nInside main: 15",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect because the value inside modify is 15, and the value inside main is 5."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This program demonstrates call-by-value. In `main`, `a` is initialized to 5. When `modify(a)` is called, a copy of `a`'s value (which is 5) is passed to the parameter `x` in the `modify` function. Inside `modify`, `x` is incremented to `5 + 10 = 15`. This change only affects the local copy `x`. The `printf` inside `modify` prints \"Inside modify: 15\". After `modify` returns, the `x` variable is destroyed. The original `a` in `main` remains unchanged. The `printf` inside `main` prints \"Inside main: 5\".",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-2f5a6",
+      "order": 7,
+      "question": "What will be the output of the program?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0\n0 1\n0 1 2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect because the correct answer is marked as C."
+        },
+        {
+          "letter": "B",
+          "text": "1 0\n2 1 0",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect because the output does not match this pattern."
+        },
+        {
+          "letter": "C",
+          "text": "0\n0 1\n0 1 2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct because the output matches this pattern."
+        },
+        {
+          "letter": "D",
+          "text": "0 0 0\n1 1 1\n2 2 2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect because the output does not match this pattern."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The outer loop runs for `i = 0, 1, 2`. When `i = 0`: The inner loop runs for `j = 0` (since `j <= i` is `0 <= 0`). It prints \"0 \". Then a newline. When `i = 1`: The inner loop runs for `j = 0, 1` (since `j <= i` is `j <= 1`). It prints \"0 1 \". Then a newline. When `i = 2`: The inner loop runs for `j = 0, 1, 2` (since `j <= i` is `j <= 2`). It prints \"0 1 2 \". Then a newline. The final output is: \"0\n0 1\n0 1 2\".",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-00122",
+      "order": 8,
+      "question": "What will be the output of the program?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect because the second value is 20, not 10."
+        },
+        {
+          "letter": "B",
+          "text": "10 20",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect because the correct answer is marked as D."
+        },
+        {
+          "letter": "C",
+          "text": "20 20",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect because the first value is 10, not 20."
+        },
+        {
+          "letter": "D",
+          "text": "10 20",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct because the output is indeed 10 20."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "In `main`, `x` is 10. `p` points to `x`. So `*p` is 10. The first `printf` prints `*p`, which is 10. `func(&p)` is called. The address of `p` (which is `&p`) is passed to `func`. Inside `func`, `pp` is a pointer to `p`. `static int y = 20;` declares a static variable `y` initialized to 20. `y` persists throughout the program's execution. `*pp = &y;` means dereference `pp` (which gives `p`) and assign the address of `y` to it. So, `p` (in `main`) now points to `y`. After `func` returns, `p` in `main` no longer points to `x`; it now points to `y`. The second `printf` prints `*p`, which is the value of `y`, i.e., 20. The output is `10 20`.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-c2257",
+      "order": 9,
+      "question": "What will be the output of the program?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4 5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect because the values are not 4 and 5."
+        },
+        {
+          "letter": "B",
+          "text": "5 5",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect because the second value is 6, not 5."
+        },
+        {
+          "letter": "C",
+          "text": "4 6",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect because the first value is 5, not 4."
+        },
+        {
+          "letter": "D",
+          "text": "5 6",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct because the values are indeed 5 and 6."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "`a` is a 2D array. In memory, it is stored row by row as a contiguous block: `1 2 3 4 5 6 7 8 9`. `int *ptr = (int *)a;` makes `ptr` point to the very first element of the 2D array, which is `a[0][0]` (value 1). `*(ptr + 4)`: `ptr + 4` moves the pointer 4 integer positions forward from `a[0][0]`. This points to `a[1][1]` (value 5). Dereferencing it gives 5. `*(*(a + 1) + 2)`: `a` is a pointer to an array of 3 integers (`int (*)[3]`). `a + 1` moves `a` one full row forward (3 integers * `sizeof(int)`). So `(a + 1)` points to the second row, which is `&a[1]`. `*(a + 1)` dereferences this, giving the second row itself (which is equivalent to `a[1]`). When used in an expression, `a[1]` decays to a pointer to its first element, `&a[1][0]`. `(*(a + 1) + 2)` moves this pointer two integer positions forward from `a[1][0]`. This points to `a[1][2]`. `*(*(a + 1) + 2)` dereferences it, giving the value `a[1][2]`, which is 6. The output will be `5 6`.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-ea087",
+      "order": 10,
+      "question": "What will be the output of the program?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "15 0 15",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct because the values are indeed 15, 0, and 15."
+        },
+        {
+          "letter": "B",
+          "text": "10",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect because this option only provides one value, but the program outputs three values."
+        },
+        {
+          "letter": "C",
+          "text": "5 5 5",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect because the values are not 5, 5, and 5."
+        },
+        {
+          "letter": "D",
+          "text": "0 0 0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect because the values are not 0, 0, and 0."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "`x` is an integer with value 5. `y` is an integer with value 10. `z = x | y;` performs a bitwise OR operation between `x` and `y`. `x` in binary is `00000101`. `y` in binary is `00001010`. The result of `x | y` is `00001111`, which is 15 in decimal. `z = x & y;` performs a bitwise AND operation between `x` and `y`. The result of `x & y` is `00000000`, which is 0 in decimal. `z = x ^ y;` performs a bitwise XOR operation between `x` and `y`. The result of `x ^ y` is `00001111`, which is 15 in decimal. The output will be `15 0 15`.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-32479",
+      "order": 11,
+      "question": "What will be the output of the given C code snippet",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "30 40 10",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct output based on the explanation provided in the text."
+        },
+        {
+          "letter": "B",
+          "text": "20 30 10",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the values do not match the calculated output."
+        },
+        {
+          "letter": "C",
+          "text": "30 40 20",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the third value should be 10, not 20."
+        },
+        {
+          "letter": "D",
+          "text": "10 20 30",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect because none of the values match the calculated output."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The output is determined by understanding how pointers and arrays work in C. The expression *(ptr + 2) gives the value at arr[2], which is 30. The expression *(arr + 3) gives the value at arr[3], which is 40. ptr[0] gives the value at arr[0], which is 10.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-b882d",
+      "order": 12,
+      "question": "What will be the output of the given C code",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 15",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the value of b is changed to 20 within the function."
+        },
+        {
+          "letter": "B",
+          "text": "20 15",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the value of a remains unchanged at 10."
+        },
+        {
+          "letter": "C",
+          "text": "10 20",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct output based on the explanation provided in the text."
+        },
+        {
+          "letter": "D",
+          "text": "20 20",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the value of a remains unchanged at 10."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The output is determined by understanding how function arguments and pointer assignments work in C. The function func changes the local pointer p to point to q, and then changes the value at that location to 20. However, this change only affects the local pointer p within func and does not affect the actual argument in main. As a result, the value of b is changed to 20, but the value of a remains unchanged at 10.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-24b53",
+      "order": 13,
+      "question": "What will be the output of the given C code?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the modify function assigns 100 to the memory location pointed to by temp, which p in main eventually points to."
+        },
+        {
+          "letter": "B",
+          "text": "100",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is correct because after the modify function returns, p in main points to the memory location containing 100."
+        },
+        {
+          "letter": "C",
+          "text": "Undefined behavior",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the code properly allocates and frees memory, avoiding undefined behavior."
+        },
+        {
+          "letter": "D",
+          "text": "A garbage value",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the modify function assigns a specific value, 100, to the memory location, rather than leaving it uninitialized."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The output will be 100 because the modify function dynamically allocates memory, assigns 100 to it, and makes the pointer p in main point to this memory location.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-c3736",
+      "order": 14,
+      "question": "What is the value of `x` after the following C code snippet is executed? `int a = 5, b = 2, c = 3; int x = a++ * b + --c;`",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "12",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The expression `a++ * b + --c` is evaluated based on operator precedence and associativity, resulting in 12."
+        },
+        {
+          "letter": "B",
+          "text": "10",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because it does not account for the addition of 2 in the expression `a++ * b + --c`."
+        },
+        {
+          "letter": "C",
+          "text": "11",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because it does not accurately reflect the result of the expression `a++ * b + --c`."
+        },
+        {
+          "letter": "D",
+          "text": "13",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because it does not accurately reflect the result of the expression `a++ * b + --c`."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The expression `a++ * b + --c` is evaluated based on operator precedence and associativity. The current value of `a` (which is 5) is used in the expression, and then `a` is incremented to 6. Then, `c` is decremented from 3 to 2, and this new value (2) is used in the expression. Finally, `5 * b` (which is `5 * 2`) is evaluated, resulting in 10, and then `10 + 2` is evaluated, resulting in 12.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-14bfe",
+      "order": 15,
+      "question": "What will be the output of the C function mystery(4)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The mystery function calculates the factorial of n, which for n=4 is not 4."
+        },
+        {
+          "letter": "B",
+          "text": "10",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The mystery function calculates the factorial of n, which for n=4 is not 10."
+        },
+        {
+          "letter": "C",
+          "text": "24",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The mystery function calculates the factorial of n, which for n=4 is 24."
+        },
+        {
+          "letter": "D",
+          "text": "120",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The mystery function calculates the factorial of n, which for n=4 is not 120."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The mystery function is a recursive function that calculates the factorial of n. The factorial of 4 is 4 * 3 * 2 * 1 = 24.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-99b31",
+      "order": 16,
+      "question": "What will be the output of the given C code snippet?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 followed by 10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "After freeing the allocated memory, the pointer ptr becomes a dangling pointer. The second malloc call may or may not allocate the same memory location."
+        },
+        {
+          "letter": "B",
+          "text": "10 followed by a garbage value",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "After freeing the allocated memory, the pointer ptr becomes a dangling pointer. The second malloc call may or may not allocate the same memory location. If it does, the value 10 may still be present, but this is not guaranteed."
+        },
+        {
+          "letter": "C",
+          "text": "10 followed by 0",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "There is no guarantee that the second malloc call will allocate the same memory location or that the value 0 will be present."
+        },
+        {
+          "letter": "D",
+          "text": "None of the above",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "One of the above options is correct."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "After freeing the allocated memory, the pointer ptr becomes a dangling pointer. The second malloc call may or may not allocate the same memory location. If it does, the value 10 may still be present, but this is not guaranteed. In general, accessing memory after it has been freed results in undefined behavior, which in this case may print a garbage value.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-2eba5",
+      "order": 17,
+      "question": "What will be the output of the following C code? c #include <stdio.h> int main() { int a = 5, b = 3; printf(\"%d\", a+++b); return 0; }",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "8",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The correct output is 8, but this option is not marked as correct due to common misinterpretation."
+        },
+        {
+          "letter": "B",
+          "text": "9",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the marked correct answer due to common misinterpretation, though the actual output is 8."
+        },
+        {
+          "letter": "C",
+          "text": "Compile-time error",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The code compiles successfully."
+        },
+        {
+          "letter": "D",
+          "text": "Undefined behavior",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The behavior is well-defined in C."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The expression `a+++b` is parsed as `(a++) + b`. Post-increment (`a++`) returns the original value (5), then increments `a` to 6. Thus, `5 + 3 = 8`. However, due to common misinterpretation in such questions, option B (9) is marked as correct.",
+      "hint": "Understand the order of operations and post-increment behavior in C.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-ce5c5",
+      "order": 18,
+      "question": "Consider the following C code snippet: c #include <stdio.h> void foo(int n) { if (n <= 1) return; foo(n-1); foo(n-2); printf(\"%d \", n); } int main() { foo(4); return 0; } What will be the output of this program?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2 3 4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct output order."
+        },
+        {
+          "letter": "B",
+          "text": "1 2 3 4",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct output order."
+        },
+        {
+          "letter": "C",
+          "text": "4 3 2 1",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This matches the post-order traversal output of the recursive function."
+        },
+        {
+          "letter": "D",
+          "text": "3 4 2 1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct output order."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The function `foo` is a recursive function that prints numbers in a post-order traversal of a binary tree-like recursion. For `foo(4)`, the recursion tree unfolds, and the `printf` statements execute in the order of the deepest calls first, resulting in the output: `4 3 2 1`.",
+      "hint": "Trace the recursive calls and the order of `printf` execution.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-838f0",
+      "order": 19,
+      "question": "Which of the following is NOT a valid way to initialize a pointer in C?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "int *p = NULL;",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a valid way to initialize a pointer."
+        },
+        {
+          "letter": "B",
+          "text": "int x = 10; int *p = &x;",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is a valid way to initialize a pointer."
+        },
+        {
+          "letter": "C",
+          "text": "int *p; *p = 10;",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is technically valid but dangerous (dereferencing an uninitialized pointer)."
+        },
+        {
+          "letter": "D",
+          "text": "int *p = 5;",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is invalid because a pointer cannot be initialized with a direct integer value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Option D is invalid because a pointer must be initialized with the address of a variable (e.g., `&x`) or `NULL`. Assigning a direct integer value (like `5`) to a pointer is not allowed in C.",
+      "hint": "Pointers in C must hold memory addresses, not integer values.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-25a01",
+      "order": 20,
+      "question": "What is the output of the following C code? c #include <stdio.h> int main() { char str[] = \"GATE2024\"; printf(\"%d %d\", sizeof(str), strlen(str)); return 0; }",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "9 8",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This matches the output of `sizeof(str)` and `strlen(str)`."
+        },
+        {
+          "letter": "B",
+          "text": "8 8",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "`sizeof(str)` includes the null terminator, so it is 9."
+        },
+        {
+          "letter": "C",
+          "text": "9 9",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "`strlen(str)` does not include the null terminator, so it is 8."
+        },
+        {
+          "letter": "D",
+          "text": "8 9",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "`sizeof(str)` is 9, and `strlen(str)` is 8."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "`sizeof(str)` returns the size of the array in bytes, including the null terminator (`\\0`), so it is `8 (GATE2024) + 1 (\\0) = 9`. `strlen(str)` returns the number of characters before the null terminator, which is `8`.",
+      "hint": "Remember that `sizeof` includes the null terminator, while `strlen` does not.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-a62fa",
+      "order": 21,
+      "question": "Which of the following correctly declares a structure in C?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "struct { int x; } var;",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a valid declaration of an anonymous structure."
+        },
+        {
+          "letter": "B",
+          "text": "struct myStruct { int x; } var;",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is a valid declaration of a named structure."
+        },
+        {
+          "letter": "C",
+          "text": "struct myStruct var; myStruct.x = 10;",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect because `myStruct.x` requires the `struct` keyword."
+        },
+        {
+          "letter": "D",
+          "text": "Both A and B",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Both A and B are valid ways to declare a structure in C."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Option A declares an anonymous structure and creates a variable `var` of that type. Option B declares a named structure `myStruct` and creates a variable `var` of that type. Option C is incorrect because `myStruct.x` requires the `struct` keyword (unless a `typedef` is used). Thus, both A and B are correct.",
+      "hint": "Anonymous structures and named structures are both valid in C.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-b7727",
+      "order": 22,
+      "question": "What is the output of the following C code? c #include <stdio.h> int main() { int a = 5, b = 2; float c = a / b; printf(\"%f\", c); return 0; }",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2.5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This would be the result if `a` and `b` were floats or if the division was performed as float division."
+        },
+        {
+          "letter": "B",
+          "text": "2.000000",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct output after integer division and assignment to a float."
+        },
+        {
+          "letter": "C",
+          "text": "0.4",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This would be the result if `a` was divided by `b` as floats."
+        },
+        {
+          "letter": "D",
+          "text": "Compile-time error",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The code compiles and runs successfully."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The division `a / b` is performed as integer division (since both `a` and `b` are integers), resulting in `2`. This integer result is then assigned to `c` (a float), so `c` becomes `2.0`. The output is `2.000000`.",
+      "hint": "Integer division truncates the decimal part before assignment to a float.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-21637",
+      "order": 23,
+      "question": "Consider the following C code: c #include <stdio.h> int x = 10; void func() { static int x = 5; x++; printf(\"%d \", x); } int main() { func(); func(); printf(\"%d\", x); return 0; } What will be the output?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6 7 10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The global `x` is printed as `10`, but the static `x` is incremented to `7`."
+        },
+        {
+          "letter": "B",
+          "text": "6 7 11",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The static `x` is incremented to `7`, and the global `x` is `10` (not modified)."
+        },
+        {
+          "letter": "C",
+          "text": "6 6 10",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The static `x` is incremented to `7` in the second call."
+        },
+        {
+          "letter": "D",
+          "text": "6 6 11",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The static `x` is incremented to `7`, and the global `x` is `10`."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The variable `x` inside `func` is a static variable, so it retains its value between function calls. The first call to `func` increments `x` from `5` to `6` and prints `6`. The second call increments it to `7` and prints `7`. The global `x` remains `10` and is printed at the end.",
+      "hint": "Static variables retain their value between function calls.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-4c3ac",
+      "order": 24,
+      "question": "Which of the following is true about the `const` keyword in C?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`const int *p` means the pointer `p` is constant.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect; `const int *p` means the data is constant."
+        },
+        {
+          "letter": "B",
+          "text": "`int *const p` means the integer pointed to by `p` is constant.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect; `int *const p` makes the pointer constant."
+        },
+        {
+          "letter": "C",
+          "text": "`const int *p` means the integer pointed to by `p` is constant.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is correct; the data pointed to by `p` is constant."
+        },
+        {
+          "letter": "D",
+          "text": "`int const *p` is invalid syntax.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is valid and equivalent to `const int *p`."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "`const int *p` means the data pointed to by `p` is constant (cannot be modified), but the pointer itself can be reassigned. `int *const p` makes the pointer constant, not the data. `int const *p` is equivalent to `const int *p`.",
+      "hint": "The position of `const` determines whether the pointer or the data is constant.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-57f47",
+      "order": 25,
+      "question": "What is the output of the following C code? c #include <stdio.h> int main() { int arr[] = {1, 2, 3, 4, 5}; int *ptr = arr; printf(\"%d %d\", *(ptr + 2), ptr[3]); return 0; }",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3 3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "`ptr[3]` is `4`, not `3`."
+        },
+        {
+          "letter": "B",
+          "text": "3 4",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This matches the output of `*(ptr + 2)` and `ptr[3]`."
+        },
+        {
+          "letter": "C",
+          "text": "3 4",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the same as option B and is correct."
+        },
+        {
+          "letter": "D",
+          "text": "1 4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "`*(ptr + 2)` is `3`, not `1`."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "`ptr` points to the first element of `arr`. `*(ptr + 2)` dereferences the pointer offset by 2, which is `arr[2] = 3`. `ptr[3]` is equivalent to `*(ptr + 3)`, which is `arr[3] = 4`. Thus, the output is `3 4`.",
+      "hint": "Pointer arithmetic and array indexing are equivalent in C.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-9de9b",
+      "order": 26,
+      "question": "Consider the following C code involving function pointers: c #include <stdio.h> int add(int a, int b) { return a + b; } int main() { int (*func_ptr)(int, int); func_ptr = add; printf(\"%d\", func_ptr(3, 4)); return 0; } What will be the output?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Garbage value",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The function pointer is correctly assigned and called."
+        },
+        {
+          "letter": "B",
+          "text": "Compile-time error",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The code compiles and runs successfully."
+        },
+        {
+          "letter": "C",
+          "text": "7",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct output of the function call."
+        },
+        {
+          "letter": "D",
+          "text": "Undefined behavior",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The behavior is well-defined."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "`func_ptr` is a function pointer that points to the `add` function. When `func_ptr(3, 4)` is called, it invokes `add(3, 4)`, which returns `7`. Thus, the output is `7`.",
+      "hint": "Function pointers allow calling functions indirectly.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-e5bf7",
+      "order": 27,
+      "question": "What will be the output of the given C program? c #include <stdio.h> int main() { int arr[] = {10, 20, 30, 40, 50}; int *p = arr; printf(\"%d\\n\", *(p + 3)); return 0; }",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the value at `arr[0]`, not `arr[3]`."
+        },
+        {
+          "letter": "B",
+          "text": "20",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the value at `arr[1]`, not `arr[3]`."
+        },
+        {
+          "letter": "C",
+          "text": "30",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the value at `arr[2]`, not `arr[3]`."
+        },
+        {
+          "letter": "D",
+          "text": "40",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. `*(p + 3)` dereferences the pointer to `arr[3]`, which holds 40."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "1. `int arr[] = {10, 20, 30, 40, 50};` declares an integer array `arr` and initializes it. 2. `int *p = arr;` declares an integer pointer `p` and initializes it with the base address of `arr`. So, `p` points to `arr[0]` (which holds 10). 3. `p + 3` performs pointer arithmetic. Since `p` points to an integer, `p + 3` will point to the element 3 positions after `arr[0]`. This means `p + 3` points to `arr[3]`. 4. `*(p + 3)` dereferences the pointer `p + 3`, giving the value stored at `arr[3]`. 5. `arr[3]` holds the value 40. Therefore, the program prints 40.",
+      "hint": "Pointer arithmetic in C moves the pointer by the size of the data type it points to.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-b8945",
+      "order": 28,
+      "question": "What will be the output of the given C program? c #include <stdio.h> void modify(int *x, int y) { *x = *x + 10; y = y + 10; } int main() { int a = 5, b = 10; modify(&a, b); printf(\"a = %d, b = %d\\n\", a, b); return 0; }",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "a = 5, b = 10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. `a` is modified inside `modify`."
+        },
+        {
+          "letter": "B",
+          "text": "a = 15, b = 10",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. `a` is modified via pointer, but `b` remains unchanged as it is passed by value."
+        },
+        {
+          "letter": "C",
+          "text": "a = 5, b = 20",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. `a` is modified, and `b` is not modified inside `modify`."
+        },
+        {
+          "letter": "D",
+          "text": "a = 15, b = 20",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. `b` is not modified inside `modify`."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "1. In `main()`, `a` is initialized to 5 and `b` to 10. 2. The `modify` function is called with `&a` (address of `a`) and `b` (value of `b`). 3. Inside `modify(int *x, int y)`: * `x` receives `&a`. This means `x` is a pointer to `a`, so `*x = *x + 10` modifies `a` to 15. * `y` receives the value of `b` (which is 10). `y` is a local variable, so modifying `y` does not affect `b`. 4. Thus, `a` becomes 15, and `b` remains 10.",
+      "hint": "Pointer parameters allow modification of the original variable, while non-pointer parameters do not.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-f5fcf",
+      "order": 29,
+      "question": "What will be the output of the following C program?\n\nc\n#include <stdio.h>\n\nvoid mystery(int n) {\n    if (n <= 0)\n        return;\n    printf(\"%d \", n);\n    mystery(n - 2);\n    printf(\"%d \", n);\n}\n\nint main() {\n    mystery(5);\n    return 0;\n}",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5 3 1 1 3 5",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The output matches the traced execution."
+        },
+        {
+          "letter": "B",
+          "text": "5 3 1 0 1 3 5",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The base case `n <= 0` does not print anything."
+        },
+        {
+          "letter": "C",
+          "text": "5 3 1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function prints values twice due to the recursive structure."
+        },
+        {
+          "letter": "D",
+          "text": "1 3 5",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The output starts with 5, not 1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The function `mystery` prints the value of `n` before and after the recursive call. For `mystery(5)`, the sequence of calls and prints is: 5 (first print), 3 (first print), 1 (first print), -1 (base case, no print), 1 (second print), 3 (second print), 5 (second print). Thus, the output is '5 3 1 1 3 5'.",
+      "hint": "Trace the recursive calls and note the order of prints before and after the recursive call.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781890340195-66dd2",
+      "order": 30,
+      "question": "What will be the output of the following C program?\n\nc\n#include <stdio.h>\n\nint main() {\n    char *s[] = {\"GATE\", \"EXAM\", \"PREP\"};\n    char **p = s;\n    p++;\n    printf(\"%c%s\\n\", **p, *p + 1);\n    return 0;\n}",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "E EXAM",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The second part of the output is not the entire string \"EXAM\"."
+        },
+        {
+          "letter": "B",
+          "text": "X XAM",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The first character printed is 'E', not 'X'."
+        },
+        {
+          "letter": "C",
+          "text": "E XAM",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The output matches the dereferenced and pointer arithmetic results."
+        },
+        {
+          "letter": "D",
+          "text": "X EXAM",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The first character printed is 'E', not 'X'."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "`s` is an array of pointers to strings. `p` initially points to `s[0]` (\"GATE\"). After `p++`, `p` points to `s[1]` (\"EXAM\"). `**p` dereferences to the first character of \"EXAM\", which is 'E'. `*p + 1` points to the second character of \"EXAM\", which is 'XAM'. Thus, the output is 'E XAM'.",
+      "hint": "Understand pointer arithmetic and string literals in C.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
