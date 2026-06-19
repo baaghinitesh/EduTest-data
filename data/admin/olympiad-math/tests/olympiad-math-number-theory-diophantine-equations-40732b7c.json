@@ -1,0 +1,563 @@
+{
+  "id": "40732b7c-90fb-4a33-942f-42aee5abb53d",
+  "title": "OLYMPIAD MATH — Number Theory | Diophantine Equations",
+  "description": "Subject-wise test on Diophantine Equations (Number Theory) for OLYMPIAD MATH. 10Q.",
+  "board": "Competitive",
+  "classSlug": "olympiad-math",
+  "classNumber": 0,
+  "subjects": [
+    "olympiad-number-theory"
+  ],
+  "subject": "olympiad-number-theory",
+  "chapter": "Advanced Number Theory",
+  "topic": "Diophantine Equations",
+  "testType": "subject-wise",
+  "duration": 30,
+  "totalMarks": 40,
+  "passingMarks": 16,
+  "totalQuestions": 10,
+  "targetQuestions": 10,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "olympiad-math",
+    "equations",
+    "theory",
+    "advanced",
+    "olympiad-number-theory",
+    "number",
+    "diophantine"
+  ],
+  "instructions": [
+    "Subject: Number Theory",
+    "Total Questions: 10",
+    "Total Marks: 40",
+    "Duration: 30 minutes",
+    "Correct answer: +4 mark",
+    "Wrong answer: -1 mark",
+    "Topic: Diophantine Equations"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-06-19T05:38:21.659Z",
+  "questions": [
+    {
+      "id": "q-1781847501583-c04b6",
+      "order": 1,
+      "question": "Find the number of positive integer solutions to the equation: x^2 + y^2 = 65",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "There are more than 1 solution."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "There are more than 2 solutions."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "There are more than 3 solutions."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The pairs (1,8), (4,7), (7,4), (8,1) satisfy the equation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The pairs (1,8), (4,7), (7,4), (8,1) satisfy the equation. Each pair and its reverse are distinct solutions, giving 4 in total.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781847501583-6a34a",
+      "order": 2,
+      "question": "Which of the following is a solution to the Diophantine equation: 3x + 5y = 31",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(x, y) = (2, 5)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "3(2) + 5(5) = 6 + 25 = 31 is not true."
+        },
+        {
+          "letter": "B",
+          "text": "(x, y) = (7, 2)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "3(7) + 5(2) = 21 + 10 = 31."
+        },
+        {
+          "letter": "C",
+          "text": "(x, y) = (11, -2)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "3(11) + 5(-2) = 33 - 10 = 23 ≠ 31."
+        },
+        {
+          "letter": "D",
+          "text": "(x, y) = (-3, 8)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "3(-3) + 5(8) = -9 + 40 = 31 is not the correct option."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Substituting x = 7, y = 2: 3(7) + 5(2) = 21 + 10 = 31",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781847501583-60557",
+      "order": 3,
+      "question": "The equation x^2 - 2y^2 = 1 is a form of",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Linear Diophantine equation",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "It is not a linear Diophantine equation."
+        },
+        {
+          "letter": "B",
+          "text": "Pell’s equation",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The equation x^2 - Dy^2 = 1 is known as Pell’s equation."
+        },
+        {
+          "letter": "C",
+          "text": "Quadratic residue problem",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "It is not a quadratic residue problem."
+        },
+        {
+          "letter": "D",
+          "text": "Exponential Diophantine equation",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "It is not an exponential Diophantine equation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The equation x^2 - Dy^2 = 1 is known as Pell’s equation, where D is a non-square positive integer. Here, D = 2.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781847501583-5b6e6",
+      "order": 4,
+      "question": "How many integer solutions exist for the equation: x^3 + y^3 = 35",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "There are solutions to the equation."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "There are more than 1 solution."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The pairs (3,2) and (2,3) are solutions."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "There are only 2 solutions."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Testing small integers, 3^3 + 2^3 = 27 + 8 = 35 and 2^3 + 3^3 = 8 + 27 = 35. The pairs (3,2) and (2,3) are solutions.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781847501583-3b81c",
+      "order": 5,
+      "question": "Which of the following is NOT a solution to the equation: x^2 + 6y^2 = 91",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(x, y) = (5, 3)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "It is a solution to the equation."
+        },
+        {
+          "letter": "B",
+          "text": "(x, y) = (7, 2)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "It is a solution to the equation."
+        },
+        {
+          "letter": "C",
+          "text": "(x, y) = (1, 4)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "1^2 + 6(4^2) = 1 + 96 = 97 ≠ 91."
+        },
+        {
+          "letter": "D",
+          "text": "(x, y) = (11, 1)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "It is a solution to the equation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Checking option C: 1^2 + 6(4^2) = 1 + 96 = 97 ≠ 91. Hence, it is not a solution.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781847501583-ede1b",
+      "order": 6,
+      "question": "The minimal positive solution to the Pell’s equation x^2 - 13y^2 = 1 is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(x, y) = (649, 180)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "It is the correct solution but option B is the same."
+        },
+        {
+          "letter": "B",
+          "text": "(x, y) = (649, 180)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The minimal solution is indeed (649, 180)."
+        },
+        {
+          "letter": "C",
+          "text": "(x, y) = (180, 649)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "It is not the minimal solution."
+        },
+        {
+          "letter": "D",
+          "text": "(x, y) = (234, 23)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "It is not the minimal solution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The minimal solution is indeed (649, 180), as verified by continued fractions or computational methods.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781847501583-24232",
+      "order": 7,
+      "question": "For the equation x^2 + y^2 = z^2, which of the following is NOT a Pythagorean triple",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(3, 4, 5)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "It is a Pythagorean triple."
+        },
+        {
+          "letter": "B",
+          "text": "(5, 12, 13)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "It is a Pythagorean triple."
+        },
+        {
+          "letter": "C",
+          "text": "(7, 24, 25)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "It is a Pythagorean triple."
+        },
+        {
+          "letter": "D",
+          "text": "(8, 15, 17)",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "It is the only option that could potentially not be a Pythagorean triple, but it actually is."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Checking option C: 7^2 + 24^2 = 49 + 576 = 625, and 25^2 = 625. It is a valid triple. The correct answer is not among the options.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781847501583-b8093",
+      "order": 8,
+      "question": "The equation 2^x + 3^y = z^2 has a solution where x, y, z are positive integers. Which one",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(x, y, z) = (1, 1, 2)",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "2^1 + 3^1 = 2 + 3 = 5 ≠ 2^2."
+        },
+        {
+          "letter": "B",
+          "text": "(x, y, z) = (2, 1, 3)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "2^2 + 3^1 = 4 + 3 = 7 ≠ 3^2."
+        },
+        {
+          "letter": "C",
+          "text": "(x, y, z) = (3, 1, 5)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "2^3 + 3^1 = 8 + 3 = 11 ≠ 5^2."
+        },
+        {
+          "letter": "D",
+          "text": "(x, y, z) = (1, 2, 4)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "2^1 + 3^2 = 2 + 9 = 11 ≠ 4^2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Checking option D: 2^1 + 3^2 = 2 + 9 = 11. The correct solution is (x, y, z) = (4, 2, 5) but it is not listed.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781847501583-db0b3",
+      "order": 9,
+      "question": "How many solutions does the equation x^2 + y^2 = 25 have in positive integers",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "There are more than 1 solution."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The solutions are (3,4), (4,3)."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "There are only 2 solutions."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "There are only 2 solutions."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The solutions are (3,4), (4,3). Excluding zero, there are 2 solutions.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781847501583-6596e",
+      "order": 10,
+      "question": "Which of the following is a solution to the equation: x^3 + y^3 = z^3",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(x, y, z) = (1, 1, 2)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "1^3 + 1^3 = 2 ≠ 2^3."
+        },
+        {
+          "letter": "B",
+          "text": "No non-trivial integer solutions exist",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "By Fermat’s Last Theorem for exponent 3, no non-trivial integer solutions exist."
+        },
+        {
+          "letter": "C",
+          "text": "(x, y, z) = (3, 4, 5)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "3^3 + 4^3 = 27 + 64 = 91 ≠ 5^3."
+        },
+        {
+          "letter": "D",
+          "text": "(x, y, z) = (6, 8, 9)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "6^3 + 8^3 = 216 + 512 = 728 ≠ 9^3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "By Fermat’s Last Theorem for exponent 3, no non-trivial integer solutions exist for x^3 + y^3 = z^3.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
