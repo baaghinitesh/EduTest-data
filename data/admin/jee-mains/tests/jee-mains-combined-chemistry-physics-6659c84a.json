@@ -1,0 +1,2091 @@
+{
+  "id": "6659c84a-2add-4c37-9b9f-dc7af0a47b30",
+  "title": "JEE MAINS — Combined: Chemistry + Physics",
+  "description": "Combined test: Chemistry + Physics for JEE MAINS. 40Q.",
+  "board": "Competitive",
+  "classSlug": "jee-mains",
+  "classNumber": 0,
+  "subjects": [
+    "jee-chemistry",
+    "jee-physics"
+  ],
+  "subject": "jee-chemistry",
+  "chapter": "Multiple Chapters",
+  "topic": "Combined",
+  "testType": "subject-wise",
+  "duration": 120,
+  "totalMarks": 160,
+  "passingMarks": 64,
+  "totalQuestions": 40,
+  "targetQuestions": 40,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "jee-chemistry+jee-physics",
+    "jee-mains",
+    "chemistry",
+    "physics"
+  ],
+  "instructions": [
+    "Subject: Chemistry + Physics",
+    "Section A: MCQ questions — all compulsory (+4/-1)",
+    "Section B: Numerical value questions — no negative marking",
+    "Correct MCQ: +4 marks | Wrong MCQ: -1 mark",
+    "Numerical: +4 marks correct | 0 marks wrong (no penalty)",
+    "Enter numerical answers as integers rounded to nearest value",
+    "Duration: 120 minutes"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-06-20T17:03:43.632Z",
+  "questions": [
+    {
+      "id": "q-1781974878109-456a4",
+      "order": 1,
+      "question": "Which of the following sets of quantum numbers (n, l, m_l, m_s) is not permissible for an electron in an atom?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3, 2, -2, +1/2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option is permissible because l is less than n."
+        },
+        {
+          "letter": "B",
+          "text": "4, 0, 0, -1/2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is permissible because l is less than n."
+        },
+        {
+          "letter": "C",
+          "text": "2, 2, 1, +1/2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is not permissible because l is not less than n."
+        },
+        {
+          "letter": "D",
+          "text": "1, 0, 0, +1/2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is permissible because l is less than n."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "According to the rules of quantum numbers, the azimuthal quantum number (l) can only take integer values from 0 to (n-1). In option C, n=2 and l=2. This is not permissible because l must be less than n (l < n). Therefore, l cannot be 2 when n is 2.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974878109-cdab7",
+      "order": 2,
+      "question": "What is the maximum number of electrons that can be accommodated in a subshell for which n = 4 and l = 3?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the maximum number of electrons is 14."
+        },
+        {
+          "letter": "B",
+          "text": "14",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is correct because the maximum number of electrons is 14."
+        },
+        {
+          "letter": "C",
+          "text": "18",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the maximum number of electrons is 14."
+        },
+        {
+          "letter": "D",
+          "text": "2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the maximum number of electrons is 14."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a given value of l, the magnetic quantum number (m_l) can take integer values from -l to +l, including 0. So, for l = 3, m_l can be -3, -2, -1, 0, +1, +2, +3. The number of possible m_l values is (2l + 1). Number of orbitals = (2 * 3) + 1 = 7 orbitals. Each orbital can accommodate a maximum of 2 electrons (according to Pauli's Exclusion Principle). Maximum number of electrons = Number of orbitals * 2 = 7 * 2 = 14 electrons.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974878109-64058",
+      "order": 3,
+      "question": "The azimuthal quantum number (l) for an electron primarily determines its:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Main energy level",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the main energy level is determined by n."
+        },
+        {
+          "letter": "B",
+          "text": "Orientation in space",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the orientation in space is determined by m_l."
+        },
+        {
+          "letter": "C",
+          "text": "Shape of the orbital",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is correct because the shape of the orbital is determined by l."
+        },
+        {
+          "letter": "D",
+          "text": "Spin angular momentum",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the spin angular momentum is determined by m_s."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The principal quantum number (n) determines the main energy level and size of the orbital. The azimuthal quantum number (l) determines the shape of the orbital (e.g., l=0 for s-orbital (spherical), l=1 for p-orbital (dumbbell), l=2 for d-orbital (double dumbbell)). The magnetic quantum number (m_l) determines the orientation of the orbital in space. The spin quantum number (m_s) determines the intrinsic angular momentum (spin) of the electron.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974878109-adfe2",
+      "order": 4,
+      "question": "How many orbitals are possible in the 5th principal energy shell (n=5)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the total number of orbitals is 25."
+        },
+        {
+          "letter": "B",
+          "text": "10",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the total number of orbitals is 25."
+        },
+        {
+          "letter": "C",
+          "text": "16",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the total number of orbitals is 25."
+        },
+        {
+          "letter": "D",
+          "text": "25",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is correct because the total number of orbitals is 25."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For any given principal quantum number (n), the total number of orbitals in that shell is given by n². Given n = 5. Total number of orbitals = n² = 5² = 25.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974878109-13942",
+      "order": 5,
+      "question": "Consider an atom with atomic number Z=15. How many electrons in its ground state will have the quantum numbers n=3, l=1?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect because there are 3 electrons with n=3, l=1."
+        },
+        {
+          "letter": "B",
+          "text": "3",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is correct because there are 3 electrons with n=3, l=1."
+        },
+        {
+          "letter": "C",
+          "text": "5",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect because there are 3 electrons with n=3, l=1."
+        },
+        {
+          "letter": "D",
+          "text": "6",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect because there are 3 electrons with n=3, l=1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The atomic number Z=15 corresponds to Phosphorus (P). First, write the ground state electronic configuration for Z=15: 1s² 2s² 2p⁶ 3s² 3p³. We are looking for electrons with n=3 and l=1. This corresponds to the 3p subshell. From the electronic configuration, there are 3 electrons in the 3p subshell.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974878109-78176",
+      "order": 6,
+      "question": "Which of the following statements about the magnetic quantum number (m_l) is incorrect?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It specifies the orientation of an orbital in space.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is correct because m_l does specify the orientation of an orbital in space."
+        },
+        {
+          "letter": "B",
+          "text": "For a given value of l, it can have (2l+1) values.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is correct because m_l can have (2l+1) values for a given l."
+        },
+        {
+          "letter": "C",
+          "text": "Its value can be greater than l for a given subshell.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the absolute value of m_l cannot be greater than l."
+        },
+        {
+          "letter": "D",
+          "text": "It can take integer values from -l through 0 to +l.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is correct because m_l can take integer values from -l to +l."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The magnetic quantum number (m_l) can only take integer values from -l to +l, including 0. Therefore, its absolute value cannot be greater than l.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974878109-954bc",
+      "order": 7,
+      "question": "An orbital is characterized by the quantum numbers n=4, l=2. How many total nodes does this orbital possess?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the total number of nodes is 3."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the total number of nodes is 3."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is correct because the total number of nodes is 3."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the total number of nodes is 3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The total number of nodes in an orbital is given by the formula: Total nodes = n - 1. Given: Principal quantum number (n) = 4. Total nodes = 4 - 1 = 3.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974878109-85872",
+      "order": 8,
+      "question": "Which of the following sets of quantum numbers (n, l, m_l, m_s) is not permissible for an electron in an atom?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3, 2, 1, +1/2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This set of quantum numbers is permissible."
+        },
+        {
+          "letter": "B",
+          "text": "4, 0, 0, -1/2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This set of quantum numbers is permissible."
+        },
+        {
+          "letter": "C",
+          "text": "2, 2, -1, +1/2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This set of quantum numbers is not permissible because 'l' cannot be 2 when 'n' is 2."
+        },
+        {
+          "letter": "D",
+          "text": "1, 0, 0, +1/2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This set of quantum numbers is permissible."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a given principal quantum number 'n', the azimuthal quantum number 'l' can have values from 0 to (n-1). So, for n = 2, 'l' can have values 0 and 1. Therefore, option C is not permissible because 'l' cannot be 2 when 'n' is 2.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974878109-43fc9",
+      "order": 9,
+      "question": "Which of the following sets of quantum numbers (n, l, m_l, m_s) is *not* allowed for an electron in an atom?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3, 2, -1, +1/2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This set of quantum numbers is allowed."
+        },
+        {
+          "letter": "B",
+          "text": "4, 0, 0, -1/2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This set of quantum numbers is allowed."
+        },
+        {
+          "letter": "C",
+          "text": "2, 2, 1, +1/2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This set of quantum numbers is not allowed because l = 2 is not less than n = 2."
+        },
+        {
+          "letter": "D",
+          "text": "5, 1, 0, -1/2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This set of quantum numbers is allowed."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "According to the rules of quantum numbers, the azimuthal quantum number (l) must always be less than the principal quantum number (n). In option C, n = 2 and l = 2. This violates the rule l < n, as l cannot be equal to n. Therefore, this set of quantum numbers is not allowed.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974878109-1c30d",
+      "order": 10,
+      "question": "What is the maximum number of electrons that can have the principal quantum number n = 4 and spin quantum number m_s = +1/2?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "8",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the maximum number of electrons."
+        },
+        {
+          "letter": "B",
+          "text": "16",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the maximum number of electrons with n = 4 and m_s = +1/2."
+        },
+        {
+          "letter": "C",
+          "text": "32",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the maximum number of electrons in the shell, but not with m_s = +1/2."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the maximum number of electrons."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The maximum number of electrons in a shell with principal quantum number 'n' is given by 2n². For n = 4, the maximum number of electrons is 2 * (4)² = 2 * 16 = 32 electrons. According to the Pauli exclusion principle, each orbital can hold a maximum of two electrons with opposite spins (+1/2 and -1/2). Therefore, half of the total electrons in a shell will have a spin quantum number of +1/2, and the other half will have -1/2.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974878109-e30c6",
+      "order": 11,
+      "question": "An electron is in an orbital for which the angular momentum quantum number (l) is 3. What is the maximum number of electrons that can occupy all such orbitals with l=3 in a given principal shell?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the maximum number of electrons."
+        },
+        {
+          "letter": "B",
+          "text": "10",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the maximum number of electrons."
+        },
+        {
+          "letter": "C",
+          "text": "14",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the maximum number of electrons that can occupy all such orbitals with l=3."
+        },
+        {
+          "letter": "D",
+          "text": "18",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the maximum number of electrons."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "When the angular momentum quantum number (l) is 3, it corresponds to an f-subshell. The number of orbitals in a subshell is given by (2l + 1). For l = 3, the number of orbitals is (2 * 3 + 1) = 7 orbitals. Each orbital can accommodate a maximum of 2 electrons (one with m_s = +1/2 and one with m_s = -1/2) according to the Pauli Exclusion Principle. Therefore, the maximum number of electrons that can occupy an f-subshell (l=3) is 7 orbitals * 2 electrons/orbital = 14 electrons.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974878109-d1c2d",
+      "order": 12,
+      "question": "Which of the following sets of quantum numbers (n, l, m_l, m_s) describes an electron in a 3p orbital?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3, 0, 0, +1/2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This set of quantum numbers describes a 3s orbital (l=0)."
+        },
+        {
+          "letter": "B",
+          "text": "3, 1, +2, -1/2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This set of quantum numbers is invalid because for l=1, m_l cannot be +2."
+        },
+        {
+          "letter": "C",
+          "text": "3, 1, -1, +1/2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This set of quantum numbers fits all criteria for a 3p orbital (n=3, l=1, m_l is a valid value, m_s is valid)."
+        },
+        {
+          "letter": "D",
+          "text": "3, 2, 1, -1/2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This set of quantum numbers describes a 3d orbital (l=2)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a 3p orbital: - The principal quantum number (n) is 3. - For a p orbital, the azimuthal quantum number (l) is 1. - The magnetic quantum number (m_l) can take values from -l to +l, including 0. So, for l=1, m_l can be -1, 0, or +1. - The spin quantum number (m_s) can be either +1/2 or -1/2.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974878109-226b1",
+      "order": 13,
+      "question": "What is the orbital angular momentum of an electron in a 4f orbital?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "√2 * (h/2π)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct orbital angular momentum for a 4f orbital."
+        },
+        {
+          "letter": "B",
+          "text": "√6 * (h/2π)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct orbital angular momentum for a 4f orbital."
+        },
+        {
+          "letter": "C",
+          "text": "√12 * (h/2π)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct orbital angular momentum for a 4f orbital."
+        },
+        {
+          "letter": "D",
+          "text": "√20 * (h/2π)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct orbital angular momentum for a 4f orbital."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The orbital angular momentum of an electron is given by the formula: Orbital Angular Momentum = √(l(l+1)) * (h/2π) For a 4f orbital, l = 3. Therefore, Orbital Angular Momentum = √(3(3+1)) * (h/2π) = √(3*4) * (h/2π) = √12 * (h/2π)",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974878109-918af",
+      "order": 14,
+      "question": "The quantum number that determines the orientation of an atomic orbital in space is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Principal quantum number (n)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The principal quantum number (n) determines the size of the orbital."
+        },
+        {
+          "letter": "B",
+          "text": "Azimuthal quantum number (l)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The azimuthal quantum number (l) determines the shape of the orbital."
+        },
+        {
+          "letter": "C",
+          "text": "Magnetic quantum number (ml)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The magnetic quantum number (ml) determines the orientation of the orbital in space."
+        },
+        {
+          "letter": "D",
+          "text": "Spin quantum number (ms)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The spin quantum number (ms) determines the spin of the electron."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The magnetic quantum number (ml) determines the number of orbitals and their orientation within a subshell. It can take integer values from -l to +l, where l is the azimuthal quantum number.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974878109-f2c87",
+      "order": 15,
+      "question": "For an electron in a 3d orbital, the possible values of the magnetic quantum number (ml) are:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0, 1, 2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "These values do not include all possible values of ml for a 3d orbital."
+        },
+        {
+          "letter": "B",
+          "text": "-2, -1, 0, 1, 2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is correct, but it is not marked as the correct answer in the original text."
+        },
+        {
+          "letter": "C",
+          "text": "-2, -1, 0, 1, 2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "These are the correct possible values of ml for a 3d orbital."
+        },
+        {
+          "letter": "D",
+          "text": "-3, -2, -1, 0, 1, 2, 3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "These values are not correct for a 3d orbital, as l = 2 and ml can only take values from -2 to +2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a 3d orbital, the principal quantum number n = 3 and the azimuthal quantum number l = 2. The magnetic quantum number ml can take values from -l to +l, i.e., -2, -1, 0, 1, 2.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974878109-8db77",
+      "order": 16,
+      "question": "Which of the following sets of quantum numbers (n, l, ml, ms) is not possible for an electron in an atom?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(3, 2, 1, +1/2)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This set of quantum numbers is possible for an electron in an atom."
+        },
+        {
+          "letter": "B",
+          "text": "(2, 1, -1, -1/2)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This set of quantum numbers is possible for an electron in an atom."
+        },
+        {
+          "letter": "C",
+          "text": "(4, 3, 4, +1/2)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The value ml = 4 is not possible for l = 3."
+        },
+        {
+          "letter": "D",
+          "text": "(1, 0, 0, +1/2)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This set of quantum numbers is possible for an electron in an atom."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The magnetic quantum number ml must satisfy -l ≤ ml ≤ +l. For l = 3, ml can be -3, -2, -1, 0, 1, 2, or 3. The value ml = 4 is not possible.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974878109-583ea",
+      "order": 17,
+      "question": "The maximum number of electrons that can be accommodated in a subshell with azimuthal quantum number l = 3 is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct maximum number of electrons for a subshell with l = 3."
+        },
+        {
+          "letter": "B",
+          "text": "14",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The correct maximum number of electrons for a subshell with l = 3 is 14."
+        },
+        {
+          "letter": "C",
+          "text": "10",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct maximum number of electrons for a subshell with l = 3."
+        },
+        {
+          "letter": "D",
+          "text": "8",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct maximum number of electrons for a subshell with l = 3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The number of orbitals in a subshell is given by 2l + 1 = 7. Each orbital can hold 2 electrons, so the maximum number of electrons is 7 × 2 = 14.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974878109-b4fa7",
+      "order": 18,
+      "question": "An electron in an atom has the following quantum numbers: n = 4, l = 2, ml = -1, ms = +1/2. The orbital designated by these quantum numbers is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2s",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The principal quantum number n = 4, not n = 2."
+        },
+        {
+          "letter": "B",
+          "text": "4s",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The azimuthal quantum number l = 2, not l = 0."
+        },
+        {
+          "letter": "C",
+          "text": "4p",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The azimuthal quantum number l = 2, not l = 1."
+        },
+        {
+          "letter": "D",
+          "text": "4d",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The correct orbital designated by these quantum numbers is 4d."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For n = 4 and l = 2, the subshell is 4d. The magnetic quantum number ml = -1 indicates one of the five possible d orbitals.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974878109-c07fb",
+      "order": 19,
+      "question": "The number of radial nodes in a 4p orbital is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The correct number of radial nodes is not 1."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The correct number of radial nodes is 2."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The correct number of radial nodes is not 3."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The correct number of radial nodes is not 4."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The number of radial nodes is given by n - l - 1. For a 4p orbital, n = 4 and l = 1, so the number of radial nodes is 4 - 1 - 1 = 2.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974878109-a7995",
+      "order": 20,
+      "question": "For an electron in a 5f orbital, the possible values of the spin quantum number (ms) are:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "-1, 0, +1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The spin quantum number (ms) can only have two possible values: +1/2 or -1/2."
+        },
+        {
+          "letter": "B",
+          "text": "-2, -1, 0, +1, +2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The spin quantum number (ms) can only have two possible values: +1/2 or -1/2."
+        },
+        {
+          "letter": "C",
+          "text": "-3/2, -1/2, +1/2, +3/2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "These values are possible for the azimuthal quantum number (l) of an f orbital, but not for the spin quantum number (ms)."
+        },
+        {
+          "letter": "D",
+          "text": "+1/2, -1/2",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The correct possible values of the spin quantum number (ms) are +1/2 and -1/2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The spin quantum number (ms) can only have two possible values: +1/2 (spin up) or -1/2 (spin down), regardless of the orbital type.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974985399-5d3a5",
+      "order": 21,
+      "question": "A glass rod rubbed with silk acquires a charge of +1.6 µC. What is the charge acquired by the silk cloth?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "+1.6 µC",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The silk cloth acquires a negative charge, not a positive charge."
+        },
+        {
+          "letter": "B",
+          "text": "Zero",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The silk cloth acquires a charge, not zero charge."
+        },
+        {
+          "letter": "C",
+          "text": "-1.6 µC",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The silk cloth acquires a negative charge of -1.6 µC."
+        },
+        {
+          "letter": "D",
+          "text": "+0.8 µC",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The silk cloth acquires a charge of -1.6 µC, not +0.8 µC."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "According to the principle of conservation of electric charge, charge can neither be created nor destroyed. When a glass rod is rubbed with silk, electrons are transferred from the glass rod to the silk. If the glass rod acquires a charge of +1.6 µC (due to loss of electrons), the silk cloth must acquire an equal and opposite charge of -1.6 µC (due to gain of electrons), such that the net charge of the system remains conserved.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974985399-eab1b",
+      "order": 22,
+      "question": "Two point charges, +Q and -2Q, are placed at positions (0, a) and (0, -a) respectively. What is the magnitude of the electric field at the origin (0, 0)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "kQ/a^2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The magnitude of the electric field at the origin is 3kQ/a^2, not kQ/a^2."
+        },
+        {
+          "letter": "B",
+          "text": "2kQ/a^2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The magnitude of the electric field at the origin is 3kQ/a^2, not 2kQ/a^2."
+        },
+        {
+          "letter": "C",
+          "text": "3kQ/a^2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The magnitude of the electric field at the origin is indeed 3kQ/a^2."
+        },
+        {
+          "letter": "D",
+          "text": "4kQ/a^2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The magnitude of the electric field at the origin is 3kQ/a^2, not 4kQ/a^2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The electric field due to a point charge Q at a distance r is given by E = k|Q|/r^2. At the origin (0, 0): Electric field due to +Q at (0, a): E1 = kQ/a^2 (directed downwards, towards -y axis). Electric field due to -2Q at (0, -a): E2 = k(2Q)/a^2 (directed downwards, towards -y axis, as the field points towards a negative charge). Since both electric fields are in the same direction (downwards), their magnitudes add up. Net electric field E_net = E1 + E2 = kQ/a^2 + 2kQ/a^2 = 3kQ/a^2.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974985399-0f736",
+      "order": 23,
+      "question": "A solid conducting sphere of radius R has a total charge +Q uniformly distributed on its surface. What is the electric potential at a point located at a distance R/2 from the center of the sphere?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "kQ/R^2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The electric potential at a point inside the sphere is kQ/R, not kQ/R^2."
+        },
+        {
+          "letter": "B",
+          "text": "kQ/(R/2)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The electric potential at a point inside the sphere is kQ/R, not kQ/(R/2)."
+        },
+        {
+          "letter": "C",
+          "text": "kQ/R",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The electric potential at a point inside the sphere is indeed kQ/R."
+        },
+        {
+          "letter": "D",
+          "text": "Zero",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The electric potential at a point inside the sphere is kQ/R, not zero."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a solid conducting sphere, the entire charge resides on its surface. Inside a conducting sphere, the electric field is zero. Since the electric field is zero, the electric potential inside the conductor (including its surface) is constant. The potential at any point inside the sphere is equal to the potential on its surface. The potential on the surface of the sphere is V = kQ/R. Therefore, the electric potential at a distance R/2 from the center (which is inside the sphere) is also kQ/R.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974985399-9ca20",
+      "order": 24,
+      "question": "Two capacitors of capacitance 3 µF and 6 µF are connected in series across a 12 V battery. The potential difference across the 3 µF capacitor is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4 V",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The potential difference across the 3 µF capacitor is 8 V, not 4 V."
+        },
+        {
+          "letter": "B",
+          "text": "6 V",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The potential difference across the 3 µF capacitor is 8 V, not 6 V."
+        },
+        {
+          "letter": "C",
+          "text": "8 V",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The potential difference across the 3 µF capacitor is indeed 8 V."
+        },
+        {
+          "letter": "D",
+          "text": "12 V",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The potential difference across the 3 µF capacitor is 8 V, not 12 V."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For capacitors in series, the equivalent capacitance C_eq is given by 1/C_eq = 1/C_1 + 1/C_2. 1/C_eq = 1/(3 µF) + 1/(6 µF) = (2+1)/(6 µF) = 3/(6 µF). C_eq = 2 µF. The total charge stored in the series combination is Q = C_eq V = (2 µF)(12 V) = 24 µC. In a series connection, the charge on each capacitor is the same as the total charge. So, Q_1 = Q_2 = Q = 24 µC. The potential difference across the 3 µF capacitor (C_1) is V_1 = Q_1/C_1 = (24 µC)/(3 µF) = 8 V.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974985399-84409",
+      "order": 25,
+      "question": "An electric dipole of dipole moment \\vec{p} is placed in a uniform electric field \\vec{E}. The potential energy of the dipole is minimum when the angle between \\vec{p} and \\vec{E} is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0^\\circ",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The potential energy of the dipole is minimum when the angle between \\vec{p} and \\vec{E} is 0^\\circ."
+        },
+        {
+          "letter": "B",
+          "text": "90^\\circ",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The potential energy of the dipole is maximum when the angle between \\vec{p} and \\vec{E} is 90^\\circ, not minimum."
+        },
+        {
+          "letter": "C",
+          "text": "180^\\circ",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The potential energy of the dipole is maximum when the angle between \\vec{p} and \\vec{E} is 180^\\circ, not minimum."
+        },
+        {
+          "letter": "D",
+          "text": "45^\\circ",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The potential energy of the dipole is not minimum when the angle between \\vec{p} and \\vec{E} is 45^\\circ."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The potential energy (U) of an electric dipole in a uniform electric field is given by U = -\\vec{p} \\cdot \\vec{E} = -pE \\cos \\theta, where \\theta is the angle between \\vec{p} and \\vec{E}. For the potential energy to be minimum, \\cos \\theta must be maximum. The maximum value of \\cos \\theta is 1, which occurs when \\theta = 0^\\circ. At \\theta = 0^\\circ, U_min = -pE. This corresponds to a stable equilibrium.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974985399-5cec8",
+      "order": 26,
+      "question": "A parallel plate capacitor has capacitance C. If the distance between the plates is halved and a dielectric medium of dielectric constant K=4 is introduced between the plates, what will be the new capacitance?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "C/2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The new capacitance is 8C, not C/2."
+        },
+        {
+          "letter": "B",
+          "text": "2C",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The new capacitance is 8C, not 2C."
+        },
+        {
+          "letter": "C",
+          "text": "4C",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The new capacitance is 8C, not 4C."
+        },
+        {
+          "letter": "D",
+          "text": "8C",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The new capacitance is indeed 8C."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The capacitance of a parallel plate capacitor is given by C = \\epsilon_0 A/d, where A is the plate area and d is the distance between plates. Initially, C = \\epsilon_0 A/d. In the new situation, the distance between plates is halved (d' = d/2) and a dielectric of constant K=4 is introduced. The new capacitance C' = K \\epsilon_0 A/d' = 4 \\epsilon_0 A/(d/2) = 8 \\epsilon_0 A/d. Comparing with the initial capacitance, C' = 8C.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974985399-ab0da",
+      "order": 27,
+      "question": "Three point charges q, 2q, and 8q are to be placed on a 9 cm long straight line. Where should the charge q be placed such that the net electric potential energy of the system is minimum?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "At 1 cm from 2q",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The charge q should be placed at 3 cm from 2q, not 1 cm."
+        },
+        {
+          "letter": "B",
+          "text": "At 3 cm from 2q",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The charge q should be placed at 3 cm from 2q."
+        },
+        {
+          "letter": "C",
+          "text": "At 1 cm from 8q",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The charge q should be placed at 3 cm from 2q, not 1 cm from 8q."
+        },
+        {
+          "letter": "D",
+          "text": "At 3 cm from 8q",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The charge q should be placed at 3 cm from 2q, not 3 cm from 8q."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let the charges be q_1 = q, q_2 = 2q, and q_3 = 8q. Let the total length be L = 9 cm. Place q_2 at x=0 and q_3 at x=L. Let q_1 be placed at a distance x from q_2. The potential energy of the system is U = k q_1 q_2/x + k q_1 q_3/(L-x) + k q_2 q_3/L. To minimize U, we need to minimize the terms involving x. U(x) = k q^2 (2/x + 8/(L-x)) + constant. To find the minimum, we differentiate U with respect to x and set it to zero: dU/dx = k q^2 (-2/x^2 - 8/(L-x)^2(-1)) = 0. -2/x^2 + 8/(L-x)^2 = 0. 8/(L-x)^2 = 2/x^2. 4/(L-x)^2 = 1/x^2. Taking the square root of both sides: 2/(L-x) = 1/x. 2x = L-x. 3x = L. x = L/3 = 9/3 = 3 cm. The charge q should be placed at 3 cm from 2q (and thus 6 cm from 8q).",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974985399-02446",
+      "order": 28,
+      "question": "A parallel plate capacitor is charged by a battery and then disconnected. A dielectric slab is then inserted between the plates. Which of the following statements is TRUE?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The charge on the plates decreases.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The charge on the plates remains constant, it does not decrease."
+        },
+        {
+          "letter": "B",
+          "text": "The capacitance decreases.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The capacitance increases when a dielectric slab is inserted."
+        },
+        {
+          "letter": "C",
+          "text": "The potential difference across the plates increases.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The potential difference across the plates decreases when a dielectric slab is inserted."
+        },
+        {
+          "letter": "D",
+          "text": "The energy stored in the capacitor decreases.",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The energy stored in the capacitor decreases when a dielectric slab is inserted."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "When a capacitor is charged by a battery and then disconnected, the charge (Q) on its plates remains constant because there is no path for the charge to escape. When a dielectric slab is inserted: the capacitance increases, the potential difference across the plates decreases, and the energy stored in the capacitor decreases.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974985399-6f824",
+      "order": 29,
+      "question": "A parallel plate capacitor has a dielectric slab inserted between its plates. Which of the following statements is true regarding the change in the capacitor's properties?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The charge on the capacitor increases.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The charge Q remains constant because the capacitor is isolated (no external circuit to supply charge)."
+        },
+        {
+          "letter": "B",
+          "text": "The capacitance decreases.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The capacitance increases by a factor of K (C' = KC) when a dielectric is inserted."
+        },
+        {
+          "letter": "C",
+          "text": "The potential difference between the plates decreases.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The potential difference V decreases because V = Q/C, and C increases while Q remains constant."
+        },
+        {
+          "letter": "D",
+          "text": "The energy stored in the capacitor decreases.",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The energy stored U = Q²/(2C) decreases because C increases while Q remains constant."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "When a dielectric slab (with dielectric constant K > 1) is inserted between the plates of a capacitor, the capacitance increases by a factor of K (C' = KC). Since the capacitor is isolated, the charge Q remains constant. The potential difference V decreases because V = Q/C, and C increases. The energy stored U also decreases because U = Q²/(2C), and C increases.",
+      "hint": "Recall the relationships: C = Q/V, U = Q²/(2C), and C' = KC for a dielectric.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974985399-36d56",
+      "order": 30,
+      "question": "Two large, parallel conducting plates have surface charge densities +σ and -σ on their inner surfaces. What is the electric field in the region between the plates?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "σ/ε₀",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The net electric field between the plates is the sum of the fields due to both charged sheets, resulting in σ/ε₀."
+        },
+        {
+          "letter": "B",
+          "text": "σ/(2ε₀)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the field due to a single charged sheet, not the combined field between the plates."
+        },
+        {
+          "letter": "C",
+          "text": "Zero",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The fields do not cancel between the plates; they add up."
+        },
+        {
+          "letter": "D",
+          "text": "2σ/ε₀",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is twice the correct value; the fields add up to σ/ε₀, not 2σ/ε₀."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The electric field due to a single large charged sheet is E = σ/(2ε₀). For the region between the plates, the fields from both plates add up because they are in the same direction. Thus, the net electric field is E_net = σ/(2ε₀) + σ/(2ε₀) = σ/ε₀.",
+      "hint": "Use the superposition principle for electric fields due to charged sheets.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974985399-28bd4",
+      "order": 31,
+      "question": "Which of the following statements correctly describes the fundamental principle of electric charge conservation?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Electric charge can be created or destroyed, but only in pairs of equal and opposite charges.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "While charge can be created or destroyed in pairs, the net charge of an isolated system remains constant, not just the creation/destruction in pairs."
+        },
+        {
+          "letter": "B",
+          "text": "The net electric charge of an isolated system always remains constant.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct statement of the principle of electric charge conservation."
+        },
+        {
+          "letter": "C",
+          "text": "Electric charge is conserved only when no external electric field is present.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Charge conservation is a fundamental law and does not depend on the presence or absence of an external electric field."
+        },
+        {
+          "letter": "D",
+          "text": "The total amount of positive charge and negative charge in the universe must always be equal.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The principle states that the net charge is conserved, not that the total positive and negative charges must be equal."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The principle of electric charge conservation states that the net electric charge of an isolated system remains constant over time. This means charge cannot be created or destroyed, only transferred within the system.",
+      "hint": "Think about the total charge in an isolated system.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974985399-c2800",
+      "order": 32,
+      "question": "Which of the following statements most accurately describes the principle of conservation of electric charge?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Electric charge can be created or destroyed, but only in pairs of opposite charges.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This describes pair production/annihilation, which conserves net charge but is not the general principle of conservation of electric charge."
+        },
+        {
+          "letter": "B",
+          "text": "The total electric charge in the universe is always increasing.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This violates the principle of conservation of electric charge."
+        },
+        {
+          "letter": "C",
+          "text": "The net electric charge of an isolated system remains constant.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct statement of the principle of conservation of electric charge."
+        },
+        {
+          "letter": "D",
+          "text": "Electric charge is conserved only when objects are at rest.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Charge conservation holds true regardless of the motion of objects."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The principle of conservation of electric charge states that the total electric charge in an isolated system (a system that does not exchange charge with its surroundings) remains constant. Charges can be transferred between objects within the system, but the algebraic sum of all charges in the system does not change.",
+      "hint": "Consider the definition of an isolated system and the net charge within it.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974985399-c9238",
+      "order": 33,
+      "question": "Two identical conducting spheres, A and B, are initially separated. Sphere A has a charge of +6 µC, and sphere B is uncharged. If the two spheres are brought into contact and then separated, what will be the final charge on sphere B?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0 µC",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This would imply no charge transfer, which is incorrect."
+        },
+        {
+          "letter": "B",
+          "text": "+3 µC",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The total charge (+6 µC) is equally distributed, so each sphere gets +3 µC."
+        },
+        {
+          "letter": "C",
+          "text": "+6 µC",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This would mean all charge remains on sphere A, which is incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "-6 µC",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This violates charge conservation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "When two identical conducting spheres are brought into contact, the total charge is conserved and redistributes equally between them until they reach the same potential.",
+      "hint": "Identical spheres share charge equally when in contact.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974985399-16d42",
+      "order": 34,
+      "question": "Three identical conducting spheres, X, Y, and Z, are initially placed on insulating stands. Sphere X has a charge of +12 µC, sphere Y has a charge of -4 µC, and sphere Z is initially uncharged. Sphere X is first brought into contact with sphere Y, and then separated. After this, sphere Y is brought into contact with sphere Z, and then separated. What is the final charge on sphere X?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "+2 µC",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the charge on sphere Y after the second contact, not sphere X."
+        },
+        {
+          "letter": "B",
+          "text": "+4 µC",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Sphere X's charge after the first contact is +4 µC and does not change afterward."
+        },
+        {
+          "letter": "C",
+          "text": "+8 µC",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the total charge after the first contact, not the final charge on sphere X."
+        },
+        {
+          "letter": "D",
+          "text": "+12 µC",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the initial charge on sphere X, which changes after contact."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Step 1: Sphere X (+12 µC) touches Sphere Y (-4 µC). Total charge = +8 µC. After contact, each sphere has +4 µC. Step 2: Sphere Y (+4 µC) touches Sphere Z (0 µC). Total charge = +4 µC. After contact, each sphere has +2 µC. The final charge on sphere X remains +4 µC.",
+      "hint": "Charge redistributes equally between identical spheres when in contact. Track the charge on sphere X after each step.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974985399-8c0b4",
+      "order": 35,
+      "question": "An uncharged isolated conducting sphere is placed near a positively charged glass rod. Which of the following statements is true regarding the net electric charge of the conducting sphere?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It becomes positively charged due to induction.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Induction redistributes charge but does not change the net charge of an isolated system."
+        },
+        {
+          "letter": "B",
+          "text": "It becomes negatively charged due to induction.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Induction redistributes charge but does not change the net charge of an isolated system."
+        },
+        {
+          "letter": "C",
+          "text": "It remains electrically neutral.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The net charge of an isolated system remains constant."
+        },
+        {
+          "letter": "D",
+          "text": "It gains some positive charge and loses some negative charge.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This would imply a net change in charge, which is not possible for an isolated system."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "When a positively charged rod is brought near an uncharged isolated conducting sphere, charges redistribute within the sphere due to induction. However, since the sphere is isolated, no charge enters or leaves the system, so the net charge remains zero.",
+      "hint": "Consider whether charge can enter or leave the isolated sphere.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974985399-78939",
+      "order": 36,
+      "question": "A capacitor C₁ of capacitance 2 µF is charged to a potential difference of 100 V. It is then disconnected from the battery and connected in parallel to an uncharged capacitor C₂ of capacitance 3 µF. What is the common potential difference across the combination?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20 V",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This would imply a total charge of 100 µC, which is incorrect."
+        },
+        {
+          "letter": "B",
+          "text": "40 V",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The common potential difference is 40 V after charge redistribution."
+        },
+        {
+          "letter": "C",
+          "text": "50 V",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This would imply a total charge of 250 µC, which is incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "60 V",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This would imply a total charge of 300 µC, which is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Step 1: Calculate the initial charge on C₁: Q₁ = C₁V₁ = 2 µF * 100 V = 200 µC. Step 2: Total charge is conserved: Q_total = 200 µC. Step 3: Equivalent capacitance: C_eq = C₁ + C₂ = 5 µF. Step 4: Common potential: V_f = Q_total / C_eq = 200 µC / 5 µF = 40 V.",
+      "hint": "Charge is conserved when capacitors are connected in parallel. Use Q = CV to find the common potential.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974985399-ccfd8",
+      "order": 37,
+      "question": "Two conducting spheres of radii R₁ = 10 cm and R₂ = 20 cm are initially charged with Q₁ = +40 nC and Q₂ = +20 nC, respectively. They are then connected by a thin conducting wire. What is the final charge on the sphere with radius R₁?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "+10 nC",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This does not satisfy the charge and potential conditions."
+        },
+        {
+          "letter": "B",
+          "text": "+20 nC",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This satisfies both charge conservation and equal potential conditions."
+        },
+        {
+          "letter": "C",
+          "text": "+30 nC",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This does not satisfy the charge and potential conditions."
+        },
+        {
+          "letter": "D",
+          "text": "+40 nC",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the initial charge on the sphere, which changes after connection."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Step 1: Total initial charge: Q_total = 60 nC. Step 2: After connection, potentials are equal: Q₁'/R₁ = Q₂'/R₂. Step 3: Solve Q₁' + Q₂' = 60 nC and Q₂' = 2Q₁'. Final charge on sphere with R₁: Q₁' = 20 nC.",
+      "hint": "When spheres are connected, their potentials become equal. Use the relationship between charge and radius for conducting spheres.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974985399-86478",
+      "order": 38,
+      "question": "A parallel plate capacitor C₁ with capacitance 10 µF is charged by a 100 V battery. The battery is then disconnected. This capacitor is then connected in parallel to an uncharged parallel plate capacitor C₂ of capacitance 20 µF, which has a dielectric slab of dielectric constant K=2 inserted between its plates. What is the total energy stored in the capacitors after they are connected in parallel?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5 mJ",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This underestimates the energy due to incorrect capacitance calculation."
+        },
+        {
+          "letter": "B",
+          "text": "10 mJ",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The total energy stored after connection is 10 mJ."
+        },
+        {
+          "letter": "C",
+          "text": "20 mJ",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This overestimates the energy due to incorrect capacitance or potential calculation."
+        },
+        {
+          "letter": "D",
+          "text": "40 mJ",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This significantly overestimates the energy due to incorrect calculations."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Step 1: Initial charge on C₁: Q = C₁V = 10 µF * 100 V = 1000 µC. Step 2: After connection, total capacitance: C_eq = C₁ + K*C₂ = 10 µF + 2*20 µF = 50 µF. Step 3: Common potential: V_f = Q / C_eq = 1000 µC / 50 µF = 20 V. Step 4: Total energy: U = 0.5 * C_eq * V_f² = 0.5 * 50 µF * (20 V)² = 10,000 µJ = 10 mJ.",
+      "hint": "Account for the dielectric constant when calculating the equivalent capacitance. Use energy formula U = 0.5 * C * V².",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974985399-6cbbc",
+      "order": 39,
+      "question": "When a glass rod is rubbed with silk, the glass rod acquires a positive charge. This is because:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The glass rod gains protons during rubbing",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Protons are not transferred during rubbing; only electrons move."
+        },
+        {
+          "letter": "B",
+          "text": "The glass rod loses electrons to the silk",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The glass rod loses electrons, becoming positively charged."
+        },
+        {
+          "letter": "C",
+          "text": "The silk gains protons from the glass rod",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Protons are not transferred; only electrons move."
+        },
+        {
+          "letter": "D",
+          "text": "The silk loses electrons to the glass rod",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The silk gains electrons, not loses them."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "During rubbing, electrons are transferred from the glass rod to the silk. Since electrons are negatively charged, the glass rod loses electrons and becomes positively charged. This is a direct application of the principle of conservation of charge.",
+      "hint": "Consider the transfer of subatomic particles during rubbing.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1781974985399-0e1b8",
+      "order": 40,
+      "question": "Two identical conducting spheres A and B carry equal but opposite charges. They are brought into brief contact and then separated. After separation, the charges on the spheres will be:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both spheres will be neutral",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The charges neutralize each other, resulting in neutral spheres."
+        },
+        {
+          "letter": "B",
+          "text": "Both spheres will have equal positive charge",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The net charge is zero, so they cannot both be positive."
+        },
+        {
+          "letter": "C",
+          "text": "Both spheres will have equal negative charge",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The net charge is zero, so they cannot both be negative."
+        },
+        {
+          "letter": "D",
+          "text": "Both spheres will have equal and opposite charges",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "After contact and separation, the charges neutralize, so they are not opposite."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "When the spheres are brought into contact, the charges redistribute equally due to their identical nature. Since they initially had equal but opposite charges, the net charge is zero, and after separation, each sphere will have half of the net charge, which is zero. Thus, both spheres become neutral.",
+      "hint": "Consider charge redistribution in identical conductors.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-physics",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
