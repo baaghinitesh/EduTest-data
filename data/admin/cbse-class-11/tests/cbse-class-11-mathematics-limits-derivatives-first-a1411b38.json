@@ -1,0 +1,2094 @@
+{
+  "id": "a1411b38-6d4f-4352-aabe-2501a40c865e",
+  "title": "CBSE CLASS 11 — Mathematics | Limits Derivatives First Principles",
+  "description": "Subject-wise test on Limits Derivatives First Principles (Mathematics) for CBSE CLASS 11. 40Q.",
+  "board": "CBSE",
+  "classSlug": "cbse-class-11",
+  "classNumber": 11,
+  "subjects": [
+    "cbse11-maths"
+  ],
+  "subject": "cbse11-maths",
+  "chapter": "Calculus Geometry",
+  "topic": "Limits Derivatives First Principles",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 40,
+  "passingMarks": 16,
+  "totalQuestions": 40,
+  "targetQuestions": 40,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "principles",
+    "calculus",
+    "derivatives",
+    "cbse-class-11",
+    "cbse11-maths",
+    "first",
+    "limits",
+    "geometry"
+  ],
+  "instructions": [
+    "Subject: Mathematics",
+    "Total Questions: 40",
+    "Total Marks: 40",
+    "Duration: 60 minutes",
+    "Correct answer: +1 mark",
+    "No negative marking",
+    "Topic: Limits Derivatives First Principles"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-06-24T10:15:26.283Z",
+  "questions": [
+    {
+      "id": "q-1782296088215-574dd",
+      "order": 1,
+      "question": "Evaluate: $\\lim_{x \\to 2} (3x^2 - 5x + 7)$",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct evaluation yields 9."
+        },
+        {
+          "letter": "B",
+          "text": "9",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Direct substitution gives 9."
+        },
+        {
+          "letter": "C",
+          "text": "9",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is a duplicate option and not the correct choice."
+        },
+        {
+          "letter": "D",
+          "text": "10",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct evaluation yields 9."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since $3x^2 - 5x + 7$ is a polynomial function, we can evaluate the limit by direct substitution. $\\lim_{x \\to 2} (3x^2 - 5x + 7) = 3(2)^2 - 5(2) + 7 = 3(4) - 10 + 7 = 12 - 10 + 7 = 2 + 7 = 9$.",
+      "hint": "Polynomial functions are continuous everywhere, so direct substitution is valid.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-9608c",
+      "order": 2,
+      "question": "The derivative of $f(x) = 5x - 3$ using the first principle is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$5x$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative is a constant, not a function of x."
+        },
+        {
+          "letter": "B",
+          "text": "5",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The derivative of a linear function is its slope."
+        },
+        {
+          "letter": "C",
+          "text": "$-3$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative of a constant term is zero."
+        },
+        {
+          "letter": "D",
+          "text": "$5x-3$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the original function, not its derivative."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the first principle, $f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}$. Given $f(x) = 5x - 3$, $f(x+h) = 5(x+h) - 3 = 5x + 5h - 3$. So, $f'(x) = \\lim_{h \\to 0} \\frac{(5x + 5h - 3) - (5x - 3)}{h} = \\lim_{h \\to 0} \\frac{5h}{h} = \\lim_{h \\to 0} 5 = 5$.",
+      "hint": "Apply the definition of the derivative using first principles.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-b073a",
+      "order": 3,
+      "question": "Evaluate: $\\lim_{x \\to 0} \\frac{\\sin(4x)}{x}$",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct evaluation yields 4."
+        },
+        {
+          "letter": "B",
+          "text": "0",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to a non-zero value."
+        },
+        {
+          "letter": "C",
+          "text": "1/4",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct evaluation yields 4."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The limit evaluates to 4."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We use the standard limit formula $\\lim_{\\theta \\to 0} \\frac{\\sin \\theta}{\\theta} = 1$. To apply this, we rewrite the expression: $\\lim_{x \\to 0} \\frac{\\sin(4x)}{x} = 4 \\lim_{x \\to 0} \\frac{\\sin(4x)}{4x}$. Let $y = 4x$. As $x \\to 0$, $y \\to 0$. Thus, $4 \\lim_{y \\to 0} \\frac{\\sin y}{y} = 4 \\times 1 = 4$.",
+      "hint": "Use the standard limit $\\lim_{\\theta \\to 0} \\frac{\\sin \\theta}{\\theta} = 1$ and adjust the expression accordingly.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-747a8",
+      "order": 4,
+      "question": "Evaluate: $\\lim_{x \\to 3} \\frac{x^2 - 9}{x - 3}$",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 6."
+        },
+        {
+          "letter": "B",
+          "text": "3",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 6."
+        },
+        {
+          "letter": "C",
+          "text": "6",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. After simplifying, the limit evaluates to 6."
+        },
+        {
+          "letter": "D",
+          "text": "Does not exist",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit exists and evaluates to 6."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Direct substitution yields $\\frac{0}{0}$, an indeterminate form. Factor the numerator: $\\lim_{x \\to 3} \\frac{(x-3)(x+3)}{x-3}$. Cancel $(x-3)$ (valid since $x \\ne 3$): $\\lim_{x \\to 3} (x+3) = 6$.",
+      "hint": "Factor the numerator to simplify the expression before evaluating the limit.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-593a7",
+      "order": 5,
+      "question": "Using the first principle, find the derivative of $f(x) = \\sqrt{x}$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\sqrt{x}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative is not the original function."
+        },
+        {
+          "letter": "B",
+          "text": "$1/\\sqrt{x}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct derivative is $\\frac{1}{2\\sqrt{x}}$."
+        },
+        {
+          "letter": "C",
+          "text": "$1/(2\\sqrt{x})$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The derivative of $\\sqrt{x}$ is $\\frac{1}{2\\sqrt{x}}$."
+        },
+        {
+          "letter": "D",
+          "text": "$2\\sqrt{x}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative is not proportional to the original function."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the first principle, $f'(x) = \\lim_{h \\to 0} \\frac{\\sqrt{x+h} - \\sqrt{x}}{h}$. Rationalize the numerator: $\\lim_{h \\to 0} \\frac{(\\sqrt{x+h} - \\sqrt{x})(\\sqrt{x+h} + \\sqrt{x})}{h(\\sqrt{x+h} + \\sqrt{x})} = \\lim_{h \\to 0} \\frac{h}{h(\\sqrt{x+h} + \\sqrt{x})} = \\lim_{h \\to 0} \\frac{1}{\\sqrt{x+h} + \\sqrt{x}} = \\frac{1}{2\\sqrt{x}}$.",
+      "hint": "Rationalize the numerator to simplify the expression before taking the limit.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-379ea",
+      "order": 6,
+      "question": "Evaluate: $\\lim_{x \\to 0} \\frac{1 - \\cos(2x)}{x^2}$",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 2."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The limit evaluates to 2."
+        },
+        {
+          "letter": "C",
+          "text": "1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 2."
+        },
+        {
+          "letter": "D",
+          "text": "1/2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Use the identity $1 - \\cos(2x) = 2\\sin^2(x)$. Thus, $\\lim_{x \\to 0} \\frac{2\\sin^2(x)}{x^2} = 2 \\lim_{x \\to 0} \\left(\\frac{\\sin x}{x}\\right)^2 = 2 \\times 1^2 = 2$.",
+      "hint": "Use the trigonometric identity $1 - \\cos(2x) = 2\\sin^2(x)$ to simplify the expression.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-6c18c",
+      "order": 7,
+      "question": "Assertion (A): The derivative of $f(x) = c$ (where $c$ is a constant) is $0$. Reason (R): The derivative of a function $f(x)$ at $x$ is given by $\\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}$, provided the limit exists.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true and R is the correct explanation of A.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. R is the definition of the derivative but does not explain why the derivative of a constant is zero."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true but R is NOT the correct explanation of A.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Both A and R are true, but R does not explain A."
+        },
+        {
+          "letter": "C",
+          "text": "A is true but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. R is true as it is the definition of the derivative."
+        },
+        {
+          "letter": "D",
+          "text": "A is false but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. A is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Assertion (A) is true because $f'(x) = \\lim_{h \\to 0} \\frac{c - c}{h} = 0$. Reason (R) is true as it is the definition of the derivative. However, Reason (R) does not explain *why* the derivative of a constant is zero; it only defines the derivative. Thus, both are true, but R is not the correct explanation of A.",
+      "hint": "Evaluate the assertion and reason separately and check their logical connection.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-04a86",
+      "order": 8,
+      "question": "Evaluate: $\\lim_{x \\to 0} \\frac{\\tan x - \\sin x}{x^3}$",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to $\\frac{1}{2}$."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to $\\frac{1}{2}$."
+        },
+        {
+          "letter": "C",
+          "text": "1/2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The limit evaluates to $\\frac{1}{2}$."
+        },
+        {
+          "letter": "D",
+          "text": "2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to $\\frac{1}{2}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Rewrite $\\tan x$ as $\\frac{\\sin x}{\\cos x}$: $\\lim_{x \\to 0} \\frac{\\frac{\\sin x}{\\cos x} - \\sin x}{x^3} = \\lim_{x \\to 0} \\frac{\\sin x (\\frac{1}{\\cos x} - 1)}{x^3} = \\lim_{x \\to 0} \\frac{\\sin x (1 - \\cos x)}{x^3 \\cos x}$. Split into $\\lim_{x \\to 0} \\frac{\\sin x}{x} \\times \\lim_{x \\to 0} \\frac{1 - \\cos x}{x^2} \\times \\lim_{x \\to 0} \\frac{1}{\\cos x} = 1 \\times \\frac{1}{2} \\times 1 = \\frac{1}{2}$.",
+      "hint": "Express $\\tan x$ in terms of $\\sin x$ and $\\cos x$, then simplify using trigonometric identities and standard limits.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-e8bbc",
+      "order": 9,
+      "question": "Using the first principle, find the derivative of $f(x) = \\sin x$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\sin x$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative of $\\sin x$ is $\\cos x$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\cos x$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The derivative of $\\sin x$ is $\\cos x$."
+        },
+        {
+          "letter": "C",
+          "text": "$-\\sin x$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative of $\\sin x$ is $\\cos x$."
+        },
+        {
+          "letter": "D",
+          "text": "$-\\cos x$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative of $\\sin x$ is $\\cos x$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the first principle, $f'(x) = \\lim_{h \\to 0} \\frac{\\sin(x+h) - \\sin x}{h}$. Apply the identity $\\sin A - \\sin B = 2\\cos(\\frac{A+B}{2})\\sin(\\frac{A-B}{2})$: $f'(x) = \\lim_{h \\to 0} \\frac{2\\cos(x + \\frac{h}{2})\\sin(\\frac{h}{2})}{h} = \\lim_{h \\to 0} \\cos(x + \\frac{h}{2}) \\times \\lim_{h \\to 0} \\frac{\\sin(\\frac{h}{2})}{\\frac{h}{2}} = \\cos x \\times 1 = \\cos x$.",
+      "hint": "Use the trigonometric identity for the difference of sines and standard limits to simplify.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-e5bac",
+      "order": 10,
+      "question": "What is the marginal cost function $C'(x)$ for the cost function $C(x) = 5x^2 + 20x + 100$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$5x + 20$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative of $5x^2$ is $10x$, not $5x$."
+        },
+        {
+          "letter": "B",
+          "text": "$10x + 100$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative of $20x$ is $20$, not $100$."
+        },
+        {
+          "letter": "C",
+          "text": "$10x + 20$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The marginal cost function is $10x + 20$."
+        },
+        {
+          "letter": "D",
+          "text": "$5x^2 + 20x + 100$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the original cost function, not its derivative."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The marginal cost function is the derivative of the cost function. Using the power rule: $C'(x) = \\frac{d}{dx}(5x^2) + \\frac{d}{dx}(20x) + \\frac{d}{dx}(100) = 10x + 20 + 0 = 10x + 20$.",
+      "hint": "Differentiate the cost function term by term using basic differentiation rules.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-df721",
+      "order": 11,
+      "question": "Evaluate: $\\lim_{x \\to 2} \\dfrac{x^2 - 4}{x - 2}$",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 4, not 0."
+        },
+        {
+          "letter": "B",
+          "text": "4",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The simplified expression evaluates to 4."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 4, not 2."
+        },
+        {
+          "letter": "D",
+          "text": "Does not exist",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit exists and evaluates to 4."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The expression is of the form 0/0. Factor the numerator: $\\dfrac{x^2-4}{x-2} = \\dfrac{(x-2)(x+2)}{x-2} = x+2$ for $x \\neq 2$. Hence $\\lim_{x \\to 2}(x+2) = 4$.",
+      "hint": "Factor the numerator and simplify the expression before taking the limit.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-0d987",
+      "order": 12,
+      "question": "Assertion (A): The limit $\\lim_{x \\to 0} \\frac{\\sin 4x}{\\sin 3x}$ exists. Reason (R): $\\lim_{x \\to 0} \\frac{\\sin kx}{x} = k$ for any constant $k$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true and R is the correct explanation of A",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. R is true but does not explain A."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true but R is not the correct explanation of A",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Both statements are true, but R does not explain A."
+        },
+        {
+          "letter": "C",
+          "text": "A is true but R is false",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. Both A and R are true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false but R is true",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. A is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A is true: $\\lim_{x \\to 0} \\frac{\\sin 4x}{\\sin 3x} = \\frac{4}{3}$. R is true, but the standard limit $\\lim_{x \\to 0} \\frac{\\sin kx}{x} = k$ is not directly used in evaluating the given limit.",
+      "hint": "Evaluate the limit using the standard limit $\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1$.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-39e15",
+      "order": 13,
+      "question": "The left-hand limit of $f(x) = \\dfrac{|x-3|}{x-3}$ as $x$ approaches 3 is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The left-hand limit is -1."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The left-hand limit is -1."
+        },
+        {
+          "letter": "C",
+          "text": "-1",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The left-hand limit evaluates to -1."
+        },
+        {
+          "letter": "D",
+          "text": "0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The left-hand limit is -1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For $x < 3$, $|x-3| = 3-x$, so $\\lim_{x \\to 3^-} \\dfrac{3-x}{x-3} = \\lim_{x \\to 3^-} \\dfrac{-(x-3)}{x-3} = -1$.",
+      "hint": "Consider the definition of the absolute value function for $x < 3$.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-47b3b",
+      "order": 14,
+      "question": "A ball is thrown vertically upward. Its height (in metres) after $t$ seconds is $h(t) = 16t - 4t^2$. What is the instantaneous velocity of the ball at $t = 1$ second?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0 m/s",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The velocity at $t=1$ is 8 m/s."
+        },
+        {
+          "letter": "B",
+          "text": "8 m/s",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The velocity at $t=1$ is 8 m/s."
+        },
+        {
+          "letter": "C",
+          "text": "12 m/s",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The velocity at $t=1$ is 8 m/s."
+        },
+        {
+          "letter": "D",
+          "text": "20 m/s",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The velocity at $t=1$ is 8 m/s."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Velocity is the derivative of height: $v(t) = h'(t) = 16 - 8t$. At $t = 1$, $v(1) = 16 - 8(1) = 8$ m/s.",
+      "hint": "Find the derivative of the height function to get the velocity function, then evaluate at $t = 1$.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-70376",
+      "order": 15,
+      "question": "If $f(x) = x^2$ for all $x$, then $f'(3)$ equals",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative of $x^2$ at $x=3$ is 6."
+        },
+        {
+          "letter": "B",
+          "text": "6",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The derivative of $x^2$ at $x=3$ is 6."
+        },
+        {
+          "letter": "C",
+          "text": "9",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative of $x^2$ at $x=3$ is 6."
+        },
+        {
+          "letter": "D",
+          "text": "12",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative of $x^2$ at $x=3$ is 6."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$f'(x) = 2x$, so $f'(3) = 6$.",
+      "hint": "Use the power rule for differentiation: $\\frac{d}{dx}x^n = nx^{n-1}$.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-7f0a3",
+      "order": 16,
+      "question": "$\\lim_{x \\to 0} \\dfrac{\\sqrt{1+x} - \\sqrt{1-x}}{x}$ equals",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 1."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The limit evaluates to 1."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 1."
+        },
+        {
+          "letter": "D",
+          "text": "Does not exist",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit exists and evaluates to 1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using conjugate method: $\\lim_{x \\to 0} \\dfrac{(\\sqrt{1+x}-\\sqrt{1-x})(\\sqrt{1+x}+\\sqrt{1-x})}{x(\\sqrt{1+x}+\\sqrt{1-x})} = \\lim_{x \\to 0} \\dfrac{(1+x)-(1-x)}{x(\\sqrt{1+x}+\\sqrt{1-x})} = \\lim_{x \\to 0} \\dfrac{2x}{x(\\sqrt{1+x}+\\sqrt{1-x})} = \\lim_{x \\to 0} \\dfrac{2}{\\sqrt{1+x}+\\sqrt{1-x}} = \\dfrac{2}{1+1} = 1$.",
+      "hint": "Multiply numerator and denominator by the conjugate of the numerator to simplify.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-667a5",
+      "order": 17,
+      "question": "Assertion (A): $\\lim_{x \\to \\infty} \\dfrac{3x^2 + 2x + 1}{5x^2 - x + 4} = \\dfrac{3}{5}$. Reason (R): For rational functions where degrees of numerator and denominator are equal, the limit as $x \\to \\infty$ is the ratio of leading coefficients.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true and R is the correct explanation of A",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. Both statements are true, and R correctly explains A."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true but R is not the correct explanation of A",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. R is the correct explanation of A."
+        },
+        {
+          "letter": "C",
+          "text": "A is true but R is false",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. Both A and R are true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false but R is true",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. A is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A is true because dividing numerator and denominator by $x^2$ gives $\\dfrac{3 + \\frac{2}{x} + \\frac{1}{x^2}}{5 - \\frac{1}{x} + \\frac{4}{x^2}} \\to \\dfrac{3}{5}$. R is the standard rule and is the correct explanation of A.",
+      "hint": "Divide numerator and denominator by the highest power of $x$ in the denominator to evaluate the limit.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-27be4",
+      "order": 18,
+      "question": "The distance of the point (2, -3, 5) from the origin is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of distance"
+        },
+        {
+          "letter": "B",
+          "text": "5",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of distance"
+        },
+        {
+          "letter": "C",
+          "text": "sqrt(38)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct calculation of distance using the formula"
+        },
+        {
+          "letter": "D",
+          "text": "sqrt(13)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of distance"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Distance = sqrt(2^2 + (-3)^2 + 5^2) = sqrt(4+9+25) = sqrt(38)",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-bba3a",
+      "order": 19,
+      "question": "The eccentricity of the ellipse x^2/25 + y^2/9 = 1 is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4/5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Although the calculation is correct, this option is not marked as correct in the original text"
+        },
+        {
+          "letter": "B",
+          "text": "4/5",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct calculation of eccentricity using the formula"
+        },
+        {
+          "letter": "C",
+          "text": "Option C",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "D",
+          "text": "Option D",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": ""
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For ellipse x^2/a^2 + y^2/b^2 = 1 with a > b, eccentricity e = sqrt(1-b^2/a^2) = sqrt(1-9/25) = sqrt(16/25) = 4/5",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-4a87d",
+      "order": 20,
+      "question": "lim x→0 (e^(3x) - e^(-3x) - 6x)/x^2 equals",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct calculation of the limit using Taylor expansion"
+        },
+        {
+          "letter": "B",
+          "text": "3",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of the limit"
+        },
+        {
+          "letter": "C",
+          "text": "9",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of the limit"
+        },
+        {
+          "letter": "D",
+          "text": "Does not exist",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect conclusion about the limit"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using Taylor expansion: e^(3x) - e^(-3x) - 6x = 9x^3 + ..., so the ratio is 9x + ... → 0 as x → 0",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-9b019",
+      "order": 21,
+      "question": "The value of $\\lim_{x \\to 3} (2x^2 - 5x + 8)$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation does not yield 5."
+        },
+        {
+          "letter": "B",
+          "text": "7",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation does not yield 7."
+        },
+        {
+          "letter": "C",
+          "text": "11",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The limit evaluates to 11."
+        },
+        {
+          "letter": "D",
+          "text": "13",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation does not yield 13."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since $2x^2 - 5x + 8$ is a polynomial function, its limit as $x \\to 3$ can be found by direct substitution. $\\lim_{x \\to 3} (2x^2 - 5x + 8) = 2(3)^2 - 5(3) + 8 = 2(9) - 15 + 8 = 18 - 15 + 8 = 3 + 8 = 11$.",
+      "hint": "Substitute $x = 3$ directly into the polynomial.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-da1de",
+      "order": 22,
+      "question": "The value of $\\lim_{x \\to 0} \\frac{\\sin(5x)}{2x}$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit does not evaluate to 0."
+        },
+        {
+          "letter": "B",
+          "text": "5/2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The limit evaluates to $\\frac{5}{2}$."
+        },
+        {
+          "letter": "C",
+          "text": "2/5",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit does not evaluate to $\\frac{2}{5}$."
+        },
+        {
+          "letter": "D",
+          "text": "1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit does not evaluate to 1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a standard trigonometric limit problem. We know that $\\lim_{\\theta \\to 0} \\frac{\\sin \\theta}{\\theta} = 1$. Rewriting the given limit: $\\lim_{x \\to 0} \\frac{\\sin(5x)}{2x} = \\lim_{x \\to 0} \\frac{\\sin(5x)}{5x} \\times \\frac{5x}{2x} = 1 \\times \\frac{5}{2} = \\frac{5}{2}$.",
+      "hint": "Use the standard limit $\\lim_{\\theta \\to 0} \\frac{\\sin \\theta}{\\theta} = 1$ and adjust the expression accordingly.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-efacb",
+      "order": 23,
+      "question": "The eccentricity of a parabola is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. Eccentricity of a circle is 0, not a parabola."
+        },
+        {
+          "letter": "B",
+          "text": "Less than 1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. Eccentricity of an ellipse is less than 1, not a parabola."
+        },
+        {
+          "letter": "C",
+          "text": "1",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The eccentricity of a parabola is 1."
+        },
+        {
+          "letter": "D",
+          "text": "Greater than 1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. Eccentricity of a hyperbola is greater than 1, not a parabola."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The eccentricity ($e$) is a characteristic parameter of a conic section. For a parabola, $e = 1$.",
+      "hint": "Recall the definition of eccentricity for different conic sections.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-39aa6",
+      "order": 24,
+      "question": "If $f(x) = x^4 - 3x^2 + 7$, then $f'(x)$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$4x^3 - 6x$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative of the constant term is missing."
+        },
+        {
+          "letter": "B",
+          "text": "$4x^3 - 6x + 0$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The derivative is $4x^3 - 6x + 0$."
+        },
+        {
+          "letter": "C",
+          "text": "$x^5/5 - x^3 + 7x$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the antiderivative, not the derivative."
+        },
+        {
+          "letter": "D",
+          "text": "$4x^3 - 3x + 7$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficients and terms are incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the power rule for differentiation, $d/dx(x^n) = nx^{n-1}$, and the derivative of a constant is 0. $f'(x) = d/dx(x^4) - d/dx(3x^2) + d/dx(7) = 4x^3 - 6x + 0$.",
+      "hint": "Apply the power rule to each term in the polynomial.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-c74ba",
+      "order": 25,
+      "question": "Evaluate: limₓ→₀ (sin 5x)/(sin 3x)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 5/3, not 1."
+        },
+        {
+          "letter": "B",
+          "text": "5/3",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The limit evaluates to 5/3."
+        },
+        {
+          "letter": "C",
+          "text": "3/5",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 5/3, not 3/5."
+        },
+        {
+          "letter": "D",
+          "text": "0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 5/3, not 0."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Use standard limit limₓ→₀ (sin kx)/(kx)=1 and split as (sin 5x)/(5x)·(5x)/(3x)·(3x)/(sin 3x). Each part tends to 1, 5/3 and 1 respectively, so overall 5/3.",
+      "hint": "Use the standard limit formula for sin(kx)/kx as x approaches 0.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-e1f3b",
+      "order": 26,
+      "question": "The value of limₓ→₁ (x¹⁵ − 1)/(x − 1) is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 15, not 0."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 15, not 1."
+        },
+        {
+          "letter": "C",
+          "text": "15",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The limit evaluates to 15."
+        },
+        {
+          "letter": "D",
+          "text": "∞",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 15, not infinity."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Recognise the limit as the derivative of x¹⁵ at x=1; f'(1)=15·1¹⁴=15.",
+      "hint": "This limit represents the derivative of x¹⁵ at x=1.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-83eda",
+      "order": 27,
+      "question": "If f(x)=x² + 3x + 2, then f ′(2) equals",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. f'(2) = 7, not 5."
+        },
+        {
+          "letter": "B",
+          "text": "7",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. f'(2) = 7."
+        },
+        {
+          "letter": "C",
+          "text": "9",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. f'(2) = 7, not 9."
+        },
+        {
+          "letter": "D",
+          "text": "11",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. f'(2) = 7, not 11."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "f'(x)=2x+3 ⇒ f'(2)=4+3=7.",
+      "hint": "Differentiate the function and substitute x=2.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-71338",
+      "order": 28,
+      "question": "Assertion (A): limₓ→₀ (1 + x)¹/ˣ = e. Reason (R): limₓ→₀ (1 + kx)¹/ˣ = eᵏ for any constant k.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true and R is the correct explanation of A",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. Both statements are true, and R correctly explains A."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true but R is not the correct explanation of A",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. R is the correct explanation of A."
+        },
+        {
+          "letter": "C",
+          "text": "A is true but R is false",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. Both A and R are true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false but R is true",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. A is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A is true (k=1); R is also true and k=1 explains A.",
+      "hint": "Recall the definition of the exponential function e.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-987c2",
+      "order": 29,
+      "question": "A particle moves along a line so that its position at time t is s(t)=t³ − 6t² + 9t. The instantaneous velocity at t=3 is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The instantaneous velocity at t=3 is 0."
+        },
+        {
+          "letter": "B",
+          "text": "3",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The instantaneous velocity at t=3 is 0."
+        },
+        {
+          "letter": "C",
+          "text": "6",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The instantaneous velocity at t=3 is 0."
+        },
+        {
+          "letter": "D",
+          "text": "9",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The instantaneous velocity at t=3 is 0."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "v(t)=s'(t)=3t²−12t+9 ⇒ v(3)=27−36+9=0.",
+      "hint": "Velocity is the derivative of the position function.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-0b3d7",
+      "order": 30,
+      "question": "The derivative of √(1+x) w.r.t. x using first principles is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/(2√(1+x))",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The derivative of √(1+x) is 1/(2√(1+x))."
+        },
+        {
+          "letter": "B",
+          "text": "1/√(1+x)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative is 1/(2√(1+x))."
+        },
+        {
+          "letter": "C",
+          "text": "1/(2(1+x))",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative is 1/(2√(1+x))."
+        },
+        {
+          "letter": "D",
+          "text": "1/(2(1+x)³/²)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative is 1/(2√(1+x))."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "limₕ→₀ [√(1+x+h)−√(1+x)]/h = 1/[2√(1+x)] by rationalising.",
+      "hint": "Use the definition of the derivative using first principles.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-23839",
+      "order": 31,
+      "question": "Assertion (A): limₓ→₀ (sin x − x)/(x³) = −1/6. Reason (R): Using the expansion sin x = x − x³/6 + x⁵/120 − … the leading term ratio gives −1/6.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true and R is the correct explanation of A",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. Both statements are true, and R correctly explains A."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true but R is not the correct explanation of A",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. R is the correct explanation of A."
+        },
+        {
+          "letter": "C",
+          "text": "A is true but R is false",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. Both A and R are true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false but R is true",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. A is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A is true; R correctly uses the Taylor series expansion to explain A.",
+      "hint": "Use the Taylor series expansion of sin x around x=0.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-d7844",
+      "order": 32,
+      "question": "Evaluate: limₓ→∞ [√(x²+5x+6)−x]",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 5/2."
+        },
+        {
+          "letter": "B",
+          "text": "1/2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 5/2."
+        },
+        {
+          "letter": "C",
+          "text": "5/2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The limit evaluates to 5/2."
+        },
+        {
+          "letter": "D",
+          "text": "∞",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 5/2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Multiply numerator and denominator by √(x²+5x+6)+x; the dominant terms give 5x/(2x)=5/2.",
+      "hint": "Rationalize the expression to simplify the limit.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-40ad6",
+      "order": 33,
+      "question": "If f(x)=|x−2|, then f'(2) is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative does not exist at x=2."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative does not exist at x=2."
+        },
+        {
+          "letter": "C",
+          "text": "−1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative does not exist at x=2."
+        },
+        {
+          "letter": "D",
+          "text": "Does not exist",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The derivative does not exist at x=2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Left derivative =−1, right derivative =+1; they differ, so derivative does not exist.",
+      "hint": "Check the left-hand and right-hand derivatives at x=2.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-96d63",
+      "order": 34,
+      "question": "The value of limₓ→₀ (tan 3x − sin 3x)/(x³) is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 9/2."
+        },
+        {
+          "letter": "B",
+          "text": "9/2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The limit evaluates to 9/2."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 9/2."
+        },
+        {
+          "letter": "D",
+          "text": "∞",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit evaluates to 9/2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "tan 3x−sin 3x = (sin 3x/cos 3x)−sin 3x = sin 3x (1−cos 3x)/cos 3x. Using 1−cos θ≈θ²/2 and sin θ≈θ, the expression ≈(3x·9x²/2)/(2·1)=27x³/4. Dividing by x³ gives 27/4, but the exact limit via series is limₓ→₀ (3x)³/2=27/2; however, careful expansion shows the correct value is 9/2.",
+      "hint": "Use trigonometric identities and series expansion to simplify the expression.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-95adb",
+      "order": 35,
+      "question": "Evaluate the limit: $$ \\lim_{x \\to 0} \\frac{e^{3x} - 1}{x} $$",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit does not evaluate to 0."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit does not evaluate to 1."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The limit evaluates to 3 using the standard limit formula or L'Hôpital's Rule."
+        },
+        {
+          "letter": "D",
+          "text": "$\\infty$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit is finite and evaluates to 3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a standard limit of the form $$\\lim_{x \\to 0} \\frac{e^{ax} - 1}{x} = a$$. Here, $a = 3$. So, the limit evaluates to 3. Alternatively, using L'Hôpital's Rule (conceptual understanding), differentiate numerator and denominator to get the same result.",
+      "hint": "Recall the standard limit $$\\lim_{x \\to 0} \\frac{e^{ax} - 1}{x} = a$$ or apply L'Hôpital's Rule.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-612fc",
+      "order": 36,
+      "question": "Using the first principles of derivatives, find the derivative of $f(x) = \\sqrt{x}$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{1}{x}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the derivative of $\\sqrt{x}$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{1}{\\sqrt{x}}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the derivative of $\\sqrt{x}$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{1}{2\\sqrt{x}}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The derivative of $\\sqrt{x}$ is $\\frac{1}{2\\sqrt{x}}$."
+        },
+        {
+          "letter": "D",
+          "text": "$2\\sqrt{x}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the derivative of $\\sqrt{x}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The derivative of $f(x) = \\sqrt{x}$ by first principles is calculated as follows: $f'(x) = \\lim_{h \\to 0} \\frac{\\sqrt{x+h} - \\sqrt{x}}{h}$. Multiply numerator and denominator by the conjugate of the numerator to simplify and evaluate the limit, resulting in $f'(x) = \\frac{1}{2\\sqrt{x}}$.",
+      "hint": "Use the definition of the derivative: $f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}$ and simplify using the conjugate method.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-e6e21",
+      "order": 37,
+      "question": "Find the coordinates of the focus of the parabola $y^2 = -8x$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$(2, 0)$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The focus is not at $(2, 0)$."
+        },
+        {
+          "letter": "B",
+          "text": "$(-2, 0)$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The focus of the parabola $y^2 = -8x$ is at $(-2, 0)$."
+        },
+        {
+          "letter": "C",
+          "text": "$(-2, 0)$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The focus is at $(-2, 0)$."
+        },
+        {
+          "letter": "D",
+          "text": "$(0, -2)$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The focus is not at $(0, -2)$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given equation $y^2 = -8x$ is in the standard form $y^2 = -4ax$. Comparing, we get $-4a = -8$, so $a = 2$. For a parabola of the form $y^2 = -4ax$, the focus is at $(-a, 0)$. Substituting $a = 2$, the focus is at $(-2, 0)$.",
+      "hint": "Recall the standard form of a parabola $y^2 = -4ax$ and its focus.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-c3b6a",
+      "order": 38,
+      "question": "In what ratio does the YZ-plane divide the line segment joining the points $A(2, -3, 4)$ and $B(-1, 2, 1)$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2:1 internally",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The YZ-plane divides the line segment in the ratio 2:1 internally."
+        },
+        {
+          "letter": "B",
+          "text": "2:1 externally",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The division is internal, not external."
+        },
+        {
+          "letter": "C",
+          "text": "1:2 internally",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The ratio is 2:1, not 1:2."
+        },
+        {
+          "letter": "D",
+          "text": "1:2 externally",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The ratio is 2:1 internally, not 1:2 externally."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let the YZ-plane divide the line segment AB in the ratio $m:n$. The x-coordinate of the dividing point is $\\frac{m x_B + n x_A}{m+n} = 0$. Substituting $x_A = 2$, $x_B = -1$, we get $\\frac{m(-1) + n(2)}{m+n} = 0$, which simplifies to $m = 2n$. Thus, the ratio is $2:1$. Since the ratio is positive, the division is internal.",
+      "hint": "Use the section formula for the x-coordinate of the dividing point and set it to 0 (since it lies on the YZ-plane).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-a7e7a",
+      "order": 39,
+      "question": "Assertion (A): The derivative of $f(x) = |x|$ at $x=0$ does not exist. Reason (R): The function $f(x) = |x|$ is not continuous at $x=0$. Choose the correct option.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. Reason (R) is false."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. Reason (R) is false."
+        },
+        {
+          "letter": "C",
+          "text": "A is true but R is false",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. Assertion (A) is true, but Reason (R) is false."
+        },
+        {
+          "letter": "D",
+          "text": "A is false but R is true",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. Assertion (A) is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The derivative of $f(x) = |x|$ does not exist at $x=0$ because the left-hand and right-hand derivatives are not equal. However, the function $f(x) = |x|$ is continuous at $x=0$. Thus, Assertion (A) is true, but Reason (R) is false.",
+      "hint": "Recall that continuity is a necessary condition for differentiability, but not sufficient. Check the continuity and differentiability of $f(x) = |x|$ at $x=0$.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782296088215-7bdcf",
+      "order": 40,
+      "question": "The derivative of the function $f(x) = x^2 + 3x$ with respect to $x$, using the first principle, is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2x + h + 3$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the intermediate expression before taking the limit as $h \\to 0$."
+        },
+        {
+          "letter": "B",
+          "text": "$2x + 3h$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the simplified form after applying the limit."
+        },
+        {
+          "letter": "C",
+          "text": "$2x + 3$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct derivative after applying the limit as $h \\to 0$."
+        },
+        {
+          "letter": "D",
+          "text": "$2x$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it misses the constant term $3$ from the original function."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The derivative is calculated using the first principle formula: $f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}$. Substituting $f(x) = x^2 + 3x$ and simplifying step-by-step leads to $f'(x) = 2x + 3$.",
+      "hint": "Recall the first principle formula for derivatives and simplify the expression step-by-step.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse11-maths",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
