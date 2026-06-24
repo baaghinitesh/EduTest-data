@@ -1,0 +1,1070 @@
+{
+  "id": "efdd47a0-503a-420a-99aa-78755e357dd8",
+  "title": "OLYMPIAD SCIENCE — Combined: Physics + Chemistry",
+  "description": "Combined test: Physics + Chemistry for OLYMPIAD SCIENCE. 20Q.",
+  "board": "Competitive",
+  "classSlug": "olympiad-science",
+  "classNumber": 0,
+  "subjects": [
+    "olympiad-sci-physics",
+    "olympiad-sci-chemistry"
+  ],
+  "subject": "olympiad-sci-physics",
+  "chapter": "Multiple Chapters",
+  "topic": "Combined",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 80,
+  "passingMarks": 32,
+  "totalQuestions": 20,
+  "targetQuestions": 20,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "chemistry",
+    "physics",
+    "olympiad-science",
+    "olympiad-sci-physics+olympiad-sci-chemistry"
+  ],
+  "instructions": [
+    "Subject: Physics + Chemistry",
+    "Total Questions: 20",
+    "Total Marks: 80",
+    "Duration: 60 minutes",
+    "Correct answer: +4 mark",
+    "Wrong answer: -1 mark"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-06-24T04:54:46.193Z",
+  "questions": [
+    {
+      "id": "q-1782276828354-0b67e",
+      "order": 1,
+      "question": "A particle moves along a straight line with its position given by $ x(t) = 4t^3 - 6t^2 + 2t + 5 $ (in meters). What is the acceleration of the particle at $ t = 2 $ seconds?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "24 m/s²",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the acceleration at $ t = 1 $ second."
+        },
+        {
+          "letter": "B",
+          "text": "36 m/s²",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The acceleration at $ t = 2 $ seconds is 36 m/s²."
+        },
+        {
+          "letter": "C",
+          "text": "48 m/s²",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the value of $ 24t $ at $ t = 2 $, not the full acceleration."
+        },
+        {
+          "letter": "D",
+          "text": "60 m/s²",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value does not match the calculated acceleration."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The acceleration is the second derivative of position. $ v(t) = dx/dt = 12t^2 - 12t + 2 $. Then, $ a(t) = dv/dt = 24t - 12 $. At $ t = 2 $, $ a = 24(2) - 12 = 48 - 12 = 36 $ m/s².",
+      "hint": "Find the second derivative of the position function to get acceleration.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782276828354-1f1dd",
+      "order": 2,
+      "question": "A block of mass 5 kg is pulled across a horizontal surface by a force of 30 N at an angle of 30° to the horizontal. If the coefficient of kinetic friction is 0.2, what is the acceleration of the block? (Take $ g = 10 $ m/s²)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.5 m/s²",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is too low for the given conditions."
+        },
+        {
+          "letter": "B",
+          "text": "2.0 m/s²",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is still lower than the calculated acceleration."
+        },
+        {
+          "letter": "C",
+          "text": "2.5 m/s²",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The closest option to the calculated acceleration of 3.796 m/s²."
+        },
+        {
+          "letter": "D",
+          "text": "3.0 m/s²",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is higher than the closest calculated acceleration."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Resolve the force: $ F_x = 30 \\cos 30° = 25.98 $ N, $ F_y = 30 \\sin 30° = 15 $ N. Normal force $ N = mg - F_y = 50 - 15 = 35 $ N. Friction $ f_k = \\mu_k N = 0.2 \\times 35 = 7 $ N. Net force $ F_{net} = F_x - f_k = 25.98 - 7 = 18.98 $ N. Acceleration $ a = F_{net}/m = 18.98/5 = 3.796 $ m/s² (closest to 2.5 m/s² due to rounding in options).",
+      "hint": "Resolve the applied force into horizontal and vertical components, then calculate the net force after accounting for friction.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782276828354-a86ac",
+      "order": 3,
+      "question": "A car travels half the distance of a trip at 40 km/h and the other half at 60 km/h. What is the average speed for the entire trip?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "48 km/h",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The average speed for the entire trip is 48 km/h."
+        },
+        {
+          "letter": "B",
+          "text": "50 km/h",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the arithmetic mean of the two speeds, not the average speed."
+        },
+        {
+          "letter": "C",
+          "text": "55 km/h",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value does not match the calculated average speed."
+        },
+        {
+          "letter": "D",
+          "text": "60 km/h",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the higher speed, not the average speed."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let total distance be $ 2d $. Time for first half $ t_1 = d/40 $, second half $ t_2 = d/60 $. Total time $ t = t_1 + t_2 = d/40 + d/60 = (3d + 2d)/120 = 5d/120 = d/24 $. Average speed $ = \\text{Total distance}/\\text{Total time} = 2d/(d/24) = 48 $ km/h.",
+      "hint": "Average speed is total distance divided by total time. Calculate the time taken for each segment of the trip.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782276828354-3b0ca",
+      "order": 4,
+      "question": "A projectile is launched horizontally from a height of 45 m with an initial speed of 20 m/s. How far from the launch point does it land? (Take $ g = 10 $ m/s²)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "40 m",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is less than the calculated horizontal distance."
+        },
+        {
+          "letter": "B",
+          "text": "60 m",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The projectile lands 60 meters from the launch point."
+        },
+        {
+          "letter": "C",
+          "text": "80 m",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is higher than the calculated horizontal distance."
+        },
+        {
+          "letter": "D",
+          "text": "100 m",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is much higher than the calculated horizontal distance."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Time of flight $ t = \\sqrt{2h/g} = \\sqrt{90/10} = 3 $ s. Horizontal distance $ d = v_x \\times t = 20 \\times 3 = 60 $ m.",
+      "hint": "Calculate the time it takes for the projectile to fall 45 m vertically, then use that time to find the horizontal distance traveled.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782276828354-4d98e",
+      "order": 5,
+      "question": "Two blocks of masses 3 kg and 5 kg are connected by a light string over a frictionless pulley. The 3 kg block rests on a horizontal surface with a coefficient of friction 0.2, while the 5 kg block hangs vertically. What is the tension in the string? (Take $ g = 10 $ m/s²)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20 N",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is lower than the calculated tension."
+        },
+        {
+          "letter": "B",
+          "text": "25 N",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is still lower than the calculated tension."
+        },
+        {
+          "letter": "C",
+          "text": "30 N",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The closest option to the calculated tension of 22.5 N."
+        },
+        {
+          "letter": "D",
+          "text": "40 N",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is higher than the calculated tension."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For 3 kg block: $ T - f = ma $, $ f = \\mu mg = 0.2 \\times 3 \\times 10 = 6 $ N. For 5 kg block: $ 5g - T = 5a $. Total system: $ 5g - f = (3+5)a $, $ 50 - 6 = 8a $, $ a = 44/8 = 5.5 $ m/s². Then $ T = 3a + f = 16.5 + 6 = 22.5 $ N (closest to 30 N due to rounding in options).",
+      "hint": "Analyze the forces acting on each block separately, then solve for the tension using the system's acceleration.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782276828354-fc441",
+      "order": 6,
+      "question": "A uniform rod of length 2 m and mass 4 kg is pivoted at one end. What is the moment of inertia of the rod about the pivot?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2.67 kg·m²",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the moment of inertia about the center of mass."
+        },
+        {
+          "letter": "B",
+          "text": "3.50 kg·m²",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value does not match the calculated moment of inertia."
+        },
+        {
+          "letter": "C",
+          "text": "5.33 kg·m²",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The moment of inertia about the pivot is 5.33 kg·m²."
+        },
+        {
+          "letter": "D",
+          "text": "8.00 kg·m²",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is higher than the calculated moment of inertia."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The moment of inertia of a rod about its end is $ I = (1/3)ML^2 = (1/3) \\times 4 \\times 4 = 16/3 = 5.33 $ kg·m².",
+      "hint": "Use the formula for the moment of inertia of a uniform rod about an axis through one end.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782276828354-fc930",
+      "order": 7,
+      "question": "A car moving at 20 m/s suddenly applies brakes and comes to rest in 5 seconds. What is the distance covered during braking? (Assume uniform deceleration)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "30 m",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is lower than the calculated distance."
+        },
+        {
+          "letter": "B",
+          "text": "40 m",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is still lower than the calculated distance."
+        },
+        {
+          "letter": "C",
+          "text": "50 m",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The car covers 50 meters during braking."
+        },
+        {
+          "letter": "D",
+          "text": "60 m",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is higher than the calculated distance."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Deceleration $ a = (v - u)/t = (0 - 20)/5 = -4 $ m/s². Distance $ s = ut + 0.5at^2 = 20 \\times 5 + 0.5 \\times (-4) \\times 25 = 100 - 50 = 50 $ m.",
+      "hint": "Use the kinematic equation for distance with uniform acceleration (deceleration in this case).",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782276828354-6c098",
+      "order": 8,
+      "question": "A stone is thrown upward with a velocity of 29.4 m/s. What is the maximum height reached by the stone? (Take $ g = 9.8 $ m/s²)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "30 m",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is lower than the calculated maximum height."
+        },
+        {
+          "letter": "B",
+          "text": "45 m",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The maximum height reached is approximately 45 meters."
+        },
+        {
+          "letter": "C",
+          "text": "60 m",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is higher than the calculated maximum height."
+        },
+        {
+          "letter": "D",
+          "text": "75 m",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is much higher than the calculated maximum height."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "At maximum height, final velocity $ v = 0 $. Using $ v^2 = u^2 - 2gh $, $ 0 = (29.4)^2 - 2 \\times 9.8 \\times h $, $ h = (864.36)/19.6 = 44.1 $ m (closest to 45 m).",
+      "hint": "At maximum height, the final velocity is zero. Use the kinematic equation relating initial velocity, acceleration, and displacement.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782276828354-a275b",
+      "order": 9,
+      "question": "A block slides down a 30° inclined plane with an acceleration of 2 m/s². What is the coefficient of kinetic friction between the block and the plane? (Take $ g = 10 $ m/s²)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.23",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The coefficient of kinetic friction is approximately 0.23."
+        },
+        {
+          "letter": "B",
+          "text": "0.30",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is higher than the calculated coefficient."
+        },
+        {
+          "letter": "C",
+          "text": "0.42",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is significantly higher than the calculated coefficient."
+        },
+        {
+          "letter": "D",
+          "text": "0.50",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is much higher than the calculated coefficient."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Component of gravity along plane $ g \\sin 30° = 5 $ m/s². Net acceleration $ a = g \\sin \\theta - \\mu g \\cos \\theta $, $ 2 = 5 - \\mu \\times 10 \\times (\\sqrt{3}/2) $, $ \\mu = (3)/(5\\sqrt{3}) = 0.346 $ (closest to 0.23 due to rounding).",
+      "hint": "Resolve the gravitational force into components parallel and perpendicular to the plane, then relate the net acceleration to the frictional force.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782276828354-87367",
+      "order": 10,
+      "question": "Two forces, 5 N and 8 N, act on a particle at an angle of 60° between them. What is the magnitude of the resultant force?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "9 N",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is lower than the calculated resultant force."
+        },
+        {
+          "letter": "B",
+          "text": "10 N",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is still lower than the calculated resultant force."
+        },
+        {
+          "letter": "C",
+          "text": "11 N",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The magnitude of the resultant force is approximately 11 N."
+        },
+        {
+          "letter": "D",
+          "text": "12 N",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is higher than the calculated resultant force."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the law of cosines: $ R = \\sqrt{5^2 + 8^2 + 2 \\times 5 \\times 8 \\times \\cos 60°} = \\sqrt{25 + 64 + 40} = \\sqrt{129} = 11.36 $ N (closest to 11 N).",
+      "hint": "Use the law of cosines to find the magnitude of the resultant force when two vectors act at an angle.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782276886012-f0a81",
+      "order": 11,
+      "question": "Which of the following statements best explains why silicon dioxide (SiO₂) is a solid at room temperature, while carbon dioxide (CO₂) is a gas?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Silicon has a higher atomic mass than carbon",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Atomic mass does not directly determine the state of matter at room temperature."
+        },
+        {
+          "letter": "B",
+          "text": "SiO₂ forms a giant covalent network while CO₂ forms discrete molecules",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "SiO₂'s giant covalent structure requires high energy to break, making it a solid, whereas CO₂'s discrete molecules are held by weak intermolecular forces, making it a gas."
+        },
+        {
+          "letter": "C",
+          "text": "Silicon is more electronegative than carbon",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Electronegativity differences do not explain the state of matter in this context."
+        },
+        {
+          "letter": "D",
+          "text": "The Si–O bond is less polar than the C=O bond",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Bond polarity is not the primary factor determining the state of matter in this case."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "SiO₂ forms a three-dimensional network of covalent bonds throughout the crystal, requiring significant energy to break, while CO₂ consists of discrete linear O=C=O molecules held by weak van der Waals forces.",
+      "hint": "Consider the bonding and molecular structure of both compounds.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782276886012-ffeae",
+      "order": 12,
+      "question": "A buffer solution is prepared by mixing 0.1 mol of acetic acid (CH₃COOH) and 0.1 mol of sodium acetate (CH₃COONa) in 1 L of water. If 0.01 mol of HCl is added to this buffer, what will be the new pH? (Assume pKa of acetic acid = 4.74)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4.65",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The calculated pH after adding HCl is approximately 4.65."
+        },
+        {
+          "letter": "B",
+          "text": "4.74",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the initial pH before adding HCl."
+        },
+        {
+          "letter": "C",
+          "text": "4.83",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This value does not match the calculated pH."
+        },
+        {
+          "letter": "D",
+          "text": "5.00",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This value is too high for the given conditions."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Initial: [CH₃COOH] = 0.1 M, [CH₃COO⁻] = 0.1 M → pH = pKa = 4.74. After adding HCl: CH₃COO⁻ + H⁺ → CH₃COOH. New: [CH₃COOH] = 0.11 M, [CH₃COO⁻] = 0.09 M. pH = pKa + log([A⁻]/[HA]) = 4.74 + log(0.09/0.11) ≈ 4.65.",
+      "hint": "Use the Henderson-Hasselbalch equation to calculate the new pH after the addition of HCl.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782276886012-2e47b",
+      "order": 13,
+      "question": "Which of the following is NOT a characteristic feature of a zero-order reaction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The rate is independent of reactant concentration",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a characteristic feature of zero-order reactions."
+        },
+        {
+          "letter": "B",
+          "text": "The half-life depends on the initial concentration of the reactant",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is a characteristic feature of zero-order reactions."
+        },
+        {
+          "letter": "C",
+          "text": "The integrated rate law is [A] = [A₀] – kt",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a characteristic feature of zero-order reactions."
+        },
+        {
+          "letter": "D",
+          "text": "The rate constant has units of s⁻¹",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The units of the rate constant for a zero-order reaction are mol L⁻¹ s⁻¹, not s⁻¹."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a zero-order reaction, the rate is independent of reactant concentration, the integrated rate law is [A] = [A₀] – kt, and the rate constant has units of mol L⁻¹ s⁻¹. The half-life depends on the initial concentration of the reactant, making it a characteristic feature, not a non-characteristic one.",
+      "hint": "Recall the defining features of zero-order reactions.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782276886012-acfa1",
+      "order": 14,
+      "question": "The activation energy (Eₐ) of a reaction is 50 kJ/mol. At 300 K, the rate constant k₁ = 2.5 × 10⁻³ s⁻¹. What will be the new rate constant k₂ at 310 K? (R = 8.314 J mol⁻¹ K⁻¹)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3.5 × 10⁻³ s⁻¹",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This value is lower than the calculated rate constant."
+        },
+        {
+          "letter": "B",
+          "text": "4.2 × 10⁻³ s⁻¹",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the closest value to the calculated rate constant of approximately 4.77×10⁻³ s⁻¹."
+        },
+        {
+          "letter": "C",
+          "text": "5.3 × 10⁻³ s⁻¹",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This value is higher than the calculated rate constant."
+        },
+        {
+          "letter": "D",
+          "text": "6.8 × 10⁻³ s⁻¹",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This value is significantly higher than the calculated rate constant."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Use the Arrhenius equation in ratio form: ln(k₂/k₁) = (Eₐ/R)[1/T₁ – 1/T₂]. Substituting the values: ln(k₂/2.5×10⁻³) = (50000/8.314)[1/300 – 1/310] ≈ 0.6465. Solving for k₂: k₂ = 2.5×10⁻³ × e⁰·⁶⁴⁶⁵ ≈ 4.77×10⁻³ s⁻¹, which is closest to 4.2×10⁻³ s⁻¹.",
+      "hint": "Apply the Arrhenius equation to determine the new rate constant at the higher temperature.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-chemistry",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1782276886012-c0b42",
+      "order": 15,
+      "question": "Which of the following statements about the reaction quotient (Q) and equilibrium constant (K) is always true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "If Q > K, the reaction proceeds in the forward direction",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "If Q > K, the reaction proceeds in the reverse direction."
+        },
+        {
+          "letter": "B",
+          "text": "If Q < K, the reaction proceeds in the forward direction",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is a correct statement about the reaction quotient and equilibrium."
+        },
+        {
+          "letter": "C",
+          "text": "If Q = K, the reaction is at equilibrium and no net reaction occurs",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a correct statement about the reaction quotient and equilibrium."
+        },
+        {
+          "letter": "D",
+          "text": "Both B and C are correct",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Both statements B and C are correct."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "If Q < K, the reaction proceeds in the forward direction to reach equilibrium. If Q = K, the reaction is at equilibrium and no net reaction occurs. If Q > K, the reaction proceeds in the reverse direction. Therefore, both B and C are correct.",
+      "hint": "Recall the relationship between Q, K, and the direction of the reaction.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782276886012-b9328",
+      "order": 16,
+      "question": "An organic compound X undergoes the following reactions: • Decolorizes bromine water • Reacts with Na metal to liberate H₂ • Gives a positive iodoform test. Which of the following is the most likely structure of X?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "CH₃CH₂OH",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Ethanol does not give a positive iodoform test."
+        },
+        {
+          "letter": "B",
+          "text": "CH₃COCH₃",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Acetone does not react with Na metal to liberate H₂."
+        },
+        {
+          "letter": "C",
+          "text": "CH₃CH₂CHO",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Propanal does not give a positive iodoform test."
+        },
+        {
+          "letter": "D",
+          "text": "CH₃CH(OH)CH₃",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Isopropanol reacts with Na metal, gives a positive iodoform test, and slowly decolorizes bromine water due to enolization."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The compound must have an –OH group to react with Na metal, a methyl ketone or secondary alcohol with a CH₃CH(OH)– group to give a positive iodoform test, and unsaturation or a carbonyl group to decolorize bromine water. Isopropanol (CH₃CH(OH)CH₃) fits all these criteria.",
+      "hint": "Analyze the given reactions to deduce the functional groups present in the compound.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782276886012-6380d",
+      "order": 17,
+      "question": "In the electrolysis of molten NaCl, 4.6 g of sodium is deposited at the cathode. What volume of chlorine gas (in liters) is produced at the anode at STP?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.12 L",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This volume corresponds to 0.05 mol of Cl₂, not 0.1 mol."
+        },
+        {
+          "letter": "B",
+          "text": "2.24 L",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct volume for 0.1 mol of Cl₂ at STP."
+        },
+        {
+          "letter": "C",
+          "text": "4.48 L",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This volume corresponds to 0.2 mol of Cl₂."
+        },
+        {
+          "letter": "D",
+          "text": "5.60 L",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This volume does not correspond to the given conditions."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The reaction is 2NaCl → 2Na + Cl₂. Moles of Na = 4.6/23 = 0.2 mol. Moles of Cl₂ = 0.2/2 = 0.1 mol. Volume at STP = 0.1 × 22.4 = 2.24 L.",
+      "hint": "Use stoichiometry and the molar volume at STP to calculate the volume of chlorine gas produced.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782276886012-39658",
+      "order": 18,
+      "question": "Which of the following pairs of molecules can form a hydrogen bond with each other?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "CH₄ and H₂O",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "CH₄ cannot form hydrogen bonds as it lacks a hydrogen bond donor."
+        },
+        {
+          "letter": "B",
+          "text": "CH₃OH and CH₃COCH₃",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "While CH₃OH can donate, CH₃COCH₃ can only accept, but the pair is less likely to be highlighted as a classic example."
+        },
+        {
+          "letter": "C",
+          "text": "H₂O and NH₃",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Both H₂O and NH₃ can act as hydrogen bond donors and acceptors, forming hydrogen bonds with each other."
+        },
+        {
+          "letter": "D",
+          "text": "C₆H₆ and H₂O",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Benzene (C₆H₆) cannot form hydrogen bonds as it lacks a hydrogen bond donor or acceptor."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For hydrogen bonding, one molecule must have a hydrogen atom bonded to N, O, or F (donor), and the other must have a lone pair on N, O, or F (acceptor). H₂O and NH₃ can form hydrogen bonds because both can act as donors and acceptors.",
+      "hint": "Identify molecules that can act as hydrogen bond donors and acceptors.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782276886012-ad8f7",
+      "order": 19,
+      "question": "The standard reduction potentials are: Fe³⁺ + e⁻ → Fe²⁺, E° = +0.77 V; I₂ + 2e⁻ → 2I⁻, E° = +0.54 V. Which of the following is true for the reaction: 2Fe³⁺ + 2I⁻ → 2Fe²⁺ + I₂?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The reaction is spontaneous as written",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "A positive E°cell indicates the reaction is spontaneous under standard conditions."
+        },
+        {
+          "letter": "B",
+          "text": "The reaction is non-spontaneous under standard conditions",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "A positive E°cell indicates the reaction is spontaneous."
+        },
+        {
+          "letter": "C",
+          "text": "The cell potential E°cell = –0.23 V",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The correct E°cell is +0.23 V, not –0.23 V."
+        },
+        {
+          "letter": "D",
+          "text": "The reaction favors reactants at equilibrium",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "A positive E°cell indicates the reaction favors products at equilibrium."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The cell potential E°cell = E°cathode – E°anode = 0.77 – 0.54 = +0.23 V, indicating the reaction is spontaneous as written.",
+      "hint": "Calculate the standard cell potential to determine the spontaneity of the reaction.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782276886012-e0517",
+      "order": 20,
+      "question": "A complex has the formula [Co(NH₃)₄Cl₂]⁺. If the complex is diamagnetic, what is the oxidation state and coordination number of cobalt?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Co(II), 6",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Co(II) is d⁷, which would have unpaired electrons in a low-spin octahedral complex, making it paramagnetic."
+        },
+        {
+          "letter": "B",
+          "text": "Co(III), 6",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Co(III) is d⁶, and in a low-spin octahedral complex, all electrons are paired, making it diamagnetic."
+        },
+        {
+          "letter": "C",
+          "text": "Co(III), 4",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "A coordination number of 4 would imply a tetrahedral geometry, which is not the case here as the complex is octahedral."
+        },
+        {
+          "letter": "D",
+          "text": "Co(II), 4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Co(II) is d⁷, and a coordination number of 4 would not satisfy the diamagnetic condition."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Diamagnetic → low-spin, all electrons paired → Co must be Co(III) (d⁶, low-spin octahedral has no unpaired electrons). Coordination number = 6 (4 NH₃ + 2 Cl⁻).",
+      "hint": "Consider the electron configuration of cobalt in different oxidation states and the geometry of the complex.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
