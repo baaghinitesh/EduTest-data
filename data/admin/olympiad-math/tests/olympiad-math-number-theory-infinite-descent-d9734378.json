@@ -1,0 +1,563 @@
+{
+  "id": "d9734378-f0ee-4930-a672-60426bcea4a4",
+  "title": "OLYMPIAD MATH — Number Theory | Infinite Descent",
+  "description": "Subject-wise test on Infinite Descent (Number Theory) for OLYMPIAD MATH. 10Q.",
+  "board": "Competitive",
+  "classSlug": "olympiad-math",
+  "classNumber": 0,
+  "subjects": [
+    "olympiad-number-theory"
+  ],
+  "subject": "olympiad-number-theory",
+  "chapter": "Competition Number Theory",
+  "topic": "Infinite Descent",
+  "testType": "subject-wise",
+  "duration": 30,
+  "totalMarks": 40,
+  "passingMarks": 16,
+  "totalQuestions": 10,
+  "targetQuestions": 10,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "theory",
+    "descent",
+    "olympiad-number-theory",
+    "olympiad-math",
+    "competition",
+    "infinite",
+    "number"
+  ],
+  "instructions": [
+    "Subject: Number Theory",
+    "Total Questions: 10",
+    "Total Marks: 40",
+    "Duration: 30 minutes",
+    "Correct answer: +4 mark",
+    "Wrong answer: -1 mark",
+    "Topic: Infinite Descent"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-06-25T09:56:36.079Z",
+  "questions": [
+    {
+      "id": "q-1782381395899-11f72",
+      "order": 1,
+      "question": "Which of the following statements is true regarding integer solutions $(x, y, z)$ to the equation $x^2 + y^2 = 3z^2$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "There are infinitely many non-trivial solutions.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The equation $x^2 + y^2 = 3z^2$ has no non-trivial integer solutions, as shown by infinite descent."
+        },
+        {
+          "letter": "B",
+          "text": "The only integer solution is $(0,0,0)$.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "By infinite descent, no non-trivial solutions exist, so $(0, 0, 0)$ is the only solution."
+        },
+        {
+          "letter": "C",
+          "text": "There exist non-zero integer solutions where $x, y, z$ are all odd.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "If $x$, $y$, and $z$ are odd, then $x^2 + y^2 \\equiv 2 \\pmod{4}$ and $3z^2 \\equiv 3 \\pmod{4}$, which is a contradiction."
+        },
+        {
+          "letter": "D",
+          "text": "There exist non-zero integer solutions where $x, y, z$ are all even.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "If $x$, $y$, and $z$ are even, we can divide by 2 and apply infinite descent to reduce the solution, leading to a contradiction unless $x = y = z = 0$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Assume there exists a non-trivial solution $(x, y, z)$ with $z \\neq 0$. By the method of infinite descent, we can find a solution with smaller positive $z$, leading to a contradiction unless $z = 0$. Thus, the only integer solution is $(0, 0, 0)$.",
+      "hint": "Consider the parity of $x$, $y$, and $z$ and use modular arithmetic to analyze the equation.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782381395899-72e2d",
+      "order": 2,
+      "question": "Consider the Diophantine equation $x^2 + y^2 = 3z^2$. How many integer solutions $(x, y, z)$ exist such that at least one of $x, y, z$ is non-zero?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "No non-trivial integer solutions exist, as shown by infinite descent."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "There is no single solution that satisfies the equation uniquely."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The equation does not have exactly two solutions."
+        },
+        {
+          "letter": "D",
+          "text": "Infinitely many",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The equation has no non-trivial solutions, so infinitely many is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Assume there exists a non-trivial integer solution $(x, y, z)$. Let $(x_0, y_0, z_0)$ be a solution with the smallest possible value of $|x| + |y| + |z|$. Without loss of generality, assume $x_0, y_0, z_0$ are coprime. Modulo 3, the equation becomes $x^2 + y^2 \\equiv 0 \\pmod{3}$. The squares modulo 3 are 0 and 1, so both $x$ and $y$ must be divisible by 3. Let $x = 3x_1$, $y = 3y_1$. Substituting gives $9x_1^2 + 9y_1^2 = 3z^2 \\implies 3(x_1^2 + y_1^2) = z^2$, so $z$ must also be divisible by 3. Let $z = 3z_1$. Then $x_1^2 + y_1^2 = 3z_1^2$, contradicting the minimality of $(x_0, y_0, z_0)$. Thus, no non-trivial solutions exist.",
+      "hint": "Consider the equation modulo 3 and analyze the possible residues of squares.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782381395899-41bdf",
+      "order": 3,
+      "question": "What are all integer solutions $(x, y, z)$ to the equation $x^2 + y^2 = 3z^2$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$(x,y,z)$ where $x,y,z$ are multiples of 3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "While multiples of 3 satisfy the equation, this does not cover all possible solutions (only trivial ones)."
+        },
+        {
+          "letter": "B",
+          "text": "$(x,y,z)$ where $x,y,z$ are multiples of 2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Multiples of 2 do not necessarily satisfy the equation, and non-trivial solutions do not exist."
+        },
+        {
+          "letter": "C",
+          "text": "Only the trivial solution $(0,0,0)$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The proof by infinite descent shows no non-trivial solutions exist."
+        },
+        {
+          "letter": "D",
+          "text": "Infinitely many non-trivial solutions",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The contradiction in the proof rules out non-trivial solutions entirely."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Assume a non-trivial solution exists with minimal $|x| + |y| + |z|$. Using modular arithmetic modulo 3, we deduce $x$ and $y$ must be multiples of 3, leading to $z$ also being a multiple of 3. This implies a smaller solution exists, contradicting minimality. Hence, only the trivial solution $(0,0,0)$ exists.",
+      "hint": "Consider the equation modulo 3 and analyze possible residues of squares.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1782381395899-aacff",
+      "order": 4,
+      "question": "How many distinct positive integer solutions $(x, y)$ exist for the equation $x^2 = 2y^2$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "There are no solutions, so this is incorrect."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "No solutions exist, so this is incorrect."
+        },
+        {
+          "letter": "C",
+          "text": "Infinitely many",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The proof shows no solutions exist, so this is incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "0",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The proof by infinite descent confirms no positive integer solutions exist."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Assume a positive integer solution exists. Then $x$ must be even, leading to $y$ also being even. This process can be repeated indefinitely, implying $x$ and $y$ must be divisible by arbitrarily large powers of 2, which is impossible for positive integers. Hence, no solutions exist.",
+      "hint": "Consider the parity of $x$ and $y$ and use infinite descent.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782381395899-13aa6",
+      "order": 5,
+      "question": "Consider the equation $a^2 + b^2 + c^2 = a^2b^2$ for integers $a, b, c$. Which of the following statements is true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "There are infinitely many non-trivial solutions.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The proof shows no non-trivial solutions exist."
+        },
+        {
+          "letter": "B",
+          "text": "All solutions must have $a, b, c$ being even numbers.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "While even solutions exist, the trivial solution $(0,0,0)$ is the only one, and it does not require $a, b, c$ to be even."
+        },
+        {
+          "letter": "C",
+          "text": "The only integer solution is $(0,0,0)$.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The proof by infinite descent and modular arithmetic shows no other solutions exist."
+        },
+        {
+          "letter": "D",
+          "text": "Solutions exist only if $a$ and $b$ are odd.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The proof shows no solutions exist when $a$ and $b$ are odd, and the trivial solution does not require them to be odd."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Analyze the equation modulo 4. If any of $a$ or $b$ is odd, the right-hand side becomes $1 \text{ or } 0 \text{ mod } 4$, while the left-hand side cannot match this unless $c$ is also odd, leading to contradictions. If both $a$ and $b$ are even, then $c$ must also be even, and the process can be repeated indefinitely, implying only the trivial solution $(0,0,0)$ exists.",
+      "hint": "Use modular arithmetic modulo 4 to restrict possible values of $a$, $b$, and $c$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1782381395899-14753",
+      "order": 6,
+      "question": "Which of the following is a classic application of the Infinite Descent method in number theory?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Proving the irrationality of √2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The irrationality of √2 can be proven via contradiction, but it is not a classic example of the Infinite Descent method."
+        },
+        {
+          "letter": "B",
+          "text": "Demonstrating that no non-trivial integer solutions exist to the equation x^4 + y^4 = z^2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is a classic application of the Infinite Descent method by Fermat."
+        },
+        {
+          "letter": "C",
+          "text": "Solving the equation x^2 - 2y^2 = 1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This equation is solved using Pell's equation techniques, not Infinite Descent."
+        },
+        {
+          "letter": "D",
+          "text": "Proving Fermat's Little Theorem",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Fermat's Little Theorem is proven using modular arithmetic, not Infinite Descent."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Infinite Descent method is famously used by Fermat to show that no non-trivial integer solutions exist to the equation x^4 + y^4 = z^2, making it the correct answer. While the irrationality of √2 can be proven via contradiction, it is not a classic example of Infinite Descent. Options C and D involve different techniques.",
+      "hint": "Consider the historical applications of the Infinite Descent method in number theory.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782381395899-8f4fe",
+      "order": 7,
+      "question": "Suppose there exists a solution (x, y, z) in positive integers to the equation x^3 + y^3 = z^3. Using the Infinite Descent method, which of the following must be true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "There exists a solution where x, y, z are all even",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "A solution with all even numbers would imply a trivial solution, which is not possible for x^3 + y^3 = z^3 in positive integers."
+        },
+        {
+          "letter": "B",
+          "text": "There exists a smaller solution (x', y', z') with 0 < z' < z",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the core idea of the Infinite Descent method: constructing a smaller solution from an assumed one."
+        },
+        {
+          "letter": "C",
+          "text": "The equation has infinitely many solutions",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "By Fermat's Last Theorem, there are no solutions for n=3, so this is false."
+        },
+        {
+          "letter": "D",
+          "text": "The solution must satisfy x = y = z",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "No such symmetric solutions exist for x^3 + y^3 = z^3 in positive integers."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Infinite Descent relies on constructing a smaller solution from an assumed solution. Option B is correct because it describes the process of deriving a smaller solution. Option A implies a trivial solution (not possible for x^3 + y^3 = z^3 in positive integers), C is false (no solutions exist by Fermat's Last Theorem for n=3), and D is incorrect (no such symmetric solutions exist).",
+      "hint": "Recall that Infinite Descent involves reducing a solution to a smaller one.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1782381395899-9b1a6",
+      "order": 8,
+      "question": "Consider the equation x^2 + 1 = 3y. Using Infinite Descent, which of the following steps would be part of a proof by contradiction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Assume x is even and derive a contradiction",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The parity of x does not directly lead to a contradiction in this context."
+        },
+        {
+          "letter": "B",
+          "text": "Assume a minimal solution (x, y) and construct a smaller solution (x', y')",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the standard approach in Infinite Descent proofs."
+        },
+        {
+          "letter": "C",
+          "text": "Factor the equation as (x + √-1)(x - √-1) = 3y",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This involves algebraic number theory, not the Infinite Descent method."
+        },
+        {
+          "letter": "D",
+          "text": "Use the Euclidean algorithm to find gcd(x, y)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The Euclidean algorithm is unrelated to the Infinite Descent method."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Infinite Descent assumes a minimal solution and derives a smaller one, so B is correct. Option A is irrelevant (the parity of x doesn't directly help here), C involves algebraic number theory (not Infinite Descent), and D is unrelated to the method.",
+      "hint": "Think about the structure of a proof by Infinite Descent.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782381395899-1c0c5",
+      "order": 9,
+      "question": "Which of the following equations CANNOT be solved using the Infinite Descent method?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "x^2 + y^2 = z^2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a homogeneous equation solvable via Infinite Descent."
+        },
+        {
+          "letter": "B",
+          "text": "x^3 + y^3 = z^3 + 1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This non-homogeneous equation lacks the structure for Infinite Descent."
+        },
+        {
+          "letter": "C",
+          "text": "x^3 + y^3 = z^3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a classic example solvable via Infinite Descent."
+        },
+        {
+          "letter": "D",
+          "text": "x^2 - 2y^2 = 1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This Pell-like equation is solvable via continued fractions, not Infinite Descent."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Infinite Descent is typically used for homogeneous equations where solutions can be scaled down, like x^3 + y^3 = z^3 or x^2 + y^2 = z^2. Option D is a Pell-like equation solvable via continued fractions. However, x^3 + y^3 = z^3 + 1 is non-homogeneous and lacks the structure for Infinite Descent.",
+      "hint": "Consider the homogeneity and structure of the equations.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1782381395899-75f20",
+      "order": 10,
+      "question": "Let S be the set of all positive integers n such that n^2 + 1 is divisible by 5. Using Infinite Descent, which of the following is true about S?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "S is empty",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "S is not empty; for example, n=2 satisfies n^2 + 1 = 5, which is divisible by 5."
+        },
+        {
+          "letter": "B",
+          "text": "S contains all multiples of 5",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Not all multiples of 5 satisfy n^2 + 1 ≡ 0 (mod 5). For example, n=5 does not work."
+        },
+        {
+          "letter": "C",
+          "text": "Every n ∈ S must satisfy n ≡ 2 (mod 5) or n ≡ 3 (mod 5)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Solving n^2 ≡ -1 (mod 5) gives n ≡ 2 or 3 (mod 5)."
+        },
+        {
+          "letter": "D",
+          "text": "The smallest element of S is 10",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The smallest element of S is 2, since 2^2 + 1 = 5 is divisible by 5."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Solving n^2 ≡ -1 (mod 5) gives n ≡ 2 or 3 (mod 5), so C is correct. Option A is false (e.g., n=2 works), B is false (e.g., n=1 doesn’t work), and D is false (the smallest n is 2). While Infinite Descent isn't directly used here, the question tests understanding of modular constraints in number theory.",
+      "hint": "Solve the congruence n^2 ≡ -1 (mod 5) to find the possible values of n.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
