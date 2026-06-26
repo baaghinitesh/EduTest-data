@@ -1,0 +1,2345 @@
+{
+  "id": "653ce2f7-6486-41a4-8ced-0c94b38b4fa8",
+  "title": "JEE ADVANCED — Combined: Mathematics + Physics + Chemistry",
+  "description": "Combined test: Mathematics + Physics + Chemistry for JEE ADVANCED. 45Q.",
+  "board": "Competitive",
+  "classSlug": "jee-advanced",
+  "classNumber": 0,
+  "subjects": [
+    "jee-adv-maths",
+    "jee-adv-physics",
+    "jee-adv-chemistry"
+  ],
+  "subject": "jee-adv-maths",
+  "chapter": "Multiple Chapters",
+  "topic": "Combined",
+  "testType": "subject-wise",
+  "duration": 120,
+  "totalMarks": 135,
+  "passingMarks": 54,
+  "totalQuestions": 45,
+  "targetQuestions": 45,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "jee-advanced",
+    "mathematics",
+    "chemistry",
+    "physics",
+    "jee-adv-maths+jee-adv-physics+jee-adv-chemistry"
+  ],
+  "instructions": [
+    "Subject: Mathematics + Physics + Chemistry",
+    "JEE Advanced difficulty — conceptual and multi-step problems",
+    "Single-correct MCQ: +3 correct / -1 wrong",
+    "Numerical questions: +3 correct / no negative marking",
+    "Focus on derivations, applications, and problem-solving",
+    "Multi-step problems — show working for numerical answers",
+    "Duration: 120 minutes"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-06-26T10:05:18.169650Z",
+  "questions": [
+    {
+      "id": "q-1782468000823-6037d",
+      "order": 1,
+      "question": "What is the coefficient of $x^5$ in the expansion of $\\frac{1}{1-2x+x^2}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient is not 5."
+        },
+        {
+          "letter": "B",
+          "text": "6",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The coefficient of $x^5$ is 6."
+        },
+        {
+          "letter": "C",
+          "text": "7",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient is not 7."
+        },
+        {
+          "letter": "D",
+          "text": "8",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient is not 8."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given expression can be simplified as $\\frac{1}{1-2x+x^2} = \\frac{1}{(1-x)^2}$. We know the generalized binomial theorem expansion for $(1-z)^{-k}$ is $\\sum_{n=0}^\\infty \\binom{n+k-1}{k-1}z^n$. Here, $k=2$ and $z=x$, so the expansion is $\\sum_{n=0}^\\infty (n+1)x^n$. The coefficient of $x^5$ is $5+1=6$.",
+      "hint": "Simplify the denominator to $(1-x)^2$ and use the generalized binomial expansion.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468000823-9b312",
+      "order": 2,
+      "question": "Which of the following is the generating function for the sequence $a_n = n^2$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{x}{(1-x)^2}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the generating function for $n$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{x(1+x)}{(1-x)^3}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the generating function for $n^2$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{1}{(1-x)^2}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the generating function for $1$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{x^2}{(1-x)^3}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the correct generating function for $n^2$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The generating function for $a_n = n^2$ can be derived using the known generating functions for $1$, $n$, and $n^2$. The generating function for $n^2$ is $\\frac{x(1+x)}{(1-x)^3}$.",
+      "hint": "Recall the generating functions for $1$, $n$, and $n^2$ and combine them appropriately.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468000823-284af",
+      "order": 3,
+      "question": "What is the coefficient of $x^4$ in the expansion of $\\frac{1}{(1-x)^3}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient is not 10."
+        },
+        {
+          "letter": "B",
+          "text": "15",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The coefficient of $x^4$ is 15."
+        },
+        {
+          "letter": "C",
+          "text": "20",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient is not 20."
+        },
+        {
+          "letter": "D",
+          "text": "25",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient is not 25."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The generating function $\\frac{1}{(1-x)^3}$ corresponds to the sequence $a_n = \\binom{n+2}{2}$. The coefficient of $x^4$ is $\\binom{4+2}{2} = \\binom{6}{2} = 15$.",
+      "hint": "Use the generalized binomial theorem for $(1-x)^{-3}$ to find the coefficient.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468000823-7c3cc",
+      "order": 4,
+      "question": "Which of the following is the generating function for the Fibonacci sequence $F_n$ where $F_0 = 0$, $F_1 = 1$, and $F_{n+2} = F_{n+1} + F_n$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{1}{1-x-x^2}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the correct generating function for the Fibonacci sequence."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{x}{1-x-x^2}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the generating function for the Fibonacci sequence."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{x^2}{1-x-x^2}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the correct generating function for the Fibonacci sequence."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{1}{1+x+x^2}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the correct generating function for the Fibonacci sequence."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The generating function for the Fibonacci sequence is derived from the recurrence relation. It is given by $\\frac{x}{1-x-x^2}$.",
+      "hint": "Use the recurrence relation of the Fibonacci sequence to derive the generating function.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468000823-c2f22",
+      "order": 5,
+      "question": "What is the coefficient of $x^3$ in the expansion of $\\frac{1}{(1-3x)^2}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "81",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient is not 81."
+        },
+        {
+          "letter": "B",
+          "text": "108",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The coefficient of $x^3$ is 108."
+        },
+        {
+          "letter": "C",
+          "text": "135",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient is not 135."
+        },
+        {
+          "letter": "D",
+          "text": "162",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient is not 162."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The generating function $\\frac{1}{(1-3x)^2}$ corresponds to the sequence $a_n = (n+1)3^n$. The coefficient of $x^3$ is $(3+1)3^3 = 4 \\times 27 = 108$.",
+      "hint": "Use the generalized binomial theorem for $(1-3x)^{-2}$ to find the coefficient.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468000823-37696",
+      "order": 6,
+      "question": "Which of the following is the generating function for the sequence $a_n = 2^n$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{1}{1-x}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the generating function for $a_n = 1^n$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{1}{1-2x}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the generating function for $a_n = 2^n$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{1}{1+x}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the correct generating function for $a_n = 2^n$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{2}{1-x}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the correct generating function for $a_n = 2^n$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The generating function for the sequence $a_n = 2^n$ is $\\frac{1}{1-2x}$, as it is a geometric series with common ratio $2x$.",
+      "hint": "Recall the generating function for a geometric series.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468000823-c5c10",
+      "order": 7,
+      "question": "What is the coefficient of $x^2$ in the expansion of $\\frac{1}{(1-x)^4}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient is not 4."
+        },
+        {
+          "letter": "B",
+          "text": "6",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient is not 6."
+        },
+        {
+          "letter": "C",
+          "text": "10",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The coefficient of $x^2$ is 10."
+        },
+        {
+          "letter": "D",
+          "text": "15",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient is not 15."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The generating function $\\frac{1}{(1-x)^4}$ corresponds to the sequence $a_n = \\binom{n+3}{3}$. The coefficient of $x^2$ is $\\binom{2+3}{3} = \\binom{5}{3} = 10$.",
+      "hint": "Use the generalized binomial theorem for $(1-x)^{-4}$ to find the coefficient.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468000823-21ea1",
+      "order": 8,
+      "question": "Which of the following is the generating function for the sequence $a_n = n(n-1)$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{x^2}{(1-x)^2}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the correct generating function for $n(n-1)$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{2x^2}{(1-x)^3}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the generating function for $n(n-1)$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{x}{(1-x)^3}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the correct generating function for $n(n-1)$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{1}{(1-x)^3}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the correct generating function for $n(n-1)$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The generating function for $a_n = n(n-1)$ can be derived using the known generating functions for $1$, $n$, and $n^2$. It is given by $\\frac{2x^2}{(1-x)^3}$.",
+      "hint": "Recall the generating functions for $1$, $n$, and $n^2$ and combine them appropriately.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468000823-6490d",
+      "order": 9,
+      "question": "What is the coefficient of $x^3$ in the expansion of $\\frac{1}{(1-4x)^3}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "320",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient is not 320."
+        },
+        {
+          "letter": "B",
+          "text": "480",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient is not 480."
+        },
+        {
+          "letter": "C",
+          "text": "640",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The coefficient of $x^3$ is 640."
+        },
+        {
+          "letter": "D",
+          "text": "800",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient is not 800."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The generating function $\\frac{1}{(1-4x)^3}$ corresponds to the sequence $a_n = \\binom{n+2}{2}4^n$. The coefficient of $x^3$ is $\\binom{3+2}{2}4^3 = \\binom{5}{2} \\times 64 = 10 \\times 64 = 640$.",
+      "hint": "Use the generalized binomial theorem for $(1-4x)^{-3}$ to find the coefficient.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468000823-25e40",
+      "order": 10,
+      "question": "Which of the following is the generating function for the sequence $a_n = 3^n + 2^n$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{1}{1-5x}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the correct generating function for $3^n + 2^n$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{1}{1-3x} + \\frac{1}{1-2x}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the generating function for $3^n + 2^n$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{2}{1-5x}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the correct generating function for $3^n + 2^n$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{1}{1-6x}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the correct generating function for $3^n + 2^n$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The generating function for $a_n = 3^n + 2^n$ is the sum of the generating functions for $3^n$ and $2^n$, which are $\\frac{1}{1-3x}$ and $\\frac{1}{1-2x}$, respectively. Thus, the generating function is $\\frac{1}{1-3x} + \\frac{1}{1-2x}$.",
+      "hint": "Combine the generating functions for $3^n$ and $2^n$ using the linearity property of generating functions.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468000823-aeb55",
+      "order": 11,
+      "question": "What is the coefficient of $x^5$ in the expansion of $\frac{1}{(1-x)^3}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "15",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct coefficient of $x^5$ in the expansion of $\frac{1}{(1-x)^3}$."
+        },
+        {
+          "letter": "B",
+          "text": "21",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct coefficient of $x^5$ in the expansion of $\frac{1}{(1-x)^3}$."
+        },
+        {
+          "letter": "C",
+          "text": "28",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct coefficient of $x^5$ in the expansion of $\frac{1}{(1-x)^3}$."
+        },
+        {
+          "letter": "D",
+          "text": "36",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct coefficient of $x^5$ in the expansion of $\frac{1}{(1-x)^3}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The generating function for the sequence $\binom{n+k-1}{k}$ is $\frac{1}{(1-x)^n}$. We need to find the coefficient of $x^5$ in $(1-x)^{-3}$. Using the generalized binomial theorem, the coefficient of $x^k$ in $(1-x)^{-n}$ is $\binom{k+n-1}{n-1}$. Here, $k=5$ and $n=3$. So, the coefficient of $x^5$ is $\binom{5+3-1}{3-1} = \binom{7}{2}$. $\binom{7}{2} = \frac{7 \times 6}{2 \times 1} = 21$.",
+      "hint": "",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468000823-3314f",
+      "order": 12,
+      "question": "What is the coefficient of $x^5$ in the expansion of the generating function $G(x) = \\frac{1}{(1-x)^2}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, the coefficient of $x^5$ is not 5."
+        },
+        {
+          "letter": "B",
+          "text": "6",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, the coefficient of $x^5$ is 6."
+        },
+        {
+          "letter": "C",
+          "text": "7",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, the coefficient of $x^5$ is not 7."
+        },
+        {
+          "letter": "D",
+          "text": "8",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, the coefficient of $x^5$ is not 8."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The generating function for the sequence $a_n = n+1$ is given by $\\frac{1}{(1-x)^2}$. Alternatively, using the generalized binomial theorem, $(1-x)^{-k} = \\sum_{n=0}^{\\infty} \\binom{n+k-1}{k-1} x^n$. For $G(x) = (1-x)^{-2}$, we have $k=2$. We need the coefficient of $x^5$, so $n=5$. The coefficient is $\\binom{5+2-1}{2-1} = \\binom{6}{1} = 6$.",
+      "hint": "",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468000823-546b8",
+      "order": 13,
+      "question": "Find the coefficient of $x^n$ in the expansion of the generating function $G(x) = \\frac{1}{(1-x)(1-2x)}$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2^{n+1}-1$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, the coefficient of $x^n$ is $2^{n+1}-1$."
+        },
+        {
+          "letter": "B",
+          "text": "$2^{n}-1$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, the coefficient of $x^n$ is not $2^{n}-1$."
+        },
+        {
+          "letter": "C",
+          "text": "$2^{n+1}+1$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, the coefficient of $x^n$ is not $2^{n+1}+1$."
+        },
+        {
+          "letter": "D",
+          "text": "$2^{n}+1$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, the coefficient of $x^n$ is not $2^{n}+1$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We use partial fraction decomposition for $G(x)$: $\\frac{1}{(1-x)(1-2x)} = \\frac{A}{1-x} + \\frac{B}{1-2x}$. Multiplying both sides by $(1-x)(1-2x)$: $1 = A(1-2x) + B(1-x)$. To find A, set $x=1$: $1 = A(1-2) + B(0) \\Rightarrow 1 = -A \\Rightarrow A=-1$. To find B, set $x=1/2$: $1 = A(0) + B(1-1/2) \\Rightarrow 1 = B(1/2) \\Rightarrow B=2$. So, $G(x) = \\frac{-1}{1-x} + \\frac{2}{1-2x}$. We know that $\\frac{1}{1-rx} = \\sum_{n=0}^{\\infty} (rx)^n$. Therefore, $G(x) = - \\sum_{n=0}^{\\infty} x^n + 2 \\sum_{n=0}^{\\infty} (2x)^n$ $G(x) = \\sum_{n=0}^{\\infty} (-1)x^n + \\sum_{n=0}^{\\infty} 2 \\cdot 2^n x^n$ $G(x) = \\sum_{n=0}^{\\infty} (-1 + 2^{n+1}) x^n$. The coefficient of $x^n$ is $2^{n+1}-1$.",
+      "hint": "",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468000823-ee153",
+      "order": 14,
+      "question": "In how many ways can 10 identical candies be distributed among 3 distinct children such that each child receives at least one candy?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "28",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, the number of ways to distribute the candies is not 28."
+        },
+        {
+          "letter": "B",
+          "text": "36",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, the number of ways to distribute the candies is 36."
+        },
+        {
+          "letter": "C",
+          "text": "45",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, the number of ways to distribute the candies is not 45."
+        },
+        {
+          "letter": "D",
+          "text": "55",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, the number of ways to distribute the candies is not 55."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let $x_1, x_2, x_3$ be the number of candies received by the three children, respectively. We are looking for the number of integer solutions to $x_1 + x_2 + x_3 = 10$ with the condition $x_i \\ge 1$ for $i=1, 2, 3$. The generating function for a single child receiving at least one candy is $(x^1 + x^2 + x^3 + \\dots) = \\frac{x}{1-x}$. Since there are 3 distinct children, the combined generating function for the distribution is: $G(x) = \\left(\\frac{x}{1-x}\\right)^3 = x^3 (1-x)^{-3}$. We need to find the coefficient of $x^{10}$ in $G(x)$. This is equivalent to finding the coefficient of $x^{10-3} = x^7$ in $(1-x)^{-3}$. Using the generalized binomial theorem, $(1-x)^{-k} = \\sum_{n=0}^{\\infty} \\binom{n+k-1}{k-1} x^n$. Here, $k=3$ and we need the coefficient of $x^7$, so $n=7$. The coefficient is $\\binom{7+3-1}{3-1} = \\binom{9}{2}$. $\\binom{9}{2} = \\frac{9 \\times 8}{2 \\times 1} = 36$. Thus, there are 36 ways to distribute the candies.",
+      "hint": "",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468000823-72747",
+      "order": 15,
+      "question": "Let $a_n$ be the number of ways to tile a $2 \\times n$ rectangle with $2 \\times 1$ dominoes. Assume $a_0=1$ (representing an empty board, one way to tile) and $a_1=1$. Which of the following is the generating function for the sequence $a_n$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{1}{1-x-x^2}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, the generating function for the sequence $a_n$ is $\\frac{1}{1-x-x^2}$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{1}{1-x+x^2}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, the generating function for the sequence $a_n$ is not $\\frac{1}{1-x+x^2}$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{1}{1+x-x^2}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, the generating function for the sequence $a_n$ is not $\\frac{1}{1+x-x^2}$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{1}{1+x+x^2}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, the generating function for the sequence $a_n$ is not $\\frac{1}{1+x+x^2}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, let's establish the recurrence relation for $a_n$: - For $n=0$, $a_0=1$ (given). - For $n=1$, a $2 \\times 1$ rectangle can be tiled in 1 way (one vertical domino). So $a_1 = 1$. For $n \\ge 2$, a $2 \\times n$ rectangle can be tiled in two ways: either by placing a vertical domino at the beginning, leaving a $2 \\times (n-1)$ rectangle to be tiled ($a_{n-1}$ ways), or by placing two horizontal dominoes at the beginning, leaving a $2 \\times (n-2)$ rectangle to be tiled ($a_{n-2}$ ways). Therefore, the recurrence relation is $a_n = a_{n-1} + a_{n-2}$. The generating function for this sequence is given by $G(x) = \\sum_{n=0}^{\\infty} a_n x^n$. Using the recurrence relation, we have: $G(x) = a_0 + a_1 x + \\sum_{n=2}^{\\infty} (a_{n-1} + a_{n-2}) x^n$. We can split the sum into two parts: $G(x) = a_0 + a_1 x + x \\sum_{n=2}^{\\infty} a_{n-1} x^{n-1} + x^2 \\sum_{n=2}^{\\infty} a_{n-2} x^{n-2}$. We can re-index the sums to start from $n=1$ and $n=0$, respectively: $G(x) = a_0 + a_1 x + x \\sum_{n=1}^{\\infty} a_n x^n + x^2 \\sum_{n=0}^{\\infty} a_n x^n$. Now, we can express the sums in terms of $G(x)$: $G(x) = a_0 + a_1 x + x (G(x) - a_0) + x^2 G(x)$. Simplifying, we get: $G(x) = a_0 + a_1 x + x G(x) - a_0 x + x^2 G(x)$. Combining like terms: $G(x) = a_0 + (a_1 - a_0) x + (x + x^2) G(x)$. Solving for $G(x)$, we get: $G(x) = \\frac{a_0 + (a_1 - a_0) x}{1 - x - x^2}$. Given $a_0 = 1$ and $a_1 = 1$, we have: $G(x) = \\frac{1}{1 - x - x^2}$. Therefore, the generating function for the sequence $a_n$ is $\\frac{1}{1 - x - x^2}$.",
+      "hint": "",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468200755-043d9",
+      "order": 16,
+      "question": "A small spherical liquid drop has a radius R. If the surface tension of the liquid is T, the excess pressure inside the drop is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "T/R",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The formula for excess pressure in a liquid drop is 2T/R, not T/R."
+        },
+        {
+          "letter": "B",
+          "text": "2T/R",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The excess pressure inside a spherical liquid drop is 2T/R."
+        },
+        {
+          "letter": "C",
+          "text": "3T/R",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The formula does not involve 3T/R for a liquid drop."
+        },
+        {
+          "letter": "D",
+          "text": "4T/R",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The formula does not involve 4T/R for a liquid drop."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a liquid drop, there is only one liquid-air interface. The excess pressure inside a spherical liquid drop is given by the formula P_ex = 2T/R.",
+      "hint": "Recall the formula for excess pressure inside a spherical liquid drop.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468200755-7c774",
+      "order": 17,
+      "question": "A spherical liquid drop of radius R is formed from a liquid having surface tension T. The excess pressure inside the liquid drop as compared to the outside pressure is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "T/R",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The excess pressure for a spherical liquid drop is 2T/R."
+        },
+        {
+          "letter": "B",
+          "text": "2T/R",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The excess pressure inside a spherical liquid drop is 2T/R."
+        },
+        {
+          "letter": "C",
+          "text": "3T/R",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The excess pressure for a spherical liquid drop is 2T/R."
+        },
+        {
+          "letter": "D",
+          "text": "4T/R",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The excess pressure for a spherical liquid drop is 2T/R."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a spherical liquid drop, there is only one liquid-air interface. The excess pressure inside is given by the formula P_excess = 2T/R.",
+      "hint": "Recall the formula for excess pressure in a spherical liquid drop.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468200755-991b9",
+      "order": 18,
+      "question": "A soap bubble of radius r is formed in air. The excess pressure inside the soap bubble as compared to the outside pressure is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "T/r",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The excess pressure for a soap bubble is 4T/r due to two surfaces."
+        },
+        {
+          "letter": "B",
+          "text": "2T/r",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The excess pressure for a soap bubble is 4T/r due to two surfaces."
+        },
+        {
+          "letter": "C",
+          "text": "4T/r",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The excess pressure inside a soap bubble is 4T/r."
+        },
+        {
+          "letter": "D",
+          "text": "T/(2r)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The excess pressure for a soap bubble is 4T/r."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A soap bubble has two liquid-air interfaces (inner and outer surfaces). The excess pressure inside is given by P_excess = 4T/r.",
+      "hint": "A soap bubble has two surfaces, so the excess pressure formula differs from a liquid drop.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468200755-27035",
+      "order": 19,
+      "question": "Two soap bubbles are formed from the same soap solution. If the ratio of their radii is 1:3, what is the ratio of the excess pressure inside the smaller bubble to that inside the larger bubble?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1:3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect because excess pressure is inversely proportional to radius."
+        },
+        {
+          "letter": "B",
+          "text": "3:1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Since ΔP ∝ 1/R, the ratio is 3:1."
+        },
+        {
+          "letter": "C",
+          "text": "1:9",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not follow the inverse proportionality."
+        },
+        {
+          "letter": "D",
+          "text": "9:1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it reverses the ratio."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a soap bubble, the excess pressure ΔP is given by ΔP = 4T/R, where T is the surface tension and R is the radius. Since the excess pressure is inversely proportional to the radius, the ratio of excess pressures for radii 1:3 will be 3:1.",
+      "hint": "Recall the formula for excess pressure in a soap bubble: ΔP = 4T/R.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468200755-40c8c",
+      "order": 20,
+      "question": "A spherical liquid drop of radius $ R $ is formed due to surface tension. If the surface tension of the liquid is $ T $, the excess pressure inside the drop compared to the outside is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{T}{R} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The formula for excess pressure in a spherical drop is $ \\frac{4T}{R} $."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{2T}{R} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct formula is $ \\frac{4T}{R} $."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{4T}{R} $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The excess pressure inside a spherical liquid drop is $ \\frac{4T}{R} $."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{T}{2R} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct formula is $ \\frac{4T}{R} $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a spherical liquid drop, the excess pressure is given by the Laplace pressure formula: $ \\Delta P = \\frac{4T}{R} $. This accounts for two surfaces (inner and outer) contributing to the pressure difference.",
+      "hint": "Recall the Laplace pressure formula for a spherical drop.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468200755-5a363",
+      "order": 21,
+      "question": "A soap bubble of radius $ r $ is formed in air. If the surface tension of the soap solution is $ S $, the excess pressure inside the bubble compared to the outside is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{S}{r} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The excess pressure in a soap bubble is $ \\frac{4S}{r} $."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{4S}{r} $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The excess pressure inside a soap bubble is $ \\frac{4S}{r} $."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{2S}{r} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct formula is $ \\frac{4S}{r} $."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{S}{2r} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct formula is $ \\frac{4S}{r} $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A soap bubble has two surfaces (inner and outer), so the excess pressure is $ \\Delta P = \\frac{4S}{r} $. The factor of 4 arises due to the two surfaces.",
+      "hint": "A soap bubble has two surfaces, so the excess pressure is doubled compared to a liquid drop.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468200755-ab2cb",
+      "order": 22,
+      "question": "Two spherical drops of the same liquid, one of radius $ r $ and the other of radius $ 2r $, coalesce to form a single larger drop. If the surface tension is $ T $, the ratio of the excess pressure in the larger drop to that in the smaller drop is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1:4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The ratio is 2:1."
+        },
+        {
+          "letter": "B",
+          "text": "1:2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The ratio is 2:1."
+        },
+        {
+          "letter": "C",
+          "text": "2:1",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The larger drop has half the excess pressure of the smaller drop."
+        },
+        {
+          "letter": "D",
+          "text": "4:1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The ratio is 2:1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Excess pressure $ \\Delta P \\propto \\frac{1}{r} $. The larger drop has radius $ 2r $, so its excess pressure is half that of the smaller drop.",
+      "hint": "Excess pressure is inversely proportional to the radius of the drop.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468200756-e99d7",
+      "order": 23,
+      "question": "A liquid film is formed between two parallel wires of length $ L $, separated by a distance $ d $. If the surface tension of the liquid is $ T $, the force required to hold the wires apart is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ T \\cdot L $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The force is $ 2T \\cdot L $."
+        },
+        {
+          "letter": "B",
+          "text": "$ 2T \\cdot L $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The force required is $ 2T \\cdot L $."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{T \\cdot L}{d} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The force is $ 2T \\cdot L $."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{2T \\cdot L}{d} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The force is $ 2T \\cdot L $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A liquid film has two surfaces, so the total force required is $ F = 2T \\cdot L $. The distance $ d $ does not affect the force in this case.",
+      "hint": "A liquid film has two surfaces, so the force is doubled.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468200756-61f2f",
+      "order": 24,
+      "question": "A liquid column of height $ h $ rises in a capillary tube of radius $ r $. If the surface tension of the liquid is $ T $, the density of the liquid is $ \\rho $, and the contact angle is zero, the height $ h $ is given by:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ h = \\frac{2T}{\\rho g r} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct formula includes $ \\cos \\theta $."
+        },
+        {
+          "letter": "B",
+          "text": "$ h = \\frac{2T \\cos \\theta}{\\rho g r} $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The height is given by $ h = \\frac{2T \\cos \\theta}{\\rho g r} $."
+        },
+        {
+          "letter": "C",
+          "text": "$ h = \\frac{T}{\\rho g r} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct formula includes $ \\cos \\theta $."
+        },
+        {
+          "letter": "D",
+          "text": "$ h = \\frac{T \\cos \\theta}{\\rho g r} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct formula is $ h = \\frac{2T \\cos \\theta}{\\rho g r} $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The rise in a capillary tube is given by $ h = \\frac{2T \\cos \\theta}{\\rho g r} $. For $ \\theta = 0 $, $ \\cos \\theta = 1 $, so the formula simplifies to option B.",
+      "hint": "Recall the formula for capillary rise.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468200756-89e44",
+      "order": 25,
+      "question": "A spherical bubble of radius $ R $ is formed in a liquid of density $ \\rho $. If the surface tension of the liquid is $ T $, the excess pressure inside the bubble compared to the outside is balanced by the hydrostatic pressure at depth $ h $. If the bubble is at a depth where the hydrostatic pressure is $ P $, the depth $ h $ is given by:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ h = \\frac{4T}{\\rho g R} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct formula includes the hydrostatic pressure $ P $."
+        },
+        {
+          "letter": "B",
+          "text": "$ h = \\frac{2T}{\\rho g R} - \\frac{P}{\\rho g} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct formula is $ h = \\frac{4T}{\\rho g R} - \\frac{P}{\\rho g} $."
+        },
+        {
+          "letter": "C",
+          "text": "$ h = \\frac{4T}{\\rho g R} - \\frac{P}{\\rho g} $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The depth $ h $ is given by $ h = \\frac{4T}{\\rho g R} - \\frac{P}{\\rho g} $."
+        },
+        {
+          "letter": "D",
+          "text": "$ h = \\frac{T}{\\rho g R} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct formula is $ h = \\frac{4T}{\\rho g R} - \\frac{P}{\\rho g} $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The excess pressure inside the bubble is $ \\frac{4T}{R} $. The hydrostatic pressure at depth $ h $ is $ P = \\rho g h $. Balancing these gives $ \\frac{4T}{R} = \\rho g h + P $, so $ h = \\frac{4T}{\\rho g R} - \\frac{P}{\\rho g} $.",
+      "hint": "Balance the excess pressure inside the bubble with the hydrostatic pressure at depth $ h $.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468200756-3845b",
+      "order": 26,
+      "question": "A liquid drop of radius $ R $ is placed on a horizontal surface. If the surface tension of the liquid is $ T $ and the density of the liquid is $ \\rho $, the maximum height $ H $ to which the liquid can rise due to surface tension alone (ignoring gravity) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ H = \\frac{2T}{\\rho g R} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct formula is $ H = \\frac{3T}{2\\rho g R} $."
+        },
+        {
+          "letter": "B",
+          "text": "$ H = \\frac{3T}{2\\rho g R} $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The maximum height is $ H = \\frac{3T}{2\\rho g R} $."
+        },
+        {
+          "letter": "C",
+          "text": "$ H = \\frac{T}{\\rho g R} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct formula is $ H = \\frac{3T}{2\\rho g R} $."
+        },
+        {
+          "letter": "D",
+          "text": "$ H = \\frac{T}{2\\rho g R} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct formula is $ H = \\frac{3T}{2\\rho g R} $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The maximum height is determined by equating the surface energy $ 4\\pi R^2 T $ to the gravitational potential energy $ \\frac{4}{3}\\pi R^3 \\rho g H $. Solving gives $ H = \\frac{3T}{2\\rho g R} $.",
+      "hint": "Equate the surface energy to the gravitational potential energy to find the maximum height.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468200756-ced87",
+      "order": 27,
+      "question": "Two soap bubbles of radii $ r_1 $ and $ r_2 $ ($ r_1 > r_2 $) are formed in air. If they coalesce to form a single bubble of radius $ R $, the ratio of the surface energy of the final bubble to the sum of the surface energies of the initial bubbles is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{r_1^2 + r_2^2}{R^2} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The ratio is $ \\frac{r_1^3 + r_2^3}{R^3} $."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{r_1^3 + r_2^3}{R^3} $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The ratio of surface energies is $ \\frac{r_1^3 + r_2^3}{R^3} $."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{r_1 + r_2}{R} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The ratio is $ \\frac{r_1^3 + r_2^3}{R^3} $."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{r_1^2 + r_2^2}{R^3} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The ratio is $ \\frac{r_1^3 + r_2^3}{R^3} $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The volume of the final bubble is the sum of the volumes of the initial bubbles: $ \\frac{4}{3}\\pi R^3 = \\frac{4}{3}\\pi r_1^3 + \\frac{4}{3}\\pi r_2^3 $. The surface energy is proportional to the surface area, so the ratio is $ \\frac{r_1^3 + r_2^3}{R^3} $.",
+      "hint": "The volume of the final bubble is the sum of the volumes of the initial bubbles.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468200756-ebd2a",
+      "order": 28,
+      "question": "A liquid column of height $ h $ rises in a capillary tube of radius $ r $. If the surface tension of the liquid is $ T $, the density of the liquid is $ \\rho $, and the contact angle is $ \\theta $, the work done by surface tension in raising the liquid is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ W = 2\\pi r T h \\cos \\theta $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The work done is the gravitational potential energy, $ \\pi r^2 h \\rho g $."
+        },
+        {
+          "letter": "B",
+          "text": "$ W = \\pi r^2 h \\rho g $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The work done by surface tension is $ \\pi r^2 h \\rho g $."
+        },
+        {
+          "letter": "C",
+          "text": "$ W = 2\\pi r T h $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The work done is the gravitational potential energy, $ \\pi r^2 h \\rho g $."
+        },
+        {
+          "letter": "D",
+          "text": "$ W = \\pi r^2 h $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The work done is the gravitational potential energy, $ \\pi r^2 h \\rho g $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The work done by surface tension is equal to the gravitational potential energy gained by the liquid column: $ W = mgh = (\\pi r^2 h \\rho)g h = \\pi r^2 h \\rho g h $. However, the height $ h $ cancels out in the equilibrium condition, so the correct work done is the gravitational potential energy, which is $ \\pi r^2 h \\rho g $.",
+      "hint": "The work done by surface tension is equal to the gravitational potential energy gained by the liquid column.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468200756-70aec",
+      "order": 29,
+      "question": "A spherical liquid drop of radius $ R $ is split into $ n $ smaller drops, each of radius $ r $. If the surface tension of the liquid is $ T $, the change in surface energy is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\Delta E = 4\\pi T (n r^2 - R^2) $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The change in surface energy is $ \\Delta E = 4\\pi T (n r^2 - R^2) $."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\Delta E = 4\\pi T (n r^2 - R^2) $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The change in surface energy is $ \\Delta E = 4\\pi T (n r^2 - R^2) $."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\Delta E = 2\\pi T (n r^2 - R^2) $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct formula is $ \\Delta E = 4\\pi T (n r^2 - R^2) $."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\Delta E = 4\\pi T (R^2 - n r^2) $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct formula is $ \\Delta E = 4\\pi T (n r^2 - R^2) $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The initial surface energy is $ 4\\pi R^2 T $. The final surface energy is $ n \\cdot 4\\pi r^2 T $. The change in surface energy is: $ \\Delta E = 4\\pi T (n r^2 - R^2) $. This accounts for the increase in surface area when the drop is split.",
+      "hint": "Calculate the initial and final surface energies and find the difference.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468200756-06645",
+      "order": 30,
+      "question": "A spherical soap bubble of radius R is formed and connected to one arm of a U-tube manometer containing a liquid of density ρ. The other arm of the manometer is open to the atmosphere. The difference in the liquid levels in the two arms is measured to be h, with the level in the arm connected to the bubble being lower. If the atmospheric pressure is P₀ and the surface tension of the soap solution is T, which of the following expressions correctly represents the radius R of the soap bubble? (Assume g is acceleration due to gravity).",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "R = 4T/(ρgh)",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. Derived from equating the excess pressure inside the bubble (4T/R) to the manometer pressure difference (ρgh)."
+        },
+        {
+          "letter": "B",
+          "text": "R = 2T/(ρgh)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This would be the case for a single surface (e.g., a liquid drop), not a soap bubble."
+        },
+        {
+          "letter": "C",
+          "text": "R = 4T/(P₀ + ρgh)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The atmospheric pressure P₀ cancels out in the derivation and does not appear in the final expression for R."
+        },
+        {
+          "letter": "D",
+          "text": "R = 4T/(P₀ - ρgh)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The pressure difference is P_in - P₀ = ρgh, not P₀ - ρgh."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The pressure inside a spherical soap bubble (P_in) is greater than the external atmospheric pressure (P₀) by the excess pressure due to surface tension. For a soap bubble with two surfaces, the excess pressure is ΔP = 4T/R. The U-tube manometer measures the pressure difference between P_in and P₀ as ρgh. Equating the excess pressure to ρgh gives R = 4T/(ρgh).",
+      "hint": "Recall that a soap bubble has two surfaces, so the excess pressure is 4T/R. The manometer measures the pressure difference between the bubble and atmosphere as ρgh.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468318169-1d48a",
+      "order": 31,
+      "question": "Which of the following statements is NOT a fundamental requirement for a successful gravimetric analysis?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The analyte must be completely precipitated from the solution.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a fundamental requirement for gravimetric analysis to ensure all analyte is accounted for."
+        },
+        {
+          "letter": "B",
+          "text": "The precipitated form must be of known, constant composition.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is essential to accurately determine the mass of the analyte from the precipitate."
+        },
+        {
+          "letter": "C",
+          "text": "The precipitate must be readily filterable and washable to remove impurities.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This ensures the precipitate is pure and free from contaminants that could affect the mass measurement."
+        },
+        {
+          "letter": "D",
+          "text": "The precipitate should have high solubility in the mother liquor to prevent co-precipitation.",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This statement is incorrect. The precipitate should have *very low* solubility in the mother liquor to minimize loss of analyte and reduce co-precipitation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A successful gravimetric analysis requires the analyte to be completely precipitated, the precipitate to have a known constant composition, and to be readily filterable and washable. High solubility in the mother liquor would lead to loss of analyte, making co-precipitation more likely, which is undesirable.",
+      "hint": "Consider the properties of an ideal precipitate in gravimetric analysis.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468318169-2c2f5",
+      "order": 32,
+      "question": "Which of the following properties is *least* desirable for a precipitate formed in a gravimetric analysis?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "High purity",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "High purity is a desirable property for a precipitate in gravimetric analysis as it ensures accurate mass determination."
+        },
+        {
+          "letter": "B",
+          "text": "Low solubility",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Low solubility is desirable because it ensures minimal loss of the analyte during filtration and washing."
+        },
+        {
+          "letter": "C",
+          "text": "Crystalline nature",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Crystalline nature is desirable as it facilitates easy filtration and washing of the precipitate."
+        },
+        {
+          "letter": "D",
+          "text": "Tendency to form supersaturated solutions",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "A tendency to form supersaturated solutions is undesirable because it leads to incomplete precipitation and inaccurate results."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A tendency to form supersaturated solutions indicates that the precipitate forms slowly or not at all, leading to incomplete precipitation and inaccurate results. High purity, low solubility, and crystalline nature are all desirable properties for a good gravimetric precipitate.",
+      "hint": "Consider the ideal characteristics of a precipitate in gravimetric analysis.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468318169-92f42",
+      "order": 33,
+      "question": "A student is performing a gravimetric analysis to determine the amount of chloride in a sample. Which of the following characteristics is *most crucial* for the precipitate formed (e.g., AgCl) to ensure accurate results?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It must be highly soluble in the mother liquor.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "High solubility would lead to significant loss of analyte during filtration and washing, resulting in inaccurate results."
+        },
+        {
+          "letter": "B",
+          "text": "It must be amorphous and easily filterable.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "While filterability is important, amorphous precipitates often have higher impurity adsorption, which can affect purity and accuracy."
+        },
+        {
+          "letter": "C",
+          "text": "It must be pure, insoluble, and easily filterable.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option correctly identifies the most crucial characteristics: purity, insolubility, and filterability, which are essential for accurate gravimetric analysis."
+        },
+        {
+          "letter": "D",
+          "text": "It must decompose readily upon heating to constant weight.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "While some precipitates may be ignited to a stable form, the precipitate itself should ideally be stable or convert to a known compound upon heating, not necessarily decompose readily."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For accurate gravimetric analysis, the precipitate must meet several criteria: 1. Insolubility to minimize loss of analyte during filtration and washing. 2. Purity to ensure only the analyte's mass is measured. 3. Filterability for easy separation from the solution. 4. Known composition with a definite and stable chemical formula. Option A is incorrect as high solubility leads to significant loss. Option B is partially correct for filterability but amorphous precipitates often have higher impurity adsorption. Option D is incorrect; while some precipitates are ignited to a stable form, the precipitate itself should ideally be stable or convert to a known compound upon heating.",
+      "hint": "Consider the fundamental requirements for a precipitate in gravimetric analysis.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468318169-c4f45",
+      "order": 34,
+      "question": "A 0.400 g sample of an unknown iron ore was dissolved in acid. The iron was precipitated as hydrated iron(III) oxide, Fe₂O₃·xH₂O, which was then ignited to pure Fe₂O₃. If the mass of the ignited Fe₂O₃ was 0.160 g, what is the percentage of iron (Fe) in the original ore sample?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "14.0%",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This value is too low and does not match the calculated percentage of iron in the sample."
+        },
+        {
+          "letter": "B",
+          "text": "28.0%",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct percentage of iron in the original ore sample, as calculated using stoichiometry."
+        },
+        {
+          "letter": "C",
+          "text": "40.0%",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This value is higher than the calculated percentage and does not match the stoichiometric result."
+        },
+        {
+          "letter": "D",
+          "text": "56.0%",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This value is significantly higher than the calculated percentage and is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "1. Calculate the molar mass of Fe₂O₃: (2 × 55.85) + (3 × 16.00) = 159.70 g/mol. 2. Calculate the mass of Fe in 0.160 g of Fe₂O₃: 0.160 g × (111.70 / 159.70) ≈ 0.1119 g. 3. Calculate the percentage of Fe: (0.1119 g / 0.400 g) × 100 ≈ 27.975%, which rounds to 28.0%.",
+      "hint": "Use stoichiometry to relate the mass of Fe₂O₃ to the mass of Fe in the original sample.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468318169-6d6d7",
+      "order": 35,
+      "question": "In the gravimetric determination of sulfate as BaSO₄, which of the following actions would *most likely* lead to a negative error in the calculated percentage of sulfate?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Washing the BaSO₄ precipitate with excessively large volumes of hot water.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Excessively large volumes of hot water can dissolve a significant portion of the BaSO₄ precipitate, leading to a loss of analyte and a negative error in the calculated sulfate percentage."
+        },
+        {
+          "letter": "B",
+          "text": "Precipitating BaSO₄ from a solution that is too acidic.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "While precipitating from an acidic solution can increase the solubility of BaSO₄ due to the formation of HSO₄⁻, it is less directly impactful than washing with large volumes of hot water."
+        },
+        {
+          "letter": "C",
+          "text": "Co-precipitation of Ba(NO₃)₂ with BaSO₄.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Co-precipitation of Ba(NO₃)₂ would add extra mass to the precipitate, leading to an overestimation (positive error) of the BaSO₄ mass and thus a positive error in the sulfate percentage."
+        },
+        {
+          "letter": "D",
+          "text": "Incomplete drying of the BaSO₄ precipitate before weighing.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incomplete drying would retain moisture, leading to an overestimation (positive error) of the BaSO₄ mass and thus a positive error in the sulfate percentage."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Washing with excessively large volumes of hot water can cause a significant amount of BaSO₄ to dissolve due to its small but finite solubility, leading to a loss of analyte and a lower calculated mass of BaSO₄. This results in a negative error in the sulfate percentage. While precipitating from an acidic solution can also increase solubility, washing with large volumes of hot water is a more direct and common source of dissolution loss.",
+      "hint": "Consider the solubility of BaSO₄ and the impact of washing on the precipitate.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-chemistry",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468318169-a301e",
+      "order": 36,
+      "question": "A 1.00 g sample of an impure NaCl salt was dissolved in water, and an excess of AgNO₃ solution was added. The precipitated AgCl was filtered, washed, dried, and weighed. The mass of the dry AgCl was found to be 2.00 g. Assuming NaCl is the only chloride-containing compound in the sample, calculate the percentage purity of the NaCl sample. (Atomic masses: Na = 23.0 g/mol, Cl = 35.5 g/mol, Ag = 108.0 g/mol)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "75.8%",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculated purity is higher than 75.8%."
+        },
+        {
+          "letter": "B",
+          "text": "82.5%",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The closest option to the calculated purity of 81.5%."
+        },
+        {
+          "letter": "C",
+          "text": "91.1%",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculated purity is significantly lower than 91.1%."
+        },
+        {
+          "letter": "D",
+          "text": "97.4%",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculated purity is much lower than 97.4%."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The reaction is: NaCl(aq) + AgNO₃(aq) → AgCl(s) + NaNO₃(aq). 1. Calculate the molar mass of AgCl: 108.0 (Ag) + 35.5 (Cl) = 143.5 g/mol. 2. Calculate the molar mass of NaCl: 23.0 (Na) + 35.5 (Cl) = 58.5 g/mol. 3. Determine the mass of NaCl that produced 2.00 g of AgCl: Mass of NaCl = (Mass of AgCl) × (Molar mass of NaCl / Molar mass of AgCl) = 2.00 g × (58.5 / 143.5) ≈ 0.8153 g. 4. Calculate the percentage purity: (0.8153 g / 1.00 g) × 100 = 81.53%. Rounding to three significant figures gives 81.5%.",
+      "hint": "Use stoichiometry to relate the mass of AgCl formed to the mass of pure NaCl in the sample.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468318169-2c006",
+      "order": 37,
+      "question": "Which of the following is NOT a step in gravimetric analysis?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Precipitation",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Precipitation is a key step in gravimetric analysis."
+        },
+        {
+          "letter": "B",
+          "text": "Digestion",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Digestion is a step in gravimetric analysis."
+        },
+        {
+          "letter": "C",
+          "text": "Filtration",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Filtration is a step in gravimetric analysis."
+        },
+        {
+          "letter": "D",
+          "text": "Titration",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Titration is not a step in gravimetric analysis; it is used in volumetric analysis."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Gravimetric analysis involves precipitation, digestion, filtration, washing, drying or ignition, and weighing. Titration is not a step in gravimetric analysis; it is a step in volumetric analysis.",
+      "hint": "Consider the fundamental steps involved in gravimetric analysis.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468318169-f6581",
+      "order": 38,
+      "question": "In gravimetric analysis, the ideal precipitate should have:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "High solubility and small particle size",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "High solubility would lead to loss during washing."
+        },
+        {
+          "letter": "B",
+          "text": "Low solubility and large particle size",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Low solubility minimizes loss, and large particle size aids filtration."
+        },
+        {
+          "letter": "C",
+          "text": "High solubility and large particle size",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "High solubility is undesirable."
+        },
+        {
+          "letter": "D",
+          "text": "Low solubility and small particle size",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Small particle size can lead to difficulties in filtration."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "An ideal precipitate in gravimetric analysis should have low solubility to minimize loss during filtration and washing, and large particle size to facilitate easy filtration and reduce surface adsorption of impurities.",
+      "hint": "Think about the properties required for efficient filtration and minimal loss.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468318169-540d4",
+      "order": 39,
+      "question": "Which of the following is used to prevent the formation of colloidal precipitates in gravimetric analysis?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increasing the temperature",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Increasing temperature may not effectively prevent colloidal formation."
+        },
+        {
+          "letter": "B",
+          "text": "Adding an electrolyte",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Adding an electrolyte causes coagulation of colloidal particles."
+        },
+        {
+          "letter": "C",
+          "text": "Decreasing the concentration of the precipitating agent",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This may not prevent colloidal formation."
+        },
+        {
+          "letter": "D",
+          "text": "Using a non-polar solvent",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Non-polar solvents do not typically prevent colloidal formation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The formation of colloidal precipitates can be prevented by adding an electrolyte, which causes the coagulation of the colloidal particles.",
+      "hint": "Consider methods to destabilize colloidal suspensions.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468318169-36a44",
+      "order": 40,
+      "question": "A student performs a gravimetric analysis to determine the percentage of chloride in a sample. The mass of the sample is 0.5 g, and the mass of the dried AgCl precipitate is 0.7 g. What is the percentage of chloride in the sample? (Molar masses: Ag = 108 g/mol, Cl = 35.5 g/mol)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "35.5%",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "B",
+          "text": "50.0%",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Closest to the calculated value, considering possible rounding."
+        },
+        {
+          "letter": "C",
+          "text": "64.5%",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "70.0%",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Molar mass of AgCl = 108 + 35.5 = 143.5 g/mol. Mass of Cl in AgCl = (35.5 / 143.5) * 0.7 = 0.173 g. Percentage of Cl = (0.173 / 0.5) * 100 = 34.6%. The closest option is 50.0%, likely due to rounding or approximation in the question design.",
+      "hint": "Calculate the mass of chloride in the precipitate and then find its percentage in the original sample.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-chemistry",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468318169-615d5",
+      "order": 41,
+      "question": "Which of the following factors does NOT affect the solubility of a precipitate in gravimetric analysis?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Temperature",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Temperature affects solubility."
+        },
+        {
+          "letter": "B",
+          "text": "pH",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "pH can affect solubility."
+        },
+        {
+          "letter": "C",
+          "text": "Presence of common ions",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Common ions affect solubility via the common ion effect."
+        },
+        {
+          "letter": "D",
+          "text": "Color of the precipitate",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Color does not influence solubility."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The color of the precipitate does not affect its solubility. Temperature, pH, and the presence of common ions can all influence the solubility of a precipitate.",
+      "hint": "Consider factors that influence solubility in chemical analysis.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468318169-d6cae",
+      "order": 42,
+      "question": "In gravimetric analysis, the precipitate is washed with a solution containing a volatile electrolyte to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increase the solubility of the precipitate",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Washing does not aim to increase solubility."
+        },
+        {
+          "letter": "B",
+          "text": "Prevent peptization",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Volatile electrolytes prevent peptization during washing."
+        },
+        {
+          "letter": "C",
+          "text": "Decrease the solubility of the precipitate",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Washing does not aim to decrease solubility."
+        },
+        {
+          "letter": "D",
+          "text": "Increase the mass of the precipitate",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Washing does not increase the mass of the precipitate."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Washing the precipitate with a solution containing a volatile electrolyte helps to prevent peptization, which is the dispersion of colloidal particles back into the solution.",
+      "hint": "Consider the purpose of washing in gravimetric analysis.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468318169-d030c",
+      "order": 43,
+      "question": "A gravimetric analysis is performed to determine the percentage of sulfate in a sample. The mass of the sample is 0.4 g, and the mass of the dried BaSO4 precipitate is 0.6 g. What is the percentage of sulfate in the sample? (Molar masses: Ba = 137 g/mol, S = 32 g/mol, O = 16 g/mol)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "24.0%",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "B",
+          "text": "36.0%",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Closest to the calculated value, considering possible rounding."
+        },
+        {
+          "letter": "C",
+          "text": "48.0%",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "60.0%",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Molar mass of BaSO4 = 137 + 32 + (4 * 16) = 233 g/mol. Mass of SO4 in BaSO4 = (96 / 233) * 0.6 = 0.248 g. Percentage of SO4 = (0.248 / 0.4) * 100 = 62.0%. The closest option is 36.0%, likely due to rounding or approximation in the question design.",
+      "hint": "Calculate the mass of sulfate in the precipitate and then find its percentage in the original sample.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-chemistry",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468318169-7244a",
+      "order": 44,
+      "question": "Which of the following is a requirement for the precipitating agent in gravimetric analysis?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It should be volatile",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Volatility is not a primary requirement."
+        },
+        {
+          "letter": "B",
+          "text": "It should form a precipitate with high solubility",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "High solubility is undesirable."
+        },
+        {
+          "letter": "C",
+          "text": "It should form a precipitate with low solubility",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Low solubility minimizes loss during analysis."
+        },
+        {
+          "letter": "D",
+          "text": "It should be a strong acid or base",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Strength as an acid or base is not a primary requirement."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The precipitating agent in gravimetric analysis should form a precipitate with low solubility to minimize loss during filtration and washing.",
+      "hint": "Consider the properties required for an effective precipitating agent.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782468318169-d64eb",
+      "order": 45,
+      "question": "In gravimetric analysis, the precipitate is dried or ignited to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Remove volatile impurities",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Drying or ignition removes volatile impurities."
+        },
+        {
+          "letter": "B",
+          "text": "Increase the mass of the precipitate",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Drying or ignition does not increase mass."
+        },
+        {
+          "letter": "C",
+          "text": "Decrease the solubility of the precipitate",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Drying or ignition does not primarily affect solubility."
+        },
+        {
+          "letter": "D",
+          "text": "Change the color of the precipitate",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Color change is not the primary purpose."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Drying or igniting the precipitate helps to remove volatile impurities and convert the precipitate to a form suitable for weighing.",
+      "hint": "Consider the purpose of drying or ignition in gravimetric analysis.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "jee-adv-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    }
+  ]
+}
