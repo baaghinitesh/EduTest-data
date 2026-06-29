@@ -1,0 +1,562 @@
+{
+  "id": "fd7a49fc-272e-41ab-93da-0de5a8ea9023",
+  "title": "OLYMPIAD MATH — Algebra | Substitution Methods",
+  "description": "Subject-wise test on Substitution Methods (Algebra) for OLYMPIAD MATH. 10Q.",
+  "board": "Competitive",
+  "classSlug": "olympiad-math",
+  "classNumber": 0,
+  "subjects": [
+    "olympiad-algebra"
+  ],
+  "subject": "olympiad-algebra",
+  "chapter": "Competition Problems",
+  "topic": "Substitution Methods",
+  "testType": "subject-wise",
+  "duration": 30,
+  "totalMarks": 40,
+  "passingMarks": 16,
+  "totalQuestions": 10,
+  "targetQuestions": 10,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "olympiad-math",
+    "methods",
+    "substitution",
+    "competition",
+    "olympiad-algebra",
+    "problems"
+  ],
+  "instructions": [
+    "Subject: Algebra",
+    "Total Questions: 10",
+    "Total Marks: 40",
+    "Duration: 30 minutes",
+    "Correct answer: +4 mark",
+    "Wrong answer: -1 mark",
+    "Topic: Substitution Methods"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-06-29T15:14:35.580Z",
+  "questions": [
+    {
+      "id": "q-1782746075340-bac12",
+      "order": 1,
+      "question": "Given $x^2 - 3x + 1 = 0$, find the value of $x^4 + \\frac{1}{x^4}$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "47",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The value of $x^4 + \\frac{1}{x^4}$ is 47."
+        },
+        {
+          "letter": "B",
+          "text": "7",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the value of $x^2 + \\frac{1}{x^2}$, not $x^4 + \\frac{1}{x^4}$."
+        },
+        {
+          "letter": "C",
+          "text": "49",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the square of $x^2 + \\frac{1}{x^2}$, not the final result."
+        },
+        {
+          "letter": "D",
+          "text": "3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the value of $x + \\frac{1}{x}$, not $x^4 + \\frac{1}{x^4}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "From the given equation $x^2 - 3x + 1 = 0$, since $x \\neq 0$, we can divide by $x$: $x - 3 + \\frac{1}{x} = 0$. So, $x + \\frac{1}{x} = 3$. Let $y = x + \\frac{1}{x}$. We want to find $x^4 + \\frac{1}{x^4}$. First, square $y$: $y^2 = \\left(x + \\frac{1}{x}\\right)^2 = x^2 + 2 + \\frac{1}{x^2}$. So, $x^2 + \\frac{1}{x^2} = y^2 - 2 = 3^2 - 2 = 7$. Now, square this result: $\\left(x^2 + \\frac{1}{x^2}\\right)^2 = x^4 + 2 + \\frac{1}{x^4}$. So, $x^4 + \\frac{1}{x^4} = \\left(x^2 + \\frac{1}{x^2}\\right)^2 - 2 = 7^2 - 2 = 47$.",
+      "hint": "Start by finding $x + \\frac{1}{x}$ from the given equation.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782746075340-4160f",
+      "order": 2,
+      "question": "Given the equation $x + \\frac{1}{x} = 3$, find the value of $x^3 + \\frac{1}{x^3}$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "9",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows the result is not 9."
+        },
+        {
+          "letter": "B",
+          "text": "18",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation confirms the value is 18."
+        },
+        {
+          "letter": "C",
+          "text": "27",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows the result is not 27."
+        },
+        {
+          "letter": "D",
+          "text": "36",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows the result is not 36."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We are given $x + \\frac{1}{x} = 3$. To find $x^3 + \\frac{1}{x^3}$, we can cube the given expression: $(x + \\frac{1}{x})^3 = x^3 + \\frac{1}{x^3} + 3(x + \\frac{1}{x})$. Substituting the known value, $3^3 = x^3 + \\frac{1}{x^3} + 3(3)$, which simplifies to $27 = x^3 + \\frac{1}{x^3} + 9$. Solving for $x^3 + \\frac{1}{x^3}$ gives $18$.",
+      "hint": "Use the identity $(a + b)^3 = a^3 + b^3 + 3ab(a + b)$ where $a = x$ and $b = \\frac{1}{x}$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782746075340-101fe",
+      "order": 3,
+      "question": "If $x + \\frac{1}{x} = 3$, what is the value of $x^3 + \\frac{1}{x^3}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "9",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows the result is 18, not 9."
+        },
+        {
+          "letter": "B",
+          "text": "18",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation confirms the result is 18."
+        },
+        {
+          "letter": "C",
+          "text": "27",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The result is not 27."
+        },
+        {
+          "letter": "D",
+          "text": "36",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The result is not 36."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We are given $x + \\frac{1}{x} = 3$. To find $x^3 + \\frac{1}{x^3}$, we use the identity for the sum of cubes: $a^3 + b^3 = (a + b)^3 - 3ab(a + b)$. Here, $a = x$ and $b = \\frac{1}{x}$. First, compute $ab = x \\cdot \\frac{1}{x} = 1$. Then, substitute into the identity: $x^3 + \\frac{1}{x^3} = (x + \\frac{1}{x})^3 - 3 \\cdot 1 \\cdot (x + \\frac{1}{x}) = 3^3 - 3 \\cdot 3 = 27 - 9 = 18$.",
+      "hint": "Use the identity for the sum of cubes: $a^3 + b^3 = (a + b)^3 - 3ab(a + b)$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782746075340-58a37",
+      "order": 4,
+      "question": "Let \\( f(x) = x^2 + 2x + 3 \\). Find the value of \\( f(f(x)) \\) when \\( x = 1 \\).",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "15",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 51."
+        },
+        {
+          "letter": "B",
+          "text": "27",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 51."
+        },
+        {
+          "letter": "C",
+          "text": "51",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation matches the explanation."
+        },
+        {
+          "letter": "D",
+          "text": "102",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 51."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "\\( f(1) = 1^2 + 2(1) + 3 = 6 \\), then \\( f(f(1)) = f(6) = 6^2 + 2(6) + 3 = 36 + 12 + 3 = 51 \\).",
+      "hint": "First compute \\( f(1) \\), then substitute the result into \\( f(x) \\) again.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1782746075340-8738e",
+      "order": 5,
+      "question": "If \\( \\alpha \\) and \\( \\beta \\) are roots of \\( x^2 - 5x + 6 = 0 \\), find \\( \\alpha^4 + \\beta^4 \\).",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "121",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 97."
+        },
+        {
+          "letter": "B",
+          "text": "129",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 97."
+        },
+        {
+          "letter": "C",
+          "text": "135",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 97."
+        },
+        {
+          "letter": "D",
+          "text": "143",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 97."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Roots are 2 and 3. \\( \\alpha^4 + \\beta^4 = 2^4 + 3^4 = 16 + 81 = 97 \\). Using identities: \\( \\alpha^2 + \\beta^2 = (\\alpha + \\beta)^2 - 2\\alpha\\beta = 25 - 12 = 13 \\), so \\( \\alpha^4 + \\beta^4 = (\\alpha^2 + \\beta^2)^2 - 2(\\alpha\\beta)^2 = 13^2 - 2(6)^2 = 169 - 72 = 97 \\).",
+      "hint": "Use the sum and product of roots to simplify the calculation.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782746075340-0feda",
+      "order": 6,
+      "question": "Let \\( P(x) = x^3 - 6x^2 + 11x - 6 \\). If \\( P(a) = P(b) = P(c) = 0 \\), find \\( a^2 + b^2 + c^2 \\).",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "14",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation matches the explanation."
+        },
+        {
+          "letter": "B",
+          "text": "20",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 14."
+        },
+        {
+          "letter": "C",
+          "text": "26",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 14."
+        },
+        {
+          "letter": "D",
+          "text": "30",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 14."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Roots are 1, 2, and 3 (factorization). \\( a^2 + b^2 + c^2 = 1 + 4 + 9 = 14 \\). Using identities: \\( (a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca) \\), so \\( 6^2 = a^2 + b^2 + c^2 + 2(11) \\), thus \\( 36 = a^2 + b^2 + c^2 + 22 \\), so \\( a^2 + b^2 + c^2 = 14 \\).",
+      "hint": "Factorize the polynomial to find the roots, then compute the sum of squares.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782746075340-8cae0",
+      "order": 7,
+      "question": "Let \\( a \\) and \\( b \\) be real numbers such that \\( a + b = 4 \\) and \\( ab = 3 \\). Find \\( a^3 + b^3 \\).",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "28",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation matches the explanation."
+        },
+        {
+          "letter": "B",
+          "text": "52",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 28."
+        },
+        {
+          "letter": "C",
+          "text": "76",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 28."
+        },
+        {
+          "letter": "D",
+          "text": "100",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 28."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "\\( a^3 + b^3 = (a + b)^3 - 3ab(a + b) = 4^3 - 3(3)(4) = 64 - 36 = 28 \\).",
+      "hint": "Use the identity for the sum of cubes in terms of the sum and product of the numbers.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782746075340-78115",
+      "order": 8,
+      "question": "For the polynomial \\( P(x) = x^4 - 5x^2 + 4 \\), which of the following is a factor?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "\\( x - 1 \\)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. While \\( x - 1 \\) is a factor, the question asks for a quadratic factor."
+        },
+        {
+          "letter": "B",
+          "text": "\\( x - 2 \\)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. While \\( x - 2 \\) is a factor, the question asks for a quadratic factor."
+        },
+        {
+          "letter": "C",
+          "text": "\\( x^2 - 1 \\)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The polynomial factors into \\( (x^2 - 1)(x^2 - 4) \\)."
+        },
+        {
+          "letter": "D",
+          "text": "\\( x^2 - 4 \\)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. While \\( x^2 - 4 \\) is a factor, the question asks for a factor that is \\( x^2 - 1 \\)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "\\( P(x) = (x^2 - 1)(x^2 - 4) = (x - 1)(x + 1)(x - 2)(x + 2) \\). So \\( x^2 - 1 \\) is a factor.",
+      "hint": "Factorize the polynomial to identify its factors.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782746075340-4bf82",
+      "order": 9,
+      "question": "Let $x_1, x_2, x_3$ be the roots of the polynomial equation $x^3 - 6x^2 + 11x - 6 = 0$. What is the value of the expression $(x_1+1)(x_2+1)(x_3+1)$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the constant term of the original polynomial, not the transformed one."
+        },
+        {
+          "letter": "B",
+          "text": "12",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the sum of the roots of the original polynomial, not the desired expression."
+        },
+        {
+          "letter": "C",
+          "text": "-24",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the negative of the constant term of the transformed polynomial, but the sign is incorrect for the product of roots."
+        },
+        {
+          "letter": "D",
+          "text": "24",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The product of the roots of the transformed polynomial $y^3 - 9y^2 + 26y - 24 = 0$ is 24, which matches $(x_1+1)(x_2+1)(x_3+1)$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The expression $(x_1+1)(x_2+1)(x_3+1)$ can be evaluated by substituting $y = x + 1$ into the polynomial, transforming it into a new polynomial in $y$. The product of the roots of the new polynomial gives the desired value. Alternatively, using Vieta's formulas and the substitution method, the product is found to be 24.",
+      "hint": "Consider substituting $y = x + 1$ to transform the polynomial and find the product of the new roots.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1782746075340-8e59a",
+      "order": 10,
+      "question": "Find the sum of all real roots of the equation $x^2 + \\frac{1}{x^2} - 3\\left(x - \\frac{1}{x}\\right) - 2 = 0$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the sum of the roots $x = 1$ and $x = -1$ only, ignoring the other roots."
+        },
+        {
+          "letter": "B",
+          "text": "3",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The sum of all real roots is $1 + (-1) + \\frac{3 + \\sqrt{13}}{2} + \\frac{3 - \\sqrt{13}}{2} = 3$."
+        },
+        {
+          "letter": "C",
+          "text": "6",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the sum of any subset of the roots derived from the equation."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{3+\\sqrt{13}}{2}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is one of the roots, not the sum of all real roots."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let $y = x - \\frac{1}{x}$. Then, $x^2 + \\frac{1}{x^2} = y^2 + 2$. Substituting into the equation gives $y^2 + 2 - 3y - 2 = 0$, which simplifies to $y^2 - 3y = 0$. Solving for $y$ gives $y = 0$ or $y = 3$. For $y = 0$, $x - \\frac{1}{x} = 0$ implies $x^2 = 1$, so $x = \\pm 1$. For $y = 3$, $x - \\frac{1}{x} = 3$ implies $x^2 - 3x - 1 = 0$, giving roots $x = \\frac{3 \\pm \\sqrt{13}}{2}$. The sum of all real roots is $1 + (-1) + \\frac{3 + \\sqrt{13}}{2} + \\frac{3 - \\sqrt{13}}{2} = 3$.",
+      "hint": "Use the substitution $y = x - \\frac{1}{x}$ to simplify the equation and solve for $y$ first.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
