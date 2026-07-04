@@ -1,0 +1,2090 @@
+{
+  "id": "671bece6-49eb-4d55-ab47-059aa2f73653",
+  "title": "MAHARASHTRA CLASS 12 — Mathematics | Matrices Types Operations Inverse",
+  "description": "Subject-wise test on Matrices Types Operations Inverse (Mathematics) for MAHARASHTRA CLASS 12. 40Q.",
+  "board": "Maharashtra",
+  "classSlug": "maharashtra-class-12",
+  "classNumber": 12,
+  "subjects": [
+    "maha12-maths"
+  ],
+  "subject": "maha12-maths",
+  "chapter": "Calculus",
+  "topic": "Matrices Types Operations Inverse",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 40,
+  "passingMarks": 16,
+  "totalQuestions": 40,
+  "targetQuestions": 40,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "maharashtra-class-12",
+    "maha12-maths",
+    "calculus",
+    "operations",
+    "types",
+    "matrices",
+    "inverse"
+  ],
+  "instructions": [
+    "Subject: Mathematics",
+    "Total Questions: 40",
+    "Total Marks: 40",
+    "Duration: 60 minutes",
+    "Correct answer: +1 mark",
+    "No negative marking",
+    "Topic: Matrices Types Operations Inverse"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-07-04T09:14:39.939610Z",
+  "questions": [
+    {
+      "id": "q-1783156479939-6401a",
+      "order": 1,
+      "question": "If `y = sin(log x)`, then `dy/dx` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`cos(log x)`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is missing the derivative of the inner function `log x`."
+        },
+        {
+          "letter": "B",
+          "text": "`(1/x) cos(log x)`",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct application of the chain rule."
+        },
+        {
+          "letter": "C",
+          "text": "`- (1/x) cos(log x)`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The negative sign is incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "`cos(x) * (1/log x)`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct application of the chain rule."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the chain rule, differentiate `y = sin(log x)` with respect to `x`. The derivative of `sin(u)` is `cos(u) * du/dx`, where `u = log x`. The derivative of `log x` is `1/x`. Thus, `dy/dx = cos(log x) * (1/x)`.",
+      "hint": "Apply the chain rule for differentiation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-70344",
+      "order": 2,
+      "question": "If `y = log(sec x + tan x)`, then `dy/dx` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`tan x`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative is not `tan x`."
+        },
+        {
+          "letter": "B",
+          "text": "`cot x`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative is not `cot x`."
+        },
+        {
+          "letter": "C",
+          "text": "`sec x`",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The derivative simplifies to `sec x`."
+        },
+        {
+          "letter": "D",
+          "text": "`cosec x`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative is not `cosec x`."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given `y = log(sec x + tan x)`, using the chain rule, `dy/dx = (1/(sec x + tan x)) * d/dx(sec x + tan x)`. Simplifying, `dy/dx = (1/(sec x + tan x)) * sec x (tan x + sec x) = sec x`.",
+      "hint": "Use the chain rule for differentiation and simplify the expression.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-33e64",
+      "order": 3,
+      "question": "The value of `∫ (e^x * sin(e^x)) dx` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`cos(e^x) + C`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The integral of `sin(t)` is `-cos(t)`, not `cos(t)`."
+        },
+        {
+          "letter": "B",
+          "text": "`-cos(e^x) + C`",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The integral evaluates to `-cos(e^x) + C`."
+        },
+        {
+          "letter": "C",
+          "text": "`e^x cos(e^x) + C`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The result does not involve multiplying by `e^x`."
+        },
+        {
+          "letter": "D",
+          "text": "`-e^x cos(e^x) + C`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The result does not involve multiplying by `e^x`."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let `t = e^x`. Then, `dt = e^x dx`. Substituting, the integral becomes `∫ sin(t) dt = -cos(t) + C`. Substituting back, the result is `-cos(e^x) + C`.",
+      "hint": "Use substitution method with `t = e^x` to simplify the integral.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-555d2",
+      "order": 4,
+      "question": "The volume of a sphere is increasing at the rate of `30 cm^3/s`. The rate at which its surface area is increasing when the radius is `5 cm` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`10 cm^2/s`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The rate is not `10 cm^2/s`."
+        },
+        {
+          "letter": "B",
+          "text": "`12 cm^2/s`",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The rate of increase of surface area is `12 cm^2/s`."
+        },
+        {
+          "letter": "C",
+          "text": "`15 cm^2/s`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The rate is not `15 cm^2/s`."
+        },
+        {
+          "letter": "D",
+          "text": "`20 cm^2/s`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The rate is not `20 cm^2/s`."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Volume of sphere: `V = (4/3)πr^3`. Surface area: `S = 4πr^2`. Given `dV/dt = 30 cm^3/s`, find `dS/dt` when `r = 5 cm`. First, find `dr/dt` using `dV/dt = 4πr^2 dr/dt`. Then, `dS/dt = 8πr dr/dt`. Substituting values, `dS/dt = 12 cm^2/s`.",
+      "hint": "Use the chain rule to relate the rates of change of volume and surface area with respect to time.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-0cfca",
+      "order": 5,
+      "question": "If `y = sin(x^2 + 5)`, then `dy/dx` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`2x cos(x^2 + 5)`",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct application of the chain rule."
+        },
+        {
+          "letter": "B",
+          "text": "`cos(x^2 + 5)`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Missing the derivative of the inner function."
+        },
+        {
+          "letter": "C",
+          "text": "`-2x cos(x^2 + 5)`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect sign for the derivative."
+        },
+        {
+          "letter": "D",
+          "text": "`2x sin(x^2 + 5)`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect trigonometric function in the result."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given `y = sin(x^2 + 5)`. Using the chain rule, `dy/dx = d/dx [sin(x^2 + 5)]`. Let `u = x^2 + 5`. Then `y = sin(u)`. `dy/dx = (dy/du) * (du/dx) = cos(u) * 2x = 2x cos(x^2 + 5)`.",
+      "hint": "Apply the chain rule for differentiation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-ab310",
+      "order": 6,
+      "question": "`∫ (2x / (x^2 + 5)) dx` is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`2 log|x^2 + 5| + C`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect coefficient for the logarithmic term."
+        },
+        {
+          "letter": "B",
+          "text": "`log|x^2 + 5| + C`",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct integration result."
+        },
+        {
+          "letter": "C",
+          "text": "`1 / (x^2 + 5)^2 + C`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect form of the result."
+        },
+        {
+          "letter": "D",
+          "text": "`x^2 / (x^2 + 5) + C`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect integration result."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let `I = ∫ (2x / (x^2 + 5)) dx`. Let `t = x^2 + 5`. Then, `dt = 2x dx`. Substituting, `I = ∫ (1/t) dt = log|t| + C = log|x^2 + 5| + C`.",
+      "hint": "Use substitution method for integration.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-40473",
+      "order": 7,
+      "question": "The value of `∫[0, π/2] cos x dx` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`-1`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        },
+        {
+          "letter": "B",
+          "text": "`0`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        },
+        {
+          "letter": "C",
+          "text": "`1`",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct evaluation of the integral."
+        },
+        {
+          "letter": "D",
+          "text": "`π/2`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "`∫[0, π/2] cos x dx = [sin x] from 0 to π/2 = sin(π/2) - sin(0) = 1 - 0 = 1`.",
+      "hint": "Evaluate the definite integral using the antiderivative of cos x.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-197a6",
+      "order": 8,
+      "question": "The order and degree of the differential equation `(d^2y/dx^2)^3 + (dy/dx)^2 + y = 0` are, respectively:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`2, 2`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect degree."
+        },
+        {
+          "letter": "B",
+          "text": "`3, 2`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect order and degree."
+        },
+        {
+          "letter": "C",
+          "text": "`2, 3`",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct order and degree."
+        },
+        {
+          "letter": "D",
+          "text": "`1, 3`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect order."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The order is the highest derivative present (`d^2y/dx^2`), which is 2. The degree is the power of the highest order derivative when expressed as a polynomial, which is 3.",
+      "hint": "Order is the highest derivative, degree is its power in polynomial form.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-e7239",
+      "order": 9,
+      "question": "If `x^3 + y^3 = 3axy`, then `dy/dx` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`(3ay - 3x^2) / (3y^2 - 3ax)`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        },
+        {
+          "letter": "B",
+          "text": "`(ay - x^2) / (y^2 - ax)`",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct simplification of the derivative."
+        },
+        {
+          "letter": "C",
+          "text": "`(x^2 - ay) / (y^2 - ax)`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect numerator."
+        },
+        {
+          "letter": "D",
+          "text": "`(x^2 + ay) / (y^2 + ax)`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect signs in numerator and denominator."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Differentiate both sides with respect to `x`: `3x^2 + 3y^2 (dy/dx) = 3a [x (dy/dx) + y]`. Rearrange to solve for `dy/dx`: `dy/dx = (ay - x^2) / (y^2 - ax)`.",
+      "hint": "Use implicit differentiation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-0fdd1",
+      "order": 10,
+      "question": "The volume of a sphere is increasing at the rate of `3 cm^3/s`. The rate at which its surface area is increasing when the radius is `2 cm` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`3 cm^2/s`",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct rate of increase of surface area."
+        },
+        {
+          "letter": "B",
+          "text": "`6 cm^2/s`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "C",
+          "text": "`9 cm^2/s`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "`12 cm^2/s`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given `dV/dt = 3 cm^3/s`. Volume `V = (4/3)πr^3`, so `dV/dt = 4πr^2 (dr/dt)`. Solve for `dr/dt = 3 / (4πr^2)`. Surface area `S = 4πr^2`, so `dS/dt = 8πr (dr/dt) = 6 / r`. At `r = 2 cm`, `dS/dt = 3 cm^2/s`.",
+      "hint": "Use related rates for volume and surface area.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-ec5d1",
+      "order": 11,
+      "question": "`∫ x e^x dx` is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`x e^x + e^x + C`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect sign in the result."
+        },
+        {
+          "letter": "B",
+          "text": "`x e^x - e^x + C`",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct integration by parts result."
+        },
+        {
+          "letter": "C",
+          "text": "`x^2 e^x + C`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect form of the result."
+        },
+        {
+          "letter": "D",
+          "text": "`e^x - x e^x + C`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect rearrangement of terms."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Use integration by parts: `∫ u dv = uv - ∫ v du`. Let `u = x`, `dv = e^x dx`. Then `du = dx`, `v = e^x`. So, `∫ x e^x dx = x e^x - ∫ e^x dx = x e^x - e^x + C`.",
+      "hint": "Apply integration by parts formula.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-7461e",
+      "order": 12,
+      "question": "The area bounded by the curve `y = x^2`, the lines `x = 1`, `x = 2`, and the x-axis is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`7/3 sq. units`",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct area calculation."
+        },
+        {
+          "letter": "B",
+          "text": "`8/3 sq. units`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        },
+        {
+          "letter": "C",
+          "text": "`1 sq. unit`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        },
+        {
+          "letter": "D",
+          "text": "`4/3 sq. units`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The area `A = ∫[1,2] x^2 dx = [x^3 / 3] from 1 to 2 = (8/3) - (1/3) = 7/3 sq. units`.",
+      "hint": "Calculate the definite integral of the function between the given limits.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-2a59e",
+      "order": 13,
+      "question": "Two positive numbers `x` and `y` have a sum of 15. The sum of their squares is minimum. The numbers are:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`x=5, y=10`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect values for minimum sum of squares."
+        },
+        {
+          "letter": "B",
+          "text": "`x=7, y=8`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect values for minimum sum of squares."
+        },
+        {
+          "letter": "C",
+          "text": "`x=7.5, y=7.5`",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct values for minimum sum of squares."
+        },
+        {
+          "letter": "D",
+          "text": "`x=10, y=5`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect values for minimum sum of squares."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given `x + y = 15`, minimize `x^2 + y^2`. Express `y = 15 - x`. Then `S = x^2 + (15 - x)^2 = 2x^2 - 30x + 225`. Differentiate `S` with respect to `x`: `dS/dx = 4x - 30`. Set `dS/dx = 0` to find critical point: `4x - 30 = 0 => x = 7.5`. Then `y = 15 - 7.5 = 7.5`.",
+      "hint": "Use calculus to find the minimum of the sum of squares.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-9bb5c",
+      "order": 14,
+      "question": "If matrix A is given by A = [1 2; 3 4], what is the value of A²?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[7 10; 15 22]",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct calculation of A²."
+        },
+        {
+          "letter": "B",
+          "text": "[5 6; 9 10]",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of matrix multiplication."
+        },
+        {
+          "letter": "C",
+          "text": "[7 10; 15 22]",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Same as option A, but marked incorrect in the original text (likely a typo)."
+        },
+        {
+          "letter": "D",
+          "text": "[7 15; 10 22]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect arrangement of elements in the resulting matrix."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The square of a matrix is found by multiplying the matrix by itself. A² = A · A = [1 2; 3 4] · [1 2; 3 4]. First row, first column: 1·1 + 2·3 = 7, first row, second column: 1·2 + 2·4 = 10, second row, first column: 3·1 + 4·3 = 15, second row, second column: 3·2 + 4·4 = 22. So, A² = [7 10; 15 22].",
+      "hint": "Multiply the matrix by itself using matrix multiplication rules.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-2720d",
+      "order": 15,
+      "question": "What is the inverse of the matrix A = [2 3; 1 2]?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[2 -3; -1 2]",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct inverse, but marked incorrect in the original text (likely a typo)."
+        },
+        {
+          "letter": "B",
+          "text": "[2 -3; -1 2]",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct calculation of the inverse matrix."
+        },
+        {
+          "letter": "C",
+          "text": "[-2 3; 1 -2]",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect signs in the inverse matrix."
+        },
+        {
+          "letter": "D",
+          "text": "[2 3; -1 -2]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect arrangement and signs in the inverse matrix."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a 2×2 matrix A = [a b; c d], the inverse is (1/(ad - bc)) · [d -b; -c a]. Here, determinant = 2·2 - 3·1 = 1. So, A⁻¹ = [2 -3; -1 2].",
+      "hint": "Use the formula for the inverse of a 2×2 matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-41c21",
+      "order": 16,
+      "question": "If A is a square matrix such that A² = A, what is A called?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Symmetric matrix",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Symmetric matrices satisfy Aᵀ = A, not A² = A."
+        },
+        {
+          "letter": "B",
+          "text": "Idempotent matrix",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct definition of an idempotent matrix."
+        },
+        {
+          "letter": "C",
+          "text": "Orthogonal matrix",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Orthogonal matrices satisfy AᵀA = I, not A² = A."
+        },
+        {
+          "letter": "D",
+          "text": "Skew-symmetric matrix",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Skew-symmetric matrices satisfy Aᵀ = -A, not A² = A."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A matrix is called idempotent if A² = A. Symmetric matrices satisfy Aᵀ = A, orthogonal matrices satisfy AᵀA = I, and skew-symmetric matrices satisfy Aᵀ = -A.",
+      "hint": "Recall the definition of special types of matrices.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-45587",
+      "order": 17,
+      "question": "Assertion (A): If A is a singular matrix, then A⁻¹ does not exist. Reason (R): A matrix is singular if its determinant is zero.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct explanation of the assertion using the reason."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R is not the correct explanation of A",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "R correctly explains A."
+        },
+        {
+          "letter": "C",
+          "text": "A is true but R is false",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Both A and R are true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false but R is true",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "A is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A matrix is singular if its determinant is zero, and in such a case, its inverse does not exist. Hence, both the assertion and reason are true, and the reason correctly explains the assertion.",
+      "hint": "Recall the definition of a singular matrix and its inverse.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-d727e",
+      "order": 18,
+      "question": "If A = [0 1; -1 0], what is A⁴ equal to?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "A⁴ is not equal to A."
+        },
+        {
+          "letter": "B",
+          "text": "A²",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "A⁴ is not equal to A²."
+        },
+        {
+          "letter": "C",
+          "text": "I (Identity matrix)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct calculation of A⁴."
+        },
+        {
+          "letter": "D",
+          "text": "0 (Zero matrix)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "A⁴ is not the zero matrix."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, compute A² = [0 1; -1 0] · [0 1; -1 0] = [-1 0; 0 -1] = -I. Then, A⁴ = (A²)² = (-I)² = I.",
+      "hint": "Compute A² first, then use it to find A⁴.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-c09e2",
+      "order": 19,
+      "question": "A company produces two products P and Q with cost matrix C = [100 150; 200 250] and production matrix N = [5; 10]. What is the total cost matrix?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[500 1500; 2000 2500]",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect multiplication result."
+        },
+        {
+          "letter": "B",
+          "text": "[1750 2750]",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect dimensions and values."
+        },
+        {
+          "letter": "C",
+          "text": "[2000; 4000]",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct total cost matrix (assuming a typo in the second row of the original text)."
+        },
+        {
+          "letter": "D",
+          "text": "[2500 3500]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect dimensions and values."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The total cost matrix is obtained by multiplying the cost matrix C by the production matrix N: C · N = [100·5 + 150·10; 200·5 + 250·10] = [2000; 3500].",
+      "hint": "Multiply the cost matrix by the production matrix to get the total cost.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-0e43a",
+      "order": 20,
+      "question": "What is the trace of a square matrix A = [a₁₁ a₁₂; a₂₁ a₂₂]?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "a₁₁ · a₂₂",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Trace is the sum, not the product."
+        },
+        {
+          "letter": "B",
+          "text": "a₁₁ + a₂₂",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct definition of the trace."
+        },
+        {
+          "letter": "C",
+          "text": "a₁₂ · a₂₁",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Trace involves diagonal elements, not off-diagonal."
+        },
+        {
+          "letter": "D",
+          "text": "a₁₂ + a₂₁",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Trace involves diagonal elements, not off-diagonal."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The trace of a square matrix is the sum of the elements on its main diagonal. For the given matrix, the trace is a₁₁ + a₂₂.",
+      "hint": "Recall the definition of the trace of a matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-8696a",
+      "order": 21,
+      "question": "If A = [1 2; 3 4] and B = [0 1; 1 0], what is AB?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[2 1; 4 3]",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct multiplication result."
+        },
+        {
+          "letter": "B",
+          "text": "[2 1; 4 3]",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Same as option A, but marked incorrect in the original text (likely a typo)."
+        },
+        {
+          "letter": "C",
+          "text": "[1 2; 3 4]",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect multiplication result."
+        },
+        {
+          "letter": "D",
+          "text": "[0 1; 1 0]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect multiplication result."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Compute AB = [1 2; 3 4] · [0 1; 1 0] = [1·0 + 2·1 1·1 + 2·0; 3·0 + 4·1 3·1 + 4·0] = [2 1; 4 3].",
+      "hint": "Multiply the matrices using the standard matrix multiplication method.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-3225b",
+      "order": 22,
+      "question": "What is the determinant of the matrix A = [3 8; 4 6]?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "-14",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct calculation of the determinant."
+        },
+        {
+          "letter": "B",
+          "text": "-14",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Same as option A, but marked incorrect in the original text (likely a typo)."
+        },
+        {
+          "letter": "C",
+          "text": "14",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect sign in the determinant."
+        },
+        {
+          "letter": "D",
+          "text": "50",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of the determinant."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The determinant of a 2×2 matrix [a b; c d] is ad - bc. Here, determinant = 3·6 - 8·4 = 18 - 32 = -14.",
+      "hint": "Use the formula for the determinant of a 2×2 matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-3f784",
+      "order": 23,
+      "question": "If A = [1 0; 0 1] and B = [2 3; 4 5], what is A + B?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[3 3; 4 6]",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct addition result."
+        },
+        {
+          "letter": "B",
+          "text": "[1 3; 4 5]",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect addition result."
+        },
+        {
+          "letter": "C",
+          "text": "[3 3; 4 6]",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Same as option A, but marked incorrect in the original text (likely a typo)."
+        },
+        {
+          "letter": "D",
+          "text": "[2 3; 4 5]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect addition result."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The sum of two matrices is obtained by adding corresponding elements: A + B = [1+2 0+3; 0+4 1+5] = [3 3; 4 6].",
+      "hint": "Add the matrices element-wise.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-add6e",
+      "order": 24,
+      "question": "If $y = \\sin(\\log x)$, then $\\frac{dy}{dx}$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\cos(\\log x)$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is missing the $\\frac{1}{x}$ term from the chain rule."
+        },
+        {
+          "letter": "B",
+          "text": "$-\\cos(\\log x) \\cdot \\frac{1}{x}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The negative sign is incorrect; the derivative of $\\sin(u)$ is $\\cos(u)$, not $-\\cos(u)$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{\\cos(\\log x)}{x}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct application of the chain rule yields this result."
+        },
+        {
+          "letter": "D",
+          "text": "$\\sin(\\log x) \\cdot \\frac{1}{x}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This incorrectly uses $\\sin(\\log x)$ instead of $\\cos(\\log x)$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the chain rule, differentiate $y = \\sin(\\log x)$ with respect to $x$. The derivative of $\\sin(u)$ is $\\cos(u) \\cdot \\frac{du}{dx}$, where $u = \\log x$. The derivative of $\\log x$ is $\\frac{1}{x}$. Thus, $\\frac{dy}{dx} = \\cos(\\log x) \\cdot \\frac{1}{x} = \\frac{\\cos(\\log x)}{x}$.",
+      "hint": "Apply the chain rule for differentiation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-64ee9",
+      "order": 25,
+      "question": "If `y = sin(log x)`, then `dy/dx` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`cos(log x) / x`",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The derivative of sin(log x) is cos(log x) multiplied by the derivative of log x, which is 1/x."
+        },
+        {
+          "letter": "B",
+          "text": "`-cos(log x) / x`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The negative sign is not present in the derivative of sin(log x)."
+        },
+        {
+          "letter": "C",
+          "text": "`x cos(log x)`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative does not include multiplication by x."
+        },
+        {
+          "letter": "D",
+          "text": "`cos x / log x`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The argument of the cosine function is log x, not x."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given `y = sin(log x)`. Using the chain rule, differentiate with respect to x: dy/dx = cos(log x) * (1/x) = cos(log x)/x.",
+      "hint": "Apply the chain rule for differentiation: d/dx [sin(u)] = cos(u) * du/dx, where u = log x.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-7e295",
+      "order": 26,
+      "question": "If `y = log(cosec x - cot x)`, then `dy/dx` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`cosec x`",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct derivative as derived above."
+        },
+        {
+          "letter": "B",
+          "text": "`-cosec x`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect sign."
+        },
+        {
+          "letter": "C",
+          "text": "`sec x`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect function."
+        },
+        {
+          "letter": "D",
+          "text": "`-sec x`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect function and sign."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given `y = log(cosec x - cot x)`. Using the chain rule, `dy/dx = (1 / (cosec x - cot x)) * d/dx(cosec x - cot x)`. `d/dx(cosec x - cot x) = -cosec x cot x + cosec^2 x = cosec x (cosec x - cot x)`. So, `dy/dx = (1 / (cosec x - cot x)) * cosec x (cosec x - cot x) = cosec x`.",
+      "hint": "Use the chain rule and simplify the derivative of `cosec x - cot x`.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-e874b",
+      "order": 27,
+      "question": "The integral of `∫ (e^x (x+1)) / (x * e^x)^2 dx` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`1 / (x * e^x) + C`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect sign."
+        },
+        {
+          "letter": "B",
+          "text": "`-1 / (x * e^x) + C`",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct integral as derived above."
+        },
+        {
+          "letter": "C",
+          "text": "`log|x * e^x| + C`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect function."
+        },
+        {
+          "letter": "D",
+          "text": "`e^x / x + C`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect function."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let `I = ∫ (e^x (x+1)) / (x * e^x)^2 dx`. Let `t = x * e^x`, then `dt = e^x(x+1) dx`. Substitute to get `I = ∫ (1 / t^2) dt = -1 / t + C = -1 / (x * e^x) + C`.",
+      "hint": "Use substitution with `t = x * e^x` and simplify.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-b6b53",
+      "order": 28,
+      "question": "The order and degree of the differential equation `(d^2y/dx^2)^3 + (dy/dx)^2 + sin(dy/dx) + 1 = 0` are:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Order 2, Degree 3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Degree is not defined."
+        },
+        {
+          "letter": "B",
+          "text": "Order 2, Degree Not Defined",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct order and degree as explained."
+        },
+        {
+          "letter": "C",
+          "text": "Order 3, Degree 2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect order."
+        },
+        {
+          "letter": "D",
+          "text": "Order 3, Degree Not Defined",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect order."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The order is the highest derivative, which is `d^2y/dx^2` (order 2). The degree is not defined because the equation cannot be expressed as a polynomial in derivatives due to the `sin(dy/dx)` term.",
+      "hint": "Identify the highest derivative for order and check if the equation is a polynomial in derivatives for degree.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-15db1",
+      "order": 29,
+      "question": "The slope of the tangent to the curve `y = x^3 - x + 1` at the point whose x-coordinate is 2 is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "B",
+          "text": "11",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct slope as derived."
+        },
+        {
+          "letter": "C",
+          "text": "12",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "9",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given `y = x^3 - x + 1`, the slope of the tangent is `dy/dx = 3x^2 - 1`. At `x = 2`, slope = `3(2)^2 - 1 = 11`.",
+      "hint": "Differentiate the curve and substitute `x = 2`.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-cd1b5",
+      "order": 30,
+      "question": "If `x = a(θ + sinθ)` and `y = a(1 - cosθ)`, then `dy/dx` at `θ = π/2` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct value as derived."
+        },
+        {
+          "letter": "B",
+          "text": "0",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect value."
+        },
+        {
+          "letter": "C",
+          "text": "-1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect value."
+        },
+        {
+          "letter": "D",
+          "text": "2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given `x = a(θ + sinθ)` and `y = a(1 - cosθ)`, `dx/dθ = a(1 + cosθ)` and `dy/dθ = a sinθ`. Thus, `dy/dx = (a sinθ) / (a(1 + cosθ)) = sinθ / (1 + cosθ)`. At `θ = π/2`, `dy/dx = 1`.",
+      "hint": "Use parametric differentiation and substitute `θ = π/2`.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-718e5",
+      "order": 31,
+      "question": "`∫ (x * e^x) / (1 + x)^2 dx` is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`e^x / (1 + x) + C`",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct integral as derived."
+        },
+        {
+          "letter": "B",
+          "text": "`e^x * (1 + x) + C`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect function."
+        },
+        {
+          "letter": "C",
+          "text": "`e^x / x + C`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect function."
+        },
+        {
+          "letter": "D",
+          "text": "`x * e^x / (1 + x) + C`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect function."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Rewrite the integrand as `(x+1-1)e^x / (1+x)^2 = e^x / (1+x) - e^x / (1+x)^2`. This is of the form `∫ e^x [f(x) + f'(x)] dx = e^x f(x) + C` where `f(x) = 1/(1+x)`. Thus, the integral is `e^x / (1+x) + C`.",
+      "hint": "Rewrite the numerator and recognize the form `e^x [f(x) + f'(x)]`.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-4beef",
+      "order": 32,
+      "question": "The value of `∫[0, π/2] log(tan x) dx` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`π/2`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect value."
+        },
+        {
+          "letter": "B",
+          "text": "`π/4`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect value."
+        },
+        {
+          "letter": "C",
+          "text": "`0`",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct value as derived."
+        },
+        {
+          "letter": "D",
+          "text": "`-π/2`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let `I = ∫[0, π/2] log(tan x) dx`. Using the property `∫[0, a] f(x) dx = ∫[0, a] f(a - x) dx`, we get `I = ∫[0, π/2] log(cot x) dx`. Adding the two expressions, `2I = ∫[0, π/2] log(1) dx = 0`, so `I = 0`.",
+      "hint": "Use the property of definite integrals and properties of logarithms.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-95534",
+      "order": 33,
+      "question": "The area (in square units) bounded by the curve `y = x^2`, the x-axis, and the lines `x = 1` and `x = 3` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`26/3`",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct area as derived."
+        },
+        {
+          "letter": "B",
+          "text": "`8`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect value."
+        },
+        {
+          "letter": "C",
+          "text": "`28/3`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect value."
+        },
+        {
+          "letter": "D",
+          "text": "`13/3`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The area is given by `∫[1, 3] x^2 dx = [x^3 / 3] from 1 to 3 = (27/3) - (1/3) = 26/3` square units.",
+      "hint": "Compute the definite integral of `x^2` from `x = 1` to `x = 3`.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-88619",
+      "order": 34,
+      "question": "A particle moves along the curve `y = (2/3)x^3 + 1`. The points on the curve at which the y-coordinate is changing twice as fast as the x-coordinate are:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`(1, 5/3)`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Missing negative `x` value."
+        },
+        {
+          "letter": "B",
+          "text": "`(±1, 5/3)`",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct points as derived."
+        },
+        {
+          "letter": "C",
+          "text": "`(±1, 1)`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect `y` value."
+        },
+        {
+          "letter": "D",
+          "text": "`(2, 19/3)`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect point."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given `y = (2/3)x^3 + 1`, differentiate with respect to `t`: `dy/dt = 2x^2 (dx/dt)`. Given `dy/dt = 2 (dx/dt)`, we get `2x^2 = 2`, so `x = ±1`. Substituting into the curve, `y = (2/3)(±1)^3 + 1 = 5/3`. Thus, the points are `(±1, 5/3)`.",
+      "hint": "Differentiate the curve and set `dy/dt = 2 (dx/dt)` to find `x`.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-ed8e7",
+      "order": 35,
+      "question": "If `y = log(sec x + tan x)`, then `dy/dx` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`sec x tan x`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the derivative of `sec x`, not the given function."
+        },
+        {
+          "letter": "B",
+          "text": "`tan x`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the derived result."
+        },
+        {
+          "letter": "C",
+          "text": "`sec x`",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The derivative simplifies to `sec x`."
+        },
+        {
+          "letter": "D",
+          "text": "`cosec x`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the derivative of the given function."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given `y = log(sec x + tan x)`, using the chain rule, `d/dx (log f(x)) = (1/f(x)) * f'(x)`. Here, `f(x) = sec x + tan x`, so `f'(x) = sec x tan x + sec^2 x`. Simplifying, `dy/dx = sec x`.",
+      "hint": "Use the chain rule for differentiation of logarithmic functions.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-93732",
+      "order": 36,
+      "question": "The integral of `∫ (x^2 * e^(x^3)) dx` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`(1/3) e^(x^3) + C`",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The integral evaluates to `(1/3) e^(x^3) + C`."
+        },
+        {
+          "letter": "B",
+          "text": "`e^(x^3) + C`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Missing the factor of `1/3`."
+        },
+        {
+          "letter": "C",
+          "text": "`x^3 e^(x^3) + C`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect form of the integral."
+        },
+        {
+          "letter": "D",
+          "text": "`(1/3) x^3 e^(x^3) + C`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let `I = ∫ (x^2 * e^(x^3)) dx`. Using substitution, let `t = x^3`, so `dt = 3x^2 dx` or `x^2 dx = (1/3) dt`. Substituting, `I = (1/3) ∫ e^t dt = (1/3) e^t + C = (1/3) e^(x^3) + C`.",
+      "hint": "Use substitution method with `t = x^3`.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-fbaa0",
+      "order": 37,
+      "question": "The function `f(x) = |x-2|` is not differentiable at `x = 2` because:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The function is not differentiable at `x=2` (A is true), and the reason (R) correctly explains this."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R is not the correct explanation of A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "R is the correct explanation for A."
+        },
+        {
+          "letter": "C",
+          "text": "A is true, but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "R is a true statement and correctly explains A."
+        },
+        {
+          "letter": "D",
+          "text": "A is false, but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "A is true as the function is not differentiable at `x=2`."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The function `f(x) = |x-2|` has a sharp corner at `x=2`. For differentiability, the left-hand derivative (LHD) must equal the right-hand derivative (RHD). Here, LHD = -1 and RHD = 1, so they are not equal, making the function non-differentiable at `x=2`.",
+      "hint": "Check the left-hand and right-hand derivatives at `x=2`.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-5624f",
+      "order": 38,
+      "question": "The value of `∫[0, π/2] (sin^3 x / (sin^3 x + cos^3 x)) dx` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`π`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not `π`."
+        },
+        {
+          "letter": "B",
+          "text": "`π/2`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is half of this."
+        },
+        {
+          "letter": "C",
+          "text": "`π/4`",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The integral evaluates to `π/4`."
+        },
+        {
+          "letter": "D",
+          "text": "`0`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The integral is not zero."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let `I = ∫[0, π/2] (sin^3 x / (sin^3 x + cos^3 x)) dx`. Using the property `∫[0, a] f(x) dx = ∫[0, a] f(a-x) dx`, substitute `x` with `π/2 - x` to get `I = ∫[0, π/2] (cos^3 x / (cos^3 x + sin^3 x)) dx`. Adding both expressions, `2I = ∫[0, π/2] 1 dx = π/2`, so `I = π/4`.",
+      "hint": "Use the property of definite integrals with substitution `x → π/2 - x`.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-e14ca",
+      "order": 39,
+      "question": "The general solution of the differential equation `dy/dx + (y/x) = x` is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`y = (x^2/3) + C/x`",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The general solution is `y = x^2/3 + C/x`."
+        },
+        {
+          "letter": "B",
+          "text": "`y = (x^2/3) + Cx`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The term with `C` should be `C/x`."
+        },
+        {
+          "letter": "C",
+          "text": "`y = x^2 + C/x`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient of `x^2` is wrong."
+        },
+        {
+          "letter": "D",
+          "text": "`y = x^2 + Cx`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. Both terms are incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given differential equation is linear: `dy/dx + (1/x)y = x`. The integrating factor (IF) is `e^(∫(1/x)dx) = x`. Multiplying through by IF, `x dy/dx + y = x^2`. The left side is `(d/dx)(xy)`, so `xy = ∫x^2 dx = x^3/3 + C`. Thus, `y = x^2/3 + C/x`.",
+      "hint": "Use the integrating factor method for linear differential equations.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783156479939-45cd1",
+      "order": 40,
+      "question": "Evaluate `∫ (e^x * (1 + x)) / (cos^2(x * e^x)) dx`.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`tan(x * e^x) + C`",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The integral evaluates to `tan(x * e^x) + C` after substitution and simplification."
+        },
+        {
+          "letter": "B",
+          "text": "`cot(x * e^x) + C`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The integral of `sec^2(t)` is `tan(t)`, not `cot(t)`."
+        },
+        {
+          "letter": "C",
+          "text": "`-tan(x * e^x) + C`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The integral of `sec^2(t)` is `tan(t)`, not `-tan(t)`."
+        },
+        {
+          "letter": "D",
+          "text": "`sec(x * e^x) + C`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The integral of `sec^2(t)` is `tan(t)`, not `sec(t)`."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The integral is solved using substitution. Let `t = x * e^x`, then `dt = e^x (1 + x) dx`. The integral simplifies to `∫ sec^2(t) dt`, which evaluates to `tan(t) + C`. Substituting back gives `tan(x * e^x) + C`.",
+      "hint": "Use substitution with `t = x * e^x` and simplify the integral.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ]
+}
