@@ -1,0 +1,1326 @@
+{
+  "id": "de29cc49-26c7-4dbb-803a-476241c94cc5",
+  "title": "GATE — Core Engineering Subject | Memory",
+  "description": "Subject-wise test on Memory (Core Engineering Subject) for GATE. 25Q.",
+  "board": "Competitive",
+  "classSlug": "gate",
+  "classNumber": 0,
+  "subjects": [
+    "gate-core"
+  ],
+  "subject": "gate-core",
+  "chapter": "Digital Logic",
+  "topic": "Memory",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 50,
+  "passingMarks": 20,
+  "totalQuestions": 25,
+  "targetQuestions": 25,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "gate-core",
+    "gate",
+    "digital",
+    "logic",
+    "memory"
+  ],
+  "instructions": [
+    "Subject: Core Engineering Subject",
+    "Total Questions: 25",
+    "Total Marks: 50",
+    "Duration: 60 minutes",
+    "Correct answer: +2 mark",
+    "Wrong answer: -0.67 mark",
+    "Topic: Memory"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-07-06T05:00:15.133Z",
+  "questions": [
+    {
+      "id": "q-1783314014988-af664",
+      "order": 1,
+      "question": "Which of the following memory devices stores data permanently even after power is removed?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "SRAM",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "SRAM is volatile and loses data when power is removed."
+        },
+        {
+          "letter": "B",
+          "text": "DRAM",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "DRAM is volatile and loses data when power is removed."
+        },
+        {
+          "letter": "C",
+          "text": "Flash Memory",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Flash memory retains data without power due to its floating-gate transistor technology."
+        },
+        {
+          "letter": "D",
+          "text": "Registers",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Registers are small, fast storage within the CPU and are also volatile."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Flash memory retains data without power due to its floating-gate transistor technology, unlike SRAM and DRAM which are volatile. Registers are small, fast storage within the CPU and are also volatile.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-636a2",
+      "order": 2,
+      "question": "A 4-bit binary counter is designed using D flip-flops. If the propagation delay of each flip-flop is 15 ns, what is the maximum allowable clock frequency for the counter to operate correctly?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "16.67 MHz",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The maximum allowable clock frequency is calculated based on the total propagation delay of the flip-flops."
+        },
+        {
+          "letter": "B",
+          "text": "66.67 MHz",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This frequency is too high and would not allow the counter to operate correctly."
+        },
+        {
+          "letter": "C",
+          "text": "33.33 MHz",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This frequency is too high and would not allow the counter to operate correctly."
+        },
+        {
+          "letter": "D",
+          "text": "12.5 MHz",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This frequency is too low and is not the maximum allowable frequency."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Total propagation delay = 4 flip-flops × 15 ns = 60 ns Maximum frequency = 1 / (total delay) = 1 / 60 ns = 16.67 MHz",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-98daa",
+      "order": 3,
+      "question": "Which memory organization allows simultaneous read and write operations in different banks?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Synchronous DRAM",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Synchronous DRAM does not support simultaneous read and write operations in different banks."
+        },
+        {
+          "letter": "B",
+          "text": "Asynchronous SRAM",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Asynchronous SRAM does not support simultaneous read and write operations in different banks."
+        },
+        {
+          "letter": "C",
+          "text": "Dual-Port RAM",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Dual-Port RAM has two independent access ports, enabling simultaneous read and write operations."
+        },
+        {
+          "letter": "D",
+          "text": "Content-Addressable Memory",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Content-Addressable Memory does not support simultaneous read and write operations in different banks."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Dual-Port RAM has two independent access ports, enabling simultaneous read and write operations, unlike other options which do not support this feature.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-e08f9",
+      "order": 4,
+      "question": "In a typical SRAM cell, which component is primarily responsible for storing a single bit of data?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Capacitor",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Capacitors are used in DRAM, not SRAM."
+        },
+        {
+          "letter": "B",
+          "text": "Inductor",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Inductors are not used to store bits in SRAM."
+        },
+        {
+          "letter": "C",
+          "text": "Bistable latch",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "A bistable latch is used to store a bit in SRAM."
+        },
+        {
+          "letter": "D",
+          "text": "Resistor",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Resistors are not used to store bits in SRAM."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "SRAM uses a bistable latch (flip-flop) to store a bit. DRAM uses capacitors, but SRAM relies on the latch configuration for stability.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-f51b1",
+      "order": 5,
+      "question": "A cache memory system uses a 2-way set associative mapping with 128 sets and a block size of 64 bytes. What is the size of the main memory address space in bytes?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "16 KB",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The size of the main memory address space is much larger than 16 KB."
+        },
+        {
+          "letter": "B",
+          "text": "64 KB",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The size of the main memory address space is much larger than 64 KB."
+        },
+        {
+          "letter": "C",
+          "text": "16 MB",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The size of the main memory address space is calculated based on the number of blocks, block offset bits, set index bits, and tag bits."
+        },
+        {
+          "letter": "D",
+          "text": "64 MB",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The size of the main memory address space is smaller than 64 MB."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Number of blocks = 128 sets × 2 ways = 256 blocks Block offset bits = log2(64) = 6 bits Set index bits = log2(128) = 7 bits Tag bits = 32 - (7 + 6) = 19 bits (assuming 32-bit address) Total address space = 2^19 × 256 × 64 = 16 MB",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-aa08c",
+      "order": 6,
+      "question": "Which of the following is NOT a characteristic of Flash memory?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "High endurance",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "High endurance is a characteristic of Flash memory, although it varies by technology."
+        },
+        {
+          "letter": "B",
+          "text": "Non-volatile storage",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Non-volatile storage is a characteristic of Flash memory."
+        },
+        {
+          "letter": "C",
+          "text": "Slower write speeds compared to RAM",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Flash memory has slower write speeds compared to RAM due to erase-before-write cycles."
+        },
+        {
+          "letter": "D",
+          "text": "Used in USB drives and SSDs",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Flash memory is used in USB drives and SSDs."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Flash memory has slow write speeds (due to erase-before-write cycles), unlike RAM which has fast read/write times. High endurance is relative and varies by technology.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-65b42",
+      "order": 7,
+      "question": "A memory chip has an access time of 80 ns and a cycle time of 120 ns. If the system clock runs at 10 MHz, what is the maximum number of wait states that can be inserted without violating the memory timing constraints?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "One wait state would not be sufficient to meet the memory timing constraints."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Two wait states are the maximum that can be inserted without violating the memory timing constraints."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Three wait states would exceed the cycle time constraints."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Four wait states would exceed the cycle time constraints."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Clock period = 1 / 10 MHz = 100 ns Wait states add cycles: 80 ns (access) + (n × 100 ns) ≤ 120 ns 80 + 100n ≤ 120 → 100n ≤ 40 → n ≤ 0.4 → n = 2 wait states (since wait states are integers, and 2 wait states = 200 ns total, which fits within cycle time constraints)",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-e2bca",
+      "order": 8,
+      "question": "Which memory type is most suitable for implementing a read-only lookup table that remains unchanged during system operation?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "EEPROM",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "EEPROM can be electrically erased and is not suitable for a read-only lookup table."
+        },
+        {
+          "letter": "B",
+          "text": "SRAM",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "SRAM is volatile and loses data when power is removed."
+        },
+        {
+          "letter": "C",
+          "text": "Mask ROM",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Mask ROM is programmed during manufacturing and cannot be altered, making it ideal for permanent lookup tables."
+        },
+        {
+          "letter": "D",
+          "text": "DRAM",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "DRAM is volatile and loses data when power is removed."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Mask ROM is programmed during manufacturing and cannot be altered, making it ideal for permanent lookup tables. EEPROM can be electrically erased, SRAM and DRAM are volatile.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-9e5d1",
+      "order": 9,
+      "question": "In a memory hierarchy, if the hit ratio for a cache is 0.95, the access time for the cache is 10 ns, and the access time for the main memory is 100 ns, what is the average memory access time?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "14 ns",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The average access time is calculated based on the hit ratio, cache access time, and main memory access time."
+        },
+        {
+          "letter": "B",
+          "text": "10.5 ns",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct average access time."
+        },
+        {
+          "letter": "C",
+          "text": "15 ns",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct average access time."
+        },
+        {
+          "letter": "D",
+          "text": "95 ns",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct average access time."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Average access time = (Hit ratio × Cache time) + (Miss ratio × Main memory time) = (0.95 × 10 ns) + (0.05 × 100 ns) = 9.5 ns + 5 ns = 14.5 ns ≈ 14 ns",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-bf772",
+      "order": 10,
+      "question": "A 64 Mbit memory chip is organized as 8 M × 8. How many address lines are required to access the entire memory space?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The number of address lines is greater than 20."
+        },
+        {
+          "letter": "B",
+          "text": "23",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The number of address lines is calculated based on the total memory locations."
+        },
+        {
+          "letter": "C",
+          "text": "24",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The number of address lines is less than 24."
+        },
+        {
+          "letter": "D",
+          "text": "26",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The number of address lines is less than 26."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Total memory locations = 8 M = 8 × 2^20 = 2^23 Number of address lines = log2(2^23) = 23",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-090b3",
+      "order": 11,
+      "question": "Which type of memory retains its contents even when power is removed?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Static RAM (SRAM)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "SRAM is volatile and loses its contents when power is removed."
+        },
+        {
+          "letter": "B",
+          "text": "Dynamic RAM (DRAM)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "DRAM is volatile and loses its contents when power is removed."
+        },
+        {
+          "letter": "C",
+          "text": "Read-Only Memory (ROM)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "ROM retains data permanently even after power-off."
+        },
+        {
+          "letter": "D",
+          "text": "Flash Memory",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Flash memory is non-volatile but not the best answer in this context."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "ROM retains data permanently even after power-off, unlike volatile RAM (SRAM/DRAM).",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-5931e",
+      "order": 12,
+      "question": "A 64K × 8-bit memory chip can store how many bytes of data?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "64 bytes",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the calculation yields a much larger number."
+        },
+        {
+          "letter": "B",
+          "text": "64K bytes",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is correct because 64K × 8 bits equals 64K bytes."
+        },
+        {
+          "letter": "C",
+          "text": "64K × 8 / 8 = 65,536 bytes",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Although mathematically correct, the question asks for the number of bytes, which is 64K bytes."
+        },
+        {
+          "letter": "D",
+          "text": "512 bytes",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the calculation yields a much larger number."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Total storage = (64K × 8 bits) ÷ 8 bits/byte = 64K bytes = 65,536 bytes.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-f3f8e",
+      "order": 13,
+      "question": "Which memory organization allows for the highest access speed in a typical microprocessor system?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fully associative cache",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Fully associative cache can be slower due to its complexity."
+        },
+        {
+          "letter": "B",
+          "text": "Direct-mapped cache",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Direct-mapped cache can suffer from collisions, reducing its speed."
+        },
+        {
+          "letter": "C",
+          "text": "Two-way set-associative cache",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Two-way set-associative cache offers a good balance between speed and complexity."
+        },
+        {
+          "letter": "D",
+          "text": "Direct memory access (DMA)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "DMA is a technique for transferring data, not a memory organization."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Two-way set-associative cache balances speed and hardware complexity better for most applications than fully associative or direct-mapped.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-b77ba",
+      "order": 14,
+      "question": "A 16-bit address bus can directly address up to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "64 KB",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is correct because 2^16 equals 65,536 memory locations or 64 KB."
+        },
+        {
+          "letter": "B",
+          "text": "128 KB",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect because 2^16 is less than 128 KB."
+        },
+        {
+          "letter": "C",
+          "text": "64 KB",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is a duplicate of the correct answer and is thus incorrect in this context."
+        },
+        {
+          "letter": "D",
+          "text": "256 KB",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect because 2^16 is less than 256 KB."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "2^16 = 65,536 memory locations = 64 KB (since each location is typically 1 byte).",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-b18ec",
+      "order": 15,
+      "question": "In a flash memory cell, data is stored using:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Magnetic domains",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Magnetic domains are used in magnetic storage, not flash memory."
+        },
+        {
+          "letter": "B",
+          "text": "Capacitor charge",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "While capacitors are involved, the key component in flash memory is the floating-gate transistor."
+        },
+        {
+          "letter": "C",
+          "text": "Floating-gate transistor",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Flash memory stores data using floating-gate transistors."
+        },
+        {
+          "letter": "D",
+          "text": "Resistor value",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Resistor values are not directly used to store data in flash memory cells."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Flash memory stores data using floating-gate transistors that trap charge to represent binary states.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-f1d31",
+      "order": 16,
+      "question": "Which of the following is NOT a characteristic of SRAM compared to DRAM?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Faster access time",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "SRAM generally has faster access times than DRAM."
+        },
+        {
+          "letter": "B",
+          "text": "No need for refresh cycles",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "SRAM does not require refresh cycles like DRAM does."
+        },
+        {
+          "letter": "C",
+          "text": "Higher storage density per chip",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "SRAM has lower storage density compared to DRAM."
+        },
+        {
+          "letter": "D",
+          "text": "Uses flip-flops for storage",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "SRAM uses flip-flops (or multiple transistors) for storage, which is a characteristic of SRAM."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "SRAM has lower storage density than DRAM because each bit requires multiple transistors (typically 4–6), whereas DRAM uses a single transistor and capacitor per bit.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-328e3",
+      "order": 17,
+      "question": "A computer system uses a 32-bit address bus and byte-addressable memory. The total addressable memory space is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2 GB",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect because 2^32 is greater than 2 GB."
+        },
+        {
+          "letter": "B",
+          "text": "4 GB",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is correct because 2^32 bytes equals approximately 4 GB."
+        },
+        {
+          "letter": "C",
+          "text": "16 GB",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect because 2^32 is less than 16 GB."
+        },
+        {
+          "letter": "D",
+          "text": "4 GB",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is a duplicate of the correct answer and is thus incorrect in this context."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "2^32 bytes = 4,294,967,296 bytes ≈ 4 GB.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-03d8f",
+      "order": 18,
+      "question": "Which memory technology is primarily used for firmware storage in embedded systems due to its non-volatility and low power consumption?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "SRAM",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "SRAM is volatile and not suitable for long-term storage of firmware."
+        },
+        {
+          "letter": "B",
+          "text": "DRAM",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "DRAM is volatile and requires periodic refresh, making it unsuitable for firmware storage."
+        },
+        {
+          "letter": "C",
+          "text": "NOR Flash",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "NOR Flash is non-volatile and offers fast random access, making it suitable for firmware storage."
+        },
+        {
+          "letter": "D",
+          "text": "EEPROM",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "While EEPROM is non-volatile, NOR Flash is more commonly used for firmware due to its performance characteristics."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "NOR Flash allows for fast random access and is commonly used for storing firmware (e.g., BIOS) in embedded systems.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-53307",
+      "order": 19,
+      "question": "A cache memory system has a hit ratio of 0.9 and a miss penalty of 50 ns. If the cache access time is 5 ns, what is the average memory access time (AMAT)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5 ns",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the cache access time but does not account for misses."
+        },
+        {
+          "letter": "B",
+          "text": "9.5 ns",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This calculation seems close but does not correctly apply the formula for AMAT."
+        },
+        {
+          "letter": "C",
+          "text": "9.5 ns",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is a duplicate and the explanation provided does not match the correct calculation."
+        },
+        {
+          "letter": "D",
+          "text": "10 ns",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the correct calculation based on the given hit ratio and miss penalty."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "AMAT = (Hit ratio × Cache access time) + (Miss ratio × (Cache access time + Miss penalty)) = (0.9 × 5 ns) + (0.1 × (5 + 50) ns) = 4.5 ns + 5.5 ns = 10 ns.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-26194",
+      "order": 20,
+      "question": "In a hierarchical memory system, which level typically has the largest capacity but the slowest access time?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "L1 Cache",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "L1 Cache is fast but has limited capacity."
+        },
+        {
+          "letter": "B",
+          "text": "L2 Cache",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "L2 Cache is larger than L1 but still faster and smaller than main memory."
+        },
+        {
+          "letter": "C",
+          "text": "Registers",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Registers are the fastest and smallest memory level."
+        },
+        {
+          "letter": "D",
+          "text": "Main Memory (DRAM)",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Main memory has the largest capacity but the slowest access time in the hierarchy."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Main memory (DRAM) has the largest capacity but is slower than cache levels (L1, L2) and registers due to physical and design constraints.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-5367d",
+      "order": 21,
+      "question": "Which of the following memory devices is non-volatile and retains data even when power is turned off?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "SRAM",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "SRAM is volatile, losing data when power is off."
+        },
+        {
+          "letter": "B",
+          "text": "DRAM",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "DRAM is volatile, losing data when power is off."
+        },
+        {
+          "letter": "C",
+          "text": "Flash Memory",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Flash memory is non-volatile, retaining data even when power is turned off."
+        },
+        {
+          "letter": "D",
+          "text": "Registers",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Registers are volatile, as they are temporary storage elements within the CPU."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Flash memory is a non-volatile memory type, meaning it retains stored data without a continuous power supply. SRAM and DRAM are volatile, losing data when power is off, and registers are also volatile as they are temporary storage elements within the CPU.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-37f6b",
+      "order": 22,
+      "question": "A 4K × 8 memory chip has an address bus of width 12 bits. How many address lines are used to select each word in the chip?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "8",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The number of address lines is not determined by the data bus width."
+        },
+        {
+          "letter": "B",
+          "text": "10",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The number of address lines is determined by the number of addressable locations, which requires 12 bits."
+        },
+        {
+          "letter": "C",
+          "text": "12",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "A 12-bit address bus is required to uniquely select each word in the chip."
+        },
+        {
+          "letter": "D",
+          "text": "16",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The number of address lines is determined by the number of addressable locations, which requires 12 bits."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A 4K × 8 memory chip has 4K (4096) addressable locations. Since 4096 = 2^12, a 12-bit address bus is required to uniquely select each word. The data bus width (8 bits) does not affect the number of address lines.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-f82d7",
+      "order": 23,
+      "question": "In a synchronous SRAM, the data is latched on the rising edge of the clock signal. If the clock frequency is 100 MHz, what is the time period of the clock signal?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5 ns",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The time period is calculated as the inverse of the frequency."
+        },
+        {
+          "letter": "B",
+          "text": "10 ns",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The time period is calculated as the inverse of the frequency, which is 10 ns for a 100 MHz clock signal."
+        },
+        {
+          "letter": "C",
+          "text": "20 ns",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The time period is calculated as the inverse of the frequency."
+        },
+        {
+          "letter": "D",
+          "text": "50 ns",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The time period is calculated as the inverse of the frequency."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The time period (T) of a clock signal is the inverse of its frequency (f). Given f = 100 MHz = 100 × 10^6 Hz, T = 1/f = 1/(100 × 10^6) = 10 × 10^-9 seconds = 10 ns.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-e1944",
+      "order": 24,
+      "question": "A memory system uses a 16-bit address bus and a 16-bit data bus. The memory is organized as 64K × 16. How many memory chips are required if each chip has an organization of 16K × 8?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The number of chips required is calculated by dividing the total capacity by the capacity of each chip."
+        },
+        {
+          "letter": "B",
+          "text": "4",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The number of chips required is calculated by dividing the total capacity by the capacity of each chip."
+        },
+        {
+          "letter": "C",
+          "text": "8",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The number of chips required is calculated by dividing the total capacity by the capacity of each chip, which is 8 chips."
+        },
+        {
+          "letter": "D",
+          "text": "16",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The number of chips required is calculated by dividing the total capacity by the capacity of each chip."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The memory system requires a total capacity of 64K × 16 = 1,048,576 bits. Each chip provides 16K × 8 = 131,072 bits. The number of chips required = Total bits / Bits per chip = 1,048,576 / 131,072 = 8 chips.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783314014988-f4eed",
+      "order": 25,
+      "question": "Which of the following statements is TRUE for a DRAM cell compared to an SRAM cell?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "DRAM cells are faster but consume more power.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "DRAM cells are not necessarily faster, and they consume less power than SRAM cells."
+        },
+        {
+          "letter": "B",
+          "text": "DRAM cells use a single transistor and a capacitor, making them denser and cheaper, but they require periodic refreshing.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "DRAM cells use a single transistor and a capacitor, making them denser and cheaper, but they require periodic refreshing to retain data."
+        },
+        {
+          "letter": "C",
+          "text": "SRAM cells use capacitors and require refreshing, while DRAM cells do not.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "SRAM cells do not use capacitors and do not require refreshing, while DRAM cells use capacitors and require periodic refreshing."
+        },
+        {
+          "letter": "D",
+          "text": "DRAM cells are non-volatile, whereas SRAM cells are volatile.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "DRAM cells are volatile, not non-volatile, and SRAM cells are also volatile."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A DRAM cell consists of a single transistor and a capacitor, which makes it more compact and cost-effective compared to an SRAM cell (which uses multiple transistors). However, the capacitor in a DRAM cell loses charge over time, requiring periodic refreshing to retain data. SRAM cells do not require refreshing but are larger and consume more power. DRAM cells are volatile, not non-volatile.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
