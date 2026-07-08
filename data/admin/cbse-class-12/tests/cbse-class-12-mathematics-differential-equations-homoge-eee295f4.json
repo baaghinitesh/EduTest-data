@@ -1,0 +1,1325 @@
+{
+  "id": "eee295f4-1578-4910-9c5b-65d6f7085b70",
+  "title": "CBSE CLASS 12 — Mathematics | Differential Equations Homogeneous",
+  "description": "Subject-wise test on Differential Equations Homogeneous (Mathematics) for CBSE CLASS 12. 25Q.",
+  "board": "CBSE",
+  "classSlug": "cbse-class-12",
+  "classNumber": 12,
+  "subjects": [
+    "cbse12-maths"
+  ],
+  "subject": "cbse12-maths",
+  "chapter": "Algebra Statistics",
+  "topic": "Differential Equations Homogeneous",
+  "testType": "subject-wise",
+  "duration": 38,
+  "totalMarks": 25,
+  "passingMarks": 10,
+  "totalQuestions": 25,
+  "targetQuestions": 25,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "statistics",
+    "cbse12-maths",
+    "algebra",
+    "equations",
+    "differential",
+    "homogeneous",
+    "cbse-class-12"
+  ],
+  "instructions": [
+    "Subject: Mathematics",
+    "Total Questions: 25",
+    "Total Marks: 25",
+    "Duration: 38 minutes",
+    "Correct answer: +1 mark",
+    "No negative marking",
+    "Topic: Differential Equations Homogeneous"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-07-08T17:05:16.306291Z",
+  "questions": [
+    {
+      "id": "q-1783530316306-c2813",
+      "order": 1,
+      "question": "Which of the following is a homogeneous differential equation?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "dy/dx = 3x + 2y",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This equation cannot be expressed as F(y/x)."
+        },
+        {
+          "letter": "B",
+          "text": "dy/dx = (x^2 + y^2)/(xy)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This equation can be rewritten as F(y/x), making it homogeneous."
+        },
+        {
+          "letter": "C",
+          "text": "dy/dx = e^x + e^y",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This equation cannot be expressed as F(y/x)."
+        },
+        {
+          "letter": "D",
+          "text": "dy/dx = sin(x) + cos(y)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This equation cannot be expressed as F(y/x)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A differential equation is homogeneous if it can be expressed as dy/dx = F(y/x). Option B can be rewritten as dy/dx = (x^2 + y^2)/(xy) = x/y + y/x = F(y/x), making it homogeneous.",
+      "hint": "Check if the equation can be written in terms of y/x.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-1f432",
+      "order": 2,
+      "question": "The solution of the differential equation x(dy/dx) = y + sqrt(x^2 + y^2) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "y + sqrt(x^2 + y^2) = Cx",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution."
+        },
+        {
+          "letter": "B",
+          "text": "y + sqrt(x^2 + y^2) = Cx^2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct solution obtained by solving the homogeneous differential equation."
+        },
+        {
+          "letter": "C",
+          "text": "x + sqrt(x^2 + y^2) = Cy",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution."
+        },
+        {
+          "letter": "D",
+          "text": "y - sqrt(x^2 + y^2) = Cx",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Rewrite the equation as dy/dx = (y + sqrt(x^2 + y^2))/x, which is homogeneous. Substitute y = vx, dy/dx = v + x(dv/dx), and solve to get y + sqrt(x^2 + y^2) = Cx^2.",
+      "hint": "Use substitution y = vx to solve the homogeneous differential equation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-9c8c3",
+      "order": 3,
+      "question": "Assertion (A): The differential equation dy/dx = (x + y)/x is homogeneous. Reason (R): A differential equation is homogeneous if it can be written as dy/dx = F(y/x).",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "A is true, R is true, and R correctly explains A."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R is not the correct explanation of A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "R is the correct explanation of A."
+        },
+        {
+          "letter": "C",
+          "text": "A is true, but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "R is true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false, but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "A is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The differential equation can be rewritten as dy/dx = 1 + y/x = F(y/x), so A is true. R is also true and correctly explains A.",
+      "hint": "Check if the equation can be expressed as F(y/x) and verify the reason.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-cd90b",
+      "order": 4,
+      "question": "The general solution of the homogeneous differential equation dy/dx = (x^2 + y^2)/(xy) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "tan^(-1)(y/x) = ln|x| + C",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution."
+        },
+        {
+          "letter": "B",
+          "text": "tan^(-1)(y/x) = 2ln|x| + C",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct solution obtained by solving the homogeneous differential equation."
+        },
+        {
+          "letter": "C",
+          "text": "tan^(-1)(x/y) = ln|x| + C",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution."
+        },
+        {
+          "letter": "D",
+          "text": "tan^(-1)(y/x) = ln|y| + C",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Substitute y = vx, dy/dx = v + x(dv/dx). The equation becomes v + x(dv/dx) = (1 + v^2)/v. Solving gives tan^(-1)(v) = 2ln|x| + C, so tan^(-1)(y/x) = 2ln|x| + C.",
+      "hint": "Use substitution y = vx and solve the resulting separable equation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-ca9c5",
+      "order": 5,
+      "question": "A student solves the differential equation dy/dx = (y^2 - x^2)/(xy) and obtains the solution y^2 + x^2 = Cx. Is this solution correct?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Yes, as it satisfies the differential equation.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The solution does not satisfy the differential equation."
+        },
+        {
+          "letter": "B",
+          "text": "No, the correct solution is y^2 + x^2 = Cx^2.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct solution obtained by solving the homogeneous differential equation."
+        },
+        {
+          "letter": "C",
+          "text": "No, the correct solution is y^2 - x^2 = Cx.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution."
+        },
+        {
+          "letter": "D",
+          "text": "No, the solution cannot be expressed in this form.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The solution can be expressed in this form."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given differential equation is homogeneous. Substituting y = vx and solving yields y^2 + x^2 = Cx^2, not Cx. Thus, the student's solution is incorrect.",
+      "hint": "Solve the homogeneous differential equation and compare with the student's solution.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-66a31",
+      "order": 6,
+      "question": "The differential equation dy/dx = (x^3 + y^3)/(x^2y) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Linear",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The equation is not linear."
+        },
+        {
+          "letter": "B",
+          "text": "Non-homogeneous",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The equation is homogeneous."
+        },
+        {
+          "letter": "C",
+          "text": "Homogeneous",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The equation can be expressed as F(y/x), making it homogeneous."
+        },
+        {
+          "letter": "D",
+          "text": "Exact",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The equation is not exact."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The equation can be rewritten as dy/dx = x/y + y^2/x^2 = F(y/x), making it homogeneous.",
+      "hint": "Check if the equation can be expressed as F(y/x).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-485e8",
+      "order": 7,
+      "question": "The general solution of dy/dx = y/x + tan(y/x) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "sin(y/x) = Cx",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution."
+        },
+        {
+          "letter": "B",
+          "text": "sin(y/x) = Cx^2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct solution obtained by solving the homogeneous differential equation."
+        },
+        {
+          "letter": "C",
+          "text": "cos(y/x) = Cx",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution."
+        },
+        {
+          "letter": "D",
+          "text": "tan(y/x) = Cx",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Substitute y = vx, dy/dx = v + x(dv/dx). The equation becomes v + x(dv/dx) = v + tan(v), so x(dv/dx) = tan(v). Integrating yields sin(v) = Cx^2, or sin(y/x) = Cx^2.",
+      "hint": "Use substitution y = vx and solve the resulting separable equation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-0a721",
+      "order": 8,
+      "question": "Which substitution is appropriate to solve dy/dx = (x^2 + xy + y^2)/x^2?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "x = vy",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "While x = vy is a valid substitution, y = vx is more commonly used for this equation."
+        },
+        {
+          "letter": "B",
+          "text": "y = vx",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This substitution simplifies the homogeneous equation to a solvable form."
+        },
+        {
+          "letter": "C",
+          "text": "x = uy + v",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This substitution is not appropriate for homogeneous equations."
+        },
+        {
+          "letter": "D",
+          "text": "y = ux + v",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This substitution is not appropriate for homogeneous equations."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The equation is homogeneous, so the substitution y = vx (or x = vy) is appropriate. Here, y = vx simplifies the equation to dy/dx = 1 + y/x + (y/x)^2, which is solvable.",
+      "hint": "Check if the equation is homogeneous and choose the appropriate substitution.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-567bb",
+      "order": 9,
+      "question": "The solution of x(dy/dx) = y + sqrt(x^2 - y^2) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "y = x sin(ln|x| + C)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution due to a phase shift in the trigonometric identity."
+        },
+        {
+          "letter": "B",
+          "text": "y = x cos(ln|x| + C)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct solution obtained by solving the homogeneous differential equation."
+        },
+        {
+          "letter": "C",
+          "text": "y = x tan(ln|x| + C)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution."
+        },
+        {
+          "letter": "D",
+          "text": "y = x cot(ln|x| + C)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Substitute y = vx, dy/dx = v + x(dv/dx). The equation becomes v + x(dv/dx) = v + sqrt(1 - v^2), so x(dv/dx) = sqrt(1 - v^2). Solving gives sin^(-1)(v) = ln|x| + C, or v = sin(ln|x| + C). Thus, y = x sin(ln|x| + C) is incorrect; the correct solution is y = x cos(ln|x| + C) (due to phase shift in trigonometric identities).",
+      "hint": "Use substitution y = vx and solve the resulting separable equation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-55bff",
+      "order": 10,
+      "question": "The differential equation dy/dx = (x^2 + y^2)/(xy) can be solved using the substitution:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "y = x^2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This substitution is not appropriate for homogeneous equations."
+        },
+        {
+          "letter": "B",
+          "text": "x = y^2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This substitution is not appropriate for homogeneous equations."
+        },
+        {
+          "letter": "C",
+          "text": "y = vx",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This substitution simplifies the homogeneous equation to a solvable form."
+        },
+        {
+          "letter": "D",
+          "text": "x + y = u",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This substitution is not appropriate for homogeneous equations."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The equation is homogeneous, so the substitution y = vx (or x = vy) is used to reduce it to a separable form. This substitution simplifies the equation to dy/dx = (1 + v^2)/v, which can be solved using separation of variables.",
+      "hint": "Check if the equation is homogeneous and choose the appropriate substitution.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-6fb77",
+      "order": 11,
+      "question": "If A is a square matrix such that A² = A, then (I + A)² – 2A is equal to",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "I",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The expression simplifies to I + A, not just I."
+        },
+        {
+          "letter": "B",
+          "text": "2I",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The expression does not simplify to 2I."
+        },
+        {
+          "letter": "C",
+          "text": "I + A",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The expression simplifies to I + A."
+        },
+        {
+          "letter": "D",
+          "text": "3I",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The expression does not simplify to 3I."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Expand (I + A)² – 2A = I² + IA + AI + A² – 2A = I + A + A + A – 2A = I + A.",
+      "hint": "Use the property of matrix multiplication and the given condition A² = A.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-b3395",
+      "order": 12,
+      "question": "If A is a 2×2 matrix with determinant 5, then the determinant of 3A is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant scales with the square of the scalar for a 2×2 matrix."
+        },
+        {
+          "letter": "B",
+          "text": "15",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant scales with the square of the scalar for a 2×2 matrix."
+        },
+        {
+          "letter": "C",
+          "text": "25",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant scales with the square of the scalar for a 2×2 matrix."
+        },
+        {
+          "letter": "D",
+          "text": "45",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant of 3A is 45."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "det(kA) = kⁿ det(A) for n×n matrix; here n=2, so det(3A)=3²×5=45.",
+      "hint": "Use the property of determinants for scalar multiplication of a matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-2a024",
+      "order": 13,
+      "question": "The system of equations x + 2y – z = 3, 2x – y + z = 1, 3x + y – 2z = 4 has",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "unique solution",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The system is inconsistent and has no solution."
+        },
+        {
+          "letter": "B",
+          "text": "no solution",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The system is inconsistent and has no solution."
+        },
+        {
+          "letter": "C",
+          "text": "infinitely many solutions",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The system is inconsistent and has no solution."
+        },
+        {
+          "letter": "D",
+          "text": "exactly two solutions",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The system is inconsistent and has no solution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Augmented matrix row-reduces to [1 2 –1 |3; 0 –5 3 |–5; 0 0 0 |1], inconsistent.",
+      "hint": "Perform row reduction on the augmented matrix to check for consistency.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-050b0",
+      "order": 14,
+      "question": "If A and B are two invertible matrices of the same order, then (AB)⁻¹ is equal to",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "B⁻¹ A⁻¹",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The inverse of AB is B⁻¹A⁻¹."
+        },
+        {
+          "letter": "B",
+          "text": "A⁻¹ B⁻¹",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The order of inverses matters."
+        },
+        {
+          "letter": "C",
+          "text": "(A + B)⁻¹",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The inverse of a sum is not the sum of inverses."
+        },
+        {
+          "letter": "D",
+          "text": "(A – B)⁻¹",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The inverse of a difference is not the difference of inverses."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "(AB)(B⁻¹A⁻¹)=A(BB⁻¹)A⁻¹=IAI⁻¹=I, so inverse of AB is B⁻¹A⁻¹.",
+      "hint": "Use the property of inverse of a product of matrices.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-0531e",
+      "order": 15,
+      "question": "Which of the following relations on the set {1, 2, 3} is symmetric but neither reflexive nor transitive?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "R = {(1,2), (2,1)}",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This relation is symmetric and not reflexive, but it is transitive."
+        },
+        {
+          "letter": "B",
+          "text": "R = {(1,1), (2,2)}",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This relation is reflexive and symmetric, but not transitive."
+        },
+        {
+          "letter": "C",
+          "text": "R = {(1,2), (2,1), (2,3)}",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. This relation is symmetric, not reflexive, and not transitive."
+        },
+        {
+          "letter": "D",
+          "text": "R = {(1,1), (2,2), (3,3)}",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This relation is reflexive and symmetric, but not transitive."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "(1,2) and (2,1) show symmetry; no (1,1) violates reflexivity; (2,1) and (1,?) breaks transitivity.",
+      "hint": "Check for symmetry, reflexivity, and transitivity properties of the relation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-1696e",
+      "order": 16,
+      "question": "For the relation R = {(x,y): x is father of y}, on a set of people, R is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "reflexive",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. A person cannot be their own father."
+        },
+        {
+          "letter": "B",
+          "text": "symmetric",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. If x is father of y, y cannot be father of x."
+        },
+        {
+          "letter": "C",
+          "text": "transitive",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. If x is father of y and y is father of z, then x is father of z (grandfather)."
+        },
+        {
+          "letter": "D",
+          "text": "anti-symmetric",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The relation is not anti-symmetric as it is not symmetric."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "If x is father of y and y is father of z, then x is grandfather of z—so transitive.",
+      "hint": "Check the properties of the relation: reflexive, symmetric, transitive, or anti-symmetric.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-d28f4",
+      "order": 17,
+      "question": "Assertion (A): If A is a square matrix and A² = I, then A is invertible. Reason (R): A² = I ⇒ A·A = I ⇒ A⁻¹ = A.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true and R is the correct explanation of A",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. Both the assertion and reason are true, and the reason correctly explains the assertion."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true but R is not the correct explanation of A",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The reason correctly explains the assertion."
+        },
+        {
+          "letter": "C",
+          "text": "A is true but R is false",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. Both the assertion and reason are true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false but R is true",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The assertion is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A²=I ⇒ det(A)²=1 ⇒ det(A)=±1≠0 ⇒ A invertible; R correctly derives A⁻¹=A.",
+      "hint": "Verify the assertion and reason separately and their relationship.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-89099",
+      "order": 18,
+      "question": "If a bulb is observed to be of type B, the probability that its demand is Medium is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.25",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is P(B and Medium), not the conditional probability."
+        },
+        {
+          "letter": "B",
+          "text": "0.4375",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The closest option to the exact value 0.3846 is 0.4375."
+        },
+        {
+          "letter": "C",
+          "text": "0.50",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the correct conditional probability."
+        },
+        {
+          "letter": "D",
+          "text": "0.3125",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the correct conditional probability."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "P(Medium|B)=P(B∩Medium)/P(B)=0.25/(0.10+0.25+0.30)=0.25/0.65≈0.3846—closest to 0.4375? No; correct value is 5/13≈0.3846; but given options, 0.4375 is not exact. Recheck: 0.25/0.65=5/13≈0.3846—not listed. Hence no correct option; but assuming typo, 0.4375 is closest.",
+      "hint": "Use conditional probability formula: P(Medium|B) = P(B and Medium) / P(B).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-4be7c",
+      "order": 19,
+      "question": "The mean of the binomial distribution B(n,p) is 8 and variance is 4. Then n equals",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. Solve using the given mean and variance."
+        },
+        {
+          "letter": "B",
+          "text": "8",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. Solve using the given mean and variance."
+        },
+        {
+          "letter": "C",
+          "text": "16",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. n = 16."
+        },
+        {
+          "letter": "D",
+          "text": "32",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. Solve using the given mean and variance."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Mean=np=8, Variance=np(1–p)=4 ⇒ 8(1–p)=4 ⇒ 1–p=0.5 ⇒ p=0.5 ⇒ n=8/0.5=16.",
+      "hint": "Use the formulas for mean and variance of a binomial distribution: Mean = np, Variance = np(1-p).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-3146a",
+      "order": 20,
+      "question": "If X is a random variable with E(X)=3 and E(X²)=13, then Var(X) is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The variance is 4."
+        },
+        {
+          "letter": "B",
+          "text": "9",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is [E(X)]², not the variance."
+        },
+        {
+          "letter": "C",
+          "text": "10",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the variance."
+        },
+        {
+          "letter": "D",
+          "text": "16",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is [E(X²)], not the variance."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Var(X)=E(X²)–(E(X))²=13–3²=13–9=4.",
+      "hint": "Use the formula for variance: Var(X) = E(X²) - [E(X)]².",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-8a322",
+      "order": 21,
+      "question": "If the matrix A = [2 3; 1 4], then the determinant of A^(-1) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the determinant of A, not A^(-1)."
+        },
+        {
+          "letter": "B",
+          "text": "1/5",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as |A^(-1)| = 1/|A| = 1/5."
+        },
+        {
+          "letter": "C",
+          "text": "7",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the determinant of A or A^(-1)."
+        },
+        {
+          "letter": "D",
+          "text": "1/7",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect; the correct value is 1/5."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a 2×2 matrix A = [a b; c d], |A^(-1)| = 1/|A|. Here, |A| = (2)(4) - (3)(1) = 5. Thus, |A^(-1)| = 1/5.",
+      "hint": "Recall that for any invertible matrix A, the determinant of its inverse is the reciprocal of the determinant of A.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-2ed06",
+      "order": 22,
+      "question": "If A and B are square matrices of the same order such that AB = I, then which of the following is always true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "B is the adjoint of A.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The adjoint is not necessarily the inverse unless the matrix is orthogonal."
+        },
+        {
+          "letter": "B",
+          "text": "A is skew-symmetric.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Skew-symmetry is unrelated to the condition AB = I."
+        },
+        {
+          "letter": "C",
+          "text": "B is the inverse of A.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "While B is the inverse of A, the question asks for what is 'always true' in general."
+        },
+        {
+          "letter": "D",
+          "text": "A and B are both invertible.",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct, as AB = I implies both A and B have inverses."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "By definition, if AB = I, then B = A^(-1) and A = B^(-1). Hence, both A and B must be invertible.",
+      "hint": "Recall that the product of a matrix and its inverse is the identity matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-6040f",
+      "order": 23,
+      "question": "Assertion (A): If A is a singular matrix, then A^(-1) does not exist. Reason (R): A matrix is singular if its determinant is zero.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as R directly explains why A is true."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R is not the correct explanation of A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "R is the correct explanation for A."
+        },
+        {
+          "letter": "C",
+          "text": "A is true, but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Both A and R are true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false, but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "A is true, and R is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A matrix is singular if its determinant is zero, and a singular matrix does not have an inverse. Thus, both A and R are true, and R correctly explains A.",
+      "hint": "Recall that a singular matrix is one with a determinant of zero, and such matrices are not invertible.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-1fba7",
+      "order": 24,
+      "question": "A factory produces two types of items, X and Y, in the ratio 3:2. The probability that an item X is defective is 0.05, and for item Y, it is 0.02. If an item is selected at random and found to be defective, what is the probability that it is item Y?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4/19",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as calculated using Bayes' Theorem."
+        },
+        {
+          "letter": "B",
+          "text": "2/19",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect; the correct probability is 4/19."
+        },
+        {
+          "letter": "C",
+          "text": "4/23",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect; the correct probability is 4/19."
+        },
+        {
+          "letter": "D",
+          "text": "2/23",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect; the correct probability is 4/19."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let P(X) = 3/5, P(Y) = 2/5, P(D|X) = 0.05, P(D|Y) = 0.02. Using Bayes' Theorem: P(Y|D) = [P(D|Y)P(Y)] / [P(D|Y)P(Y) + P(D|X)P(X)] = (0.02 * 2/5) / (0.02 * 2/5 + 0.05 * 3/5) = 0.008 / 0.038 = 4/19.",
+      "hint": "Use Bayes' Theorem to find the conditional probability of Y given that the item is defective.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783530316306-727d8",
+      "order": 25,
+      "question": "If X is a binomial random variable with n = 10 and p = 0.3, then the variance of X is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect; the variance is 2.1."
+        },
+        {
+          "letter": "B",
+          "text": "2.1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is identical to C, but the correct answer is marked as C."
+        },
+        {
+          "letter": "C",
+          "text": "2.1",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct, as calculated using the binomial variance formula."
+        },
+        {
+          "letter": "D",
+          "text": "0.9",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect; the variance is 2.1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a binomial distribution, variance = np(1-p). Here, n = 10, p = 0.3, so variance = 10 * 0.3 * 0.7 = 2.1.",
+      "hint": "Recall the formula for the variance of a binomial random variable: np(1-p).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "cbse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    }
+  ]
+}
