@@ -1,0 +1,1070 @@
+{
+  "id": "945a57de-36f7-4a3e-a793-d8d38f215e84",
+  "title": "OLYMPIAD MATH — Combined: Algebra + Combinatorics",
+  "description": "Combined test: Algebra + Combinatorics for OLYMPIAD MATH. 20Q.",
+  "board": "Competitive",
+  "classSlug": "olympiad-math",
+  "classNumber": 0,
+  "subjects": [
+    "olympiad-algebra",
+    "olympiad-combinatorics"
+  ],
+  "subject": "olympiad-algebra",
+  "chapter": "Multiple Chapters",
+  "topic": "Combined",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 80,
+  "passingMarks": 32,
+  "totalQuestions": 20,
+  "targetQuestions": 20,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "algebra",
+    "olympiad-math",
+    "olympiad-algebra+olympiad-combinatorics",
+    "combinatorics"
+  ],
+  "instructions": [
+    "Subject: Algebra + Combinatorics",
+    "Total Questions: 20",
+    "Total Marks: 80",
+    "Duration: 60 minutes",
+    "Correct answer: +4 mark",
+    "Wrong answer: -1 mark"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-07-09T14:09:10.719Z",
+  "questions": [
+    {
+      "id": "q-1783606001892-b6ecc",
+      "order": 1,
+      "question": "If $x+y+z=0$, where $x,y,z$ are non-zero real numbers, then the value of $\frac{x^2}{yz} + \frac{y^2}{zx} + \frac{z^2}{xy}$ is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct value is 3, which is obtained by using the given identity and simplifying the expression."
+        },
+        {
+          "letter": "B",
+          "text": "3",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is correct because it is obtained by using the given identity and simplifying the expression."
+        },
+        {
+          "letter": "C",
+          "text": "1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct value is 3, which is obtained by using the given identity and simplifying the expression."
+        },
+        {
+          "letter": "D",
+          "text": "-1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct value is 3, which is obtained by using the given identity and simplifying the expression."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given $x+y+z=0$. We know the identity: If $x+y+z=0$, then $x^2+y^2+z^2 = 2(xy+yz+zx)$. Also, $x^3+y^3+z^3-3xyz=(x+y+z)(x^2+y^2+z^2-xy-yz-zx)$, so $x^3+y^3+z^3 = 3xyz$. Now, $\frac{x^2}{yz} + \frac{y^2}{zx} + \frac{z^2}{xy} = \frac{x^3+y^3+z^3}{xyz} = \frac{3xyz}{xyz} = 3",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783606001892-90201",
+      "order": 2,
+      "question": "If $a, b, c$ are real numbers such that $a+b+c=0$, then $a^3+b^3+c^3$ is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$0$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because $a^3+b^3+c^3$ is not necessarily $0$ when $a+b+c=0$."
+        },
+        {
+          "letter": "B",
+          "text": "$3abc$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct answer because when $a+b+c=0$, $a^3+b^3+c^3 = 3abc$."
+        },
+        {
+          "letter": "C",
+          "text": "$abc$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because $a^3+b^3+c^3$ is not equal to $abc$ when $a+b+c=0$."
+        },
+        {
+          "letter": "D",
+          "text": "$(a+b+c)^3$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because $(a+b+c)^3$ is $0$ when $a+b+c=0$, but $a^3+b^3+c^3$ is not necessarily $0$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a fundamental algebraic identity. We know that $a^3+b^3+c^3-3abc = (a+b+c)(a^2+b^2+c^2-ab-bc-ca)$",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783606001892-eda02",
+      "order": 3,
+      "question": "If real numbers $a, b, c$ satisfy $a+b+c=0$, what is the value of $\frac{a^3+b^3+c^3}{abc}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct calculation yields 3, not 1."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct calculation yields 3, not 2."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is correct because the algebraic identity and given condition yield $\frac{a^3+b^3+c^3}{abc} = 3$."
+        },
+        {
+          "letter": "D",
+          "text": "0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the correct calculation yields 3, not 0."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We know the algebraic identity: $a^3+b^3+c^3-3abc = (a+b+c)(a^2+b^2+c^2-ab-bc-ca)$. Given $a+b+c=0$, we can substitute this into the identity to get $a^3+b^3+c^3-3abc = 0$. Rearranging this equation gives $a^3+b^3+c^3 = 3abc$. Therefore, $\frac{a^3+b^3+c^3}{abc} = \frac{3abc}{abc} = 3$.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783606001892-ad881",
+      "order": 4,
+      "question": "If $ x + \\frac{1}{x} = 3 $, then the value of $ x^4 + \\frac{1}{x^4} $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "47",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the algebraic steps."
+        },
+        {
+          "letter": "B",
+          "text": "49",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, this is the intermediate step before subtracting 2."
+        },
+        {
+          "letter": "C",
+          "text": "51",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, does not match the derived value."
+        },
+        {
+          "letter": "D",
+          "text": "53",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, does not match the derived value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, square both sides of $ x + \\frac{1}{x} = 3 $: $ x^2 + 2 + \\frac{1}{x^2} = 9 $, which simplifies to $ x^2 + \\frac{1}{x^2} = 7 $. Now square this result: $ x^4 + 2 + \\frac{1}{x^4} = 49 $, leading to $ x^4 + \\frac{1}{x^4} = 47 $.",
+      "hint": "Square the given equation to find $ x^2 + \\frac{1}{x^2} $, then square again to find $ x^4 + \\frac{1}{x^4} $.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783606001892-26257",
+      "order": 5,
+      "question": "If $ a + b + c = 0 $, then the value of $ a^3 + b^3 + c^3 $ is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, this is only true if $ abc = 0 $."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, does not match the derived expression."
+        },
+        {
+          "letter": "C",
+          "text": "3abc",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the identity."
+        },
+        {
+          "letter": "D",
+          "text": "abc",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, the correct expression is $ 3abc $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the identity $ a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - bc - ca) $, and since $ a + b + c = 0 $, it simplifies to $ a^3 + b^3 + c^3 = 3abc $.",
+      "hint": "Recall the algebraic identity for the sum of cubes when the sum of variables is zero.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783606001892-8d2c5",
+      "order": 6,
+      "question": "If $ x^2 + 4x + 4 = 0 $, then the value of $ x^3 + 8 $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from substitution."
+        },
+        {
+          "letter": "B",
+          "text": "8",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, does not match the derived value."
+        },
+        {
+          "letter": "C",
+          "text": "16",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, does not match the derived value."
+        },
+        {
+          "letter": "D",
+          "text": "24",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, does not match the derived value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The equation $ x^2 + 4x + 4 = 0 $ can be written as $ (x + 2)^2 = 0 $, so $ x = -2 $. Substituting $ x = -2 $ into $ x^3 + 8 $, we get $ (-2)^3 + 8 = -8 + 8 = 0 $.",
+      "hint": "Factor the quadratic equation to find the value of $ x $, then substitute into the cubic expression.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783606001892-cd52f",
+      "order": 7,
+      "question": "If $ a + b = 1 $ and $ a^2 + b^2 = 2 $, then the value of $ a^4 + b^4 $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, does not match the derived value."
+        },
+        {
+          "letter": "B",
+          "text": "3",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, does not match the derived value."
+        },
+        {
+          "letter": "C",
+          "text": "4",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the algebraic steps."
+        },
+        {
+          "letter": "D",
+          "text": "5",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, does not match the derived value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using $ (a + b)^2 = a^2 + 2ab + b^2 $, we get $ 1 = 2 + 2ab $, so $ ab = -\\frac{1}{2} $. Then, $ a^4 + b^4 = (a^2 + b^2)^2 - 2a^2b^2 = 4 - 2 \\times \\frac{1}{4} = \\frac{7}{2} $.",
+      "hint": "Use the square of the sum to find $ ab $, then apply it to find $ a^4 + b^4 $.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783606001892-77170",
+      "order": 8,
+      "question": "If $ x + \\frac{1}{y} = y + \\frac{1}{z} = z + \\frac{1}{x} $, then the value of $ x^2y^2z^2 $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, $ x^2y^2z^2 $ cannot be zero as $ xyz = -1 $."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the algebraic steps."
+        },
+        {
+          "letter": "C",
+          "text": "-1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, $ x^2y^2z^2 $ is always non-negative."
+        },
+        {
+          "letter": "D",
+          "text": "2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, does not match the derived value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let $ x + \\frac{1}{y} = y + \\frac{1}{z} = z + \\frac{1}{x} = k $. Then, $ x = k - \\frac{1}{y} $, $ y = k - \\frac{1}{z} $, $ z = k - \\frac{1}{x} $. Multiplying these, we get $ xyz = \\left(k - \\frac{1}{y}\\right)\\left(k - \\frac{1}{z}\\right)\\left(k - \\frac{1}{x}\\right) $. Expanding and simplifying, we find $ xyz = k^3 - k^2(x + y + z) + k(xy + yz + zx) - 1 $. Substituting back, we find $ k = 0 $, leading to $ xyz = -1 $, so $ x^2y^2z^2 = 1 $.",
+      "hint": "Assume a common value $ k $ for all expressions and derive a relationship between $ x, y, z $.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783606001892-50541",
+      "order": 9,
+      "question": "If $ a^2 + b^2 + c^2 = 1 $ and $ ab + bc + ca = \\frac{1}{2} $, then the value of $ a + b + c $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\sqrt{3}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, does not match the derived value."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{\\sqrt{3}}{2}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, does not match the derived value."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{3}{2}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, does not match the derived value."
+        },
+        {
+          "letter": "D",
+          "text": "1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, does not match the derived value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using $ (a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca) $, we substitute the given values: $ (a + b + c)^2 = 1 + 2 \\times \\frac{1}{2} = 2 $. Thus, $ a + b + c = \\sqrt{2} $.",
+      "hint": "Use the square of the sum formula to relate the given expressions.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783606001892-56b08",
+      "order": 10,
+      "question": "If $ x + \\frac{1}{x} = 2 \\cos \\theta $, then the value of $ x^n + \\frac{1}{x^n} $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ 2 \\cos n\\theta $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the exponential form and De Moivre's theorem."
+        },
+        {
+          "letter": "B",
+          "text": "$ 2 \\sin n\\theta $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, the correct expression involves cosine."
+        },
+        {
+          "letter": "C",
+          "text": "$ 2 \\cos n\\theta $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the exponential form and De Moivre's theorem."
+        },
+        {
+          "letter": "D",
+          "text": "$ 2 \\sin n\\theta $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, the correct expression involves cosine."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let $ x = e^{i\\theta} $. Then $ x + \\frac{1}{x} = 2 \\cos \\theta $. Now, $ x^n + \\frac{1}{x^n} = e^{in\\theta} + e^{-in\\theta} = 2 \\cos n\\theta $.",
+      "hint": "Express $ x $ in exponential form and use De Moivre's theorem to simplify the expression.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783606146731-31407",
+      "order": 11,
+      "question": "Find the coefficient of $x^{10}$ in the expansion of $\frac{x^6}{(1-x)^3}$",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "B",
+          "text": "12",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "C",
+          "text": "15",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct option, using the generalized binomial theorem"
+        },
+        {
+          "letter": "D",
+          "text": "21",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We need to find the coefficient of $x^{10}$ in $x^6 (1-x)^{-3}$. This is equivalent to finding the coefficient of $x^{10-6} = x^4$ in $(1-x)^{-3}$.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783606146731-aff5f",
+      "order": 12,
+      "question": "What is the coefficient of $x^7$ in the expansion of $(1+x+x^2+x^3+\\dots)^3$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "28",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient is not 28."
+        },
+        {
+          "letter": "B",
+          "text": "36",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The coefficient of $x^7$ is 36."
+        },
+        {
+          "letter": "C",
+          "text": "45",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient is not 45."
+        },
+        {
+          "letter": "D",
+          "text": "56",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient is not 56."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given expression can be written as $(1-x)^{-3}$. Using the generalized binomial theorem, the coefficient of $x^n$ in $(1-x)^{-k}$ is $\\binom{n+k-1}{k-1}$. Here, $n=7$ and $k=3$, so the coefficient is $\\binom{7+3-1}{3-1} = \\binom{9}{2} = 36$.",
+      "hint": "Rewrite the series as a generating function and use the generalized binomial theorem.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783606146731-19676",
+      "order": 13,
+      "question": "Find the coefficient of $x^6$ in the ordinary generating function $(1+x+x^2+x^3)^3$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The coefficient of $x^6$ is indeed 10, as derived from the valid combinations of exponents."
+        },
+        {
+          "letter": "B",
+          "text": "12",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "12 is not the correct coefficient for $x^6$ in this generating function."
+        },
+        {
+          "letter": "C",
+          "text": "15",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "15 is not the correct coefficient for $x^6$ in this generating function."
+        },
+        {
+          "letter": "D",
+          "text": "18",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "18 is not the correct coefficient for $x^6$ in this generating function."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given generating function is $G(x) = (1+x+x^2+x^3)^3$. This can be rewritten using the sum of a geometric series: $G(x) = \\left(\\frac{1-x^4}{1-x}\\right)^3$. Expanding this using the binomial theorem and the generalized binomial theorem, we get terms involving $x^k$ where $k$ ranges from 0 to 9. The coefficient of $x^6$ can be found by considering the contributions from the terms where the exponents sum to 6. This involves solving the equation $a + b + c = 6$ where $0 \\leq a, b, c \\leq 3$. The valid combinations are (3,3,0), (3,2,1), (3,1,2), (2,3,1), (2,2,2), (2,1,3), (1,3,2), (1,2,3), and (0,3,3). Counting these, we find there are 10 such combinations.",
+      "hint": "Rewrite the generating function using the sum of a geometric series and expand it to find the coefficient of $x^6$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783606146731-72428",
+      "order": 14,
+      "question": "How many non-negative integer solutions are there to the equation $x_1 + x_2 + x_3 + x_4 = 10$ with the constraint $x_i \\leq 4$ for each $i$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "68",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The correct number of non-negative integer solutions with the given constraints is 68."
+        },
+        {
+          "letter": "B",
+          "text": "72",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "72 is not the correct number of solutions for this problem."
+        },
+        {
+          "letter": "C",
+          "text": "80",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "80 is not the correct number of solutions for this problem."
+        },
+        {
+          "letter": "D",
+          "text": "56",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "56 is the number of solutions where one variable is $\\geq 5$, not the total valid solutions."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Without constraints, the number of non-negative integer solutions to $x_1 + x_2 + x_3 + x_4 = 10$ is given by the stars and bars theorem: $\\binom{10 + 4 - 1}{4 - 1} = \\binom{13}{3} = 286$. Now, we need to subtract the cases where at least one $x_i \\geq 5$. Using the inclusion-exclusion principle, the number of solutions where $x_1 \\geq 5$ is $\\binom{10 - 5 + 4 - 1}{4 - 1} = \\binom{8}{3} = 56$. Since there are 4 variables, the total number of solutions where at least one $x_i \\geq 5$ is $4 \\times 56 = 224$. However, we have double-counted the cases where two variables are $\\geq 5$, so we add back $\\binom{4}{2} \\times \\binom{10 - 10 + 4 - 1}{4 - 1} = 6 \\times \\binom{3}{3} = 6$. Thus, the total number of valid solutions is $286 - 224 + 6 = 68$.",
+      "hint": "Use the stars and bars theorem and apply the inclusion-exclusion principle to account for the constraints.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783606146731-bb01e",
+      "order": 15,
+      "question": "Find the number of ways to distribute 12 identical candies to 5 distinct children such that each child gets at least one candy.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "330",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The correct number of ways to distribute the candies is 330."
+        },
+        {
+          "letter": "B",
+          "text": "252",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "252 is not the correct number of ways for this distribution."
+        },
+        {
+          "letter": "C",
+          "text": "462",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "462 is not the correct number of ways for this distribution."
+        },
+        {
+          "letter": "D",
+          "text": "792",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "792 is not the correct number of ways for this distribution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a classic stars and bars problem. Since each child must get at least one candy, we first give 1 candy to each of the 5 children. This leaves us with $12 - 5 = 7$ candies to distribute freely among the 5 children. The number of ways to distribute these 7 candies is given by the stars and bars theorem: $\\binom{7 + 5 - 1}{5 - 1} = \\binom{11}{4} = 330$.",
+      "hint": "Use the stars and bars theorem after ensuring each child gets at least one candy.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783606146731-3fcb0",
+      "order": 16,
+      "question": "What is the coefficient of $x^5$ in the expansion of $(1 + x + x^2 + x^3 + x^4)^4$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "56",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The coefficient of $x^5$ in the expansion is 56."
+        },
+        {
+          "letter": "B",
+          "text": "35",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "35 is not the correct coefficient for $x^5$."
+        },
+        {
+          "letter": "C",
+          "text": "70",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "70 is not the correct coefficient for $x^5$."
+        },
+        {
+          "letter": "D",
+          "text": "20",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "20 is not the correct coefficient for $x^5$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The generating function $(1 + x + x^2 + x^3 + x^4)^4$ can be expanded using the multinomial theorem. The coefficient of $x^5$ is the number of solutions to the equation $a + b + c + d = 5$ where $0 \\leq a, b, c, d \\leq 4$. This is equivalent to finding the number of non-negative integer solutions to $a + b + c + d = 5$ without the upper bound constraint, which is $\\binom{5 + 4 - 1}{4 - 1} = \\binom{8}{3} = 56$. Since none of the exponents exceed 4, all solutions are valid.",
+      "hint": "Use the multinomial theorem to find the coefficient of $x^5$ by counting the valid combinations of exponents.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783606146731-764ff",
+      "order": 17,
+      "question": "Find the number of 4-digit numbers (from 1000 to 9999) where the sum of the digits is 10.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "220",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The correct number of 4-digit numbers with a digit sum of 10 is 220."
+        },
+        {
+          "letter": "B",
+          "text": "126",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "126 is not the correct number of such 4-digit numbers."
+        },
+        {
+          "letter": "C",
+          "text": "252",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "252 is not the correct number of such 4-digit numbers."
+        },
+        {
+          "letter": "D",
+          "text": "180",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "180 is not the correct number of such 4-digit numbers."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A 4-digit number can be represented as $abcd$ where $a$ ranges from 1 to 9 and $b, c, d$ range from 0 to 9. We need to find the number of solutions to $a + b + c + d = 10$ with $a \\geq 1$ and $b, c, d \\geq 0$. Let $a' = a - 1$, so $a'$ ranges from 0 to 8. The equation becomes $a' + b + c + d = 9$ with $a' \\leq 8$ and $b, c, d \\leq 9$. Using the stars and bars theorem, the total number of non-negative solutions is $\\binom{9 + 4 - 1}{4 - 1} = \\binom{12}{3} = 220$. Now, subtract the cases where $a' \\geq 9$ (which is not possible since $a' \\leq 8$) and where any of $b, c, d \\geq 10$. The latter is not possible since $9 < 10$. Thus, the total number of valid 4-digit numbers is 220.",
+      "hint": "Transform the problem into a stars and bars problem by adjusting the range of the first digit.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783606146731-e57cc",
+      "order": 18,
+      "question": "What is the number of ways to place 8 distinct balls into 5 distinct boxes such that no box is empty?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "58800",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The correct number of ways to place the balls is 58800."
+        },
+        {
+          "letter": "B",
+          "text": "40320",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "40320 is the number of ways to distribute the balls without any constraints, not with no box empty."
+        },
+        {
+          "letter": "C",
+          "text": "6720",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "6720 is not the correct number of ways for this distribution."
+        },
+        {
+          "letter": "D",
+          "text": "1680",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "1680 is not the correct number of ways for this distribution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a problem of surjective (onto) functions. The number of ways to distribute 8 distinct balls into 5 distinct boxes with no box empty is given by the Stirling numbers of the second kind multiplied by the factorial of the number of boxes: $S(8,5) \\times 5!$. The Stirling number $S(8,5)$ is 490, and $5! = 120$. Thus, the total number of ways is $490 \\times 120 = 58800$.",
+      "hint": "Use the concept of Stirling numbers of the second kind for distributing distinct objects into distinct boxes with no box empty.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783606146732-7ccf6",
+      "order": 19,
+      "question": "Find the number of binary strings of length 10 that contain exactly 4 ones.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "210",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The correct number of such binary strings is 210."
+        },
+        {
+          "letter": "B",
+          "text": "252",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "252 is not the correct number of such binary strings."
+        },
+        {
+          "letter": "C",
+          "text": "120",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "120 is not the correct number of such binary strings."
+        },
+        {
+          "letter": "D",
+          "text": "360",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "360 is not the correct number of such binary strings."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a combination problem. The number of binary strings of length 10 with exactly 4 ones is given by the binomial coefficient $\\binom{10}{4} = 210$.",
+      "hint": "Use the combination formula to count the number of ways to choose positions for the ones.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783606146732-5d734",
+      "order": 20,
+      "question": "What is the number of ways to arrange the letters of the word 'MISSISSIPPI' such that no two 'S's are adjacent?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7350",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The correct number of valid arrangements is 7350."
+        },
+        {
+          "letter": "B",
+          "text": "34650",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "34650 is the total number of arrangements without any restrictions."
+        },
+        {
+          "letter": "C",
+          "text": "12600",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "12600 is not the correct number of valid arrangements."
+        },
+        {
+          "letter": "D",
+          "text": "5040",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "5040 is not the correct number of valid arrangements."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, count the total number of arrangements of the letters in 'MISSISSIPPI' without any restrictions. There are 11 letters with 4 'S's, 4 'I's, 2 'P's, and 1 'M'. The total number of arrangements is $\\frac{11!}{4!4!2!1!} = 34650$. Now, to ensure no two 'S's are adjacent, we first arrange the non-'S' letters: 'M', 'I', 'I', 'I', 'I', 'P', 'P'. There are $\\frac{7!}{4!2!1!} = 105$ ways to arrange these letters. This creates 8 possible slots (before, between, and after the letters) to place the 4 'S's such that no two are adjacent. The number of ways to choose 4 slots out of 8 is $\\binom{8}{4} = 70$. Thus, the total number of valid arrangements is $105 \\times 70 = 7350$.",
+      "hint": "First arrange the non-'S' letters, then place the 'S's in the gaps between them to ensure no two are adjacent.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
