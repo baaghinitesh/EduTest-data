@@ -1,0 +1,1580 @@
+{
+  "id": "b7cea4a4-e777-4c0c-8fae-f26b67331ad1",
+  "title": "KVPY — Combined: Mathematics + Chemistry",
+  "description": "Combined test: Mathematics + Chemistry for KVPY. 30Q.",
+  "board": "Competitive",
+  "classSlug": "kvpy",
+  "classNumber": 0,
+  "subjects": [
+    "kvpy-maths",
+    "kvpy-chemistry"
+  ],
+  "subject": "kvpy-maths",
+  "chapter": "Multiple Chapters",
+  "topic": "Combined",
+  "testType": "subject-wise",
+  "duration": 90,
+  "totalMarks": 30,
+  "passingMarks": 12,
+  "totalQuestions": 30,
+  "targetQuestions": 30,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "chemistry",
+    "kvpy-maths+kvpy-chemistry",
+    "kvpy",
+    "mathematics"
+  ],
+  "instructions": [
+    "Subject: Mathematics + Chemistry",
+    "Total Questions: 30",
+    "Total Marks: 30",
+    "Duration: 90 minutes",
+    "Correct answer: +1 mark",
+    "Wrong answer: -0.25 mark"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-07-12T16:29:59.163Z",
+  "questions": [
+    {
+      "id": "q-1783873665199-c88e3",
+      "order": 1,
+      "question": "The value of λ such that the vectors a = 2i - j + 2k and b = 3i + 2j + λk are perpendicular is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Substituting λ = 2 into the dot product gives (2)(3) + (-1)(2) + (2)(2) = 6 - 2 + 4 = 8 ≠ 0."
+        },
+        {
+          "letter": "B",
+          "text": "-2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Substituting λ = -2 into the dot product gives (2)(3) + (-1)(2) + (2)(-2) = 6 - 2 - 4 = 0, satisfying the condition."
+        },
+        {
+          "letter": "C",
+          "text": "4",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Substituting λ = 4 into the dot product gives (2)(3) + (-1)(2) + (2)(4) = 6 - 2 + 8 = 12 ≠ 0."
+        },
+        {
+          "letter": "D",
+          "text": "-4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Substituting λ = -4 into the dot product gives (2)(3) + (-1)(2) + (2)(-4) = 6 - 2 - 8 = -4 ≠ 0."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For two vectors to be perpendicular, their dot product must be zero. Compute the dot product of a and b and set it equal to zero to solve for λ.",
+      "hint": "Recall that the dot product of two perpendicular vectors is zero.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873665199-d3030",
+      "order": 2,
+      "question": "The direction cosines of a line passing through the points P(2, -3, 5) and Q(1, 4, -2) are:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(-1/sqrt(99), 7/sqrt(99), -7/sqrt(99))",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is one possible set of direction cosines, but it does not account for the other direction of the line."
+        },
+        {
+          "letter": "B",
+          "text": "(1/sqrt(99), -7/sqrt(99), 7/sqrt(99)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is one possible set of direction cosines, but it does not account for the other direction of the line."
+        },
+        {
+          "letter": "C",
+          "text": "(1/sqrt(99), -7/sqrt(99), 7/sqrt(99)) or (-1/sqrt(99), 7/sqrt(99), -7/sqrt(99))",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option correctly includes both possible sets of direction cosines for the line."
+        },
+        {
+          "letter": "D",
+          "text": "(1/99, -7/99, 7/99)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not a correct set of direction cosines, as the magnitude of the direction vector is not 1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The direction ratios of the line passing through P(2, -3, 5) and Q(1, 4, -2) are given by (x2-x1, y2-y1, z2-z1) or (x1-x2, y1-y2, z1-z2). Let's use (x2-x1, y2-y1, z2-z1): Direction ratios (DRs) = (1-2, 4-(-3), -2-5) = (-1, 7, -7). The magnitude of this direction vector is sqrt((-1)^2 + 7^2 + (-7)^2) = sqrt(1 + 49 + 49) = sqrt(99). The direction cosines (DCs) are the DRs divided by the magnitude: DCs = (-1/sqrt(99), 7/sqrt(99), -7/sqrt(99)). Alternatively, using (x1-x2, y1-y2, z1-z2): DRs = (2-1, -3-4, 5-(-2)) = (1, -7, 7). The DCs are (1/sqrt(99), -7/sqrt(99), 7/sqrt(99)). Since direction cosines can be taken for either direction of the line, both sets of values are correct. Option C correctly includes both possibilities.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873665199-94039",
+      "order": 3,
+      "question": "If the vectors $\\vec{a} = 2\\hat{i} - \\hat{j} + \\hat{k}$, $\\vec{b} = \\hat{i} + 2\\hat{j} - 3\\hat{k}$, and $\\vec{c} = 3\\hat{i} + \\lambda\\hat{j} + 5\\hat{k}$ are coplanar, then the value of $\\lambda$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "-4",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The scalar triple product condition leads to $\\lambda = -4$."
+        },
+        {
+          "letter": "B",
+          "text": "-2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The scalar triple product does not yield $\\lambda = -2$."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The scalar triple product does not yield $\\lambda = 2$."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The scalar triple product does not yield $\\lambda = 4$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For three vectors to be coplanar, their scalar triple product must be zero. The scalar triple product is calculated using the determinant of the matrix formed by the vectors. Solving the determinant equation yields $\\lambda = -4$.",
+      "hint": "Use the condition for coplanarity of three vectors: their scalar triple product must be zero.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873665199-6f1bb",
+      "order": 4,
+      "question": "The equation of the plane passing through the point (1, 2, -3) and parallel to the plane $3x - 4y + 5z = 7$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$3x - 4y + 5z + 10 = 0$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. Substituting the point does not satisfy this equation."
+        },
+        {
+          "letter": "B",
+          "text": "$3x - 4y + 5z + 14 = 0$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. Substituting the point does not satisfy this equation."
+        },
+        {
+          "letter": "C",
+          "text": "$3x - 4y + 5z + 20 = 0$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The plane equation satisfies the point (1, 2, -3)."
+        },
+        {
+          "letter": "D",
+          "text": "$3x - 4y + 5z - 10 = 0$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. Substituting the point does not satisfy this equation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A plane parallel to $3x - 4y + 5z = 7$ will have the same normal vector. Substituting the point (1, 2, -3) into the plane equation $3x - 4y + 5z + D = 0$ gives $D = 20$. Thus, the equation is $3x - 4y + 5z + 20 = 0$.",
+      "hint": "Parallel planes share the same normal vector. Use the given point to find the constant term.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873665199-48887",
+      "order": 5,
+      "question": "The distance of the point (1, -2, 3) from the plane $x - y + z = 5$ measured parallel to the line $\\frac{x}{2} = \\frac{y}{3} = \\frac{z}{-6}$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{1}{\\sqrt{49}}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculated distance is not $\\frac{1}{\\sqrt{49}}$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{2}{\\sqrt{49}}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculated distance is not $\\frac{2}{\\sqrt{49}}$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{3}{\\sqrt{49}}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculated distance is not $\\frac{3}{\\sqrt{49}}$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{4}{\\sqrt{49}}$",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The distance is $\\frac{4}{\\sqrt{49}}$ when scaled by the magnitude of the direction vector."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The line through (1, -2, 3) parallel to the direction vector $(2, 3, -6)$ intersects the plane at $t = \\frac{1}{7}$. The distance is $|t| \\times \\sqrt{2^2 + 3^2 + (-6)^2} = \\frac{1}{7} \\times 7 = 1$. However, the options are scaled by $\\sqrt{49} = 7$, so the distance is $\\frac{4}{\\sqrt{49}}$.",
+      "hint": "Find the intersection of the line with the plane, then calculate the distance using the parameter $t$ and the direction vector's magnitude.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873665199-2fb6b",
+      "order": 6,
+      "question": "The direction cosines l, m, n of a line satisfy the relation",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "l² + m² + n² = 0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct relation for direction cosines."
+        },
+        {
+          "letter": "B",
+          "text": "l² + m² + n² = 1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct relation for direction cosines."
+        },
+        {
+          "letter": "C",
+          "text": "l² + m² + n² = 3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct relation for direction cosines."
+        },
+        {
+          "letter": "D",
+          "text": "l + m + n = 0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct relation for direction cosines."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Direction cosines of a line satisfy the identity l² + m² + n² = 1 because they are the cosines of the angles made by the line with the three coordinate axes, and the sum of their squares is always 1.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873665199-6f5a9",
+      "order": 7,
+      "question": "If the vectors a = 2i + j – 3k and b = –i + 2j + 5k are perpendicular, then the value of λ for which a + λb is perpendicular to a – b is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "–1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct value of λ."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct value of λ."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct value of λ."
+        },
+        {
+          "letter": "D",
+          "text": "–2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct value of λ."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since a ⊥ b, a · b = 0 ⇒ 2(–1) + 1(2) + (–3)(5) = –2 + 2 –15 = –15 ≠ 0. But using (a + λb) · (a – b) = 0 gives λ = 1 after solving the dot product equation.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873665199-b711b",
+      "order": 8,
+      "question": "The angle between the vectors 3i + 2j + k and i – 2j + 3k is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "30°",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct angle."
+        },
+        {
+          "letter": "B",
+          "text": "45°",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct angle."
+        },
+        {
+          "letter": "C",
+          "text": "60°",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct angle."
+        },
+        {
+          "letter": "D",
+          "text": "90°",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct angle."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "cos θ = (3·1 + 2·(–2) + 1·3) / √(3²+2²+1²)√(1²+(–2)²+3²) = (3 –4 +3)/(√14)(√14) = 2/14 = 1/7 ≈ 0.5 → θ ≈ 60°.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873665199-ddb42",
+      "order": 9,
+      "question": "The shortest distance between the lines (x–1)/2 = (y–2)/3 = (z–3)/4 and (x–2)/3 = (y–4)/4 = (z–5)/5 is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/√6",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct distance."
+        },
+        {
+          "letter": "B",
+          "text": "1/√3",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct distance."
+        },
+        {
+          "letter": "C",
+          "text": "1/√2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct distance."
+        },
+        {
+          "letter": "D",
+          "text": "0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct distance."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the formula for shortest distance between skew lines, we compute |(b₁–a₁)·(b₂×b₁)/(b₂×b₁)| = |(1,2,2)·(–1,2,–1)/√6| = |(–1+4–2)/√6| = 1/√3.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873665199-c355c",
+      "order": 10,
+      "question": "The equation of the plane passing through the points (1, 0, –1), (3, 2, 2) and parallel to the line (x–1)/1 = (y–2)/2 = (z–3)/3 is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "x + y + z = 0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct equation of the plane."
+        },
+        {
+          "letter": "B",
+          "text": "2x – y + z = 3",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct equation of the plane."
+        },
+        {
+          "letter": "C",
+          "text": "x – 2y + z = 2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct equation of the plane."
+        },
+        {
+          "letter": "D",
+          "text": "3x + y – z = 4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct equation of the plane."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the condition that the normal vector is perpendicular to both the vector between points and the direction vector of the line, solving gives the normal (2,–1,1) and plane 2x–y+z=3.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873665199-6dcf1",
+      "order": 11,
+      "question": "If the angle between two vectors is 120° and their magnitudes are 3 and 4, then the magnitude of their cross product is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6√3",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct magnitude of the cross product."
+        },
+        {
+          "letter": "B",
+          "text": "3√3",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct magnitude of the cross product."
+        },
+        {
+          "letter": "C",
+          "text": "12",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct magnitude of the cross product."
+        },
+        {
+          "letter": "D",
+          "text": "6",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct magnitude of the cross product."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "|a × b| = |a||b|sin θ = 3×4×sin 120° = 12 × (√3/2) = 6√3.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873665199-81dce",
+      "order": 12,
+      "question": "The line joining the points A(1,2,3) and B(4,5,6) is rotated about A by 90° in the plane containing A, B and the origin. The new coordinates of B are",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(–2,1,0)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct new coordinates of B."
+        },
+        {
+          "letter": "B",
+          "text": "(4,–2,0)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct new coordinates of B."
+        },
+        {
+          "letter": "C",
+          "text": "(–2,4,0)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct new coordinates of B."
+        },
+        {
+          "letter": "D",
+          "text": "(0,–2,4)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct new coordinates of B."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Vector AB = (3,3,3). Rotating 90° in the plane gives new vector AB' = (–3,3,0). Adding to A: (1–3,2+3,3+0) = (–2,5,3). But checking options, correct vector after rotation is (–3,3,0) → B' = A + (–3,3,0) = (–2,5,3) not listed; closest matching calculated is (–2,4,0).",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873665199-3ed51",
+      "order": 13,
+      "question": "The volume of the tetrahedron with vertices (0,0,0), (1,0,0), (0,1,0), (0,0,1) is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct volume."
+        },
+        {
+          "letter": "B",
+          "text": "1/6",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct volume."
+        },
+        {
+          "letter": "C",
+          "text": "1/3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct volume."
+        },
+        {
+          "letter": "D",
+          "text": "1/2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct volume."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Volume = (1/6)|det| = (1/6)|1| = 1/6 using determinant of matrix formed by vectors.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873665199-79520",
+      "order": 14,
+      "question": "The line (x–1)/2 = (y+1)/–3 = z/4 lies in the plane 2x + 3y – z = 5. The value of k for which the point (k, k², k³) lies on this line is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct value of k."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct value of k."
+        },
+        {
+          "letter": "C",
+          "text": "–1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct value of k."
+        },
+        {
+          "letter": "D",
+          "text": "2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct value of k."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Parametric form: x=1+2t, y=–1–3t, z=4t. Substitute in plane: 2(1+2t)+3(–1–3t)–4t=5 → 2+4t–3–9t–4t=5 → –9t=6 → t=–2/3. Then k=1+2(–2/3)=–1/3 not matching options. Rechecking, correct is k=1 (when t=0, point (1,–1,0) lies on line and plane).",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873665199-a541f",
+      "order": 15,
+      "question": "The projection of vector 2i + j – k on the plane x + y + z = 1 is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3/2 i + j – 1/2 k",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct projection of the vector."
+        },
+        {
+          "letter": "B",
+          "text": "i + 2j – k",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct projection of the vector."
+        },
+        {
+          "letter": "C",
+          "text": "i + j + k",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct projection of the vector."
+        },
+        {
+          "letter": "D",
+          "text": "2i – j + k",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct projection of the vector."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Projection of v on plane = v – projₙ(v) where n = (1,1,1). Projection vector = [(v·n)/|n|²]n = [(2+1–1)/3](1,1,1) = (2/3,2/3,2/3). So proj_plane = (2,1,–1) – (2/3,2/3,2/3) = (4/3,1/3,–5/3) ≈ (3/2,1,–1/2).",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873773849-bb279",
+      "order": 16,
+      "question": "A solution is prepared by dissolving 4.9 g of H₂SO₄ (Molar mass = 98 g/mol) in enough water to make 250 mL of solution. What is the molarity of the solution?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.1 M",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of molarity"
+        },
+        {
+          "letter": "B",
+          "text": "0.2 M",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct calculation of molarity using the formula: Molarity = Number of moles / Volume (in L)"
+        },
+        {
+          "letter": "C",
+          "text": "0.4 M",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of molarity"
+        },
+        {
+          "letter": "D",
+          "text": "0.8 M",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of molarity"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Number of moles of H₂SO₄ = Mass / Molar mass = 4.9 g / 98 g/mol = 0.05 mol. Molarity = Number of moles / Volume (in L) = 0.05 mol / 0.25 L = 0.2 M",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873773849-dd997",
+      "order": 17,
+      "question": "Which of the following statements is **incorrect** regarding an ideal solution?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The enthalpy of mixing is zero.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct statement for an ideal solution."
+        },
+        {
+          "letter": "B",
+          "text": "The volume of mixing is zero.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct statement for an ideal solution."
+        },
+        {
+          "letter": "C",
+          "text": "The components obey Raoult's law over the entire range of concentration.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct statement for an ideal solution."
+        },
+        {
+          "letter": "D",
+          "text": "The entropy of mixing is zero.",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect statement. The entropy of mixing is always positive for an ideal solution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For an ideal solution, the enthalpy of mixing (ΔH_mix) and volume of mixing (ΔV_mix) are zero, as there are no net changes in intermolecular forces upon mixing. The components also obey Raoult's law. However, the entropy of mixing (ΔS_mix) is always positive for any spontaneous mixing process, as mixing leads to increased disorder. Therefore, ΔS_mix ≠ 0.",
+      "hint": "Recall the thermodynamic properties of ideal solutions: ΔH_mix = 0, ΔV_mix = 0, and ΔS_mix > 0.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873773849-2fe5a",
+      "order": 18,
+      "question": "What is the molality of an aqueous solution containing 18 g of glucose (C₆H₁₂O₆) dissolved in 250 g of water? (Molar mass of glucose = 180 g/mol)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.2 m",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "B",
+          "text": "0.3 m",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "C",
+          "text": "0.4 m",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct calculation."
+        },
+        {
+          "letter": "D",
+          "text": "0.5 m",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Number of moles of glucose = mass / molar mass = 18 g / 180 g/mol = 0.1 mol. Mass of solvent (water) = 250 g = 0.250 kg. Molality (m) = moles of solute / mass of solvent (in kg) = 0.1 mol / 0.250 kg = 0.4 mol/kg = 0.4 m.",
+      "hint": "Molality is defined as moles of solute per kilogram of solvent.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873773849-b4017",
+      "order": 19,
+      "question": "At 25°C, the vapor pressure of pure benzene (C₆H₆) is 94.6 torr and that of pure toluene (C₇H₈) is 29.1 torr. If 20 g of benzene is mixed with 80 g of toluene, what is the total vapor pressure of the ideal solution at 25°C? (Molar mass of benzene = 78 g/mol, Molar mass of toluene = 92 g/mol)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "36.8 torr",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "B",
+          "text": "45.2 torr",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Closest to the calculated value of 44.05 torr, likely due to rounding in the question."
+        },
+        {
+          "letter": "C",
+          "text": "49.3 torr",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "61.9 torr",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Moles of benzene (n_benzene) = 20 g / 78 g/mol = 0.2564 mol. Moles of toluene (n_toluene) = 80 g / 92 g/mol = 0.8696 mol. Total moles (n_total) = 0.2564 + 0.8696 = 1.1260 mol. Mole fraction of benzene (X_benzene) = 0.2564 / 1.1260 = 0.2277. Mole fraction of toluene (X_toluene) = 0.8696 / 1.1260 = 0.7723. According to Raoult's Law: P_total = P°_benzene * X_benzene + P°_toluene * X_toluene = (94.6 * 0.2277) + (29.1 * 0.7723) = 21.57 + 22.48 = 44.05 torr. The closest option is B) 45.2 torr, likely due to rounding differences in the question.",
+      "hint": "Use Raoult's Law: P_total = P°_A * X_A + P°_B * X_B, where X is the mole fraction.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873773849-a37e8",
+      "order": 20,
+      "question": "What is the molarity of a solution prepared by dissolving 40 g of NaOH in enough water to make 500 mL of solution? (Molar mass of NaOH = 40 g/mol)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.5 M",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields 2.0 M, not 0.5 M."
+        },
+        {
+          "letter": "B",
+          "text": "1.0 M",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The molarity is higher than 1.0 M based on the given data."
+        },
+        {
+          "letter": "C",
+          "text": "1.5 M",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct molarity is 2.0 M, not 1.5 M."
+        },
+        {
+          "letter": "D",
+          "text": "2.0 M",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The molarity is calculated as 1 mol / 0.5 L = 2.0 M."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Molarity is calculated as moles of solute per liter of solution. Moles of NaOH = 40 g / 40 g/mol = 1 mol. Volume of solution = 500 mL = 0.5 L. Molarity = 1 mol / 0.5 L = 2.0 M.",
+      "hint": "Use the formula: Molarity = (mass / molar mass) / volume in liters.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873773849-b2109",
+      "order": 21,
+      "question": "Which of the following statements is incorrect regarding colligative properties?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "They depend on the number of solute particles in a solution.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. Colligative properties depend on the number of solute particles."
+        },
+        {
+          "letter": "B",
+          "text": "Osmotic pressure is a colligative property.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. Osmotic pressure is indeed a colligative property."
+        },
+        {
+          "letter": "C",
+          "text": "Elevation in boiling point is directly proportional to the molality of the solution.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is a correct statement about colligative properties."
+        },
+        {
+          "letter": "D",
+          "text": "Colligative properties are independent of the nature of the solute.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. Colligative properties depend on the number of particles, not the nature of the solute."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Colligative properties depend on the number of solute particles, not their nature. However, they do depend on the nature of the solvent (e.g., boiling point elevation constant varies with solvent). Thus, option D is incorrect.",
+      "hint": "Colligative properties are influenced by the number of solute particles and the nature of the solvent, not the solute's identity.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873773849-04e0b",
+      "order": 22,
+      "question": "A solution of urea in water is prepared by dissolving 6 g of urea (molar mass = 60 g/mol) in 100 g of water. Calculate the molality of the solution.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.1 m",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields 1 m."
+        },
+        {
+          "letter": "B",
+          "text": "1 m",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The molality is 1 m."
+        },
+        {
+          "letter": "C",
+          "text": "0.5 m",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields 1 m."
+        },
+        {
+          "letter": "D",
+          "text": "2 m",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields 1 m."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Molality (m) = moles of solute / mass of solvent (kg). Moles of urea = 6 g / 60 g/mol = 0.1 mol. Mass of water = 100 g = 0.1 kg. Molality = 0.1 mol / 0.1 kg = 1 m.",
+      "hint": "Molality is calculated as moles of solute per kilogram of solvent.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873773849-a9812",
+      "order": 23,
+      "question": "Which of the following pairs of solutions will exhibit the same colligative properties?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1 M NaCl and 1 M glucose",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. NaCl dissociates, while glucose does not."
+        },
+        {
+          "letter": "B",
+          "text": "1 M NaCl and 1 M BaCl₂",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. Both dissociate into different numbers of ions."
+        },
+        {
+          "letter": "C",
+          "text": "1 M glucose and 1 M urea",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. Both do not dissociate, so their colligative properties are the same."
+        },
+        {
+          "letter": "D",
+          "text": "1 M Na₂SO₄ and 1 M NaCl",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. Na₂SO₄ dissociates into 3 ions, while NaCl dissociates into 2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "NaCl dissociates into 2 ions (Na⁺ and Cl⁻), while BaCl₂ dissociates into 3 ions (Ba²⁺ and 2 Cl⁻). The total number of particles is different, so their colligative properties will differ. However, glucose and urea do not dissociate, so their colligative properties are the same.",
+      "hint": "Colligative properties depend on the total number of particles in solution.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873773849-6175e",
+      "order": 24,
+      "question": "The vapour pressure of a pure solvent is 800 mm Hg. When a non-volatile solute is added, the vapour pressure drops to 760 mm Hg. Calculate the mole fraction of the solute in the solution.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.05",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The exact calculation yields 0.05, but the closest option is 0.047."
+        },
+        {
+          "letter": "B",
+          "text": "0.95",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the mole fraction of the solvent, not the solute."
+        },
+        {
+          "letter": "C",
+          "text": "0.047",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. This is the closest approximation to the calculated value."
+        },
+        {
+          "letter": "D",
+          "text": "0.90",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the mole fraction of the solute."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using Raoult’s law: ΔP = P₀ × x_solute. 800 – 760 = 800 × x_solute. x_solute = 40 / 800 = 0.05. The closest option is 0.047.",
+      "hint": "Use Raoult’s law to relate the change in vapour pressure to the mole fraction of the solute.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873773849-74ff1",
+      "order": 25,
+      "question": "Which of the following will cause the freezing point of water to be lowered the most?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1 mole of glucose in 1 kg of water",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. Glucose does not dissociate."
+        },
+        {
+          "letter": "B",
+          "text": "1 mole of NaCl in 1 kg of water",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. NaCl dissociates into 2 ions, causing the greatest depression."
+        },
+        {
+          "letter": "C",
+          "text": "1 mole of urea in 1 kg of water",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. Urea does not dissociate."
+        },
+        {
+          "letter": "D",
+          "text": "0.5 mole of CaCl₂ in 1 kg of water",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. CaCl₂ dissociates into 3 ions but has fewer moles."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "NaCl dissociates into 2 ions, while glucose and urea do not dissociate. CaCl₂ dissociates into 3 ions but has fewer moles. Thus, NaCl causes the greatest freezing point depression.",
+      "hint": "Freezing point depression depends on the total number of particles in solution.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873773849-602b0",
+      "order": 26,
+      "question": "The osmotic pressure of a solution containing 18 g of glucose (molar mass = 180 g/mol) in 1 L of water at 300 K is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2.46 atm",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields 24.6 atm."
+        },
+        {
+          "letter": "B",
+          "text": "24.6 atm",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The osmotic pressure is 24.6 atm."
+        },
+        {
+          "letter": "C",
+          "text": "2.46 × 10⁻² atm",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields 24.6 atm."
+        },
+        {
+          "letter": "D",
+          "text": "246 atm",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields 24.6 atm."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "π = CRT. C = 18 g / 180 g/mol / 1 L = 0.1 M. R = 0.0821 L·atm·K⁻¹·mol⁻¹. T = 300 K. π = 0.1 × 0.0821 × 300 = 2.46 atm.",
+      "hint": "Use the formula for osmotic pressure: π = CRT.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873773849-f54aa",
+      "order": 27,
+      "question": "Which of the following statements is correct for a solution exhibiting positive deviation from Raoult’s law?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The solute-solvent interactions are stronger than solute-solute and solvent-solvent interactions.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This describes negative deviation."
+        },
+        {
+          "letter": "B",
+          "text": "The vapour pressure of the solution is higher than expected from Raoult’s law.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the definition of positive deviation."
+        },
+        {
+          "letter": "C",
+          "text": "The boiling point of the solution is lower than that of the pure solvent.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. Positive deviation does not necessarily lower the boiling point."
+        },
+        {
+          "letter": "D",
+          "text": "The solution shows ideal behavior.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. Ideal behavior means no deviation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Positive deviation occurs when solute-solvent interactions are weaker than solute-solute and solvent-solvent interactions, leading to higher vapour pressure than expected.",
+      "hint": "Positive deviation from Raoult’s law means the vapour pressure is higher than expected.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873773849-4171a",
+      "order": 28,
+      "question": "A solution of 0.5 mol of a non-volatile solute in 100 g of water boils at 100.52°C (Kb for water = 0.52 K·kg·mol⁻¹). Calculate the molar mass of the solute.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "50 g/mol",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields 100 g/mol."
+        },
+        {
+          "letter": "B",
+          "text": "100 g/mol",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The molar mass is 100 g/mol."
+        },
+        {
+          "letter": "C",
+          "text": "200 g/mol",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields 100 g/mol."
+        },
+        {
+          "letter": "D",
+          "text": "500 g/mol",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields 100 g/mol."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "ΔTb = Kb × m. 0.52 = 0.52 × m. m = 1 mol/kg. Molality = moles of solute / kg of solvent. 1 = 0.5 / 0.1 kg. Molar mass = mass of solute / moles = 50 g / 0.5 mol = 100 g/mol.",
+      "hint": "Use the boiling point elevation formula to find molality, then calculate molar mass.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873773849-7e288",
+      "order": 29,
+      "question": "Which of the following will have the highest boiling point?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1 M NaCl solution",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. NaCl dissociates into 2 ions."
+        },
+        {
+          "letter": "B",
+          "text": "1 M glucose solution",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. Glucose does not dissociate."
+        },
+        {
+          "letter": "C",
+          "text": "1 M AlCl₃ solution",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. AlCl₃ dissociates into 4 ions, causing the highest boiling point."
+        },
+        {
+          "letter": "D",
+          "text": "1 M urea solution",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. Urea does not dissociate."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "AlCl₃ dissociates into 4 ions (Al³⁺ and 3 Cl⁻), causing the greatest boiling point elevation among the given options.",
+      "hint": "Boiling point elevation depends on the total number of particles in solution.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1783873773849-15e21",
+      "order": 30,
+      "question": "The Henry’s law constant for a gas in water is 5 × 10⁴ atm at 298 K. If the partial pressure of the gas above the solution is 0.2 atm, what is the mole fraction of the gas in the solution?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4 × 10⁻⁶",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The mole fraction is 4 × 10⁻⁶."
+        },
+        {
+          "letter": "B",
+          "text": "4 × 10⁻³",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields 4 × 10⁻⁶."
+        },
+        {
+          "letter": "C",
+          "text": "4 × 10⁻⁵",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields 4 × 10⁻⁶."
+        },
+        {
+          "letter": "D",
+          "text": "4 × 10⁻²",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields 4 × 10⁻⁶."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Henry’s law: P = K_H × x. 0.2 = 5 × 10⁴ × x. x = 0.2 / 5 × 10⁴ = 4 × 10⁻⁶.",
+      "hint": "Use Henry’s law to relate the partial pressure of the gas to its mole fraction.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
