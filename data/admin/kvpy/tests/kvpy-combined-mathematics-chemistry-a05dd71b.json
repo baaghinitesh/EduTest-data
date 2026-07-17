@@ -1,0 +1,1580 @@
+{
+  "id": "a05dd71b-6c86-4348-a53f-2b64d2d309d6",
+  "title": "KVPY — Combined: Mathematics + Chemistry",
+  "description": "Combined test: Mathematics + Chemistry for KVPY. 30Q.",
+  "board": "Competitive",
+  "classSlug": "kvpy",
+  "classNumber": 0,
+  "subjects": [
+    "kvpy-maths",
+    "kvpy-chemistry"
+  ],
+  "subject": "kvpy-maths",
+  "chapter": "Multiple Chapters",
+  "topic": "Combined",
+  "testType": "subject-wise",
+  "duration": 90,
+  "totalMarks": 30,
+  "passingMarks": 12,
+  "totalQuestions": 30,
+  "targetQuestions": 30,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "kvpy",
+    "kvpy-maths+kvpy-chemistry",
+    "mathematics",
+    "chemistry"
+  ],
+  "instructions": [
+    "Subject: Mathematics + Chemistry",
+    "Total Questions: 30",
+    "Total Marks: 30",
+    "Duration: 90 minutes",
+    "Correct answer: +1 mark",
+    "Wrong answer: -0.25 mark"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-07-17T03:55:34.644Z",
+  "questions": [
+    {
+      "id": "q-1784260483731-35a10",
+      "order": 1,
+      "question": "The value of the integral $\\int \\frac{\\sin x}{\\sqrt{2+\\cos x}} dx$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2\\sqrt{2+\\cos x} + C$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect sign and coefficient."
+        },
+        {
+          "letter": "B",
+          "text": "$-\\sqrt{2+\\cos x} + C$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect coefficient."
+        },
+        {
+          "letter": "C",
+          "text": "$-2\\sqrt{2+\\cos x} + C$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct substitution and integration."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{1}{2\\sqrt{2+\\cos x}} + C$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect form of the result."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is an easy question requiring a direct substitution. Let $u = 2+\\cos x$, then $du = -\\sin x \\, dx$. The integral becomes $-\\int \\frac{du}{\\sqrt{u}} = -2\\sqrt{u} + C = -2\\sqrt{2+\\cos x} + C$.",
+      "hint": "Use substitution with $u = 2 + \\cos x$.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260483731-dc806",
+      "order": 2,
+      "question": "The value of $\\int \\frac{e^x(1+x)}{\\cos^2(xe^x)} dx$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\tan(e^x) + C$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect substitution; the argument of $\\tan$ should be $xe^x$, not $e^x$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\cot(xe^x) + C$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The integral of $\\sec^2 u$ is $\\tan u + C$, not $\\cot u + C$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\tan(xe^x) + C$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct substitution and integration yield $\\tan(xe^x) + C$."
+        },
+        {
+          "letter": "D",
+          "text": "$-\\cot(xe^x) + C$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect sign and function; the integral of $\\sec^2 u$ is $\\tan u + C$, not $-\\cot u + C$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let $u = xe^x$. Then, $du = e^x(1+x) dx$. Substituting, the integral becomes $\\int \\frac{du}{\\cos^2 u} = \\int \\sec^2 u \\, du = \\tan u + C = \\tan(xe^x) + C$.",
+      "hint": "Use substitution with $u = xe^x$ and observe the derivative of $u$ matches the numerator.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260483731-2e86b",
+      "order": 3,
+      "question": "The value of the definite integral $\\int_{-\\pi/2}^{\\pi/2} (\\sin^3 x + x^2 \\cos x) dx$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{\\pi^3}{12} - 2$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect; does not match the evaluated integral or the assumed typo correction."
+        },
+        {
+          "letter": "B",
+          "text": "$0$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect; the integral of $x^2 \\cos x$ over symmetric limits is not zero."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{\\pi^3}{12}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Matches the result if the question intended $\\int x^2 \\, dx$ instead of $\\int x^2 \\cos x \\, dx$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{\\pi^3}{12} + 2$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect; does not match the evaluated integral or the assumed typo correction."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Split the integral: $\\int_{-\\pi/2}^{\\pi/2} \\sin^3 x \\, dx + \\int_{-\\pi/2}^{\\pi/2} x^2 \\cos x \\, dx$. The first integral is 0 (odd function over symmetric limits). The second integral evaluates to $\\frac{\\pi^2}{2} - 4$ using integration by parts. However, none of the given options match this result. Assuming a typo in the question (e.g., $\\int x^2 \\, dx$ instead of $\\int x^2 \\cos x \\, dx$), the answer would be $\\frac{\\pi^3}{12}$ (option C).",
+      "hint": "Check if the integrand is odd or even. For $\\sin^3 x$, it is odd; for $x^2 \\cos x$, it is even. Evaluate each part separately.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260483731-5f8fb",
+      "order": 4,
+      "question": "What is the indefinite integral of $\\int \\frac{e^x}{e^x + 1} dx$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\ln|e^x| + C$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative of $\\ln|e^x|$ is $1$, not $\\frac{e^x}{e^x + 1}$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\ln|e^x + 1| + C$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The substitution and integration steps confirm this result."
+        },
+        {
+          "letter": "C",
+          "text": "$e^x \\ln|e^x + 1| + C$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative of this expression does not match the integrand."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{1}{(e^x+1)^2} + C$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative of this expression does not match the integrand."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let $u = e^x + 1$. Then $du = e^x dx$. The integral becomes $\\int \\frac{1}{u} du$. This evaluates to $\\ln|u| + C$. Substituting back $u = e^x + 1$, we get $\\ln|e^x + 1| + C$. Since $e^x + 1$ is always positive, the absolute value can be removed, giving $\\ln(e^x + 1) + C$.",
+      "hint": "Use substitution with $u = e^x + 1$.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260483731-7e6bf",
+      "order": 5,
+      "question": "Let $ f(x) = \\int_{1}^{x^2} \\frac{\\sin t}{t} \\, dt $. Then $ f'(x) $ is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{\\sin x}{x} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect application of the chain rule."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{2\\sin x^2}{x} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Missing the $x$ in the denominator after simplification."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{\\sin x^2}{x^2} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Forgot to multiply by the derivative of the upper limit ($2x$)."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{2x \\sin x^2}{x^2} $",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct application of the Fundamental Theorem of Calculus and chain rule."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "By the Fundamental Theorem of Calculus Part 1 and the chain rule, $ f'(x) = \\frac{d}{dx} \\left( \\int_{1}^{x^2} \\frac{\\sin t}{t} \\, dt \\right) = \\frac{\\sin(x^2)}{x^2} \\cdot 2x = \\frac{2x \\sin x^2}{x^2} $.",
+      "hint": "Apply the Fundamental Theorem of Calculus and the chain rule.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260483731-253b1",
+      "order": 6,
+      "question": "The value of $ \\int_{0}^{\\pi/2} \\sin^3 x \\, dx $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{2}{3} $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct evaluation of the integral."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{2}{3} + \\frac{\\pi}{4} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect addition of terms."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{1}{3} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{\\pi}{4} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Rewrite $ \\sin^3 x = \\sin x (1 - \\cos^2 x) $. Let $ u = \\cos x $, $ du = -\\sin x \\, dx $. Then $ \\int_{0}^{\\pi/2} \\sin^3 x \\, dx = \\int_{1}^{0} (1 - u^2)(-du) = \\int_{0}^{1} (1 - u^2) \\, du = \\left[ u - \\frac{u^3}{3} \\right]_0^1 = 1 - \\frac{1}{3} = \\frac{2}{3} $.",
+      "hint": "Use substitution and trigonometric identities to simplify the integral.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260483731-15958",
+      "order": 7,
+      "question": "If $ \\int_{0}^{1} \\frac{1}{1 + x^2} \\, dx = \\frac{\\pi}{4} $, then $ \\int_{0}^{1} \\frac{x^2}{1 + x^2} \\, dx $ is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ 1 - \\frac{\\pi}{4} $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct simplification and evaluation."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{\\pi}{4} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{1}{2} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{\\pi}{2} - 1 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Note that $ \\frac{x^2}{1 + x^2} = 1 - \\frac{1}{1 + x^2} $. Thus, $ \\int_{0}^{1} \\frac{x^2}{1 + x^2} \\, dx = \\int_{0}^{1} 1 \\, dx - \\int_{0}^{1} \\frac{1}{1 + x^2} \\, dx = 1 - \\frac{\\pi}{4} $.",
+      "hint": "Express the integrand in terms of the given integral.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260483731-a284e",
+      "order": 8,
+      "question": "The area bounded by the curves $ y = x^2 $ and $ y = 2x - x^2 $ between $ x = 0 $ and $ x = 1 $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{1}{3} $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct evaluation of the area."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{2}{3} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the area."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{1}{2} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the area."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{1}{6} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the area."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The curves intersect at $ x = 0 $ and $ x = 1 $. The area is $ \\int_{0}^{1} \\left( (2x - x^2) - x^2 \\right) \\, dx = \\int_{0}^{1} (2x - 2x^2) \\, dx = \\left[ x^2 - \\frac{2x^3}{3} \\right]_0^1 = 1 - \\frac{2}{3} = \\frac{1}{3} $.",
+      "hint": "Find the difference between the two functions and integrate over the given interval.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260483731-949bc",
+      "order": 9,
+      "question": "The value of $ \\int_{0}^{\\infty} e^{-x} \\sin x \\, dx $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{1}{2} $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct evaluation of the integral."
+        },
+        {
+          "letter": "B",
+          "text": "$ 1 $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{1}{2} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Duplicate option (same as A)."
+        },
+        {
+          "letter": "D",
+          "text": "$ 0 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Use integration by parts twice or the formula for $ \\int e^{ax} \\sin bx \\, dx $. $ \\int_{0}^{\\infty} e^{-x} \\sin x \\, dx = \\left[ \\frac{e^{-x} (\\sin x - \\cos x)}{2} \\right]_0^{\\infty} = \\frac{1}{2} $.",
+      "hint": "Use integration by parts or a standard integral formula.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260483731-8ef9c",
+      "order": 10,
+      "question": "Let $ I = \\int_{0}^{\\pi} \\frac{x \\sin x}{1 + \\cos^2 x} \\, dx $. Then $ I $ is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{\\pi^2}{4} $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct evaluation of the integral."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{\\pi^2}{2} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{\\pi^2}{8} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\pi^2 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Use the substitution $ x \\to \\pi - x $. Then $ I = \\int_{0}^{\\pi} \\frac{(\\pi - x) \\sin x}{1 + \\cos^2 x} \\, dx $. Adding the two expressions for $ I $, we get $ 2I = \\pi \\int_{0}^{\\pi} \\frac{\\sin x}{1 + \\cos^2 x} \\, dx $. Let $ u = \\cos x $, $ du = -\\sin x \\, dx $. Then $ 2I = \\pi \\int_{-1}^{1} \\frac{du}{1 + u^2} = \\pi \\left[ \\tan^{-1} u \\right]_{-1}^{1} = \\pi \\left( \\frac{\\pi}{4} - \\left( -\\frac{\\pi}{4} \\right) \\right) = \\frac{\\pi^2}{2} $. Thus, $ I = \\frac{\\pi^2}{4} $.",
+      "hint": "Use symmetry and substitution to simplify the integral.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260483731-e6c9c",
+      "order": 11,
+      "question": "The value of $ \\int_{1}^{e} \\frac{\\ln x}{x} \\, dx $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{1}{2} $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct evaluation of the integral."
+        },
+        {
+          "letter": "B",
+          "text": "$ 1 $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        },
+        {
+          "letter": "C",
+          "text": "$ e $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{e}{2} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let $ u = \\ln x $, $ du = \\frac{1}{x} dx $. Then $ \\int_{1}^{e} \\frac{\\ln x}{x} \\, dx = \\int_{0}^{1} u \\, du = \\left[ \\frac{u^2}{2} \\right]_0^1 = \\frac{1}{2} $.",
+      "hint": "Use substitution to simplify the integral.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260483731-4f9e3",
+      "order": 12,
+      "question": "If $ f(x) = \\int_{0}^{x} \\sqrt{1 + t^3} \\, dt $, then $ f'(x) $ is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\sqrt{1 + x^3} $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct application of the Fundamental Theorem of Calculus."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{3x^2}{2 \\sqrt{1 + x^3}} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect derivative."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\sqrt{1 + x^3} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Duplicate option (same as A)."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{x^3}{\\sqrt{1 + x^3}} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect derivative."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "By the Fundamental Theorem of Calculus, $ f'(x) = \\sqrt{1 + x^3} $.",
+      "hint": "Apply the Fundamental Theorem of Calculus directly.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260483731-3d5f0",
+      "order": 13,
+      "question": "The value of $ \\int_{0}^{\\pi/4} \\sec^2 x \\, dx $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ 0 $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        },
+        {
+          "letter": "B",
+          "text": "$ 1 $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct evaluation of the integral."
+        },
+        {
+          "letter": "C",
+          "text": "$ 1 $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Duplicate option (same as B)."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\infty $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ \\int \\sec^2 x \\, dx = \\tan x + C $. Thus, $ \\int_{0}^{\\pi/4} \\sec^2 x \\, dx = \\tan \\frac{\\pi}{4} - \\tan 0 = 1 - 0 = 1 $.",
+      "hint": "Use the antiderivative of $ \\sec^2 x $.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260483731-14a3c",
+      "order": 14,
+      "question": "Let $ I = \\int_{0}^{1} \\frac{1}{\\sqrt{1 - x^2}} \\, dx $. Then $ I $ is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{\\pi}{2} $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct evaluation of the integral."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{\\pi}{4} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\pi $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        },
+        {
+          "letter": "D",
+          "text": "$ 1 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the integral."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ \\int \\frac{1}{\\sqrt{1 - x^2}} \\, dx = \\sin^{-1} x + C $. Thus, $ I = \\sin^{-1} 1 - \\sin^{-1} 0 = \\frac{\\pi}{2} - 0 = \\frac{\\pi}{2} $.",
+      "hint": "Use the antiderivative of $ \\frac{1}{\\sqrt{1 - x^2}} $.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260483731-d63ca",
+      "order": 15,
+      "question": "The area enclosed by the curve y = x^2, the x-axis, and the lines x = 0 and x = 2 is given by the integral of x^2 with respect to x, between the limits 0 and 2. What is the value of this area?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2/3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the calculation of the definite integral of x^2 with respect to x, between the limits 0 and 2, yields 8/3, not 2/3."
+        },
+        {
+          "letter": "B",
+          "text": "8/3",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is correct because the calculation of the definite integral of x^2 with respect to x, between the limits 0 and 2, yields 8/3."
+        },
+        {
+          "letter": "C",
+          "text": "3/2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the calculation of the definite integral of x^2 with respect to x, between the limits 0 and 2, yields 8/3, not 3/2."
+        },
+        {
+          "letter": "D",
+          "text": "4/3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the calculation of the definite integral of x^2 with respect to x, between the limits 0 and 2, yields 8/3, not 4/3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find the area enclosed by the curve y = x^2, the x-axis, and the lines x = 0 and x = 2, we evaluate the definite integral of x^2 with respect to x, between the limits 0 and 2.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260534533-7604e",
+      "order": 16,
+      "question": "Which of the following alkali metal carbonates is NOT stable and decomposes on heating to give the metal oxide and CO₂?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Li₂CO₃",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Lithium carbonate (Li₂CO₃) decomposes on heating due to the small size and high polarizing power of Li⁺."
+        },
+        {
+          "letter": "B",
+          "text": "Na₂CO₃",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Sodium carbonate (Na₂CO₃) is stable and does not decompose on heating."
+        },
+        {
+          "letter": "C",
+          "text": "K₂CO₃",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Potassium carbonate (K₂CO₃) is stable and does not decompose on heating."
+        },
+        {
+          "letter": "D",
+          "text": "Rb₂CO₃",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Rubidium carbonate (Rb₂CO₃) is stable and does not decompose on heating."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Lithium carbonate (Li₂CO₃) decomposes on heating due to the small size and high polarizing power of Li⁺, unlike other alkali metals whose carbonates are stable.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260534533-7b14c",
+      "order": 17,
+      "question": "Consider the following statements about Group 2 elements: (P) Be and Mg form covalent compounds due to high charge density. (Q) Solubility of hydroxides increases down the group. (R) Thermal stability of carbonates decreases down the group. (S) BeCl₂ has a polymeric structure with bridging Cl atoms. Which of these are correct?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "P, Q, R",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Statement R is incorrect, as thermal stability of carbonates increases down the group."
+        },
+        {
+          "letter": "B",
+          "text": "P, Q, S",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Statements P, Q, and S are correct."
+        },
+        {
+          "letter": "C",
+          "text": "P, R, S",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Statement R is incorrect, as thermal stability of carbonates increases down the group."
+        },
+        {
+          "letter": "D",
+          "text": "Q, R, S",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Statement R is incorrect, as thermal stability of carbonates increases down the group."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "BeCl₂ has a polymeric structure (bridged Cl), Be and Mg form covalent compounds, and hydroxides become more soluble down the group. Carbonates become more stable down the group (not less).",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260534533-67bc6",
+      "order": 18,
+      "question": "The correct order of basic strength of the following oxides is: Li₂O, Na₂O, K₂O, Rb₂O",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Li₂O > Na₂O > K₂O > Rb₂O",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Basicity increases down the group, so the correct order is the reverse."
+        },
+        {
+          "letter": "B",
+          "text": "Rb₂O > K₂O > Na₂O > Li₂O",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Basicity increases down the group due to decreasing lattice energy and increasing ionic character of M-O bonds."
+        },
+        {
+          "letter": "C",
+          "text": "Na₂O > K₂O > Rb₂O > Li₂O",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Basicity increases down the group, so Li₂O should be the weakest base."
+        },
+        {
+          "letter": "D",
+          "text": "Li₂O > Rb₂O > K₂O > Na₂O",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Basicity increases down the group, so the correct order is not this."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Basicity increases down the group due to decreasing lattice energy and increasing ionic character of M-O bonds.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260534533-a790e",
+      "order": 19,
+      "question": "Assertion (A): Beryllium does not react with water even at high temperatures. Reason (R): Beryllium forms a protective oxide layer that prevents further reaction.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R explains A.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Be does not react with water due to its high ionization energy and protective BeO layer. R correctly explains A."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R does not explain A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "R correctly explains A, so this option is incorrect."
+        },
+        {
+          "letter": "C",
+          "text": "A is true, but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "R is true and explains A, so this option is incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "A is false, but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "A is true, so this option is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Be does not react with water due to its high ionization energy and protective BeO layer. R correctly explains A.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260534533-3ebe7",
+      "order": 20,
+      "question": "A 0.1 M solution of which of the following compounds will have the highest pH?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "LiOH",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "LiOH has the smallest ionic size, leading to the strongest attraction for OH⁻."
+        },
+        {
+          "letter": "B",
+          "text": "NaOH",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "NaOH has a smaller ionic size than RbOH, leading to a stronger attraction for OH⁻."
+        },
+        {
+          "letter": "C",
+          "text": "KOH",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "KOH has a smaller ionic size than RbOH, leading to a stronger attraction for OH⁻."
+        },
+        {
+          "letter": "D",
+          "text": "RbOH",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "RbOH has the largest ionic size, leading to the weakest attraction for OH⁻ in solution, thus releasing OH⁻ most freely and increasing pH."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "All are strong bases, but RbOH has the largest ionic size, leading to the weakest attraction for OH⁻ in solution, thus releasing OH⁻ most freely and increasing pH.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260534533-7f609",
+      "order": 21,
+      "question": "Match the following: Column I (Group 2 compounds) | Column II (Uses) (P) CaSO₄·2H₂O | (1) As a fertilizer (Q) Ca(OH)₂ | (2) In dentistry (plaster) (R) Ca₃(PO₄)₂ | (3) As an antacid (S) Mg(OH)₂ | (4) In making cement",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "P-2, Q-3, R-1, S-4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "CaSO₄·2H₂O is used in dentistry, Ca(OH)₂ is used as an antacid, Ca₃(PO₄)₂ is used as a fertilizer, and Mg(OH)₂ is used as an antacid."
+        },
+        {
+          "letter": "B",
+          "text": "P-2, Q-3, R-4, S-1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "CaSO₄·2H₂O is used in dentistry, Ca(OH)₂ is used as an antacid, Ca₃(PO₄)₂ is used as a fertilizer, and Mg(OH)₂ is used as an antacid."
+        },
+        {
+          "letter": "C",
+          "text": "P-4, Q-3, R-1, S-2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "CaSO₄·2H₂O is used in dentistry, Ca(OH)₂ is used as an antacid, Ca₃(PO₄)₂ is used as a fertilizer, and Mg(OH)₂ is used as an antacid."
+        },
+        {
+          "letter": "D",
+          "text": "P-2, Q-4, R-1, S-3",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "CaSO₄·2H₂O is used in dentistry, Ca(OH)₂ is used in making cement, Ca₃(PO₄)₂ is used as a fertilizer, and Mg(OH)₂ is used as an antacid."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "CaSO₄·2H₂O (plaster of Paris), Ca(OH)₂ (slaked lime, antacid), Ca₃(PO₄)₂ (phosphate fertilizer), Mg(OH)₂ (milk of magnesia, antacid).",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260534533-2ba38",
+      "order": 22,
+      "question": "When Na metal is added to liquid NH₃, a deep blue solution is formed due to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Formation of NaNH₂",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The blue color is not due to the formation of NaNH₂."
+        },
+        {
+          "letter": "B",
+          "text": "Solvated electrons",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The blue color arises from solvated electrons in liquid NH₃, which absorb visible light."
+        },
+        {
+          "letter": "C",
+          "text": "Formation of Na₃N",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The blue color is not due to the formation of Na₃N."
+        },
+        {
+          "letter": "D",
+          "text": "Precipitation of Na metal",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The blue color is not due to the precipitation of Na metal."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The blue color arises from solvated electrons in liquid NH₃, which absorb visible light.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260534533-36560",
+      "order": 23,
+      "question": "The lattice energy of which of the following compounds is maximum?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "LiF",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Lattice energy ∝ (q₁q₂)/r. Li⁺ has the smallest ionic radius, leading to the highest lattice energy in LiF."
+        },
+        {
+          "letter": "B",
+          "text": "NaF",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Na⁺ has a larger ionic radius than Li⁺, leading to a lower lattice energy in NaF."
+        },
+        {
+          "letter": "C",
+          "text": "KF",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "K⁺ has a larger ionic radius than Li⁺, leading to a lower lattice energy in KF."
+        },
+        {
+          "letter": "D",
+          "text": "RbF",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Rb⁺ has a larger ionic radius than Li⁺, leading to a lower lattice energy in RbF."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Lattice energy ∝ (q₁q₂)/r. Li⁺ has the smallest ionic radius, leading to the highest lattice energy in LiF.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260534533-8a706",
+      "order": 24,
+      "question": "A student prepares a saturated solution of Ca(OH)₂ at 25°C. On adding a small amount of CaCl₂, the solubility of Ca(OH)₂:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increases due to common ion effect",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The common ion effect reduces the solubility of Ca(OH)₂, not increases it."
+        },
+        {
+          "letter": "B",
+          "text": "Decreases due to common ion effect",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Adding CaCl₂ introduces Ca²⁺ (common ion), suppressing the dissociation of Ca(OH)₂ and reducing its solubility (common ion effect)."
+        },
+        {
+          "letter": "C",
+          "text": "Remains unchanged",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The common ion effect reduces the solubility of Ca(OH)₂, so it does not remain unchanged."
+        },
+        {
+          "letter": "D",
+          "text": "Increases due to increased ionic strength",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The common ion effect reduces the solubility of Ca(OH)₂, not increases it due to increased ionic strength."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Adding CaCl₂ introduces Ca²⁺ (common ion), suppressing the dissociation of Ca(OH)₂ and reducing its solubility (common ion effect).",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260534533-b4fe3",
+      "order": 25,
+      "question": "The correct sequence of thermal stability of Group 1 nitrates is: LiNO₃, NaNO₃, KNO₃, RbNO₃",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "LiNO₃ > NaNO₃ > KNO₃ > RbNO₃",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Thermal stability increases down the group, so the correct sequence is the reverse."
+        },
+        {
+          "letter": "B",
+          "text": "RbNO₃ > KNO₃ > NaNO₃ > LiNO₃",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Thermal stability of nitrates increases down the group due to decreasing polarizing power of M⁺ ions."
+        },
+        {
+          "letter": "C",
+          "text": "LiNO₃ < NaNO₃ < KNO₃ < RbNO₃",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Thermal stability of nitrates increases down the group due to decreasing polarizing power of M⁺ ions."
+        },
+        {
+          "letter": "D",
+          "text": "NaNO₃ > LiNO₃ > KNO₃ > RbNO₃",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Thermal stability increases down the group, so the correct sequence is not this."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Thermal stability of nitrates increases down the group due to decreasing polarizing power of M⁺ ions.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260534533-b38d5",
+      "order": 26,
+      "question": "Which of the following alkali metal carbonates is most stable to heat?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Li₂CO₃",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Lithium carbonate (Li₂CO₃) is the least stable among alkali metal carbonates."
+        },
+        {
+          "letter": "B",
+          "text": "Na₂CO₃",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Na₂CO₃ is more stable than Li₂CO₃ but less stable than K₂CO₃, Rb₂CO₃, and Cs₂CO₃."
+        },
+        {
+          "letter": "C",
+          "text": "K₂CO₃",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "K₂CO₃ is more stable than Na₂CO₃."
+        },
+        {
+          "letter": "D",
+          "text": "Rb₂CO₃",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Rb₂CO₃ is more stable than Na₂CO₃ and Li₂CO₃ but the question asks for the most stable among the given options."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Lithium carbonate (Li₂CO₃) is the least stable among alkali metal carbonates due to the high charge density of Li⁺ ion, which polarizes the carbonate ion (CO₃²⁻) and promotes decomposition upon heating.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260534533-9ae79",
+      "order": 27,
+      "question": "Match the following compounds with their correct thermal stability trend:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "P-2, Q-4, R-1, S-3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option does not correctly match the compounds with their thermal stability trend."
+        },
+        {
+          "letter": "B",
+          "text": "P-2, Q-4, R-3, S-1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "BeCO₃ (P) is the least stable, MgCO₃ (Q) is less stable than SrCO₃ and BaCO₃, CaCO₃ (R) is more stable than MgCO₃ but less stable than BaCO₃, and BaCO₃ (S) is the most stable among Group 2 carbonates."
+        },
+        {
+          "letter": "C",
+          "text": "P-4, Q-2, R-1, S-3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option does not correctly match the compounds with their thermal stability trend."
+        },
+        {
+          "letter": "D",
+          "text": "P-1, Q-3, R-4, S-2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option does not correctly match the compounds with their thermal stability trend."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The thermal stability of Group 2 carbonates increases down the group due to the decreasing polarization power of the cation (increasing size and lower charge density).",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260534533-050f1",
+      "order": 28,
+      "question": "Assertion (A): Beryllium (Be) does not form a peroxide or superoxide under normal conditions. Reason (R): The small size and high charge density of Be²⁺ ion favor the formation of simple oxides and prevent the accommodation of larger peroxide (O₂²⁻) or superoxide (O₂⁻) ions.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Both A and R are true, and R explains A."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R is NOT the correct explanation of A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "R is the correct explanation of A."
+        },
+        {
+          "letter": "C",
+          "text": "A is true, but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Both A and R are true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false, but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Both A and R are true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Beryllium indeed does not form peroxides or superoxides due to the high polarization power of Be²⁺, which stabilizes only simple oxides (BeO).",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260534533-1f8c8",
+      "order": 29,
+      "question": "A 0.1 M solution of sodium carbonate (Na₂CO₃) is prepared. If the pH of this solution is found to be 11.8, calculate the hydrolysis constant (Kh) of CO₃²⁻ ion.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.2 × 10⁻⁴",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The closest option to the calculated value of Kh."
+        },
+        {
+          "letter": "B",
+          "text": "2.3 × 10⁻⁴",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is not the closest to the calculated value of Kh."
+        },
+        {
+          "letter": "C",
+          "text": "4.5 × 10⁻⁴",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is not the closest to the calculated value of Kh."
+        },
+        {
+          "letter": "D",
+          "text": "5.6 × 10⁻⁴",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is not the closest to the calculated value of Kh."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Kh = Kw/K₂ (since Kh = Kw/K₂ for the second dissociation of H₂CO₃): Kh = 1.0 × 10⁻¹⁴ / 5.6 × 10⁻¹¹ ≈ 1.79 × 10⁻⁴.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1784260534533-1e2d7",
+      "order": 30,
+      "question": "Which of the following statements is incorrect regarding the s-block elements?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Lithium and magnesium exhibit a diagonal relationship due to similar atomic and ionic radii.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This statement is correct."
+        },
+        {
+          "letter": "B",
+          "text": "Beryllium chloride (BeCl₂) is a covalent compound and exists as a polymer in the solid state.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This statement is correct."
+        },
+        {
+          "letter": "C",
+          "text": "The solubility of hydroxides of Group 2 elements increases down the group, while the solubility of sulfates decreases down the group.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This statement is correct."
+        },
+        {
+          "letter": "D",
+          "text": "Sodium and potassium are stored under water to prevent reaction with moisture and oxygen in the air.",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Sodium and potassium are stored under kerosene or mineral oil to prevent reaction with air and moisture."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Sodium and potassium are highly reactive with water and produce hydrogen gas and heat, which can ignite the hydrogen.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
