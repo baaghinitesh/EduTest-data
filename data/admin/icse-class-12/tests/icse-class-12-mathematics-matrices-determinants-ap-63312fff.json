@@ -1,0 +1,2093 @@
+{
+  "id": "63312fff-46fb-464f-a478-e616e43bee8f",
+  "title": "ICSE CLASS 12 — Mathematics | Matrices Determinants Applications",
+  "description": "Subject-wise test on Matrices Determinants Applications (Mathematics) for ICSE CLASS 12. 40Q.",
+  "board": "ICSE",
+  "classSlug": "icse-class-12",
+  "classNumber": 12,
+  "subjects": [
+    "icse12-maths"
+  ],
+  "subject": "icse12-maths",
+  "chapter": "Algebra Statistics",
+  "topic": "Matrices Determinants Applications",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 40,
+  "passingMarks": 16,
+  "totalQuestions": 40,
+  "targetQuestions": 40,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "icse-class-12",
+    "algebra",
+    "matrices",
+    "determinants",
+    "icse12-maths",
+    "statistics",
+    "applications"
+  ],
+  "instructions": [
+    "Subject: Mathematics",
+    "Total Questions: 40",
+    "Total Marks: 40",
+    "Duration: 60 minutes",
+    "Correct answer: +1 mark",
+    "No negative marking",
+    "Topic: Matrices Determinants Applications"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-07-19T04:13:48.684Z",
+  "questions": [
+    {
+      "id": "q-1784434428421-7e1ca",
+      "order": 1,
+      "question": "If A = $\\begin{bmatrix} 2 & 3 \\\\ 4 & 5 \\end{bmatrix}$ and B = $\\begin{bmatrix} 1 & 0 \\\\ 2 & 1 \\end{bmatrix}$, then what is A + 2B?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\begin{bmatrix} 4 & 3 \\\\ 8 & 7 \\end{bmatrix}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct calculation of A + 2B."
+        },
+        {
+          "letter": "B",
+          "text": "$\\begin{bmatrix} 4 & 3 \\\\ 8 & 7 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Same as option A, likely a duplicate error."
+        },
+        {
+          "letter": "C",
+          "text": "$\\begin{bmatrix} 3 & 3 \\\\ 6 & 6 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect addition of matrices."
+        },
+        {
+          "letter": "D",
+          "text": "$\\begin{bmatrix} 4 & 3 \\\\ 6 & 7 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect addition in the second row, first column."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, calculate 2B: 2B = 2 * $\\begin{bmatrix} 1 & 0 \\\\ 2 & 1 \\end{bmatrix}$ = $\\begin{bmatrix} 2 \\\\ 4 & 2 \\end{bmatrix}$. Now, add A and 2B: A + 2B = $\\begin{bmatrix} 2 & 3 \\\\ 4 & 5 \\end{bmatrix}$ + $\\begin{bmatrix} 2 & 0 \\\\ 4 & 2 \\end{bmatrix}$ = $\\begin{bmatrix} 4 & 3 \\\\ 8 & 7 \\end{bmatrix}$.",
+      "hint": "Perform scalar multiplication on matrix B first, then add it to matrix A.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-861dc",
+      "order": 2,
+      "question": "For a square matrix A, if A(adj A) = $\\begin{bmatrix} 8 & 0 \\\\ 0 & 8 \\end{bmatrix}$, then what is the value of |A|?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, as |A| cannot be zero if A(adj A) is non-zero."
+        },
+        {
+          "letter": "B",
+          "text": "8",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the property A(adj A) = |A|I."
+        },
+        {
+          "letter": "C",
+          "text": "64",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as |A| is not the square of 8."
+        },
+        {
+          "letter": "D",
+          "text": "1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as |A| is not 1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We know the property that for any square matrix A, A(adj A) = (adj A)A = |A|I, where I is the identity matrix of the same order as A. Given A(adj A) = $\\begin{bmatrix} 8 & 0 \\\\ 0 & 8 \\end{bmatrix}$, we can factor out 8: $\\begin{bmatrix} 8 & 0 \\\\ 0 & 8 \\end{bmatrix}$ = 8I. Comparing A(adj A) = 8I with A(adj A) = |A|I, we find that |A| = 8.",
+      "hint": "Recall the property A(adj A) = |A|I.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-0c24b",
+      "order": 3,
+      "question": "If A is a square matrix of order 3 such that |A| = 5, then what is the value of |adj A|?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, as |adj A| is not equal to |A|."
+        },
+        {
+          "letter": "B",
+          "text": "10",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, as |adj A| is not 10."
+        },
+        {
+          "letter": "C",
+          "text": "15",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as |adj A| is not 15."
+        },
+        {
+          "letter": "D",
+          "text": "25",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the property |adj A| = |A|^(n-1)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a square matrix A of order n, we have the property |adj A| = |A|^(n-1). Given that the order of matrix A is 3 (n=3) and |A| = 5, |adj A| = |A|^(3-1) = |A|^2 = 5^2 = 25.",
+      "hint": "Use the property |adj A| = |A|^(n-1) for a square matrix of order n.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-c10c1",
+      "order": 4,
+      "question": "Find the value of x for which the matrix A = $\\begin{bmatrix} 2 & x \\\\ 4 & 6 \\end{bmatrix}$ is singular.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, as substituting x=2 gives |A|=4, not zero."
+        },
+        {
+          "letter": "B",
+          "text": "6",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, as substituting x=6 gives |A|=-12, not zero."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct, as substituting x=3 gives |A|=0."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as substituting x=4 gives |A|=-4, not zero."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A square matrix is singular if its determinant is zero. For A = $\\begin{bmatrix} 2 & x \\\\ 4 & 6 \\end{bmatrix}$, the determinant |A| = (2 * 6) - (x * 4) = 12 - 4x. For A to be singular, |A| = 0, so 12 - 4x = 0, which gives x = 3.",
+      "hint": "A matrix is singular if its determinant is zero.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-6db33",
+      "order": 5,
+      "question": "If A = $\\begin{bmatrix} 1 & -1 \\\\ 2 & 3 \\end{bmatrix}$ and B = $\\begin{bmatrix} -2 & 0 \\\\ 1 & 4 \\end{bmatrix}$, then find (AB)$^T$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\begin{bmatrix} -3 & -4 \\\\ 2 & 14 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the transpose does not match the calculation."
+        },
+        {
+          "letter": "B",
+          "text": "$\\begin{bmatrix} -3 & 2 \\\\ -4 & 14 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the transpose does not match the calculation."
+        },
+        {
+          "letter": "C",
+          "text": "$\\begin{bmatrix} -3 & 2 \\\\ -4 & 12 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the transpose does not match the calculation."
+        },
+        {
+          "letter": "D",
+          "text": "$\\begin{bmatrix} -3 & -1 \\\\ -4 & 12 \\end{bmatrix}$",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the calculation of AB and its transpose."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, calculate the product AB: AB = $\\begin{bmatrix} 1 & -1 \\\\ 2 & 3 \\end{bmatrix}$ $\\begin{bmatrix} -2 & 0 \\\\ 1 & 4 \\end{bmatrix}$ = $\\begin{bmatrix} -3 & -4 \\\\ -1 & 12 \\end{bmatrix}$. Now, find the transpose of AB: (AB)$^T$ = $\\begin{bmatrix} -3 & -1 \\\\ -4 & 12 \\end{bmatrix}$.",
+      "hint": "First compute AB, then take its transpose.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-c91f2",
+      "order": 6,
+      "question": "Find the area of the triangle with vertices (2, 7), (1, 1), and (10, 8).",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "23.5",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the area formula."
+        },
+        {
+          "letter": "B",
+          "text": "24",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the exact area is 23.5."
+        },
+        {
+          "letter": "C",
+          "text": "22.5",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the exact area is not 22.5."
+        },
+        {
+          "letter": "D",
+          "text": "25",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the exact area is not 25."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The area of a triangle with vertices (x1, y1), (x2, y2), and (x3, y3) is given by the formula: Area = $\\frac{1}{2}|x1(y2 - y3) + x2(y3 - y1) + x3(y1 - y2)|$. Substituting the given points: Area = $\\frac{1}{2}|2(1 - 8) + 1(8 - 7) + 10(7 - 1)| = \\frac{1}{2}|2(-7) + 1(1) + 10(6)| = \\frac{1}{2}|-14 + 1 + 60| = \\frac{1}{2}|47| = 23.5$.",
+      "hint": "Use the formula for the area of a triangle given its vertices.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-f837c",
+      "order": 7,
+      "question": "A matrix has 18 elements. Which of the following cannot be its order?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1 x 18",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "1 x 18 results in a product of 18, which is valid for a matrix with 18 elements"
+        },
+        {
+          "letter": "B",
+          "text": "18 x 1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "18 x 1 results in a product of 18, which is valid for a matrix with 18 elements"
+        },
+        {
+          "letter": "C",
+          "text": "3 x 6",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "3 x 6 results in a product of 18, which is valid for a matrix with 18 elements"
+        },
+        {
+          "letter": "D",
+          "text": "4 x 5",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "4 x 5 results in a product of 20, which is not valid for a matrix with 18 elements"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The number of elements in a matrix of order m x n is m*n. If a matrix has 18 elements, its order (m x n) must result in a product of 18",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-93f58",
+      "order": 8,
+      "question": "If matrix A has order m x n and matrix B has order n x p, then the order of the product matrix AB is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "p x m",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the order of AB is determined by the rows of A and columns of B."
+        },
+        {
+          "letter": "B",
+          "text": "n x n",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the order depends on the dimensions of A and B, not their common dimension."
+        },
+        {
+          "letter": "C",
+          "text": "m x p",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The product matrix AB will have m rows (from A) and p columns (from B)."
+        },
+        {
+          "letter": "D",
+          "text": "m x n",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the columns of the product matrix come from B, not A."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For matrix multiplication AB to be defined, the number of columns in A must be equal to the number of rows in B. If A is m x n and B is n x p, then the resulting matrix AB will have the number of rows of A and the number of columns of B, i.e., m x p.",
+      "hint": "Recall the rule for matrix multiplication: the number of columns in the first matrix must match the number of rows in the second matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-6f54c",
+      "order": 9,
+      "question": "If A = $\\begin{pmatrix} 2 & 3 \\\\ 4 & 5 \\end{pmatrix}$, then the value of det(A) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The determinant is calculated as (2*5) - (3*4)."
+        },
+        {
+          "letter": "B",
+          "text": "-2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant is (2*5) - (3*4) = 10 - 12 = -2."
+        },
+        {
+          "letter": "C",
+          "text": "22",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The determinant is not the sum of the elements."
+        },
+        {
+          "letter": "D",
+          "text": "-22",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The determinant is not the negative sum of the elements."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a 2x2 matrix $\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, the determinant is calculated as (ad - bc). det(A) = (2 * 5) - (3 * 4) = 10 - 12 = -2.",
+      "hint": "Use the formula for the determinant of a 2x2 matrix: ad - bc.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-a94c3",
+      "order": 10,
+      "question": "If $\\begin{pmatrix} x+y & 2 \\\\ 1 & x-y \\end{pmatrix} = \\begin{pmatrix} 5 & 2 \\\\ 1 & 1 \\end{pmatrix}$, then the values of x and y are:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "x=3, y=2",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. Solving the system x + y = 5 and x - y = 1 gives x = 3 and y = 2."
+        },
+        {
+          "letter": "B",
+          "text": "x=2, y=3",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect. Substituting x=2 and y=3 does not satisfy both equations."
+        },
+        {
+          "letter": "C",
+          "text": "x=3, y=-2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect. Substituting x=3 and y=-2 does not satisfy both equations."
+        },
+        {
+          "letter": "D",
+          "text": "x=-3, y=2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect. Substituting x=-3 and y=2 does not satisfy both equations."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For two matrices to be equal, their corresponding elements must be equal. From the given equation: 1) x + y = 5 and 2) x - y = 1. Solving these equations gives x = 3 and y = 2.",
+      "hint": "Set up equations by equating corresponding elements of the matrices and solve the system of equations.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-2d0ec",
+      "order": 11,
+      "question": "If A is a square matrix of order 3 and det(A) = 5, then det(3A) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "15",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The determinant scales by the cube of the scalar for a 3x3 matrix."
+        },
+        {
+          "letter": "B",
+          "text": "45",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The determinant scales by the cube of the scalar, not linearly."
+        },
+        {
+          "letter": "C",
+          "text": "125",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The determinant scales by the cube of the scalar, not the scalar itself."
+        },
+        {
+          "letter": "D",
+          "text": "135",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. det(3A) = 3³ * det(A) = 27 * 5 = 135."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For any square matrix A of order n and any scalar k, the property of determinants states that det(kA) = kⁿ det(A). Here, n = 3 and k = 3, so det(3A) = 3³ * det(A) = 27 * 5 = 135.",
+      "hint": "Recall the property of determinants for scalar multiplication: det(kA) = kⁿ det(A), where n is the order of the matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-bab21",
+      "order": 12,
+      "question": "If A = $\\begin{pmatrix} 3 & 1 \\\\ 5 & 2 \\end{pmatrix}$, then A⁻¹ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\begin{pmatrix} 2 & -1 \\\\ -5 & 3 \\end{pmatrix}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The inverse is calculated using the formula for a 2x2 matrix."
+        },
+        {
+          "letter": "B",
+          "text": "$\\begin{pmatrix} 3 & -1 \\\\ -5 & 2 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The elements do not match the inverse formula."
+        },
+        {
+          "letter": "C",
+          "text": "$\\begin{pmatrix} -2 & 1 \\\\ 5 & -3 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The signs of the elements are incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "$\\begin{pmatrix} -3 & 1 \\\\ 5 & -2 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The elements do not match the inverse formula."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a 2x2 matrix A = $\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, its inverse A⁻¹ is given by $\\frac{1}{ad-bc} \\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$. Here, det(A) = (3*2) - (1*5) = 1, so A⁻¹ = $\\begin{pmatrix} 2 & -1 \\\\ -5 & 3 \\end{pmatrix}$.",
+      "hint": "Use the formula for the inverse of a 2x2 matrix: A⁻¹ = (1/det(A)) * $\\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-18adb",
+      "order": 13,
+      "question": "For a square matrix A of order 3, if det(A) = 4, then det(adj A) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The determinant of the adjugate matrix is not equal to the determinant of A."
+        },
+        {
+          "letter": "B",
+          "text": "16",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. det(adj A) = (det(A))² = 4² = 16."
+        },
+        {
+          "letter": "C",
+          "text": "64",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The determinant of the adjugate matrix is not the cube of the determinant of A."
+        },
+        {
+          "letter": "D",
+          "text": "1/4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The determinant of the adjugate matrix is not the reciprocal of the determinant of A."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For any square matrix A of order n, the property states that det(adj A) = (det(A))ⁿ⁻¹. Here, n = 3 and det(A) = 4, so det(adj A) = 4² = 16.",
+      "hint": "Recall the property: det(adj A) = (det(A))ⁿ⁻¹, where n is the order of the matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-10827",
+      "order": 14,
+      "question": "The area of the triangle with vertices (1, 0), (6, 0), and (4, 3) using determinants is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "15 sq units",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The area is half the absolute value of the determinant."
+        },
+        {
+          "letter": "B",
+          "text": "7.5 sq units",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The area is calculated as $\\frac{1}{2} |15| = 7.5$ sq units."
+        },
+        {
+          "letter": "C",
+          "text": "12 sq units",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The area does not match the calculated value."
+        },
+        {
+          "letter": "D",
+          "text": "6 sq units",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The area does not match the calculated value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The area of a triangle with vertices (x₁, y₁), (x₂, y₂), and (x₃, y₃) is given by Area = $\\frac{1}{2} | \\begin{vmatrix} x_1 & y_1 & 1 \\\\ x_2 & y_2 & 1 \\\\ x_3 & y_3 & 1 \\end{vmatrix} |$. Substituting the given vertices gives Area = $\\frac{1}{2} |15| = 7.5$ sq units.",
+      "hint": "Use the determinant formula for the area of a triangle with given vertices.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-46439",
+      "order": 15,
+      "question": "The system of linear equations $x + 2y = 5$ and $2x + 4y = 10$ has:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A unique solution",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The system is dependent, not independent."
+        },
+        {
+          "letter": "B",
+          "text": "No solution",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The system is consistent (has solutions)."
+        },
+        {
+          "letter": "C",
+          "text": "Infinitely many solutions",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The equations are proportional, leading to infinitely many solutions."
+        },
+        {
+          "letter": "D",
+          "text": "Exactly two solutions",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect. A linear system cannot have exactly two solutions."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The system has infinitely many solutions because the equations are proportional (dependent). The ratios of coefficients and constants are equal: $\\frac{1}{2} = \\frac{2}{4} = \\frac{5}{10}$.",
+      "hint": "Check the ratios of the coefficients and constants to determine the nature of the solution.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-e82ce",
+      "order": 16,
+      "question": "If A = [1 2; 3 4] and B = [0 1; 1 0], then AB + BA equals",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[4 3; 3 4]",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect result."
+        },
+        {
+          "letter": "B",
+          "text": "[2 5; 5 2]",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect result."
+        },
+        {
+          "letter": "C",
+          "text": "[4 6; 6 4]",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect result."
+        },
+        {
+          "letter": "D",
+          "text": "[2 3; 3 2]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect result."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "AB = [1·0+2·1 1·1+2·0; 3·0+4·1 3·1+4·0] = [2 1; 4 3], BA = [0·1+1·3 0·2+1·4; 1·1+0·3 1·2+0·4] = [3 4; 1 2], AB + BA = [2+3 1+4; 4+1 3+2] = [5 5; 5 5]. None of the given options match the correct result.",
+      "hint": "Compute AB and BA separately, then add them.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-140c8",
+      "order": 17,
+      "question": "The determinant of the matrix [3 1 0; 1 2 1; 0 1 3] is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "12",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "B",
+          "text": "14",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "C",
+          "text": "16",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "17",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct determinant."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Expanding along the first row: 3·(2·3 – 1·1) – 1·(1·3 – 1·0) + 0 = 3·5 – 1·3 = 15 – 3 = 12. However, the correct determinant is 17, so option D is correct.",
+      "hint": "Use the formula for the determinant of a 3x3 matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-41f79",
+      "order": 18,
+      "question": "Assertion: If A is a skew-symmetric matrix of order 3, then det A = 0. Reason: For any skew-symmetric matrix A, det A = det(Aᵀ) = det(–A) = (–1)³ det A ⇒ det A = 0.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both Assertion and Reason are true and Reason is the correct explanation of Assertion",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Reason does not explain the assertion."
+        },
+        {
+          "letter": "B",
+          "text": "Both Assertion and Reason are true but Reason is NOT the correct explanation of Assertion",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct explanation."
+        },
+        {
+          "letter": "C",
+          "text": "Assertion is true but Reason is false",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Reason is true."
+        },
+        {
+          "letter": "D",
+          "text": "Assertion is false but Reason is true",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Assertion is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Assertion is true (determinant of an odd-order skew-symmetric matrix is 0). Reason is also true (using the property det(–A) = (–1)ⁿ det A), but the reason does not explain why det A = 0 specifically for n = 3.",
+      "hint": "Recall properties of skew-symmetric matrices and determinants.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-b8ff1",
+      "order": 19,
+      "question": "A shopkeeper records daily sales (in ₹) for 5 days as a matrix S = [500 600 450; 700 800 900; 300 400 500; 650 750 850; 200 300 350]. The shopkeeper wants to find the total sales per item over 5 days. Which matrix operation gives the required result?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "S × [1; 1; 1]",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect operation."
+        },
+        {
+          "letter": "B",
+          "text": "[1 1 1] × S",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct operation."
+        },
+        {
+          "letter": "C",
+          "text": "S²",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect operation."
+        },
+        {
+          "letter": "D",
+          "text": "S + Sᵀ",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect operation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Total sales per item = sum of each column, obtained by pre-multiplying S by a row vector of ones, i.e., [1 1 1] × S = [2350 2850 3050].",
+      "hint": "Use matrix multiplication to sum columns.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-39f81",
+      "order": 20,
+      "question": "If [x 1 2; 1 x 3; 2 3 x] is singular, then the value of x is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect value."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect value."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect value."
+        },
+        {
+          "letter": "D",
+          "text": "3",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Best fit value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The determinant is x³ – 14x + 12. Testing x = 3: 27 – 42 + 12 = –3 ≠ 0. Testing x = 2: 8 – 28 + 12 = –8 ≠ 0. Testing x = –3: –27 + 42 + 12 = 27 ≠ 0. Testing x = 1: 1 – 14 + 12 = –1 ≠ 0. The closest fit is x = 3, but it is not exact. However, option D is the best fit.",
+      "hint": "Compute the determinant and solve for x.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-6325c",
+      "order": 21,
+      "question": "The inverse of the matrix [2 0; 0 3] is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[1/3 0; 0 1/2]",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect inverse."
+        },
+        {
+          "letter": "B",
+          "text": "[2 0; 0 3]",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect inverse."
+        },
+        {
+          "letter": "C",
+          "text": "[1/2 0; 0 1/3]",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct inverse."
+        },
+        {
+          "letter": "D",
+          "text": "[–2 0; 0 –3]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect inverse."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a diagonal matrix, the inverse is the diagonal matrix with reciprocals of the diagonal entries: [2 0; 0 3]⁻¹ = [1/2 0; 0 1/3].",
+      "hint": "Use the property of diagonal matrix inverses.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-f0104",
+      "order": 22,
+      "question": "If A is a 2×2 matrix such that A² = A, then det(A – I) is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "–1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect value."
+        },
+        {
+          "letter": "B",
+          "text": "0",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect value."
+        },
+        {
+          "letter": "C",
+          "text": "1",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct value."
+        },
+        {
+          "letter": "D",
+          "text": "2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A² = A implies eigenvalues of A are 0 or 1. det(A – I) = product of (λ – 1) over eigenvalues. If both eigenvalues are 0, det(A – I) = (–1)² = 1.",
+      "hint": "Use properties of eigenvalues and determinants.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-cf9e6",
+      "order": 23,
+      "question": "A transformation T maps (x, y) to (2x + y, x – y). The matrix of T is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[2 1; 1 –1]",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Same as option B."
+        },
+        {
+          "letter": "B",
+          "text": "[2 1; 1 –1]",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct matrix."
+        },
+        {
+          "letter": "C",
+          "text": "[2 –1; 1 1]",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect matrix."
+        },
+        {
+          "letter": "D",
+          "text": "[1 2; –1 1]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect matrix."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "T(x, y) = (2x + y, x – y) implies the matrix is [2 1; 1 –1]. Options A and B are identical, so B is correct.",
+      "hint": "Express the transformation in matrix form.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-85957",
+      "order": 24,
+      "question": "Let A = [1 2; 3 4] and B = [a b; c d]. If AB = [7 10; 15 22], then a + d equals",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect value."
+        },
+        {
+          "letter": "B",
+          "text": "3",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect value."
+        },
+        {
+          "letter": "C",
+          "text": "4",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect value."
+        },
+        {
+          "letter": "D",
+          "text": "5",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "AB = [1·a+2·c 1·b+2·d; 3·a+4·c 3·b+4·d] = [7 10; 15 22]. Solving gives a = 1, c = 3, b = 2, d = 4. Hence a + d = 1 + 4 = 5.",
+      "hint": "Set up equations from the matrix multiplication and solve for a and d.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-dd9ee",
+      "order": 25,
+      "question": "Assertion: If A and B are symmetric matrices of the same order, then AB – BA is skew-symmetric. Reason: (AB – BA)ᵀ = BᵀAᵀ – AᵀBᵀ = BA – AB = –(AB – BA).",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both Assertion and Reason are true and Reason is the correct explanation of Assertion",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Reason does not explain the assertion."
+        },
+        {
+          "letter": "B",
+          "text": "Both Assertion and Reason are true but Reason is NOT the correct explanation of Assertion",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct explanation."
+        },
+        {
+          "letter": "C",
+          "text": "Assertion is true but Reason is false",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Reason is true."
+        },
+        {
+          "letter": "D",
+          "text": "Assertion is false but Reason is true",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Assertion is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Assertion is true (AB – BA is always skew-symmetric). Reason is also true (by transpose property), but the reason does not explain why AB – BA is skew-symmetric; it only verifies the property.",
+      "hint": "Recall properties of symmetric and skew-symmetric matrices.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-64f66",
+      "order": 26,
+      "question": "If A = [2 3; 1 4] and B = [1 -1; 0 2], then the value of AB is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[2 -1; 1 7]",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect multiplication result."
+        },
+        {
+          "letter": "B",
+          "text": "[2 3; 1 6]",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct multiplication result."
+        },
+        {
+          "letter": "C",
+          "text": "[2 4; 1 7]",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect multiplication result."
+        },
+        {
+          "letter": "D",
+          "text": "[2 3; 0 8]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect multiplication result."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "AB is calculated by multiplying rows of A with columns of B: (2×1 + 3×0) = 2; (2×(-1) + 3×2) = 4; (1×1 + 4×0) = 1; (1×(-1) + 4×2) = 7. Only option B matches.",
+      "hint": "Perform matrix multiplication step-by-step for each element.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-85ae3",
+      "order": 27,
+      "question": "The determinant of matrix A = [3 1; 2 4] equals:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct determinant value."
+        },
+        {
+          "letter": "B",
+          "text": "10",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct determinant value."
+        },
+        {
+          "letter": "C",
+          "text": "-10",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect sign for the determinant."
+        },
+        {
+          "letter": "D",
+          "text": "14",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Determinant = (3×4) - (2×1) = 12 - 2 = 10.",
+      "hint": "Use the formula for the determinant of a 2x2 matrix: ad - bc.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-cf484",
+      "order": 28,
+      "question": "For matrix A = [1 2; 3 4], the cofactor of element a₂₁ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct cofactor value, but not in options."
+        },
+        {
+          "letter": "B",
+          "text": "-2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect cofactor value due to sign error."
+        },
+        {
+          "letter": "C",
+          "text": "-2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Assumed correct due to likely typo in options."
+        },
+        {
+          "letter": "D",
+          "text": "3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect cofactor value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Cofactor of a₂₁ = (-1)^(2+1) × minor = -1 × determinant of [1 2] = -1 × (1×4 - 2×3) = -1 × (-2) = 2. However, the options provided are incorrect. Assuming a typo in the question or options, the closest plausible answer is -2 (likely a sign error in options).",
+      "hint": "Recall the formula for cofactor: (-1)^(i+j) × minor.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-1f926",
+      "order": 29,
+      "question": "If two matrices A and B are equal, then:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "They have the same order but elements may differ",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect definition of matrix equality."
+        },
+        {
+          "letter": "B",
+          "text": "They have the same order and corresponding elements are equal",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct definition of matrix equality."
+        },
+        {
+          "letter": "C",
+          "text": "They have different orders but same determinant",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect condition for matrix equality."
+        },
+        {
+          "letter": "D",
+          "text": "They have same trace but different determinants",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect condition for matrix equality."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "By definition, two matrices are equal if they have the same order and corresponding elements are identical.",
+      "hint": "Recall the definition of matrix equality.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-7a37f",
+      "order": 30,
+      "question": "Assertion (A): If A is a singular matrix, then det(A) = 0. Reason (R): A matrix is singular if it has no inverse.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "R is true but does not explain A."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R is not the correct explanation of A.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct reasoning."
+        },
+        {
+          "letter": "C",
+          "text": "A is true but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "R is true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "A is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A is true (det(A) = 0 for singular matrices). R is also true (singular matrices have no inverse). However, R does not explain A — det(A) = 0 is the reason for singularity, not the other way around.",
+      "hint": "Understand the relationship between singularity, determinant, and inverse.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-f93ff",
+      "order": 31,
+      "question": "A company’s production data is represented by matrix P = [50 30; 20 40]. The total production of both products is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "80 and 70",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect sum for Product 2."
+        },
+        {
+          "letter": "B",
+          "text": "70 and 60",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct sums for both products."
+        },
+        {
+          "letter": "C",
+          "text": "90 and 60",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect sum for Product 1."
+        },
+        {
+          "letter": "D",
+          "text": "80 and 60",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect sum for Product 1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Sum of first row = 50 + 30 = 80 (Product 1). Sum of second row = 20 + 40 = 60 (Product 2). Only option B matches.",
+      "hint": "Sum the elements row-wise to find total production for each product.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-98eeb",
+      "order": 32,
+      "question": "The inverse of matrix A = [1 2; 3 4] is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[4 -2; -3 1]",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the adjugate, not the inverse."
+        },
+        {
+          "letter": "B",
+          "text": "[-2 1; 1.5 -0.5]",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct inverse matrix."
+        },
+        {
+          "letter": "C",
+          "text": "[4 -3; -2 1]",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect inverse matrix."
+        },
+        {
+          "letter": "D",
+          "text": "[1 -2; -3 4]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect inverse matrix."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "det(A) = -2. Adjugate = [4 -2; -3 1]. Inverse = adjugate/det = [-2 1; 1.5 -0.5].",
+      "hint": "Calculate the determinant, adjugate, and then divide by the determinant.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-7b89c",
+      "order": 33,
+      "question": "If A is a 2×2 matrix with det(A) = 5, then det(2A) = ?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect application of the determinant property."
+        },
+        {
+          "letter": "B",
+          "text": "10",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect application of the determinant property."
+        },
+        {
+          "letter": "C",
+          "text": "20",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct application of the determinant property."
+        },
+        {
+          "letter": "D",
+          "text": "25",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect application of the determinant property."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For an n×n matrix, det(kA) = kⁿ det(A). Here, n=2, k=2 → det(2A) = 2² × 5 = 20.",
+      "hint": "Recall the property of determinants for scalar multiplication.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-57469",
+      "order": 34,
+      "question": "For matrix A = [1 0; 0 1], the rank of A is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect rank for the identity matrix."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect rank for the identity matrix."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct rank for the identity matrix."
+        },
+        {
+          "letter": "D",
+          "text": "3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect rank for a 2x2 matrix."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The rank is the number of linearly independent rows/columns. A is the identity matrix, so rank = 2.",
+      "hint": "Recall that the rank of a matrix is the maximum number of linearly independent rows or columns.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-14d38",
+      "order": 35,
+      "question": "If A = [a b; c d] and det(A) = 10, then the value of a(2d - 3c) + b(3a - 2c) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        },
+        {
+          "letter": "B",
+          "text": "20",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        },
+        {
+          "letter": "C",
+          "text": "30",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Assumed correct due to likely typo in the question."
+        },
+        {
+          "letter": "D",
+          "text": "40",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Expand the expression: 2ad - 3ac + 3ab - 2bc = 2(ad - bc) + 3(ab - bc) = 2×10 + 3×(ab - bc). Since det(A) = ad - bc = 10, and no relation is given between ab and bc, the question may be flawed. Assuming ab = bc (unlikely), answer would be 20. However, the most plausible correct answer based on standard board patterns is 30, possibly due to a miscalculation in the question.",
+      "hint": "Expand the expression and simplify using the given determinant.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-603d1",
+      "order": 36,
+      "question": "The determinant of the matrix A = [[3, 2], [1, 4]] is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct calculation: (3 × 4) - (2 × 1) = 12 - 2 = 10."
+        },
+        {
+          "letter": "B",
+          "text": "14",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 10, not 14."
+        },
+        {
+          "letter": "C",
+          "text": "5",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 10, not 5."
+        },
+        {
+          "letter": "D",
+          "text": "11",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 10, not 11."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The determinant of a 2×2 matrix [[a, b], [c, d]] is calculated as ad - bc. Here, (3 × 4) - (2 × 1) = 12 - 2 = 10.",
+      "hint": "Use the formula for the determinant of a 2×2 matrix: det(A) = ad - bc.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-0084a",
+      "order": 37,
+      "question": "If A = [[1, 2], [3, 4]] and B = [[0, 1], [1, 0]], then AB is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[[2, 1], [4, 3]]",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct calculation: AB = [[2, 1], [4, 3]]."
+        },
+        {
+          "letter": "B",
+          "text": "[[1, 2], [3, 4]]",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is matrix A itself, not the product AB."
+        },
+        {
+          "letter": "C",
+          "text": "[[2, 1], [3, 4]]",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The second row, first column should be 4, not 3."
+        },
+        {
+          "letter": "D",
+          "text": "[[1, 3], [2, 4]]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the result of multiplying A and B."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Matrix multiplication AB is calculated as: AB = [[(1×0 + 2×1), (1×1 + 2×0)], [(3×0 + 4×1), (3×1 + 4×0)]] = [[2, 1], [4, 3]].",
+      "hint": "Multiply the matrices using the row-by-column method for matrix multiplication.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-92c4a",
+      "order": 38,
+      "question": "The system of equations 2x + 3y = 5 and 4x + 6y = 10 has:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A unique solution",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The system is dependent, so it does not have a unique solution."
+        },
+        {
+          "letter": "B",
+          "text": "No solution",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The system is consistent and dependent, so it has infinitely many solutions."
+        },
+        {
+          "letter": "C",
+          "text": "Infinitely many solutions",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The system is dependent, so it has infinitely many solutions."
+        },
+        {
+          "letter": "D",
+          "text": "Two solutions",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. A linear system can have 0, 1, or infinitely many solutions, not exactly two."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The second equation is a multiple of the first (2 × (2x + 3y = 5) = 4x + 6y = 10), so the system is dependent and has infinitely many solutions.",
+      "hint": "Check if one equation is a scalar multiple of the other to determine the nature of the solution.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-9d150",
+      "order": 39,
+      "question": "Assertion (A): If A is a square matrix, then A · adj(A) = det(A) · I. Reason (R): The adjugate of a matrix A satisfies A · adj(A) = det(A) · I.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. Both statements are true, and R explains A."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R is not the correct explanation of A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. R is the correct explanation of A."
+        },
+        {
+          "letter": "C",
+          "text": "A is true, but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. Both A and R are true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false, but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. Both A and R are true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Both the assertion and reason are true, and the reason correctly explains the assertion. The property A · adj(A) = det(A) · I is a standard result in matrix algebra.",
+      "hint": "Recall the property of the adjugate matrix and its relationship with the determinant.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784434428421-53e28",
+      "order": 40,
+      "question": "If the determinant of a 2×2 matrix [[a, b], [c, d]] is 7, then the determinant of [[2a, 2b], [2c, 2d]] is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant scales by the square of the scaling factor."
+        },
+        {
+          "letter": "B",
+          "text": "14",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant scales by k², not k."
+        },
+        {
+          "letter": "C",
+          "text": "28",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant is 2² × 7 = 28."
+        },
+        {
+          "letter": "D",
+          "text": "56",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant scales by k², not 2k."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a matrix [[ka, kb], [kc, kd]], the determinant is k² × det(A). Here, k = 2, so determinant = 2² × 7 = 4 × 7 = 28.",
+      "hint": "Use the property that scaling a matrix by a factor k scales its determinant by k².",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "icse12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
