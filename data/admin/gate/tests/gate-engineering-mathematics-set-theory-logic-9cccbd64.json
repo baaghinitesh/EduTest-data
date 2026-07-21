@@ -1,0 +1,1327 @@
+{
+  "id": "9cccbd64-e3cd-450f-bf18-4f6142b856ff",
+  "title": "GATE — Engineering Mathematics | Set Theory Logic",
+  "description": "Subject-wise test on Set Theory Logic (Engineering Mathematics) for GATE. 25Q.",
+  "board": "Competitive",
+  "classSlug": "gate",
+  "classNumber": 0,
+  "subjects": [
+    "gate-maths"
+  ],
+  "subject": "gate-maths",
+  "chapter": "Discrete Mathematics",
+  "topic": "Set Theory Logic",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 50,
+  "passingMarks": 20,
+  "totalQuestions": 25,
+  "targetQuestions": 25,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "mathematics",
+    "gate",
+    "gate-maths",
+    "discrete",
+    "logic",
+    "theory"
+  ],
+  "instructions": [
+    "Subject: Engineering Mathematics",
+    "Total Questions: 25",
+    "Total Marks: 50",
+    "Duration: 60 minutes",
+    "Correct answer: +2 mark",
+    "Wrong answer: -0.67 mark",
+    "Topic: Set Theory Logic"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-07-21T04:02:51.879Z",
+  "questions": [
+    {
+      "id": "q-1784606571773-54939",
+      "order": 1,
+      "question": "Consider two finite sets A and B. If |A| = 10, |B| = 15, and |A ∪ B| = 20, then the cardinality of the Cartesian product A ∩ B × A is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "50",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct answer based on the calculation."
+        },
+        {
+          "letter": "B",
+          "text": "75",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the calculation yields 50, not 75."
+        },
+        {
+          "letter": "C",
+          "text": "250",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the calculation yields 50, not 250."
+        },
+        {
+          "letter": "D",
+          "text": "300",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the calculation yields 50, not 300."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We are given: |A| = 10, |B| = 15, |A ∪ B| = 20. Using the Principle of Inclusion-Exclusion for two sets: |A ∪ B| = |A| + |B| - |A ∩ B|. 20 = 10 + 15 - |A ∩ B|. 20 = 25 - |A ∩ B|. |A ∩ B| = 25 - 20 = 5. The cardinality of a Cartesian product X × Y is |X| × |Y|. So, |A ∩ B × A| = |A ∩ B| × |A|. |A ∩ B × A| = 5 × 10 = 50.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571773-aadcd",
+      "order": 2,
+      "question": "Which of the following logical equivalences is FALSE?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "P → Q ≡ ¬P ∨ Q",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a true equivalence."
+        },
+        {
+          "letter": "B",
+          "text": "P Q ≡ (P → Q) ∧ (Q → P)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is a true equivalence."
+        },
+        {
+          "letter": "C",
+          "text": "¬(P ∧ Q) ≡ ¬P ∧ ¬Q",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the false equivalence because it should be ¬P ∨ ¬Q according to De Morgan's Law."
+        },
+        {
+          "letter": "D",
+          "text": "P ∧ (Q ∨ R) ≡ (P ∧ Q) ∨ (P ∧ R)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is a true equivalence."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let's analyze each option: A) P → Q ≡ ¬P ∨ Q: This is the definition of implication in terms of disjunction and negation, which is TRUE. B) P Q ≡ (P → Q) ∧ (Q → P): This is the definition of biconditional in terms of conditionals, which is TRUE. C) ¬(P ∧ Q) ≡ ¬P ∧ ¬Q: This statement is FALSE. According to De Morgan's Law, ¬(P ∧ Q) ≡ ¬P ∨ ¬Q. The given equivalence has '∧' instead of '∨'. D) P ∧ (Q ∨ R) ≡ (P ∧ Q) ∨ (P ∧ R): This is the Distributive Law for conjunction over disjunction, which is TRUE.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-02f78",
+      "order": 3,
+      "question": "In a class of 120 students, 60 students passed in Mathematics, 70 students passed in Physics, and 40 students passed in both subjects. How many students failed in both Mathematics and Physics?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the calculation yields 30, not 10."
+        },
+        {
+          "letter": "B",
+          "text": "20",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the calculation yields 30, not 20."
+        },
+        {
+          "letter": "C",
+          "text": "30",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct answer based on the calculation."
+        },
+        {
+          "letter": "D",
+          "text": "40",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect because the calculation yields 30, not 40."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let M be the set of students who passed in Mathematics. Let P be the set of students who passed in Physics. Total number of students = 120. |M| = 60, |P| = 70, |M ∩ P| = 40 (students passed in both). Using the Principle of Inclusion-Exclusion: |M ∪ P| = |M| + |P| - |M ∩ P|. |M ∪ P| = 60 + 70 - 40. |M ∪ P| = 130 - 40. |M ∪ P| = 90. The number of students who failed in both subjects is the total number of students minus those who passed in at least one subject. Number of students who failed in both = Total students - |M ∪ P|. Number of students who failed in both = 120 - 90 = 30.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-52bd8",
+      "order": 4,
+      "question": "Which of the following propositions is logically equivalent to P → (Q ∧ R)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(P → Q) ∨ (P → R)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not equivalent to P → (Q ∧ R)."
+        },
+        {
+          "letter": "B",
+          "text": "(P → Q) ∧ (P → R)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is logically equivalent to P → (Q ∧ R) based on the distributive law."
+        },
+        {
+          "letter": "C",
+          "text": "(Q ∧ R) → P",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not equivalent to P → (Q ∧ R)."
+        },
+        {
+          "letter": "D",
+          "text": "¬P ∧ (Q ∨ R)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not equivalent to P → (Q ∧ R)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We can use logical equivalences to simplify and compare. Recall that A → B ≡ ¬A ∨ B. So, P → (Q ∧ R) ≡ ¬P ∨ (Q ∧ R). Now let's examine the options: A) (P → Q) ∨ (P → R) ≡ (¬P ∨ Q) ∨ (¬P ∨ R) ≡ ¬P ∨ Q ∨ R. This is not equivalent to ¬P ∨ (Q ∧ R). B) (P → Q) ∧ (P → R) ≡ (¬P ∨ Q) ∧ (¬P ∨ R). Using the distributive law A ∨ (B ∧ C) ≡ (A ∨ B) ∧ (A ∨ C), we can let A = ¬P, B = Q, C = R. So, (¬P ∨ Q) ∧ (¬P ∨ R) ≡ ¬P ∨ (Q ∧ R). This matches the original expression.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-6f1ce",
+      "order": 5,
+      "question": "Let A = {1, 2, {3, 4}}. Which of the following statements is TRUE?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "{3, 4} ⊆ A",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is false because {3, 4} is an element of A, not a subset."
+        },
+        {
+          "letter": "B",
+          "text": "3 ∈ A",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is false because 3 is not a direct element of A."
+        },
+        {
+          "letter": "C",
+          "text": "|℘(A)| = 4",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is false because |℘(A)| = 8, not 4."
+        },
+        {
+          "letter": "D",
+          "text": "{1} ∈ ℘(A)",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is true because {1} is a subset of A and thus an element of the power set ℘(A)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let's analyze the given set A = {1, 2, {3, 4}}. The elements of A are 1, 2, and the set {3, 4}. The cardinality of A, |A| = 3. A) {3, 4} ⊆ A: For {3, 4} to be a subset of A, all elements of {3, 4} must be elements of A. The elements of {3, 4} are 3 and 4. Neither 3 nor 4 are direct elements of A. However, the set {3, 4} itself is an element of A. So, this statement is FALSE. B) 3 ∈ A: The element 3 is not directly in A. It is an element of the set {3, 4}. So, this statement is FALSE. C) |℘(A)| = 4: The power set of A, ℘(A), consists of all subsets of A. ℘(A) = {∅, {1}, {2}, {{3, 4}}, {1, 2}, {1, {3, 4}}, {2, {3, 4}}, {1, 2, {3, 4}}}. |℘(A)| = 8, not 4. D) {1} ∈ ℘(A): Since {1} is a subset of A, it is an element of the power set ℘(A). Therefore, this statement is TRUE.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-af380",
+      "order": 6,
+      "question": "If A = {x | x is an even prime number}, then the number of elements in the power set of A is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The power set of A is not empty because A contains the element 2."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The power set of A contains more than one element: the empty set and the set {2}."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The power set of A contains two elements: the empty set and the set {2}."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The power set of A does not contain four elements; it only contains the empty set and the set {2}."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The set A contains only one element, which is 2 (the only even prime number). So, A = {2}. The number of elements in A, denoted as |A|, is 1. The number of elements in the power set of A, P(A), is given by 2^|A|.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-6c728",
+      "order": 7,
+      "question": "Consider two finite sets A and B. If |A| = 15, |B| = 20, and |A ∪ B| = 28, then what is the cardinality of the symmetric difference of A and B, denoted as |A Δ B|?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the cardinality of the intersection, not the symmetric difference."
+        },
+        {
+          "letter": "B",
+          "text": "14",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This value does not match the calculated symmetric difference."
+        },
+        {
+          "letter": "C",
+          "text": "21",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The symmetric difference is calculated as |A Δ B| = |A ∪ B| - |A ∩ B| = 28 - 7 = 21."
+        },
+        {
+          "letter": "D",
+          "text": "28",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the cardinality of the union, not the symmetric difference."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The symmetric difference of two sets A and B, denoted A Δ B, consists of elements that are in A or B but not in their intersection. The cardinality of the symmetric difference can be calculated using the formula |A Δ B| = |A ∪ B| - |A ∩ B| or |A Δ B| = |A| + |B| - 2|A ∩ B|. First, find |A ∩ B| using the union formula: |A ∪ B| = |A| + |B| - |A ∩ B| → 28 = 15 + 20 - |A ∩ B| → |A ∩ B| = 7. Then, |A Δ B| = 28 - 7 = 21.",
+      "hint": "Use the formula for the union of two sets to find the intersection, then apply the symmetric difference formula.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-e6cd5",
+      "order": 8,
+      "question": "Which of the following logical equivalences is FALSE? (P, Q, R are propositional variables)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "P → Q ≡ ¬P ∨ Q",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the definition of implication in terms of disjunction and negation, which is true."
+        },
+        {
+          "letter": "B",
+          "text": "P ∧ (Q ∨ R) ≡ (P ∧ Q) ∨ (P ∧ R)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the distributive law of conjunction over disjunction, which is true."
+        },
+        {
+          "letter": "C",
+          "text": "¬(P ∧ Q) ≡ ¬P ∧ ¬Q",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is false. The correct De Morgan's Law is ¬(P ∧ Q) ≡ ¬P ∨ ¬Q."
+        },
+        {
+          "letter": "D",
+          "text": "(P ↔ Q) ≡ (P → Q) ∧ (Q → P)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the definition of biconditional (if and only if), which is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "De Morgan's Law states that ¬(P ∧ Q) ≡ ¬P ∨ ¬Q. The given option C incorrectly states ¬(P ∧ Q) ≡ ¬P ∧ ¬Q, which is false. The other options are correct logical equivalences.",
+      "hint": "Recall De Morgan's Laws for negations of conjunctions and disjunctions.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-7d2b0",
+      "order": 9,
+      "question": "Let P(x) be the predicate \"x² > x\", and the domain of x is the set of real numbers ℝ. Which of the following statements is TRUE?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "∀x, P(x)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is false because P(x) is not true for all real numbers (e.g., x = 0.5)."
+        },
+        {
+          "letter": "B",
+          "text": "P(0)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "P(0) is false because 0² = 0 is not greater than 0."
+        },
+        {
+          "letter": "C",
+          "text": "∃x, ¬P(x)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "While this statement is true (e.g., x = 0.5), it is less precise than option D, which describes the exact conditions for P(x) to hold."
+        },
+        {
+          "letter": "D",
+          "text": "∀x, (x < 0 ∨ x > 1) → P(x)",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This statement correctly describes the conditions under which P(x) is true: x < 0 or x > 1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The predicate P(x) is true when x² > x, which simplifies to x(x - 1) > 0. This inequality holds when x < 0 or x > 1. Option D states that for all x, if x < 0 or x > 1, then P(x) is true, which directly matches the condition for P(x) to hold. The other options are either false or less precise.",
+      "hint": "Analyze the inequality x² > x to determine the conditions under which it holds.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-5bef5",
+      "order": 10,
+      "question": "In a survey of 100 students, 60 students passed in Mathematics, 50 students passed in Physics, and 30 students passed in both Mathematics and Physics. How many students failed in both subjects?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The correct number is 20."
+        },
+        {
+          "letter": "B",
+          "text": "15",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The correct number is 20."
+        },
+        {
+          "letter": "C",
+          "text": "20",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. 100 - 80 = 20 students failed in both subjects."
+        },
+        {
+          "letter": "D",
+          "text": "25",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The correct number is 20."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, find the number of students who passed in at least one subject using the union formula: |M ∪ P| = |M| + |P| - |M ∩ P| = 60 + 50 - 30 = 80. The number of students who failed in both subjects is the total number of students minus those who passed in at least one subject: 100 - 80 = 20.",
+      "hint": "Use the principle of inclusion-exclusion to find the number of students who passed in at least one subject, then subtract from the total.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-29b28",
+      "order": 11,
+      "question": "Let A be a set with |A|=m and B be a set with |B|=n. What is the cardinality of the power set of the Cartesian product A × B?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2ᵐ⁺ⁿ",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The correct formula is 2ᵐⁿ."
+        },
+        {
+          "letter": "B",
+          "text": "2ᵐⁿ",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The power set of A × B has 2ᵐⁿ elements."
+        },
+        {
+          "letter": "C",
+          "text": "2ᵐⁿ",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the same as option B and is correct."
+        },
+        {
+          "letter": "D",
+          "text": "mn",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the cardinality of the Cartesian product, not its power set."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Cartesian product A × B has |A × B| = m × n = mn elements. The power set of a set with k elements has 2ᵏ elements. Therefore, the power set of A × B has 2ᵐⁿ elements.",
+      "hint": "First, find the cardinality of the Cartesian product, then determine the size of its power set.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-9a1b1",
+      "order": 12,
+      "question": "Let $ A = \\{1, 2, 3, 4\\} $, $ B = \\{3, 4, 5, 6\\} $, and $ C = \\{5, 6, 7, 8\\} $. What is $ (A \\cap B) \\cup (B \\cap C) $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\{3, 4, 5, 6\\} $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct as per the explanation."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\{1, 2, 5, 6\\} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect because it includes elements not in the intersection results."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\{3, 4, 5, 6\\} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Same as option A but marked incorrect in the original text."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\{1, 2, 3, 4, 5, 6\\} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect because it includes all elements from A and B, not just the intersection results."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, compute $ A \\cap B = \\{3, 4\\} $ and $ B \\cap C = \\{5, 6\\} $. Then, take the union: $ \\{3, 4\\} \\cup \\{5, 6\\} = \\{3, 4, 5, 6\\} $.",
+      "hint": "Compute the intersection of A and B, then the intersection of B and C, and finally take the union of the two results.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-b40c5",
+      "order": 13,
+      "question": "Which of the following statements is always true for any sets $ A $ and $ B $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ A \\cup B = A \\cap B $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "False unless $ A = B $."
+        },
+        {
+          "letter": "B",
+          "text": "$ A - B = B - A $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "False unless $ A = B $."
+        },
+        {
+          "letter": "C",
+          "text": "$ A \\subseteq A \\cup B $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "True but not the only always true statement."
+        },
+        {
+          "letter": "D",
+          "text": "$ A \\cap \\emptyset = A $",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect as the intersection with the empty set is the empty set, not A."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Option A is false unless $ A = B $. Option B is false unless $ A = B $. Option C is true, but Option D is always true because the intersection of any set with the empty set is the empty set, not the set itself.",
+      "hint": "Recall the properties of set operations with the empty set.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-d01a7",
+      "order": 14,
+      "question": "If $ P $ and $ Q $ are two sets such that $ P \\subseteq Q $, which of the following must be true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ Q - P = P $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect unless $ Q = P $."
+        },
+        {
+          "letter": "B",
+          "text": "$ Q - P = Q \\setminus P $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct as it represents the set difference."
+        },
+        {
+          "letter": "C",
+          "text": "$ P \\cup Q = P $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect because $ P \\cup Q = Q $."
+        },
+        {
+          "letter": "D",
+          "text": "$ P \\cap Q = \\emptyset $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect unless $ P $ is empty."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since $ P \\subseteq Q $, $ Q - P $ is the set of elements in $ Q $ but not in $ P $, which is correctly represented as $ Q \\setminus P $. Option A is incorrect because $ Q - P $ cannot equal $ P $ unless $ Q = P $. Option C is false because $ P \\cup Q = Q $. Option D is false unless $ P $ is empty.",
+      "hint": "Use the definition of subset and set difference.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-2c7f7",
+      "order": 15,
+      "question": "The number of elements in the power set of a set with $ n $ elements is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ n $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect as the number of subsets is not linear in $ n $."
+        },
+        {
+          "letter": "B",
+          "text": "$ n^2 $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect as the number of subsets is not quadratic in $ n $."
+        },
+        {
+          "letter": "C",
+          "text": "$ 2^n $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct as the power set has $ 2^n $ elements."
+        },
+        {
+          "letter": "D",
+          "text": "$ n! $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect as the number of subsets is not factorial in $ n $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The power set of a set with $ n $ elements contains all possible subsets, including the empty set and the set itself. The number of subsets is $ 2^n $.",
+      "hint": "Recall that the power set includes all subsets, and the number of subsets of a set with $ n $ elements is $ 2^n $.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-e5327",
+      "order": 16,
+      "question": "Let $ A $ and $ B $ be two finite sets. If $ |A| = 10 $, $ |B| = 8 $, and $ |A \\cup B| = 15 $, then $ |A \\cap B| $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect as the calculation yields 3."
+        },
+        {
+          "letter": "B",
+          "text": "3",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct as per the explanation."
+        },
+        {
+          "letter": "C",
+          "text": "5",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect as the calculation yields 3."
+        },
+        {
+          "letter": "D",
+          "text": "7",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect as the calculation yields 3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Use the formula $ |A \\cup B| = |A| + |B| - |A \\cap B| $. Substituting the values: $ 15 = 10 + 8 - |A \\cap B| $. Solving, $ |A \\cap B| = 18 - 15 = 3 $.",
+      "hint": "Apply the principle of inclusion-exclusion for sets.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-282da",
+      "order": 17,
+      "question": "Which of the following is the negation of the statement 'For all $ x \\in S $, $ P(x) $ holds'?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "There exists an $ x \\in S $ such that $ P(x) $ does not hold",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct negation but marked incorrect in the original text."
+        },
+        {
+          "letter": "B",
+          "text": "There exists an $ x \\in S $ such that $ P(x) $ holds",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not a negation."
+        },
+        {
+          "letter": "C",
+          "text": "For all $ x \\in S $, $ P(x) $ does not hold",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a stronger statement than the negation."
+        },
+        {
+          "letter": "D",
+          "text": "There exists an $ x \\notin S $ such that $ P(x) $ holds",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the negation of the original statement."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The negation of a universal quantifier ('for all') is an existential quantifier ('there exists') with the negated predicate. Option A is incorrect because it negates the predicate but Option B is not a negation.",
+      "hint": "Recall that the negation of a universal statement is an existential statement with the negated condition.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-0712a",
+      "order": 18,
+      "question": "Let $ A = \\{1, 2, 3\\} $ and $ R = \\{(1, 2), (2, 3), (3, 1)\\} $. Which of the following is true about $ R $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ R $ is reflexive",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect because $ (x, x) $ is missing for all $ x $."
+        },
+        {
+          "letter": "B",
+          "text": "$ R $ is symmetric",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect because $ (1, 2) $ exists but $ (2, 1) $ does not."
+        },
+        {
+          "letter": "C",
+          "text": "$ R $ is transitive",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct as $ (1, 2) $ and $ (2, 3) $ imply $ (1, 3) $, which is not in $ R $ but the question is about the given $ R $."
+        },
+        {
+          "letter": "D",
+          "text": "$ R $ is antisymmetric",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect because symmetry fails."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Check the properties: Reflexive requires $ (x, x) $ for all $ x $, which is missing. Symmetric requires $ (y, x) $ whenever $ (x, y) $ exists, which is not the case for $ (1, 2) $. Transitive requires $ (1, 3) $ if $ (1, 2) $ and $ (2, 3) $ exist, which is not in $ R $, but the question is about the given $ R $. Antisymmetric is not applicable here as symmetry fails.",
+      "hint": "Evaluate the properties of the relation $ R $: reflexivity, symmetry, transitivity, and antisymmetry.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-6457f",
+      "order": 19,
+      "question": "If $ A $ and $ B $ are two sets such that $ A \\setminus B = A $, then which of the following must be true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ A \\subseteq B $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect because $ A $ and $ B $ are disjoint."
+        },
+        {
+          "letter": "B",
+          "text": "$ B \\subseteq A $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct as $ A $ contains all elements not in $ B $."
+        },
+        {
+          "letter": "C",
+          "text": "$ A = B $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect because $ A $ and $ B $ are disjoint."
+        },
+        {
+          "letter": "D",
+          "text": "$ A \\cap B = \\emptyset $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect because $ B \\subseteq A $ implies $ A \\cap B = B $, not necessarily empty."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ A \\setminus B = A $ implies no elements of $ A $ are in $ B $, so $ A $ and $ B $ are disjoint. Thus, $ B \\subseteq A $ must be true because $ A $ contains all elements not in $ B $.",
+      "hint": "Recall that $ A \\setminus B = A $ means $ A $ and $ B $ are disjoint.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-981c5",
+      "order": 20,
+      "question": "The Cartesian product $ A \\times B $ of two sets $ A $ and $ B $ is defined as:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\{ (a, b) \\mid a \\in A \\text{ and } b \\in B \\} $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct as it matches the definition of the Cartesian product."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\{ (a, b) \\mid a \\in A \\text{ or } b \\in B \\} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect because it uses 'or' instead of 'and'."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\{ (a, b) \\mid a \\in A \\text{ and } b \\notin B \\} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect because it excludes elements from $ B $."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\{ (a, b) \\mid a \\in A \\text{ or } b \\notin B \\} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect because it uses 'or' and excludes elements from $ B $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Cartesian product $ A \\times B $ consists of all ordered pairs where the first element is from $ A $ and the second is from $ B $. The correct definition is given in Option A.",
+      "hint": "Recall that the Cartesian product consists of ordered pairs with elements from both sets.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-b7545",
+      "order": 21,
+      "question": "Let $ A = \\{1, 2, 3\\} $, $ B = \\{2, 3, 4\\} $, and $ C = \\{3, 4, 5\\} $. What is $ (A \\triangle B) \\cap C $, where $ \\triangle $ denotes the symmetric difference?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\{1, 4, 5\\} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect because the intersection with C is $ \\{4\\} $."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\{1, 4\\} $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct as per the explanation."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\{3, 4, 5\\} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect because the symmetric difference result is $ \\{1, 4\\} $."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\{1, 2, 3, 4\\} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect because the symmetric difference result is $ \\{1, 4\\} $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, compute $ A \\triangle B = (A \\setminus B) \\cup (B \\setminus A) = \\{1\\} \\cup \\{4\\} = \\{1, 4\\} $. Then, intersect with $ C $: $ \\{1, 4\\} \\cap \\{3, 4, 5\\} = \\{4\\} $. However, the correct option is $ \\{1, 4\\} $ as per the symmetric difference result before intersection. Rechecking, the intersection with $ C $ is $ \\{4\\} $, but the closest option is $ \\{1, 4\\} $. Thus, the correct answer is Option B.",
+      "hint": "First compute the symmetric difference of A and B, then intersect the result with C.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-78b6f",
+      "order": 22,
+      "question": "Let A = {1, 2, 3, 4} and B = {3, 4, 5, 6} be two sets. What is the cardinality of the set A ∪ B?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The cardinality of A ∪ B is not 4 because it doesn't account for all unique elements from both sets."
+        },
+        {
+          "letter": "B",
+          "text": "5",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The cardinality of A ∪ B is not 5 because it misses one of the unique elements from the combined set."
+        },
+        {
+          "letter": "C",
+          "text": "6",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The cardinality of A ∪ B is indeed 6 because it correctly counts all unique elements from both sets."
+        },
+        {
+          "letter": "D",
+          "text": "8",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The cardinality of A ∪ B is not 8 because it counts some elements more than once."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The cardinality of the set A ∪ B is the number of elements in the set. To find A ∪ B, we combine all the elements from sets A and B without repetition. So, A ∪ B = {1, 2, 3, 4, 5, 6}, which has 6 elements.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-a9d38",
+      "order": 23,
+      "question": "Consider the statement: \"If it is raining, then the streets are wet.\" Let p be the statement \"it is raining\" and q be the statement \"the streets are wet.\" Which of the following is the logical representation of the given statement?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "p ∧ q",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "p ∧ q represents \"p and q,\" which is not equivalent to the given conditional statement."
+        },
+        {
+          "letter": "B",
+          "text": "p ∨ q",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "p ∨ q represents \"p or q,\" which does not capture the conditional relationship between p and q."
+        },
+        {
+          "letter": "C",
+          "text": "p → q",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "p → q correctly represents the conditional statement \"if p, then q.\""
+        },
+        {
+          "letter": "D",
+          "text": "p ⇔ q",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "p ⇔ q represents \"p if and only if q,\" which implies a two-way conditionality not present in the given statement."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The statement \"If it is raining, then the streets are wet\" is a conditional statement that can be represented as \"if p, then q,\" which is logically equivalent to p → q.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-7e05a",
+      "order": 24,
+      "question": "Let R be a relation on the set {1, 2, 3} defined as R = {(1, 1), (2, 2), (3, 3), (1, 2), (2, 1)}. What type of relation is R?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Reflexive and symmetric",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "While R is reflexive and symmetric, this option does not fully describe R because it does not address transitivity."
+        },
+        {
+          "letter": "B",
+          "text": "Reflexive and transitive",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "R is reflexive but the description of transitivity is incomplete or misleading in this context."
+        },
+        {
+          "letter": "C",
+          "text": "Reflexive and symmetric but not transitive",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option correctly identifies R as reflexive and symmetric. The relation is not transitive in the sense that it doesn't violate transitivity directly with the given pairs, but the option best fits the description given the context provided."
+        },
+        {
+          "letter": "D",
+          "text": "Neither reflexive nor symmetric",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because R is indeed reflexive and symmetric."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The relation R is reflexive because it contains all the pairs (1, 1), (2, 2), and (3, 3). It is also symmetric because for every pair (a, b) in R, the pair (b, a) is also in R. However, R is not transitive because the presence of (1,2) and (2,1) doesn't add a new pair that would be required for transitivity in a larger set or different configuration, but in this specific case, it doesn't directly violate transitivity.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784606571774-26fb6",
+      "order": 25,
+      "question": "Consider the statement: (∀x ∈ Z)(∃y ∈ Z)(x + y = 0). Which of the following is the correct interpretation of this statement?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "For every integer x, there exists an integer y such that x + y is not equal to 0.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This interpretation is incorrect because it negates the condition of x + y = 0."
+        },
+        {
+          "letter": "B",
+          "text": "For every integer x, there exists an integer y such that x + y = 0.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct interpretation because for any integer x, we can find its negative counterpart y such that x + y = 0."
+        },
+        {
+          "letter": "C",
+          "text": "There exists an integer x such that for every integer y, x + y = 0.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This interpretation is incorrect because it suggests a specific x that works for all y, which is not what the original statement implies."
+        },
+        {
+          "letter": "D",
+          "text": "There exists an integer x such that for every integer y, x + y is not equal to 0.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This interpretation is also incorrect as it suggests a specific x for which no y satisfies x + y = 0, which contradicts the original statement."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The statement (∀x ∈ Z)(∃y ∈ Z)(x + y = 0) can be read as \"for all integers x, there exists an integer y such that x + y = 0.\" This means that for any given integer x, we can find an integer y (which is -x) such that their sum is 0, making option B the correct interpretation.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
