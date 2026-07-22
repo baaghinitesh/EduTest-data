@@ -1,0 +1,1329 @@
+{
+  "id": "a02467ba-5096-4723-92ff-6dcfcf38a9e0",
+  "title": "UP BOARD CLASS 12 — Physics | Logic Gates Boolean Algebra",
+  "description": "Subject-wise test on Logic Gates Boolean Algebra (Physics) for UP BOARD CLASS 12. 25Q.",
+  "board": "UP Board",
+  "classSlug": "up-board-class-12",
+  "classNumber": 12,
+  "subjects": [
+    "upbo12-physics"
+  ],
+  "subject": "upbo12-physics",
+  "chapter": "Modern Physics",
+  "topic": "Logic Gates Boolean Algebra",
+  "testType": "subject-wise",
+  "duration": 38,
+  "totalMarks": 25,
+  "passingMarks": 10,
+  "totalQuestions": 25,
+  "targetQuestions": 25,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "up-board-class-12",
+    "gates",
+    "algebra",
+    "boolean",
+    "logic",
+    "modern",
+    "physics",
+    "upbo12-physics"
+  ],
+  "instructions": [
+    "Subject: Physics",
+    "Total Questions: 25",
+    "Total Marks: 25",
+    "Duration: 38 minutes",
+    "Correct answer: +1 mark",
+    "No negative marking",
+    "Topic: Logic Gates Boolean Algebra"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-07-22T04:00:07.233Z",
+  "questions": [
+    {
+      "id": "q-1784692783216-0db58",
+      "order": 1,
+      "question": "Which of the following logic gates is known as a universal gate?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "AND gate",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "AND gate is not a universal gate"
+        },
+        {
+          "letter": "B",
+          "text": "OR gate",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "OR gate is not a universal gate"
+        },
+        {
+          "letter": "C",
+          "text": "NOT gate",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "NOT gate is not a universal gate"
+        },
+        {
+          "letter": "D",
+          "text": "NAND gate",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "NAND gate is a universal gate"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "NAND and NOR gates are called universal gates because any basic logic gate (AND, OR, NOT) can be constructed using only NAND gates or only NOR gates.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-1bd32",
+      "order": 2,
+      "question": "Why are NAND and NOR gates called universal gates?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The assertion is true; NAND and NOR gates are indeed universal gates. The reason is also true; they can be used to construct any other logic gate (AND, OR, NOT)."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R is NOT the correct explanation of A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the reason provided is indeed the correct explanation for why NAND and NOR gates are called universal gates."
+        },
+        {
+          "letter": "C",
+          "text": "A is true, but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because both the assertion and the reason are true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false, but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the assertion is true; NAND and NOR gates are indeed universal gates."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "NAND and NOR gates are called universal gates because they can perform all the three basic logic functions (AND, OR, NOT) when connected appropriately.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-f4744",
+      "order": 3,
+      "question": "Which of the following Boolean expressions correctly represents the output Y of a digital circuit that is HIGH only when a majority of its inputs are HIGH?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Y = A + B + C",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This expression represents an OR gate, which gives 1 if any input is 1, not a majority."
+        },
+        {
+          "letter": "B",
+          "text": "Y = A ⋅ B ⋅ C",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This expression represents an AND gate, which gives 1 only if all inputs are 1, not a majority."
+        },
+        {
+          "letter": "C",
+          "text": "Y = AB + BC + CA",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This expression correctly identifies all cases where at least two inputs are HIGH, representing a majority."
+        },
+        {
+          "letter": "D",
+          "text": "Y = (A+B)(B+C)(C+A)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Although this expression also represents the majority function, the standard and simpler sum-of-products form is AB + BC + CA, making option C the more direct and commonly written form."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The condition is 'output Y is HIGH (1) only when a majority of its inputs are HIGH'. For three inputs, a majority means at least two inputs are HIGH.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-60422",
+      "order": 4,
+      "question": "Which of the following gates produces a HIGH output (1) only when all of its inputs are HIGH (1)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "OR gate",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "An OR gate produces a HIGH output if any of its inputs are HIGH."
+        },
+        {
+          "letter": "B",
+          "text": "NOT gate",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "A NOT gate inverts its input, it does not require all inputs to be HIGH."
+        },
+        {
+          "letter": "C",
+          "text": "AND gate",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "An AND gate's output is 1 if and only if all its inputs are 1."
+        },
+        {
+          "letter": "D",
+          "text": "XOR gate",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "An XOR gate produces a HIGH output if an odd number of its inputs are HIGH."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "An AND gate's output is 1 if and only if all its inputs are 1. If even one input is 0, the output is 0.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-a3b28",
+      "order": 5,
+      "question": "The Boolean expression for a NOR gate with inputs A and B is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A . B",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the Boolean expression for an AND gate."
+        },
+        {
+          "letter": "B",
+          "text": "A + B",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the Boolean expression for an OR gate."
+        },
+        {
+          "letter": "C",
+          "text": "(A + B)'",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "A NOR gate inverts the result of the OR operation."
+        },
+        {
+          "letter": "D",
+          "text": "(A . B)'",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the Boolean expression for a NAND gate."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A NOR gate performs the OR operation on its inputs and then inverts the result.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-d43e9",
+      "order": 6,
+      "question": "According to De Morgan's second theorem, the complement of a product (A.B)' is equivalent to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A' + B'",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "De Morgan's second theorem: (A.B)' = A' + B'."
+        },
+        {
+          "letter": "B",
+          "text": "A' . B'",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is De Morgan's first theorem: (A+B)' = A'.B'."
+        },
+        {
+          "letter": "C",
+          "text": "A + B",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the Boolean expression for an OR gate."
+        },
+        {
+          "letter": "D",
+          "text": "(A + B)'",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the Boolean expression for a NOR gate."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "De Morgan's second theorem states that the complement of a product is equal to the sum of the complements.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-eff96",
+      "order": 7,
+      "question": "If the inputs to a NAND gate are A=1 and B=0, what will be the output (Y)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The output of a NAND gate is 0 only if all inputs are 1."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The output of a NAND gate is 1 if any input is 0."
+        },
+        {
+          "letter": "C",
+          "text": "Undefined",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The output of a NAND gate is always defined for given inputs."
+        },
+        {
+          "letter": "D",
+          "text": "Depends on the specific gate type",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The output of a NAND gate is determined by its inputs, not the gate type."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A NAND gate first performs an AND operation and then inverts the result.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-49f1d",
+      "order": 8,
+      "question": "How many minimum two-input NAND gates are required to construct a NOT gate?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "A single NAND gate can be used to create a NOT gate by tying both inputs together."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "More than one NAND gate is not necessary to create a NOT gate."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "More than one NAND gate is not necessary to create a NOT gate."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "More than one NAND gate is not necessary to create a NOT gate."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A NOT gate can be constructed from a single two-input NAND gate by connecting both inputs together.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-ff72a",
+      "order": 9,
+      "question": "Simplify the Boolean expression Y = A(A + B).",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Y = A(A + B) simplifies to A using Boolean laws."
+        },
+        {
+          "letter": "B",
+          "text": "B",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The expression does not simplify to just B."
+        },
+        {
+          "letter": "C",
+          "text": "A + B",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the expression before simplification, not after."
+        },
+        {
+          "letter": "D",
+          "text": "AB",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The simplified expression is A, not AB."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the distributive law and idempotent law, the expression simplifies to A.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-8ae0b",
+      "order": 10,
+      "question": "**Assertion (A):** The NAND and NOR gates are called universal gates. **Reason (R):** Any basic logic gate (AND, OR, NOT) can be constructed using only NAND gates or only NOR gates.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "NAND and NOR gates are universal because they can create any basic logic gate."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R is NOT the correct explanation of A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Reason correctly explains why NAND and NOR gates are universal."
+        },
+        {
+          "letter": "C",
+          "text": "A is true, but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Both Assertion and Reason are true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false, but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Both Assertion and Reason are true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Both Assertion and Reason are true, and Reason is the correct explanation of Assertion.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-ee1fd",
+      "order": 11,
+      "question": "Consider a logic circuit where the output of an OR gate (with inputs A and B) is fed as an input to a NOT gate. What is the equivalent single gate for this combination?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "AND gate",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "An AND gate does not match the described combination."
+        },
+        {
+          "letter": "B",
+          "text": "NOR gate",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "A NOR gate is equivalent to an OR gate followed by a NOT gate."
+        },
+        {
+          "letter": "C",
+          "text": "XOR gate",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "An XOR gate does not match the described combination."
+        },
+        {
+          "letter": "D",
+          "text": "XNOR gate",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "An XNOR gate does not match the described combination."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The combination of an OR gate followed by a NOT gate is equivalent to a NOR gate.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-311c0",
+      "order": 12,
+      "question": "What is the simplified Boolean expression for the output Y of the circuit shown below?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Y = AB",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the NAND gate produces an output of 1 only if at least one of its inputs is 0, not when both inputs are 1."
+        },
+        {
+          "letter": "B",
+          "text": "Y = A'B'",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is correct because the NAND gate produces an output of 1 only if at least one of its inputs is 0, which is equivalent to Y = A'B'."
+        },
+        {
+          "letter": "C",
+          "text": "Y = A + B",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the NAND gate produces an output of 1 only if at least one of its inputs is 0, not when either input is 1."
+        },
+        {
+          "letter": "D",
+          "text": "Y = (A + B)'",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because the NAND gate produces an output of 1 only if at least one of its inputs is 0, not when both inputs are 0."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The circuit shown has inputs A and B connected to a NAND gate. To simplify the Boolean expression for the output Y, we need to analyze the gate's operation. A NAND gate produces an output of 1 only if at least one of its inputs is 0. Therefore, the output Y can be expressed as Y = A NAND B, which is equivalent to Y = (A'B + B')' = A'B'",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-a3381",
+      "order": 13,
+      "question": "Which of the following Boolean expressions represents the OR operation?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A + B",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct representation of the OR operation."
+        },
+        {
+          "letter": "B",
+          "text": "A · B",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This represents the AND operation, not the OR operation."
+        },
+        {
+          "letter": "C",
+          "text": "A' + B'",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct representation of the OR operation."
+        },
+        {
+          "letter": "D",
+          "text": "A' · B'",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct representation of the OR operation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The OR operation in Boolean algebra is represented by the symbol + or OR.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-c7c74",
+      "order": 14,
+      "question": "The Boolean expression (A + B)' is equivalent to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A' + B'",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct equivalent expression."
+        },
+        {
+          "letter": "B",
+          "text": "A' · B'",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct equivalent expression according to De Morgan's theorem."
+        },
+        {
+          "letter": "C",
+          "text": "A · B",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct equivalent expression."
+        },
+        {
+          "letter": "D",
+          "text": "A + B'",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct equivalent expression."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "According to De Morgan's theorem, (A + B)' = A' · B'.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-e6888",
+      "order": 15,
+      "question": "Assertion (A): NAND gate is a universal gate. Reason (R): NAND gate can be used to construct any other logic gate.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct answer because the reason correctly explains the assertion."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R is not the correct explanation of A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct answer because the reason does correctly explain the assertion."
+        },
+        {
+          "letter": "C",
+          "text": "A is true, but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct answer because both the assertion and the reason are true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false, but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct answer because both the assertion and the reason are true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A NAND gate is indeed universal because any logic gate can be constructed using only NAND gates.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-89d16",
+      "order": 16,
+      "question": "Which of the following gates will give a high output when all inputs are low?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "AND",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "An AND gate outputs high only when all inputs are high."
+        },
+        {
+          "letter": "B",
+          "text": "NOR",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "A NOR gate outputs high only when all inputs are low."
+        },
+        {
+          "letter": "C",
+          "text": "NAND",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "A NAND gate outputs low only when all inputs are high."
+        },
+        {
+          "letter": "D",
+          "text": "XOR",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "An XOR gate outputs high when the inputs are different."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A NOR gate outputs high (1) only when all inputs are low (0).",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-dcd73",
+      "order": 17,
+      "question": "The Boolean expression A · (B + C) can be simplified to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A · B + C",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct simplification."
+        },
+        {
+          "letter": "B",
+          "text": "A · B + A · C",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct simplification using the distributive law."
+        },
+        {
+          "letter": "C",
+          "text": "A + B · C",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct simplification."
+        },
+        {
+          "letter": "D",
+          "text": "A' · B' · C'",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct simplification."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the distributive law of Boolean algebra, A · (B + C) = A · B + A · C.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-e4bc0",
+      "order": 18,
+      "question": "A logic circuit has two inputs, A and B, and one output, Y. The output Y is high only when both inputs are different. Which gate does this circuit represent?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "AND",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "An AND gate outputs high only when both inputs are high."
+        },
+        {
+          "letter": "B",
+          "text": "OR",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "An OR gate outputs high when at least one input is high."
+        },
+        {
+          "letter": "C",
+          "text": "XOR",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "An XOR gate outputs high only when the inputs are different."
+        },
+        {
+          "letter": "D",
+          "text": "NAND",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "A NAND gate outputs low only when both inputs are high."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "An XOR (exclusive OR) gate outputs high (1) only when the inputs are different.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-2402f",
+      "order": 19,
+      "question": "The truth table for a logic gate is given below. Identify the gate:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "NOR",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The truth table matches that of a NOR gate."
+        },
+        {
+          "letter": "B",
+          "text": "NAND",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The truth table does not match that of a NAND gate."
+        },
+        {
+          "letter": "C",
+          "text": "XNOR",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The truth table does not match that of an XNOR gate."
+        },
+        {
+          "letter": "D",
+          "text": "AND",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The truth table does not match that of an AND gate."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The truth table matches that of a NOR gate, which outputs high (1) only when both inputs are low (0).",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-efcb6",
+      "order": 20,
+      "question": "Which of the following is NOT a valid Boolean identity?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A + 0 = A",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a valid Boolean identity."
+        },
+        {
+          "letter": "B",
+          "text": "A · 1 = A",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is a valid Boolean identity."
+        },
+        {
+          "letter": "C",
+          "text": "A + A' = 0",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The correct identity is A + A' = 1, not 0."
+        },
+        {
+          "letter": "D",
+          "text": "A · A' = 0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is a valid Boolean identity."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The identity A + A' = 1 (not 0).",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-50bc2",
+      "order": 21,
+      "question": "If the output of a NAND gate is connected to one of its inputs, the resulting output is equivalent to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "AND gate",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct equivalent gate."
+        },
+        {
+          "letter": "B",
+          "text": "NOT gate",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct equivalent gate."
+        },
+        {
+          "letter": "C",
+          "text": "OR gate",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct equivalent gate."
+        },
+        {
+          "letter": "D",
+          "text": "XOR gate",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct equivalent gate."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Connecting the output of a NAND gate to one of its inputs converts it into a NOT gate.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-e2d7d",
+      "order": 22,
+      "question": "The Boolean expression (A + B) · (A + C) can be simplified to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A + B · C",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct simplification using the distributive law."
+        },
+        {
+          "letter": "B",
+          "text": "A + B · C",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct simplification using the distributive law."
+        },
+        {
+          "letter": "C",
+          "text": "A · B + A · C",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct simplification."
+        },
+        {
+          "letter": "D",
+          "text": "A' · B' + A' · C'",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct simplification."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the distributive law, (A + B) · (A + C) = A + B · C.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-5746e",
+      "order": 23,
+      "question": "Which of the following Boolean expressions represents the output of a NAND gate?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A + B",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the Boolean expression for the OR gate, not the NAND gate."
+        },
+        {
+          "letter": "B",
+          "text": "A . B",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the Boolean expression for the AND gate, not the NAND gate."
+        },
+        {
+          "letter": "C",
+          "text": "(A . B)'",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct Boolean expression for the NAND gate."
+        },
+        {
+          "letter": "D",
+          "text": "A ⊕ B",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the Boolean expression for the XOR gate, not the NAND gate."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The NAND gate output is the negation of the AND gate output, so (A . B)' is correct.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-3cfac",
+      "order": 24,
+      "question": "The Boolean expression for the output of an XOR gate is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A . B",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the Boolean expression for the AND gate, not the XOR gate."
+        },
+        {
+          "letter": "B",
+          "text": "A + B",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the Boolean expression for the OR gate, not the XOR gate."
+        },
+        {
+          "letter": "C",
+          "text": "A ⊕ B",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct Boolean expression for the XOR gate."
+        },
+        {
+          "letter": "D",
+          "text": "A' . B + A . B'",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Although this is a valid Boolean expression for the XOR gate, A ⊕ B is the standard representation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "XOR gate output is true when inputs are different, represented as A ⊕ B.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784692783216-2d8e0",
+      "order": 25,
+      "question": "Assertion: The output of a NOT gate is always the complement of its input. Reason: A NOT gate inverts the input signal.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both assertion and reason are true and the reason is the correct explanation of the assertion.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The NOT gate inverts the input signal, making the output the complement of the input."
+        },
+        {
+          "letter": "B",
+          "text": "Both assertion and reason are true but the reason is not the correct explanation of the assertion.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The reason provided correctly explains why the output of a NOT gate is the complement of its input."
+        },
+        {
+          "letter": "C",
+          "text": "Assertion is true but the reason is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The reason provided is true and correctly explains the assertion."
+        },
+        {
+          "letter": "D",
+          "text": "Assertion is false but reason is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The assertion is true, as the output of a NOT gate is indeed the complement of its input."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The assertion and reason are both true, and the reason correctly explains the assertion.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "upbo12-physics",
+      "difficulty": "easy",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
