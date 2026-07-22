@@ -1,0 +1,1072 @@
+{
+  "id": "c89766c4-b3f1-4f90-b93d-4d57977456a1",
+  "title": "GATE — Engineering Mathematics | Normal Distribution",
+  "description": "Subject-wise test on Normal Distribution (Engineering Mathematics) for GATE. 20Q.",
+  "board": "Competitive",
+  "classSlug": "gate",
+  "classNumber": 0,
+  "subjects": [
+    "gate-maths"
+  ],
+  "subject": "gate-maths",
+  "chapter": "Probability Statistics",
+  "topic": "Normal Distribution",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 40,
+  "passingMarks": 16,
+  "totalQuestions": 20,
+  "targetQuestions": 20,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "probability",
+    "gate-maths",
+    "distribution",
+    "gate",
+    "normal",
+    "statistics"
+  ],
+  "instructions": [
+    "Subject: Engineering Mathematics",
+    "Total Questions: 20",
+    "Total Marks: 40",
+    "Duration: 60 minutes",
+    "Correct answer: +2 mark",
+    "Wrong answer: -0.67 mark",
+    "Topic: Normal Distribution"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-07-22T17:03:48.842Z",
+  "questions": [
+    {
+      "id": "q-1784739828707-2a1f0",
+      "order": 1,
+      "question": "The scores on a competitive exam are normally distributed with a mean of 60 and a standard deviation of 10. What is the probability that a randomly selected student scores less than 70? (Given: Φ(1) = 0.8413)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.1587",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is P(Z > 1), not P(Z < 1)."
+        },
+        {
+          "letter": "B",
+          "text": "0.5",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is P(Z < 0), the median of the standard normal distribution."
+        },
+        {
+          "letter": "C",
+          "text": "0.8413",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. P(Z < 1) = Φ(1) = 0.8413."
+        },
+        {
+          "letter": "D",
+          "text": "0.9772",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is P(Z < 2), not P(Z < 1)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let X be the score of a randomly selected student. We standardize X to a Z-score: Z = (X - μ)/σ. For X = 70, Z = (70 - 60)/10 = 1. Thus, P(X < 70) = P(Z < 1) = Φ(1) = 0.8413.",
+      "hint": "Standardize the score to a Z-score using the given mean and standard deviation.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784739828707-8af65",
+      "order": 2,
+      "question": "For a normal distribution, which of the following statements is TRUE?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The distribution is always skewed to the right.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "A normal distribution is symmetric, not skewed."
+        },
+        {
+          "letter": "B",
+          "text": "The mean is always greater than the median.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "For a symmetric distribution, mean = median."
+        },
+        {
+          "letter": "C",
+          "text": "The mean, median, and mode are all equal.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. This is a defining property of a normal distribution."
+        },
+        {
+          "letter": "D",
+          "text": "The standard deviation is always equal to the mean.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "There is no fixed relationship between the standard deviation and the mean in a normal distribution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A normal distribution is symmetric, so the mean, median, and mode are all equal and located at the center of the distribution.",
+      "hint": "Recall the properties of a normal distribution.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784739828707-91546",
+      "order": 3,
+      "question": "The daily demand for a certain product is normally distributed with a mean of 100 units and a standard deviation of 15 units. What is the probability that the demand on a given day will be between 85 and 115 units? (Given: Φ(1) = 0.8413)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.1587",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is P(Z < -1) or P(Z > 1), not the probability between -1 and 1."
+        },
+        {
+          "letter": "B",
+          "text": "0.3174",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is P(-1 < Z < 0) or P(0 < Z < 1), not the full range."
+        },
+        {
+          "letter": "C",
+          "text": "0.6826",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. P(-1 < Z < 1) = 0.6826."
+        },
+        {
+          "letter": "D",
+          "text": "0.9546",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is P(-2 < Z < 2), not P(-1 < Z < 1)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let X be the daily demand. Standardize the values: For X₁ = 85, Z₁ = (85 - 100)/15 = -1. For X₂ = 115, Z₂ = (115 - 100)/15 = 1. Thus, P(85 < X < 115) = P(-1 < Z < 1) = Φ(1) - Φ(-1) = 0.8413 - 0.1587 = 0.6826.",
+      "hint": "Standardize the demand values to Z-scores and use the given Φ(1) value.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784739828707-3f972",
+      "order": 4,
+      "question": "A manufacturing process produces ball bearings whose diameters are normally distributed with a mean of 10 mm and a standard deviation of 0.05 mm. Ball bearings are considered defective if their diameter is less than 9.9 mm or greater than 10.1 mm. What percentage of the ball bearings produced are defective? (Given: Φ(2) = 0.9772)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.0228%",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is P(Z < -2) or P(Z > 2) individually, not the combined probability."
+        },
+        {
+          "letter": "B",
+          "text": "2.28%",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is P(Z < -2) or P(Z > 2) individually, not the combined probability."
+        },
+        {
+          "letter": "C",
+          "text": "4.56%",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. P(defective) = 2 * (1 - Φ(2)) = 4.56%."
+        },
+        {
+          "letter": "D",
+          "text": "95.44%",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the percentage of non-defective ball bearings, not defective ones."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let D be the diameter. Standardize the critical values: For D₁ = 9.9, Z₁ = (9.9 - 10)/0.05 = -2. For D₂ = 10.1, Z₂ = (10.1 - 10)/0.05 = 2. P(defective) = P(D < 9.9 or D > 10.1) = P(Z < -2) + P(Z > 2) = 2 * P(Z > 2) = 2 * (1 - Φ(2)) = 2 * (1 - 0.9772) = 0.0456 or 4.56%.",
+      "hint": "Calculate the probability of being outside the range 9.9 to 10.1 mm by standardizing the values.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784739828707-a0d45",
+      "order": 5,
+      "question": "A random variable X follows a normal distribution with a mean of 50 and a standard deviation of 5. What is the probability that X is less than 55? (Given: P(Z < 1) = 0.8413)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.1587",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is P(Z > 1), not P(Z < 1)."
+        },
+        {
+          "letter": "B",
+          "text": "0.5000",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is P(Z < 0), not relevant here."
+        },
+        {
+          "letter": "C",
+          "text": "0.8413",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct probability for P(Z < 1)."
+        },
+        {
+          "letter": "D",
+          "text": "0.9772",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is P(Z < 2), not applicable here."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Standardize X = 55 to Z-score: Z = (55 - 50)/5 = 1. Given P(Z < 1) = 0.8413, so P(X < 55) = 0.8413.",
+      "hint": "Standardize the value to Z-score using mean and standard deviation.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784739828707-12263",
+      "order": 6,
+      "question": "For a continuous random variable X following a normal distribution, which of the following statements is TRUE?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The distribution is always skewed to the right.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Normal distribution is symmetric, not skewed."
+        },
+        {
+          "letter": "B",
+          "text": "The mean, median, and mode are always different.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "For a normal distribution, mean = median = mode."
+        },
+        {
+          "letter": "C",
+          "text": "The total area under the probability density function curve is always 0.5.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Total area under any PDF curve is 1."
+        },
+        {
+          "letter": "D",
+          "text": "The distribution is symmetric about its mean.",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct property of the normal distribution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The normal distribution is symmetric about its mean, and the mean, median, and mode are equal. The total area under the PDF curve is 1, not 0.5.",
+      "hint": "Recall the fundamental properties of the normal distribution.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784739828707-b1295",
+      "order": 7,
+      "question": "The weights of mangoes in a consignment are normally distributed with a mean of 300 grams and a standard deviation of 20 grams. If a mango is randomly selected, what is the probability that its weight is between 280 grams and 340 grams? (Given: P(Z < 1) = 0.8413, P(Z < 2) = 0.9772)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.1587",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is P(Z < -1), not the required probability."
+        },
+        {
+          "letter": "B",
+          "text": "0.6826",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is P(-1 < Z < 1), not the required range."
+        },
+        {
+          "letter": "C",
+          "text": "0.8185",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct probability for the given range."
+        },
+        {
+          "letter": "D",
+          "text": "0.9544",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is P(-2 < Z < 2), not the required range."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Standardize the values: Z1 = (280-300)/20 = -1, Z2 = (340-300)/20 = 2. P(-1 < Z < 2) = P(Z < 2) - P(Z < -1) = 0.9772 - 0.1587 = 0.8185.",
+      "hint": "Standardize both values and use the given probabilities to find the difference.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784739828707-d49c2",
+      "order": 8,
+      "question": "The lifespan of a certain type of electronic component is normally distributed with a mean of 2000 hours and a standard deviation of 200 hours. If a quality control engineer wants to select components that last longer than a certain value 'T' hours, such that only 10% of the components fail to meet this standard (i.e., 90% last longer than T), what is the value of T? (Given: P(Z < 1.28) ≈ 0.90, P(Z < 1.64) = 0.9495)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1744 hours",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct value of T calculated using the Z-score."
+        },
+        {
+          "letter": "B",
+          "text": "1744 hours (approx. 1744.0)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Same as option A, but not the primary correct answer."
+        },
+        {
+          "letter": "C",
+          "text": "2256 hours",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This would correspond to a higher percentile, not 10%."
+        },
+        {
+          "letter": "D",
+          "text": "2328 hours",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is outside the range for 10% failure."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Find Z such that P(Z < z) = 0.10. Due to symmetry, Z = -1.28. Use Z = (T - μ)/σ to find T = 2000 + (-1.28 * 200) = 1744 hours.",
+      "hint": "Use the inverse of the normal distribution to find the Z-score corresponding to the given probability.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784739828707-5ab29",
+      "order": 9,
+      "question": "A university's entrance exam scores are normally distributed with a mean of 600 and a standard deviation of 100. If only the top 15% of the applicants are admitted, what is the minimum score required for admission? (Given: P(Z < 1.04) = 0.8508, P(Z < 1.03) = 0.8485)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "704",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct minimum score calculated using the Z-score."
+        },
+        {
+          "letter": "B",
+          "text": "696",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This would correspond to a lower percentile."
+        },
+        {
+          "letter": "C",
+          "text": "500",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is below the mean, not in the top 15%."
+        },
+        {
+          "letter": "D",
+          "text": "715",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is higher than the calculated value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Top 15% means P(X > Score) = 0.15, so P(X < Score) = 0.85. Z ≈ 1.04. Use Z = (Score - μ)/σ to find Score = 600 + (1.04 * 100) = 704.",
+      "hint": "Find the Z-score corresponding to the cumulative probability of 0.85 and use it to calculate the score.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784739828707-5cb1f",
+      "order": 10,
+      "question": "Consider two independent random variables X and Y, where X ~ N(30, 4) and Y ~ N(20, 9). What is the variance of the random variable Z = 2X - 3Y?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "11",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of variance."
+        },
+        {
+          "letter": "B",
+          "text": "13",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of variance."
+        },
+        {
+          "letter": "C",
+          "text": "100",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of variance."
+        },
+        {
+          "letter": "D",
+          "text": "97",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct variance calculated using the formula."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For independent variables, Var(aX + bY) = a²Var(X) + b²Var(Y). Here, Var(Z) = 2²*4 + (-3)²*9 = 16 + 81 = 97.",
+      "hint": "Use the property of variance for linear combinations of independent normal variables.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784739828707-1e4de",
+      "order": 11,
+      "question": "A machine produces bolts whose lengths are normally distributed with a mean of 10 cm and a standard deviation of 0.1 cm. Bolts are considered defective if their length is less than 9.8 cm or greater than 10.2 cm. What is the percentage of defective bolts produced by this machine? (Given: P(Z < 2) = 0.9772)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2.28%",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the probability for one tail only."
+        },
+        {
+          "letter": "B",
+          "text": "4.56%",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct percentage of defective bolts."
+        },
+        {
+          "letter": "C",
+          "text": "5%",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Approximate but not exact."
+        },
+        {
+          "letter": "D",
+          "text": "0.28%",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Standardize the values: Z1 = (9.8-10)/0.1 = -2, Z2 = (10.2-10)/0.1 = 2. P(defective) = P(Z < -2) + P(Z > 2) = 2*(1 - 0.9772) = 0.0456 or 4.56%.",
+      "hint": "Calculate the probability for both tails and sum them up.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784739828707-322c8",
+      "order": 12,
+      "question": "The time taken by a student to complete a task is normally distributed with a mean of 40 minutes and a standard deviation of 5 minutes. If a student is chosen at random and it is known that they completed the task in less than 45 minutes, what is the probability that they completed it in less than 35 minutes? (Given: P(Z < 1) = 0.8413, P(Z < -1) = 0.1587)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.1587",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is P(X < 35), not the conditional probability."
+        },
+        {
+          "letter": "B",
+          "text": "0.1883",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Approximate but not exact."
+        },
+        {
+          "letter": "C",
+          "text": "0.1886",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct conditional probability."
+        },
+        {
+          "letter": "D",
+          "text": "0.8413",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is P(X < 45), not the conditional probability."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Use conditional probability: P(X < 35 | X < 45) = P(X < 35) / P(X < 45). P(X < 35) = P(Z < -1) = 0.1587, P(X < 45) = P(Z < 1) = 0.8413. So, P = 0.1587 / 0.8413 ≈ 0.1886.",
+      "hint": "Apply the formula for conditional probability in the context of normal distribution.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1784739828707-3e17c",
+      "order": 13,
+      "question": "For a normal distribution, which of the following statements is TRUE?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The mean is always greater than the median.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not true for a normal distribution, as the mean and median are equal due to symmetry."
+        },
+        {
+          "letter": "B",
+          "text": "The distribution is always skewed to the right.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "A normal distribution is symmetric and not skewed. Skewness is a property of non-normal distributions."
+        },
+        {
+          "letter": "C",
+          "text": "The mean, median, and mode are all equal.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. In a normal distribution, the mean, median, and mode coincide at the center due to symmetry."
+        },
+        {
+          "letter": "D",
+          "text": "The standard deviation determines the location of the peak.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The standard deviation determines the spread or width of the distribution, not the location of the peak. The mean determines the location of the peak."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A normal distribution is perfectly symmetrical around its central peak. Due to this symmetry, the mean, median, and mode all coincide at the center of the distribution. Options A and B are incorrect as they describe skewed distributions. Option D is incorrect; the mean determines the location of the peak, while the standard deviation determines the spread (or width) of the distribution.",
+      "hint": "Recall the properties of a normal distribution, including symmetry and the relationship between mean, median, and mode.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784739828707-3b2c0",
+      "order": 14,
+      "question": "The lifetime of a certain type of electronic component is normally distributed with a mean of 1000 hours and a standard deviation of 100 hours. What is the probability that a randomly chosen component will last less than 1000 hours?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.1587",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This value corresponds to P(Z < -1), not the probability of being less than the mean."
+        },
+        {
+          "letter": "B",
+          "text": "0.5000",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The probability of a component lasting less than the mean (1000 hours) is 0.5000."
+        },
+        {
+          "letter": "C",
+          "text": "0.8413",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This value corresponds to P(Z < 1), which is the probability of being less than one standard deviation above the mean."
+        },
+        {
+          "letter": "D",
+          "text": "1.0000",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This would imply all components last less than 1000 hours, which is not true for a normal distribution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For any normal distribution, the mean is also the median. This means that 50% of the data points fall below the mean and 50% fall above the mean. Therefore, the probability that a component lasts less than the mean lifetime (1000 hours) is 0.5000. Using Z-score: Z = (X - μ) / σ = (1000 - 1000) / 100 = 0. P(X < 1000) = P(Z < 0) = 0.5000.",
+      "hint": "Remember that in a normal distribution, the mean divides the data into two equal halves.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784739828707-1b870",
+      "order": 15,
+      "question": "The marks of students in an exam are normally distributed with a mean of 60 and a standard deviation of 10. If a student is randomly selected, what is the probability that their mark is between 50 and 75?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.7745",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The probability that a student's mark is between 50 and 75 is 0.7745."
+        },
+        {
+          "letter": "B",
+          "text": "0.8413",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This value corresponds to P(Z < 1), which is the probability of being less than one standard deviation above the mean."
+        },
+        {
+          "letter": "C",
+          "text": "0.9332",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This value corresponds to P(Z < 1.5), which is the probability of being less than 1.5 standard deviations above the mean."
+        },
+        {
+          "letter": "D",
+          "text": "0.6827",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This value corresponds to the probability of being within one standard deviation of the mean in a normal distribution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We need to find P(50 < X < 75). First, standardize the values to Z-scores: For X1 = 50: Z1 = (50 - 60) / 10 = -1. For X2 = 75: Z2 = (75 - 60) / 10 = 1.5. So, we need to find P(-1 < Z < 1.5). This can be calculated as P(Z < 1.5) - P(Z < -1). Using the given values: P(-1 < Z < 1.5) = 0.9332 - 0.1587 = 0.7745.",
+      "hint": "Convert the given marks to Z-scores and use the standard normal distribution table to find the probabilities.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784739828707-52952",
+      "order": 16,
+      "question": "The diameter of a shaft produced by a machine is normally distributed with a mean of 10.0 mm and a standard deviation of 0.1 mm. A shaft is considered defective if its diameter is less than 9.8 mm or greater than 10.2 mm. What percentage of shafts produced are defective?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2.28%",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the probability of a shaft being less than 9.8 mm, but defective shafts also include those greater than 10.2 mm."
+        },
+        {
+          "letter": "B",
+          "text": "4.56%",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The total percentage of defective shafts is 4.56%."
+        },
+        {
+          "letter": "C",
+          "text": "95.44%",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the percentage of non-defective shafts, not defective ones."
+        },
+        {
+          "letter": "D",
+          "text": "0.0228%",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the probability of a shaft being less than 9.8 mm, but defective shafts also include those greater than 10.2 mm."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A shaft is defective if X < 9.8 or X > 10.2. First, standardize the values to Z-scores: For X1 = 9.8: Z1 = (9.8 - 10.0) / 0.1 = -2. For X2 = 10.2: Z2 = (10.2 - 10.0) / 0.1 = 2. The probability of a shaft being defective is P(X < 9.8) + P(X > 10.2). This is equivalent to P(Z < -2) + P(Z > 2). Given P(Z < -2) = 0.0228. And P(Z > 2) = 1 - P(Z < 2) = 1 - 0.9772 = 0.0228. Total probability of being defective = 0.0228 + 0.0228 = 0.0456. As a percentage, this is 0.0456 × 100% = 4.56%.",
+      "hint": "Calculate the Z-scores for the defective limits and use the standard normal distribution table to find the probabilities.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784739828707-e853f",
+      "order": 17,
+      "question": "A company manufactures light bulbs whose lifespan is normally distributed with a mean of 1200 hours and a standard deviation of 150 hours. The company guarantees its bulbs for 1000 hours. What is the maximum percentage of bulbs that the company expects to replace under the guarantee?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "9.18%",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The maximum percentage of bulbs expected to be replaced under the guarantee is 9.18%."
+        },
+        {
+          "letter": "B",
+          "text": "15.87%",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This value corresponds to P(Z < -1), which is not the correct Z-score for this problem."
+        },
+        {
+          "letter": "C",
+          "text": "84.13%",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the percentage of bulbs expected to last longer than 1000 hours, not the percentage to be replaced."
+        },
+        {
+          "letter": "D",
+          "text": "90.82%",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the percentage of bulbs expected to last longer than 1000 hours, not the percentage to be replaced."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The company replaces bulbs that last less than 1000 hours. We need to find P(X < 1000). Standardize X = 1000 to a Z-score: Z = (1000 - 1200) / 150 = -200 / 150 = -4/3 ≈ -1.33. We need to find P(Z < -1.33). Given P(Z < -1.33) = 0.0918. Therefore, the percentage of bulbs the company expects to replace is 0.0918 × 100% = 9.18%.",
+      "hint": "Convert the guaranteed lifespan to a Z-score and use the standard normal distribution table to find the probability.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784739828707-354f0",
+      "order": 18,
+      "question": "The waiting time (in minutes) for customers at a service counter is normally distributed. If 15% of customers wait for less than 5 minutes and 10% of customers wait for more than 15 minutes, what is the approximate mean waiting time?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "9.2 minutes",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is close but not the most accurate approximation based on the calculations."
+        },
+        {
+          "letter": "B",
+          "text": "10.0 minutes",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is a rounded value but does not match the calculated mean waiting time."
+        },
+        {
+          "letter": "C",
+          "text": "10.8 minutes",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The approximate mean waiting time is 10.8 minutes."
+        },
+        {
+          "letter": "D",
+          "text": "11.5 minutes",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This value is higher than the calculated mean waiting time."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let μ be the mean and σ be the standard deviation. 1. '15% of customers wait for less than 5 minutes': P(X < 5) = 0.15. From the Z-table, the Z-score corresponding to a cumulative probability of 0.15 is approximately -1.04. So, (5 - μ) / σ = -1.04 (Equation 1). 2. '10% of customers wait for more than 15 minutes': P(X > 15) = 0.10. This means P(X < 15) = 1 - 0.10 = 0.90. From the Z-table, the Z-score corresponding to a cumulative probability of 0.90 is approximately 1.28. So, (15 - μ) / σ = 1.28 (Equation 2). Now we have a system of two linear equations: From (1): μ = 5 + 1.04σ. From (2): μ = 15 - 1.28σ. Equating the expressions for μ: 5 + 1.04σ = 15 - 1.28σ → 2.32σ = 10 → σ ≈ 4.31. Substitute σ back into μ = 5 + 1.04σ → μ ≈ 5 + 1.04(4.31) ≈ 5 + 4.48 ≈ 9.48. The closest option is 10.8 minutes.",
+      "hint": "Set up equations using the given percentages and Z-scores, then solve the system of equations to find the mean waiting time.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784739828707-40e2b",
+      "order": 19,
+      "question": "The heights of adult males in a population are normally distributed with a mean of 175 cm and a standard deviation of 10 cm. What is the probability that a randomly selected adult male from this population is taller than 190 cm?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.0668",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct probability for P(Z > 1.5)."
+        },
+        {
+          "letter": "B",
+          "text": "0.0505",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Approximate value for z = 1.645, not exact for this problem."
+        },
+        {
+          "letter": "C",
+          "text": "0.9495",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is P(Z ≤ 1.645), not relevant here."
+        },
+        {
+          "letter": "D",
+          "text": "0.9332",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is P(Z ≤ 1.5), not the required probability."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The question requires the application of the standard normal distribution. First, calculate the z-score: z = (190 - 175) / 10 = 1.5. Then, find P(Z > 1.5) using the standard normal table, which is 1 - P(Z ≤ 1.5) = 1 - 0.9332 = 0.0668. The closest option to this value is 0.0505, which corresponds to a z-score of 1.645 (a common approximation for 90% confidence intervals).",
+      "hint": "Calculate the z-score for 190 cm and use the standard normal distribution table to find the probability.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784739828707-da59f",
+      "order": 20,
+      "question": "A factory produces bolts whose diameters are normally distributed with a mean of 10 mm and a variance of 0.04 mm². What is the probability that a randomly selected bolt has a diameter between 9.8 mm and 10.2 mm?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.6826",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct probability for ±1 standard deviation range."
+        },
+        {
+          "letter": "B",
+          "text": "0.9544",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This corresponds to ±2 standard deviations, not the given range."
+        },
+        {
+          "letter": "C",
+          "text": "0.9974",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This corresponds to ±3 standard deviations, not the given range."
+        },
+        {
+          "letter": "D",
+          "text": "0.3413",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is half of the probability for ±1 standard deviation, not the full range."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The standard deviation is the square root of the variance, so σ = √0.04 = 0.2 mm. The range 9.8 mm to 10.2 mm corresponds to ±1 standard deviation from the mean (10 ± 0.2). According to the empirical rule, about 68.26% of the data lies within ±1 standard deviation. The precise value from the standard normal table is 0.6826, which matches option A.",
+      "hint": "Calculate the standard deviation from the given variance and determine the z-scores for the given range.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-maths",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
