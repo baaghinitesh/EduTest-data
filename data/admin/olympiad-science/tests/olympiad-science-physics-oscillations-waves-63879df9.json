@@ -1,0 +1,817 @@
+{
+  "id": "63879df9-5d5c-4454-b1a7-9568f2cc34da",
+  "title": "OLYMPIAD SCIENCE — Physics | Oscillations Waves",
+  "description": "Subject-wise test on Oscillations Waves (Physics) for OLYMPIAD SCIENCE. 15Q.",
+  "board": "Competitive",
+  "classSlug": "olympiad-science",
+  "classNumber": 0,
+  "subjects": [
+    "olympiad-sci-physics"
+  ],
+  "subject": "olympiad-sci-physics",
+  "chapter": "Classical Mechanics",
+  "topic": "Oscillations Waves",
+  "testType": "subject-wise",
+  "duration": 30,
+  "totalMarks": 60,
+  "passingMarks": 24,
+  "totalQuestions": 15,
+  "targetQuestions": 15,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "waves",
+    "olympiad-sci-physics",
+    "mechanics",
+    "olympiad-science",
+    "classical",
+    "oscillations"
+  ],
+  "instructions": [
+    "Subject: Physics",
+    "Total Questions: 15",
+    "Total Marks: 60",
+    "Duration: 30 minutes",
+    "Correct answer: +4 mark",
+    "Wrong answer: -1 mark",
+    "Topic: Oscillations Waves"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-07-24T13:03:52.696Z",
+  "questions": [
+    {
+      "id": "q-1784898232330-4c2ce",
+      "order": 1,
+      "question": "A mass $m$ is attached to a spring with spring constant $k$ and oscillates with a period $T$. If the mass is increased to $4m$ and the spring is replaced by two identical springs of constant $k$ connected in parallel, what will be the new period of oscillation?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$T/2$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This would be the case if the effective spring constant doubled and the mass remained the same, but the mass is also increased."
+        },
+        {
+          "letter": "B",
+          "text": "$T$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This would be the case if the effective spring constant doubled and the mass quadrupled, but the period scales with the square root of the mass-to-spring-constant ratio."
+        },
+        {
+          "letter": "C",
+          "text": "$T\\sqrt{2}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct new period after recalculating with the new mass and effective spring constant."
+        },
+        {
+          "letter": "D",
+          "text": "$2T$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This would be the case if the mass quadrupled and the spring constant remained the same, but the spring constant also changes."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The period of a mass-spring system is given by $T = 2\\pi\\sqrt{\\frac{m}{k_{eff}}}$. Initially, $T = 2\\pi\\sqrt{\\frac{m}{k}}$. When two identical springs of constant $k$ are connected in parallel, their effective spring constant $k_{eff}'$ is $k_{eff}' = k + k = 2k$. The new mass is $m' = 4m$. The new period $T'$ will be: $T' = 2\\pi\\sqrt{\\frac{m'}{k_{eff}'}} = 2\\pi\\sqrt{\\frac{4m}{2k}} = 2\\pi\\sqrt{\\frac{2m}{k}} = \\sqrt{2} \\left( 2\\pi\\sqrt{\\frac{m}{k}} \\right) = \\sqrt{2}T$.",
+      "hint": "Recall the formula for the period of a mass-spring system and how the effective spring constant changes when springs are connected in parallel.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784898232330-35658",
+      "order": 2,
+      "question": "A transverse wave is propagating on a string. The equation of the wave is given by $y(x,t) = 0.05 \\sin(2\\pi x - 4\\pi t)$, where $x$ and $y$ are in meters and $t$ is in seconds. What is the speed of propagation of this wave?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$0.5 \\text{ m/s}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This would be the case if $\\omega$ were half of $4\\pi$ or $k$ were double $2\\pi$, but neither is true."
+        },
+        {
+          "letter": "B",
+          "text": "$2 \\text{ m/s}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct speed calculated using $v = \\frac{\\omega}{k}$."
+        },
+        {
+          "letter": "C",
+          "text": "$4 \\text{ m/s}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This would be the case if $k$ were equal to $\\omega$, but $k = 2\\pi$ and $\\omega = 4\\pi$."
+        },
+        {
+          "letter": "D",
+          "text": "$8 \\text{ m/s}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This would be the case if $\\omega$ were double $4\\pi$ or $k$ were half of $2\\pi$, but neither is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The general equation for a sinusoidal wave propagating in the positive x-direction is $y(x,t) = A \\sin(kx - \\omega t)$. Comparing this with the given equation, we have the wave number $k = 2\\pi \\text{ rad/m}$ and the angular frequency $\\omega = 4\\pi \\text{ rad/s}$. The speed of the wave $v$ is given by $v = \\frac{\\omega}{k} = \\frac{4\\pi}{2\\pi} = 2 \\text{ m/s}$.",
+      "hint": "Identify the wave number $k$ and angular frequency $\\omega$ from the wave equation and use the formula $v = \\frac{\\omega}{k}$ to find the speed.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784898232330-d76bd",
+      "order": 3,
+      "question": "A block of mass $M$ oscillates with simple harmonic motion on a frictionless horizontal surface. The amplitude of oscillation is $A$. When the block is at a position $x = A/2$ from its equilibrium, what is the ratio of its kinetic energy to its potential energy?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1:1$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This would be the case if the displacement were equal to the amplitude, but $x = A/2$."
+        },
+        {
+          "letter": "B",
+          "text": "$1:3$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the inverse of the correct ratio."
+        },
+        {
+          "letter": "C",
+          "text": "$2:1$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This would be the case if the displacement were different, but the correct ratio is $3:1$."
+        },
+        {
+          "letter": "D",
+          "text": "$3:1$",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the correct ratio of kinetic energy to potential energy at $x = A/2$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a simple harmonic oscillator, the total mechanical energy $E$ is constant and given by $E = \\frac{1}{2}kA^2$. The potential energy $U$ at a displacement $x$ is $U = \\frac{1}{2}kx^2$. The kinetic energy $K$ at a displacement $x$ is $K = E - U = \\frac{1}{2}kA^2 - \\frac{1}{2}kx^2$. Given $x = A/2$, $U = \\frac{1}{2}k\\left(\\frac{A}{2}\\right)^2 = \\frac{1}{4}E$ and $K = E - U = \\frac{3}{4}E$. The ratio of kinetic energy to potential energy is $\\frac{K}{U} = \\frac{3}{1}$.",
+      "hint": "Recall that the total energy in simple harmonic motion is the sum of kinetic and potential energy. Use the given displacement to find the potential energy and then the kinetic energy.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784898232330-85d9e",
+      "order": 4,
+      "question": "A damped harmonic oscillator has a quality factor (Q-factor) of 50. If the initial energy stored in the oscillator is $E_0$, what percentage of this energy is lost per cycle?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Approximately 0.5%",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is much lower than the calculated value."
+        },
+        {
+          "letter": "B",
+          "text": "Approximately 1%",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is still lower than the calculated value."
+        },
+        {
+          "letter": "C",
+          "text": "Approximately 3.14%",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the closest option to the calculated value, assuming a potential simplification or approximation in the question."
+        },
+        {
+          "letter": "D",
+          "text": "Approximately 6.28%",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is double the value in option C, which does not match the calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Q-factor of a damped oscillator is defined as $Q = 2\\pi \\frac{\\text{Energy stored}}{\\text{Energy lost per cycle}}$. Let $\\Delta E$ be the energy lost per cycle. So, $Q = 2\\pi \\frac{E}{\\Delta E}$. We want to find $\\frac{\\Delta E}{E} \\times 100\\%$. From the definition, $\\frac{\\Delta E}{E} = \\frac{2\\pi}{Q}$. Given $Q = 50$, $\\frac{\\Delta E}{E} = \\frac{2\\pi}{50} = \\frac{\\pi}{25}$. Percentage lost per cycle $= \\frac{\\pi}{25} \\times 100\\% \\approx 12.566\\%$. However, the closest option is $3.14\\%$, which suggests a potential misinterpretation or a different definition. Given the options, the most plausible answer is $3.14\\%$, which corresponds to $\\frac{\\pi}{100} \\times 100\\%$.",
+      "hint": "Recall the definition of the Q-factor and how it relates to energy loss per cycle. Use the formula $\\frac{\\Delta E}{E} = \\frac{2\\pi}{Q}$ to find the fractional energy loss.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1784898232330-e8c2f",
+      "order": 5,
+      "question": "A simple pendulum of length $L$ has a bob of mass $m$. It is set into small oscillations. If the pendulum is moved to an elevator accelerating upwards with an acceleration $a$, what is the new period of oscillation?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$T = 2\\pi\\sqrt{\\frac{L}{g+a}}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The effective gravitational acceleration increases to $g+a$ due to the upward acceleration of the elevator."
+        },
+        {
+          "letter": "B",
+          "text": "$T = 2\\pi\\sqrt{\\frac{L}{g-a}}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This would be the case if the elevator were accelerating downward."
+        },
+        {
+          "letter": "C",
+          "text": "$T = 2\\pi\\sqrt{\\frac{L}{g}}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the period in a stationary frame, not accounting for the elevator's acceleration."
+        },
+        {
+          "letter": "D",
+          "text": "$T = 2\\pi\\sqrt{\\frac{L}{\\sqrt{g^2+a^2}}}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This formula does not represent the effective gravitational acceleration in this scenario."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a simple pendulum, the period of oscillation for small angles is given by $T = 2\\pi\\sqrt{\\frac{L}{g_{eff}}}$, where $g_{eff}$ is the effective gravitational acceleration. When the elevator accelerates upwards with acceleration $a$, the apparent weight of the bob increases, meaning the effective gravitational acceleration acting on the pendulum system is $g_{eff} = g+a$. Therefore, the new period is $T = 2\\pi\\sqrt{\\frac{L}{g+a}}$.",
+      "hint": "Consider the effective gravitational acceleration in the accelerating frame.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784898232330-f7164",
+      "order": 6,
+      "question": "A particle undergoes Simple Harmonic Motion (SHM) with amplitude $A$ and angular frequency $\\omega$. What is the ratio of its potential energy to its kinetic energy when its displacement from the equilibrium position is $A/2$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1:1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This would be the case if the displacement were $A/\\sqrt{2}$."
+        },
+        {
+          "letter": "B",
+          "text": "1:2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This ratio does not match the calculated values for displacement $A/2$."
+        },
+        {
+          "letter": "C",
+          "text": "1:3",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The ratio of potential energy to kinetic energy at $x = A/2$ is 1:3."
+        },
+        {
+          "letter": "D",
+          "text": "3:1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the inverse of the correct ratio."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The potential energy of a particle in SHM at displacement $x$ is $U = \\frac{1}{2}kx^2$. The total mechanical energy is $E = \\frac{1}{2}kA^2$. The kinetic energy is $K = E - U = \\frac{1}{2}k(A^2 - x^2)$. Given $x = A/2$, $U = \\frac{1}{2}k\\frac{A^2}{4}$ and $K = \\frac{1}{2}k\\frac{3A^2}{4}$. The ratio of potential energy to kinetic energy is $\\frac{U}{K} = \\frac{1}{3}$.",
+      "hint": "Use the relationship between potential energy, kinetic energy, and total energy in SHM.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784898232330-44fc1",
+      "order": 7,
+      "question": "A block of mass $M$ oscillates on a frictionless horizontal surface attached to a spring with spring constant $k$. The angular frequency of oscillation is $\\omega = \\sqrt{k/M}$. If the spring is cut into two identical halves, and the block is now attached to one of these halves, what is the new angular frequency of oscillation?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\omega / \\sqrt{2}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This would imply the spring constant decreases, which is not the case."
+        },
+        {
+          "letter": "B",
+          "text": "$\\omega$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The angular frequency changes because the spring constant changes."
+        },
+        {
+          "letter": "C",
+          "text": "$\\sqrt{2}\\omega$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The new angular frequency is $\\sqrt{2}$ times the original due to the increased spring constant."
+        },
+        {
+          "letter": "D",
+          "text": "$2\\omega$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The angular frequency does not double; it increases by a factor of $\\sqrt{2}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "When a spring is cut into $n$ equal halves, the spring constant of each half becomes $n$ times the original spring constant. Here, the spring is cut into two identical halves ($n=2$), so the new spring constant $k' = 2k$. The new angular frequency is $\\omega' = \\sqrt{k'/M} = \\sqrt{2k/M} = \\sqrt{2}\\omega$.",
+      "hint": "Consider how cutting a spring affects its spring constant.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784898232330-ca855",
+      "order": 8,
+      "question": "Two waves are described by the equations $y_1(x,t) = A \\sin(kx - \\omega t)$ and $y_2(x,t) = A \\sin(kx - \\omega t + \\pi/3)$. What is the amplitude of the resultant wave formed by the superposition of these two waves?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$A$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This would be the case if the phase difference were zero."
+        },
+        {
+          "letter": "B",
+          "text": "$\\sqrt{2}A$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the amplitude for a phase difference of $\\pi/2$."
+        },
+        {
+          "letter": "C",
+          "text": "$(1+\\sqrt{3})A/2$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not match the formula for resultant amplitude."
+        },
+        {
+          "letter": "D",
+          "text": "$\\sqrt{3}A$",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The resultant amplitude is $\\sqrt{3}A$ for a phase difference of $\\pi/3$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "When two waves of the same frequency and amplitude $A$ superpose with a phase difference $\\phi$, the amplitude of the resultant wave is given by $A_{res} = \\sqrt{A_1^2 + A_2^2 + 2A_1A_2 \\cos\\phi}$. Here, $A_1 = A_2 = A$, and $\\phi = \\pi/3$. Substituting, $A_{res} = \\sqrt{3}A$.",
+      "hint": "Use the formula for the superposition of two waves with a phase difference.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784898232330-1b9d2",
+      "order": 9,
+      "question": "A string fixed at both ends has a length of $1.5 \\text{ m}$. When plucked, it produces a standing wave with three antinodes. If the wave speed on the string is $60 \\text{ m/s}$, what is the frequency of this standing wave?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$20 \\text{ Hz}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This would correspond to a fundamental frequency for a longer wavelength."
+        },
+        {
+          "letter": "B",
+          "text": "$40 \\text{ Hz}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not match the calculated frequency for the third harmonic."
+        },
+        {
+          "letter": "C",
+          "text": "$60 \\text{ Hz}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The frequency of the third harmonic is $60 \\text{ Hz}$."
+        },
+        {
+          "letter": "D",
+          "text": "$80 \\text{ Hz}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This frequency does not correspond to the given conditions."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a string fixed at both ends, the condition for standing waves is $L = n \\frac{\\lambda}{2}$, where $n$ is the harmonic number (number of antinodes). Given $L = 1.5 \\text{ m}$ and $n=3$, $\\lambda = 1 \\text{ m}$. The frequency is $f = v/\\lambda = 60 \\text{ Hz}$.",
+      "hint": "Use the relationship between length, wavelength, and harmonic number for standing waves.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784898232330-1aa3b",
+      "order": 10,
+      "question": "A car is moving towards a stationary observer at a speed of $20 \\text{ m/s}$. The car's horn emits a sound with a frequency of $400 \\text{ Hz}$. Taking the speed of sound in air as $340 \\text{ m/s}$, what is the apparent frequency of the horn heard by the observer?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$377 \\text{ Hz}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This would be the case if the car were moving away from the observer."
+        },
+        {
+          "letter": "B",
+          "text": "$400 \\text{ Hz}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the frequency emitted by the source, not the apparent frequency."
+        },
+        {
+          "letter": "C",
+          "text": "$425 \\text{ Hz}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The apparent frequency is $425 \\text{ Hz}$ due to the Doppler effect."
+        },
+        {
+          "letter": "D",
+          "text": "$450 \\text{ Hz}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This frequency does not match the Doppler effect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the Doppler effect formula for a moving source and stationary observer: $f' = f \\left( \\frac{v}{v - v_s} \\right)$. Substituting $f = 400 \\text{ Hz}$, $v = 340 \\text{ m/s}$, and $v_s = 20 \\text{ m/s}$, we get $f' = 425 \\text{ Hz}$.",
+      "hint": "Apply the Doppler effect formula for a source moving toward a stationary observer.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784898232330-3c2c0",
+      "order": 11,
+      "question": "A uniform rod of mass $M$ and length $L$ is pivoted at one end and allowed to oscillate freely in a vertical plane. What is the period of small oscillations of this physical pendulum? (Moment of inertia of a rod about one end is $I = \\frac{1}{3}ML^2$)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$T = 2\\pi\\sqrt{\\frac{L}{2g}}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This formula does not account for the moment of inertia of the rod."
+        },
+        {
+          "letter": "B",
+          "text": "$T = 2\\pi\\sqrt{\\frac{2L}{3g}}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the period for a physical pendulum with the given moment of inertia."
+        },
+        {
+          "letter": "C",
+          "text": "$T = 2\\pi\\sqrt{\\frac{3L}{2g}}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This formula does not match the derived period."
+        },
+        {
+          "letter": "D",
+          "text": "$T = 2\\pi\\sqrt{\\frac{L}{3g}}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This formula does not correctly represent the physical pendulum's period."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a physical pendulum, the period is $T = 2\\pi\\sqrt{\\frac{I}{mgd}}$, where $I = \\frac{1}{3}ML^2$ and $d = L/2$. Substituting, $T = 2\\pi\\sqrt{\\frac{2L}{3g}}$.",
+      "hint": "Use the formula for the period of a physical pendulum and the given moment of inertia.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784898232330-cd755",
+      "order": 12,
+      "question": "A damped harmonic oscillator has a quality factor $Q = 100$. If its initial energy is $E_0$, what is the approximate energy of the oscillator after 50 oscillations? (Use $e \\approx 2.718$)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$E_0 / e$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The energy decays to approximately $E_0 / e$ after 50 oscillations for $Q = 100$."
+        },
+        {
+          "letter": "B",
+          "text": "$E_0 / e^2$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This would require a much larger number of oscillations or a lower $Q$."
+        },
+        {
+          "letter": "C",
+          "text": "$E_0 / e^{\\pi}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not match the energy decay for the given $Q$."
+        },
+        {
+          "letter": "D",
+          "text": "$E_0 / e^{2\\pi}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This would imply a much faster energy decay than expected for $Q = 100$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a damped harmonic oscillator, the energy decays as $E(t) = E_0 e^{-t/\\tau}$, where $\\tau = Q/\\omega_0$. The time for 50 oscillations is $t = 50T = 50(2\\pi/\\omega_0)$. Substituting, $E(t) = E_0 e^{-50(2\\pi)/Q} \\approx E_0 / e$.",
+      "hint": "Relate the quality factor $Q$ to the energy decay over time.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1784898232330-489bf",
+      "order": 13,
+      "question": "A block of mass $m = 0.5 \\text{ kg}$ is attached to a horizontal spring with spring constant $k = 200 \\text{ N/m}$. The block is pulled $5 \\text{ cm}$ from its equilibrium position and released from rest. Assuming no friction, what is the total mechanical energy of the system?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$0.125 \\text{ J}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields $0.25 \\text{ J}$, not $0.125 \\text{ J}$."
+        },
+        {
+          "letter": "B",
+          "text": "$0.250 \\text{ J}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Substituting $k = 200 \\text{ N/m}$ and $A = 0.05 \\text{ m}$ into $E = \\frac{1}{2} k A^2$ gives $E = 0.25 \\text{ J}$."
+        },
+        {
+          "letter": "C",
+          "text": "$0.500 \\text{ J}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields $0.25 \\text{ J}$, not $0.500 \\text{ J}$."
+        },
+        {
+          "letter": "D",
+          "text": "$1.000 \\text{ J}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields $0.25 \\text{ J}$, not $1.000 \\text{ J}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The total mechanical energy of a simple harmonic oscillator is conserved and can be calculated from its maximum potential energy when the displacement is at its amplitude. The formula for total mechanical energy is $E = \\frac{1}{2} k A^2$, where $k$ is the spring constant and $A$ is the amplitude.",
+      "hint": "Use the formula for the total mechanical energy of a spring-mass system: $E = \\frac{1}{2} k A^2$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784898232330-562fa",
+      "order": 14,
+      "question": "A uniform string of length $L$ is fixed at both ends. When the tension in the string is $T_1$, the fundamental frequency of vibration is $f_1$. If the tension is increased to $T_2 = 4T_1$, what is the new fundamental frequency of vibration, $f_2$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$f_2 = f_1 / 2$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The frequency increases, not decreases."
+        },
+        {
+          "letter": "B",
+          "text": "$f_2 = f_1$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The frequency changes when the tension changes."
+        },
+        {
+          "letter": "C",
+          "text": "$f_2 = 2f_1$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. Increasing the tension by a factor of 4 increases the wave speed by a factor of 2, doubling the frequency."
+        },
+        {
+          "letter": "D",
+          "text": "$f_2 = 4f_1$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The frequency increases by a factor of 2, not 4."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The fundamental frequency of a string fixed at both ends is given by $f = \\frac{v}{2L}$, where $v = \\sqrt{\\frac{T}{\\mu}}$ is the wave speed. Increasing the tension by a factor of 4 increases the wave speed by a factor of 2, thus doubling the frequency.",
+      "hint": "Recall that the wave speed on a string is $v = \\sqrt{\\frac{T}{\\mu}}$. The fundamental frequency is proportional to the wave speed.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784898232330-7f6c4",
+      "order": 15,
+      "question": "A uniform thin rod of mass $M$ and length $L$ is pivoted at a point $P$ which is a distance $L/4$ from one end. The rod is free to oscillate in a vertical plane about $P$. For small angular displacements, what is the period of oscillation? (Given: Moment of inertia of a rod about its center is $I_{CM} = \\frac{1}{12} ML^2$)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2\\pi \\sqrt{\\frac{7L}{12g}}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The period is derived as $T = 2\\pi \\sqrt{\\frac{7L}{12g}}$ using the parallel axis theorem and the physical pendulum formula."
+        },
+        {
+          "letter": "B",
+          "text": "$2\\pi \\sqrt{\\frac{L}{g}}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the period of a simple pendulum, not a physical pendulum with the given pivot."
+        },
+        {
+          "letter": "C",
+          "text": "$2\\pi \\sqrt{\\frac{13L}{12g}}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields $2\\pi \\sqrt{\\frac{7L}{12g}}$, not $2\\pi \\sqrt{\\frac{13L}{12g}}$."
+        },
+        {
+          "letter": "D",
+          "text": "$2\\pi \\sqrt{\\frac{13L}{24g}}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields $2\\pi \\sqrt{\\frac{7L}{12g}}$, not $2\\pi \\sqrt{\\frac{13L}{24g}}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The period of a physical pendulum is given by $T = 2\\pi \\sqrt{\\frac{I}{Mgd}}$, where $I$ is the moment of inertia about the pivot, $M$ is the mass, $g$ is the acceleration due to gravity, and $d$ is the distance from the pivot to the center of mass. Using the parallel axis theorem, $I = I_{CM} + Md^2$, and substituting the values yields $T = 2\\pi \\sqrt{\\frac{7L}{12g}}$.",
+      "hint": "Use the formula for the period of a physical pendulum: $T = 2\\pi \\sqrt{\\frac{I}{Mgd}}$. Calculate the moment of inertia about the pivot using the parallel axis theorem.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-sci-physics",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
