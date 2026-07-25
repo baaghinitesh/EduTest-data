@@ -1,0 +1,816 @@
+{
+  "id": "a6a9447d-c8bd-4a3b-89ca-978d57799dd0",
+  "title": "OLYMPIAD MATH — Number Theory | Chinese Remainder Theorem",
+  "description": "Subject-wise test on Chinese Remainder Theorem (Number Theory) for OLYMPIAD MATH. 12Q.",
+  "board": "Competitive",
+  "classSlug": "olympiad-math",
+  "classNumber": 0,
+  "subjects": [
+    "olympiad-number-theory"
+  ],
+  "subject": "olympiad-number-theory",
+  "chapter": "Number Theory Basics",
+  "topic": "Chinese Remainder Theorem",
+  "testType": "subject-wise",
+  "duration": 30,
+  "totalMarks": 60,
+  "passingMarks": 21,
+  "totalQuestions": 15,
+  "targetQuestions": 15,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "olympiad-number-theory",
+    "basics",
+    "number",
+    "olympiad-math",
+    "theory",
+    "remainder",
+    "theorem",
+    "chinese"
+  ],
+  "instructions": [
+    "Subject: Number Theory",
+    "Total Questions: 12",
+    "Total Marks: 48",
+    "Duration: 30 minutes",
+    "Correct answer: +4 mark",
+    "Wrong answer: -1 mark",
+    "Topic: Chinese Remainder Theorem"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-07-25T16:31:08.180440Z",
+  "questions": [
+    {
+      "id": "q-1784997068180-c195b",
+      "order": 1,
+      "question": "Find the smallest positive integer $x$ that satisfies the following system of congruences: $x \\equiv 2 \\pmod{3}$ and $x \\equiv 3 \\pmod{5}$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "8",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The smallest positive integer satisfying both congruences is 8."
+        },
+        {
+          "letter": "B",
+          "text": "13",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "13 satisfies $x \\equiv 3 \\pmod{5}$ but not $x \\equiv 2 \\pmod{3}$."
+        },
+        {
+          "letter": "C",
+          "text": "18",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "18 satisfies $x \\equiv 3 \\pmod{5}$ but not $x \\equiv 2 \\pmod{3}$."
+        },
+        {
+          "letter": "D",
+          "text": "23",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "23 satisfies $x \\equiv 3 \\pmod{5}$ but not $x \\equiv 2 \\pmod{3}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "From the first congruence, $x$ can be written as $x = 3k + 2$ for some integer $k$. Substituting into the second congruence: $3k + 2 \\equiv 3 \\pmod{5}$ simplifies to $3k \\equiv 1 \\pmod{5}$. The multiplicative inverse of 3 modulo 5 is 2, so $k \\equiv 2 \\pmod{5}$. Thus, $k = 5m + 2$ for some integer $m$, and $x = 3(5m + 2) + 2 = 15m + 8$. The smallest positive $x$ occurs when $m = 0$, giving $x = 8$.",
+      "hint": "Express $x$ in terms of one congruence and substitute into the other.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784997068180-5c8e5",
+      "order": 2,
+      "question": "A number $N$ leaves a remainder of 2 when divided by 5, and a remainder of 3 when divided by 7. What is the smallest positive integer $N$ that satisfies these conditions?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "17",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "17 divided by 5 leaves a remainder of 2, and 17 divided by 7 leaves a remainder of 3."
+        },
+        {
+          "letter": "B",
+          "text": "23",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "23 divided by 5 leaves a remainder of 3, not 2."
+        },
+        {
+          "letter": "C",
+          "text": "37",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "37 divided by 5 leaves a remainder of 2, but 37 divided by 7 leaves a remainder of 2, not 3."
+        },
+        {
+          "letter": "D",
+          "text": "12",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "12 divided by 5 leaves a remainder of 2, but 12 divided by 7 leaves a remainder of 5, not 3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We solve the system of congruences: $N \\equiv 2 \\pmod 5$ and $N \\equiv 3 \\pmod 7$. Express $N$ as $5k + 2$ and substitute into the second congruence to get $5k + 2 \\equiv 3 \\pmod 7$, which simplifies to $5k \\equiv 1 \\pmod 7$. The modular inverse of 5 modulo 7 is 3, so $k \\equiv 3 \\pmod 7$. Thus, $k = 7j + 3$, and substituting back gives $N = 5(7j + 3) + 2 = 35j + 17$. The smallest positive $N$ is 17 when $j=0$.",
+      "hint": "Use the Chinese Remainder Theorem or solve the system of congruences step-by-step.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784997068180-64f77",
+      "order": 3,
+      "question": "Find the smallest positive integer $x$ that satisfies the system of congruences: $x \\equiv 1 \\pmod 3$, $x \\equiv 2 \\pmod 4$, and $x \\equiv 3 \\pmod 5$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "13",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "13 divided by 3 leaves a remainder of 1, but 13 divided by 4 leaves a remainder of 1, not 2."
+        },
+        {
+          "letter": "B",
+          "text": "28",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "28 divided by 3 leaves a remainder of 1, but 28 divided by 4 leaves a remainder of 0, not 2."
+        },
+        {
+          "letter": "C",
+          "text": "49",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "49 divided by 3 leaves a remainder of 1, but 49 divided by 4 leaves a remainder of 1, not 2."
+        },
+        {
+          "letter": "D",
+          "text": "58",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "58 divided by 3 leaves a remainder of 1, 58 divided by 4 leaves a remainder of 2, and 58 divided by 5 leaves a remainder of 3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We solve the system step-by-step. From $x \\equiv 1 \\pmod 3$, express $x = 3k + 1$. Substitute into $x \\equiv 2 \\pmod 4$ to get $3k + 1 \\equiv 2 \\pmod 4$, which simplifies to $3k \\equiv 1 \\pmod 4$. The inverse of 3 modulo 4 is 3, so $k \\equiv 3 \\pmod 4$, giving $k = 4j + 3$. Substitute back to get $x = 12j + 10$. Now substitute into $x \\equiv 3 \\pmod 5$ to get $12j + 10 \\equiv 3 \\pmod 5$, which simplifies to $2j \\equiv 3 \\pmod 5$. The inverse of 2 modulo 5 is 3, so $j \\equiv 4 \\pmod 5$, giving $j = 5m + 4$. Substitute back to get $x = 60m + 58$. The smallest positive $x$ is 58 when $m=0$.",
+      "hint": "Solve the congruences sequentially, combining them step-by-step.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1784997068180-37dc7",
+      "order": 4,
+      "question": "A farmer is counting his chickens. If he groups them by threes, there is 1 left over. If he groups them by fives, there are 2 left over. If he groups them by sevens, there are 3 left over. What is the smallest possible total number of chickens the farmer has?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "8",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "8 divided by 3 leaves a remainder of 2, not 1."
+        },
+        {
+          "letter": "B",
+          "text": "17",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "17 divided by 3 leaves a remainder of 2, not 1."
+        },
+        {
+          "letter": "C",
+          "text": "47",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "47 divided by 3 leaves a remainder of 2, not 1."
+        },
+        {
+          "letter": "D",
+          "text": "52",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "52 divided by 3 leaves a remainder of 1, 52 divided by 5 leaves a remainder of 2, and 52 divided by 7 leaves a remainder of 3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We solve the system of congruences: $N \\equiv 1 \\pmod 3$, $N \\equiv 2 \\pmod 5$, and $N \\equiv 3 \\pmod 7$. Express $N$ as $3k + 1$ and substitute into $N \\equiv 2 \\pmod 5$ to get $3k + 1 \\equiv 2 \\pmod 5$, which simplifies to $3k \\equiv 1 \\pmod 5$. The inverse of 3 modulo 5 is 2, so $k \\equiv 2 \\pmod 5$, giving $k = 5j + 2$. Substitute back to get $N = 15j + 7$. Now substitute into $N \\equiv 3 \\pmod 7$ to get $15j + 7 \\equiv 3 \\pmod 7$, which simplifies to $j \\equiv 3 \\pmod 7$, giving $j = 7m + 3$. Substitute back to get $N = 105m + 52$. The smallest positive $N$ is 52 when $m=0$.",
+      "hint": "Use the Chinese Remainder Theorem or solve the system of congruences step-by-step.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784997068180-94b9b",
+      "order": 5,
+      "question": "Find the smallest positive integer $x$ that satisfies the following system of congruences: $x \\equiv 2 \\pmod{3}$, $x \\equiv 3 \\pmod{5}$, $x \\equiv 2 \\pmod{7}$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "23",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The smallest positive integer satisfying all three congruences is 23."
+        },
+        {
+          "letter": "B",
+          "text": "83",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "83 satisfies the first two congruences but not the third ($83 \\equiv 6 \\pmod{7}$)."
+        },
+        {
+          "letter": "C",
+          "text": "128",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "128 satisfies the first and third congruences but not the second ($128 \\equiv 3 \\pmod{5}$ is correct, but the question asks for the smallest solution)."
+        },
+        {
+          "letter": "D",
+          "text": "158",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "158 satisfies the first congruence but not the others ($158 \\equiv 3 \\pmod{5}$ and $158 \\equiv 2 \\pmod{7}$ are incorrect)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We solve the system step-by-step using the Chinese Remainder Theorem (CRT). First, solve $x \\equiv 2 \\pmod{3}$ and $x \\equiv 3 \\pmod{5}$. Let $x = 3k + 2$. Substituting into the second congruence: $3k + 2 \\equiv 3 \\pmod{5} \\implies 3k \\equiv 1 \\pmod{5}$. The modular inverse of 3 modulo 5 is 2, so $k \\equiv 2 \\pmod{5}$. Thus, $k = 5m + 2$, and $x = 3(5m + 2) + 2 = 15m + 8$. Now, solve $x \\equiv 2 \\pmod{7}$: $15m + 8 \\equiv 2 \\pmod{7} \\implies 15m \\equiv -6 \\pmod{7} \\implies m \\equiv 1 \\pmod{7}$ (since $15 \\equiv 1 \\pmod{7}$ and $-6 \\equiv 1 \\pmod{7}$). Thus, $m = 7n + 1$, and $x = 15(7n + 1) + 8 = 105n + 23$. The smallest positive solution is when $n = 0$, so $x = 23$.",
+      "hint": "Start by solving the first two congruences, then incorporate the third.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784997068180-20f8d",
+      "order": 6,
+      "question": "What is the smallest positive integer x such that: x ≡ 2 (mod 3), x ≡ 3 (mod 5), x ≡ 2 (mod 7)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "17",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "17 mod 3 = 2 (valid), but 17 mod 5 = 2 (invalid)."
+        },
+        {
+          "letter": "B",
+          "text": "23",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "23 mod 3 = 2, mod 5 = 3, mod 7 = 2 (all valid)."
+        },
+        {
+          "letter": "C",
+          "text": "32",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "32 mod 3 = 2 (valid), but 32 mod 5 = 2 (invalid)."
+        },
+        {
+          "letter": "D",
+          "text": "47",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "47 mod 3 = 2 (valid), but 47 mod 5 = 2 (invalid)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Chinese Remainder Theorem is used to solve the system. The moduli 3, 5, and 7 are pairwise coprime. Solve step-by-step: x ≡ 2 (mod 3) and x ≡ 3 (mod 5) gives x ≡ 8 (mod 15). Now solve x ≡ 8 (mod 15) and x ≡ 2 (mod 7) to get x ≡ 23 (mod 105). Thus, the smallest positive x is 23.",
+      "hint": "Use the Chinese Remainder Theorem for pairwise coprime moduli.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784997068180-7a185",
+      "order": 7,
+      "question": "What is the smallest positive integer $x$ such that $x \\equiv 2 \\pmod{3}$, $x \\equiv 3 \\pmod{5}$, and $x \\equiv 2 \\pmod{7}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "23",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The smallest positive integer satisfying all three congruences is 23."
+        },
+        {
+          "letter": "B",
+          "text": "53",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. 53 does not satisfy $x \\equiv 2 \\pmod{3}$ (since $53 \\equiv 2 \\pmod{3}$ is true, but it fails $x \\equiv 3 \\pmod{5}$ as $53 \\equiv 3 \\pmod{5}$ is true, but the next step shows 23 is smaller)."
+        },
+        {
+          "letter": "C",
+          "text": "233",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. 233 is a solution but not the smallest positive integer satisfying all congruences."
+        },
+        {
+          "letter": "D",
+          "text": "128",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. 128 does not satisfy $x \\equiv 2 \\pmod{3}$ (since $128 \\equiv 2 \\pmod{3}$ is true, but it fails $x \\equiv 3 \\pmod{5}$ as $128 \\equiv 3 \\pmod{5}$ is true, but the next step shows 23 is smaller)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We solve the system of congruences step-by-step using the Chinese Remainder Theorem. From $x \\equiv 2 \\pmod{3}$, we write $x = 3k + 2$. Substituting into the second congruence: $3k + 2 \\equiv 3 \\pmod{5}$ simplifies to $3k \\equiv 1 \\pmod{5}$. The modular inverse of 3 modulo 5 is 2 (since $3 \\times 2 = 6 \\equiv 1 \\pmod{5}$), so $k \\equiv 2 \\pmod{5}$. Thus, $k = 5m + 2$ for some integer $m$, and substituting back gives $x = 3(5m + 2) + 2 = 15m + 8$. Now, using the third congruence $x \\equiv 2 \\pmod{7}$: $15m + 8 \\equiv 2 \\pmod{7}$ simplifies to $15m \\equiv -6 \\pmod{7}$, or $m \\equiv 1 \\pmod{7}$ (since $15 \\equiv 1 \\pmod{7}$ and $-6 \\equiv 1 \\pmod{7}$). Thus, $m = 7n + 1$, and substituting back gives $x = 15(7n + 1) + 8 = 105n + 23$. The smallest positive integer occurs when $n = 0$, so $x = 23$.",
+      "hint": "Use the Chinese Remainder Theorem to solve the system of congruences step-by-step.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784997068180-3e3a9",
+      "order": 8,
+      "question": "What is the smallest positive integer $x$ such that $x \\equiv 2 \\pmod 3$, $x \\equiv 3 \\pmod 5$, and $x \\equiv 2 \\pmod 7$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "23",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "23 satisfies all three congruences: $23 \\equiv 2 \\pmod 3$, $23 \\equiv 3 \\pmod 5$, and $23 \\equiv 2 \\pmod 7$."
+        },
+        {
+          "letter": "B",
+          "text": "53",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "53 does not satisfy $x \\equiv 2 \\pmod 7$ ($53 \\equiv 4 \\pmod 7$)."
+        },
+        {
+          "letter": "C",
+          "text": "83",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "83 does not satisfy $x \\equiv 3 \\pmod 5$ ($83 \\equiv 3 \\pmod 5$ is correct, but $83 \\equiv 6 \\pmod 7$ is incorrect)."
+        },
+        {
+          "letter": "D",
+          "text": "113",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "113 does not satisfy $x \\equiv 2 \\pmod 3$ ($113 \\equiv 2 \\pmod 3$ is correct, but $113 \\equiv 5 \\pmod 7$ is incorrect)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We solve the system of congruences step-by-step using the Chinese Remainder Theorem. First, solve $x \\equiv 2 \\pmod 3$ and $x \\equiv 3 \\pmod 5$ to get $x \\equiv 8 \\pmod{15}$. Then combine this with $x \\equiv 2 \\pmod 7$ to find $x \\equiv 23 \\pmod{105}$. The smallest positive solution is 23.",
+      "hint": "Start by solving the first two congruences, then combine the result with the third.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784997068180-536d8",
+      "order": 9,
+      "question": "What is the smallest positive integer $x$ such that $x \\equiv 3 \\pmod 7$, $x \\equiv 5 \\pmod 8$, and $x \\equiv 1 \\pmod 3$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "117",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "117 does not satisfy $x \\equiv 5 \\pmod 8$ ($117 \\equiv 5 \\pmod 8$ is correct, but $117 \\equiv 1 \\pmod 3$ is incorrect)."
+        },
+        {
+          "letter": "B",
+          "text": "149",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "149 does not satisfy $x \\equiv 3 \\pmod 7$ ($149 \\equiv 2 \\pmod 7$)."
+        },
+        {
+          "letter": "C",
+          "text": "199",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "199 satisfies all three congruences: $199 \\equiv 3 \\pmod 7$, $199 \\equiv 5 \\pmod 8$, and $199 \\equiv 1 \\pmod 3$."
+        },
+        {
+          "letter": "D",
+          "text": "251",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "251 does not satisfy $x \\equiv 1 \\pmod 3$ ($251 \\equiv 2 \\pmod 3$)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We solve the system of congruences step-by-step. First, solve $x \\equiv 3 \\pmod 7$ and $x \\equiv 5 \\pmod 8$ to get $x \\equiv 59 \\pmod{56}$. Then combine this with $x \\equiv 1 \\pmod 3$ to find $x \\equiv 199 \\pmod{168}$. The smallest positive solution is 199.",
+      "hint": "Start by solving the first two congruences, then combine the result with the third.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784997068180-c882a",
+      "order": 10,
+      "question": "What is the smallest positive integer solution to the congruence system: $x \\equiv 1 \\pmod 3$, $x \\equiv 3 \\pmod 7$, and $x \\equiv 5 \\pmod 8$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "10 satisfies all three congruences: $10 \\equiv 1 \\pmod 3$, $10 \\equiv 3 \\pmod 7$, and $10 \\equiv 5 \\pmod 8$."
+        },
+        {
+          "letter": "B",
+          "text": "21",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "21 does not satisfy $x \\equiv 5 \\pmod 8$ ($21 \\equiv 5 \\pmod 8$ is false)."
+        },
+        {
+          "letter": "C",
+          "text": "31",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "31 does not satisfy $x \\equiv 1 \\pmod 3$ ($31 \\equiv 1 \\pmod 3$ is true), but it fails $x \\equiv 3 \\pmod 7$ ($31 \\equiv 3 \\pmod 7$ is false)."
+        },
+        {
+          "letter": "D",
+          "text": "100",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "100 does not satisfy $x \\equiv 1 \\pmod 3$ ($100 \\equiv 1 \\pmod 3$ is true), but it fails $x \\equiv 3 \\pmod 7$ ($100 \\equiv 2 \\pmod 7$)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, solve $x \\equiv 1 \\pmod 3$ and $x \\equiv 3 \\pmod 7$ to get $x \\equiv 10 \\pmod{21}$. Then combine with $x \\equiv 5 \\pmod 8$ to find $x \\equiv 10 \\pmod{21}$ and $x \\equiv 5 \\pmod 8$. Solving these gives $x \\equiv 10 \\pmod{168}$. The smallest positive solution is 10.",
+      "hint": "Use the Chinese Remainder Theorem step-by-step to combine the congruences.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784997068180-66f23",
+      "order": 11,
+      "question": "What is the modular inverse of 3 modulo 7?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "1 is not the inverse because $3 \\times 1 = 3 \\not\\equiv 1 \\pmod 7$."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "2 is not the inverse because $3 \\times 2 = 6 \\not\\equiv 1 \\pmod 7$."
+        },
+        {
+          "letter": "C",
+          "text": "5",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "5 is the inverse because $3 \\times 5 = 15 \\equiv 1 \\pmod 7$."
+        },
+        {
+          "letter": "D",
+          "text": "7",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "7 is not the inverse because $3 \\times 7 = 21 \\equiv 0 \\pmod 7$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The modular inverse of 3 modulo 7 is a number $y$ such that $3y \\equiv 1 \\pmod 7$. Testing values, $3 \\times 5 = 15 \\equiv 1 \\pmod 7$, so the inverse is 5.",
+      "hint": "Find a number $y$ where $3y \\equiv 1 \\pmod 7$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1784997068180-147fa",
+      "order": 12,
+      "question": "What is the modular inverse of 5 modulo 8?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "1 is not the inverse because $5 \\times 1 = 5 \\not\\equiv 1 \\pmod 8$."
+        },
+        {
+          "letter": "B",
+          "text": "3",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "3 is not the inverse because $5 \\times 3 = 15 \\equiv 7 \\pmod 8$."
+        },
+        {
+          "letter": "C",
+          "text": "5",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "5 is the inverse because $5 \\times 5 = 25 \\equiv 1 \\pmod 8$."
+        },
+        {
+          "letter": "D",
+          "text": "7",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "7 is not the inverse because $5 \\times 7 = 35 \\equiv 3 \\pmod 8$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The modular inverse of 5 modulo 8 is a number $y$ such that $5y \\equiv 1 \\pmod 8$. Testing values, $5 \\times 5 = 25 \\equiv 1 \\pmod 8$, so the inverse is 5.",
+      "hint": "Find a number $y$ where $5y \\equiv 1 \\pmod 8$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784997136711-a7a91",
+      "order": 13,
+      "question": "Find the smallest positive integer $x$ that satisfies the following system of congruences: $x \\equiv 1 \\pmod 3$, $x \\equiv 2 \\pmod 5$, and $x \\equiv 3 \\pmod 7$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "37",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "37 satisfies $37 \\equiv 1 \\pmod 3$ and $37 \\equiv 2 \\pmod 5$, but $37 \\equiv 2 \\pmod 7$, not 3."
+        },
+        {
+          "letter": "B",
+          "text": "52",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "52 satisfies all three congruences: $52 \\equiv 1 \\pmod 3$, $52 \\equiv 2 \\pmod 5$, and $52 \\equiv 3 \\pmod 7$."
+        },
+        {
+          "letter": "C",
+          "text": "67",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "67 satisfies $67 \\equiv 1 \\pmod 3$ and $67 \\equiv 2 \\pmod 7$, but $67 \\equiv 1 \\pmod 5$, not 2."
+        },
+        {
+          "letter": "D",
+          "text": "82",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "82 satisfies $82 \\equiv 1 \\pmod 3$ and $82 \\equiv 2 \\pmod 5$, but $82 \\equiv 5 \\pmod 7$, not 3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We solve the system using the Chinese Remainder Theorem (CRT). The moduli 3, 5, and 7 are pairwise coprime, so CRT guarantees a unique solution modulo 105. We find the solution by solving the congruences step-by-step or using the CRT formula.",
+      "hint": "Use the Chinese Remainder Theorem to combine the congruences.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784997136711-f886f",
+      "order": 14,
+      "question": "What is the smallest positive integer $x$ that satisfies the following system of congruences? $x \\equiv 1 \\pmod 3$, $x \\equiv 2 \\pmod 5$, and $x \\equiv 3 \\pmod 7$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "52",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The smallest positive integer satisfying all three congruences is 52."
+        },
+        {
+          "letter": "B",
+          "text": "17",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. 17 satisfies the first two congruences but not the third ($17 \\equiv 3 \\pmod 7$ is false)."
+        },
+        {
+          "letter": "C",
+          "text": "97",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. 97 satisfies the first and third congruences but not the second ($97 \\equiv 2 \\pmod 5$ is false)."
+        },
+        {
+          "letter": "D",
+          "text": "157",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. 157 satisfies all three congruences but is not the smallest positive solution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We solve the system step-by-step using the Chinese Remainder Theorem. First, solve $x \\equiv 1 \\pmod 3$ and $x \\equiv 2 \\pmod 5$. Let $x = 3k + 1$. Substituting into the second congruence: $3k + 1 \\equiv 2 \\pmod 5 \\implies 3k \\equiv 1 \\pmod 5 \\implies k \\equiv 2 \\pmod 5$ (since $3^{-1} \\equiv 2 \\pmod 5$). Thus, $k = 5m + 2$, so $x = 3(5m + 2) + 1 = 15m + 7$. Now, substitute into the third congruence: $15m + 7 \\equiv 3 \\pmod 7 \\implies 15m \\equiv -4 \\pmod 7 \\implies m \\equiv 3 \\pmod 7$ (since $15 \\equiv 1 \\pmod 7$ and $-4 \\equiv 3 \\pmod 7$). Thus, $m = 7n + 3$, so $x = 15(7n + 3) + 7 = 105n + 52$. The smallest positive $x$ is when $n = 0$, giving $x = 52$.",
+      "hint": "Start by solving the first two congruences, then use the result to solve the third.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1784997136711-2ef53",
+      "order": 15,
+      "question": "Find the smallest positive integer $n$ such that $n$ leaves a remainder of 3 when divided by 5, a remainder of 5 when divided by 7, and a remainder of 7 when divided by 9.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "313",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct answer as derived above."
+        },
+        {
+          "letter": "B",
+          "text": "124",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "124 does not satisfy all the given congruences."
+        },
+        {
+          "letter": "C",
+          "text": "213",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "213 does not satisfy all the given congruences."
+        },
+        {
+          "letter": "D",
+          "text": "88",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "88 does not satisfy all the given congruences."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We solve the system of congruences using the Chinese Remainder Theorem (CRT). First, observe that $n \\equiv -2 \\pmod{5}$, $n \\equiv -2 \\pmod{7}$, and $n \\equiv -2 \\pmod{9}$. Thus, $n + 2$ is divisible by 5, 7, and 9. The least common multiple (LCM) of 5, 7, and 9 is 315. Therefore, $n + 2 = 315k$ for some integer $k \\geq 1$. The smallest positive $n$ occurs when $k = 1$, giving $n = 315 - 2 = 313$.",
+      "hint": "Notice that the remainders are all 2 less than the divisors. This suggests that $n + 2$ is divisible by 5, 7, and 9.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-number-theory",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ]
+}
