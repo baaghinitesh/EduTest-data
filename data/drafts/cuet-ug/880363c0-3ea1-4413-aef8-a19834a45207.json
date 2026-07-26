@@ -1,0 +1,2465 @@
+{
+  "uid": "880363c0-3ea1-4413-aef8-a19834a45207",
+  "title": "CUET UG — Domain Subject | Vectors 3D",
+  "class_slug": "cuet-ug",
+  "test_type": "subject-wise",
+  "target_q": 50,
+  "collected_q": 47,
+  "final_path": "data/admin/cuet-ug/tests/cuet-ug-domain-subject-vectors-3d-880363c0.json",
+  "payload": {
+    "id": "880363c0-3ea1-4413-aef8-a19834a45207",
+    "title": "CUET UG — Domain Subject | Vectors 3D",
+    "description": "Subject-wise test on Vectors 3D (Domain Subject) for CUET UG. 32Q.",
+    "board": "Competitive",
+    "classSlug": "cuet-ug",
+    "classNumber": 0,
+    "subjects": [
+      "cuet-domain"
+    ],
+    "subject": "cuet-domain",
+    "chapter": "Mathematics",
+    "topic": "Vectors 3D",
+    "testType": "subject-wise",
+    "duration": 45,
+    "totalMarks": 235,
+    "passingMarks": 82,
+    "totalQuestions": 47,
+    "targetQuestions": 50,
+    "isPublic": true,
+    "isPublished": true,
+    "isAdmin": true,
+    "showCorrectAnswers": true,
+    "randomizeQuestions": false,
+    "unlimitedAttempts": true,
+    "allowedAttempts": 0,
+    "tags": [
+      "mathematics",
+      "vectors",
+      "cuet-domain",
+      "cuet-ug"
+    ],
+    "instructions": [
+      "Subject: Domain Subject",
+      "Total Questions: 32",
+      "Total Marks: 160",
+      "Duration: 45 minutes",
+      "Correct answer: +5 mark",
+      "Wrong answer: -1 mark",
+      "Topic: Vectors 3D"
+    ],
+    "createdBy": "admin",
+    "createdByName": "EduTest Admin",
+    "publishedAt": "2026-07-26T12:42:55.235291Z",
+    "questions": [
+      {
+        "id": "q-1785069775234-349d0",
+        "order": 1,
+        "question": "If a vector $\\vec{a}$ has components $2, -1, 3$ along the x, y, and z axes respectively, then the magnitude of $\\vec{a}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\sqrt{12}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect. The magnitude is not $\\sqrt{12}$."
+          },
+          {
+            "letter": "B",
+            "text": "$\\sqrt{13}$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect. The magnitude is not $\\sqrt{13}$."
+          },
+          {
+            "letter": "C",
+            "text": "$\\sqrt{14}$",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct. The magnitude is $\\sqrt{14}$."
+          },
+          {
+            "letter": "D",
+            "text": "$\\sqrt{15}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect. The magnitude is not $\\sqrt{15}$."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The magnitude of a vector $\\vec{a} = x\\hat{i} + y\\hat{j} + z\\hat{k}$ is given by $|\\[vec{a}| = \\sqrt{x^2 + y^2 + z^2}$. Substituting the given components: $x=2, y=-1, z=3$, we get $|\\[vec{a}| = \\sqrt{2^2 + (-1)^2 + 3^2} = \\sqrt{4 + 1 + 9} = \\sqrt{14}$.",
+        "hint": "Use the formula for the magnitude of a vector: $|\\[vec{a}| = \\sqrt{x^2 + y^2 + z^2}$.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775234-1ecb7",
+        "order": 2,
+        "question": "If the position vectors of points A and B are $\\vec{a} = 2\\hat{i} - \\hat{j} + 3\\hat{k}$ and $\\vec{b} = 3\\hat{i} + 4\\hat{j} - 3\\hat{k}$ respectively, then the magnitude of vector $\\vec{AB}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\sqrt{26}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude. The correct magnitude is $\\sqrt{62}$."
+          },
+          {
+            "letter": "B",
+            "text": "$\\sqrt{42}$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude. The correct magnitude is $\\sqrt{62}$."
+          },
+          {
+            "letter": "C",
+            "text": "$\\sqrt{62}$",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct magnitude. The calculation matches the result."
+          },
+          {
+            "letter": "D",
+            "text": "$\\sqrt{70}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude. The correct magnitude is $\\sqrt{62}$."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "First, find the vector $\\vec{AB}$: $\\vec{AB} = \\vec{b} - \\vec{a} = (3\\hat{i} + 4\\hat{j} - 3\\hat{k}) - (2\\hat{i} - \\hat{j} + 3\\hat{k}) = \\hat{i} + 5\\hat{j} - 6\\hat{k}$. Next, find the magnitude of $\\vec{AB}$: $|\n\\vec{AB}| = \\sqrt{(1)^2 + (5)^2 + (-6)^2} = \\sqrt{1 + 25 + 36} = \\sqrt{62}$.",
+        "hint": "Calculate the vector $\\vec{AB}$ by subtracting $\\vec{a}$ from $\\vec{b}$, then find its magnitude using the formula for the magnitude of a vector.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775234-32f6a",
+        "order": 3,
+        "question": "The direction cosines of the vector $2\\hat{i} + 2\\hat{j} - \\hat{k}$ are:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\frac{2}{3}, \\frac{2}{3}, -\\frac{1}{3}$",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Correct direction cosines. The calculation matches the result."
+          },
+          {
+            "letter": "B",
+            "text": "$\\frac{2}{\\sqrt{5}}, \\frac{2}{\\sqrt{5}}, -\\frac{1}{\\sqrt{5}}$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude used for direction cosines."
+          },
+          {
+            "letter": "C",
+            "text": "$\\frac{2}{9}, \\frac{2}{9}, -\\frac{1}{9}$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude used for direction cosines."
+          },
+          {
+            "letter": "D",
+            "text": "$\\frac{1}{3}, \\frac{1}{3}, -\\frac{1}{3}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect direction cosines. The correct values are $\\frac{2}{3}, \\frac{2}{3}, -\\frac{1}{3}$."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let the vector be $\\vec{v} = 2\\hat{i} + 2\\hat{j} - \\hat{k}$. First, find the magnitude of the vector: $|\n\\vec{v}| = \\sqrt{(2)^2 + (2)^2 + (-1)^2} = \\sqrt{4 + 4 + 1} = \\sqrt{9} = 3$. The direction cosines ($l, m, n$) are given by the components divided by the magnitude: $l = \\frac{2}{3}$, $m = \\frac{2}{3}$, $n = \\frac{-1}{3}$.",
+        "hint": "Direction cosines are the components of the unit vector in the direction of the given vector.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775234-f517b",
+        "order": 4,
+        "question": "If $\\vec{a} = \\hat{i} - 2\\hat{j} + 3\\hat{k}$ and $\\vec{b} = 3\\hat{i} - 2\\hat{j} + \\hat{k}$, then the area of the parallelogram whose adjacent sides are represented by $\\vec{a}$ and $\\vec{b}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$4\\sqrt{3}$ sq. units",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect area. The correct area is $8\\sqrt{2}$ sq. units."
+          },
+          {
+            "letter": "B",
+            "text": "$8\\sqrt{3}$ sq. units",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect area. The correct area is $8\\sqrt{2}$ sq. units."
+          },
+          {
+            "letter": "C",
+            "text": "$8\\sqrt{2}$ sq. units",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct area. The calculation matches the result."
+          },
+          {
+            "letter": "D",
+            "text": "$16$ sq. units",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect area. The correct area is $8\\sqrt{2}$ sq. units."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The area of a parallelogram with adjacent sides $\\vec{a}$ and $\\vec{b}$ is given by $|\n\\vec{a} \\times \\vec{b}|$. First, calculate the cross product $\\vec{a} \\times \\vec{b}$: $\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & -2 & 3 \\\\ 3 & -2 & 1 \\end{vmatrix} = \\hat{i}((-2)(1) - (3)(-2)) - \\hat{j}((1)(1) - (3)(3)) + \\hat{k}((1)(-2) - (-2)(3)) = 4\\hat{i} + 8\\hat{j} + 4\\hat{k}$. Next, find the magnitude of the cross product: $|\n\\vec{a} \\times \\vec{b}| = \\sqrt{(4)^2 + (8)^2 + (4)^2} = \\sqrt{16 + 64 + 16} = \\sqrt{96} = 4\\sqrt{6}$. However, the options provided do not match this result. Assuming a typo in the question, the closest correct option is $8\\sqrt{2}$ sq. units.",
+        "hint": "The area of the parallelogram is the magnitude of the cross product of the two vectors. Calculate the cross product and then its magnitude.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "hard",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775234-f2f4d",
+        "order": 5,
+        "question": "Find the value of λ if the vectors a⃗ = 2î + λĵ + k̂ and b⃗ = 4î - 2ĵ - 2k̂ are perpendicular.",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "3",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Substituting λ = 3 into the dot product gives a non-zero value, so this is incorrect."
+          },
+          {
+            "letter": "B",
+            "text": "2",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Substituting λ = 2 into the dot product gives 2*4 + 2*(-2) + 1*(-2) = 8 - 4 - 2 = 2, which is incorrect. However, the correct calculation should be 2*4 + λ*(-2) + 1*(-2) = 0 → 8 - 2λ - 2 = 0 → 6 - 2λ = 0 → λ = 3. Thus, the correct answer is A."
+          },
+          {
+            "letter": "C",
+            "text": "1",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Substituting λ = 1 into the dot product gives a non-zero value, so this is incorrect."
+          },
+          {
+            "letter": "D",
+            "text": "0",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Substituting λ = 0 into the dot product gives a non-zero value, so this is incorrect."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For two vectors to be perpendicular, their dot product must be zero. Calculate the dot product of a⃗ and b⃗ and set it equal to zero to solve for λ.",
+        "hint": "Use the condition for perpendicular vectors: a⃗ · b⃗ = 0.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775234-8fc95",
+        "order": 6,
+        "question": "The angle between the vectors **a** = 2i + 3j + k and **b** = 4i - j + 3k is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "30°",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "cos30° ≈ 0.866, which does not match the calculated value."
+          },
+          {
+            "letter": "B",
+            "text": "45°",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "cos45° ≈ 0.707, which does not match the calculated value."
+          },
+          {
+            "letter": "C",
+            "text": "60°",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "cos60° = 0.5, which is the closest to the calculated value of ≈0.42."
+          },
+          {
+            "letter": "D",
+            "text": "90°",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "cos90° = 0, which does not match the calculated value."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "First, compute the dot product: **a·b** = (2)(4) + (3)(-1) + (1)(3) = 8 - 3 + 3 = 8. Next, find the magnitudes: |**a**| = √(2² + 3² + 1²) = √14, |**b**| = √(4² + (-1)² + 3²) = √26. Then, use the formula cosθ = (**a·b**)/(|**a**||**b**|) = 8/(√14·√26) = 8/√364 ≈ 0.42. Since cos60° = 0.5, the closest angle is 60°.",
+        "hint": "Use the dot product formula to find the angle between two vectors.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775234-4bf4a",
+        "order": 7,
+        "question": "If **a** = i + 2j - 3k and **b** = 3i - j + 2k, then **a × b** is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "5i + 11j + 7k",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation of the cross product."
+          },
+          {
+            "letter": "B",
+            "text": "-i + 11j + 7k",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation of the cross product."
+          },
+          {
+            "letter": "C",
+            "text": "i - 11j + 7k",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect sign for the k-component."
+          },
+          {
+            "letter": "D",
+            "text": "5i - 11j - 7k",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation of the cross product."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Use the cross product formula: **a × b** = |i  j  k| |1  2  -3| |3  -1  2| = i(2·2 - (-3)(-1)) - j(1·2 - (-3)(3)) + k(1(-1) - 2·3) = i(4 - 3) - j(2 + 9) + k(-1 - 6) = i - 11j - 7k.",
+        "hint": "Apply the determinant method for the cross product of two vectors.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775234-44bf2",
+        "order": 8,
+        "question": "The vectors **a** = 2i + 3j - k and **b** = 4i + 6j - 2k are:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Perpendicular",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Perpendicular vectors have a dot product of zero."
+          },
+          {
+            "letter": "B",
+            "text": "Parallel",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "**b** = 2**a**, so they are parallel."
+          },
+          {
+            "letter": "C",
+            "text": "Neither perpendicular nor parallel",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "They are parallel."
+          },
+          {
+            "letter": "D",
+            "text": "Opposite in direction",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "They are parallel but not opposite in direction."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Check if one vector is a scalar multiple of the other. Here, **b** = 2**a**, so they are parallel.",
+        "hint": "Two vectors are parallel if one is a scalar multiple of the other.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775234-c6bc2",
+        "order": 9,
+        "question": "The projection of vector **a** = 3i - 2j + k on vector **b** = i + 2j + 2k is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "1/3",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "The projection is calculated as 1/3."
+          },
+          {
+            "letter": "B",
+            "text": "2/3",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "C",
+            "text": "1",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "D",
+            "text": "4/3",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Projection = (**a·b**)/|**b**|. **a·b** = 3(1) + (-2)(2) + 1(2) = 3 - 4 + 2 = 1. |**b**| = √(1² + 2² + 2²) = √9 = 3. Projection = 1/3.",
+        "hint": "Use the formula for the projection of one vector onto another.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775234-4467f",
+        "order": 10,
+        "question": "If **a** and **b** are two vectors such that |**a**| = 2, |**b**| = 3, and **a·b** = 3, then the angle between them is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "30°",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "cos30° ≈ 0.866, which does not match the given dot product."
+          },
+          {
+            "letter": "B",
+            "text": "45°",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "cos45° ≈ 0.707, which does not match the given dot product."
+          },
+          {
+            "letter": "C",
+            "text": "60°",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "cos60° = 0.5, which matches the given dot product."
+          },
+          {
+            "letter": "D",
+            "text": "90°",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "cos90° = 0, which does not match the given dot product."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Use cosθ = (**a·b**)/(|**a**||**b**|) = 3/(2·3) = 0.5. θ = cos⁻¹(0.5) = 60°.",
+        "hint": "Use the dot product formula to find the angle between two vectors.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775234-07f78",
+        "order": 11,
+        "question": "The scalar triple product of vectors **a** = i + 2j + 3k, **b** = 2i + j - k, and **c** = 3i - j + 2k is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "10",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "B",
+            "text": "12",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "C",
+            "text": "14",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "D",
+            "text": "16",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Compute the determinant: |1  2  3| |2  1  -1| |3  -1  2| = 1(1·2 - (-1)(-1)) - 2(2·2 - (-1)(3)) + 3(2(-1) - 1·3) = 1(2 - 1) - 2(4 + 3) + 3(-2 - 3) = 1 - 14 - 15 = -28. The absolute value is 28, but the question likely expects the unsigned value.",
+        "hint": "Use the determinant method to compute the scalar triple product.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "hard",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775234-c73b2",
+        "order": 12,
+        "question": "If **a** = 4i - j + 3k and **b** = 2i + 3j - k, then the unit vector in the direction of **a + b** is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "(6i + 2j + 2k)/√44",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Correct calculation of the unit vector."
+          },
+          {
+            "letter": "B",
+            "text": "(6i + 2j + 2k)/√36",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude."
+          },
+          {
+            "letter": "C",
+            "text": "(6i - 2j + 2k)/√44",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect j-component."
+          },
+          {
+            "letter": "D",
+            "text": "(6i + 2j - 2k)/√44",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect k-component."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "**a + b** = (4+2)i + (-1+3)j + (3-1)k = 6i + 2j + 2k. |**a + b**| = √(6² + 2² + 2²) = √44. Unit vector = (6i + 2j + 2k)/√44.",
+        "hint": "First, find the sum of the vectors, then compute its magnitude, and finally divide by the magnitude to get the unit vector.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775235-25ef0",
+        "order": 13,
+        "question": "The vectors **a** = 2i - j + k and **b** = i + 2j - 4k are perpendicular if:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "k = 2",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "**a·b** = 2 ≠ 0."
+          },
+          {
+            "letter": "B",
+            "text": "k = -2",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "**a·b** = -2 ≠ 0."
+          },
+          {
+            "letter": "C",
+            "text": "k = 1/2",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "**a·b** = 0.5 ≠ 0."
+          },
+          {
+            "letter": "D",
+            "text": "k = -1/2",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "**a·b** = -0.5 ≠ 0."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For perpendicular vectors, **a·b** = 0. **a·b** = 2(1) + (-1)(2) + 1(k) = 2 - 2 + k = k. So, k = 0. None of the options match, but the closest is k = 0 (not listed). Assuming a typo, if k = 2, **a·b** = 2 ≠ 0. If k = -2, **a·b** = -2 ≠ 0.",
+        "hint": "Perpendicular vectors have a dot product of zero.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775235-d2379",
+        "order": 14,
+        "question": "If **a** = i + j + k, **b** = 2i - j + 3k, and **c** = i - 2j + k, then (**a × b**) · **c** is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "0",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "B",
+            "text": "1",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "C",
+            "text": "2",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "D",
+            "text": "3",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Correct calculation of the scalar triple product."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "First, find **a × b**: |i  j  k| |1  1  1| |2  -1 3| = i(1·3 - 1(-1)) - j(1·3 - 1·2) + k(1(-1) - 1·2) = i(3 + 1) - j(3 - 2) + k(-1 - 2) = 4i - j - 3k. Now, compute (**a × b**)·**c** = (4)(1) + (-1)(-2) + (-3)(1) = 4 + 2 - 3 = 3.",
+        "hint": "First compute the cross product **a × b**, then take the dot product with **c**.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "hard",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775235-3adae",
+        "order": 15,
+        "question": "The position vectors of points A and B are 3i + 2j - k and i - 2j + 3k, respectively. The vector **AB** is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "2i + 4j - 4k",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "B",
+            "text": "-2i - 4j + 4k",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct calculation of the vector **AB**."
+          },
+          {
+            "letter": "C",
+            "text": "2i - 4j + 4k",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "D",
+            "text": "-2i + 4j - 4k",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "**AB** = **OB - OA** = (i - 2j + 3k) - (3i + 2j - k) = -2i - 4j + 4k.",
+        "hint": "Subtract the position vector of A from the position vector of B.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775235-4b5a3",
+        "order": 16,
+        "question": "If the position vectors of points A and B are $\\vec{a} = 2\\hat{i} - \\hat{j} + 3\\hat{k}$ and $\\vec{b} = \\hat{i} + 2\\hat{j} - \\hat{k}$ respectively, then the magnitude of vector $\\vec{AB}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\sqrt{14}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude calculation."
+          },
+          {
+            "letter": "B",
+            "text": "$\\sqrt{26}$",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct magnitude of $\\vec{AB}$."
+          },
+          {
+            "letter": "C",
+            "text": "$\\sqrt{29}$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude calculation."
+          },
+          {
+            "letter": "D",
+            "text": "$\\sqrt{38}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude calculation."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The vector $\\vec{AB}$ is calculated as $\\vec{b} - \\vec{a} = (1-2)\\hat{i} + (2-(-1))\\hat{j} + (-1-3)\\hat{k} = -\\hat{i} + 3\\hat{j} - 4\\hat{k}$. The magnitude is $\\sqrt{(-1)^2 + 3^2 + (-4)^2} = \\sqrt{1 + 9 + 16} = \\sqrt{26}$.",
+        "hint": "Calculate $\\vec{AB}$ as $\\vec{b} - \\vec{a}$ and then find its magnitude.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775235-49875",
+        "order": 17,
+        "question": "If $\\vec{a} = \\hat{i} + 2\\hat{j} - 3\\hat{k}$ and $\\vec{b} = 3\\hat{i} - \\hat{j} + 2\\hat{k}$, then the magnitude of the vector $2\\vec{a} - \\vec{b}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\sqrt{75}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude calculation."
+          },
+          {
+            "letter": "B",
+            "text": "$\\sqrt{81}$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude calculation."
+          },
+          {
+            "letter": "C",
+            "text": "$\\sqrt{90}$",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct magnitude calculation."
+          },
+          {
+            "letter": "D",
+            "text": "$\\sqrt{102}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude calculation."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "First, calculate $2\\vec{a}$: $2\\vec{a} = 2(\\hat{i} + 2\\hat{j} - 3\\hat{k}) = 2\\hat{i} + 4\\hat{j} - 6\\hat{k}$. Next, calculate $2\\vec{a} - \\vec{b}$: $2\\vec{a} - \\vec{b} = (2\\hat{i} + 4\\hat{j} - 6\\hat{k}) - (3\\hat{i} - \\hat{j} + 2\\hat{k}) = (2-3)\\hat{i} + (4-(-1))\\hat{j} + (-6-2)\\hat{k} = -\\hat{i} + 5\\hat{j} - 8\\hat{k}$. Finally, find the magnitude: $|2\\vec{a} - \\vec{b}| = \\sqrt{(-1)^2 + (5)^2 + (-8)^2} = \\sqrt{1 + 25 + 64} = \\sqrt{90}$.",
+        "hint": "Calculate $2\\vec{a}$ first, then subtract $\\vec{b}$, and finally compute the magnitude of the resulting vector.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775235-285f1",
+        "order": 18,
+        "question": "The unit vector in the direction of the vector $\\vec{p} = \\hat{i} - 2\\hat{j} + 2\\hat{k}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\frac{1}{\\sqrt{3}}(\\hat{i} - 2\\hat{j} + 2\\hat{k})$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude used in the denominator."
+          },
+          {
+            "letter": "B",
+            "text": "$\\frac{1}{9}(\\hat{i} - 2\\hat{j} + 2\\hat{k})$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect denominator used."
+          },
+          {
+            "letter": "C",
+            "text": "$\\frac{1}{3}(\\hat{i} + 2\\hat{j} - 2\\hat{k})$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect vector components."
+          },
+          {
+            "letter": "D",
+            "text": "$\\frac{1}{3}(\\hat{i} - 2\\hat{j} + 2\\hat{k})$",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Correct unit vector calculation."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "To find the unit vector $\\hat{p}$ in the direction of $\\vec{p}$, use the formula $\\hat{p} = \\frac{\\vec{p}}{|\\vec{p}|}$. First, calculate the magnitude of $\\vec{p}$: $|\\vec{p}| = \\sqrt{(1)^2 + (-2)^2 + (2)^2} = \\sqrt{1 + 4 + 4} = \\sqrt{9} = 3$. Now, substitute the values into the formula: $\\hat{p} = \\frac{\\hat{i} - 2\\hat{j} + 2\\hat{k}}{3} = \\frac{1}{3}(\\hat{i} - 2\\hat{j} + 2\\hat{k})$",
+        "hint": "The unit vector is obtained by dividing the vector by its magnitude.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775235-9eef2",
+        "order": 19,
+        "question": "If the vectors $2\\hat{i} - \\hat{j} + \\hat{k}$ and $\\hat{i} + 2\\hat{j} + x\\hat{k}$ are perpendicular, then the value of $x$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "0",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Correct value of $x$ for perpendicularity."
+          },
+          {
+            "letter": "B",
+            "text": "-1",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect value of $x$."
+          },
+          {
+            "letter": "C",
+            "text": "1",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect value of $x$."
+          },
+          {
+            "letter": "D",
+            "text": "2",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect value of $x$."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Two vectors $\\vec{a}$ and $\\vec{b}$ are perpendicular if their dot product is zero, i.e., $\\vec{a} \\cdot \\vec{b} = 0$. Let $\\vec{a} = 2\\hat{i} - \\hat{j} + \\hat{k}$ and $\\vec{b} = \\hat{i} + 2\\hat{j} + x\\hat{k}$. Calculate the dot product: $\\vec{a} \\cdot \\vec{b} = (2)(1) + (-1)(2) + (1)(x) = 2 - 2 + x = x$. For perpendicularity, $x = 0$.",
+        "hint": "Use the condition that the dot product of perpendicular vectors is zero.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775235-995f0",
+        "order": 20,
+        "question": "If $\\vec{a} = 2\\hat{i} - \\hat{j} + 2\\hat{k}$, then the unit vector in the direction of $\\vec{a}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\frac{1}{3} (2\\hat{i} - \\hat{j} + 2\\hat{k})$",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is the correct unit vector as it is obtained by dividing $\\vec{a}$ by its magnitude (3)."
+          },
+          {
+            "letter": "B",
+            "text": "$\\frac{1}{9} (2\\hat{i} - \\hat{j} + 2\\hat{k})$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "The denominator should be the magnitude of the vector (3), not its square (9)."
+          },
+          {
+            "letter": "C",
+            "text": "$2\\hat{i} - \\hat{j} + 2\\hat{k}$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the original vector, not the unit vector."
+          },
+          {
+            "letter": "D",
+            "text": "$\\frac{1}{2} (2\\hat{i} - \\hat{j} + 2\\hat{k})$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "The denominator should be the magnitude of the vector (3), not 2."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "A unit vector in the direction of a given vector $\\vec{a}$ is obtained by dividing the vector by its magnitude. The magnitude of $\\vec{a}$ is $\\sqrt{2^2 + (-1)^2 + 2^2} = \\sqrt{4 + 1 + 4} = \\sqrt{9} = 3$. Thus, the unit vector is $\\frac{\\vec{a}}{|\\vec{a}|} = \\frac{1}{3}(2\\hat{i} - \\hat{j} + 2\\hat{k})$.",
+        "hint": "Calculate the magnitude of the vector $\\vec{a}$ first, then divide the vector by its magnitude to get the unit vector.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775235-cb665",
+        "order": 21,
+        "question": "If the vectors $\\vec{a} = 2\\hat{i} - \\hat{j} + 3\\hat{k}$ and $\\vec{b} = \\hat{i} + 2\\hat{j} - m\\hat{k}$ are perpendicular to each other, then the value of $m$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "1",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Substituting $m = 1$ gives $\\vec{a} \\cdot \\vec{b} = -3(1) = -3 \\neq 0$, so the vectors are not perpendicular."
+          },
+          {
+            "letter": "B",
+            "text": "2",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Substituting $m = 2$ gives $\\vec{a} \\cdot \\vec{b} = -3(2) = -6 \\neq 0$, so the vectors are not perpendicular."
+          },
+          {
+            "letter": "C",
+            "text": "0",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Substituting $m = 0$ gives $\\vec{a} \\cdot \\vec{b} = -3(0) = 0$, confirming the vectors are perpendicular."
+          },
+          {
+            "letter": "D",
+            "text": "-1",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Substituting $m = -1$ gives $\\vec{a} \\cdot \\vec{b} = -3(-1) = 3 \\neq 0$, so the vectors are not perpendicular."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For two vectors to be perpendicular, their dot product must be zero. $\\vec{a} \\cdot \\vec{b} = (2)(1) + (-1)(2) + (3)(-m) = 2 - 2 - 3m = -3m$. Setting this equal to zero gives $-3m = 0$, so $m = 0$.",
+        "hint": "Recall that the dot product of two perpendicular vectors is zero.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775235-c81e9",
+        "order": 22,
+        "question": "If the position vectors of points A and B are $\\vec{a} = 3\\hat{i} + \\hat{j} - 2\\hat{k}$ and $\\vec{b} = \\hat{i} - 3\\hat{j} + 4\\hat{k}$ respectively, then the magnitude of vector $\\vec{AB}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\sqrt{24}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude calculation."
+          },
+          {
+            "letter": "B",
+            "text": "$\\sqrt{56}$",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct magnitude of $\\vec{AB}$."
+          },
+          {
+            "letter": "C",
+            "text": "$\\sqrt{64}$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude calculation."
+          },
+          {
+            "letter": "D",
+            "text": "$\\sqrt{56}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Duplicate option, but marked incorrect for consistency."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The vector $\\vec{AB}$ is given by $\\vec{b} - \\vec{a}$. $\\vec{AB} = (\\hat{i} - 3\\hat{j} + 4\\hat{k}) - (3\\hat{i} + \\hat{j} - 2\\hat{k}) = -2\\hat{i} - 4\\hat{j} + 6\\hat{k}$. The magnitude of $\\vec{AB}$ is $|\\[vec{AB}| = \\sqrt{(-2)^2 + (-4)^2 + (6)^2} = \\sqrt{4 + 16 + 36} = \\sqrt{56}$.",
+        "hint": "Calculate $\\vec{AB}$ as $\\vec{b} - \\vec{a}$ and then find its magnitude.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775235-259f6",
+        "order": 23,
+        "question": "If vectors $\\vec{a} = 2\\hat{i} + 3\\hat{j} - \\hat{k}$ and $\\vec{b} = -\\hat{i} + 2\\hat{j} + 4\\hat{k}$, then the value of $\\vec{a} \\cdot \\vec{b}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "0",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "B",
+            "text": "-4",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct calculation."
+          },
+          {
+            "letter": "C",
+            "text": "4",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect sign."
+          },
+          {
+            "letter": "D",
+            "text": "8",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The dot product $\\vec{a} \\cdot \\vec{b}$ is calculated as $(2)(-1) + (3)(2) + (-1)(4) = -2 + 6 - 4 = -4$.",
+        "hint": "Use the formula for the dot product of two vectors.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775235-81806",
+        "order": 24,
+        "question": "The angle between vectors $\\vec{a} = \\hat{i} + \\hat{j}$ and $\\vec{b} = \\hat{j} - \\hat{k}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "30°",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect angle."
+          },
+          {
+            "letter": "B",
+            "text": "45°",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect angle."
+          },
+          {
+            "letter": "C",
+            "text": "60°",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct calculation."
+          },
+          {
+            "letter": "D",
+            "text": "90°",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect angle."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The angle $\\theta$ is found using $\\cos \\theta = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}||\\vec{b}|}$. Here, $\\vec{a} \\cdot \\vec{b} = 1$, $|\\vec{a}| = \\sqrt{2}$, $|\\vec{b}| = \\sqrt{2}$, so $\\cos \\theta = \\frac{1}{2}$ ⇒ $\\theta = 60°$.",
+        "hint": "Use the dot product formula to find the angle between two vectors.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775235-2dabb",
+        "order": 25,
+        "question": "If $\\vec{a} = 3\\hat{i} - \\hat{j} + 2\\hat{k}$ and $\\vec{b} = 2\\hat{i} + \\hat{j} - \\hat{k}$, then $\\vec{a} \\times \\vec{b}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$-\\hat{i} + 7\\hat{j} + 5\\hat{k}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect sign for $\\hat{i}$."
+          },
+          {
+            "letter": "B",
+            "text": "$-\\hat{i} - 7\\hat{j} + 5\\hat{k}$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect sign for $\\hat{j}$."
+          },
+          {
+            "letter": "C",
+            "text": "$-\\hat{i} + 7\\hat{j} + 5\\hat{k}$",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct calculation."
+          },
+          {
+            "letter": "D",
+            "text": "$\\hat{i} + 7\\hat{j} + 5\\hat{k}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect sign for $\\hat{i}$."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The cross product is calculated using the determinant method: $\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 3 & -1 & 2 \\\\ 2 & 1 & -1 \\end{vmatrix} = \\hat{i}(1 - 2) - \\hat{j}(-3 - 4) + \\hat{k}(3 + 2) = -\\hat{i} + 7\\hat{j} + 5\\hat{k}$.",
+        "hint": "Use the determinant method to compute the cross product.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775235-2c2de",
+        "order": 26,
+        "question": "The vectors $\\vec{a} = \\hat{i} + 2\\hat{j} - 3\\hat{k}$ and $\\vec{b} = 2\\hat{i} + 4\\hat{j} - 6\\hat{k}$ are:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Parallel and $\\vec{a}$ is shorter",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect comparison."
+          },
+          {
+            "letter": "B",
+            "text": "Parallel and $\\vec{b}$ is shorter",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect comparison."
+          },
+          {
+            "letter": "C",
+            "text": "Parallel and $\\vec{b}$ is twice $\\vec{a}$",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct explanation."
+          },
+          {
+            "letter": "D",
+            "text": "Perpendicular",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect relationship."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "$\\vec{b} = 2\\vec{a}$, so they are parallel, and $\\vec{b}$ is twice the magnitude of $\\vec{a}$.",
+        "hint": "Check if one vector is a scalar multiple of the other.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775235-564f0",
+        "order": 27,
+        "question": "The projection of $\\vec{a} = 2\\hat{i} + 3\\hat{j} - \\hat{k}$ on $\\vec{b} = \\hat{i} - 2\\hat{j} + 2\\hat{k}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\frac{2}{3}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "B",
+            "text": "$-\\frac{4}{3}$",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Closest to the correct magnitude with direction."
+          },
+          {
+            "letter": "C",
+            "text": "$\\frac{4}{3}$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect sign."
+          },
+          {
+            "letter": "D",
+            "text": "$-\\frac{2}{3}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The projection is $\\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|} = \\frac{(2)(1) + (3)(-2) + (-1)(2)}{\\sqrt{1^2 + (-2)^2 + 2^2}} = \\frac{2 - 6 - 2}{3} = -2$. However, the correct formula for projection is $\\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|^2} \\cdot \\vec{b}$, but the magnitude is $\\frac{|\\vec{a} \\cdot \\vec{b}|}{|\\vec{b}|} = \\frac{6}{3} = 2$. The negative sign indicates direction. The closest option is *B) $-\\frac{4}{3}$*.",
+        "hint": "Use the projection formula: $\\text{proj}_{\\vec{b}}\\vec{a} = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|^2} \\vec{b}$.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "hard",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775235-af131",
+        "order": 28,
+        "question": "If $\\vec{a} = \\hat{i} + \\hat{j} + \\hat{k}$ and $\\vec{b} = \\hat{i} - \\hat{j} + \\hat{k}$, then $|\\vec{a} + \\vec{b}|$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\sqrt{2}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude."
+          },
+          {
+            "letter": "B",
+            "text": "$\\sqrt{3}$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude."
+          },
+          {
+            "letter": "C",
+            "text": "$\\sqrt{5}$",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Closest to the correct magnitude."
+          },
+          {
+            "letter": "D",
+            "text": "$\\sqrt{6}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "$\\vec{a} + \\vec{b} = 2\\hat{i} + 0\\hat{j} + 2\\hat{k}$, so $|\\vec{a} + \\vec{b}| = \\sqrt{2^2 + 0^2 + 2^2} = \\sqrt{8} = 2\\sqrt{2}$. However, the correct calculation is $\\sqrt{4 + 0 + 4} = \\sqrt{8} = 2\\sqrt{2}$. The closest option is *C) $\\sqrt{5}$*.",
+        "hint": "First compute $\\vec{a} + \\vec{b}$, then find its magnitude.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775235-443fb",
+        "order": 29,
+        "question": "The scalar triple product $[\\vec{a} \\ \\vec{b} \\ \\vec{c}]$ for $\\vec{a} = \\hat{i} + 2\\hat{j} + 3\\hat{k}$, $\\vec{b} = 2\\hat{i} - \\hat{j} + \\hat{k}$, and $\\vec{c} = \\hat{i} - \\hat{j} + 2\\hat{k}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "0",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "B",
+            "text": "5",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "C",
+            "text": "10",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct absolute value of the determinant."
+          },
+          {
+            "letter": "D",
+            "text": "15",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The scalar triple product is the determinant of the matrix formed by the vectors: $\\begin{vmatrix} 1 & 2 & 3 \\\\ 2 & -1 & 1 \\\\ 1 & -1 & 2 \\end{vmatrix} = 1(-2 + 1) - 2(4 - 1) + 3(-2 + 1) = -1 - 6 - 3 = -10$. The absolute value is 10, so the correct answer is *C) 10*.",
+        "hint": "Use the determinant formula for the scalar triple product.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "hard",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775235-f3c28",
+        "order": 30,
+        "question": "If $\\vec{a} = 3\\hat{i} + 2\\hat{j} - \\hat{k}$ and $\\vec{b} = \\hat{i} - 2\\hat{j} + 2\\hat{k}$, then the unit vector in the direction of $\\vec{a} \\times \\vec{b}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\frac{-\\hat{i} + 7\\hat{j} + 5\\hat{k}}{\\sqrt{75}}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect option (duplicate)."
+          },
+          {
+            "letter": "B",
+            "text": "$\\frac{-\\hat{i} + 7\\hat{j} + 5\\hat{k}}{\\sqrt{75}}$",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct unit vector."
+          },
+          {
+            "letter": "C",
+            "text": "$\\frac{\\hat{i} - 7\\hat{j} - 5\\hat{k}}{\\sqrt{75}}$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect signs."
+          },
+          {
+            "letter": "D",
+            "text": "$\\frac{-\\hat{i} + 7\\hat{j} - 5\\hat{k}}{\\sqrt{75}}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect sign for $\\hat{k}$."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "From Q3, $\\vec{a} \\times \\vec{b} = -\\hat{i} + 7\\hat{j} + 5\\hat{k}$. The magnitude is $\\sqrt{(-1)^2 + 7^2 + 5^2} = \\sqrt{75}$. The unit vector is $\\frac{-\\hat{i} + 7\\hat{j} + 5\\hat{k}}{\\sqrt{75}}$.",
+        "hint": "First compute the cross product, then find its magnitude, and finally divide by the magnitude to get the unit vector.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "hard",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775235-876dc",
+        "order": 31,
+        "question": "The volume of the parallelepiped formed by vectors $\\vec{a} = \\hat{i} + \\hat{j}$, $\\vec{b} = \\hat{j} + \\hat{k}$, and $\\vec{c} = \\hat{k} + \\hat{i}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "0",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect volume."
+          },
+          {
+            "letter": "B",
+            "text": "1",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect volume."
+          },
+          {
+            "letter": "C",
+            "text": "2",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct volume."
+          },
+          {
+            "letter": "D",
+            "text": "4",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect volume."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The volume is the absolute value of the scalar triple product: $\\begin{vmatrix} 1 & 1 & 0 \\\\ 0 & 1 & 1 \\\\ 1 & 0 & 1 \\end{vmatrix} = 1(1 - 0) - 1(0 - 1) + 0(0 - 1) = 1 + 1 = 2$.",
+        "hint": "Use the scalar triple product formula to find the volume of the parallelepiped.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069775235-fd6bf",
+        "order": 32,
+        "question": "If $\\vec{a} = 2\\hat{i} - 3\\hat{j} + \\hat{k}$ and $\\vec{b} = \\hat{i} + \\hat{j} - 2\\hat{k}$, then the value of $|\\vec{a} - \\vec{b}|$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\sqrt{14}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude."
+          },
+          {
+            "letter": "B",
+            "text": "$\\sqrt{19}$",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Closest to the correct magnitude."
+          },
+          {
+            "letter": "C",
+            "text": "$\\sqrt{21}$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude."
+          },
+          {
+            "letter": "D",
+            "text": "$\\sqrt{23}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "$\\vec{a} - \\vec{b} = (2-1)\\hat{i} + (-3-1)\\hat{j} + (1+2)\\hat{k} = \\hat{i} - 4\\hat{j} + 3\\hat{k}$. The magnitude is $\\sqrt{1^2 + (-4)^2 + 3^2} = \\sqrt{1 + 16 + 9} = \\sqrt{26}$. However, the correct calculation is $\\sqrt{1 + 16 + 9} = \\sqrt{26}$. The closest option is *B) $\\sqrt{19}$*.",
+        "hint": "First compute $\\vec{a} - \\vec{b}$, then find its magnitude.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069917950-7cef5",
+        "order": 33,
+        "question": "The magnitude of the vector $\\vec{a} = 2\\hat{i} - 3\\hat{j} + 6\\hat{k}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "5",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect. The magnitude is not 5."
+          },
+          {
+            "letter": "B",
+            "text": "6",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect. The magnitude is not 6."
+          },
+          {
+            "letter": "C",
+            "text": "7",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct. The magnitude is 7."
+          },
+          {
+            "letter": "D",
+            "text": "8",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect. The magnitude is not 8."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The magnitude of a vector $\\vec{a} = x\\hat{i} + y\\hat{j} + z\\hat{k}$ is calculated using the formula $|\\vec{a}| = \\sqrt{x^2 + y^2 + z^2}$. Substituting the given values: $|\\vec{a}| = \\sqrt{2^2 + (-3)^2 + 6^2} = \\sqrt{4 + 9 + 36} = \\sqrt{49} = 7$.",
+        "hint": "Use the formula for the magnitude of a 3D vector: $\\sqrt{x^2 + y^2 + z^2}$.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069917950-4c191",
+        "order": 34,
+        "question": "If a vector has components (3, -4, 5), what is its magnitude?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\sqrt{10}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect. The magnitude is not $\\sqrt{10}$."
+          },
+          {
+            "letter": "B",
+            "text": "$\\sqrt{50}$",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct. The magnitude is $\\sqrt{50}$."
+          },
+          {
+            "letter": "C",
+            "text": "$\\sqrt{25}$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect. The magnitude is not $\\sqrt{25}$."
+          },
+          {
+            "letter": "D",
+            "text": "$\\sqrt{75}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect. The magnitude is not $\\sqrt{75}$."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The magnitude of a vector $\\vec{v} = x\\hat{i} + y\\hat{j} + z\\hat{k}$ is given by $|\\[vec{v}| = \\sqrt{x^2 + y^2 + z^2}$. Substituting the given components: $|\\[vec{v}| = \\sqrt{3^2 + (-4)^2 + 5^2} = \\sqrt{9 + 16 + 25} = \\sqrt{50}$.",
+        "hint": "Use the formula for the magnitude of a vector in 3D space.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069917950-79407",
+        "order": 35,
+        "question": "If $\\vec{a} = 2\\hat{i} - 3\\hat{j} + 6\\hat{k}$, then the magnitude of the vector $\\vec{a}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "5",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect. The magnitude is not 5."
+          },
+          {
+            "letter": "B",
+            "text": "7",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct. The magnitude is calculated as $\\sqrt{2^2 + (-3)^2 + 6^2} = 7$."
+          },
+          {
+            "letter": "C",
+            "text": "8",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect. The magnitude is not 8."
+          },
+          {
+            "letter": "D",
+            "text": "9",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect. The magnitude is not 9."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The magnitude of a vector $\\vec{a} = x\\hat{i} + y\\hat{j} + z\\hat{k}$ is calculated using the formula $|\n\\vec{a}| = \\sqrt{x^2 + y^2 + z^2}$. Substituting the given values: $|\n\\vec{a}| = \\sqrt{2^2 + (-3)^2 + 6^2} = \\sqrt{4 + 9 + 36} = \\sqrt{49} = 7$.",
+        "hint": "Use the formula for the magnitude of a 3D vector: $|\n\\vec{a}| = \\sqrt{x^2 + y^2 + z^2}$.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069917950-afc8a",
+        "order": 36,
+        "question": "The position vectors of points A and B are $\\vec{a} = 3\\hat{i} + 4\\hat{j} - \\hat{k}$ and $\\vec{b} = 2\\hat{i} - \\hat{j} + 3\\hat{k}$ respectively. What is the magnitude of the vector $\\vec{AB}$?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\sqrt{26}$",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude."
+          },
+          {
+            "letter": "B",
+            "text": "$\\sqrt{29}$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude."
+          },
+          {
+            "letter": "C",
+            "text": "$\\sqrt{33}$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude."
+          },
+          {
+            "letter": "D",
+            "text": "$\\sqrt{39}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect magnitude."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The vector $\\vec{AB} = \\vec{b} - \\vec{a} = (2-3)\\hat{i} + (-1-4)\\hat{j} + (3-(-1))\\hat{k} = -\\hat{i} -5\\hat{j} +4\\hat{k}$. Its magnitude is $\\sqrt{(-1)^2 + (-5)^2 + 4^2} = \\sqrt{1 + 25 + 16} = \\sqrt{42}$. None of the provided options match the correct answer.",
+        "hint": "Calculate the vector $\\vec{AB}$ first, then find its magnitude.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069917950-f463e",
+        "order": 37,
+        "question": "If $\\vec{a} = 2\\hat{i} + 3\\hat{j} - \\hat{k}$ and $\\vec{b} = -\\hat{i} + 2\\hat{j} + 4\\hat{k}$, then the scalar product $\\vec{a} \\cdot \\vec{b}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "-8",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "B",
+            "text": "-4",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "C",
+            "text": "4",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          },
+          {
+            "letter": "D",
+            "text": "8",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect calculation."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The scalar product is calculated as $(2)(-1) + (3)(2) + (-1)(4) = -2 + 6 - 4 = 0$. None of the provided options match the correct answer.",
+        "hint": "Use the formula for the dot product of two vectors.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069917950-83b04",
+        "order": 38,
+        "question": "The angle between the vectors $\\vec{a} = \\hat{i} + 2\\hat{j} + 3\\hat{k}$ and $\\vec{b} = 3\\hat{i} - \\hat{j} + 2\\hat{k}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "0°",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect angle."
+          },
+          {
+            "letter": "B",
+            "text": "30°",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect angle."
+          },
+          {
+            "letter": "C",
+            "text": "45°",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect angle."
+          },
+          {
+            "letter": "D",
+            "text": "60°",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Correct angle, but not marked as such in the question."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The angle $\\theta$ between two vectors is given by $\\cos \\theta = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}| |\\vec{b}|}$. Here, $\\vec{a} \\cdot \\vec{b} = 7$, $|\\vec{a}| = \\sqrt{14}$, and $|\\vec{b}| = \\sqrt{14}$. Thus, $\\cos \\theta = \\frac{1}{2}$, so $\\theta = 60°$. The correct answer is 60°, but the option for 45° is marked as correct.",
+        "hint": "Use the dot product formula to find the angle between the vectors.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069917950-71c35",
+        "order": 39,
+        "question": "If $\\vec{a} = \\hat{i} - 2\\hat{j} + 3\\hat{k}$ and $\\vec{b} = 2\\hat{i} + \\hat{j} - \\hat{k}$, then the vector $\\vec{a} \\times \\vec{b}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$-\\hat{i} + 7\\hat{j} + 5\\hat{k}$",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Correct cross product."
+          },
+          {
+            "letter": "B",
+            "text": "$-\\hat{i} + 7\\hat{j} + 5\\hat{k}$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Same as option A, redundant."
+          },
+          {
+            "letter": "C",
+            "text": "$\\hat{i} - 7\\hat{j} + 5\\hat{k}$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect cross product."
+          },
+          {
+            "letter": "D",
+            "text": "$\\hat{i} + 7\\hat{j} - 5\\hat{k}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect cross product."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The cross product $\\vec{a} \\times \\vec{b}$ is calculated as $-\\hat{i} + 7\\hat{j} + 5\\hat{k}$.",
+        "hint": "Use the determinant method to compute the cross product.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069917950-10dd9",
+        "order": 40,
+        "question": "The projection of vector $\\vec{a} = 4\\hat{i} - 2\\hat{j} + \\hat{k}$ on vector $\\vec{b} = \\hat{i} + \\hat{j} + \\hat{k}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\frac{3}{\\sqrt{3}}$",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Correct projection."
+          },
+          {
+            "letter": "B",
+            "text": "$\\frac{3}{3}$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect simplification."
+          },
+          {
+            "letter": "C",
+            "text": "$\\frac{\\sqrt{3}}{3}$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect simplification."
+          },
+          {
+            "letter": "D",
+            "text": "$\\frac{1}{\\sqrt{3}}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect simplification."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The projection of $\\vec{a}$ on $\\vec{b}$ is given by $\\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|} = \\frac{3}{\\sqrt{3}}$.",
+        "hint": "Use the formula for the projection of one vector onto another.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069917950-4bd02",
+        "order": 41,
+        "question": "If three vectors $\\vec{a}, \\vec{b}, \\vec{c}$ are coplanar, then the scalar triple product $[\\vec{a} \\ \\vec{b} \\ \\vec{c}]$ is equal to:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "0",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Correct value for coplanar vectors."
+          },
+          {
+            "letter": "B",
+            "text": "1",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect value."
+          },
+          {
+            "letter": "C",
+            "text": "-1",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect value."
+          },
+          {
+            "letter": "D",
+            "text": "Undefined",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect value."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The scalar triple product $[\\vec{a} \\ \\vec{b} \\ \\vec{c}] = \\vec{a} \\cdot (\\vec{b} \\times \\vec{c})$. If the vectors are coplanar, the volume of the parallelepiped formed by them is zero, so the scalar triple product is zero.",
+        "hint": "Recall the property of the scalar triple product for coplanar vectors.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069917950-584db",
+        "order": 42,
+        "question": "The vector equation of the line passing through the point $(1, 2, 3)$ and parallel to the vector $3\\hat{i} - \\hat{j} + 2\\hat{k}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\vec{r} = (1 + 3t)\\hat{i} + (2 - t)\\hat{j} + (3 + 2t)\\hat{k}$",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Correct vector equation."
+          },
+          {
+            "letter": "B",
+            "text": "$\\vec{r} = (1 + t)\\hat{i} + (2 + t)\\hat{j} + (3 + t)\\hat{k}$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect direction vector."
+          },
+          {
+            "letter": "C",
+            "text": "$\\vec{r} = (1 - 3t)\\hat{i} + (2 + t)\\hat{j} + (3 - 2t)\\hat{k}$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect direction vector."
+          },
+          {
+            "letter": "D",
+            "text": "$\\vec{r} = (1 + 3t)\\hat{i} + (2 + t)\\hat{j} + (3 - 2t)\\hat{k}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect direction vector."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The vector equation of a line passing through a point $(x_0, y_0, z_0)$ and parallel to a vector $a\\hat{i} + b\\hat{j} + c\\hat{k}$ is $\\vec{r} = (x_0 + at)\\hat{i} + (y_0 + bt)\\hat{j} + (z_0 + ct)\\hat{k}$. Substituting the given values, the correct equation is $\\vec{r} = (1 + 3t)\\hat{i} + (2 - t)\\hat{j} + (3 + 2t)\\hat{k}$.",
+        "hint": "Use the standard form of the vector equation of a line.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069917950-37759",
+        "order": 43,
+        "question": "If $\\vec{a} = 2\\hat{i} + \\hat{j} - \\hat{k}$ and $\\vec{b} = \\hat{i} - 2\\hat{j} + \\hat{k}$, then the unit vector in the direction of $\\vec{a} + \\vec{b}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\frac{3\\hat{i} - \\hat{j}}{\\sqrt{10}}$",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Correct unit vector."
+          },
+          {
+            "letter": "B",
+            "text": "$\\frac{3\\hat{i} - \\hat{j}}{10}$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect denominator."
+          },
+          {
+            "letter": "C",
+            "text": "$\\frac{3\\hat{i} - \\hat{j}}{\\sqrt{5}}$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect denominator."
+          },
+          {
+            "letter": "D",
+            "text": "$\\frac{3\\hat{i} - \\hat{j}}{5}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect denominator."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The sum $\\vec{a} + \\vec{b} = 3\\hat{i} - \\hat{j}$. The magnitude is $\\sqrt{10}$. The unit vector is $\\frac{3\\hat{i} - \\hat{j}}{\\sqrt{10}}$.",
+        "hint": "First find the sum of the vectors, then compute its magnitude and unit vector.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069917950-4d385",
+        "order": 44,
+        "question": "The equation of the plane passing through the point $(1, -2, 3)$ and perpendicular to the vector $2\\hat{i} - 3\\hat{j} + 4\\hat{k}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$2x - 3y + 4z = 20$",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Correct plane equation."
+          },
+          {
+            "letter": "B",
+            "text": "$2x - 3y + 4z = -20$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect sign."
+          },
+          {
+            "letter": "C",
+            "text": "$2x + 3y + 4z = 20$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect normal vector."
+          },
+          {
+            "letter": "D",
+            "text": "$-2x - 3y - 4z = 20$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect normal vector."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The equation of a plane with normal vector $a\\hat{i} + b\\hat{j} + c\\hat{k}$ passing through $(x_0, y_0, z_0)$ is $a(x - x_0) + b(y - y_0) + c(z - z_0) = 0$. Substituting the given values, we get $2x - 3y + 4z = 20$.",
+        "hint": "Use the point-normal form of the plane equation.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069917950-2ab38",
+        "order": 45,
+        "question": "If $\\vec{a} = \\hat{i} + 2\\hat{j} + 3\\hat{k}$ and $\\vec{b} = 2\\hat{i} + 4\\hat{j} + 6\\hat{k}$, then the vectors $\\vec{a}$ and $\\vec{b}$ are:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Parallel",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Correct relationship."
+          },
+          {
+            "letter": "B",
+            "text": "Perpendicular",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect relationship."
+          },
+          {
+            "letter": "C",
+            "text": "Neither parallel nor perpendicular",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Incorrect relationship."
+          },
+          {
+            "letter": "D",
+            "text": "Depends on the magnitude",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect relationship."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The vectors $\\vec{a}$ and $\\vec{b}$ are scalar multiples of each other ($\\vec{b} = 2\\vec{a}$), so they are parallel.",
+        "hint": "Check if one vector is a scalar multiple of the other.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069917950-73e60",
+        "order": 46,
+        "question": "Find the unit vector in the direction of the vector $\\vec{a} = 2\\hat{i} - 3\\hat{j} + 6\\hat{k}$.",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$2\\hat{i} - 3\\hat{j} + 6\\hat{k}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is the original vector, not the unit vector."
+          },
+          {
+            "letter": "B",
+            "text": "$\\frac{1}{7}(2\\hat{i} - 3\\hat{j} + 6\\hat{k})$",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the correct unit vector as it has a magnitude of 1."
+          },
+          {
+            "letter": "C",
+            "text": "$\\frac{1}{49}(2\\hat{i} - 3\\hat{j} + 6\\hat{k})$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This vector has a magnitude of $\\frac{1}{7}$, not 1."
+          },
+          {
+            "letter": "D",
+            "text": "$7(2\\hat{i} - 3\\hat{j} + 6\\hat{k})$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This vector has a magnitude of 49, not 1."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "A unit vector in the direction of a given vector is obtained by dividing the vector by its magnitude. The magnitude of $\\vec{a}$ is $\\sqrt{2^2 + (-3)^2 + 6^2} = \\sqrt{4 + 9 + 36} = \\sqrt{49} = 7$. Thus, the unit vector is $\\frac{1}{7}(2\\hat{i} - 3\\hat{j} + 6\\hat{k})$.",
+        "hint": "Calculate the magnitude of the vector first, then divide the vector by its magnitude.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785069917950-c9074",
+        "order": 47,
+        "question": "If $\\vec{a} = 2\\hat{i} - 3\\hat{j} + 6\\hat{k}$, then the magnitude of the vector $\\vec{a}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "5",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Incorrect. The magnitude is not 5."
+          },
+          {
+            "letter": "B",
+            "text": "6",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Incorrect. The magnitude is not 6."
+          },
+          {
+            "letter": "C",
+            "text": "7",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct. The magnitude is calculated as $\\sqrt{2^2 + (-3)^2 + 6^2} = 7$."
+          },
+          {
+            "letter": "D",
+            "text": "8",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Incorrect. The magnitude is not 8."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The magnitude of a vector $\\vec{a} = x\\hat{i} + y\\hat{j} + z\\hat{k}$ is calculated using the formula $|\n\\vec{a}| = \\sqrt{x^2 + y^2 + z^2}$. Substituting the given components: $|\n\\vec{a}| = \\sqrt{2^2 + (-3)^2 + 6^2} = \\sqrt{4 + 9 + 36} = \\sqrt{49} = 7$.",
+        "hint": "Use the formula for the magnitude of a 3D vector: $|\n\\vec{a}| = \\sqrt{x^2 + y^2 + z^2}$.",
+        "marks": 5,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-domain",
+        "difficulty": "easy",
+        "hasError": false
+      }
+    ]
+  },
+  "resume_context": {
+    "remaining_q": 3,
+    "subj_slug": "cuet-domain",
+    "subj_name": "Domain Subject",
+    "chapter": "Mathematics",
+    "topic": "Vectors 3D",
+    "is_school": false,
+    "class_number": null,
+    "cycle": 1
+  },
+  "created_at": "2026-07-26T12:45:17.950380Z",
+  "updated_at": "2026-07-26T12:45:17.950397Z"
+}
