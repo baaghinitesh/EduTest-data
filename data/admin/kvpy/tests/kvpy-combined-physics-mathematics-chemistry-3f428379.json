@@ -1,0 +1,2347 @@
+{
+  "id": "3f428379-ee20-4d42-b378-eaa44aee5056",
+  "title": "KVPY — Combined: Physics + Mathematics + Chemistry",
+  "description": "Combined test: Physics + Mathematics + Chemistry for KVPY. 45Q.",
+  "board": "Competitive",
+  "classSlug": "kvpy",
+  "classNumber": 0,
+  "subjects": [
+    "kvpy-physics",
+    "kvpy-maths",
+    "kvpy-chemistry"
+  ],
+  "subject": "kvpy-physics",
+  "chapter": "Multiple Chapters",
+  "topic": "Combined",
+  "testType": "subject-wise",
+  "duration": 120,
+  "totalMarks": 45,
+  "passingMarks": 18,
+  "totalQuestions": 45,
+  "targetQuestions": 45,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "kvpy-physics+kvpy-maths+kvpy-chemistry",
+    "kvpy",
+    "mathematics",
+    "physics",
+    "chemistry"
+  ],
+  "instructions": [
+    "Subject: Physics + Mathematics + Chemistry",
+    "Total Questions: 45",
+    "Total Marks: 45",
+    "Duration: 120 minutes",
+    "Correct answer: +1 mark",
+    "Wrong answer: -0.25 mark"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-07-29T13:29:36.254Z",
+  "questions": [
+    {
+      "id": "q-1785331521682-2bbcb",
+      "order": 1,
+      "question": "Which of the following objects, all having the same mass M and radius R, has the largest moment of inertia about an axis passing through its center and perpendicular to its plane?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A solid sphere",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The moment of inertia of a solid sphere is I = (2/5)MR², which is less than MR²."
+        },
+        {
+          "letter": "B",
+          "text": "A solid cylinder",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The moment of inertia of a solid cylinder about its central axis is I = (1/2)MR², which is less than MR²."
+        },
+        {
+          "letter": "C",
+          "text": "A thin spherical shell",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The moment of inertia of a thin spherical shell is I = (2/3)MR², which is less than MR²."
+        },
+        {
+          "letter": "D",
+          "text": "A thin circular ring",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The moment of inertia of a thin circular ring about its central axis is I = MR², which is the highest among the given options."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The moment of inertia depends on the distribution of mass relative to the axis of rotation. For objects with the same mass and radius, the moment of inertia is highest when the mass is concentrated farthest from the axis. A thin circular ring has all its mass at a distance R from the axis, giving it the highest moment of inertia (I = MR²).",
+      "hint": "Consider how mass is distributed relative to the axis of rotation.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331521682-318d1",
+      "order": 2,
+      "question": "A uniform thin rod of mass $M$ and length $L$ is rotating about an axis passing through its center and perpendicular to its length. What is its moment of inertia about this axis?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{1}{3} ML^2$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the moment of inertia for a rod rotating about an axis through one end, not the center."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{1}{12} ML^2$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the standard formula for a rod rotating about its center."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{1}{2} ML^2$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not a standard moment of inertia for a thin rod."
+        },
+        {
+          "letter": "D",
+          "text": "$ML^2$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not a valid moment of inertia for a thin rod."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The moment of inertia of a uniform thin rod of mass $M$ and length $L$ about an axis passing through its center and perpendicular to its length is given by the standard formula $I = \\frac{1}{12} ML^2$.",
+      "hint": "Recall the standard moment of inertia formula for a thin rod about its center.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331521682-c6607",
+      "order": 3,
+      "question": "A force $\\vec{F} = (3\\hat{i} + 2\\hat{j} - 4\\hat{k})$ N is applied at a point whose position vector with respect to the origin is $\\vec{r} = (2\\hat{i} - 3\\hat{j} + \\hat{k})$ m. The torque about the origin is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$(10\\hat{i} + 11\\hat{j} + 13\\hat{k})$ Nm",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The cross product calculation yields this result."
+        },
+        {
+          "letter": "B",
+          "text": "$(-10\\hat{i} + 11\\hat{j} + 13\\hat{k})$ Nm",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect sign for the $\\hat{i}$ component."
+        },
+        {
+          "letter": "C",
+          "text": "$(-10\\hat{i} + 11\\hat{j} - 13\\hat{k})$ Nm",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect signs for both $\\hat{i}$ and $\\hat{k}$ components."
+        },
+        {
+          "letter": "D",
+          "text": "$(10\\hat{i} - 11\\hat{j} + 13\\hat{k})$ Nm",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect sign for the $\\hat{j}$ component."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The torque $\\vec{\\tau}$ is given by the cross product of the position vector $\\vec{r}$ and the force vector $\\vec{F}$: $\\vec{\\tau} = \\vec{r} \\times \\vec{F}$. Calculating the cross product using the determinant method yields $\\vec{\\tau} = (10\\hat{i} + 11\\hat{j} + 13\\hat{k})$ Nm.",
+      "hint": "Use the cross product formula for torque: $\\vec{\\tau} = \\vec{r} \\times \\vec{F}$ and compute the determinant.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331521682-03678",
+      "order": 4,
+      "question": "A uniform disc of mass $M$ and radius $R$ has a moment of inertia $I_0 = \\frac{1}{2}MR^2$ about an axis passing through its center and perpendicular to its plane. What is its moment of inertia about a tangent in its plane?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{1}{4}MR^2$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the moment of inertia about a diameter, not a tangent."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{3}{4}MR^2$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not match the derived formula."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{1}{2}MR^2$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the moment of inertia about the center, not the tangent."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{5}{4}MR^2$",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. This is the result after applying both theorems."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find the moment of inertia about a tangent in the plane, use the Perpendicular Axis Theorem to find the moment of inertia about a diameter ($I_x = \\frac{1}{4}MR^2$) and then apply the Parallel Axis Theorem with $d = R$: $I_{tangent} = I_x + MR^2 = \\frac{5}{4}MR^2$.",
+      "hint": "First find the moment of inertia about a diameter using the Perpendicular Axis Theorem, then apply the Parallel Axis Theorem for the tangent.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331521682-8eaa7",
+      "order": 5,
+      "question": "A merry-go-round of radius $R$ and moment of inertia $I$ is rotating with an angular velocity $\\omega_0$. A child of mass $m$ walks from the edge of the merry-go-round to its center. The new angular velocity of the merry-go-round will be:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\omega_0$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The angular velocity changes due to the child's movement."
+        },
+        {
+          "letter": "B",
+          "text": "$\\omega_0 \\left( \\frac{I+mR^2}{I} \\right)$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is derived from conservation of angular momentum."
+        },
+        {
+          "letter": "C",
+          "text": "$\\omega_0 \\left( \\frac{I}{I+mR^2} \\right)$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This inverts the ratio."
+        },
+        {
+          "letter": "D",
+          "text": "$\\omega_0 \\left( \\frac{I}{I-mR^2} \\right)$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This formula is not derived from the given scenario."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "By conservation of angular momentum, the initial angular momentum $(I + mR^2)\\omega_0$ equals the final angular momentum $I\\omega_f$. Solving for $\\omega_f$ gives $\\omega_f = \\omega_0 \\left( \\frac{I + mR^2}{I} \\right)$.",
+      "hint": "Apply the conservation of angular momentum: $L_i = L_f$. The child's moment of inertia changes from $mR^2$ to $0$.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331521682-75274",
+      "order": 6,
+      "question": "An ice skater spins with her arms outstretched, having an angular speed ω₀. When she pulls her arms in, her moment of inertia about the axis of rotation decreases to one-fourth of its initial value. What is her new angular speed?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ω₀/4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This would imply the angular momentum increased, which violates conservation."
+        },
+        {
+          "letter": "B",
+          "text": "ω₀/2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This would imply the angular momentum increased, which violates conservation."
+        },
+        {
+          "letter": "C",
+          "text": "2ω₀",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This would imply the angular momentum increased, which violates conservation."
+        },
+        {
+          "letter": "D",
+          "text": "4ω₀",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The angular momentum is conserved, so ωf = 4ω₀."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a classic example of conservation of angular momentum. Initial angular momentum Li = Iiωi. Final angular momentum Lf = Ifωf. According to the conservation of angular momentum, Li = Lf. Given If = Ii/4 and ωi = ω₀, solving gives ωf = 4ω₀.",
+      "hint": "Recall the principle of conservation of angular momentum: Li = Lf.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331521682-02c06",
+      "order": 7,
+      "question": "Which of the following statements about torque (τ) and angular momentum (L) is correct for a rigid body rotating about a fixed axis?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Torque is always perpendicular to angular momentum.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "For rotation about a fixed axis, torque and angular momentum are parallel or antiparallel."
+        },
+        {
+          "letter": "B",
+          "text": "The direction of torque is always opposite to the direction of angular momentum.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "For rotation about a fixed axis, torque and angular momentum are parallel or antiparallel, not necessarily opposite."
+        },
+        {
+          "letter": "C",
+          "text": "Torque is the time rate of change of angular velocity.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Torque is the time rate of change of angular momentum, not angular velocity."
+        },
+        {
+          "letter": "D",
+          "text": "Torque is the time rate of change of angular momentum.",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. τ = dL/dt is the fundamental relationship."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The fundamental relationship between torque and angular momentum is given by τ = dL/dt. This is analogous to Newton's second law for linear motion, F = dp/dt. Options A and B are incorrect as for rotation about a fixed axis, both torque and angular momentum vectors point along the axis of rotation (or opposite if deceleration). Option C describes angular acceleration, not torque.",
+      "hint": "Recall the relationship τ = dL/dt.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331521682-f0773",
+      "order": 8,
+      "question": "A solid cylinder of mass M and radius R rolls without slipping down an inclined plane of angle θ. The acceleration of the center of mass of the cylinder is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "g sinθ",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This would be the acceleration if there were no rotation."
+        },
+        {
+          "letter": "B",
+          "text": "(2/3) g sinθ",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The acceleration is (2/3)g sinθ due to the combined effects of translation and rotation."
+        },
+        {
+          "letter": "C",
+          "text": "(2/3) g sinθ",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Same as option B, but listed twice. This is the correct answer."
+        },
+        {
+          "letter": "D",
+          "text": "(1/2) g sinθ",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not account for the moment of inertia of the cylinder."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For rolling without slipping, we apply Newton's second law for translational motion and rotational motion. Solving the equations gives a = (2/3)g sinθ.",
+      "hint": "Use the equations for translational and rotational motion, and the condition for rolling without slipping (a = Rα).",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331521682-f8793",
+      "order": 9,
+      "question": "A uniform rod of mass M and length L is pivoted at one end. Its moment of inertia about the pivot is I₀. If the rod is pivoted at a point L/4 from one end, its new moment of inertia about the pivot will be:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "I₀/2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not account for the change in pivot position."
+        },
+        {
+          "letter": "B",
+          "text": "I₀/4",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not account for the change in pivot position."
+        },
+        {
+          "letter": "C",
+          "text": "I₀",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the moment of inertia changes with the pivot position."
+        },
+        {
+          "letter": "D",
+          "text": "7ML²/48",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The new moment of inertia is 7ML²/48."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the parallel axis theorem, the moment of inertia about the new pivot is calculated as I_new = I_CM + Md², where d = L/4. This gives I_new = 7ML²/48.",
+      "hint": "Recall the parallel axis theorem: I = I_CM + Md².",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331521682-63ce5",
+      "order": 10,
+      "question": "A thin circular ring of mass M and radius R is rolling without slipping on a horizontal surface with a linear velocity v of its center of mass. The total kinetic energy of the ring is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(1/2)Mv²",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is only the translational kinetic energy."
+        },
+        {
+          "letter": "B",
+          "text": "(1/4)Mv²",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not account for rotational kinetic energy."
+        },
+        {
+          "letter": "C",
+          "text": "Mv²/2 + I_CMω²/2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the general form but simplifies to Mv² for a thin ring."
+        },
+        {
+          "letter": "D",
+          "text": "Mv²",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The total kinetic energy is Mv²."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The total kinetic energy is the sum of translational and rotational kinetic energy. For a thin ring, I_CM = MR², and ω = v/R. This gives KE_total = Mv².",
+      "hint": "Recall that for rolling without slipping, v = Rω.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331521682-286c3",
+      "order": 11,
+      "question": "A uniform rod of mass m and length l is hinged at one end and is free to rotate in a vertical plane. It is released from rest in a horizontal position. What is the angular acceleration of the rod immediately after it is released?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "g/l",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not account for the moment of inertia."
+        },
+        {
+          "letter": "B",
+          "text": "2g/l",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not account for the moment of inertia."
+        },
+        {
+          "letter": "C",
+          "text": "3g/(2l)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The angular acceleration is 3g/(2l)."
+        },
+        {
+          "letter": "D",
+          "text": "3g/l",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it overestimates the angular acceleration."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The torque due to gravity acting at the center of mass (l/2 from the hinge) is τ = mgl/2. The moment of inertia about the hinge is I = (1/3)ml². Using τ = Iα, we get α = 3g/(2l).",
+      "hint": "Use τ = Iα, where τ is the torque due to gravity.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331521682-78419",
+      "order": 12,
+      "question": "A uniform disk of mass M and radius R is rotating with an angular speed ω₀ about its axis (which is vertical). A man of mass m drops gently onto the edge of the disk and stands there. What is the new angular speed of the disk-man system?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mω₀/(M+m)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not account for the moment of inertia of the man."
+        },
+        {
+          "letter": "B",
+          "text": "(M+m)R²ω₀/(MR² + mR²)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This simplifies to ω₀, which is incorrect."
+        },
+        {
+          "letter": "C",
+          "text": "Mω₀/(M+2m)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The new angular speed is Mω₀/(M + 2m)."
+        },
+        {
+          "letter": "D",
+          "text": "Mω₀/(M+m/2)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not account for the moment of inertia of the man correctly."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using conservation of angular momentum, the initial angular momentum is L_i = (1/2)MR²ω₀. The final moment of inertia is I_f = (1/2)MR² + mR². Solving for ω_f gives ω_f = Mω₀/(M + 2m).",
+      "hint": "Recall that angular momentum is conserved in the absence of external torques.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331521682-a6bc8",
+      "order": 13,
+      "question": "A uniform rod of mass M and length L is pivoted at its center. A bullet of mass m moving with velocity v perpendicular to the rod strikes the rod at one end and embeds itself. If the rod was initially at rest, the angular velocity of the rod-bullet system just after the collision is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "mvL/((M+m)L²/3)",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not account for the moment of inertia of the bullet correctly."
+        },
+        {
+          "letter": "B",
+          "text": "6mv/((M+4m)L)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the derived expression."
+        },
+        {
+          "letter": "C",
+          "text": "mvL/((M/3 + m)L²)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not account for the moment of inertia of the bullet correctly."
+        },
+        {
+          "letter": "D",
+          "text": "mv/((M/12 + m)L)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the derived expression."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using conservation of angular momentum about the pivot, the initial angular momentum is L_i = (L/2)mv. The final moment of inertia is I_f = (1/12)ML² + m(L/2)². Solving for ω_f gives ω_f = 6mv/((M+3m)L).",
+      "hint": "Recall that angular momentum is conserved about the pivot point.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331521682-8b6bc",
+      "order": 14,
+      "question": "A uniform circular disc of radius R and mass M is rotating with an angular velocity ω about its central axis. If the disc is gently placed on a rough horizontal surface and starts rolling without slipping, what will be its new angular velocity?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ω/2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The new angular velocity is not half of the initial value."
+        },
+        {
+          "letter": "B",
+          "text": "2ω/3",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Derived using conservation of angular momentum and rolling condition."
+        },
+        {
+          "letter": "C",
+          "text": "ω/√2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not satisfy the conservation of angular momentum."
+        },
+        {
+          "letter": "D",
+          "text": "ω",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The angular velocity changes when the disc starts rolling."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Initially, the disc has only rotational kinetic energy (½ Iω² = ½ (½MR²)ω² = MR²ω²/4). When it rolls without slipping, it gains translational kinetic energy (½ Mv²) and rotational kinetic energy (½ Iω²). Using conservation of angular momentum (L = Iω + MRv) and the rolling condition (v = Rω'), we get MR²ω/2 = (3/2)MR²ω' → ω' = 2ω/3.",
+      "hint": "Apply conservation of angular momentum and the rolling condition (v = Rω').",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331521682-8c08f",
+      "order": 15,
+      "question": "A thin rod of length L and mass m is pivoted at one end and held horizontally. It is then released and allowed to swing down under gravity. What is the angular acceleration of the rod when it makes an angle θ with the horizontal?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(3g cosθ)/(2L)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The angular acceleration depends on sinθ, not cosθ."
+        },
+        {
+          "letter": "B",
+          "text": "(3g sinθ)/(2L)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Derived using torque and moment of inertia."
+        },
+        {
+          "letter": "C",
+          "text": "(g cosθ)/L",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The moment of inertia factor is missing."
+        },
+        {
+          "letter": "D",
+          "text": "(g sinθ)/L",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The factor of 3/2 is missing."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The torque about the pivot is τ = mg(L/2)sinθ. The moment of inertia of the rod about the pivot is I = (1/3)mL². Using τ = Iα, we get mg(L/2)sinθ = (1/3)mL²α → α = (3g sinθ)/(2L).",
+      "hint": "Use torque (τ = Iα) and the moment of inertia of the rod about the pivot.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-physics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331667131-781cb",
+      "order": 16,
+      "question": "A spherical balloon is being inflated. Its volume is increasing at the rate of 900 cm³/s. At what rate is its radius increasing when the radius is 15 cm?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/π cm/s",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the derived rate."
+        },
+        {
+          "letter": "B",
+          "text": "1/π cm/s",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct rate of increase of the radius."
+        },
+        {
+          "letter": "C",
+          "text": "3/π cm/s",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it overestimates the rate."
+        },
+        {
+          "letter": "D",
+          "text": "9/π cm/s",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it significantly overestimates the rate."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let V be the volume and r be the radius of the balloon. The volume of a sphere is given by V = (4/3)πr³. Differentiating both sides with respect to time t, we get dV/dt = 4πr²(dr/dt). Given dV/dt = 900 cm³/s and r = 15 cm, substitute to find dr/dt = (900)/(4π(15)²) = 1/π cm/s.",
+      "hint": "Use the formula for the volume of a sphere and differentiate with respect to time.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331667132-e92b8",
+      "order": 17,
+      "question": "A spherical balloon is being inflated. Its volume is increasing at the rate of $900 \\text{ cm}^3/\\text{sec}$. At what rate is its radius increasing when the radius is $15 \\text{ cm}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{1}{\\pi} \\text{ cm/sec}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The rate of change of the radius is $\\frac{1}{\\pi}$ cm/sec."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{10}{\\pi} \\text{ cm/sec}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is 10 times the correct rate."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{1}{10\\pi} \\text{ cm/sec}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is one-tenth of the correct rate."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{100}{\\pi} \\text{ cm/sec}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is 100 times the correct rate."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The volume of a sphere is given by $V = \\frac{4}{3}\\pi r^3$. Differentiating with respect to time $t$, we get $\\frac{dV}{dt} = 4\\pi r^2 \\frac{dr}{dt}$. Given $\\frac{dV}{dt} = 900$ and $r = 15$, substitute to find $\\frac{dr}{dt} = \\frac{900}{4\\pi (15)^2} = \\frac{10}{10\\pi} = \\frac{1}{\\pi}$ cm/sec.",
+      "hint": "Use the formula for the volume of a sphere and differentiate with respect to time.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331667132-62bc1",
+      "order": 18,
+      "question": "A spherical balloon is being inflated. Its volume is increasing at the rate of 900 cm³/sec. At what rate is its radius increasing when the radius is 15 cm? (Given: Volume of sphere V = (4/3)πr³)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/π cm/sec",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Substituting the values, 900 = 4π(15)²(dr/dt) → dr/dt = 900/(4π*225) = 1/π cm/sec."
+        },
+        {
+          "letter": "B",
+          "text": "2/π cm/sec",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This would require dV/dt = 1800 cm³/sec, which is not given."
+        },
+        {
+          "letter": "C",
+          "text": "3/π cm/sec",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This would require dV/dt = 2700 cm³/sec, which is not given."
+        },
+        {
+          "letter": "D",
+          "text": "Not provided",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The correct answer is already provided in option A."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We use the chain rule for related rates. Given dV/dt = 900 cm³/sec and V = (4/3)πr³, differentiate both sides with respect to t: dV/dt = 4πr²(dr/dt). Substitute r = 15 cm and dV/dt = 900 to solve for dr/dt.",
+      "hint": "Use the formula for the volume of a sphere and apply the chain rule to relate the rates of change of volume and radius.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331667132-64e0a",
+      "order": 19,
+      "question": "The function $ f(x) = x^3 - 3x^2 + 2 $ has a local maximum at:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ x = 0 $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The second derivative test confirms this is a local maximum."
+        },
+        {
+          "letter": "B",
+          "text": "$ x = 2 $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is a local minimum, not a maximum."
+        },
+        {
+          "letter": "C",
+          "text": "$ x = 1 $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. $ x = 1 $ is not a critical point."
+        },
+        {
+          "letter": "D",
+          "text": "$ x = -1 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. $ x = -1 $ is not a critical point."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find local maxima, compute $ f'(x) = 3x^2 - 6x $ and set it to zero: $ 3x(x - 2) = 0 $ → $ x = 0 $ or $ x = 2 $. Second derivative $ f''(x) = 6x - 6 $. At $ x = 0 $, $ f''(0) = -6 < 0 $ (local maximum), and at $ x = 2 $, $ f''(2) = 6 > 0 $ (local minimum). Thus, the local maximum is at $ x = 0 $.",
+      "hint": "Find critical points by setting the first derivative to zero, then use the second derivative test to classify them.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331667132-daaac",
+      "order": 20,
+      "question": "A particle moves along the x-axis with velocity $ v(t) = t^2 - 4t + 3 $ m/s. The total distance traveled by the particle from $ t = 0 $ to $ t = 3 $ seconds is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4 meters",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The total distance is $ \\frac{8}{3} $ meters, which is approximately 2.67 meters."
+        },
+        {
+          "letter": "B",
+          "text": "3 meters",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The total distance is $ \\frac{8}{3} $ meters."
+        },
+        {
+          "letter": "C",
+          "text": "2 meters",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The closest option to $ \\frac{8}{3} $ meters is 2 meters."
+        },
+        {
+          "letter": "D",
+          "text": "1 meter",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The total distance is $ \\frac{8}{3} $ meters."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Distance is the integral of speed (absolute value of velocity). First, find when $ v(t) = 0 $: $ t^2 - 4t + 3 = 0 $ → $ t = 1 $ or $ t = 3 $. From $ t = 0 $ to $ t = 1 $, $ v(t) > 0 $, so distance $ = \\int_0^1 (t^2 - 4t + 3) \\, dt = [\\frac{t^3}{3} - 2t^2 + 3t]_0^1 = \\frac{1}{3} - 2 + 3 = \\frac{4}{3} $. From $ t = 1 $ to $ t = 3 $, $ v(t) < 0 $, so distance $ = \\int_1^3 -(t^2 - 4t + 3) \\, dt = -[\\frac{t^3}{3} - 2t^2 + 3t]_1^3 = -[9 - 18 + 9 - (\\frac{1}{3} - 2 + 3)] = -[0 - \\frac{4}{3}] = \\frac{4}{3} $. Total distance $ = \\frac{4}{3} + \\frac{4}{3} = \\frac{8}{3} $ meters.",
+      "hint": "Calculate the integral of the absolute value of velocity over the given time interval.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331667132-e7924",
+      "order": 21,
+      "question": "The curve $ y = x^3 - 3x^2 $ has a point of inflection at:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ x = 0 $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The second derivative at $ x = 0 $ is $ -6 $, which does not change sign."
+        },
+        {
+          "letter": "B",
+          "text": "$ x = 1 $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The second derivative changes sign at $ x = 1 $."
+        },
+        {
+          "letter": "C",
+          "text": "$ x = 2 $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The second derivative at $ x = 2 $ is $ 6 $, which does not change sign."
+        },
+        {
+          "letter": "D",
+          "text": "$ x = -1 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The second derivative at $ x = -1 $ is $ -12 $, which does not change sign."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A point of inflection occurs where the second derivative changes sign. Compute $ y'' = 6x - 6 $. Set $ y'' = 0 $: $ 6x - 6 = 0 $ → $ x = 1 $. Check sign change: For $ x < 1 $, $ y'' < 0 $; for $ x > 1 $, $ y'' > 0 $. Thus, $ x = 1 $ is a point of inflection.",
+      "hint": "Find where the second derivative is zero and check for a sign change.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331667132-413ce",
+      "order": 22,
+      "question": "The minimum value of $ f(x) = x + \\frac{4}{x} $ for $ x > 0 $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The minimum value is 4."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The minimum value is 4."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The minimum value is 4."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The minimum value is 4."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Use AM-GM inequality: $ x + \\frac{4}{x} \\geq 2\\sqrt{x \\cdot \\frac{4}{x}} = 4 $. Equality holds when $ x = \\frac{4}{x} $ → $ x = 2 $. Thus, the minimum value is 4.",
+      "hint": "Apply the AM-GM inequality to find the minimum value.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331667132-211e3",
+      "order": 23,
+      "question": "The area bounded by the curve $ y = x^2 $, the x-axis, and the lines $ x = 1 $ and $ x = 3 $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "8 square units",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The area is $ \\frac{26}{3} $ square units."
+        },
+        {
+          "letter": "B",
+          "text": "9 square units",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The area is $ \\frac{26}{3} $ square units."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{26}{3} $ square units",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The area is $ \\frac{26}{3} $ square units."
+        },
+        {
+          "letter": "D",
+          "text": "10 square units",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The area is $ \\frac{26}{3} $ square units."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Area $ = \\int_1^3 x^2 \\, dx = [\\frac{x^3}{3}]_1^3 = \\frac{27}{3} - \\frac{1}{3} = \\frac{26}{3} $ square units.",
+      "hint": "Calculate the definite integral of the function over the given interval.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331667132-2e775",
+      "order": 24,
+      "question": "The slope of the tangent to the curve $ y = \\ln(x^2 + 1) $ at $ x = 1 $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{1}{2} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The slope is 1."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The slope is 1."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{3}{2} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The slope is 1."
+        },
+        {
+          "letter": "D",
+          "text": "2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The slope is 1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Compute $ y' = \\frac{2x}{x^2 + 1} $. At $ x = 1 $, $ y' = \\frac{2 \\cdot 1}{1 + 1} = 1 $.",
+      "hint": "Find the derivative of the function and evaluate it at $ x = 1 $.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331667132-718ae",
+      "order": 25,
+      "question": "The function $ f(x) = x^4 - 4x^3 + 4x^2 $ has:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "One local maximum and one local minimum",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function has one local maximum and two local minima."
+        },
+        {
+          "letter": "B",
+          "text": "Two local maxima",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function has one local maximum."
+        },
+        {
+          "letter": "C",
+          "text": "One local maximum and two local minima",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The function has one local maximum at $ x = 1 $ and two local minima at $ x = 0 $ and $ x = 2 $."
+        },
+        {
+          "letter": "D",
+          "text": "No local maxima or minima",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function has local maxima and minima."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Compute $ f'(x) = 4x^3 - 12x^2 + 8x = 4x(x^2 - 3x + 2) = 4x(x - 1)(x - 2) $. Critical points: $ x = 0, 1, 2 $. Second derivative $ f''(x) = 12x^2 - 24x + 8 $. Evaluate: At $ x = 0 $: $ f''(0) = 8 > 0 $ → local minimum. At $ x = 1 $: $ f''(1) = -4 < 0 $ → local maximum. At $ x = 2 $: $ f''(2) = 8 > 0 $ → local minimum.",
+      "hint": "Find critical points using the first derivative, then classify them using the second derivative test.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331667132-1d73a",
+      "order": 26,
+      "question": "The volume of the solid obtained by rotating the region bounded by $ y = \\sqrt{x} $, $ y = 0 $, $ x = 0 $, and $ x = 4 $ about the x-axis is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ 4\\pi $ cubic units",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The volume is $ 8\\pi $ cubic units."
+        },
+        {
+          "letter": "B",
+          "text": "$ 8\\pi $ cubic units",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The volume is $ 8\\pi $ cubic units."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{32\\pi}{5} $ cubic units",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The volume is $ 8\\pi $ cubic units."
+        },
+        {
+          "letter": "D",
+          "text": "16$\\pi $ cubic units",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The volume is $ 8\\pi $ cubic units."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Volume $ = \\pi \\int_0^4 (\\sqrt{x})^2 \\, dx = \\pi \\int_0^4 x \\, dx = \\pi [\\frac{x^2}{2}]_0^4 = \\pi \\cdot \\frac{16}{2} = 8\\pi $ cubic units.",
+      "hint": "Use the disk method to calculate the volume of revolution.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331667132-7ddec",
+      "order": 27,
+      "question": "The rate of change of the area of a circle with respect to its radius $ r $ when $ r = 5 $ cm is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ 5\\pi $ cm²/cm",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The rate of change is $ 10\\pi $ cm²/cm."
+        },
+        {
+          "letter": "B",
+          "text": "$ 10\\pi $ cm²/cm",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The rate of change is $ 10\\pi $ cm²/cm."
+        },
+        {
+          "letter": "C",
+          "text": "$ 2\\pi $ cm²/cm",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The rate of change is $ 10\\pi $ cm²/cm."
+        },
+        {
+          "letter": "D",
+          "text": "$ 25\\pi $ cm²/cm",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The rate of change is $ 10\\pi $ cm²/cm."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Area $ A = \\pi r^2 $. Rate of change $ \\frac{dA}{dr} = 2\\pi r $. At $ r = 5 $, $ \\frac{dA}{dr} = 10\\pi $.",
+      "hint": "Differentiate the area formula with respect to the radius.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331667132-5cfb0",
+      "order": 28,
+      "question": "The function $ f(x) = e^{-x^2} $ has:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "No critical points",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function has a critical point at $ x = 0 $."
+        },
+        {
+          "letter": "B",
+          "text": "A local maximum at $ x = 0 $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The function has a local maximum at $ x = 0 $."
+        },
+        {
+          "letter": "C",
+          "text": "A local minimum at $ x = 0 $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function has a local maximum at $ x = 0 $."
+        },
+        {
+          "letter": "D",
+          "text": "A point of inflection at $ x = 0 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function has a local maximum at $ x = 0 $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Compute $ f'(x) = -2x e^{-x^2} $. Set $ f'(x) = 0 $: $ x = 0 $ (critical point). Second derivative $ f''(x) = (-2 + 4x^2) e^{-x^2} $. At $ x = 0 $, $ f''(0) = -2 < 0 $ → local maximum.",
+      "hint": "Find critical points using the first derivative, then classify them using the second derivative test.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331667132-cc080",
+      "order": 29,
+      "question": "A cone of maximum volume is inscribed in a sphere of radius R. What is the volume of the cone?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4πR³/3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the volume of the sphere, not the cone."
+        },
+        {
+          "letter": "B",
+          "text": "8πR³/27",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the maximum volume of the inscribed cone."
+        },
+        {
+          "letter": "C",
+          "text": "32πR³/81",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct maximum volume of the cone inscribed in the sphere."
+        },
+        {
+          "letter": "D",
+          "text": "64πR³/27",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This value exceeds the volume of the sphere and is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The volume of the cone is derived by maximizing the volume function V = (1/3)π(2Rh² - h³) with respect to height h. The maximum occurs at h = 4R/3, leading to the volume V_max = 32πR³/81.",
+      "hint": "Use calculus to maximize the volume function of the cone inscribed in the sphere.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331667132-fc633",
+      "order": 30,
+      "question": "A rectangle has one side on the x-axis and its two upper vertices lie on the parabola $y = 12 - x^2$. What is the maximum possible area of such a rectangle?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "16",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the maximum area."
+        },
+        {
+          "letter": "B",
+          "text": "18",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the maximum area."
+        },
+        {
+          "letter": "C",
+          "text": "32",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct maximum area."
+        },
+        {
+          "letter": "D",
+          "text": "24",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the maximum area."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let the vertices of the rectangle be $(-x, 0)$, $(x, 0)$, $(x, y)$, and $(-x, y)$. Since the two upper vertices lie on the parabola $y = 12 - x^2$, the coordinates of the upper right vertex are $(x, 12 - x^2)$. The width of the rectangle is $2x$ and the height is $12 - x^2$. The area $A$ of the rectangle is $A = 2x(12 - x^2) = 24x - 2x^3$. To find the maximum area, take the derivative of $A$ with respect to $x$ and set it to zero: $\\frac{dA}{dx} = 24 - 6x^2 = 0$. Solving this gives $x^2 = 4$, so $x = 2$ (since $x > 0$). Substituting back, the maximum area is $A = 24(2) - 2(2)^3 = 48 - 16 = 32$.",
+      "hint": "Express the area of the rectangle in terms of $x$ and find its maximum using calculus.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331775797-c8862",
+      "order": 31,
+      "question": "What is the Biochemical Oxygen Demand (BOD) of the original wastewater sample given the following data: Initial DO = 9.0 mg/L, Final DO = 3.0 mg/L, Dilution factor = 250 mL / 25 mL?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6 ppm",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the DO consumed, not the BOD of the original sample."
+        },
+        {
+          "letter": "B",
+          "text": "60 ppm",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct calculation: (9.0 - 3.0) mg/L × 10 = 60 ppm."
+        },
+        {
+          "letter": "C",
+          "text": "90 ppm",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation; this does not match the derived value."
+        },
+        {
+          "letter": "D",
+          "text": "120 ppm",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation; this does not match the derived value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "BOD is calculated as (Initial DO - Final DO) × Dilution Factor. Here, (9.0 - 3.0) mg/L × 10 = 60 mg/L (or ppm).",
+      "hint": "Use the formula: BOD = (DO consumed) × Dilution Factor, where DO consumed = Initial DO - Final DO.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331775797-3c45c",
+      "order": 32,
+      "question": "Which statement accurately describes tropospheric ozone?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It is vital for protecting the Earth's surface from harmful ultraviolet (UV) radiation.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This describes stratospheric ozone, not tropospheric ozone."
+        },
+        {
+          "letter": "B",
+          "text": "It is a secondary pollutant, a major component of photochemical smog, and a powerful respiratory irritant.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct description of tropospheric ozone."
+        },
+        {
+          "letter": "C",
+          "text": "Its depletion leads to an increase in the Earth's average global temperature.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Ozone depletion in the stratosphere does not directly cause global warming."
+        },
+        {
+          "letter": "D",
+          "text": "It is primarily formed by the catalytic decomposition of chlorofluorocarbons (CFCs) in the upper atmosphere.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This describes stratospheric ozone depletion, not tropospheric ozone formation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Tropospheric ozone is a secondary pollutant formed by reactions involving NOx and VOCs in sunlight. It is a major component of photochemical smog and a respiratory irritant.",
+      "hint": "Tropospheric ozone is not the same as stratospheric ozone, which protects against UV radiation.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331775797-7f7d7",
+      "order": 33,
+      "question": "Eutrophication of a water body typically leads to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "An increase in the dissolved oxygen levels, promoting aquatic biodiversity.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Eutrophication reduces dissolved oxygen levels due to decomposition of organic matter."
+        },
+        {
+          "letter": "B",
+          "text": "A decrease in water temperature, favoring cold-water fish species.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Eutrophication does not directly affect water temperature in this manner."
+        },
+        {
+          "letter": "C",
+          "text": "Algal blooms, followed by oxygen depletion and loss of aquatic life.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct sequence of events in eutrophication."
+        },
+        {
+          "letter": "D",
+          "text": "An increase in water clarity and reduced nutrient concentrations.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Eutrophication increases turbidity and nutrient concentrations."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Eutrophication results in excessive nutrient enrichment, leading to algal blooms. When algae die and decompose, oxygen is depleted, harming aquatic life.",
+      "hint": "Eutrophication causes an imbalance in the aquatic ecosystem due to nutrient overload.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331775797-a51f5",
+      "order": 34,
+      "question": "Which of the following sequences correctly represents a part of the catalytic cycle of stratospheric ozone depletion by chlorine radicals from CFCs?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "CF2Cl2 + UV light → CF2Cl• + Cl•; Cl• + O3 → ClO• + O2; ClO• + O → Cl• + O2",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct sequence of reactions in the catalytic cycle of stratospheric ozone depletion."
+        },
+        {
+          "letter": "B",
+          "text": "Cl• + O2 → ClO2•; ClO2• + O → Cl• + O",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This sequence does not represent the known catalytic cycle of ozone depletion."
+        },
+        {
+          "letter": "C",
+          "text": "CF2Cl2 + UV light → CF2Cl• + Cl•; Cl• + O2 → ClO2•; ClO2• + O3 → Cl• + 2O2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This sequence is not part of the standard catalytic cycle for ozone depletion."
+        },
+        {
+          "letter": "D",
+          "text": "Cl• + O3 → ClO• + O2; ClO• + ClO• → Cl2 + O2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This sequence does not regenerate chlorine radicals and is not part of the catalytic cycle."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The correct sequence involves the photodissociation of CFCs to release chlorine radicals, which then react with ozone to form chlorine monoxide and oxygen. Chlorine monoxide further reacts with atomic oxygen to regenerate chlorine radicals.",
+      "hint": "The catalytic cycle involves the regeneration of chlorine radicals to sustain ozone depletion.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331775797-6517d",
+      "order": 35,
+      "question": "Which of the following is the most significant anthropogenic greenhouse gas contributing to global warming?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Methane (CH₄)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Methane is a potent greenhouse gas but contributes less to global warming compared to CO₂ due to lower atmospheric concentration and shorter lifetime."
+        },
+        {
+          "letter": "B",
+          "text": "Nitrous Oxide (N₂O)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Nitrous oxide is a strong greenhouse gas but its atmospheric concentration and contribution to global warming are lower than CO₂."
+        },
+        {
+          "letter": "C",
+          "text": "Carbon dioxide (CO₂)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "CO₂ is the most significant anthropogenic greenhouse gas due to its high concentration, long atmospheric lifetime, and massive emissions from human activities."
+        },
+        {
+          "letter": "D",
+          "text": "Chlorofluorocarbons (CFCs)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "CFCs are potent greenhouse gases but their contribution to global warming is less significant compared to CO₂ due to lower atmospheric concentrations and regulatory controls."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "While methane, nitrous oxide, and CFCs are potent greenhouse gases, carbon dioxide (CO₂) is considered the most significant anthropogenic contributor to global warming due to its high concentration, long atmospheric lifetime, and massive emissions from fossil fuel combustion and deforestation.",
+      "hint": "Consider the primary sources of greenhouse gas emissions and their relative contributions.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331775797-50eee",
+      "order": 36,
+      "question": "Biochemical Oxygen Demand (BOD) is a measure of:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The amount of oxygen required by aerobic microorganisms to decompose organic matter in a given volume of water sample.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct definition of BOD, which assesses the organic pollution level in water."
+        },
+        {
+          "letter": "B",
+          "text": "The total amount of dissolved oxygen present in a water sample.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This describes the dissolved oxygen (DO) content, not BOD."
+        },
+        {
+          "letter": "C",
+          "text": "The amount of oxygen released by aquatic plants during photosynthesis.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This describes oxygen production by plants, unrelated to BOD."
+        },
+        {
+          "letter": "D",
+          "text": "The chemical oxygen requirement for oxidation of all organic and inorganic substances.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This describes Chemical Oxygen Demand (COD), not BOD."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "BOD specifically measures the amount of dissolved oxygen needed by aerobic biological organisms to break down organic material present in a given water sample at a certain temperature over a specific time period (usually 5 days at 20°C). Option D describes Chemical Oxygen Demand (COD).",
+      "hint": "Think about the role of oxygen in water quality assessment.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331775797-2c97e",
+      "order": 37,
+      "question": "Which of the following is a characteristic brown haze-forming component of photochemical smog?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sulfur dioxide (SO₂)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "SO₂ is a colorless gas that contributes to acid rain but does not form the brown haze of photochemical smog."
+        },
+        {
+          "letter": "B",
+          "text": "Carbon monoxide (CO)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "CO is a colorless, odorless gas and does not contribute to the brown haze."
+        },
+        {
+          "letter": "C",
+          "text": "Nitrogen dioxide (NO₂)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "NO₂ is a reddish-brown gas that gives photochemical smog its characteristic brown color."
+        },
+        {
+          "letter": "D",
+          "text": "Methane (CH₄)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Methane is a colorless gas and does not contribute to the brown haze of photochemical smog."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Nitrogen dioxide (NO₂) is a reddish-brown gas that contributes to the characteristic brown haze observed during photochemical smog events. It is a key component formed from the oxidation of nitric oxide (NO) released by vehicle exhausts and industrial combustion.",
+      "hint": "Consider the color and formation process of photochemical smog components.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331775797-eb50b",
+      "order": 38,
+      "question": "Acid rain primarily causes damage to historical monuments and buildings, particularly those made of marble (calcium carbonate) and limestone, due to the reaction of acids with:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Iron and steel components, leading to rusting.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Acid rain can cause rusting of metals, but this is not the primary damage to marble or limestone."
+        },
+        {
+          "letter": "B",
+          "text": "Calcium carbonate (CaCO₃), leading to its dissolution.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Acid rain reacts with CaCO₃ in marble and limestone, dissolving the material and causing structural damage."
+        },
+        {
+          "letter": "C",
+          "text": "Glass and ceramic materials, causing etching.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Acid rain can damage glass and ceramics, but this is not the primary concern for marble or limestone monuments."
+        },
+        {
+          "letter": "D",
+          "text": "Organic polymers used in construction, leading to degradation.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Acid rain primarily affects inorganic materials like marble and limestone, not organic polymers."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Acid rain, primarily composed of sulfuric acid (H₂SO₄) and nitric acid (HNO₃), reacts with calcium carbonate (CaCO₃), the main component of marble and limestone. This acid-base reaction dissolves the stone (CaCO₃ + H₂SO₄ → CaSO₄ + H₂O + CO₂), leading to erosion and damage of monuments.",
+      "hint": "Consider the chemical composition of marble and limestone and their reaction with acids.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331775797-de351",
+      "order": 39,
+      "question": "Consider the following statements regarding ozone: I. Tropospheric ozone (ground-level ozone) is considered a harmful air pollutant. II. Stratospheric ozone forms a protective layer that absorbs most of the sun's harmful ultraviolet (UV) radiation. III. Both tropospheric and stratospheric ozone are formed by the same chemical reactions involving oxygen molecules and UV radiation. Which of the statements given above are correct?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "I only",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Statement I is correct, but Statement II is also correct, making this option incomplete."
+        },
+        {
+          "letter": "B",
+          "text": "II only",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Statement II is correct, but Statement I is also correct, making this option incomplete."
+        },
+        {
+          "letter": "C",
+          "text": "I and II only",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Both Statements I and II are correct, while Statement III is incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "I, II and III",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Statement III is incorrect, as the formation mechanisms of tropospheric and stratospheric ozone differ."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Statements I and II are correct. Tropospheric ozone is a pollutant formed from reactions involving nitrogen oxides and volatile organic compounds in the presence of sunlight, causing respiratory problems. Stratospheric ozone is naturally occurring and protects Earth from UV radiation. Statement III is incorrect because while stratospheric ozone forms from O₂ + UV, tropospheric ozone's formation mechanism is different, involving precursors like NOx and VOCs.",
+      "hint": "Analyze the formation and role of ozone in different atmospheric layers.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331775797-91fa6",
+      "order": 40,
+      "question": "A 50 mL sample of wastewater required 1.5 mg of oxygen for 5-day biochemical oxygen demand (BOD₅) at 20°C. What is the BOD₅ of the sample in parts per million (ppm)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "15 ppm",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This would be the BOD if the calculation were based on 100 mL, but the sample volume is 50 mL."
+        },
+        {
+          "letter": "B",
+          "text": "30 ppm",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct calculation: (1.5 mg / 0.05 L) = 30 mg/L = 30 ppm."
+        },
+        {
+          "letter": "C",
+          "text": "60 ppm",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This would be the BOD if the calculation were based on 25 mL, but the sample volume is 50 mL."
+        },
+        {
+          "letter": "D",
+          "text": "75 ppm",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This value does not correspond to the given data or standard BOD calculations."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "BOD₅ is calculated as the mass of oxygen consumed per liter of sample. Here, 1.5 mg of oxygen is consumed in 50 mL (0.05 L) of sample. Thus, BOD₅ = (1.5 mg / 0.05 L) = 30 mg/L = 30 ppm.",
+      "hint": "Recall that BOD is typically expressed in mg/L or ppm, where 1 mg/L = 1 ppm.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331775797-24ac8",
+      "order": 41,
+      "question": "Which of the following statements correctly describes the significance of a high Biochemical Oxygen Demand (BOD) value in a water sample?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It indicates a low concentration of biodegradable organic matter.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "A high BOD indicates a high concentration of biodegradable organic matter, not low."
+        },
+        {
+          "letter": "B",
+          "text": "It suggests that the water is suitable for drinking without treatment.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "High BOD indicates poor water quality, making it unsuitable for drinking without treatment."
+        },
+        {
+          "letter": "C",
+          "text": "It signifies a high level of microbial activity consuming dissolved oxygen.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. High BOD is due to microbial activity consuming dissolved oxygen."
+        },
+        {
+          "letter": "D",
+          "text": "It means the water has a high concentration of dissolved oxygen.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "High BOD leads to oxygen depletion, not high dissolved oxygen."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A high BOD value indicates that there is a large amount of biodegradable organic matter present in the water. This organic matter is consumed by microorganisms, which in turn use up a significant amount of the dissolved oxygen in the water for their metabolic activities. Therefore, a high BOD signifies a high level of microbial activity consuming dissolved oxygen, leading to oxygen depletion and harm to aquatic life.",
+      "hint": "Consider the role of microorganisms in consuming oxygen in water bodies.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331775797-78854",
+      "order": 42,
+      "question": "Acid rain is primarily caused by the atmospheric oxidation of which two major pollutants, typically originating from industrial emissions and vehicular exhaust?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Carbon monoxide (CO) and Methane (CH4)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "CO and CH4 are greenhouse gases but do not directly cause acid rain."
+        },
+        {
+          "letter": "B",
+          "text": "Sulfur dioxide (SO2) and Nitrogen oxides (NOx)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. SO2 and NOx are the primary pollutants responsible for acid rain."
+        },
+        {
+          "letter": "C",
+          "text": "Chlorofluorocarbons (CFCs) and Carbon dioxide (CO2)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "CFCs deplete ozone, and CO2 contributes to global warming but not directly to acid rain."
+        },
+        {
+          "letter": "D",
+          "text": "Ozone (O3) and Volatile Organic Compounds (VOCs)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "O3 and VOCs contribute to smog but are not primary causes of acid rain."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Acid rain is predominantly formed by the oxidation of sulfur dioxide (SO2) and nitrogen oxides (NOx) in the atmosphere. SO2 reacts with oxygen and water to form sulfuric acid (H2SO4), while NOx reacts similarly to form nitric acid (HNO3). Both SO2 and NOx are major pollutants released from the burning of fossil fuels in power plants, industries, and vehicles.",
+      "hint": "Think about common pollutants from industrial and vehicular sources that contribute to acid formation.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331775797-5050d",
+      "order": 43,
+      "question": "Photochemical smog is a complex mixture of pollutants formed under specific atmospheric conditions. Which of the following is a primary component of photochemical smog and is also considered a secondary pollutant due to its formation from other precursors?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sulfur dioxide (SO2)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "SO2 is a primary pollutant associated with classical smog, not photochemical smog."
+        },
+        {
+          "letter": "B",
+          "text": "Carbon monoxide (CO)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "CO is a primary pollutant but not a characteristic component of photochemical smog."
+        },
+        {
+          "letter": "C",
+          "text": "Tropospheric ozone (O3)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. Tropospheric ozone is a secondary pollutant and a primary component of photochemical smog."
+        },
+        {
+          "letter": "D",
+          "text": "Lead particles (Pb)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Lead particles are primary pollutants but not components of photochemical smog."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Photochemical smog is characterized by the presence of tropospheric ozone (O3), peroxyacyl nitrates (PANs), and other oxidants. Tropospheric ozone is a secondary pollutant because it is not directly emitted but forms from reactions involving primary pollutants like nitrogen oxides (NOx) and volatile organic compounds (VOCs) in the presence of sunlight. Sulfur dioxide is associated with classical (London) smog, while carbon monoxide and lead are primary pollutants but not characteristic components of photochemical smog.",
+      "hint": "Secondary pollutants are formed from reactions of primary pollutants in the atmosphere.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331775797-722b6",
+      "order": 44,
+      "question": "The depletion of the stratospheric ozone layer is a significant environmental concern. Which of the following statements accurately describes a key step in the catalytic destruction of ozone by chlorofluorocarbons (CFCs)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "CFCs directly react with ozone molecules to form oxygen gas and halogenated compounds.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "CFCs do not directly react with ozone; they release chlorine radicals that catalyze ozone destruction."
+        },
+        {
+          "letter": "B",
+          "text": "UV radiation breaks down CFCs to release chlorine free radicals, which then react with ozone, regenerating the chlorine radical.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This describes the catalytic destruction of ozone by chlorine radicals from CFCs."
+        },
+        {
+          "letter": "C",
+          "text": "Nitrogen oxides act as catalysts in the breakdown of CFCs to release fluorine radicals, which subsequently destroy ozone.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Nitrogen oxides do not break down CFCs; chlorine radicals from CFCs destroy ozone."
+        },
+        {
+          "letter": "D",
+          "text": "The depletion is primarily due to the reaction of carbon dioxide with ozone in the presence of strong UV light.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "CO2 does not directly react with ozone to cause depletion."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "CFCs are stable in the troposphere but dissociate in the stratosphere under intense UV radiation, releasing chlorine free radicals (Cl•). These chlorine radicals then catalytically destroy ozone (O3) molecules in a two-step process: Cl• + O3 → ClO• + O2 and ClO• + O → Cl• + O2. The chlorine radical is regenerated, allowing it to destroy many more ozone molecules, thus acting as a catalyst. Options A, C, and D describe incorrect mechanisms or substances.",
+      "hint": "Recall the mechanism of ozone depletion involving free radicals and UV radiation.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1785331775797-de0a2",
+      "order": 45,
+      "question": "A 25 mL sample of industrial wastewater was collected and diluted 10-fold with distilled water. A 50 mL aliquot of this diluted sample was then used for a BOD test, which showed an oxygen consumption of 3.0 mg over 5 days. What is the Biochemical Oxygen Demand (BOD) of the original industrial wastewater sample in ppm?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "60 ppm",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the BOD of the diluted sample, not the original wastewater."
+        },
+        {
+          "letter": "B",
+          "text": "120 ppm",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct calculation yields 600 ppm."
+        },
+        {
+          "letter": "C",
+          "text": "600 ppm",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The original BOD is 60 ppm (diluted) × 10 (dilution factor) = 600 ppm."
+        },
+        {
+          "letter": "D",
+          "text": "1200 ppm",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation does not support this value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "1. Calculate BOD of the diluted sample: Oxygen consumed = 3.0 mg, Volume = 50 mL = 0.050 L. BOD (diluted) = (3.0 mg / 0.050 L) = 60 mg/L = 60 ppm. 2. Account for the dilution factor: The original wastewater was diluted 10-fold, so BOD (original) = 60 ppm × 10 = 600 ppm.",
+      "hint": "Use the formula: BOD (ppm) = (Oxygen consumed in mg / Volume of sample in L) × Dilution Factor.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-chemistry",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ],
+  "publishedBy": "69edeed60cbdb69536343b6b",
+  "publishedByName": "Nitesh",
+  "authorRole": "superadmin"
+}
