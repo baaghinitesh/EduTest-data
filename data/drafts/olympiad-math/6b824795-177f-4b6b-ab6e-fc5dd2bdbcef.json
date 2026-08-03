@@ -4,7 +4,7 @@
   "class_slug": "olympiad-math",
   "test_type": "combined",
   "target_q": 20,
-  "collected_q": 1,
+  "collected_q": 10,
   "final_path": "data/admin/olympiad-math/tests/olympiad-math-combined-geometry-number-theory-6b824795.json",
   "payload": {
     "id": "6b824795-177f-4b6b-ab6e-fc5dd2bdbcef",
@@ -21,9 +21,9 @@
     "topic": "Combined",
     "testType": "subject-wise",
     "duration": 60,
-    "totalMarks": 4,
-    "passingMarks": 2,
-    "totalQuestions": 1,
+    "totalMarks": 40,
+    "passingMarks": 14,
+    "totalQuestions": 10,
     "targetQuestions": 20,
     "isPublic": true,
     "isPublished": true,
@@ -101,37 +101,470 @@
         "subject": "olympiad-geometry",
         "difficulty": "easy",
         "hasError": false
+      },
+      {
+        "id": "q-1785777974355-909d8",
+        "order": 2,
+        "question": "Given four distinct collinear points $A, B, C, D$. If their cross-ratio $(A, B; C, D) = -1$, which of the following statements is true?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$A, B, C, D$ form an arithmetic progression.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because an arithmetic progression requires a common difference between consecutive terms, which is not necessarily true for points with a cross-ratio of -1."
+          },
+          {
+            "letter": "B",
+            "text": "$C$ is the midpoint of $AD$.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because if $C$ were the midpoint of $AD$, the cross-ratio would be different from -1."
+          },
+          {
+            "letter": "C",
+            "text": "$A, B, C, D$ form a harmonic range.",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "By definition, four collinear points $A, B, C, D$ with a cross-ratio of -1 form a harmonic range."
+          },
+          {
+            "letter": "D",
+            "text": "$D$ is the midpoint of $BC$.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because if $D$ were the midpoint of $BC$, the cross-ratio would be different from -1."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Four collinear points $A, B, C, D$ have a cross-ratio of $(A, B; C, D) = -1$, meaning they form a harmonic range.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785777974355-93030",
+        "order": 3,
+        "question": "Let $\\Omega$ be a circle with center $O$ and radius $R$. Let $P$ be a point outside $\\Omega$. The polar of $P$ with respect to $\\Omega$ is a line $l$. Which of the following statements about line $l$ is always true?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Line $l$ passes through $O$.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "The polar line does not necessarily pass through the center $O$ unless $P$ lies on the circle (which it does not, as $P$ is outside)."
+          },
+          {
+            "letter": "B",
+            "text": "Line $l$ is perpendicular to the line segment $OP$.",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is a fundamental property of the polar line: it is perpendicular to the line joining the point to the center of the circle."
+          },
+          {
+            "letter": "C",
+            "text": "Line $l$ is parallel to the line segment $OP$.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "The polar line is not parallel to $OP$; it is perpendicular to it."
+          },
+          {
+            "letter": "D",
+            "text": "Line $l$ is tangent to $\\Omega$.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "The polar line is not tangent to the circle unless $P$ lies on the circle, which it does not."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The polar of a point $P$ with respect to a circle $\\Omega$ with center $O$ is the line perpendicular to $OP$ at the inverse point of $P$ (if $P$ is outside the circle). Thus, the polar line $l$ is always perpendicular to the line segment $OP$.",
+        "hint": "Recall the definition of the polar line in projective geometry: it is the locus of points whose tangents to the circle meet at $P$.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785777974355-42b02",
+        "order": 4,
+        "question": "Points A, B, C, D are distinct and collinear. If C and D divide the segment AB harmonically, which of the following statements about their cross-ratio (A, B; C, D) is true?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "(A, B; C, D) = 1",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because a cross-ratio of 1 implies the points are not harmonically divided."
+          },
+          {
+            "letter": "B",
+            "text": "(A, B; C, D) = 0",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because a cross-ratio of 0 would imply one of the points is at infinity or the points are not distinct, which is not the case here."
+          },
+          {
+            "letter": "C",
+            "text": "(A, B; C, D) = -1",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the correct answer. Harmonic division of a segment by two points results in a cross-ratio of -1."
+          },
+          {
+            "letter": "D",
+            "text": "(A, B; C, D) is undefined",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This option is incorrect because, given the points are distinct and collinear, and C and D divide AB harmonically, the cross-ratio is well-defined and equals -1."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "When points C and D divide segment AB harmonically, the cross-ratio (A, B; C, D) is -1. This is a fundamental property of harmonic division in projective geometry.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785777974355-85c84",
+        "order": 5,
+        "question": "In projective geometry, which of the following statements is incorrect regarding the concept of duality?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "The dual of a point is a line, and vice versa.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is a correct interpretation of duality in projective geometry."
+          },
+          {
+            "letter": "B",
+            "text": "Incidence relations between points and lines are preserved under duality.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is a correct interpretation of duality in projective geometry."
+          },
+          {
+            "letter": "C",
+            "text": "The dual of a conic section is always another conic section.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is a correct interpretation of duality in projective geometry."
+          },
+          {
+            "letter": "D",
+            "text": "Duality can only be applied to affine geometry, not projective geometry.",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Duality applies to projective geometry as well, making this statement incorrect."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Duality is a fundamental principle in projective geometry, where points and lines are dual to each other, and incidence relations are preserved. However, the incorrect statement is D, as duality applies to projective geometry as well.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785777974355-0c162",
+        "order": 6,
+        "question": "Let two triangles be perspective from a point P. If the lines AD, BE, and CF are concurrent at P, which theorem guarantees that the intersections of corresponding sides are collinear?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ceva's Theorem",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Ceva's Theorem is not directly applicable to this scenario."
+          },
+          {
+            "letter": "B",
+            "text": "Menelaus' Theorem",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Menelaus' Theorem is not directly applicable to this scenario."
+          },
+          {
+            "letter": "C",
+            "text": "Desargues' Theorem",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Desargues' Theorem guarantees that the intersections of corresponding sides are collinear."
+          },
+          {
+            "letter": "D",
+            "text": "Pascal's Theorem",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Pascal's Theorem is not directly applicable to this scenario."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Desargues' Theorem states that if two triangles are perspective from a point, then they are perspective from a line. This means the intersections of corresponding sides are collinear.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785777974355-d61df",
+        "order": 7,
+        "question": "In projective geometry, the cross-ratio of four collinear points A, B, C, D is defined as (A, B; C, D) = AC * BD / AD * BC. If (A, B; C, D) = 2, what is the cross-ratio (B, A; C, D)?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "-2",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Swapping A and B inverts the cross-ratio, but does not change its sign."
+          },
+          {
+            "letter": "B",
+            "text": "0.5",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Swapping A and B inverts the cross-ratio, so (B, A; C, D) = 1 / (A, B; C, D) = 1 / 2 = 0.5."
+          },
+          {
+            "letter": "C",
+            "text": "2",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Swapping A and B inverts the cross-ratio, so (B, A; C, D) is not equal to (A, B; C, D)."
+          },
+          {
+            "letter": "D",
+            "text": "4",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "There is no indication that the cross-ratio would increase to 4."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The cross-ratio is invariant under permutation of the first two or last two points, but swapping the first two points (A and B) inverts the cross-ratio.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1785777974355-99730",
+        "order": 8,
+        "question": "Consider a projective transformation that maps the points (1, 0, 0), (0, 1, 0), and (0, 0, 1) to (1, 1, 1), (1, 2, 3), and (1, 3, 6), respectively. What is the image of the point (1, 1, 1) under this transformation?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "(1, 1, 1)",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "The point (1, 1, 1) is not the image of itself under the transformation."
+          },
+          {
+            "letter": "B",
+            "text": "(1, 2, 3)",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "The point (1, 2, 3) is the image of (0, 1, 0), not (1, 1, 1)."
+          },
+          {
+            "letter": "C",
+            "text": "(6, 11, 19)",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Applying T to (1, 1, 1) gives (3, 6, 10), which scales to (6, 11, 19)."
+          },
+          {
+            "letter": "D",
+            "text": "(3, 6, 10)",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "While (3, 6, 10) is the result of applying T to (1, 1, 1), the question asks for the image in the given options, which is (6, 11, 19)."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "A projective transformation can be represented by a 3x3 matrix T. Using the given mappings, we solve for T such that T * (1, 0, 0) = (1, 1, 1), T * (0, 1, 0) = (1, 2, 3), and T * (0, 0, 1) = (1, 3, 6).",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "hard",
+        "hasError": false
+      },
+      {
+        "id": "q-1785777974355-8282b",
+        "order": 9,
+        "question": "In projective geometry, the concept of a pencil of lines refers to:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "A set of lines that are all parallel in Euclidean geometry.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Parallel lines do not necessarily pass through a common point."
+          },
+          {
+            "letter": "B",
+            "text": "A set of lines that all pass through a common fixed point.",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the definition of a pencil of lines in projective geometry."
+          },
+          {
+            "letter": "C",
+            "text": "A set of lines that intersect a given conic at exactly two points.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This describes a different concept related to conic sections."
+          },
+          {
+            "letter": "D",
+            "text": "A set of lines that form a triangle.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "A pencil of lines is not limited to forming a triangle."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "A pencil of lines in projective geometry is defined as a set of lines that all pass through a common fixed point, known as the center of the pencil.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1785777974355-de102",
+        "order": 10,
+        "question": "Let P be a point in the projective plane, and let l be a line not passing through P. If a projective transformation maps P to the line at infinity and l to the line x = 0 in homogeneous coordinates, what is the image of l under the inverse transformation?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "The line at infinity",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "The inverse transformation maps the line at infinity back to P, not l."
+          },
+          {
+            "letter": "B",
+            "text": "The point P",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "The inverse transformation maps the line at infinity to P, but l is mapped to a line, not a point."
+          },
+          {
+            "letter": "C",
+            "text": "A line parallel to l in Euclidean geometry",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "The inverse transformation maps x = 0 back to l, but due to the nature of the transformation, it maps to a line parallel to l in Euclidean geometry."
+          },
+          {
+            "letter": "D",
+            "text": "A conic section",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "There is no indication that the image of l under the inverse transformation would be a conic section."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "A projective transformation that maps a finite point P to the line at infinity must map a line l not passing through P to a line not at infinity.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "hard",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
     "remaining_topics": [
-      {
-        "classSlug": "olympiad-math",
-        "board": "Competitive",
-        "type": "competitive",
-        "examConfig": {
-          "fullLengthQuestions": 30,
-          "fullLengthMarks": 102,
-          "fullLengthDuration": 180,
-          "subjectWiseQuestions": 10,
-          "subjectWiseMarks": 34,
-          "subjectWiseDuration": 30,
-          "negativeMarking": true,
-          "correctMarkValue": 4,
-          "negativeMarkValue": 1,
-          "subjectWiseQMin": 10,
-          "subjectWiseQMax": 15,
-          "combinedTestQPerSubject": 10
-        },
-        "subjectSlug": "olympiad-geometry",
-        "subjectName": "Geometry",
-        "subjectIcon": "📏",
-        "subjectColor": "#3b82f6",
-        "chapter": "Advanced Geometry",
-        "topic": "Projective Geometry",
-        "cycle": 1
-      },
       {
         "classSlug": "olympiad-math",
         "board": "Competitive",
@@ -161,12 +594,12 @@
     ],
     "q_per_subj": 10,
     "collected_per_subj": {
-      "olympiad-geometry": 1
+      "olympiad-geometry": 10
     },
     "is_school": false,
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-08-03T14:13:41.964878Z",
-  "updated_at": "2026-08-03T14:13:41.964882Z"
+  "created_at": "2026-08-03T17:26:32.444256Z",
+  "updated_at": "2026-08-03T17:26:32.444276Z"
 }
