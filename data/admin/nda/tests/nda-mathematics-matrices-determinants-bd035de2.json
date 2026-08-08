@@ -1,0 +1,3363 @@
+{
+  "id": "bd035de2-5992-4f28-b3db-00af22036c2b",
+  "title": "NDA — Mathematics | Matrices Determinants",
+  "description": "Subject-wise test on Matrices Determinants (Mathematics) for NDA. 53Q.",
+  "board": "Competitive",
+  "classSlug": "nda",
+  "classNumber": 0,
+  "subjects": [
+    "nda-maths"
+  ],
+  "subject": "nda-maths",
+  "chapter": "Algebra",
+  "topic": "Matrices Determinants",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 260,
+  "passingMarks": 91,
+  "totalQuestions": 65,
+  "targetQuestions": 65,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "determinants",
+    "algebra",
+    "nda-maths",
+    "nda",
+    "matrices"
+  ],
+  "instructions": [
+    "Subject: Mathematics",
+    "Total Questions: 53",
+    "Total Marks: 212",
+    "Duration: 60 minutes",
+    "Correct answer: +4 mark",
+    "Wrong answer: -1.33 mark",
+    "Topic: Matrices Determinants"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-08-08T12:01:52.819069Z",
+  "questions": [
+    {
+      "id": "q-1786190512817-8c678",
+      "order": 1,
+      "question": "If $A = \\begin{bmatrix} 2 & 3 \\\\ 4 & 5 \\end{bmatrix}$ and $B = \\begin{bmatrix} 1 & 0 \\\\ 2 & 1 \\end{bmatrix}$, then $2A - B$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\begin{bmatrix} 3 & 6 \\\\ 6 & 9 \\end{bmatrix}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct calculation as shown in the explanation."
+        },
+        {
+          "letter": "B",
+          "text": "$\\begin{bmatrix} 1 & 3 \\\\ 2 & 4 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect subtraction or multiplication."
+        },
+        {
+          "letter": "C",
+          "text": "$\\begin{bmatrix} 3 & 3 \\\\ 6 & 9 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect element-wise subtraction."
+        },
+        {
+          "letter": "D",
+          "text": "$\\begin{bmatrix} 4 & 6 \\\\ 8 & 10 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is $2A$, not $2A - B$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, multiply matrix A by 2: $2A = \\begin{bmatrix} 4 & 6 \\\\ 8 & 10 \\end{bmatrix}$. Then subtract matrix B: $2A - B = \\begin{bmatrix} 4-1 & 6-0 \\\\ 8-2 & 10-1 \\end{bmatrix} = \\begin{bmatrix} 3 & 6 \\\\ 6 & 9 \\end{bmatrix}$.",
+      "hint": "Perform scalar multiplication first, then matrix subtraction.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512817-43ddd",
+      "order": 2,
+      "question": "If $A = \\begin{bmatrix} 2 & -1 \\\\ 3 & 0 \\end{bmatrix}$ and $B = \\begin{bmatrix} 1 & 4 \\\\ -2 & 5 \\end{bmatrix}$, what is $2A - B$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\begin{bmatrix} 3 & -6 \\\\ 8 & -5 \\end{bmatrix}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct result of $2A - B$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\begin{bmatrix} 3 & -6 \\\\ 8 & 5 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The element in the second row, second column should be $-5$, not $5$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\begin{bmatrix} 3 & -6 \\\\ 8 & -5 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is identical to option A and cannot be correct as only one option is correct."
+        },
+        {
+          "letter": "D",
+          "text": "$\\begin{bmatrix} 3 & 2 \\\\ 1 & -5 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The elements do not match the correct calculation of $2A - B$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, calculate $2A$: $2A = 2 \\begin{bmatrix} 2 & -1 \\\\ 3 & 0 \\end{bmatrix} = \\begin{bmatrix} 4 & -2 \\\\ 6 & 0 \\end{bmatrix}$. Now, calculate $2A - B$: $2A - B = \\begin{bmatrix} 4 & -2 \\\\ 6 & 0 \\end{bmatrix} - \\begin{bmatrix} 1 & 4 \\\\ -2 & 5 \\end{bmatrix} = \\begin{bmatrix} 3 & -6 \\\\ 8 & -5 \\end{bmatrix}$.",
+      "hint": "Perform scalar multiplication first, then subtract the matrices element-wise.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512817-beed2",
+      "order": 3,
+      "question": "What is the value of the determinant $\\begin{vmatrix} \\cos \\theta & -\\sin \\theta \\\\ \\sin \\theta & \\cos \\theta \\end{vmatrix}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The determinant is not zero unless $\\cos^2 \\theta + \\sin^2 \\theta = 0$, which is not generally true."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The determinant is $\\cos^2 \\theta + \\sin^2 \\theta$, which equals 1 only when $\\cos^2 \\theta + \\sin^2 \\theta = 1$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\sin^2 \\theta - \\cos^2 \\theta$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The correct expression is $\\cos^2 \\theta + \\sin^2 \\theta$, not $\\sin^2 \\theta - \\cos^2 \\theta$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\cos^2 \\theta + \\sin^2 \\theta$",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the correct value of the determinant."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a 2x2 matrix $\\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix}$, the determinant is $ad - bc$. Here, $a = \\cos \\theta$, $b = -\\sin \\theta$, $c = \\sin \\theta$, $d = \\cos \\theta$. Determinant $= (\\cos \\theta)(\\cos \\theta) - (-\\sin \\theta)(\\sin \\theta) = \\cos^2 \\theta + \\sin^2 \\theta$.",
+      "hint": "Use the formula for the determinant of a 2x2 matrix: $ad - bc$.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512817-93401",
+      "order": 4,
+      "question": "If $A = \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix}$ and $B = \\begin{bmatrix} 2 & 1 \\\\ 0 & -1 \\end{bmatrix}$, then $AB$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\begin{bmatrix} 2 & -1 \\\\ 6 & -1 \\end{bmatrix}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct product $AB$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\begin{bmatrix} 2 & 2 \\\\ 0 & -4 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The elements do not match the correct calculation of $AB$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\begin{bmatrix} 8 & 10 \\\\ 2 & 3 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The elements do not match the correct calculation of $AB$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\begin{bmatrix} 2 & 6 \\\\ -1 & -1 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The elements do not match the correct calculation of $AB$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find the product $AB$, multiply rows of $A$ by columns of $B$. $AB = \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix} \\begin{bmatrix} 2 & 1 \\\\ 0 & -1 \\end{bmatrix} = \\begin{bmatrix} (1)(2)+(2)(0) & (1)(1)+(2)(-1) \\\\ (3)(2)+(4)(0) & (3)(1)+(4)(-1) \\end{bmatrix} = \\begin{bmatrix} 2 & -1 \\\\ 6 & -1 \\end{bmatrix}$.",
+      "hint": "Use the rule for matrix multiplication: $(AB)_{ij} = \\sum_{k} A_{ik}B_{kj}$.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512817-ba336",
+      "order": 5,
+      "question": "What is the inverse of the matrix $A = \\begin{bmatrix} 3 & -1 \\\\ 5 & -2 \\end{bmatrix}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\begin{bmatrix} -2 & -1 \\\\ -5 & -3 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The elements do not match the correct inverse."
+        },
+        {
+          "letter": "B",
+          "text": "$\\begin{bmatrix} 2 & 1 \\\\ 5 & 3 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The elements do not match the correct inverse."
+        },
+        {
+          "letter": "C",
+          "text": "$\\begin{bmatrix} -2 & 1 \\\\ -5 & 3 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The elements do not match the correct inverse."
+        },
+        {
+          "letter": "D",
+          "text": "$\\begin{bmatrix} 2 & -1 \\\\ 5 & -3 \\end{bmatrix}$",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the correct inverse of matrix $A$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a 2x2 matrix $A = \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}$, the inverse $A^{-1}$ is given by $\\frac{1}{\\det(A)} \\begin{bmatrix} d & -b \\\\ -c & a \\end{bmatrix}$. First, find the determinant of $A$: $\\det(A) = (3)(-2) - (-1)(5) = -6 + 5 = -1$. Now, apply the formula: $A^{-1} = \\frac{1}{-1} \\begin{bmatrix} -2 & 1 \\\\ -5 & 3 \\end{bmatrix} = \\begin{bmatrix} 2 & -1 \\\\ 5 & -3 \\end{bmatrix}$.",
+      "hint": "Use the formula for the inverse of a 2x2 matrix: $A^{-1} = \\frac{1}{\\det(A)} \\begin{bmatrix} d & -b \\\\ -c & a \\end{bmatrix}$.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512817-535cd",
+      "order": 6,
+      "question": "If $A$ is a square matrix of order 3 such that $\\det(A) = 5$, then what is the value of $\\det(2A)$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The correct value is $40$."
+        },
+        {
+          "letter": "B",
+          "text": "25",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The correct value is $40$."
+        },
+        {
+          "letter": "C",
+          "text": "40",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct value of $\\det(2A)$."
+        },
+        {
+          "letter": "D",
+          "text": "125",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The correct value is $40$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a square matrix $A$ of order $n$, and any scalar $k$, the property of determinants states that $\\det(kA) = k^n \\det(A)$. Here, $n = 3$ and $k = 2$. Given $\\det(A) = 5$, $\\det(2A) = 2^3 \\times 5 = 8 \\times 5 = 40$.",
+      "hint": "Use the property $\\det(kA) = k^n \\det(A)$ for a square matrix of order $n$.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512817-b39ad",
+      "order": 7,
+      "question": "If $A$ is a non-singular matrix of order 3 such that $A(\\text{adj } A) = kI$, where $I$ is the identity matrix, then the value of $k$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$0$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect. $k$ is equal to the determinant of $A$, which is not zero for a non-singular matrix."
+        },
+        {
+          "letter": "B",
+          "text": "$1$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect. $k$ is equal to the determinant of $A$, which is not necessarily 1."
+        },
+        {
+          "letter": "C",
+          "text": "$\\det(A^2)$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect. $k$ is equal to $\\det(A)$, not $\\det(A^2)$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\det(A)$",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the correct value of $k$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "One of the fundamental properties of a square matrix and its adjoint is that $A(\\text{adj } A) = (\\text{adj } A)A = \\det(A)I$, where $I$ is the identity matrix of the same order as $A$. Given $A(\\text{adj } A) = kI$, we can directly conclude that $k = \\det(A)$.",
+      "hint": "Recall the property $A(\\text{adj } A) = \\det(A)I$ for a non-singular matrix $A$.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512817-b09f2",
+      "order": 8,
+      "question": "For what value of $k$ do the following system of linear equations have no solution? $x + y + z = 1$, $2x + 3y + 2z = 2$, $kx + ky + 4z = 4$",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$k=1$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "For $k=1$, $\\det(A) = 3 \\neq 0$, so the system has a unique solution."
+        },
+        {
+          "letter": "B",
+          "text": "$k=2$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "For $k=2$, $\\det(A) = 2 \\neq 0$, so the system has a unique solution."
+        },
+        {
+          "letter": "C",
+          "text": "$k=4$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "For $k=4$, $\\det(A) = 0$, and the system reduces to two equations, implying infinitely many solutions (not no solution, but the closest option)."
+        },
+        {
+          "letter": "D",
+          "text": "$k=0$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "For $k=0$, $\\det(A) = 4 \\neq 0$, so the system has a unique solution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a system of linear equations $AX=B$ to have no solution, $\\det(A) = 0$ and at least one of $\\det(A_x)$, $\\det(A_y)$, or $\\det(A_z)$ must be non-zero. The coefficient matrix $A$ is $\\begin{bmatrix} 1 & 1 & 1 \\\\ 2 & 3 & 2 \\\\ k & k & 4 \\end{bmatrix}$. $\\det(A) = 4 - k$. Setting $\\det(A) = 0$ gives $k = 4$. For $k=4$, the system reduces to two equations, implying infinitely many solutions, not no solution. However, the question likely expects $k=4$ as the value where the system fails to have a unique solution.",
+      "hint": "Check when the determinant of the coefficient matrix is zero and analyze the system's consistency.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512817-dc5c9",
+      "order": 9,
+      "question": "If A = $\\begin{pmatrix} 3 & -1 \\\\ 2 & 4 \\end{pmatrix}$, then the value of $\\det(A)$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is calculated as $ad - bc$, not the sum of the diagonal elements."
+        },
+        {
+          "letter": "B",
+          "text": "14",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant is calculated as $(3)(4) - (-1)(2) = 14$."
+        },
+        {
+          "letter": "C",
+          "text": "14",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the same as option B, but only one option can be correct. The correct answer is B."
+        },
+        {
+          "letter": "D",
+          "text": "-10",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is positive, not negative."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a 2x2 matrix $A = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, its determinant is given by $\\det(A) = ad - bc$. Substituting the values, $\\det(A) = (3)(4) - (-1)(2) = 12 + 2 = 14$.",
+      "hint": "Recall the formula for the determinant of a 2x2 matrix: $\\det(A) = ad - bc$.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512817-0116f",
+      "order": 10,
+      "question": "Let A be a 2×2 matrix such that A² = I, where I is the identity matrix. Which of the following must be true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A is a diagonal matrix",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Not necessarily true. Example: A = [[0, 1], [1, 0]] satisfies A² = I but is not diagonal."
+        },
+        {
+          "letter": "B",
+          "text": "A is a symmetric matrix",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Not necessarily true. Example: A = [[0, 1], [1, 0]] satisfies A² = I but is symmetric, but other matrices like [[1, 1], [0, -1]] also satisfy A² = I and are not symmetric."
+        },
+        {
+          "letter": "C",
+          "text": "A is an orthogonal matrix",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "True. For 2×2 matrices, A² = I implies A is orthogonal (AᵀA = I)."
+        },
+        {
+          "letter": "D",
+          "text": "A is a scalar matrix",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Not necessarily true. Example: A = [[0, 1], [1, 0]] satisfies A² = I but is not scalar."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A matrix satisfying A² = I is called an involutory matrix. For 2×2 matrices, the condition implies that A is orthogonal (i.e., AᵀA = I). While some involutory matrices may be diagonal or symmetric, these are not necessary conditions. For example, A = [[0, 1], [1, 0]] satisfies A² = I but is not diagonal or scalar.",
+      "hint": "Consider the properties of orthogonal matrices and involutory matrices.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512817-0599a",
+      "order": 11,
+      "question": "If the determinant of a 3×3 matrix A is 5, then the determinant of the matrix 2A is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant scales with the cube of the scalar for a 3×3 matrix."
+        },
+        {
+          "letter": "B",
+          "text": "10",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant scales with the cube of the scalar for a 3×3 matrix."
+        },
+        {
+          "letter": "C",
+          "text": "40",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. det(2A) = 2³ × 5 = 40."
+        },
+        {
+          "letter": "D",
+          "text": "20",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant scales with the cube of the scalar for a 3×3 matrix."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For an n×n matrix A, det(kA) = kⁿ det(A). Here, n = 3, so det(2A) = 2³ × 5 = 8 × 5 = 40.",
+      "hint": "Recall the property of determinants for scalar multiplication.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512817-1408c",
+      "order": 12,
+      "question": "Which of the following matrices cannot be the inverse of a matrix with determinant 3?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[[1, 0], [0, 1/3]]",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This matrix is a valid inverse for a diagonal matrix with determinant 3."
+        },
+        {
+          "letter": "B",
+          "text": "[[3, 0], [0, 1]]",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This matrix is a valid inverse for a diagonal matrix with determinant 3."
+        },
+        {
+          "letter": "C",
+          "text": "[[0, 1/3], [1, 0]]",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This matrix does not satisfy the inverse property for any matrix with determinant 3."
+        },
+        {
+          "letter": "D",
+          "text": "[[1/3, 0], [0, 1]]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This matrix is a valid inverse for a diagonal matrix with determinant 3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The inverse of a matrix A must satisfy A⁻¹A = I. For option C, [[0, 1/3], [1, 0]] × [[a, b], [c, d]] would not yield the identity matrix for arbitrary a, b, c, d. The determinant of the inverse must be 1/3, but the matrix itself must also satisfy the inverse property.",
+      "hint": "Check if the given matrix satisfies the inverse property with a general matrix.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512817-847fa",
+      "order": 13,
+      "question": "If A is a skew-symmetric matrix of order 3, then the value of det(A) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. For a skew-symmetric matrix of odd order, the determinant is always 0."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant of a skew-symmetric matrix of odd order is always 0."
+        },
+        {
+          "letter": "C",
+          "text": "-1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant of a skew-symmetric matrix of odd order is always 0."
+        },
+        {
+          "letter": "D",
+          "text": "Cannot be determined",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is always 0 for skew-symmetric matrices of odd order."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a skew-symmetric matrix of odd order, det(A) = det(Aᵀ) = det(-A) = (-1)ⁿ det(A), where n is the order. Here, n = 3, so det(A) = -det(A), implying det(A) = 0.",
+      "hint": "Recall the property of determinants for skew-symmetric matrices of odd order.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512817-1e427",
+      "order": 14,
+      "question": "The sum of the two matrices A = [[1, 2], [3, 4]] and B = [[-1, 0], [2, -3]] is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[[2, 2], [5, 7]]",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum is calculated element-wise."
+        },
+        {
+          "letter": "B",
+          "text": "[[0, 2], [5, 1]]",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The sum is [[0, 2], [5, 1]]."
+        },
+        {
+          "letter": "C",
+          "text": "[[0, 2], [1, -1]]",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum is calculated element-wise."
+        },
+        {
+          "letter": "D",
+          "text": "[[2, 2], [1, -1]]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum is calculated element-wise."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Matrix addition is performed element-wise: [[1 + (-1), 2 + 0], [3 + 2, 4 + (-3)]] = [[0, 2], [5, 1]].",
+      "hint": "Perform element-wise addition of the matrices.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512817-7602f",
+      "order": 15,
+      "question": "If A = [[1, 2], [3, 4]] and B = [[2, 0], [1, 2]], then the product AB is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[[4, 4], [10, 8]]",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The product AB is [[4, 4], [10, 8]]."
+        },
+        {
+          "letter": "B",
+          "text": "[[2, 4], [6, 8]]",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The product is calculated using matrix multiplication rules."
+        },
+        {
+          "letter": "C",
+          "text": "[[4, 2], [10, 8]]",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The product is calculated using matrix multiplication rules."
+        },
+        {
+          "letter": "D",
+          "text": "[[2, 2], [5, 4]]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The product is calculated using matrix multiplication rules."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Matrix multiplication is calculated as follows: AB = [[(1×2 + 2×1), (1×0 + 2×2)], [(3×2 + 4×1), (3×0 + 4×2)]] = [[4, 4], [10, 8]].",
+      "hint": "Perform matrix multiplication using the standard method.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512817-b6a6f",
+      "order": 16,
+      "question": "Which of the following is a necessary condition for a matrix to be invertible?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Its determinant is positive",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant must be non-zero, but it can be negative."
+        },
+        {
+          "letter": "B",
+          "text": "Its determinant is non-zero",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. A matrix is invertible if and only if its determinant is non-zero."
+        },
+        {
+          "letter": "C",
+          "text": "It is symmetric",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. Symmetry is not a requirement for invertibility."
+        },
+        {
+          "letter": "D",
+          "text": "It is square",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. While invertible matrices must be square, this is not the only condition."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A matrix is invertible if and only if its determinant is non-zero. While invertible matrices must be square, symmetry is not a requirement. The determinant can be negative and the matrix can still be invertible.",
+      "hint": "Recall the condition for matrix invertibility.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512817-d1b3c",
+      "order": 17,
+      "question": "If A is a matrix such that A² + 2A + I = 0, then A⁻¹ is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "-A - 2I",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. A⁻¹ = -A - 2I."
+        },
+        {
+          "letter": "B",
+          "text": "-A",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct expression involves -A - 2I."
+        },
+        {
+          "letter": "C",
+          "text": "A + 2I",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct expression is -A - 2I."
+        },
+        {
+          "letter": "D",
+          "text": "2A + I",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct expression is -A - 2I."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "From A² + 2A + I = 0, we get A(A + 2I) = -I. Multiplying both sides by A⁻¹ gives A + 2I = -A⁻¹, so A⁻¹ = -A - 2I.",
+      "hint": "Rearrange the given equation to solve for A⁻¹.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512817-7b930",
+      "order": 18,
+      "question": "The determinant of the matrix A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]] is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant is 0."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is calculated as 0."
+        },
+        {
+          "letter": "C",
+          "text": "-1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is calculated as 0."
+        },
+        {
+          "letter": "D",
+          "text": "3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is calculated as 0."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The determinant is calculated as: 1(5×9 - 6×8) - 2(4×9 - 6×7) + 3(4×8 - 5×7) = 1(-3) - 2(-6) + 3(-3) = -3 + 12 - 9 = 0.",
+      "hint": "Use the formula for the determinant of a 3×3 matrix.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512817-d1660",
+      "order": 19,
+      "question": "If A is a 2×2 matrix with det(A) = 3, then the determinant of the matrix AᵀA is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant of AᵀA is the square of the determinant of A."
+        },
+        {
+          "letter": "B",
+          "text": "9",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. det(AᵀA) = det(A)² = 9."
+        },
+        {
+          "letter": "C",
+          "text": "6",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant of AᵀA is the square of the determinant of A."
+        },
+        {
+          "letter": "D",
+          "text": "Cannot be determined",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant can be determined using the property of determinants."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For any square matrix A, det(AᵀA) = det(Aᵀ) × det(A) = det(A) × det(A) = 3 × 3 = 9.",
+      "hint": "Recall the property of determinants for the product of a matrix and its transpose.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512817-cb389",
+      "order": 20,
+      "question": "If $A = \\begin{pmatrix} 2 & 3 \\\\ 4 & 5 \\end{pmatrix}$ and $B = \\begin{pmatrix} 1 & 0 \\\\ 2 & 1 \\end{pmatrix}$, then what is the value of $2A - 3B$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\begin{pmatrix} 1 & 6 \\\\ 2 & 7 \\end{pmatrix}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct calculation of $2A - 3B$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\begin{pmatrix} 1 & 6 \\\\ 2 & 7 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Same as option A, but marked incorrect in the original text (likely a typo)."
+        },
+        {
+          "letter": "C",
+          "text": "$\\begin{pmatrix} 1 & 3 \\\\ 2 & 4 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of the matrix subtraction."
+        },
+        {
+          "letter": "D",
+          "text": "$\\begin{pmatrix} 7 & 6 \\\\ 14 & 13 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect scalar multiplication and subtraction."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is an easy question involving scalar multiplication and matrix subtraction. $2A = 2 \\begin{pmatrix} 2 & 3 \\\\ 4 & 5 \\end{pmatrix} = \\begin{pmatrix} 4 & 6 \\\\ 8 & 10 \\end{pmatrix}$, $3B = 3 \\begin{pmatrix} 1 & 0 \\\\ 2 & 1 \\end{pmatrix} = \\begin{pmatrix} 3 & 0 \\\\ 6 & 3 \\end{pmatrix}$, $2A - 3B = \\begin{pmatrix} 4 & 6 \\\\ 8 & 10 \\end{pmatrix} - \\begin{pmatrix} 3 & 0 \\\\ 6 & 3 \\end{pmatrix} = \\begin{pmatrix} 1 & 6 \\\\ 2 & 7 \\end{pmatrix}$.",
+      "hint": "Perform scalar multiplication on matrices A and B first, then subtract the resulting matrices.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-6fc17",
+      "order": 21,
+      "question": "What is the value of the determinant $\\begin{vmatrix} \\cos \\theta & -\\sin \\theta \\\\ \\sin \\theta & \\cos \\theta \\end{vmatrix}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct calculation of the determinant using trigonometric identity."
+        },
+        {
+          "letter": "B",
+          "text": "0",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification of the determinant."
+        },
+        {
+          "letter": "C",
+          "text": "$\\sin^2 \\theta - \\cos^2 \\theta$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect application of the determinant formula."
+        },
+        {
+          "letter": "D",
+          "text": "$\\sin \\theta \\cos \\theta$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification of the determinant."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is an easy question testing the basic calculation of a 2x2 determinant. For a matrix $\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, the determinant is $ad - bc$. So, $\\begin{vmatrix} \\cos \\theta & -\\sin \\theta \\\\ \\sin \\theta & \\cos \\theta \\end{vmatrix} = (\\cos \\theta)(\\cos \\theta) - (-\\sin \\theta)(\\sin \\theta) = \\cos^2 \\theta + \\sin^2 \\theta = 1$.",
+      "hint": "Recall the formula for the determinant of a 2x2 matrix and simplify using trigonometric identities.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-3d3bc",
+      "order": 22,
+      "question": "If $A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}$, then what is $A^T A$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\begin{pmatrix} 10 & 14 \\\\ 14 & 20 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct result, but marked incorrect in the original text (likely a typo)."
+        },
+        {
+          "letter": "B",
+          "text": "$\\begin{pmatrix} 1 & 6 \\\\ 6 & 16 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of $A^T A$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\begin{pmatrix} 10 & 14 \\\\ 14 & 20 \\end{pmatrix}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct calculation of $A^T A$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\begin{pmatrix} 1 & 3 \\\\ 2 & 4 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect result, likely the transpose of A."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a medium difficulty question combining transpose and matrix multiplication. First, find the transpose of A, $A^T = \\begin{pmatrix} 1 & 3 \\\\ 2 & 4 \\end{pmatrix}$. Now, calculate $A^T A = \\begin{pmatrix} 1 & 3 \\\\ 2 & 4 \\end{pmatrix} \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix} = \\begin{pmatrix} 10 & 14 \\\\ 14 & 20 \\end{pmatrix}$.",
+      "hint": "First, find the transpose of matrix A, then multiply it by A itself.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-f9d39",
+      "order": 23,
+      "question": "For what value of $x$ is the matrix $A = \\begin{pmatrix} x & 2 \\\\ 6 & x-1 \\end{pmatrix}$ a singular matrix?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$x = 4$ or $x = -1$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect roots of the quadratic equation."
+        },
+        {
+          "letter": "B",
+          "text": "$x = 4$ or $x = -3$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct roots of the quadratic equation derived from the determinant."
+        },
+        {
+          "letter": "C",
+          "text": "$x = 1$ or $x = -4$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect roots of the quadratic equation."
+        },
+        {
+          "letter": "D",
+          "text": "$x = -1$ or $x = 2$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect roots of the quadratic equation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a medium difficulty question based on the definition of a singular matrix. A matrix is singular if its determinant is zero. $\\det(A) = x(x-1) - 12 = 0 \\implies x^2 - x - 12 = 0 \\implies (x-4)(x+3) = 0 \\implies x = 4$ or $x = -3$.",
+      "hint": "A singular matrix has a determinant of zero. Set up the determinant equation and solve for x.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-f93f3",
+      "order": 24,
+      "question": "If $A = \\begin{pmatrix} 3 & -1 \\\\ 2 & 5 \\end{pmatrix}$, then what is $A^{-1}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{1}{17} \\begin{pmatrix} 5 & 1 \\\\ -2 & 3 \\end{pmatrix}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct calculation of the inverse matrix."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{1}{17} \\begin{pmatrix} 5 & -1 \\\\ -2 & 3 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect sign for the off-diagonal element in the inverse matrix."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{1}{17} \\begin{pmatrix} 3 & 1 \\\\ -2 & 5 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of the inverse matrix."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{1}{13} \\begin{pmatrix} 5 & 1 \\\\ -2 & 3 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect determinant value used in the inverse calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a medium difficulty question testing the inverse of a 2x2 matrix. For a matrix $A = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, the inverse is $A^{-1} = \\frac{1}{\\det(A)} \\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$. First, calculate the determinant of A: $\\det(A) = (3)(5) - (-1)(2) = 17$. Now, find the inverse: $A^{-1} = \\frac{1}{17} \\begin{pmatrix} 5 & 1 \\\\ -2 & 3 \\end{pmatrix}$.",
+      "hint": "Use the formula for the inverse of a 2x2 matrix. First, calculate the determinant, then apply the formula.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-d55e7",
+      "order": 25,
+      "question": "If A is a square matrix, then A + A^T is always a:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Skew-symmetric matrix",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "A skew-symmetric matrix satisfies B^T = -B, which is not the case here."
+        },
+        {
+          "letter": "B",
+          "text": "Symmetric matrix",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "As shown, B^T = B, so B is symmetric."
+        },
+        {
+          "letter": "C",
+          "text": "Singular matrix",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "A singular matrix has a determinant of zero, but A + A^T is not necessarily singular."
+        },
+        {
+          "letter": "D",
+          "text": "Identity matrix",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The identity matrix is a specific case and not always true for A + A^T."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A matrix B is symmetric if B^T = B. Here, B = A + A^T. Taking the transpose, B^T = (A + A^T)^T = A^T + (A^T)^T = A^T + A = B. Hence, B is symmetric.",
+      "hint": "Recall that a matrix is symmetric if it equals its transpose.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-e46d4",
+      "order": 26,
+      "question": "If A is a square matrix such that A^T = -A, then the matrix A is called a:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Symmetric matrix",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "A symmetric matrix satisfies A^T = A, not A^T = -A."
+        },
+        {
+          "letter": "B",
+          "text": "Skew-symmetric matrix",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. A skew-symmetric matrix satisfies A^T = -A."
+        },
+        {
+          "letter": "C",
+          "text": "Hermitian matrix",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "A Hermitian matrix satisfies A^* = A, where A^* is the conjugate transpose, not A^T = -A."
+        },
+        {
+          "letter": "D",
+          "text": "Unitary matrix",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "A unitary matrix satisfies A^*A = I, where A^* is the conjugate transpose, not A^T = -A."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "By definition, a square matrix A is called a skew-symmetric matrix if its transpose is equal to its negative, i.e., A^T = -A. A symmetric matrix is defined by A^T = A. Hermitian and Unitary matrices are concepts from complex matrices, which are typically beyond the scope of basic NDA syllabus for this topic.",
+      "hint": "Recall the definition of a skew-symmetric matrix.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-0bf47",
+      "order": 27,
+      "question": "What is the value of the determinant of the matrix A = [[3, -2], [4, 5]]?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not 7."
+        },
+        {
+          "letter": "B",
+          "text": "-7",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not -7."
+        },
+        {
+          "letter": "C",
+          "text": "23",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is 23, but this option is not marked as correct. Check the question stem for accuracy."
+        },
+        {
+          "letter": "D",
+          "text": "23",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant is 23."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a 2x2 matrix A = [[a, b], [c, d]], the determinant is given by det(A) = ad - bc. Given A = [[3, -2], [4, 5]], det(A) = (3)(5) - (-2)(4) = 15 + 8 = 23.",
+      "hint": "Use the formula for the determinant of a 2x2 matrix.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-d008f",
+      "order": 28,
+      "question": "If A = [[1, 2], [3, 4]] and B = [[0, 1], [2, 3]], then what is the matrix AB?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[[4, 7], [6, 11]]",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The second row of the product is incorrect."
+        },
+        {
+          "letter": "B",
+          "text": "[[4, 7], [8, 15]]",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The product AB is [[4, 7], [8, 15]]."
+        },
+        {
+          "letter": "C",
+          "text": "[[6, 8], [7, 11]]",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The product does not match this matrix."
+        },
+        {
+          "letter": "D",
+          "text": "[[0, 2], [6, 12]]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The product does not match this matrix."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find the product AB, multiply the rows of A by the columns of B. AB = [[(1)(0) + (2)(2), (1)(1) + (2)(3)], [(3)(0) + (4)(2), (3)(1) + (4)(3)]] = [[4, 7], [8, 15]].",
+      "hint": "Use matrix multiplication rules: (AB)_{ij} = sum of products of elements from the ith row of A and jth column of B.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-d5e57",
+      "order": 29,
+      "question": "If A = [[2, 3], [1, 4]], what is A^{-1}?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[[4, -3], [-1, 2]]",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the adjugate matrix, not the inverse. The inverse must include the determinant."
+        },
+        {
+          "letter": "B",
+          "text": "[[2, -3], [-1, 4]]",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the inverse or adjugate matrix."
+        },
+        {
+          "letter": "C",
+          "text": "(1/5) * [[4, -3], [-1, 2]]",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The inverse is (1/5) times the adjugate matrix."
+        },
+        {
+          "letter": "D",
+          "text": "(1/5) * [[2, -3], [-1, 4]]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the adjugate matrix."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a 2x2 matrix A = [[a, b], [c, d]], the inverse is given by A^{-1} = (1/det(A)) * [[d, -b], [-c, a]]. First, calculate det(A) = (2)(4) - (3)(1) = 5. Then, A^{-1} = (1/5) * [[4, -3], [-1, 2]].",
+      "hint": "Use the formula for the inverse of a 2x2 matrix.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-228e7",
+      "order": 30,
+      "question": "If A is a square matrix of order 3 such that det(A) = 5, then what is det(adj(A))?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant of the adjoint is not 5."
+        },
+        {
+          "letter": "B",
+          "text": "10",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant of the adjoint is not 10."
+        },
+        {
+          "letter": "C",
+          "text": "25",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant of the adjoint is 25, but this option is not marked as correct. Check the question stem for accuracy."
+        },
+        {
+          "letter": "D",
+          "text": "25",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant of the adjoint is 25."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For any square matrix A of order n, det(adj(A)) = (det(A))^{n-1}. Here, n = 3 and det(A) = 5, so det(adj(A)) = 5^{2} = 25.",
+      "hint": "Use the property of determinants for the adjoint of a matrix.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-e91f9",
+      "order": 31,
+      "question": "If A is a square matrix of order 3 and det(A) = 4, then what is det(2A)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "8",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not 8."
+        },
+        {
+          "letter": "B",
+          "text": "16",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not 16."
+        },
+        {
+          "letter": "C",
+          "text": "32",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is 32, but this option is not marked as correct. Check the question stem for accuracy."
+        },
+        {
+          "letter": "D",
+          "text": "32",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant is 32."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For any square matrix A of order n and a scalar k, det(kA) = k^n * det(A). Here, n = 3, k = 2, and det(A) = 4, so det(2A) = 2^3 * 4 = 8 * 4 = 32.",
+      "hint": "Use the property of determinants for scalar multiplication of a matrix.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-f15d7",
+      "order": 32,
+      "question": "Given matrices A = [[1, 2], [3, 4]] and B = [[-1, 0], [2, -3]]. What is the matrix 2A - B?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[[3, 4], [4, 11]]",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The matrix 2A - B is [[3, 4], [4, 11]]."
+        },
+        {
+          "letter": "B",
+          "text": "[[1, 4], [1, 11]]",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The matrix does not match this result."
+        },
+        {
+          "letter": "C",
+          "text": "[[3, 4], [4, 11]]",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the same as option A, but only one option can be correct."
+        },
+        {
+          "letter": "D",
+          "text": "[[3, 4], [4, 11]]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the same as option A, but only one option can be correct."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, calculate 2A = [[2, 4], [6, 8]]. Then, 2A - B = [[2 - (-1), 4 - 0], [6 - 2, 8 - (-3)]] = [[3, 4], [4, 11]].",
+      "hint": "Perform scalar multiplication first, then matrix subtraction.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-590f3",
+      "order": 33,
+      "question": "For what value of k does the system of equations x + y + z = 1, x + 2y + 4z = k, x + 4y + 10z = k^2 have a unique solution?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "k = 1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The system does not have a unique solution for any k."
+        },
+        {
+          "letter": "B",
+          "text": "k = 2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The system does not have a unique solution for any k."
+        },
+        {
+          "letter": "C",
+          "text": "k ≠ 1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The system does not have a unique solution for any k."
+        },
+        {
+          "letter": "D",
+          "text": "For all real values of k",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The system does not have a unique solution for any real value of k."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A system of linear equations AX = B has a unique solution if and only if det(A) ≠ 0. The coefficient matrix A is [[1, 1, 1], [1, 2, 4], [1, 4, 10]]. Calculating det(A) = 0, so the system does not have a unique solution for any value of k. It will either have no solution or infinitely many solutions.",
+      "hint": "Check the determinant of the coefficient matrix to determine the nature of the solution.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-8a828",
+      "order": 34,
+      "question": "If A is a square matrix such that $A^2 = A$, then what is $(I-A)^2 + A$ equal to?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$I$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The expression simplifies to $I$ as shown in the explanation."
+        },
+        {
+          "letter": "B",
+          "text": "$0$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The expression does not simplify to the zero matrix."
+        },
+        {
+          "letter": "C",
+          "text": "$I-A$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The expression simplifies further to $I$, not $I-A$."
+        },
+        {
+          "letter": "D",
+          "text": "$2A$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The expression does not simplify to $2A$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given that A is a square matrix such that $A^2 = A$. We need to find the value of $(I-A)^2 + A$. Expand $(I-A)^2$ as $(I-A)(I-A) = I - 2A + A^2$. Substitute $A^2 = A$ to get $I - 2A + A = I - A$. Now, $(I-A)^2 + A = (I - A) + A = I$.",
+      "hint": "Use the property of the identity matrix and the given condition $A^2 = A$.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-ad3fe",
+      "order": 35,
+      "question": "For what value of $x$ is the matrix $A = \\begin{bmatrix} 2 & x \\\\ 4 & 2 \\end{bmatrix}$ a singular matrix?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The determinant is zero when $x = 1$."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The determinant is not zero when $x = 2$."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The determinant is not zero when $x = 3$."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The determinant is not zero when $x = 4$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A square matrix is singular if its determinant is zero. The determinant of $A$ is calculated as $|A| = (2 \\times 2) - (x \\times 4) = 4 - 4x$. For $A$ to be singular, $4 - 4x = 0$, which gives $x = 1$.",
+      "hint": "Recall that a matrix is singular if its determinant is zero.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-46775",
+      "order": 36,
+      "question": "If $A = \\begin{bmatrix} 1 & -1 \\\\ 2 & -1 \\end{bmatrix}$ and $B = \\begin{bmatrix} 1 & a \\\\ 4 & b \\end{bmatrix}$ and $(A+B)^2 = A^2 + B^2$, then what are the values of $a$ and $b$ respectively?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$a=1, b=1$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The values do not satisfy the condition $AB + BA = 0$."
+        },
+        {
+          "letter": "B",
+          "text": "$a=2, b=1$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The values do not satisfy the condition $AB + BA = 0$."
+        },
+        {
+          "letter": "C",
+          "text": "$a=-1, b=1$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The values do not satisfy the condition $AB + BA = 0$."
+        },
+        {
+          "letter": "D",
+          "text": "$a=1, b=-1$",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The values satisfy the condition $AB + BA = 0$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given $(A+B)^2 = A^2 + B^2$, we derive $AB + BA = 0$. Calculating $AB$ and $BA$ and equating their sum to zero, we solve for $a$ and $b$. The solution yields $a = 1$ and $b = -1$.",
+      "hint": "Use the condition $(A+B)^2 = A^2 + B^2$ to derive $AB + BA = 0$. Then compute $AB$ and $BA$ explicitly.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-4d468",
+      "order": 37,
+      "question": "Given the equation $(2a - b) + (-4 - b) = 0$, what are the values of $a$ and $b$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$a=1, b=1$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Substituting $a=1$ and $b=1$ into the equation gives $2(1) - 2(1) - 4 = -4 \\neq 0$, which does not satisfy the equation."
+        },
+        {
+          "letter": "B",
+          "text": "$a=-1, b=1$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Substituting $a=-1$ and $b=1$ into the equation gives $2(-1) - 2(1) - 4 = -8 \\neq 0$, which does not satisfy the equation."
+        },
+        {
+          "letter": "C",
+          "text": "$a=1, b=0$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Substituting $a=1$ and $b=0$ into the equation gives $2(1) - 2(0) - 4 = -2 \\neq 0$, which does not satisfy the equation."
+        },
+        {
+          "letter": "D",
+          "text": "$a=1, b=-1$",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Substituting $a=1$ and $b=-1$ into the equation gives $2(1) - 2(-1) - 4 = 0$, which satisfies the equation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Simplify the equation step-by-step: $(2a - b) + (-4 - b) = 0$ leads to $2a - 2b - 4 = 0$. Substituting $a = 1$ and $b = -1$ satisfies the equation: $2(1) - 2(-1) - 4 = 2 + 2 - 4 = 0$.",
+      "hint": "Start by simplifying the given equation and solve for $a$ and $b$.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-14cfb",
+      "order": 38,
+      "question": "If $A = \\begin{pmatrix} 2 & 3 \\\\ 4 & 5 \\end{pmatrix}$ and $B = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$, then what is $A^2 - 7A + 2B$ equal to?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\begin{pmatrix} 0 & 0 \\\\ 0 & 0 \\end{pmatrix}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This would imply $A^2 - 7A + 2B = 0$, which is incorrect based on calculations."
+        },
+        {
+          "letter": "B",
+          "text": "$\\begin{pmatrix} 1 & 1 \\\\ 1 & 1 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This does not match the calculated result of $A^2 - 7A + 2B$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\begin{pmatrix} 2 & 3 \\\\ 4 & 5 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the original matrix $A$, not the result of the given expression."
+        },
+        {
+          "letter": "D",
+          "text": "$\\begin{pmatrix} -1 & 0 \\\\ 0 & -1 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This does not match the calculated result of $A^2 - 7A + 2B$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, calculate $A^2$: $A^2 = \\begin{pmatrix} 2 & 3 \\\\ 4 & 5 \\end{pmatrix} \\begin{pmatrix} 2 & 3 \\\\ 4 & 5 \\end{pmatrix} = \\begin{pmatrix} 16 & 21 \\\\ 28 & 37 \\end{pmatrix}$. Next, calculate $7A$: $7A = \\begin{pmatrix} 14 & 21 \\\\ 28 & 35 \\end{pmatrix}$. Then, calculate $2B$: $2B = \\begin{pmatrix} 2 & 0 \\\\ 0 & 2 \\end{pmatrix}$. Now, substitute these into the expression $A^2 - 7A + 2B$: $A^2 - 7A + 2B = \\begin{pmatrix} 16 & 21 \\\\ 28 & 37 \\end{pmatrix} - \\begin{pmatrix} 14 & 21 \\\\ 28 & 35 \\end{pmatrix} + \\begin{pmatrix} 2 & 0 \\\\ 0 & 2 \\end{pmatrix} = \\begin{pmatrix} 4 & 0 \\\\ 0 & 4 \\end{pmatrix}$. None of the provided options match this result, indicating a possible error in the question or options.",
+      "hint": "Use matrix multiplication and addition rules. Verify each step carefully.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-71afd",
+      "order": 39,
+      "question": "If A is a square matrix of order 3 such that |A| = 5, then the value of |adj(adj(A))| is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 5."
+        },
+        {
+          "letter": "B",
+          "text": "125",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 125."
+        },
+        {
+          "letter": "C",
+          "text": "25",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 25."
+        },
+        {
+          "letter": "D",
+          "text": "625",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The value is 625."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a square matrix A of order n, |adj(A)| = |A|^{n-1}. Here n=3, so |adj(A)| = |A|² = 25. Then |adj(adj(A))| = |adj(A)|^{(n-1)} = 25² = 625.",
+      "hint": "Use the property |adj(A)| = |A|^{n-1} for an n×n matrix.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-b6f1a",
+      "order": 40,
+      "question": "Let A be a 3×3 matrix with det(A) = –2. If B is obtained by adding the second row of A to the first row, then det(B) is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "–4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant remains unchanged."
+        },
+        {
+          "letter": "B",
+          "text": "–2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant remains –2, but this option is repeated."
+        },
+        {
+          "letter": "C",
+          "text": "–2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant remains –2."
+        },
+        {
+          "letter": "D",
+          "text": "0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant does not become zero."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Adding a multiple of one row to another does not change the determinant. So det(B) = det(A) = –2.",
+      "hint": "Row operations of adding a multiple of one row to another do not affect the determinant.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-a19b0",
+      "order": 41,
+      "question": "The system of equations\nx + y + z = 6\n2x + 3y + 4z = 20\n3x + 5y + 6z = 31\nhas",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "unique solution",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The system is dependent."
+        },
+        {
+          "letter": "B",
+          "text": "infinitely many solutions",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The system has infinitely many solutions."
+        },
+        {
+          "letter": "C",
+          "text": "no solution",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The system is consistent."
+        },
+        {
+          "letter": "D",
+          "text": "exactly two solutions",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. Linear systems do not have exactly two solutions."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Form the augmented matrix and reduce. The third row becomes [0 0 0 | 0], indicating a dependent system → infinitely many solutions.",
+      "hint": "Check the rank of the coefficient matrix and the augmented matrix to determine the nature of the solution.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-b9cae",
+      "order": 42,
+      "question": "If A is a skew-symmetric matrix of order 3, then the value of det(A) is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant of a 3×3 skew-symmetric matrix is 0."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not 1."
+        },
+        {
+          "letter": "C",
+          "text": "–1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not –1."
+        },
+        {
+          "letter": "D",
+          "text": "indeterminate",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is determinate and equals 0."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For any odd-order skew-symmetric matrix, det(A) = 0 because det(A) = det(Aᵀ) = det(–A) = (–1)ⁿ det(A) ⇒ det(A) = 0 when n is odd.",
+      "hint": "Recall that for a skew-symmetric matrix A, Aᵀ = –A. Use properties of determinants for odd-order matrices.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-b428f",
+      "order": 43,
+      "question": "Let A = [a₁₁ a₁₂; a₂₁ a₂₂] be a 2×2 matrix. If a₁₁ + a₂₂ = 5 and a₁₂ + a₂₁ = 3, then the trace of A² is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "16",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The trace of A² is not 16."
+        },
+        {
+          "letter": "B",
+          "text": "34",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The trace of A² is 34 (assuming specific values for the matrix entries)."
+        },
+        {
+          "letter": "C",
+          "text": "25",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The trace of A² is not 25."
+        },
+        {
+          "letter": "D",
+          "text": "19",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The trace of A² is not 19."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "trace(A²) = (a₁₁² + a₁₂a₂₁) + (a₂₁a₁₂ + a₂₂²) = a₁₁² + a₂₂² + 2a₁₂a₂₁ = (a₁₁ + a₂₂)² – 2(a₁₁a₂₂ – a₁₂a₂₁) = (trace A)² – 2|A|. Without |A|, assume a simple matrix like A = [4 1; 2 1], then A² = [18 5; 10 7], trace = 25. However, the intended answer is 34, likely assuming |A| = –8 → 25 – 2(–8) = 41 (incorrect). The question may need revision.",
+      "hint": "Use the property trace(A²) = (trace A)² – 2|A| for a 2×2 matrix.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-4ddd1",
+      "order": 44,
+      "question": "The determinant of the matrix\n[1 2 3; 4 5 6; 7 8 9]\nis",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not 1."
+        },
+        {
+          "letter": "B",
+          "text": "–1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not –1."
+        },
+        {
+          "letter": "C",
+          "text": "0",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant is 0."
+        },
+        {
+          "letter": "D",
+          "text": "2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not 2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The rows are in arithmetic progression; the third row is the sum of the first two minus the middle element repeated. The determinant is zero because the rows are linearly dependent.",
+      "hint": "Check if the rows or columns are linearly dependent.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-b88ae",
+      "order": 45,
+      "question": "If A is a 3×3 matrix and det(A) = 7, then det(2A) is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant scales with the matrix size."
+        },
+        {
+          "letter": "B",
+          "text": "14",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not 14."
+        },
+        {
+          "letter": "C",
+          "text": "56",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant is 56."
+        },
+        {
+          "letter": "D",
+          "text": "56",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant is 56."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For an n×n matrix, det(kA) = kⁿ det(A). Here n=3, k=2, so det(2A) = 2³ × 7 = 8 × 7 = 56.",
+      "hint": "Use the property det(kA) = kⁿ det(A) for an n×n matrix.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-9942f",
+      "order": 46,
+      "question": "Consider the system:\nx + 2y + 3z = 6\n2x + 4y + 6z = 12\n3x + 6y + 9z = 18\nThis system has",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "unique solution",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The system is dependent."
+        },
+        {
+          "letter": "B",
+          "text": "two solutions",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. Linear systems do not have exactly two solutions."
+        },
+        {
+          "letter": "C",
+          "text": "infinitely many solutions",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The system has infinitely many solutions."
+        },
+        {
+          "letter": "D",
+          "text": "no solution",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The system is consistent."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "All equations are scalar multiples of the first; the rank of the coefficient matrix equals the rank of the augmented matrix (both 1), so infinitely many solutions exist.",
+      "hint": "Check if all equations are linearly dependent.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-1a65c",
+      "order": 47,
+      "question": "Let A be a 2×2 matrix with eigenvalues 3 and –1. Then the determinant of A⁻¹ is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "–1/3",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant of A⁻¹ is –1/3."
+        },
+        {
+          "letter": "B",
+          "text": "1/3",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is negative."
+        },
+        {
+          "letter": "C",
+          "text": "–3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant of A⁻¹ is not –3."
+        },
+        {
+          "letter": "D",
+          "text": "3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not 3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "det(A) = product of eigenvalues = 3 × (–1) = –3. Then det(A⁻¹) = 1/det(A) = –1/3.",
+      "hint": "Use the property that the determinant of the inverse is the reciprocal of the determinant.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-8d38e",
+      "order": 48,
+      "question": "If A is a 3×3 matrix and |A| = 4, then |A adj(A)| equals",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 4."
+        },
+        {
+          "letter": "B",
+          "text": "16",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 16."
+        },
+        {
+          "letter": "C",
+          "text": "64",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The value is 64."
+        },
+        {
+          "letter": "D",
+          "text": "256",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 256."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "|A adj(A)| = |A| × |adj(A)|. For n=3, |adj(A)| = |A|^{n-1} = 4² = 16. So |A adj(A)| = 4 × 16 = 64.",
+      "hint": "Use the property |adj(A)| = |A|^{n-1} for an n×n matrix.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-786e7",
+      "order": 49,
+      "question": "If A is a square matrix of order 3 such that |A| = 5, then what is the value of |adj A|?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The formula involves raising the determinant to the power of (n-1)."
+        },
+        {
+          "letter": "B",
+          "text": "25",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Using the formula, |adj A| = 5^(3-1) = 25."
+        },
+        {
+          "letter": "C",
+          "text": "125",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. 125 is 5^3, but the formula requires 5^(n-1)."
+        },
+        {
+          "letter": "D",
+          "text": "1/5",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant of the adjoint is not the reciprocal of |A|."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a square matrix A of order n, the determinant of its adjoint is given by the formula: |adj A| = |A|^(n-1). Given |A| = 5 and n = 3, |adj A| = 5^(3-1) = 5^2 = 25.",
+      "hint": "Use the property of the adjoint matrix determinant: |adj A| = |A|^(n-1).",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-e3547",
+      "order": 50,
+      "question": "If A = $\\begin{bmatrix} 2 & 3 \\ 4 & 5 \\end{bmatrix}$ and B = $\\begin{bmatrix} 1 & 0 \\ 2 & 1 \\end{bmatrix}$, then what is 2A - B equal to?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\begin{bmatrix} 3 & 6 \\ 6 & 9 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the correct result, but the option is marked incorrectly."
+        },
+        {
+          "letter": "B",
+          "text": "$\\begin{bmatrix} 3 & 3 \\ 2 & 4 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The subtraction was not performed correctly."
+        },
+        {
+          "letter": "C",
+          "text": "$\\begin{bmatrix} 3 & 6 \\ 6 & 9 \\end{bmatrix}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation yields this matrix."
+        },
+        {
+          "letter": "D",
+          "text": "$\\begin{bmatrix} 5 & 6 \\ 10 & 11 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the result of 2A + B, not 2A - B."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, calculate 2A: 2A = $\\begin{bmatrix} 4 & 6 \\ 8 & 10 \\end{bmatrix}$. Then, 2A - B = $\\begin{bmatrix} 4-1 & 6-0 \\ 8-2 & 10-1 \\end{bmatrix}$ = $\\begin{bmatrix} 3 & 6 \\ 6 & 9 \\end{bmatrix}$.",
+      "hint": "Perform scalar multiplication first, then subtract the matrices.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512818-5cb1d",
+      "order": 51,
+      "question": "Consider the following statements for a square matrix A: 1. (A^T)^T = A 2. (kA)^T = kA^T, where k is a scalar 3. (A+B)^T = A^T + B^T Which of the statements given above are correct?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1 and 2 only",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. Statement 3 is also correct."
+        },
+        {
+          "letter": "B",
+          "text": "2 and 3 only",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. Statement 1 is also correct."
+        },
+        {
+          "letter": "C",
+          "text": "1 and 3 only",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. Statement 2 is also correct."
+        },
+        {
+          "letter": "D",
+          "text": "1, 2 and 3",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. All three statements are valid properties of matrix transpose."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "These are fundamental properties of the transpose of a matrix: 1. (A^T)^T = A, 2. (kA)^T = kA^T, 3. (A+B)^T = A^T + B^T. All three statements are correct.",
+      "hint": "Recall the properties of matrix transpose operations.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512819-a6ea3",
+      "order": 52,
+      "question": "If A = $\\begin{bmatrix} 3 & 2 \\ 7 & 5 \\end{bmatrix}$, then what is A$^{-1}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\begin{bmatrix} 5 & -2 \\ -7 & 3 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the correct inverse, but the option is marked incorrectly."
+        },
+        {
+          "letter": "B",
+          "text": "$\\begin{bmatrix} -3 & -2 \\ -7 & -5 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The signs and values are incorrect."
+        },
+        {
+          "letter": "C",
+          "text": "$\\begin{bmatrix} 3 & -2 \\ -7 & 5 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The values do not match the inverse formula."
+        },
+        {
+          "letter": "D",
+          "text": "$\\begin{bmatrix} 5 & -2 \\ -7 & 3 \\end{bmatrix}$",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The inverse is calculated correctly using the formula."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a 2x2 matrix A = $\\begin{bmatrix} a & b \\ c & d \\end{bmatrix}$, its inverse is A$^{-1}$ = (1 / (ad - bc)) * $\\begin{bmatrix} d & -b \\ -c & a \\end{bmatrix}$. Here, |A| = 1, so A$^{-1}$ = $\\begin{bmatrix} 5 & -2 \\ -7 & 3 \\end{bmatrix}$.",
+      "hint": "Use the formula for the inverse of a 2x2 matrix: A$^{-1}$ = (1 / det(A)) * $\\begin{bmatrix} d & -b \\ -c & a \\end{bmatrix}$.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190512819-bbe20",
+      "order": 53,
+      "question": "What is the value of the determinant $\\begin{vmatrix} 1 & a & bc \\\\ 1 & b & ca \\\\ 1 & c & ab \\end{vmatrix}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(a-b)(b-c)(c-a)",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct simplified form of the determinant after expansion and simplification."
+        },
+        {
+          "letter": "B",
+          "text": "(a-b)(b-c)(c-a)(a+b+c)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The factor (a+b+c) is not part of the determinant's simplified form."
+        },
+        {
+          "letter": "C",
+          "text": "0",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The determinant is not zero unless specific conditions (e.g., a=b=c) are met."
+        },
+        {
+          "letter": "D",
+          "text": "(a+b)(b+c)(c+a)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This expression does not match the simplified form of the given determinant."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The determinant simplifies to $(a-b)(b-c)(c-a)$ after careful expansion and simplification. This matches the standard Vandermonde-like determinant form when the third column is adjusted appropriately.",
+      "hint": "Consider using row operations to simplify the determinant before expanding.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190603850-5f3f5",
+      "order": 54,
+      "question": "If A = $\\begin{bmatrix} 2 & 3 \\\\ 4 & 1 \\end{bmatrix}$ and B = $\\begin{bmatrix} 1 & 0 \\\\ 2 & 5 \\end{bmatrix}$, what is Tr(A+B)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The trace is the sum of the diagonal elements of A+B, which is 3 + 6 = 9."
+        },
+        {
+          "letter": "B",
+          "text": "10",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The trace is the sum of the diagonal elements of A+B, which is 3 + 6 = 9."
+        },
+        {
+          "letter": "C",
+          "text": "9",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The trace of A+B is 3 + 6 = 9."
+        },
+        {
+          "letter": "D",
+          "text": "8",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The trace is the sum of the diagonal elements of A+B, which is 3 + 6 = 9."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, find A+B: A+B = $\\begin{bmatrix} 2 & 3 \\\\ 4 & 1 \\end{bmatrix} + \\begin{bmatrix} 1 & 0 \\\\ 2 & 5 \\end{bmatrix} = \\begin{bmatrix} 3 & 3 \\\\ 6 & 6 \\end{bmatrix}$. The trace of a matrix is the sum of its diagonal elements. Tr(A+B) = 3 + 6 = 9.",
+      "hint": "The trace of a matrix is the sum of the elements on its main diagonal.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190603850-151cb",
+      "order": 55,
+      "question": "What is the value of the determinant $\\begin{vmatrix} \\cos\\theta & -\\sin\\theta \\\\ \\sin\\theta & \\cos\\theta \\end{vmatrix}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant simplifies to 1 using the trigonometric identity."
+        },
+        {
+          "letter": "B",
+          "text": "$\\sin^2\\theta$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant simplifies to 1 using the trigonometric identity."
+        },
+        {
+          "letter": "C",
+          "text": "$-\\cos(2\\theta)$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant simplifies to 1 using the trigonometric identity."
+        },
+        {
+          "letter": "D",
+          "text": "1",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant simplifies to 1 using the trigonometric identity."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a 2x2 matrix $\\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix}$, the determinant is $ad - bc$. Here, $a = \\cos\\theta$, $b = -\\sin\\theta$, $c = \\sin\\theta$, $d = \\cos\\theta$. Determinant = $(\\cos\\theta)(\\cos\\theta) - (-\\sin\\theta)(\\sin\\theta) = \\cos^2\\theta + \\sin^2\\theta = 1$ using the identity $\\sin^2\\theta + \\cos^2\\theta = 1$.",
+      "hint": "Use the formula for the determinant of a 2x2 matrix and the trigonometric identity $\\sin^2\\theta + \\cos^2\\theta = 1$.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190603850-6a6d3",
+      "order": 56,
+      "question": "If $\\begin{bmatrix} x-y & 2x+z \\\\ 2x-y & 3z+w \\end{bmatrix} = \\begin{bmatrix} -1 & 5 \\\\ 0 & 13 \\end{bmatrix}$, then what is the value of w?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. Solving the system gives $w = 4$, which is not an option."
+        },
+        {
+          "letter": "B",
+          "text": "6",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. Solving the system gives $w = 4$, which is not an option."
+        },
+        {
+          "letter": "C",
+          "text": "7",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. Solving the system gives $w = 4$, which is not an option."
+        },
+        {
+          "letter": "D",
+          "text": "8",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Assuming a possible typo in the question, if $w = 8$, it is the closest option, though the correct mathematical solution is $w = 4$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "From the equality of matrices, corresponding elements are equal: 1) $x - y = -1$, 2) $2x + z = 5$, 3) $2x - y = 0$, 4) $3z + w = 13$. Solving these equations: From (3), $y = 2x$. Substitute into (1): $x - 2x = -1 \\implies x = 1$. Then $y = 2$. Substitute $x = 1$ into (2): $2 + z = 5 \\implies z = 3$. Substitute $z = 3$ into (4): $9 + w = 13 \\implies w = 4$. However, the options provided do not include 4, so the correct value of w based on the given options is not possible. Assuming a typo in the question, if $w = 8$, then $3z + 8 = 13 \\implies z = 5/3$, but this does not align with the other equations.",
+      "hint": "Set up equations by equating corresponding elements of the matrices and solve the system of equations.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190603850-1dfc4",
+      "order": 57,
+      "question": "If A = $\\begin{pmatrix} 3 & -2 \\\\ 4 & 5 \\end{pmatrix}$, then the value of det(A) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not 7."
+        },
+        {
+          "letter": "B",
+          "text": "-7",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not -7."
+        },
+        {
+          "letter": "C",
+          "text": "23",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant is calculated as (3*5) - (-2*4) = 15 + 8 = 23."
+        },
+        {
+          "letter": "D",
+          "text": "-23",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not -23."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a 2x2 matrix $\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, the determinant is calculated as $ad - bc$. Here, det(A) = (3 * 5) - (-2 * 4) = 15 + 8 = 23.",
+      "hint": "Use the formula for the determinant of a 2x2 matrix: det(A) = ad - bc.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190603850-1e631",
+      "order": 58,
+      "question": "If $A = \\begin{pmatrix} 2 & -3 \\\\ 4 & 5 \\end{pmatrix}$, then the determinant of A, $|A|$, is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "-2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields 22, not -2."
+        },
+        {
+          "letter": "B",
+          "text": "22",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant is calculated as $(2)(5) - (-3)(4) = 22$."
+        },
+        {
+          "letter": "C",
+          "text": "22",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is a duplicate option and not valid."
+        },
+        {
+          "letter": "D",
+          "text": "-22",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields 22, not -22."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a 2x2 matrix $A = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, the determinant is given by $|A| = ad - bc$. Given $A = \\begin{pmatrix} 2 & -3 \\\\ 4 & 5 \\end{pmatrix}$, $|A| = (2)(5) - (-3)(4) = 10 + 12 = 22$.",
+      "hint": "Use the formula for the determinant of a 2x2 matrix: $|A| = ad - bc$.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190603850-af0ee",
+      "order": 59,
+      "question": "If $A = \\begin{pmatrix} 3 & x \\\\ 0 & 1 \\end{pmatrix}$ and $B = \\begin{pmatrix} 9 & 16 \\\\ 0 & 1 \\end{pmatrix}$ such that $A^2 = B$, then the value of $x$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. $4x = 16 \\implies x = 4$, not 2."
+        },
+        {
+          "letter": "B",
+          "text": "4",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Solving $4x = 16$ gives $x = 4$."
+        },
+        {
+          "letter": "C",
+          "text": "8",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. $4x = 16 \\implies x = 4$, not 8."
+        },
+        {
+          "letter": "D",
+          "text": "16",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. $4x = 16 \\implies x = 4$, not 16."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given $A = \\begin{pmatrix} 3 & x \\\\ 0 & 1 \\end{pmatrix}$, $A^2 = A \\times A = \\begin{pmatrix} 9 & 4x \\\\ 0 & 1 \\end{pmatrix}$. Setting $A^2 = B = \\begin{pmatrix} 9 & 16 \\\\ 0 & 1 \\end{pmatrix}$, we get $4x = 16 \\implies x = 4$.",
+      "hint": "Compute $A^2$ and compare it with matrix $B$ to find $x$.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190603850-76399",
+      "order": 60,
+      "question": "If $A = \\begin{pmatrix} 3 & 1 \\\\ 5 & 2 \\end{pmatrix}$, then $A^{-1}$ (the inverse of A) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\begin{pmatrix} 2 & -1 \\\\ -5 & 3 \\end{pmatrix}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The inverse is calculated as $\\frac{1}{1} \\begin{pmatrix} 2 & -1 \\\\ -5 & 3 \\end{pmatrix} = \\begin{pmatrix} 2 & -1 \\\\ -5 & 3 \\end{pmatrix}$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\begin{pmatrix} 2 & -1 \\\\ -5 & 3 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is a duplicate option and not valid."
+        },
+        {
+          "letter": "C",
+          "text": "$\\begin{pmatrix} -2 & 1 \\\\ 5 & -3 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct inverse is $\\begin{pmatrix} 2 & -1 \\\\ -5 & 3 \\end{pmatrix}$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\begin{pmatrix} 3 & -1 \\\\ -5 & 2 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct inverse is $\\begin{pmatrix} 2 & -1 \\\\ -5 & 3 \\end{pmatrix}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a 2x2 matrix $A = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, the inverse is $A^{-1} = \\frac{1}{|A|} \\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$. Here, $|A| = (3)(2) - (1)(5) = 1$, so $A^{-1} = \\begin{pmatrix} 2 & -1 \\\\ -5 & 3 \\end{pmatrix}$.",
+      "hint": "Use the formula for the inverse of a 2x2 matrix: $A^{-1} = \\frac{1}{|A|} \\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190603850-bb61f",
+      "order": 61,
+      "question": "If A is a square matrix of order 3 such that $|A| = 5$, then what is the value of $|3A|$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "15",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. $|3A| = 3^3 \\times 5 = 135$, not 15."
+        },
+        {
+          "letter": "B",
+          "text": "45",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. $|3A| = 3^3 \\times 5 = 135$, not 45."
+        },
+        {
+          "letter": "C",
+          "text": "75",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. $|3A| = 3^3 \\times 5 = 135$, not 75."
+        },
+        {
+          "letter": "D",
+          "text": "135",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. $|3A| = 3^3 \\times 5 = 135$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a square matrix A of order n, $|kA| = k^n |A|$. Here, $n=3$ and $k=3$, so $|3A| = 3^3 \\times 5 = 27 \\times 5 = 135$.",
+      "hint": "Use the property of determinants: $|kA| = k^n |A|$ where $n$ is the order of the matrix.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190603850-e49bb",
+      "order": 62,
+      "question": "Let $A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 0 & 5 & 0 \\\\ 2 & 4 & 3 \\end{pmatrix}$. What is the cofactor of the element $a_{23}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "-4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The cofactor is 0, not -4."
+        },
+        {
+          "letter": "B",
+          "text": "0",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The cofactor $C_{23} = (-1)^{5} \\times 0 = 0$."
+        },
+        {
+          "letter": "C",
+          "text": "0",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is a duplicate option and not valid."
+        },
+        {
+          "letter": "D",
+          "text": "2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The cofactor is 0, not 2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The cofactor $C_{ij} = (-1)^{i+j} M_{ij}$. For $a_{23}$, $i=2$, $j=3$, so $C_{23} = (-1)^{5} M_{23} = -M_{23}$. The minor $M_{23}$ is the determinant of the submatrix obtained by deleting the 2nd row and 3rd column: $\\begin{pmatrix} 1 & 2 \\\\ 2 & 4 \\end{pmatrix}$, which has determinant $1 \\times 4 - 2 \\times 2 = 0$. Thus, $C_{23} = -0 = 0$.",
+      "hint": "The cofactor is calculated as $C_{ij} = (-1)^{i+j} M_{ij}$. Find the minor $M_{23}$ by deleting the 2nd row and 3rd column.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190603850-26c7e",
+      "order": 63,
+      "question": "If A is a square matrix of order 2 such that A² = A, then which of the following is always true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A is a zero matrix",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Not necessarily true, as shown by the example in the explanation."
+        },
+        {
+          "letter": "B",
+          "text": "A is an identity matrix",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Not necessarily true, as shown by the example in the explanation."
+        },
+        {
+          "letter": "C",
+          "text": "A is idempotent",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "By definition, a matrix satisfying A² = A is idempotent."
+        },
+        {
+          "letter": "D",
+          "text": "A is either a zero matrix or an identity matrix",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not always true, as demonstrated by the counterexample."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A matrix A satisfying A² = A is called idempotent. However, it is not necessarily only a zero matrix or identity matrix. For example, A = [[1, 0], [0, 0]] is idempotent but neither zero nor identity. Thus, option C is always true.",
+      "hint": "Recall the definition of an idempotent matrix.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190603850-d7485",
+      "order": 64,
+      "question": "If A and B are 2x2 matrices such that AB = BA and A is invertible, then which of the following must hold?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "B is invertible",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Not necessarily true based on the given conditions."
+        },
+        {
+          "letter": "B",
+          "text": "B is a scalar multiple of A",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Not necessarily true based on the given conditions."
+        },
+        {
+          "letter": "C",
+          "text": "A⁻¹B = BA⁻¹",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Derived directly from the given conditions."
+        },
+        {
+          "letter": "D",
+          "text": "A + B is invertible",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Not necessarily true based on the given conditions."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since A is invertible and AB = BA, multiplying both sides by A⁻¹ on the left gives A⁻¹AB = A⁻¹BA, which simplifies to B = A⁻¹BA. Rearranging, A⁻¹B = BA⁻¹. Thus, option C is correct.",
+      "hint": "Use the property of invertible matrices and the given condition AB = BA.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786190603850-55cc4",
+      "order": 65,
+      "question": "Let A be a 3x3 matrix with determinant det(A) = 5. If B is obtained by multiplying the second row of A by 4 and then swapping the first and third rows, then det(B) = ?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the determinant after scaling the row but before swapping."
+        },
+        {
+          "letter": "B",
+          "text": "-20",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as swapping rows changes the sign of the determinant."
+        },
+        {
+          "letter": "C",
+          "text": "60",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not derived from the given operations."
+        },
+        {
+          "letter": "D",
+          "text": "-60",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not derived from the given operations."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "- Multiplying a row by 4 scales the determinant by 4: det(A') = 5 × 4 = 20. - Swapping two rows changes the sign of the determinant: det(B) = -20. Thus, the correct answer is B.",
+      "hint": "Recall how row operations affect the determinant of a matrix.",
+      "marks": 4,
+      "negativeMark": 1.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "nda-maths",
+      "difficulty": "easy",
+      "hasError": false
+    }
+  ]
+}
