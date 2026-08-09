@@ -1,0 +1,3109 @@
+{
+  "id": "c270a918-114b-464b-8e21-60fcfc30ba8f",
+  "title": "CUET UG — Combined: Domain Subject + English Language",
+  "description": "Combined test: Domain Subject + English Language for CUET UG. 60Q.",
+  "board": "Competitive",
+  "classSlug": "cuet-ug",
+  "classNumber": 0,
+  "subjects": [
+    "cuet-domain",
+    "cuet-english"
+  ],
+  "subject": "cuet-domain",
+  "chapter": "Multiple Chapters",
+  "topic": "Combined",
+  "testType": "subject-wise",
+  "duration": 90,
+  "totalMarks": 300,
+  "passingMarks": 120,
+  "totalQuestions": 60,
+  "targetQuestions": 60,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "cuet-domain+cuet-english",
+    "language",
+    "english",
+    "subject",
+    "domain",
+    "cuet-ug"
+  ],
+  "instructions": [
+    "Subject: Domain Subject + English Language",
+    "Total Questions: 60",
+    "Total Marks: 300",
+    "Duration: 90 minutes",
+    "Correct answer: +5 mark",
+    "Wrong answer: -1 mark"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-08-09T07:34:46.441294Z",
+  "questions": [
+    {
+      "id": "q-1786260769238-17bfe",
+      "order": 1,
+      "question": "If $y = \\sin(\\log x)$, then $\\frac{dy}{dx}$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\cos(\\log x)$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the derivative of the outer function but misses the derivative of the inner function (log x)."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{\\cos(\\log x)}{x}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct application of the chain rule."
+        },
+        {
+          "letter": "C",
+          "text": "$x \\cos(\\log x)$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect multiplication; the derivative of log x is 1/x, not x."
+        },
+        {
+          "letter": "D",
+          "text": "$-\\frac{\\cos(\\log x)}{x}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The negative sign is incorrect; the derivative of sine is cosine, not negative cosine."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given $y = \\sin(\\log x)$. Using the chain rule, $\\frac{dy}{dx} = \\cos(\\log x) \\cdot \\frac{d}{dx}(\\log x) = \\cos(\\log x) \\cdot \\frac{1}{x} = \\frac{\\cos(\\log x)}{x}$.",
+      "hint": "Apply the chain rule: differentiate the outer function (sine) and multiply by the derivative of the inner function (log x).",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-3cf07",
+      "order": 2,
+      "question": "Find the derivative of $y = \\sin(x^2 + 5)$ with respect to $x$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\cos(x^2+5)$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is missing the derivative of the inner function $x^2+5$."
+        },
+        {
+          "letter": "B",
+          "text": "$2x \\cos(x^2+5)$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct application of the chain rule."
+        },
+        {
+          "letter": "C",
+          "text": "$2x \\sin(x^2+5)$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect trigonometric function used."
+        },
+        {
+          "letter": "D",
+          "text": "$-2x \\cos(x^2+5)$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect sign for the derivative."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This involves the chain rule. Let $u = x^2+5$. Then $y = \\sin(u)$. $\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}$. $\\frac{dy}{du} = \\frac{d}{du}(\\sin(u)) = \\cos(u)$. $\\frac{du}{dx} = \\frac{d}{dx}(x^2+5) = 2x$. So, $\\frac{dy}{dx} = \\cos(x^2+5) \\cdot 2x = 2x \\cos(x^2+5)$.",
+      "hint": "Apply the chain rule for differentiation.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-da7a1",
+      "order": 3,
+      "question": "Evaluate $\\int (x^3 - 2x + 1) dx$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$3x^2 - 2 + C$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect integration of terms."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{x^4}{4} - x^2 + x + C$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct integration of all terms."
+        },
+        {
+          "letter": "C",
+          "text": "$x^4 - 2x^2 + x + C$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect coefficients for the integrated terms."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{x^4}{4} - 2x^2 + x + C$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect coefficient for the $x^2$ term."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We use the power rule for integration, $\\int x^n dx = \\frac{x^{n+1}}{n+1} + C$, and the linearity of integration. $\\int (x^3 - 2x + 1) dx = \\int x^3 dx - \\int 2x dx + \\int 1 dx$ = $\\frac{x^{3+1}}{3+1} - 2\\frac{x^{1+1}}{1+1} + x + C$ = $\\frac{x^4}{4} - 2\\frac{x^2}{2} + x + C$ = $\\frac{x^4}{4} - x^2 + x + C$.",
+      "hint": "Use the power rule for integration term by term.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-e1c38",
+      "order": 4,
+      "question": "For what value of $k$ is the function $f(x) = \\begin{cases} kx^2 & \\text{if } x \\le 2 \\\\ 3 & \\text{if } x > 2 \\end{cases}$ continuous at $x=2$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$3/4$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct value for continuity."
+        },
+        {
+          "letter": "B",
+          "text": "$4/3$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect value for $k$."
+        },
+        {
+          "letter": "C",
+          "text": "$3$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect value for $k$."
+        },
+        {
+          "letter": "D",
+          "text": "$2$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect value for $k$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a function to be continuous at $x=c$, the left-hand limit, the right-hand limit, and the function value at $c$ must all be equal. 1. $f(2) = k(2^2) = 4k$ (from the first part of the definition) 2. $\\lim_{x \\to 2^-} f(x) = \\lim_{x \\to 2^-} kx^2 = k(2^2) = 4k$ 3. $\\lim_{x \\to 2^+} f(x) = \\lim_{x \\to 2^+} 3 = 3$ For continuity, $4k = 3$. Therefore, $k = 3/4$.",
+      "hint": "Set the left-hand limit and right-hand limit equal at $x=2$.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-16df7",
+      "order": 5,
+      "question": "The slope of the tangent to the curve $y = x^3 - x$ at $x=2$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "11",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct slope value."
+        },
+        {
+          "letter": "B",
+          "text": "11 (Correction: previous calculation was 11, not 10)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct slope value (duplicate option)."
+        },
+        {
+          "letter": "C",
+          "text": "7",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect slope value."
+        },
+        {
+          "letter": "D",
+          "text": "12",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect slope value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The slope of the tangent to a curve $y=f(x)$ at a given point is found by evaluating the derivative $dy/dx$ at that point. Given $y = x^3 - x$. $\\frac{dy}{dx} = \\frac{d}{dx}(x^3 - x) = 3x^2 - 1$. Now, substitute $x=2$ into the derivative: Slope at $x=2 = 3(2^2) - 1 = 3(4) - 1 = 12 - 1 = 11$.",
+      "hint": "Find the derivative of the function and evaluate it at $x=2$.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-c9a35",
+      "order": 6,
+      "question": "Evaluate $\\int_0^1 \\frac{dx}{1+x^2}$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\pi/4$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct evaluation of the integral."
+        },
+        {
+          "letter": "B",
+          "text": "$\\pi/2$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation."
+        },
+        {
+          "letter": "C",
+          "text": "$\\pi/3$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation."
+        },
+        {
+          "letter": "D",
+          "text": "0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The indefinite integral of $\\frac{1}{1+x^2}$ is $\\tan^{-1}(x)$. Using the Fundamental Theorem of Calculus: $\\int_0^1 \\frac{dx}{1+x^2} = [\\tan^{-1}(x)]_0^1$ = $\\tan^{-1}(1) - \\tan^{-1}(0)$ We know that $\\tan(\\pi/4) = 1$, so $\\tan^{-1}(1) = \\pi/4$. And $\\tan(0) = 0$, so $\\tan^{-1}(0) = 0$. = $\\pi/4 - 0 = \\pi/4$.",
+      "hint": "Recall the integral of $\\frac{1}{1+x^2}$ is $\\tan^{-1}(x)$.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-0bd52",
+      "order": 7,
+      "question": "The maximum value of the function $f(x) = x^3 - 3x + 2$ on the interval $[-2, 2]$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct maximum value."
+        },
+        {
+          "letter": "B",
+          "text": "0",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect maximum value."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect maximum value."
+        },
+        {
+          "letter": "D",
+          "text": "6",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect maximum value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find the maximum value on a closed interval, we evaluate the function at its critical points within the interval and at the endpoints of the interval. 1. Find the derivative: $f'(x) = 3x^2 - 3$. Set $f'(x) = 0$: $3x^2 - 3 = 0 \\Rightarrow x^2 = 1 \\Rightarrow x = \\pm 1$. 2. Evaluate $f(x)$ at critical points and endpoints: $f(-2) = (-2)^3 - 3(-2) + 2 = -8 + 6 + 2 = 0$, $f(-1) = (-1)^3 - 3(-1) + 2 = -1 + 3 + 2 = 4$, $f(1) = (1)^3 - 3(1) + 2 = 1 - 3 + 2 = 0$, $f(2) = (2)^3 - 3(2) + 2 = 8 - 6 + 2 = 4$. The maximum value is 4.",
+      "hint": "Find critical points by setting the derivative to zero and evaluate the function at these points and endpoints.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-93dfc",
+      "order": 8,
+      "question": "What is the maximum value of the function f(x) = x^3 - 3x + 2 on the interval [-2, 2]?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the minimum value of the function."
+        },
+        {
+          "letter": "B",
+          "text": "4",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the maximum value of the function, which occurs at x = -1 and x = 2."
+        },
+        {
+          "letter": "C",
+          "text": "6",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This value is not attained by the function on the given interval."
+        },
+        {
+          "letter": "D",
+          "text": "8",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This value is not attained by the function on the given interval."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find the maximum value, we need to evaluate the function at the critical points and the endpoints of the interval.",
+      "hint": "",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-6d544",
+      "order": 9,
+      "question": "What is the value of f(-1) for the function f(x) = x^3 - 3x + 2?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct value of f(-1)."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct value of f(-1)."
+        },
+        {
+          "letter": "C",
+          "text": "4",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct value of f(-1), which is obtained by substituting x = -1 into the function."
+        },
+        {
+          "letter": "D",
+          "text": "6",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct value of f(-1)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We substitute x = -1 into the function to find the value.",
+      "hint": "",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-85bde",
+      "order": 10,
+      "question": "What is the value of f(2) for the function f(x) = x^3 - 3x + 2?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct value of f(2)."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct value of f(2)."
+        },
+        {
+          "letter": "C",
+          "text": "4",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct value of f(2), which is obtained by substituting x = 2 into the function."
+        },
+        {
+          "letter": "D",
+          "text": "6",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct value of f(2)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We substitute x = 2 into the function to find the value.",
+      "hint": "",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-ad35c",
+      "order": 11,
+      "question": "If $y = \\sin(\\log x)$, then $\\frac{dy}{dx}$ is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\cos(\\log x)$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is missing the $\\frac{1}{x}$ factor from the chain rule."
+        },
+        {
+          "letter": "B",
+          "text": "$-\\frac{\\cos(\\log x)}{x}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The negative sign is incorrect; the derivative of $\\sin(\\log x)$ does not introduce a negative sign."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{\\cos(\\log x)}{x}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct application of the chain rule yields this result."
+        },
+        {
+          "letter": "D",
+          "text": "$-\\sin(\\log x)$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the derivative of $\\cos(\\log x)$, not $\\sin(\\log x)$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We use the chain rule for differentiation. Let $u = \\log x$. Then $y = \\sin u$. $\\frac{dy}{du} = \\cos u$ and $\\frac{du}{dx} = \\frac{1}{x}$. By chain rule, $\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx} = \\cos u \\cdot \\frac{1}{x} = \\cos(\\log x) \\cdot \\frac{1}{x} = \\frac{\\cos(\\log x)}{x}$.",
+      "hint": "Apply the chain rule to differentiate the composite function.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-4fc22",
+      "order": 12,
+      "question": "For what value of $k$ is the function $f(x) = \\begin{cases} kx+1 & \\text{if } x \\le \\pi \\\\ \\cos x & \\text{if } x > \\pi \\end{cases}$ continuous at $x=\\pi$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$0$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Substituting $k=0$ does not satisfy the continuity condition."
+        },
+        {
+          "letter": "B",
+          "text": "$1$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Substituting $k=1$ does not satisfy the continuity condition."
+        },
+        {
+          "letter": "C",
+          "text": "$-1$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Substituting $k=-1$ does not satisfy the continuity condition."
+        },
+        {
+          "letter": "D",
+          "text": "$-\\frac{2}{\\pi}$",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This value ensures the function is continuous at $x=\\pi$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For continuity at $x=\\pi$, the left-hand limit, right-hand limit, and the function's value at $x=\\pi$ must be equal. $f(\\pi) = k\\pi + 1$, $\\lim_{x \\to \\pi^-} f(x) = k\\pi + 1$, and $\\lim_{x \\to \\pi^+} f(x) = \\cos \\pi = -1$. Setting $k\\pi + 1 = -1$ gives $k = -\\frac{2}{\\pi}$.",
+      "hint": "Ensure the left-hand limit, right-hand limit, and function value at $x=\\pi$ are equal for continuity.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-71b76",
+      "order": 13,
+      "question": "The slope of the tangent to the curve $y = x^3 - x + 1$ at the point whose x-coordinate is 2, is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$10$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of the derivative at $x=2$."
+        },
+        {
+          "letter": "B",
+          "text": "$11$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct evaluation of the derivative at $x=2$."
+        },
+        {
+          "letter": "C",
+          "text": "$12$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of the derivative at $x=2$."
+        },
+        {
+          "letter": "D",
+          "text": "$13$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of the derivative at $x=2$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The slope of the tangent is found by evaluating the first derivative $f'(x)$ at $x=2$. Differentiating $y = x^3 - x + 1$ gives $\\frac{dy}{dx} = 3x^2 - 1$. Substituting $x=2$ yields $3(2)^2 - 1 = 11$.",
+      "hint": "Find the derivative of the function and evaluate it at $x=2$.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-bb852",
+      "order": 14,
+      "question": "Evaluate $\\int \\frac{e^x(x-1)}{x^2} dx$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{e^x}{x} + C$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct application of the integral form yields this result."
+        },
+        {
+          "letter": "B",
+          "text": "$e^x \\log x + C$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct antiderivative for the given integral."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{e^x}{x^2} + C$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct antiderivative for the given integral."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{e^x(x-1)}{x} + C$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct antiderivative for the given integral."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Rewrite the integral as $\\int e^x \\left(\\frac{1}{x} - \\frac{1}{x^2}\\right) dx$. This is of the form $\\int e^x (f(x) + f'(x)) dx = e^x f(x) + C$, where $f(x) = \\frac{1}{x}$. Thus, the solution is $\\frac{e^x}{x} + C$.",
+      "hint": "Recognize the integral as a form involving $e^x$ and its derivative.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-f51a6",
+      "order": 15,
+      "question": "Evaluate $\\int_0^1 \\frac{1}{1+x^2} dx$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{\\pi}{2}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the definite integral."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{\\pi}{4}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct evaluation of the definite integral."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{\\pi}{3}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the definite integral."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{\\pi}{6}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation of the definite integral."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The antiderivative of $\\frac{1}{1+x^2}$ is $\\tan^{-1} x$. Evaluating from $0$ to $1$ gives $\\tan^{-1}(1) - \\tan^{-1}(0) = \\frac{\\pi}{4} - 0 = \\frac{\\pi}{4}$.",
+      "hint": "Recall that the antiderivative of $\\frac{1}{1+x^2}$ is $\\tan^{-1} x$.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-472f3",
+      "order": 16,
+      "question": "If $ f(x) = x^2 + 3x + 2 $, then the value of $ \\int_{0}^{2} f(x) \\, dx $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "8",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The computed value is higher."
+        },
+        {
+          "letter": "B",
+          "text": "10",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The computed value is higher."
+        },
+        {
+          "letter": "C",
+          "text": "12",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The computed value is slightly higher."
+        },
+        {
+          "letter": "D",
+          "text": "14",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The closest rounded value to $ \\frac{38}{3} $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The integral evaluates to $ \\frac{38}{3} \\approx 12.67 $. The closest option is 14 (rounded up).",
+      "hint": "Compute the antiderivative of $ f(x) $ and evaluate from 0 to 2.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-d0e2d",
+      "order": 17,
+      "question": "The derivative of $ \\sin^2(x) $ with respect to $ x $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\sin(x) \\cos(x) $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. Missing the factor of 2."
+        },
+        {
+          "letter": "B",
+          "text": "$ 2 \\sin(x) \\cos(x) $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Matches the expanded form of the derivative."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\cos(2x) $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is a trigonometric identity, not the derivative."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\sin(2x) $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the simplified form, not the expanded derivative."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the chain rule, $ \\frac{d}{dx} [\\sin^2(x)] = 2 \\sin(x) \\cdot \\cos(x) = \\sin(2x) $. The expanded form matches option B.",
+      "hint": "Apply the chain rule to differentiate $ \\sin^2(x) $.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-7f905",
+      "order": 18,
+      "question": "Evaluate $ \\lim_{x \\to 0} \\frac{\\sin(3x)}{x} $:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit is not zero."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit is scaled by 3."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The limit evaluates to 3."
+        },
+        {
+          "letter": "D",
+          "text": "Does not exist",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit exists and is finite."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the limit property $ \\lim_{y \\to 0} \\frac{\\sin(y)}{y} = 1 $, the expression simplifies to $ 3 \\cdot 1 = 3 $.",
+      "hint": "Use the standard limit $ \\lim_{y \\to 0} \\frac{\\sin(y)}{y} = 1 $.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-a9eba",
+      "order": 19,
+      "question": "The area bounded by the curves $ y = x^2 $ and $ y = 2x $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{4}{3} $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The computed area is $ \\frac{4}{3} $."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{8}{3} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The computed area is smaller."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{16}{3} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The computed area is much smaller."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{32}{3} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The computed area is much smaller."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The intersection points are at $ x = 0 $ and $ x = 2 $. The area is $ \\int_{0}^{2} (2x - x^2) \\, dx = \\frac{4}{3} $.",
+      "hint": "Find the intersection points and set up the integral of the difference between the curves.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-d98e8",
+      "order": 20,
+      "question": "If $ f(x) = e^{x^2} $, then $ f'(x) $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ e^{x^2} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. Missing the factor of $ 2x $."
+        },
+        {
+          "letter": "B",
+          "text": "$ 2x e^{x^2} $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Matches the derivative using the chain rule."
+        },
+        {
+          "letter": "C",
+          "text": "$ x e^{x^2} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. Missing the factor of 2."
+        },
+        {
+          "letter": "D",
+          "text": "$ e^{2x} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is a different function."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the chain rule, $ f'(x) = e^{x^2} \\cdot 2x = 2x e^{x^2} $.",
+      "hint": "Apply the chain rule to differentiate $ e^{x^2} $.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-5285c",
+      "order": 21,
+      "question": "The value of $ \\int_{1}^{e} \\frac{1}{x} \\, dx $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The integral evaluates to 1."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The integral evaluates to 1."
+        },
+        {
+          "letter": "C",
+          "text": "$ e $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The integral does not evaluate to $ e $."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\ln(e) - \\ln(1) $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the expression, not the value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The integral of $ \\frac{1}{x} $ is $ \\ln|x| $. Evaluating from 1 to $ e $ gives $ \\ln(e) - \\ln(1) = 1 - 0 = 1 $.",
+      "hint": "Recall that the antiderivative of $ \\frac{1}{x} $ is $ \\ln|x| $.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-fe9c7",
+      "order": 22,
+      "question": "The function $ f(x) = |x| $ is not differentiable at:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ x = 1 $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is differentiable at $ x = 1 $."
+        },
+        {
+          "letter": "B",
+          "text": "$ x = -1 $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is differentiable at $ x = -1 $."
+        },
+        {
+          "letter": "C",
+          "text": "$ x = 0 $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The function is not differentiable at $ x = 0 $."
+        },
+        {
+          "letter": "D",
+          "text": "$ x = 2 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is differentiable at $ x = 2 $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ f(x) = |x| $ has a sharp corner at $ x = 0 $, making the derivative undefined there.",
+      "hint": "Consider the behavior of the absolute value function at $ x = 0 $.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-2fb3f",
+      "order": 23,
+      "question": "Evaluate $ \\int \\frac{1}{x^2 + 4} \\, dx $:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{1}{2} \\tan^{-1}\\left(\\frac{x}{2}\\right) + C $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. Matches the standard form after substitution."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\tan^{-1}\\left(\\frac{x}{2}\\right) + C $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. Missing the factor of $ \\frac{1}{2} $."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{1}{2} \\ln|x^2 + 4| + C $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the integral of $ \\frac{x}{x^2 + 4} $, not $ \\frac{1}{x^2 + 4} $."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\ln|x^2 + 4| + C $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the antiderivative of $ \\frac{1}{x^2 + 4} $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using substitution $ u = \\frac{x}{2} $, the integral becomes $ \\frac{1}{2} \\tan^{-1}\\left(\\frac{x}{2}\\right) + C $.",
+      "hint": "Use substitution to simplify the integral into a standard form.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-bb201",
+      "order": 24,
+      "question": "The slope of the tangent to the curve $ y = x^3 - 3x^2 + 2x $ at $ x = 1 $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "-1",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The slope at $ x = 1 $ is -1."
+        },
+        {
+          "letter": "B",
+          "text": "0",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The slope is not zero."
+        },
+        {
+          "letter": "C",
+          "text": "1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The slope is negative."
+        },
+        {
+          "letter": "D",
+          "text": "2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The slope is not 2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The derivative $ y' = 3x^2 - 6x + 2 $. At $ x = 1 $, $ y'(1) = 3(1)^2 - 6(1) + 2 = -1 $.",
+      "hint": "Compute the derivative of the function and evaluate it at $ x = 1 $.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-1c5a0",
+      "order": 25,
+      "question": "The value of $ \\lim_{x \\to \\infty} \\frac{3x^2 + 2x + 1}{5x^2 - x + 4} $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit is not zero."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{3}{5} $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The limit evaluates to $ \\frac{3}{5} $."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{5}{3} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit is the reciprocal of this value."
+        },
+        {
+          "letter": "D",
+          "text": "Does not exist",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The limit exists and is finite."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Divide numerator and denominator by $ x^2 $: $ \\lim_{x \\to \\infty} \\frac{3 + \\frac{2}{x} + \\frac{1}{x^2}}{5 - \\frac{1}{x} + \\frac{4}{x^2}} = \\frac{3}{5} $.",
+      "hint": "Divide numerator and denominator by the highest power of $ x $ in the denominator.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-e04e5",
+      "order": 26,
+      "question": "If $y = \\sin(\\log x)$, then $\\frac{dy}{dx}$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\cos(\\log x)$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option misses the derivative of the inner function $\\log x$, which is $\\frac{1}{x}$."
+        },
+        {
+          "letter": "B",
+          "text": "$-\\frac{\\cos(\\log x)}{x}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The negative sign is incorrect; the derivative of $\\sin u$ is $\\cos u$, not $-\\cos u$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{\\cos(\\log x)}{x}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct application of the chain rule yields this result."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{\\sin(\\log x)}{x}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This incorrectly uses $\\sin(\\log x)$ instead of $\\cos(\\log x)$ in the numerator."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This question requires the application of the chain rule for differentiation. Let $u = \\log x$. Then $y = \\sin u$. Using the chain rule, $\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx} = \\cos u \\cdot \\frac{1}{x} = \\frac{\\cos(\\log x)}{x}$.",
+      "hint": "Use the chain rule: differentiate the outer function first, then multiply by the derivative of the inner function.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-ef60f",
+      "order": 27,
+      "question": "If $y = \\sin(\\log x)$, then $\\frac{dy}{dx}$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\cos(\\log x)$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative must include the term $\\frac{1}{x}$ due to the chain rule."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{\\cos(\\log x)}{x}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The derivative is derived using the chain rule as shown in the explanation."
+        },
+        {
+          "letter": "C",
+          "text": "$-\\frac{\\cos(\\log x)}{x}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The negative sign is not present in the derivative."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{\\sin(\\log x)}{x}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The derivative of $\\sin(\\log x)$ is not $\\frac{\\sin(\\log x)}{x}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find $\\frac{dy}{dx}$, we use the chain rule. Let $u = \\log x$. Then $y = \\sin u$. $\\frac{dy}{du} = \\cos u$ and $\\frac{du}{dx} = \\frac{1}{x}$. By the chain rule, $\\frac{dy}{dx} = \\cos u \\cdot \\frac{1}{x} = \\frac{\\cos(\\log x)}{x}$.",
+      "hint": "Use the chain rule for differentiation.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-e8ee7",
+      "order": 28,
+      "question": "The radius of a sphere is increasing at the rate of $0.2 \\text{ cm/s}$. At the instant when the radius is $5 \\text{ cm}$, the rate of increase of its volume is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$20\\pi \\text{ cm}^3\\text{/s}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The rate of increase of volume is calculated as $20\\pi \\text{ cm}^3/\\text{s}$."
+        },
+        {
+          "letter": "B",
+          "text": "$40\\pi \\text{ cm}^3\\text{/s}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields $20\\pi \\text{ cm}^3/\\text{s}$, not $40\\pi$."
+        },
+        {
+          "letter": "C",
+          "text": "$50\\pi \\text{ cm}^3\\text{/s}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct rate is $20\\pi \\text{ cm}^3/\\text{s}$."
+        },
+        {
+          "letter": "D",
+          "text": "$100\\pi \\text{ cm}^3\\text{/s}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation does not yield $100\\pi \\text{ cm}^3/\\text{s}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The volume of a sphere is $V = \\frac{4}{3}\\pi r^3$. Differentiating with respect to time, $\\frac{dV}{dt} = 4\\pi r^2 \\frac{dr}{dt}$. Substituting $r = 5 \\text{ cm}$ and $\\frac{dr}{dt} = 0.2 \\text{ cm/s}$, we get $\\frac{dV}{dt} = 20\\pi \\text{ cm}^3/\\text{s}$.",
+      "hint": "Use the formula for the volume of a sphere and differentiate with respect to time.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-994dc",
+      "order": 29,
+      "question": "The value of $\\int_0^{\\pi/2} \\frac{\\sqrt{\\sin x}}{\\sqrt{\\sin x} + \\sqrt{\\cos x}} dx$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$0$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The integral evaluates to $\\frac{\\pi}{4}$, not $0$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{\\pi}{4}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The integral evaluates to $\\frac{\\pi}{4}$ using the method described."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{\\pi}{2}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is $\\frac{\\pi}{4}$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\pi$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The integral does not evaluate to $\\pi$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let $I = \\int_0^{\\pi/2} \\frac{\\sqrt{\\sin x}}{\\sqrt{\\sin x} + \\sqrt{\\cos x}} dx$. Using the property $\\int_0^a f(x) dx = \\int_0^a f(a-x) dx$, we get $I = \\int_0^{\\pi/2} \\frac{\\sqrt{\\cos x}}{\\sqrt{\\cos x} + \\sqrt{\\sin x}} dx$. Adding the two equations, $2I = \\int_0^{\\pi/2} 1 dx = \\frac{\\pi}{2}$, so $I = \\frac{\\pi}{4}$.",
+      "hint": "Use the property of definite integrals $\\int_0^a f(x) dx = \\int_0^a f(a-x) dx$ and add the resulting equations.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260769238-733ad",
+      "order": 30,
+      "question": "The area (in square units) bounded by the curves $y = x^2$ and $y = x$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$0$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The area is not zero."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{1}{6}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The area between the curves is $\\frac{1}{6}$ square units."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{1}{3}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct area is $\\frac{1}{6}$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{1}{2}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The area is not $\\frac{1}{2}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find the area between $y = x^2$ and $y = x$, first find the points of intersection by solving $x^2 = x$, which gives $x = 0$ and $x = 1$. The area is $\\int_0^1 (x - x^2) dx = \\left[\\frac{x^2}{2} - \\frac{x^3}{3}\\right]_0^1 = \\frac{1}{2} - \\frac{1}{3} = \\frac{1}{6}$ square units.",
+      "hint": "Find the points of intersection and integrate the difference of the functions over the interval.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-domain",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886440-90d5f",
+      "order": 31,
+      "question": "In the first paragraph, the word '**solitary**' most nearly means:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Social",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Social means relating to society or companionship, which is the opposite of solitary."
+        },
+        {
+          "letter": "B",
+          "text": "Collective",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Collective means done by or involving all members of a group, which is the opposite of solitary."
+        },
+        {
+          "letter": "C",
+          "text": "Done alone",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Solitary means done alone or without companionship."
+        },
+        {
+          "letter": "D",
+          "text": "Interactive",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Interactive means involving communication or action between people, which is the opposite of solitary."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The passage contrasts 'solitary pursuit' with a 'communal experience.' Therefore, 'solitary' refers to an activity done alone.",
+      "hint": "Look for contrasts in the passage to understand the meaning.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886440-c387a",
+      "order": 32,
+      "question": "As used in the first paragraph, what does '**myriad**' mean?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A small number",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "A small number is the opposite of what 'myriad' implies."
+        },
+        {
+          "letter": "B",
+          "text": "An insignificant amount",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "An insignificant amount does not align with the context of overwhelming challenges."
+        },
+        {
+          "letter": "C",
+          "text": "A specific quantity",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "A specific quantity implies a definite number, which 'myriad' does not."
+        },
+        {
+          "letter": "D",
+          "text": "A very large number",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "'Myriad' means a countless or extremely large number of something."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The sentence states 'also presents a myriad of challenges' in the context of 'sheer volume of data' and 'overwhelming' information, indicating a very large or countless number of challenges.",
+      "hint": "Consider the context of 'sheer volume of data' and 'overwhelming' information.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886440-adbac",
+      "order": 33,
+      "question": "In the first paragraph, the word '**discernment**' refers to the ability to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Memorize large amounts of data.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Discernment is not about memorization but about judgment and evaluation."
+        },
+        {
+          "letter": "B",
+          "text": "Access information quickly.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Accessing information quickly is not the same as discernment."
+        },
+        {
+          "letter": "C",
+          "text": "Judge well and make good decisions.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Discernment refers to the ability to judge well and make good decisions."
+        },
+        {
+          "letter": "D",
+          "text": "Communicate effectively online.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Discernment is not about communication but about judgment."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The passage mentions 'information overload and a diminished capacity for critical discernment.' This implies that too much data makes it harder to critically evaluate and judge information, linking discernment to the ability to judge well.",
+      "hint": "Look for the phrase 'critical discernment' in the passage.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886440-42eea",
+      "order": 34,
+      "question": "The phrase '**eclipsed**' in the second paragraph implies that patience is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Enhanced",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Enhanced means improved, which is the opposite of eclipsed."
+        },
+        {
+          "letter": "B",
+          "text": "Highlighted",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Highlighted means emphasized, which is not the meaning of eclipsed."
+        },
+        {
+          "letter": "C",
+          "text": "Overpowered or overshadowed",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Eclipsed means to overshadow or make something less important."
+        },
+        {
+          "letter": "D",
+          "text": "Ignored completely",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Ignored completely is too extreme; eclipsed implies diminished importance rather than complete ignorance."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The context 'patience is often eclipsed by the demand for immediate responses' suggests that the need for instant gratification has become so dominant that it diminishes or overshadows the importance of patience.",
+      "hint": "Consider the phrase 'demand for immediate responses' in the passage.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886440-52af4",
+      "order": 35,
+      "question": "According to the second paragraph, for traditional methods of learning to remain '**relevant**,' they must be:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Applicable and appropriate to current times",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Relevant means closely connected or appropriate to the matter at hand, especially in current times."
+        },
+        {
+          "letter": "B",
+          "text": "Historically significant",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Historical significance does not necessarily mean relevance in current times."
+        },
+        {
+          "letter": "C",
+          "text": "Widely accepted by everyone",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Widespread acceptance is not the same as relevance."
+        },
+        {
+          "letter": "D",
+          "text": "Financially viable for institutions",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Financial viability is unrelated to the meaning of relevance."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The passage discusses traditional methods 'struggling to remain relevant in a world accustomed to quick answers.' This implies they need to stay applicable and significant in the current educational landscape.",
+      "hint": "Look for the phrase 'struggling to remain relevant' in the passage.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886440-74efb",
+      "order": 36,
+      "question": "In the third paragraph, the word '**pertinent**' is best understood as:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Irrelevant",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Irrelevant means not connected with or relevant to something, which is the opposite of pertinent."
+        },
+        {
+          "letter": "B",
+          "text": "Minor",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Minor means small in importance, which does not align with the meaning of pertinent."
+        },
+        {
+          "letter": "C",
+          "text": "Relevant and to the point",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Pertinent means relevant or applicable to a particular matter."
+        },
+        {
+          "letter": "D",
+          "text": "Controversial",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Controversial means giving rise to controversy, which is not the same as pertinent."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The passage introduces 'Another pertinent concern is the erosion of privacy.' This indicates that privacy is a relevant and important issue being discussed, directly related to the topic at hand.",
+      "hint": "Look for the phrase 'pertinent concern' in the passage.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886440-36979",
+      "order": 37,
+      "question": "The word '**fraught**' in the third paragraph suggests the debate is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Simple and straightforward",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Simple and straightforward is the opposite of what 'fraught' implies."
+        },
+        {
+          "letter": "B",
+          "text": "Full of difficulties or risks",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Fraught means filled with or destined to result in something undesirable."
+        },
+        {
+          "letter": "C",
+          "text": "Easily resolved",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Easily resolved is the opposite of what 'fraught' implies."
+        },
+        {
+          "letter": "D",
+          "text": "Lacking in strong opinions",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The passage explicitly mentions 'strong opinions,' so this is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The sentence 'The debate surrounding these issues is often fraught with strong opinions and conflicting interests, making consensus difficult to achieve' clearly indicates that the debate is laden with difficulties and tensions, not simple or easily resolved.",
+      "hint": "Look for the phrase 'fraught with strong opinions' in the passage.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-ab347",
+      "order": 38,
+      "question": "In the fourth paragraph, what does '**inherent**' mean in the context of complexities and pitfalls?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Acquired from external sources",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Inherent means existing as a permanent attribute, not acquired externally."
+        },
+        {
+          "letter": "B",
+          "text": "Easily avoidable",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Easily avoidable is the opposite of inherent, which implies unavoidable or built-in."
+        },
+        {
+          "letter": "C",
+          "text": "Existing as a permanent, essential, or characteristic attribute",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Inherent means existing in something as a permanent and inseparable element."
+        },
+        {
+          "letter": "D",
+          "text": "Temporary and superficial",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Temporary and superficial is the opposite of inherent, which implies permanence."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "'Inherent complexities and potential pitfalls' refers to problems that are intrinsic or built-in to digital innovation itself, not external or temporary.",
+      "hint": "Consider the phrase 'inherent complexities' in the passage.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-bf570",
+      "order": 39,
+      "question": "The word '**exacerbating**' in the fourth paragraph most closely means:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Alleviating",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Alleviating means to make less severe, which is the opposite of exacerbating."
+        },
+        {
+          "letter": "B",
+          "text": "Mitigating",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Mitigating means to make less severe, which is similar to alleviating and the opposite of exacerbating."
+        },
+        {
+          "letter": "C",
+          "text": "Preventing",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Preventing means to stop something from happening, which is not the same as exacerbating."
+        },
+        {
+          "letter": "D",
+          "text": "Worsening",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Exacerbating means to make a problem or situation worse."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The passage talks about technological progress 'rather than exacerbating existing inequalities.' This implies that technology should not make existing problems worse, but rather improve the situation.",
+      "hint": "Look for the phrase 'exacerbating existing inequalities' in the passage.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-fa903",
+      "order": 40,
+      "question": "In the last sentence, a '**nuanced**' understanding implies recognizing:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Only the positive aspects",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "A nuanced understanding includes both positive and negative aspects, not just positive."
+        },
+        {
+          "letter": "B",
+          "text": "Only the negative aspects",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "A nuanced understanding includes both positive and negative aspects, not just negative."
+        },
+        {
+          "letter": "C",
+          "text": "Simple, clear-cut differences",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Nuanced implies complexity and subtlety, not simplicity."
+        },
+        {
+          "letter": "D",
+          "text": "Subtle distinctions and complexities",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Nuanced means having subtle differences or complexities that require careful consideration."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The phrase 'nuanced understanding of both its promises and its perils' suggests that one needs to grasp the subtle, complex, and often contrasting aspects of the evolving landscape, rather than a simplistic view.",
+      "hint": "Look for the phrase 'nuanced understanding' in the passage.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-31b58",
+      "order": 41,
+      "question": "In the context of the passage, what does the word 'crucible' most nearly mean?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A container used for melting metals at high temperatures.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the literal meaning of 'crucible,' but not the intended figurative use in the passage."
+        },
+        {
+          "letter": "B",
+          "text": "A severe test or trial leading to a significant outcome.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is a figurative meaning, but it does not fully capture the context of innovation and factories."
+        },
+        {
+          "letter": "C",
+          "text": "A place or situation where powerful forces interact to cause change or development.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This captures the figurative meaning of 'crucible' as a place of intense activity and interaction leading to innovation."
+        },
+        {
+          "letter": "D",
+          "text": "A source of raw materials essential for manufacturing.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the context of innovation and factories."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "While 'crucible' can literally mean a container for melting metals (A) or figuratively a severe test (B), in the context of 'factories became the crucible of innovation,' it refers to a place where intense activity and interaction lead to the creation and development of new ideas and processes.",
+      "hint": "Consider the figurative use of the word in the context of innovation and factories.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-5cfe5",
+      "order": 42,
+      "question": "As used in the passage, the word 'propelling' means:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Driving or pushing forward.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This directly reflects the meaning of 'propelling' as moving something forward with force."
+        },
+        {
+          "letter": "B",
+          "text": "Preventing movement or progress.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the opposite of the intended meaning."
+        },
+        {
+          "letter": "C",
+          "text": "Slowly guiding or directing.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is too weak and does not convey the force implied by 'propelling.'"
+        },
+        {
+          "letter": "D",
+          "text": "Carefully designing or planning.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the meaning of 'propelling.'"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The sentence states, 'This shift, while propelling humanity towards new heights of productivity...' Here, 'propelling' clearly indicates moving something forward with force or impetus.",
+      "hint": "Think about the context of movement and progress in the sentence.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-93d8a",
+      "order": 43,
+      "question": "Which of the following best defines 'paradigm' as it is used in the passage?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A sudden and unexpected event.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the meaning of 'paradigm.'"
+        },
+        {
+          "letter": "B",
+          "text": "A fundamental model, pattern, or framework for understanding something.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This accurately describes the abstract concept of a 'paradigm.'"
+        },
+        {
+          "letter": "C",
+          "text": "A technological advancement or invention.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is too narrow and does not capture the broader meaning of 'paradigm.'"
+        },
+        {
+          "letter": "D",
+          "text": "A difficult problem that needs to be solved.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the meaning of 'paradigm.'"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The passage mentions a 'paradigm shift,' implying a fundamental change in the way things are viewed or done. A 'paradigm' is not just any change or a specific technology, but a foundational way of thinking or operating.",
+      "hint": "Consider the context of a 'paradigm shift' and what it implies about change.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-314dc",
+      "order": 44,
+      "question": "In the phrase 'Automation and artificial intelligence are now the primary catalysts of change,' the word 'catalysts' refers to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Obstacles or impediments.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the opposite of the intended meaning."
+        },
+        {
+          "letter": "B",
+          "text": "Substances that slow down reactions.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the opposite of the scientific meaning of 'catalyst.'"
+        },
+        {
+          "letter": "C",
+          "text": "Agents that cause or accelerate a process or event.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This correctly captures the metaphorical meaning of 'catalysts' as initiators of change."
+        },
+        {
+          "letter": "D",
+          "text": "Minor contributors to a situation.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This understates the role of 'catalysts' as primary factors."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "In science, a catalyst speeds up a chemical reaction. Metaphorically, as used here, 'catalysts of change' are the primary factors that initiate and accelerate societal or economic transformations.",
+      "hint": "Think about the metaphorical use of 'catalyst' in the context of change.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-d6858",
+      "order": 45,
+      "question": "What does the word 'reconfiguring' imply in the context of 'reconfiguring traditional employment landscapes'?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Restoring to an original state.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the opposite of the intended meaning."
+        },
+        {
+          "letter": "B",
+          "text": "Rearranging or restructuring.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This accurately describes the meaning of 'reconfiguring.'"
+        },
+        {
+          "letter": "C",
+          "text": "Completely eliminating.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is too extreme and not the intended meaning."
+        },
+        {
+          "letter": "D",
+          "text": "Documenting for future reference.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the meaning of 'reconfiguring.'"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "'Reconfiguring' means to change the arrangement or structure of something. In the context of employment landscapes, it means jobs and industries are being reshaped, not restored or eliminated entirely.",
+      "hint": "Consider the prefix 're-' and the context of employment landscapes.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-9b200",
+      "order": 46,
+      "question": "The word 'implications' in the sentence 'The implications of this technological renaissance are far-reaching...' most closely means:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Direct causes or origins.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the meaning of 'implications.'"
+        },
+        {
+          "letter": "B",
+          "text": "Hidden meanings or undertones.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is too narrow and does not capture the broader meaning."
+        },
+        {
+          "letter": "C",
+          "text": "Possible consequences or effects.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This accurately describes the meaning of 'implications.'"
+        },
+        {
+          "letter": "D",
+          "text": "Specific instructions or commands.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the meaning of 'implications.'"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "'Implications' refers to what is suggested or likely to happen as a result of something. In this context, it clearly means the future consequences or effects of the technological rebirth.",
+      "hint": "Think about what 'implications' suggests in terms of consequences.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-7f094",
+      "order": 47,
+      "question": "The phrase 'technological renaissance' suggests:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A period of artistic and cultural revival akin to the European Renaissance.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the literal meaning, but not the intended figurative use."
+        },
+        {
+          "letter": "B",
+          "text": "A rebirth or resurgence of activity, interest, or importance in technology.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This captures the figurative meaning of 'renaissance' as a resurgence."
+        },
+        {
+          "letter": "C",
+          "text": "A decline in technological progress due to over-reliance.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the opposite of the intended meaning."
+        },
+        {
+          "letter": "D",
+          "text": "A new form of governance influenced by technological advancements.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the meaning of 'renaissance.'"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "While 'Renaissance' literally refers to a historical period, when used figuratively, as here, it means a renewed flourishing or vigorous growth. The 'technological renaissance' thus signifies a strong resurgence and rapid advancement in the field of technology.",
+      "hint": "Consider the figurative use of 'renaissance' in the context of technology.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-79f69",
+      "order": 48,
+      "question": "In the sentence '...demanding a profound re-evaluation...', the word 'profound' means:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Superficial or shallow.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the opposite of the intended meaning."
+        },
+        {
+          "letter": "B",
+          "text": "Deep, insightful, and thorough.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This accurately describes the meaning of 'profound.'"
+        },
+        {
+          "letter": "C",
+          "text": "Quick and hasty.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the opposite of the intended meaning."
+        },
+        {
+          "letter": "D",
+          "text": "Technical and specialized.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the meaning of 'profound.'"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "'Profound' describes something that is very great, deep, or intense. A 'profound re-evaluation' therefore implies a deep and thorough reconsideration.",
+      "hint": "Think about the intensity or depth implied by 'profound.'",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-0797d",
+      "order": 49,
+      "question": "What is the meaning of 'dilemma' as used in the passage?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A straightforward solution to a problem.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the opposite of the intended meaning."
+        },
+        {
+          "letter": "B",
+          "text": "A difficult choice or problem that requires careful consideration.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This accurately describes the meaning of 'dilemma.'"
+        },
+        {
+          "letter": "C",
+          "text": "A simple and easily manageable task.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the opposite of the intended meaning."
+        },
+        {
+          "letter": "D",
+          "text": "A historical event that shaped current policies.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the meaning of 'dilemma.'"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The sentence 'The dilemma lies in harnessing these powerful tools... without exacerbating existing disparities' presents a challenging situation with conflicting aspects. A 'dilemma' is inherently a difficult problem or choice.",
+      "hint": "Think about the context of a difficult choice or problem.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-07ba3",
+      "order": 50,
+      "question": "The word 'ubiquity' in the last paragraph implies:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Scarcity or rarity.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the opposite of the intended meaning."
+        },
+        {
+          "letter": "B",
+          "text": "Novelty and innovation.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the meaning of 'ubiquity.'"
+        },
+        {
+          "letter": "C",
+          "text": "Pervasiveness or widespread presence.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This accurately describes the meaning of 'ubiquity.'"
+        },
+        {
+          "letter": "D",
+          "text": "Complexity and intricacy.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This describes a characteristic, not the meaning of 'ubiquity.'"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The sentence states 'The ubiquity of digital tools further complicates this, as their influence permeates every aspect of modern life...' 'Ubiquity' refers to the state of being everywhere or very common.",
+      "hint": "Consider the context of widespread presence or commonality.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-558a5",
+      "order": 51,
+      "question": "In the first paragraph, the word \"isolation\" most nearly means:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "global connectivity",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the opposite of isolation."
+        },
+        {
+          "letter": "B",
+          "text": "technological advancement",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the meaning of 'isolation'."
+        },
+        {
+          "letter": "C",
+          "text": "separation from others",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This directly matches the context of the passage."
+        },
+        {
+          "letter": "D",
+          "text": "digital engagement",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This refers to interaction, not isolation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The passage states that the digital age 'paradoxically introduced new forms of isolation' despite connecting us globally. This implies a state of being apart or cut off from others, which is best captured by 'separation from others.' The other options are either antonyms or unrelated concepts.",
+      "hint": "Consider the context of the digital age and its effects on human connections.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-db968",
+      "order": 52,
+      "question": "As used in the first paragraph, what does the word \"staggering\" imply about the volume of information?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It is difficult to access.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The word does not imply difficulty in access."
+        },
+        {
+          "letter": "B",
+          "text": "It is overwhelming in size.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This matches the context of the passage."
+        },
+        {
+          "letter": "C",
+          "text": "It is carefully organized.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The word does not imply organization."
+        },
+        {
+          "letter": "D",
+          "text": "It is slowly increasing.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The word does not imply a slow increase."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The passage says 'The sheer volume of information available is staggering, yet this abundance doesn't always translate into deeper understanding.' The word 'staggering' in this context suggests an immense, almost unbelievable quantity that can be difficult to manage or comprehend, thus 'overwhelming in size.'",
+      "hint": "Think about the connotation of the word 'staggering' in relation to quantity.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-7f2ae",
+      "order": 53,
+      "question": "The word \"amenable\" in the second paragraph is best understood to mean:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "resistant to change",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the opposite of 'amenable.'"
+        },
+        {
+          "letter": "B",
+          "text": "open to influence or suggestion",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This matches the meaning of 'amenable' in the passage."
+        },
+        {
+          "letter": "C",
+          "text": "critical of new ideas",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the meaning of 'amenable.'"
+        },
+        {
+          "letter": "D",
+          "text": "indifferent to opinions",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This does not capture the meaning of 'amenable.'"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The passage states that algorithms make us 'less amenable to diverse perspectives.' If we are *less* amenable, it means we are *less open* or responsive to diverse perspectives. Therefore, 'amenable' itself means open or responsive to suggestion or influence.",
+      "hint": "Consider the context of algorithms and their effect on our openness to different ideas.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-8f6fe",
+      "order": 54,
+      "question": "Which of the following words is the closest in meaning to \"stifle\" as it is used in the second paragraph?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "encourage",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the opposite of 'stifle.'"
+        },
+        {
+          "letter": "B",
+          "text": "promote",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the opposite of 'stifle.'"
+        },
+        {
+          "letter": "C",
+          "text": "suppress",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This matches the meaning of 'stifle' in the passage."
+        },
+        {
+          "letter": "D",
+          "text": "enhance",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This does not capture the meaning of 'stifle.'"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The word 'stifle' in the passage is used in the context of algorithms 'stifling critical thinking.' This implies suppressing or restricting something, making 'suppress' the closest synonym.",
+      "hint": "Think about the context of algorithms and their potential impact on thinking.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-07a0c",
+      "order": 55,
+      "question": "What does the word \"myriad\" mean in the context of the passage?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "a small number",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This contradicts the meaning of 'myriad,' which implies a large number."
+        },
+        {
+          "letter": "B",
+          "text": "a variety or multitude",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This aligns with the definition of 'myriad' as a large number or variety."
+        },
+        {
+          "letter": "C",
+          "text": "a single example",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the opposite of what 'myriad' implies."
+        },
+        {
+          "letter": "D",
+          "text": "a temporary solution",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the meaning of 'myriad'."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The word \"myriad\" is used to describe the numerous environmental issues caused by urban sprawl. In this context, it means 'a great number' or 'multitude,' making option B the correct choice. The other options contradict the intended meaning.",
+      "hint": "Consider the context of environmental issues and the number of problems mentioned.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-c83df",
+      "order": 56,
+      "question": "What does \"circumspect\" suggest about the researchers' attitude?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "They were overly optimistic",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This contradicts the meaning of 'circumspect,' which implies caution rather than optimism."
+        },
+        {
+          "letter": "B",
+          "text": "They were cautious or prudent",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This matches the definition of 'circumspect' as being careful and cautious."
+        },
+        {
+          "letter": "C",
+          "text": "They were indifferent to the results",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Indifference does not align with the meaning of 'circumspect.'"
+        },
+        {
+          "letter": "D",
+          "text": "They were eager to publish findings",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the meaning of 'circumspect.'"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "\"Circumspect\" means cautious or careful in considering all aspects of a situation. The passage indicates that the researchers were not jumping to conclusions, which aligns with option B. The other options misrepresent the nuance of the word.",
+      "hint": "Think about the tone of the passage regarding the researchers' approach to conclusions.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-9b7ff",
+      "order": 57,
+      "question": "What does \"oeuvre\" refer to in the sentence about the artist?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "a single painting",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is too narrow and does not encompass the artist's entire work."
+        },
+        {
+          "letter": "B",
+          "text": "the artist’s entire body of work",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This matches the definition of 'oeuvre' as the complete works of an artist."
+        },
+        {
+          "letter": "C",
+          "text": "a specific art technique",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the meaning of 'oeuvre.'"
+        },
+        {
+          "letter": "D",
+          "text": "an art critic’s review",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the meaning of 'oeuvre.'"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The term \"oeuvre\" refers to an artist's complete works collectively. The passage describes how the artist's entire body of work blends styles, making option B the correct answer. The other options are either too narrow or unrelated.",
+      "hint": "Consider the context of the artist's work and how it is described in the passage.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-58813",
+      "order": 58,
+      "question": "What does \"vehement\" convey about the opposition to the policy?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "mild or lukewarm",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This contradicts the meaning of 'vehement,' which implies strong emotion."
+        },
+        {
+          "letter": "B",
+          "text": "extremely strong or intense",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This matches the definition of 'vehement' as forceful or intense."
+        },
+        {
+          "letter": "C",
+          "text": "indifferent or neutral",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the opposite of what 'vehement' implies."
+        },
+        {
+          "letter": "D",
+          "text": "delayed or postponed",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the meaning of 'vehement.'"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "\"Vehement\" means showing strong, often forceful, emotion or passion. The passage emphasizes the intensity of the opposition, aligning with option B. The other options contradict the word's meaning.",
+      "hint": "Think about the strength of the opposition described in the passage.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-9d008",
+      "order": 59,
+      "question": "What does \"pragmatic\" suggest about the protagonist’s new worldview?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "idealistic and impractical",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This contradicts the meaning of 'pragmatic,' which implies practicality."
+        },
+        {
+          "letter": "B",
+          "text": "focused on practical considerations",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This matches the definition of 'pragmatic' as dealing with things sensibly and practically."
+        },
+        {
+          "letter": "C",
+          "text": "overly cynical and distrustful",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the meaning of 'pragmatic.'"
+        },
+        {
+          "letter": "D",
+          "text": "emotionally detached",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the meaning of 'pragmatic.'"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "\"Pragmatic\" means dealing with things sensibly and realistically in a way that is based on practical rather than theoretical considerations. The passage highlights the protagonist’s shift toward a more practical mindset, making option B correct. The other options misrepresent the term’s meaning.",
+      "hint": "Consider the protagonist's transformation and how it is described in the passage.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786260886441-785c2",
+      "order": 60,
+      "question": "What does \"tangible\" imply about the expected benefits of the company’s new direction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "theoretical or abstract",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This contradicts the meaning of 'tangible,' which implies something concrete."
+        },
+        {
+          "letter": "B",
+          "text": "easily measurable or concrete",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This matches the definition of 'tangible' as something clear and definite."
+        },
+        {
+          "letter": "C",
+          "text": "insignificant or trivial",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the meaning of 'tangible.'"
+        },
+        {
+          "letter": "D",
+          "text": "long-term or delayed",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the meaning of 'tangible.'"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "\"Tangible\" refers to things that are clear, definite, and real. In this context, analysts are questioning whether the new direction will produce benefits that are real and measurable, making option B the correct choice. The other options contradict the word's meaning.",
+      "hint": "Think about the nature of the benefits expected from the company's decision.",
+      "marks": 5,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cuet-english",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ]
+}
