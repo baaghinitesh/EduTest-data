@@ -1,0 +1,1838 @@
+{
+  "id": "1d6ea0e9-2656-4fc5-8cb4-9007e87f1f25",
+  "title": "CBSE CLASS 11 MATHEMATICS — Statistics and Probability | Proving Geometric Progression Formulas Using Induction",
+  "description": "Subject-wise test on Proving Geometric Progression Formulas Using Induction (Statistics and Probability) for CBSE CLASS 11 MATHEMATICS. 35Q.",
+  "board": "Competitive",
+  "classSlug": "cbse-class-11-mathematics",
+  "classNumber": 0,
+  "subjects": [
+    "statistics-probability"
+  ],
+  "subject": "statistics-probability",
+  "chapter": "Chapter 4 - Principle of Mathematical Induction",
+  "topic": "Proving Geometric Progression Formulas Using Induction",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 140,
+  "passingMarks": 56,
+  "totalQuestions": 35,
+  "targetQuestions": 35,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "mathematical",
+    "using",
+    "chapter",
+    "proving",
+    "principle",
+    "geometric",
+    "progression",
+    "statistics-probability",
+    "formulas",
+    "induction"
+  ],
+  "instructions": [
+    "Subject: Statistics and Probability",
+    "Total Questions: 35",
+    "Total Marks: 140",
+    "Duration: 60 minutes",
+    "Correct answer: +4 mark",
+    "No negative marking",
+    "Topic: Proving Geometric Progression Formulas Using Induction"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-08-09T12:00:50.821324Z",
+  "questions": [
+    {
+      "id": "q-1786276850820-f0816",
+      "order": 1,
+      "question": "Which of the following is the essential first step when proving a statement P(n) for all positive integers n using the Principle of Mathematical Induction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Assume P(k) is true for some positive integer k.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the inductive hypothesis step, not the first step."
+        },
+        {
+          "letter": "B",
+          "text": "Prove P(k+1) is true whenever P(k) is true.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the inductive step, not the first step."
+        },
+        {
+          "letter": "C",
+          "text": "Prove P(1) is true.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the base case, the first step in the Principle of Mathematical Induction."
+        },
+        {
+          "letter": "D",
+          "text": "State the conclusion that P(n) is true for all n.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the final step after completing the base case and inductive step."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The first step in the Principle of Mathematical Induction is to establish the base case, which means proving the statement for the initial value, typically n=1.",
+      "hint": "Recall the base case in the Principle of Mathematical Induction.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850820-c19e0",
+      "order": 2,
+      "question": "To prove the formula for the sum of the first $n$ terms of a Geometric Progression (GP), $S_n = a + ar + ar^2 + \\dots + ar^{n-1} = \\frac{a(r^n - 1)}{r - 1}$ for $r \\ne 1$, using the Principle of Mathematical Induction, the first step is to establish the base case P(1). What does P(1) represent?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$a = \\frac{a(r^1 - 1)}{r - 1}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct representation of P(1) as it equates the sum of the first term (LHS) to the formula evaluated at n=1 (RHS)."
+        },
+        {
+          "letter": "B",
+          "text": "$a + ar = \\frac{a(r^2 - 1)}{r - 1}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This represents P(2), not P(1)."
+        },
+        {
+          "letter": "C",
+          "text": "$a = \\frac{a(1 - r)}{1 - r}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This simplifies to $a = a$, but it is not the correct form of P(1) as it does not match the standard GP sum formula structure."
+        },
+        {
+          "letter": "D",
+          "text": "$ar^{1-1} = \\frac{a(r^1 - 1)}{r - 1}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is equivalent to $a = \\frac{a(r - 1)}{r - 1}$, which simplifies to $a = a$, but it is not the standard form of P(1) in the context of the GP sum formula."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The statement P(n) is $S_n = \\frac{a(r^n - 1)}{r - 1}$. For n=1, the LHS is the sum of the first 1 term, which is just $a$. The RHS is $\\frac{a(r^1 - 1)}{r - 1}$. So, P(1) asserts $a = \\frac{a(r^1 - 1)}{r - 1}$. This simplifies to $a = a$, which is true, thus establishing the base case.",
+      "hint": "Consider the sum of the first term of the GP.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850820-77900",
+      "order": 3,
+      "question": "Consider the statement P(n): $2 + 2^2 + 2^3 + \\dots + 2^n = 2(2^n - 1)$. In the Principle of Mathematical Induction, after verifying the base case P(1), the next step is to assume P(k) is true for some positive integer k. What is the correct statement for P(k) in this context?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2 + 2^2 + \\dots + 2^{k+1} = 2(2^{k+1} - 1)$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This represents P(k+1), not P(k)."
+        },
+        {
+          "letter": "B",
+          "text": "$2^k = 2(2^k - 1)$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This only represents the k-th term on the LHS, not the sum of terms up to k."
+        },
+        {
+          "letter": "C",
+          "text": "$2 + 2^2 + \\dots + 2^k = 2(2^k - 1)$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct statement for P(k) as it matches the original statement with 'n' replaced by 'k'."
+        },
+        {
+          "letter": "D",
+          "text": "$2 + 2^2 + \\dots + 2^k = 2^k - 1$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The RHS is incorrect as it does not match the given formula."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The inductive hypothesis assumes the statement P(n) is true for n=k. Therefore, P(k) is obtained by replacing 'n' with 'k' in the original statement. This yields $2 + 2^2 + \\dots + 2^k = 2(2^k - 1)$. Option A is P(k+1), option B only represents the k-th term on the LHS, and option D has an incorrect RHS.",
+      "hint": "Replace 'n' with 'k' in the given statement to form P(k).",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-a5702",
+      "order": 4,
+      "question": "When proving the formula $S_n = a + ar + \\dots + ar^{n-1} = \\frac{a(r^n - 1)}{r - 1}$ using induction, if we assume P(k) is true, i.e., $S_k = a + ar + \\dots + ar^{k-1} = \\frac{a(r^k - 1)}{r - 1}$, what term must be added to both sides of the P(k) equation to obtain the LHS of P(k+1)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ar^k$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct term to add to $S_k$ to obtain $S_{k+1}$."
+        },
+        {
+          "letter": "B",
+          "text": "$ar^{k-1}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the last term in $S_k$, not the next term."
+        },
+        {
+          "letter": "C",
+          "text": "$ar^{k+1}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the term after $ar^k$, not the next term to add."
+        },
+        {
+          "letter": "D",
+          "text": "$a(r^{k+1} - 1)$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not a term in the GP but a formula component."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The sum of the first k terms is $S_k = a + ar + \\dots + ar^{k-1}$. The sum of the first (k+1) terms is $S_{k+1} = a + ar + \\dots + ar^{k-1} + ar^{(k+1)-1} = S_k + ar^k$. Therefore, the $(k+1)$-th term, $ar^k$, is added to $S_k$ to get $S_{k+1}$.",
+      "hint": "The next term in the GP after $ar^{k-1}$ is $ar^k$.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-2bd12",
+      "order": 5,
+      "question": "The Principle of Mathematical Induction is used to prove statements that are true for:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "All real numbers.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Induction is not used for all real numbers."
+        },
+        {
+          "letter": "B",
+          "text": "A finite set of integers.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Induction is used for all positive integers, not just a finite set."
+        },
+        {
+          "letter": "C",
+          "text": "All positive integers.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct domain for the Principle of Mathematical Induction."
+        },
+        {
+          "letter": "D",
+          "text": "All even integers.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Induction is not limited to even integers."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Principle of Mathematical Induction is a method of mathematical proof typically used to establish that a given statement P(n) holds for all natural numbers (or positive integers) n. It involves a base case and an inductive step.",
+      "hint": "Induction is used for statements involving natural numbers.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-08572",
+      "order": 6,
+      "question": "To prove the sum of the first $n$ terms of a GP, $S_n = a + ar + \\dots + ar^{n-1} = \\frac{a(r^n - 1)}{r - 1}$ (for $r \\ne 1$), using induction, suppose P(k) is true: $S_k = \\frac{a(r^k - 1)}{r - 1}$. We need to show P(k+1) is true. $S_{k+1} = S_k + ar^k = \\frac{a(r^k - 1)}{r - 1} + ar^k$. Which of the following expressions correctly simplifies $S_{k+1}$ to the form of P(k+1)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{a(r^{k+1} - r - 1)}{r - 1}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is an incorrect simplification of the numerator."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{a(r^{k+1} - 1)}{r - 1}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct simplified form of $S_{k+1}$ matching P(k+1)."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{a(r^{k+1} - 1) + ar^k}{r - 1}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is an intermediate step before full simplification."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{a(r^k - 1) + ar^k(r-1)}{r - 1}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is an intermediate step before canceling terms and factoring."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Starting with $S_{k+1} = \\frac{a(r^k - 1)}{r - 1} + ar^k$: 1. Find a common denominator: $\\frac{a(r^k - 1)}{r - 1} + \\frac{ar^k(r - 1)}{r - 1}$ 2. Combine the numerators: $\\frac{a(r^k - 1) + ar^k(r - 1)}{r - 1}$ 3. Distribute $a$ and $ar^k$: $\\frac{ar^k - a + ar^{k+1} - ar^k}{r - 1}$ 4. Cancel terms ($ar^k$ and $-ar^k$): $\\frac{ar^{k+1} - a}{r - 1}$ 5. Factor out $a$: $\\frac{a(r^{k+1} - 1)}{r - 1}$ This matches the form of P(k+1), which is $\\frac{a(r^{(k+1)} - 1)}{r - 1}$. Option D is an intermediate step before simplification.",
+      "hint": "Simplify the expression step-by-step to match the form of P(k+1).",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-2bccb",
+      "order": 7,
+      "question": "Which of the following is the correct expression for the LHS of P(k+1) after substituting P(k)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{3^k - 1}{2} + 3^{k+1}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This incorrectly adds the (k+2)th term ($3^{k+1}$) instead of the (k+1)th term ($3^k$)."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{3^k - 1}{2} + 3^k$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This correctly substitutes the sum of the first k terms (from P(k)) and adds the (k+1)th term ($3^k$) to get the LHS of P(k+1)."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{3^{k+1} - 1}{2}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the RHS of P(k+1), not the LHS after substitution."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{3^{k-1} - 1}{2} + 3^k$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This incorrectly uses the sum of the first (k-1) terms instead of the first k terms."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The LHS of P(k+1) is the sum of the first (k+1) terms of the GP, which can be written as the sum of the first k terms (given by P(k)) plus the (k+1)th term. Using the inductive hypothesis, the sum of the first k terms is $\\frac{3^k - 1}{2}$, and the (k+1)th term is $3^k$. Thus, the LHS becomes $\\frac{3^k - 1}{2} + 3^k$.",
+      "hint": "Recall that the sum of the first (k+1) terms is the sum of the first k terms plus the (k+1)th term.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-36f86",
+      "order": 8,
+      "question": "When proving the GP sum formula $S_n = \\frac{a(r^n - 1)}{r - 1}$ by induction, it is explicitly stated that $r \\ne 1$. Why is this condition crucial for the validity of the formula and its inductive proof?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "If $r=1$, the common ratio is not defined.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The common ratio is defined as 1 when $r = 1$, but the formula itself becomes undefined due to division by zero."
+        },
+        {
+          "letter": "B",
+          "text": "If $r=1$, the denominator $(r-1)$ becomes zero, making the formula undefined.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct reason. The formula $S_n = \\frac{a(r^n - 1)}{r - 1}$ is undefined when $r = 1$ because it involves division by zero."
+        },
+        {
+          "letter": "C",
+          "text": "If $r=1$, the sum of the GP is not finite.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The sum of the GP is finite when $r = 1$ (it is simply $n \\times a$), but the formula $S_n = \\frac{a(r^n - 1)}{r - 1}$ is not applicable."
+        },
+        {
+          "letter": "D",
+          "text": "If $r=1$, the inductive step fails because the base case is not valid.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The base case is valid for $r = 1$ (sum is $n \\times a$), but the formula itself is undefined, making the inductive proof invalid."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The condition $r \\ne 1$ is crucial because the denominator $(r - 1)$ in the formula becomes zero when $r = 1$, making the formula undefined. Additionally, the inductive step relies on the formula being valid for $r \\ne 1$, as the base case and inductive hypothesis depend on this condition.",
+      "hint": "Consider the denominator in the GP sum formula and its behavior when $r = 1$.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-9cda2",
+      "order": 9,
+      "question": "When proving the statement $P(n): 1 + r + r^2 + ... + r^{n-1} = \\frac{r^n - 1}{r - 1}$ for $n \\in \\mathbb{N}$ and $r \\neq 1$ using the Principle of Mathematical Induction, what is the base case $P(1)$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1 = \\frac{r^1 - 1}{r - 1}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is correct but not simplified. The simplified form is $1 = \\frac{r-1}{r-1}$."
+        },
+        {
+          "letter": "B",
+          "text": "$1 = r$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the formula for $P(1)$."
+        },
+        {
+          "letter": "C",
+          "text": "$r = \\frac{r^1 - 1}{r - 1}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the left side should be $1$, not $r$."
+        },
+        {
+          "letter": "D",
+          "text": "$1 = \\frac{r-1}{r-1}$",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the correct simplified form of the base case $P(1)$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The statement $P(n)$ is the sum of the first $n$ terms. For $n=1$, the sum is just the first term, which is $1$. The formula on the right side for $n=1$ becomes $\\frac{r^1 - 1}{r - 1} = \\frac{r-1}{r-1}$. Thus, $P(1)$ states $1 = \\frac{r-1}{r-1}$, which simplifies to $1=1$ and is true.",
+      "hint": "Consider the sum of the first term when $n=1$.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-919c5",
+      "order": 10,
+      "question": "In the proof by mathematical induction for the sum of the first $n$ terms of a geometric progression $a, ar, ar^2, ..., ar^{n-1}$, given by the formula $S_n = a(1 + r + r^2 + ... + r^{n-1}) = \\frac{a(r^n - 1)}{r - 1}$ for $r \\neq 1$, what is the inductive hypothesis $P(k)$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Assume $a + ar + ... + ar^{k-1} = \\frac{a(r^k - 1)}{r - 1}$ for some positive integer $k$.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct inductive hypothesis for the sum of the first $k$ terms."
+        },
+        {
+          "letter": "B",
+          "text": "Assume $a + ar + ... + ar^n = \\frac{a(r^n - 1)}{r - 1}$ for all $n \\in \\mathbb{N}$.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the inductive hypothesis assumes the statement for a specific $k$, not for all $n$."
+        },
+        {
+          "letter": "C",
+          "text": "Assume $a + ar + ... + ar^{k} = \\frac{a(r^{k+1} - 1)}{r - 1}$ for some positive integer $k$.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the sum should be up to $ar^{k-1}$, not $ar^k$."
+        },
+        {
+          "letter": "D",
+          "text": "Assume $a + ar + ... + ar^{k-1} = \\frac{a(r^{k-1} - 1)}{r - 1}$ for some positive integer $k$.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the formula should be $\\frac{a(r^k - 1)}{r - 1}$, not $\\frac{a(r^{k-1} - 1)}{r - 1}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The inductive hypothesis $P(k)$ involves assuming the statement is true for an arbitrary positive integer $k$. Therefore, we assume that the sum of the first $k$ terms is equal to the formula applied for $n=k$. The $k$-th term of the GP is $ar^{k-1}$. So, the sum of the first $k$ terms is $a + ar + ... + ar^{k-1}$, and the formula gives $\\frac{a(r^k - 1)}{r - 1}$.",
+      "hint": "The inductive hypothesis assumes the formula holds for a specific value $k$.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-6ad09",
+      "order": 11,
+      "question": "To prove the formula for the sum of the first $n$ terms of a GP, $S_n = a + ar + ... + ar^{n-1} = \\frac{a(r^n - 1)}{r - 1}$ using mathematical induction, if we have established the inductive hypothesis $P(k): S_k = \\frac{a(r^k - 1)}{r - 1}$, which term must be added to $S_k$ to obtain $S_{k+1}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ar^{k+1}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the $(k+1)^{th}$ term is $ar^k$, not $ar^{k+1}$."
+        },
+        {
+          "letter": "B",
+          "text": "$ar^k$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is repeated and incorrect as it does not specify the term to be added to $S_k$."
+        },
+        {
+          "letter": "C",
+          "text": "$ar^k$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is repeated and does not specify the term to be added to $S_k$."
+        },
+        {
+          "letter": "D",
+          "text": "$ar^{k-1}$",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the correct term to be added to $S_k$ to obtain $S_{k+1}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The general term of the GP is $ar^{n-1}$. The $(k+1)^{th}$ term is obtained by substituting $n=k+1$ into the general term formula, which gives $ar^{(k+1)-1} = ar^k$. To get the sum of the first $(k+1)$ terms ($S_{k+1}$), we add the $(k+1)^{th}$ term to the sum of the first $k$ terms ($S_k$).",
+      "hint": "The $(k+1)^{th}$ term of a GP is $ar^k$.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-59c6b",
+      "order": 12,
+      "question": "Consider the statement $P(n): \\sum_{i=1}^{n} 3 \\cdot 2^{i-1} = 3(2^n - 1)$. If we assume $P(k)$ is true, i.e., $\\sum_{i=1}^{k} 3 \\cdot 2^{i-1} = 3(2^k - 1)$, what is the complete expression for $P(k+1)$ *before* any simplification based on $P(k)$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\sum_{i=1}^{k+1} 3 \\cdot 2^{i-1} = 3(2^{k} - 1)$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the right side should be $3(2^{k+1} - 1)$, not $3(2^k - 1)$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\sum_{i=1}^{k} 3 \\cdot 2^{i-1} + 3 \\cdot 2^{k} = 3(2^{k+1} - 1)$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not show the complete expression for $P(k+1)$ before simplification."
+        },
+        {
+          "letter": "C",
+          "text": "$\\sum_{i=1}^{k+1} 3 \\cdot 2^{i-1} = 3(2^{k+1} - 1)$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the statement of $P(k+1)$ but does not show the separation of $S_k$ and the $(k+1)^{th}$ term."
+        },
+        {
+          "letter": "D",
+          "text": "$\\left( \\sum_{i=1}^{k} 3 \\cdot 2^{i-1} \\right) + 3 \\cdot 2^k = 3(2^{k+1} - 1)$",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the correct complete expression for $P(k+1)$ before any simplification based on $P(k)$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$P(k+1)$ involves two parts: the sum of the first $k+1$ terms on the left side, and the formula applied for $n=k+1$ on the right side. The sum of the first $k+1$ terms can be written as the sum of the first $k$ terms plus the $(k+1)^{th}$ term. The $(k+1)^{th}$ term is $3 \\cdot 2^{(k+1)-1} = 3 \\cdot 2^k$. The right side of $P(k+1)$ is $3(2^{k+1} - 1)$. Combining these, $P(k+1)$ is $\\left( \\sum_{i=1}^{k} 3 \\cdot 2^{i-1} \\right) + 3 \\cdot 2^k = 3(2^{k+1} - 1)$. Option C is just the statement of $P(k+1)$ without showing the separation of $S_k$ and the $(k+1)^{th}$ term.",
+      "hint": "The expression for $P(k+1)$ should show the sum of the first $k$ terms plus the $(k+1)^{th}$ term on the left side.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-c693e",
+      "order": 13,
+      "question": "In the inductive step for proving $S_n = a + ar + ... + ar^{n-1} = \\frac{a(r^n - 1)}{r - 1}$, we start with $S_k + ar^k$. Which of the following is the *most crucial* algebraic manipulation to transform $S_k + ar^k$ into the form $\\frac{a(r^{k+1} - 1)}{r - 1}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Multiplying the entire expression by $(r-1)$.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the crucial step as it would complicate the expression further."
+        },
+        {
+          "letter": "B",
+          "text": "Dividing the entire expression by $(r-1)$.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the crucial step as it does not help in combining the terms."
+        },
+        {
+          "letter": "C",
+          "text": "Taking a common denominator $(r-1)$ and factoring out 'a'.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the crucial step to combine the terms and simplify the expression."
+        },
+        {
+          "letter": "D",
+          "text": "Cancelling $r-1$ from the numerator and denominator.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not applicable as the terms are not yet combined."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We have $S_k + ar^k = \\frac{a(r^k - 1)}{r - 1} + ar^k$. To combine these terms, we need a common denominator, which is $(r-1)$. So, we rewrite $ar^k$ as $\\frac{ar^k(r-1)}{r-1}$. Then we combine the numerators: $\\frac{a(r^k - 1) + ar^k(r-1)}{r-1} = \\frac{a(r^{k+1} - 1)}{r - 1}$.",
+      "hint": "The key step involves rewriting $ar^k$ with a common denominator $(r-1)$ to combine the terms.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-0cda7",
+      "order": 14,
+      "question": "Which of the following is the correct base case verification for proving the formula for the sum of the first $ n $ terms of a GP, $ S_n = \\frac{a(1 - r^n)}{1 - r} $, where $ r \\neq 1 $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Verify for $ n = 0 $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The sum of zero terms is typically undefined or zero, but it is not the standard base case for this formula."
+        },
+        {
+          "letter": "B",
+          "text": "Verify for $ n = 1 $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The sum of the first term is $ a $, which matches the formula when $ n = 1 $."
+        },
+        {
+          "letter": "C",
+          "text": "Verify for $ n = 2 $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "While valid, it is not the minimal base case required for induction."
+        },
+        {
+          "letter": "D",
+          "text": "Verify for $ n = 3 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the standard base case for induction proofs in geometric progressions."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For $ n = 1 $, $ S_1 = a $, and the formula gives $ \\frac{a(1 - r^1)}{1 - r} = a $. This matches, so the base case holds.",
+      "hint": "Consider the sum of the first term of a geometric progression.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-357eb",
+      "order": 15,
+      "question": "To prove $ S_n = \\frac{a(1 - r^n)}{1 - r} $ using induction, what is the correct inductive step assumption?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Assume the formula holds for $ n = k + 1 $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct assumption for the inductive step."
+        },
+        {
+          "letter": "B",
+          "text": "Assume the formula holds for $ n = k $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the standard inductive hypothesis in mathematical induction."
+        },
+        {
+          "letter": "C",
+          "text": "Assume the formula holds for $ n = 0 $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the base case, not the inductive step assumption."
+        },
+        {
+          "letter": "D",
+          "text": "Assume the formula holds for all $ n $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is circular reasoning and not valid for induction."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The inductive step assumes the formula holds for some arbitrary $ n = k $ (inductive hypothesis) to prove it for $ n = k + 1 $.",
+      "hint": "Recall the structure of mathematical induction: assume for $ n = k $ and prove for $ n = k + 1 $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-908be",
+      "order": 16,
+      "question": "If $ S_n = \\frac{a(r^n - 1)}{r - 1} $ is the sum of the first $ n $ terms of a GP, what is $ S_2 $ in terms of $ a $ and $ r $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ a + ar $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the sum of the first two terms of the GP."
+        },
+        {
+          "letter": "B",
+          "text": "$ a + ar^2 $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the second term is $ ar $, not $ ar^2 $."
+        },
+        {
+          "letter": "C",
+          "text": "$ a(1 + r) $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "While mathematically equivalent, the question asks for the expanded form."
+        },
+        {
+          "letter": "D",
+          "text": "$ a(1 + r^2) $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not represent the sum of the first two terms."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ S_2 = a + ar = a(1 + r) $. This matches option A when written as $ a + ar $.",
+      "hint": "The sum of the first two terms of a GP is the first term plus the second term.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-4d2d8",
+      "order": 17,
+      "question": "During the inductive step for proving $ S_n = \\frac{a(r^n - 1)}{r - 1} $, we write: $ S_{k+1} = S_k + ar^{k+1} $. What is the next step to derive the formula for $ S_{k+1} $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Substitute $ S_k = \\frac{a(r^k - 1)}{r - 1} $ and simplify",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct next step in the inductive proof."
+        },
+        {
+          "letter": "B",
+          "text": "Assume $ S_k = \\frac{a(r^{k+1} - 1)}{r - 1} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the inductive hypothesis; it assumes the conclusion."
+        },
+        {
+          "letter": "C",
+          "text": "Differentiate both sides",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Differentiation is not relevant in this algebraic proof."
+        },
+        {
+          "letter": "D",
+          "text": "Integrate both sides",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Integration is not relevant in this algebraic proof."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Substituting the inductive hypothesis $ S_k = \\frac{a(r^k - 1)}{r - 1} $ into $ S_{k+1} = S_k + ar^{k+1} $ and simplifying leads to the desired formula.",
+      "hint": "Use the inductive hypothesis to replace $ S_k $ in the equation.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-a92a0",
+      "order": 18,
+      "question": "If the first term of a GP is 3 and the common ratio is 2, what is $ S_3 $ using the induction-proven formula?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "15",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect; the correct sum is 21."
+        },
+        {
+          "letter": "B",
+          "text": "21",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct sum of the first three terms."
+        },
+        {
+          "letter": "C",
+          "text": "24",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect; the correct sum is 21."
+        },
+        {
+          "letter": "D",
+          "text": "9",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect; the correct sum is 21."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using $ S_n = \\frac{a(r^n - 1)}{r - 1} $, $ S_3 = \\frac{3(2^3 - 1)}{2 - 1} = \\frac{3(8 - 1)}{1} = 21 $.",
+      "hint": "Substitute $ a = 3 $, $ r = 2 $, and $ n = 3 $ into the formula for the sum of a GP.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-5f909",
+      "order": 19,
+      "question": "Which of the following is a correct application of the inductive step for proving $ 1 + r + r^2 + \\dots + r^{n-1} = \\frac{1 - r^n}{1 - r} $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Assume true for $ n = k $, then prove for $ n = k $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not a valid inductive step."
+        },
+        {
+          "letter": "B",
+          "text": "Assume true for $ n = k $, then prove for $ n = k - 1 $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the standard inductive step."
+        },
+        {
+          "letter": "C",
+          "text": "Assume true for $ n = k $, then prove for $ n = k + 1 $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct application of the inductive step."
+        },
+        {
+          "letter": "D",
+          "text": "Assume true for $ n = k + 1 $, then prove for $ n = k $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the standard inductive step."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Induction requires assuming the statement for $ n = k $ and proving it for $ n = k + 1 $.",
+      "hint": "Recall the structure of mathematical induction: assume for $ n = k $ and prove for $ n = k + 1 $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-00b2a",
+      "order": 20,
+      "question": "For a GP with first term $ a $ and common ratio $ r $, what does the inductive step for $ S_{k+1} $ involve?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ S_{k+1} = S_k + ar^k $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect; the exponent should be $ k+1 $."
+        },
+        {
+          "letter": "B",
+          "text": "$ S_{k+1} = S_k + ar^{k+1} $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct expression for the inductive step."
+        },
+        {
+          "letter": "C",
+          "text": "$ S_{k+1} = S_k \\cdot r $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect; it does not represent the sum of terms."
+        },
+        {
+          "letter": "D",
+          "text": "$ S_{k+1} = S_k - ar^k $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect; it does not represent the sum of terms."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ S_{k+1} = S_k + $ (the $ (k+1) $-th term) $ = S_k + ar^{k+1} $.",
+      "hint": "The sum of the first $ k+1 $ terms is the sum of the first $ k $ terms plus the $ (k+1) $-th term.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-95591",
+      "order": 21,
+      "question": "If $ S_n = \\frac{a(1 - r^n)}{1 - r} $ is proven by induction, what is the value of $ S_0 $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The sum of zero terms is 0."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect; the sum of zero terms is 0."
+        },
+        {
+          "letter": "C",
+          "text": "$ a $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect; the sum of zero terms is 0."
+        },
+        {
+          "letter": "D",
+          "text": "Undefined",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The sum of zero terms is defined as 0."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For $ n = 0 $, $ S_0 = \\frac{a(1 - r^0)}{1 - r} = \\frac{a(1 - 1)}{1 - r} = 0 $.",
+      "hint": "Consider the sum of zero terms in a geometric progression.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-8e1bf",
+      "order": 22,
+      "question": "During induction for $ S_n = \\frac{a(r^n - 1)}{r - 1} $, the step where we prove $ P(k+1) $ from $ P(k) $ is called:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Base case",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The base case is the initial verification, not the step."
+        },
+        {
+          "letter": "B",
+          "text": "Inductive hypothesis",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The inductive hypothesis is the assumption that $ P(k) $ is true."
+        },
+        {
+          "letter": "C",
+          "text": "Inductive step",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the step where we prove $ P(k+1) $ from $ P(k) $."
+        },
+        {
+          "letter": "D",
+          "text": "Conclusion",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The conclusion is the final step after the inductive step."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The step where we assume $ P(k) $ is true and prove $ P(k+1) $ is called the inductive step.",
+      "hint": "Recall the terminology used in mathematical induction.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-06329",
+      "order": 23,
+      "question": "If a GP has first term $ a = 2 $ and common ratio $ r = -1 $, what is $ S_4 $ using the induction-proven formula?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The sum of the first four terms is 0."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect; the correct sum is 0."
+        },
+        {
+          "letter": "C",
+          "text": "4",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect; the correct sum is 0."
+        },
+        {
+          "letter": "D",
+          "text": "-2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect; the correct sum is 0."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using $ S_n = \\frac{a(r^n - 1)}{r - 1} $, $ S_4 = \\frac{2((-1)^4 - 1)}{-1 - 1} = \\frac{2(1 - 1)}{-2} = 0 $. The terms alternate: $ 2, -2, 2, -2 $, and their sum is 0.",
+      "hint": "Calculate the sum of the first four terms directly or use the formula.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-41c29",
+      "order": 24,
+      "question": "Using the Principle of Mathematical Induction, prove that for any positive integer n, the sum of the first n terms of a geometric progression with first term a and common ratio r (r ≠ 1) is given by the formula: S_n = a(1 - r^n)/(1 - r).",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The formula is proven by verifying the base case and assuming it holds for n = k to prove for n = k + 1.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct application of the Principle of Mathematical Induction."
+        },
+        {
+          "letter": "B",
+          "text": "The formula can be proven by direct substitution of n = 1, 2, and 3 without induction.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Direct substitution does not constitute a proof by induction."
+        },
+        {
+          "letter": "C",
+          "text": "The formula is only valid for r = 1.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The formula is valid for r ≠ 1, as specified."
+        },
+        {
+          "letter": "D",
+          "text": "The formula cannot be proven using induction.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The Principle of Mathematical Induction is a valid method for proving such formulas."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Principle of Mathematical Induction involves two steps: (1) Base Case: Verify the formula holds for n = 1. (2) Inductive Step: Assume the formula holds for n = k and prove it holds for n = k + 1. For a geometric progression, the sum formula is derived by multiplying the assumed sum by r and subtracting the original sum to isolate the (k+1)th term.",
+      "hint": "Start by verifying the base case for n = 1. Then assume the formula holds for n = k and use it to prove for n = k + 1.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-07eec",
+      "order": 25,
+      "question": "Prove by induction that 2^n > n for all positive integers n.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2^n > n for all n ≥ 1, proven by induction.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct proof using the Principle of Mathematical Induction."
+        },
+        {
+          "letter": "B",
+          "text": "2^n > n only holds for n = 1 and n = 2.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The inequality holds for all positive integers n."
+        },
+        {
+          "letter": "C",
+          "text": "The inequality cannot be proven by induction.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Induction is a valid method for proving this inequality."
+        },
+        {
+          "letter": "D",
+          "text": "2^n > n is false for n = 3.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "For n = 3, 2^3 = 8 > 3, so the statement holds."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Base Case: For n = 1, 2^1 = 2 > 1. Inductive Step: Assume 2^k > k holds for some k ≥ 1. Then, 2^(k+1) = 2 * 2^k > 2 * k ≥ k + 1 (since k ≥ 1). Thus, the statement holds for n = k + 1.",
+      "hint": "Start with the base case n = 1 and proceed with the inductive step.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-caecd",
+      "order": 26,
+      "question": "Using the Principle of Mathematical Induction, prove that the sum of the first n odd natural numbers is n^2.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The sum of the first n odd numbers is n^2, proven by induction.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct proof using the Principle of Mathematical Induction."
+        },
+        {
+          "letter": "B",
+          "text": "The sum of the first n odd numbers is 2n^2.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The correct sum is n^2."
+        },
+        {
+          "letter": "C",
+          "text": "The sum of the first n odd numbers cannot be proven by induction.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Induction is a valid method for proving this statement."
+        },
+        {
+          "letter": "D",
+          "text": "The sum of the first n odd numbers is n(n+1)/2.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This formula is for the sum of the first n natural numbers, not odd numbers."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Base Case: For n = 1, the sum is 1 = 1^2. Inductive Step: Assume the sum of the first k odd numbers is k^2. The (k+1)th odd number is 2k + 1. Thus, the sum of the first (k+1) odd numbers is k^2 + (2k + 1) = (k + 1)^2.",
+      "hint": "Start with the base case n = 1 and use the inductive hypothesis to prove for n = k + 1.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-ddf28",
+      "order": 27,
+      "question": "Prove by induction that 1 + 2 + 3 + ... + n = n(n + 1)/2 for all positive integers n.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The formula is proven by verifying the base case and assuming it holds for n = k to prove for n = k + 1.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct application of the Principle of Mathematical Induction."
+        },
+        {
+          "letter": "B",
+          "text": "The formula can be proven by direct observation without induction.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Direct observation does not constitute a proof by induction."
+        },
+        {
+          "letter": "C",
+          "text": "The formula is only valid for n = 1.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The formula holds for all positive integers n."
+        },
+        {
+          "letter": "D",
+          "text": "The formula cannot be proven using induction.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The Principle of Mathematical Induction is a valid method for proving such formulas."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Base Case: For n = 1, 1 = 1(1 + 1)/2 = 1. Inductive Step: Assume the formula holds for n = k, i.e., 1 + 2 + ... + k = k(k + 1)/2. Then, 1 + 2 + ... + k + (k + 1) = k(k + 1)/2 + (k + 1) = (k + 1)(k + 2)/2.",
+      "hint": "Start with the base case n = 1 and use the inductive hypothesis to prove for n = k + 1.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-05815",
+      "order": 28,
+      "question": "Using the Principle of Mathematical Induction, prove that 3^n - 1 is divisible by 2 for all positive integers n.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3^n - 1 is divisible by 2 for all n ≥ 1, proven by induction.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct proof using the Principle of Mathematical Induction."
+        },
+        {
+          "letter": "B",
+          "text": "3^n - 1 is divisible by 2 only for n = 1.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The statement holds for all positive integers n."
+        },
+        {
+          "letter": "C",
+          "text": "The statement cannot be proven by induction.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Induction is a valid method for proving this statement."
+        },
+        {
+          "letter": "D",
+          "text": "3^n - 1 is divisible by 3 for all n ≥ 1.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "3^n - 1 is not divisible by 3 for any n ≥ 1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Base Case: For n = 1, 3^1 - 1 = 2, which is divisible by 2. Inductive Step: Assume 3^k - 1 is divisible by 2. Then, 3^(k+1) - 1 = 3 * 3^k - 1 = 3(3^k - 1) + 2. Since 3^k - 1 is divisible by 2 and 2 is divisible by 2, the entire expression is divisible by 2.",
+      "hint": "Start with the base case n = 1 and use the inductive hypothesis to prove for n = k + 1.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-06e2a",
+      "order": 29,
+      "question": "Prove by induction that n^3 - n is divisible by 6 for all positive integers n.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "n^3 - n is divisible by 6 for all n ≥ 1, proven by induction.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct proof using the Principle of Mathematical Induction."
+        },
+        {
+          "letter": "B",
+          "text": "n^3 - n is divisible by 3 but not necessarily by 6.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The expression is divisible by 6 for all positive integers n."
+        },
+        {
+          "letter": "C",
+          "text": "The statement cannot be proven by induction.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Induction is a valid method for proving this statement."
+        },
+        {
+          "letter": "D",
+          "text": "n^3 - n is divisible by 2 but not by 3.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The expression is divisible by both 2 and 3, hence by 6."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Base Case: For n = 1, 1^3 - 1 = 0, which is divisible by 6. Inductive Step: Assume n^3 - n is divisible by 6. Then, (n+1)^3 - (n+1) = n^3 + 3n^2 + 3n + 1 - n - 1 = n^3 - n + 3n(n + 1). Since n^3 - n is divisible by 6 and 3n(n + 1) is divisible by 6 (as n(n + 1) is always even), the entire expression is divisible by 6.",
+      "hint": "Start with the base case n = 1 and use the inductive hypothesis to prove for n = k + 1. Note that n(n + 1) is always even.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-52486",
+      "order": 30,
+      "question": "Using the Principle of Mathematical Induction, prove that 1^2 + 2^2 + 3^2 + ... + n^2 = n(n + 1)(2n + 1)/6 for all positive integers n.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The formula is proven by verifying the base case and assuming it holds for n = k to prove for n = k + 1.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct application of the Principle of Mathematical Induction."
+        },
+        {
+          "letter": "B",
+          "text": "The formula can be proven by direct observation without induction.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Direct observation does not constitute a proof by induction."
+        },
+        {
+          "letter": "C",
+          "text": "The formula is only valid for n = 1 and n = 2.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The formula holds for all positive integers n."
+        },
+        {
+          "letter": "D",
+          "text": "The formula cannot be proven using induction.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The Principle of Mathematical Induction is a valid method for proving such formulas."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Base Case: For n = 1, 1^2 = 1 = 1(1 + 1)(2*1 + 1)/6 = 1. Inductive Step: Assume the formula holds for n = k. Then, 1^2 + 2^2 + ... + k^2 + (k + 1)^2 = k(k + 1)(2k + 1)/6 + (k + 1)^2 = (k + 1)[k(2k + 1)/6 + (k + 1)] = (k + 1)(2k^2 + 7k + 6)/6 = (k + 1)(k + 2)(2k + 3)/6.",
+      "hint": "Start with the base case n = 1 and use the inductive hypothesis to prove for n = k + 1. Simplify the expression carefully.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-12fa3",
+      "order": 31,
+      "question": "Prove by induction that 1 + 3 + 5 + ... + (2n - 1) = n^2 for all positive integers n.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The sum of the first n odd numbers is n^2, proven by induction.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct proof using the Principle of Mathematical Induction."
+        },
+        {
+          "letter": "B",
+          "text": "The sum of the first n odd numbers is 2n^2.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The correct sum is n^2."
+        },
+        {
+          "letter": "C",
+          "text": "The sum of the first n odd numbers cannot be proven by induction.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Induction is a valid method for proving this statement."
+        },
+        {
+          "letter": "D",
+          "text": "The sum of the first n odd numbers is n(n+1)/2.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This formula is for the sum of the first n natural numbers, not odd numbers."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Base Case: For n = 1, 1 = 1^2. Inductive Step: Assume the formula holds for n = k, i.e., 1 + 3 + ... + (2k - 1) = k^2. Then, 1 + 3 + ... + (2k - 1) + (2k + 1) = k^2 + (2k + 1) = (k + 1)^2.",
+      "hint": "Start with the base case n = 1 and use the inductive hypothesis to prove for n = k + 1.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-1bd82",
+      "order": 32,
+      "question": "Using the Principle of Mathematical Induction, prove that 2^n ≥ n^2 for all integers n ≥ 4.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2^n ≥ n^2 for all n ≥ 4, proven by induction.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct proof using the Principle of Mathematical Induction."
+        },
+        {
+          "letter": "B",
+          "text": "2^n ≥ n^2 only holds for n = 4.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The inequality holds for all integers n ≥ 4."
+        },
+        {
+          "letter": "C",
+          "text": "The inequality cannot be proven by induction.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Induction is a valid method for proving this statement."
+        },
+        {
+          "letter": "D",
+          "text": "2^n ≥ n^2 is false for n = 5.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "For n = 5, 2^5 = 32 ≥ 5^2 = 25, so the statement holds."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Base Case: For n = 4, 2^4 = 16 ≥ 4^2 = 16. Inductive Step: Assume 2^k ≥ k^2 holds for some k ≥ 4. Then, 2^(k+1) = 2 * 2^k ≥ 2 * k^2. We need to show 2 * k^2 ≥ (k + 1)^2. This simplifies to 2k^2 ≥ k^2 + 2k + 1, or k^2 - 2k - 1 ≥ 0. For k ≥ 4, this inequality holds (e.g., for k = 4, 16 - 8 - 1 = 7 ≥ 0).",
+      "hint": "Start with the base case n = 4 and use the inductive hypothesis to prove for n = k + 1. Verify the inequality for k ≥ 4.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-e421e",
+      "order": 33,
+      "question": "Consider the statement $P(n): 1 + x + x^2 + ... + x^{n-1} = \\frac{x^n - 1}{x - 1}$, for $x \\neq 1$. To prove this statement using the Principle of Mathematical Induction, the first step is to verify the base case $P(1)$. Which of the following correctly represents $P(1)$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1 = \\frac{x^0 - 1}{x - 1}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "For $n=1$, the RHS should be $\\frac{x^1 - 1}{x - 1}$, not $\\frac{x^0 - 1}{x - 1}$."
+        },
+        {
+          "letter": "B",
+          "text": "$1 + x = \\frac{x^2 - 1}{x - 1}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This represents $P(2)$, not $P(1)$. The LHS for $P(1)$ should only have the first term."
+        },
+        {
+          "letter": "C",
+          "text": "$1 = \\frac{x^1 - 1}{x - 1}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "For $n=1$, the LHS is $1$ and the RHS simplifies to $1$, so this is the correct representation of $P(1)$."
+        },
+        {
+          "letter": "D",
+          "text": "$x = \\frac{x^1 - 1}{x - 1}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The LHS for $P(1)$ should be $1$, not $x$. The RHS simplifies to $1$, so this is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The statement $P(n)$ represents the sum of the first $n$ terms of a geometric progression with first term 1 and common ratio $x$. For $n=1$, the left-hand side (LHS) of $P(n)$ is the sum of the first term only, which is $x^{1-1} = x^0 = 1$. The right-hand side (RHS) of $P(n)$ for $n=1$ is $\\frac{x^1 - 1}{x - 1} = \\frac{x - 1}{x - 1} = 1$. Thus, $P(1)$ is $1 = 1$.",
+      "hint": "Substitute $n=1$ in the given statement $P(n)$ and simplify both sides.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-e67b6",
+      "order": 34,
+      "question": "When proving the formula for the sum of the first 'n' terms of a Geometric Progression, $S_n = \\frac{a(r^n - 1)}{r - 1}$ (where $r \\neq 1$), using the Principle of Mathematical Induction, which of the following statements correctly describes the **inductive step**?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Verify that the formula holds for $n=1$, i.e., $S_1 = a$.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This describes the base case, not the inductive step."
+        },
+        {
+          "letter": "B",
+          "text": "Assume the formula holds for $n=k$, and then prove it holds for $n=k+1$.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct description of the inductive step in mathematical induction."
+        },
+        {
+          "letter": "C",
+          "text": "Show that $S_k + ar^k = \\frac{a(r^{k+1} - 1)}{r - 1}$.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a step within the inductive step but does not fully describe the inductive step itself."
+        },
+        {
+          "letter": "D",
+          "text": "Derive the formula for $S_n$ directly using the method of differences.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is an alternative method to derive the formula, not related to the inductive step."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Principle of Mathematical Induction involves two main steps: the base case (verifying the formula for n=1) and the inductive step (assuming the formula holds for n=k and proving it for n=k+1). The inductive step is where we use the assumption for n=k to establish the truth for n=k+1.",
+      "hint": "Recall that the inductive step in mathematical induction involves assuming the statement is true for some arbitrary positive integer k and then proving it for k+1.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786276850821-7f23d",
+      "order": 35,
+      "question": "In the context of the Principle of Mathematical Induction, what is the primary purpose of the **base case**?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To prove the formula for all natural numbers without any assumptions.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The base case alone cannot prove the formula for all natural numbers; it only verifies the initial step."
+        },
+        {
+          "letter": "B",
+          "text": "To verify that the formula holds for the smallest value of n (usually n=1).",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the primary purpose of the base case in mathematical induction."
+        },
+        {
+          "letter": "C",
+          "text": "To assume the formula holds for an arbitrary natural number k.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This describes the inductive hypothesis, not the base case."
+        },
+        {
+          "letter": "D",
+          "text": "To derive the general formula for the sum of the first n terms.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The base case does not derive the general formula; it only checks the initial condition."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The base case in mathematical induction serves to verify that the statement holds true for the smallest value of n (usually n=1). This is essential because the inductive step relies on the assumption that the statement is true for some arbitrary k, starting from the base case.",
+      "hint": "The base case is the foundation of the induction process and ensures the statement is true for the initial value.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    }
+  ]
+}
