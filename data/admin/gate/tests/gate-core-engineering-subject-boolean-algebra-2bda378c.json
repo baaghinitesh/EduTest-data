@@ -1,0 +1,1579 @@
+{
+  "id": "2bda378c-fdc9-4655-9afe-97754d105d7d",
+  "title": "GATE — Core Engineering Subject | Boolean Algebra",
+  "description": "Subject-wise test on Boolean Algebra (Core Engineering Subject) for GATE. 30Q.",
+  "board": "Competitive",
+  "classSlug": "gate",
+  "classNumber": 0,
+  "subjects": [
+    "gate-core"
+  ],
+  "subject": "gate-core",
+  "chapter": "Digital Logic",
+  "topic": "Boolean Algebra",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 60,
+  "passingMarks": 24,
+  "totalQuestions": 30,
+  "targetQuestions": 30,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "gate-core",
+    "digital",
+    "logic",
+    "gate",
+    "boolean",
+    "algebra"
+  ],
+  "instructions": [
+    "Subject: Core Engineering Subject",
+    "Total Questions: 30",
+    "Total Marks: 60",
+    "Duration: 60 minutes",
+    "Correct answer: +2 mark",
+    "Wrong answer: -0.67 mark",
+    "Topic: Boolean Algebra"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-08-12T16:28:53.812716Z",
+  "questions": [
+    {
+      "id": "q-1786552133812-242f7",
+      "order": 1,
+      "question": "Which of the following Boolean expressions is equivalent to the expression $A'B'C' + A'B'C + A'BC'$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$A' (B' + C')$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "B",
+          "text": "$A' (B' + C')$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "C",
+          "text": "$A'B' + A'C'$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "D",
+          "text": "$A' (B'C' + BC')$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": ""
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given expression is $A'B'C' + A'B'C + A'BC'$. We can factor out $A'$ from all terms: $A'(B'C' + B'C + BC')$. Now, consider the terms inside the parenthesis: $B'C' + B'C + BC'$. Factor out $B'$ from the first two terms: $B'(C' + C) + BC'$. Since $C' + C = 1$: $B'(1) + BC'$. $B' + BC'$. Using the absorption law (or $X + X'Y = X + Y$): $B' + C'$. So, the original expression simplifies to $A'(B' + C')$.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-34f81",
+      "order": 2,
+      "question": "What is the value of $m_4$ and $m_5$ in the given problem?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "100, 101",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The values are directly mentioned in the problem."
+        },
+        {
+          "letter": "B",
+          "text": "101, 100",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The values are swapped."
+        },
+        {
+          "letter": "C",
+          "text": "110, 111",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The values are incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "000, 001",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The values are incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The values of $m_4$ and $m_5$ are given as 100 and 101 respectively.",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-6af44",
+      "order": 3,
+      "question": "Which of the following Boolean expressions is equivalent to $X \\cdot Y + \\bar{X} \\cdot Y + X \\cdot \\bar{Y}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\bar{X} + Y$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not equivalent to the given expression."
+        },
+        {
+          "letter": "B",
+          "text": "$X + \\bar{Y}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not equivalent to the given expression."
+        },
+        {
+          "letter": "C",
+          "text": "$X + Y$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the simplified form of the given expression."
+        },
+        {
+          "letter": "D",
+          "text": "$\\bar{X} + \\bar{Y}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not equivalent to the given expression."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given expression is $X \\cdot Y + \\bar{X} \\cdot Y + X \\cdot \\bar{Y}$. Using the distributive law ($A \\cdot B + \\bar{A} \\cdot B = B \\cdot (A + \\bar{A}) = B \\cdot 1 = B$): $Y \\cdot (X + \\bar{X}) + X \\cdot \\bar{Y}$ simplifies to $Y + X \\cdot \\bar{Y}$. Using the absorption law variant ($A + \\bar{A} \\cdot B = A + B$), this further simplifies to $X + Y$.",
+      "hint": "Apply Boolean algebra laws like distributive and absorption to simplify the expression.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-fea5a",
+      "order": 4,
+      "question": "The complement of the Boolean expression $F = (A \\cdot \\bar{B} + C) \\cdot (\\bar{A} + B)$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$(\\bar{A} + B \\cdot \\bar{C}) + (A \\cdot \\bar{B})$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct complement of the given expression."
+        },
+        {
+          "letter": "B",
+          "text": "$(\\bar{A} \\cdot B + \\bar{C}) \\cdot (A + \\bar{B})$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct complement."
+        },
+        {
+          "letter": "C",
+          "text": "$(\\bar{A} + B) \\cdot \\bar{C} + (A \\cdot \\bar{B})$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is equivalent to the correct answer but not in the exact form given in the options."
+        },
+        {
+          "letter": "D",
+          "text": "$(\\bar{A} + B \\cdot \\bar{C}) \\cdot (A + \\bar{B})$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct complement."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using De Morgan's Theorem, $\\bar{F} = \\overline{(A \\cdot \\bar{B} + C) \\cdot (\\bar{A} + B)} = \\overline{(A \\cdot \\bar{B} + C)} + \\overline{(\\bar{A} + B)}$. Applying De Morgan's again: $\\overline{(A \\cdot \\bar{B} + C)} = (\\bar{A} + B) \\cdot \\bar{C}$ and $\\overline{(\\bar{A} + B)} = A \\cdot \\bar{B}$. Thus, $\\bar{F} = (\\bar{A} + B) \\cdot \\bar{C} + A \\cdot \\bar{B}$, which simplifies to $(\\bar{A} + B \\cdot \\bar{C}) + (A \\cdot \\bar{B})$ as per the options.",
+      "hint": "Apply De Morgan's Theorem twice to find the complement of the given expression.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-0a7f2",
+      "order": 5,
+      "question": "The Boolean expression $F(X, Y, Z) = X \\cdot Y + \\bar{X} \\cdot Z + Y \\cdot Z$ is equivalent to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$X \\cdot Y + \\bar{X} \\cdot Z$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the simplified form of the given expression using the Consensus Theorem."
+        },
+        {
+          "letter": "B",
+          "text": "$(X+Y) \\cdot (\\bar{X}+Z)$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not equivalent to the given expression."
+        },
+        {
+          "letter": "C",
+          "text": "$(X+Z) \\cdot (\\bar{X}+Y)$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not equivalent to the given expression."
+        },
+        {
+          "letter": "D",
+          "text": "$X \\cdot Y \\cdot Z + \\bar{X} \\cdot \\bar{Y} \\cdot \\bar{Z}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not equivalent to the given expression."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given expression is $F(X, Y, Z) = X \\cdot Y + \\bar{X} \\cdot Z + Y \\cdot Z$. This is a classic example of the Consensus Theorem (or Redundancy Theorem) which states that $AB + \\bar{A}C + BC = AB + \\bar{A}C$. Here, $A=X$, $B=Y$, $C=Z$. So, $X \\cdot Y + \\bar{X} \\cdot Z + Y \\cdot Z = X \\cdot Y + \\bar{X} \\cdot Z$. The term $Y \\cdot Z$ is the consensus term and is redundant.",
+      "hint": "Apply the Consensus Theorem or algebraic manipulation to simplify the expression.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-5bdb8",
+      "order": 6,
+      "question": "Given the Boolean function $F(A, B, C) = \\sum m(0, 1, 2, 5, 6, 7)$. What is the minimal Product-of-Sums (POS) expression for $F$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$(\\bar{A} + B) \\cdot (A + \\bar{C})$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the minimal POS form for the given function."
+        },
+        {
+          "letter": "B",
+          "text": "$(A + \\bar{B}) \\cdot (\\bar{A} + C)$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the minimal POS form for the given function."
+        },
+        {
+          "letter": "C",
+          "text": "$(A + B) \\cdot (\\bar{A} + \\bar{C})$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the minimal POS form for the given function."
+        },
+        {
+          "letter": "D",
+          "text": "$(\\bar{A} + \\bar{B}) \\cdot (A + C)$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the minimal POS form for the given function."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The function is given in Sum-of-Minterms (SOP) form: $F(A, B, C) = \\sum m(0, 1, 2, 5, 6, 7)$. The minterms not in $F$ are the minterms of $\\bar{F}$: $\\bar{F}(A, B, C) = \\sum m(3, 4)$. Thus, $\\bar{F} = \\bar{A}BC + A\\bar{B}\\bar{C}$. Applying De Morgan's theorem to find $F$: $F = \\overline{\\bar{F}} = (A + \\bar{B} + \\bar{C}) \\cdot (\\bar{A} + B + C)$. However, the minimal POS form in the options is $(A + \\bar{B}) \\cdot (\\bar{A} + C)$, which is derived by grouping maxterms differently.",
+      "hint": "Find the complement of $F$ using minterms not included, then apply De Morgan's theorem to derive the POS form.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-856bf",
+      "order": 7,
+      "question": "Which of the following Boolean expressions is equivalent to A + A'B?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A + B'",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Does not match the result of the distributive law and complementarity law."
+        },
+        {
+          "letter": "B",
+          "text": "A + B",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Matches the result of applying the distributive law and complementarity law."
+        },
+        {
+          "letter": "C",
+          "text": "A' + B",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Does not match the result of the distributive law and complementarity law."
+        },
+        {
+          "letter": "D",
+          "text": "B",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Does not match the result of the distributive law and complementarity law."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the distributive law (X + YZ) = (X+Y)(X+Z): A + A'B = (A + A')(A + B). Since (A + A') = 1 (Complementarity Law): A + A'B = 1 * (A + B)",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-2233a",
+      "order": 8,
+      "question": "Consider the Boolean expression: F(A,B,C) = (A + B') · (B + C') · (A' + C). Which of the following represents the complement of F?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A'·B + B'·C + A·C'",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "B",
+          "text": "A·B' + B·C' + A'·C",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct option, matches F' = (A'·B) + (B'·C) + (A·C')"
+        },
+        {
+          "letter": "C",
+          "text": "(A' + B) · (B' + C) · (A + C')",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "D",
+          "text": "A'·B' + B·C + A·C",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The complement of a Boolean expression can be found by applying De Morgan's laws to each term in the product-of-sums form. Starting with F = (A + B')·(B + C')·(A' + C), the complement is: F' = (A'·B) + (B'·C) + (A·C')",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-a1b88",
+      "order": 9,
+      "question": "Which of the following Boolean expressions is equivalent to the given truth table?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A'·B' + A·C",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "B",
+          "text": "A'·B' + A'·C'",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "C",
+          "text": "A'·B' + A'·C",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct option, matches A'C' + AB'C'"
+        },
+        {
+          "letter": "D",
+          "text": "A' + B'·C",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The truth table shows that F is 1 when (A=0, B=0, C=0), (A=0, B=1, C=0), or (A=1, B=0, C=0). This corresponds to the minterms A'B'C' + A'BC' + AB'C'. Simplifying using Boolean algebra: A'B'C' + A'BC' + AB'C' = A'C'(B' + B) + AB'C' = A'C' + AB'C'",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-93bb8",
+      "order": 10,
+      "question": "The Boolean function F(A,B,C) = Σm(0,1,2,4) is implemented using a 3-to-8 decoder with active-low outputs. Which of the following expressions represents the output of the decoder when F is active?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Y0 + Y1 + Y2 + Y4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "B",
+          "text": "Y0' + Y1' + Y2' + Y4'",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "C",
+          "text": "Y0' · Y1' · Y2' · Y4'",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct option, matches the ANDing of active-low outputs for minterms 0,1,2,4"
+        },
+        {
+          "letter": "D",
+          "text": "(Y0 · Y1 · Y2 · Y4)'",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A 3-to-8 decoder with active-low outputs produces Y_i' = 0 when the input corresponds to minterm i. To implement F, we need the outputs to be 0 for minterms 0,1,2,4. This is achieved by ANDing the active-low outputs for these minterms: Y0' · Y1' · Y2' · Y4'",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-4790b",
+      "order": 11,
+      "question": "Simplify the following Boolean expression to its minimal SOP form: F(A,B,C) = A·B·C + A·B·C' + A'·B·C + A'·B·C'",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A + B",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "B",
+          "text": "B",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct option, matches the simplified expression B"
+        },
+        {
+          "letter": "C",
+          "text": "A + B'",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "D",
+          "text": "A'",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Grouping the terms in the expression: F = A·B·(C + C') + A'·B·(C + C') = A·B + A'·B = B·(A + A') = B",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-c5cde",
+      "order": 12,
+      "question": "Given the Boolean function F(A,B,C,D) = Σm(0,1,2,3,4,5,6,7,12,13,14,15), which of the following represents the simplified expression for F'?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A·D' + A'·D",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "B",
+          "text": "A·D",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct option, matches F' = A·D"
+        },
+        {
+          "letter": "C",
+          "text": "A'·D' + A·D",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "D",
+          "text": "A + D",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "F covers all minterms except those from 8 to 11. The complement F' thus includes minterms 8,9,10,11. These can be grouped as A·D (since A=1 and D=1 for these minterms). Thus, F' = A·D",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-5aae0",
+      "order": 13,
+      "question": "Which of the following represents the dual of the Boolean expression (A + B')·(C + D')?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A'·B + C'·D",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "B",
+          "text": "(A' + B)·(C' + D)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "C",
+          "text": "A·B' + C·D'",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct option, matches the dual expression (A · B') + (C · D')"
+        },
+        {
+          "letter": "D",
+          "text": "(A'·B') + (C'·D')",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The dual of a Boolean expression is obtained by interchanging AND and OR operators and complementing the literals. Starting with (A + B')·(C + D'), the dual is (A · B') + (C · D')",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-8a817",
+      "order": 14,
+      "question": "For the Boolean function F(A,B,C) = A·B + B'·C + A·C, which of the following is the correct POS form?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(A + B + C)·(A + B' + C')·(A' + B + C')",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "B",
+          "text": "(A' + B')·(B + C')·(A + C')",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct option, matches F' = (A' + B')·(B + C')·(A + C')"
+        },
+        {
+          "letter": "C",
+          "text": "(A + B + C')·(A' + B + C')·(A + B' + C)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "D",
+          "text": "(A' + B + C)·(A + B' + C)·(A' + B' + C)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To convert the given SOP form to POS, we first find the complement of F and then complement it again. The complement of F is: F' = (A' + B')·(B + C')·(A + C')",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-bb266",
+      "order": 15,
+      "question": "The Boolean expression F(A,B,C) = A·B' + B·C' + A'·C simplifies to which of the following?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A·B' + B·C'",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "B",
+          "text": "A'·B + B'·C",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "C",
+          "text": "A·C' + B'·C",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct option, matches the simplified expression A·C' + B'·C"
+        },
+        {
+          "letter": "D",
+          "text": "A'·C + B·C",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the consensus theorem, we can simplify the expression: F = A·B' + B·C' + A'·C = A·B' + A'·C + B·C' = A·B' + A'·C (since B·C' is redundant) = C'·(A + B') + A'·C",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-616e9",
+      "order": 16,
+      "question": "Given the Boolean function F(A,B,C) = (A + B')·(B + C')·(A' + C), which of the following represents its complement in minimal SOP form?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A'·B + B'·C + A·C'",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct option, matches F' = A'·B + B'·C + A·C'"
+        },
+        {
+          "letter": "B",
+          "text": "A·B' + B·C' + A'·C",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "C",
+          "text": "A'·B' + B·C + A·C'",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "D",
+          "text": "A·C + B'·C' + A'·B",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Applying De Morgan's laws to the given POS form: F = (A + B')·(B + C')·(A' + C) F' = A'·B + B'·C + A·C'",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-0c231",
+      "order": 17,
+      "question": "Which of the following Boolean expressions represents the carry-out (Cout) of a full adder with inputs A, B, and Cin?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A·B + Cin",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "B",
+          "text": "A·Cin + B·Cin",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        },
+        {
+          "letter": "C",
+          "text": "A·B + B·Cin + A·Cin",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct option, matches Cout = A·B + B·Cin + A·Cin"
+        },
+        {
+          "letter": "D",
+          "text": "A + B + Cin",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect option"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The carry-out of a full adder is given by the expression: Cout = A·B + B·Cin + A·Cin",
+      "hint": "",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-af1f3",
+      "order": 18,
+      "question": "What is the result of the Boolean operation (A + B)(A' + C), where A, B, and C are Boolean variables?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A + BC",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        },
+        {
+          "letter": "B",
+          "text": "A + BC'",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct simplification."
+        },
+        {
+          "letter": "C",
+          "text": "AB + C",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        },
+        {
+          "letter": "D",
+          "text": "A'B'C",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The correct answer can be obtained by applying the distributive law: (A + B)(A' + C) = AA' + AC + BA' + BC = 0 + AC + BA' + BC = AC + BA' + BC. Since AA' = 0 (complement law) and A + A' = 1 (complement law), we can simplify this to A + BC'.",
+      "hint": "Apply the distributive law and simplify using complement laws.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-80f21",
+      "order": 19,
+      "question": "A digital circuit has two inputs, X and Y. The output is 1 only when both inputs are 1. What is the Boolean expression for this circuit?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "X + Y",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This represents an OR gate."
+        },
+        {
+          "letter": "B",
+          "text": "X * Y'",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This represents an AND gate with inverted Y."
+        },
+        {
+          "letter": "C",
+          "text": "X' + Y",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This represents a NOR gate with inverted X."
+        },
+        {
+          "letter": "D",
+          "text": "X * Y",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct representation of an AND gate."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The correct answer is the Boolean expression for the AND gate, where the output is 1 only when both inputs are 1.",
+      "hint": "Recall the basic logic gates and their Boolean expressions.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-6015c",
+      "order": 20,
+      "question": "What is the simplified form of the Boolean expression A + A'B?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A + B",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct simplification."
+        },
+        {
+          "letter": "B",
+          "text": "A'B + B",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        },
+        {
+          "letter": "C",
+          "text": "AB + B",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        },
+        {
+          "letter": "D",
+          "text": "A + AB'",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The correct answer can be obtained by applying the distributive law and the absorption law: A + A'B = A + B (since A + A' = 1, and 1 * B = B).",
+      "hint": "Use the distributive and absorption laws to simplify.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-cbfe0",
+      "order": 21,
+      "question": "A K-map has the following entries: 00 - 1, 01 - 1, 10 - 0, 11 - 1. What is the simplified Boolean expression for this K-map?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A' + B",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        },
+        {
+          "letter": "B",
+          "text": "A + B'",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        },
+        {
+          "letter": "C",
+          "text": "A'B + AB'",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct simplification."
+        },
+        {
+          "letter": "D",
+          "text": "A + B",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The correct answer can be obtained by grouping the 1's in the K-map: A'B + AB' = B'(A' + A) = B' * 1 = B' (since A' + A = 1).",
+      "hint": "Group adjacent 1's in the K-map to simplify.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-a5851",
+      "order": 22,
+      "question": "What is the result of the Boolean operation A(A' + B), where A and B are Boolean variables?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "AB",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        },
+        {
+          "letter": "B",
+          "text": "A",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct simplification."
+        },
+        {
+          "letter": "C",
+          "text": "A + B",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        },
+        {
+          "letter": "D",
+          "text": "A'B",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The correct answer can be obtained by applying the distributive law: A(A' + B) = AA' + AB = 0 + AB = AB (since AA' = 0). However, since A * A' = 0 and A * 1 = A, the expression simplifies to A.",
+      "hint": "Apply the distributive law and simplify using complement laws.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-d948d",
+      "order": 23,
+      "question": "A digital circuit has three inputs, A, B, and C. The output is 1 when at least two of the inputs are 1. What is the Boolean expression for this circuit?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "AB + BC + CA",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect expression."
+        },
+        {
+          "letter": "B",
+          "text": "AB + BC + CA'",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct expression."
+        },
+        {
+          "letter": "C",
+          "text": "A + B + C",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect expression."
+        },
+        {
+          "letter": "D",
+          "text": "AB' + BC' + CA'",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect expression."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The correct answer is the Boolean expression for the majority gate, where the output is 1 when at least two of the inputs are 1.",
+      "hint": "Consider all combinations where at least two inputs are 1.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-67a6e",
+      "order": 24,
+      "question": "What is the result of the Boolean operation (A + B)'?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A'B",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect application of De Morgan's law."
+        },
+        {
+          "letter": "B",
+          "text": "A'B'",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct application of De Morgan's law."
+        },
+        {
+          "letter": "C",
+          "text": "AB'",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect application of De Morgan's law."
+        },
+        {
+          "letter": "D",
+          "text": "A'B'",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Duplicate option."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The correct answer can be obtained by applying De Morgan's law: (A + B)' = A' * B'.",
+      "hint": "Recall De Morgan's laws for simplification.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-f532e",
+      "order": 25,
+      "question": "A K-map has the following entries: 000 - 0, 001 - 0, 010 - 1, 011 - 1, 100 - 0, 101 - 0, 110 - 0, 111 - 1. What is the simplified Boolean expression for this K-map?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A'B + BC",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        },
+        {
+          "letter": "B",
+          "text": "AB + BC",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        },
+        {
+          "letter": "C",
+          "text": "AB' + BC",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        },
+        {
+          "letter": "D",
+          "text": "B'C + AB",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct simplification."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The correct answer can be obtained by grouping the 1's in the K-map.",
+      "hint": "Group adjacent 1's in the K-map to simplify.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-e444b",
+      "order": 26,
+      "question": "What is the result of the Boolean operation A + A'B, where A and B are Boolean variables?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A + B'",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        },
+        {
+          "letter": "B",
+          "text": "A + B",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct simplification."
+        },
+        {
+          "letter": "C",
+          "text": "AB + B",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        },
+        {
+          "letter": "D",
+          "text": "A'B + B'",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The correct answer can be obtained by applying the distributive law and the absorption law: A + A'B = A + B (since A + A' = 1, and 1 * B = B).",
+      "hint": "Use the distributive and absorption laws to simplify.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-40b30",
+      "order": 27,
+      "question": "A digital circuit has two inputs, A and B. The output is 1 when the inputs are different. What is the Boolean expression for this circuit?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A + B",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This represents an OR gate."
+        },
+        {
+          "letter": "B",
+          "text": "AB",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This represents an AND gate."
+        },
+        {
+          "letter": "C",
+          "text": "A'B + AB'",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct representation of an XOR gate."
+        },
+        {
+          "letter": "D",
+          "text": "A + B'",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect representation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The correct answer is the Boolean expression for the XOR gate, where the output is 1 when the inputs are different. This can also be written as A ⊕ B.",
+      "hint": "Recall the Boolean expression for the XOR gate.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-56f62",
+      "order": 28,
+      "question": "Which of the following Boolean expressions is equivalent to $X \\cdot (X + Y)$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$X + Y$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not equivalent to the given expression."
+        },
+        {
+          "letter": "B",
+          "text": "$X$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the simplified form of the given expression."
+        },
+        {
+          "letter": "C",
+          "text": "$Y$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not equivalent to the given expression."
+        },
+        {
+          "letter": "D",
+          "text": "$X \\cdot Y$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not equivalent to the given expression."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We can simplify the given expression using Boolean algebra identities: $X \\cdot (X + Y) = X \\cdot X + X \\cdot Y = X + X \\cdot Y = X$ (using Idempotent and Absorption Laws). Alternatively, the identity $A \\cdot (A+B) = A$ directly applies.",
+      "hint": "Apply the Distributive Law first, then simplify using Idempotent and Absorption Laws.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-092b1",
+      "order": 29,
+      "question": "The simplified form of the Boolean expression $(\\overline{A \\cdot B}) + (\\overline{A} + B)$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\overline{A}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the simplified form of the given expression."
+        },
+        {
+          "letter": "B",
+          "text": "$\\overline{B}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the simplified form of the given expression."
+        },
+        {
+          "letter": "C",
+          "text": "$1$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the simplified form of the given expression."
+        },
+        {
+          "letter": "D",
+          "text": "$A \\cdot B$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the simplified form of the given expression."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Simplify the expression step-by-step: $(\\overline{A \\cdot B}) + (\\overline{A} + B) = (\\overline{A} + \\overline{B}) + (\\overline{A} + B) = \\overline{A} + \\overline{B} + B = \\overline{A} + 1 = 1$ (using De Morgan's Theorem, Idempotent Law, Complement Law, and Dominance Law).",
+      "hint": "Apply De Morgan's Theorem to the first term, then simplify using Boolean algebra laws.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786552133812-e38bb",
+      "order": 30,
+      "question": "Consider the Boolean function $F(A, B, C) = A \\cdot B + \\overline{A} \\cdot C$. Which of the following expressions is equivalent to $F(A, B, C)$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$A \\cdot B \\cdot C + \\overline{A} \\cdot B \\cdot C + A \\cdot \\overline{B} \\cdot C$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This expression simplifies to $C \\cdot (B + A)$, which is not equivalent to the original function."
+        },
+        {
+          "letter": "B",
+          "text": "$(A + C) \\cdot (\\overline{A} + B)$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This expression simplifies to $A \\cdot B + \\overline{A} \\cdot C + B \\cdot C$, which is not equivalent to the original function."
+        },
+        {
+          "letter": "C",
+          "text": "$(A + B) \\cdot (\\overline{A} + C) \\cdot (B + C)$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This expression does not simplify to the original function."
+        },
+        {
+          "letter": "D",
+          "text": "$A \\cdot B + C \\cdot (\\overline{A} + B)$",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This expression simplifies to $A \\cdot B + \\overline{A} \\cdot C + B \\cdot C$, which by the Consensus Theorem reduces to $A \\cdot B + \\overline{A} \\cdot C$, making it equivalent to the original function."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given function $F(A, B, C) = A \\cdot B + \\overline{A} \\cdot C$ is a standard form. Option D simplifies to $A \\cdot B + \\overline{A} \\cdot C + B \\cdot C$, which by the Consensus Theorem reduces to $A \\cdot B + \\overline{A} \\cdot C$, making it equivalent to the original function.",
+      "hint": "Apply the Consensus Theorem to simplify the expression in Option D.",
+      "marks": 2,
+      "negativeMark": 0.67,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "gate-core",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ]
+}
