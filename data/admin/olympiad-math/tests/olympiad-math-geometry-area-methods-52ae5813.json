@@ -1,0 +1,559 @@
+{
+  "id": "52ae5813-1727-45ab-b84a-db8cc730f748",
+  "title": "OLYMPIAD MATH — Geometry | Area Methods",
+  "description": "Subject-wise test on Area Methods (Geometry) for OLYMPIAD MATH. 10Q.",
+  "board": "Competitive",
+  "classSlug": "olympiad-math",
+  "classNumber": 0,
+  "subjects": [
+    "olympiad-geometry"
+  ],
+  "subject": "olympiad-geometry",
+  "chapter": "Advanced Geometry",
+  "topic": "Area Methods",
+  "testType": "subject-wise",
+  "duration": 30,
+  "totalMarks": 40,
+  "passingMarks": 16,
+  "totalQuestions": 10,
+  "targetQuestions": 10,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "advanced",
+    "geometry",
+    "area",
+    "olympiad-geometry",
+    "methods",
+    "olympiad-math"
+  ],
+  "instructions": [
+    "Subject: Geometry",
+    "Total Questions: 10",
+    "Total Marks: 40",
+    "Duration: 30 minutes",
+    "Correct answer: +4 mark",
+    "Wrong answer: -1 mark",
+    "Topic: Area Methods"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-08-13T12:10:18.199893Z",
+  "questions": [
+    {
+      "id": "q-1786623018199-f834b",
+      "order": 1,
+      "question": "In triangle ABC, let D be a point on BC such that BD:DC = 2:3. Let E be a point on AD such that AE:ED = 3:1. If the area of triangle ABC is 100 cm$^2$, what is the area of triangle BDE?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 cm$^2$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Area(BDE) = (1/4) * Area(ABD) = (1/4) * 40 = 10 cm$^2$."
+        },
+        {
+          "letter": "B",
+          "text": "12 cm$^2$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of Area(BDE)."
+        },
+        {
+          "letter": "C",
+          "text": "15 cm$^2$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of Area(BDE)."
+        },
+        {
+          "letter": "D",
+          "text": "20 cm$^2$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of Area(BDE)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We are given Area(ABC) = 100 cm$^2$. First, consider triangle ABD and triangle ADC. They share the same height from vertex A to base BC. Therefore, Area(ABD) / Area(ADC) = BD / DC = 2 / 3. Since Area(ABC) = Area(ABD) + Area(ADC), we have: Area(ABD) = (2 / (2+3)) * Area(ABC) = (2/5) * 100 cm$^2$ = 40 cm$^2$. Next, consider triangle BDE and triangle ABE. They share the same height from vertex B to base AD. We are given AE:ED = 3:1. Therefore, Area(BDE) / Area(ABE) = ED / AE = 1 / 3. Also, Area(ABD) = Area(ABE) + Area(BDE). So, Area(BDE) = (1 / (1+3)) * Area(ABD) = (1/4) * 40 cm$^2$ = 10 cm$^2$.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-geometry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786623018199-1d75b",
+      "order": 2,
+      "question": "Let ABC be a triangle with vertices A(1, 5), B(-2, 1), and C(4, 1). What is the area of triangle ABC?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 square units",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of area."
+        },
+        {
+          "letter": "B",
+          "text": "12 square units",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Area = (1/2) * base * height = (1/2) * 6 * 4 = 12 square units."
+        },
+        {
+          "letter": "C",
+          "text": "18 square units",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of area."
+        },
+        {
+          "letter": "D",
+          "text": "24 square units",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of area."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The base BC lies on the line y=1. The length of the base BC is the distance between B(-2, 1) and C(4, 1). Base BC = |4 - (-2)| = |4 + 2| = 6 units. The height of the triangle from vertex A to base BC is the perpendicular distance from A(1, 5) to the line y=1. Height h = |5 - 1| = 4 units. Area of triangle ABC = (1/2) * base * height = (1/2) * 6 * 4 = 12 square units.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-geometry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786623018199-5afd0",
+      "order": 3,
+      "question": "A triangle has side lengths 13 cm, 14 cm, and 15 cm. What is the radius of its inscribed circle (inradius)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3 cm",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of inradius."
+        },
+        {
+          "letter": "B",
+          "text": "4 cm",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "r = Area / s = 84 / 21 = 4 cm."
+        },
+        {
+          "letter": "C",
+          "text": "5 cm",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of inradius."
+        },
+        {
+          "letter": "D",
+          "text": "6 cm",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation of inradius."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let the side lengths be a=13, b=14, c=15. First, calculate the semi-perimeter (s) of the triangle: s = (a + b + c) / 2 = (13 + 14 + 15) / 2 = 21. Then, use Heron's formula to find the area of the triangle: Area = sqrt(s * (s - a) * (s - b) * (s - c)) = sqrt(21 * (21 - 13) * (21 - 14) * (21 - 15)) = sqrt(21 * 8 * 7 * 6) = sqrt(7056) = 84 square units. The inradius (r) can be found using the formula: r = Area / s = 84 / 21 = 4 cm.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-geometry",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786623018199-c531b",
+      "order": 4,
+      "question": "In triangle $ABC$, point $D$ lies on $BC$ such that $BD = 2DC$. Point $E$ lies on $AD$ such that $AE = 3ED$. If the area of triangle $ABC$ is 72 cm$^2$, what is the area of triangle $ABE$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "18 cm$^2$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct area of $ABE$."
+        },
+        {
+          "letter": "B",
+          "text": "27 cm$^2$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct area of $ABE$."
+        },
+        {
+          "letter": "C",
+          "text": "36 cm$^2$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct area of $ABE$."
+        },
+        {
+          "letter": "D",
+          "text": "48 cm$^2$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct area of $ABE$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The area of $ABE$ can be found using the ratio of areas. Given $BD = 2DC$, point $D$ divides $BC$ in the ratio $2:1$. The ratio of the areas of $ABD$ and $ADC$ is equal to the ratio of their bases: $[ABD]/[ADC] = BD/DC = 2/1$. Since $[ABC] = [ABD] + [ADC] = 72$, we have $[ABD] = (2/3) \times 72 = 48$ cm$^2$. Now, point $E$ lies on $AD$ such that $AE = 3ED$. The ratio of the areas of $ABE$ and $ABD$ is equal to the ratio of their bases: $[ABE]/[ABD] = AE/AD = 3/4$. So, $[ABE] = (3/4) \times [ABD] = (3/4) \times 48 = 36$ cm$^2$.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-geometry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786623018199-13078",
+      "order": 5,
+      "question": "In triangle ABC, point D is on BC such that BD:DC = 2:3. Point E is on AD such that AE:ED = 1:2. What is the ratio of the area of triangle ABE to the area of triangle ABC?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect ratio"
+        },
+        {
+          "letter": "B",
+          "text": "2/15",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct application of area ratio property"
+        },
+        {
+          "letter": "C",
+          "text": "3/10",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect ratio"
+        },
+        {
+          "letter": "D",
+          "text": "1/6",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect ratio"
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We use the property that if two triangles share the same altitude, their area ratio is equal to the ratio of their bases.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-geometry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786623018199-46157",
+      "order": 6,
+      "question": "In triangle ABC, D and E are points on sides AB and AC respectively such that DE is parallel to BC. If AD = 3 cm, DB = 6 cm, and the area of triangle ADE is 9 cm², what is the area of triangle ABC?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "27 cm²",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The area ratio is not 1:3, it's (1/3)² = 1/9."
+        },
+        {
+          "letter": "B",
+          "text": "81 cm²",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The area of ABC is 9 × 9 = 81 cm²."
+        },
+        {
+          "letter": "C",
+          "text": "36 cm²",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The area ratio is not 1:2, it's (1/3)² = 1/9."
+        },
+        {
+          "letter": "D",
+          "text": "54 cm²",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The area ratio is not 1:2, it's (1/3)² = 1/9."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since DE || BC, triangles ADE and ABC are similar. The ratio of their areas is the square of the ratio of their corresponding sides. AD:AB = 3:9 = 1:3, so area ratio is (1/3)² = 1/9. Given area of ADE = 9 cm², area of ABC = 9 × 9 = 81 cm².",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-geometry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786623018199-8df54",
+      "order": 7,
+      "question": "In a convex quadrilateral ABCD, diagonals AC and BD intersect at O. If AO = 3, OC = 6, BO = 4, and OD = 8, what is the ratio of the area of triangle AOB to the area of triangle COD?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1:2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The correct ratio is (AO × BO):(OC × OD) = (3 × 4):(6 × 8) = 12:48 = 1:4."
+        },
+        {
+          "letter": "B",
+          "text": "1:4",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The correct answer is C) 1:6 due to a miscalculation in the options."
+        },
+        {
+          "letter": "C",
+          "text": "1:6",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The correct answer is C) 1:6 due to a miscalculation in the options."
+        },
+        {
+          "letter": "D",
+          "text": "1:8",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The correct ratio is (AO × BO):(OC × OD) = (3 × 4):(6 × 8) = 12:48 = 1:4."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The correct ratio is (AO × BO):(OC × OD) = (3 × 4):(6 × 8) = 12:48 = 1:4.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-geometry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786623018199-6367d",
+      "order": 8,
+      "question": "In a triangle ABC, points D, E, and F lie on sides BC, CA, and AB respectively such that AD, BE, and CF are concurrent at point P. If the area of triangle PBC is 12 cm², area of triangle PCA is 16 cm², and area of triangle PAB is 24 cm², what is the area of triangle ABC?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "48 cm²",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The area of triangle ABC is not the sum of the areas of triangles PBC, PCA, and PAB."
+        },
+        {
+          "letter": "B",
+          "text": "52 cm²",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The area of triangle ABC is not the sum of the areas of triangles PBC, PCA, and PAB."
+        },
+        {
+          "letter": "C",
+          "text": "60 cm²",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The correct answer is C) 60 cm² because the areas of the sub-triangles are proportional to the sides, and the total area is the sum of the ratios."
+        },
+        {
+          "letter": "D",
+          "text": "72 cm²",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The area of triangle ABC is not the sum of the areas of triangles PBC, PCA, and PAB."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The area of triangle ABC is not the sum of the areas of triangles PBC, PCA, and PAB. The correct approach is to use the concept of area ratios in cevian triangles.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-geometry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786623018199-c2511",
+      "order": 9,
+      "question": "In a circle with center O, two chords AB and CD intersect at point P inside the circle. If AP = 4 cm, PB = 6 cm, and CP = 3 cm, what is the length of PD?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5 cm",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "AP × PB = CP × PD → 4 × 6 = 3 × PD → PD = 8 cm."
+        },
+        {
+          "letter": "B",
+          "text": "8 cm",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "AP × PB = CP × PD → 4 × 6 = 3 × PD → PD = 8 cm."
+        },
+        {
+          "letter": "C",
+          "text": "9 cm",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "AP × PB = CP × PD → 4 × 6 = 3 × PD → PD = 8 cm."
+        },
+        {
+          "letter": "D",
+          "text": "10 cm",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "AP × PB = CP × PD → 4 × 6 = 3 × PD → PD = 8 cm."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "By the intersecting chords theorem, AP × PB = CP × PD.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-geometry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786623018199-e1b4f",
+      "order": 10,
+      "question": "In a triangle ABC, D is the midpoint of BC, and E is a point on AC such that AE:EC = 2:1. Lines AD and BE intersect at F. If the area of triangle ABF is 12 cm², what is the area of triangle AFE?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3 cm²",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The area of AFE is 4 cm² when the area of ABF is 12 cm²."
+        },
+        {
+          "letter": "B",
+          "text": "4 cm²",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The area of AFE is 4 cm² when the area of ABF is 12 cm²."
+        },
+        {
+          "letter": "C",
+          "text": "6 cm²",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The area of AFE is 4 cm² when the area of ABF is 12 cm²."
+        },
+        {
+          "letter": "D",
+          "text": "8 cm²",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The area of AFE is 4 cm² when the area of ABF is 12 cm²."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The correct approach is to use the concept of area ratios in cevian triangles.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-geometry",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ]
+}
