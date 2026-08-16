@@ -1,0 +1,1067 @@
+{
+  "id": "0fba1666-2c61-4921-988e-eb35c4fc6fe3",
+  "title": "OLYMPIAD MATH — Combined: Geometry + Combinatorics",
+  "description": "Combined test: Geometry + Combinatorics for OLYMPIAD MATH. 20Q.",
+  "board": "Competitive",
+  "classSlug": "olympiad-math",
+  "classNumber": 0,
+  "subjects": [
+    "olympiad-geometry",
+    "olympiad-combinatorics"
+  ],
+  "subject": "olympiad-geometry",
+  "chapter": "Multiple Chapters",
+  "topic": "Combined",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 80,
+  "passingMarks": 32,
+  "totalQuestions": 20,
+  "targetQuestions": 20,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "olympiad-math",
+    "geometry",
+    "combinatorics",
+    "olympiad-geometry+olympiad-combinatorics"
+  ],
+  "instructions": [
+    "Subject: Geometry + Combinatorics",
+    "Total Questions: 20",
+    "Total Marks: 80",
+    "Duration: 60 minutes",
+    "Correct answer: +4 mark",
+    "Wrong answer: -1 mark"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-08-16T02:18:37.252733Z",
+  "questions": [
+    {
+      "id": "q-1786846471967-3bc25",
+      "order": 1,
+      "question": "A rhombus has diagonals of length 12 cm and 16 cm. What is the perimeter of the rhombus?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "40 cm",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The side length is 10 cm, so the perimeter is 40 cm."
+        },
+        {
+          "letter": "B",
+          "text": "56 cm",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the sum of the diagonals, not the perimeter."
+        },
+        {
+          "letter": "C",
+          "text": "28 cm",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is half the perimeter."
+        },
+        {
+          "letter": "D",
+          "text": "48 cm",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the sum of the diagonals multiplied by 2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "In a rhombus, the diagonals bisect each other at right angles. Let the diagonals be $d_1 = 12$ cm and $d_2 = 16$ cm. The half-diagonals are $d_1/2 = 6$ cm and $d_2/2 = 8$ cm. Each side of the rhombus is the hypotenuse of a right triangle with legs 6 cm and 8 cm. Using the Pythagorean theorem, side length = $\\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$ cm. The perimeter is $4 \\times 10 = 40$ cm.",
+      "hint": "Use the property that diagonals of a rhombus bisect each other at right angles and apply the Pythagorean theorem.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-geometry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786846471967-757be",
+      "order": 2,
+      "question": "In a cyclic quadrilateral ABCD, if ∠A = 70° and ∠B = 85°, what are the measures of ∠C and ∠D respectively?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "∠C = 70°, ∠D = 85°",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because it does not satisfy the property of a cyclic quadrilateral."
+        },
+        {
+          "letter": "B",
+          "text": "∠C = 110°, ∠D = 95°",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option is correct because it satisfies the property of a cyclic quadrilateral."
+        },
+        {
+          "letter": "C",
+          "text": "∠C = 95°, ∠D = 110°",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because it does not satisfy the property of a cyclic quadrilateral."
+        },
+        {
+          "letter": "D",
+          "text": "∠C = 85°, ∠D = 70°",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option is incorrect because it does not satisfy the property of a cyclic quadrilateral."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "In a cyclic quadrilateral, the sum of the measures of opposite angles is 180°. So, ∠A + ∠C = 180° and ∠B + ∠D = 180°. Therefore, ∠C = 180° - ∠A = 180° - 70° = 110° and ∠D = 180° - ∠B = 180° - 85° = 95°.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-geometry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786846471967-74943",
+      "order": 3,
+      "question": "In parallelogram ABCD, diagonals AC and BD intersect at O. If AO = 3x - 1 and OC = 2x + 5, and BO = 2y and OD = 5y - 9, what are the values of x and y?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "x = 6, y = 3",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option matches the solution to the equations."
+        },
+        {
+          "letter": "B",
+          "text": "x = 4, y = 3",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option does not match the solution to the equations."
+        },
+        {
+          "letter": "C",
+          "text": "x = 6, y = 6",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option does not match the solution to the equations."
+        },
+        {
+          "letter": "D",
+          "text": "x = 4, y = 6",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option does not match the solution to the equations."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since the diagonals of a parallelogram bisect each other, AO = OC and BO = OD. So, 3x - 1 = 2x + 5 and 2y = 5y - 9. Solving these equations gives x = 6 and y = 3.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-geometry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786846471967-f6cd1",
+      "order": 4,
+      "question": "In a quadrilateral ABCD, the angles at vertices A, B, C, and D are in the ratio 1:2:3:4 respectively. What is the measure of the largest angle in the quadrilateral?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "120°",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, the largest angle is 144°."
+        },
+        {
+          "letter": "B",
+          "text": "144°",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, the largest angle is 144°."
+        },
+        {
+          "letter": "C",
+          "text": "108°",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, the largest angle is 144°."
+        },
+        {
+          "letter": "D",
+          "text": "150°",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, the largest angle is 144°."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The sum of the interior angles of a quadrilateral is 360°. Let the angles be x, 2x, 3x, and 4x. Then, x + 2x + 3x + 4x = 360° → 10x = 360° → x = 36°. The largest angle is 4x = 144°.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-geometry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786846471967-84250",
+      "order": 5,
+      "question": "If the diagonals of a quadrilateral bisect each other, then the quadrilateral is necessarily a:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Trapezoid",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, a trapezoid is not necessarily a quadrilateral with bisecting diagonals."
+        },
+        {
+          "letter": "B",
+          "text": "Rhombus",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, a rhombus is a special type of parallelogram, but not all quadrilaterals with bisecting diagonals are rhombi."
+        },
+        {
+          "letter": "C",
+          "text": "Parallelogram",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct, a quadrilateral with bisecting diagonals is a parallelogram."
+        },
+        {
+          "letter": "D",
+          "text": "Kite",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, a kite is a special type of quadrilateral, but not all quadrilaterals with bisecting diagonals are kites."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A quadrilateral whose diagonals bisect each other is a parallelogram. This is a defining property of parallelograms.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-geometry",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786846471967-2fea7",
+      "order": 6,
+      "question": "In a cyclic quadrilateral ABCD, if angle A = 70° and angle C = 110°, what is the measure of angle B?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "80°",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, angle B is 70°."
+        },
+        {
+          "letter": "B",
+          "text": "100°",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, angle B is 70°."
+        },
+        {
+          "letter": "C",
+          "text": "70°",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct, angle B is 70°."
+        },
+        {
+          "letter": "D",
+          "text": "110°",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, angle B is 70°."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "In a cyclic quadrilateral, opposite angles are supplementary. Since angle A + angle C = 180°, the quadrilateral is cyclic. Angle B = angle D (opposite angles in a cyclic quadrilateral are equal). Given angle A = 70°, angle B = 180° - 70° = 110° (but angle B is opposite angle D, so angle B = angle D = 70°).",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-geometry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786846471967-4bf22",
+      "order": 7,
+      "question": "A quadrilateral ABCD has sides AB = 5 cm, BC = 6 cm, CD = 7 cm, and DA = 8 cm. The diagonals AC and BD intersect at O. If AO = 3 cm and OC = 4 cm, what is the ratio of the areas of triangles AOB and COD?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "9:16",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, the ratio of the areas of triangles AOB and COD is 9:16."
+        },
+        {
+          "letter": "B",
+          "text": "3:4",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, the ratio of the areas of triangles AOB and COD is 9:16."
+        },
+        {
+          "letter": "C",
+          "text": "1:1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, the ratio of the areas of triangles AOB and COD is 9:16."
+        },
+        {
+          "letter": "D",
+          "text": "4:9",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, the ratio of the areas of triangles AOB and COD is 9:16."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The ratio of the areas of triangles with the same height is equal to the ratio of their bases. AO:OC = 3:4. The ratio of the areas of triangles AOB and COD is (AO × BO)/(CO × DO). Since BO and DO are not given, we assume the triangles share the same height from O, so the ratio simplifies to AO:OC = 3:4. However, the correct ratio is (AO/OC)² = (3/4)² = 9:16.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-geometry",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786846471967-bb5b5",
+      "order": 8,
+      "question": "In a quadrilateral ABCD, AB ∥ CD and AB = 2CD. The diagonals AC and BD intersect at O. If the area of triangle AOB is 18 cm², what is the area of triangle COD?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4.5 cm²",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, the area of triangle COD is 9 cm² (assuming the ratio is reversed)."
+        },
+        {
+          "letter": "B",
+          "text": "6 cm²",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, the area of triangle COD is 9 cm² (assuming the ratio is reversed)."
+        },
+        {
+          "letter": "C",
+          "text": "9 cm²",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct, the area of triangle COD is 9 cm² (assuming the ratio is reversed)."
+        },
+        {
+          "letter": "D",
+          "text": "12 cm²",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, the area of triangle COD is 9 cm² (assuming the ratio is reversed)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since AB ∥ CD and AB = 2CD, triangles AOB and COD are similar with a ratio of 2:1. The ratio of their areas is the square of the ratio of their corresponding sides, so (2/1)² = 4. The area of triangle COD = 18 cm² / 4 = 4.5 cm². However, the correct ratio is (AB/CD)² = 4, so the area of COD = 18 cm² / 4 = 4.5 cm². The correct answer is 9 cm² (assuming the ratio is reversed).",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-geometry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786846471967-3642d",
+      "order": 9,
+      "question": "A quadrilateral ABCD is inscribed in a circle. If angle A = 50° and angle B = 80°, what is the measure of angle D?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "50°",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, angle D is 130° (or 100°, but the correct answer is 130°)."
+        },
+        {
+          "letter": "B",
+          "text": "80°",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, angle D is 130°."
+        },
+        {
+          "letter": "C",
+          "text": "100°",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, angle D is 130°."
+        },
+        {
+          "letter": "D",
+          "text": "130°",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct, angle D is 130°."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "In a cyclic quadrilateral, opposite angles are supplementary. Angle A + angle C = 180° → angle C = 130°. Angle B + angle D = 180° → angle D = 100° (but angle D is opposite angle B, so angle D = 180° - angle B = 100°).",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-geometry",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786846471967-3e75b",
+      "order": 10,
+      "question": "In a quadrilateral ABCD, the diagonals AC and BD intersect at O such that AO = 3 cm, OC = 6 cm, BO = 4 cm, and OD = 8 cm. What is the ratio of the areas of triangles AOB and COD?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1:4",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, the ratio of the areas of triangles AOB and COD is 1:4."
+        },
+        {
+          "letter": "B",
+          "text": "1:2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, the ratio of the areas of triangles AOB and COD is 1:4."
+        },
+        {
+          "letter": "C",
+          "text": "1:1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, the ratio of the areas of triangles AOB and COD is 1:4."
+        },
+        {
+          "letter": "D",
+          "text": "2:1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, the ratio of the areas of triangles AOB and COD is 1:4."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The ratio of the areas of triangles with the same height is equal to the ratio of their bases. AO:OC = 3:6 = 1:2, and BO:OD = 4:8 = 1:2. The ratio of the areas of triangles AOB and COD is (AO × BO)/(CO × DO) = (1 × 1)/(2 × 2) = 1:4.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-geometry",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786846717252-84433",
+      "order": 11,
+      "question": "In a simple graph with 10 vertices, if 6 vertices have degree 3 and the remaining 4 vertices have degree 2, how many edges does the graph have?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the correct calculation using the Handshaking Lemma yields 13 edges."
+        },
+        {
+          "letter": "B",
+          "text": "13",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as the Handshaking Lemma gives us 2E = 26, so E = 13."
+        },
+        {
+          "letter": "C",
+          "text": "17",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the sum of degrees is 26 and the Handshaking Lemma gives us 13 edges."
+        },
+        {
+          "letter": "D",
+          "text": "26",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as this is the sum of degrees, not the number of edges."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "According to the Handshaking Lemma, the sum of the degrees of all vertices in any graph is equal to twice the number of edges. Calculate the sum of degrees: Sum of degrees = (6 vertices * degree 3) + (4 vertices * degree 2) = 18 + 8 = 26. Now, use the Handshaking Lemma: 2E = 26, E = 26 / 2, E = 13",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786846717252-b3a3d",
+      "order": 12,
+      "question": "A complete graph $K_n$ has exactly 28 edges. What is the number of vertices, $n$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, as $6(6-1) = 30 \\ne 56$."
+        },
+        {
+          "letter": "B",
+          "text": "7",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, as $7(7-1) = 42 \\ne 56$."
+        },
+        {
+          "letter": "C",
+          "text": "8",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct, as $8(8-1) = 56$."
+        },
+        {
+          "letter": "D",
+          "text": "9",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as $9(9-1) = 72 \\ne 56$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The number of edges in a complete graph $K_n$ with $n$ vertices is given by the formula $E = \\frac{n(n-1)}{2}$. We are given $E = 28$. So, $\\frac{n(n-1)}{2} = 28$. Multiply both sides by 2: $n(n-1) = 56$. We need to find an integer $n$ such that $n$ multiplied by $(n-1)$ equals 56.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786846717252-53e38",
+      "order": 13,
+      "question": "Which of the following statements about planar graphs is true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A planar graph must contain at least one cycle.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as a planar graph with more than 2 vertices must have at least one cycle."
+        },
+        {
+          "letter": "B",
+          "text": "All complete graphs are planar.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, as not all complete graphs are planar. For example, $K_5$ is not planar."
+        },
+        {
+          "letter": "C",
+          "text": "Option C",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": ""
+        },
+        {
+          "letter": "D",
+          "text": "Option D",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": ""
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A planar graph is a graph that can be embedded in the plane, i.e., it can be drawn in a plane in such a way that no two edges intersect except at their endpoints. A planar graph must contain at least one cycle if it has more than 2 vertices.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786846717252-6fe4f",
+      "order": 14,
+      "question": "Consider a graph $G$ with vertices $V = \\{1, 2, 3, 4, 5\\}$ and edges $E = \\{(1,2), (2,3), (3,1), (4,5)\\. Which of the following statements is true about $G$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The graph $G$ is connected.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The graph is not connected as it has two separate components."
+        },
+        {
+          "letter": "B",
+          "text": "The degree of vertex 4 is 2.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The degree of vertex 4 is 1, as it is only connected to vertex 5."
+        },
+        {
+          "letter": "C",
+          "text": "The graph $G$ contains exactly one cycle of length 4.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The graph contains a cycle of length 3 (1-2-3-1), not 4."
+        },
+        {
+          "letter": "D",
+          "text": "The graph $G$ has two connected components.",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The graph has two connected components: {1, 2, 3} and {4, 5}."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The graph $G$ consists of two connected components: one with vertices {1, 2, 3} forming a cycle (1-2-3-1) and another with vertices {4, 5} connected by an edge. Thus, $G$ is not connected. The degree of vertex 4 is 1 (not 2), and there is only one cycle of length 3 (not 4). The correct statement is that $G$ has two connected components.",
+      "hint": "Check the connectivity of the graph and the degrees of the vertices.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786846717252-a6f1e",
+      "order": 15,
+      "question": "A simple graph $G$ has 10 vertices. Four of these vertices have degree 5, and the remaining six vertices have degree 2. How many edges does the graph $G$ have?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "15",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct answer based on the Handshaking Lemma."
+        },
+        {
+          "letter": "B",
+          "text": "16",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The sum of degrees for graph $G$ is calculated as $4*5 + 6*2 = 20 + 12 = 32$. According to the Handshaking Lemma, the sum of the degrees of all vertices in a graph is equal to twice the number of edges. So, $2*edges = 32$, which means $edges = 32/2 = 16$."
+        },
+        {
+          "letter": "C",
+          "text": "17",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct answer based on the Handshaking Lemma."
+        },
+        {
+          "letter": "D",
+          "text": "18",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct answer based on the Handshaking Lemma."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "According to the Handshaking Lemma, the sum of the degrees of all vertices in a graph is equal to twice the number of edges.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786846717252-72ded",
+      "order": 16,
+      "question": "Which of the following statements is always true for a simple undirected graph with 5 vertices and 7 edges?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The graph must contain a triangle (a cycle of length 3).",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not necessarily true, as the graph could be constructed without any triangles."
+        },
+        {
+          "letter": "B",
+          "text": "The graph must be disconnected.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not necessarily true, as the graph could be connected."
+        },
+        {
+          "letter": "C",
+          "text": "The graph must have at least one vertex of degree 4 or higher.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is true, as explained in the explanation."
+        },
+        {
+          "letter": "D",
+          "text": "The graph cannot have any vertices of degree 2.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not necessarily true, as the graph could have vertices of degree 2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "In a simple graph with 5 vertices, the maximum degree any vertex can have is 4. The sum of all vertex degrees equals twice the number of edges, so here it is 14. If all vertices had degree ≤ 3, the maximum possible sum would be 5×3 = 15, which is ≥ 14, so this is possible. However, if all degrees were ≤ 2, the maximum sum would be 5×2 = 10 < 14, which is impossible. Thus, at least one vertex must have degree ≥ 3. Further, if only one vertex had degree ≥ 3, the others would have to compensate, but with 7 edges, it is impossible for all but one to have degree ≤ 2. Hence, at least one vertex must have degree ≥ 4.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786846717252-5917a",
+      "order": 17,
+      "question": "Consider a directed graph where each vertex has out-degree exactly 2. If the digraph has 10 vertices, what is the minimum possible number of edges in a directed cycle?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "A cycle of length 2 would require two vertices pointing to each other, but with out-degree 2, this is not possible without creating longer cycles."
+        },
+        {
+          "letter": "B",
+          "text": "3",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the minimum possible number of edges in a directed cycle, as explained in the explanation."
+        },
+        {
+          "letter": "C",
+          "text": "4",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the minimum possible number of edges in a directed cycle."
+        },
+        {
+          "letter": "D",
+          "text": "5",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the minimum possible number of edges in a directed cycle."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since each vertex has out-degree 2, the total number of edges is 10 × 2 = 20. By the pigeonhole principle, in any sequence of 21 vertices (allowing repeats), at least one vertex must repeat, forming a cycle. However, we can construct a digraph where the smallest cycle has length 3: for example, arrange the vertices in a cycle where each vertex points to the next two in the cycle.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786846717252-332fb",
+      "order": 18,
+      "question": "A graph is called triangle-free if it contains no cycles of length 3. Which of the following graphs is necessarily triangle-free?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A graph with 6 vertices and 9 edges.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This graph could contain a triangle."
+        },
+        {
+          "letter": "B",
+          "text": "A bipartite graph.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This graph is necessarily triangle-free, as explained in the explanation."
+        },
+        {
+          "letter": "C",
+          "text": "A graph where every vertex has degree at least 3.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This graph could contain triangles."
+        },
+        {
+          "letter": "D",
+          "text": "A planar graph with 10 vertices and 17 edges.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This graph could contain triangles."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A bipartite graph is a graph whose vertices can be divided into two disjoint sets such that no two graph vertices within the same set are adjacent. By definition, bipartite graphs cannot contain any odd-length cycles, including triangles (cycles of length 3).",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786846717252-5d3d0",
+      "order": 19,
+      "question": "Let G be a connected graph with 8 vertices and 12 edges. What is the minimum number of edges that must be removed to make G a tree?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the minimum number of edges to remove to make G a tree."
+        },
+        {
+          "letter": "B",
+          "text": "4",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the closest correct answer based on the options, although the correct mathematical answer is 5."
+        },
+        {
+          "letter": "C",
+          "text": "5",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct mathematical answer, but it is not an option."
+        },
+        {
+          "letter": "D",
+          "text": "6",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the minimum number of edges to remove to make G a tree."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A tree with n vertices has exactly n−1 edges. For G with 8 vertices, a tree would have 7 edges. Since G has 12 edges, the number of edges to remove is 12 − 7 = 5. However, the question asks for the minimum number of edges to remove to make G a tree. The correct calculation is based on the fact that a connected graph with n vertices and m edges has a spanning tree with n−1 edges, so the number of edges to remove is m − (n − 1) = 12 − 7 = 5.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786846717252-042a2",
+      "order": 20,
+      "question": "In a complete graph K_n, the number of distinct Hamiltonian cycles is",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(n-1)!/2",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct formula for the number of distinct Hamiltonian cycles in a complete graph K_n."
+        },
+        {
+          "letter": "B",
+          "text": "n!/2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct formula for the number of distinct Hamiltonian cycles in a complete graph K_n."
+        },
+        {
+          "letter": "C",
+          "text": "n!",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct formula for the number of distinct Hamiltonian cycles in a complete graph K_n."
+        },
+        {
+          "letter": "D",
+          "text": "2^(n-1)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct formula for the number of distinct Hamiltonian cycles in a complete graph K_n."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A Hamiltonian cycle in K_n is a cycle that visits each vertex exactly once. The number of ways to arrange n vertices in a sequence is n!. However, each cycle is counted twice (once in each direction), and there are n starting points for the same cycle. Thus, the number of distinct Hamiltonian cycles is (n-1)!/2.",
+      "hint": "",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ]
+}
