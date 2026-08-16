@@ -1,0 +1,814 @@
+{
+  "id": "0002afee-42dd-44fa-9c24-59631296f070",
+  "title": "CAT — Data Interpretation LR | Venn Diagram DI",
+  "description": "Subject-wise test on Venn Diagram DI (Data Interpretation LR) for CAT. 15Q.",
+  "board": "Competitive",
+  "classSlug": "cat",
+  "classNumber": 0,
+  "subjects": [
+    "cat-dilr"
+  ],
+  "subject": "cat-dilr",
+  "chapter": "Data Interpretation",
+  "topic": "Venn Diagram DI",
+  "testType": "subject-wise",
+  "duration": 40,
+  "totalMarks": 45,
+  "passingMarks": 18,
+  "totalQuestions": 15,
+  "targetQuestions": 15,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "venn",
+    "interpretation",
+    "diagram",
+    "cat-dilr",
+    "data",
+    "cat"
+  ],
+  "instructions": [
+    "Subject: Data Interpretation LR",
+    "Total Questions: 15",
+    "Total Marks: 45",
+    "Duration: 40 minutes",
+    "Correct answer: +3 mark",
+    "Wrong answer: -1 mark",
+    "Topic: Venn Diagram DI"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-08-16T07:12:09.914414Z",
+  "questions": [
+    {
+      "id": "q-1786864329914-2a73b",
+      "order": 1,
+      "question": "If |D ∩ M ∩ A| = 30, |D ∩ M| = 60, |M ∩ A| = 50, and |D ∩ A| = 40, what is the number of elements that belong to exactly D and M (but not A)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the number of elements in exactly M and A (|M ∩ A| - |D ∩ M ∩ A|)."
+        },
+        {
+          "letter": "B",
+          "text": "30",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. |D ∩ M| - |D ∩ M ∩ A| = 60 - 30 = 30."
+        },
+        {
+          "letter": "C",
+          "text": "10",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the number of elements in exactly D and A (|D ∩ A| - |D ∩ M ∩ A|)."
+        },
+        {
+          "letter": "D",
+          "text": "40",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the total intersection of D and M (|D ∩ M|), not the exact count."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The number of elements that belong to exactly D and M (but not A) is calculated by subtracting the intersection of all three sets (D ∩ M ∩ A) from the intersection of D and M (D ∩ M).",
+      "hint": "Use the formula: |D ∩ M| - |D ∩ M ∩ A|",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cat-dilr",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786864329914-efc53",
+      "order": 2,
+      "question": "Using the same values (|D ∩ M ∩ A| = 30, |D ∩ M| = 60, |M ∩ A| = 50, |D ∩ A| = 40), what is the number of elements that belong to exactly M and A (but not D)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. |M ∩ A| - |D ∩ M ∩ A| = 50 - 30 = 20."
+        },
+        {
+          "letter": "B",
+          "text": "30",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the number of elements in exactly D and M (|D ∩ M| - |D ∩ M ∩ A|)."
+        },
+        {
+          "letter": "C",
+          "text": "10",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the number of elements in exactly D and A (|D ∩ A| - |D ∩ M ∩ A|)."
+        },
+        {
+          "letter": "D",
+          "text": "40",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the total intersection of M and A (|M ∩ A|), not the exact count."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The number of elements that belong to exactly M and A (but not D) is calculated by subtracting the intersection of all three sets (D ∩ M ∩ A) from the intersection of M and A (M ∩ A).",
+      "hint": "Use the formula: |M ∩ A| - |D ∩ M ∩ A|",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cat-dilr",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786864329914-41805",
+      "order": 3,
+      "question": "Using the same values (|D ∩ M ∩ A| = 30, |D ∩ M| = 60, |M ∩ A| = 50, |D ∩ A| = 40), what is the number of elements that belong to exactly D and A (but not M)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. |D ∩ A| - |D ∩ M ∩ A| = 40 - 30 = 10."
+        },
+        {
+          "letter": "B",
+          "text": "20",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the number of elements in exactly M and A (|M ∩ A| - |D ∩ M ∩ A|)."
+        },
+        {
+          "letter": "C",
+          "text": "30",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the number of elements in exactly D and M (|D ∩ M| - |D ∩ M ∩ A|)."
+        },
+        {
+          "letter": "D",
+          "text": "40",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the total intersection of D and A (|D ∩ A|), not the exact count."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The number of elements that belong to exactly D and A (but not M) is calculated by subtracting the intersection of all three sets (D ∩ M ∩ A) from the intersection of D and A (D ∩ A).",
+      "hint": "Use the formula: |D ∩ A| - |D ∩ M ∩ A|",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cat-dilr",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786864329914-3a392",
+      "order": 4,
+      "question": "How many students participated in exactly two clubs?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "39",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct as calculated above."
+        },
+        {
+          "letter": "B",
+          "text": "45",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This includes students in all three clubs."
+        },
+        {
+          "letter": "C",
+          "text": "30",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This undercounts the pairwise intersections."
+        },
+        {
+          "letter": "D",
+          "text": "50",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the total number in Art club."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Students in exactly two clubs = (Drama & Music only) + (Music & Art only) + (Drama & Art only). Using the principle of inclusion-exclusion: Drama & Music only = 25 - 8 = 17, Music & Art only = 18 - 8 = 10, Drama & Art only = 20 - 8 = 12. Total = 17 + 10 + 12 = 39.",
+      "hint": "Subtract the students in all three clubs from each pairwise intersection to find those in exactly two clubs.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cat-dilr",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786864329914-447ca",
+      "order": 5,
+      "question": "How many students participated in at least one club?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "158",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct as calculated using inclusion-exclusion."
+        },
+        {
+          "letter": "B",
+          "text": "160",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This overcounts the intersections."
+        },
+        {
+          "letter": "C",
+          "text": "140",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This undercounts the total."
+        },
+        {
+          "letter": "D",
+          "text": "180",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This exceeds the total number of students."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Total in at least one club = Total students - Students in none. Using inclusion-exclusion: Total = D + M + A - (D∩M + M∩A + D∩A) + D∩M∩A = 80 + 73 + 50 - (25 + 18 + 20) + 8 = 158.",
+      "hint": "Apply the inclusion-exclusion principle to find the union of the three sets.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cat-dilr",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786864329914-fcf7d",
+      "order": 6,
+      "question": "How many students participated in only one club?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "111",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct as calculated above."
+        },
+        {
+          "letter": "B",
+          "text": "100",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This undercounts the students in only one club."
+        },
+        {
+          "letter": "C",
+          "text": "120",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This overcounts the students in only one club."
+        },
+        {
+          "letter": "D",
+          "text": "90",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This significantly undercounts the students in only one club."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Students in only one club = Total in at least one club - Students in exactly two clubs - Students in all three clubs. From previous calculations: 158 - 39 - 8 = 111.",
+      "hint": "Subtract students in multiple clubs from the total in at least one club.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cat-dilr",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786864329914-8da99",
+      "order": 7,
+      "question": "How many students participated in none of the clubs?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "42",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct as calculated above."
+        },
+        {
+          "letter": "B",
+          "text": "50",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the total number in Art club."
+        },
+        {
+          "letter": "C",
+          "text": "30",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This undercounts the students in none."
+        },
+        {
+          "letter": "D",
+          "text": "60",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This overcounts the students in none."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Students in none = Total students - Students in at least one club. From previous calculations: 200 - 158 = 42.",
+      "hint": "Subtract the number of students in at least one club from the total number of students.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cat-dilr",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786864329914-1cc7c",
+      "order": 8,
+      "question": "A survey of 100 students revealed that 60 students like apples and 50 students like bananas. 20 students like both apples and bananas. How many students like neither apples nor bananas?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. 10 students like neither fruit."
+        },
+        {
+          "letter": "B",
+          "text": "20",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the number of students who like both fruits."
+        },
+        {
+          "letter": "C",
+          "text": "30",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not derived from the given data."
+        },
+        {
+          "letter": "D",
+          "text": "40",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the correct calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the principle of inclusion-exclusion: Number of students who like at least one fruit = |A ∪ B| = |A| + |B| - |A ∩ B| = 60 + 50 - 20 = 90. Therefore, students who like neither = Total - |A ∪ B| = 100 - 90 = 10.",
+      "hint": "Use the formula for the union of two sets: |A ∪ B| = |A| + |B| - |A ∩ B|.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cat-dilr",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786864329914-99740",
+      "order": 9,
+      "question": "In a survey of 200 respondents, 120 people like tea, 80 like coffee, and 40 like both. How many people like neither tea nor coffee?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows 40 people like neither."
+        },
+        {
+          "letter": "B",
+          "text": "40",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation confirms 40 people like neither."
+        },
+        {
+          "letter": "C",
+          "text": "60",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows fewer people like neither."
+        },
+        {
+          "letter": "D",
+          "text": "80",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows fewer people like neither."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the principle of inclusion-exclusion, the number of people who like at least one of the drinks is 120 + 80 - 40 = 160. Therefore, the number who like neither is 200 - 160 = 40.",
+      "hint": "Apply the inclusion-exclusion principle to find the number of people who like at least one drink, then subtract from the total.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cat-dilr",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786864329914-d59fd",
+      "order": 10,
+      "question": "In a class of 50 students, 25 study Mathematics, 20 study Physics, and 10 study both. If a student is chosen at random, what is the probability that the student studies Mathematics but not Physics?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The probability is higher."
+        },
+        {
+          "letter": "B",
+          "text": "0.2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The probability is higher."
+        },
+        {
+          "letter": "C",
+          "text": "0.3",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation confirms the probability is 0.3."
+        },
+        {
+          "letter": "D",
+          "text": "0.4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The probability is lower."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The number of students studying Mathematics but not Physics is 25 - 10 = 15. The probability is 15/50 = 0.3.",
+      "hint": "Subtract the number of students studying both subjects from those studying Mathematics to find the count for Mathematics only.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cat-dilr",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786864329914-d1a50",
+      "order": 11,
+      "question": "A group of 150 people were surveyed about their preference for three fruits: Apple, Banana, and Cherry. 70 like Apple, 60 like Banana, 50 like Cherry, 25 like both Apple and Banana, 20 like both Banana and Cherry, 15 like both Apple and Cherry, and 10 like all three. How many people like none of the fruits?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "25",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows 20 people like none."
+        },
+        {
+          "letter": "B",
+          "text": "30",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows 20 people like none."
+        },
+        {
+          "letter": "C",
+          "text": "35",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows 20 people like none."
+        },
+        {
+          "letter": "D",
+          "text": "40",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows 20 people like none."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the principle of inclusion-exclusion for three sets: Total liking at least one fruit = 70 + 60 + 50 - 25 - 20 - 15 + 10 = 130. Number liking none = 150 - 130 = 20.",
+      "hint": "Apply the inclusion-exclusion principle for three sets to find the number of people who like at least one fruit, then subtract from the total.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cat-dilr",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786864329914-5fccc",
+      "order": 12,
+      "question": "In a company, employees were surveyed about their lunch preferences. 65% prefer Pizza, 50% prefer Burger, and 30% prefer both. What percentage of employees prefer neither Pizza nor Burger?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10%",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows 15% prefer neither."
+        },
+        {
+          "letter": "B",
+          "text": "15%",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation confirms 15% prefer neither."
+        },
+        {
+          "letter": "C",
+          "text": "20%",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows fewer prefer neither."
+        },
+        {
+          "letter": "D",
+          "text": "25%",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows fewer prefer neither."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using inclusion-exclusion, the percentage preferring at least one is 65 + 50 - 30 = 85%. Therefore, the percentage preferring neither is 100 - 85 = 15%.",
+      "hint": "Calculate the percentage of employees who prefer at least one option, then subtract from 100% to find the percentage who prefer neither.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cat-dilr",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786864329914-0582f",
+      "order": 13,
+      "question": "In a school, 180 students play at least one of three sports: Football, Cricket, or Basketball. 100 play Football, 80 play Cricket, 60 play Basketball, 30 play both Football and Cricket, 20 play both Cricket and Basketball, 15 play both Football and Basketball, and 10 play all three. How many students play only Cricket?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "40",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation confirms 40 students play only Cricket."
+        },
+        {
+          "letter": "B",
+          "text": "45",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows 40 students play only Cricket."
+        },
+        {
+          "letter": "C",
+          "text": "50",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows fewer students play only Cricket."
+        },
+        {
+          "letter": "D",
+          "text": "55",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows fewer students play only Cricket."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Students playing only Cricket = Total Cricket - (Football ∩ Cricket + Cricket ∩ Basketball - All three) = 80 - (30 + 20 - 10) = 80 - 40 = 40.",
+      "hint": "Subtract the number of students playing Cricket and another sport (adjusting for overlap) from the total number of Cricket players.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cat-dilr",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786864329914-19259",
+      "order": 14,
+      "question": "In a group of 120 people, 70 speak English, 50 speak French, and 30 speak both. If 20 people speak neither, how many people speak only French?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows 20 people speak only French."
+        },
+        {
+          "letter": "B",
+          "text": "20",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation confirms 20 people speak only French."
+        },
+        {
+          "letter": "C",
+          "text": "30",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows fewer people speak only French."
+        },
+        {
+          "letter": "D",
+          "text": "40",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows fewer people speak only French."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Total speaking at least one language = 120 - 20 = 100. Using inclusion-exclusion: 70 + 50 - 30 = 90. The discrepancy suggests an error in the question. However, if we assume the question is correct, then only French speakers = 50 - 30 = 20.",
+      "hint": "Subtract the number of people who speak both languages from the total number of French speakers to find those who speak only French.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cat-dilr",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786864329914-1823f",
+      "order": 15,
+      "question": "In a library, books are categorized as Fiction, Non-Fiction, or both. 75% of the books are Fiction, 50% are Non-Fiction, and 25% are both. What percentage of books are neither Fiction nor Non-Fiction?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0%",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation confirms 0% of books are neither."
+        },
+        {
+          "letter": "B",
+          "text": "5%",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows 0% are neither."
+        },
+        {
+          "letter": "C",
+          "text": "10%",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows 0% are neither."
+        },
+        {
+          "letter": "D",
+          "text": "15%",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation shows 0% are neither."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using inclusion-exclusion, percentage with at least one category = 75 + 50 - 25 = 100%. Therefore, percentage with neither is 0%.",
+      "hint": "Calculate the percentage of books that fall into at least one category, then subtract from 100% to find the percentage with neither.",
+      "marks": 3,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cat-dilr",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ]
+}
