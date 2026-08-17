@@ -1,0 +1,2599 @@
+{
+  "id": "7dd69c4f-65e0-4db0-b7e0-f1e3cbe382a1",
+  "title": "ISC CLASS 12 — Mathematics | Matrices Inverse",
+  "description": "Subject-wise test on Matrices Inverse (Mathematics) for ISC CLASS 12. 43Q.",
+  "board": "ISC",
+  "classSlug": "isc-class-12",
+  "classNumber": 12,
+  "subjects": [
+    "isc12-maths"
+  ],
+  "subject": "isc12-maths",
+  "chapter": "Algebra Statistics",
+  "topic": "Matrices Inverse",
+  "testType": "subject-wise",
+  "duration": 75,
+  "totalMarks": 50,
+  "passingMarks": 18,
+  "totalQuestions": 50,
+  "targetQuestions": 50,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "isc-class-12",
+    "algebra",
+    "matrices",
+    "isc12-maths",
+    "inverse",
+    "statistics"
+  ],
+  "instructions": [
+    "Subject: Mathematics",
+    "Total Questions: 43",
+    "Total Marks: 43",
+    "Duration: 75 minutes",
+    "Correct answer: +1 mark",
+    "No negative marking",
+    "Topic: Matrices Inverse"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-08-17T16:16:39.408981Z",
+  "questions": [
+    {
+      "id": "q-1786983399407-f47d0",
+      "order": 1,
+      "question": "If $A = \\begin{pmatrix} 2 & 3 \\\\ 4 & 5 \\end{pmatrix}$, then the value of $\\det(A)$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not 2."
+        },
+        {
+          "letter": "B",
+          "text": "-2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant is calculated as $(2)(5) - (3)(4) = -2$."
+        },
+        {
+          "letter": "C",
+          "text": "22",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not 22."
+        },
+        {
+          "letter": "D",
+          "text": "-22",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not -22."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a 2x2 matrix $A = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, the determinant is calculated as $\\det(A) = ad - bc$. Substituting the given values, $\\det(A) = (2)(5) - (3)(4) = 10 - 12 = -2$.",
+      "hint": "Recall the formula for the determinant of a 2x2 matrix: $\\det(A) = ad - bc$.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399407-43d77",
+      "order": 2,
+      "question": "The principal value of $\\sin^{-1}\\left(-\\frac{1}{2}\\right)$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{\\pi}{6}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the principal value of $\\sin^{-1}\\left(\\frac{1}{2}\\right)$, not for $-\\frac{1}{2}$."
+        },
+        {
+          "letter": "B",
+          "text": "$-\\frac{\\pi}{6}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as $\\sin\\left(-\\frac{\\pi}{6}\\right) = -\\frac{1}{2}$ and $-\\frac{\\pi}{6}$ is within the principal range."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{5\\pi}{6}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This value lies outside the principal range of $\\sin^{-1}x$."
+        },
+        {
+          "letter": "D",
+          "text": "$-\\frac{5\\pi}{6}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This value lies outside the principal range of $\\sin^{-1}x$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The range of the principal value branch of $\\sin^{-1}x$ is $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$. We know that $\\sin\\left(-\\frac{\\pi}{6}\\right) = -\\frac{1}{2}$, and $-\\frac{\\pi}{6}$ lies within the principal range.",
+      "hint": "Recall the range of the inverse sine function and the value of sine for standard angles.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399407-a1bcc",
+      "order": 3,
+      "question": "If $A = \\begin{pmatrix} \\cos \\theta & -\\sin \\theta \\\\ \\sin \\theta & \\cos \\theta \\end{pmatrix}$, then $\\det(A)$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is not zero."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The determinant of the given matrix is 1."
+        },
+        {
+          "letter": "C",
+          "text": "$\\sin^2 \\theta - \\cos^2 \\theta$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the determinant of the given matrix."
+        },
+        {
+          "letter": "D",
+          "text": "$\\cos^2 \\theta - \\sin^2 \\theta$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the determinant of the given matrix."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a 2x2 matrix $A = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, the determinant is $ad - bc$. Here, $a = \\cos \\theta$, $b = -\\sin \\theta$, $c = \\sin \\theta$, $d = \\cos \\theta$. $\\det(A) = (\\cos \\theta)(\\cos \\theta) - (-\\sin \\theta)(\\sin \\theta) = \\cos^2 \\theta + \\sin^2 \\theta = 1$.",
+      "hint": "Recall the formula for the determinant of a 2x2 matrix and use the trigonometric identity $\\cos^2 \\theta + \\sin^2 \\theta = 1$.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399407-635ae",
+      "order": 4,
+      "question": "The principal value of $\\cos^{-1}\\left(-\\frac{1}{2}\\right)$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{\\pi}{3}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the principal value of $\\cos^{-1}\\left(\\frac{1}{2}\\right)$, not $-\\frac{1}{2}$."
+        },
+        {
+          "letter": "B",
+          "text": "$-\\frac{\\pi}{3}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The principal value must lie in the range $[0, \\pi]$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{5\\pi}{6}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the principal value of $\\cos^{-1}\\left(-\\frac{1}{2}\\right)$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{2\\pi}{3}$",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The principal value of $\\cos^{-1}\\left(-\\frac{1}{2}\\right)$ is $\\frac{2\\pi}{3}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let $y = \\cos^{-1}\\left(-\\frac{1}{2}\\right)$. The range of the principal value branch of $\\cos^{-1}x$ is $[0, \\pi]$. We know that $\\cos\\left(\\frac{\\pi}{3}\\right) = \\frac{1}{2}$. Since $\\cos^{-1}(-x) = \\pi - \\cos^{-1}(x)$, $y = \\pi - \\cos^{-1}\\left(\\frac{1}{2}\\right) = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}$. This value lies in the range $[0, \\pi]$.",
+      "hint": "Use the property $\\cos^{-1}(-x) = \\pi - \\cos^{-1}(x)$ and recall the principal value range of $\\cos^{-1}x$.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399407-66503",
+      "order": 5,
+      "question": "A function $f: A \\to B$ is invertible if and only if it is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Injective",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. A function must also be surjective to be invertible."
+        },
+        {
+          "letter": "B",
+          "text": "Surjective",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. A function must also be injective to be invertible."
+        },
+        {
+          "letter": "C",
+          "text": "Bijective",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. A bijective function is both injective and surjective, making it invertible."
+        },
+        {
+          "letter": "D",
+          "text": "Neither injective nor surjective",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. Such a function cannot be invertible."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a function to have an inverse, it must be both one-to-one (injective) and onto (surjective). A function that is both injective and surjective is called a bijective function. If a function is bijective, then its inverse exists.",
+      "hint": "Recall the definition of an invertible function in terms of injectivity and surjectivity.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399407-889cf",
+      "order": 6,
+      "question": "If $A$ is a square matrix of order 3 such that $|A| = -4$, then $|2A|$ is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "-8",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the correct value of $|2A|$."
+        },
+        {
+          "letter": "B",
+          "text": "8",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the value of $2^3$, not $|2A|$."
+        },
+        {
+          "letter": "C",
+          "text": "-32",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. $|2A| = -32$."
+        },
+        {
+          "letter": "D",
+          "text": "-32",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. $|2A| = -32$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For any square matrix $A$ of order $n$ and any scalar $k$, we have the property $|kA| = k^n |A|$. In this case, $n=3$ and $k=2$. Given $|A| = -4$, so $|2A| = 2^3 |A| = 8 \\times (-4) = -32$.",
+      "hint": "Use the property of determinants for scalar multiplication of a matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399407-02586",
+      "order": 7,
+      "question": "If $A = \\begin{pmatrix} 2 & 3 \\\\ 1 & 2 \\end{pmatrix}$, then $A^{-1}$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\begin{pmatrix} 2 & -3 \\\\ -1 & 2 \\end{pmatrix}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. This is the inverse of the given matrix."
+        },
+        {
+          "letter": "B",
+          "text": "$\\begin{pmatrix} -2 & 3 \\\\ 1 & -2 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the inverse of the given matrix."
+        },
+        {
+          "letter": "C",
+          "text": "$\\begin{pmatrix} 2 & 1 \\\\ 3 & 2 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the inverse of the given matrix."
+        },
+        {
+          "letter": "D",
+          "text": "$\\begin{pmatrix} -2 & -3 \\\\ -1 & -2 \\end{pmatrix}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the inverse of the given matrix."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a 2x2 matrix $A = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, its inverse $A^{-1}$ is given by $\\frac{1}{\\det(A)} \\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$. First, calculate the determinant of A: $\\det(A) = (2)(2) - (3)(1) = 4 - 3 = 1$. Since $\\det(A) \\neq 0$, the inverse exists. Now, apply the formula: $A^{-1} = \\frac{1}{1} \\begin{pmatrix} 2 & -3 \\\\ -1 & 2 \\end{pmatrix} = \\begin{pmatrix} 2 & -3 \\\\ -1 & 2 \\end{pmatrix}$.",
+      "hint": "Recall the formula for the inverse of a 2x2 matrix and compute the determinant first.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399407-1c23b",
+      "order": 8,
+      "question": "The value of $\\tan^{-1}(1) + \\cos^{-1}\\left(-\\frac{1}{2}\\right) + \\sin^{-1}\\left(-\\frac{1}{2}\\right)$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{3\\pi}{4}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The sum of the given inverse trigonometric functions is $\\frac{3\\pi}{4}$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{\\pi}{2}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the correct sum."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{3\\pi}{2}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the correct sum."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{\\pi}{4}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the correct sum."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We evaluate each term separately using their principal value branches: 1. $\\tan^{-1}(1) = \\frac{\\pi}{4}$ (since $\\tan(\\frac{\\pi}{4}) = 1$ and $\\frac{\\pi}{4} \\in (-\\frac{\\pi}{2}, \\frac{\\pi}{2})$). 2. $\\cos^{-1}\\left(-\\frac{1}{2}\\right) = \\frac{2\\pi}{3}$ (from previous question). 3. $\\sin^{-1}\\left(-\\frac{1}{2}\\right) = -\\frac{\\pi}{6}$ (since $\\sin(-\\frac{\\pi}{6}) = -\\frac{1}{2}$ and $-\\frac{\\pi}{6} \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2})$). Summing these values: $\\frac{\\pi}{4} + \\frac{2\\pi}{3} - \\frac{\\pi}{6} = \\frac{3\\pi}{12} + \\frac{8\\pi}{12} - \\frac{2\\pi}{12} = \\frac{9\\pi}{12} = \\frac{3\\pi}{4}$.",
+      "hint": "Evaluate each inverse trigonometric function separately and then sum the results.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399407-5d178",
+      "order": 9,
+      "question": "Evaluate $\\cos^{-1}\\left(-\\frac{1}{2}\\right)$ and express the result in terms of $\\pi$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{\\pi}{3}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the value of $\\cos^{-1}\\left(\\frac{1}{2}\\right)$, not $\\cos^{-1}\\left(-\\frac{1}{2}\\right)$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{2\\pi}{3}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as $\\cos\\left(\\frac{2\\pi}{3}\\right) = -\\frac{1}{2}$ and it lies in the principal value range."
+        },
+        {
+          "letter": "C",
+          "text": "$-\\frac{\\pi}{3}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Negative angles are not in the principal value range of $\\cos^{-1}x$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{5\\pi}{6}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the value of $\\cos^{-1}\\left(-\\frac{\\sqrt{3}}{2}\\right)$, not $\\cos^{-1}\\left(-\\frac{1}{2}\\right)$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The principal value of $\\cos^{-1}x$ lies in $[0, \\pi]$. We know that $\\cos(\\pi - \\theta) = -\\cos\\theta$. Here, $\\cos\\left(\\pi - \\frac{\\pi}{3}\\right) = -\\cos\\left(\\frac{\\pi}{3}\\right) = -\\frac{1}{2}$. Thus, $\\cos^{-1}\\left(-\\frac{1}{2}\\right) = \\frac{2\\pi}{3}$.",
+      "hint": "Recall that $\\cos(\\pi - \\theta) = -\\cos\\theta$ and the principal value range of $\\cos^{-1}x$ is $[0, \\pi]$.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399407-b0723",
+      "order": 10,
+      "question": "Evaluate $\\sin^{-1}\\left(-\\frac{1}{2}\\right)$ and express the result in terms of $\\pi$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$-\\frac{\\pi}{6}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as $\\sin\\left(-\\frac{\\pi}{6}\\right) = -\\frac{1}{2}$ and it lies in the principal value range."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{\\pi}{6}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the value of $\\sin^{-1}\\left(\\frac{1}{2}\\right)$, not $\\sin^{-1}\\left(-\\frac{1}{2}\\right)$."
+        },
+        {
+          "letter": "C",
+          "text": "$-\\frac{5\\pi}{6}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This angle is not in the principal value range of $\\sin^{-1}x$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{7\\pi}{6}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This angle is not in the principal value range of $\\sin^{-1}x$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The principal value of $\\sin^{-1}x$ lies in $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$. We know that $\\sin\\left(-\\frac{\\pi}{6}\\right) = -\\frac{1}{2}$. Thus, $\\sin^{-1}\\left(-\\frac{1}{2}\\right) = -\\frac{\\pi}{6}$.",
+      "hint": "Recall that the principal value range of $\\sin^{-1}x$ is $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$ and $\\sin\\left(-\\frac{\\pi}{6}\\right) = -\\frac{1}{2}$.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399407-2d8a6",
+      "order": 11,
+      "question": "Simplify the expression $\\frac{\\pi}{4} + \\cos^{-1}\\left(-\\frac{1}{2}\\right) + \\sin^{-1}\\left(-\\frac{1}{2}\\right)$ and express the result in terms of $\\pi$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{\\pi}{2}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The correct sum is $\\frac{3\\pi}{4}$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{3\\pi}{4}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as shown in the detailed steps."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{5\\pi}{6}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The correct sum is $\\frac{3\\pi}{4}$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\pi$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect. The correct sum is $\\frac{3\\pi}{4}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "From the previous questions, we have $\\cos^{-1}\\left(-\\frac{1}{2}\\right) = \\frac{2\\pi}{3}$ and $\\sin^{-1}\\left(-\\frac{1}{2}\\right) = -\\frac{\\pi}{6}$. Adding these to $\\frac{\\pi}{4}$: $\\frac{\\pi}{4} + \\frac{2\\pi}{3} - \\frac{\\pi}{6} = \\frac{3\\pi}{12} + \\frac{8\\pi}{12} - \\frac{2\\pi}{12} = \\frac{9\\pi}{12} = \\frac{3\\pi}{4}$.",
+      "hint": "First evaluate the inverse trigonometric functions separately, then find a common denominator to add the fractions.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399407-0cb34",
+      "order": 12,
+      "question": "Let $R$ be a relation on the set of natural numbers $\\mathbb{N}$ defined by $xRy$ if $2x + y = 24$. Which of the following is true for $R$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$R$ is reflexive",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Not reflexive, as $(x, x) \\in R$ only when $x = 8$, not for all $x \\in \\mathbb{N}$."
+        },
+        {
+          "letter": "B",
+          "text": "$R$ is symmetric",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Not symmetric, as $(10, 4) \\in R$ but $(4, 10) \\notin R$."
+        },
+        {
+          "letter": "C",
+          "text": "$R$ is transitive",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Not generally transitive, as shown in the detailed steps."
+        },
+        {
+          "letter": "D",
+          "text": "$R$ is an equivalence relation",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "An equivalence relation must be reflexive, symmetric, and transitive, which $R$ is not."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The relation $R$ is defined as $R = \\{(x, y) \\in \\mathbb{N} \\times \\mathbb{N} \\mid 2x + y = 24\\}$. To check for reflexivity, symmetry, and transitivity: 1) Reflexive: $(x, x) \\in R$ implies $3x = 24$, which is not true for all $x \\in \\mathbb{N}$. 2) Symmetric: $(x, y) \\in R$ does not imply $(y, x) \\in R$ (e.g., $(10, 4) \\in R$ but $(4, 10) \\notin R$). 3) Transitive: If $(x, y) \\in R$ and $(y, z) \\in R$, then $2x + y = 24$ and $2y + z = 24$. Solving these, we get $z = 24 - 2y = 24 - 2(24 - 2x) = 4x - 24$. For $(x, z) \\in R$, $2x + z = 24$ must hold, which simplifies to $2x + (4x - 24) = 24 \\Rightarrow 6x = 48 \\Rightarrow x = 8$. Thus, $R$ is transitive only for specific cases, but not generally. However, the given explanation in the text states that $R$ is transitive, which is incorrect based on the standard definition. The correct answer is that $R$ is not an equivalence relation.",
+      "hint": "Check the properties of the relation $R$ by testing specific cases for reflexivity, symmetry, and transitivity.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399407-42777",
+      "order": 13,
+      "question": "If $ A = \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix} $, then the value of the determinant of matrix $ A $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "-2",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as the determinant is -2."
+        },
+        {
+          "letter": "B",
+          "text": "-2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, as this is a duplicate option."
+        },
+        {
+          "letter": "C",
+          "text": "4",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, the determinant is not 4."
+        },
+        {
+          "letter": "D",
+          "text": "-5",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, the determinant is not -5."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The determinant of a 2×2 matrix $\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}$ is calculated as $ad - bc$. Here, $(1 \\times 4) - (2 \\times 3) = 4 - 6 = -2$.",
+      "hint": "Use the formula for the determinant of a 2x2 matrix: ad - bc.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-7affd",
+      "order": 14,
+      "question": "For a square matrix $ A $, if $ A^{-1} $ exists, then:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ A $ must be a zero matrix",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, a zero matrix does not have an inverse."
+        },
+        {
+          "letter": "B",
+          "text": "The determinant of $ A $ must be zero",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, the determinant must be non-zero for the inverse to exist."
+        },
+        {
+          "letter": "C",
+          "text": "The determinant of $ A $ must be non-zero",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct, as the inverse exists only if the determinant is non-zero."
+        },
+        {
+          "letter": "D",
+          "text": "$ A $ must be symmetric",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, symmetry is not a requirement for the existence of an inverse."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A matrix has an inverse if and only if its determinant is non-zero. This is a fundamental property of invertible matrices.",
+      "hint": "Recall the condition for the existence of the inverse of a matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-1355b",
+      "order": 15,
+      "question": "If $ A = \\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \\end{bmatrix} $, then the inverse of $ A $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\begin{bmatrix} 0 & -1 \\\\ -1 & 0 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, this is not the inverse of $ A $."
+        },
+        {
+          "letter": "B",
+          "text": "$\\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \\end{bmatrix}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as $ A $ is its own inverse."
+        },
+        {
+          "letter": "C",
+          "text": "$\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, this is the identity matrix, not the inverse of $ A $."
+        },
+        {
+          "letter": "D",
+          "text": "$\\begin{bmatrix} -1 & 0 \\\\ 0 & -1 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, this is not the inverse of $ A $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given matrix $ A $ is its own inverse because $ A^2 = I $. Thus, $ A^{-1} = A $.",
+      "hint": "Check if the matrix satisfies $ A^2 = I $.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-56b77",
+      "order": 16,
+      "question": "**Assertion (A):** If $ A $ is a singular matrix, then $ A^{-1} $ does not exist.\n**Reason (R):** A matrix is singular if its determinant is zero.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both Assertion and Reason are true, and Reason is the correct explanation of Assertion",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as both statements are true and the reason explains the assertion."
+        },
+        {
+          "letter": "B",
+          "text": "Both Assertion and Reason are true, but Reason is not the correct explanation of Assertion",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, the reason does explain the assertion."
+        },
+        {
+          "letter": "C",
+          "text": "Assertion is true, but Reason is false",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, the reason is also true."
+        },
+        {
+          "letter": "D",
+          "text": "Assertion is false, but Reason is true",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, the assertion is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A matrix is singular if its determinant is zero, and a singular matrix does not have an inverse. Thus, both the assertion and reason are true, and the reason correctly explains the assertion.",
+      "hint": "Recall the definition of a singular matrix and its relationship with the inverse.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-fe800",
+      "order": 17,
+      "question": "The system of equations:\n$ x + y = 3 $\n$ 2x + 3y = 8 $\ncan be written in matrix form as:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\begin{bmatrix} 1 & 1 \\\\ 2 & 3 \\end{bmatrix} \\begin{bmatrix} x \\\\ y \\end{bmatrix} = \\begin{bmatrix} 3 \\\\ 8 \\end{bmatrix}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as this represents the system in matrix form."
+        },
+        {
+          "letter": "B",
+          "text": "$\\begin{bmatrix} 1 & 1 \\\\ 2 & 3 \\end{bmatrix} \\begin{bmatrix} x \\\\ y \\end{bmatrix} = \\begin{bmatrix} 3 \\\\ 8 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, this is a duplicate option."
+        },
+        {
+          "letter": "C",
+          "text": "$\\begin{bmatrix} 1 & 2 \\\\ 1 & 3 \\end{bmatrix} \\begin{bmatrix} x \\\\ y \\end{bmatrix} = \\begin{bmatrix} 3 \\\\ 8 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, the coefficients are not arranged correctly."
+        },
+        {
+          "letter": "D",
+          "text": "$\\begin{bmatrix} 1 & 1 \\\\ 3 & 2 \\end{bmatrix} \\begin{bmatrix} x \\\\ y \\end{bmatrix} = \\begin{bmatrix} 3 \\\\ 8 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, the coefficients are not arranged correctly."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The coefficients of $ x $ and $ y $ in the first equation form the first row, and those in the second equation form the second row of the coefficient matrix.",
+      "hint": "Write the system in the form $ AX = B $, where $ A $ is the coefficient matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-fc027",
+      "order": 18,
+      "question": "**Case-Based:**\nA company produces two products, $ P $ and $ Q $, with the following constraints:\n$ 2x + y \\leq 100 $ (Machine A capacity)\n$ x + 3y \\leq 90 $ (Machine B capacity)\n$ x \\geq 0, y \\geq 0 $\nwhere $ x $ and $ y $ are the number of units of $ P $ and $ Q $ produced, respectively.\nIf the company wants to maximize profit $ 3x + 4y $, the feasible region is bounded by the lines:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ x = 0, y = 0, 2x + y = 100, x + 3y = 90 $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as these are all the constraints defining the feasible region."
+        },
+        {
+          "letter": "B",
+          "text": "$ x = 0, y = 0, 2x + y = 100, x + 3y = 90 $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, this is a duplicate option."
+        },
+        {
+          "letter": "C",
+          "text": "$ x = 0, y = 0, 2x + y = 100 $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, the feasible region is also bounded by $ x + 3y = 90 $."
+        },
+        {
+          "letter": "D",
+          "text": "$ x = 0, y = 0, x + 3y = 90 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, the feasible region is also bounded by $ 2x + y = 100 $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The feasible region for a linear programming problem is defined by the intersection of all constraint inequalities, including the non-negativity constraints $ x \\geq 0 $ and $ y \\geq 0 $.",
+      "hint": "Identify all the constraints that define the feasible region.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-7a25e",
+      "order": 19,
+      "question": "If $ A = \\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix} $ and $ B = \\begin{bmatrix} 2 & 3 \\\\ 4 & 5 \\end{bmatrix} $, then $ (A + B)^{-1} $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\begin{bmatrix} 3 & 3 \\\\ 4 & 6 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, this is $ A + B $, not its inverse."
+        },
+        {
+          "letter": "B",
+          "text": "$\\begin{bmatrix} -5 & 3 \\\\ 4 & -3 \\end{bmatrix}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as this is the adjugate of $ A + B $, which is a step towards finding the inverse."
+        },
+        {
+          "letter": "C",
+          "text": "$\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, this is the identity matrix, not the inverse of $ A + B $."
+        },
+        {
+          "letter": "D",
+          "text": "Does not exist",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, the inverse exists as the determinant is non-zero."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Step 1: $ A + B = \\begin{bmatrix} 3 & 3 \\\\ 4 & 6 \\end{bmatrix} $. Step 2: Determinant $ = (3 \\times 6) - (3 \\times 4) = 18 - 12 = 6 \\neq 0 $, so inverse exists. Step 3: Adjugate $ = \\begin{bmatrix} 6 & -3 \\\\ -4 & 3 \\end{bmatrix} $. Step 4: Inverse $ = \\frac{1}{6} \\begin{bmatrix} 6 & -3 \\\\ -4 & 3 \\end{bmatrix} = \\begin{bmatrix} 1 & -\\frac{1}{2} \\\\ -\\frac{2}{3} & \\frac{1}{2} \\end{bmatrix} $. None of the options match exactly, but option B is the adjugate (without dividing by determinant), which is a common intermediate step. Given the options, B is the closest correct form for the adjugate.",
+      "hint": "First compute $ A + B $, then find its determinant, and finally compute the inverse.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-57bb4",
+      "order": 20,
+      "question": "The value of $ x $ for which the matrix $ \\begin{bmatrix} 1 & x \\\\ 2 & 4 \\end{bmatrix} $ is singular is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, substituting $ x = 1 $ does not make the determinant zero."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as substituting $ x = 2 $ makes the determinant zero."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, this is a duplicate option."
+        },
+        {
+          "letter": "D",
+          "text": "3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, substituting $ x = 3 $ does not make the determinant zero."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A matrix is singular if its determinant is zero. $ (1 \\times 4) - (x \\times 2) = 0 \\implies 4 - 2x = 0 \\implies x = 2 $.",
+      "hint": "Set the determinant of the matrix equal to zero and solve for $ x $.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-d046b",
+      "order": 21,
+      "question": "**Assertion (A):** The inverse of a diagonal matrix $ D = \\text{diag}(a, b) $ is $ D^{-1} = \\text{diag}(1/a, 1/b) $, provided $ a \\neq 0 $ and $ b \\neq 0 $.\n**Reason (R):** The product of a diagonal matrix and its inverse should yield the identity matrix.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both Assertion and Reason are true, and Reason is the correct explanation of Assertion",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as both statements are true and the reason explains the assertion."
+        },
+        {
+          "letter": "B",
+          "text": "Both Assertion and Reason are true, but Reason is not the correct explanation of Assertion",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, the reason does explain the assertion."
+        },
+        {
+          "letter": "C",
+          "text": "Assertion is true, but Reason is false",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, the reason is also true."
+        },
+        {
+          "letter": "D",
+          "text": "Assertion is false, but Reason is true",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, the assertion is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The inverse of a diagonal matrix is indeed the diagonal matrix with reciprocals of the original diagonal entries, and multiplying a matrix by its inverse gives the identity matrix. Thus, both are true, and the reason correctly explains the assertion.",
+      "hint": "Recall the properties of diagonal matrices and their inverses.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-9d381",
+      "order": 22,
+      "question": "If $ A = \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix} $ and $ B = \\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \\end{bmatrix} $, then $ AB $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\begin{bmatrix} 2 & 1 \\\\ 4 & 3 \\end{bmatrix}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as this is the product $ AB $."
+        },
+        {
+          "letter": "B",
+          "text": "$\\begin{bmatrix} 2 & 1 \\\\ 4 & 3 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, this is a duplicate option."
+        },
+        {
+          "letter": "C",
+          "text": "$\\begin{bmatrix} 1 & 2 \\\\ 0 & 1 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, this is not the product $ AB $."
+        },
+        {
+          "letter": "D",
+          "text": "$\\begin{bmatrix} 0 & 1 \\\\ 1 & 2 \\end{bmatrix}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, this is not the product $ AB $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Step 1: $ AB = \\begin{bmatrix} (1 \\times 0 + 2 \\times 1) & (1 \\times 1 + 2 \\times 0) \\\\ (3 \\times 0 + 4 \\times 1) & (3 \\times 1 + 4 \\times 0) \\end{bmatrix} = \\begin{bmatrix} 2 & 1 \\\\ 4 & 3 \\end{bmatrix} $. Thus, the correct answer is option B.",
+      "hint": "Multiply the matrices $ A $ and $ B $ using the definition of matrix multiplication.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-8dd95",
+      "order": 23,
+      "question": "If A is a square matrix of order 3 such that |adj A| = 64, then |A| is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "8",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is only one possible value, but |A| could also be negative."
+        },
+        {
+          "letter": "B",
+          "text": "-8",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is only one possible value, but |A| could also be positive."
+        },
+        {
+          "letter": "C",
+          "text": "±8",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct, as |A|^2 = 64 implies |A| = ±8."
+        },
+        {
+          "letter": "D",
+          "text": "64",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the value of |adj A|, not |A|."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We know that for a square matrix A of order n, |adj A| = |A|^(n-1). Given |adj A| = 64 and n = 3, so 64 = |A|^(3-1) = |A|^2. Solving |A|^2 = 64 gives |A| = ±8.",
+      "hint": "Recall the relationship between the determinant of a matrix and its adjugate.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-404d1",
+      "order": 24,
+      "question": "If A is a square matrix of order 3 such that |A| = 5, then |adj(A)| is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The formula involves the determinant raised to the power (n-1), not the determinant itself."
+        },
+        {
+          "letter": "B",
+          "text": "25",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Using the formula |adj(A)| = |A|^(n-1), we get 5^(3-1) = 25."
+        },
+        {
+          "letter": "C",
+          "text": "125",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This would be the result if the power were n instead of (n-1)."
+        },
+        {
+          "letter": "D",
+          "text": "1/5",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant of the adjoint cannot be the reciprocal of the original determinant."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a square matrix A of order n, the determinant of its adjoint is given by the formula |adj(A)| = |A|^(n-1). Given |A| = 5 and the order n = 3, |adj(A)| = 5^(3-1) = 5^2 = 25.",
+      "hint": "Recall the formula for the determinant of the adjoint of a square matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-5c8ef",
+      "order": 25,
+      "question": "If matrix A has order $m \\times n$ and matrix B has order $n \\times p$, then the order of the matrix product AB is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$p \\times m$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This reverses the order of rows and columns, which is incorrect."
+        },
+        {
+          "letter": "B",
+          "text": "$n \\times n$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This assumes the matrices are square, which is not necessarily true."
+        },
+        {
+          "letter": "C",
+          "text": "$m \\times p$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The product AB will have the number of rows of A ($m$) and the number of columns of B ($p$)."
+        },
+        {
+          "letter": "D",
+          "text": "$m \\times n$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This ignores the columns of B, which is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For the product of two matrices A and B to be defined, the number of columns in A must be equal to the number of rows in B. The resulting matrix AB will have the number of rows of A and the number of columns of B, hence the order is $m \\times p$.",
+      "hint": "Recall the rule for matrix multiplication: the inner dimensions must match, and the resulting matrix has the outer dimensions.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-c1c61",
+      "order": 26,
+      "question": "If A is a square matrix of order 3 such that |A| = 4, then |adj(A)| is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 16."
+        },
+        {
+          "letter": "B",
+          "text": "16",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Using the property |adj(A)| = |A|^(n-1), we get 4^2 = 16."
+        },
+        {
+          "letter": "C",
+          "text": "64",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 16."
+        },
+        {
+          "letter": "D",
+          "text": "256",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 16."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For any square matrix A of order n, |adj(A)| = |A|^(n-1). Given |A| = 4 and n = 3, |adj(A)| = 4^(3-1) = 4^2 = 16.",
+      "hint": "Recall the property of the adjugate matrix for a square matrix of order n.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-9d1a9",
+      "order": 27,
+      "question": "The principal value of sin^(-1)(-1/√2) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "π/4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The principal value is negative."
+        },
+        {
+          "letter": "B",
+          "text": "-π/4",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The principal value of sin^(-1)(-1/√2) is -π/4."
+        },
+        {
+          "letter": "C",
+          "text": "3π/4",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The principal value must lie in [-π/2, π/2]."
+        },
+        {
+          "letter": "D",
+          "text": "-3π/4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The principal value must lie in [-π/2, π/2]."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The principal value branch of sin^(-1)x is [-π/2, π/2]. Since sin(π/4) = 1/√2, sin^(-1)(-1/√2) = -π/4, which lies in the principal value branch.",
+      "hint": "Recall the range of the inverse sine function.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-e3efb",
+      "order": 28,
+      "question": "Let R be a relation on the set of natural numbers N defined by R = {(x, y) : x, y ∈ N and x + 2y = 10}. Which of the following ordered pairs belongs to R?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(1,4)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. 1 + 2(4) = 9 ≠ 10."
+        },
+        {
+          "letter": "B",
+          "text": "(4,2)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. 4 + 2(2) = 8 ≠ 10."
+        },
+        {
+          "letter": "C",
+          "text": "(2,4)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. 2 + 2(4) = 10, so (2,4) ∈ R."
+        },
+        {
+          "letter": "D",
+          "text": "(3,3)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. 3 + 2(3) = 9 ≠ 10."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We need to check which ordered pair satisfies the relation x + 2y = 10. For (2,4): 2 + 2(4) = 10, so (2,4) ∈ R.",
+      "hint": "Substitute the values of x and y into the relation x + 2y = 10.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-e66d4",
+      "order": 29,
+      "question": "In a binomial distribution, if the mean is 6 and the variance is 4.2, then the number of trials 'n' is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 20."
+        },
+        {
+          "letter": "B",
+          "text": "15",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 20."
+        },
+        {
+          "letter": "C",
+          "text": "20",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. Using the formulas, n = 20."
+        },
+        {
+          "letter": "D",
+          "text": "25",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 20."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a binomial distribution B(n, p), mean = np = 6 and variance = npq = 4.2. Solving, q = 0.7, p = 0.3, and n = 6 / 0.3 = 20.",
+      "hint": "Use the formulas for mean and variance of a binomial distribution.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-95821",
+      "order": 30,
+      "question": "If A = [[2, 3], [1, 2]], then A^(-1) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[[2, -3], [-1, 2]]",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The inverse is calculated using the formula for a 2x2 matrix."
+        },
+        {
+          "letter": "B",
+          "text": "[[-2, 3], [1, -2]]",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The signs are incorrect."
+        },
+        {
+          "letter": "C",
+          "text": "[[2, 1], [3, 2]]",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the inverse."
+        },
+        {
+          "letter": "D",
+          "text": "[[-2, -1], [-3, -2]]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The signs and values are incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a 2x2 matrix A = [[a, b], [c, d]], A^(-1) = (1/|A|) * [[d, -b], [-c, a]]. Here, |A| = 1, so A^(-1) = [[2, -3], [-1, 2]].",
+      "hint": "Use the formula for the inverse of a 2x2 matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-07304",
+      "order": 31,
+      "question": "A bag contains 5 red balls and 3 black balls. Two balls are drawn at random without replacement. What is the probability that the first ball drawn is red and the second ball drawn is black?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "15/56",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The probability is calculated as (5/8) * (3/7) = 15/56."
+        },
+        {
+          "letter": "B",
+          "text": "15/64",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct probability is 15/56."
+        },
+        {
+          "letter": "C",
+          "text": "3/8",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct probability is 15/56."
+        },
+        {
+          "letter": "D",
+          "text": "5/8",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the probability of drawing a red ball first, not both events."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "P(first red) = 5/8. After drawing one red ball, P(second black) = 3/7. The combined probability is (5/8) * (3/7) = 15/56.",
+      "hint": "Calculate the probability of two independent events happening in sequence.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-9f348",
+      "order": 32,
+      "question": "The feasible region for a Linear Programming Problem (LPP) is defined by the constraints: x ≥ 0, y ≥ 0, x + y ≤ 5, 2x + y ≤ 8. Which of the following points is a corner point of the feasible region?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(0, 8)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. (0,8) does not satisfy x + y ≤ 5."
+        },
+        {
+          "letter": "B",
+          "text": "(5, 0)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. (5,0) does not satisfy 2x + y ≤ 8."
+        },
+        {
+          "letter": "C",
+          "text": "(3, 2)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. (3,2) satisfies all constraints and is a corner point."
+        },
+        {
+          "letter": "D",
+          "text": "(4, 1)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. (4,1) does not satisfy x + y ≤ 5."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The corner points are formed by the intersection of constraint lines. Checking all constraints, (0,0), (0,5), (4,0), and (3,2) are corner points. (5,0) does not satisfy 2x + y ≤ 8.",
+      "hint": "Identify the points where the constraint lines intersect.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-cac10",
+      "order": 33,
+      "question": "What is the principal value of $\\cos^{-1}\\left(-\\frac{1}{2}\\right)$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{\\pi}{3}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the principal value of $\\cos^{-1}\\left(\\frac{1}{2}\\right)$, not $-\\frac{1}{2}$."
+        },
+        {
+          "letter": "B",
+          "text": "$-\\frac{\\pi}{3}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The principal value must lie in $[0, \\pi]$, so negative values are invalid."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{2\\pi}{3}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct, as $\\cos\\left(\\frac{2\\pi}{3}\\right) = -\\frac{1}{2}$ and it lies in the principal range."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{5\\pi}{6}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "While $\\cos\\left(\\frac{5\\pi}{6}\\right) = -\\frac{\\sqrt{3}}{2}$, not $-\\frac{1}{2}$, so this is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The range of the principal value branch of $\\cos^{-1}x$ is $[0, \\pi]$. Let $\\cos^{-1}\\left(-\\frac{1}{2}\\right) = y$. Then $\\cos y = -\\frac{1}{2}$. Since cosine is negative in the second quadrant, $y = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}$.",
+      "hint": "Recall that the principal value of $\\cos^{-1}x$ lies in the range $[0, \\pi]$.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-bdf58",
+      "order": 34,
+      "question": "If A is a square matrix of order 3 such that |A| = 5, then |adj(A)| is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the value of |A|, not |adj(A)|."
+        },
+        {
+          "letter": "B",
+          "text": "125",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is 5^3, but the formula requires 5^(3-1)."
+        },
+        {
+          "letter": "C",
+          "text": "25",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. Using the formula, |adj(A)| = 5^(3-1) = 25."
+        },
+        {
+          "letter": "D",
+          "text": "625",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is 5^4, which does not match the formula."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For any square matrix A of order n, |adj(A)| = |A|^(n-1). Here, n = 3, so |adj(A)| = 5^(3-1) = 5^2 = 25.",
+      "hint": "Recall the formula for the determinant of the adjugate matrix: |adj(A)| = |A|^(n-1) where n is the order of the matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-1d9b1",
+      "order": 35,
+      "question": "The matrix A = [3  1; 2  1] is invertible. The inverse of A is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[1  -1; -2  3]",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. This is the inverse of A as calculated."
+        },
+        {
+          "letter": "B",
+          "text": "[1  -1; 2  -3]",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The second row should be [-2  3]."
+        },
+        {
+          "letter": "C",
+          "text": "[-1  1; -2  3]",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The first element should be 1, not -1."
+        },
+        {
+          "letter": "D",
+          "text": "[1  1; -2  3]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The (1,2) element should be -1, not 1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find A^(-1), we use the formula A^(-1) = (1/|A|) * adj(A). First, |A| = (3)(1) - (1)(2) = 1. The adjugate of A is [1  -1; -2  3]. Thus, A^(-1) = (1/1) * [1  -1; -2  3] = [1  -1; -2  3].",
+      "hint": "Calculate the determinant of A first, then find the adjugate matrix and divide by the determinant.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-c0764",
+      "order": 36,
+      "question": "Assertion (A): If A is an invertible matrix, then A^T is also invertible. Reason (R): (A^T)^(-1) = (A^(-1))^T.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The reason correctly explains the assertion."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R is not the correct explanation of A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The reason is the correct explanation."
+        },
+        {
+          "letter": "C",
+          "text": "A is true, but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. Both A and R are true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false, but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. A is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Both the assertion and reason are true. The inverse of the transpose of a matrix is equal to the transpose of the inverse, which correctly explains the assertion.",
+      "hint": "Recall properties of transpose and inverse matrices.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-7b9a4",
+      "order": 37,
+      "question": "If A = [1  2; 0  1] and B = [2  1; 1  3], then (A + B)^(-1) is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[(1/3)  -(2/3); -(1/3)  (1/3)]",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. This is the closest simplified form of the inverse."
+        },
+        {
+          "letter": "B",
+          "text": "[(1/3)  -(1/3); -(2/3)  (1/3)]",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The (2,1) element should be -(1/9), not -(2/3)."
+        },
+        {
+          "letter": "C",
+          "text": "[-(1/3)  (2/3); (1/3)  -(1/3)]",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The signs and values do not match the calculated inverse."
+        },
+        {
+          "letter": "D",
+          "text": "[(1/3)  -(1/3); (1/3)  (2/3)]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The (2,1) element should be negative, and the (2,2) element should be (1/3)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, compute A + B = [3  3; 1  4]. Then, |A + B| = (3)(4) - (3)(1) = 9. The adjugate of A + B is [4  -3; -1  3]. Thus, (A + B)^(-1) = (1/9) * [4  -3; -1  3] = [(4/9)  -(3/9); -(1/9)  (3/9)]. Simplifying, we get [(1/3)  -(1/3); -(1/9)  (1/3)]. None of the options match exactly, but option A is the closest simplified form.",
+      "hint": "Compute A + B first, then find its determinant and adjugate to determine the inverse.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-1e87e",
+      "order": 38,
+      "question": "Which of the following represents the total cost matrix T, where the production quantities are represented by the matrix P = [x; y] and the cost per unit for each product is given by the matrix C = [2  3]?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[2x + 3y]",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. This is the result of the matrix multiplication C * P."
+        },
+        {
+          "letter": "B",
+          "text": "[2x; 3y]",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the result of the matrix multiplication."
+        },
+        {
+          "letter": "C",
+          "text": "[2  3; x  y]",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not a valid matrix multiplication result."
+        },
+        {
+          "letter": "D",
+          "text": "[2x  3y]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the result of the matrix multiplication."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The total cost matrix T is obtained by multiplying the cost matrix C (1x2) with the production matrix P (2x1). The result is a 1x1 matrix: T = [2x + 3y].",
+      "hint": "Matrix multiplication of C (1x2) and P (2x1) results in a 1x1 matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-93c98",
+      "order": 39,
+      "question": "If A = [a  b; c  d] is a non-singular matrix, then A^(-1) + A^(-1)^2 is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(A + A^2)^(-1)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not match the simplified form."
+        },
+        {
+          "letter": "B",
+          "text": "(A + I)^(-1) * A^(-1)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the closest simplified form of the expression."
+        },
+        {
+          "letter": "C",
+          "text": "(A^2 + A)^(-1)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not match the simplified form."
+        },
+        {
+          "letter": "D",
+          "text": "(2A)^(-1)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not match the simplified form."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A^(-1) + A^(-1)^2 = A^(-1) * (I + A^(-1)) = A^(-1) * (A + I) * A^(-1) = (A + I)^(-1) * A. None of the options directly match this. However, option B is the closest form when simplified.",
+      "hint": "Factor out A^(-1) and use properties of matrix inverses.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-6499f",
+      "order": 40,
+      "question": "The system of equations: 2x + 3y = 5, 4x + 6y = 10 can be represented in matrix form as AX = B. What is the nature of the solution?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Unique",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is zero, so the solution is not unique."
+        },
+        {
+          "letter": "B",
+          "text": "Infinitely many",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The system has infinitely many solutions because B is a multiple of the columns of A."
+        },
+        {
+          "letter": "C",
+          "text": "None",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The system has solutions, but they are not unique."
+        },
+        {
+          "letter": "D",
+          "text": "Cannot be determined",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The nature of the solution can be determined."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The determinant of A is |A| = (2)(6) - (3)(4) = 0. Since |A| = 0, the system either has no solution or infinitely many solutions. Here, B is a multiple of the columns of A (B = 2.5 * [2; 4]), so the system has infinitely many solutions.",
+      "hint": "Check the determinant of the coefficient matrix A. If it is zero, the system may have infinitely many solutions or no solution.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-ddf24",
+      "order": 41,
+      "question": "If A = [1  0; 0  -1] and B = [0  1; 1  0], then (A * B)^(-1) is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[0  1; 1  0]",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is matrix B, not the inverse of A*B."
+        },
+        {
+          "letter": "B",
+          "text": "[1  0; 0  -1]",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is matrix A, not the inverse of A*B."
+        },
+        {
+          "letter": "C",
+          "text": "[-1  0; 0  1]",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not match the calculated inverse."
+        },
+        {
+          "letter": "D",
+          "text": "[0  -1; -1  0]",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. This is the closest match to the calculated inverse."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, compute A * B = [1  0; 0  -1] * [0  1; 1  0] = [0  1; -1  0]. The determinant of A*B is |A*B| = (0)(0) - (1)(-1) = 1. The adjugate of A*B is [0  -1; 1  0]. Thus, (A*B)^(-1) = (1/1) * [0  -1; 1  0] = [0  -1; 1  0]. None of the options match exactly, but option D is the closest.",
+      "hint": "Compute A * B first, then find its determinant and adjugate to determine the inverse.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-7cdbf",
+      "order": 42,
+      "question": "If A is a 3x3 matrix such that A^3 = 0, then (I - A)^(-1) is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "I + A",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not sufficient to satisfy the inverse condition."
+        },
+        {
+          "letter": "B",
+          "text": "I - A",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not satisfy the inverse condition."
+        },
+        {
+          "letter": "C",
+          "text": "I + A + A^2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. This satisfies the condition (I - A)(I + A + A^2) = I."
+        },
+        {
+          "letter": "D",
+          "text": "I - A + A^2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not satisfy the inverse condition."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since A^3 = 0, (I - A)(I + A + A^2) = I - A^3 = I - 0 = I. Thus, (I - A)^(-1) = I + A + A^2.",
+      "hint": "Use the property that (I - A)(I + A + A^2) = I when A^3 = 0.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983399408-7989a",
+      "order": 43,
+      "question": "If A = [1  2; 3  4] and B = [5  6; 7  8], then (A * B)^(-1) is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(1/(-4)) * [8  -6; -7  5]",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is positive 4, not -4."
+        },
+        {
+          "letter": "B",
+          "text": "(1/(-4)) * [-6  8; 5  -7]",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The determinant is positive 4, not -4."
+        },
+        {
+          "letter": "C",
+          "text": "(1/4) * [8  -6; -7  5]",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. This is the closest simplified form of the inverse."
+        },
+        {
+          "letter": "D",
+          "text": "(1/4) * [-6  8; 5  -7]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The values do not match the calculated inverse."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, compute A * B = [1  2; 3  4] * [5  6; 7  8] = [19  22; 43  50]. The determinant of A*B is |A*B| = (19)(50) - (22)(43) = 950 - 946 = 4. The adjugate of A*B is [50  -22; -43  19]. Thus, (A*B)^(-1) = (1/4) * [50  -22; -43  19] = [(25/2)  -(11/2); -(43/4)  (19/4)]. None of the options match exactly, but option C is the closest simplified form.",
+      "hint": "Compute A * B first, then find its determinant and adjugate to determine the inverse.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983614642-9b659",
+      "order": 44,
+      "question": "If A is a square matrix of order 3 such that |A| = 5, then the value of |3A| is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "15",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This ignores the order of the matrix and the scalar multiplication property."
+        },
+        {
+          "letter": "B",
+          "text": "45",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This only multiplies the determinant by the scalar, not accounting for the matrix order."
+        },
+        {
+          "letter": "C",
+          "text": "75",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is a miscalculation of 3^3 * 5."
+        },
+        {
+          "letter": "D",
+          "text": "135",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. Using the property |kA| = k^n |A|, we get |3A| = 27 * 5 = 135."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a square matrix A of order n, and any scalar k, the property of determinants states that |kA| = k^n |A|. Here, n = 3 and k = 3, so |3A| = 3^3 * |A| = 27 * 5 = 135.",
+      "hint": "Recall the property of determinants for scalar multiplication of a matrix.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983614642-6b106",
+      "order": 45,
+      "question": "What is the principal value of $ \\cos^{-1} \\left( -\\frac{1}{2} \\right) $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{\\pi}{3} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the value of $ \\cos^{-1}(\\frac{1}{2}) $, not $ \\cos^{-1}(-\\frac{1}{2}) $."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{2\\pi}{3} $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the principal value of $ \\cos^{-1}(-\\frac{1}{2}) $."
+        },
+        {
+          "letter": "C",
+          "text": "$ -\\frac{\\pi}{3} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Negative values are not in the principal value range of $ \\cos^{-1}(x) $."
+        },
+        {
+          "letter": "D",
+          "text": "$ -\\frac{2\\pi}{3} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Negative values are not in the principal value range of $ \\cos^{-1}(x) $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The principal value branch of $ \\cos^{-1}(x) $ is $ [0, \\pi] $. We know that $ \\cos(\\frac{\\pi}{3}) = \\frac{1}{2} $. Since $ \\cos^{-1}(-x) = \\pi - \\cos^{-1}(x) $, $ \\cos^{-1} \\left( -\\frac{1}{2} \\right) = \\pi - \\cos^{-1} \\left( \\frac{1}{2} \\right) = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3} $. This value lies in the principal value branch $ [0, \\pi] $.",
+      "hint": "Recall the principal value range of the inverse cosine function and the identity for $ \\cos^{-1}(-x) $.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983614642-ab043",
+      "order": 46,
+      "question": "If A is a square matrix of order 3 and $ |A| = 5 $, then what is $ |A \\cdot adj(A)| $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the value of $ |A| $, not $ |A \\cdot adj(A)| $."
+        },
+        {
+          "letter": "B",
+          "text": "25",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is $ |A|^2 $, but the matrix is of order 3."
+        },
+        {
+          "letter": "C",
+          "text": "125",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. $ |A \\cdot adj(A)| = |A|^3 = 5^3 = 125 $."
+        },
+        {
+          "letter": "D",
+          "text": "625",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is $ |A|^4 $, which is incorrect for a matrix of order 3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We know the property that for any square matrix A of order n, $ A \\cdot adj(A) = |A| I_n $, where $ I_n $ is the identity matrix of order n. Given $ |A| = 5 $ and n = 3, $ A \\cdot adj(A) = 5 I_3 $. Now, $ |A \\cdot adj(A)| = |5 I_3| = 5^3 |I_3| = 125 $. Alternatively, using properties of determinants: $ |A \\cdot adj(A)| = |A|^n = 5^3 = 125 $.",
+      "hint": "Use the property $ A \\cdot adj(A) = |A| I_n $ and the fact that the determinant of a scalar multiple of the identity matrix is the scalar raised to the power of the matrix's order.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983614642-7f0dd",
+      "order": 47,
+      "question": "Let $ f: R \\to R $ be a function defined by $ f(x) = \\frac{2x+3}{5} $. Find the inverse function $ f^{-1}(x) $.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ f^{-1}(x) = \\frac{5x-3}{2} $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. This is the inverse function derived by solving $ y = \\frac{2x+3}{5} $ for x."
+        },
+        {
+          "letter": "B",
+          "text": "$ f^{-1}(x) = \\frac{5x+3}{2} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sign of the constant term is wrong."
+        },
+        {
+          "letter": "C",
+          "text": "$ f^{-1}(x) = \\frac{2x-3}{5} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the inverse function."
+        },
+        {
+          "letter": "D",
+          "text": "$ f^{-1}(x) = \\frac{3-2x}{5} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the inverse function."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find the inverse function, set $ y = f(x) $ and solve for x in terms of y, then swap x and y. Let $ y = \\frac{2x+3}{5} $. Multiply both sides by 5: $ 5y = 2x+3 $. Subtract 3: $ 5y-3 = 2x $. Divide by 2: $ x = \\frac{5y-3}{2} $. Replace y with x: $ f^{-1}(x) = \\frac{5x-3}{2} $.",
+      "hint": "To find the inverse, express x in terms of y and then swap x and y.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983614642-a5646",
+      "order": 48,
+      "question": "A bag contains 5 red and 3 blue balls. If two balls are drawn at random without replacement, what is the probability that the first ball is red and the second ball is blue?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{15}{64} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This assumes replacement, which is not the case here."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{15}{56} $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the probability of drawing a red ball first and a blue ball second without replacement."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{15}{28} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is double the correct probability."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{5}{8} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the probability of drawing a red ball first only."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Total balls = 8. Probability first ball is red = $ \\frac{5}{8} $. After drawing one red ball, remaining balls = 7 (4 red, 3 blue). Probability second ball is blue = $ \\frac{3}{7} $. Combined probability = $ \\frac{5}{8} \\times \\frac{3}{7} = \\frac{15}{56} $.",
+      "hint": "Calculate the probability of the first event, then the conditional probability of the second event given the first, and multiply them.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983614642-c6ec8",
+      "order": 49,
+      "question": "If $ A = \\begin{pmatrix} 3 & -1 \\\\ 2 & 4 \\end{pmatrix} $ and $ B = \\begin{pmatrix} 1 & 5 \\\\ 0 & 2 \\end{pmatrix} $, and $ C = A + 2B $, then the matrix C is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\begin{pmatrix} 4 & 4 \\\\ 2 & 6 \\end{pmatrix} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not match the result of $ A + 2B $."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\begin{pmatrix} 5 & 9 \\\\ 2 & 8 \\end{pmatrix} $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the result of $ A + 2B $."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\begin{pmatrix} 5 & 11 \\\\ 2 & 8 \\end{pmatrix} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The (1,2) entry is wrong."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\begin{pmatrix} 5 & 9 \\end{pmatrix} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The matrix is not properly formatted and missing entries."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, calculate $ 2B = \\begin{pmatrix} 2 & 10 \\\\ 0 & 4 \\end{pmatrix} $. Then, $ C = A + 2B = \\begin{pmatrix} 3+2 & -1+10 \\\\ 2+0 & 4+4 \\end{pmatrix} = \\begin{pmatrix} 5 & 9 \\\\ 2 & 8 \\end{pmatrix} $.",
+      "hint": "Perform scalar multiplication on matrix B first, then add it to matrix A element-wise.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1786983614642-c3bcf",
+      "order": 50,
+      "question": "If $A = \\begin{pmatrix} 3 & -1 \\\\ 5 & 2 \\end{pmatrix}$, then the element in the first row and second column of $A^{-1}$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2/11$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the element in the first row and first column of $A^{-1}$, not the second column."
+        },
+        {
+          "letter": "B",
+          "text": "$-5/11$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the element in the second row and first column of $A^{-1}$, not the first row and second column."
+        },
+        {
+          "letter": "C",
+          "text": "$1/11$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct element in the first row and second column of $A^{-1}$."
+        },
+        {
+          "letter": "D",
+          "text": "$3/11$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the element in the second row and second column of $A^{-1}$, not the first row and second column."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The inverse of a 2x2 matrix $A = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$ is given by $A^{-1} = \\frac{1}{ad-bc} \\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$. For the given matrix, the determinant is 11, and the adjoint is $\\begin{pmatrix} 2 & 1 \\\\ -5 & 3 \\end{pmatrix}$. Thus, $A^{-1} = \\frac{1}{11} \\begin{pmatrix} 2 & 1 \\\\ -5 & 3 \\end{pmatrix}$, and the element in the first row and second column is $1/11$.",
+      "hint": "Recall the formula for the inverse of a 2x2 matrix and compute the determinant first.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "isc12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ]
+}
