@@ -1,0 +1,3876 @@
+{
+  "id": "b8682961-a1dc-421d-ba63-384daca179f3",
+  "title": "CDS — Combined: Elementary Mathematics + English + General Knowledge",
+  "description": "Combined test: Elementary Mathematics + English + General Knowledge for CDS. 65Q.",
+  "board": "Competitive",
+  "classSlug": "cds",
+  "classNumber": 0,
+  "subjects": [
+    "cds-maths",
+    "cds-english",
+    "cds-gk"
+  ],
+  "subject": "cds-maths",
+  "chapter": "Multiple Chapters",
+  "topic": "Combined",
+  "testType": "subject-wise",
+  "duration": 120,
+  "totalMarks": 75,
+  "passingMarks": 26,
+  "totalQuestions": 75,
+  "targetQuestions": 75,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "mathematics",
+    "cds-maths+cds-english+cds-gk",
+    "english",
+    "elementary",
+    "cds",
+    "general",
+    "knowledge"
+  ],
+  "instructions": [
+    "Subject: Elementary Mathematics + English + General Knowledge",
+    "Total Questions: 65",
+    "Total Marks: 65",
+    "Duration: 120 minutes",
+    "Correct answer: +1 mark",
+    "Wrong answer: -0.33 mark"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-08-18T07:42:56.449382Z",
+  "questions": [
+    {
+      "id": "q-1787038405133-147c8",
+      "order": 1,
+      "question": "If $\\sin \\theta = \\frac{p}{q}$, where $q \\ne 0$, then $\\tan \\theta$ is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{p}{\\sqrt{q^2 - p^2}}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct expression for $\\tan \\theta$ derived from $\\sin \\theta = \\frac{p}{q}$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{q}{\\sqrt{q^2 - p^2}}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This incorrectly places $q$ in the numerator instead of $p$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{\\sqrt{q^2 - p^2}}{p}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the reciprocal of the correct expression for $\\tan \\theta$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{p}{\\sqrt{q^2 + p^2}}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This incorrectly uses $q^2 + p^2$ instead of $q^2 - p^2$ under the square root."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given $\\sin \\theta = \\frac{p}{q}$, we can use the Pythagorean identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$ to find $\\cos \\theta$. Thus, $\\cos \\theta = \\sqrt{1 - \\sin^2 \\theta} = \\sqrt{1 - \\frac{p^2}{q^2}} = \\frac{\\sqrt{q^2 - p^2}}{q}$. Now, $\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta} = \\frac{\\frac{p}{q}}{\\frac{\\sqrt{q^2 - p^2}}{q}} = \\frac{p}{\\sqrt{q^2 - p^2}}$.",
+      "hint": "Use the identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$ to find $\\cos \\theta$ and then compute $\\tan \\theta$.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038405133-1495d",
+      "order": 2,
+      "question": "What is the value of $\\frac{\\sin 30^\\circ + \\cos 60^\\circ}{\\tan 45^\\circ + \\cot 45^\\circ}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The numerator is $\\frac{1}{2} + \\frac{1}{2} = 1$, and the denominator is $1 + 1 = 2$, so the result is $\\frac{1}{2}$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{1}{2}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation yields $\\frac{1}{2}$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{1}{\\sqrt{2}}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The result does not simplify to $\\frac{1}{\\sqrt{2}}$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\sqrt{3}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The result is not $\\sqrt{3}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We know the standard trigonometric values: $\\sin 30^\\circ = \\frac{1}{2}$, $\\cos 60^\\circ = \\frac{1}{2}$, $\\tan 45^\\circ = 1$, and $\\cot 45^\\circ = 1$. Substituting these values, the expression becomes $\\frac{\\frac{1}{2} + \\frac{1}{2}}{1 + 1} = \\frac{1}{2}$.",
+      "hint": "Recall the standard trigonometric values for 30°, 45°, and 60°.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038405133-961e2",
+      "order": 3,
+      "question": "What is the value of sin 30° + cos 60° - tan 45°?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum evaluates to 0, not 1."
+        },
+        {
+          "letter": "B",
+          "text": "0",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation results in 0."
+        },
+        {
+          "letter": "C",
+          "text": "-1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum evaluates to 0, not -1."
+        },
+        {
+          "letter": "D",
+          "text": "1/2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum evaluates to 0, not 1/2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We know the standard trigonometric values: sin 30° = 1/2, cos 60° = 1/2, and tan 45° = 1. Substituting these values into the expression: sin 30° + cos 60° - tan 45° = (1/2) + (1/2) - 1 = 0.",
+      "hint": "Recall the standard trigonometric values for 30°, 45°, and 60°.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038405133-b0239",
+      "order": 4,
+      "question": "If $ \\sin \\theta = \\frac{3}{5} $ and $ \\theta $ is an acute angle, find the value of $ \\tan \\theta $.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{3}{4} $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The adjacent side is 4, so $ \\tan \\theta = \\frac{3}{4} $."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{4}{3} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the reciprocal of the correct value."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{5}{3} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the ratio of hypotenuse to opposite side."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{3}{5} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the value of $ \\sin \\theta $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since $ \\sin \\theta = \\frac{3}{5} $, we can consider a right triangle where the opposite side is 3 and the hypotenuse is 5. Using the Pythagorean theorem, the adjacent side is $ \\sqrt{5^2 - 3^2} = \\sqrt{25 - 9} = \\sqrt{16} = 4 $. Therefore, $ \\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{3}{4} $.",
+      "hint": "Use the Pythagorean theorem to find the adjacent side.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038405133-d2cea",
+      "order": 5,
+      "question": "What is the value of (sin 30° + cos 60°) / (tan 45°)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation does not yield 0."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The expression evaluates to 1."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation does not yield 2."
+        },
+        {
+          "letter": "D",
+          "text": "1/2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation does not yield 1/2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We know the standard trigonometric values: sin 30° = 1/2, cos 60° = 1/2, tan 45° = 1. Substitute these values into the expression: (1/2 + 1/2) / 1 = (1) / 1 = 1. Thus, the value of the expression is 1.",
+      "hint": "Recall the standard trigonometric values for 30°, 45°, and 60°.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038405133-aee65",
+      "order": 6,
+      "question": "If sin(θ + 30°) = cosθ, then the value of θ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "30°",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The solution to the equation is θ = 30°."
+        },
+        {
+          "letter": "B",
+          "text": "45°",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The solution does not yield 45°."
+        },
+        {
+          "letter": "C",
+          "text": "60°",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The solution does not yield 60°."
+        },
+        {
+          "letter": "D",
+          "text": "90°",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The solution does not yield 90°."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given the equation sin(θ + 30°) = cosθ. We know that cosθ can be written as sin(90° - θ). So, sin(θ + 30°) = sin(90° - θ). For the sine values to be equal, their angles must be equal: θ + 30° = 90° - θ. Solving this, we get θ = 30°.",
+      "hint": "Use the complementary angle identity: cosθ = sin(90° - θ).",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038405133-36b9c",
+      "order": 7,
+      "question": "Simplify: (secθ + tanθ)(1 - sinθ)",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "sinθ",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The simplified expression is not sinθ."
+        },
+        {
+          "letter": "B",
+          "text": "cosθ",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The simplified expression is cosθ."
+        },
+        {
+          "letter": "C",
+          "text": "secθ",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The simplified expression is not secθ."
+        },
+        {
+          "letter": "D",
+          "text": "cosecθ",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The simplified expression is not cosecθ."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Express secθ and tanθ in terms of sinθ and cosθ: secθ = 1/cosθ, tanθ = sinθ/cosθ. Substitute these into the expression: ((1 + sinθ)/cosθ)(1 - sinθ). Multiply the numerators: (1 + sinθ)(1 - sinθ) / cosθ = (1 - sin²θ) / cosθ. Using the identity 1 - sin²θ = cos²θ, we get cos²θ / cosθ = cosθ.",
+      "hint": "Express secθ and tanθ in terms of sinθ and cosθ, then simplify using trigonometric identities.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038405133-65a4e",
+      "order": 8,
+      "question": "The angle of elevation of the top of a tower from a point on the ground, which is 100 m away from the foot of the tower, is 30°. The height of the tower is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "100√3 m",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The height is not 100√3 m."
+        },
+        {
+          "letter": "B",
+          "text": "100/√3 m",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The height of the tower is 100/√3 m."
+        },
+        {
+          "letter": "C",
+          "text": "50 m",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The height is not 50 m."
+        },
+        {
+          "letter": "D",
+          "text": "50√3 m",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The height is not 50√3 m."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let 'h' be the height of the tower and 'd' be the distance from the foot of the tower to the point on the ground. Given: d = 100 m, angle of elevation (θ) = 30°. Using the tangent function: tan 30° = h / d. We know tan 30° = 1/√3. So, 1/√3 = h / 100. Solving for h, we get h = 100 / √3 m.",
+      "hint": "Use the tangent function in the right-angled triangle formed by the tower, the ground, and the line of sight.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038405133-14c64",
+      "order": 9,
+      "question": "If sin A = 3/5 and A is an acute angle, then what is the value of (tan A + sec A)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3/2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum of tan A and sec A is not 3/2."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The sum of tan A and sec A is 2."
+        },
+        {
+          "letter": "C",
+          "text": "5/2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum of tan A and sec A is not 5/2."
+        },
+        {
+          "letter": "D",
+          "text": "7/4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum of tan A and sec A is not 7/4."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given sin A = 3/5. Since A is an acute angle, we can form a right-angled triangle where the opposite side is 3 and the hypotenuse is 5. Using Pythagoras theorem, the adjacent side = √(5² - 3²) = √(25 - 9) = √16 = 4. Now, tan A = Opposite/Adjacent = 3/4 and sec A = Hypotenuse/Adjacent = 5/4. Therefore, tan A + sec A = 3/4 + 5/4 = 8/4 = 2.",
+      "hint": "Use the Pythagorean identity to find the adjacent side and then compute tan A and sec A.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038405133-5bf0e",
+      "order": 10,
+      "question": "What is the value of (cos²1° + cos²2° + cos²3° + ... + cos²89°)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "44",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum is not 44."
+        },
+        {
+          "letter": "B",
+          "text": "44.5",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The sum is 44.5."
+        },
+        {
+          "letter": "C",
+          "text": "45",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum is not 45."
+        },
+        {
+          "letter": "D",
+          "text": "45.5",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum is not 45.5."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We know that cos²θ = sin²(90° - θ). So, cos²89° = sin²1°, cos²88° = sin²2°, and so on. The expression can be written as (cos²1° + sin²1°) + (cos²2° + sin²2°) + ... + (cos²44° + sin²44°) + cos²45°. Each pair (cos²k° + sin²k°) sums to 1. There are 44 such pairs (from 1 to 44). The middle term is cos²45° = (1/√2)² = 1/2. So, the sum = 44 × 1 + 1/2 = 44.5.",
+      "hint": "Use the identity cos²θ + sin²θ = 1 and pair terms symmetrically around 45°.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038405133-8495c",
+      "order": 11,
+      "question": "The angle of elevation of the top of a tower from a point on the ground, which is 60 meters away from the foot of the tower, is 30°. The height of the tower is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "30√3 meters",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The height is not 30√3 meters."
+        },
+        {
+          "letter": "B",
+          "text": "60√3 meters",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The height is not 60√3 meters."
+        },
+        {
+          "letter": "C",
+          "text": "20√3 meters",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The height of the tower is 20√3 meters."
+        },
+        {
+          "letter": "D",
+          "text": "30 meters",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The height is not 30 meters."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let h be the height of the tower and x be the distance from the foot of the tower to the point on the ground. Given: x = 60 meters, angle of elevation θ = 30°. In the right-angled triangle formed, tan θ = Opposite/Adjacent = h/x. tan 30° = h/60 => 1/√3 = h/60 => h = 60/√3. Rationalizing the denominator: h = (60√3)/3 = 20√3 meters.",
+      "hint": "Use the tangent of the angle of elevation to relate the height and distance.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038405133-58945",
+      "order": 12,
+      "question": "If (sec θ + tan θ) = p, then what is the value of (sec θ - tan θ)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "p",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not p."
+        },
+        {
+          "letter": "B",
+          "text": "1/p",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The value of (sec θ - tan θ) is 1/p."
+        },
+        {
+          "letter": "C",
+          "text": "1 - p",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 1 - p."
+        },
+        {
+          "letter": "D",
+          "text": "p²",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not p²."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We know the trigonometric identity: sec²θ - tan²θ = 1. This can be factored as (sec θ - tan θ)(sec θ + tan θ) = 1. Given (sec θ + tan θ) = p, substitute into the identity: (sec θ - tan θ) * p = 1. Therefore, (sec θ - tan θ) = 1/p.",
+      "hint": "Use the identity sec²θ - tan²θ = 1 and factor it as a difference of squares.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038405133-69453",
+      "order": 13,
+      "question": "If x = a sin θ and y = b cos θ, then which of the following relations is true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "x² + y² = a² + b²",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This relation is not true."
+        },
+        {
+          "letter": "B",
+          "text": "x²/a² - y²/b² = 1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This relation is not true."
+        },
+        {
+          "letter": "C",
+          "text": "a²x² + b²y² = 1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This relation is not true."
+        },
+        {
+          "letter": "D",
+          "text": "x²/a² + y²/b² = 1",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct. The relation x²/a² + y²/b² = 1 is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given x = a sin θ and y = b cos θ, square both equations: x² = a² sin²θ and y² = b² cos²θ. Add them: x² + y² = a² sin²θ + b² cos²θ. However, the correct relation is derived by dividing each term by its coefficient: (x²/a²) + (y²/b²) = sin²θ + cos²θ = 1.",
+      "hint": "Square both equations and use the Pythagorean identity sin²θ + cos²θ = 1.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038405133-45e77",
+      "order": 14,
+      "question": "What is the value of $\\sin^2 60^\\circ + \\cos^2 60^\\circ$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The identity states the sum is always 1."
+        },
+        {
+          "letter": "B",
+          "text": "1/2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The identity states the sum is always 1."
+        },
+        {
+          "letter": "C",
+          "text": "1",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The identity $\\sin^2\\theta + \\cos^2\\theta = 1$ holds true for any angle $\\theta$."
+        },
+        {
+          "letter": "D",
+          "text": "2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The identity states the sum is always 1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a direct application of the fundamental trigonometric identity $\\sin^2\\theta + \\cos^2\\theta = 1$. Here, $\\theta = 60^\\circ$. So, $\\sin^2 60^\\circ + \\cos^2 60^\\circ = 1$.",
+      "hint": "Recall the Pythagorean trigonometric identity.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038405133-6ce08",
+      "order": 15,
+      "question": "If $\\tan \\theta = \\frac{3}{4}$ and $\\theta$ is an acute angle, what is the value of $\\sin \\theta$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{4}{5}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the value of $\\cos \\theta$, not $\\sin \\theta$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{3}{5}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. $\\sin \\theta = \\frac{3}{5}$ as derived from the right triangle."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{5}{3}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value exceeds 1, which is not possible for sine of an acute angle."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{5}{4}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value exceeds 1, which is not possible for sine of an acute angle."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given $\\tan \\theta = \\frac{\\text{Perpendicular}}{\\text{Base}} = \\frac{3}{4}$, we can consider a right triangle with perpendicular = 3 and base = 4. The hypotenuse is $\\sqrt{3^2 + 4^2} = 5$. Thus, $\\sin \\theta = \\frac{\\text{Perpendicular}}{\\text{Hypotenuse}} = \\frac{3}{5}$.",
+      "hint": "Use the definition of tangent and the Pythagorean theorem to find the hypotenuse.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654227-72a28",
+      "order": 16,
+      "question": "What does the idiom 'to kick the bucket' mean?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To fall down clumsily",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a literal interpretation and not the idiomatic meaning."
+        },
+        {
+          "letter": "B",
+          "text": "To die",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the idiomatic meaning of the phrase."
+        },
+        {
+          "letter": "C",
+          "text": "To play a game with a bucket",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a literal and unrelated interpretation."
+        },
+        {
+          "letter": "D",
+          "text": "To make a mess accidentally",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "'To kick the bucket' is a common euphemism for dying.",
+      "hint": "Think of a phrase used humorously or casually to refer to death.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654227-34949",
+      "order": 17,
+      "question": "To 'bite the bullet' means to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To literally bite a metal bullet",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a literal interpretation and not the idiomatic meaning."
+        },
+        {
+          "letter": "B",
+          "text": "To face a difficult or unpleasant situation with courage and endurance",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the idiomatic meaning of the phrase."
+        },
+        {
+          "letter": "C",
+          "text": "To avoid taking responsibility for one's actions",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        },
+        {
+          "letter": "D",
+          "text": "To make a quick and rash decision",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The idiom 'to bite the bullet' refers to enduring a painful or difficult situation with courage.",
+      "hint": "Consider the historical origin of the phrase related to medical procedures.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654227-5f025",
+      "order": 18,
+      "question": "When the manager said, 'We need to nip this in the bud before it gets out of control,' he meant:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To allow the problem to grow naturally and see its full extent",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the opposite of the idiom's meaning."
+        },
+        {
+          "letter": "B",
+          "text": "To address the issue at an early stage, preventing it from worsening",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the idiomatic meaning of the phrase."
+        },
+        {
+          "letter": "C",
+          "text": "To ignore the problem completely, hoping it will resolve itself",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        },
+        {
+          "letter": "D",
+          "text": "To postpone finding a solution indefinitely, as it's not urgent",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "'To nip something in the bud' means to stop a problem or situation when it is still small before it can develop into something larger and more serious.",
+      "hint": "Think of gardening where a bud is a small, undeveloped part of a plant.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-ba0c6",
+      "order": 19,
+      "question": "The new policy on employee benefits was a red herring in the discussion about budget cuts. What does 'red herring' signify here?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A crucial piece of information that clarified the situation",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the opposite of the idiom's meaning."
+        },
+        {
+          "letter": "B",
+          "text": "A distraction from the main, more important issue",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the idiomatic meaning of the phrase."
+        },
+        {
+          "letter": "C",
+          "text": "A clear and straightforward solution to the problem",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        },
+        {
+          "letter": "D",
+          "text": "A strong argument in favour of the new policy",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A 'red herring' is something, especially a clue, that is or is intended to be misleading or distracting. In this context, the new policy distracted from the budget cuts.",
+      "hint": "Think of a fish that distracts hounds from the scent they are tracking.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-37639",
+      "order": 20,
+      "question": "Choose the option that best describes the meaning of 'to throw in the towel'.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To challenge someone to a competition",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        },
+        {
+          "letter": "B",
+          "text": "To admit defeat and give up",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the idiomatic meaning of the phrase."
+        },
+        {
+          "letter": "C",
+          "text": "To clean up a mess after a strenuous activity",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        },
+        {
+          "letter": "D",
+          "text": "To start a fight or an argument",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "'To throw in the towel' is an idiom originating from boxing, where a corner-man would throw a towel into the ring to signal surrender or defeat.",
+      "hint": "Consider the sport of boxing and the gesture used to indicate giving up.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-f6fdf",
+      "order": 21,
+      "question": "Despite all the evidence against him, the suspect stood his ground during the interrogation. What does 'stood his ground' mean?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "He remained standing upright throughout the questioning",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a literal interpretation and not the idiomatic meaning."
+        },
+        {
+          "letter": "B",
+          "text": "He refused to yield, change his opinion, or retreat from his position",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the idiomatic meaning of the phrase."
+        },
+        {
+          "letter": "C",
+          "text": "He immediately admitted his mistake and confessed",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        },
+        {
+          "letter": "D",
+          "text": "He left the interrogation room abruptly",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "'To stand one's ground' means to maintain one's position or opinion despite opposition or difficulty; to refuse to yield. The literal interpretation (remaining standing) is a common distractor.",
+      "hint": "Think of maintaining a position or stance despite pressure to change.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-ecdf2",
+      "order": 22,
+      "question": "The politician's speech was full of high-sounding phrases but signifying nothing, a classic example of much ado about nothing. Which of the following best captures the essence of 'much ado about nothing'?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A situation where a lot of effort is expended for a significant and positive outcome.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        },
+        {
+          "letter": "B",
+          "text": "An event or situation that creates a great deal of excitement, activity, or fuss over something trivial or unimportant.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the idiomatic meaning of the phrase."
+        },
+        {
+          "letter": "C",
+          "text": "A quiet disagreement that unexpectedly escalates into a major, unavoidable conflict.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        },
+        {
+          "letter": "D",
+          "text": "A profound discussion leading to an important and groundbreaking discovery.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "'Much ado about nothing' refers to making a great fuss or commotion over a matter of little or no importance. The example of 'high-sounding phrases but signifying nothing' reinforces this meaning.",
+      "hint": "Consider the phrase's origin from Shakespeare's play and its modern usage.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-d4ce8",
+      "order": 23,
+      "question": "After failing the exam multiple times, he finally decided to throw in the sponge. What does this idiom imply about his action?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "He decided to clean up his study area thoroughly.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        },
+        {
+          "letter": "B",
+          "text": "He resolved to try even harder and find new study methods.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the opposite of the idiom's meaning."
+        },
+        {
+          "letter": "C",
+          "text": "He gave up trying to pass the exam after repeated failures.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. This is the idiomatic meaning of the phrase."
+        },
+        {
+          "letter": "D",
+          "text": "He found a new, more effective method of studying.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "'To throw in the sponge' is an idiom meaning to give up or surrender, similar to 'throwing in the towel.' The context of 'failing the exam multiple times' strongly suggests giving up.",
+      "hint": "Consider the phrase's similarity to 'throwing in the towel' and its meaning.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-5697d",
+      "order": 24,
+      "question": "The company's sudden change in strategy, after years of consistent growth, felt like a bolt from the blue for many employees. What does 'a bolt from the blue' convey about the change?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It was a well-planned and anticipated development, expected by all.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the opposite of the idiom's meaning."
+        },
+        {
+          "letter": "B",
+          "text": "It was a positive and welcome surprise that everybody appreciated.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        },
+        {
+          "letter": "C",
+          "text": "It was an unexpected, sudden, and often shocking or unpleasant event.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. This is the idiomatic meaning of the phrase."
+        },
+        {
+          "letter": "D",
+          "text": "It was a predictable but unfortunate outcome that had been foreseen.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "'A bolt from the blue' describes something sudden, unexpected, and often unpleasant or shocking, like a lightning bolt striking from a clear sky.",
+      "hint": "Think of a sudden, unexpected event that surprises everyone.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-a9505",
+      "order": 25,
+      "question": "To burn the midnight oil means to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To stay up late working or studying diligently.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. This is the idiomatic meaning of the phrase."
+        },
+        {
+          "letter": "B",
+          "text": "To waste time during the night by being unproductive.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        },
+        {
+          "letter": "C",
+          "text": "To literally light a lamp and keep it burning late at night.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a literal interpretation and not the idiomatic meaning."
+        },
+        {
+          "letter": "D",
+          "text": "To work efficiently only during daylight hours.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the opposite of the idiom's meaning."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "'To burn the midnight oil' means to work or study late into the night, often using artificial light.",
+      "hint": "Consider the phrase's origin related to working late by candlelight or lamp.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-32419",
+      "order": 26,
+      "question": "What is the meaning of the idiom 'break a leg' in the sentence: 'Before her big performance, her friend told her to break a leg.'?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Injure herself on stage",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a literal interpretation and not the intended meaning of the idiom."
+        },
+        {
+          "letter": "B",
+          "text": "Perform badly and learn from it",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the intended meaning; the idiom is used to wish good luck."
+        },
+        {
+          "letter": "C",
+          "text": "Have good luck for the performance",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct meaning of the idiom 'break a leg.'"
+        },
+        {
+          "letter": "D",
+          "text": "Be cautious and careful",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not related to the idiom's meaning."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The idiom 'break a leg' is a common theatrical expression used to wish someone good luck, especially before a performance.",
+      "hint": "Think about common phrases used in theater or performances.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-b854a",
+      "order": 27,
+      "question": "What does the idiom 'bite the bullet' mean in the sentence: 'Despite the immense pressure, the team had to bite the bullet and continue working through the night to meet the deadline.'?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To act aggressively towards competitors",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the meaning of the idiom."
+        },
+        {
+          "letter": "B",
+          "text": "To postpone a difficult task until later",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the opposite of what the idiom means."
+        },
+        {
+          "letter": "C",
+          "text": "To endure a difficult or unpleasant situation with courage",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct meaning of the idiom 'bite the bullet.'"
+        },
+        {
+          "letter": "D",
+          "text": "To refuse to cooperate with the management",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not related to the idiom's meaning."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To 'bite the bullet' means to endure a difficult or unpleasant situation with courage, often implying that there is no other option.",
+      "hint": "Think about facing a challenging situation with determination.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-24d69",
+      "order": 28,
+      "question": "What does the phrase 'spilled the beans' mean in the context: 'The surprise party was meant to be a secret, but John accidentally spilled the beans to the birthday boy.'?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Dropped some food on the floor",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a literal interpretation and not the intended meaning."
+        },
+        {
+          "letter": "B",
+          "text": "Revealed a secret unintentionally",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct meaning of the idiom 'spilled the beans.'"
+        },
+        {
+          "letter": "C",
+          "text": "Made a mess during the preparations",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not related to the idiom's meaning."
+        },
+        {
+          "letter": "D",
+          "text": "Shared a meal with someone",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the intended meaning of the idiom."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To 'spill the beans' means to reveal a secret or private information, often inadvertently.",
+      "hint": "Think about accidentally revealing something that was supposed to be kept secret.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-b32ba",
+      "order": 29,
+      "question": "What does the idiom 'hit the nail on the head' mean in the sentence: 'When she pointed out the exact flaw in the system, everyone agreed that she had hit the nail on the head.'?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Struck someone with a hammer inadvertently",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a literal interpretation and not the intended meaning."
+        },
+        {
+          "letter": "B",
+          "text": "Made a perfectly accurate statement or observation",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct meaning of the idiom 'hit the nail on the head.'"
+        },
+        {
+          "letter": "C",
+          "text": "Caused an accident due to carelessness",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not related to the idiom's meaning."
+        },
+        {
+          "letter": "D",
+          "text": "Fixed a problem incorrectly despite good intentions",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the intended meaning of the idiom."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The idiom 'hit the nail on the head' means to describe a situation or problem perfectly or accurately.",
+      "hint": "Think about making a precise and correct statement.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-6aaa2",
+      "order": 30,
+      "question": "What does the idiom 'let the cat out of the bag' signify in the sentence: 'The manager was furious when he found out who had let the cat out of the bag about the company's new product launch before the official announcement.'?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Released an animal from a container",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a literal interpretation and not the intended meaning."
+        },
+        {
+          "letter": "B",
+          "text": "Revealed a secret carelessly or by mistake",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct meaning of the idiom 'let the cat out of the bag.'"
+        },
+        {
+          "letter": "C",
+          "text": "Allowed someone to escape from confinement",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not related to the idiom's meaning."
+        },
+        {
+          "letter": "D",
+          "text": "Shared a confidential document with a pet",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the intended meaning of the idiom."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To 'let the cat out of the bag' means to inadvertently reveal a secret, similar to 'spill the beans.'",
+      "hint": "Think about accidentally revealing confidential information.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-e776e",
+      "order": 31,
+      "question": "What is the meaning of the idiom 'throw in the towel' as used in the sentence: 'After struggling for years with his failing business, he finally decided to throw in the towel and declare bankruptcy.'?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To clean up a mess thoroughly",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not related to the idiom's meaning."
+        },
+        {
+          "letter": "B",
+          "text": "To surrender or give up",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct meaning of the idiom 'throw in the towel.'"
+        },
+        {
+          "letter": "C",
+          "text": "To start a new venture with renewed energy",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the intended meaning of the idiom."
+        },
+        {
+          "letter": "D",
+          "text": "To challenge an opponent to a fight",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not related to the idiom's meaning."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To 'throw in the towel' means to surrender or give up, often implying admitting defeat.",
+      "hint": "Think about giving up on a difficult task or competition.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-38861",
+      "order": 32,
+      "question": "What does the idiom 'barking up the wrong tree' mean in the sentence: 'If you think I'm the one who stole your pen, you're barking up the wrong tree. I haven't been near your desk all day.'?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Making a loud noise without any reason",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a literal interpretation and not the intended meaning."
+        },
+        {
+          "letter": "B",
+          "text": "Pursuing a mistaken course of action or accusing the wrong person",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct meaning of the idiom 'barking up the wrong tree.'"
+        },
+        {
+          "letter": "C",
+          "text": "Complaining about something trivial and unimportant",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not related to the idiom's meaning."
+        },
+        {
+          "letter": "D",
+          "text": "Criticizing the wrong person unfairly and without proof",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the intended meaning of the idiom."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To be 'barking up the wrong tree' means to be mistaken about the cause of something or to be looking for something in the wrong place or accusing the wrong person.",
+      "hint": "Think about pursuing a mistaken course of action or accusing the wrong person.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-3a964",
+      "order": 33,
+      "question": "What does the idiom 'burn the midnight oil' imply in the context: 'Preparing for the competitive exam, she had to burn the midnight oil for several months to cover the vast syllabus.'?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To waste time late at night by staying awake unnecessarily",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the intended meaning of the idiom."
+        },
+        {
+          "letter": "B",
+          "text": "To work or study diligently late into the night",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct meaning of the idiom 'burn the midnight oil.'"
+        },
+        {
+          "letter": "C",
+          "text": "To ignite fuel inefficiently, causing pollution",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a literal interpretation and not the intended meaning."
+        },
+        {
+          "letter": "D",
+          "text": "To stay awake without any productive work",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not related to the idiom's meaning."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To 'burn the midnight oil' means to work or study diligently late into the night, often implying dedication and effort.",
+      "hint": "Think about working late at night to complete a task.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-d5ba1",
+      "order": 34,
+      "question": "What is the meaning of the idiom 'Achilles' heel' in the sentence: 'Despite his brilliant mind, public speaking was always his Achilles' heel, making him nervous and less effective in presentations.'?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A strong point or an undeniable advantage",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the opposite of what the idiom means."
+        },
+        {
+          "letter": "B",
+          "text": "A minor physical injury that heals quickly",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not related to the idiom's meaning."
+        },
+        {
+          "letter": "C",
+          "text": "A fatal weakness or a vulnerable point",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct meaning of the idiom 'Achilles' heel.'"
+        },
+        {
+          "letter": "D",
+          "text": "A source of great courage and inspiration",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the intended meaning of the idiom."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "An 'Achilles' heel' refers to a small but critical weakness that can lead to failure or vulnerability, derived from Greek mythology.",
+      "hint": "Think about a fatal weakness or a vulnerable point in someone's character.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-a0c41",
+      "order": 35,
+      "question": "What is the meaning of the idiom 'beat around the bush' in the sentence: 'The politician was accused of beating around the bush when asked directly about the controversial policy, refusing to give a clear answer.'?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To speak directly and clearly without hesitation",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the opposite of what the idiom means."
+        },
+        {
+          "letter": "B",
+          "text": "To avoid the main topic or issue, speaking indirectly",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct meaning of the idiom 'beat around the bush.'"
+        },
+        {
+          "letter": "C",
+          "text": "To attack someone verbally with harsh criticism",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not related to the idiom's meaning."
+        },
+        {
+          "letter": "D",
+          "text": "To explore different options thoroughly before making a decision",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the intended meaning of the idiom."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To 'beat around the bush' means to approach a subject in an indirect, roundabout way, avoiding the main point or issue.",
+      "hint": "Think about avoiding a direct answer or speaking indirectly.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-f2ece",
+      "order": 36,
+      "question": "What does the idiom 'stick to his guns' mean in the given sentence?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To surrender to the opposition",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the opposite of the idiom's meaning."
+        },
+        {
+          "letter": "B",
+          "text": "To maintain one's position or beliefs firmly despite opposition",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This correctly defines the idiom in the given context."
+        },
+        {
+          "letter": "C",
+          "text": "To use aggressive tactics to achieve a goal",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        },
+        {
+          "letter": "D",
+          "text": "To postpone a decision until more information is available",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This does not reflect the idiom's meaning."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The idiom 'stick to one's guns' means to refuse to change one's opinions or beliefs, especially when people are trying to persuade you to. Option B accurately captures this meaning in the context of facing skepticism.",
+      "hint": "Consider the context of facing opposition and maintaining a firm stance.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-fd018",
+      "order": 37,
+      "question": "Which of the following best describes the meaning of the idiom 'at sea' as used in the sentence?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Enjoying a relaxing vacation",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a literal misinterpretation of the idiom."
+        },
+        {
+          "letter": "B",
+          "text": "Confused and uncertain about what to do",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This correctly defines the idiom in the given context."
+        },
+        {
+          "letter": "C",
+          "text": "Experiencing financial difficulties",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        },
+        {
+          "letter": "D",
+          "text": "Working on a new maritime project",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is a literal misinterpretation of the idiom."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The idiom 'at sea' means to be confused, lost, or bewildered about a situation. In the context of the CEO's resignation and employee uncertainty, option B perfectly describes this state.",
+      "hint": "Think about the feeling of being lost or uncertain in a situation.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-8cbe7",
+      "order": 38,
+      "question": "What does the idiom 'add fuel to the fire' imply in the given context?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To calm down an intense situation",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the opposite of the idiom's meaning."
+        },
+        {
+          "letter": "B",
+          "text": "To make an existing bad situation even worse",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This correctly defines the idiom in the given context."
+        },
+        {
+          "letter": "C",
+          "text": "To initiate a new conflict",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The idiom refers to worsening an existing situation, not starting a new one."
+        },
+        {
+          "letter": "D",
+          "text": "To provide support for a weak argument",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "'Add fuel to the fire' means to do something that makes a bad situation or conflict even more intense or severe. The politician's actions exacerbated an already existing scandal.",
+      "hint": "Consider how actions can worsen an existing problem.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-9a862",
+      "order": 39,
+      "question": "Which of the following phrases best explains the idiom 'fight tooth and nail'?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To engage in a physical altercation",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a literal misinterpretation of the idiom."
+        },
+        {
+          "letter": "B",
+          "text": "To argue weakly and without conviction",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the opposite of the idiom's meaning."
+        },
+        {
+          "letter": "C",
+          "text": "To fight with great intensity and determination",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This correctly defines the idiom."
+        },
+        {
+          "letter": "D",
+          "text": "To accept defeat gracefully",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "'Fight tooth and nail' signifies fighting with great effort and determination, using all available resources. Option C captures this intense struggle.",
+      "hint": "Think about the intensity and determination implied by the phrase.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038654228-ef381",
+      "order": 40,
+      "question": "The idiom 'robbing Peter to pay Paul' implies which of the following?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To steal from one person to give to another",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a literal interpretation, not the idiomatic meaning."
+        },
+        {
+          "letter": "B",
+          "text": "To create a balanced solution for a complex problem",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This does not reflect the idiom's meaning."
+        },
+        {
+          "letter": "C",
+          "text": "To solve one problem by creating another, often at someone else's expense",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This correctly defines the idiom."
+        },
+        {
+          "letter": "D",
+          "text": "To prioritize one task over another without consequence",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the idiom's meaning."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "'Robbing Peter to pay Paul' means to solve one problem or debt by creating another, often by taking resources from one area or person to cover another, without actually resolving the underlying issue.",
+      "hint": "Consider the idea of solving one problem by creating another unintended problem.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-english",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-28146",
+      "order": 41,
+      "question": "When was the 'Pran Pratishtha' (consecration) ceremony of the Ram Temple in Ayodhya held?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "January 15, 2024",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect date for the ceremony."
+        },
+        {
+          "letter": "B",
+          "text": "January 22, 2024",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct date for the ceremony."
+        },
+        {
+          "letter": "C",
+          "text": "February 1, 2024",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect date for the ceremony."
+        },
+        {
+          "letter": "D",
+          "text": "December 25, 2023",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect date for the ceremony."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The 'Pran Pratishtha' ceremony of the Ram Temple in Ayodhya was a significant national event held on January 22, 2024.",
+      "hint": "The ceremony was held in early 2024.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-1aad6",
+      "order": 42,
+      "question": "What name was given to the landing site of the Chandrayaan-3 mission's Vikram lander on the lunar surface?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Shiv Shakti Point",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct name for the landing site."
+        },
+        {
+          "letter": "B",
+          "text": "Tiranga Point",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Refers to the Chandrayaan-2 crash site."
+        },
+        {
+          "letter": "C",
+          "text": "Jawahar Point",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Refers to the Chandrayaan-1 impact site."
+        },
+        {
+          "letter": "D",
+          "text": "Vikram Point",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect name for the landing site."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Prime Minister Narendra Modi announced that the Chandrayaan-3 landing site would be known as 'Shiv Shakti Point' to symbolize the connection between science and spirituality.",
+      "hint": "The name reflects a blend of Indian cultural and scientific significance.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-9e8b6",
+      "order": 43,
+      "question": "Which of the following statements regarding the 'Nari Shakti Vandan Adhiniyam' (Women's Reservation Bill) is correct?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It reserves one-third of the seats for women in the Lok Sabha and State Legislative Assemblies.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct statement about the bill."
+        },
+        {
+          "letter": "B",
+          "text": "The reservation will come into effect immediately for the next general elections.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect; the reservation will come into effect after a delimitation exercise."
+        },
+        {
+          "letter": "C",
+          "text": "It also provides for reservation for women in the Rajya Sabha and State Legislative Councils.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect; the bill does not provide for reservation in the Rajya Sabha or State Legislative Councils."
+        },
+        {
+          "letter": "D",
+          "text": "All of the above",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect as statements B and C are false."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The bill reserves one-third of seats for women in the Lok Sabha and State Legislative Assemblies. The reservation will come into effect only after a delimitation exercise, and it does not provide for reservation in the Rajya Sabha or State Legislative Councils.",
+      "hint": "The bill focuses on the Lok Sabha and State Legislative Assemblies only.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-16324",
+      "order": 44,
+      "question": "How many of the statements regarding the PM-Vishwakarma scheme are correct?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Only one",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect; two statements are correct."
+        },
+        {
+          "letter": "B",
+          "text": "Only two",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct; statements I and II are correct."
+        },
+        {
+          "letter": "C",
+          "text": "All three",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect; statement III is false."
+        },
+        {
+          "letter": "D",
+          "text": "None",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect; two statements are correct."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Statements I and II are correct. The scheme targets traditional artisans and craftspeople, offering skill training, a toolkit incentive, and collateral-free credit support. Statement III is incorrect as the scheme is not open to all citizens but targets specific traditional trades.",
+      "hint": "The scheme focuses on traditional artisans and craftspeople, not all citizens.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-4bf61",
+      "order": 45,
+      "question": "Which of the following statements best describes a key outcome of the G20 New Delhi Leaders' Declaration 2023?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Agreement on a binding global carbon tax for developed nations to fund climate action.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect; no binding global carbon tax was agreed upon."
+        },
+        {
+          "letter": "B",
+          "text": "Unanimous condemnation of the Russia-Ukraine conflict by all member states, leading to sanctions.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect; the declaration avoided direct condemnation of the conflict."
+        },
+        {
+          "letter": "C",
+          "text": "A consensus-based declaration focusing on sustainable development, climate action, multilateralism, and digital public infrastructure.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct; this describes the key outcome of the declaration."
+        },
+        {
+          "letter": "D",
+          "text": "Formation of a new permanent security council comprising G20 members for global conflict resolution.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect; no such council was formed."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The G20 New Delhi Leaders' Declaration 2023 achieved a consensus on sustainable development, climate action, multilateralism, and digital public infrastructure. It avoided direct condemnation of the Russia-Ukraine conflict.",
+      "hint": "The declaration focused on consensus-based issues rather than direct conflict resolution.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-63862",
+      "order": 46,
+      "question": "How many of the statements regarding the new Parliament Building of India are correct?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Only one",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect; all four statements are correct."
+        },
+        {
+          "letter": "B",
+          "text": "Only two",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect; all four statements are correct."
+        },
+        {
+          "letter": "C",
+          "text": "Only three",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect; all four statements are correct."
+        },
+        {
+          "letter": "D",
+          "text": "All four",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct; all statements are accurate."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "All four statements are correct. The new Parliament building draws inspiration from India's diverse architectural heritage, the Lok Sabha chamber's theme is the peacock, and the Rajya Sabha's theme is the lotus. It increased seating capacities and was constructed by Tata Projects Ltd.",
+      "hint": "All statements provided are accurate descriptions of the new Parliament Building.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-89ac8",
+      "order": 47,
+      "question": "The 'Green Credit Programme' (GCP), recently launched by the Ministry of Environment, Forest and Climate Change, primarily aims to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Provide financial incentives for industries adopting renewable energy sources.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect; the program focuses on voluntary environmental actions, not just industries adopting renewable energy."
+        },
+        {
+          "letter": "B",
+          "text": "Encourage voluntary environmental actions by individuals and entities through a market-based mechanism.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct; this is the primary aim of the GCP."
+        },
+        {
+          "letter": "C",
+          "text": "Fund international climate change mitigation projects in developing countries.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect; the program focuses on domestic voluntary actions."
+        },
+        {
+          "letter": "D",
+          "text": "Establish a national registry for carbon emissions from all industrial sectors.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect; the program does not focus on establishing a national registry for carbon emissions."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Green Credit Programme (GCP) is designed to incentivize voluntary environmental actions across various sectors by creating a market-based mechanism for generating and trading 'Green Credits'.",
+      "hint": "The program focuses on voluntary environmental actions and market-based incentives.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-bc2cc",
+      "order": 48,
+      "question": "Which of the following personalities was/were posthumously awarded the Bharat Ratna in 2024?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "I and II only",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect; only I is correct."
+        },
+        {
+          "letter": "B",
+          "text": "I and IV only",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct; Karpoori Thakur (I) and M.S. Swaminathan (IV) were posthumously awarded the Bharat Ratna in 2024."
+        },
+        {
+          "letter": "C",
+          "text": "II and III only",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect; neither L.K. Advani (II) nor P.V. Narasimha Rao (III) were awarded the Bharat Ratna in 2024."
+        },
+        {
+          "letter": "D",
+          "text": "All of the above",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect; only I and IV are correct."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "In 2024, Karpoori Thakur and M.S. Swaminathan were posthumously awarded the Bharat Ratna. L.K. Advani and P.V. Narasimha Rao were not awarded the Bharat Ratna in 2024.",
+      "hint": "The Bharat Ratna awardees in 2024 included two prominent personalities who passed away before the award.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-4f818",
+      "order": 49,
+      "question": "What is the primary objective of the 'PM Vishwakarma Scheme' launched in September 2023?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Providing financial assistance to small and medium enterprises.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The scheme targets artisans and craftspeople, not general SMEs."
+        },
+        {
+          "letter": "B",
+          "text": "Promoting traditional crafts and skills of artisans and craftspeople.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the primary objective of the PM Vishwakarma Scheme."
+        },
+        {
+          "letter": "C",
+          "text": "Enhancing digital literacy in rural areas.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The scheme does not focus on digital literacy."
+        },
+        {
+          "letter": "D",
+          "text": "Supporting women entrepreneurs through interest-free loans.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The scheme is not specifically for women entrepreneurs."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The PM Vishwakarma Scheme, launched on September 17, 2023, aims to provide holistic support to traditional artisans and craftspeople (Vishwakarmas) through skill training, modern tools, and financial assistance to integrate them with the formal economy.",
+      "hint": "Focus on traditional crafts and skills.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-cc329",
+      "order": 50,
+      "question": "What is the primary objective of India's first solar mission, Aditya-L1?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To study the Martian atmosphere and surface.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Aditya-L1 is a solar mission, not related to Mars."
+        },
+        {
+          "letter": "B",
+          "text": "To observe the Sun's corona, chromosphere, and solar winds.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the primary objective of the Aditya-L1 mission."
+        },
+        {
+          "letter": "C",
+          "text": "To explore the possibility of life on Jupiter's moon Europa.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The mission is not related to Jupiter or Europa."
+        },
+        {
+          "letter": "D",
+          "text": "To map the Moon's polar regions for water ice.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The mission focuses on the Sun, not the Moon."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Aditya-L1 is India's first space-based observatory-class Indian solar mission. Its primary objective is to study the Sun's corona, chromosphere, solar emissions, solar winds, flares, and Coronal Mass Ejections (CMEs) from a halo orbit around the Lagrangian point 1 (L1) of the Sun-Earth system.",
+      "hint": "The mission focuses on studying the Sun's outer layers.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-4a33b",
+      "order": 51,
+      "question": "Which of the following statements regarding the 'PM Gati Shakti National Master Plan' is/are correct? I. It aims to provide multi-modal connectivity infrastructure to various economic zones. II. The plan integrates 16 ministries, including Railways, Roadways, Petroleum, and Power. III. It was launched in 2022 with a focus on reducing logistics costs.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "I only",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Statement II is also correct."
+        },
+        {
+          "letter": "B",
+          "text": "II only",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Statement I is also correct."
+        },
+        {
+          "letter": "C",
+          "text": "I and II only",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Both statements I and II are correct, while statement III is incorrect due to the wrong launch year."
+        },
+        {
+          "letter": "D",
+          "text": "I, II and III",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Statement III is incorrect as the plan was launched in 2021, not 2022."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The PM Gati Shakti National Master Plan was launched in October 2021, not 2022. Statements I and II correctly describe its objectives and integrated approach across 16 ministries for multi-modal connectivity and logistics efficiency, with the ultimate goal of reducing logistics costs and improving economic competitiveness.",
+      "hint": "Check the launch year and the ministries involved.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-eef65",
+      "order": 52,
+      "question": "Which of the following statements regarding India's indigenous defence capabilities is/are correct? I. The LCA Tejas is a 4.5 generation, all-weather, multi-role fighter aircraft designed by HAL. II. INS Vikrant is India's first indigenously designed and built aircraft carrier. III. The 'Project 75' program involves the construction of nuclear-powered submarines in collaboration with France.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "I and II only",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Statements I and II are correct, while statement III is incorrect."
+        },
+        {
+          "letter": "B",
+          "text": "II and III only",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Statement III is incorrect."
+        },
+        {
+          "letter": "C",
+          "text": "I and III only",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Statement III is incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "I, II and III",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Statement III is incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Statement III is incorrect. Project 75 (Kalvari class) and Project 75 (I) involve the construction of conventional diesel-electric submarines with Air Independent Propulsion (AIP) system, not nuclear-powered submarines. India's nuclear submarine program (e.g., Arihant class) is a separate, indigenous effort. Statements I and II are correct.",
+      "hint": "Focus on the type of submarines involved in Project 75.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-bc52f",
+      "order": 53,
+      "question": "Consider the following statements regarding the 'Project Tiger' initiative in India: I. It was launched in 1973 to conserve tigers. Which of the following is correct?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Statement I is correct.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Project Tiger was launched in 1973 to conserve tigers."
+        },
+        {
+          "letter": "B",
+          "text": "Statement I is incorrect.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Project Tiger was launched in 1973."
+        },
+        {
+          "letter": "C",
+          "text": "Only statement II is correct.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Only statement I is provided."
+        },
+        {
+          "letter": "D",
+          "text": "Both statements I and II are correct.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Only statement I is provided."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Project Tiger was indeed launched in 1973 to conserve tigers in India. The initiative aims to protect the tiger population and its habitat through various measures.",
+      "hint": "The initiative was launched in the early 1970s.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-7d255",
+      "order": 54,
+      "question": "Which of the following names has been given to the Chandrayaan-3 landing site on the Moon by Prime Minister Narendra Modi?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Jawahar Point",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Jawahar Point is named after India's first Prime Minister, Jawaharlal Nehru, and is unrelated to Chandrayaan-3."
+        },
+        {
+          "letter": "B",
+          "text": "Tiranga Point",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Tiranga Point refers to the Indian tricolor flag and is not associated with the Chandrayaan-3 mission."
+        },
+        {
+          "letter": "C",
+          "text": "Shiv Shakti Point",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct name given by PM Narendra Modi to the Chandrayaan-3 landing site."
+        },
+        {
+          "letter": "D",
+          "text": "Vikram Point",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Vikram Point is named after Vikram Sarabhai, the father of India's space program, but not the Chandrayaan-3 landing site."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Prime Minister Narendra Modi announced that the Chandrayaan-3 landing site would be known as 'Shiv Shakti Point' to symbolize the blend of scientific prowess and spiritual strength.",
+      "hint": "The name combines a Hindu deity's name with a concept representing strength.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-fee22",
+      "order": 55,
+      "question": "The 'PM Vishwakarma' scheme, launched in September 2023, primarily aims to support:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Agricultural farmers with modern farming techniques",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The scheme focuses on artisans and craftspeople, not farmers."
+        },
+        {
+          "letter": "B",
+          "text": "Women entrepreneurs in rural areas",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "While women may benefit, the scheme is not exclusively for women entrepreneurs."
+        },
+        {
+          "letter": "C",
+          "text": "Artisans and craftspeople with skill training and financial aid",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the primary objective of the PM Vishwakarma scheme."
+        },
+        {
+          "letter": "D",
+          "text": "Small-scale industries in urban areas",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The scheme targets traditional artisans and craftspeople, not urban industries."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The PM Vishwakarma scheme is designed to provide comprehensive support to artisans and craftspeople, including financial assistance, skill training, and market access.",
+      "hint": "The scheme is named after a revered Hindu deity known for craftsmanship and skill.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-a16d9",
+      "order": 56,
+      "question": "Which of the following is a key objective of the ‘Viksit Bharat Sankalp Yatra’, launched by the Government of India in 2023?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To promote digital banking in rural areas",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the primary objective of the Yatra."
+        },
+        {
+          "letter": "B",
+          "text": "To celebrate 75 years of India’s independence",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This was the objective of the 'Azadi Ka Amrit Mahotsav', not the Viksit Bharat Sankalp Yatra."
+        },
+        {
+          "letter": "C",
+          "text": "To create awareness about government welfare schemes and enroll beneficiaries",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct objective of the Yatra."
+        },
+        {
+          "letter": "D",
+          "text": "To conduct national-level sports tournaments",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the Yatra's objectives."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The ‘Viksit Bharat Sankalp Yatra’ was launched to create awareness about various government welfare schemes and to enroll beneficiaries, especially in remote areas, to ensure their benefits reach the grassroots level.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-03eb6",
+      "order": 57,
+      "question": "The ‘Bharat Ratna’ award, announced in 2024, was conferred on which of the following personalities posthumously?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "M.S. Subbulakshmi",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "M.S. Subbulakshmi received the Bharat Ratna in 1998."
+        },
+        {
+          "letter": "B",
+          "text": "B.R. Ambedkar",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "B.R. Ambedkar received the Bharat Ratna posthumously in 1990."
+        },
+        {
+          "letter": "C",
+          "text": "Chaudhary Charan Singh",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Chaudhary Charan Singh received the Bharat Ratna posthumously in 2001."
+        },
+        {
+          "letter": "D",
+          "text": "Lata Mangeshkar",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Lata Mangeshkar was conferred the Bharat Ratna posthumously in 2024."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Bharat Ratna award in 2024 was posthumously conferred on Lata Mangeshkar, recognizing her unparalleled contribution to Indian music. The other options were conferred the award earlier.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-9d661",
+      "order": 58,
+      "question": "Which Indian state launched the ‘Mukhyamantri Yuva Udyami Yojana’ in 2023 to promote youth entrepreneurship?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Maharashtra",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Maharashtra did not launch this scheme."
+        },
+        {
+          "letter": "B",
+          "text": "Gujarat",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Gujarat launched the scheme."
+        },
+        {
+          "letter": "C",
+          "text": "Odisha",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Odisha did not launch this scheme."
+        },
+        {
+          "letter": "D",
+          "text": "West Bengal",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "West Bengal did not launch this scheme."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Gujarat launched the ‘Mukhyamantri Yuva Udyami Yojana’ in 2023 to provide financial assistance and support to youth entrepreneurs for starting new businesses.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-2d9a1",
+      "order": 59,
+      "question": "The ‘Agni-5’ missile, successfully test-fired in 2023, belongs to which category of India’s strategic arsenal?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cruise missile",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Agni-5 is not a cruise missile."
+        },
+        {
+          "letter": "B",
+          "text": "Hypersonic missile",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Agni-5 is not classified as a hypersonic missile."
+        },
+        {
+          "letter": "C",
+          "text": "Inter-continental ballistic missile (ICBM)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Agni-5 is an ICBM."
+        },
+        {
+          "letter": "D",
+          "text": "Anti-tank guided missile",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Agni-5 is not an anti-tank guided missile."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Agni-5 is an inter-continental ballistic missile (ICBM) with a range of over 5,000 kilometers, making it a key part of India’s strategic arsenal.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-f4ba3",
+      "order": 60,
+      "question": "The ‘Ayushman Bharat Digital Mission’ aims to achieve which of the following targets by 2025?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To provide digital health IDs to 500 million people",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct target of the mission."
+        },
+        {
+          "letter": "B",
+          "text": "To establish 10,000 Ayushman Bharat health centers",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the primary target of the mission."
+        },
+        {
+          "letter": "C",
+          "text": "To digitize 100% of government hospitals",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the primary target of the mission."
+        },
+        {
+          "letter": "D",
+          "text": "To launch a national health insurance scheme for all citizens",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the primary target of the mission."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Ayushman Bharat Digital Mission aims to provide digital health IDs to at least 500 million people by 2025, creating a seamless digital health ecosystem in India.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-1062b",
+      "order": 61,
+      "question": "Which of the following statements about the ‘PM-KISAN’ scheme is correct?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "I and II only",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Statement III is also correct."
+        },
+        {
+          "letter": "B",
+          "text": "II and III only",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Statement I is also correct."
+        },
+        {
+          "letter": "C",
+          "text": "I, II and III",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "All statements are correct."
+        },
+        {
+          "letter": "D",
+          "text": "I and III only",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Statement II is also correct."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "All three statements are correct. The PM-KISAN scheme provides ₹6,000 per year to farmers in three installments, was launched in 2019, and the amount is directly transferred to beneficiaries' bank accounts.",
+      "hint": "Consider all statements before selecting the answer.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-3fe18",
+      "order": 62,
+      "question": "The ‘Gaganyaan’ mission, expected to be launched in 2024-25, is related to which of the following?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "India’s first human spaceflight program",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct description of the Gaganyaan mission."
+        },
+        {
+          "letter": "B",
+          "text": "India’s lunar exploration mission",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is related to the Chandrayaan missions, not Gaganyaan."
+        },
+        {
+          "letter": "C",
+          "text": "India’s deep-sea exploration mission",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the Gaganyaan mission."
+        },
+        {
+          "letter": "D",
+          "text": "India’s first satellite launch vehicle",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is unrelated to the Gaganyaan mission."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The Gaganyaan mission is India’s first human spaceflight program, aiming to send Indian astronauts into space and return them safely to Earth.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-74651",
+      "order": 63,
+      "question": "Which of the following states launched the ‘One District, One Product’ (ODOP) scheme to promote local artisans and craftsmen?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Uttar Pradesh",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Uttar Pradesh launched the ODOP scheme."
+        },
+        {
+          "letter": "B",
+          "text": "Tamil Nadu",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Tamil Nadu did not launch this scheme."
+        },
+        {
+          "letter": "C",
+          "text": "Bihar",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Bihar did not launch this scheme."
+        },
+        {
+          "letter": "D",
+          "text": "Rajasthan",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Rajasthan did not launch this scheme."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Uttar Pradesh launched the ‘One District, One Product’ (ODOP) scheme to identify and promote the unique products of each district, boosting local artisans and craftsmen.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-23443",
+      "order": 64,
+      "question": "The ‘National Green Hydrogen Mission’ aims to make India a global hub for green hydrogen production by 2030. What is the allocated budget for this mission?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "₹10,000 crore",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the allocated budget."
+        },
+        {
+          "letter": "B",
+          "text": "₹15,000 crore",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the allocated budget."
+        },
+        {
+          "letter": "C",
+          "text": "₹19,744 crore",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct allocated budget."
+        },
+        {
+          "letter": "D",
+          "text": "₹25,000 crore",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the allocated budget."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The National Green Hydrogen Mission was approved with an outlay of ₹19,744 crore to promote the production of green hydrogen and make India a global hub by 2030.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787038976449-8fd2b",
+      "order": 65,
+      "question": "The ‘Bharat New Car Assessment Programme (Bharat NCAP)’ was launched in 2023 to evaluate which of the following?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fuel efficiency of vehicles",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the focus of Bharat NCAP."
+        },
+        {
+          "letter": "B",
+          "text": "Emission standards of vehicles",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the focus of Bharat NCAP."
+        },
+        {
+          "letter": "C",
+          "text": "Crash safety performance of vehicles",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct focus of Bharat NCAP."
+        },
+        {
+          "letter": "D",
+          "text": "Roadworthiness of vehicles",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the focus of Bharat NCAP."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Bharat NCAP was launched to evaluate the crash safety performance of vehicles, assigning star ratings based on their safety features and performance in crash tests.",
+      "hint": "",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-gk",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787039136148-e5141",
+      "order": 66,
+      "question": "What is the value of (1 - sin²θ)sec²θ?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The expression simplifies to 1, not 0."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The expression simplifies to 1 using trigonometric identities."
+        },
+        {
+          "letter": "C",
+          "text": "tan²θ",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The expression does not simplify to tan²θ."
+        },
+        {
+          "letter": "D",
+          "text": "cot²θ",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The expression does not simplify to cot²θ."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We know the fundamental trigonometric identity: sin²θ + cos²θ = 1. From this, we can write 1 - sin²θ = cos²θ. Also, sec²θ = 1/cos²θ. Substitute these into the given expression: (1 - sin²θ)sec²θ = (cos²θ) * (1/cos²θ) = 1.",
+      "hint": "Recall the identity sin²θ + cos²θ = 1 and the definition of secθ.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787039136148-fb01d",
+      "order": 67,
+      "question": "If tan A = 4/3, what is the value of sin A + cos A?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7/5",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The sum of sin A and cos A is 7/5."
+        },
+        {
+          "letter": "B",
+          "text": "5/7",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum is not 5/7."
+        },
+        {
+          "letter": "C",
+          "text": "7/3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum is not 7/3."
+        },
+        {
+          "letter": "D",
+          "text": "3/7",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum is not 3/7."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given tan A = 4/3. In a right-angled triangle, tan A = Opposite/Adjacent. So, let Opposite side = 4k and Adjacent side = 3k for some k > 0. Using the Pythagorean theorem, Hypotenuse = √( (4k)² + (3k)² ) = √(16k² + 9k²) = √(25k²) = 5k. Now, we can find sin A and cos A: sin A = Opposite/Hypotenuse = 4k/5k = 4/5, cos A = Adjacent/Hypotenuse = 3k/5k = 3/5. Therefore, sin A + cos A = 4/5 + 3/5 = (4+3)/5 = 7/5.",
+      "hint": "Use the given tan A to construct a right triangle and find sin A and cos A.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787039136148-2eccb",
+      "order": 68,
+      "question": "Evaluate: 2sin²30° + 3tan²60° - 4cot²45°",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "9/2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 11/2."
+        },
+        {
+          "letter": "B",
+          "text": "11/2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The expression evaluates to 11/2."
+        },
+        {
+          "letter": "C",
+          "text": "5/2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 11/2."
+        },
+        {
+          "letter": "D",
+          "text": "7/2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 11/2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Calculate each term separately: sin30° = 1/2, so sin²30° = (1/2)² = 1/4. tan60° = √3, so tan²60° = (√3)² = 3. cot45° = 1, so cot²45° = 1² = 1. Substitute these values: 2*(1/4) + 3*3 - 4*1 = 1/2 + 9 - 4 = 1/2 + 5 = 11/2.",
+      "hint": "Recall the values of sin30°, tan60°, and cot45° from standard trigonometric ratios.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787039136148-10154",
+      "order": 69,
+      "question": "If $\\sin \\theta = \\frac{3}{5}$ and $\\theta$ is an acute angle, what is the value of $\\tan \\theta$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{4}{5}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the value of $\\cos \\theta$, not $\\tan \\theta$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{3}{4}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. $\\tan \\theta = \\frac{\\text{Opposite}}{\\text{Adjacent}} = \\frac{3}{4}$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{5}{3}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the value of $\\cot \\theta$, not $\\tan \\theta$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{4}{3}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the value of $\\cot \\theta$, not $\\tan \\theta$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We are given $\\sin \\theta = \\frac{3}{5}$. In a right-angled triangle, if $\\sin \\theta = \\frac{\\text{Opposite}}{\\text{Hypotenuse}}$, then Opposite side = 3 and Hypotenuse = 5. Using the Pythagorean theorem, Adjacent side = $\\sqrt{\\text{Hypotenuse}^2 - \\text{Opposite}^2} = \\sqrt{5^2 - 3^2} = \\sqrt{25 - 9} = \\sqrt{16} = 4$. Now, $\\tan \\theta = \\frac{\\text{Opposite}}{\\text{Adjacent}} = \\frac{3}{4}$.",
+      "hint": "Use the Pythagorean theorem to find the adjacent side.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787039136148-76a75",
+      "order": 70,
+      "question": "What is the value of $\\sin^2 30^\\circ + \\cos^2 60^\\circ - \\tan^2 45^\\circ$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is $-\\frac{1}{2}$."
+        },
+        {
+          "letter": "B",
+          "text": "$0$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is $-\\frac{1}{2}$."
+        },
+        {
+          "letter": "C",
+          "text": "$-\\frac{1}{2}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The expression evaluates to $-\\frac{1}{2}$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{1}{2}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is $-\\frac{1}{2}$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We know the standard trigonometric values: $\\sin 30^\\circ = \\frac{1}{2}$, $\\cos 60^\\circ = \\frac{1}{2}$, and $\\tan 45^\\circ = 1$. Substitute these values into the expression: $\\sin^2 30^\\circ + \\cos^2 60^\\circ - \\tan^2 45^\\circ = \\left(\\frac{1}{2}\\right)^2 + \\left(\\frac{1}{2}\\right)^2 - (1)^2 = \\frac{1}{4} + \\frac{1}{4} - 1 = \\frac{2}{4} - 1 = \\frac{1}{2} - 1 = -\\frac{1}{2}$.",
+      "hint": "Recall the standard trigonometric values for common angles.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787039136148-1d14a",
+      "order": 71,
+      "question": "If $x = a \\sec \\theta$ and $y = b \\tan \\theta$, then $b^2 x^2 - a^2 y^2$ is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$a^2 b^2$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The expression simplifies to $a^2 b^2$."
+        },
+        {
+          "letter": "B",
+          "text": "$ab$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct expression is $a^2 b^2$."
+        },
+        {
+          "letter": "C",
+          "text": "$a^2 + b^2$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct expression is $a^2 b^2$."
+        },
+        {
+          "letter": "D",
+          "text": "$a^2 - b^2$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct expression is $a^2 b^2$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given $x = a \\sec \\theta \\implies \\sec \\theta = \\frac{x}{a}$ and $y = b \\tan \\theta \\implies \\tan \\theta = \\frac{y}{b}$. Using the identity $\\sec^2 \\theta - \\tan^2 \\theta = 1$, substitute the expressions: $\\left(\\frac{x}{a}\\right)^2 - \\left(\\frac{y}{b}\\right)^2 = 1$. Simplifying, $\\frac{b^2 x^2 - a^2 y^2}{a^2 b^2} = 1 \\implies b^2 x^2 - a^2 y^2 = a^2 b^2$.",
+      "hint": "Use the trigonometric identity $\\sec^2 \\theta - \\tan^2 \\theta = 1$.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787039136148-5d1f9",
+      "order": 72,
+      "question": "A ladder 15 m long just reaches the top of a vertical wall. If the ladder makes an angle of $60^\\circ$ with the wall, then the height of the wall is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$15\\sqrt{3}$ m",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The height is $\\frac{15}{2}$ m."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{15}{2}$ m",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The height of the wall is $\\frac{15}{2}$ m."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{15\\sqrt{3}}{2}$ m",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The height is $\\frac{15}{2}$ m."
+        },
+        {
+          "letter": "D",
+          "text": "$15$ m",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The height is $\\frac{15}{2}$ m."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let the height of the wall be $h$. The length of the ladder (hypotenuse) is $L = 15$ m. The angle the ladder makes with the wall is $60^\\circ$. Using the cosine function: $\\cos 60^\\circ = \\frac{h}{L} \\implies \\frac{1}{2} = \\frac{h}{15} \\implies h = \\frac{15}{2}$ m.",
+      "hint": "Use the cosine function with the given angle and hypotenuse.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787039136148-96f92",
+      "order": 73,
+      "question": "If $\\tan \\theta + \\cot \\theta = 2$, then the value of $\\tan^5 \\theta + \\cot^5 \\theta$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is $2$."
+        },
+        {
+          "letter": "B",
+          "text": "$2$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The expression evaluates to $2$."
+        },
+        {
+          "letter": "C",
+          "text": "$4$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is $2$."
+        },
+        {
+          "letter": "D",
+          "text": "$32$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is $2$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given $\\tan \\theta + \\cot \\theta = 2$. Since $\\cot \\theta = \\frac{1}{\\tan \\theta}$, we have $\\tan \\theta + \\frac{1}{\\tan \\theta} = 2$. Multiplying by $\\tan \\theta$ gives $\\tan^2 \\theta + 1 = 2 \\tan \\theta \\implies (\\tan \\theta - 1)^2 = 0 \\implies \\tan \\theta = 1$. Thus, $\\cot \\theta = 1$. Therefore, $\\tan^5 \\theta + \\cot^5 \\theta = 1^5 + 1^5 = 2$.",
+      "hint": "Express $\\cot \\theta$ in terms of $\\tan \\theta$ and solve the resulting equation.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1787039136148-5715f",
+      "order": 74,
+      "question": "From the top of a 7-meter high building, the angle of elevation of the top of a cable tower is $60^\\circ$ and the angle of depression of its foot is $45^\\circ$. The height of the tower is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$7(1+\\sqrt{3})$ m",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The height of the tower is $7(1+\\sqrt{3})$ m."
+        },
+        {
+          "letter": "B",
+          "text": "$7\\sqrt{3}$ m",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The height is $7(1+\\sqrt{3})$ m."
+        },
+        {
+          "letter": "C",
+          "text": "$7(1-\\sqrt{3})$ m",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The height is $7(1+\\sqrt{3})$ m."
+        },
+        {
+          "letter": "D",
+          "text": "$14$ m",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The height is $7(1+\\sqrt{3})$ m."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let AB be the building of height 7 m, and CD be the cable tower of height H. The angle of depression of the foot of the tower (D) from B is $45^\\circ$, so $\\tan 45^\\circ = \\frac{AB}{AD} \\implies AD = 7$ m. The angle of elevation of the top of the tower (C) from B is $60^\\circ$, so $\\tan 60^\\circ = \\frac{CE}{BE} \\implies CE = 7\\sqrt{3}$ m. Since ABED is a rectangle, ED = AB = 7 m. Thus, the height of the tower H = CD = CE + ED = $7\\sqrt{3} + 7 = 7(1+\\sqrt{3})$ m.",
+      "hint": "Use trigonometric ratios to find the horizontal and vertical distances.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1787039136148-beb86",
+      "order": 75,
+      "question": "If $\\sec \\theta + \\tan \\theta = p$, then $\\frac{p^2 - 1}{p^2 + 1}$ is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\sin \\theta$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The expression simplifies to $\\sin \\theta$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\cos \\theta$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct expression is $\\sin \\theta$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\sec \\theta$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct expression is $\\sin \\theta$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\csc \\theta$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct expression is $\\sin \\theta$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given $\\sec \\theta + \\tan \\theta = p$. Using the identity $\\sec^2 \\theta - \\tan^2 \\theta = 1$, we can write $(\\sec \\theta - \\tan \\theta)(\\sec \\theta + \\tan \\theta) = 1 \\implies \\sec \\theta - \\tan \\theta = \\frac{1}{p}$. Adding and subtracting the equations for $p$ and $\\frac{1}{p}$, we get $\\sec \\theta = \\frac{p + \\frac{1}{p}}{2}$ and $\\tan \\theta = \\frac{p - \\frac{1}{p}}{2}$. Now, $\\frac{p^2 - 1}{p^2 + 1} = \\frac{(\\sec \\theta + \\tan \\theta)^2 - 1}{(\\sec \\theta + \\tan \\theta)^2 + 1} = \\sin \\theta$.",
+      "hint": "Use the identity $\\sec^2 \\theta - \\tan^2 \\theta = 1$ to find $\\sec \\theta - \\tan \\theta$.",
+      "marks": 1,
+      "negativeMark": 0.33,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "cds-maths",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ]
+}
