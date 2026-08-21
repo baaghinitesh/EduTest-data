@@ -1,0 +1,814 @@
+{
+  "id": "4f2f1eb6-0898-4035-bf32-445b23e597af",
+  "title": "KVPY — Mathematics | Inequalities",
+  "description": "Subject-wise test on Inequalities (Mathematics) for KVPY. 15Q.",
+  "board": "Competitive",
+  "classSlug": "kvpy",
+  "classNumber": 0,
+  "subjects": [
+    "kvpy-maths"
+  ],
+  "subject": "kvpy-maths",
+  "chapter": "Trigonometry Number Theory",
+  "topic": "Inequalities",
+  "testType": "subject-wise",
+  "duration": 45,
+  "totalMarks": 15,
+  "passingMarks": 6,
+  "totalQuestions": 15,
+  "targetQuestions": 15,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "kvpy-maths",
+    "theory",
+    "number",
+    "inequalities",
+    "trigonometry",
+    "kvpy"
+  ],
+  "instructions": [
+    "Subject: Mathematics",
+    "Total Questions: 15",
+    "Total Marks: 15",
+    "Duration: 45 minutes",
+    "Correct answer: +1 mark",
+    "Wrong answer: -0.25 mark",
+    "Topic: Inequalities"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-08-21T07:25:36.086556Z",
+  "questions": [
+    {
+      "id": "q-1787297136086-e2d10",
+      "order": 1,
+      "question": "The maximum value of $\\sin^4 x + \\cos^4 x$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The maximum value is achieved when either $\\sin x = 0$ or $\\cos x = 0$."
+        },
+        {
+          "letter": "B",
+          "text": "1/2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the minimum value, not the maximum."
+        },
+        {
+          "letter": "C",
+          "text": "3/4",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is an intermediate value but not the maximum."
+        },
+        {
+          "letter": "D",
+          "text": "2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The expression cannot exceed 1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We can rewrite the expression using the identity $\\sin^2 x + \\cos^2 x = 1$: $\\sin^4 x + \\cos^4 x = (\\sin^2 x + \\cos^2 x)^2 - 2\\sin^2 x \\cos^2 x = 1 - 2\\sin^2 x \\cos^2 x$. The term $2\\sin^2 x \\cos^2 x$ is minimized when $\\sin x = \\cos x = \\frac{1}{\\sqrt{2}}$, making the expression equal to $1 - 2\\left(\\frac{1}{2}\\right) = \\frac{1}{2}$. However, the maximum occurs when $\\sin^2 x \\cos^2 x = 0$, i.e., when either $\\sin x = 0$ or $\\cos x = 0$, yielding a maximum value of 1.",
+      "hint": "Use the identity $\\sin^2 x + \\cos^2 x = 1$ to simplify the expression.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787297136086-70d09",
+      "order": 2,
+      "question": "What is the value of $\\sin^2(15^\\circ) + \\sin^2(75^\\circ)$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum of squares of sine and cosine of the same angle is 1, not 0."
+        },
+        {
+          "letter": "B",
+          "text": "0.5",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum of squares of sine and cosine of the same angle is 1, not 0.5."
+        },
+        {
+          "letter": "C",
+          "text": "1",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The sum $\\sin^2(15^\\circ) + \\cos^2(15^\\circ) = 1$."
+        },
+        {
+          "letter": "D",
+          "text": "2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum of squares of sine and cosine of the same angle is 1, not 2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We know that $\\sin(90^\\circ - \\theta) = \\cos(\\theta)$. Therefore, $\\sin(75^\\circ) = \\sin(90^\\circ - 15^\\circ) = \\cos(15^\\circ)$. Substituting this into the expression: $\\sin^2(15^\\circ) + \\sin^2(75^\\circ) = \\sin^2(15^\\circ) + \\cos^2(15^\\circ)$. Using the fundamental trigonometric identity $\\sin^2\\theta + \\cos^2\\theta = 1$: $\\sin^2(15^\\circ) + \\cos^2(15^\\circ) = 1$. Thus, the value is 1.",
+      "hint": "Use the identity $\\sin(90^\\circ - \\theta) = \\cos(\\theta)$ and the Pythagorean identity.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787297136086-031bc",
+      "order": 3,
+      "question": "What is the remainder when $7^{2023}$ is divided by 5?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The remainder is not 1."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The remainder is not 2."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The remainder when $7^{2023}$ is divided by 5 is 3."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The remainder is not 4."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We need to find $7^{2023} \\pmod 5$. First, find the remainder of 7 when divided by 5: $7 \\equiv 2 \\pmod 5$. Now, look at the powers of 2 modulo 5: $2^1 \\equiv 2 \\pmod 5$, $2^2 \\equiv 4 \\pmod 5$, $2^3 \\equiv 3 \\pmod 5$, $2^4 \\equiv 1 \\pmod 5$. The cycle length for powers of 2 modulo 5 is 4. We need to find the exponent 2023 modulo 4: $2023 = 4 \\times 505 + 3$, so $2023 \\equiv 3 \\pmod 4$. Therefore, $7^{2023} \\equiv 2^{2023} \\equiv 2^3 \\pmod 5$. $2^3 = 8$, and $8 \\equiv 3 \\pmod 5$. The remainder is 3.",
+      "hint": "Use modular arithmetic and observe the cyclicity of powers modulo 5.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787297136086-6a6dc",
+      "order": 4,
+      "question": "If $x > 0$, what is the minimum value of $x + \\frac{1}{x}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The minimum value is not 0."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The minimum value is not 1."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The minimum value of $x + \\frac{1}{x}$ for $x > 0$ is 2."
+        },
+        {
+          "letter": "D",
+          "text": "Not defined",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The expression is defined for all $x > 0$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This problem can be solved using the AM-GM inequality. For $x > 0$, the arithmetic mean of $x$ and $\\frac{1}{x}$ is $\\frac{x + \\frac{1}{x}}{2}$, and the geometric mean is $\\sqrt{x \\cdot \\frac{1}{x}} = 1$. By AM-GM, $\\frac{x + \\frac{1}{x}}{2} \\geq 1$, so $x + \\frac{1}{x} \\geq 2$. The minimum value is achieved when $x = \\frac{1}{x}$, i.e., $x = 1$.",
+      "hint": "Apply the AM-GM inequality to the terms $x$ and $\\frac{1}{x}$.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787297136086-8b2d2",
+      "order": 5,
+      "question": "What is the maximum value of the expression $3 \\sin x + 4 \\cos x$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The maximum value is not simply the larger coefficient."
+        },
+        {
+          "letter": "B",
+          "text": "4",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The maximum value is not simply the larger coefficient."
+        },
+        {
+          "letter": "C",
+          "text": "5",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The maximum value is $\\sqrt{3^2 + 4^2} = 5$."
+        },
+        {
+          "letter": "D",
+          "text": "7",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The maximum value is not the sum of the coefficients."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For an expression of the form $a \\sin x + b \\cos x$, its maximum value is $\\sqrt{a^2 + b^2}$ and its minimum value is $-\\sqrt{a^2 + b^2}$. Here, $a=3$ and $b=4$. Maximum value = $\\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5$.",
+      "hint": "Use the formula for the maximum value of $a \\sin x + b \\cos x$.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787297136086-a9e41",
+      "order": 6,
+      "question": "If $ \\sin^2 x + \\cos^2 x = 1 $, then $ \\tan^2 x + \\cot^2 x $ is always:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the expression is always greater than or equal to 2."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the expression can be greater than 2."
+        },
+        {
+          "letter": "C",
+          "text": "greater than or equal to 2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the simplification."
+        },
+        {
+          "letter": "D",
+          "text": "less than 2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the expression is always at least 2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the identity $ \\sin^2 x + \\cos^2 x = 1 $, we can express $ \\tan^2 x + \\cot^2 x $ as $ \\frac{\\sin^2 x}{\\cos^2 x} + \\frac{\\cos^2 x}{\\sin^2 x} = \\frac{\\sin^4 x + \\cos^4 x}{\\sin^2 x \\cos^2 x} $. Simplifying further, we get $ \\frac{1 - 2\\sin^2 x \\cos^2 x}{\\sin^2 x \\cos^2 x} = \\frac{1}{\\sin^2 x \\cos^2 x} - 2 $. Using the double-angle identity $ \\sin 2x = 2\\sin x \\cos x $, we have $ \\frac{4}{\\sin^2 2x} - 2 $. Since $ \\sin^2 2x \\leq 1 $, the expression is always greater than or equal to 2.",
+      "hint": "Use trigonometric identities to simplify the expression.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787297136086-73f9d",
+      "order": 7,
+      "question": "The minimum value of $ \\sin x + \\cos x $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "-1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the minimum value is lower."
+        },
+        {
+          "letter": "B",
+          "text": "-√2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the identity."
+        },
+        {
+          "letter": "C",
+          "text": "0",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the expression can be negative."
+        },
+        {
+          "letter": "D",
+          "text": "1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the expression can be less than 1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The expression $ \\sin x + \\cos x $ can be rewritten using the identity $ \\sin x + \\cos x = \\sqrt{2} \\sin\\left(x + \\frac{\\pi}{4}\\right) $. The minimum value of $ \\sin \\theta $ is -1, so the minimum value of $ \\sqrt{2} \\sin\\left(x + \\frac{\\pi}{4}\\right) $ is $ -\\sqrt{2} $.",
+      "hint": "Use the identity for $ \\sin x + \\cos x $ to find its range.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787297136086-f014b",
+      "order": 8,
+      "question": "If $ \\tan \\theta = \\frac{1}{2} $, then $ \\sin 2\\theta $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{1}{2} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the calculation yields a different value."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{2}{5} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the calculation yields a different value."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{4}{5} $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the calculation."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{3}{5} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the calculation yields a different value."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the double-angle formula $ \\sin 2\\theta = 2 \\sin \\theta \\cos \\theta $, and since $ \\tan \\theta = \\frac{1}{2} $, let’s assume a right triangle with opposite side 1 and adjacent side 2. The hypotenuse is $ \\sqrt{1^2 + 2^2} = \\sqrt{5} $. Thus, $ \\sin \\theta = \\frac{1}{\\sqrt{5}} $ and $ \\cos \\theta = \\frac{2}{\\sqrt{5}} $. Therefore, $ \\sin 2\\theta = 2 \\times \\frac{1}{\\sqrt{5}} \\times \\frac{2}{\\sqrt{5}} = \\frac{4}{5} $.",
+      "hint": "Use the double-angle formula for sine and the given tangent value.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787297136086-bbafc",
+      "order": 9,
+      "question": "The number of solutions to $ \\sin x = \\cos x $ in the interval $ [0, 2\\pi] $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, as there are two solutions."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the solutions."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as there are only two solutions."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as there are only two solutions."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The equation $ \\sin x = \\cos x $ can be rewritten as $ \\tan x = 1 $. The solutions in $ [0, 2\\pi] $ are $ x = \\frac{\\pi}{4} $ and $ x = \\frac{5\\pi}{4} $. Thus, there are 2 solutions.",
+      "hint": "Rewrite the equation in terms of tangent and find solutions in the given interval.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787297136086-4fb10",
+      "order": 10,
+      "question": "The minimum value of $ \\sin^2 x + 2\\sin x \\cos x + \\cos^2 x $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the simplification."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the minimum value is lower."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the minimum value is lower."
+        },
+        {
+          "letter": "D",
+          "text": "3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the minimum value is lower."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The expression simplifies to $ (\\sin x + \\cos x)^2 $. The minimum value of $ \\sin x + \\cos x $ is $ -\\sqrt{2} $, so the minimum value of $ (\\sin x + \\cos x)^2 $ is 0.",
+      "hint": "Simplify the expression and find its minimum value.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787297136086-6a7f8",
+      "order": 11,
+      "question": "If $ \\sec \\theta + \\tan \\theta = 2 $, then $ \\sec \\theta - \\tan \\theta $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.5",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the identity."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the value is different."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the value is different."
+        },
+        {
+          "letter": "D",
+          "text": "0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the value is different."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We know that $ \\sec^2 \\theta - \\tan^2 \\theta = 1 $. Given $ \\sec \\theta + \\tan \\theta = 2 $, let $ \\sec \\theta - \\tan \\theta = x $. Then, $ (\\sec \\theta + \\tan \\theta)(\\sec \\theta - \\tan \\theta) = 2x = 1 $, so $ x = 0.5 $.",
+      "hint": "Use the identity $ \\sec^2 \\theta - \\tan^2 \\theta = 1 $ to find the value of $ \\sec \\theta - \\tan \\theta $.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787297136086-ae0cd",
+      "order": 12,
+      "question": "The value of $ \\cos 1^\\circ \\cos 2^\\circ \\cos 3^\\circ \\dots \\cos 180^\\circ $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct, as the product includes a zero term."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the product includes a zero term."
+        },
+        {
+          "letter": "C",
+          "text": "-1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the product includes a zero term."
+        },
+        {
+          "letter": "D",
+          "text": "Undefined",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as the product is defined and equals zero."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The product includes $ \\cos 90^\\circ $, which is 0. Thus, the entire product is 0.",
+      "hint": "Identify the term in the product that is zero.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787297136086-04dc7",
+      "order": 13,
+      "question": "The number of integers $ n $ such that $ n^2 + n + 1 $ is divisible by 7 is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect, as there are two residue classes."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct, as derived from the residue classes."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect, as there are only two residue classes."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect, as there are only two residue classes."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We need $ n^2 + n + 1 \\equiv 0 \\pmod{7} $. Testing $ n $ from 0 to 6, we find that $ n \\equiv 2 $ or $ 4 \\pmod{7} $ satisfy the condition. Thus, there are 2 residue classes.",
+      "hint": "Test values of $ n $ modulo 7 to find solutions.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787297136086-9539c",
+      "order": 14,
+      "question": "The inequality sin x > cos x holds for x in the interval:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(0, π/4)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "In this interval, sin x < cos x."
+        },
+        {
+          "letter": "B",
+          "text": "(π/4, 5π/4)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This interval satisfies sin x > cos x."
+        },
+        {
+          "letter": "C",
+          "text": "(5π/4, 2π)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "In this interval, sin x < cos x."
+        },
+        {
+          "letter": "D",
+          "text": "(0, π/2)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Only part of this interval satisfies sin x > cos x."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The inequality sin x > cos x can be rewritten as tan x > 1. This holds for x in (π/4, π/2) and (5π/4, 3π/2). Within [0, 2π], the combined interval is (π/4, 5π/4).",
+      "hint": "Consider the behavior of the tangent function and its periodicity.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787297136086-c9fcb",
+      "order": 15,
+      "question": "The smallest positive integer n such that 2^n > n^10 is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "2^10 = 1024 and 10^10 = 10,000,000,000. 2^10 < 10^10."
+        },
+        {
+          "letter": "B",
+          "text": "20",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "2^20 = 1,048,576 and 20^10 = 10,240,000,000,000. 2^20 < 20^10."
+        },
+        {
+          "letter": "C",
+          "text": "30",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "2^30 = 1,073,741,824 and 30^10 = 59,049,000,000,000. 2^30 < 30^10."
+        },
+        {
+          "letter": "D",
+          "text": "40",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "2^40 = 1,099,511,627,776 and 40^10 = 10,485,760,000,000. 2^40 > 40^10."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Testing values: For n = 30, 2^30 < 30^10. For n = 40, 2^40 > 40^10. Thus, the smallest n is 40.",
+      "hint": "Evaluate the inequality for increasing values of n to find the smallest n that satisfies it.",
+      "marks": 1,
+      "negativeMark": 0.25,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "kvpy-maths",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ]
+}
