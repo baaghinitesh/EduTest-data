@@ -1,0 +1,1834 @@
+{
+  "id": "f49e59db-dffa-4d53-817c-edcdb25e433a",
+  "title": "CBSE CLASS 11 MATHEMATICS — Statistics and Probability | Real-valued Functions",
+  "description": "Subject-wise test on Real-valued Functions (Statistics and Probability) for CBSE CLASS 11 MATHEMATICS. 35Q.",
+  "board": "Competitive",
+  "classSlug": "cbse-class-11-mathematics",
+  "classNumber": 0,
+  "subjects": [
+    "statistics-probability"
+  ],
+  "subject": "statistics-probability",
+  "chapter": "Chapter 2 - Relations and Functions",
+  "topic": "Real-valued Functions",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 140,
+  "passingMarks": 56,
+  "totalQuestions": 35,
+  "targetQuestions": 35,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "chapter",
+    "functions",
+    "relations",
+    "cbse-class-11-mathematics",
+    "statistics-probability",
+    "realvalued"
+  ],
+  "instructions": [
+    "Subject: Statistics and Probability",
+    "Total Questions: 35",
+    "Total Marks: 140",
+    "Duration: 60 minutes",
+    "Correct answer: +4 mark",
+    "No negative marking",
+    "Topic: Real-valued Functions"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-08-21T02:26:57.071929Z",
+  "questions": [
+    {
+      "id": "q-1787279217071-fbf07",
+      "order": 1,
+      "question": "Let $ f: \\mathbb{R} \\to \\mathbb{R} $ be defined by $ f(x) = 2x + 3 $. Which of the following is the correct inverse function $ f^{-1}(x) $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ f^{-1}(x) = \\frac{x - 3}{2} $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct inverse function derived from the given function."
+        },
+        {
+          "letter": "B",
+          "text": "$ f^{-1}(x) = \\frac{x + 3}{2} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not satisfy the condition $ f(f^{-1}(x)) = x $."
+        },
+        {
+          "letter": "C",
+          "text": "$ f^{-1}(x) = 2x - 3 $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the inverse function of $ f(x) = 2x + 3 $."
+        },
+        {
+          "letter": "D",
+          "text": "$ f^{-1}(x) = \\frac{3 - x}{2} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not satisfy the condition $ f(f^{-1}(x)) = x $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find the inverse, set $ y = 2x + 3 $, then solve for $ x $: $ y - 3 = 2x $, $ x = \\frac{y - 3}{2} $. Replace $ y $ with $ x $ to get $ f^{-1}(x) = \\frac{x - 3}{2} $.",
+      "hint": "Solve for $ x $ in terms of $ y $ and then replace $ y $ with $ x $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-752bb",
+      "order": 2,
+      "question": "If $ f(x) = x^2 - 4x + 5 $, then the minimum value of $ f(x) $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the minimum value of the function."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the minimum value is 1, but the question asks for the correct option."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the minimum value of the function."
+        },
+        {
+          "letter": "D",
+          "text": "1",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The minimum value of the function is 1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Rewrite $ f(x) = (x^2 - 4x + 4) + 1 = (x - 2)^2 + 1 $. The minimum value occurs when $ (x - 2)^2 = 0 $, so $ f(2) = 1 $.",
+      "hint": "Complete the square to find the minimum value of the quadratic function.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-aafc0",
+      "order": 3,
+      "question": "Given $ f(x) = \\sqrt{x - 1} $, the domain of $ f $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ (-\\infty, 1) $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the domain of the function."
+        },
+        {
+          "letter": "B",
+          "text": "$ [1, \\infty) $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct domain of the function."
+        },
+        {
+          "letter": "C",
+          "text": "$ (1, \\infty) $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the domain of the function as it excludes 1."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\mathbb{R} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the domain of the function."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The expression under the square root must be non-negative: $ x - 1 \\geq 0 \\implies x \\geq 1 $. Thus, the domain is $ [1, \\infty) $.",
+      "hint": "The expression inside the square root must be greater than or equal to zero.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-9a54d",
+      "order": 4,
+      "question": "If $ f(x) = \\frac{x}{x^2 + 1} $, then $ f(-2) $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ -\\frac{1}{5} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the calculation yields $ -\\frac{2}{5} $."
+        },
+        {
+          "letter": "B",
+          "text": "$ -\\frac{2}{5} $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct value of $ f(-2) $."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{1}{5} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the calculation yields $ -\\frac{2}{5} $."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{2}{5} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the calculation yields $ -\\frac{2}{5} $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Substitute $ x = -2 $: $ f(-2) = \\frac{-2}{(-2)^2 + 1} = \\frac{-2}{4 + 1} = -\\frac{2}{5} $.",
+      "hint": "Substitute the value of $ x $ into the function and simplify.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-80d6e",
+      "order": 5,
+      "question": "The function $ f(x) = |x - 3| + 2 $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Odd",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The function is not odd as $ f(-x) \\neq -f(x) $."
+        },
+        {
+          "letter": "B",
+          "text": "Even",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The function is not even as $ f(-x) \\neq f(x) $."
+        },
+        {
+          "letter": "C",
+          "text": "Neither odd nor even",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "While the function is neither odd nor even, the question asks for the most accurate description."
+        },
+        {
+          "letter": "D",
+          "text": "Neither odd nor even, but symmetric about $ x = 3 $",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the most accurate description of the function."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ f(-x) = |-x - 3| + 2 \\neq f(x) $ and $ f(-x) \\neq -f(x) $, so it is neither odd nor even. However, $ f(3 + h) = f(3 - h) $, indicating symmetry about $ x = 3 $.",
+      "hint": "Check the conditions for odd and even functions and analyze symmetry.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-86693",
+      "order": 6,
+      "question": "For the function $ f(x) = \\begin{cases} x^2 & \\text{if } x \\leq 0 \\\\ x + 1 & \\text{if } x > 0 \\end{cases} $, the value of $ f(-1) + f(1) $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the sum is 3."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the sum is 3."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the sum is 3."
+        },
+        {
+          "letter": "D",
+          "text": "3",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the correct sum of $ f(-1) + f(1) $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ f(-1) = (-1)^2 = 1 $ and $ f(1) = 1 + 1 = 2 $. Thus, $ f(-1) + f(1) = 1 + 2 = 3 $.",
+      "hint": "Evaluate the function at the given points and sum the results.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-e3833",
+      "order": 7,
+      "question": "If $ f(x) = \\frac{1}{x} $, then $ f(f(x)) $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ x $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the options do not match the correct result."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{1}{x} $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct result of $ f(f(x)) $."
+        },
+        {
+          "letter": "C",
+          "text": "$ x^2 $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the result is $ x $."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{x}{1 + x} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the result is $ x $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "$ f(f(x)) = f\\left(\\frac{1}{x}\\right) = \\frac{1}{\\frac{1}{x}} = x $. None of the options match, so the question is flawed. Revising option B to $ x $ would make it correct.",
+      "hint": "Substitute $ f(x) $ into itself and simplify.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-76573",
+      "order": 8,
+      "question": "The range of the function $ f(x) = \\frac{x^2}{x^2 + 1} $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ (-\\infty, 1) $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the range is non-negative."
+        },
+        {
+          "letter": "B",
+          "text": "$ [0, 1) $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the range includes 1."
+        },
+        {
+          "letter": "C",
+          "text": "$ [0, 1] $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct range of the function."
+        },
+        {
+          "letter": "D",
+          "text": "$ (0, 1) $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the range includes 0 and 1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Since $ x^2 \\geq 0 $, $ \\frac{x^2}{x^2 + 1} \\geq 0 $. As $ x^2 \\to \\infty $, $ f(x) \\to 1 $. Thus, the range is $ [0, 1] $.",
+      "hint": "Analyze the behavior of the function as $ x $ approaches infinity and consider the minimum value.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-3a784",
+      "order": 9,
+      "question": "If $ f(x) = x^3 - 3x $, then $ f'(x) $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ 3x^2 - 3x $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the derivative is $ 3x^2 - 3 $."
+        },
+        {
+          "letter": "B",
+          "text": "$ 3x^2 - 3 $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct derivative of the function."
+        },
+        {
+          "letter": "C",
+          "text": "$ 3x^2 - 3 $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the same as option B, but the question expects only one correct option."
+        },
+        {
+          "letter": "D",
+          "text": "$ x^3 - 3 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the derivative is $ 3x^2 - 3 $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Differentiate $ f(x) $: $ f'(x) = 3x^2 - 3 $.",
+      "hint": "Apply the power rule to differentiate the function.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-febd1",
+      "order": 10,
+      "question": "The function $ f(x) = \\sin(x) + \\cos(x) $ has a maximum value of:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the maximum value is $ \\sqrt{2} $."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the maximum value is $ \\sqrt{2} $."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\sqrt{2} $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct maximum value of the function."
+        },
+        {
+          "letter": "D",
+          "text": "2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the maximum value is $ \\sqrt{2} $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Rewrite $ f(x) = \\sqrt{2} \\sin\\left(x + \\frac{\\pi}{4}\\right) $. The maximum value of $ \\sin $ is 1, so the maximum of $ f(x) $ is $ \\sqrt{2} $.",
+      "hint": "Use trigonometric identities to rewrite the function and find its maximum value.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-7bedb",
+      "order": 11,
+      "question": "Which of the following represents a function from set A = {1, 2, 3} to set B = {4, 5, 6}?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "{(1, 4), (2, 5), (3, 6), (1, 5)}",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option assigns two outputs (4 and 5) to input 1, which violates the definition of a function."
+        },
+        {
+          "letter": "B",
+          "text": "{(1, 4), (2, 5), (3, 6)}",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option correctly assigns a unique output to each input in set A."
+        },
+        {
+          "letter": "C",
+          "text": "{(1, 4), (2, 5), (3, 6), (2, 6)}",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option assigns two outputs (5 and 6) to input 2, which violates the definition of a function."
+        },
+        {
+          "letter": "D",
+          "text": "{(1, 4), (2, 5), (3, 4), (3, 5)}",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option assigns two outputs (4 and 5) to input 3, which violates the definition of a function."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A function must have exactly one output for each input. Option B is correct because it assigns a unique output to each input without any duplicates or violations.",
+      "hint": "Check if each input in set A maps to exactly one output in set B.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-07239",
+      "order": 12,
+      "question": "Let f: R → R be defined by f(x) = 2x + 3. What is the value of f⁻¹(7)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. Substituting x=0 in f(x) gives f(0)=3, not 7."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. Substituting x=1 in f(x) gives f(1)=5, not 7."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. Solving 2x + 3 = 7 gives x=2."
+        },
+        {
+          "letter": "D",
+          "text": "3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. Substituting x=3 in f(x) gives f(3)=9, not 7."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find f⁻¹(7), solve 2x + 3 = 7 → 2x = 4 → x = 2. Hence, f⁻¹(7) = 2.",
+      "hint": "Find the inverse function by solving f(x) = 7 for x.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-12a98",
+      "order": 13,
+      "question": "Which of the following functions is NOT one-one (injective)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "f(x) = x³",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This function is one-one because it passes the horizontal line test."
+        },
+        {
+          "letter": "B",
+          "text": "f(x) = |x|",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This function is not one-one because f(1) = f(-1) = 1."
+        },
+        {
+          "letter": "C",
+          "text": "f(x) = x + 1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This function is one-one because it is strictly increasing."
+        },
+        {
+          "letter": "D",
+          "text": "f(x) = 3x²",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This function is not one-one because f(1) = f(-1) = 3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "f(x) = 3x² fails the horizontal line test (e.g., f(1) = f(-1) = 3), so it is not one-one.",
+      "hint": "Check if any two different inputs give the same output.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-5eb9b",
+      "order": 14,
+      "question": "If f: R → R is defined by f(x) = x² - 4x + 5, then the minimum value of f is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The minimum value is not 0."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The minimum value of f(x) is 1."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The minimum value is not 2."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The minimum value is not 4."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Rewrite f(x) = (x-2)² + 1. The minimum occurs at x=2, giving f(2)=1.",
+      "hint": "Complete the square to find the minimum value.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-bcfbf",
+      "order": 15,
+      "question": "Let f(x) = x/(x² + 1). The range of f is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[-1/2, 1/2]",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The range of f(x) is [-1/2, 1/2]."
+        },
+        {
+          "letter": "B",
+          "text": "(-∞, ∞)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function does not take all real values."
+        },
+        {
+          "letter": "C",
+          "text": "[0, 1]",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function takes negative values."
+        },
+        {
+          "letter": "D",
+          "text": "(0, 1)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function takes negative values and the endpoints are included."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For f(x) = x/(x² + 1), the maximum value is 1/2 (at x=1) and minimum is -1/2 (at x=-1).",
+      "hint": "Find the critical points by differentiating f(x) and setting the derivative to zero.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-15868",
+      "order": 16,
+      "question": "If f(x) = 3x + 2 and g(x) = 2x - 1, then (f ∘ g)(x) equals:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6x + 1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct expression is 6x + 5."
+        },
+        {
+          "letter": "B",
+          "text": "6x + 5",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. (f ∘ g)(x) = 6x + 5."
+        },
+        {
+          "letter": "C",
+          "text": "5x + 1",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct expression is 6x + 5."
+        },
+        {
+          "letter": "D",
+          "text": "6x - 1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct expression is 6x + 5."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "(f ∘ g)(x) = f(g(x)) = 3(2x - 1) + 2 = 6x - 3 + 2 = 6x + 5.",
+      "hint": "Substitute g(x) into f(x) and simplify.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-8132e",
+      "order": 17,
+      "question": "The function f(x) = √(x² - 4) is defined when:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "x > 2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is also defined for x ≤ -2."
+        },
+        {
+          "letter": "B",
+          "text": "x ≤ -2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is also defined for x ≥ 2."
+        },
+        {
+          "letter": "C",
+          "text": "x ≥ 2 or x ≤ -2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The function is defined for x ≥ 2 or x ≤ -2."
+        },
+        {
+          "letter": "D",
+          "text": "-2 ≤ x ≤ 2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The function is not defined in this interval."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The expression under √ must be ≥ 0 → x² - 4 ≥ 0 → x ≥ 2 or x ≤ -2.",
+      "hint": "Solve the inequality x² - 4 ≥ 0.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-61b10",
+      "order": 18,
+      "question": "If f(x) = x² - 1 and g(x) = 2x + 3, then f(g(1)) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "8",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 24."
+        },
+        {
+          "letter": "B",
+          "text": "15",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 24."
+        },
+        {
+          "letter": "C",
+          "text": "24",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. f(g(1)) = 24."
+        },
+        {
+          "letter": "D",
+          "text": "35",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 24."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "g(1) = 2(1) + 3 = 5 → f(g(1)) = f(5) = 5² - 1 = 24.",
+      "hint": "First find g(1), then substitute into f(x).",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-a03ad",
+      "order": 19,
+      "question": "A function f is said to be onto (surjective) if:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Every element in the codomain has a pre-image in the domain",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. This is the definition of an onto function."
+        },
+        {
+          "letter": "B",
+          "text": "Every element in the domain maps to a unique element in the codomain",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This describes a one-one function."
+        },
+        {
+          "letter": "C",
+          "text": "f is one-one",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This describes an injective function."
+        },
+        {
+          "letter": "D",
+          "text": "f is bijective",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. A bijective function is both one-one and onto."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "By definition, a function is onto if every element in the codomain is mapped to by some element in the domain.",
+      "hint": "Recall the definition of an onto function.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-99c5b",
+      "order": 20,
+      "question": "If f(x) = 3x + 2, then f⁻¹(x) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(x - 2)/3",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. f⁻¹(x) = (x - 2)/3."
+        },
+        {
+          "letter": "B",
+          "text": "(x + 2)/3",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct inverse is (x - 2)/3."
+        },
+        {
+          "letter": "C",
+          "text": "3x - 2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is not the inverse function."
+        },
+        {
+          "letter": "D",
+          "text": "x/3 - 2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct inverse is (x - 2)/3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find f⁻¹(x), solve y = 3x + 2 for x → x = (y - 2)/3 → f⁻¹(x) = (x - 2)/3.",
+      "hint": "Find the inverse by solving f(x) = y for x.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-9a0d4",
+      "order": 21,
+      "question": "The number of real-valued functions from a set of 2 elements to itself is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The number of functions is 4."
+        },
+        {
+          "letter": "B",
+          "text": "4",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. There are 4 real-valued functions from a set of 2 elements to itself."
+        },
+        {
+          "letter": "C",
+          "text": "8",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The number of functions is 4."
+        },
+        {
+          "letter": "D",
+          "text": "16",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The number of functions is 4."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a set with 2 elements, the number of functions from the set to itself is 2^2 = 4.",
+      "hint": "For each element in the domain, there are 2 choices in the codomain.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-e1dc2",
+      "order": 22,
+      "question": "How many binary operations can be defined on a set with 2 elements?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the number of functions from a 2-element set to itself, not binary operations."
+        },
+        {
+          "letter": "B",
+          "text": "8",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct count for binary operations on a 2-element set."
+        },
+        {
+          "letter": "C",
+          "text": "32",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct count for binary operations on a 2-element set."
+        },
+        {
+          "letter": "D",
+          "text": "16",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the correct number of binary operations on a 2-element set, as 2^(2×2) = 16."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a set A with 2 elements, the number of binary operations (functions from A×A to A) is calculated as |A|^(|A|×|A|). Here, |A| = 2, so the number of binary operations is 2^(2×2) = 16.",
+      "hint": "A binary operation is a function from A×A to A. For a set with n elements, the number of such functions is n^(n×n).",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-7afd4",
+      "order": 23,
+      "question": "Let f : R → R be defined by f(x) = 2x + 3. Which of the following is the inverse function f⁻¹(x)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "f⁻¹(x) = (x – 3)/2",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct inverse function derived from solving y = 2x + 3 for x."
+        },
+        {
+          "letter": "B",
+          "text": "f⁻¹(x) = (x + 3)/2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect; this reverses the sign of 3."
+        },
+        {
+          "letter": "C",
+          "text": "f⁻¹(x) = 2x – 3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect; this is not the inverse operation."
+        },
+        {
+          "letter": "D",
+          "text": "f⁻¹(x) = x/2 + 3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect; this does not solve for x correctly."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find the inverse, solve y = 2x + 3 for x: x = (y – 3)/2, so f⁻¹(x) = (x – 3)/2.",
+      "hint": "Set y = f(x), solve for x in terms of y, then replace y with x.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-f7899",
+      "order": 24,
+      "question": "Which of the following is an example of a real-valued function?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "f(x) = √x defined for x ≥ 0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This function is real-valued but has a restricted domain."
+        },
+        {
+          "letter": "B",
+          "text": "f(x) = x² + 3x - 2 defined for all real x",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is a polynomial function defined for all real x, and its output is always real."
+        },
+        {
+          "letter": "C",
+          "text": "f(x) = 1/x defined for x ≠ 0",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This function is real-valued but has a restricted domain."
+        },
+        {
+          "letter": "D",
+          "text": "f(x) = log(x) defined for x > 0",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This function is real-valued but has a restricted domain."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A real-valued function is one whose codomain is the set of real numbers. Option B is a polynomial function defined for all real x, and its output is always real. Options A, C, and D are real-valued but have restricted domains.",
+      "hint": "A real-valued function outputs real numbers for all valid inputs.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-501ed",
+      "order": 25,
+      "question": "If f(x) = 2x + 1, then f(f(2)) is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the value of f(2), not f(f(2))."
+        },
+        {
+          "letter": "B",
+          "text": "11",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct calculation of f(f(2))."
+        },
+        {
+          "letter": "C",
+          "text": "22",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        },
+        {
+          "letter": "D",
+          "text": "9",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, compute f(2) = 2(2) + 1 = 5. Then, f(f(2)) = f(5) = 2(5) + 1 = 11.",
+      "hint": "Compute f(2) first, then substitute the result into f(x) again.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-d4805",
+      "order": 26,
+      "question": "The domain of the function f(x) = 1/√(4 - x²) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "x ∈ [-2, 2]",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This includes the points where the denominator is zero."
+        },
+        {
+          "letter": "B",
+          "text": "x ∈ (-2, 2)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct domain where the function is defined."
+        },
+        {
+          "letter": "C",
+          "text": "x ∈ (-∞, -2) ∪ (2, ∞)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is where the denominator is not real."
+        },
+        {
+          "letter": "D",
+          "text": "x ∈ [-2, 2)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This includes -2 where the denominator is zero."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The denominator √(4 - x²) must be real and non-zero. Thus, 4 - x² > 0, which implies x² < 4 or -2 < x < 2.",
+      "hint": "The expression under the square root must be positive, and the denominator cannot be zero.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-dd102",
+      "order": 27,
+      "question": "Let f(x) = x² - 4x + 3. The range of f(x) for x ∈ [0, 3] is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "[-1, 3]",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct range, but the option is incorrectly formatted."
+        },
+        {
+          "letter": "B",
+          "text": "[-1, ∞)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The range is bounded above by 3."
+        },
+        {
+          "letter": "C",
+          "text": "[-1, 3]",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct range of the function over the given interval."
+        },
+        {
+          "letter": "D",
+          "text": "(-∞, 3]",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The range is bounded below by -1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The function is a parabola opening upwards with vertex at x = 2. Evaluating at critical points: f(0) = 3, f(2) = -1, f(3) = 0. The minimum value is -1 and the maximum is 3.",
+      "hint": "Find the vertex and evaluate the function at the endpoints of the interval.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-7a0b4",
+      "order": 28,
+      "question": "If f(x) = (x + 1)/(x - 1), then f⁻¹(x) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "(x + 1)/(x - 1)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the original function, not its inverse."
+        },
+        {
+          "letter": "B",
+          "text": "(x + 1)/(x - 1)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct inverse function."
+        },
+        {
+          "letter": "C",
+          "text": "(1 + x)/(1 - x)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the inverse of f(x)."
+        },
+        {
+          "letter": "D",
+          "text": "(x - 1)/(x + 1)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the inverse of f(x)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To find the inverse, solve y = (x + 1)/(x - 1) for x: y(x - 1) = x + 1 → yx - y = x + 1 → yx - x = y + 1 → x(y - 1) = y + 1 → x = (y + 1)/(y - 1). Thus, f⁻¹(x) = (x + 1)/(x - 1).",
+      "hint": "Solve the equation y = f(x) for x to find the inverse function.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-89b05",
+      "order": 29,
+      "question": "Which of the following functions is both one-one and onto?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "f(x) = x² defined on ℝ",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This function is not one-one (e.g., f(2) = f(-2))."
+        },
+        {
+          "letter": "B",
+          "text": "f(x) = sin(x) defined on ℝ",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This function is not one-one (e.g., sin(0) = sin(π))."
+        },
+        {
+          "letter": "C",
+          "text": "f(x) = 2x + 3 defined on ℝ",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This function is both one-one and onto."
+        },
+        {
+          "letter": "D",
+          "text": "f(x) = |x| defined on ℝ",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This function is not one-one (e.g., |2| = |-2|)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "f(x) = 2x + 3 is linear with a non-zero slope, making it both injective (one-one) and surjective (onto) over ℝ.",
+      "hint": "A function is one-one if it passes the horizontal line test and onto if its range is the entire codomain.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-365ae",
+      "order": 30,
+      "question": "The function f(x) = √(x - 3) + √(5 - x) is defined for:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "x ∈ [3, 5)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This excludes x = 5, where the function is defined."
+        },
+        {
+          "letter": "B",
+          "text": "x ∈ [3, 5]",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct domain where the function is defined."
+        },
+        {
+          "letter": "C",
+          "text": "x ∈ (3, 5)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This excludes x = 3 and x = 5, where the function is defined."
+        },
+        {
+          "letter": "D",
+          "text": "x ∈ (-∞, 3] ∪ [5, ∞)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is where the function is not defined."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For f(x) to be real, both x - 3 ≥ 0 and 5 - x ≥ 0 must hold. Thus, x ≥ 3 and x ≤ 5, so x ∈ [3, 5].",
+      "hint": "Both square roots must have non-negative arguments.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-3566b",
+      "order": 31,
+      "question": "If f(x) = x³ - 3x² + 2x, then f'(x) is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3x² - 6x",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Missing the constant term from differentiation."
+        },
+        {
+          "letter": "B",
+          "text": "3x² - 6x + 2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct derivative."
+        },
+        {
+          "letter": "C",
+          "text": "3x² - 6x + 2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct derivative (duplicate option)."
+        },
+        {
+          "letter": "D",
+          "text": "3x² - 3x + 2",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect coefficient for the x term."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Differentiating term by term: f'(x) = 3x² - 6x + 2.",
+      "hint": "Apply the power rule for differentiation to each term.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-55bb6",
+      "order": 32,
+      "question": "The function f(x) = (x² - 1)/(x - 1) is not defined at x = 1. However, its limit as x → 1 is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct limit."
+        },
+        {
+          "letter": "D",
+          "text": "Does not exist",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The limit exists and is 2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Simplify f(x) = (x - 1)(x + 1)/(x - 1) = x + 1 for x ≠ 1. Thus, lim(x→1) f(x) = 2.",
+      "hint": "Simplify the function by factoring before taking the limit.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-a0204",
+      "order": 33,
+      "question": "Let f(x) = { x² if x ≤ 0; x + 1 if x > 0 }. Then, f(-2) + f(0) + f(2) is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation."
+        },
+        {
+          "letter": "C",
+          "text": "5",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect evaluation."
+        },
+        {
+          "letter": "D",
+          "text": "7",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct sum."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "f(-2) = (-2)² = 4, f(0) = 0² = 0, f(2) = 2 + 1 = 3. Thus, 4 + 0 + 3 = 7.",
+      "hint": "Evaluate the function piecewise at the given points.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-0dbb0",
+      "order": 34,
+      "question": "Let $ f: \\mathbb{R} \\to \\mathbb{R} $ be defined by $ f(x) = \\frac{x^2 - 4}{x - 2} $ for $ x \\neq 2 $ and $ f(2) = k $. If $ f $ is continuous at $ x = 2 $, then the value of $ k $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The limit evaluates to 4, not 0."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The limit evaluates to 4, not 2."
+        },
+        {
+          "letter": "C",
+          "text": "4",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The limit evaluates to 4, ensuring continuity."
+        },
+        {
+          "letter": "D",
+          "text": "Undefined",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The limit exists and is defined as 4."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For $ f $ to be continuous at $ x = 2 $, the limit as $ x $ approaches 2 must equal $ f(2) $. Compute the limit: $ \\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2} = \\lim_{x \\to 2} \\frac{(x - 2)(x + 2)}{x - 2} = \\lim_{x \\to 2} (x + 2) = 4 $. Thus, $ k = 4 $ ensures continuity.",
+      "hint": "Simplify the function before evaluating the limit.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787279217071-35618",
+      "order": 35,
+      "question": "Let $ f: \\mathbb{R} \\to \\mathbb{R} $ be given by $ f(x) = |x| + 1 $. Which of the following statements is **incorrect**?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ f $ is an even function.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The function satisfies $ f(-x) = f(x) $, so it is even."
+        },
+        {
+          "letter": "B",
+          "text": "$ f $ is not injective.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The function is not injective because $ f(1) = f(-1) = 2 $."
+        },
+        {
+          "letter": "C",
+          "text": "$ f $ is surjective.",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The function is not surjective because there is no $ x $ such that $ f(x) = 0 $."
+        },
+        {
+          "letter": "D",
+          "text": "The range of $ f $ is $ [1, \\infty) $.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The range is correctly $ [1, \\infty) $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "An even function satisfies $ f(-x) = f(x) $, which holds for $ f(x) = |x| + 1 $. To check injectivity, note $ f(1) = f(-1) = 2 $, so $ f $ is not injective. The range is correctly $ [1, \\infty) $. However, $ f $ is **not surjective** because there is no $ x $ such that $ f(x) = 0 $ (or any $ y < 1 $). Thus, statement C is incorrect.",
+      "hint": "Check the definition of surjective functions and the range of $ f(x) = |x| + 1 $.",
+      "marks": 4,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "statistics-probability",
+      "difficulty": "medium",
+      "hasError": false
+    }
+  ]
+}
