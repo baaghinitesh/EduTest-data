@@ -1,0 +1,1326 @@
+{
+  "id": "91680375-bda1-4af9-b24d-3f21e27beff0",
+  "title": "MAHARASHTRA CLASS 12 — Mathematics | Integration by Parts Partial Fractions",
+  "description": "Subject-wise test on Integration by Parts Partial Fractions (Mathematics) for MAHARASHTRA CLASS 12. 25Q.",
+  "board": "Maharashtra",
+  "classSlug": "maharashtra-class-12",
+  "classNumber": 12,
+  "subjects": [
+    "maha12-maths"
+  ],
+  "subject": "maha12-maths",
+  "chapter": "Algebra Statistics",
+  "topic": "Integration by Parts Partial Fractions",
+  "testType": "subject-wise",
+  "duration": 38,
+  "totalMarks": 25,
+  "passingMarks": 10,
+  "totalQuestions": 25,
+  "targetQuestions": 25,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "integration",
+    "parts",
+    "maha12-maths",
+    "fractions",
+    "maharashtra-class-12",
+    "statistics",
+    "partial",
+    "algebra"
+  ],
+  "instructions": [
+    "Subject: Mathematics",
+    "Total Questions: 25",
+    "Total Marks: 25",
+    "Duration: 38 minutes",
+    "Correct answer: +1 mark",
+    "No negative marking",
+    "Topic: Integration by Parts Partial Fractions"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-08-22T07:26:38.056176Z",
+  "questions": [
+    {
+      "id": "q-1787383598055-d32fb",
+      "order": 1,
+      "question": "What is the standard formula for Integration by Parts?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\(\\int u \\, dv = uv - \\int v \\, du\\)$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct formula for Integration by Parts, derived from the product rule of differentiation."
+        },
+        {
+          "letter": "B",
+          "text": "$\\(\\int u \\, dv = uv + \\int v \\, du\\)$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The sign between the terms is incorrect. The correct formula uses a minus sign."
+        },
+        {
+          "letter": "C",
+          "text": "$\\(\\int u \\, dv = vu - \\int u \\, dv\\)$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The second term incorrectly repeats the integral with the same variables."
+        },
+        {
+          "letter": "D",
+          "text": "$\\(\\int u \\, dv = \\frac{u}{v} - \\int \\frac{v}{u} \\, du\\)$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not a valid formula for Integration by Parts."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Integration by Parts is a technique derived from the product rule of differentiation, used to integrate products of functions.",
+      "hint": "Recall the formula derived from the product rule: d(uv) = u dv + v du.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598055-98949",
+      "order": 2,
+      "question": "For the rational function $\\(\\frac{P(x)}{(x-a)(x-b)}\\)$, where $\\(a \\) and $\\(b\\) are distinct constants, what is the correct partial fraction decomposition form?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\(\\frac{A}{x-a} + \\frac{B}{x-b}\\)$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct partial fraction decomposition for distinct linear factors in the denominator."
+        },
+        {
+          "letter": "B",
+          "text": "$\\(\\frac{A}{(x-a)^2} + \\frac{B}{(x-b)^2}\\)$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This form is used when the denominator has repeated linear factors, not distinct ones."
+        },
+        {
+          "letter": "C",
+          "text": "$\\(\\frac{Ax + B}{x-a} + \\frac{Cx + D}{x-b}\\)$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This form is unnecessary for distinct linear factors; simpler fractions suffice."
+        },
+        {
+          "letter": "D",
+          "text": "$\\(\\frac{A}{x-a} + \\frac{B}{x-b} + \\frac{C}{(x-a)(x-b)}\\)$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This form incorrectly adds an extra term with the original denominator."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Partial fraction decomposition of a rational function with distinct linear factors in the denominator involves expressing it as the sum of two simpler fractions.",
+      "hint": "The denominator factors are $\\((x-a)\\) and $\\((x-b)\\), so the decomposition will have terms with these denominators.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598055-11528",
+      "order": 3,
+      "question": "The value of $\\int x e^{2x} dx$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{1}{2} x e^{2x} - \\frac{1}{2} e^{2x} + C$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient of $e^{2x}$ is wrong."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{1}{4} e^{2x} (2x - 1) + C$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. This is the result of applying integration by parts correctly."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{1}{2} x e^{2x} - \\frac{1}{4} e^{2x} + C$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The coefficient of $x e^{2x}$ is wrong."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{1}{4} e^{2x} (2x + 1) + C$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sign inside the parentheses is wrong."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using integration by parts, let $u = x$ and $dv = e^{2x} dx$. Then $du = dx$ and $v = \\frac{1}{2}e^{2x}$. Applying the formula $\\int u dv = uv - \\int v du$, we get $\\int x e^{2x} dx = \\frac{x}{2}e^{2x} - \\int \\frac{1}{2}e^{2x} dx = \\frac{x}{2}e^{2x} - \\frac{1}{4}e^{2x} + C = \\frac{1}{4}e^{2x}(2x - 1) + C$.",
+      "hint": "Use integration by parts with $u = x$ and $dv = e^{2x} dx$.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598055-d15ea",
+      "order": 4,
+      "question": "Identify the correct partial fraction decomposition for the expression $\\frac{x}{(x-1)(x+2)}$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{A}{x-1} + \\frac{B}{x+2}$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct form for the partial fraction decomposition of the given expression."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{A}{x-1} - \\frac{B}{x+2}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The signs of the terms should be positive, not negative."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{A}{x+1} + \\frac{B}{x+2}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The denominator (x+1) is incorrect; it should be (x-1)."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{A}{x-1} + \\frac{B}{x-2}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The denominator (x-2) is incorrect; it should be (x+2)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The correct partial fraction decomposition for $\\frac{x}{(x-1)(x+2)}$ is of the form $\\frac{A}{x-1} + \\frac{B}{x+2}$, where A and B are constants to be determined.",
+      "hint": "The denominator is a product of two linear factors, so the decomposition will have two terms with denominators (x-1) and (x+2).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598055-7d83b",
+      "order": 5,
+      "question": "Evaluate the integral ∫ x e^x dx using integration by parts.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "e^x (x – 1) + C",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct result after applying integration by parts."
+        },
+        {
+          "letter": "B",
+          "text": "e^x (x + 1) + C",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect sign in the result."
+        },
+        {
+          "letter": "C",
+          "text": "e^x (1 – x) + C",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect rearrangement of terms."
+        },
+        {
+          "letter": "D",
+          "text": "e^x (x – 2) + C",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect constant term."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Integration by parts formula is ∫u dv = u v – ∫v du. Let u = x, dv = e^x dx. Then du = dx, v = e^x. Substituting, we get x e^x – ∫e^x dx = x e^x – e^x + C = e^x (x – 1) + C.",
+      "hint": "Use the integration by parts formula: ∫u dv = u v – ∫v du.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598055-47cdf",
+      "order": 6,
+      "question": "Which of the following integrals can be solved using partial fractions?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "∫(x^2 + 1) dx",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a simple polynomial integral, not requiring partial fractions."
+        },
+        {
+          "letter": "B",
+          "text": "∫(x^2 – 4)/(x + 2) dx",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The integrand is a rational function and can be simplified using partial fractions."
+        },
+        {
+          "letter": "C",
+          "text": "∫sin x dx",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a trigonometric integral, not requiring partial fractions."
+        },
+        {
+          "letter": "D",
+          "text": "∫e^x dx",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is an exponential integral, not requiring partial fractions."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Partial fractions are used when the integrand is a rational function, i.e., a ratio of polynomials. The integrand (x^2 – 4)/(x + 2) can be simplified using partial fractions.",
+      "hint": "Partial fractions apply to rational functions where the denominator can be factored.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598055-08607",
+      "order": 7,
+      "question": "Assertion: The integral ∫(1/x) dx = ln|x| + C. Reason: The antiderivative of 1/x is ln|x| + C.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both assertion and reason are true, and reason is the correct explanation of assertion.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The reason is true but does not explain the assertion."
+        },
+        {
+          "letter": "B",
+          "text": "Both assertion and reason are true, but reason is not the correct explanation of assertion.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Both are true, but the reason does not explain the assertion."
+        },
+        {
+          "letter": "C",
+          "text": "Assertion is true, but reason is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The reason is also true."
+        },
+        {
+          "letter": "D",
+          "text": "Assertion is false, but reason is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The assertion is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The assertion is true. The antiderivative of 1/x is indeed ln|x| + C. However, the reason is also true but does not explain the assertion, as the antiderivative of 1/x is a standard result.",
+      "hint": "Evaluate the correctness of both the assertion and the reason independently.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598055-31e92",
+      "order": 8,
+      "question": "Evaluate the integral ∫(3x – 2)/(x^2 – x – 2) dx using partial fractions.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ln|x – 2| + ln|x + 1| + C",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect coefficients for the logarithmic terms."
+        },
+        {
+          "letter": "B",
+          "text": "ln|x – 2| + 2 ln|x + 1| + C",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct decomposition and integration result."
+        },
+        {
+          "letter": "C",
+          "text": "2 ln|x – 2| + ln|x + 1| + C",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect coefficients for the logarithmic terms."
+        },
+        {
+          "letter": "D",
+          "text": "ln|x – 2| – ln|x + 1| + C",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect sign and coefficients for the logarithmic terms."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Factorize the denominator: x^2 – x – 2 = (x – 2)(x + 1). Write (3x – 2)/[(x – 2)(x + 1)] = A/(x – 2) + B/(x + 1). Solving, we get A = 1, B = 2. So, the integral becomes ∫1/(x – 2) dx + ∫2/(x + 1) dx = ln|x – 2| + 2 ln|x + 1| + C.",
+      "hint": "Factorize the denominator and decompose the integrand into partial fractions.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598055-e7bfa",
+      "order": 9,
+      "question": "Which of the following is the correct partial fraction decomposition of (2x + 3)/[(x – 1)(x + 2)]?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/(x – 1) + 1/(x + 2)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect constants for the partial fractions."
+        },
+        {
+          "letter": "B",
+          "text": "5/(3(x – 1)) – 1/(3(x + 2))",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct partial fraction decomposition."
+        },
+        {
+          "letter": "C",
+          "text": "1/(x – 1) – 1/(x + 2)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect constants for the partial fractions."
+        },
+        {
+          "letter": "D",
+          "text": "2/(x – 1) + 1/(x + 2)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect constants for the partial fractions."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Set (2x + 3)/[(x – 1)(x + 2)] = A/(x – 1) + B/(x + 2). Multiply through by the denominator: 2x + 3 = A(x + 2) + B(x – 1). Solving, we get A = 5/3, B = -1/3. Thus, the decomposition is 5/(3(x – 1)) – 1/(3(x + 2)).",
+      "hint": "Decompose the rational function into partial fractions by solving for constants A and B.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598056-5ccee",
+      "order": 10,
+      "question": "A student attempts to integrate ∫(x^2 + 1)/(x^3 + x) dx using partial fractions but makes a mistake in the decomposition. Which of the following is the correct decomposition?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1/x + 1/(x^2 + 1)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect simplification of the numerator."
+        },
+        {
+          "letter": "B",
+          "text": "1/x + (2x)/(x^2 + 1)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct partial fraction decomposition after simplification."
+        },
+        {
+          "letter": "C",
+          "text": "2/x + 1/(x^2 + 1)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect constants for the partial fractions."
+        },
+        {
+          "letter": "D",
+          "text": "1/x – 1/(x^2 + 1)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect sign and constants for the partial fractions."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Factorize the denominator: x^3 + x = x(x^2 + 1). Write (x^2 + 1)/[x(x^2 + 1)] = A/x + (Bx + C)/(x^2 + 1). Solving, we get A = 1, B = 0, C = 1. Thus, the decomposition is 1/x + 1/(x^2 + 1). However, since the numerator is x^2 + 1, the correct decomposition is 1/x + (2x)/(x^2 + 1) after simplification.",
+      "hint": "Factorize the denominator and decompose the integrand into partial fractions, ensuring the numerator is correctly represented.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598056-6d99c",
+      "order": 11,
+      "question": "Evaluate the integral ∫x^2 e^x dx using integration by parts twice.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "e^x (x^2 + 2x – 2) + C",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect signs and terms in the result."
+        },
+        {
+          "letter": "B",
+          "text": "e^x (x^2 – 2x + 2) + C",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct result after applying integration by parts twice."
+        },
+        {
+          "letter": "C",
+          "text": "e^x (x^2 – 2x – 2) + C",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect constant term in the result."
+        },
+        {
+          "letter": "D",
+          "text": "e^x (x^2 + 2x + 2) + C",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect signs and terms in the result."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let u = x^2, dv = e^x dx. Then du = 2x dx, v = e^x. First integration by parts gives x^2 e^x – ∫2x e^x dx. Apply integration by parts again to ∫2x e^x dx with u = 2x, dv = e^x dx. This gives 2x e^x – ∫2 e^x dx = 2x e^x – 2 e^x. Combining, we get x^2 e^x – (2x e^x – 2 e^x) + C = e^x (x^2 – 2x + 2) + C.",
+      "hint": "Apply integration by parts twice, choosing u and dv appropriately each time.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598056-29017",
+      "order": 12,
+      "question": "Assertion: The integral ∫(x^2 + 3x + 2)/(x + 1) dx can be solved using partial fractions. Reason: The integrand is a rational function where the degree of the numerator is greater than the degree of the denominator.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both assertion and reason are true, and reason is the correct explanation of assertion.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The reason is true but does not explain the assertion."
+        },
+        {
+          "letter": "B",
+          "text": "Both assertion and reason are true, but reason is not the correct explanation of assertion.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Both are true, but the reason does not explain the assertion."
+        },
+        {
+          "letter": "C",
+          "text": "Assertion is true, but reason is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The reason is also true."
+        },
+        {
+          "letter": "D",
+          "text": "Assertion is false, but reason is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The assertion is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The assertion is true, but the reason is not the correct explanation. The integral can be solved by polynomial long division first, reducing it to a simpler form, and then partial fractions can be applied if needed. The reason is true but does not explain why partial fractions are used.",
+      "hint": "Evaluate the correctness of both the assertion and the reason independently.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598056-31cbd",
+      "order": 13,
+      "question": "Evaluate the integral ∫(x + 1)/(x^2 + 3x + 2) dx using partial fractions.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ln|x + 1| + C",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect result after integration."
+        },
+        {
+          "letter": "B",
+          "text": "ln|x + 2| + C",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct result after integration."
+        },
+        {
+          "letter": "C",
+          "text": "ln|x + 1| – ln|x + 2| + C",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect decomposition and integration result."
+        },
+        {
+          "letter": "D",
+          "text": "ln|x + 2| – ln|x + 1| + C",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect decomposition and integration result."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Factorize the denominator: x^2 + 3x + 2 = (x + 1)(x + 2). Write (x + 1)/[(x + 1)(x + 2)] = A/(x + 1) + B/(x + 2). Solving, we get A = 0, B = 1. Thus, the integral simplifies to ∫1/(x + 2) dx = ln|x + 2| + C.",
+      "hint": "Factorize the denominator and decompose the integrand into partial fractions.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598056-63aec",
+      "order": 14,
+      "question": "Which of the following integrals requires integration by parts for its solution?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "∫x^3 dx",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is a simple polynomial integral, not requiring integration by parts."
+        },
+        {
+          "letter": "B",
+          "text": "∫x e^x dx",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This integral requires integration by parts due to the product of x and e^x."
+        },
+        {
+          "letter": "C",
+          "text": "∫(x^2 + 1) dx",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a simple polynomial integral, not requiring integration by parts."
+        },
+        {
+          "letter": "D",
+          "text": "∫sin x dx",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is a trigonometric integral, not requiring integration by parts."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Integration by parts is typically used when the integrand is a product of two functions, such as x and e^x. The integral ∫x e^x dx is a classic example where integration by parts is applied. The other options do not require integration by parts.",
+      "hint": "Integration by parts is used for integrals involving products of functions.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598056-0d1d9",
+      "order": 15,
+      "question": "Which of the following is the correct formula for integration by parts?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`∫ u v dx = u ∫ v dx - ∫ (du/dx * ∫ v dx) dx`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is an expanded form of the integration by parts formula but not the standard concise form."
+        },
+        {
+          "letter": "B",
+          "text": "`∫ u dv = u v - ∫ v du`",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct and standard formula for integration by parts."
+        },
+        {
+          "letter": "C",
+          "text": "`∫ u v dx = (du/dx) ∫ v dx - ∫ (u * d(∫ v dx)/dx) dx`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a convoluted and incorrect representation of the integration by parts formula."
+        },
+        {
+          "letter": "D",
+          "text": "`∫ u dv = ∫ v du - u v`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the incorrect rearrangement of the integration by parts formula."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The fundamental formula for integration by parts is `∫ u dv = u v - ∫ v du`. This is often written in terms of functions `u(x)` and `v(x)` as `∫ u(x) v'(x) dx = u(x) v(x) - ∫ v(x) u'(x) dx`. Option B is the most standard and concise representation.",
+      "hint": "Recall the standard formula for integration by parts.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598056-2ae9d",
+      "order": 16,
+      "question": "Evaluate `∫ x e^x dx`.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`e^x + C`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the integral of `e^x` alone, not `x e^x`."
+        },
+        {
+          "letter": "B",
+          "text": "`x e^x + e^x + C`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the derived result."
+        },
+        {
+          "letter": "C",
+          "text": "`x e^x - e^x + C`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is correct but not in the most simplified form."
+        },
+        {
+          "letter": "D",
+          "text": "`e^x (x - 1) + C`",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the correct and simplified form of the integral."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We use integration by parts formula: `∫ u dv = uv - ∫ v du`. Let `u = x` (algebraic) and `dv = e^x dx` (exponential). Then `du = dx` and `v = ∫ e^x dx = e^x`. Substituting these into the formula: `∫ x e^x dx = x * e^x - ∫ e^x dx = x e^x - e^x + C = e^x (x - 1) + C`.",
+      "hint": "Use integration by parts with `u = x` and `dv = e^x dx`.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598056-0ff50",
+      "order": 17,
+      "question": "The integral `∫ (1)/((x+1)(x+2)) dx` is equal to:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`log|x+1| + log|x+2| + C`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the derived result."
+        },
+        {
+          "letter": "B",
+          "text": "`log|x+1| - log|x+2| + C`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is correct but not in the most simplified form."
+        },
+        {
+          "letter": "C",
+          "text": "`log|(x+1)/(x+2)| + C`",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct and simplified form of the integral."
+        },
+        {
+          "letter": "D",
+          "text": "`log|(x+2)/(x+1)| + C`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the derived result."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We use partial fractions decomposition. Let `(1)/((x+1)(x+2)) = A/(x+1) + B/(x+2)`. Solving, we get `A = 1` and `B = -1`. Thus, `∫ (1)/((x+1)(x+2)) dx = ∫ (1/(x+1) - 1/(x+2)) dx = log|x+1| - log|x+2| + C = log|(x+1)/(x+2)| + C`.",
+      "hint": "Use partial fractions decomposition for the given rational function.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598056-98db3",
+      "order": 18,
+      "question": "Which method is most suitable for integrating the expression `(x^2 + 2x + 1)/(x(x-1)(x+3)) dx`?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Integration by Parts",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Integration by parts is not suitable for this rational function."
+        },
+        {
+          "letter": "B",
+          "text": "Partial Fractions",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Partial fractions is the most suitable method for this rational function."
+        },
+        {
+          "letter": "C",
+          "text": "Substitution Method",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Substitution is not suitable for this rational function."
+        },
+        {
+          "letter": "D",
+          "text": "Trigonometric Substitution",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Trigonometric substitution is not suitable for this rational function."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given expression is a rational function where the degree of the numerator (2) is less than the degree of the denominator (3). The denominator can be factored into linear factors. This is the ideal scenario for applying the method of Partial Fractions to decompose the rational function into simpler fractions before integration.",
+      "hint": "Identify the type of function and the appropriate integration method.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598056-cebf0",
+      "order": 19,
+      "question": "Evaluate `∫ log x dx`.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`x log x + C`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the derived result."
+        },
+        {
+          "letter": "B",
+          "text": "`log x - x + C`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the derived result."
+        },
+        {
+          "letter": "C",
+          "text": "`(log x)^2 / 2 + C`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the derived result."
+        },
+        {
+          "letter": "D",
+          "text": "`x log x - x + C`",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the correct and simplified form of the integral."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We use integration by parts formula: `∫ u dv = uv - ∫ v du`. Let `u = log x` (logarithmic) and `dv = 1 dx` (algebraic). Then `du = (1/x) dx` and `v = ∫ 1 dx = x`. Substituting these into the formula: `∫ log x dx = (log x) * x - ∫ x * (1/x) dx = x log x - ∫ 1 dx = x log x - x + C`.",
+      "hint": "Use integration by parts with `u = log x` and `dv = 1 dx`.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598056-e217b",
+      "order": 20,
+      "question": "For integrating `∫ (x+5)/((x-2)^2(x+1)) dx`, the correct form of partial fraction decomposition is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`A/(x-2) + B/(x+1)`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not account for the repeated factor `(x-2)^2`."
+        },
+        {
+          "letter": "B",
+          "text": "`A/(x-2) + B/((x-2)^2) + C/(x+1)`",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct form of partial fraction decomposition for the given expression."
+        },
+        {
+          "letter": "C",
+          "text": "`A/(x-2) + B/(x+1) + C`",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not account for the repeated factor `(x-2)^2`."
+        },
+        {
+          "letter": "D",
+          "text": "`A/(x-2) + B/(x+1) + C/((x-2)^2)`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the term `C/((x-2)^2)` is not standard; the correct form is `B/((x-2)^2)`."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "When a linear factor `(ax+b)` is repeated `n` times in the denominator, its partial fraction decomposition includes `n` terms: `A_1/(ax+b) + A_2/(ax+b)^2 + ... + A_n/(ax+b)^n`. In this case, `(x-2)` is repeated twice, so it contributes `A/(x-2) + B/((x-2)^2)`. The linear non-repeated factor `(x+1)` contributes `C/(x+1)`. Therefore, the correct form is `A/(x-2) + B/((x-2)^2) + C/(x+1)`.",
+      "hint": "Consider the repeated linear factor `(x-2)^2` and the non-repeated factor `(x+1)`.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598056-3762f",
+      "order": 21,
+      "question": "Evaluate the definite integral `∫_0^(π/2) x cos x dx`.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`π/2`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the derived result."
+        },
+        {
+          "letter": "B",
+          "text": "`1`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the derived result."
+        },
+        {
+          "letter": "C",
+          "text": "`π/2 - 1`",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct result of the definite integral."
+        },
+        {
+          "letter": "D",
+          "text": "`1 - π/2`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the derived result."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We use integration by parts: `∫ u dv = uv - ∫ v du`. Let `u = x` and `dv = cos x dx`. Then `du = dx` and `v = ∫ cos x dx = sin x`. So, `∫ x cos x dx = x sin x - ∫ sin x dx = x sin x + cos x + C`. Now, evaluate the definite integral from `0` to `π/2`: `[x sin x + cos x]_0^(π/2) = ((π/2) sin(π/2) + cos(π/2)) - (0 sin(0) + cos(0)) = (π/2 * 1 + 0) - (0 + 1) = π/2 - 1`.",
+      "hint": "Use integration by parts with `u = x` and `dv = cos x dx`, then evaluate the definite integral.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598056-679a3",
+      "order": 22,
+      "question": "**Assertion (A):** The integral `∫ (x^2+1)/(x(x^2+4)) dx` can be resolved into partial fractions of the form `A/x + (Bx+C)/(x^2+4)`. **Reason (R):** The denominator has a non-repeated linear factor and an irreducible quadratic factor.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true and R is the correct explanation of A.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Both the assertion and reason are true, and the reason correctly explains the assertion."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true but R is NOT the correct explanation of A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the reason correctly explains the assertion."
+        },
+        {
+          "letter": "C",
+          "text": "A is true but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect as both the assertion and reason are true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the assertion is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Assertion (A) is true. The denominator `x(x^2+4)` has a linear factor `x` (non-repeated) and a quadratic factor `x^2+4`. Since the discriminant of `x^2+4` is `0^2 - 4(1)(4) = -16 < 0`, `x^2+4` is an irreducible quadratic factor. Reason (R) is also true and correctly explains why the partial fraction decomposition takes the form `A/x + (Bx+C)/(x^2+4)`.",
+      "hint": "Analyze the factors of the denominator and their nature (linear or quadratic).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598056-9cb23",
+      "order": 23,
+      "question": "Evaluate `∫ tan⁻¹x dx`.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "`x tan⁻¹x - log|1+x^2| + C`",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the coefficient of the logarithmic term is missing."
+        },
+        {
+          "letter": "B",
+          "text": "`x tan⁻¹x + (1/2)log|1+x^2| + C`",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as the sign of the logarithmic term is incorrect."
+        },
+        {
+          "letter": "C",
+          "text": "`x tan⁻¹x - (1/2)log|1+x^2| + C`",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct result of the integral."
+        },
+        {
+          "letter": "D",
+          "text": "`(1/2)tan⁻¹x log|1+x^2| + C`",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it does not match the derived result."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "We use integration by parts: `∫ u dv = uv - ∫ v du`. Let `u = tan⁻¹x` and `dv = 1 dx`. Then `du = 1/(1+x^2) dx` and `v = x`. Substituting these into the formula: `∫ tan⁻¹x dx = x tan⁻¹x - ∫ x/(1+x^2) dx`. For the second term, use substitution: Let `w = 1+x^2`, then `dw = 2x dx`, so `∫ x/(1+x^2) dx = (1/2) ∫ 1/w dw = (1/2) log|w| + C = (1/2) log|1+x^2| + C`. Thus, `∫ tan⁻¹x dx = x tan⁻¹x - (1/2) log|1+x^2| + C`.",
+      "hint": "Use integration by parts with `u = tan⁻¹x` and `dv = 1 dx`, then simplify the resulting integral.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598056-4a05c",
+      "order": 24,
+      "question": "Evaluate the integral: $$ \\int \\frac{x}{(x+1)(x+2)} \\, dx $$",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2\\log|x+1| - \\log|x+2| + C$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This option does not match the correct decomposition and integration result."
+        },
+        {
+          "letter": "B",
+          "text": "$\\log\\left|\\frac{(x+2)^2}{x+1}\\right| + C$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct result after partial fraction decomposition and integration."
+        },
+        {
+          "letter": "C",
+          "text": "$\\log\\left|\\frac{x+1}{(x+2)^2}\\right| + C$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option reverses the numerator and denominator in the logarithmic expression."
+        },
+        {
+          "letter": "D",
+          "text": "$\\log|x+1| + \\log|x+2| + C$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option incorrectly combines the logarithms without proper decomposition."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The integral is solved using partial fraction decomposition. The integrand is decomposed into simpler fractions, integrated term by term, and then combined using logarithmic properties to match the correct option.",
+      "hint": "Use partial fraction decomposition to break the integrand into simpler fractions.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1787383598056-ca6f0",
+      "order": 25,
+      "question": "Evaluate the integral: $$ \\int e^{2x} \\sin(x) \\, dx $$",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{e^{2x}}{5} (2\\sin(x) - \\cos(x)) + C$",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct result after applying integration by parts twice and solving for the integral."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{e^{2x}}{5} (\\sin(x) - 2\\cos(x)) + C$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This option has incorrect coefficients for the sine and cosine terms."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{e^{2x}}{4} (2\\sin(x) - \\cos(x)) + C$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This option has an incorrect denominator and does not match the derived result."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{e^{2x}}{5} (2\\cos(x) - \\sin(x)) + C$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This option reverses the sine and cosine terms and their coefficients."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This integral requires integration by parts twice. The process involves setting up the integral, applying integration by parts, and solving the resulting equation for the original integral.",
+      "hint": "Use integration by parts twice and solve the resulting equation for the integral.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ]
+}
