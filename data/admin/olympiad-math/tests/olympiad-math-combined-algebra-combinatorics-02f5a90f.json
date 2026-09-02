@@ -1,0 +1,1067 @@
+{
+  "id": "02f5a90f-0895-41f9-a35d-e96a759fdca3",
+  "title": "OLYMPIAD MATH — Combined: Algebra + Combinatorics",
+  "description": "Combined test: Algebra + Combinatorics for OLYMPIAD MATH. 20Q.",
+  "board": "Competitive",
+  "classSlug": "olympiad-math",
+  "classNumber": 0,
+  "subjects": [
+    "olympiad-algebra",
+    "olympiad-combinatorics"
+  ],
+  "subject": "olympiad-algebra",
+  "chapter": "Multiple Chapters",
+  "topic": "Combined",
+  "testType": "subject-wise",
+  "duration": 60,
+  "totalMarks": 80,
+  "passingMarks": 32,
+  "totalQuestions": 20,
+  "targetQuestions": 20,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "algebra",
+    "olympiad-math",
+    "combinatorics",
+    "olympiad-algebra+olympiad-combinatorics"
+  ],
+  "instructions": [
+    "Subject: Algebra + Combinatorics",
+    "Total Questions: 20",
+    "Total Marks: 80",
+    "Duration: 60 minutes",
+    "Correct answer: +4 mark",
+    "Wrong answer: -1 mark"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-09-02T11:43:27.983817Z",
+  "questions": [
+    {
+      "id": "q-1788349116439-84af9",
+      "order": 1,
+      "question": "If $x^2 + \\frac{1}{x^2} = 7$, where $x > 0$, what is the value of $x^3 + \\frac{1}{x^3}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "18",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation yields $x^3 + \\frac{1}{x^3} = 18$."
+        },
+        {
+          "letter": "B",
+          "text": "27",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the value of $(x + \\frac{1}{x})^3$, not $x^3 + \\frac{1}{x^3}$."
+        },
+        {
+          "letter": "C",
+          "text": "36",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value does not match the derived result."
+        },
+        {
+          "letter": "D",
+          "text": "42",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is not supported by the given conditions."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given $x^2 + \\frac{1}{x^2} = 7$, we first find $x + \\frac{1}{x}$ using the identity $(x + \\frac{1}{x})^2 = x^2 + \\frac{1}{x^2} + 2$. Substituting the given value, we get $(x + \\frac{1}{x})^2 = 7 + 2 = 9$, so $x + \\frac{1}{x} = 3$ (since $x > 0$). Now, using the identity for $x^3 + \\frac{1}{x^3}$, we have $x^3 + \\frac{1}{x^3} = (x + \\frac{1}{x})^3 - 3(x + \\frac{1}{x}) = 3^3 - 3(3) = 27 - 9 = 18$.",
+      "hint": "Use the identity $(x + \\frac{1}{x})^2 = x^2 + \\frac{1}{x^2} + 2$ to find $x + \\frac{1}{x}$, then apply the identity for $x^3 + \\frac{1}{x^3}$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788349116439-571a0",
+      "order": 2,
+      "question": "Let $P(x)$ be a polynomial such that $P(x) = x^4 - 2x^3 + ax^2 - bx + 1$ and $P(x)$ has four distinct positive roots. If $a$ and $b$ are real numbers, what is the value of $b$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This does not satisfy the reciprocal polynomial condition."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value does not align with the reciprocal polynomial property."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The reciprocal polynomial condition forces $b = 2$."
+        },
+        {
+          "letter": "D",
+          "text": "4",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value is not derived from the given conditions."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given $P(x) = x^4 - 2x^3 + ax^2 - bx + 1$ with four distinct positive roots, we apply Vieta's formulas. The sum of the roots is $r_1 + r_2 + r_3 + r_4 = 2$, and the product of the roots is $r_1 r_2 r_3 r_4 = 1$. For a reciprocal polynomial (where $P(x) = x^4 P(1/x)$), the coefficients satisfy $b = 2$. This is derived by comparing $P(x)$ and $x^4 P(1/x)$, which forces $b = 2$ to maintain the reciprocal property. The distinctness of the roots is satisfied by pairing roots as $(r, 1/r)$ where $r \\neq 1$ and $r_1 \\neq r_2$.",
+      "hint": "Consider whether $P(x)$ is a reciprocal polynomial, where $P(x) = x^4 P(1/x)$. This property often simplifies the problem.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1788349116439-b2a1e",
+      "order": 3,
+      "question": "Let $P(x) = x^3 - 6x^2 + 11x - 6$. If $a, b, c$ are the roots of $P(x)=0$, find the value of $a^2+b^2+c^2$.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "12",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields 14, not 12."
+        },
+        {
+          "letter": "B",
+          "text": "14",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The sum of squares of the roots is 14."
+        },
+        {
+          "letter": "C",
+          "text": "16",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 14."
+        },
+        {
+          "letter": "D",
+          "text": "18",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The correct value is 14."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a cubic polynomial $P(x) = x^3 + px^2 + qx + r$ with roots $a, b, c$, we know from Vieta's formulas that $a+b+c = -p$, $ab+bc+ca = q$, and $abc = -r$. Here, $P(x) = x^3 - 6x^2 + 11x - 6$, so $p = -6$, $q = 11$, and $r = -6$. Thus, $a+b+c = 6$, $ab+bc+ca = 11$, and $abc = 6$. The value of $a^2+b^2+c^2$ can be found using the identity $a^2+b^2+c^2 = (a+b+c)^2 - 2(ab+bc+ca) = 6^2 - 2(11) = 36 - 22 = 14$.",
+      "hint": "Use Vieta's formulas and the identity for the sum of squares of roots.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788349116439-aec3b",
+      "order": 4,
+      "question": "Given $a + b + c = 0$, what is the value of $\\frac{a^2}{bc} + \\frac{b^2}{ca} + \\frac{c^2}{ab}$?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum does not simplify to 0 under the given condition."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum does not simplify to 1 under the given condition."
+        },
+        {
+          "letter": "C",
+          "text": "3",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The expression simplifies to 3 using the identity for $a^3 + b^3 + c^3$ when $a + b + c = 0$."
+        },
+        {
+          "letter": "D",
+          "text": "-3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum does not simplify to -3 under the given condition."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Given $a + b + c = 0$, we know $a^3 + b^3 + c^3 = 3abc$. The expression simplifies to $\\frac{a^3 + b^3 + c^3}{abc} = \\frac{3abc}{abc} = 3$.",
+      "hint": "Use the identity $a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - bc - ca)$ and the given condition $a + b + c = 0$.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788349116439-59b8f",
+      "order": 5,
+      "question": "Let $ P(x) = x^3 - 6x^2 + 11x - 6 $. If $ \\alpha, \\beta, \\gamma $ are the roots of $ P(x) $, what is the value of $ \\alpha^2 + \\beta^2 + \\gamma^2 $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "14",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct calculation using Vieta's formulas and the sum of squares identity."
+        },
+        {
+          "letter": "B",
+          "text": "18",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum of squares is not 18."
+        },
+        {
+          "letter": "C",
+          "text": "22",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum of squares is not 22."
+        },
+        {
+          "letter": "D",
+          "text": "26",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The sum of squares is not 26."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "By Vieta's formulas, $ \\alpha + \\beta + \\gamma = 6 $, $ \\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = 11 $, and $ \\alpha\\beta\\gamma = 6 $. Using the identity $ \\alpha^2 + \\beta^2 + \\gamma^2 = (\\alpha + \\beta + \\gamma)^2 - 2(\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha) $, we get $ 6^2 - 2(11) = 36 - 22 = 14 $. The roots are 1, 2, and 3, so $ 1^2 + 2^2 + 3^2 = 1 + 4 + 9 = 14 $.",
+      "hint": "Use Vieta's formulas and the identity for the sum of squares of roots.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788349116439-88f84",
+      "order": 6,
+      "question": "If $ x + \\frac{1}{x} = 3 $, what is the value of $ x^4 + \\frac{1}{x^4} $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "47",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct calculation by squaring the equation twice."
+        },
+        {
+          "letter": "B",
+          "text": "49",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This is the value after squaring once, not twice."
+        },
+        {
+          "letter": "C",
+          "text": "51",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value does not match the calculation."
+        },
+        {
+          "letter": "D",
+          "text": "53",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This value does not match the calculation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "First, square $ x + \\frac{1}{x} = 3 $ to get $ x^2 + 2 + \\frac{1}{x^2} = 9 $, so $ x^2 + \\frac{1}{x^2} = 7 $. Square again to get $ x^4 + 2 + \\frac{1}{x^4} = 49 $, so $ x^4 + \\frac{1}{x^4} = 47 $.",
+      "hint": "Square the given equation twice to find the value of $ x^4 + \\frac{1}{x^4} $.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788349116439-afd79",
+      "order": 7,
+      "question": "Let $ a, b, c $ be positive real numbers such that $ a + b + c = 6 $ and $ ab + bc + ca = 9 $. What is the minimum possible value of $ abc $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The minimum product is not 2."
+        },
+        {
+          "letter": "B",
+          "text": "4",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The minimum product is not 4."
+        },
+        {
+          "letter": "C",
+          "text": "6",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The minimum product is 6 when $ a = 1, b = 2, c = 3 $."
+        },
+        {
+          "letter": "D",
+          "text": "8",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The minimum product is not 8."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using the identity $ (a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca) $, we get $ 36 = a^2 + b^2 + c^2 + 18 $, so $ a^2 + b^2 + c^2 = 18 $. The minimum $ abc $ occurs when two variables are equal and the third is minimized. Testing $ a = 1, b = 2, c = 3 $, we get $ abc = 6 $.",
+      "hint": "Use the given conditions and test possible values to find the minimum product.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1788349116439-947be",
+      "order": 8,
+      "question": "If $ P(x) = x^4 - 4x^3 + 6x^2 - 4x + 1 $, what is the value of $ P(2) $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 0."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation yields 1."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 2."
+        },
+        {
+          "letter": "D",
+          "text": "3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The value is not 3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Substitute $ x = 2 $ into $ P(x) $: $ P(2) = 2^4 - 4(2)^3 + 6(2)^2 - 4(2) + 1 = 16 - 32 + 24 - 8 + 1 = 1 $.",
+      "hint": "Directly substitute $ x = 2 $ into the polynomial and simplify.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788349116439-3a5f8",
+      "order": 9,
+      "question": "Let $ a, b, c $ be real numbers such that $ a^2 + b^2 + c^2 = 1 $. What is the maximum value of $ ab + bc + ca $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The maximum is not 0."
+        },
+        {
+          "letter": "B",
+          "text": "0.5",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The maximum is not 0.5."
+        },
+        {
+          "letter": "C",
+          "text": "1",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The maximum value is 1."
+        },
+        {
+          "letter": "D",
+          "text": "1.5",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The maximum is not 1.5."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "By the identity $ (a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca) $, and since $ a^2 + b^2 + c^2 = 1 $, we have $ (a + b + c)^2 = 1 + 2(ab + bc + ca) $. The maximum of $ (a + b + c)^2 $ is 3 (when $ a = b = c = \\frac{1}{\\sqrt{3}} $), so $ 3 = 1 + 2(ab + bc + ca) $, giving $ ab + bc + ca = 1 $.",
+      "hint": "Use the identity for the square of the sum and maximize $ ab + bc + ca $.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788349116439-db43b",
+      "order": 10,
+      "question": "If $ x, y, z $ are positive real numbers such that $ x + y + z = 6 $ and $ xy + yz + zx = 11 $, what is the maximum possible value of $ x $?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The maximum value of $ x $ is not 2."
+        },
+        {
+          "letter": "B",
+          "text": "3",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. The maximum value of $ x $ is 3."
+        },
+        {
+          "letter": "C",
+          "text": "4",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The maximum value of $ x $ is not 4."
+        },
+        {
+          "letter": "D",
+          "text": "5",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The maximum value of $ x $ is not 5."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "To maximize $ x $, minimize $ y + z $ and $ yz $. Given $ x + y + z = 6 $, $ y + z = 6 - x $. Also, $ xy + yz + zx = x(y + z) + yz = 11 $, so $ yz = 11 - x(6 - x) $. By AM-GM, $ yz \\leq \\left(\\frac{y + z}{2}\\right)^2 = \\left(\\frac{6 - x}{2}\\right)^2 $. Solving the inequality yields the maximum $ x $ as 3.",
+      "hint": "Use the given conditions and AM-GM inequality to find the maximum value of $ x $.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-algebra",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1788349407983-cce4b",
+      "order": 11,
+      "question": "Which of the following statements about planar graphs is true?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Every planar graph must be connected.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "A planar graph does not need to be connected. For example, two disjoint triangles (each K3) form a planar graph but are disconnected."
+        },
+        {
+          "letter": "B",
+          "text": "A graph is planar if it can be drawn on a sphere without any edges crossing.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is a valid definition of a planar graph, as embeddings on a sphere are equivalent to embeddings on a plane due to stereographic projection."
+        },
+        {
+          "letter": "C",
+          "text": "If a graph has no cycles, it must be planar.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Graphs without cycles (forests) are trivially planar, but this statement is not universally true for all planar graphs (e.g., K5 is non-planar but has cycles)."
+        },
+        {
+          "letter": "D",
+          "text": "All complete graphs Kn are planar.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Complete graphs Kn are planar only for n ≤ 4. K5 and higher are non-planar due to Kuratowski's theorem."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A planar graph is defined as a graph that can be drawn on a plane without any edges crossing. While some planar graphs are connected, not all are (e.g., two disjoint triangles). The definition also extends to embeddings on a sphere without edge crossings. Graphs without cycles (forests) are trivially planar, but not all complete graphs are planar (e.g., K5 and K3,3 are non-planar).",
+      "hint": "Recall the definition of a planar graph and properties of complete graphs.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788349407983-fdcf9",
+      "order": 12,
+      "question": "A connected planar graph $G$ has 10 vertices. If every face in a planar embedding of $G$ is bounded by exactly 3 edges, how many edges does $G$ have?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "18",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. This would imply $F = 12$ from $3F = 2E$, but substituting into Euler's formula does not satisfy $V - E + F = 2$."
+        },
+        {
+          "letter": "B",
+          "text": "20",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. This would imply $F = \\frac{40}{3}$, which is not an integer, violating the planar graph properties."
+        },
+        {
+          "letter": "C",
+          "text": "24",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. Substituting $E = 24$ into $3F = 2E$ gives $F = 16$, and Euler's formula $10 - 24 + 16 = 2$ holds."
+        },
+        {
+          "letter": "D",
+          "text": "27",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. This would imply $F = 18$, but substituting into Euler's formula does not satisfy $V - E + F = 2$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using Euler's formula for planar graphs: $V - E + F = 2$. Given $V = 10$ and each face is bounded by 3 edges, we have $3F = 2E$ (since each edge is shared by two faces). Substituting $F = \\frac{2E}{3}$ into Euler's formula: $10 - E + \\frac{2E}{3} = 2$. Solving gives $E = 24$.",
+      "hint": "Recall Euler's formula for planar graphs: $V - E + F = 2$. Also, count edges in terms of faces.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788349407983-440ce",
+      "order": 13,
+      "question": "A simple connected planar graph has 10 vertices. If every face in a planar embedding of this graph is bounded by exactly 3 edges, how many edges does the graph have?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "18",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation does not satisfy Euler's formula with the given conditions."
+        },
+        {
+          "letter": "B",
+          "text": "21",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation does not satisfy Euler's formula with the given conditions."
+        },
+        {
+          "letter": "C",
+          "text": "24",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The calculation satisfies Euler's formula and the face-edge relationship."
+        },
+        {
+          "letter": "D",
+          "text": "27",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation does not satisfy Euler's formula with the given conditions."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Let V be the number of vertices, E the number of edges, and F the number of faces. We are given V = 10. Since every face is bounded by exactly 3 edges, the sum of the degrees of the faces is 3F. By Euler's formula for planar graphs, V - E + F = 2. Also, the sum of the degrees of all faces is equal to twice the number of edges (2E), so 3F = 2E. Substituting F = 2E/3 into Euler's formula: 10 - E + (2E/3) = 2. Solving this equation: 10 - 2 = E - (2E/3) => 8 = E/3 => E = 24.",
+      "hint": "Use Euler's formula for planar graphs: V - E + F = 2. Also, the sum of the degrees of all faces equals twice the number of edges.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788349407983-c46d9",
+      "order": 14,
+      "question": "Which of the following graphs is NOT a planar graph?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A complete graph with 4 vertices, K₄",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "K₄ is planar as it can be drawn without edge crossings."
+        },
+        {
+          "letter": "B",
+          "text": "A complete graph with 5 vertices, K₅",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "K₅ is non-planar by Kuratowski’s theorem."
+        },
+        {
+          "letter": "C",
+          "text": "A cycle graph with 6 vertices, C₆",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "C₆ is planar as it is a simple cycle."
+        },
+        {
+          "letter": "D",
+          "text": "A bipartite graph K₂,₃",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "K₂,₃ is planar as it can be drawn without edge crossings."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "K₅ is a well-known non-planar graph by Kuratowski’s theorem, while K₄, C₆, and K₂,₃ are all planar.",
+      "hint": "Recall Kuratowski’s theorem for non-planar graphs.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788349407983-d29fc",
+      "order": 15,
+      "question": "According to Euler’s formula for planar graphs, if a connected planar graph has 8 vertices and 12 edges, how many faces does it have?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields F = 6."
+        },
+        {
+          "letter": "B",
+          "text": "6",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. Substituting values into Euler’s formula gives F = 6."
+        },
+        {
+          "letter": "C",
+          "text": "8",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields F = 6."
+        },
+        {
+          "letter": "D",
+          "text": "10",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The calculation yields F = 6."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Euler’s formula states V - E + F = 2. Substituting V = 8, E = 12: 8 - 12 + F = 2 ⇒ F = 6.",
+      "hint": "Use Euler’s formula: V - E + F = 2.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788349407983-55898",
+      "order": 16,
+      "question": "Which of the following statements is true about a maximal planar graph with n ≥ 3 vertices?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It has exactly n - 1 edges",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. A tree has n - 1 edges, but a maximal planar graph has more."
+        },
+        {
+          "letter": "B",
+          "text": "It can be disconnected",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. A maximal planar graph is always connected."
+        },
+        {
+          "letter": "C",
+          "text": "It has exactly 3n - 6 edges",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. A maximal planar graph with n ≥ 3 vertices has 3n - 6 edges."
+        },
+        {
+          "letter": "D",
+          "text": "It has no Hamiltonian cycle",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. Maximal planar graphs often contain Hamiltonian cycles."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A maximal planar graph (triangulation) has the maximum number of edges 3n - 6 for n ≥ 3.",
+      "hint": "A maximal planar graph is a triangulation where every face is a triangle.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788349407983-bae5c",
+      "order": 17,
+      "question": "A planar graph is embedded in the plane with f faces. If the dual graph of this planar graph has 9 vertices, what is the value of f?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The dual graph’s vertices equal the number of faces."
+        },
+        {
+          "letter": "B",
+          "text": "8",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The dual graph’s vertices equal the number of faces."
+        },
+        {
+          "letter": "C",
+          "text": "9",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The dual graph has 9 vertices, so the original graph has 9 faces."
+        },
+        {
+          "letter": "D",
+          "text": "10",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The dual graph’s vertices equal the number of faces."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The dual graph has one vertex per face, so if the dual has 9 vertices, the original planar graph has 9 faces.",
+      "hint": "The dual graph’s vertices correspond to the faces of the original planar graph.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788349407983-d996c",
+      "order": 18,
+      "question": "Which of the following graphs satisfies the inequality E ≤ 3V - 6 for planarity, where V is the number of vertices and E the number of edges?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "K₆",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. K₆ has 15 edges, which violates E ≤ 3(6) - 6 = 12."
+        },
+        {
+          "letter": "B",
+          "text": "A tree with 10 vertices",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct. A tree has 9 edges, and 9 ≤ 3(10) - 6 = 24 holds."
+        },
+        {
+          "letter": "C",
+          "text": "K₃,₃",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect. K₃,₃ has 9 edges, which violates E ≤ 3(6) - 6 = 12."
+        },
+        {
+          "letter": "D",
+          "text": "A planar graph with 7 vertices and 13 edges",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. 13 > 3(7) - 6 = 15 fails the inequality."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A tree has E = V - 1 = 9, and 9 ≤ 3(10) - 6 = 24 holds. K₆ has E = 15 > 12, K₃,₃ has E = 9 > 12 fails, and 13 > 15 fails.",
+      "hint": "Use the inequality E ≤ 3V - 6 for planar graphs.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788349407983-98d5f",
+      "order": 19,
+      "question": "In a planar graph, if every face is bounded by exactly 4 edges, what is the minimum number of vertices it must have?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The minimum number of vertices is higher."
+        },
+        {
+          "letter": "B",
+          "text": "5",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The minimum number of vertices is higher."
+        },
+        {
+          "letter": "C",
+          "text": "6",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The octahedral graph is an example with 6 vertices and quadrilateral faces."
+        },
+        {
+          "letter": "D",
+          "text": "8",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The minimum number of vertices is 6."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Using Euler’s formula and double-counting edges: 2E = 4f ⇒ E = 2f. Then V - E + F = 2 ⇒ V - 2f + f = 2 ⇒ V - f = 2. Also, E ≤ 3V - 6 ⇒ 2f ≤ 3V - 6. Substituting f = V - 2, we get 2(V - 2) ≤ 3V - 6 ⇒ 2V - 4 ≤ 3V - 6 ⇒ V ≥ 2. But for a graph where every face is a quadrilateral, minimum V = 6 (e.g., octahedral graph).",
+      "hint": "Use Euler’s formula and edge-face relationships for planar graphs.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1788349407983-6ab60",
+      "order": 20,
+      "question": "A planar graph has 10 vertices and each vertex has degree at least 3. What is the maximum number of edges it can have?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "18",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect. The maximum is higher."
+        },
+        {
+          "letter": "B",
+          "text": "20",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect. The maximum is higher."
+        },
+        {
+          "letter": "C",
+          "text": "24",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct. The maximum edges for a planar graph with 10 vertices is 24."
+        },
+        {
+          "letter": "D",
+          "text": "27",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect. The maximum is 24 due to planarity constraints."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "By the handshaking lemma, 2E ≥ 3V = 30 ⇒ E ≥ 15. But for planarity, E ≤ 3V - 6 = 24. So maximum E = 24.",
+      "hint": "Use the handshaking lemma and the planarity inequality E ≤ 3V - 6.",
+      "marks": 4,
+      "negativeMark": 1,
+      "negativeMarking": true,
+      "imageUrl": "",
+      "subject": "olympiad-combinatorics",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ]
+}
