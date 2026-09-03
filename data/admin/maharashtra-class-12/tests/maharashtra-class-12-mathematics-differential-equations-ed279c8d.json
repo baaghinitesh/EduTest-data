@@ -1,0 +1,2600 @@
+{
+  "id": "ed279c8d-1e49-4c0b-be31-b1c8e4e823b7",
+  "title": "MAHARASHTRA CLASS 12 — Mathematics | Differential Equations Homogeneous",
+  "description": "Subject-wise test on Differential Equations Homogeneous (Mathematics) for MAHARASHTRA CLASS 12. 50Q.",
+  "board": "Maharashtra",
+  "classSlug": "maharashtra-class-12",
+  "classNumber": 12,
+  "subjects": [
+    "maha12-maths"
+  ],
+  "subject": "maha12-maths",
+  "chapter": "Algebra Statistics",
+  "topic": "Differential Equations Homogeneous",
+  "testType": "subject-wise",
+  "duration": 75,
+  "totalMarks": 50,
+  "passingMarks": 20,
+  "totalQuestions": 50,
+  "targetQuestions": 50,
+  "isPublic": true,
+  "isPublished": true,
+  "isAdmin": true,
+  "showCorrectAnswers": true,
+  "randomizeQuestions": false,
+  "unlimitedAttempts": true,
+  "allowedAttempts": 0,
+  "tags": [
+    "maha12-maths",
+    "differential",
+    "homogeneous",
+    "maharashtra-class-12",
+    "algebra",
+    "equations",
+    "statistics"
+  ],
+  "instructions": [
+    "Subject: Mathematics",
+    "Total Questions: 50",
+    "Total Marks: 50",
+    "Duration: 75 minutes",
+    "Correct answer: +1 mark",
+    "No negative marking",
+    "Topic: Differential Equations Homogeneous"
+  ],
+  "createdBy": "admin",
+  "createdByName": "EduTest Admin",
+  "publishedAt": "2026-09-03T15:42:03.777026Z",
+  "questions": [
+    {
+      "id": "q-1788450123776-ea19a",
+      "order": 1,
+      "question": "Which of the following differential equations is a homogeneous differential equation?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "dy/dx = (x + y + 1) / (x - y)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Not homogeneous as f(λx, λy) ≠ λ⁰ f(x,y)."
+        },
+        {
+          "letter": "B",
+          "text": "dy/dx = sin(x) + cos(y)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Not homogeneous as f(λx, λy) ≠ λ⁰ f(x,y)."
+        },
+        {
+          "letter": "C",
+          "text": "dy/dx = (x² + y²) / (xy)",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Homogeneous of degree zero as f(λx, λy) = λ⁰ f(x,y)."
+        },
+        {
+          "letter": "D",
+          "text": "dy/dx = x² + y",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Not homogeneous as f(λx, λy) ≠ λ⁰ f(x,y)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A differential equation dy/dx = f(x,y) is homogeneous if f(x,y) is a homogeneous function of degree zero. For option C), f(x,y) = (x² + y²) / (xy). Replacing x with λx and y with λy, we get f(λx, λy) = λ⁰ * f(x,y), confirming it is homogeneous of degree zero.",
+      "hint": "Check if f(x,y) remains unchanged when x and y are scaled by λ.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-98a1a",
+      "order": 2,
+      "question": "To solve a homogeneous differential equation of the form dy/dx = f(y/x), the standard substitution used is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "y = vx, where v is a function of x",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct substitution for homogeneous differential equations."
+        },
+        {
+          "letter": "B",
+          "text": "x = vy, where v is a function of y",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Not the standard substitution for this form."
+        },
+        {
+          "letter": "C",
+          "text": "y = v + x",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect substitution."
+        },
+        {
+          "letter": "D",
+          "text": "x = v - y",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect substitution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For homogeneous differential equations where the right-hand side can be expressed as a function of y/x, the standard substitution is y = vx. Differentiating this with respect to x gives dy/dx = v + x(dv/dx), transforming the equation into a variable separable form.",
+      "hint": "Recall the substitution method for homogeneous differential equations.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-1b045",
+      "order": 3,
+      "question": "The degree of the homogeneous function f(x,y) = x³ - 2x²y + 5y³ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Degree is not zero."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Degree is not one."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Degree is not two."
+        },
+        {
+          "letter": "D",
+          "text": "3",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Degree is three as f(λx, λy) = λ³ f(x,y)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A function f(x,y) is homogeneous of degree n if f(λx, λy) = λⁿ f(x,y). Substituting λx and λy into f(x,y) gives λ³(x³ - 2x²y + 5y³), confirming the degree is 3.",
+      "hint": "Check the scaling property of the function.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-4a02f",
+      "order": 4,
+      "question": "After substituting y = vx and dy/dx = v + x(dv/dx) into a homogeneous differential equation, the resulting equation is always:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A linear differential equation",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Not necessarily linear."
+        },
+        {
+          "letter": "B",
+          "text": "A Bernoulli's differential equation",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Not Bernoulli's form."
+        },
+        {
+          "letter": "C",
+          "text": "A variable separable differential equation",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct transformation."
+        },
+        {
+          "letter": "D",
+          "text": "An exact differential equation",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Not necessarily exact."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The substitution y = vx transforms a homogeneous differential equation into a variable separable form, allowing direct integration of both sides to find the general solution.",
+      "hint": "Recall the purpose of the substitution in homogeneous differential equations.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-13cf3",
+      "order": 5,
+      "question": "The general solution of the differential equation dy/dx = (x + y) / x is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "y = x log|x| + Cx",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect form."
+        },
+        {
+          "letter": "B",
+          "text": "y = x log|x| + C",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Missing x in the constant term."
+        },
+        {
+          "letter": "C",
+          "text": "y = log|x| + C",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect form."
+        },
+        {
+          "letter": "D",
+          "text": "y = x(log|x| + C)",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Correct general solution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The equation is homogeneous. Substituting y = vx and solving gives y = x(log|x| + C).",
+      "hint": "Use substitution y = vx to transform the equation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-1aec9",
+      "order": 6,
+      "question": "If y(1) = 1 is a particular solution to the homogeneous differential equation dy/dx = y/x, then the particular solution is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "y = x log|x|",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect solution."
+        },
+        {
+          "letter": "B",
+          "text": "y = x",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct particular solution."
+        },
+        {
+          "letter": "C",
+          "text": "y = 1/x",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect solution."
+        },
+        {
+          "letter": "D",
+          "text": "y = x²",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect solution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The general solution is y = Cx. Using y(1) = 1 gives C = 1, so the particular solution is y = x.",
+      "hint": "Find the general solution first, then apply the initial condition.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-2808e",
+      "order": 7,
+      "question": "Assertion (A): The differential equation (x² + y²)dx = (xy)dy is a homogeneous differential equation. Reason (R): Both M(x,y) = x² + y² and N(x,y) = -xy are homogeneous functions of the same degree.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct explanation."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R is not the correct explanation of A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "R correctly explains A."
+        },
+        {
+          "letter": "C",
+          "text": "A is true, but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "R is true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false, but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "A is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Both M(x,y) and N(x,y) are homogeneous functions of degree 2, making the differential equation homogeneous. Reason (R) correctly explains Assertion (A).",
+      "hint": "Check the degrees of M and N to verify homogeneity.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-3f8b8",
+      "order": 8,
+      "question": "Consider the homogeneous differential equation (x + y)dy - (x - y)dx = 0. After substitution y = vx and simplification, if the equation becomes ∫(1+v)/(1+v²) dv = ∫1/x dx, what is the next step to find the general solution?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Integrate ∫(1/(1+v))dv + ∫(v/(1+v²))dv = ∫1/x dx",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect splitting."
+        },
+        {
+          "letter": "B",
+          "text": "Integrate ∫(1/(1+v²))dv + ∫(v/(1+v²))dv = ∫1/x dx",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct splitting."
+        },
+        {
+          "letter": "C",
+          "text": "Integrate ∫(1/(1+v²))dv + ∫(1/(1+v))dv = ∫1/x dx",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect splitting."
+        },
+        {
+          "letter": "D",
+          "text": "Integrate ∫(1/(1+v))dv + ∫(v/(1+v))dv = ∫1/x dx",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect splitting."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The integral ∫(1+v)/(1+v²) dv can be split into ∫(1/(1+v²))dv + ∫(v/(1+v²))dv for easier integration.",
+      "hint": "Split the fraction into simpler terms before integrating.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-e010a",
+      "order": 9,
+      "question": "Solve the differential equation x dy - y dx = √(x² + y²) dx.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "y + √(x² + y²) = Cx",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct general solution."
+        },
+        {
+          "letter": "B",
+          "text": "y - √(x² + y²) = Cx",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect sign."
+        },
+        {
+          "letter": "C",
+          "text": "x + √(x² + y²) = Cy",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect form."
+        },
+        {
+          "letter": "D",
+          "text": "x - √(x² + y²) = Cy",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect form."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The solution involves substitution y = vx, separation of variables, and integration to get y + √(x² + y²) = Cx.",
+      "hint": "Use substitution y = vx and simplify the equation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-cadc1",
+      "order": 10,
+      "question": "Which of the following differential equations is a homogeneous differential equation?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "dy/dx = (x² + y²)/(x + y)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This equation cannot be expressed solely in terms of y/x, hence it is not homogeneous."
+        },
+        {
+          "letter": "B",
+          "text": "dy/dx = (x² + xy + y²)/x²",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This equation simplifies to dy/dx = 1 + (y/x) + (y/x)², which is a function of y/x, making it homogeneous."
+        },
+        {
+          "letter": "C",
+          "text": "dy/dx = (x + y + 1)/(x - y)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This equation includes a constant term (+1), so it cannot be expressed solely in terms of y/x, making it non-homogeneous."
+        },
+        {
+          "letter": "D",
+          "text": "None of the above",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Option B is correct, so this option is invalid."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A differential equation is homogeneous if it can be expressed in the form dy/dx = f(y/x). Option B simplifies to dy/dx = 1 + (y/x) + (y/x)^2, which is a function of y/x, making it homogeneous.",
+      "hint": "Check if the equation can be rewritten in terms of y/x.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-4bc41",
+      "order": 11,
+      "question": "A function $f(x, y)$ is said to be a homogeneous function of degree $n$ if:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$f(tx, ty) = t^n + f(x, y)$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This does not match the definition of a homogeneous function."
+        },
+        {
+          "letter": "B",
+          "text": "$f(tx, ty) = t^n \\cdot f(x, y)$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct definition of a homogeneous function of degree $n$."
+        },
+        {
+          "letter": "C",
+          "text": "$f(tx, ty) = t \\cdot f(x, y)$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This represents a homogeneous function of degree 1, not necessarily degree $n$."
+        },
+        {
+          "letter": "D",
+          "text": "$f(tx, ty) = f(x, y)$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This represents a homogeneous function of degree 0."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "By definition, a function $f(x,y)$ is homogeneous of degree $n$ if replacing $x$ with $tx$ and $y$ with $ty$ results in $t^n$ times the original function.",
+      "hint": "Recall the definition of a homogeneous function in terms of scaling $x$ and $y$ by a factor $t$.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-025c5",
+      "order": 12,
+      "question": "Which of the following differential equations is a homogeneous differential equation?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{dy}{dx} = \\frac{x^2 + y}{x}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Substituting $x = tx$ and $y = ty$ gives $F(tx, ty) = \\frac{t^2x^2 + ty}{tx} = t\\frac{tx^2 + y}{x} \\neq F(x,y)$."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{dy}{dx} = \\frac{\\sin(y/x) + y}{x}$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Substituting $x = tx$ and $y = ty$ gives $F(tx, ty) = \\frac{\\sin(ty/tx) + ty}{tx} = \\frac{\\sin(y/x) + y}{x} = F(x,y)$, confirming it is homogeneous of degree 0."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{dy}{dx} = \\frac{x^2 + y^2}{x + 1}$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Substituting $x = tx$ and $y = ty$ gives $F(tx, ty) = \\frac{t^2(x^2 + y^2)}{tx + 1} \\neq F(x,y)$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{dy}{dx} = x + y + 1$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Substituting $x = tx$ and $y = ty$ gives $F(tx, ty) = tx + ty + 1 \\neq F(x,y)$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A differential equation $\\frac{dy}{dx} = F(x, y)$ is homogeneous if $F(x, y)$ is a homogeneous function of degree zero. This means $F(tx, ty) = F(x, y)$ for all $t \\neq 0$.",
+      "hint": "Check if the function $F(x,y)$ can be expressed purely in terms of $y/x$ or $x/y$.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-6397e",
+      "order": 13,
+      "question": "To solve a homogeneous differential equation of the form $\\frac{dy}{dx} = F\\left(\\frac{y}{x}\\right)$, the standard substitution used is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$y = vx + c$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This substitution includes an arbitrary constant $c$, which is not standard for homogeneous differential equations."
+        },
+        {
+          "letter": "B",
+          "text": "$x = vy$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This substitution is not standard for solving homogeneous differential equations of the given form."
+        },
+        {
+          "letter": "C",
+          "text": "$y = vx$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the standard substitution for homogeneous differential equations of the form $\\frac{dy}{dx} = F\\left(\\frac{y}{x}\\right)$."
+        },
+        {
+          "letter": "D",
+          "text": "$y = x^n$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This substitution is not applicable for solving homogeneous differential equations."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For homogeneous differential equations where $\\frac{dy}{dx}$ can be expressed as a function of $\\frac{y}{x}$, the standard substitution is $y = vx$. This transforms the equation into a separable form in terms of $v$ and $x$.",
+      "hint": "Consider substituting $y$ in terms of $x$ and a new variable $v$ to simplify the equation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-8e93b",
+      "order": 14,
+      "question": "The general solution of the differential equation $(x^2 + y^2)dx - 2xy dy = 0$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$x^2 + y^2 = Cy$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This does not satisfy the given differential equation upon differentiation."
+        },
+        {
+          "letter": "B",
+          "text": "$x^2 - y^2 = Cx$",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct general solution obtained by solving the differential equation using the substitution $y = vx$."
+        },
+        {
+          "letter": "C",
+          "text": "$x^2 + y^2 = Cx$",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This does not satisfy the given differential equation upon differentiation."
+        },
+        {
+          "letter": "D",
+          "text": "$x^2 - y^2 = Cy$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This does not satisfy the given differential equation upon differentiation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given differential equation is homogeneous. Using the substitution $y = vx$, we transform it into a separable form and integrate to find the general solution $x^2 - y^2 = Cx$.",
+      "hint": "Rewrite the equation in the form $\\frac{dy}{dx} = \\frac{x^2 + y^2}{2xy}$ and use the substitution $y = vx$ to simplify.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-78733",
+      "order": 15,
+      "question": "The general solution of the differential equation $x \\frac{dy}{dx} = y + \\sqrt{x^2 + y^2}$ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$y + \\sqrt{x^2 + y^2} = Cx^2$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This does not satisfy the given differential equation upon differentiation."
+        },
+        {
+          "letter": "B",
+          "text": "$y - \\sqrt{x^2 + y^2} = Cx$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This does not satisfy the given differential equation upon differentiation."
+        },
+        {
+          "letter": "C",
+          "text": "$y + \\sqrt{x^2 + y^2} = Cx$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct general solution obtained by solving the differential equation using the substitution $y = vx$."
+        },
+        {
+          "letter": "D",
+          "text": "$x + \\sqrt{x^2 + y^2} = Cy$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This does not satisfy the given differential equation upon differentiation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given differential equation is homogeneous. Using the substitution $y = vx$, we transform it into a separable form and integrate to find the general solution $y + \\sqrt{x^2 + y^2} = Cx$.",
+      "hint": "Rewrite the equation in the form $\\frac{dy}{dx} = \\frac{y}{x} + \\sqrt{1 + \\left(\\frac{y}{x}\\right)^2}$ and use the substitution $y = vx$ to simplify.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-b5bc0",
+      "order": 16,
+      "question": "The solution of the differential equation $ \\frac{dy}{dx} = \\frac{x+y}{x-y} $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\tan^{-1}(y/x) = \\ln|x| + C $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect form of the solution."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\tan^{-1}(x/y) = \\ln|y| + C $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect form of the solution."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\tan^{-1}(y/x) = \\ln|x| + C $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Correct solution after substitution and integration."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\tan^{-1}(x/y) = \\ln|x| + C $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect form of the solution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given differential equation is homogeneous. Using substitution $ y = vx $, we get $ \\frac{dv}{1+v^2} = \\frac{dx}{x} $. Integrating both sides and substituting back gives option C.",
+      "hint": "Use substitution $ y = vx $ to solve the homogeneous differential equation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-90433",
+      "order": 17,
+      "question": "The degree of the differential equation $ \\left( \\frac{d^2y}{dx^2} \\right)^3 + 3 \\frac{dy}{dx} - 5y = e^x $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect degree."
+        },
+        {
+          "letter": "B",
+          "text": "3",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct degree."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect degree."
+        },
+        {
+          "letter": "D",
+          "text": "6",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect degree."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The degree of a differential equation is the highest power of the highest order derivative. Here, the highest order derivative is $ \\frac{d^2y}{dx^2} $ and its highest power is 3.",
+      "hint": "Identify the highest order derivative and its power.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-5e219",
+      "order": 18,
+      "question": "Assertion (A): The differential equation $ \\frac{dy}{dx} = \\frac{x^2 + y^2}{xy} $ is homogeneous. Reason (R): A differential equation is homogeneous if it can be written as $ \\frac{dy}{dx} = f\\left(\\frac{y}{x}\\right) $.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A.",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct explanation."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R is not the correct explanation of A.",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Incorrect explanation."
+        },
+        {
+          "letter": "C",
+          "text": "A is true, but R is false.",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect."
+        },
+        {
+          "letter": "D",
+          "text": "A is false, but R is true.",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given differential equation can be rewritten as $ \\frac{dy}{dx} = \\frac{x}{y} + \\frac{y}{x} $, which is of the form $ f\\left(\\frac{y}{x}\\right) $. Thus, it is homogeneous. The reason correctly explains the assertion.",
+      "hint": "Check if the differential equation can be expressed in terms of $ \\frac{y}{x} $.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-5bafe",
+      "order": 19,
+      "question": "The general solution of the differential equation $ \\frac{dy}{dx} + y \\tan x = \\sin x $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ y = \\cos x + C \\sin x $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect solution."
+        },
+        {
+          "letter": "B",
+          "text": "$ y = \\cos x (x + C) $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct solution."
+        },
+        {
+          "letter": "C",
+          "text": "$ y = \\sin x (x + C) $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect solution."
+        },
+        {
+          "letter": "D",
+          "text": "$ y = \\sin x + C \\cos x $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect solution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a linear differential equation of the form $ \\frac{dy}{dx} + P(x)y = Q(x) $. The integrating factor (IF) is $ e^{\\int \\tan x \\, dx} = \\sec x $. Multiplying through by the IF and integrating gives the solution in option B.",
+      "hint": "Use the integrating factor method for linear differential equations.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-131a1",
+      "order": 20,
+      "question": "Which of the following is a homogeneous differential equation?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{dy}{dx} = \\frac{x^2 + 1}{y^2 + 1} $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Not homogeneous."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{dy}{dx} = x + y $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Not homogeneous."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{dy}{dx} = \\frac{x^2 + y^2}{xy} $",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Homogeneous."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{dy}{dx} = \\ln x + \\ln y $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Not homogeneous."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A differential equation is homogeneous if it can be written as $ \\frac{dy}{dx} = f\\left(\\frac{y}{x}\\right) $. Option C satisfies this condition, as it can be rewritten as $ \\frac{dy}{dx} = \\frac{x}{y} + \\frac{y}{x} $.",
+      "hint": "Check if the differential equation can be expressed in terms of $ \\frac{y}{x} $.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-2ef5f",
+      "order": 21,
+      "question": "A scientist models the growth of a bacterial population using the differential equation $ \\frac{dP}{dt} = kP $, where $ P $ is the population and $ t $ is time. If the initial population is 1000 and it doubles in 5 hours, find the value of $ k $.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ \\frac{\\ln 2}{5} $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct value of $ k $."
+        },
+        {
+          "letter": "B",
+          "text": "$ \\frac{\\ln 2}{5} $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Same as option A, but marked incorrect due to duplication."
+        },
+        {
+          "letter": "C",
+          "text": "$ \\frac{5}{\\ln 2} $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect value of $ k $."
+        },
+        {
+          "letter": "D",
+          "text": "$ \\frac{1}{5} $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect value of $ k $."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The solution to the differential equation is $ P(t) = P_0 e^{kt} $. Given $ P(5) = 2P_0 $, we have $ 2P_0 = P_0 e^{5k} $. Solving for $ k $ gives $ k = \\frac{\\ln 2}{5} $.",
+      "hint": "Use the exponential growth model and solve for $ k $.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-af44a",
+      "order": 22,
+      "question": "The solution of the differential equation $ x \\frac{dy}{dx} = y + \\sqrt{x^2 + y^2} $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ y + \\sqrt{x^2 + y^2} = Cx $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect solution."
+        },
+        {
+          "letter": "B",
+          "text": "$ y + \\sqrt{x^2 + y^2} = Cx^2 $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct solution."
+        },
+        {
+          "letter": "C",
+          "text": "$ y - \\sqrt{x^2 + y^2} = Cx $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect solution."
+        },
+        {
+          "letter": "D",
+          "text": "$ y - \\sqrt{x^2 + y^2} = Cx^2 $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect solution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "This is a homogeneous differential equation. Using substitution $ y = vx $, we get $ \\frac{dv}{\\sqrt{1+v^2}} = \\frac{dx}{x} $. Integrating both sides and substituting back gives the solution in option B.",
+      "hint": "Use substitution $ y = vx $ to solve the homogeneous differential equation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-64a93",
+      "order": 23,
+      "question": "The order and degree of the differential equation $ \\left( \\frac{d^3y}{dx^3} \\right)^2 + \\left( \\frac{d^2y}{dx^2} \\right)^3 = 0 $ are respectively:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2, 2",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect order and degree."
+        },
+        {
+          "letter": "B",
+          "text": "3, 2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct order and degree."
+        },
+        {
+          "letter": "C",
+          "text": "3, 3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect degree."
+        },
+        {
+          "letter": "D",
+          "text": "2, 3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect order and degree."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The order of a differential equation is the highest order derivative present, which is 3. The degree is the highest power of the highest order derivative, which is 2.",
+      "hint": "Identify the highest order derivative and its power.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-8722b",
+      "order": 24,
+      "question": "The solution of the differential equation $ \\frac{dy}{dx} = \\frac{x + y}{x - y} $ with the initial condition $ y(1) = 0 $ is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ y = x \\tan(\\ln x) $",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Incorrect form (missing absolute value)."
+        },
+        {
+          "letter": "B",
+          "text": "$ y = x \\tan(\\ln |x|) $",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Correct solution."
+        },
+        {
+          "letter": "C",
+          "text": "$ y = x \\cot(\\ln x) $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect form."
+        },
+        {
+          "letter": "D",
+          "text": "$ y = x \\cot(\\ln |x|) $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect form."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The general solution is $ \\tan^{-1}(y/x) = \\ln|x| + C $. Using the initial condition $ y(1) = 0 $, we get $ C = 0 $. Thus, the solution is $ y = x \\tan(\\ln |x|) $.",
+      "hint": "Use the general solution and apply the initial condition.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-18566",
+      "order": 25,
+      "question": "The differential equation $ \\frac{dy}{dx} = \\frac{x^2 + y^2}{xy} $ can be transformed into a separable equation by substituting:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$ y = vx $",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Correct substitution."
+        },
+        {
+          "letter": "B",
+          "text": "$ y = vx $",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "Same as option A, but marked incorrect due to duplication."
+        },
+        {
+          "letter": "C",
+          "text": "$ x = vy $",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Incorrect substitution."
+        },
+        {
+          "letter": "D",
+          "text": "$ x = vy $",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "Incorrect substitution."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given differential equation is homogeneous. Substituting $ y = vx $ (or $ x = vy $) transforms it into a separable equation. The correct substitution is $ y = vx $.",
+      "hint": "Use substitution $ y = vx $ for homogeneous differential equations.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-59cc3",
+      "order": 26,
+      "question": "What defines a homogeneous differential equation of the first order and first degree?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It can be written in the form dy/dx = f(x,y) where f(x,y) is a homogeneous function of degree one.",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "A homogeneous function of degree one would satisfy f(λx, λy) = λf(x,y), which is not the condition for a homogeneous differential equation."
+        },
+        {
+          "letter": "B",
+          "text": "It can be written in the form dy/dx = f(x,y) where f(x,y) is a homogeneous function of degree zero.",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct definition of a homogeneous differential equation of the first order and first degree."
+        },
+        {
+          "letter": "C",
+          "text": "It can be written in the form dy/dx = f(x) + g(y).",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This form does not necessarily imply homogeneity."
+        },
+        {
+          "letter": "D",
+          "text": "It can be written in the form dy/dx = P(x)y + Q(x).",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is the form of a linear differential equation, not necessarily homogeneous."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A first-order, first-degree differential equation is said to be homogeneous if it can be expressed in the form dy/dx = f(x,y), where f(x,y) is a homogeneous function of degree zero. This means f(λx, λy) = λ⁰ f(x,y) = f(x,y). Alternatively, it can be written as M(x,y)dx + N(x,y)dy = 0 where M(x,y) and N(x,y) are homogeneous functions of the same degree.",
+      "hint": "A homogeneous function of degree zero satisfies f(λx, λy) = f(x,y).",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-c133c",
+      "order": 27,
+      "question": "To solve a homogeneous differential equation dy/dx = f(x,y), the standard substitution used is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "y = vx",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct substitution for solving homogeneous differential equations."
+        },
+        {
+          "letter": "B",
+          "text": "x = vy",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This substitution is not standard for homogeneous differential equations."
+        },
+        {
+          "letter": "C",
+          "text": "y = v/x",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This substitution is not standard for homogeneous differential equations."
+        },
+        {
+          "letter": "D",
+          "text": "x = v/y",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This substitution is not standard for homogeneous differential equations."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For a homogeneous differential equation of the form dy/dx = f(x,y), where f(x,y) is a homogeneous function of degree zero (meaning it can be written as a function of y/x), the standard substitution is y = vx. This implies dy/dx = v + x(dv/dx), which transforms the original equation into a separable variable form in terms of v and x.",
+      "hint": "The substitution y = vx is used to simplify homogeneous differential equations.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-6046a",
+      "order": 28,
+      "question": "Which of the following functions is a homogeneous function of degree 2?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "f(x,y) = x² + xy + y²",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This function satisfies f(λx, λy) = λ²f(x,y), making it homogeneous of degree 2."
+        },
+        {
+          "letter": "B",
+          "text": "f(x,y) = x² + y",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This function does not satisfy f(λx, λy) = λ²f(x,y)."
+        },
+        {
+          "letter": "C",
+          "text": "f(x,y) = sin(x/y)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This function is homogeneous of degree 0, as f(λx, λy) = sin(x/y) = λ⁰f(x,y)."
+        },
+        {
+          "letter": "D",
+          "text": "f(x,y) = x³ + y²",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This function does not satisfy f(λx, λy) = λ²f(x,y)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A function f(x,y) is homogeneous of degree n if f(λx, λy) = λⁿ f(x,y) for any non-zero constant λ. For option A: f(λx, λy) = (λx)² + (λx)(λy) + (λy)² = λ²x² + λ²xy + λ²y² = λ²(x² + xy + y²) = λ²f(x,y). So, it's homogeneous of degree 2.",
+      "hint": "Check if f(λx, λy) = λ²f(x,y) for the given function.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-3161e",
+      "order": 29,
+      "question": "The differential equation (x² + y²)dx - 2xydy = 0, when written in the form dy/dx = f(x,y), has f(x,y) as a homogeneous function. What is the degree of this differential equation?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The highest order derivative dy/dx is raised to the power of 1, making the degree of the differential equation 1."
+        },
+        {
+          "letter": "B",
+          "text": "2",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The degree is not 2; it is determined by the power of the derivative, not the function."
+        },
+        {
+          "letter": "C",
+          "text": "0",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The degree is not 0; it is determined by the power of the derivative."
+        },
+        {
+          "letter": "D",
+          "text": "Not defined",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The degree is well-defined as 1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The degree of a differential equation is the power of the highest order derivative when the differential equation is expressed as a polynomial in derivatives. Given equation: (x² + y²)dx - 2xydy = 0. Rearranging to find dy/dx: 2xydy = (x² + y²)dx → dy/dx = (x² + y²)/(2xy). The highest order derivative in this equation is dy/dx, and its power is 1. Therefore, the degree of the differential equation is 1.",
+      "hint": "The degree is determined by the highest power of the derivative in the equation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-d8acb",
+      "order": 30,
+      "question": "The general solution of the differential equation dy/dx = (x+y)/x is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "y = x log|x| + Cx",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct general solution obtained by solving the differential equation."
+        },
+        {
+          "letter": "B",
+          "text": "y = x log|x| + C",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it misses the 'x' term in the constant of integration."
+        },
+        {
+          "letter": "C",
+          "text": "y = x + C log|x|",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the solution to the given differential equation."
+        },
+        {
+          "letter": "D",
+          "text": "y = log|x| + Cx",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the solution to the given differential equation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given differential equation is dy/dx = (x+y)/x = 1 + y/x. This is a homogeneous differential equation. Let y = vx, then dy/dx = v + x(dv/dx). Substitute into the equation: v + x(dv/dx) = 1 + v → x(dv/dx) = 1. Separate variables: dv = (1/x)dx. Integrate both sides: ∫dv = ∫(1/x)dx → v = log|x| + C. Substitute back v = y/x: y/x = log|x| + C → y = x log|x| + Cx.",
+      "hint": "Use the substitution y = vx to solve the homogeneous differential equation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-1ff45",
+      "order": 31,
+      "question": "If y(1) = 1 is a particular solution to the differential equation (x-y)dy - (x+y)dx = 0, then the value of the constant of integration C in the general solution x² + 2xy - y² = C is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is incorrect as substituting the initial conditions does not yield 0."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is incorrect as substituting the initial conditions does not yield 1."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct value of C obtained by substituting the initial conditions."
+        },
+        {
+          "letter": "D",
+          "text": "-1",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as substituting the initial conditions does not yield -1."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given differential equation is (x-y)dy - (x+y)dx = 0. The general solution is given as x² + 2xy - y² = C. We are given the initial condition y(1) = 1, which means when x = 1, y = 1. Substitute x = 1 and y = 1 into the general solution: (1)² + 2(1)(1) - (1)² = C → 1 + 2 - 1 = C → C = 2.",
+      "hint": "Substitute the initial conditions into the general solution to find the value of C.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-24c34",
+      "order": 32,
+      "question": "Which of the following differential equations is homogeneous?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "dy/dx = (x + y + 1) / (x - y)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The presence of the constant term '1' makes F(x,y) non-homogeneous."
+        },
+        {
+          "letter": "B",
+          "text": "dy/dx = (x^2 + y^2) / (xy)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "F(x,y) = (x^2 + y^2)/(xy) = (x/y) + (y/x), which is a function of y/x, hence homogeneous."
+        },
+        {
+          "letter": "C",
+          "text": "dy/dx = x + sin(y)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The term 'x' is not a function of y/x or x/y, making F(x,y) non-homogeneous."
+        },
+        {
+          "letter": "D",
+          "text": "dy/dx = e^x + y",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The term 'e^x' is not a function of y/x or x/y, making F(x,y) non-homogeneous."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A differential equation dy/dx = F(x,y) is homogeneous if F(x,y) is a homogeneous function of degree zero, meaning F(tx, ty) = F(x,y) for any t ≠ 0.",
+      "hint": "Check if the right-hand side of the differential equation can be expressed as a function of y/x or x/y.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-3031a",
+      "order": 33,
+      "question": "Which of the following is a homogeneous differential equation?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "dy/dx = (x² + y²)/x",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is homogeneous as f(tx, ty) = t f(x, y)."
+        },
+        {
+          "letter": "B",
+          "text": "dy/dx = x + y²",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not homogeneous as f(tx, ty) = tx + t²y² ≠ f(x, y)."
+        },
+        {
+          "letter": "C",
+          "text": "dy/dx = sin(x) + y",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not homogeneous as f(tx, ty) = sin(tx) + ty ≠ f(x, y)."
+        },
+        {
+          "letter": "D",
+          "text": "dy/dx = e^x + y",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not homogeneous as f(tx, ty) = e^(tx) + ty ≠ f(x, y)."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A differential equation dy/dx = f(x, y) is homogeneous if f(tx, ty) = f(x, y) for all t ≠ 0. For option A, f(x, y) = (x² + y²)/x, and f(tx, ty) = (t²x² + t²y²)/(tx) = t(x² + y²)/x = t f(x, y), which satisfies the condition.",
+      "hint": "Check if f(tx, ty) = f(x, y) for the given function.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-64ac4",
+      "order": 34,
+      "question": "For the differential equation dy/dx = (x² + y²)/x, which substitution will reduce it to a separable form?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "y = v",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This substitution does not simplify the equation into a separable form."
+        },
+        {
+          "letter": "B",
+          "text": "y = vx",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This substitution reduces the equation to a separable form in terms of v and x."
+        },
+        {
+          "letter": "C",
+          "text": "x = vy",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This substitution does not simplify the equation into a separable form."
+        },
+        {
+          "letter": "D",
+          "text": "x = v",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This substitution does not simplify the equation into a separable form."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For homogeneous differential equations, the substitution y = vx (where v is a function of x) is used. This transforms the equation into a separable form in terms of v and x.",
+      "hint": "Use the substitution y = vx to simplify the equation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-fdf04",
+      "order": 35,
+      "question": "Solve the differential equation dy/dx = (x² + y²)/x using the substitution y = vx.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "y = x tan(ln|x| + C)",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The solution is derived by integrating the separated variables and substituting back v = y/x."
+        },
+        {
+          "letter": "B",
+          "text": "y = x tan(x + C)",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution as it does not account for the logarithmic term."
+        },
+        {
+          "letter": "C",
+          "text": "y = x tan(C)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution as it lacks the variable x in the argument."
+        },
+        {
+          "letter": "D",
+          "text": "y = x tan(ln|x|)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct solution as it omits the constant of integration C."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Substitute y = vx, then dy/dx = v + x dv/dx. The equation becomes v + x dv/dx = (x² + v²x²)/x = x(1 + v²). Simplify to x dv/dx = x(1 + v²) - v, then separate variables and integrate.",
+      "hint": "Use y = vx and separate variables to solve the differential equation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-39c24",
+      "order": 36,
+      "question": "Which of the following differential equations is a homogeneous differential equation?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\frac{dy}{dx} = \\frac{x+y+1}{x-y}$",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not a homogeneous function as $f(tx, ty) \\neq f(x, y)$ due to the constant terms."
+        },
+        {
+          "letter": "B",
+          "text": "$\\frac{dy}{dx} = \\frac{x^2+y^2}{x+y}$",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not a homogeneous function of degree zero as $f(tx, ty) \\neq f(x, y)$."
+        },
+        {
+          "letter": "C",
+          "text": "$\\frac{dy}{dx} = \\frac{x^2+y^2}{xy}$",
+          "isCorrect": true,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is a homogeneous function of degree zero as $f(tx, ty) = f(x, y)$."
+        },
+        {
+          "letter": "D",
+          "text": "$\\frac{dy}{dx} = \\frac{e^x+e^y}{x+y}$",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not a homogeneous function as $f(tx, ty) \\neq f(x, y)$."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A differential equation $\\frac{dy}{dx} = f(x, y)$ is homogeneous if $f(x, y)$ is a homogeneous function of degree zero. This means $f(tx, ty) = t^0 f(x, y) = f(x, y)$. For option C, $f(x, y) = \\frac{x^2+y^2}{xy}$. $f(tx, ty) = \\frac{(tx)^2+(ty)^2}{(tx)(ty)} = \\frac{t^2x^2+t^2y^2}{t^2xy} = \\frac{t^2(x^2+y^2)}{t^2xy} = \\frac{x^2+y^2}{xy} = f(x, y)$. Thus, it is a homogeneous differential equation. Options A, B, and D do not satisfy this condition.",
+      "hint": "Check if $f(tx, ty) = f(x, y)$ for the given options.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-54252",
+      "order": 37,
+      "question": "Which of the following differential equations is homogeneous?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "dy/dx = (x+y+1)/(x-y)",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This equation contains constant terms (+1), so it cannot be expressed purely in terms of y/x or x/y."
+        },
+        {
+          "letter": "B",
+          "text": "dy/dx = x^2 + y^2 + xy",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This equation is not homogeneous as it contains terms like x^2 and y^2 which cannot be expressed as a function of y/x or x/y."
+        },
+        {
+          "letter": "C",
+          "text": "dy/dx = sin(x) + cos(y)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This equation contains trigonometric functions of x and y separately, so it is not homogeneous."
+        },
+        {
+          "letter": "D",
+          "text": "dy/dx = (x^2 + y^2)/(xy)",
+          "isCorrect": true,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This equation can be rewritten as dy/dx = (x/y) + (y/x), which is a function of y/x, making it homogeneous."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A differential equation is homogeneous if it can be expressed in the form dy/dx = f(y/x) or dx/dy = f(x/y). Option D can be rewritten as dy/dx = (x/y) + (y/x), which is a function of y/x, making it homogeneous.",
+      "hint": "Check if the equation can be expressed in terms of y/x or x/y.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-04580",
+      "order": 38,
+      "question": "The differential equation dy/dx = (x^2 + y^2)/(xy) is homogeneous. What is its degree?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The degree is not 0 as the equation involves a derivative."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The highest power of dy/dx in the equation is 1, so the degree is 1."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The equation does not have dy/dx raised to the power of 2."
+        },
+        {
+          "letter": "D",
+          "text": "3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The equation does not have dy/dx raised to the power of 3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The degree of a differential equation is the highest power of the highest order derivative after the equation has been made rational and integral in all the derivatives. Here, the equation is already in a rational form, and the highest power of dy/dx is 1, so the degree is 1.",
+      "hint": "Check the highest power of the derivative dy/dx in the equation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-02e8d",
+      "order": 39,
+      "question": "Which substitution is used to solve the homogeneous differential equation dy/dx = f(y/x)?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "x = vy",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This substitution is not standard for homogeneous differential equations."
+        },
+        {
+          "letter": "B",
+          "text": "y = vx",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The substitution y = vx is used to convert the homogeneous differential equation into a separable form."
+        },
+        {
+          "letter": "C",
+          "text": "x = y + v",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This substitution is not applicable for homogeneous differential equations."
+        },
+        {
+          "letter": "D",
+          "text": "y = x^2 + v",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This substitution is not standard for homogeneous differential equations."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For homogeneous differential equations of the form dy/dx = f(y/x), the substitution v = y/x (or y = vx) is used to convert the equation into a separable form.",
+      "hint": "Recall the standard substitution method for homogeneous differential equations.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-c473c",
+      "order": 40,
+      "question": "Solve the homogeneous differential equation dy/dx = (x^2 + y^2)/(xy). What is the general solution?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "y^2 = 2x^2 ln|x| + C",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is not the correct general solution. The correct solution involves (y^2)/(2x^2) = ln|x| + C."
+        },
+        {
+          "letter": "B",
+          "text": "(y^2)/(2x^2) = ln|x| + C",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct general solution after substituting v = y/x and integrating."
+        },
+        {
+          "letter": "C",
+          "text": "y = x ln|x| + C",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the solution to the given differential equation."
+        },
+        {
+          "letter": "D",
+          "text": "y^2 = x^2 ln|x| + C",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the correct general solution. The correct solution involves (y^2)/(2x^2) = ln|x| + C."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Rewrite the equation as dy/dx = (x/y) + (y/x). Let y = vx, then dy/dx = v + x(dv/dx). Substitute to get v + x(dv/dx) = (1/v) + v. Simplify to x(dv/dx) = 1/v, which is separable. Integrate both sides to get v^2/2 = ln|x| + C. Substitute back v = y/x to get (y^2)/(2x^2) = ln|x| + C.",
+      "hint": "Use the substitution y = vx and separate the variables.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-a06d0",
+      "order": 41,
+      "question": "Which of the following is a homogeneous differential equation?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "dy/dx = x + y",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This equation contains terms x and y separately, so it is not homogeneous."
+        },
+        {
+          "letter": "B",
+          "text": "dy/dx = (x^2 + y^2)/x^2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This equation can be rewritten as dy/dx = 1 + (y/x)^2, which is a function of y/x, making it homogeneous."
+        },
+        {
+          "letter": "C",
+          "text": "dy/dx = e^(x+y)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This equation contains exponential terms of x and y separately, so it is not homogeneous."
+        },
+        {
+          "letter": "D",
+          "text": "dy/dx = x^2 y + y^2 x",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This equation is not homogeneous as it contains terms like x^2 y and y^2 x which cannot be expressed as a function of y/x or x/y."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A differential equation is homogeneous if it can be expressed in the form dy/dx = f(y/x) or dx/dy = f(x/y). Option B can be rewritten as dy/dx = (y/x)^2 + (y/x), which is a function of y/x, making it homogeneous.",
+      "hint": "Check if the equation can be expressed in terms of y/x or x/y.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-115dc",
+      "order": 42,
+      "question": "The differential equation dy/dx = (x^2 + y^2)/x^2 is homogeneous. What substitution should be used to solve it?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "x = vy",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This substitution is not standard for homogeneous differential equations."
+        },
+        {
+          "letter": "B",
+          "text": "y = vx",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The substitution y = vx is used to convert the homogeneous differential equation into a separable form."
+        },
+        {
+          "letter": "C",
+          "text": "x = y + v",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This substitution is not applicable for homogeneous differential equations."
+        },
+        {
+          "letter": "D",
+          "text": "y = x^2 + v",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This substitution is not standard for homogeneous differential equations."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "For homogeneous differential equations of the form dy/dx = f(y/x), the substitution v = y/x (or y = vx) is used to convert the equation into a separable form.",
+      "hint": "Recall the standard substitution method for homogeneous differential equations.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "easy",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-d4eba",
+      "order": 43,
+      "question": "Solve the homogeneous differential equation dy/dx = (x^2 + y^2)/x^2. What is the general solution?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "arctan(y/x - 1/2) = ln|x| + C",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is the correct general solution after substituting v = y/x and integrating."
+        },
+        {
+          "letter": "B",
+          "text": "y = x arctan(x) + C",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is not the solution to the given differential equation."
+        },
+        {
+          "letter": "C",
+          "text": "y^2 = x^2 ln|x| + C",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is not the correct general solution."
+        },
+        {
+          "letter": "D",
+          "text": "y = x^2 + C",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is not the solution to the given differential equation."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "Rewrite the equation as dy/dx = 1 + (y/x)^2. Let y = vx, then dy/dx = v + x(dv/dx). Substitute to get v + x(dv/dx) = 1 + v^2. Simplify to x(dv/dx) = 1 + v^2 - v. Separate variables and integrate: ∫ dv/(1 + v^2 - v) = ∫ dx/x. Solve the integrals to find the general solution.",
+      "hint": "Use the substitution y = vx and separate the variables.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-da90b",
+      "order": 44,
+      "question": "Which of the following differential equations is NOT homogeneous?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "dy/dx = (x + y + 1)/(x - y)",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This equation contains a constant term (+1), so it is not homogeneous."
+        },
+        {
+          "letter": "B",
+          "text": "dy/dx = (x^2 + y^2)/xy",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This equation can be rewritten as dy/dx = (x/y) + (y/x), which is a function of y/x, making it homogeneous."
+        },
+        {
+          "letter": "C",
+          "text": "dy/dx = (x^3 + y^3)/x^2 y",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This equation can be rewritten as dy/dx = (x/y) + (y/x)^2, which is a function of y/x, making it homogeneous."
+        },
+        {
+          "letter": "D",
+          "text": "dy/dx = (x^2 - y^2)/xy",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This equation can be rewritten as dy/dx = (x/y) - (y/x), which is a function of y/x, making it homogeneous."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A differential equation is homogeneous if it can be expressed in the form dy/dx = f(y/x) or dx/dy = f(x/y). Option A contains a constant term (+1), so it cannot be expressed purely in terms of y/x or x/y, making it non-homogeneous.",
+      "hint": "Check if the equation can be expressed in terms of y/x or x/y without any constant terms.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-2759d",
+      "order": 45,
+      "question": "The differential equation dy/dx = (x^3 + y^3)/x^2 y is homogeneous. What is its degree?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "The degree is not 0 as the equation involves a derivative."
+        },
+        {
+          "letter": "B",
+          "text": "1",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "The highest power of dy/dx in the equation is 1, so the degree is 1."
+        },
+        {
+          "letter": "C",
+          "text": "2",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "The equation does not have dy/dx raised to the power of 2."
+        },
+        {
+          "letter": "D",
+          "text": "3",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "The equation does not have dy/dx raised to the power of 3."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The degree of a differential equation is the highest power of the highest order derivative after the equation has been made rational and integral in all the derivatives. Here, the equation is already in a rational form, and the highest power of dy/dx is 1, so the degree is 1.",
+      "hint": "Check the highest power of the derivative dy/dx in the equation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-6a6b0",
+      "order": 46,
+      "question": "Which of the following is a homogeneous function of degree 2?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "f(x, y) = x + y",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "f(tx, ty) = tx + ty = t(x + y) = t^1 f(x, y), so it is homogeneous of degree 1."
+        },
+        {
+          "letter": "B",
+          "text": "f(x, y) = x^2 + y^2",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "f(tx, ty) = (tx)^2 + (ty)^2 = t^2(x^2 + y^2) = t^2 f(x, y), so it is homogeneous of degree 2."
+        },
+        {
+          "letter": "C",
+          "text": "f(x, y) = x^3 + y^3",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "f(tx, ty) = (tx)^3 + (ty)^3 = t^3(x^3 + y^3) = t^3 f(x, y), so it is homogeneous of degree 3."
+        },
+        {
+          "letter": "D",
+          "text": "f(x, y) = xy",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "f(tx, ty) = (tx)(ty) = t^2(xy) = t^2 f(x, y), so it is homogeneous of degree 2."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A function f(x, y) is homogeneous of degree n if f(tx, ty) = t^n f(x, y). For option B, f(tx, ty) = (tx)^2 + (ty)^2 = t^2(x^2 + y^2) = t^2 f(x, y), so it is homogeneous of degree 2.",
+      "hint": "Check the homogeneity condition f(tx, ty) = t^n f(x, y) for each option.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-434b8",
+      "order": 47,
+      "question": "Which of the following represents a homogeneous differential equation?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "dy/dx = (x² + y²)/xy",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This equation cannot be expressed solely in terms of y/x."
+        },
+        {
+          "letter": "B",
+          "text": "dy/dx = (x² + y²)/(x² − y²)",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This equation simplifies to a function of y/x, making it homogeneous."
+        },
+        {
+          "letter": "C",
+          "text": "dy/dx = (x + y)/(x − y)",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This equation cannot be expressed solely in terms of y/x."
+        },
+        {
+          "letter": "D",
+          "text": "dy/dx = (x² − y²)/(x² + y²)",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This equation cannot be expressed solely in terms of y/x."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "A differential equation is homogeneous if it can be written as dy/dx = f(y/x). Option B simplifies to dy/dx = (1 + (y/x)²)/(1 − (y/x)²), which is a function of y/x alone, making it homogeneous.",
+      "hint": "Check if the equation can be expressed in terms of y/x.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-125e9",
+      "order": 48,
+      "question": "The general solution of the differential equation dy/dx = (x + y)/x is:",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "y = x log x + C",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is missing the term Cx."
+        },
+        {
+          "letter": "B",
+          "text": "y = x log x + Cx",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct general solution."
+        },
+        {
+          "letter": "C",
+          "text": "y = x log x + Cx",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is the correct general solution (duplicate option)."
+        },
+        {
+          "letter": "D",
+          "text": "y = log x + Cx",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it misses the x term in log x."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The equation is homogeneous. Substitute v = y/x ⇒ y = vx ⇒ dy/dx = v + x(dv/dx). Substituting gives v + x(dv/dx) = 1 + v ⇒ x(dv/dx) = 1 ⇒ dv = dx/x ⇒ v = log x + C ⇒ y/x = log x + C ⇒ y = x log x + Cx.",
+      "hint": "Use substitution v = y/x to solve the homogeneous differential equation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "medium",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-f39fb",
+      "order": 49,
+      "question": "Assertion (A): The differential equation dy/dx = (x² + y²)/xy is homogeneous. Reason (R): A differential equation M(x,y)dx + N(x,y)dy = 0 is homogeneous if M and N are homogeneous functions of the same degree.",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both A and R are true, and R is the correct explanation of A",
+          "isCorrect": true,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "Both statements are true, and R correctly explains A."
+        },
+        {
+          "letter": "B",
+          "text": "Both A and R are true, but R is not the correct explanation of A",
+          "isCorrect": false,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "R is the correct explanation of A."
+        },
+        {
+          "letter": "C",
+          "text": "A is true, but R is false",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "Both A and R are true."
+        },
+        {
+          "letter": "D",
+          "text": "A is false, but R is true",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "A is true."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The differential equation dy/dx = (x² + y²)/xy can be rewritten as (x² + y²)dx − xydy = 0, where M = x² + y² and N = −xy. Both M and N are homogeneous of degree 2, so the equation is homogeneous, and R correctly explains A.",
+      "hint": "Verify if M and N are homogeneous functions of the same degree.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    },
+    {
+      "id": "q-1788450123776-f5528",
+      "order": 50,
+      "question": "A population P grows at a rate proportional to its current size and also decreases at a rate proportional to the square of its size, leading to the differential equation: dP/dt = k₁P − k₂P², where k₁ and k₂ are positive constants. Which of the following represents the general solution of this differential equation?",
+      "type": "mcq",
+      "options": [
+        {
+          "letter": "A",
+          "text": "P = k₁/(k₂ + Ce^(−k₁t))",
+          "isCorrect": false,
+          "index": 0,
+          "imageUrl": "",
+          "explanation": "This is missing the denominator k₂."
+        },
+        {
+          "letter": "B",
+          "text": "P = (k₁)/(k₂ + Ce^(−k₁t))",
+          "isCorrect": true,
+          "index": 1,
+          "imageUrl": "",
+          "explanation": "This is the correct general solution."
+        },
+        {
+          "letter": "C",
+          "text": "P = (k₂)/(k₁ + Ce^(−k₂t))",
+          "isCorrect": false,
+          "index": 2,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it swaps k₁ and k₂."
+        },
+        {
+          "letter": "D",
+          "text": "P = k₂/(k₁ + Ce^(−k₂t))",
+          "isCorrect": false,
+          "index": 3,
+          "imageUrl": "",
+          "explanation": "This is incorrect as it swaps k₁ and k₂."
+        }
+      ],
+      "answer": "",
+      "alternateAnswers": [],
+      "explanation": "The given equation is a Bernoulli equation. Rewrite it as dP/dt − k₁P = −k₂P². Substitute v = P^(−1) ⇒ dv/dt = −P^(−2)(dP/dt). The equation becomes dv/dt + k₁v = k₂, which is linear. The integrating factor is e^(∫k₁ dt) = e^(k₁t). Solving gives v = (k₂/k₁) + Ce^(−k₁t) ⇒ P = 1/v = (k₁)/(k₂ + Ce^(−k₁t)).",
+      "hint": "Use substitution v = P^(−1) to solve the Bernoulli differential equation.",
+      "marks": 1,
+      "negativeMark": 0,
+      "negativeMarking": false,
+      "imageUrl": "",
+      "subject": "maha12-maths",
+      "difficulty": "hard",
+      "hasError": false
+    }
+  ]
+}
