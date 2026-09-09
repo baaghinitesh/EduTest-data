@@ -4,7 +4,7 @@
   "class_slug": "rrb-ntpc",
   "test_type": "subject-wise",
   "target_q": 25,
-  "collected_q": 5,
+  "collected_q": 7,
   "final_path": "data/admin/rrb-ntpc/tests/rrb-ntpc-general-intelligence-series-completion-9fe56a45.json",
   "payload": {
     "id": "9fe56a45-9b54-4d45-ba0b-ef69e41a9379",
@@ -21,9 +21,9 @@
     "topic": "Series Completion",
     "testType": "subject-wise",
     "duration": 30,
-    "totalMarks": 5,
+    "totalMarks": 7,
     "passingMarks": 2,
-    "totalQuestions": 5,
+    "totalQuestions": 7,
     "targetQuestions": 25,
     "isPublic": true,
     "isPublished": true,
@@ -307,11 +307,113 @@
         "subject": "rrb-reasoning",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1788980573450-b222b",
+        "order": 6,
+        "question": "Series: 3, 7, 11, 15, ?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "18",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "19",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "20",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "21",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "This is an arithmetic progression. Each subsequent number is obtained by adding 4 to the previous number.\n3 + 4 = 7\n7 + 4 = 11\n11 + 4 = 15\n15 + 4 = 20\nTherefore, the next number in the series is 20.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0.33,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "rrb-reasoning",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1788980573450-f062b",
+        "order": 7,
+        "question": "Find the next number in the series: 3, 7, 11, 15, ?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "18",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "19",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "20",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "21",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "This is an arithmetic progression. Each number is obtained by adding 4 to the previous number.\n3 + 4 = 7\n7 + 4 = 11\n11 + 4 = 15\nSo, the next number will be 15 + 4 = 19.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0.33,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "rrb-reasoning",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 20,
+    "remaining_q": 18,
     "subj_slug": "rrb-reasoning",
     "subj_name": "General Intelligence",
     "chapter": "Verbal Reasoning",
@@ -320,6 +422,6 @@
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-09-09T15:31:27.776408Z",
-  "updated_at": "2026-09-09T15:31:27.776410Z"
+  "created_at": "2026-09-09T19:02:53.450468Z",
+  "updated_at": "2026-09-09T19:02:53.450480Z"
 }
