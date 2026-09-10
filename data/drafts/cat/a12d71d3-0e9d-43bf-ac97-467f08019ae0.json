@@ -4,7 +4,7 @@
   "class_slug": "cat",
   "test_type": "subject-wise",
   "target_q": 20,
-  "collected_q": 13,
+  "collected_q": 15,
   "final_path": "data/admin/cat/tests/cat-data-interpretation-lr-cubes-dice-a12d71d3.json",
   "payload": {
     "id": "a12d71d3-0e9d-43bf-ac97-467f08019ae0",
@@ -21,9 +21,9 @@
     "topic": "Cubes Dice",
     "testType": "subject-wise",
     "duration": 40,
-    "totalMarks": 39,
-    "passingMarks": 14,
-    "totalQuestions": 13,
+    "totalMarks": 45,
+    "passingMarks": 16,
+    "totalQuestions": 15,
     "targetQuestions": 20,
     "isPublic": true,
     "isPublished": true,
@@ -715,11 +715,113 @@
         "subject": "cat-dilr",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1789066595389-b089d",
+        "order": 14,
+        "question": "Two positions of a single die are shown below.\n\n(Image description: Two dice.\nDie 1: Top face shows 3, front face shows 1, right face shows 5.\nDie 2: Top face shows 6, front face shows 2, right face shows 3.)\n\nWhich number is on the face opposite to 1?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "2",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "6",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Correct. By aligning the common face '3' in both dice, we find that 1 is opposite 6."
+          },
+          {
+            "letter": "C",
+            "text": "4",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "5",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "To find the face opposite to 1, we use the common face method:\n1.  Identify the common face in both positions. Here, '3' is the common face.\n2.  Align the common face '3' in both dice by rotation. Let's make '3' the top face in both views.\n    *   Die 1: Top=3, Front=1, Right=5 (3 is already on top).\n    *   Die 2: Top=6, Front=2, Right=3. To move '3' from the Right face to the Top face, we rotate the die 90 degrees anticlockwise around the axis passing through the front and back faces. This rotation will move:\n        *   '3' (Right) to Top.\n        *   '6' (Top) to Front.\n        *   '2' (Front) to Left.\n    So, the rotated Die 2 will have: Top=3, Front=6, Left=2.\n3.  Now, compare Die 1 and the Rotated Die 2, where '3' is on top in both:\n    *   Die 1: Top=3, Front=1, Right=5\n    *   Rotated Die 2: Top=3, Front=6, Left=2\n4.  Since '3' is on the top in both, we can directly compare the other corresponding faces:\n    *   The face on the Front in Die 1 (which is 1) is opposite the face on the Front in Rotated Die 2 (which is 6).\n    *   Thus, 1 is opposite 6.\n    *   Similarly, 5 (Right in Die 1) is opposite 2 (Left in Rotated Die 2).\n    *   The remaining number, 4, must be opposite 3.",
+        "hint": "",
+        "marks": 3,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cat-dilr",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1789066595389-0e06b",
+        "order": 15,
+        "question": "A large cube of dimensions 4 cm x 4 cm x 4 cm is painted green on all its faces. If it is cut into smaller cubes of 1 cm x 1 cm x 1 cm, how many of the smaller cubes will have exactly two faces painted green?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "8",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "12",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "16",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "24",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "1. Let 'n' be the side length of the larger cube in terms of the smaller cubes. Here, n =",
+        "hint": "",
+        "marks": 3,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cat-dilr",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 7,
+    "remaining_q": 5,
     "subj_slug": "cat-dilr",
     "subj_name": "Data Interpretation LR",
     "chapter": "Logical Reasoning",
@@ -728,6 +830,6 @@
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-09-10T16:17:07.385990Z",
-  "updated_at": "2026-09-10T16:17:07.386006Z"
+  "created_at": "2026-09-10T18:56:35.389127Z",
+  "updated_at": "2026-09-10T18:56:35.389139Z"
 }
