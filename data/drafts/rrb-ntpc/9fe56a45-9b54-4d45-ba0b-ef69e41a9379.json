@@ -4,7 +4,7 @@
   "class_slug": "rrb-ntpc",
   "test_type": "subject-wise",
   "target_q": 25,
-  "collected_q": 7,
+  "collected_q": 8,
   "final_path": "data/admin/rrb-ntpc/tests/rrb-ntpc-general-intelligence-series-completion-9fe56a45.json",
   "payload": {
     "id": "9fe56a45-9b54-4d45-ba0b-ef69e41a9379",
@@ -21,9 +21,9 @@
     "topic": "Series Completion",
     "testType": "subject-wise",
     "duration": 30,
-    "totalMarks": 7,
-    "passingMarks": 2,
-    "totalQuestions": 7,
+    "totalMarks": 8,
+    "passingMarks": 3,
+    "totalQuestions": 8,
     "targetQuestions": 25,
     "isPublic": true,
     "isPublished": true,
@@ -409,11 +409,62 @@
         "subject": "rrb-reasoning",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1789017616152-eeb03",
+        "order": 8,
+        "question": "Complete the series: 7, 10, 14, 19, 25, ?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "31",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "32",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "33",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "34",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "This is an easy number series where the difference between consecutive numbers increases by 1 each time.\n7 (+3) = 10\n10 (+4) = 14\n14 (+5) = 19\n19 (+6) = 25\nFollowing this pattern, the next difference should be +7.\n25 + 7 = 32.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0.33,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "rrb-reasoning",
+        "difficulty": "easy",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 18,
+    "remaining_q": 17,
     "subj_slug": "rrb-reasoning",
     "subj_name": "General Intelligence",
     "chapter": "Verbal Reasoning",
@@ -422,6 +473,6 @@
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-09-09T19:02:53.450468Z",
-  "updated_at": "2026-09-09T19:02:53.450480Z"
+  "created_at": "2026-09-10T05:20:16.152461Z",
+  "updated_at": "2026-09-10T05:20:16.152472Z"
 }
