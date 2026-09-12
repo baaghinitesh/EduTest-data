@@ -4,7 +4,7 @@
   "class_slug": "olympiad-math",
   "test_type": "subject-wise",
   "target_q": 15,
-  "collected_q": 1,
+  "collected_q": 3,
   "final_path": "data/admin/olympiad-math/tests/olympiad-math-geometry-trigonometric-identities-geometr-310c26a9.json",
   "payload": {
     "id": "310c26a9-14c3-46d7-bb10-afd56201f483",
@@ -21,9 +21,9 @@
     "topic": "Trigonometric Identities Geometry",
     "testType": "subject-wise",
     "duration": 30,
-    "totalMarks": 4,
-    "passingMarks": 2,
-    "totalQuestions": 1,
+    "totalMarks": 12,
+    "passingMarks": 4,
+    "totalQuestions": 3,
     "targetQuestions": 15,
     "isPublic": true,
     "isPublished": true,
@@ -103,11 +103,113 @@
         "subject": "olympiad-geometry",
         "difficulty": "easy",
         "hasError": false
+      },
+      {
+        "id": "q-1789190271063-e5461",
+        "order": 2,
+        "question": "In triangle ABC, AB = 8, AC = 15, and the area of \\( \\triangle ABC \\) is \\( 30\\sqrt{3} \\). What is the measure of angle A?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "\\( 30^\\circ \\)",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "\\( 45^\\circ \\)",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "\\( 60^\\circ \\)",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "\\( 90^\\circ \\)",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The area of a triangle can be calculated using the formula \\( \\text{Area} = \\frac{1}{2}bc",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1789190271063-29e32",
+        "order": 3,
+        "question": "In $\\triangle ABC$, the sides are $a=7$, $b=8$, and $\\angle C = 60^\\circ$. What is the length of side $c$?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\sqrt{57}$",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "$\\sqrt{113}$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "$7$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "$8$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "We use the Cosine Rule: $c^2 = a^2 + b^2 - 2ab \\cos C$",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "easy",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 14,
+    "remaining_q": 12,
     "subj_slug": "olympiad-geometry",
     "subj_name": "Geometry",
     "chapter": "Advanced Geometry",
@@ -116,6 +218,6 @@
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-09-11T18:59:01.010842Z",
-  "updated_at": "2026-09-11T18:59:01.010846Z"
+  "created_at": "2026-09-12T05:17:51.064009Z",
+  "updated_at": "2026-09-12T05:17:51.064021Z"
 }
