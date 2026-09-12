@@ -4,7 +4,7 @@
   "class_slug": "olympiad-math",
   "test_type": "subject-wise",
   "target_q": 15,
-  "collected_q": 9,
+  "collected_q": 14,
   "final_path": "data/admin/olympiad-math/tests/olympiad-math-geometry-trigonometric-identities-geometr-310c26a9.json",
   "payload": {
     "id": "310c26a9-14c3-46d7-bb10-afd56201f483",
@@ -21,9 +21,9 @@
     "topic": "Trigonometric Identities Geometry",
     "testType": "subject-wise",
     "duration": 30,
-    "totalMarks": 36,
-    "passingMarks": 13,
-    "totalQuestions": 9,
+    "totalMarks": 56,
+    "passingMarks": 20,
+    "totalQuestions": 14,
     "targetQuestions": 15,
     "isPublic": true,
     "isPublished": true,
@@ -511,11 +511,266 @@
         "subject": "olympiad-geometry",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1789224306679-63c87",
+        "order": 10,
+        "question": "In \\( \\triangle ABC \\), the side lengths are \\( a=5 \\), \\( b=6 \\), and \\( c=7 \\). What is the value of \\( \\cos A \\)?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "\\( \\frac{1}{5} \\)",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "\\( \\frac{1}{7} \\)",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "\\( \\frac{5}{7} \\)",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "\\( \\frac{1}{2} \\)",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "We use the Law of Cosines, which states that for any triangle, \\( a^2 \\)",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1789224306679-999dd",
+        "order": 11,
+        "question": "In triangle ABC, the lengths of sides AB and AC are 8 cm and 12 cm respectively. If the area of triangle ABC is $24\\sqrt{3}$ cm$^2$, what is the measure of angle BAC?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$30^\\circ$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "$45^\\circ$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "$60^\\circ$",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "$90^\\circ$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The area of a triangle can be calculated using the formula: Area $= \\frac{1}{2}ab \\sin C$, where $a$ and",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1789224306679-828b8",
+        "order": 12,
+        "question": "In triangle ABC, the lengths of sides AB and AC are 12 cm and 10 cm, respectively. If the area of triangle ABC is $30\\sqrt{3}$ cm$^2$, what is the measure of angle A?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "30°",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "45°",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "60°",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Given Area = $30\\sqrt{3}$ cm$^2$, b=10 cm, c=12 cm. Using the formula Area = $\\frac{1}{2}bc \\sin A$: $30\\sqrt{3} = \\frac{1}{2} \\times 10 \\times 12 \\times \\sin A$. This simplifies to $30\\sqrt{3} = 60 \\sin A$. Dividing both sides by 60 gives $\\sin A = \\frac{30\\sqrt{3}}{60} = \\frac{\\sqrt{3}}{2}$. For an angle A in a triangle, if $\\sin A = \\frac{\\sqrt{3}}{2}$, then A = 60°."
+          },
+          {
+            "letter": "D",
+            "text": "90°",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "To find the measure of angle A, we use the formula for the area of a triangle: Area = $\\frac{1}{2}bc \\sin A$. Given the area is $30\\sqrt{3}$ cm$^2$, side AB (c) = 12 cm, and side AC (b) = 10 cm. Substituting these values into the formula allows us to solve for $\\sin A$ and subsequently angle A.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1789224306679-caa5a",
+        "order": 13,
+        "question": "In \\( \\triangle ABC \\), the lengths of sides \\( AB \\) and \\( AC \\) are \\( 7 \\) and \\( 8 \\) respectively. If \\( \\angle BAC = 60^\\circ \\), what is the length of side \\( BC \\)?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "\\( \\sqrt{13} \\)",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "\\( \\sqrt{57} \\)",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "\\( \\sqrt{61} \\)",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "\\( \\sqrt{73} \\)",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "We can find the length of side \\( BC \\) using the Law",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1789224306679-05c7f",
+        "order": 14,
+        "question": "In triangle \\(ABC\\), the side lengths are \\(a=13\\), \\(b=14\\), \\(c=15\\). Let \\(R\\) be the circumradius of \\( \\triangle ABC \\). What is the value of \\(R\\)?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "\\(65/8\\)",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "\\(65/4\\)",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "\\(105/16\\)",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "\\(17/2\\)",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "First, we calculate the area of the triangle (\\(K\\)) using Heron's formula.\nThe semi-perimeter \\(s = \\frac{a+b+c}{2} = \\frac{13+14+15}{2} = \\frac{42}{2} = 21\\).\nThe area \\(K = \\sqrt{s(s-a)(s-b)(s-c)}\\)\n\\(K = \\sqrt{21(21-13)(21-14)(21-15)}\\)\n\\(K = \\sqrt{21 \\cdot 8 \\cdot 7 \\cdot 6}\\)\n\\(K = \\sqrt{(3 \\cdot 7) \\cdot (2^3) \\cdot 7 \\cdot (2 \\cdot 3)}\\)\n\\(K = \\sqrt{2^4 \\cdot 3^2 \\cdot 7^2} = 2^2 \\cdot 3 \\cdot 7 = 4 \\cdot 21 =\\)",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 6,
+    "remaining_q": 1,
     "subj_slug": "olympiad-geometry",
     "subj_name": "Geometry",
     "chapter": "Advanced Geometry",
@@ -524,6 +779,6 @@
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-09-12T11:25:00.400936Z",
-  "updated_at": "2026-09-12T11:25:00.400953Z"
+  "created_at": "2026-09-12T14:45:06.679286Z",
+  "updated_at": "2026-09-12T14:45:06.679303Z"
 }
