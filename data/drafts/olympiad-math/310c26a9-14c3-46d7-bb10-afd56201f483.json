@@ -4,7 +4,7 @@
   "class_slug": "olympiad-math",
   "test_type": "subject-wise",
   "target_q": 15,
-  "collected_q": 3,
+  "collected_q": 9,
   "final_path": "data/admin/olympiad-math/tests/olympiad-math-geometry-trigonometric-identities-geometr-310c26a9.json",
   "payload": {
     "id": "310c26a9-14c3-46d7-bb10-afd56201f483",
@@ -21,9 +21,9 @@
     "topic": "Trigonometric Identities Geometry",
     "testType": "subject-wise",
     "duration": 30,
-    "totalMarks": 12,
-    "passingMarks": 4,
-    "totalQuestions": 3,
+    "totalMarks": 36,
+    "passingMarks": 13,
+    "totalQuestions": 9,
     "targetQuestions": 15,
     "isPublic": true,
     "isPublished": true,
@@ -205,11 +205,317 @@
         "subject": "olympiad-geometry",
         "difficulty": "easy",
         "hasError": false
+      },
+      {
+        "id": "q-1789212300400-1faac",
+        "order": 4,
+        "question": "In triangle \\( ABC \\), \\( \\angle A = 45^\\circ \\), \\( \\angle B = 60^\\circ \\), and side \\( a = 2\\sqrt{2} \\). What is the length of side \\( b \\)?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "\\( \\sqrt{6} \\)",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "\\( 2\\sqrt{3} \\)",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "\\( 4 \\)",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "\\( 2\\sqrt{3} \\)",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Correct, as derived using the Law of Sines."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "This question directly applies the Law of Sines.\nAccording to the Law of Sines, \\( \\frac{a}{\\sin A} = \\frac{b}{\\sin B} \\).\nGiven \\( a = 2\\sqrt{2} \\), \\( \\angle A = 45^\\circ \\), \\( \\angle B = 60^\\circ \\).\nSo, \\( \\frac{2\\sqrt{2}}{\\sin 45^\\circ} = \\frac{b}{\\sin 60^\\circ} \\).\nWe know \\( \\sin 45^\\circ = \\frac{\\sqrt{2}}{2} \\) and \\( \\sin 60^\\circ = \\frac{\\sqrt{3}}{2} \\).\nSubstituting these values:\n\\( \\frac{2\\sqrt{2}}{\\frac{\\sqrt{2}}{2}} = \\frac{b}{\\frac{\\sqrt{3}}{2}} \\)\n\\( 4 = \\frac{2b}{\\sqrt{3}} \\)\n\\( b = \\frac{4\\sqrt{3}}{2} = 2\\sqrt{3} \\).",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1789212300400-cb50d",
+        "order": 5,
+        "question": "In \\(\\triangle ABC\\), the sides are \\(b=5\\) and \\(c=7\\). If the area of \\(\\triangle ABC\\) is \\(\\frac{35\\sqrt{3}}{4}\\), what is the measure of \\(\\angle A\\)?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "\\(30^\\circ\\)",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "\\(45^\\circ\\)",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "\\(60^\\circ\\)",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This is the correct angle for which \\(\\sin A = \\frac{\\sqrt{3}}{2}\\)."
+          },
+          {
+            "letter": "D",
+            "text": "\\(90^\\circ\\)",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The area of a triangle can be calculated using the formula \\(Area = \\frac{1}{2}bc \\sin A\\). Given the area is \\(\\frac{35\\sqrt{3}}{4}\\), side \\(b=5\\), and side \\(c=7\\). Substitute these values into the formula: \\(\\frac{35\\sqrt{3}}{4} = \\frac{1}{2}(5)(7) \\sin A\\). This simplifies to \\(\\frac{35\\sqrt{3}}{4} = \\frac{35}{2} \\sin A\\). To find \\(\\sin A\\), divide both sides by \\(\\frac{35}{2}\\): \\(\\sin A = \\frac{35\\sqrt{3}}{4} \\div \\frac{35}{2} = \\frac{35\\sqrt{3}}{4} \\times \\frac{2}{35} = \\frac{\\sqrt{3}}{2}\\). The angle \\(A\\) for which \\(\\sin A = \\frac{\\sqrt{3}}{2}\\) is \\(60^\\circ\\).",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1789212300400-0d8c5",
+        "order": 6,
+        "question": "In triangle ABC, if \\( \\angle A = 45^\\circ \\), \\( \\angle B = 60^\\circ \\), and side \\( a = 2\\sqrt{2} \\), what is the length of side \\( b \\)?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "\\( 2\\sqrt{3} \\)",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Applying the Law of Sines: \\( \\frac{a}{\\sin A} = \\frac{b}{\\sin B} \\). Given \\( a = 2\\sqrt{2} \\), \\( \\angle A = 45^\\circ \\), \\( \\angle B = 60^\\circ \\).\n\\( \\frac{2\\sqrt{2}}{\\sin 45^\\circ} = \\frac{b}{\\sin 60^\\circ} \\)\n\\( \\frac{2\\sqrt{2}}{1/\\sqrt{2}} = \\frac{b}{\\sqrt{3}/2} \\)\n\\( 4 = \\frac{2b}{\\sqrt{3}} \\)\n\\( 4\\sqrt{3} = 2b \\)\n\\( b = 2\\sqrt{3} \\)"
+          },
+          {
+            "letter": "B",
+            "text": "\\( 3\\sqrt{2} \\)",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "\\( 4 \\)",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "\\( 2 \\)",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Using the Law of Sines:\n\\( \\frac{a}{\\sin A} = \\)",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1789212300400-0ce08",
+        "order": 7,
+        "question": "In \\( \\triangle ABC \\), if sides \\( b=10 \\), \\( c=12 \\), and the angle \\( A=60^\\circ \\), what is the area of the triangle?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "\\( 30 \\)",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This would be the area if \\( \\sin A \\) were \\( 1/2 \\), which is not the case for \\( A=60^\\circ \\)."
+          },
+          {
+            "letter": "B",
+            "text": "\\( 30\\sqrt{3} \\)",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Using the formula \\( \\text{Area} = \\frac{1}{2}bc\\sin A \\), with \\( b=10 \\), \\( c=12 \\), and \\( A=60^\\circ \\), we get \\( \\frac{1}{2}(10)(12)\\sin 60^\\circ = 60 \\times \\frac{\\sqrt{3}}{2} = 30\\sqrt{3} \\)."
+          },
+          {
+            "letter": "C",
+            "text": "\\( 60 \\)",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This value would be \\( bc/2 \\), which does not account for the sine of the included angle."
+          },
+          {
+            "letter": "D",
+            "text": "\\( 60\\sqrt{3} \\)",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This value is twice the correct area, possibly resulting from omitting the \\( 1/2 \\) factor in the area formula."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The area of a triangle given two sides and the included angle is calculated using the formula \\( \\text{Area} = \\frac{1}{2}bc\\sin A \\). Substituting the given values, we have \\( \\text{Area} = \\frac{1}{2} \\times 10 \\times 12 \\times \\sin 60^\\circ \\). This simplifies to \\( 60 \\times \\frac{\\sqrt{3}}{2} = 30\\sqrt{3} \\).",
+        "hint": "Recall the formula for the area of a triangle given two sides and the included angle.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1789212300400-3215c",
+        "order": 8,
+        "question": "In \\( \\triangle ABC \\), the lengths of sides are \\( b=8 \\text{ cm} \\), \\( c=10 \\text{ cm} \\), and the angle \\( \\angle A = 30^\\circ \\). What is the area of \\( \\triangle ABC \\)?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "\\( 20 \\text{ cm}^2 \\)",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This is the correct calculation: \\( \\text{Area} = \\frac{1}{2} \\times 8 \\times 10 \\times \\sin 30^\\circ = \\frac{1}{2} \\times 80 \\times \\frac{1}{2} = 20 \\text{ cm}^2 \\)."
+          },
+          {
+            "letter": "B",
+            "text": "\\( 40 \\text{ cm}^2 \\)",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This would be the result if \\( \\sin A \\) was 1, or if the formula was simply \\( bc/2 \\) without considering the angle."
+          },
+          {
+            "letter": "C",
+            "text": "\\( 20\\sqrt{3} \\text{ cm}^2 \\)",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This would be the result if \\( \\sin A \\) was \\( \\frac{\\sqrt{3}}{2} \\) (i.e., A = 60 degrees)."
+          },
+          {
+            "letter": "D",
+            "text": "\\( 40 \\)",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This option is incomplete and incorrect. It might be a partial calculation or missing units."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The area of a triangle can be calculated using the formula \\( \\text{Area} = \\frac{1}{2}bc\\sin A \\). Substituting the given values: \\( \\text{Area} = \\frac{1}{2} \\times 8 \\times 10 \\times \\sin 30^\\circ = \\frac{1}{2} \\times 80 \\times \\frac{1}{2} = 20 \\text{ cm}^2 \\).",
+        "hint": "Recall the formula for the area of a triangle given two sides and the included angle.",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1789212300400-d141f",
+        "order": 9,
+        "question": "In triangle \\( \\triangle ABC \\), \\( AB = 8 \\), \\( AC = 10 \\), and \\( \\angle BAC = 60^\\circ \\). A point \\( D \\) lies on \\( BC \\) such that \\( AD \\) is the angle bisector of \\( \\angle BAC \\). Find the length of \\( AD \\).",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "\\( \\frac{30\\sqrt{3}}{19} \\)",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "\\( \\frac{40\\sqrt{3}}{19} \\)",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "\\( \\frac{40}{9} \\)",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "\\( \\frac{40\\sqrt{3}}{9} \\)",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let \\( AD = x \\). The area of \\( \\triangle ABC \\) is the sum of the areas of \\( \\triangle ABD \\) and \\( \\triangle ACD \\). Area\\( (\\triangle ABC) = \\frac{1}{2} AB \\cdot AC \\sin(\\angle BAC) = \\frac{1}{2} (8)(10) \\sin(60^\\circ) = \\frac{1}{2}(80)\\frac{\\sqrt{3}}{2} = 20\\sqrt{3} \\). Since \\( AD \\) bisects \\( \\angle BAC \\), \\( \\angle BAD = \\angle CAD = 30^\\circ \\). Area\\( (\\triangle ABD) = \\frac{1}{2} AB \\cdot AD \\sin(\\angle BAD) = \\frac{1}{2} (8)(x) \\sin(30^\\circ) = 4x \\cdot \\frac{1}{2} = 2x \\). Area\\( (\\triangle ACD) = \\frac{1}{2} AC \\cdot AD \\sin(\\angle CAD) = \\frac{1}{2} (10)(x) \\sin(30^\\circ) = 5x \\cdot \\frac{1}{2} = \\frac{5x}{2} \\). Equating the areas: \\( 2x + \\frac{5x}{2} = 20\\sqrt{3} \\). \\( \\frac{4x + 5x}{2} = 20\\sqrt{3} \\). \\( \\frac{9x}{2} = 20\\sqrt{3} \\). \\( 9x = 40\\sqrt{3} \\). \\( x = \\frac{40\\sqrt{3}}{9} \\).",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "olympiad-geometry",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 12,
+    "remaining_q": 6,
     "subj_slug": "olympiad-geometry",
     "subj_name": "Geometry",
     "chapter": "Advanced Geometry",
@@ -218,6 +524,6 @@
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-09-12T05:17:51.064009Z",
-  "updated_at": "2026-09-12T05:17:51.064021Z"
+  "created_at": "2026-09-12T11:25:00.400936Z",
+  "updated_at": "2026-09-12T11:25:00.400953Z"
 }
