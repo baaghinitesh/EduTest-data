@@ -4,7 +4,7 @@
   "class_slug": "isc-class-12",
   "test_type": "subject-wise",
   "target_q": 40,
-  "collected_q": 24,
+  "collected_q": 32,
   "final_path": "data/admin/isc-class-12/tests/isc-class-12-mathematics-application-integrals-area-8abb5acd.json",
   "payload": {
     "id": "8abb5acd-72cb-4d8f-b444-4e929745e377",
@@ -21,9 +21,9 @@
     "topic": "Application Integrals Area",
     "testType": "subject-wise",
     "duration": 60,
-    "totalMarks": 24,
-    "passingMarks": 8,
-    "totalQuestions": 24,
+    "totalMarks": 32,
+    "passingMarks": 11,
+    "totalQuestions": 32,
     "targetQuestions": 40,
     "isPublic": true,
     "isPublished": true,
@@ -1276,11 +1276,419 @@
         "subject": "isc12-maths",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1789312821249-3083f",
+        "order": 25,
+        "question": "The area bounded by the curve $y = 2x + 3$, the x-axis, and the ordinates $x=1$ and $x=3$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "12 sq units",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "14 sq units",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "16 sq units",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "18 sq units",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The area (A) is given by the definite integral:\n$A = \\int_1^3 (2x + 3) dx$\n$A = \\left[ x^2 + 3x \\right]_1^3$\n$A = [(3^2 + 3 \\times 3) - (1^2 + 3 \\times 1)]$\n$A = [(9 + 9) - (1 + 3)]$\n$A = [18 - 4]$\n$A = 14$ sq units.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "isc12-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1789312821250-13cc3",
+        "order": 26,
+        "question": "The area of the region bounded by the parabola $y = x^2$, the x-axis, and the lines $x=0$ and $x=2$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$8/3$ sq units",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "$4/3$ sq units",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "$2/3$ sq units",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "$16/3$ sq units",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The area (A) is given by the definite integral:\n$A = \\int_0^2 x^2 dx$\n$A = \\left[ \\frac{x^3}{3} \\right]_0^2$\n$A = \\frac{2^3}{3} - \\frac{0^3}{3}$\n$A = \\frac{8}{3} - 0$\n$A = \\frac{8}{3}$ sq units.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "isc12-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1789312821250-723df",
+        "order": 27,
+        "question": "The area of the region bounded by the circle $x^2 + y^2 = 4$ and the x-axis in the first quadrant is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\pi$ sq units",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "$2\\pi$ sq units",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "$4\\pi$ sq units",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "$\\pi/2$ sq units",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The equation of the circle is $x^2 + y^2 = 2^2$, which means it has a radius of $r",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "isc12-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1789312821250-261e3",
+        "order": 28,
+        "question": "The area (in square units) bounded by the curve $y = x^2$, the x-axis, and the lines $x=0$ and $x=2$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\frac{2}{3}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "$\\frac{4}{3}$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "$\\frac{8}{3}$",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "$\\frac{16}{3}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The area A is given by the definite integral of the function $y = x^2$ from $x=0$ to $x=2$.\n$A = \\int_{0}^{2} x^2 \\, dx$\n$A = \\left[ \\frac{x^3}{3} \\right]_{0}^{2}$\n$A = \\frac{2^3}{3} - \\frac{0^3}{3}$\n$A = \\frac{8}{3} - 0$\n$A = \\frac{8}{3}$ square units.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "isc12-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1789312821250-0064d",
+        "order": 29,
+        "question": "The area of the region bounded by the curve $y = 2x+1$, the x-axis, and the lines $x=0$ and $x=2$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "4 sq. units",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "5 sq. units",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "6 sq. units",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "7 sq. units",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The area (A) is given by the definite integral of the function from $x=0$ to $x=2$. $A = \\int_0^2 (2x+1) dx$ $A = [x^2 + x]_0^2$ $A = (2^2 + 2) - (0^2 + 0)$ $A = (4 + 2) - 0$ $A = 6$ sq. units.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "isc12-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1789312821250-58aab",
+        "order": 30,
+        "question": "The area bounded by the curve $y = x^2$, the x-axis, and the lines $x=0$ and $x=2$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$8/3$ sq units",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "$4/3$ sq units",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "$2/3$ sq units",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "$1/3$ sq units",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The area (A)",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "isc12-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1789312821250-22bc4",
+        "order": 31,
+        "question": "The area (in square units) bounded by the parabola $y^2 = 4x$ and the y-axis is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\frac{16}{3}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "$\\frac{8}{3}$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "$0$",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "$\\frac{4}{3}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The parabola $y^2 = 4x$ opens towards the positive x-axis and passes through the origin. Since it is symmetric about the x-axis, and the y-axis is a line ($x=0$) passing through its vertex, the area bounded by the parabola $y^2 = 4x$ and the y-axis is 0. The parabola 'touches' the y-axis at the origin but does not enclose any region with it.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "isc12-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1789312821250-726db",
+        "order": 32,
+        "question": "The radius of a circle is increasing at the rate of 0.7 cm/s. What is the rate of increase of its circumference?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "0.7π cm/s",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "1.4π cm/s",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "0.7 cm/s",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "1.4 cm/s",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let $r$ be the radius and $C$ be the circumference of the",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "isc12-maths",
+        "difficulty": "easy",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 16,
+    "remaining_q": 8,
     "subj_slug": "isc12-maths",
     "subj_name": "Mathematics",
     "chapter": "Calculus",
@@ -1289,6 +1697,6 @@
     "class_number": 12,
     "cycle": 1
   },
-  "created_at": "2026-09-13T12:44:41.795264Z",
-  "updated_at": "2026-09-13T12:44:41.795284Z"
+  "created_at": "2026-09-13T15:20:21.250127Z",
+  "updated_at": "2026-09-13T15:20:21.250142Z"
 }
