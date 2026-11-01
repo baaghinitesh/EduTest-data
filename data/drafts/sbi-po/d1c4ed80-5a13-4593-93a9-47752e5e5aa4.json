@@ -4,7 +4,7 @@
   "class_slug": "sbi-po",
   "test_type": "combined",
   "target_q": 50,
-  "collected_q": 42,
+  "collected_q": 44,
   "final_path": "data/admin/sbi-po/tests/sbi-po-combined-reasoning-ability-english-language-d1c4ed80.json",
   "payload": {
     "id": "d1c4ed80-5a13-4593-93a9-47752e5e5aa4",
@@ -22,9 +22,9 @@
     "topic": "Combined",
     "testType": "subject-wise",
     "duration": 60,
-    "totalMarks": 42,
+    "totalMarks": 44,
     "passingMarks": 15,
-    "totalQuestions": 42,
+    "totalQuestions": 44,
     "targetQuestions": 50,
     "isPublic": true,
     "isPublished": true,
@@ -2194,37 +2194,113 @@
         "subject": "bank-reasoning",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1793562814908-39ea5",
+        "order": 43,
+        "question": "Statement: \"To combat rising air pollution levels, the State Government has issued a directive making it mandatory for all public transport vehicles in the capital city to switch to electric or CNG fuel within the next six months.\" Assumptions: I. Public transport vehicles are a significant contributor to air pollution in the capital city. II. Electric and CNG fuel options are less polluting than the currently used fuels in public transport vehicles. III. The government believes that public transport operators can procure and convert their vehicles to electric or CNG fuel within six months. Which of the following assumptions is/are implicit in the statement?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Only Assumption I is implicit",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "Only Assumption II is implicit",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "Only Assumptions I and II are implicit",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "All Assumptions I, II and III are implicit",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "*   **Assumption I:** For the directive to be a measure \"to combat rising air pollution levels,\" it must be assumed that public transport vehicles contribute significantly to this pollution. If they didn't, the measure would be ineffective for its stated purpose. Hence, I is implicit.\n*   **Assumption II:** The switch to electric or CNG fuel is mandated \"to combat rising air pollution levels.\" This inherently assumes that these alternative fuels are less polluting than the current ones. If they weren't, the directive would not serve its purpose. Hence, II is implicit.\n*   **Assumption III:** When a government issues a mandatory directive with a deadline, it implicitly assumes that the entities being directed (public transport operators) have the capability to comply within the given timeframe. If the government believed it was impossible, the directive would be arbitrary or ineffective. Hence, III is implicit.\nSince all three assumptions are necessary for the statement's logic and purpose, option D is the correct answer.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0.25,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "bank-reasoning",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793562814908-992fe",
+        "order": 44,
+        "question": "Statement: \"A prominent health organization has launched a nationwide campaign urging parents to limit their children's screen time to two hours per day to promote healthier lifestyles.\" Assumptions: I. Excessive screen time has a negative impact on children's health. II. Parents have the ability to monitor and control their children's screen time. III. Reducing screen time to two hours per day will guarantee a healthier lifestyle for children. Which of the following assumptions is/are implicit in the statement?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Only Assumption I is implicit",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "Only Assumptions I and II are implicit",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "Only Assumptions II and III are implicit",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "All Assumptions I, II and III are implicit",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "*   **Assumption I:** The campaign urges limiting screen time \"to promote healthier lifestyles.\" This directly assumes that the current/excessive screen time is detrimental to health, and reducing it will have a positive impact. Hence, I is implicit.\n*   **Assumption II:** For a campaign to \"urge parents to limit their children's screen time,\" it must assume that parents possess the agency and control to implement such a limit. If parents had no control, the urging would be futile. Hence, II is implicit.\n*   **Assumption III:** The statement says limiting screen time will \"promote healthier lifestyles,\" not \"guarantee\" one. \"Guarantee\" is a very strong word and goes beyond a reasonable assumption. A healthier lifestyle involves many factors (diet, exercise, sleep, etc.), and while reducing screen time contributes, it doesn't guarantee overall health. The campaign aims to *promote* it, not assure it. Hence, III is not implicit.\nTherefore, only Assumptions I and II are implicit.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0.25,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "bank-reasoning",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
     "remaining_topics": [
-      {
-        "classSlug": "sbi-po",
-        "board": "Competitive",
-        "type": "competitive",
-        "examConfig": {
-          "fullLengthQuestions": 100,
-          "fullLengthMarks": 100,
-          "fullLengthDuration": 60,
-          "subjectWiseQuestions": 35,
-          "subjectWiseMarks": 35,
-          "subjectWiseDuration": 30,
-          "negativeMarking": true,
-          "correctMarkValue": 1,
-          "negativeMarkValue": 0.25,
-          "subjectWiseQMin": 25,
-          "subjectWiseQMax": 35,
-          "combinedTestQPerSubject": 25
-        },
-        "subjectSlug": "bank-reasoning",
-        "subjectName": "Reasoning Ability",
-        "subjectIcon": "🧩",
-        "subjectColor": "#f59e0b",
-        "chapter": "Non Verbal",
-        "topic": "Statement Assumption",
-        "cycle": 1
-      },
       {
         "classSlug": "sbi-po",
         "board": "Competitive",
@@ -2254,13 +2330,13 @@
     ],
     "q_per_subj": 25,
     "collected_per_subj": {
-      "bank-reasoning": 23,
+      "bank-reasoning": 25,
       "bank-english": 19
     },
     "is_school": false,
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-11-01T17:33:06.209487Z",
-  "updated_at": "2026-11-01T17:33:06.209501Z"
+  "created_at": "2026-11-01T20:07:46.831440Z",
+  "updated_at": "2026-11-01T20:07:46.831456Z"
 }
