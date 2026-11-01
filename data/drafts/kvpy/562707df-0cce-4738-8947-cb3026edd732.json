@@ -4,7 +4,7 @@
   "class_slug": "kvpy",
   "test_type": "subject-wise",
   "target_q": 15,
-  "collected_q": 8,
+  "collected_q": 13,
   "final_path": "data/admin/kvpy/tests/kvpy-mathematics-mathematical-induction-562707df.json",
   "payload": {
     "id": "562707df-0cce-4738-8947-cb3026edd732",
@@ -21,9 +21,9 @@
     "topic": "Mathematical Induction",
     "testType": "subject-wise",
     "duration": 45,
-    "totalMarks": 8,
-    "passingMarks": 3,
-    "totalQuestions": 8,
+    "totalMarks": 13,
+    "passingMarks": 5,
+    "totalQuestions": 13,
     "targetQuestions": 15,
     "isPublic": true,
     "isPublished": true,
@@ -461,11 +461,266 @@
         "subject": "kvpy-maths",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1793516131655-89228",
+        "order": 9,
+        "question": "If $\\sin x + \\cos x = \\sqrt{2}$, then the general solution for $x$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$n\\pi + \\frac{\\pi}{4}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This option uses $n\\pi$ instead of $2n\\pi$. The general solution for $\\sin \\theta = 1$ requires $2n\\pi$ because the sine function completes a full cycle before repeating the value of 1 at the same phase."
+          },
+          {
+            "letter": "B",
+            "text": "$2n\\pi + \\frac{\\pi}{4}$",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the correct general solution. By transforming $\\sin x + \\cos x = \\sqrt{2}$ into $\\sin(x + \\frac{\\pi}{4}) = 1$, and knowing that $\\sin \\theta = 1$ implies $\\theta = 2n\\pi + \\frac{\\pi}{2}$, we substitute $x + \\frac{\\pi}{4}$ for $\\theta$ to get $x + \\frac{\\pi}{4} = 2n\\pi + \\frac{\\pi}{2}$, which simplifies to $x = 2n\\pi + \\frac{\\pi}{4}$."
+          },
+          {
+            "letter": "C",
+            "text": "$2n\\pi + \\frac{\\pi}{2}$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This option would be the general solution for $x$ if the original equation was simply $\\sin x = 1$ or $\\cos x = 0$ (with specific conditions for the sign), not for the given equation after simplification."
+          },
+          {
+            "letter": "D",
+            "text": "$n\\pi - \\frac{\\pi}{4}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This option contains both an incorrect coefficient for $n\\pi$ and an incorrect constant term. The correct general solution involves $2n\\pi$ and a positive $\\frac{\\pi}{4}$ term."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "We have $\\sin x + \\cos x = \\sqrt{2}$. To solve this, we can divide both sides by $\\sqrt{2}$: $\\frac{1}{\\sqrt{2}}\\sin x + \\frac{1}{\\sqrt{2}}\\cos x = 1$. This can be rewritten using trigonometric identities as $\\cos(\\frac{\\pi}{4})\\sin x + \\sin(\\frac{\\pi}{4})\\cos x = 1$. This is the expansion of $\\sin(x + \\frac{\\pi}{4}) = 1$. The general solution for $\\sin \\theta = 1$ is $\\theta = 2n\\pi + \\frac{\\pi}{2}$, where $n$ is an integer. Therefore, we set $x + \\frac{\\pi}{4} = 2n\\pi + \\frac{\\pi}{2}$. Solving for $x$, we get $x = 2n\\pi + \\frac{\\pi}{2} - \\frac{\\pi}{4} = 2n\\pi + \\frac{2\\pi - \\pi}{4} = 2n\\pi + \\frac{\\pi}{4}$.",
+        "hint": "Consider converting the left side of the equation into a single sine or cosine function using $\\sin A \\cos B + \\cos A \\sin B = \\sin(A+B)$ or similar identities.",
+        "marks": 1,
+        "negativeMark": 0.25,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "kvpy-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793516131655-d7d4c",
+        "order": 10,
+        "question": "The value of $\\sin 10^\\circ \\sin 50^\\circ \\sin 70^\\circ$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\frac{1}{16}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "$\\frac{1}{8}$",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "$\\frac{1}{4}$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "$\\frac{1}{2}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "We use the trigonometric identity: $\\sin \\theta \\sin (60^\\circ - \\theta) \\sin (60^\\circ +",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0.25,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "kvpy-maths",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1793516131655-6caee",
+        "order": 11,
+        "question": "The number of solutions for the equation $2\\sin^2 x + \\sin x - 1 = 0$ in the interval $[0, 2\\pi)$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "2",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "3",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "4",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "1",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let $y = \\sin x$. The equation becomes a quadratic equation in $y$:\n$2y^2 + y - 1 = 0$\nFactoring the quadratic:\n$(2y - 1)(y + 1$",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0.25,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "kvpy-maths",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793516131655-76d65",
+        "order": 12,
+        "question": "The value of $\\frac{\\sin(\\pi + x) \\cos(\\pi - x) \\tan(\\frac{3\\pi}{2} - x)}{\\sec(\\frac{\\pi}{2} + x) \\csc(\\frac{3\\pi}{2} + x) \\cot(2\\pi - x)}$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\sin^2 x \\cos^2 x$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "$-\\sin^2 x \\cos^2 x$",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "$\\sec^2 x \\csc^2 x$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "$-1$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0.25,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "kvpy-maths",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1793516131655-e2688",
+        "order": 13,
+        "question": "Find the number of solutions for the equation $2\\cos^2 x + \\sin x - 1 = 0$ in the interval $[0, 2\\pi]$.",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "1",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "2",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "3",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "4",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "The given equation is $2\\cos^2 x + \\sin x - 1 = 0$. Using the identity $\\cos^2 x = 1 - \\sin^2 x$,"
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The given equation is $2\\cos^2 x + \\sin x - 1 = 0$. Using the identity $\\cos^2 x = 1 - \\sin^2 x$,",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0.25,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "kvpy-maths",
+        "difficulty": "easy",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 7,
+    "remaining_q": 2,
     "subj_slug": "kvpy-maths",
     "subj_name": "Mathematics",
     "chapter": "Trigonometry Number Theory",
@@ -474,6 +729,6 @@
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-10-13T14:54:57.034512Z",
-  "updated_at": "2026-10-13T14:54:57.034523Z"
+  "created_at": "2026-11-01T06:55:31.655169Z",
+  "updated_at": "2026-11-01T06:55:31.655184Z"
 }
