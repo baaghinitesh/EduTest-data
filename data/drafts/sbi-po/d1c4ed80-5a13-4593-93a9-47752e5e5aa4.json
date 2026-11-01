@@ -4,7 +4,7 @@
   "class_slug": "sbi-po",
   "test_type": "combined",
   "target_q": 50,
-  "collected_q": 39,
+  "collected_q": 42,
   "final_path": "data/admin/sbi-po/tests/sbi-po-combined-reasoning-ability-english-language-d1c4ed80.json",
   "payload": {
     "id": "d1c4ed80-5a13-4593-93a9-47752e5e5aa4",
@@ -22,9 +22,9 @@
     "topic": "Combined",
     "testType": "subject-wise",
     "duration": 60,
-    "totalMarks": 39,
-    "passingMarks": 14,
-    "totalQuestions": 39,
+    "totalMarks": 42,
+    "passingMarks": 15,
+    "totalQuestions": 42,
     "targetQuestions": 50,
     "isPublic": true,
     "isPublished": true,
@@ -2041,6 +2041,159 @@
         "subject": "bank-english",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1793554386209-4b2be",
+        "order": 40,
+        "question": "Consider the following statement and assumptions:\nStatement: \"The municipal corporation has announced that water supply will be suspended for 8 hours on Saturday for maintenance work.\"\nAssumptions:\nI. Residents will make alternative arrangements for water.\nII. The municipal corporation is responsible for water supply maintenance.\nWhich of the given options correctly identifies the implicit assumption(s)?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Only assumption I is implicit.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "Only assumption II is implicit.",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "Both assumptions I and II are implicit.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "Neither assumption I nor II is implicit.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Assumption I: The announcement is a warning, expecting residents to prepare",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0.25,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "bank-reasoning",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793554386209-54d17",
+        "order": 41,
+        "question": "Statement: \"The government has decided to launch a new scheme providing interest-free loans to small businesses to boost economic growth.\"\nAssumptions:\nI. Small businesses need financial assistance.\nII. Interest-free loans will encourage small businesses to take loans and expand.\n\nWhich of the following assumption(s) is/are implicit in the given statement?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Only assumption I is implicit.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "Only assumption II is implicit.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "Both assumptions I and II are implicit.",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "Neither assumption I nor II is implicit.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The government's decision to provide financial assistance (interest-free loans) to small businesses implicitly assumes that these businesses are in need of such assistance (Assumption I). Furthermore, the stated purpose of the scheme is \"to boost economic growth,\" which relies on the belief that these interest-free loans will indeed encourage businesses to borrow and expand, thereby stimulating growth (Assumption II). Both are fundamental premises for the government's action.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0.25,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "bank-reasoning",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793554386209-fefcb",
+        "order": 42,
+        "question": "Statement: \"A company advertisement states: 'Buy our new 'SmartClean' washing machine and save 30% on your electricity bill every month!'\"\nAssumptions:\nI. Customers are concerned about their electricity bills.\nII. The 'SmartClean' washing machine consumes less electricity than other washing machines.\n\nWhich of the following assumption(s) is/are implicit in the given statement?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Only assumption I is implicit.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "Only assumption II is implicit.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "Both assumptions I and II are implicit.",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "Neither assumption I nor II is implicit.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For an advertisement to highlight \"saving 30% on your electricity bill\" as a key selling point, it implicitly assumes that potential customers are indeed concerned about their electricity expenses and would be motivated by such savings (Assumption I). Additionally, for the claim of saving electricity to be valid and a reason to buy, it must be assumed",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0.25,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "bank-reasoning",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
@@ -2101,13 +2254,13 @@
     ],
     "q_per_subj": 25,
     "collected_per_subj": {
-      "bank-reasoning": 20,
+      "bank-reasoning": 23,
       "bank-english": 19
     },
     "is_school": false,
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-11-01T15:25:33.770271Z",
-  "updated_at": "2026-11-01T15:25:33.770284Z"
+  "created_at": "2026-11-01T17:33:06.209487Z",
+  "updated_at": "2026-11-01T17:33:06.209501Z"
 }
