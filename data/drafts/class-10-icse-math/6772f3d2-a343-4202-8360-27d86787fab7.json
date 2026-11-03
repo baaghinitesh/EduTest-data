@@ -4,7 +4,7 @@
   "class_slug": "class-10-icse-math",
   "test_type": "subject-wise",
   "target_q": 40,
-  "collected_q": 10,
+  "collected_q": 12,
   "final_path": "data/admin/class-10-icse-math/tests/class-10-icse-math-mathematics-topic-9-6772f3d2.json",
   "payload": {
     "id": "6772f3d2-a343-4202-8360-27d86787fab7",
@@ -21,9 +21,9 @@
     "topic": "Topic 9",
     "testType": "subject-wise",
     "duration": 60,
-    "totalMarks": 40,
-    "passingMarks": 14,
-    "totalQuestions": 10,
+    "totalMarks": 48,
+    "passingMarks": 17,
+    "totalQuestions": 12,
     "targetQuestions": 40,
     "isPublic": true,
     "isPublished": true,
@@ -561,11 +561,113 @@
         "subject": "mathematics",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1793741290151-9272b",
+        "order": 11,
+        "question": "For what value of 'k' will the quadratic equation $kx^2 - 12x + 9 = 0$ have real and equal roots?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "-4",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "3",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "4",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "9",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For a quadratic equation $ax^2 + bx + c = 0$ to have real and equal roots, its discriminant $D = b^2 - 4ac$ must be equal to 0.\nIn the given equation $kx^2 - 12x + 9 = 0$, we have $a = k$, $b = -12$, and $c = 9$.\nSet $D = 0$:\n$(-12)^2 - 4(k)(9) = 0$\n$144 - 36k = 0$\n$144 = 36k$\n$k = \\frac{144}{36}$\n$k = 4$",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793741290151-bd0a8",
+        "order": 12,
+        "question": "If $A = \\begin{pmatrix} 5 & -2 \\\\ 3 & 1 \\end{pmatrix}$ and $B = \\begin{pmatrix} 2 & 4 \\\\ -1 & 0 \\end{pmatrix}$, find the element $c_{12}$ of matrix $C$ where $C = A - B$.",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "2",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "5",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "-6",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "3",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "To find matrix $C = A - B$, we subtract the corresponding elements of matrix B from matrix A.\n$C = \\begin{pmatrix} 5 & -2 \\\\ 3",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 30,
+    "remaining_q": 28,
     "subj_slug": "mathematics",
     "subj_name": "Mathematics",
     "chapter": "General Topics",
@@ -574,6 +676,6 @@
     "class_number": null,
     "cycle": 2
   },
-  "created_at": "2026-11-03T18:56:09.081743Z",
-  "updated_at": "2026-11-03T18:56:09.081756Z"
+  "created_at": "2026-11-03T21:28:10.151868Z",
+  "updated_at": "2026-11-03T21:28:10.151883Z"
 }
