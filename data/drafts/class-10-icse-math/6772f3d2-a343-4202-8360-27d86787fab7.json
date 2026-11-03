@@ -4,7 +4,7 @@
   "class_slug": "class-10-icse-math",
   "test_type": "subject-wise",
   "target_q": 40,
-  "collected_q": 8,
+  "collected_q": 10,
   "final_path": "data/admin/class-10-icse-math/tests/class-10-icse-math-mathematics-topic-9-6772f3d2.json",
   "payload": {
     "id": "6772f3d2-a343-4202-8360-27d86787fab7",
@@ -21,9 +21,9 @@
     "topic": "Topic 9",
     "testType": "subject-wise",
     "duration": 60,
-    "totalMarks": 32,
-    "passingMarks": 13,
-    "totalQuestions": 8,
+    "totalMarks": 40,
+    "passingMarks": 14,
+    "totalQuestions": 10,
     "targetQuestions": 40,
     "isPublic": true,
     "isPublished": true,
@@ -459,11 +459,113 @@
         "subject": "mathematics",
         "difficulty": "hard",
         "hasError": false
+      },
+      {
+        "id": "q-1793732169081-0ae9e",
+        "order": 9,
+        "question": "If the roots of the quadratic equation $3x^2 - 12x + (k+1) = 0$ are real and equal, then the value of $k$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "11",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "12",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "13",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "14",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For a quadratic equation $ax^2 + bx + c = 0$, the roots are real and equal if the discriminant $D = b^2 - 4ac = 0$. Given equation: $3x^2 - 12x + (k+1) = 0$. Here, $a=3$, $b=-12$, $c=(k+1)$. Set the discriminant to zero: $(-12)^2 - 4(3)(k+1) = 0$. $144 - 12(k+1) = 0$. $144 = 12(k+1)$. Divide both sides by 12: $12 = k+1$. $k = 12 - 1$. $k = 11$.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793732169081-7a4dd",
+        "order": 10,
+        "question": "If the 5th term of an Arithmetic Progression (AP) is 18 and the 10th term is 38, find the common difference.",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "3",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "4",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "5",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "6",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let the first term be 'a' and the common difference be 'd'. The nth term of an AP is given by $T_n = a + (n-1)d$. Given: $T_5 = a + (5-1)d = a + 4d = 18$ --- (1) $T_{10} = a + (10-1)d = a + 9d = 38$ --- (2) Subtract equation (1) from equation (2): $(a + 9d) - (a + 4d) = 38 - 18$ $5d = 20$ $d = 20 / 5$ $d = 4$ The common difference is 4.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 32,
+    "remaining_q": 30,
     "subj_slug": "mathematics",
     "subj_name": "Mathematics",
     "chapter": "General Topics",
@@ -472,6 +574,6 @@
     "class_number": null,
     "cycle": 2
   },
-  "created_at": "2026-11-03T16:11:28.680578Z",
-  "updated_at": "2026-11-03T16:11:28.680581Z"
+  "created_at": "2026-11-03T18:56:09.081743Z",
+  "updated_at": "2026-11-03T18:56:09.081756Z"
 }
