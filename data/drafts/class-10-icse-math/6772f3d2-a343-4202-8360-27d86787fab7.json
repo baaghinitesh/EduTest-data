@@ -4,7 +4,7 @@
   "class_slug": "class-10-icse-math",
   "test_type": "subject-wise",
   "target_q": 40,
-  "collected_q": 27,
+  "collected_q": 34,
   "final_path": "data/admin/class-10-icse-math/tests/class-10-icse-math-mathematics-topic-9-6772f3d2.json",
   "payload": {
     "id": "6772f3d2-a343-4202-8360-27d86787fab7",
@@ -21,9 +21,9 @@
     "topic": "Topic 9",
     "testType": "subject-wise",
     "duration": 60,
-    "totalMarks": 108,
-    "passingMarks": 38,
-    "totalQuestions": 27,
+    "totalMarks": 136,
+    "passingMarks": 48,
+    "totalQuestions": 34,
     "targetQuestions": 40,
     "isPublic": true,
     "isPublished": true,
@@ -1428,11 +1428,368 @@
         "subject": "mathematics",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1793819369906-1ef72",
+        "order": 28,
+        "question": "For what value of 'k' does the quadratic equation $3x^2 - 5x + k = 0$ have real and distinct roots?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$k < 25/12$",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "$k > 25/12$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "$k \\le 25/12$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "$k \\ge 25/12$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For a quadratic equation $ax^2 + bx + c = 0$ to have real and distinct roots, its discriminant $D = b",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1793819369907-1ab4c",
+        "order": 29,
+        "question": "If the 5th term of an Arithmetic Progression (AP) is 18 and the 12th term is 39, then the 20th term of the AP is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "60",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "63",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "66",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "69",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let the first term be 'a' and the common difference be 'd'.\nThe formula for the nth term of an AP is $T_n = a + (n-1)d$.\nGiven:\n$T_5 = a + (5-1)d = a + 4d = 18$  --- (1)\n$T_{12} = a + (12-1)d = a + 11d = 39$ --- (2)\n\nSubtracting (1) from (2):\n$(a + 11d) - (a + 4d) = 39 - 18$\n$7d = 21$\n$d = 3$\n\nSubstitute $d=3$ into (1):\n$a + 4(3) = 18$\n$a + 12 = 18$\n$a = 6$\n\nNow, find the 20th term ($T_{20}$):\n$T_{20} = a + (20-1)d = a + 19d$\n$T_{20} = 6 + 19(3)$\n$T_{20} = 6 + 57$\n$T_{20} = 63$\n\nWait, I made a calculation error in my thought process. $6+57 = 63$. Let me recheck the options. Ah, I see, option C is 66, not 63. Let me re-calculate again very carefully.\n$a+4d=18$\n$a+11d=39$\n$7d=21 \\Rightarrow d=3$\n$a+4(3)=18 \\Rightarrow a+12=18 \\Rightarrow a=6$\n$T_{20} = a+19d = 6+19(3) = 6+57 = 63$.\nMy answer is 63. Option B is 63. So the correct option is B. I must be careful with the asterisk placement.\n\nLet's correct the explanation and the asterisk.\n\n$T_{20} = 6 + 19(3) = 6 + 57 = 63$\n\nTherefore, the 20th term is 63.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793819369907-77dc7",
+        "order": 30,
+        "question": "If one root of the quadratic equation $3x^2 - 10x + k = 0$ is the reciprocal of the other, then the value of $k$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\frac{10}{3}$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "$-3$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "$3$",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct. If one root is the reciprocal of the other, their product is 1. For $ax^2+bx+c=0$, the product of roots is $c/a$. So, $k/3 = 1$, which implies $k=3$."
+          },
+          {
+            "letter": "D",
+            "text": "$\\frac{3}{10}$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let the roots of the quadratic equation $ax^2 + bx + c = 0$ be $\\alpha$ and $\\beta$. The product of the roots is given by $\\alpha \\beta = \\frac{c}{a}$. For the given equation $3x^2 - 10x + k = 0$, we have $a=3$, $b=-10$, and $c=k$. Let one root be $\\alpha$. According to the problem, the other root is its reciprocal, i.e., $\\frac{1}{\\alpha}$. Product of roots = $\\alpha \\times \\frac{1}{\\alpha} = 1$. Also, product of roots = $\\frac{c}{a} = \\frac{k}{3}$. Therefore, $1 = \\frac{k}{3}$. Solving for $k$, we get $k = 3$.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793819369907-8e74d",
+        "order": 31,
+        "question": "A solid metallic sphere of radius 6 cm is melted and recast into a solid cone of height 24 cm. What is the radius of the base of the cone?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "3 cm",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "4 cm",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "6 cm",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct. Equate the volume of the sphere ($\\frac{4}{3}\\pi R^3$) to the volume of the cone ($\\frac{1}{3}\\pi r^2 h$). Given R=6 cm, h=24 cm. So, $\\frac{4}{3}\\pi (6^3) = \\frac{1}{3}\\pi r^2 (24)$, which simplifies to $4 \\times 216 = 24 r^2 \\Rightarrow 864 = 24 r^2 \\Rightarrow r^2 = 36 \\Rightarrow r = 6$ cm."
+          },
+          {
+            "letter": "D",
+            "text": "8 cm",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "When a solid is melted and recast, its volume remains the same.\nVolume of a sphere = $\\frac{4}{3}\\pi R^3$. Given radius of sphere (R) = 6 cm.\nVolume of sphere = $\\frac{4}{3}\\pi (6)^3 = \\frac{4}{3}\\pi (216) = 4 \\times 72 \\pi = 288\\pi$ cm$^3$.\nVolume of a cone = $\\frac{1}{3}\\pi r^2 h$. Given height of cone (h) = 24 cm. Let the radius of the base of the cone be 'r'.\nVolume of cone = $\\frac{1}{3}\\pi r^2 (24) = 8\\pi r^2$ cm$^3$.\nEquating the volumes:\n$288\\pi = 8\\pi r^2$\nDivide both sides by $8\\pi$: \n$r^2 = \\frac{288}{8}$\n$r^2 = 36$\n$r = \\sqrt{36}$\n$r = 6$ cm.\nThus, the radius of the base of the cone is 6 cm.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793819369907-e5aaf",
+        "order": 32,
+        "question": "For what value(s) of 'k' does the quadratic equation $x^2 + (k-2)x + 9 = 0$ have equal roots?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "8",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "-4",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "8 or -4",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "10 or -2",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For a quadratic equation $ax^2 + bx + c = 0$ to have equal roots, its discriminant $D = b^2 - 4ac$ must be equal to zero.\nIn the given equation, $a=1$, $b=(k-2)$, and $c=9$.\nSo, $(k-2)^2 - 4(1)(9) = 0$\n$(k-2)^2 - 36 = 0$\n$(k-2)^2 = 36$\nTaking the square root on both sides:\n$k-2 = \\pm \\sqrt{36}$\n$k-2 = \\pm 6$\nTwo possible values for k:\n1) $k-2 = 6 \\implies k = 6+2 = 8$\n2) $k-2 = -6 \\implies k = -6+2 = -4$\nThus, the values of k are 8 or -4.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793819369907-aafd0",
+        "order": 33,
+        "question": "The HCF of two numbers is 12 and their product is 864. What is their LCM?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "144",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "72",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This is the correct LCM, calculated as 864 / 12."
+          },
+          {
+            "letter": "C",
+            "text": "216",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "10368",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For any two positive integers, the product of the numbers is equal to the product of their HCF and LCM. Given: Product of numbers = 864 and HCF = 12. Using the formula, Product of numbers = HCF × LCM, we have 864 = 12 × LCM. Solving for LCM, we get LCM = 864 / 12 = 72.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793819369907-8ec58",
+        "order": 34,
+        "question": "If the roots of the quadratic equation $3x^2 - 7x + k = 0$ are reciprocal of each other, what is the value of k?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "-3",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "7",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "-7",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "3",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For a quadratic equation $ax^2 + bx + c = 0$, the product of roots is given by $c/a$. If the roots are reciprocal of each other, let them be $\\alpha$ and $1/\\alpha$. Their",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 13,
+    "remaining_q": 6,
     "subj_slug": "mathematics",
     "subj_name": "Mathematics",
     "chapter": "General Topics",
@@ -1441,6 +1798,6 @@
     "class_number": null,
     "cycle": 2
   },
-  "created_at": "2026-11-04T15:20:41.723153Z",
-  "updated_at": "2026-11-04T15:20:41.723175Z"
+  "created_at": "2026-11-04T19:09:29.907142Z",
+  "updated_at": "2026-11-04T19:09:29.907156Z"
 }
