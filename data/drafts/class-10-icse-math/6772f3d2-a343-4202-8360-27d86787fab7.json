@@ -4,7 +4,7 @@
   "class_slug": "class-10-icse-math",
   "test_type": "subject-wise",
   "target_q": 40,
-  "collected_q": 15,
+  "collected_q": 27,
   "final_path": "data/admin/class-10-icse-math/tests/class-10-icse-math-mathematics-topic-9-6772f3d2.json",
   "payload": {
     "id": "6772f3d2-a343-4202-8360-27d86787fab7",
@@ -21,9 +21,9 @@
     "topic": "Topic 9",
     "testType": "subject-wise",
     "duration": 60,
-    "totalMarks": 60,
-    "passingMarks": 21,
-    "totalQuestions": 15,
+    "totalMarks": 108,
+    "passingMarks": 38,
+    "totalQuestions": 27,
     "targetQuestions": 40,
     "isPublic": true,
     "isPublished": true,
@@ -816,11 +816,623 @@
         "subject": "mathematics",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1793805641722-956c9",
+        "order": 16,
+        "question": "If the roots of the quadratic equation $x^2 - px + 9 = 0$ are real and equal, then the value(s) of $p$ is/are:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\pm 3$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "$6$ only",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "$\\pm 6$",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "$-3$ only",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For a quadratic equation $ax^2 + bx + c = 0$, the roots are real and equal if the discriminant $D = b^2 - 4ac = 0$. In the given equation $x^2 - px + 9 = 0$, we have $a=1$, $b=-p$, and $c=9$. So, $(-p)^2 - 4(1)(9) = 0$. $p^2 - 36 = 0$. $p^2 = 36$. $p = \\pm \\sqrt{36}$. $p = \\pm 6$.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793805641722-246fc",
+        "order": 17,
+        "question": "The 15th term of an Arithmetic Progression (AP) whose first term is 7 and common difference is 4, is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "63",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "67",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "63",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "64",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The formula for the $n$-th term of an AP is $a_n = a + (n-1)d$. Given: first term $a = 7$, common difference $d = 4$, and $n = 15$. $a_{15} = 7 + (15-1) \\times 4$. $a_{15} = 7 + 14 \\times 4$. $a_{15} = 7 + 56$. $a_{15} = 63$.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1793805641722-4e581",
+        "order": 18,
+        "question": "In the given figure, O is the centre of the circle. PQ is a tangent to the circle at point R. If $\\angle TRQ = 30^\\circ$, then $\\angle ROS$ is: (Assume T, R, S are points on the circle, and RS is a chord. ROS is a central angle subtended by chord RS.)",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$60^\\circ$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "$90^\\circ$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "$120^\\circ$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "$150^\\circ$",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "According to the Alternate Segment Theorem, the angle between a tangent and a chord through the point of contact is equal to the angle in the alternate segment. So, $\\angle TSR = \\angle TRQ = 30^\\circ$. (Here, TSR is the angle subtended by chord RS in the alternate segment). The angle subtended by an arc at the centre is double the angle subtended by it at any point on the remaining part of the circle. Therefore, $\\angle ROS = 2 \\times \\angle TSR$. $\\angle ROS = 2 \\times 30^\\circ = 60^\\circ$.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793805641722-1568b",
+        "order": 19,
+        "question": "If the roots of the quadratic equation $3x^2 - 7x + k = 0$ are reciprocal of each other, what is the value of k?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "7",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "-7",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "-3",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "3",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For a quadratic equation $ax^2 + bx + c = 0$, if the roots are reciprocal of each other, then the product of the roots is 1. The product of roots is given by $c/a$. In the given equation, $a=3$, $b=-7$, and $c=k$. So, $k/3 = 1$. Therefore, $k = 3$.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793805641722-1e2b0",
+        "order": 20,
+        "question": "A tangent PT at a point P of a circle with centre O and radius 8 cm meets a line through O at a point T such that OT = 17 cm. What is the length of the tangent segment PT?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "9 cm",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "15 cm",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "12 cm",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "15 cm",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "According to the tangent-radius theorem, the radius drawn to the point of tangency is perpendicular to the tangent. Therefore, triangle OPT is a right-angled triangle with the right angle at P. Here, OP is the radius (r) = 8 cm. OT is the hypotenuse = 17 cm. PT is the tangent segment. Using Pythagoras theorem: $OP^2 + PT^2 = OT^2$. $8^2 + PT^2 = 17^2$. $64 + PT^2 = 289$. $PT^2 = 289 - 64$. $PT^2 = 225$. $PT = \\sqrt{225}$. $PT = 15$ cm.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793805641722-4c2ae",
+        "order": 21,
+        "question": "The radius of a solid hemisphere is 9 cm. What is its total surface area? (Use $\\pi = 22/7$)",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$847.28 \\text{ cm}^2$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "$509.14 \\text{ cm}^2$",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "$763.71 \\text{ cm}^2$",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "$1527.42 \\text{ cm}^2$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The total surface area (TSA) of a solid hemisphere is given by the formula $TSA = 3\\pi r^2$. Given radius (r) = 9 cm. $TSA = 3 \\times \\frac{22}{7} \\times (9 \\text{ cm})^2 = 3 \\times \\frac{22}{7} \\times 81 \\text{ cm}^2 = \\frac{5346}{7} \\text{ cm}^2 \\approx 763.71 \\text{ cm}^2$.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793805641722-3adec",
+        "order": 22,
+        "question": "The sum of the first 'n' terms of an A.P. is given by S_n = 3n² + 5n. The common difference of the A.P. is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "2",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "4",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "6",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "8",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "We are given S_n = 3n² + 5n.\nThe first term, a₁ = S₁ = 3(1)² + 5(1) = 3 + 5 = 8.\nThe sum of the first two terms, S₂ = 3(2)² + 5(2) = 3(4) + 10 = 12 + 10 = 22.\nThe second term, a₂ = S₂ - S₁ = 22 - 8 = 14.\nThe common difference, d = a₂ - a₁ = 14 - 8 = 6.\nAlternatively, for an A.P. where S_n = An² + Bn, the common difference is 2A. Here A=3, so d = 2(3) = 6.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793805641723-4b372",
+        "order": 23,
+        "question": "If the quadratic equation $3x^2 - (k+1)x + (k+1) = 0$ has equal roots, then the value(s) of $k$ is/are:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "11",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "11, -2",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "-2",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "11, -1",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For a quadratic equation $ax^2 + bx + c = 0$ to have equal roots, its discriminant $D = b^2 - 4ac$ must be equal to 0.\nHere, $a = 3$, $b = -(k+1)$, $c = (k+1)$.\nSo, $D = (-(k+1))^2 - 4(3)(k+1) = 0$\n$(k+1)^2 - 12(k+1) = 0$\nFactor out $(k+1)$:\n$(k+1)( (k+1) - 12 ) = 0$\n$(k+1)(k - 11) = 0$\nThis gives two possible values for $k$:\n$k+1 = 0 \\implies k = -1$\n$k-11 = 0 \\implies k = 11$\nThus, the values of $k$ are 11 and -1.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793805641723-cbc6f",
+        "order": 24,
+        "question": "A bag contains 5 red balls, 7 blue balls, and 3 green balls. One ball is drawn at random from the bag. What is the probability that the ball drawn is neither red nor green?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "5/15",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This represents the probability of drawing a red ball (5 red balls out of 15 total), which is not the question asked."
+          },
+          {
+            "letter": "B",
+            "text": "3/15",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This represents the probability of drawing a green ball (3 green balls out of 15 total), which is not the question asked."
+          },
+          {
+            "letter": "C",
+            "text": "7/15",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "The total number of balls is 15. A ball that is 'neither red nor green' must be a blue ball. There are 7 blue balls. Thus, the probability is 7/15."
+          },
+          {
+            "letter": "D",
+            "text": "8/15",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This represents the probability of drawing a ball that is either red or green (5 red + 3 green = 8 balls out of 15 total), which is the opposite of what is asked."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Total number of balls in the bag = Number of red balls + Number of blue balls + Number of green balls = 5 + 7 + 3 = 15. The event 'neither red nor green' means the ball drawn must be blue. The number of blue balls is 7. Therefore, the probability that the ball drawn is neither red nor green (i.e., blue) is the number of blue balls divided by the total number of balls, which is 7/15.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793805641723-4308f",
+        "order": 25,
+        "question": "If the roots of the quadratic equation $2x^2 - px + 8 = 0$ are real and equal, then the value of $p$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "$\\pm 4$",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This value would imply $p^2 = 16$, which does not satisfy the condition $p^2 = 64$ for real and equal roots."
+          },
+          {
+            "letter": "B",
+            "text": "$\\pm 8$",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "When $p = \\pm 8$, the discriminant is $D = (-(\\pm 8))^2 - 4(2)(8) = 64 - 64 = 0$. This confirms that the roots are real and equal."
+          },
+          {
+            "letter": "C",
+            "text": "$\\pm 16$",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This value would imply $p^2 = 256$, which does not satisfy the condition $p^2 = 64$ for real and equal roots."
+          },
+          {
+            "letter": "D",
+            "text": "$\\pm 2$",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This value would imply $p^2 = 4$, which does not satisfy the condition $p^2 = 64$ for real and equal roots."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For a quadratic equation of the form $ax^2 + bx + c = 0$, the roots are real and equal if and only if its discriminant, $D = b^2 - 4ac$, is equal to 0.\n\nIn the given equation, $2x^2 - px + 8 = 0$, we have:\n$a = 2$\n$b = -p$\n$c = 8$\n\nSetting the discriminant to zero:\n$(-p)^2 - 4(2)(8) = 0$\n$p^2 - 64 = 0$\n$p^2 = 64$\n$p = \\pm\\sqrt{64}$\n$p = \\pm 8$\n\nTherefore, the value of $p$ is $\\pm 8$.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793805641723-546f4",
+        "order": 26,
+        "question": "If the roots of the quadratic equation $kx^2 - 12x + 9 = 0$ are real and equal, then the value of $k$ is:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "3",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "-3",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "4",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "-4",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "For a quadratic equation $ax^2 + bx + c = 0$ to have real and equal roots, its discriminant ($D$) must be equal to zero. Here, $a = k$, $b = -12$, $c = 9$. $D = b^2 - 4ac = 0$ $(-12)^2 - 4(k)(9) = 0$ $144 - 36k = 0$ $144 = 36k$ $k = \\frac{144}{36}$ $k = 4$",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793805641723-a70fe",
+        "order": 27,
+        "question": "The sum of the first 15 terms of an Arithmetic Progression (AP) is 455. If the first term is 7, what is the 10th term of the AP?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "35",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "37",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "39",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "41",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let the first term be $a$ and the common difference be $d$. Given: $S_{15} = 455$, $n = 15$, $a = 7$. The formula for the sum of $n$ terms is $S_n = \\frac{n}{2}[2a + (n-1)d]$. $455 = \\frac{15}{2}[2(7) + (15-1)d]$ $455 = \\frac{15}{2}[14 + 14d]$ $455 = 15(7 + 7d)$ Divide by 15: $\\frac{455}{15} = 7 + 7d$ $\\frac{91}{3} = 7 + 7d$ $\\frac{91}{3} - 7 = 7d$ $\\frac{91 - 21}{3} = 7d$ $\\frac{70}{3} = 7d$ $d = \\frac{70}{3 \\times 7}$ $d = \\frac{10}{3}$ Now, we need to find the 10th term, $a_{10}$. The formula for the $n$-th term is $a_n = a + (n-1)d$. $a_{10} = 7 + (10-1)(\\frac{10}{3})$ $a_{10} = 7 + 9(\\frac{10}{3})$ $a_{10} = 7 + 3 \\times 10$ $a_{10} = 7 + 30$ $a_{10} = 37$",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 25,
+    "remaining_q": 13,
     "subj_slug": "mathematics",
     "subj_name": "Mathematics",
     "chapter": "General Topics",
@@ -829,6 +1441,6 @@
     "class_number": null,
     "cycle": 2
   },
-  "created_at": "2026-11-04T07:11:13.884772Z",
-  "updated_at": "2026-11-04T07:11:13.884784Z"
+  "created_at": "2026-11-04T15:20:41.723153Z",
+  "updated_at": "2026-11-04T15:20:41.723175Z"
 }
