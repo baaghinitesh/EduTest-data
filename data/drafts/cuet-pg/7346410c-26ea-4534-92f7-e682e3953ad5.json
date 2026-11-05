@@ -4,7 +4,7 @@
   "class_slug": "cuet-pg",
   "test_type": "subject-wise",
   "target_q": 35,
-  "collected_q": 21,
+  "collected_q": 31,
   "final_path": "data/admin/cuet-pg/tests/cuet-pg-core-subject-hypothesis-formulation-testing-7346410c.json",
   "payload": {
     "id": "7346410c-26ea-4534-92f7-e682e3953ad5",
@@ -21,9 +21,9 @@
     "topic": "Hypothesis Formulation Testing",
     "testType": "subject-wise",
     "duration": 45,
-    "totalMarks": 84,
-    "passingMarks": 29,
-    "totalQuestions": 21,
+    "totalMarks": 124,
+    "passingMarks": 43,
+    "totalQuestions": 31,
     "targetQuestions": 35,
     "isPublic": true,
     "isPublished": true,
@@ -1124,11 +1124,521 @@
         "subject": "cuet-pg-core",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1793906101420-7420f",
+        "order": 22,
+        "question": "What is the primary purpose of formulating a null hypothesis (H₀) in quantitative research?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "To state the expected relationship or difference that the researcher aims to prove.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This describes the alternative hypothesis."
+          },
+          {
+            "letter": "B",
+            "text": "To summarize the researcher's prior beliefs or assumptions about the population.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "This statement is too broad and doesn't capture the primary purpose of a null hypothesis."
+          },
+          {
+            "letter": "C",
+            "text": "To provide a statement of no effect, no difference, or no relationship, which is then subjected to statistical testing.",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "The null hypothesis (H₀) is precisely a statement of no effect, no difference, or no relationship between variables, which is then statistically tested for potential rejection."
+          },
+          {
+            "letter": "D",
+            "text": "To articulate the research question in a concise and testable form.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "This describes a research question, not the null hypothesis itself."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The null hypothesis (H₀) is a statement of no effect, no difference, or no relationship between variables. It is the statement that researchers aim to reject based on the evidence from the sample data.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793906101421-782d9",
+        "order": 23,
+        "question": "A researcher concludes that a new teaching method significantly improves student performance, when in reality, it has no effect. Which type of error has the researcher committed?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sampling Error",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "Type I Error",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "Type II Error",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "Option D",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793906101421-4e1ad",
+        "order": 24,
+        "question": "What is the primary characteristic that distinguishes a scientific hypothesis from a general statement or belief?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "It must be complex and involve multiple variables.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "It must be based on the researcher's personal intuition.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "It must be empirically testable and potentially falsifiable.",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "It always predicts a positive outcome or effect.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "A scientific hypothesis is a testable statement about the relationship between variables. Its core characteristic is that it can be subjected to empirical investigation (data collection and analysis) and can potentially be proven false (falsifiable), which is crucial for scientific progress.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1793906101421-d9198",
+        "order": 25,
+        "question": "Which type of hypothesis proposes that there is no significant difference or no relationship between the variables being studied?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Alternative hypothesis",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "The alternative hypothesis proposes a significant difference or relationship."
+          },
+          {
+            "letter": "B",
+            "text": "Research hypothesis",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "A research hypothesis is a general term for an alternative hypothesis."
+          },
+          {
+            "letter": "C",
+            "text": "Null hypothesis",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "The null hypothesis ($H_0$) is a statement of no effect or no difference, which researchers aim to test and potentially reject."
+          },
+          {
+            "letter": "D",
+            "text": "Directional hypothesis",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "A directional hypothesis is a type of alternative hypothesis that specifies the direction of the relationship or difference."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The null hypothesis ($H_0$) is a statement of no effect or no difference, which researchers aim to test and potentially reject. The alternative hypothesis ($H_1$) proposes a significant difference or relationship.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1793906101421-67d43",
+        "order": 26,
+        "question": "Which of the following statements best describes the primary purpose of formulating a null hypothesis (H₀) in research?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "To state the expected relationship or difference between variables based on theory.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "To state that there is no significant relationship or difference between variables.",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "To prove the researcher's initial theory or prediction.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "To guide the selection of appropriate data collection methods.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The null hypothesis (H₀) is a statement of no effect, no relationship, or no difference between the variables being studied. It serves as a baseline for statistical testing, which aims to find evidence to reject it in favor of an alternative hypothesis.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793906101421-fb312",
+        "order": 27,
+        "question": "What is the primary purpose of a null hypothesis (H₀) in statistical testing?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "To state the researcher's expected outcome or alternative theory.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "To propose a significant difference or relationship between variables.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "To assume no significant difference or relationship exists between variables or between a parameter and a hypothesized value.",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "To identify and control for extraneous variables in an experiment.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The null hypothesis (H₀) serves as a statement of no effect, no difference, or no relationship. It is the hypothesis that the researcher attempts to disprove or reject. Options A and B describe the alternative hypothesis (H₁), while D is unrelated to the definition of H₀.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793906101421-119cc",
+        "order": 28,
+        "question": "Which of the following statements best describes a null hypothesis (H₀) in research?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "It states that there is a significant relationship or difference between variables.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "It predicts the expected outcome of the study based on prior theories.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "It proposes that there is no statistically significant relationship or difference between variables.",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "It is always confirmed by the research findings.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "A null hypothesis (H₀) is a statement that there is no effect, no difference, or no relationship between the variables being studied. Researchers typically aim to gather evidence to reject the null hypothesis in favor of an alternative hypothesis.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793906101421-bb304",
+        "order": 29,
+        "question": "A researcher commits a Type I error when they:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Fail to reject a null hypothesis that is actually false.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "Reject a null hypothesis that is actually true.",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "Fail to reject a null hypothesis that is actually true.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "Reject an alternative hypothesis that is actually false.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "A Type I error occurs when the researcher incorrectly rejects a true null hypothesis. This is often referred to as a \"false positive\" and its probability is denoted by alpha (α), the level of significance.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793906101421-dd341",
+        "order": 30,
+        "question": "A psychologist wants to investigate if a new mindfulness-based intervention significantly reduces anxiety levels in university students compared to a traditional relaxation technique. Which of the following correctly represents the null (H₀) and alternative (H₁) hypotheses for this study?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "H₀: The new intervention significantly reduces anxiety. H₁: The new intervention does not significantly reduce anxiety.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "H₀: There is no significant difference in anxiety reduction between the new intervention and the traditional technique. H₁: The new intervention significantly reduces anxiety more than the traditional technique.",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "H₀: The new intervention is better than the traditional technique. H₁: The new intervention is not better than the traditional technique.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "H₀: The new intervention has no effect on anxiety. H₁: The new intervention has some effect on anxiety.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The null hypothesis (H₀) always states that there is no effect, no difference, or no relationship. The alternative hypothesis (H₁) states what the researcher expects to find, which is often a specific difference or relationship. In this scenario, the researcher expects the new intervention to be *better*, indicating a directional alternative hypothesis.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793906101421-e2a68",
+        "order": 31,
+        "question": "If a researcher decides to decrease the level of significance (α) from 0.05 to 0.01 in their hypothesis testing, what is the most direct consequence on the probability of making a Type I error?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "The probability of making a Type I error increases.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "The probability of making a Type I error decreases.",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "The probability of making a Type I error remains unchanged.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "The probability of making a Type I error becomes equal to the Type II error.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The level of significance (α) is defined as the maximum acceptable probability of committing a Type I error (rejecting a true null hypothesis). Therefore, by decreasing α from 0.05 to 0.01, the researcher is directly reducing the probability of making a Type I error.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 14,
+    "remaining_q": 4,
     "subj_slug": "cuet-pg-core",
     "subj_name": "Core Subject",
     "chapter": "Research Methodology",
@@ -1137,6 +1647,6 @@
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-11-05T15:18:19.642890Z",
-  "updated_at": "2026-11-05T15:18:19.642905Z"
+  "created_at": "2026-11-05T19:15:01.421189Z",
+  "updated_at": "2026-11-05T19:15:01.421205Z"
 }
