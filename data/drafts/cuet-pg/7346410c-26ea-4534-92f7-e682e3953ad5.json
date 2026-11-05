@@ -4,7 +4,7 @@
   "class_slug": "cuet-pg",
   "test_type": "subject-wise",
   "target_q": 35,
-  "collected_q": 4,
+  "collected_q": 11,
   "final_path": "data/admin/cuet-pg/tests/cuet-pg-core-subject-hypothesis-formulation-testing-7346410c.json",
   "payload": {
     "id": "7346410c-26ea-4534-92f7-e682e3953ad5",
@@ -21,9 +21,9 @@
     "topic": "Hypothesis Formulation Testing",
     "testType": "subject-wise",
     "duration": 45,
-    "totalMarks": 16,
-    "passingMarks": 6,
-    "totalQuestions": 4,
+    "totalMarks": 44,
+    "passingMarks": 15,
+    "totalQuestions": 11,
     "targetQuestions": 35,
     "isPublic": true,
     "isPublished": true,
@@ -257,11 +257,368 @@
         "subject": "cuet-pg-core",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1793863939005-4cfb1",
+        "order": 5,
+        "question": "What is the primary purpose of formulating a null hypothesis (H0) in research?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "To state the expected relationship between variables.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "To provide a statement that can be directly tested and potentially rejected.",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "To define the independent and dependent variables.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "To summarize the research findings.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The null hypothesis (H0) is a statement of no effect, no difference, or no relationship, which is specifically formulated for the purpose of being statistically tested and potentially rejected based on empirical evidence. It represents the default position that researchers aim to challenge.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793863939005-3bee7",
+        "order": 6,
+        "question": "A researcher wants to test if a new teaching method *improves* student scores. Which of the following would be the appropriate alternative hypothesis (H1)?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "The new teaching method has no effect on student scores.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "The new teaching method is less effective than the old method.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "The new teaching method improves student scores.",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "Student scores will vary with the teaching method.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The alternative hypothesis (H1 or Ha) represents the researcher's claim or the specific effect they are trying to prove. Since the researcher's objective is to determine if the new method *improves* scores, the H1 should state that the new teaching method leads to higher student scores, indicating a directional effect.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793863939005-78d6d",
+        "order": 7,
+        "question": "If a researcher sets the significance level (alpha, α) at 0.05 and obtains a p-value of 0.03 from their statistical test, what is the most appropriate conclusion?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Accept the null hypothesis.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "Reject the null hypothesis.",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "The results are statistically inconclusive.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "The effect size is large.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "In hypothesis testing, if the p-value (0.03) is less than the pre-determined significance level (alpha, 0.05), it indicates that the observed data is statistically unlikely to have occurred if the null hypothesis were true. Therefore, there is sufficient evidence to reject the null hypothesis.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793863939005-685a7",
+        "order": 8,
+        "question": "A Type I error occurs when a researcher:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Fails to reject a false null hypothesis.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "Rejects a true null hypothesis.",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "Fails to reject a true null hypothesis.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "Rejects a false null hypothesis.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "A Type I error (alpha error) is defined as the mistake of rejecting the null hypothesis when it is actually true. This is often referred to as a \"false positive\" result, meaning the researcher concludes there is an effect or relationship when there isn't one in reality.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793863939005-4f530",
+        "order": 9,
+        "question": "A pharmaceutical company is testing a new drug to reduce blood pressure. They are particularly concerned about *not* missing a truly effective drug, even if it means accepting a slightly higher risk of concluding an ineffective drug is effective. Which statistical concept are they trying to maximize, or minimize its counterpart?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Maximizing the significance level (alpha).",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "Minimizing Type I error.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "Maximizing the power of the test.",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "Minimizing the critical value.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The concern about \"not missing a truly effective drug\" means the company wants to correctly identify and reject the null hypothesis (that the drug has no effect) when it is indeed false (the drug *is* effective). This ability to correctly detect a true effect is known as the power of the test (1 - Beta). Maximizing power often involves accepting a slightly higher risk of a Type I error (concluding an ineffective drug is effective), which aligns with the scenario's trade-off.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793863939005-a5423",
+        "order": 10,
+        "question": "Which of the following is NOT a characteristic of a *good* research hypothesis?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "It should be testable.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "It should be stated vaguely to allow for broad interpretation.",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "Option C",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "Option D",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1793863939005-b7f5e",
+        "order": 11,
+        "question": "What is the primary purpose of a null hypothesis (H0) in statistical testing?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "To state the expected relationship or difference that the researcher aims to prove.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "This describes the alternative hypothesis (H1)."
+          },
+          {
+            "letter": "B",
+            "text": "To propose that there is no significant difference or relationship between variables.",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "The null hypothesis (H0) is a statement of no effect, no difference, or no relationship, which is the assumption initially held to be true and tested against the alternative hypothesis. Researchers typically aim to gather evidence to reject this null hypothesis."
+          },
+          {
+            "letter": "C",
+            "text": "To predict the specific direction of a relationship between variables.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "This describes a directional alternative hypothesis."
+          },
+          {
+            "letter": "D",
+            "text": "To confirm the researcher's initial assumption or belief about the population.",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "The null hypothesis is tested against, not confirmed directly."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The null hypothesis (H0) is a statement of no effect, no difference, or no relationship, which is the assumption initially held to be true and tested against the alternative hypothesis. Researchers typically aim to gather evidence to reject this null hypothesis.",
+        "hint": "",
+        "marks": 4,
+        "negativeMark": 1,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "cuet-pg-core",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 31,
+    "remaining_q": 24,
     "subj_slug": "cuet-pg-core",
     "subj_name": "Core Subject",
     "chapter": "Research Methodology",
@@ -270,6 +627,6 @@
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-11-04T22:06:21.698900Z",
-  "updated_at": "2026-11-04T22:06:21.698903Z"
+  "created_at": "2026-11-05T07:32:19.005123Z",
+  "updated_at": "2026-11-05T07:32:19.005134Z"
 }
