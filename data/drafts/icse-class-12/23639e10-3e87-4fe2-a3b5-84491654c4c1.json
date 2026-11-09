@@ -4,7 +4,7 @@
   "class_slug": "icse-class-12",
   "test_type": "subject-wise",
   "target_q": 25,
-  "collected_q": 12,
+  "collected_q": 21,
   "final_path": "data/admin/icse-class-12/tests/icse-class-12-physics-electric-charges-fields-coulombs--23639e10.json",
   "payload": {
     "id": "23639e10-3e87-4fe2-a3b5-84491654c4c1",
@@ -21,9 +21,9 @@
     "topic": "Electric Charges Fields Coulombs Law",
     "testType": "subject-wise",
     "duration": 38,
-    "totalMarks": 12,
-    "passingMarks": 4,
-    "totalQuestions": 12,
+    "totalMarks": 21,
+    "passingMarks": 7,
+    "totalQuestions": 21,
     "targetQuestions": 25,
     "isPublic": true,
     "isPublished": true,
@@ -665,11 +665,470 @@
         "subject": "icse12-physics",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1794261486507-f4df4",
+        "order": 13,
+        "question": "Which of the following statements about electric field lines is INCORRECT?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Electric field lines originate from positive charges and terminate on negative charges.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "Two electric field lines can never intersect each other.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "The tangent to an electric field line at any point gives the direction of the electric field at that point.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "Electric field lines form closed loops.",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Electric field lines do not form closed loops. They originate from positive charges and terminate on negative charges (or extend to infinity). Forming closed loops is characteristic of magnetic field lines.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "icse12-physics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1794261486507-82549",
+        "order": 14,
+        "question": "Which of the following is NOT a fundamental property of electric charges?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Quantization of charge",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "Conservation of charge",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "Charge is relative to the observer's speed",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "Charge is additive",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Electric charge is invariant, meaning its value does not change with the speed of the observer. This is unlike mass, which is relative to speed according to special relativity. Quantization, conservation, and additivity are fundamental properties of charge.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "icse12-physics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1794261486507-6a454",
+        "order": 15,
+        "question": "Two point charges, +4 µC and +9 µC, are placed 10 cm apart in air. At what point between them on the line joining the charges will the net electric field be zero?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "4 cm from the +4 µC charge",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "6 cm from the +4 µC charge",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "2 cm from the +9 µC charge",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "5 cm from the +4 µC charge",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let the point be at a distance 'x' from the +4 µC charge. Then its distance from the +9 µC charge will be (10 - x) cm. For the net electric field to be zero, the magnitudes of the electric fields due to each charge must be equal and opposite.\nE₁ = E₂\nk * (Q₁) / x² = k * (Q₂) / (10-x)²\n(4 × 10⁻⁶) / x² = (9 × 10⁻⁶) / (10-x)²\nTaking the square root on both sides:\n√(4) / x = √(9) / (10-x)\n2 / x = 3 / (10-x)\n2(10-x) = 3x\n20 - 2x = 3x\n20 = 5x\nx = 4 cm.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "icse12-physics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1794261486507-599fc",
+        "order": 16,
+        "question": "When a dielectric medium is introduced between two charges, the electrostatic force between them:",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Increases",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "Decreases",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "Remains unchanged",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "Becomes zero",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The electrostatic force between two charges in",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "icse12-physics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1794261486507-3b9dd",
+        "order": 17,
+        "question": "Which of the following statements about electric charge is INCORRECT?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Electric charge is conserved.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "Electric charge is quantized.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "Electric charge can be transferred from one body to another.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "Electric charge is always positive.",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Electric charge can be positive (protons), negative (electrons), or neutral (neutrons). The statement that it is always positive is incorrect. The other options (conservation, quantization, transferability) are fundamental properties of electric charge.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "icse12-physics",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1794261486507-d4269",
+        "order": 18,
+        "question": "Which of the following statements is INCORRECT regarding the properties of electric charge?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Electric charge is quantized.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "Electric charge is conserved in an isolated system.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "Electric charge is invariant, meaning its value does not change with the speed of the charged object.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "Electric charge can be transferred from one body to another by induction only.",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Electric charge can be transferred by conduction (direct contact) as well as by induction, not solely by induction. Statements A, B, and C are correct properties of electric charge.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "icse12-physics",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1794261486507-cf921",
+        "order": 19,
+        "question": "Two point charges, +3 µC and +8 µC, repel each other with a force of 40 N. If a charge of -5 µC is added to each of these charges, what will be the new force between them, assuming their separation remains the same?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "10 N (attractive)",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "10 N (repulsive)",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "40 N (attractive)",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "20 N (repulsive)",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let the initial charges be q₁ = +3 µC and q₂ = +8 µC. The initial force is F = 40 N.\nAccording to Coulomb's Law, F = k * (q₁q₂) / r², where r is the separation and k is Coulomb's constant.\nSo, 40 = k * (3 × 10⁻⁶ C) * (8 × 10⁻⁶ C) / r²\n40 = k",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "icse12-physics",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1794261486507-3559b",
+        "order": 20,
+        "question": "Which of the following statements about electric field lines is INCORRECT?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Electric field lines originate from positive charges and terminate on negative charges.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": "Electric field lines do not form closed loops. They originate from positive charges and end on negative charges (or extend to infinity). Magnetic field lines, however, form closed loops."
+          },
+          {
+            "letter": "B",
+            "text": "Two electric field lines can never cross each other.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "Electric field lines do not form closed loops. They originate from positive charges and end on negative charges (or extend to infinity). Magnetic field lines, however, form closed loops."
+          },
+          {
+            "letter": "C",
+            "text": "The tangent to an electric field line at any point gives the direction of the electric field at that point.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Electric field lines do not form closed loops. They originate from positive charges and end on negative charges (or extend to infinity). Magnetic field lines, however, form closed loops."
+          },
+          {
+            "letter": "D",
+            "text": "Electric field lines form closed loops.",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": "Electric field lines do not form closed loops. They originate from positive charges and end on negative charges (or extend to infinity). Magnetic field lines, however, form closed loops."
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Electric field lines do not form closed loops. They originate from positive charges and end on negative charges (or extend to infinity). Magnetic field lines, however, form closed loops.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "icse12-physics",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1794261486508-ac178",
+        "order": 21,
+        "question": "Which of the following statements about electric field lines is **incorrect**?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Electric field lines originate from positive charges and terminate on negative charges.",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "The tangent to an electric field line at any point gives the direction of the electric field at that point.",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "Electric field lines never intersect each other.",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "Electric field lines form closed loops.",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Electric field lines start from positive charges and end on negative charges (or extend to infinity). This implies they do not form closed loops.",
+        "hint": "",
+        "marks": 1,
+        "negativeMark": 0,
+        "negativeMarking": false,
+        "imageUrl": "",
+        "subject": "icse12-physics",
+        "difficulty": "easy",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 13,
+    "remaining_q": 4,
     "subj_slug": "icse12-physics",
     "subj_name": "Physics",
     "chapter": "Electromagnetism",
@@ -678,6 +1137,6 @@
     "class_number": 12,
     "cycle": 1
   },
-  "created_at": "2026-11-09T17:12:13.875702Z",
-  "updated_at": "2026-11-09T17:12:13.875719Z"
+  "created_at": "2026-11-09T21:58:06.508047Z",
+  "updated_at": "2026-11-09T21:58:06.508065Z"
 }
