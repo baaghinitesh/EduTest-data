@@ -4,7 +4,7 @@
   "class_slug": "gate",
   "test_type": "subject-wise",
   "target_q": 25,
-  "collected_q": 1,
+  "collected_q": 2,
   "final_path": "data/admin/gate/tests/gate-general-aptitude-time-speed-distance-951fca02.json",
   "payload": {
     "id": "951fca02-4d6d-4170-9c71-c9c92e45da9a",
@@ -21,9 +21,9 @@
     "topic": "Time Speed Distance",
     "testType": "subject-wise",
     "duration": 60,
-    "totalMarks": 2,
+    "totalMarks": 4,
     "passingMarks": 1,
-    "totalQuestions": 1,
+    "totalQuestions": 2,
     "targetQuestions": 25,
     "isPublic": true,
     "isPublished": true,
@@ -104,11 +104,62 @@
         "subject": "gate-aptitude",
         "difficulty": "easy",
         "hasError": false
+      },
+      {
+        "id": "q-1794521449220-3ee85",
+        "order": 2,
+        "question": "A car travels at a constant speed of 72 km/hr. How much distance will it cover in 25 seconds?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "400 m",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "450 m",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "500 m",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "600 m",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Given speed = 72 km/hr.\nGiven time = 25 seconds.\nTo calculate distance in meters, first convert the speed from km/hr to m/s:\nSpeed = 72 km/hr * (1000 m / 1 km) * (1 hr / 3600 s)\nSpeed = 72 * (5/18) m/s = 4 * 5 m/s = 20 m/s.\nNow, calculate the distance:\nDistance = Speed × Time\nDistance = 20 m/s × 25 s\nDistance = 500 m.",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 24,
+    "remaining_q": 23,
     "subj_slug": "gate-aptitude",
     "subj_name": "General Aptitude",
     "chapter": "Numerical Aptitude",
@@ -117,6 +168,6 @@
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-11-12T17:04:33.636507Z",
-  "updated_at": "2026-11-12T17:04:33.636510Z"
+  "created_at": "2026-11-12T22:10:49.220988Z",
+  "updated_at": "2026-11-12T22:10:49.221001Z"
 }
