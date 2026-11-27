@@ -72,8 +72,17 @@ from gemini_client import GeminiError, GeminiQuotaError
 from groq_client   import GroqError
 
 # How many new tests to attempt per run (when no drafts are pending).
-# 4 runs/day × 3 tests = 12 new tests/day — well within free-tier limits.
-MAX_TESTS_PER_RUN = 3
+# Configurable via MAX_TESTS_PER_RUN env var (default 3; Render uses 1-2, Actions uses 2).
+def _get_max_tests_per_run():
+    raw = os.environ.get("MAX_TESTS_PER_RUN", "").strip()
+    if raw:
+        try:
+            return max(1, min(int(raw), 10))
+        except ValueError:
+            pass
+    return 3
+
+MAX_TESTS_PER_RUN = _get_max_tests_per_run()
 
 
 class AllKeysExhausted(Exception):
@@ -111,7 +120,8 @@ def _get_mode():
         print("  [Mode] env override -> " + override)
         return override
     hour = datetime.now(timezone.utc).hour
-    mode = "full" if hour == 0 else "subject"
+    # UTC 0 (6:00 AM IST) or UTC 10 (4:00 PM IST, post-Gemini quota reset) → full-length
+    mode = "full" if hour in (0, 10) else "subject"
     print("  [Mode] UTC hour=" + str(hour) + " -> " + mode)
     return mode
 
