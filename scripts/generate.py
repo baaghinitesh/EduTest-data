@@ -1,5 +1,5 @@
 """
-generate.py -- EduTest TEST-ONLY generator.
+generate.py -- PrepGuide Lite TEST-ONLY generator.
 
 BEHAVIOUR RULES
 ===============
@@ -120,8 +120,7 @@ def _get_mode():
         print("  [Mode] env override -> " + override)
         return override
     hour = datetime.now(timezone.utc).hour
-    # UTC 0 (6:00 AM IST) or UTC 10 (4:00 PM IST, post-Gemini quota reset) → full-length
-    mode = "full" if hour in (0, 10) else "subject"
+    mode = "full" if hour == 0 else "subject"
     print("  [Mode] UTC hour=" + str(hour) + " -> " + mode)
     return mode
 
@@ -442,7 +441,7 @@ def run():
     eq = chr(61) * 65
     dq = chr(9552) * 65
     print("\n" + eq)
-    print("  EduTest Generator  |  Tests Only")
+    print("  PrepGuide Lite Generator  |  Tests Only")
     print("  " + datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"))
     print(eq)
 

@@ -1,5 +1,5 @@
 """
-publish_to_server.py — Publishes generated tests to the EduTest server (MongoDB).
+publish_to_server.py — Publishes generated tests to the PrepGuide Lite server (MongoDB).
 
 Flow:
   1. POST /api/auth/admin-token  → get JWT (token in response body)
@@ -8,8 +8,8 @@ Flow:
 
 Required GitHub Actions secrets:
   EDUTEST_API_URL        → https://serverprepguide.launchyourconcept.com
-  EDUTEST_ADMIN_EMAIL    → baaghinitesh@gmail.com
-  EDUTEST_ADMIN_PASSWORD → nitesh@1234
+  EDUTEST_ADMIN_EMAIL    → <configured in GitHub Secrets>
+  EDUTEST_ADMIN_PASSWORD → <configured in GitHub Secrets>
 
 If any env var is missing, publish is skipped gracefully.
 Content is still saved to CDN — it just won't appear in the app until published.
@@ -70,7 +70,7 @@ def _get_token():
     if _token and (time.time() - _token_ts) < 6 * 3600:
         return _token
 
-    print(f"  [Publish] Authenticating as {ADM_EMAIL}...")
+    print("  [Publish] Authenticating with server...")
     resp  = _http_post("/api/auth/admin-token",
                        {"email": ADM_EMAIL, "password": ADM_PASS})
     token = resp.get("token")
@@ -86,7 +86,7 @@ def _get_token():
 
 def publish_test(test_data, file_path):
     """
-    Publish one generated test to the EduTest server.
+    Publish one generated test to the PrepGuide Lite server.
 
     test_data : dict — full test JSON (as saved to disk by content_builder.py)
     file_path : str  — relative CDN path, e.g. "data/admin/neet-ug/tests/xxx.json"

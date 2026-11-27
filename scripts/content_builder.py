@@ -836,7 +836,7 @@ def build_school_full_length_test(class_slug):
             mark_val, neg_val, neg,
             subject_name=subj_name, is_subject_wise=False
         ) + ["Covers all chapters of the subject"],
-        "createdBy": "admin", "createdByName": "EduTest Admin",
+        "createdBy": "admin", "createdByName": "PrepGuide Lite Admin",
         "publishedAt": _now(), "questions": questions,
     }
     path = _admin_path("tests", uid, title, class_slug)
@@ -873,7 +873,7 @@ def build_school_full_length_test(class_slug):
         "totalQuestions": actual_q,
         "targetQuestions": total_q,
         "duration": duration, "totalMarks": total_marks,
-        "author": "EduTest Admin", "authorId": "admin", "isAdmin": True,
+        "author": "PrepGuide Lite Admin", "authorId": "admin", "isAdmin": True,
         "tags": payload["tags"], "cdnUrl": _cdn(path), "path": path,
         "publishedAt": payload["publishedAt"],
     }
@@ -992,7 +992,7 @@ def build_exam_full_length_test(class_slug):
         "unlimitedAttempts": True, "allowedAttempts": 0,
         "tags": [class_slug, "full-length", "mock-test", "all-subjects"],
         "instructions": exam_instructions,
-        "createdBy": "admin", "createdByName": "EduTest Admin",
+        "createdBy": "admin", "createdByName": "PrepGuide Lite Admin",
         "publishedAt": _now(), "questions": all_questions,
     }
     path = _admin_path("tests", uid, title, class_slug)
@@ -1036,7 +1036,7 @@ def build_exam_full_length_test(class_slug):
         "totalQuestions": actual_q,
         "targetQuestions": total_q,
         "duration": duration, "totalMarks": total_m,
-        "author": "EduTest Admin", "authorId": "admin", "isAdmin": True,
+        "author": "PrepGuide Lite Admin", "authorId": "admin", "isAdmin": True,
         "tags": payload["tags"], "cdnUrl": _cdn(path), "path": path,
         "publishedAt": payload["publishedAt"],
     }
@@ -1162,7 +1162,7 @@ def build_subject_test(topic_info, q_count_override=None):
         "unlimitedAttempts": True, "allowedAttempts": 0,
         "tags": _tags(class_slug, subj_slug, chapter, topic),
         "instructions": sw_instructions,
-        "createdBy": "admin", "createdByName": "EduTest Admin",
+        "createdBy": "admin", "createdByName": "PrepGuide Lite Admin",
         "publishedAt": _now(), "questions": questions,
     }
     path = _admin_path("tests", uid, title, class_slug)
@@ -1198,7 +1198,7 @@ def build_subject_test(topic_info, q_count_override=None):
         "totalQuestions": actual_q,
         "targetQuestions": q_count,
         "duration": duration, "totalMarks": total_marks,
-        "author": "EduTest Admin", "authorId": "admin", "isAdmin": True,
+        "author": "PrepGuide Lite Admin", "authorId": "admin", "isAdmin": True,
         "tags": payload["tags"], "cdnUrl": _cdn(path), "path": path,
         "publishedAt": payload["publishedAt"],
     }
@@ -1327,7 +1327,7 @@ def build_combined_test(class_slug, subject_topics, q_per_subj_override=None):
             mark_val, neg_val, neg,
             subject_name=subj_names, is_subject_wise=True
         ),
-        "createdBy": "admin", "createdByName": "EduTest Admin",
+        "createdBy": "admin", "createdByName": "PrepGuide Lite Admin",
         "publishedAt": _now(), "questions": all_questions,
     }
     path = _admin_path("tests", uid, title, class_slug)
@@ -1373,7 +1373,7 @@ def build_combined_test(class_slug, subject_topics, q_per_subj_override=None):
         "totalQuestions": actual_q,
         "targetQuestions": total_q,
         "duration": duration, "totalMarks": total_marks,
-        "author": "EduTest Admin", "authorId": "admin", "isAdmin": True,
+        "author": "PrepGuide Lite Admin", "authorId": "admin", "isAdmin": True,
         "tags": payload["tags"], "cdnUrl": _cdn(path), "path": path,
         "publishedAt": payload["publishedAt"],
     }
@@ -1637,7 +1637,7 @@ def resume_draft(draft):
         "targetQuestions": target_q,
         "duration":   payload.get("duration", 60),
         "totalMarks": total_marks,
-        "author": "EduTest Admin", "authorId": "admin", "isAdmin": True,
+        "author": "PrepGuide Lite Admin", "authorId": "admin", "isAdmin": True,
         "tags": payload.get("tags", []),
         "cdnUrl": _cdn(final_path), "path": final_path,
         "publishedAt": payload.get("publishedAt", _now()),

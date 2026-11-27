@@ -1,16 +1,16 @@
-name: Generate EduTest Tests
+name: Generate PrepGuide Lite Tests
 
 on:
   schedule:
-    # Split schedule (4 runs/day total: 2 on Render at night + 2 on GitHub Actions in day)
-    # Render Free Tier (via external cron → /api/automation/trigger):
-    #   2:00 AM IST (20:30 UTC) → SUBJECT mode (1-2 tests)
-    #   4:00 AM IST (22:30 UTC) → SUBJECT mode (2h gap, resumes drafts)
-    # GitHub Actions (reduced from 4→2 runs/day to stay well under 2,000 free min/month):
-    #   UTC 04:30 = 10:00 AM IST → SUBJECT mode (6h gap after 4 AM Render run)
-    #   UTC 10:30 =  4:00 PM IST → FULL mode    (post ~1:30 PM IST Gemini RPD reset)
-    - cron: "30 4  * * *"
-    - cron: "30 10 * * *"
+    # 4 runs daily (IST times):
+    # UTC 00:30 = 6:00 AM  IST → FULL mode  (UTC hour=0)
+    # UTC 06:30 = 12:00 PM IST → SUBJECT mode
+    # UTC 11:30 = 5:00  PM IST → SUBJECT mode (post ~1:30 PM IST Gemini daily quota reset)
+    # UTC 15:30 = 9:00  PM IST → SUBJECT mode
+    - cron: "30 0  * * *"
+    - cron: "30 6  * * *"
+    - cron: "30 11 * * *"
+    - cron: "30 15 * * *"
 
   workflow_dispatch:
     inputs:
@@ -27,9 +27,9 @@ on:
         required: false
         default: ""
       max_tests:
-        description: "Max new tests per run (default: 2)"
+        description: "Max new tests per run (default: 3)"
         required: false
-        default: "2"
+        default: "3"
       backfill:
         description: "Set to 'true' to publish all existing content to MongoDB (one-time backfill)."
         required: false
@@ -115,7 +115,7 @@ jobs:
           GENERATE_MODE:           ${{ github.event.inputs.mode }}
           FORCE_EXAM:              ${{ github.event.inputs.exam }}
           GENERATION_INSTRUCTIONS: ${{ github.event.inputs.instructions }}
-          MAX_TESTS_PER_RUN:       ${{ github.event.inputs.max_tests || '2' }}
+          MAX_TESTS_PER_RUN:       ${{ github.event.inputs.max_tests || '3' }}
           EDUTEST_API_URL:         ${{ secrets.EDUTEST_API_URL }}
           EDUTEST_ADMIN_EMAIL:     ${{ secrets.EDUTEST_ADMIN_EMAIL }}
           EDUTEST_ADMIN_PASSWORD:  ${{ secrets.EDUTEST_ADMIN_PASSWORD }}
@@ -131,7 +131,7 @@ jobs:
 
       - name: Commit and push
         run: |
-          git config --global user.name  "EduTest Bot"
+          git config --global user.name  "PrepGuide Lite Bot"
           git config --global user.email "bot@launchyourconcept.com"
           git add -A
           if git diff --staged --quiet; then
