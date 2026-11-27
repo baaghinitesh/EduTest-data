@@ -4,7 +4,7 @@
   "class_slug": "gate",
   "test_type": "subject-wise",
   "target_q": 25,
-  "collected_q": 10,
+  "collected_q": 16,
   "final_path": "data/admin/gate/tests/gate-general-aptitude-time-speed-distance-951fca02.json",
   "payload": {
     "id": "951fca02-4d6d-4170-9c71-c9c92e45da9a",
@@ -21,9 +21,9 @@
     "topic": "Time Speed Distance",
     "testType": "subject-wise",
     "duration": 60,
-    "totalMarks": 20,
-    "passingMarks": 7,
-    "totalQuestions": 10,
+    "totalMarks": 32,
+    "passingMarks": 11,
+    "totalQuestions": 16,
     "targetQuestions": 25,
     "isPublic": true,
     "isPublished": true,
@@ -563,11 +563,317 @@
         "subject": "gate-aptitude",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1795811972543-27848",
+        "order": 11,
+        "question": "A car travels at a constant speed of 75 km/h. How much distance will it cover in 3.2 hours?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "210 km",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "240 km",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "250 km",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "270 km",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The formula for distance is Speed × Time.\nGiven, Speed = 75 km/h\nTime = 3.2 hours\nDistance = 75 km/h × 3.2 h = 240 km.",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1795811972543-979d5",
+        "order": 12,
+        "question": "A car travels at a speed of 60 km/hr for the first 30 minutes and then at a speed of 40 km/hr for the next 45 minutes. What is the total distance covered by the car?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "50 km",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "60 km",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "70 km",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "80 km",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "This is an easy question, testing basic distance calculation.\nDistance = Speed × Time\n\nFor the first part:\nSpeed = 60 km/hr\nTime = 30 minutes = 30/60 hours = 0.5 hours\nDistance1 = 60 km/hr × 0.5 hr = 30 km\n\nFor the second part:\nSpeed = 40 km/hr\nTime = 45 minutes = 45/60 hours = 0.75 hours\nDistance2 = 40 km/hr × 0.75 hr = 30 km\n\nTotal distance covered = Distance1 + Distance2 = 30 km + 30 km = 60 km.",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1795811972543-2acf7",
+        "order": 13,
+        "question": "A car travels at a constant speed of 75 km/hr. If it travels for 4 hours and 48 minutes, what is the total distance covered?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "345 km",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "350 km",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "360 km",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": "Correct calculation: Distance = 75 km/hr * (4 + 48/60) hours = 75 * 4.8 hours = 360 km."
+          },
+          {
+            "letter": "D",
+            "text": "375 km",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Given speed = 75 km/hr.\nTime = 4 hours and 48 minutes.\nConvert minutes to hours: 48 minutes = 48/60 hours = 4/5 hours = 0.8 hours.\nTotal time = 4 + 0.8 = 4.8 hours.\nDistance = Speed × Time\nDistance = 75 km/hr × 4.8 hours\nDistance = 360 km.",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1795811972543-0c29f",
+        "order": 14,
+        "question": "A car travels at a speed of 60 km/hr for 2.5 hours. What is the total distance covered by the car?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "120 km",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "150 km",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": "The formula for distance is Speed × Time. Given: Speed = 60 km/hr, Time = 2.5 hours. Distance = 60 km/hr × 2.5 hours = 150 km."
+          },
+          {
+            "letter": "C",
+            "text": "180 km",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "240 km",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The formula for distance is Speed × Time. Given: Speed = 60 km/hr, Time = 2.5 hours. Distance = 60 km/hr × 2.5 hours = 150 km.",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1795811972543-b314c",
+        "order": 15,
+        "question": "A car travels at a speed of 60 km/hr for 2 hours and then at a speed of 80 km/hr for the next 3 hours. What is the average speed of the car for the entire journey?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "70 km/hr",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "72 km/hr",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "72.5 km/hr",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "75 km/hr",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Total distance covered = (Speed1 × Time1) + (Speed2 × Time2)\nDistance1 = 60 km/hr × 2 hr = 120 km\nDistance2 = 80 km/hr × 3 hr = 240 km\nTotal distance = 120 km + 240 km = 360 km\n\nTotal time taken = Time1 + Time2\nTotal time = 2 hr + 3 hr = 5 hr\n\nAverage speed = Total Distance / Total Time\nAverage speed = 360 km / 5 hr = 72.5 km/hr",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1795811972543-22889",
+        "order": 16,
+        "question": "A car travels at a speed of 60 km/hr for 3 hours and then at a speed of 40 km/hr for the next 2 hours. What is the total distance covered by the car?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "240 km",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "260 km",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "280 km",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "300 km",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The total distance covered is the sum of the distances covered in each segment of the journey.\nDistance = Speed × Time\n\nDistance covered in the first segment =",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 15,
+    "remaining_q": 9,
     "subj_slug": "gate-aptitude",
     "subj_name": "General Aptitude",
     "chapter": "Numerical Aptitude",
@@ -576,6 +882,6 @@
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-11-27T10:24:33.971354Z",
-  "updated_at": "2026-11-27T10:24:33.971370Z"
+  "created_at": "2026-11-27T20:39:32.543285Z",
+  "updated_at": "2026-11-27T20:39:32.543303Z"
 }
