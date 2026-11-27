@@ -4,7 +4,7 @@
   "class_slug": "gate",
   "test_type": "subject-wise",
   "target_q": 25,
-  "collected_q": 2,
+  "collected_q": 10,
   "final_path": "data/admin/gate/tests/gate-general-aptitude-time-speed-distance-951fca02.json",
   "payload": {
     "id": "951fca02-4d6d-4170-9c71-c9c92e45da9a",
@@ -21,9 +21,9 @@
     "topic": "Time Speed Distance",
     "testType": "subject-wise",
     "duration": 60,
-    "totalMarks": 4,
-    "passingMarks": 1,
-    "totalQuestions": 2,
+    "totalMarks": 20,
+    "passingMarks": 7,
+    "totalQuestions": 10,
     "targetQuestions": 25,
     "isPublic": true,
     "isPublished": true,
@@ -155,11 +155,419 @@
         "subject": "gate-aptitude",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1795775073971-dfa2d",
+        "order": 3,
+        "question": "A car travels at a speed of 60 km/hr for 3 hours and then at a speed of 40 km/hr for the next 2 hours. What is the total distance covered by the car?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "180 km",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "80 km",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "260 km",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "100 km",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Distance covered in the first part of the journey = Speed × Time = 60 km/hr × 3 hours = 180 km.\nDistance covered in the second part of the journey = Speed × Time = 40 km/hr × 2 hours = 80 km.\nTotal distance covered = 180 km + 80 km = 260 km.",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1795775073971-b98f5",
+        "order": 4,
+        "question": "A train 150 meters long is running at a speed of 54 km/hr. How long will it take to cross an electric pole?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "10 seconds",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "15 seconds",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "20 seconds",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "25 seconds",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1795775073971-9de11",
+        "order": 5,
+        "question": "A car travels at a speed of 60 km/hr for 2 hours and then at a speed of 80 km/hr for the next 1 hour. What is the total distance covered by the car?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "140 km",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "200 km",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "220 km",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "180 km",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Distance covered in the first part = Speed × Time = 60 km/hr × 2 hours = 120 km.\nDistance covered in the second part = Speed × Time = 80 km/hr × 1 hour = 80 km.\nTotal distance covered = 120 km + 80 km = 200 km.",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1795775073971-d9359",
+        "order": 6,
+        "question": "A car travels at a speed of 72 km/hr. What is its speed in meters per second (m/s)?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "15 m/s",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "20 m/s",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "25 m/s",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "30 m/s",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "To convert speed from km/hr to m/s, we use the conversion factor (5/18).\nSpeed = 72 km/hr\nSpeed in m/s = 72 * (5/18)\nSpeed in m/s = 4 * 5\nSpeed in m/s = 20 m/s",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "easy",
+        "hasError": false
+      },
+      {
+        "id": "q-1795775073971-f8702",
+        "order": 7,
+        "question": "A car covers a distance of 360 km in 6 hours. What is its speed in meters per second (m/s)?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "15 m/s",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "10 m/s",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "16.67 m/s",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "60 m/s",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Given: Distance = 360 km, Time = 6 hours.\nSpeed = Distance / Time\nSpeed = 360 km / 6 hours = 60 km/hr.\n\nTo convert km/hr to m/s, multiply by (5/18):\nSpeed in m/s = 60 * (5/18)\nSpeed in m/s = 10 * (5/3) = 50/3\nSpeed in m/s = 16.666... m/s ≈ 16.67 m/s.",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1795775073971-52436",
+        "order": 8,
+        "question": "A car travels at a speed of 72 km/hr. What is the distance covered by the car in 15 seconds?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "300 meters",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "300 meters",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "1080 meters",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "1800 meters",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The speed is given in km/hr, and time in seconds. We need to convert the speed to m/s for consistency.\nSpeed = 72 km/hr\nTo convert km/hr to m/s, multiply by (5/18):\nSpeed = 72 * (5/18) m/s = 4 * 5 m/s = 20 m/s\nDistance = Speed × Time\nDistance = 20 m/s × 15 s = 300 meters.",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1795775073971-a1ac3",
+        "order": 9,
+        "question": "A car travels a distance of 360 km in 6 hours. What is the speed of the car in meters per second (m/s)?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "15 m/s",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "20 m/s",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "16.67 m/s",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "10 m/s",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Given: Distance (D) = 360 km, Time (T) = 6 hours.\nSpeed (S) = Distance / Time\nS = 360 km / 6 hours = 60 km/hr.\n\nTo convert km/hr to m/s, multiply by (5/18):\nS = 60 * (5/18) m/s\nS = (10 * 5) / 3 m/s\nS = 50 / 3 m/s\nS ≈ 16.67 m/s.",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1795775073971-8da33",
+        "order": 10,
+        "question": "A car travels at a constant speed of 72 km/h. How much distance will it cover in 25 seconds?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "500 m",
+            "isCorrect": true,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "1800 m",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "5000 m",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "720 m",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The speed of the car is given in km/h, and the time is in seconds. The options are in meters.\nFirst, convert the speed from km/h to m/s.\n1 km/h = 5/18 m/s\nSpeed = 72 km/h = 72 * (5/18) m/s = 4 * 5 m/s = 20 m/s.\nTime = 25 seconds.\nDistance = Speed * Time\nDistance = 20 m/s * 25 s = 500 m.",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 23,
+    "remaining_q": 15,
     "subj_slug": "gate-aptitude",
     "subj_name": "General Aptitude",
     "chapter": "Numerical Aptitude",
@@ -168,6 +576,6 @@
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-11-13T07:23:53.610252Z",
-  "updated_at": "2026-11-13T07:23:53.610265Z"
+  "created_at": "2026-11-27T10:24:33.971354Z",
+  "updated_at": "2026-11-27T10:24:33.971370Z"
 }
