@@ -2,11 +2,21 @@
 
 <img src="./assets/prepguide-logo.png" alt="PrepGuide Lite Logo" width="340" />
 
-<h3>PrepGuide Lite — Free Public Test, Notes &amp; Open Question Bank</h3>
+<pre>
+██████╗ ██████╗ ███████╗██████╗  ██████╗ ██╗   ██╗██╗██████╗ ███████╗    ██╗     ██╗████████╗███████╗
+██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔════╝ ██║   ██║██║██╔══██╗██╔════╝    ██║     ██║╚══██╔══╝██╔════╝
+██████╔╝██████╔╝█████╗  ██████╔╝██║  ███╗██║   ██║██║██║  ██║█████╗      ██║     ██║   ██║   █████╗  
+██╔═══╝ ██╔══██╗██╔══╝  ██╔═══╝ ██║   ██║██║   ██║██║██║  ██║██╔══╝      ██║     ██║   ██║   ██╔══╝  
+██║     ██║  ██║███████╗██║     ╚██████╔╝╚██████╔╝██║██████╔╝███████╗    ███████╗██║   ██║   ███████╗
+╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝      ╚═════╝  ╚═════╝ ╚═╝╚═════╝ ╚══════╝    ╚══════╝╚═╝   ╚═╝   ╚══════╝
+</pre>
+
+<h3>PrepGuide Lite — Free Public Mock Tests, Notes &amp; Open Question Bank CDN</h3>
 
 <p>
-  <strong>Static JSON Content Bank Powering <a href="https://prepguide.launchyourconcept.com">PrepGuide Lite</a> — Built &amp; Maintained by <a href="https://www.launchyourconcept.com">Launch Your Concept</a></strong><br/>
-  2,000+ curated mock tests &amp; 61,900+ searchable MCQ/MSQ questions across 81 school classes &amp; competitive exams — served globally via Cloudflare Pages CDN.
+  <strong>100% Free Public Test Creation, Question Bank &amp; Digital Notes Ecosystem Powering <a href="https://prepguide.launchyourconcept.com">PrepGuide Lite</a></strong><br/>
+  <strong>1,975+ Mock Tests</strong> &amp; <strong>81,541+ MCQ/MSQ Questions</strong> across <strong>81 School Classes &amp; Competitive Exams</strong> — served worldwide on Cloudflare Pages CDN.<br/>
+  Built &amp; Maintained by <a href="https://www.launchyourconcept.com"><strong>Launch Your Concept</strong></a> · Classroom + Digital Institute: <a href="https://preppguide.com"><strong>PrepGuide Institutions</strong></a>
 </p>
 
 <p>
@@ -14,96 +24,160 @@
     <img src="https://img.shields.io/badge/Live_App-PrepGuide_Lite-06b6d4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live App" />
   </a>
   <a href="https://preppguide.com">
-    <img src="https://img.shields.io/badge/Classroom_Institute-PrepGuide_Institutions-f59e0b?style=for-the-badge" alt="PrepGuide Institutions" />
+    <img src="https://img.shields.io/badge/Institutions-preppguide.com-f59e0b?style=for-the-badge" alt="PrepGuide Institutions" />
   </a>
   <a href="https://prepguidedata.launchyourconcept.com/test.json">
     <img src="https://img.shields.io/badge/CDN-Cloudflare_Pages-f38020?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Cloudflare CDN" />
   </a>
+  <a href="./CATALOG.md">
+    <img src="https://img.shields.io/badge/Browse-1975_Tests-Catalog-10b981?style=for-the-badge" alt="Master Catalog" />
+  </a>
   <a href="https://github.com/baaghinitesh/EduTest-data/actions/workflows/generate-content.yml">
     <img src="https://github.com/baaghinitesh/EduTest-data/actions/workflows/generate-content.yml/badge.svg" alt="Automated Test Generator" />
-  </a>
-  <a href="https://www.launchyourconcept.com">
-    <img src="https://img.shields.io/badge/Engineered_By-Launch_Your_Concept-6366f1?style=for-the-badge" alt="Launch Your Concept" />
   </a>
 </p>
 
 <br/>
 
-<img src="./assets/prepguide-banner.png" alt="PrepGuide Lite Banner" width="760" />
+<img src="./assets/prepguide-banner.png" alt="PrepGuide Lite Banner" width="800" />
 
 </div>
 
 ---
 
-## Our Story & Ecosystem
+## Our Story & Complete Ecosystem
 
-### 1. PrepGuide Lite — Free Public Test Creation, Notes & Study Platform
-**[PrepGuide Lite](https://prepguide.launchyourconcept.com)** is a **100% free educational platform** where students and teachers across India can create, publish, search, and practice tests and study notes at zero cost:
-- **Create Topic-Wise (Tabbed) Mock Tests for Free** — Build multi-section tests cleanly using bulk Smart Text Import (`Topic:` / `Section:` headers) or per-question topics
-- **Smart In-App Search Engine** — Instant keyword search across 61,900+ questions, tests, notes, formulas & books at [`/search`](https://prepguide.launchyourconcept.com/search)
-- **All Boards & Competitive Exams** — Full coverage of **Classes 1–12** (CBSE, ICSE, ISC, West Bengal, Maharashtra, UP Board, Rajasthan) plus **28+ Competitive Exams** (NORCET, NEET UG/PG, JEE Mains/Advanced, UPSC, SSC, Banking, Railways, CAT, GATE, CLAT, NDA, CDS, CUET, Olympiads)
+<div align="center">
+  <img src="./assets/diagrams/partners-showcase-strip.png" alt="PrepGuide Lite, PrepGuide Institutions & Launch Your Concept" width="820" />
+</div>
+
+### 1. PrepGuide Lite — 100% Free Public Test & Study Platform
+**[PrepGuide Lite](https://prepguide.launchyourconcept.com)** is built so every student and teacher across India can **create tests for free**, **write & publish study notes**, and **practice real exam-style mock papers** without paywalls:
+- **Classes 1–12 across 7 Boards:** CBSE, ICSE, ISC, West Bengal Board, Maharashtra Board, UP Board, Rajasthan Board
+- **28+ National & State Competitive Exams:** AIIMS NORCET, NEET UG, NEET PG, JEE Mains, JEE Advanced, UPSC CSE, UPSC CAPF, SSC CGL/CHSL/MTS, IBPS PO/Clerk, SBI PO, RRB NTPC/Group D, CAT, GATE, CLAT, NDA, CDS, CUET UG/PG, CTET, DSSSB, KVPY, Olympiads
+- **Command Search (`⌘K`) & Dynamic Smart Search:** Instant search across **61,900+ indexed MCQ/MSQ questions**, topic hubs ([/topics](https://prepguide.launchyourconcept.com/topics)), and interactive explanations ([/search](https://prepguide.launchyourconcept.com/search))
+- **Topic-Wise Tabbed Exam Studio:** Educators paste bulk papers with `Topic:` / `Section:` headers or assign manual per-question topics — automatically creating clean multi-section exam tabs
 
 ---
 
 ### 2. PrepGuide Institutions — Classes 8, 9 & 10 Classroom + Digital Coaching
+
 <div align="center">
   <a href="https://preppguide.com">
-    <img src="./assets/prepguide-institutions-banner.png" alt="PrepGuide Institutions Banner" width="760" />
+    <img src="./assets/prepguide-institutions-banner.png" alt="PrepGuide Institutions Banner" width="800" />
   </a>
+  <br/><br/>
+  <img src="./assets/diagrams/institutions-blended-model.png" alt="PrepGuide Institutions Blended Learning Architecture" width="800" />
 </div>
 
-<p>
-  <a href="https://preppguide.com">
-    <img src="./assets/prepguide-institutions-logo.png" alt="PrepGuide Institutions Logo" width="84" align="left" />
-  </a>
-  <strong><a href="https://preppguide.com">PrepGuide Institutions</a></strong> brings focused offline classroom excellence paired seamlessly with a complete digital &amp; printable notes platform:<br/>
-  • <strong>Admissions Opening For:</strong> <strong>Classes 8, 9 &amp; 10</strong> <em>(higher &amp; additional classes opening shortly!)</em><br/>
-  • <strong>Supported Boards:</strong> <strong>ICSE · CBSE · West Bengal Board (WBBSE)</strong><br/>
-  • <strong>Subjects Offered:</strong> <strong>PCMB (Physics, Chemistry, Mathematics, Biology) &amp; Computer</strong><br/>
-  • <strong>Learning Environment:</strong> <strong>AC Classrooms</strong>, <strong>Highly Experienced Teachers</strong>, and a <strong>Full Digital &amp; Printable Notes Platform</strong><br/>
-  • <strong>Official Website:</strong> <a href="https://preppguide.com"><strong>https://preppguide.com</strong></a> · <a href="https://prepguide.launchyourconcept.com/material/prepguide-institutions-intro-readiness-quiz-9e4c7a50"><strong>Take the Free Institutions Intro &amp; PCMB Readiness Quiz</strong></a>
-</p>
-<br clear="left" />
+<table>
+  <tr>
+    <td width="220" align="center">
+      <a href="https://preppguide.com">
+        <img src="./assets/prepguide-institutions-logo.png" alt="PrepGuide Institutions Logo" width="180" />
+      </a>
+    </td>
+    <td>
+      <strong><a href="https://preppguide.com">PrepGuide Institutions</a></strong> pairs focused offline classroom teaching with our full digital &amp; printable study portal:<br/>
+      • <strong>Now Opening For:</strong> <strong>Classes 8, 9 &amp; 10</strong> <em>(higher &amp; other classes opening shortly!)</em><br/>
+      • <strong>Boards Covered:</strong> <strong>ICSE · CBSE · West Bengal Board (WBBSE)</strong><br/>
+      • <strong>Subjects:</strong> <strong>PCMB (Physics, Chemistry, Mathematics, Biology) &amp; Computer</strong><br/>
+      • <strong>Facilities:</strong> <strong>Air-Conditioned (AC) Classrooms</strong>, <strong>Highly Experienced Teachers</strong>, and a <strong>Full Digital &amp; Printable Notes Platform</strong><br/>
+      • <strong>Website &amp; Quiz:</strong> <a href="https://preppguide.com"><strong>https://preppguide.com</strong></a> · <a href="https://prepguide.launchyourconcept.com/material/prepguide-institutions-intro-readiness-quiz-9e4c7a50"><strong>Take PrepGuide Institutions Intro &amp; PCMB Quiz</strong></a>
+    </td>
+  </tr>
+</table>
 
 ---
 
 ### 3. Developed & Maintained by Launch Your Concept
-<p>
-  <a href="https://www.launchyourconcept.com">
-    <img src="./assets/launch-your-concept-logo.png" alt="Launch Your Concept Logo" width="136" align="left" />
-  </a>
-  <strong><a href="https://www.launchyourconcept.com">Launch Your Concept</a></strong> handles full-stack engineering, cloud CDN infrastructure, search &amp; pSEO architecture, and ongoing platform maintenance for both <strong>PrepGuide Lite</strong> and <strong>PrepGuide Institutions</strong>.<br/>
-  Visit: <a href="https://www.launchyourconcept.com"><strong>https://www.launchyourconcept.com</strong></a>
-</p>
-<br clear="left" />
+
+<table>
+  <tr>
+    <td width="220" align="center">
+      <a href="https://www.launchyourconcept.com">
+        <img src="./assets/launch-your-concept-logo.png" alt="Launch Your Concept Logo" width="180" />
+      </a>
+    </td>
+    <td>
+      <strong><a href="https://www.launchyourconcept.com">Launch Your Concept</a></strong> engineers, hosts, and maintains both <strong>PrepGuide Lite</strong> and <strong>PrepGuide Institutions</strong> — owning full-stack platform architecture, Cloudflare Pages CDN pipelines, in-memory question search indexing, SEO/pSEO automation, and continuous feature delivery.<br/>
+      • Website: <a href="https://www.launchyourconcept.com"><strong>https://www.launchyourconcept.com</strong></a>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## System Architecture
+## PrepGuide App Screenshots Showcase
 
-```text
-┌────────────────────────────────────────────────────────────────┐
-│           PrepGuide Lite Client (React + Vite + PWA)           │
-│   IndexedDB Offline · KaTeX · Topic Tabs · Smart Search        │
-└──────────────────────────┬─────────────────────────────────────┘
-                           │
-        ┌──────────────────┴──────────────────┐
-        │ Metadata, Search & Crawler SSR      │ Full Test / Note JSON
-        ▼                                     ▼
-┌────────────────────────┐      ┌──────────────────────────────────┐
-│  Express + MongoDB API │      │  Cloudflare Pages Global CDN     │
-│  (/api/search, /seo)   │      │  prepguidedata.launchyourconcept │
-└───────────┬────────────┘      └─────────────────▲────────────────┘
-            │ @octokit/rest                       │ Auto-deploy on push
-            └──────────────► GitHub: EduTest-data ◄── GitHub Actions (4x/day)
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <a href="https://prepguide.launchyourconcept.com/classes">
+        <img src="./assets/prepguide-app-ss/class-competitive-listscreen.png" alt="PrepGuide Lite Classes & Competitive Exams Screen" width="420" />
+      </a><br/>
+      <strong>All School Classes (1–12) &amp; Competitive Exams Explorer</strong><br/>
+      <sub>Browse 7 boards and 28+ exams with live mock test &amp; study material counters.</sub>
+    </td>
+    <td width="50%" align="center">
+      <a href="https://prepguide.launchyourconcept.com/create-test">
+        <img src="./assets/prepguide-app-ss/advance-testcreation-screen.png" alt="PrepGuide Lite Topic-Wise Test Creation Screen" width="420" />
+      </a><br/>
+      <strong>Topic-Wise Manual &amp; Bulk Test Creation Studio</strong><br/>
+      <sub>Assign sections/topics per question or via smart text import with LaTeX support.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <a href="https://prepguide.launchyourconcept.com/exam/norcet">
+        <img src="./assets/prepguide-app-ss/exam-screen.png" alt="PrepGuide Lite Live Tabbed Exam Screen" width="420" />
+      </a><br/>
+      <strong>Interactive Multi-Section Exam Portal</strong><br/>
+      <sub>Scrollable topic tabs, color-coded palette, hints, negative marking &amp; real-time sync.</sub>
+    </td>
+    <td width="50%" align="center">
+      <a href="https://prepguide.launchyourconcept.com/leaderboard">
+        <img src="./assets/prepguide-app-ss/leaderboard-screen.png" alt="PrepGuide Lite Real-Time Leaderboard Screen" width="420" />
+      </a><br/>
+      <strong>Global, Class, Exam &amp; Per-Test Leaderboards</strong><br/>
+      <sub>Live rank calculations by score, percentage, and fastest completion time.</sub>
+    </td>
+  </tr>
+</table>
+
+---
+
+## System Architecture & Content Flow Diagrams
+
+<div align="center">
+  <img src="./assets/diagrams/ecosystem-architecture.png" alt="PrepGuide Ecosystem System Architecture" width="820" />
+  <br/><br/>
+  <img src="./assets/diagrams/test-generation-flow.png" alt="PrepGuide Test Creation & AI Generation Flowchart" width="820" />
+</div>
+
+```mermaid
+flowchart LR
+    Creator["Teachers, Students & 4x/Day AI Pipeline"] --> GitHub["GitHub Public Repo: EduTest-data"]
+    GitHub -->|Auto-Deploy| CDN["Cloudflare Pages Global CDN"]
+    GitHub -->|Metadata & Slugs| Mongo["MongoDB Atlas + Express API"]
+    Mongo --> Search["61,900+ Question Search Index (/api/search)"]
+    Mongo --> SEO["Crawler SSR (/api/seo/render) + Dynamic Sitemap XML"]
+    CDN --> App["PrepGuide Lite App & PrepGuide Institutions Portal"]
+    Search --> App
 ```
 
-### Key Engineering Highlights
-- **Zero-Cost Global Read Scale** — Served from 300+ Cloudflare edge locations with CORS enabled (`_headers`)
-- **Offline-First Ready** — Designed to cache seamlessly inside the client's IndexedDB (`prepguide-offline`)
-- **Rich Math & Science Support** — Full KaTeX / LaTeX formulas (`$...$`, `$$...$$`), hints, step-by-step explanations, and per-option breakdowns
-- **Search & pSEO Indexable** — Dynamic XML sitemap (`/sitemap.xml`), crawler SSR (`/api/seo/render`), topic hubs (`/topics`, `/topic/:slug`), and 53+ custom social OG images
-- **Automated Daily Growth** — GitHub Actions runs 4× daily to research topics, generate exam-aligned questions, structure JSON, and publish to both CDN and MongoDB metadata
+---
+
+## Indexable Design Docs & Complete SEO Catalog
+
+| Document | Contents |
+|---|---|
+| **[CATALOG.md](./CATALOG.md)** | **Full SEO-Indexable Catalog** of all **1,975+ Tests** &amp; **81,541+ Questions** with direct practice, preview &amp; CDN JSON links |
+| **[docs/PREPGUIDE_SYSTEM_DESIGN.md](./docs/PREPGUIDE_SYSTEM_DESIGN.md)** | Complete System Design, App Walkthrough, Search Index, Crawler SSR, OG Cards &amp; PrepGuide Institutions Architecture |
+| **[docs/architecture.md](./docs/architecture.md)** | Hybrid MongoDB + GitHub + Cloudflare CDN + Offline IndexedDB Architecture |
+| **[docs/github-cdn.md](./docs/github-cdn.md)** | Static JSON Publishing Schema &amp; Cloudflare CDN Delivery Reference |
+| **[docs/classes-and-exams-reference.md](./docs/classes-and-exams-reference.md)** | Full Registry of 81 School Classes &amp; Competitive Exams |
+| **[topics/](./topics/)** | Machine-Readable Curriculum &amp; Chapter Registry across all Boards &amp; Exams |
 
 ---
 
@@ -111,160 +185,53 @@
 
 ```text
 EduTest-data/
-├── assets/                          # PrepGuide Lite, PrepGuide Institutions & Launch Your Concept logos/banners
-├── docs/                            # Synced architecture & GitHub-CDN documentation
+├── README.md                        # Main SEO Hub (PrepGuide Lite, Institutions, Launch Your Concept)
+├── CATALOG.md                       # Complete SEO-indexed table of all tests across 81 curricula
 ├── _headers                         # Cloudflare CORS config (Access-Control-Allow-Origin: *)
 ├── test.json                        # CDN health-check endpoint
+├── assets/
+│   ├── diagrams/                    # High-res System Architecture, Flowchart & Blended Model PNGs
+│   ├── prepguide-app-ss/            # App screenshots (Exam UI, Test Studio, Classes, Leaderboard)
+│   └── *.png                        # Brand logos & 1200x630 banners
+├── docs/
+│   ├── PREPGUIDE_SYSTEM_DESIGN.md   # Deep architecture & product design documentation
+│   ├── architecture.md
+│   ├── github-cdn.md
+│   └── classes-and-exams-reference.md
 ├── data/
-│   ├── admin/                       # Official PrepGuide Lite & Institutions content (by exam/class slug)
-│   │   ├── cbse-class-10/tests/     # e.g. PrepGuide Institutions quiz & board mock tests
-│   │   ├── norcet/tests/            # NORCET Nursing FON infection control & clinical tests
-│   │   ├── jee-mains/tests/         # Full-length, combined & subject-wise tests
-│   │   ├── neet-ug/tests/
-│   │   ├── upsc-cse/tests/
-│   │   └── ... (81 exams & classes)
-│   ├── teacher/                     # Educator-published tests & notes
-│   ├── student/                     # Student-published tests & notes
+│   ├── admin/{classSlug}/tests/     # Official tests (e.g. norcet, neet-ug, jee-mains, cbse-class-10)
+│   ├── teacher/                     # Educator-contributed tests & notes
+│   ├── student/                     # Student-contributed tests & notes
 │   ├── research/                    # Cached syllabus & exam-pattern research
-│   └── drafts/                      # In-progress generation drafts (resumed automatically)
-├── topics/                          # Structured syllabus registry (81 curricula)
-│   ├── school/                      # CBSE, ICSE, ISC, Maharashtra, UP, Rajasthan, West Bengal (Classes 1–12)
-│   └── competitive/                 # JEE, NEET, UPSC, GATE, CAT, SSC, IBPS, SBI, RRB, NDA, CDS, CLAT, NORCET, etc.
-├── scripts/                         # Python multi-provider test generation & publishing pipeline
-│   ├── generate.py                  # Main orchestrator (resumes drafts → generates new tests)
-│   ├── content_builder.py           # Exam-specific prompt builder, chunking & JSON assembly
-│   ├── topic_picker.py              # Cycle-based topic selector (prevents duplicate topics)
-│   ├── gemini_client.py             # Gemini Flash 2.5 / 2.0 multi-key rotation
-│   ├── groq_client.py               # Groq Llama 3.3 70B structuring client
-│   ├── mistral_client.py            # Mistral Small fallback client
-│   ├── draft_store.py               # Partial-test persistence across runs
-│   ├── research_cache.py            # Cached subject/topic exam research
-│   └── publish_to_server.py         # Syncs metadata to PrepGuide Lite backend
+│   └── drafts/                      # Resumable generation drafts
+├── topics/                          # Structured syllabus registry (school/ + competitive/)
+├── scripts/                         # Python AI content generation & publish pipeline
 └── .github/workflows/
-    └── generate-content.yml         # Scheduled 4×/day GitHub Actions workflow
+    └── generate-content.yml         # Scheduled 4x/day GitHub Actions workflow
 ```
 
 ---
 
-## Covered Exams & School Boards (`topics/`)
+## Direct Cloudflare CDN Examples
 
-| Category | Coverage |
-|---|---|
-| **School Boards (Classes 1–12)** | CBSE, ICSE, ISC, Maharashtra Board, UP Board, Rajasthan Board, West Bengal Board |
-| **Engineering & Science** | JEE Mains, JEE Advanced, GATE, CUET UG, CUET PG, KVPY, Math & Science Olympiads |
-| **Medical & Nursing** | NEET UG, NEET PG, NORCET |
-| **Civil Services & Defence** | UPSC CSE, UPSC CAPF, NDA, CDS |
-| **SSC, Banking & Railways** | SSC CGL, SSC CHSL, SSC MTS, IBPS PO, IBPS Clerk, SBI PO, RRB NTPC, RRB Group D |
-| **Management, Law & Teaching** | CAT, CLAT, CTET, DSSSB |
-
----
-
-## Content JSON Schemas
-
-### 1. Test JSON (`data/admin/{classSlug}/tests/{slug}-{shortId}.json`)
-
-```json
-{
-  "id": "98bd07ae-9f65-4bee-8004-92b2c820f66b",
-  "title": "CAT — Combined: Data Interpretation LR + Quantitative Aptitude",
-  "description": "Combined test: Data Interpretation LR + Quantitative Aptitude for CAT. 30Q.",
-  "board": "Competitive",
-  "classSlug": "cat",
-  "classNumber": 0,
-  "subjects": ["cat-dilr", "cat-qa"],
-  "subject": "cat-dilr",
-  "chapter": "Multiple Chapters",
-  "topic": "Combined",
-  "testType": "subject-wise",
-  "duration": 80,
-  "totalMarks": 90,
-  "passingMarks": 36,
-  "totalQuestions": 30,
-  "isPublic": true,
-  "isPublished": true,
-  "isAdmin": true,
-  "showCorrectAnswers": true,
-  "randomizeQuestions": false,
-  "unlimitedAttempts": true,
-  "allowedAttempts": 0,
-  "tags": ["cat", "cat-dilr+cat-qa"],
-  "instructions": [
-    "Subject: Data Interpretation LR + Quantitative Aptitude",
-    "Total Questions: 30",
-    "Total Marks: 90",
-    "Duration: 80 minutes"
-  ],
-  "createdBy": "admin",
-  "createdByName": "PrepGuide Lite Admin",
-  "publishedAt": "2026-05-01T10:00:00Z",
-  "questions": [
-    {
-      "id": "q-uuid",
-      "order": 1,
-      "type": "mcq",
-      "subject": "Topic / Section Name (renders as tabbed exam sections)",
-      "question": "Question text with optional LaTeX like $E = mc^2$",
-      "difficulty": "medium",
-      "marks": 3,
-      "negativeMarking": true,
-      "negativeMark": 1,
-      "hint": "Optional hint for students",
-      "explanation": "Step-by-step deductive solution",
-      "options": [
-        { "letter": "A", "text": "Option A", "isCorrect": false, "index": 0, "explanation": "..." },
-        { "letter": "B", "text": "Option B", "isCorrect": true,  "index": 1, "explanation": "..." },
-        { "letter": "C", "text": "Option C", "isCorrect": false, "index": 2, "explanation": "..." },
-        { "letter": "D", "text": "Option D", "isCorrect": false, "index": 3, "explanation": "..." }
-      ]
-    }
-  ]
-}
-```
-
-**Supported question types (`questions[].type`):** `mcq`, `msq`, `true-false`, `one-word`, `short-answer`, `large`.
-
-### 2. Note / Formula / Resource JSON (`data/admin/{classSlug}/notes/{slug}-{shortId}.json`)
-
-```json
-{
-  "id": "note-uuid",
-  "title": "Quadratic Equations — Complete Formula Sheet",
-  "description": "All key formulas and identities for Class 10 CBSE",
-  "type": "note",
-  "board": "CBSE",
-  "classSlug": "cbse-class-10",
-  "subject": "mathematics",
-  "chapter": "Quadratic Equations",
-  "tags": ["quadratic", "formula", "class10"],
-  "isPublic": true,
-  "isAdmin": true,
-  "createdBy": "admin",
-  "publishedAt": "2026-05-01T12:00:00Z",
-  "content": "<p>Rich HTML + KaTeX content...</p>"
-}
-```
-
-**Supported material types:** `note`, `formula`, `book`, `pdf`, `video`, `link`.
-
----
-
-## Using the CDN Directly
-
-Cloudflare Pages serves all JSON files with `Access-Control-Allow-Origin: *` (configured in [`_headers`](./_headers)):
+Cloudflare Pages serves every JSON file with `Access-Control-Allow-Origin: *` (configured in [`_headers`](./_headers)):
 
 ```bash
 # CDN health check
 curl https://prepguidedata.launchyourconcept.com/test.json
 
-# Fetch the PrepGuide Institutions Intro & PCMB Readiness Quiz
+# PrepGuide Institutions Official Intro & PCMB Readiness Quiz
 curl https://prepguidedata.launchyourconcept.com/data/admin/cbse-class-10/tests/prepguide-institutions-intro-readiness-quiz-9e4c7a50.json
+
+# NORCET FON Infection Control & Biomedical Waste Management (70Q)
+curl https://prepguidedata.launchyourconcept.com/data/admin/norcet/tests/norcet-fon-infection-control-hand-hygiene-ppe-cssd-bmw-70q-9e4c7a30.json
 ```
 
 ---
 
 ## Automated Generation Schedule (GitHub Actions)
 
-[`generate-content.yml`](./.github/workflows/generate-content.yml) runs **4 times daily** (and supports manual `workflow_dispatch` runs with optional `mode`, `exam`, `instructions`, and `max_tests`):
+[`generate-content.yml`](./.github/workflows/generate-content.yml) runs **4 times daily** (plus manual `workflow_dispatch` runs):
 
 | Schedule (UTC) | Time (IST) | Mode | Purpose |
 |---|---|---|---|
@@ -276,13 +243,37 @@ curl https://prepguidedata.launchyourconcept.com/data/admin/cbse-class-10/tests/
 ---
 
 <div align="center">
-  <img src="./assets/prepguide-icon.png" alt="PrepGuide Lite Icon" width="44" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="./assets/prepguide-institutions-logo.png" alt="PrepGuide Institutions" width="44" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="./assets/launch-your-concept-logo.png" alt="Launch Your Concept" height="38" />
-  <br/><br/>
-  <strong>PrepGuide Lite</strong> (<a href="https://prepguide.launchyourconcept.com">prepguide.launchyourconcept.com</a>) ·
-  <strong>PrepGuide Institutions</strong> (<a href="https://preppguide.com">preppguide.com</a>) ·
-  Built by <a href="https://www.launchyourconcept.com"><strong>Launch Your Concept</strong></a>
+
+<h3>PrepGuide Ecosystem Partners</h3>
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <a href="https://prepguide.launchyourconcept.com">
+        <img src="./assets/prepguide-icon.png" alt="PrepGuide Lite" height="64" /><br/>
+        <strong>PrepGuide Lite</strong>
+      </a><br/>
+      <sub>Free Tests, Notes &amp; Study Engine</sub>
+    </td>
+    <td align="center" width="34%">
+      <a href="https://preppguide.com">
+        <img src="./assets/prepguide-institutions-logo.png" alt="PrepGuide Institutions" height="64" /><br/>
+        <strong>PrepGuide Institutions</strong>
+      </a><br/>
+      <sub>Classes 8–10 · ICSE, CBSE, WBBSE · PCMB &amp; CS</sub>
+    </td>
+    <td align="center" width="33%">
+      <a href="https://www.launchyourconcept.com">
+        <img src="./assets/launch-your-concept-logo.png" alt="Launch Your Concept" height="64" /><br/>
+        <strong>Launch Your Concept</strong>
+      </a><br/>
+      <sub>Platform Development &amp; Maintenance</sub>
+    </td>
+  </tr>
+</table>
+
+<strong><a href="https://prepguide.launchyourconcept.com">prepguide.launchyourconcept.com</a></strong> ·
+<strong><a href="https://preppguide.com">preppguide.com</a></strong> ·
+Built by <strong><a href="https://www.launchyourconcept.com">Launch Your Concept</a></strong>
+
 </div>
