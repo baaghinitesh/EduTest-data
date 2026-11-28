@@ -161,12 +161,12 @@ def _validate_keys():
         print("  All keys set — maximum free-tier capacity available.\n")
     
     # Show key rotation strategy
-    print("  Key rotation strategy (ALL 6 keys × 2 models tried per chunk):")
-    print("    Generation : K_a-2.5→K_a-2.0→K_b-2.5→K_b-2.0→K_c-2.5→K_c-2.0→Mistral→GroqK1→GroqK2")
-    print("    Key order rotates per chunk: chunk%4=0→K3,K1,K2 | 1→K1,K2,K3 | 2→K2,K3,K1 | 3→Mistral-first")
-    print("    Research   : K1-2.5→K2-2.5→K3-2.5→Mistral→K1-2.0→K2-2.0→K3-2.0 (all tried before empty ctx)")
-    print("    Structuring: GroqK1→GroqK2→Mistral→Flash2.0(K1/K2/K3)→Flash2.5(K1/K2/K3)")
-    print("    Safety     : short sleep between key switches, consecutive-fail cap, no infinite loops")
+    print("  Key rotation strategy (ALL 6 keys × 2 tiers tried per chunk):")
+    print("    Generation : K_a-3.8→K_b-3.8→K_c-3.8→Mistral→Groq(gpt-oss-120b)→K_*-3.5-lite→Groq(qwen3.8-27b)")
+    print("    Key order rotates per chunk to spread load across keys")
+    print("    Research   : K1-3.8→K2-3.8→K3-3.8→Mistral→Groq→K1/K2/K3-3.5-lite (all tried before empty ctx)")
+    print("    Structuring: Groq(qwen3.8-27b)→Mistral→Groq(gpt-oss-20b)→Gemini3.5-Lite→Gemini3.8-Flash")
+    print("    Safety     : permanent 401/402/403/404 circuit-break immediately, no wasted retry loops")
     print()
 
 
@@ -367,8 +367,8 @@ def _print_final_report(generated, failed):
             pct = int(d["collected_q"] / d["target_q"] * 100) if d["target_q"] else 0
             print("    • " + d["title"] + " [" + str(d["collected_q"]) + "/" + str(d["target_q"]) + "Q  " + str(pct) + "%]")
 
-    # Show which keys hit their daily limit this run
-    exhausted_keys = list(_gc._rpd_exhausted) + list(_gq._tpd_exhausted)
+    # Show which keys hit their daily limit or were disabled this run
+    exhausted_keys = list(_gc._rpd_exhausted) + list(_gq._tpd_exhausted) + list(_gq._auth_failed)
     if mistral_exhausted:
         exhausted_keys.append("MISTRAL_API_KEY")
 
@@ -377,22 +377,24 @@ def _print_final_report(generated, failed):
     for key_env in [_gc.KEY_K1, _gc.KEY_K2, _gc.KEY_K3]:
         if not os.environ.get(key_env, "").strip():
             continue
-        ex25 = _gc._model_exhausted.get((key_env, _gc.MODEL_FLASH_25), False)
-        ex20 = _gc._model_exhausted.get((key_env, _gc.MODEL_FLASH_20), False)
-        if ex25 or ex20:
+        ex_pri  = _gc._model_exhausted.get((key_env, _gc.MODEL_PRIMARY), False)
+        ex_lite = _gc._model_exhausted.get((key_env, _gc.MODEL_LITE), False)
+        if ex_pri or ex_lite:
             models = []
-            if ex25: models.append("Flash2.5")
-            if ex20: models.append("Flash2.0")
+            if ex_pri:  models.append("3.8-Flash")
+            if ex_lite: models.append("3.5-Lite")
             model_detail.append(f"{key_env}({'+'.join(models)})")
 
     if exhausted_keys:
-        print("  🔑 Keys that hit daily limit this run: " + ", ".join(exhausted_keys))
+        print("  🔑 Keys exhausted/disabled this run: " + ", ".join(dict.fromkeys(exhausted_keys)))
+    if _gq._disabled_models:
+        print("  ⚠️  Groq disabled models: " + ", ".join(sorted(_gq._disabled_models)))
     if model_detail:
         print("  📉 Per-model exhaustion: " + ", ".join(model_detail))
 
     total_keys = 6
-    exhausted_count = len(exhausted_keys)
-    remaining = total_keys - exhausted_count
+    exhausted_count = len(set(exhausted_keys))
+    remaining = max(0, total_keys - exhausted_count)
     print(f"  📊 Key status: {remaining}/{total_keys} keys still available")
     print(eq + "\n")
 
@@ -450,7 +452,6 @@ def run():
     mode        = _get_mode()
     forced_exam = os.environ.get("FORCE_EXAM", "").strip().lower()
     forced_exam = topic_picker.normalize_exam_slug(forced_exam) if forced_exam else ""
-    forced_str  = " (forced)" if forced_exam else ""
 
     # Custom generation instructions from workflow_dispatch input
     custom_instructions = os.environ.get("GENERATION_INSTRUCTIONS", "").strip()

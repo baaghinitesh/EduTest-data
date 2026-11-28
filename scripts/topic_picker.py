@@ -384,31 +384,25 @@ def _ai_research_with_all_keys(prompt, max_tokens=1500, label="topic-gen"):
     except Exception as e:
         print(f"  [TopicPicker/{label}] Gemini research failed ({e})")
 
-    # ── Groq fallback — use raw chat for topic generation ──────────────────────
-    for key_env in ["GROQ_API_KEY", "GROQ_API_KEY2"]:
-        api_key = os.environ.get(key_env, "").strip()
-        if not api_key:
-            continue
-        try:
-            from groq import Groq
-            import time as _time
-            client = Groq(api_key=api_key)
-            _time.sleep(2)  # basic rate limiting
-            resp = client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
-                messages=[
-                    {"role": "system", "content": "You are an expert exam curriculum designer. Output ONLY what is asked — no preamble."},
-                    {"role": "user",   "content": prompt},
-                ],
-                temperature=0.5,
-                max_tokens=max_tokens,
-            )
-            text = (resp.choices[0].message.content or "").strip()
-            if text and len(text) > 50:
-                print(f"  [TopicPicker/{label}] ✅ Groq fallback ({key_env}) succeeded")
-                return text
-        except Exception as e:
-            print(f"  [TopicPicker/{label}] Groq {key_env} failed ({e})")
+    # ── Groq fallback — use active production models with circuit-breaking ────
+    try:
+        import groq_client
+        system = "You are an expert exam curriculum designer. Output ONLY what is asked — no preamble."
+        for model in ["openai/gpt-oss-120b", groq_client.MODEL]:
+            for key_env in ["GROQ_API_KEY", "GROQ_API_KEY2"]:
+                if not groq_client.is_model_available(key_env, model):
+                    continue
+                try:
+                    text = groq_client._call_one(
+                        key_env, system, prompt, max_tokens=max_tokens, model=model
+                    )
+                    if text and len(text) > 50:
+                        print(f"  [TopicPicker/{label}] ✅ Groq fallback ({key_env}/{model}) succeeded")
+                        return text
+                except Exception as e:
+                    print(f"  [TopicPicker/{label}] Groq {key_env}/{model} failed ({e})")
+    except Exception as e:
+        print(f"  [TopicPicker/{label}] Groq fallback unavailable ({e})")
 
     print(f"  [TopicPicker/{label}] All keys exhausted — returning empty")
     return ""

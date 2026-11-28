@@ -43,13 +43,13 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v7
         with:
           token: ${{ secrets.GH_PAT }}
           fetch-depth: 1
 
       - name: Set up Python
-        uses: actions/setup-python@v5.6.0
+        uses: actions/setup-python@v7
         with:
           python-version: "3.11"
           cache: "pip"
@@ -79,8 +79,8 @@ jobs:
             && echo "❌ GEMINI_API_KEY_1 (Flash K2 researcher + gen fallback)  — NOT SET" \
             || echo "✅ GEMINI_API_KEY_1 (Flash K2 researcher + gen fallback)  — ${#GEMINI_API_KEY_1} chars"
           [ -z "$GEMINI_API_KEY2"  ] \
-            && echo "❌ GEMINI_API_KEY2  (Pro/Flash primary generator)         — NOT SET ⚠️ CRITICAL" \
-            || echo "✅ GEMINI_API_KEY2  (Pro/Flash primary generator)         — ${#GEMINI_API_KEY2} chars"
+            && echo "❌ GEMINI_API_KEY2  (Flash K3 primary generator)        — NOT SET ⚠️ CRITICAL" \
+            || echo "✅ GEMINI_API_KEY2  (Flash K3 primary generator)        — ${#GEMINI_API_KEY2} chars"
           [ -z "$GROQ_API_KEY"     ] \
             && echo "❌ GROQ_API_KEY     (Groq K1 primary structurer)          — NOT SET ⚠️ CRITICAL" \
             || echo "✅ GROQ_API_KEY     (Groq K1 primary structurer)          — ${#GROQ_API_KEY} chars"

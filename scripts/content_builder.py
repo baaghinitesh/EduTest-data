@@ -455,7 +455,7 @@ def _generate_one_chunk(prompt, chunk_index):
     """
     try:
         raw = gemini_client.generate_questions_for_chunk(
-            prompt, chunk_index=chunk_index, max_tokens=4096
+            prompt, chunk_index=chunk_index, max_tokens=8192
         )
         if raw and len(raw) > 80:
             return raw
@@ -506,7 +506,7 @@ def _structure_one_chunk(raw_text, exam_name, subject_name):
         f"TEXT:\n{raw_text}"
     )
     try:
-        qs = gemini_client.structure_with_flash(flash_prompt, max_tokens=4096)
+        qs = gemini_client.structure_with_flash(flash_prompt, max_tokens=8192)
         if isinstance(qs, list) and qs:
             print(f"    [Structure] ✅ Flash fallback succeeded")
             return qs
@@ -548,17 +548,17 @@ def _iterate_to_target(target_count, exam_name, subject_name,
     consecutive_fails  = 0   # consecutive chunk failures (non-quota)
     MAX_CONSECUTIVE    = 3   # stop after 3 consecutive non-quota failures
     INTER_CHUNK_SLEEP  = 1   # seconds between successful chunks (light pacing)
-    max_chunks         = (target_count // CHUNK) + 5  # +5 buffer for retries
-
     total_needed = (target_count + CHUNK - 1) // CHUNK
-    print(f"    Target: {target_count}Q in {CHUNK}Q chunks ({total_needed} chunks needed)")
+    max_chunks   = total_needed + 5  # +5 buffer for retries/partial yields
+    print(f"    Target: {target_count}Q in {CHUNK}Q chunks (~{total_needed} chunks needed)")
 
     while collected < target_count and chunk_idx < max_chunks:
         remaining = target_count - collected
         cnt       = min(remaining, CHUNK)
         chunk_num = chunk_idx + 1
+        est_total = max(total_needed, chunk_num - 1 + (remaining + CHUNK - 1) // CHUNK)
 
-        print(f"    ── Chunk {chunk_num}/{total_needed} ({cnt}Q, key slot {chunk_idx % 4}) ──")
+        print(f"    ── Chunk {chunk_num}/{est_total} ({cnt}Q, key slot {chunk_idx % 4}) ──")
 
         kwargs = prompt_kwargs or {}
         prompt = prompt_fn(cnt, exam_name, subject_name, research_ctx, topic_str, **kwargs)

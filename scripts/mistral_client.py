@@ -2,37 +2,33 @@
 mistral_client.py — Mistral AI fallback for generation and structuring.
 
 GitHub Secret name (exact):
-  MISTRAL_API_KEY  → Mistral API key — used when ALL Gemini keys are exhausted
-
-Role in the pipeline:
-  Generation  : 4th fallback after Gemini K3 → K1 → K2 all fail
-  Structuring : 3rd fallback after Groq K1 → K2 both fail (before Flash)
-  Research    : 3rd fallback after Gemini K1 → K2 both fail
+  MISTRAL_API_KEY  → Mistral API key — used in rotation / fallback
 
 Model used:
-  mistral-small-latest  — fast, cheap, good quality for MCQ generation
-  (free tier: 1 req/s, no hard daily limit on free API keys)
+  mistral-small-latest  — fast, good quality for MCQ generation & structuring
 
-API: OpenAI-compatible — https://api.mistral.ai/v1/chat/completions
+Circuit-breaking:
+  402 (subscription/billing required), 401/403 (auth), 404 (model missing)
+  → immediately disable Mistral for the rest of the run (no retries/sleeps).
 """
-import os, json, re, time
+import os, time
 
-# Support both mistralai v1.x (from mistralai import Mistral)
-# and v2.x (from mistralai.client import Mistral — same API, different import path)
 try:
-    from mistralai.client import Mistral  # v2.x
+    from mistralai.client import Mistral  # v2.x / v3.x
 except ImportError:
     from mistralai import Mistral         # v1.x
 
-MODEL       = "mistral-small-latest"   # fast + good quality
+from json_utils import extract_json
+
+MODEL       = "mistral-small-latest"
 MAX_RETRIES = 3
-MIN_GAP     = 1.2   # 1 req/s free tier → 1.2s gap to be safe
+MIN_GAP     = 1.2
 
 KEY_ENV = "MISTRAL_API_KEY"
 
 _client    = None
 _last_call = 0.0
-_exhausted = False   # set True when Mistral hits quota/rate-limit this run
+_exhausted = False   # set True when Mistral hits quota, 402 billing, or auth failure
 
 
 class MistralError(Exception):
@@ -64,46 +60,19 @@ def _rate_limit():
 
 
 def _extract_json(text):
-    """Robustly extract JSON array or object from Mistral response."""
-    text = re.sub(r"```(?:json)?\s*", "", text)
-    text = re.sub(r"```", "", text).strip()
-    if not text.startswith("["):
-        idx = text.find("[")
-        if idx != -1:
-            text = text[idx:]
-    try:
-        return json.loads(text)
-    except json.JSONDecodeError:
-        pass
-    for start, end in [("[", "]"), ("{", "}")]:
-        idx = text.find(start)
-        if idx == -1:
-            continue
-        depth = 0
-        for i, ch in enumerate(text[idx:], idx):
-            if ch == start:
-                depth += 1
-            elif ch == end:
-                depth -= 1
-                if depth == 0:
-                    try:
-                        return json.loads(text[idx : i + 1])
-                    except json.JSONDecodeError:
-                        break
-    raise MistralError("No valid JSON found in Mistral response")
+    return extract_json(text, error_cls=MistralError)
 
 
-def _call(system_prompt, user_prompt, expect_json=False, max_tokens=4096, model=None):
-    """Call Mistral with retry. Returns text or parsed JSON."""
+def _call(system_prompt, user_prompt, expect_json=False, max_tokens=8192, model=None):
+    """Call Mistral with circuit-breaking & retry. Returns text or parsed JSON."""
     global _exhausted
     if _exhausted:
-        raise MistralQuotaError("Mistral already exhausted this run")
-    
-    client   = _get_client()
-    last_err = None
+        raise MistralQuotaError("Mistral already disabled/exhausted this run")
+
+    client     = _get_client()
+    last_err   = None
     call_model = model if model is not None else MODEL
-    
-    # Use deterministic low temperature for structuring/JSON tasks
+
     call_temp = 0.15 if expect_json else 0.7
     extra_args = {}
     if expect_json:
@@ -127,44 +96,52 @@ def _call(system_prompt, user_prompt, expect_json=False, max_tokens=4096, model=
                 raise MistralError("Empty response from Mistral")
             return _extract_json(text) if expect_json else text
 
-        except MistralError:
+        except MistralQuotaError:
             raise
         except Exception as e:
             last_err = e
             s = str(e)
+            s_lower = s.lower()
             print(f"  [Mistral] attempt {attempt}/{MAX_RETRIES}: {s[:120]}")
-            if any(x in s for x in ["429", "rate_limit", "quota", "too many"]):
+
+            # Circuit-break immediately on billing (402), auth (401/403), or missing model (404)
+            if any(x in s_lower for x in [
+                "status 402", "subscription", "401", "403", "unauthorized", "404"
+            ]):
                 _exhausted = True
-                print(f"  [Mistral] Quota/rate-limit hit — marking Mistral exhausted for this run")
+                print("  [Mistral] Account/billing/auth error — disabling Mistral for this run")
+                raise MistralQuotaError(f"Mistral unavailable: {s[:80]}")
+
+            if any(x in s_lower for x in ["429", "rate_limit", "quota", "too many"]):
+                _exhausted = True
+                print("  [Mistral] Quota/rate-limit hit — marking Mistral exhausted for this run")
                 raise MistralQuotaError(f"Mistral quota/rate-limit hit: {s[:80]}")
-            if any(x in s for x in ["503", "502", "unavailable"]):
+
+            if any(x in s_lower for x in ["503", "502", "unavailable"]):
                 wait = 15 * attempt
                 print(f"  [Mistral] server busy — sleeping {wait}s")
                 time.sleep(wait)
                 continue
+
             if attempt < MAX_RETRIES:
-                time.sleep(5 * attempt)
+                time.sleep(4 * attempt)
     raise MistralError(f"Mistral failed after {MAX_RETRIES} attempts: {last_err}")
 
 
 def available():
-    """Return True if MISTRAL_API_KEY is set and not exhausted this run."""
+    """Return True if MISTRAL_API_KEY is set and not disabled/exhausted this run."""
     return bool(os.environ.get(KEY_ENV, "").strip()) and not _exhausted
 
 
 def _is_exhausted():
-    """Return True if Mistral hit quota/rate-limit this run."""
+    """Return True if Mistral hit quota/billing/auth error this run."""
     return _exhausted
 
 
 # ── Public API ────────────────────────────────────────────────────────────────
 
-def generate_questions(prompt, max_tokens=4096, model=None):
-    """
-    Generate raw question text using Mistral.
-    Called when all 3 Gemini keys are exhausted, or as part of rotation.
-    Returns raw text string or raises MistralError.
-    """
+def generate_questions(prompt, max_tokens=8192, model=None):
+    """Generate raw question text using Mistral."""
     if not os.environ.get(KEY_ENV, "").strip():
         raise MistralError(f"{KEY_ENV} not set — Mistral unavailable")
     if _exhausted:
@@ -184,9 +161,8 @@ def generate_questions(prompt, max_tokens=4096, model=None):
 
 def structure_questions(raw_text, schema, exam_name, subject_name="", model=None):
     """
-    Structure raw question text into JSON array using Mistral.
-    Called when both Groq keys fail, before Flash fallback.
-    Returns list of question dicts or raises MistralError.
+    Structure raw question text into a list of question dicts using Mistral.
+    Called when Groq primary fails, before Groq fallback / Flash fallback.
     """
     if not os.environ.get(KEY_ENV, "").strip():
         raise MistralError(f"{KEY_ENV} not set — Mistral unavailable")
@@ -196,16 +172,16 @@ def structure_questions(raw_text, schema, exam_name, subject_name="", model=None
     ctx = f"{exam_name} exam" + (f", {subject_name}" if subject_name else "")
     system = (
         f"You are an expert educator specialising in the {ctx}. "
-        "Output ONLY valid JSON — no markdown, no text outside the JSON array."
+        "Output ONLY a valid JSON object matching the schema — no markdown or extra text."
     )
     user = (
-        f"Extract questions from the text below. "
-        f"Output ONLY a JSON array. Schema: {schema}\n\n"
+        f"Extract ALL questions from the text below into JSON.\n"
+        f"Output ONLY a JSON object with a 'questions' array. Schema:\n{schema}\n\n"
         f"Rules: exactly ONE isCorrect:true per question, "
         f"difficulty is 'easy'/'medium'/'hard'.\n\n"
         f"TEXT:\n{raw_text}"
     )
-    result = _call(system, user, expect_json=True, max_tokens=4096, model=model)
+    result = _call(system, user, expect_json=True, max_tokens=6000, model=model)
     if isinstance(result, list) and result:
         print(f"  [Structure] ✅ Mistral fallback — {len(result)}Q ({model or MODEL})")
         return result
@@ -215,10 +191,7 @@ def structure_questions(raw_text, schema, exam_name, subject_name="", model=None
 
 
 def research(prompt, max_tokens=1500, model=None):
-    """
-    Research step using Mistral — fallback when Gemini keys fail.
-    Returns text or empty string (never raises).
-    """
+    """Research step using Mistral — fallback when Gemini keys fail."""
     if not os.environ.get(KEY_ENV, "").strip():
         return ""
     if _exhausted:
