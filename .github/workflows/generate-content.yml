@@ -38,6 +38,7 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     permissions:
       contents: write
 
@@ -116,6 +117,7 @@ jobs:
           FORCE_EXAM:              ${{ github.event.inputs.exam }}
           GENERATION_INSTRUCTIONS: ${{ github.event.inputs.instructions }}
           MAX_TESTS_PER_RUN:       ${{ github.event.inputs.max_tests || '3' }}
+          MAX_RUN_MINUTES:         "75"
           EDUTEST_API_URL:         ${{ secrets.EDUTEST_API_URL }}
           EDUTEST_ADMIN_EMAIL:     ${{ secrets.EDUTEST_ADMIN_EMAIL }}
           EDUTEST_ADMIN_PASSWORD:  ${{ secrets.EDUTEST_ADMIN_PASSWORD }}

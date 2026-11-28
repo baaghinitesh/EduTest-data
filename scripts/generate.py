@@ -70,6 +70,7 @@ import content_builder
 import draft_store
 from gemini_client import GeminiError, GeminiQuotaError
 from groq_client   import GroqError
+from run_budget    import RunTimeoutError, MAX_RUN_SECONDS, elapsed_seconds, is_expired
 
 # How many new tests to attempt per run (when no drafts are pending).
 # Configurable via MAX_TESTS_PER_RUN env var (default 3; Render uses 1-2, Actions uses 2).
@@ -98,7 +99,7 @@ def _safe(label, fn, *args, **kwargs):
     """
     try:
         return fn(*args, **kwargs), None
-    except AllKeysExhausted:
+    except (AllKeysExhausted, RunTimeoutError):
         raise
     except GeminiQuotaError as e:
         # All Gemini + Mistral keys exhausted — stop the whole run
@@ -164,9 +165,9 @@ def _validate_keys():
     print("  Key rotation strategy (ALL 6 keys × 2 tiers tried per chunk):")
     print("    Generation : K_a-3.8→K_b-3.8→K_c-3.8→Mistral→Groq(gpt-oss-120b)→K_*-3.5-lite→Groq(qwen3.8-27b)")
     print("    Key order rotates per chunk to spread load across keys")
-    print("    Research   : K1-3.8→K2-3.8→K3-3.8→Mistral→Groq→K1/K2/K3-3.5-lite (all tried before empty ctx)")
-    print("    Structuring: Groq(qwen3.8-27b)→Mistral→Groq(gpt-oss-20b)→Gemini3.5-Lite→Gemini3.8-Flash")
-    print("    Safety     : permanent 401/402/403/404 circuit-break immediately, no wasted retry loops")
+    print("    Research   : K1/K2/K3-3.5-lite(rotated)→3.8-flash→Mistral→Groq (all tried before empty ctx)")
+    print("    Structuring: Groq(qwen3.8-27b rotated K1/K2)→Mistral→Groq(gpt-oss-20b)→Gemini3.5-Lite→3.8-Flash")
+    print(f"    Safety     : permanent 401/402/403/404 circuit-break, 503 fast-failover, {int(MAX_RUN_SECONDS/60)}m hard time cap")
     print()
 
 
@@ -396,6 +397,7 @@ def _print_final_report(generated, failed):
     exhausted_count = len(set(exhausted_keys))
     remaining = max(0, total_keys - exhausted_count)
     print(f"  📊 Key status: {remaining}/{total_keys} keys still available")
+    print(f"  ⏱️  Elapsed   : {elapsed_seconds() / 60.0:.1f}m / {MAX_RUN_SECONDS / 60.0:.0f}m budget")
     print(eq + "\n")
 
 
@@ -432,6 +434,8 @@ def _try_complete(entry, label):
             return entry   # return the partial entry (draft already updated)
     except (AllKeysExhausted, GeminiQuotaError) as e:
         raise AllKeysExhausted(str(e))   # propagate — stops the run loop
+    except RunTimeoutError:
+        raise
     except Exception as e:
         print("  ⚠️  Inline resume error (" + str(e) + ") — keeping partial draft")
         return entry
@@ -470,6 +474,10 @@ def run():
         print("\n  📋 PHASE 1: " + str(len(pending_drafts)) + " pending draft(s) — resuming before new work")
 
         for draft in pending_drafts:
+            if is_expired():
+                print("\n  ⏱️  Time budget reached before resuming remaining drafts — stopping run")
+                _print_final_report(generated, failed)
+                sys.exit(0)
             print("\n" + dq)
             print("  RESUME DRAFT: " + draft["title"])
             print("  Progress: " + str(draft["collected_q"]) + "/" + str(draft["target_q"]) + "Q")
@@ -492,6 +500,10 @@ def run():
                         print("  ⏳ Draft still partial (non-quota issue) — keeping draft, continuing to next draft")
                         failed += 1
 
+            except RunTimeoutError as e:
+                print("\n  ⏱️  TIME BUDGET REACHED during draft resume: " + str(e))
+                _print_final_report(generated, failed)
+                sys.exit(0)
             except AllKeysExhausted as e:
                 print("\n  🛑 ALL API KEYS EXHAUSTED during draft resume: " + str(e))
                 _print_final_report(generated, failed)
@@ -549,6 +561,9 @@ def run():
     print()
 
     for attempt in range(1, MAX_TESTS_PER_RUN + 1):
+        if is_expired():
+            print(f"\n  ⏱️  Time budget reached before Test {attempt}/{MAX_TESTS_PER_RUN} — stopping cleanly")
+            break
         print("\n" + dq)
         print("  Test " + str(attempt) + "/" + str(MAX_TESTS_PER_RUN))
         print(dq)
@@ -593,6 +608,10 @@ def run():
 
             generated.append(entry)
 
+        except RunTimeoutError as e:
+            print("\n  ⏱️  TIME BUDGET REACHED: " + str(e))
+            print("  Stopping cleanly after " + str(len(generated)) + " test(s) — drafts saved.")
+            break
         except AllKeysExhausted as e:
             print("\n  🛑 ALL API KEYS EXHAUSTED: " + str(e))
             print("  Stopping after " + str(len(generated)) + " test(s).")

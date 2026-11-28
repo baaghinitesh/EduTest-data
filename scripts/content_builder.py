@@ -56,6 +56,7 @@ import publish_to_server
 import draft_store
 from gemini_client import GeminiError, GeminiQuotaError
 from groq_client   import GroqError
+from run_budget    import RunTimeoutError, check_budget, is_expired, safe_sleep
 import topic_picker
 
 ROOT     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -553,6 +554,10 @@ def _iterate_to_target(target_count, exam_name, subject_name,
     print(f"    Target: {target_count}Q in {CHUNK}Q chunks (~{total_needed} chunks needed)")
 
     while collected < target_count and chunk_idx < max_chunks:
+        if is_expired():
+            print(f"    [TimeBudget] Hard time limit reached after {collected}Q — stopping iteration")
+            break
+
         remaining = target_count - collected
         cnt       = min(remaining, CHUNK)
         chunk_num = chunk_idx + 1
@@ -567,6 +572,9 @@ def _iterate_to_target(target_count, exam_name, subject_name,
         raw = None
         try:
             raw = _generate_one_chunk(prompt, chunk_idx)
+        except RunTimeoutError as e:
+            print(f"    [TimeBudget] ⏱️  {e} after {collected}Q — saving progress")
+            break
         except GeminiQuotaError:
             # ALL keys exhausted — save what we have and signal the run loop to stop
             print(f"    [Generate] ⚠️  ALL keys quota-exhausted after {collected}Q — stopping")
@@ -579,19 +587,26 @@ def _iterate_to_target(target_count, exam_name, subject_name,
             if consecutive_fails >= MAX_CONSECUTIVE:
                 print(f"    {MAX_CONSECUTIVE} consecutive failures — stopping iteration")
                 break
-            # Short sleep before retrying next chunk slot
-            _time.sleep(3)
+            try:
+                safe_sleep(3, "between failed chunks")
+            except RunTimeoutError as e:
+                print(f"    [TimeBudget] ⏱️  {e} — stopping iteration")
+                break
             chunk_idx += 1
             continue
 
         # ── Structuring step ──────────────────────────────────────────────────
-        qs = _structure_one_chunk(raw, exam_name, subject_name)
-
-        if not qs:
-            # Retry structuring once with a slightly different prompt framing
-            print(f"    Chunk {chunk_num} structuring failed — retrying once...")
-            _time.sleep(2)
+        try:
             qs = _structure_one_chunk(raw, exam_name, subject_name)
+
+            if not qs:
+                # Retry structuring once
+                print(f"    Chunk {chunk_num} structuring failed — retrying once...")
+                safe_sleep(2, "before structuring retry")
+                qs = _structure_one_chunk(raw, exam_name, subject_name)
+        except RunTimeoutError as e:
+            print(f"    [TimeBudget] ⏱️  {e} after {collected}Q — saving progress")
+            break
 
         if qs:
             all_qs.extend(qs)
@@ -599,16 +614,23 @@ def _iterate_to_target(target_count, exam_name, subject_name,
             consecutive_fails = 0  # reset on success
             print(f"    Chunk {chunk_num} → {len(qs)}Q extracted "
                   f"(total so far: {collected}/{target_count})")
-            # Light pacing between successful chunks
             if collected < target_count and INTER_CHUNK_SLEEP > 0:
-                _time.sleep(INTER_CHUNK_SLEEP)
+                try:
+                    safe_sleep(INTER_CHUNK_SLEEP, "between chunks")
+                except RunTimeoutError as e:
+                    print(f"    [TimeBudget] ⏱️  {e} — stopping iteration")
+                    break
         else:
             consecutive_fails += 1
             print(f"    Chunk {chunk_num} structuring failed after retry (fail #{consecutive_fails})")
             if consecutive_fails >= MAX_CONSECUTIVE:
                 print(f"    {MAX_CONSECUTIVE} consecutive failures — stopping iteration")
                 break
-            _time.sleep(3)
+            try:
+                safe_sleep(3, "between failed chunks")
+            except RunTimeoutError as e:
+                print(f"    [TimeBudget] ⏱️  {e} — stopping iteration")
+                break
 
         chunk_idx += 1
 
@@ -796,6 +818,8 @@ def build_school_full_length_test(class_slug):
     if len(raw_qs) < 1:
         if quota_hit:
             raise GeminiQuotaError(f"All keys exhausted — zero questions for {class_slug} full-length")
+        if is_expired():
+            raise RunTimeoutError(f"Time budget reached before collecting questions for {class_slug} full-length")
         raise Exception(f"Zero questions generated for {class_slug} full-length")
 
     questions = [
@@ -857,6 +881,11 @@ def build_school_full_length_test(class_slug):
             # Signal to generate.py that all keys are exhausted — stop the run
             raise GeminiQuotaError(
                 f"All keys exhausted after {actual_q}/{total_q}Q for {title}. "
+                "Draft saved — will resume next run."
+            )
+        if is_expired():
+            raise RunTimeoutError(
+                f"Time budget reached after {actual_q}/{total_q}Q for {title}. "
                 "Draft saved — will resume next run."
             )
     else:
@@ -949,6 +978,9 @@ def build_exam_full_length_test(class_slug):
         if quota_hit:
             print(f"  [ExamFull] Quota exhausted after {subj_name} — stopping subject loop")
             break
+        if is_expired():
+            print(f"  [ExamFull] Time budget reached after {subj_name} — stopping subject loop")
+            break
 
     if len(all_questions) < 1:
         if quota_hit:
@@ -956,6 +988,8 @@ def build_exam_full_length_test(class_slug):
                 f"All keys exhausted — zero questions for {class_slug} full-length. "
                 "Check API keys and quotas."
             )
+        if is_expired():
+            raise RunTimeoutError(f"Time budget reached — zero questions for {class_slug} full-length.")
         raise Exception(
             f"Zero questions generated for {class_slug} full-length. "
             "Check API keys and quotas."
@@ -1022,6 +1056,11 @@ def build_exam_full_length_test(class_slug):
         if quota_hit:
             raise GeminiQuotaError(
                 f"All keys exhausted after {actual_q}/{total_q}Q for {title}. "
+                "Draft saved — will resume next run."
+            )
+        if is_expired():
+            raise RunTimeoutError(
+                f"Time budget reached after {actual_q}/{total_q}Q for {title}. "
                 "Draft saved — will resume next run."
             )
     else:
@@ -1122,6 +1161,8 @@ def build_subject_test(topic_info, q_count_override=None):
     if len(raw_qs) < 1:
         if quota_hit:
             raise GeminiQuotaError(f"All keys exhausted — zero questions for {title}")
+        if is_expired():
+            raise RunTimeoutError(f"Time budget reached — zero questions for {title}")
         raise Exception(f"Zero questions generated for {title}")
 
     questions   = [_validate_q(q, i, mark_val, neg_val, neg, subj_slug) for i, q in enumerate(raw_qs[:q_count])]
@@ -1183,6 +1224,11 @@ def build_subject_test(topic_info, q_count_override=None):
         if quota_hit:
             raise GeminiQuotaError(
                 f"All keys exhausted after {actual_q}/{q_count}Q for {title}. "
+                "Draft saved — will resume next run."
+            )
+        if is_expired():
+            raise RunTimeoutError(
+                f"Time budget reached after {actual_q}/{q_count}Q for {title}. "
                 "Draft saved — will resume next run."
             )
     else:
@@ -1287,11 +1333,16 @@ def build_combined_test(class_slug, subject_topics, q_per_subj_override=None):
         if quota_hit:
             print(f"  [Combined] Quota exhausted after {subj_name} — stopping subject loop")
             break
+        if is_expired():
+            print(f"  [Combined] Time budget reached after {subj_name} — stopping subject loop")
+            break
 
     # Accept any result with at least 1 question — partial is better than nothing
     if len(all_questions) < 1:
         if quota_hit:
             raise GeminiQuotaError(f"All keys exhausted — zero questions for combined test: {title}")
+        if is_expired():
+            raise RunTimeoutError(f"Time budget reached — zero questions for combined test: {title}")
         raise Exception(f"Zero questions generated for combined test: {title}")
 
     actual_q    = len(all_questions)
@@ -1358,6 +1409,11 @@ def build_combined_test(class_slug, subject_topics, q_per_subj_override=None):
         if quota_hit:
             raise GeminiQuotaError(
                 f"All keys exhausted after {actual_q}/{total_q}Q for {title}. "
+                "Draft saved — will resume next run."
+            )
+        if is_expired():
+            raise RunTimeoutError(
+                f"Time budget reached after {actual_q}/{total_q}Q for {title}. "
                 "Draft saved — will resume next run."
             )
     else:
@@ -1516,6 +1572,9 @@ def resume_draft(draft):
             if quota_hit:
                 print(f"  [Resume] Quota exhausted after {subj_name} — stopping subject loop")
                 break
+            if is_expired():
+                print(f"  [Resume] Time budget reached after {subj_name} — stopping subject loop")
+                break
 
     elif test_type in ("combined",):
         # ── Resume combined — continue from remaining subjects ────────────────
@@ -1557,6 +1616,9 @@ def resume_draft(draft):
                 new_qs.append(_validate_q(raw_q, idx, mark_val, neg_val, neg, subj_slug))
             if quota_hit:
                 print(f"  [Resume] Quota exhausted after {subj_name} — stopping subject loop")
+                break
+            if is_expired():
+                print(f"  [Resume] Time budget reached after {subj_name} — stopping subject loop")
                 break
 
     # ── Merge new questions into payload ──────────────────────────────────────
@@ -1609,10 +1671,15 @@ def resume_draft(draft):
             payload=payload, final_path=final_path,
             resume_context=resume_ctx
         )
-        # If quota was exhausted, signal the run loop to stop
+        # If quota was exhausted or time budget expired, signal the run loop to stop
         if quota_hit:
             raise GeminiQuotaError(
                 f"All keys exhausted during resume of {title} "
+                f"({actual_q}/{target_q}Q). Draft updated — will resume next run."
+            )
+        if is_expired():
+            raise RunTimeoutError(
+                f"Time budget reached during resume of {title} "
                 f"({actual_q}/{target_q}Q). Draft updated — will resume next run."
             )
         return None, None, None

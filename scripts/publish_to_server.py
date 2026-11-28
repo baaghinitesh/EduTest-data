@@ -6,60 +6,73 @@ Flow:
   2. POST /api/github/publish/test  → creates MongoDB record with cdnUrl + githubPath
      so the test appears in the app immediately via /api/content
 
-Required GitHub Actions secrets:
-  EDUTEST_API_URL        → https://serverprepguide.launchyourconcept.com
-  EDUTEST_ADMIN_EMAIL    → <configured in GitHub Secrets>
-  EDUTEST_ADMIN_PASSWORD → <configured in GitHub Secrets>
-
-If any env var is missing, publish is skipped gracefully.
-Content is still saved to CDN — it just won't appear in the app until published.
+Uses `requests.Session` with browser-compatible headers so Cloudflare Browser
+Integrity Check does not block Python's default `Python-urllib` User-Agent
+(Error 1010).
 """
-import os, json, time
-import urllib.request
-import urllib.error
+import os, time
+import requests
 
-# ── Config from env ───────────────────────────────────────────────────────────
-# Default to the correct server URL so it works even if secret is not set
+from run_budget import RunTimeoutError, safe_sleep
+
 API_URL   = os.environ.get("EDUTEST_API_URL", "https://serverprepguide.launchyourconcept.com").rstrip("/")
 ADM_EMAIL = os.environ.get("EDUTEST_ADMIN_EMAIL", "")
 ADM_PASS  = os.environ.get("EDUTEST_ADMIN_PASSWORD", "")
 
-_token    = None   # cached JWT for this run
+_token    = None
 _token_ts = 0.0
+_session  = None
+
+
+def _get_session():
+    global _session
+    if _session is None:
+        _session = requests.Session()
+        _session.headers.update({
+            "User-Agent": (
+                "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+            ),
+            "Content-Type": "application/json",
+            "Accept": "application/json, text/plain, */*",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Origin": "https://prepguide.launchyourconcept.com",
+            "Referer": "https://prepguide.launchyourconcept.com/",
+        })
+    return _session
 
 
 def _configured():
-    # API_URL has a default, so only check credentials
     return bool(ADM_EMAIL and ADM_PASS)
 
 
 def _http_post(endpoint, payload, token=None, retries=3):
     """POST JSON to server. Returns parsed response dict or raises RuntimeError."""
-    url  = f"{API_URL}{endpoint}"
-    data = json.dumps(payload).encode("utf-8")
-    hdrs = {"Content-Type": "application/json", "Accept": "application/json"}
-    if token:
-        hdrs["Authorization"] = f"Bearer {token}"
+    url     = f"{API_URL}{endpoint}"
+    headers = {"Authorization": f"Bearer {token}"} if token else {}
+    session = _get_session()
 
     last_err = None
     for attempt in range(1, retries + 1):
         try:
-            req = urllib.request.Request(url, data=data, headers=hdrs, method="POST")
-            with urllib.request.urlopen(req, timeout=30) as resp:
-                return json.loads(resp.read().decode("utf-8"))
-        except urllib.error.HTTPError as e:
-            body = e.read().decode("utf-8", errors="replace")
-            last_err = f"HTTP {e.code}: {body[:300]}"
+            resp = session.post(url, json=payload, headers=headers, timeout=30)
+            if 200 <= resp.status_code < 300:
+                return resp.json()
+
+            body = resp.text[:300]
+            last_err = f"HTTP {resp.status_code}: {body}"
             print(f"  [Publish] attempt {attempt}/{retries}: {last_err}")
-            if e.code in (400, 401, 403):
-                break   # no point retrying auth/validation errors
+            if resp.status_code in (400, 401, 403):
+                break  # don't retry auth / validation / Cloudflare block errors
             if attempt < retries:
-                time.sleep(5 * attempt)
+                safe_sleep(5 * attempt, "publish retry")
+        except RunTimeoutError:
+            raise
         except Exception as e:
             last_err = str(e)[:150]
             print(f"  [Publish] attempt {attempt}/{retries} error: {last_err}")
             if attempt < retries:
-                time.sleep(5 * attempt)
+                safe_sleep(5 * attempt, "publish retry")
 
     raise RuntimeError(f"POST {endpoint} failed: {last_err}")
 
@@ -87,11 +100,7 @@ def _get_token():
 def publish_test(test_data, file_path):
     """
     Publish one generated test to the PrepGuide Lite server.
-
-    test_data : dict — full test JSON (as saved to disk by content_builder.py)
-    file_path : str  — relative CDN path, e.g. "data/admin/neet-ug/tests/xxx.json"
-
-    Returns True on success, False on failure (never raises).
+    Returns True on success, False on failure (never raises except RunTimeoutError).
     """
     if not _configured():
         print("  [Publish] Server credentials not set — skipping (content on CDN only)")
@@ -99,6 +108,8 @@ def publish_test(test_data, file_path):
 
     try:
         token = _get_token()
+    except RunTimeoutError:
+        raise
     except Exception as e:
         print(f"  [Publish] Auth failed ({e}) — skipping server publish")
         return False
@@ -116,6 +127,8 @@ def publish_test(test_data, file_path):
             print(f"  [Publish]    cdnUrl={cdn_url[:70]}...")
         return True
 
+    except RunTimeoutError:
+        raise
     except Exception as e:
         print(f"  [Publish] ❌ Failed: {e}")
         return False

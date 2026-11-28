@@ -226,7 +226,8 @@ def normalize_exam_slug(raw: str) -> str:
 
     Handles all of:
       • Case insensitivity:       JEE-ADVANCED  → jee-advanced
-      • Spacing variants:         "jee advance" → jee-advanced
+      • Spacing/punctuation:      "class 8, icse" → icse-class-8
+      • Trailing subject words:   "cbse class 11 mathematics" → cbse-class-11
       • Missing hyphens:          jeeadvanced   → jee-advanced
       • Short aliases:            jee           → jee-mains
       • School class variants:    "cbse 10", "cbse class 10", "class 10",
@@ -239,8 +240,9 @@ def normalize_exam_slug(raw: str) -> str:
     """
     if not raw:
         return raw
-    # Normalise: lowercase, collapse underscores → hyphens, strip extra spaces
-    key = raw.strip().lower().replace("_", "-")
+    import re as _re
+    # Normalise: lowercase, strip commas/punctuation, collapse underscores → hyphens, strip extra spaces
+    key = raw.strip().lower().replace(",", " ").replace("_", "-")
     key = " ".join(key.split())          # collapse multiple spaces
     # Direct lookup
     if key in _SLUG_ALIASES:
@@ -253,6 +255,14 @@ def normalize_exam_slug(raw: str) -> str:
     key_s = key.replace("-", " ")
     if key_s in _SLUG_ALIASES:
         return _SLUG_ALIASES[key_s]
+    # Extract school board + class number even when a subject/extra word is appended (e.g. "cbse class 11 mathematics", "class 10 icse math")
+    board_match = _re.search(r'\b(cbse|icse|isc|maharashtra|maha|msbshse|up\s*board|uttar\s*pradesh|up)\b', key_s)
+    num_match   = _re.search(r'\b(1[0-2]|[1-9])\b', key_s)
+    if board_match and num_match:
+        cand = f"{board_match.group(1)} class {num_match.group(1)}"
+        cand = " ".join(cand.split())
+        if cand in _SLUG_ALIASES:
+            return _SLUG_ALIASES[cand]
     # Return hyphenated lowercase as best-effort canonical form
     return key_h if key_h else key
 
@@ -679,6 +689,9 @@ def get_all_available_exams():
                                     exams.append(slug)
                             except: pass
                 else: # Competitive
+                    # Skip legacy malformed/duplicate school-in-competitive folders
+                    if "," in d or d in ("cbse-class-11-mathematics", "class-10-icse-math", "class-8,-icse"):
+                        continue
                     data = _load_modular_data(d_path, d)
                     if _has_topics(data):
                         exams.append(d)

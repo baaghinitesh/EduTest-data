@@ -2,37 +2,36 @@
 gemini_client.py — 3 Gemini Flash keys + Mistral/Groq fallback.
 
 GitHub Secret names (exact):
-  GEMINI_API_KEY    → K1 — primary researcher + generation fallback
+  GEMINI_API_KEY    → K1 — researcher + generation fallback
   GEMINI_API_KEY_1  → K2 — researcher fallback + generation fallback
   GEMINI_API_KEY2   → K3 — generation primary (dedicated generator key)
-  MISTRAL_API_KEY   → Mistral small — 4th key in generation rotation (optional)
+  MISTRAL_API_KEY   → Mistral small — optional fallback
 
 Active Gemini models:
-  MODEL_PRIMARY = "gemini-3.8-flash"       (Tier 1: highest quality MCQ generation & research)
-  MODEL_LITE    = "gemini-3.5-flash-lite"  (Tier 2: high-throughput fallback + JSON structuring)
+  MODEL_PRIMARY = "gemini-3.8-flash"       (Tier 1: highest quality MCQ generation)
+  MODEL_LITE    = "gemini-3.5-flash-lite"  (Tier 2: high-RPM/RPD research, fallback & JSON structuring)
 
-Generation key rotation:
-  Tier 1: K_a-3.8 → K_b-3.8 → K_c-3.8 → Mistral → GroqK1(gpt-oss-120b) → GroqK2(gpt-oss-120b)
-  Tier 2: K_a-3.5-lite → K_b-3.5-lite → K_c-3.5-lite → GroqK1(qwen3.8-27b) → GroqK2(qwen3.8-27b)
-  Starting key rotates by chunk_index so load is spread across keys.
-
-Circuit-breaking & quota handling:
-  404 / NOT_FOUND / model unavailable → mark model dead for the run immediately (no retries)
-  401 / 403 / API_KEY_INVALID         → mark key dead for the run immediately (no retries)
-  RPM (429 with short wait ≤ 90s)     → wait and retry on SAME key+model
-  RPD (429 with long wait > 90s, or RESOURCE_EXHAUSTED) → mark key+model exhausted,
-      try next model/key immediately
+Circuit-breaking, pacing & hard time budget:
+  404 / NOT_FOUND / model unavailable → mark model dead across all keys immediately
+  401 / 403 / API_KEY_INVALID         → mark key dead immediately
+  503 / UNAVAILABLE                   → 1 short retry (10s), then rotate immediately;
+                                        if 2 keys hit 503 on the same model in one pass,
+                                        skip remaining keys on that congested model for this pass
+  RPM (429 short wait ≤ 90s)          → safe_sleep and retry on SAME key+model
+  RPD (429 long wait > 90s / RESOURCE_EXHAUSTED) → mark key+model exhausted, rotate
+  RunTimeoutError                     → propagated immediately so caller saves draft & exits cleanly
 """
 import os, time, re
 from google import genai
 from google.genai import types
 
 from json_utils import extract_json
+from run_budget import RunTimeoutError, check_budget, safe_sleep
 
 MODEL_PRIMARY = "gemini-3.8-flash"       # Tier 1 — best reasoning/quality Flash
 MODEL_LITE    = "gemini-3.5-flash-lite"  # Tier 2 — high RPM/RPD + fast JSON structuring
 
-# Backwards-compatible aliases for callers/reports
+# Backwards-compatible aliases
 MODEL_FLASH_25 = MODEL_PRIMARY
 MODEL_FLASH_20 = MODEL_LITE
 
@@ -42,23 +41,19 @@ GROQ_GEN_FALLBACK = "qwen/qwen3.8-27b"
 RPM_FLASH   = 8
 MAX_RETRIES = 3
 
-# ── Exact GitHub secret names ─────────────────────────────────────────────────
-KEY_K1 = "GEMINI_API_KEY"    # Flash K1
-KEY_K2 = "GEMINI_API_KEY_1"  # Flash K2
-KEY_K3 = "GEMINI_API_KEY2"   # Flash K3 (dedicated generator)
+KEY_K1 = "GEMINI_API_KEY"
+KEY_K2 = "GEMINI_API_KEY_1"
+KEY_K3 = "GEMINI_API_KEY2"
 
 _clients   = {}
 _last_call = {}
+_research_seq = 0
 
-# Per-key exhaustion tracker (RPD exhausted on all models, or invalid key)
 _rpd_exhausted: set = set()
-
-# Per-key+model exhaustion tracker — tracks primary vs lite separately
-# key: (key_env, model) → True if exhausted or permanently unavailable
 _model_exhausted: dict = {}
 
-_INTER_KEY_SLEEP = 2   # seconds between trying different keys
-_MAX_SLEEP_CAP   = 65  # cap RPM sleep at 65s
+_INTER_KEY_SLEEP = 1.5
+_MAX_SLEEP_CAP   = 60
 
 
 class GeminiError(Exception):
@@ -87,15 +82,12 @@ def _rate_limit(tracker, rpm):
     if elapsed < min_gap:
         wait = min_gap - elapsed
         print(f"  [RateLimit/{tracker}] waiting {wait:.1f}s...")
-        time.sleep(wait)
+        safe_sleep(wait, "Gemini rate limit")
     _last_call[tracker] = time.time()
 
 
 def _parse_retry_delay(err_str):
-    """
-    Parse retry-after seconds from a 429 error message.
-    Returns (seconds, is_long_wait).
-    """
+    """Parse retry-after seconds from a 429 error message."""
     m = re.search(r"retry.{0,20}after[:\s]+(\d+\.?\d*)\s*s", err_str, re.IGNORECASE)
     if not m:
         m = re.search(r"try again in\s+(?:(\d+)h\s*)?(?:(\d+)m\s*)?(\d+\.?\d*)s",
@@ -109,7 +101,7 @@ def _parse_retry_delay(err_str):
     if m:
         secs = float(m.group(1))
         return secs, secs > 90
-    return 30.0, False
+    return 25.0, False
 
 
 def _extract_json(text):
@@ -126,13 +118,10 @@ def _mark_model_dead(key_env, model):
 
 def _call(model, tracker, key_env, prompt, expect_json, max_tokens):
     """
-    Call one Gemini key+model combination.
-    - 404 / NOT_FOUND → mark model dead across all keys immediately (no retries)
-    - 401 / 403 / invalid key → mark key dead immediately (no retries)
-    - RPM hit (short wait) → sleep and retry on same key (up to MAX_RETRIES)
-    - RPD hit (long wait / RESOURCE_EXHAUSTED) → mark key+model exhausted, raise GeminiQuotaError
-    - 503 / transient / malformed JSON → retry up to MAX_RETRIES, then raise GeminiError
+    Call one Gemini key+model combination with fast 503 failover and budget checks.
     """
+    check_budget(f"Gemini/{tracker}")
+
     if key_env in _rpd_exhausted:
         raise GeminiQuotaError(f"{key_env} already exhausted this run")
 
@@ -148,11 +137,10 @@ def _call(model, tracker, key_env, prompt, expect_json, max_tokens):
     }
     if expect_json:
         config_kwargs["response_mime_type"] = "application/json"
-        # 'low' is supported on both gemini-3.8-flash and gemini-3.5-flash-lite
-        # (note: 'minimal' returns 400 on gemini-3.8-flash)
         config_kwargs["thinking_config"] = types.ThinkingConfig(thinking_level="low")
 
     for attempt in range(1, MAX_RETRIES + 1):
+        check_budget(f"Gemini/{tracker} attempt {attempt}")
         try:
             _rate_limit(tracker, RPM_FLASH)
             resp = client.models.generate_content(
@@ -165,7 +153,7 @@ def _call(model, tracker, key_env, prompt, expect_json, max_tokens):
                 raise GeminiError("Empty response from model")
             return text if not expect_json else _extract_json(text)
 
-        except GeminiQuotaError:
+        except (GeminiQuotaError, RunTimeoutError):
             raise
         except Exception as e:
             last_err = e
@@ -173,18 +161,15 @@ def _call(model, tracker, key_env, prompt, expect_json, max_tokens):
             s_lower = s.lower()
             print(f"  [Gemini/{tracker}] attempt {attempt}/{MAX_RETRIES}: {s[:120]}")
 
-            # Circuit-break immediately on retired/missing model (404 NOT_FOUND)
             if "404" in s or "not_found" in s_lower or "no longer available" in s_lower:
                 for k in (KEY_K1, KEY_K2, KEY_K3):
                     _mark_model_dead(k, model)
                 raise GeminiQuotaError(f"Model {model} unavailable (404)")
 
-            # Circuit-break immediately on auth/permission error
             if any(x in s_lower for x in ["401", "403", "api_key_invalid", "permission_denied"]):
                 _rpd_exhausted.add(key_env)
                 raise GeminiQuotaError(f"Auth/permission error on {key_env}")
 
-            # If a model rejects thinking_config or response_mime_type, strip and retry once
             if "400" in s and "thinking" in s_lower and "thinking_config" in config_kwargs:
                 config_kwargs.pop("thinking_config", None)
                 continue
@@ -196,28 +181,28 @@ def _call(model, tracker, key_env, prompt, expect_json, max_tokens):
                     raise GeminiQuotaError(f"RPD exhausted on {tracker}/{model} ({key_env})")
                 wait_secs = min(wait_secs, _MAX_SLEEP_CAP)
                 print(f"  [Gemini/{tracker}] RPM hit — sleeping {wait_secs:.0f}s then retrying")
-                time.sleep(wait_secs)
+                safe_sleep(wait_secs, f"Gemini/{tracker} RPM")
                 continue
 
+            # Fast failover on 503: 1 short retry (10s), then rotate to another key/model
             if any(x in s for x in ["503", "UNAVAILABLE", "overloaded"]):
-                wait = 20 * attempt
-                print(f"  [Gemini/{tracker}] server busy — sleeping {wait}s")
-                time.sleep(wait)
-                continue
+                if attempt == 1:
+                    print(f"  [Gemini/{tracker}] server busy (503) — sleeping 10s then rotating if still busy")
+                    safe_sleep(10, f"Gemini/{tracker} 503")
+                    continue
+                raise GeminiError(f"503 UNAVAILABLE on {tracker}/{model}")
 
             if attempt < MAX_RETRIES:
-                time.sleep(3 * attempt)
+                safe_sleep(3 * attempt, f"Gemini/{tracker} retry")
 
     raise GeminiError(f"{tracker} failed after {MAX_RETRIES} attempts: {last_err}")
 
 
 def _available(key_env):
-    """Key is available if set AND not fully exhausted this run."""
     return bool(os.environ.get(key_env, "").strip()) and key_env not in _rpd_exhausted
 
 
 def _model_available(key_env, model):
-    """Key+model is available if key is set and this specific model not exhausted."""
     if not os.environ.get(key_env, "").strip():
         return False
     if key_env in _rpd_exhausted:
@@ -226,7 +211,6 @@ def _model_available(key_env, model):
 
 
 def all_gemini_exhausted():
-    """True if every configured Gemini key is exhausted (both models)."""
     keys = [KEY_K1, KEY_K2, KEY_K3]
     configured = [k for k in keys if os.environ.get(k, "").strip()]
     if not configured:
@@ -242,9 +226,6 @@ def all_gemini_exhausted():
 
 
 def all_keys_exhausted():
-    """
-    True if ALL generation keys (Gemini K1/K2/K3 + Mistral + Groq K1/K2) are exhausted.
-    """
     import mistral_client as _mc
     import groq_client as _gq
     gemini_done  = all_gemini_exhausted()
@@ -284,20 +265,22 @@ def _call_groq_unified(key_env, model, prompt, max_tokens):
 def _try_key_model_unified(client_type, key_env, model, prompt, tracker_label, max_tokens):
     """
     Attempt to run the prompt with a specific key and model.
-    Returns (result_text, is_exhausted_error) or (None, is_exhausted_error).
+    Returns (result_text, is_exhausted_error, is_overloaded_503).
     """
     import mistral_client
     import groq_client
 
+    check_budget(f"UnifiedGen/{client_type}/{key_env}")
+
     if client_type == "gemini":
         if not _model_available(key_env, model):
-            return None, True
+            return None, True, False
     elif client_type == "groq":
         if not groq_client.is_model_available(key_env, model):
-            return None, True
+            return None, True, False
     elif client_type == "mistral":
         if not mistral_client.available():
-            return None, True
+            return None, True, False
 
     print(f"  [UnifiedGen] Trying {client_type}/{key_env} model={model}...")
 
@@ -313,23 +296,25 @@ def _try_key_model_unified(client_type, key_env, model, prompt, tracker_label, m
 
         if res and len(res) > 80:
             print(f"  [UnifiedGen] ✅ Success with {client_type}/{key_env} model={model}")
-            return res, False
-        else:
-            print(f"  [UnifiedGen] ⚠️ Success but response too short with {client_type}/{key_env}")
-            return None, False
+            return res, False, False
+        print(f"  [UnifiedGen] ⚠️ Success but response too short with {client_type}/{key_env}")
+        return None, False, False
 
+    except RunTimeoutError:
+        raise
     except (GeminiQuotaError, mistral_client.MistralQuotaError) as e:
         print(f"  [UnifiedGen] 🛑 Quota/unavailable for {client_type}/{key_env} model={model}: {e}")
         if client_type == "gemini":
             _mark_model_dead(key_env, model)
         elif client_type == "mistral":
             mistral_client._exhausted = True
-        return None, True
+        return None, True, False
 
     except Exception as e:
         s = str(e)
         s_lower = s.lower()
         print(f"  [UnifiedGen] ❌ Error with {client_type}/{key_env} model={model}: {s[:150]}")
+        is_503 = ("503" in s or "unavailable" in s_lower or "overloaded" in s_lower)
         is_permanent = (
             "RESOURCE_EXHAUSTED" in s
             or "quota" in s_lower
@@ -347,37 +332,46 @@ def _try_key_model_unified(client_type, key_env, model, prompt, tracker_label, m
             if client_type == "gemini":
                 _mark_model_dead(key_env, model)
             elif client_type == "groq":
-                if not groq_client.is_model_available(key_env, model):
-                    pass
-                else:
+                if groq_client.is_model_available(key_env, model):
                     groq_client._tpd_exhausted.add(key_env)
             elif client_type == "mistral":
                 mistral_client._exhausted = True
-            return None, True
+            return None, True, False
 
-        return None, False
+        return None, False, is_503
 
 
 # ── Public API ────────────────────────────────────────────────────────────────
 
 def research(prompt, max_tokens=1500):
     """
-    Research step — tries ALL available keys before giving up.
-    Returns text or empty string (never raises).
+    Research step — rotates starting key across calls and uses 3.5-Flash-Lite
+    first so 3.8-Flash RPD is preserved for MCQ generation.
+    Returns text or empty string (never raises unless RunTimeoutError).
     """
-    tier1 = [
-        ("gemini", KEY_K1, MODEL_PRIMARY, "research_k1_38"),
-        ("gemini", KEY_K2, MODEL_PRIMARY, "research_k2_38"),
-        ("gemini", KEY_K3, MODEL_PRIMARY, "research_k3_38"),
-        ("mistral", "MISTRAL_API_KEY", "mistral-small-latest", "research_mistral"),
-        ("groq", "GROQ_API_KEY",  GROQ_GEN_PRIMARY, "research_groq1_oss"),
-        ("groq", "GROQ_API_KEY2", GROQ_GEN_PRIMARY, "research_groq2_oss"),
-    ]
+    global _research_seq
+    check_budget("research")
 
-    tier2 = [
+    lite_keys = [
         ("gemini", KEY_K1, MODEL_LITE, "research_k1_lite"),
         ("gemini", KEY_K2, MODEL_LITE, "research_k2_lite"),
         ("gemini", KEY_K3, MODEL_LITE, "research_k3_lite"),
+    ]
+    shift = _research_seq % len(lite_keys)
+    lite_rotated = lite_keys[shift:] + lite_keys[:shift]
+
+    primary_keys = [
+        ("gemini", KEY_K1, MODEL_PRIMARY, "research_k1_38"),
+        ("gemini", KEY_K2, MODEL_PRIMARY, "research_k2_38"),
+        ("gemini", KEY_K3, MODEL_PRIMARY, "research_k3_38"),
+    ]
+    primary_rotated = primary_keys[shift:] + primary_keys[:shift]
+    _research_seq += 1
+
+    attempts = lite_rotated + primary_rotated + [
+        ("mistral", "MISTRAL_API_KEY", "mistral-small-latest", "research_mistral"),
+        ("groq", "GROQ_API_KEY",  GROQ_GEN_PRIMARY, "research_groq1_oss"),
+        ("groq", "GROQ_API_KEY2", GROQ_GEN_PRIMARY, "research_groq2_oss"),
         ("groq", "GROQ_API_KEY",  GROQ_GEN_FALLBACK, "research_groq1_qwen"),
         ("groq", "GROQ_API_KEY2", GROQ_GEN_FALLBACK, "research_groq2_qwen"),
     ]
@@ -396,13 +390,14 @@ def research(prompt, max_tokens=1500):
             return mistral_client.available()
         return False
 
-    for client_type, key_env, model, label in (tier1 + tier2):
+    for client_type, key_env, model, label in attempts:
+        check_budget("research loop")
         if not _can_try(client_type, key_env, model):
             continue
         if _INTER_KEY_SLEEP > 0:
-            time.sleep(_INTER_KEY_SLEEP)
+            safe_sleep(_INTER_KEY_SLEEP, "research pacing")
 
-        res, _ = _try_key_model_unified(
+        res, _, _ = _try_key_model_unified(
             client_type, key_env, model, prompt, label, max_tokens
         )
         if res and len(res) > 50:
@@ -417,9 +412,11 @@ def generate_questions_for_chunk(prompt, chunk_index=0, max_tokens=8192):
     """
     Generate raw questions for ONE chunk (10Q).
     Rotates Tier 1 (gemini-3.8-flash + Mistral + Groq gpt-oss-120b) then
-    Tier 2 (gemini-3.5-flash-lite + Groq qwen3.8-27b).
-    Raises GeminiQuotaError ONLY when all keys are exhausted/unavailable.
+    Tier 2 (gemini-3.5-flash-lite + Groq qwen3.8-27b), skipping congested 503
+    models within a pass after 2 keys hit 503, and retrying up to 3 passes.
     """
+    check_budget("generate_questions_for_chunk")
+
     tier1 = [
         ("gemini", KEY_K1, MODEL_PRIMARY, "gen_k1_38"),
         ("gemini", KEY_K2, MODEL_PRIMARY, "gen_k2_38"),
@@ -459,14 +456,22 @@ def generate_questions_for_chunk(prompt, chunk_index=0, max_tokens=8192):
     last_err = "No keys available"
 
     for pass_idx in range(MAX_PASSES):
+        check_budget(f"Generate pass {pass_idx + 1}")
         if pass_idx > 0:
             print(f"  [Generate] Pass {pass_idx + 1}/{MAX_PASSES} — retrying transient/non-exhausted keys...")
 
         transient_keys_available = False
+        pass_503_counts = {}  # model -> count of 503 failures in this pass
 
         for client_type, key_env, model, label in attempts:
+            check_budget(f"Generate {label}")
+
             if client_type == "gemini":
                 if not _model_available(key_env, model):
+                    continue
+                if pass_503_counts.get(model, 0) >= 2:
+                    # Skip remaining keys on a currently-overloaded Gemini model in this pass
+                    transient_keys_available = True
                     continue
             elif client_type == "groq":
                 import groq_client
@@ -480,14 +485,16 @@ def generate_questions_for_chunk(prompt, chunk_index=0, max_tokens=8192):
             transient_keys_available = True
 
             if _INTER_KEY_SLEEP > 0:
-                time.sleep(_INTER_KEY_SLEEP)
+                safe_sleep(_INTER_KEY_SLEEP, "inter-key pacing")
 
-            res, is_exhausted = _try_key_model_unified(
+            res, is_exhausted, is_503 = _try_key_model_unified(
                 client_type, key_env, model, prompt, label, max_tokens
             )
 
             if res:
                 return res
+            if is_503 and client_type == "gemini":
+                pass_503_counts[model] = pass_503_counts.get(model, 0) + 1
             if not is_exhausted:
                 last_err = f"Transient failure on {client_type}/{key_env}"
 
@@ -496,9 +503,9 @@ def generate_questions_for_chunk(prompt, chunk_index=0, max_tokens=8192):
             break
 
         if pass_idx < MAX_PASSES - 1:
-            wait_time = 15
+            wait_time = 20
             print(f"  [Generate] Pass {pass_idx + 1} failed. Sleeping {wait_time}s before next pass...")
-            time.sleep(wait_time)
+            safe_sleep(wait_time, "between generation passes")
 
     if all_keys_exhausted():
         raise GeminiQuotaError("All 6 generation keys are fully exhausted (daily limits hit).")
@@ -507,9 +514,10 @@ def generate_questions_for_chunk(prompt, chunk_index=0, max_tokens=8192):
 
 def structure_with_flash(prompt, max_tokens=8192):
     """
-    Fallback JSON structurer — called when Groq K1/K2 and Mistral fail.
-    Tries gemini-3.5-flash-lite first (high RPM/RPD, fast JSON), then gemini-3.8-flash.
+    Fallback JSON structurer — tries gemini-3.5-flash-lite first (high RPM/RPD),
+    then gemini-3.8-flash.
     """
+    check_budget("structure_with_flash")
     attempts = [
         ("struct_k1_lite", KEY_K1, MODEL_LITE),
         ("struct_k2_lite", KEY_K2, MODEL_LITE),
@@ -519,6 +527,7 @@ def structure_with_flash(prompt, max_tokens=8192):
         ("struct_k3_38",   KEY_K3, MODEL_PRIMARY),
     ]
     for tracker, key_env, model in attempts:
+        check_budget(f"StructureFlash/{tracker}")
         if not _model_available(key_env, model):
             continue
         try:
@@ -526,6 +535,8 @@ def structure_with_flash(prompt, max_tokens=8192):
             if result:
                 print(f"  [StructureFlash] ✅ {tracker} ({model})")
                 return result
+        except RunTimeoutError:
+            raise
         except Exception as e:
             print(f"  [StructureFlash] {tracker} failed ({e}) — trying next")
 

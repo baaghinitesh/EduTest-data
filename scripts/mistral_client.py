@@ -4,12 +4,10 @@ mistral_client.py — Mistral AI fallback for generation and structuring.
 GitHub Secret name (exact):
   MISTRAL_API_KEY  → Mistral API key — used in rotation / fallback
 
-Model used:
-  mistral-small-latest  — fast, good quality for MCQ generation & structuring
-
-Circuit-breaking:
+Circuit-breaking & time budget:
   402 (subscription/billing required), 401/403 (auth), 404 (model missing)
   → immediately disable Mistral for the rest of the run (no retries/sleeps).
+  RunTimeoutError → propagated immediately.
 """
 import os, time
 
@@ -19,6 +17,7 @@ except ImportError:
     from mistralai import Mistral         # v1.x
 
 from json_utils import extract_json
+from run_budget import RunTimeoutError, check_budget, safe_sleep
 
 MODEL       = "mistral-small-latest"
 MAX_RETRIES = 3
@@ -28,7 +27,7 @@ KEY_ENV = "MISTRAL_API_KEY"
 
 _client    = None
 _last_call = 0.0
-_exhausted = False   # set True when Mistral hits quota, 402 billing, or auth failure
+_exhausted = False
 
 
 class MistralError(Exception):
@@ -38,8 +37,6 @@ class MistralError(Exception):
 class MistralQuotaError(MistralError):
     pass
 
-
-# ── Internal helpers ──────────────────────────────────────────────────────────
 
 def _get_client():
     global _client
@@ -55,7 +52,7 @@ def _rate_limit():
     global _last_call
     elapsed = time.time() - _last_call
     if elapsed < MIN_GAP:
-        time.sleep(MIN_GAP - elapsed)
+        safe_sleep(MIN_GAP - elapsed, "Mistral pacing")
     _last_call = time.time()
 
 
@@ -64,8 +61,8 @@ def _extract_json(text):
 
 
 def _call(system_prompt, user_prompt, expect_json=False, max_tokens=8192, model=None):
-    """Call Mistral with circuit-breaking & retry. Returns text or parsed JSON."""
     global _exhausted
+    check_budget("Mistral")
     if _exhausted:
         raise MistralQuotaError("Mistral already disabled/exhausted this run")
 
@@ -79,6 +76,7 @@ def _call(system_prompt, user_prompt, expect_json=False, max_tokens=8192, model=
         extra_args["response_format"] = {"type": "json_object"}
 
     for attempt in range(1, MAX_RETRIES + 1):
+        check_budget(f"Mistral attempt {attempt}")
         try:
             _rate_limit()
             resp = client.chat.complete(
@@ -96,7 +94,7 @@ def _call(system_prompt, user_prompt, expect_json=False, max_tokens=8192, model=
                 raise MistralError("Empty response from Mistral")
             return _extract_json(text) if expect_json else text
 
-        except MistralQuotaError:
+        except (MistralQuotaError, RunTimeoutError):
             raise
         except Exception as e:
             last_err = e
@@ -104,7 +102,6 @@ def _call(system_prompt, user_prompt, expect_json=False, max_tokens=8192, model=
             s_lower = s.lower()
             print(f"  [Mistral] attempt {attempt}/{MAX_RETRIES}: {s[:120]}")
 
-            # Circuit-break immediately on billing (402), auth (401/403), or missing model (404)
             if any(x in s_lower for x in [
                 "status 402", "subscription", "401", "403", "unauthorized", "404"
             ]):
@@ -118,30 +115,25 @@ def _call(system_prompt, user_prompt, expect_json=False, max_tokens=8192, model=
                 raise MistralQuotaError(f"Mistral quota/rate-limit hit: {s[:80]}")
 
             if any(x in s_lower for x in ["503", "502", "unavailable"]):
-                wait = 15 * attempt
+                wait = 10 * attempt
                 print(f"  [Mistral] server busy — sleeping {wait}s")
-                time.sleep(wait)
+                safe_sleep(wait, "Mistral 503")
                 continue
 
             if attempt < MAX_RETRIES:
-                time.sleep(4 * attempt)
+                safe_sleep(3 * attempt, "Mistral retry")
     raise MistralError(f"Mistral failed after {MAX_RETRIES} attempts: {last_err}")
 
 
 def available():
-    """Return True if MISTRAL_API_KEY is set and not disabled/exhausted this run."""
     return bool(os.environ.get(KEY_ENV, "").strip()) and not _exhausted
 
 
 def _is_exhausted():
-    """Return True if Mistral hit quota/billing/auth error this run."""
     return _exhausted
 
 
-# ── Public API ────────────────────────────────────────────────────────────────
-
 def generate_questions(prompt, max_tokens=8192, model=None):
-    """Generate raw question text using Mistral."""
     if not os.environ.get(KEY_ENV, "").strip():
         raise MistralError(f"{KEY_ENV} not set — Mistral unavailable")
     if _exhausted:
@@ -160,10 +152,6 @@ def generate_questions(prompt, max_tokens=8192, model=None):
 
 
 def structure_questions(raw_text, schema, exam_name, subject_name="", model=None):
-    """
-    Structure raw question text into a list of question dicts using Mistral.
-    Called when Groq primary fails, before Groq fallback / Flash fallback.
-    """
     if not os.environ.get(KEY_ENV, "").strip():
         raise MistralError(f"{KEY_ENV} not set — Mistral unavailable")
     if _exhausted:
@@ -181,7 +169,7 @@ def structure_questions(raw_text, schema, exam_name, subject_name="", model=None
         f"difficulty is 'easy'/'medium'/'hard'.\n\n"
         f"TEXT:\n{raw_text}"
     )
-    result = _call(system, user, expect_json=True, max_tokens=6000, model=model)
+    result = _call(system, user, expect_json=True, max_tokens=4096, model=model)
     if isinstance(result, list) and result:
         print(f"  [Structure] ✅ Mistral fallback — {len(result)}Q ({model or MODEL})")
         return result
@@ -191,7 +179,6 @@ def structure_questions(raw_text, schema, exam_name, subject_name="", model=None
 
 
 def research(prompt, max_tokens=1500, model=None):
-    """Research step using Mistral — fallback when Gemini keys fail."""
     if not os.environ.get(KEY_ENV, "").strip():
         return ""
     if _exhausted:
@@ -206,6 +193,8 @@ def research(prompt, max_tokens=1500, model=None):
         if result and len(result) > 50:
             print(f"  [Research] ✅ mistral fallback ({model or MODEL})")
             return result
+    except RunTimeoutError:
+        raise
     except Exception as e:
         print(f"  [Research] Mistral failed ({e}) — using empty context")
     return ""
