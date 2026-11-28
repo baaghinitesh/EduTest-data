@@ -4,7 +4,7 @@
   "class_slug": "gate",
   "test_type": "subject-wise",
   "target_q": 25,
-  "collected_q": 16,
+  "collected_q": 24,
   "final_path": "data/admin/gate/tests/gate-general-aptitude-time-speed-distance-951fca02.json",
   "payload": {
     "id": "951fca02-4d6d-4170-9c71-c9c92e45da9a",
@@ -21,9 +21,9 @@
     "topic": "Time Speed Distance",
     "testType": "subject-wise",
     "duration": 60,
-    "totalMarks": 32,
-    "passingMarks": 11,
-    "totalQuestions": 16,
+    "totalMarks": 48,
+    "passingMarks": 17,
+    "totalQuestions": 24,
     "targetQuestions": 25,
     "isPublic": true,
     "isPublished": true,
@@ -869,11 +869,419 @@
         "subject": "gate-aptitude",
         "difficulty": "medium",
         "hasError": false
+      },
+      {
+        "id": "q-1795824166870-8414f",
+        "order": 17,
+        "question": "A car travels at a constant speed of 72 km/h. How much distance will it cover in 25 seconds?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "500 meters",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "450 meters",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "720 meters",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "1000 meters",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "The speed of the car is given in km/h, and the time is in seconds. We need to convert the speed to m/s.\nSpeed = 72 km/h\nTo convert km/h to m/s, multiply by",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1795824166870-4bb00",
+        "order": 18,
+        "question": "A car travels from city A to city B at an average speed of 60 km/h and returns from city B to city A at an average speed of 40 km/h. What is the average speed of the car for the entire journey?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "50 km/h",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "48 km/h",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "45 km/h",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "42 km/h",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let the distance between city A and city B be 'D' km.\nTime taken to travel from A to B (t1) = Distance / Speed = D / 60 hours.\nTime taken to travel from B to A (t2) = Distance / Speed = D / 40 hours.\n\nTotal distance covered = D (to A) + D (from A) = 2D km.\nTotal time taken = t1 + t2 = (D/60) + (D/40) hours.\nTo sum the fractions: Find LCM of 60 and 40, which is 120.\nTotal time = (2D/120) + (3D/120) = 5D/120 = D/24 hours.\n\nAverage Speed = Total Distance / Total Time\nAverage Speed = (2D) / (D/24) = 2D * (24/D) = 48 km/h.\n\nAlternatively, for equal distances, the average speed formula is 2xy / (x+y), where x and y are the two speeds.\nAverage Speed = (2 * 60 * 40) / (60 + 40) = (4800) / (100) = 48 km/h.",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1795824166870-a406c",
+        "order": 19,
+        "question": "A train travels at a speed of 90 km/hr. How much distance will it cover in 40 seconds?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "1 km",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "900 m",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "1000 m",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "1.5 km",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "First, convert the speed from km/hr to m/s, as the time is given in seconds.\nSpeed = 90 km/hr\nTo convert km/hr to m/s, multiply by (5/18):\nSpeed = 90 * (5/18) m/s = 5 * 5 m/s = 25 m/s.\nTime = 40 seconds.\nDistance = Speed × Time\nDistance = 25 m/s × 40 s = 1000 meters.\nAlternatively, 1000 meters = 1 km.",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1795824166870-5ba50",
+        "order": 20,
+        "question": "A person travels from point P to Q at a speed of 30 km/hr and returns from Q to P at a speed of 60 km/hr. What is the average speed for the entire journey?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "40 km/hr",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "45 km/hr",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "50 km/hr",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "40 km/hr",
+            "isCorrect": true,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "When a person travels the same distance at two different speeds, the average speed can be calculated using the formula:\nAverage Speed = (2 * S1 * S2) / (S1 + S2)\nWhere S1 = 30 km/hr and S2 = 60 km/hr.\nAverage Speed = (2 * 30 * 60) / (30 + 60)\nAverage Speed = (3600) / (90)\nAverage Speed = 40 km/hr.",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1795824166870-6fcbe",
+        "order": 21,
+        "question": "A 200-meter long train crosses a 300-meter long platform in 25 seconds. What is the speed of the train in km/hr?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "60 km/hr",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "72 km/hr",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "80 km/hr",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "90 km/hr",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "When a train crosses a platform, the total distance covered by the train is the sum of its own length and the length of the platform.\nTotal Distance = Length of train + Length of platform\nTotal Distance = 200 m + 300 m = 500 m.\nTime taken = 25 seconds.\nSpeed = Distance / Time\nSpeed = 500 m / 25 s = 20 m/s.\nNow, convert the speed from m/s to km/hr. To convert m/s to km/hr, multiply by (18/5):\nSpeed = 20 * (18/5) km/hr = 4 * 18 km/hr = 72 km/hr.",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1795824166870-74285",
+        "order": 22,
+        "question": "A boat can travel 36 km upstream in 6 hours and 48 km downstream in 4 hours. What is the speed of the current (stream) in km/hr?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "2 km/hr",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "3 km/hr",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "4 km/hr",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "5 km/hr",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let the speed of the boat in still water be 'B' km/hr and the speed of the current be 'S' km/hr.\nUpstream speed (B - S) = Distance / Time = 36 km / 6 hours = 6 km/hr.  (Equation 1)\nDownstream speed (B + S) = Distance / Time = 48 km / 4 hours = 12 km/hr. (Equation 2)\n\nNow we have a system of two linear equations:\n1) B - S = 6\n2) B + S = 12\n\nTo find the speed of the current (S), subtract Equation 1 from Equation 2:\n(B + S) - (B - S) = 12 - 6\nB + S - B + S = 6\n2S = 6\nS = 6 / 2 = 3 km/hr.\nThe speed of the current is 3 km/hr.",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1795824166870-4d76d",
+        "order": 23,
+        "question": "Two cars, A and B, start at the same time from two stations 400 km apart and move towards each other. The speed of car A is 50 km/hr and the speed of car B is 30 km/hr. At what distance from station A will they meet?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "150 km",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "200 km",
+            "isCorrect": false,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "250 km",
+            "isCorrect": true,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "300 km",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "When two objects move",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
+      },
+      {
+        "id": "q-1795824166870-fd04e",
+        "order": 24,
+        "question": "A car covers a certain distance. If its speed were 10 km/h more, it would take 1 hour less. If its speed were 10 km/h less, it would take 1.5 hours more. What is the distance covered by the car?",
+        "type": "mcq",
+        "options": [
+          {
+            "letter": "A",
+            "text": "250 km",
+            "isCorrect": false,
+            "index": 0,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "B",
+            "text": "300 km",
+            "isCorrect": true,
+            "index": 1,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "C",
+            "text": "350 km",
+            "isCorrect": false,
+            "index": 2,
+            "imageUrl": "",
+            "explanation": ""
+          },
+          {
+            "letter": "D",
+            "text": "400 km",
+            "isCorrect": false,
+            "index": 3,
+            "imageUrl": "",
+            "explanation": ""
+          }
+        ],
+        "answer": "",
+        "alternateAnswers": [],
+        "explanation": "Let the original speed of the car be $S$ km/h and the original time taken be $T$ hours.\nThe distance covered, $D$, is given by $D = S \\times T$.\n\n**Case 1:** Speed increases by 10 km/h, time decreases by 1 hour.\nNew speed = $(S + 10)$ km/h\nNew time = $(T - 1)$ hours\nDistance remains the same: $(S + 10)(T - 1) = ST$\n$ST - S + 10T - 10 = ST$\n$-S + 10T - 10 = 0$\n$S = 10T - 10$  (Equation 1)\n\n**Case 2:** Speed decreases by 10 km/h, time increases by 1.5 hours.\nNew speed = $(S - 10)$ km/h\nNew time = $(T + 1.5)$ hours\nDistance remains the same: $(S - 10)(T + 1.5) = ST$\n$ST + 1.5S - 10T - 15 = ST$\n$1.5S - 10T - 15 = 0$  (Equation 2)\n\nNow, substitute Equation 1 into Equation 2:\n$1.5(10T - 10) - 10T - 15 = 0$\n$15T - 15 - 10T - 15 = 0$\n$5T - 30 = 0$\n$5T = 30",
+        "hint": "",
+        "marks": 2,
+        "negativeMark": 0.67,
+        "negativeMarking": true,
+        "imageUrl": "",
+        "subject": "gate-aptitude",
+        "difficulty": "medium",
+        "hasError": false
       }
     ]
   },
   "resume_context": {
-    "remaining_q": 9,
+    "remaining_q": 1,
     "subj_slug": "gate-aptitude",
     "subj_name": "General Aptitude",
     "chapter": "Numerical Aptitude",
@@ -882,6 +1290,6 @@
     "class_number": null,
     "cycle": 1
   },
-  "created_at": "2026-11-27T20:39:32.543285Z",
-  "updated_at": "2026-11-27T20:39:32.543303Z"
+  "created_at": "2026-11-28T00:02:46.870872Z",
+  "updated_at": "2026-11-28T00:02:46.870892Z"
 }
